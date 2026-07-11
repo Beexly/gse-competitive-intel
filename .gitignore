@@ -1,0 +1,5 @@
+# large re-downloadable raw data (re-pull per README §3)
+*.html.raw
+pbp_*.csv
+node_modules/
+__pycache__/
