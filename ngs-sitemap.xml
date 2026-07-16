@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://nextgenstats.nfl.com/</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://nextgenstats.nfl.com/news/all</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://nextgenstats.nfl.com/news/articles</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://nextgenstats.nfl.com/news/videos</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://nextgenstats.nfl.com/glossary</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://nextgenstats.nfl.com/charts</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://nextgenstats.nfl.com/stats/top-plays/fastest-ball-carriers</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://nextgenstats.nfl.com/stats/passing</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://nextgenstats.nfl.com/stats/rushing</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://nextgenstats.nfl.com/stats/receiving</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+</urlset>

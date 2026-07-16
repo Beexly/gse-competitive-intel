@@ -1,0 +1,8 @@
+User-Agent: \*
+Allow: /
+Disallow: /account
+Disallow: /api/
+Disallow: /join-today
+
+Host: https://www.fantasyguru.com
+Sitemap: https://www.fantasyguru.com/sitemap.xml

@@ -1,0 +1,14 @@
+User-agent: \*
+Disallow: /health
+Disallow: /redirect
+Disallow: /fb-\*
+Disallow: /fb-\*/\*
+Disallow: /\*/embed
+Disallow: /\*/embed?\*
+Disallow: /\*?\*
+Disallow: /content/
+
+Sitemap: https://www.actionnetwork.com/sitemap-news.xml
+Sitemap: https://www.actionnetwork.com/sitemap-latest.xml
+Sitemap: https://www.actionnetwork.com/sitemap.xml
+Sitemap: https://www.actionnetwork.com/sitemap-author.xml

@@ -1,0 +1,119 @@
+User-agent: *
+Allow: */*/m-*-*-2027 # заранее открыты матчи на следующий год
+Allow: */*/m-*-*-2026 # открытые матчи текущего года
+Allow: */*/m-*-*-2025 # открытые матчи предыдущего года
+Disallow: */*/m-*-*-20* # закрытые матчи предыдущих годов
+Allow: */*/2027-*-* # заранее открытые страницы матчей на дату на следующий год
+Allow: */*/2026-*-* # открытые страницы матчей на дату текущего года
+Allow: */*/2025-*-* # открытые страницы матчей на дату предыдущего года
+Disallow: */*/20*-*-* # закрытые страницы матчей на дату предыдущих годов
+Disallow: */scores_24
+Disallow: /*/predictions/*/aftertomorrow
+Disallow: /*/predictions/aftertomorrow
+Disallow: /*utm_*=
+Disallow: /*yclid=
+Disallow: /*gclid=
+Disallow: /*_openstat=
+Disallow: /promo/*
+Disallow: /promo-parimatch*
+Disallow: */tennis/p-*
+Disallow: */table-tennis/p-*
+Disallow: */search
+Disallow: */profile/
+Disallow: /*?
+Disallow: /promo
+Disallow: */p-contacts-webview
+Disallow: /*/table-tennis/m-*
+Disallow: /*/aussie-rules
+Disallow: /api/v2/odds/live
+Disallow: /feeds/prematch-odds.json
+Disallow: /export/events.csv
+Disallow: /data/match-statistics
+Disallow: /api/v3/markets/all
+Disallow: /sportsdata/v1/fixtures
+Allow: /
+Allow: *.js*
+Allow: *.css*
+Allow: *.gif*
+Allow: *.png*
+Allow: *.pdf*
+Allow: *.jpg*
+Allow: *.jpeg*
+Allow: *.svg*
+Allow: *.webp*
+
+User-agent: ChatGPT-User
+Allow: /
+User-agent: CCBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+User-agent: Omgili
+Disallow: /
+User-agent: FacebookBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: cohere-ai
+Disallow: /
+User-agent: Amazonbot
+Disallow: /
+
+User-Agent: Yandex
+Allow: /
+Disallow: */*/m-*-*-20*
+Allow: */*/m-*-*-2027
+Allow: */*/m-*-*-2026
+Allow: */*/m-*-*-2025 # открытые матчи предыдущего года
+Disallow: */*/20*-*-*
+Allow: */*/2027-*-*
+Allow: */*/2026-*-*
+Allow: */*/2025-*-* # открытые страницы матчей на дату предыдущего года
+Disallow: */scores_24
+Disallow: /ru/predictions/*/aftertomorrow
+Disallow: /ru/predictions/aftertomorrow
+Disallow: /promo/*
+Disallow: /promo-parimatch*
+Disallow: */tennis/p-*
+Disallow: */table-tennis/p-*
+Disallow: */search
+Disallow: */profile/
+Disallow: /*?
+Disallow: /promo
+Disallow: */p-contacts-webview
+Disallow: /es
+Disallow: /it
+Disallow: /en
+Disallow: /pt
+Disallow: /fr
+Disallow: /ja
+Disallow: /de
+Disallow: /pl
+Disallow: /hu
+Disallow: /id
+Disallow: /gr
+Disallow: /cn
+Disallow: /ru/table-tennis/m-*
+Disallow: /ru/aussie-rules
+Disallow: /api/v2/odds/live
+Disallow: /feeds/prematch-odds.json
+Disallow: /export/events.csv
+Disallow: /data/match-statistics
+Disallow: /api/v3/markets/all
+Disallow: /sportsdata/v1/fixtures
+Allow: *.js*
+Allow: *.css*
+Allow: *.gif*
+Allow: *.png*
+Allow: *.pdf*
+Allow: *.jpg*
+Allow: *.jpeg*
+Allow: *.svg*
+Allow: *.webp*
+Clean-param: utm_referrer&utm_source&utm_medium&utm_term&utm_content&utm_campaign&yclid&gclid&_openstat&matchesFilter&search_source&search_domain
+
+Sitemap: https://scores24.live/sitemaps/sitemap-en-soccer-predictions-0.xml
+Sitemap: https://scores24.live/sitemaps/sitemap-index.xml
+Sitemap: https://scores24.live/sitemaps-news/sitemap-news-index.xml

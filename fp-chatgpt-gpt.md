@@ -1,0 +1,43 @@
+[Skip to content](https://chatgpt.com/g/g-3OpURYPLU-fantasy-pros-fantasy-football-ai-agent#main)
+
+[New chat](https://chatgpt.com/)
+
+Search chats
+
+[Images](https://chatgpt.com/images)
+
+## Chat history
+
+[Home](https://chatgpt.com/)
+
+- [New chat\\
+\\
+`Ctrl`  `Shift`  `O`](https://chatgpt.com/)
+- Search chats
+
+
+[Images](https://chatgpt.com/images)
+
+[Apps](https://chatgpt.com/apps)
+
+Deep research
+
+[See plans and pricing](https://openai.com/chatgpt/pricing/)
+
+Settings
+
+Help
+
+Get responses tailored to you
+
+Log in to get answers based on saved chats, plus create images and upload files.
+
+Log in
+
+Log in
+
+Sign up for free
+
+ChatGPT is AI. By using it, you agree to our [Terms](https://openai.com/terms) & [Privacy Policy](https://openai.com/privacy). Chats may be reviewed and used to improve our AI models. [Learn more](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance)
+
+Voice

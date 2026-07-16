@@ -1,0 +1,114 @@
+Terms of Use
+Last Updated: October 27, 2020
+The following terms and condi ons ("Terms of Use") cons tute a binding agreement between you and Marzen Media LLC (d/b/a FantasyPros) ("FantasyPros," "we," or "us") with respect to your use of any of our applica on programing interfaces ("APIs") and any related documenta on ("API Documenta on" and, together, with the APIs, the "API Materials") as well as any content obtained via calls on the APIs ("Data"). By downloading or using any of the API Materials or Data: (1) you agree to these Terms of Use; (2) you represent and warrant to us that you are at least 18 years of age; and (3) if you represent a business or organiza on, you are agreeing to these Terms of Use on behalf of that business or organiza on, and you represent and warrant to us that you have the authority to bind that business or organiza on.
+IF YOU DO NOT AGREE TO THESE TERMS OF USE, THEN YOU MUST NOT DOWNLOAD OR USE ANY OF THE API MATERIALS OR DATA.
+THESE TERMS OF USE INCLUDE AN AGREEMENT TO MANDATORY ARBITRATION, WHICH MEANS THAT YOU AGREE TO SUBMIT ANY DISPUTE RELATED TO THE API MATERIALS, DATA AND/OR THESE TERMS OF USE TO BINDING ARBITRATION RATHER THAN PROCEEDING IN COURT. THE DISPUTE RESOLUTION PROVISION ALSO INCLUDES A CLASS ACTION WAIVER, WHICH MEANS THAT YOU AGREE TO PROCEED WITH ANY DISPUTE INDIVIDUALLY AND NOT AS PART OF A CLASS ACTION. MORE INFORMATION ABOUT THE ARBITRATION AND CLASS ACTION WAIVER CAN BE FOUND IN THE SECTION TITLED "DISPUTE RESOLUTION" BELOW.
+
+
+ it it it it it 
+ 
+ 
+ it 
+ it it
+
+1. Changes to These Terms of Use
+You understand and agree that we may change these Terms of Use at any me without prior no ce. We will post the changes to these Terms of Use on h ps://api.fantasypros.com/public/ v2/docs (the "Site") and will state the date these Terms of Use were last revised. It is your responsibility to check the Site periodically for changes to these Terms of Use. Your con nued use of any of the API Materials a er any such changes cons tutes your acceptance of the revised Terms of Use.
+2. Limited License; Restric ons
+In order to use the API Materials, you must obtain an API key from us. We may require that you provide certain informa on to us in order for us to decide whether or not to approve you for use of the API Materials, such determina on to be made in our sole discre on. If you are so approved, we will issue an API key to you. You represent and warrant that all informa on that you provide to us will be accurate and complete at the me it is provided. If any of such informa on changes, you must promptly no fy us of the changes.
+If we issue an API key to you, then subject to and condi oned on your compliance with these Terms of Use, we grant you a revocable, non-exclusive, royalty-free, non-transferable, nonsublicensable, limited license to use (a) the APIs, in accordance with the API Documenta on, in order to retrieve Data, and (b) use the Data for personal, non-commercial purposes only; except that you are not licensed to use any Data that cons tutes historical player sta s cs or player image URLs, and you must promptly delete any such Data that you receive. You agree that you will not use the API Materials and/or the Data for any purpose, or in any manner, that violates any applicable laws, rules or regula ons. Further, you agree to comply fully with all U.S. export laws and regula ons to ensure that neither the API Materials nor any technical data related thereto nor any direct product thereof are exported or re-exported directly or indirectly in viola on of, or used for any purposes prohibited by, such laws and regula ons.
+Your API key is for your use only. You must keep your API key strictly con den al and are responsible for implemen ng all security measures necessary to prevent a third party from gaining access to your API key. You are responsible for any access to or use of the APIs a ributable to your API key. Your API key will allow you to make one API call per second and up to 100 API calls per day. You should take steps to cache data on your end so that your applica on does not poll our APIs unnecessarily. Further, you shall not: (a) reverse engineer, disassemble, decompile or adapt the APIs; (b) copy, modify, or create deriva ve works of the API Materials; (c) distribute or provide any third party with access to the API Materials; (d) seek to obtain intellectual property protec on in any API Materials or Data; (e) remove, alter, or cover any proprietary rights no ces that appear in the API Materials; (f) introduce any virus or malicious code into FantasyPros systems; or (g) disable or circumvent any security features of FantasyPros' systems or the APIs.
+FantasyPros has no obliga on to provide any technical support or maintenance services to you.
+
+
+ it it it it 
+ i i t t it i i t t i i t f 
+ tt it i i t t it 
+ 
+ it it it it it t 
+ f it i i t t it 
+ it it it it it tt 
+
+
+3. A ribu on
+If you publish any research, analysis or other work that is based on, or that includes, any Data, you agree to conspicuously state that your work contains or is based on, as applicable, Data obtained from FantasyPros.
+4. Non-Compete
+You may not use the API Materials and/or the Data to compete with FantasyPros in any way, whether directly or indirectly. Without limi ng the foregoing, you shall not use the API Materials and/or the Data to develop or provide a service or product that competes with any service or product of FantasyPros.
+5. Ownership; No Other Licenses
+You acknowledge and agree that the API Materials and the Data are the sole and exclusive property of FantasyPros. All rights with respect to the API Materials and Data not expressly granted to you in these Terms of Use are reserved by FantasyPros. No addi onal rights (including any implied licenses) to FantasyPros' intellectual property are granted to you by implica on, estoppel, or otherwise.
+6. Change; Suspension and Termina on
+We reserve the right, at any me and for any reason (or no reason) and without no ce, to make changes to, suspend, disable or restrict your access to, or discon nue the API Materials and/or the Data, or any por on thereof. Without limi ng the foregoing, we may suspend your use of the API, or may thro le the requests transmi ed through the API, if the volume of such requests overwhelms, disrupts, interferes with, or otherwise impedes or harms, in any manner, any services or systems of FantasyPros. You agree that FantasyPros will not be liable to you in connec on with any such change, suspension, disabling, restric on (including thro ling) or discon nuance.
+If FantasyPros disables your access to the API Materials and/or the Data or discon nues providing the API Materials and Data, then these Terms of Use are automa cally terminated as of the date of such disabling or discon nuance. Further, these Terms of Use terminate automa cally if you breach any of your obliga ons under these Terms of Use.
+7. E ect of Termina on
+Upon termina on of these Terms of Use for any reason, your right to use the API Materials and to retrieve Data granted by FantasyPros to you in these Terms of Use terminates, and you must immediately cease all use of the API Materials and may no longer retrieve Data. So long as you did not breach these Terms of Use prior to termina on of these Terms of Use, you may con nue to use Data that you retrieved prior to such termina on for personal, non-commercial purposes
+
+it i t t t it 
+ i i t t it it 
+ i i t t it 
+ i i t t t t it it 
+ 
+ 
+ it it 
+ 
+ 
+ t i t t it 
+ it t f t f i i i t t t it 
+
+
+in compliance with applicable law but only if you con nue to comply with the Sec ons tled "A ribu on" and "Non-Compete" above. Otherwise, you have no right to con nue to use any Data a er termina on of these Terms of Use.
+The following sec ons will survive any termina on of these Terms of Use as well as any other terms or provisions necessary to interpret or enforce such sec ons,: "Ownership; No Other Licenses", "E ect of Termina on", "Disclaimer of Warran es", "Indemni ca on", "Limita ons of Liability", "Dispute Resolu on" and "General".
+8. Disclaimer of Warran es
+THE API MATERIALS AND THE DATA ARE PROVIDED TO YOU ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT WARRANTIES OF ANY KIND, AND FANTASYPROS HEREBY DISCLAIMS ALL WARRANTIES WITH RESPECT THERETO, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WITHOUT LIMITING THE FOREGOING, NEITHER FANTASYPROS NOR ANY OF ITS SUPPLIERS MAKES ANY REPRESENTATION OR WARRANTY THAT THE API MATERIALS OR THE DATA WILL BE ACCURATE, RELIABLE, SECURE, ERROR-FREE, OR UNINTERRUPTED, THAT DEFECTS WILL BE CORRECTED, OR THAT THE API MATERIALS OR DATA WILL MEET YOUR NEEDS OR EXPECTATIONS. YOUR USE OF THE API MATERIALS AND THE DATA, AND YOUR RELIANCE THEREON, IS AT YOUR SOLE RISK. NO STATEMENT OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED FROM FANTASYPROS BY ANY MEANS OR IN ANY MANNER SHALL CREATE ANY WARRANTY NOT EXPRESSLY SET FORTH IN THESE TERMS OF USE.
+9. Indemni ca on
+You agree to defend, indemnify, and hold harmless FantasyPros and its o cers, directors, employees, a liates, agents, contractors, licensors, service providers, successors and assigns (collec vely, "FantasyPros Indemnitees") from and against any and all claims, ac ons, suits, proceedings, damages, liabili es, costs, and expenses, including a orneys' fees and costs, arising from or related to any of the following ("Claims"): (a) your use of the API Materials and/ or the Data, including any product, service, analysis or other work of yours that is based on, or contains, any Data; (b) any breach by you of these Terms of Use; (c) your viola on of any applicable laws, rules or regula ons; or (d) your viola on or infringement of any intellectual property, privacy, publicity, con den ality, proprietary or other rights of any third party. Notwithstanding the foregoing, FantasyPros shall have the right, at our op on and in our sole discre on, to select our own legal counsel to defend the FantasyPros Indemnitees from any Claims (but doing so shall not excuse your indemnity obliga ons) and you shall be solely responsible for the payment of all of our reasonable a orneys' fees incurred in connec on therewith. You shall not se le any Claim against the FantasyPros Indemnitee(s), without the prior wri en approval of FantasyPros.
+10. Limita ons of Liability
+
+
+ it i i t t it it i i t t it it i ff if tt it it it tt i i t t it 
+ 
+ 
+ 
+ 
+ i it t i i f t i 
+ i t t t i t t 
+ it i i f t it it iff ff tt it i t i t f t tt
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL FANTASYPROS OR ITS OFFICERS, DIRECTORS, EMPLOYEES, AFFILIATES, AGENTS, CONTRACTORS, LICENSORS, SERVICE PROVIDERS, SUCCESSORS OR ASSIGNS BE LIABLE TO YOU OR ANY THIRD PARTY UNDER OR IN CONNECTION WITH THE API MATERIALS AND/OR THE DATA, OR THESE TERMS OF USE, FOR ANY DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, PUNITIVE, OR EXEMPLARY DAMAGES OR FOR ANY LOST PROFITS, LOST REVENUE, LOST SAVINGS, LOSS OF DATA OR USE,
+OR COST OF SUBSTITUTE TECHNOLOGY AND/OR DATA, EVEN IF FORESEEABLE AND EVEN IF WE WERE ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT WILL FANTASYPROS' AGGREGATE LIABILITY TO YOU IN CONNECTION WITH THE API MATERIALS AND/OR THE DATA, OR THESE TERMS OF USE, EXCEED U.S. $100.00. THE EXCLUSION OF DAMAGES AND LIMITATIONS OF LIABILITY SET FORTH ABOVE SHALL APPLY REGARDLESS OF THE FORM OF ACTION, AND WHETHER THE BASIS OF THE LIABILITY IS BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE AND STRICT LIABILITY), STATUTE, OR ANY OTHER LEGAL THEORY.
+SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN WARRANTIES OR CONSEQUENTIAL DAMAGES, SO SOME OF THE EXCLUSIONS AND/OR LIMITATIONS SET FORTH ABOVE MAY NOT APPLY TO YOU. IN SUCH JURISDICTIONS, OUR LIABILITY WILL BE LIMITED TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.
+IF YOU ARE A CALIFORNIA RESIDENT, YOU HEREBY WAIVE CALIFORNIA CIVIL CODE SECTION 1542 IN CONNECTION WITH THE FOREGOING, WHICH STATES "A GENERAL RELEASE DOES NOT EXTEND TO CLAIMS WHICH THE CREDITOR DOES NOT KNOW OR SUSPECT TO EXIST IN HIS OR HER FAVOR AT THE TIME OF EXECUTING THE RELEASE, WHICH IF KNOWN BY HIM OR HER MUST HAVE MATERIALLY AFFECTED HIS OR HER SETTLEMENT WITH THE DEBTOR."
+IF YOU ARE ACCESSING THE API MATERIALS OR DATA FROM NEW JERSEY, YOU (A) ASSUME ALL RISKS OF LOSSES OR DAMAGES RESULTING FROM YOUR USE OF, OR INABILITY TO USE, THE API MATERIALS AND/OR DATA; (B) IRREVOCABLY WAIVE ALL LOSSES OF INDIRECT, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR INCIDENTAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, THOSE RESULTING FROM LOST PROFITS, LOST DATA, OR BUSINESS INTERRUPTION) THAT MAY OCCUR AS A RESULT OF YOUR USE OF THE API MATERIALS AND/OR DATA; (C) EXPRESSLY AGREE TO RELEASE AND DISCHARGE FANTASYPROS AND ITS AFFILIATES, EMPLOYEES, AGENTS, REPRESENTATIVES, SUCCESSORS, OR ASSIGNS FROM ANY AND ALL CLAIMS OR CAUSES OF ACTION RESULTING, DIRECTLY OR INDIRECTLY, FROM YOUR USE OF THE API MATERIALS AND/OR DATA; AND (D) YOU VOLUNTARILY GIVE UP OR WAIVE ANY RIGHT THAT YOU MAY OTHERWISE HAVE TO BRING A LEGAL ACTION AGAINST FANTASYPROS FOR LOSSES OR DAMAGES, WHETHER BASED ON WARRANTY, CONTRACT, TORT, OR OTHER LEGAL THEORY, INCLUDING ANY CLAIM BASED ON ALLEGED NEGLIGENCE ON THE PART OF FANTASYPROS AND ITS AFFILIATES AND ITS AND THEIR AGENTS AND EMPLOYEES. YOU ACKNOWLEDGE THAT YOU HAVE CAREFULLY READ THIS PARAGRAPH AND FULLY UNDERSTAND THAT IT IS A RELEASE OF LIABILITY.
+FANTASYPROS IS MAKING THE API MATERIALS AND DATA AVAILABLE TO YOU IN RELIANCE UPON THE DISCLAIMERS OF WARRANTY AND THE LIMITATIONS OF LIABILITY SET FORTH IN THESE
+
+
+ 
+ 
+
+
+
+TERMS OF USE. SUCH PROVISIONS REFLECT AN ALLOCATION OF RISK BETWEEN THE PARTIES AND FORM AN ESSENTIAL BASIS OF THE BARGAIN BETWEEN YOU AND FANTASYPROS.
+11. Governing Law
+These Terms of Use will be governed by and construed under the laws of the United States (including federal arbitra on law) and the State of Nevada, without regard to con icts of law principles.
+12. Dispute Resolu on
+PLEASE READ THIS SECTION CAREFULLY. IT MAY SIGNIFICANTLY AFFECT YOUR LEGAL RIGHTS, INCLUDING YOUR RIGHT TO FILE A LAWSUIT IN COURT.
+EXCEPT FOR DISPUTES THAT QUALIFY FOR SMALL CLAIMS COURT, ALL DISPUTES ARISING OUT OF OR RELATED TO THESE TERMS OF USE OR ANY ASPECT OF THE RELATIONSHIP BETWEEN YOU AND FANTASYPROS, WHETHER BASED IN CONTRACT, TORT, STATUTE, FRAUD, MISREPRESENTATION, OR ANY OTHER LEGAL THEORY, WILL BE RESOLVED THROUGH FINAL AND BINDING ARBITRATION BEFORE A NEUTRAL ARBITRATOR INSTEAD OF IN A COURT BY A JUDGE OR JURY, AND YOU AGREE THAT FANTASYPROS AND YOU ARE EACH WAIVING THE RIGHT TO SUE IN COURT AND TO HAVE A TRIAL BY A JURY. YOU AGREE THAT ANY ARBITRATION WILL TAKE PLACE ON AN INDIVIDUAL BASIS; CLASS ARBITRATIONS AND CLASS ACTIONS ARE NOT PERMITTED AND YOU ARE AGREEING TO GIVE UP THE ABILITY TO PARTICIPATE IN A CLASS ACTION. The arbitra on will be administered by JAMS pursuant to its Streamlined Arbitra on Rules & Procedures and as modi ed by this agreement to arbitrate.
+The arbitrator will conduct hearings, if any, by teleconference or videoconference, rather than by personal appearances, unless the arbitrator determines upon request by you or by us that an in-person hearing is appropriate. Any in-person appearances will be held at a loca on which is reasonably convenient to both par es with due considera on of their ability to travel and other per nent circumstances. If the par es are unable to agree on a loca on, such determina on should be made by JAMS or by the arbitrator. The arbitrator's decision will follow the terms of these Terms of Use and will be nal and binding. The arbitrator will have authority to award temporary, interim, or permanent injunc ve relief or relief providing for speci c performance of these Terms of Use, but only to the extent necessary to provide relief warranted by the individual claim before the arbitrator. The award rendered by the arbitrator may be con rmed and enforced in any court having jurisdic on thereof.
+You agree that any viola on or threatened viola on of this Agreement may cause irreparable injury to FantasyPros, en tling FantasyPros to obtain injunc ve or other equitable relief in addi on to all other remedies available to FantasyPros.
+13. General
+
+i i t t if 
+ i l t f if i 
+ t it it 
+ 
+ 
+ it i i t t i i t t if i 
+ f 
+ it i i t t it it 
+ 
+ it it
+
+These Terms of Use represent the complete agreement and understanding between you and FantasyPros and supersede all prior agreements and representa ons between the par es with respect to the subject ma er of these Terms of Use. These Terms of Use do not, and shall not be construed to, create any partnership, joint venture, employer-employee or agency rela onship between you and FantasyPros. Headings used in these Terms of Use are for reference purposes only and in no way de ne or limit the scope of the sec on. If any provision of these Terms of Use is held to be unenforceable for any reason, such provision will be reformed only to the extent necessary to make it enforceable and the other terms of these Terms of Use will remain in full force and e ect. The failure of FantasyPros to act with respect to a breach of these Terms of Use by you or others, or any delay by FantasyPros in so ac ng, does not cons tute a waiver and will not limit FantasyPros' rights with respect to such breach or any subsequent breaches. You may not assign, transfer, or sublicense any or all of your rights or obliga ons under these Terms of Use without our express prior wri en consent. We may assign any or all of our rights or obliga ons under these Terms of Use without restric on. Any use of the term "including" or varia ons thereof in these Terms of Use shall be construed as if followed by the phrase "without limita on." No ces to you (including no ces of changes to this these Terms of Use) may be made via pos ng to the Site, by e-mail or by regular mail based on the contact informa on for
+you that we have on le. Any no ce from you to FantasyPros must be sent to FantasyPros API Administrator, PO Box 370092, Las Vegas, NV 89137.
+
+i i t i t t it it it it it it tt it it tt if if ff it it it it it
+
+

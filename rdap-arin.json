@@ -1,0 +1,162 @@
+{
+  "arin_originas0_originautnums" : [ ],
+  "cidr0_cidrs" : [ {
+    "v4prefix" : "23.111.96.0",
+    "length" : 19
+  } ],
+  "endAddress" : "23.111.127.255",
+  "entities" : [ {
+    "entities" : [ {
+      "events" : [ {
+        "eventAction" : "last changed",
+        "eventDate" : "2013-07-26T04:25:18-04:00"
+      }, {
+        "eventAction" : "registration",
+        "eventDate" : "2005-04-29T12:38:52-04:00"
+      } ],
+      "handle" : "RNO29-ARIN",
+      "links" : [ {
+        "href" : "https://rdap.arin.net/registry/entity/RNO29-ARIN",
+        "rel" : "self",
+        "type" : "application/rdap+json",
+        "value" : "https://rdap.arin.net/registry/ip/23.111.102.10"
+      }, {
+        "href" : "https://whois.arin.net/rest/poc/RNO29-ARIN",
+        "rel" : "alternate",
+        "type" : "application/xml",
+        "value" : "https://rdap.arin.net/registry/ip/23.111.102.10"
+      } ],
+      "objectClassName" : "entity",
+      "port43" : "whois.arin.net",
+      "remarks" : [ {
+        "description" : [ "http://www.ripe.net/contact" ],
+        "title" : "Registration Comments"
+      } ],
+      "roles" : [ "administrative", "technical" ],
+      "status" : [ "validated" ],
+      "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "adr", {
+        "label" : "P.O. Box 10096\nAmsterdam\n\n1001EB\nNetherlands"
+      }, "text", [ "", "", "", "", "", "", "" ] ], [ "fn", { }, "text", "RIPE NCC Operations" ], [ "org", { }, "text", "RIPE NCC Operations" ], [ "kind", { }, "text", "group" ], [ "email", { }, "text", "hostmaster@ripe.net" ], [ "tel", {
+        "type" : [ "work", "voice" ]
+      }, "text", "+31 20 535 4444" ] ] ]
+    }, {
+      "events" : [ {
+        "eventAction" : "last changed",
+        "eventDate" : "2013-07-29T12:52:45-04:00"
+      }, {
+        "eventAction" : "registration",
+        "eventDate" : "2013-07-26T03:36:35-04:00"
+      } ],
+      "handle" : "ABUSE3850-ARIN",
+      "links" : [ {
+        "href" : "https://rdap.arin.net/registry/entity/ABUSE3850-ARIN",
+        "rel" : "self",
+        "type" : "application/rdap+json",
+        "value" : "https://rdap.arin.net/registry/ip/23.111.102.10"
+      }, {
+        "href" : "https://whois.arin.net/rest/poc/ABUSE3850-ARIN",
+        "rel" : "alternate",
+        "type" : "application/xml",
+        "value" : "https://rdap.arin.net/registry/ip/23.111.102.10"
+      } ],
+      "objectClassName" : "entity",
+      "port43" : "whois.arin.net",
+      "remarks" : [ {
+        "description" : [ "For more information please visit: http://www.ripe.net/abuse" ],
+        "title" : "Registration Comments"
+      } ],
+      "roles" : [ "abuse" ],
+      "status" : [ "validated" ],
+      "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "adr", {
+        "label" : "Reseaux IP Europeens Network Coordination Centre - RIPE NCC\r\nP.O. Box 10096\nAmsterdam\n\n1016 EB\nNetherlands"
+      }, "text", [ "", "", "", "", "", "", "" ] ], [ "fn", { }, "text", "Abuse Contact" ], [ "org", { }, "text", "Abuse Contact" ], [ "kind", { }, "text", "group" ], [ "email", { }, "text", "abuse@ripe.net" ], [ "tel", {
+        "type" : [ "work", "voice" ]
+      }, "text", "+31205354444" ] ] ]
+    } ],
+    "events" : [ {
+      "eventAction" : "last changed",
+      "eventDate" : "2013-07-29T12:05:00-04:00"
+    } ],
+    "handle" : "RIPE",
+    "links" : [ {
+      "href" : "https://apps.db.ripe.net/db-web-ui/query",
+      "rel" : "self",
+      "type" : "text/html",
+      "value" : "https://rdap.arin.net/registry/ip/23.111.102.10"
+    }, {
+      "href" : "https://rdap.arin.net/registry/entity/RIPE",
+      "rel" : "self",
+      "type" : "application/rdap+json",
+      "value" : "https://rdap.arin.net/registry/ip/23.111.102.10"
+    }, {
+      "href" : "https://whois.arin.net/rest/org/RIPE",
+      "rel" : "alternate",
+      "type" : "application/xml",
+      "value" : "https://rdap.arin.net/registry/ip/23.111.102.10"
+    } ],
+    "objectClassName" : "entity",
+    "port43" : "whois.ripe.net",
+    "roles" : [ "registrant" ],
+    "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "RIPE Network Coordination Centre" ], [ "adr", {
+      "label" : "P.O. Box 10096\nAmsterdam\n\n1001EB\nNetherlands"
+    }, "text", [ "", "", "", "", "", "", "" ] ], [ "kind", { }, "text", "org" ] ] ]
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2025-02-10T14:50:42-05:00"
+  }, {
+    "eventAction" : "registration",
+    "eventDate" : "2017-06-06T10:42:16-04:00"
+  } ],
+  "handle" : "NET-23-111-96-0-1",
+  "ipVersion" : "v4",
+  "links" : [ {
+    "href" : "https://apps.db.ripe.net/db-web-ui/query",
+    "rel" : "self",
+    "type" : "text/html",
+    "value" : "https://rdap.arin.net/registry/ip/23.111.102.10"
+  }, {
+    "href" : "https://rdap.arin.net/registry/ip/23.111.96.0",
+    "rel" : "self",
+    "type" : "application/rdap+json",
+    "value" : "https://rdap.arin.net/registry/ip/23.111.102.10"
+  }, {
+    "href" : "https://whois.arin.net/rest/net/NET-23-111-96-0-1",
+    "rel" : "alternate",
+    "type" : "application/xml",
+    "value" : "https://rdap.arin.net/registry/ip/23.111.102.10"
+  } ],
+  "name" : "RIPE",
+  "notices" : [ {
+    "description" : [ "By using the ARIN RDAP/Whois service, you are agreeing to the RDAP/Whois Terms of Use" ],
+    "links" : [ {
+      "href" : "https://www.arin.net/resources/registry/whois/tou/",
+      "rel" : "terms-of-service",
+      "type" : "text/html",
+      "value" : "https://rdap.arin.net/registry/ip/23.111.102.10"
+    } ],
+    "title" : "Terms of Service"
+  }, {
+    "description" : [ "If you see inaccuracies in the results, please visit: " ],
+    "links" : [ {
+      "href" : "https://www.arin.net/resources/registry/whois/inaccuracy_reporting/",
+      "rel" : "inaccuracy-report",
+      "type" : "text/html",
+      "value" : "https://rdap.arin.net/registry/ip/23.111.102.10"
+    } ],
+    "title" : "Whois Inaccuracy Reporting"
+  }, {
+    "description" : [ "Copyright 1997-2026, American Registry for Internet Numbers, Ltd." ],
+    "title" : "Copyright Notice"
+  } ],
+  "objectClassName" : "ip network",
+  "parentHandle" : "NET-23-0-0-0-0",
+  "port43" : "whois.ripe.net",
+  "rdapConformance" : [ "nro_rdap_profile_0", "rdap_level_0", "cidr0", "arin_originas0" ],
+  "remarks" : [ {
+    "description" : [ "These addresses have been further assigned to users in the RIPE NCC region. Please note that the organization and point of contact details listed below are those of the RIPE NCC not the current address holder. ** You can find user contact information for the current address holder in the RIPE database at http://www.ripe.net/whois." ],
+    "title" : "Registration Comments"
+  } ],
+  "startAddress" : "23.111.96.0",
+  "status" : [ "active" ]
+}

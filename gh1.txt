@@ -1,0 +1,29 @@
+Live Score Api
+  URL: https://github.com/Live-scores-api
+  Live score api and football api provider. Live Score Api has 5 repositories available. Follow their code on GitHub.
+  Category: github
+
+python-scraper-web-scraping
+  URL: https://github.com/topics/python-scraper-web-scraping
+  API is a ready-made solution to scrape Instagram data without going through any legal or privacy issues. Scores24-Scrapers-and-Telegram-Bots
+  Category: github
+
+Add Clarvia AEO score badge to README — help agents ...
+  URL: https://github.com/microsoft/playwright-mcp/issues/1502
+  Clarvia scans and scores MCP servers for agent readiness. Playwright MCP currently scores 24/100 (Low) on the Clarvia AEO index. Adding a badge ...
+  Category: github
+
+NousResearch/nomos
+  URL: https://github.com/NousResearch/nomos
+  Scores submission out of a maximum of 7 points. harness achieves a score of 87/120 as graded by a human expert. which scores 24/120 under the same conditions.
+  Category: github
+
+Dataset of clickbait and non-clickbait titles
+  URL: https://gist.github.com/amitness/0a2ddbcb61c34eab04bad5a17fd8c86b
+  Dataset of clickbait and non-clickbait titles. Raw clickbait.csv We can't make this file beautiful and searchable because it's too large.
+  Category: github
+
+13700KF-VM.txt - Skyimg/blog2023
+  URL: https://github.com/Skyimg/blog2023/blob/main/10/13700KF-VM.txt
+  This repository was archived by the owner on Jan 2, 2024. Scores 24 线程测试(多核)得分: 67087 Scores … ip-api数据库6
+  Category: github

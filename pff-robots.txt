@@ -1,0 +1,8 @@
+Sitemap: https://www.pff.com/sitemap.xml
+User-agent: \*
+Disallow: /partners/
+Disallow: /api/partners/
+Disallow: /amember/
+Disallow: /login\*
+Disallow: /logout\*
+Disallow: /join

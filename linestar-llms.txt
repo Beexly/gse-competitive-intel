@@ -1,0 +1,28 @@
+# LineStar App
+
+## LineStar App
+
+- [Welcome to LineStar App](https://linestar.gitbook.io/linestar-app/welcome-to-linestar-app.md): Daily Fantasy Sports (DFS) & Props & Legalized Sports Gambling
+- [What we do](https://linestar.gitbook.io/linestar-app/overview/what-we-do.md): LineStar combines cutting-edge, patented technology with data-driven projections, real-time scoring, expert analysis, innovative tools to empower your daily fantasy sports and player prop betting.
+- [Our Features](https://linestar.gitbook.io/linestar-app/overview/our-features.md): Unleash Your Winning Streak with LineStar: Harness the Power of Advanced DFS Projections, 3rd Gen. Patented LineUp Optimizer, Real-Time Analytics, Live Scoring, Props AI, and Dynamic Live Chat!"
+- [Lineup Optimizer](https://linestar.gitbook.io/linestar-app/feature-guides/lineup-optimizer.md): Optimizing lineups is a critical part of DFS Success
+- [DFS Projections](https://linestar.gitbook.io/linestar-app/feature-guides/dfs-projections.md): Projections are a BIG part of Daily Fantasy Sports (DFS)
+- [Sorting / Filtering](https://linestar.gitbook.io/linestar-app/feature-guides/sorting-filtering.md): Utilize Advanced Sorting and Filtering to Pinpoint Players Meeting Your Strategic Game Theory for DFS Success.
+- [Late Swap + Swaptimize](https://linestar.gitbook.io/linestar-app/feature-guides/late-swap-+-swaptimize.md): Adapt to Game-Day Surprises: Rapidly Change Lineups with LineStar's Swaptimize and Late Swap Features.
+- [Stacking](https://linestar.gitbook.io/linestar-app/feature-guides/stacking.md): Player Stacking amplifies your potential gains in DFS by leveraging correlated performances among teammates, turning a good play into a great one.
+- [Projected Ownership](https://linestar.gitbook.io/linestar-app/feature-guides/projected-ownership.md): Player ownership in daily fantasy sports is important because it determines the uniqueness of a player's lineup compared to others, which can influence potential winnings.
+- [Props AI](https://linestar.gitbook.io/linestar-app/feature-guides/props-ai.md): Transform Your Player Prop Strategy with LineStar's Cutting-Edge Props AI Tool: Advanced Data and Projections at Your Fingertips.
+- [Live Chat](https://linestar.gitbook.io/linestar-app/feature-guides/live-chat.md): Live Chat on the LineStar App is a real-time communication feature that allows users to connect with fellow DFS players and experts.
+- [Daily Matchups](https://linestar.gitbook.io/linestar-app/feature-guides/daily-matchups.md): Unearth Hidden Gems and Dominate DFS Contests with LineStar's Exclusive Daily Matchups Tool
+- [Perfect Lineups](https://linestar.gitbook.io/linestar-app/feature-guides/perfect-lineups.md): Rewind the Game Clock: Explore Yesterday's Perfect Lineups on DraftKings and FanDuel for Insights on Future Wins!
+- [Usage Matrix (NBA)](https://linestar.gitbook.io/linestar-app/feature-guides/usage-matrix-nba.md): Reimagine Your Game - Simulate Court Scenarios with LineStar's Exclusive NBA Usage Matrix Tool
+- [Getting set up](https://linestar.gitbook.io/linestar-app/fundamentals/getting-set-up.md): Get started with LineStar by signing up, using the Lineup Optimizer, studying player data, and engaging with our DFS community.
+- [Frequently Asked Questions](https://linestar.gitbook.io/linestar-app/fundamentals/getting-set-up/frequently-asked-questions.md): FAQ About LineStar Platform
+- [For DFS Cash Players](https://linestar.gitbook.io/linestar-app/use-cases/for-dfs-cash-players.md): Boost your DFS cash game strategy with LineStar: Unleash data-driven insights for high-floor lineups and consistent performance.
+- [For DFS Tournament Players](https://linestar.gitbook.io/linestar-app/use-cases/for-dfs-tournament-players.md): Mastering the DFS Tournament Arena: Unleashing Potential with LineStar's Game-Changing Features!
+- [For Prop Players](https://linestar.gitbook.io/linestar-app/use-cases/for-prop-players.md): Unlock Your Betting Potential with Props AI: Transforming Sports Wagering Through Cutting-Edge Intelligence!
+- [DFS Contest Selection](https://linestar.gitbook.io/linestar-app/use-cases/dfs-contest-selection.md): Honing Your Winning Strategy: The Critical Role of Contest Selection in DFS Success!
+- [Advanced Concepts DFS Strategy](https://linestar.gitbook.io/linestar-app/use-cases/advanced-concepts-dfs-strategy.md): Unlock DFS Success with LineStar: Master Correlation, Leverage, and Range of Outcomes!
+- [LineStar Mobile Apps](https://linestar.gitbook.io/linestar-app/mobile-apps/linestar-mobile-apps.md): Experience seamless fantasy gaming with LineStar: your strategies synchronized instantly across mobile and desktop platforms!
+- [DFS Glossary](https://linestar.gitbook.io/linestar-app/glossary/dfs-glossary.md): Demystifying DFS Jargon: Easy-to-Understand DFS Definitions for the Everyday Player.
+- [About Subscriptions](https://linestar.gitbook.io/linestar-app/everything-else/about-subscriptions.md): LineStar offers PAID Subscriptions to LineStar Premium
