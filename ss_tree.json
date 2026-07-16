@@ -1,0 +1,1653 @@
+{
+  "sha": "2556befb759fc5d527f6ba13a3466a7734c24c62",
+  "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/2556befb759fc5d527f6ba13a3466a7734c24c62",
+  "tree": [
+    {
+      "path": ".changeset",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cb35c21e63074745b180ee475680e9c73d769dcc",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/cb35c21e63074745b180ee475680e9c73d769dcc"
+    },
+    {
+      "path": ".changeset/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5b6d8d6a67ad0dca8f20117fbfc72e076882d00",
+      "size": 510,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/e5b6d8d6a67ad0dca8f20117fbfc72e076882d00"
+    },
+    {
+      "path": ".changeset/config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5097b6a5fca7536b2ba696d7ee259473961c4908",
+      "size": 255,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/5097b6a5fca7536b2ba696d7ee259473961c4908"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2751c372431656149a2efff223a23a75944f772e",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/2751c372431656149a2efff223a23a75944f772e"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "98f6b970b15adbaec3e63ed66f2ca12bca0215b1",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/98f6b970b15adbaec3e63ed66f2ca12bca0215b1"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "959e4e5fd479e726d3f8ff4dd48adf39829d52b5",
+      "size": 1001,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/959e4e5fd479e726d3f8ff4dd48adf39829d52b5"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3cc7e03e29fcb4a6d1da8e813fa21065c4af0fb",
+      "size": 130,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/a3cc7e03e29fcb4a6d1da8e813fa21065c4af0fb"
+    },
+    {
+      "path": ".npmrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ded82e2f63f337df34ae03e82d7daabe1852845e",
+      "size": 26,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/ded82e2f63f337df34ae03e82d7daabe1852845e"
+    },
+    {
+      "path": ".vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f576683ca2c7d7e0cc6259e261e9758a1b33fe62",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/f576683ca2c7d7e0cc6259e261e9758a1b33fe62"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44a73ec3a98ec7820a3e9e77aebbad0625626393",
+      "size": 74,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/44a73ec3a98ec7820a3e9e77aebbad0625626393"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82d2c1407b00a2f3bbdf589c641d6dd08f9db5d2",
+      "size": 1073,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/82d2c1407b00a2f3bbdf589c641d6dd08f9db5d2"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b98b6e04ba69a07381294726f0974366f73c4263",
+      "size": 932,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/b98b6e04ba69a07381294726f0974366f73c4263"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2df353b4cf2e62ade5f52e1cd4c52f59e726f525",
+      "size": 606,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/2df353b4cf2e62ade5f52e1cd4c52f59e726f525"
+    },
+    {
+      "path": "packages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4ec3162ec8cbd854242053bc05400344f3d3caa5",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/4ec3162ec8cbd854242053bc05400344f3d3caa5"
+    },
+    {
+      "path": "packages/are-you-watching-this",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb04944d9f88b0ab0ec1cb56d65076e373e01a07",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/fb04944d9f88b0ab0ec1cb56d65076e373e01a07"
+    },
+    {
+      "path": "packages/are-you-watching-this/.eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67c75bdca50da0f64d7930bd2b9ec272beff8f1",
+      "size": 232,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d67c75bdca50da0f64d7930bd2b9ec272beff8f1"
+    },
+    {
+      "path": "packages/are-you-watching-this/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b168d2d6fb1df0b04118da4a23d30341fb57f93a",
+      "size": 1933,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/b168d2d6fb1df0b04118da4a23d30341fb57f93a"
+    },
+    {
+      "path": "packages/are-you-watching-this/jest.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050",
+      "size": 225,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050"
+    },
+    {
+      "path": "packages/are-you-watching-this/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49b885a2f5afbb277c2656fb58a8fc97dc8ac132",
+      "size": 1374,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/49b885a2f5afbb277c2656fb58a8fc97dc8ac132"
+    },
+    {
+      "path": "packages/are-you-watching-this/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e1b8c89c837487acf5f239e29e702cf3591b1cdd",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/e1b8c89c837487acf5f239e29e702cf3591b1cdd"
+    },
+    {
+      "path": "packages/are-you-watching-this/src/client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "966dfddb97ce3860b531284315be1f63545a5049",
+      "size": 5818,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/966dfddb97ce3860b531284315be1f63545a5049"
+    },
+    {
+      "path": "packages/are-you-watching-this/src/enums.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43948dc5b669688f7cff34729343ed9b288b4b6f",
+      "size": 10455,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/43948dc5b669688f7cff34729343ed9b288b4b6f"
+    },
+    {
+      "path": "packages/are-you-watching-this/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bab2b25c98c58652224844c8aed934309a6fe88",
+      "size": 75,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/5bab2b25c98c58652224844c8aed934309a6fe88"
+    },
+    {
+      "path": "packages/are-you-watching-this/src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa513d12c203beb020be7cfbcb11dd0e0cc1bcb9",
+      "size": 11547,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/aa513d12c203beb020be7cfbcb11dd0e0cc1bcb9"
+    },
+    {
+      "path": "packages/are-you-watching-this/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c0701fda767d431db8c4d05f7170e063b12c8c4c",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/c0701fda767d431db8c4d05f7170e063b12c8c4c"
+    },
+    {
+      "path": "packages/are-you-watching-this/test/all-live.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78c4f7aa9e0ffcedd49f389e41bfbf97e02d27b0",
+      "size": 6204,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/78c4f7aa9e0ffcedd49f389e41bfbf97e02d27b0"
+    },
+    {
+      "path": "packages/are-you-watching-this/test/responses.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cae4c9738af6ee3ecc7bc0a1ac21372a17cb3892",
+      "size": 600069,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/cae4c9738af6ee3ecc7bc0a1ac21372a17cb3892"
+    },
+    {
+      "path": "packages/are-you-watching-this/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08b0fb0a1541f321cd32eecb65102d0072621010",
+      "size": 407,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/08b0fb0a1541f321cd32eecb65102d0072621010"
+    },
+    {
+      "path": "packages/are-you-watching-this/tsup.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38bd0f0124cbaace2527b5dff6bb40c6857e5196",
+      "size": 651,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/38bd0f0124cbaace2527b5dff6bb40c6857e5196"
+    },
+    {
+      "path": "packages/core",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d7cf86e4853beaffe2a3efe8b98d9b9e4955b675",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/d7cf86e4853beaffe2a3efe8b98d9b9e4955b675"
+    },
+    {
+      "path": "packages/core/.eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67c75bdca50da0f64d7930bd2b9ec272beff8f1",
+      "size": 232,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d67c75bdca50da0f64d7930bd2b9ec272beff8f1"
+    },
+    {
+      "path": "packages/core/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fda389e5460de0ce4e6e67d4cfdb33c839d65da",
+      "size": 211,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/3fda389e5460de0ce4e6e67d4cfdb33c839d65da"
+    },
+    {
+      "path": "packages/core/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb7694d9bd7ae89f4c4ec700dfbb3e9712f3ac74",
+      "size": 778,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/eb7694d9bd7ae89f4c4ec700dfbb3e9712f3ac74"
+    },
+    {
+      "path": "packages/core/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "399e85aeb5bd8b552c5688793b7bb3f45f108454",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/399e85aeb5bd8b552c5688793b7bb3f45f108454"
+    },
+    {
+      "path": "packages/core/src/clients",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a8eec701cb8e2eec1e62d2763c98ffe8940748fb",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/a8eec701cb8e2eec1e62d2763c98ffe8940748fb"
+    },
+    {
+      "path": "packages/core/src/clients/base.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e044d3bec84679d4eccc6c0317f552a343d5265",
+      "size": 438,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/6e044d3bec84679d4eccc6c0317f552a343d5265"
+    },
+    {
+      "path": "packages/core/src/clients/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "515e63e10a919b02e60caf63b3083c7704cf0f62",
+      "size": 42,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/515e63e10a919b02e60caf63b3083c7704cf0f62"
+    },
+    {
+      "path": "packages/core/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd3ef79e9f6a922977ad393e88ab2ed732bf1ada",
+      "size": 52,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/dd3ef79e9f6a922977ad393e88ab2ed732bf1ada"
+    },
+    {
+      "path": "packages/core/src/types",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6dd344f312b9428311a4f102895c8435f47ed52b",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/6dd344f312b9428311a4f102895c8435f47ed52b"
+    },
+    {
+      "path": "packages/core/src/types/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b18cee653ab2c07e41ab6673fa77fa52afd67af0",
+      "size": 233,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/b18cee653ab2c07e41ab6673fa77fa52afd67af0"
+    },
+    {
+      "path": "packages/core/src/types/utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9078d81fc9acf020756f0ed7058b61b300572dcf",
+      "size": 2199,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/9078d81fc9acf020756f0ed7058b61b300572dcf"
+    },
+    {
+      "path": "packages/core/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef3941064fd15542a9c77691fc2124043f15c892",
+      "size": 287,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/ef3941064fd15542a9c77691fc2124043f15c892"
+    },
+    {
+      "path": "packages/core/tsup.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce0f226261d478c17df9f5abd53729ce1aad16b1",
+      "size": 321,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/ce0f226261d478c17df9f5abd53729ce1aad16b1"
+    },
+    {
+      "path": "packages/eslint-config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "682cb0432d9113bd3b7011d73779eb824d1a8183",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/682cb0432d9113bd3b7011d73779eb824d1a8183"
+    },
+    {
+      "path": "packages/eslint-config/library.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9c23990527f05b0ba2b5c7b3123ad59717cdc41",
+      "size": 1246,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/f9c23990527f05b0ba2b5c7b3123ad59717cdc41"
+    },
+    {
+      "path": "packages/eslint-config/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06cd1d2f2226ad6e07a4ef6eff4b201859aafceb",
+      "size": 564,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/06cd1d2f2226ad6e07a4ef6eff4b201859aafceb"
+    },
+    {
+      "path": "packages/fantasy-nerds",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7749a72d314d550943088a1164e12fb327d71e78",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/7749a72d314d550943088a1164e12fb327d71e78"
+    },
+    {
+      "path": "packages/fantasy-nerds/.eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67c75bdca50da0f64d7930bd2b9ec272beff8f1",
+      "size": 232,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d67c75bdca50da0f64d7930bd2b9ec272beff8f1"
+    },
+    {
+      "path": "packages/fantasy-nerds/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ae8778b0cccac2711f845a1e7baced1ac2d1ebc",
+      "size": 187,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/3ae8778b0cccac2711f845a1e7baced1ac2d1ebc"
+    },
+    {
+      "path": "packages/fantasy-nerds/jest.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050",
+      "size": 225,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050"
+    },
+    {
+      "path": "packages/fantasy-nerds/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc357839240d962284ee96eb01a18f721fba336e",
+      "size": 1204,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/cc357839240d962284ee96eb01a18f721fba336e"
+    },
+    {
+      "path": "packages/fantasy-nerds/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f47f2231341e45cd684f49ab8b947f965609e36",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/1f47f2231341e45cd684f49ab8b947f965609e36"
+    },
+    {
+      "path": "packages/fantasy-nerds/src/client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc07f39f979bf19811a4b3b464b316bf240c6c8c",
+      "size": 11743,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/dc07f39f979bf19811a4b3b464b316bf240c6c8c"
+    },
+    {
+      "path": "packages/fantasy-nerds/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b54bfc62bbc679d247f0b60e355f5f6ecea01d19",
+      "size": 50,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/b54bfc62bbc679d247f0b60e355f5f6ecea01d19"
+    },
+    {
+      "path": "packages/fantasy-nerds/src/responses",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0980cd9011a8398043ebde8581cff2a0048cbcfd",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/0980cd9011a8398043ebde8581cff2a0048cbcfd"
+    },
+    {
+      "path": "packages/fantasy-nerds/src/responses/common.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f6f42e604ae41d92e888de4fcc776d149d81378",
+      "size": 5605,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/2f6f42e604ae41d92e888de4fcc776d149d81378"
+    },
+    {
+      "path": "packages/fantasy-nerds/src/responses/mlb.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c45b2bd7d60230d8e9010830f02a3a62464aa915",
+      "size": 6201,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/c45b2bd7d60230d8e9010830f02a3a62464aa915"
+    },
+    {
+      "path": "packages/fantasy-nerds/src/responses/nba.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8791dc7e868430872e0f4c8b3a624c48b5b5079",
+      "size": 2434,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/e8791dc7e868430872e0f4c8b3a624c48b5b5079"
+    },
+    {
+      "path": "packages/fantasy-nerds/src/responses/nfl.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afcb1b6a183af797572ceb77464f0389db72246e",
+      "size": 16681,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/afcb1b6a183af797572ceb77464f0389db72246e"
+    },
+    {
+      "path": "packages/fantasy-nerds/src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfe222c7aafc8b534b65eb3816d4d79490f9b320",
+      "size": 3012,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/cfe222c7aafc8b534b65eb3816d4d79490f9b320"
+    },
+    {
+      "path": "packages/fantasy-nerds/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3d32be14075765d291bc28c9519f9ccebe9ec79c",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/3d32be14075765d291bc28c9519f9ccebe9ec79c"
+    },
+    {
+      "path": "packages/fantasy-nerds/test/all-live.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c4545ad72717c74477f834b8c01d8d521c84960",
+      "size": 2555,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/5c4545ad72717c74477f834b8c01d8d521c84960"
+    },
+    {
+      "path": "packages/fantasy-nerds/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08b0fb0a1541f321cd32eecb65102d0072621010",
+      "size": 407,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/08b0fb0a1541f321cd32eecb65102d0072621010"
+    },
+    {
+      "path": "packages/fantasy-nerds/tsup.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38bd0f0124cbaace2527b5dff6bb40c6857e5196",
+      "size": 651,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/38bd0f0124cbaace2527b5dff6bb40c6857e5196"
+    },
+    {
+      "path": "packages/fantasypros",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bfbea1229a05d5c6ee75812460d9725ccdd8c5b7",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/bfbea1229a05d5c6ee75812460d9725ccdd8c5b7"
+    },
+    {
+      "path": "packages/fantasypros/.eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67c75bdca50da0f64d7930bd2b9ec272beff8f1",
+      "size": 232,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d67c75bdca50da0f64d7930bd2b9ec272beff8f1"
+    },
+    {
+      "path": "packages/fantasypros/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef205d79235d718ad5ed57ac439df45d783138ef",
+      "size": 296,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/ef205d79235d718ad5ed57ac439df45d783138ef"
+    },
+    {
+      "path": "packages/fantasypros/jest.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050",
+      "size": 225,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050"
+    },
+    {
+      "path": "packages/fantasypros/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06b11a20a45efdcdab193284aa5eb3ace244432c",
+      "size": 1208,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/06b11a20a45efdcdab193284aa5eb3ace244432c"
+    },
+    {
+      "path": "packages/fantasypros/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5d09fcc8be17ae45527441ec83da3b504d202b6",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/d5d09fcc8be17ae45527441ec83da3b504d202b6"
+    },
+    {
+      "path": "packages/fantasypros/src/client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e45a0ce2946a5aa652615cd70f2c6efc8ebddf3",
+      "size": 3402,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/4e45a0ce2946a5aa652615cd70f2c6efc8ebddf3"
+    },
+    {
+      "path": "packages/fantasypros/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b54bfc62bbc679d247f0b60e355f5f6ecea01d19",
+      "size": 50,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/b54bfc62bbc679d247f0b60e355f5f6ecea01d19"
+    },
+    {
+      "path": "packages/fantasypros/src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e893c35bc069ef697c64a5406cd331759984204",
+      "size": 5672,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/2e893c35bc069ef697c64a5406cd331759984204"
+    },
+    {
+      "path": "packages/fantasypros/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "694e12aa860584f373bd80f07fcf4f3dcc8b14d7",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/694e12aa860584f373bd80f07fcf4f3dcc8b14d7"
+    },
+    {
+      "path": "packages/fantasypros/test/all-live.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0701b97ff2b94322126b60ce973fdd3c34a9657b",
+      "size": 2442,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/0701b97ff2b94322126b60ce973fdd3c34a9657b"
+    },
+    {
+      "path": "packages/fantasypros/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08b0fb0a1541f321cd32eecb65102d0072621010",
+      "size": 407,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/08b0fb0a1541f321cd32eecb65102d0072621010"
+    },
+    {
+      "path": "packages/fantasypros/tsup.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38bd0f0124cbaace2527b5dff6bb40c6857e5196",
+      "size": 651,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/38bd0f0124cbaace2527b5dff6bb40c6857e5196"
+    },
+    {
+      "path": "packages/ids",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4db56e309940d0ff7d805ab1dd33b08bb4bb2070",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/4db56e309940d0ff7d805ab1dd33b08bb4bb2070"
+    },
+    {
+      "path": "packages/ids/.eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67c75bdca50da0f64d7930bd2b9ec272beff8f1",
+      "size": 232,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d67c75bdca50da0f64d7930bd2b9ec272beff8f1"
+    },
+    {
+      "path": "packages/ids/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f6576e0c1a173c4b4f1b14f1c2f1a44195a59d7",
+      "size": 222,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/0f6576e0c1a173c4b4f1b14f1c2f1a44195a59d7"
+    },
+    {
+      "path": "packages/ids/jest.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050",
+      "size": 225,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050"
+    },
+    {
+      "path": "packages/ids/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be8b0fe10592a43cdc9ffe77a0f1c1661d0151ba",
+      "size": 1308,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/be8b0fe10592a43cdc9ffe77a0f1c1661d0151ba"
+    },
+    {
+      "path": "packages/ids/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "baabecebf526f574255a8d5f0133e104753391e8",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/baabecebf526f574255a8d5f0133e104753391e8"
+    },
+    {
+      "path": "packages/ids/src/client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a23d13a4b26a85cd75396a7c7fa9e63d0c9cf9a",
+      "size": 658,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/3a23d13a4b26a85cd75396a7c7fa9e63d0c9cf9a"
+    },
+    {
+      "path": "packages/ids/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abc18b7624e4f8aca86960b2148d0d934fd3df39",
+      "size": 69,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/abc18b7624e4f8aca86960b2148d0d934fd3df39"
+    },
+    {
+      "path": "packages/ids/src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73ab5985a2cf9c6b8cd8d4b607fd237a136ce5ae",
+      "size": 162,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/73ab5985a2cf9c6b8cd8d4b607fd237a136ce5ae"
+    },
+    {
+      "path": "packages/ids/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c42ad917a4a1128863672f8ca89921af7401b318",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/c42ad917a4a1128863672f8ca89921af7401b318"
+    },
+    {
+      "path": "packages/ids/test/all-live.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c19f3e01fe26a99dce523a4fecc7ff1c46b9e190",
+      "size": 9143,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/c19f3e01fe26a99dce523a4fecc7ff1c46b9e190"
+    },
+    {
+      "path": "packages/ids/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08b0fb0a1541f321cd32eecb65102d0072621010",
+      "size": 407,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/08b0fb0a1541f321cd32eecb65102d0072621010"
+    },
+    {
+      "path": "packages/ids/tsup.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38bd0f0124cbaace2527b5dff6bb40c6857e5196",
+      "size": 651,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/38bd0f0124cbaace2527b5dff6bb40c6857e5196"
+    },
+    {
+      "path": "packages/jest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "66c4dc1b40273ff83ab616b45a970109500340f9",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/66c4dc1b40273ff83ab616b45a970109500340f9"
+    },
+    {
+      "path": "packages/jest/jest-preset.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09e198bf326e9525e86ffebe7c48af1aabb1c9b8",
+      "size": 370,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/09e198bf326e9525e86ffebe7c48af1aabb1c9b8"
+    },
+    {
+      "path": "packages/jest/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90c30a1ea6255c2e2ac64c084d8a7d2d524c64f5",
+      "size": 133,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/90c30a1ea6255c2e2ac64c084d8a7d2d524c64f5"
+    },
+    {
+      "path": "packages/keeptradecut",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b4ce93726362e19fa135767051932bf8dd9031e9",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/b4ce93726362e19fa135767051932bf8dd9031e9"
+    },
+    {
+      "path": "packages/keeptradecut/.eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67c75bdca50da0f64d7930bd2b9ec272beff8f1",
+      "size": 232,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d67c75bdca50da0f64d7930bd2b9ec272beff8f1"
+    },
+    {
+      "path": "packages/keeptradecut/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "630973eaf8defbb7f0012b653302b6d2fe10bdee",
+      "size": 135,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/630973eaf8defbb7f0012b653302b6d2fe10bdee"
+    },
+    {
+      "path": "packages/keeptradecut/jest.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050",
+      "size": 225,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050"
+    },
+    {
+      "path": "packages/keeptradecut/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eef5c628f7aeaa1860dbb0572afefa87b7d2677a",
+      "size": 1174,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/eef5c628f7aeaa1860dbb0572afefa87b7d2677a"
+    },
+    {
+      "path": "packages/keeptradecut/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e1d7336f541c6f22cb3f5ea804518d1d53fbbc23",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/e1d7336f541c6f22cb3f5ea804518d1d53fbbc23"
+    },
+    {
+      "path": "packages/keeptradecut/src/client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a15afa56b274623aae381587664ed468b39bca7",
+      "size": 3244,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/1a15afa56b274623aae381587664ed468b39bca7"
+    },
+    {
+      "path": "packages/keeptradecut/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b54bfc62bbc679d247f0b60e355f5f6ecea01d19",
+      "size": 50,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/b54bfc62bbc679d247f0b60e355f5f6ecea01d19"
+    },
+    {
+      "path": "packages/keeptradecut/src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e8bb00f83ec14a3927e581aa08af39a8d81c9e0",
+      "size": 3856,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/9e8bb00f83ec14a3927e581aa08af39a8d81c9e0"
+    },
+    {
+      "path": "packages/keeptradecut/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c9cda862b28f0906dd2910747de8590c21ea4c03",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/c9cda862b28f0906dd2910747de8590c21ea4c03"
+    },
+    {
+      "path": "packages/keeptradecut/test/all-live.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d48c2a02ae9bfb1c5ed15206cbf7f3753852727c",
+      "size": 1291,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d48c2a02ae9bfb1c5ed15206cbf7f3753852727c"
+    },
+    {
+      "path": "packages/keeptradecut/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08b0fb0a1541f321cd32eecb65102d0072621010",
+      "size": 407,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/08b0fb0a1541f321cd32eecb65102d0072621010"
+    },
+    {
+      "path": "packages/keeptradecut/tsup.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38bd0f0124cbaace2527b5dff6bb40c6857e5196",
+      "size": 651,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/38bd0f0124cbaace2527b5dff6bb40c6857e5196"
+    },
+    {
+      "path": "packages/odds-blaze",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8bde4a1f39515af9cded79e3373168f6a340000d",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/8bde4a1f39515af9cded79e3373168f6a340000d"
+    },
+    {
+      "path": "packages/odds-blaze/.eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67c75bdca50da0f64d7930bd2b9ec272beff8f1",
+      "size": 232,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d67c75bdca50da0f64d7930bd2b9ec272beff8f1"
+    },
+    {
+      "path": "packages/odds-blaze/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ad8d4876bfdc80fd2e3390f628a12101faca71f",
+      "size": 605,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/6ad8d4876bfdc80fd2e3390f628a12101faca71f"
+    },
+    {
+      "path": "packages/odds-blaze/jest.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050",
+      "size": 225,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050"
+    },
+    {
+      "path": "packages/odds-blaze/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1197d0a812b2c58e1b382ad2878e9f098b5339a7",
+      "size": 1187,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/1197d0a812b2c58e1b382ad2878e9f098b5339a7"
+    },
+    {
+      "path": "packages/odds-blaze/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b314b8648bd49b54b24cd0ca495f933f44821a8f",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/b314b8648bd49b54b24cd0ca495f933f44821a8f"
+    },
+    {
+      "path": "packages/odds-blaze/src/client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9999048a34d80ef582e6da2be95c103592b292e",
+      "size": 6015,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/a9999048a34d80ef582e6da2be95c103592b292e"
+    },
+    {
+      "path": "packages/odds-blaze/src/enums.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f82c7109c538c8e7d0bd8a4d32f9e1b14bb7849",
+      "size": 2611,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/6f82c7109c538c8e7d0bd8a4d32f9e1b14bb7849"
+    },
+    {
+      "path": "packages/odds-blaze/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99b59d47adfaf1c13107fbdcc1c852cb68b1dfde",
+      "size": 75,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/99b59d47adfaf1c13107fbdcc1c852cb68b1dfde"
+    },
+    {
+      "path": "packages/odds-blaze/src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91f39ba8f7d5363d976766473536896ef96044e7",
+      "size": 4177,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/91f39ba8f7d5363d976766473536896ef96044e7"
+    },
+    {
+      "path": "packages/odds-blaze/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8df5606dd6b24217e286bb1f1e986804c58d26bf",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/8df5606dd6b24217e286bb1f1e986804c58d26bf"
+    },
+    {
+      "path": "packages/odds-blaze/test/all-live.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd815d720bf9acfc91b1eeb00d07eb7658819a82",
+      "size": 3001,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/fd815d720bf9acfc91b1eeb00d07eb7658819a82"
+    },
+    {
+      "path": "packages/odds-blaze/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08b0fb0a1541f321cd32eecb65102d0072621010",
+      "size": 407,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/08b0fb0a1541f321cd32eecb65102d0072621010"
+    },
+    {
+      "path": "packages/odds-blaze/tsup.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38bd0f0124cbaace2527b5dff6bb40c6857e5196",
+      "size": 651,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/38bd0f0124cbaace2527b5dff6bb40c6857e5196"
+    },
+    {
+      "path": "packages/optic-odds",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d285372f0fdcf0cb1a6de183db9f4db4deaf6eeb",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/d285372f0fdcf0cb1a6de183db9f4db4deaf6eeb"
+    },
+    {
+      "path": "packages/optic-odds/.eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67c75bdca50da0f64d7930bd2b9ec272beff8f1",
+      "size": 232,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d67c75bdca50da0f64d7930bd2b9ec272beff8f1"
+    },
+    {
+      "path": "packages/optic-odds/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fabac29cb0b5c51fcd9eb408d607605c202b917",
+      "size": 2054,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/3fabac29cb0b5c51fcd9eb408d607605c202b917"
+    },
+    {
+      "path": "packages/optic-odds/jest.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050",
+      "size": 225,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050"
+    },
+    {
+      "path": "packages/optic-odds/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efe8f7696bb83a41813a03bf8f43d3369ee3ae21",
+      "size": 1187,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/efe8f7696bb83a41813a03bf8f43d3369ee3ae21"
+    },
+    {
+      "path": "packages/optic-odds/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "08dbe54fe8a408731ee47b20414457bd92a6b27d",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/08dbe54fe8a408731ee47b20414457bd92a6b27d"
+    },
+    {
+      "path": "packages/optic-odds/src/client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "593ea2fc82de80d6b36a3d3c062e24d90996d4a4",
+      "size": 6356,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/593ea2fc82de80d6b36a3d3c062e24d90996d4a4"
+    },
+    {
+      "path": "packages/optic-odds/src/enums.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6486abb4f4163a3ca2c584b92fe44c5ac0384061",
+      "size": 9546,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/6486abb4f4163a3ca2c584b92fe44c5ac0384061"
+    },
+    {
+      "path": "packages/optic-odds/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99b59d47adfaf1c13107fbdcc1c852cb68b1dfde",
+      "size": 75,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/99b59d47adfaf1c13107fbdcc1c852cb68b1dfde"
+    },
+    {
+      "path": "packages/optic-odds/src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "079986f5e372416d671ebb50982f431064e1e4f0",
+      "size": 8074,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/079986f5e372416d671ebb50982f431064e1e4f0"
+    },
+    {
+      "path": "packages/optic-odds/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9a749ec83c4105396b06c5d4364533f53b671cc3",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/9a749ec83c4105396b06c5d4364533f53b671cc3"
+    },
+    {
+      "path": "packages/optic-odds/test/all-live.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8602de7e4dc8a82c5832e84eb0de205f1cfa541",
+      "size": 6972,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/a8602de7e4dc8a82c5832e84eb0de205f1cfa541"
+    },
+    {
+      "path": "packages/optic-odds/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08b0fb0a1541f321cd32eecb65102d0072621010",
+      "size": 407,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/08b0fb0a1541f321cd32eecb65102d0072621010"
+    },
+    {
+      "path": "packages/optic-odds/tsup.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38bd0f0124cbaace2527b5dff6bb40c6857e5196",
+      "size": 651,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/38bd0f0124cbaace2527b5dff6bb40c6857e5196"
+    },
+    {
+      "path": "packages/rolling-insights",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff1ac3790104bcf84b7b1646b29cc649cd11c32e",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/ff1ac3790104bcf84b7b1646b29cc649cd11c32e"
+    },
+    {
+      "path": "packages/rolling-insights/.eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67c75bdca50da0f64d7930bd2b9ec272beff8f1",
+      "size": 232,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d67c75bdca50da0f64d7930bd2b9ec272beff8f1"
+    },
+    {
+      "path": "packages/rolling-insights/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c1bdf69801e38a03c290272a6c805e877fe421a",
+      "size": 225,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/9c1bdf69801e38a03c290272a6c805e877fe421a"
+    },
+    {
+      "path": "packages/rolling-insights/jest.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050",
+      "size": 225,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050"
+    },
+    {
+      "path": "packages/rolling-insights/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9b4ab4718824501700ef5f0c85f541767444a0e",
+      "size": 1259,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/a9b4ab4718824501700ef5f0c85f541767444a0e"
+    },
+    {
+      "path": "packages/rolling-insights/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1639e229d08555362bca8d62f4253db36339230",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/f1639e229d08555362bca8d62f4253db36339230"
+    },
+    {
+      "path": "packages/rolling-insights/src/client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3648671fa81ba7e406f04dddba0c17f99ac91f15",
+      "size": 11189,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/3648671fa81ba7e406f04dddba0c17f99ac91f15"
+    },
+    {
+      "path": "packages/rolling-insights/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a5f7e9b807223124c562d569b7e3e6153f7f0e8",
+      "size": 898,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/8a5f7e9b807223124c562d569b7e3e6153f7f0e8"
+    },
+    {
+      "path": "packages/rolling-insights/src/types",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "146dd3176b0a39244ace6b0fac4a98ceb9e4b7b1",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/146dd3176b0a39244ace6b0fac4a98ceb9e4b7b1"
+    },
+    {
+      "path": "packages/rolling-insights/src/types/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db2fb8a60d5331b09cbf3d8679ff489f3644d067",
+      "size": 2892,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/db2fb8a60d5331b09cbf3d8679ff489f3644d067"
+    },
+    {
+      "path": "packages/rolling-insights/src/types/mlb.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e343b8eb5813bc0349a2fa44c956ec44dd0c87c7",
+      "size": 3823,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/e343b8eb5813bc0349a2fa44c956ec44dd0c87c7"
+    },
+    {
+      "path": "packages/rolling-insights/src/types/nba.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a597041a9e2c52f9582fc363939765b61ab7c12d",
+      "size": 2921,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/a597041a9e2c52f9582fc363939765b61ab7c12d"
+    },
+    {
+      "path": "packages/rolling-insights/src/types/ncaaf.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab7c39a2a3c240129281bdc492370226191c2886",
+      "size": 1106,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/ab7c39a2a3c240129281bdc492370226191c2886"
+    },
+    {
+      "path": "packages/rolling-insights/src/types/ncaam.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54db747d2b1e356e3c49865319ca273b3ea0b179",
+      "size": 1106,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/54db747d2b1e356e3c49865319ca273b3ea0b179"
+    },
+    {
+      "path": "packages/rolling-insights/src/types/nfl.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb4a078197bc50336fa158daaa658d88a158758a",
+      "size": 12076,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/bb4a078197bc50336fa158daaa658d88a158758a"
+    },
+    {
+      "path": "packages/rolling-insights/src/types/nhl.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aae95ed9d32f4fedb42d1e37a4adcda6806d543d",
+      "size": 2565,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/aae95ed9d32f4fedb42d1e37a4adcda6806d543d"
+    },
+    {
+      "path": "packages/rolling-insights/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5425bea7b4f2d0a7840e794fcdebf0c3032eab7a",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/5425bea7b4f2d0a7840e794fcdebf0c3032eab7a"
+    },
+    {
+      "path": "packages/rolling-insights/test/all-live.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1f8f705ca23557bd5f9d2381ce898997b6d8b49",
+      "size": 2133,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d1f8f705ca23557bd5f9d2381ce898997b6d8b49"
+    },
+    {
+      "path": "packages/rolling-insights/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08b0fb0a1541f321cd32eecb65102d0072621010",
+      "size": 407,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/08b0fb0a1541f321cd32eecb65102d0072621010"
+    },
+    {
+      "path": "packages/rolling-insights/tsup.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38bd0f0124cbaace2527b5dff6bb40c6857e5196",
+      "size": 651,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/38bd0f0124cbaace2527b5dff6bb40c6857e5196"
+    },
+    {
+      "path": "packages/rotowire",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "57cde83c3cb10a81df2fba4b166c151a76594e80",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/57cde83c3cb10a81df2fba4b166c151a76594e80"
+    },
+    {
+      "path": "packages/rotowire/.eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67c75bdca50da0f64d7930bd2b9ec272beff8f1",
+      "size": 232,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d67c75bdca50da0f64d7930bd2b9ec272beff8f1"
+    },
+    {
+      "path": "packages/rotowire/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f22b20448b0be00887089e740de5ed85c6d15095",
+      "size": 2361,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/f22b20448b0be00887089e740de5ed85c6d15095"
+    },
+    {
+      "path": "packages/rotowire/jest.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050",
+      "size": 225,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050"
+    },
+    {
+      "path": "packages/rotowire/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee9e011c18b19e14d7d597b9d2bf4604d989bfbd",
+      "size": 1223,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/ee9e011c18b19e14d7d597b9d2bf4604d989bfbd"
+    },
+    {
+      "path": "packages/rotowire/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ef5e7b691be39ea8a66a1a39aac1e579f8641819",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/ef5e7b691be39ea8a66a1a39aac1e579f8641819"
+    },
+    {
+      "path": "packages/rotowire/src/client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb346ca60c405922fd2ad03bbfa6dd73ab6a87db",
+      "size": 4125,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/bb346ca60c405922fd2ad03bbfa6dd73ab6a87db"
+    },
+    {
+      "path": "packages/rotowire/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cceeb68b29125569b444f16e634bcea5a95cd6ee",
+      "size": 76,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/cceeb68b29125569b444f16e634bcea5a95cd6ee"
+    },
+    {
+      "path": "packages/rotowire/src/lineups",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "11b6fdf17a0088b62ed0769b2dcf6dd4ce3026f6",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/11b6fdf17a0088b62ed0769b2dcf6dd4ce3026f6"
+    },
+    {
+      "path": "packages/rotowire/src/lineups/baseball.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86490e227a49c68c41fdc1960c2229f1e3644b6a",
+      "size": 1152,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/86490e227a49c68c41fdc1960c2229f1e3644b6a"
+    },
+    {
+      "path": "packages/rotowire/src/lineups/basketball.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d0738227f9198aa8917a6edddd35bca51bbb3fb",
+      "size": 1385,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/2d0738227f9198aa8917a6edddd35bca51bbb3fb"
+    },
+    {
+      "path": "packages/rotowire/src/lineups/common.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bbb296ca4c8e1ba9a5bfa6d5b958bb1120a3656",
+      "size": 165,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/6bbb296ca4c8e1ba9a5bfa6d5b958bb1120a3656"
+    },
+    {
+      "path": "packages/rotowire/src/lineups/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a47494ef9ce680ddd96324c7e27fb0cb5b2d9ab4",
+      "size": 109,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/a47494ef9ce680ddd96324c7e27fb0cb5b2d9ab4"
+    },
+    {
+      "path": "packages/rotowire/src/lineups/soccer.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd44798fc1463a97e6afa8048d25da2d1e438da4",
+      "size": 1328,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/cd44798fc1463a97e6afa8048d25da2d1e438da4"
+    },
+    {
+      "path": "packages/rotowire/src/news",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "916bc3ccf82268dbbf3e2223668eb23126fbbb74",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/916bc3ccf82268dbbf3e2223668eb23126fbbb74"
+    },
+    {
+      "path": "packages/rotowire/src/news/baseball.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5171eb2da3d589b18acbed8d6cbc6429ebd114a",
+      "size": 8551,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/b5171eb2da3d589b18acbed8d6cbc6429ebd114a"
+    },
+    {
+      "path": "packages/rotowire/src/news/basketball.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27cbedafd0f046541533b95babf2b1975aaa5085",
+      "size": 7884,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/27cbedafd0f046541533b95babf2b1975aaa5085"
+    },
+    {
+      "path": "packages/rotowire/src/news/common.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef30cb819fd1c88545b4e85c9de21ccbd3866b1c",
+      "size": 1137,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/ef30cb819fd1c88545b4e85c9de21ccbd3866b1c"
+    },
+    {
+      "path": "packages/rotowire/src/news/football.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05f5a96370987d511731bfbaee8089f1a386a389",
+      "size": 7424,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/05f5a96370987d511731bfbaee8089f1a386a389"
+    },
+    {
+      "path": "packages/rotowire/src/news/hockey.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfe1152a5d796a8e4004ab84349cee85695c8965",
+      "size": 4668,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/bfe1152a5d796a8e4004ab84349cee85695c8965"
+    },
+    {
+      "path": "packages/rotowire/src/news/soccer.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "861b38b29c0b158178c5d906bf51a7edfcd39845",
+      "size": 4101,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/861b38b29c0b158178c5d906bf51a7edfcd39845"
+    },
+    {
+      "path": "packages/rotowire/src/players",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "83a2bf8cc0d36f1692759b4cb372200afb352e86",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/83a2bf8cc0d36f1692759b4cb372200afb352e86"
+    },
+    {
+      "path": "packages/rotowire/src/players/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43e472db79294d7c5dccca9c13180e694fc4a8ef",
+      "size": 654,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/43e472db79294d7c5dccca9c13180e694fc4a8ef"
+    },
+    {
+      "path": "packages/rotowire/src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33c1a338eb3d9411047a86c446b59ae00021f834",
+      "size": 2574,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/33c1a338eb3d9411047a86c446b59ae00021f834"
+    },
+    {
+      "path": "packages/rotowire/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5faa2c98e940bdf3d8d9eb659d335385cb8f23c9",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/5faa2c98e940bdf3d8d9eb659d335385cb8f23c9"
+    },
+    {
+      "path": "packages/rotowire/test/all-live.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb2d1abb2ac8826c7409f132b6423bd384afe9d9",
+      "size": 2476,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/cb2d1abb2ac8826c7409f132b6423bd384afe9d9"
+    },
+    {
+      "path": "packages/rotowire/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08b0fb0a1541f321cd32eecb65102d0072621010",
+      "size": 407,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/08b0fb0a1541f321cd32eecb65102d0072621010"
+    },
+    {
+      "path": "packages/rotowire/tsup.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38bd0f0124cbaace2527b5dff6bb40c6857e5196",
+      "size": 651,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/38bd0f0124cbaace2527b5dff6bb40c6857e5196"
+    },
+    {
+      "path": "packages/sleeper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "883e55010be1675aedd06807845337b933e13e2a",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/883e55010be1675aedd06807845337b933e13e2a"
+    },
+    {
+      "path": "packages/sleeper/.eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67c75bdca50da0f64d7930bd2b9ec272beff8f1",
+      "size": 232,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d67c75bdca50da0f64d7930bd2b9ec272beff8f1"
+    },
+    {
+      "path": "packages/sleeper/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8263f30a5172a3d03d9559b68bb74f534b8c9e70",
+      "size": 190,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/8263f30a5172a3d03d9559b68bb74f534b8c9e70"
+    },
+    {
+      "path": "packages/sleeper/jest.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050",
+      "size": 225,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/f3d09ec9d14eaed2d22e8ecc1450ac42c8e56050"
+    },
+    {
+      "path": "packages/sleeper/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65633d5e25ef8434e2651da8c695c14c8902d86c",
+      "size": 1577,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/65633d5e25ef8434e2651da8c695c14c8902d86c"
+    },
+    {
+      "path": "packages/sleeper/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b39a34848336e368fcb4cfb5030ba11c6baf6c64",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/b39a34848336e368fcb4cfb5030ba11c6baf6c64"
+    },
+    {
+      "path": "packages/sleeper/src/client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b29cc10c2740149dfc56d092f00a16310456ea31",
+      "size": 9141,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/b29cc10c2740149dfc56d092f00a16310456ea31"
+    },
+    {
+      "path": "packages/sleeper/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bb2469183df6809342b0f8c84ef0ce61dd0d273",
+      "size": 144,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/9bb2469183df6809342b0f8c84ef0ce61dd0d273"
+    },
+    {
+      "path": "packages/sleeper/src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3640ce7fc52da45785a2be590d9edf8ee23e1f6",
+      "size": 9723,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/b3640ce7fc52da45785a2be590d9edf8ee23e1f6"
+    },
+    {
+      "path": "packages/sleeper/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b5f86812585e684969477e8d34ccaaff41a9b3b",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/0b5f86812585e684969477e8d34ccaaff41a9b3b"
+    },
+    {
+      "path": "packages/sleeper/test/all-live.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b04c1b8e5b63a2cf74d0d6f8818dfafbe570a4e",
+      "size": 852,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/3b04c1b8e5b63a2cf74d0d6f8818dfafbe570a4e"
+    },
+    {
+      "path": "packages/sleeper/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08b0fb0a1541f321cd32eecb65102d0072621010",
+      "size": 407,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/08b0fb0a1541f321cd32eecb65102d0072621010"
+    },
+    {
+      "path": "packages/sleeper/tsup.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c09e65d3e109749c278f5c7785f46e5eb3612401",
+      "size": 762,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/c09e65d3e109749c278f5c7785f46e5eb3612401"
+    },
+    {
+      "path": "packages/testing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c0e80b38a537fc5ad379a14cf0a542639ab8ad56",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/c0e80b38a537fc5ad379a14cf0a542639ab8ad56"
+    },
+    {
+      "path": "packages/testing/.eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67c75bdca50da0f64d7930bd2b9ec272beff8f1",
+      "size": 232,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/d67c75bdca50da0f64d7930bd2b9ec272beff8f1"
+    },
+    {
+      "path": "packages/testing/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fda389e5460de0ce4e6e67d4cfdb33c839d65da",
+      "size": 211,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/3fda389e5460de0ce4e6e67d4cfdb33c839d65da"
+    },
+    {
+      "path": "packages/testing/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd554aab890cdd4bbcfcc7c9ba70a782fbb4ab80",
+      "size": 831,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/fd554aab890cdd4bbcfcc7c9ba70a782fbb4ab80"
+    },
+    {
+      "path": "packages/testing/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a7ab6cf3f340b75ed4b7b4777a253997e09e466",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/7a7ab6cf3f340b75ed4b7b4777a253997e09e466"
+    },
+    {
+      "path": "packages/testing/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbf2bc9f8b327a5bf81462b879e8945b5ef059d4",
+      "size": 26,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/dbf2bc9f8b327a5bf81462b879e8945b5ef059d4"
+    },
+    {
+      "path": "packages/testing/src/testing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4f284a99f3a0d5f791e6b7735ad9b5fb8362fa19",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/4f284a99f3a0d5f791e6b7735ad9b5fb8362fa19"
+    },
+    {
+      "path": "packages/testing/src/testing/api-tests.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08a09f30f09feebe4c6ed64f27ac03fa059cdca3",
+      "size": 3434,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/08a09f30f09feebe4c6ed64f27ac03fa059cdca3"
+    },
+    {
+      "path": "packages/testing/src/testing/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f860757f37b6f38af16efcceea78aebfcaeb49e0",
+      "size": 31,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/f860757f37b6f38af16efcceea78aebfcaeb49e0"
+    },
+    {
+      "path": "packages/testing/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c6dbc935dd21bd2be32fad2283400d09af3f7d5",
+      "size": 301,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/8c6dbc935dd21bd2be32fad2283400d09af3f7d5"
+    },
+    {
+      "path": "packages/testing/tsup.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce0f226261d478c17df9f5abd53729ce1aad16b1",
+      "size": 321,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/ce0f226261d478c17df9f5abd53729ce1aad16b1"
+    },
+    {
+      "path": "packages/tsconfig",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3555c400bc4c28f75d4bf14ee1242ca460d158f2",
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/trees/3555c400bc4c28f75d4bf14ee1242ca460d158f2"
+    },
+    {
+      "path": "packages/tsconfig/base.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81d01d04eb7c0ac0318a92434cd901cf3f2847dd",
+      "size": 864,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/81d01d04eb7c0ac0318a92434cd901cf3f2847dd"
+    },
+    {
+      "path": "packages/tsconfig/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "951d5dbf498ffcdf434be6787033e1ea8e8bf782",
+      "size": 147,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/951d5dbf498ffcdf434be6787033e1ea8e8bf782"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06478830eadf8eef0b71c62e0b94a7d2bb0dad2a",
+      "size": 269612,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/06478830eadf8eef0b71c62e0b94a7d2bb0dad2a"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dee51e928d8abc3063b11689792bba48750eb708",
+      "size": 27,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/dee51e928d8abc3063b11689792bba48750eb708"
+    },
+    {
+      "path": "turbo.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11a217273c68d737104d36f3c2dd93d1886ed23c",
+      "size": 429,
+      "url": "https://api.github.com/repos/sharpselections/sports-sdk-js/git/blobs/11a217273c68d737104d36f3c2dd93d1886ed23c"
+    }
+  ],
+  "truncated": false
+}

@@ -1,0 +1,32 @@
+Looking for SofaScore Player Ratings Dataset for Football ...
+  URL: https://www.reddit.com/r/sportsanalytics/comments/1tj1tqa/looking_for_sofascore_player_ratings_dataset_for/
+  From what I know, ratings are among the hardest data points to copy-paste, so scraping them is probably not straightforward either. There is ...
+
+How to Scrape SofaScore for Free Football Data (Updated ...
+  URL: https://www.youtube.com/watch?v=lvJqz2EZHY8
+  How to Scrape SofaScore for Free Football Data (Updated Method) How to scrape Understat for football data in Python with requests
+
+Scrapping Player stats from sofascore : r/webscraping
+  URL: https://www.reddit.com/r/webscraping/comments/18uwf27/scrapping_player_stats_from_sofascore/
+  I' trying to extract players stats from sofascore however everytime i switch to inspect page the complete page change from this (pic 1.)
+
+How to Scrape SofaScore for Football Data
+  URL: https://www.youtube.com/watch?v=EnZRTDuYSes
+  How to Scrape SofaScore for Free Football Data (Updated Method) Scrape LIVE scores or Selenium NEEDED!
+
+Web Scraping Fotmob match stats with time stamps
+  URL: https://www.reddit.com/r/sportsanalytics/comments/1uh3svw/web_scraping_fotmob_match_stats_with_time_stamps/
+  Anyone knows if is it possible to web scraping the match event data from sofascore since they got very detailed data with timestamps?
+
+SofaScore scraper PRO
+  URL: https://apify.com/azzouzana/sofascore-scraper-pro
+  Free & Blazing-fast SofaScore Scraper! Extract match stats, live scores, events, players, teams, leagues, cups, and tournament data (and much more) from any ...
+
+tunjayoff/sofascore_scraper: SofaScore Scraper ...
+  URL: https://github.com/tunjayoff/sofascore_scraper
+  SofaScore Scraper is a comprehensive Python application designed to fetch, process, and analyze football match data from SofaScore.
+  Category: github
+
+How to scrape football results from sofascore using python
+  URL: https://stackoverflow.com/questions/59024776/how-to-scrape-football-results-from-sofascore-using-python
+  I am working on this project on Python 3.8. I have to download data into a Pandas Dataframe and ultimately write to a databse (SQL or Access) for all ...

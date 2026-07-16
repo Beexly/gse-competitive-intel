@@ -1,0 +1,24 @@
+Statistics API - Score24 - Sports data feed provider
+  URL: https://score24.com/solutions/statistics-api/
+  Unlock powerful insights with Score24's comprehensive sports statistics API. Access real-time data across 76+ sports and 10,000+ leagues, including team ...
+
+Score24 API Pricing, Review and Data
+  URL: https://sportsapi.com/api-directory/score24/
+  Real-time & reliable XML and JSON APIs to deliver fixtures, results, standings and statistics for 60+ sports and 5000+ leagues.
+
+How I Reverse Engineered an API - Live Walkthrough
+  URL: https://www.youtube.com/watch?v=yev98MAhffg
+  How I Reverse Engineered an API - Live Walkthrough. Reverse Engineering Coding Garden. Reverse Engineering APIs. How to use Postman to Reverse ...
+
+ScrapingBee/google-sports-results-api
+  URL: https://github.com/ScrapingBee/google-sports-results-api
+  This repository demonstrates how to convert Google Search sports widgets into structured data using a dedicated Google Sports Results API.
+  Category: github
+
+Goalserve: Live Sports Data Feeds API | Live Score API Provider
+  URL: https://www.goalserve.com/en
+  Goalserve provides Sports Data Feeds API solutions since 2005 and offer Live score api, Live Game stats feeds, Historical Data, Prematch and In-play data api
+
+How to interact with a free football API for Euro 2024 match stats.
+  URL: https://blog.devgenius.io/how-to-interact-with-a-free-football-api-for-euro-2024-match-stats-ac5b87f26990
+  The code starts off with the creation of the Api_connection class, inside methods are defined to contact the relevant endpoints to get the ...

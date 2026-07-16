@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FantasyPros v2 Public Documentation</title>
+    <!-- needed for adaptive design -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Poppins + JetBrains Mono — FantasyPros brand fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+/* FantasyPros brand overrides — supplemental to ReDoc theme object */
+
+/* Page background (ReDoc only themes its own panels, not the outer page) */
+html, body {
+    background-color: #F9FAFC; /* --n200 */
+}
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Override font on ReDoc's search input element (outside the theme object) */
+[data-role="search:input"] {
+    font-family: 'Poppins', system-ui, sans-serif !important;
+}
+
+/* ReDoc renders the sidebar search box outside the theme object.
+   Override border, background, and placeholder color to match --n200/--n400. */
+.search-input-wrap input {
+    font-family: 'Poppins', system-ui, sans-serif !important;
+    color: #16191D !important; /* --n900 */
+}
+.search-input-wrap input::placeholder {
+    color: #868B95 !important; /* --n700 */
+}
+
+/* Anchor/deep-link hash icon color in operation headings */
+a[href^="#"] {
+    color: #0769DE; /* --blue300 */
+}
+a[href^="#"]:hover {
+    color: #025AB6; /* --blue400 */
+}
+
+/* Thin scrollbar on the sidebar navigation panel */
+[data-role="navigation"] {
+    scrollbar-width: thin;
+    scrollbar-color: #CED2D8 transparent; /* --n600 thumb on transparent track */
+}
+[data-role="navigation"]::-webkit-scrollbar {
+    width: 6px;
+}
+[data-role="navigation"]::-webkit-scrollbar-track {
+    background: transparent;
+}
+[data-role="navigation"]::-webkit-scrollbar-thumb {
+    background: #CED2D8; /* --n600 */
+    border-radius: 999px;
+}
+[data-role="navigation"]::-webkit-scrollbar-thumb:hover {
+    background: #868B95; /* --n700 */
+}
+
+/* ----------------------------------------------------------------
+   Sidebar logo padding
+   Target: the x-logo img ReDoc renders at the top of the sidebar.
+   Selector confirmed by DOM inspection (alt text is stable).
+   ---------------------------------------------------------------- */
+img[alt="FantasyPros logo"] {
+    padding: 0.8rem !important;
+}
+
+/* ----------------------------------------------------------------
+   Right-panel: code-sample card treatment (navy rounded cards)
+   ReDoc v2.1.5 uses react-tabs classes for the tab/panel structure.
+   Confirmed by DOM inspection: ul.react-tabs__tab-list, li.react-tabs__tab
+   ---------------------------------------------------------------- */
+
+/* Code sample tab bar — the row of cURL / JavaScript / Python tabs */
+.react-tabs__tab-list {
+    display: flex;
+    gap: 4px;
+    padding: 10px 16px 0 !important;
+    margin: 0 !important;
+    background: #071730; /* --db400 slightly darker than right panel */
+    border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+    list-style: none !important;
+}
+
+/* Individual tab items (LI elements) */
+.react-tabs__tab {
+    background: transparent !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+    border-bottom: none !important;
+    border-radius: 6px 6px 0 0 !important;
+    color: #C8D6EE !important;
+    cursor: pointer;
+    font-family: 'Poppins', system-ui, sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.02em;
+    padding: 5px 13px !important;
+    transition: background 0.15s, color 0.15s;
+    bottom: 0 !important; /* remove any tab border offset */
+}
+.react-tabs__tab:hover {
+    background: rgba(255,255,255,0.08) !important;
+    color: #ffffff !important;
+}
+/* Selected tab — flush with the code area below */
+.react-tabs__tab--selected {
+    background: #071730 !important;
+    border-color: rgba(255,255,255,0.22) !important;
+    color: #ffffff !important;
+}
+
+/* Active code panel — ensure darker navy background */
+.react-tabs__tab-panel--selected pre {
+    background: #071730 !important; /* --db400 */
+    border-radius: 0 0 8px 8px;
+    margin: 0 0 16px;
+    padding: 16px 20px !important;
+    overflow-x: auto;
+}
+
+/* Card wrapper: the div that holds tablist + panel(s) */
+.react-tabs {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+/* Response sample section — also card-ify via react-tabs */
+.react-tabs pre {
+    background: #071730 !important;
+    padding: 16px 20px !important;
+}
+/* Response status tab row */
+.tab-success,
+.tab-error,
+.tab-redirect,
+.tab-info {
+    font-family: 'JetBrains Mono', ui-monospace, monospace !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+}
+
+/* ----------------------------------------------------------------
+   Middle panel: parameter rows — tighten spacing
+   ---------------------------------------------------------------- */
+
+/* Parameter table rows */
+[data-role="property-body"],
+[class*="ParamItem"] {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+/* Required badge — brand blue pill */
+[class*="required-label"],
+span[title="Required"] {
+    background: #0769DE;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding: 1px 5px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+/* ----------------------------------------------------------------
+   Tag group headings in the sidebar — stronger weight
+   ---------------------------------------------------------------- */
+[data-role="navigation"] [class*="group-label"],
+[data-role="navigation"] h2 {
+    font-weight: 700 !important;
+    letter-spacing: 0.06em;
+    color: #081D3F !important; /* navy on light sidebar */
+}
+
+/* Bold schema property names */
+.property-name {
+    font-weight: 600 !important;
+}
+    </style></head>
+<body>
+<div id="redoc-container"></div>
+<script src="https://cdn.redoc.ly/redoc/v2.1.5/bundles/redoc.standalone.js"></script>
+<script>Redoc.init("https:\/\/api.fantasypros.com\/public\/v2\/docs\/fantasypros_v2_public.yml", Object.assign({theme: {"colors":{"primary":{"main":"#0769DE"},"success":{"main":"#1C8157"},"warning":{"main":"#E56910"},"error":{"main":"#E2483D"},"http":{"get":"#1C8157","post":"#0769DE","put":"#E56910","delete":"#E2483D","patch":"#E56910","head":"#525A67","options":"#525A67"},"text":{"primary":"#16191D","secondary":"#525A67"}},"typography":{"fontSize":"14px","lineHeight":"1.6em","fontWeightRegular":"400","fontWeightBold":"600","fontWeightLight":"300","fontFamily":"'Poppins', system-ui, sans-serif","smoothing":"antialiased","optimizeSpeed":true,"headings":{"fontFamily":"'Poppins', system-ui, sans-serif","fontWeight":"700","lineHeight":"1.4em"},"code":{"fontSize":"13px","fontFamily":"'JetBrains Mono', ui-monospace, monospace","lineHeight":"1.6em","fontWeight":"400","color":"#C8D6EE","backgroundColor":"rgba(255,255,255,0.05)","wrap":false},"links":{"color":"#0769DE","visited":"#025AB6","hover":"#025AB6","textDecoration":"none","hoverTextDecoration":"underline"}},"sidebar":{"width":"280px","backgroundColor":"#F9FAFC","textColor":"#525A67","activeTextColor":"#0769DE","groupItems":{"activeBackgroundColor":"#E9F1FC","activeTextColor":"#0769DE","textTransform":"uppercase"},"level1Items":{"activeBackgroundColor":"#E9F1FC","activeTextColor":"#0769DE","textTransform":"none"},"arrow":{"size":"1.5em","color":"#868B95"}},"rightPanel":{"backgroundColor":"#081D3F","width":"40%","textColor":"#C8D6EE"},"spacing":{"unit":5,"sectionHorizontal":40,"sectionVertical":40},"fab":{"backgroundColor":"#0769DE","color":"#ffffff"}}}, {"pathInMiddlePanel":true,"requiredPropsFirst":true,"jsonSampleExpandLevel":3,"expandResponses":"200","hideSingleRequestSampleTab":true}), document.getElementById('redoc-container'));</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+OWNERDOMAIN=fantasypros.com
+
+#AnyClip
+anyclip.com, 0011r00002NmawGAAR, DIRECT
+google.com, pub-4983172728561290, RESELLER, f08c47fec0942fa0
+gannett.com, 22647169314, RESELLER
+rubiconproject.com, 10968, RESELLER, 0bfd66d529a55807
+google.com, pub-4903453974745530, RESELLER, f08c47fec0942fa0
+google.com, pub-4836542095728076, RESELLER, f08c47fec0942fa0
+adipolosolutions.com, 6266a054d5d17d3aee23ea76, RESELLER
+pmbmonetize.com, 6266a054d5d17d3aee23ea76, RESELLER
+hcodemedia.com, 474, RESELLER
+aps.amazon.com, 171208af-037d-48f1-af92-1c24c2ee644a, DIRECT
+mediafuse.com, 403, RESELLER
+harrenmedia.com, har-1040, RESELLER
+google.com, pub-7371018475227526, RESELLER, f08c47fec0942fa0
+zoklent.com, zok-1000, RESELLER
+google.com, pub-8897412533447051, RESELLER, f08c47fec0942fa0
+sharethrough.com, wVtuV43v, RESELLER, d53b998a7bd4ecd2
+indexexchange.com, 189544, RESELLER, 50b1c356f2c5c8fc
+richaudience.com, 1hQEPMvpi9, RESELLER
+risecodes.com, 672ca0b2468a120001c76ef9, RESELLER
+yieldmo.com, 2868216097033625779, RESELLER
+openx.com, 558228330, RESELLER, 6a698e2ec38604c6
+rubiconproject.com, 23390, RESELLER, 0bfd66d529a55807
+openx.com, 537139983, RESELLER, 6a698e2ec38604c6
+openx.com, 540917439, RESELLER, 6a698e2ec38604c6
+pubmatic.com, 156610, RESELLER, 5d62403b186f2ace
+video.unrulymedia.com, 3637858340, RESELLER
+xandr.com, 14119, RESELLER
+themediagrid.com, 5X9VGN, RESELLER, 35d5010d7789b49d
+didna.io, 22647169314, RESELLER
+33across.com, 0010b00001u6wZdAAI, RESELLER, bbea06d9c4d2853c
+conversantmedia.com, 100141, RESELLER, 03113cd04947736d
+video.unrulymedia.com, 2439829435, RESELLER
+lijit.com, 356096, RESELLER, fafdf38b16bf6b2b
+pmc.com, 1238797, RESELLER, 8dd52f825890bb44
+smilewanted.com, 5224, RESELLER
+pubmatic.com, 158810, RESELLER, 5d62403b186f2ace
+smartadserver.com, 2491, RESELLER
+appnexus.com, 10040, RESELLER
+rubiconproject.com, 19814, RESELLER, 0bfd66d529a55807
+openx.com, 557083110, RESELLER, 6a698e2ec38604c6
+nextmillennium.io, 16868, RESELLER, 65bd090fa4a1e3d6
+appnexus.com, 9284, RESELLER, f5ab79cb980f11d1
+gannett.com, 23033711203, ​RESELLER
+lijit.com, 323999, RESELLER, fafdf38b16bf6b2b
+rubiconproject.com, 10968, RESELLER, 0bfd66d529a55807
+risecodes.com, 67065c0d14b7da0001ba123d, RESELLER
+gumgum.com, 16112, RESELLER, ffdef49475d318a9
+smaato.com, 1100057444, RESELLER, 07bcf65f187117b4
+kueez.com, 4d2d14414cb66850e7b8fe2333036c66, RESELLER
+appnexus.com, 8826, RESELLER, f5ab79cb980f11d1
+Media.net, 8CU4JTRF9, RESELLER
+lijit.com, 407406, RESELLER, fafdf38b16bf6b2b
+gumgum.com, 14133, RESELLER, ffdef49475d318a9
+vidazoo.com, 6759b8d0538eb53cc99dabb6, RESELLER, b6ada874b4d7d0b2
+ottadvisors.com, 122744684168, RESELLER
+sharethrough.com, QnF9c33S, RESELLER, d53b998a7bd4ecd2
+pubmatic.com, 165700, RESELLER, 5d62403b186f2ace
+openx.com, 561339427, RESELLER, 6a698e2ec38604c6
+smilewanted.com, 5282, RESELLER
+adnimation.com, 20250004, RESELLER
+google.com, pub-8573325940152694, RESELLER, f08c47fec0942fa0
+snigelweb.com, 7485, RESELLER
+indexexchange.com, 184775, RESELLER, 50b1c356f2c5c8fc
+appnexus.com, 8738, RESELLER, f5ab79cb980f11d1
+triplelift.com, 3348, RESELLER, 6c33edb13117fd86
+pubmatic.com, 157369, RESELLER, 5d62403b186f2ace
+seedtag.com, 6332e0a735772c0007f4145f, RESELLER
+xandr.com, 4009, RESELLER, f5ab79cb980f11d1
+beachfront.com, 15250, RESELLER, e2541279e8e2ca4d
+smartadserver.com, 3050, RESELLER
+trinityaudio.ai, 70262, RESELLER
+adtonos.com, PUB659752692, RESELLER
+adswizz.com, 383, RESELLER
+katzdigital.com, 80, RESELLER
+improvedigital.com, 2174, RESELLER
+targetspot.com, 92, RESELLER, feb28ed826dcf532
+appnexus.com, 7265, RESELLER, f5ab79cb980f11d1
+The-ozone-project.com, OZONEANY0001, RESELLER
+adform.com, 2657, RESELLER, 9f5210a2f0999e32
+pgamssp.com, 68a49e170f831721500d5d4f, RESELLER
+pubmatic.com, 162623, RESELLER, 5d62403b186f2ace
+rubiconproject.com, 24852, RESELLER, 0bfd66d529a55807
+video.unrulymedia.com, 5921144960123684292, RESELLER
+sharethrough.com, FhiWXM0L, RESELLER, d53b998a7bd4ecd2
+ottadvisors.com, 23317626973, RESELLER
+
+# LIVEINTENT
+liveintent.com, 92715, DIRECT
