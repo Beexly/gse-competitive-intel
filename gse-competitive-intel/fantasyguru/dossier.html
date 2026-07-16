@@ -1,0 +1,557 @@
+<title>FantasyGuru — Competitive Intelligence Dossier</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --panel:#ffffff; --panel-2:#faf9f5; --ink:#1b1f27; --ink-soft:#4a5160;
+    --line:#e2ddd2; --line-strong:#cfc8b8;
+    --accent:#b5791a; --accent-soft:#e9d6ac; --accent-ink:#7a4f08;
+    --good:#2f855a; --good-bg:#e4f1e8; --threat:#b23b34; --threat-bg:#f6e2df;
+    --mono:'SFMono-Regular',ui-monospace,'Cascadia Code','JetBrains Mono',Consolas,monospace;
+    --sans:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0f1420; --panel:#161d2b; --panel-2:#131926; --ink:#e8e9ec; --ink-soft:#9aa3b4;
+      --line:#26303f; --line-strong:#33404f;
+      --accent:#e0a43b; --accent-soft:#3a3320; --accent-ink:#f0c877;
+      --good:#4bb98a; --good-bg:#132a22; --threat:#e5675c; --threat-bg:#2c1a18;
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#f6f5f1; --panel:#ffffff; --panel-2:#faf9f5; --ink:#1b1f27; --ink-soft:#4a5160;
+    --line:#e2ddd2; --line-strong:#cfc8b8; --accent:#b5791a; --accent-soft:#e9d6ac; --accent-ink:#7a4f08;
+    --good:#2f855a; --good-bg:#e4f1e8; --threat:#b23b34; --threat-bg:#f6e2df;
+  }
+  :root[data-theme="dark"]{
+    --bg:#0f1420; --panel:#161d2b; --panel-2:#131926; --ink:#e8e9ec; --ink-soft:#9aa3b4;
+    --line:#26303f; --line-strong:#33404f; --accent:#e0a43b; --accent-soft:#3a3320; --accent-ink:#f0c877;
+    --good:#4bb98a; --good-bg:#132a22; --threat:#e5675c; --threat-bg:#2c1a18;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;
+    font-size:16px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  a{color:var(--accent);text-underline-offset:3px}
+
+  /* header */
+  header.top{border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--panel-2),transparent)}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);
+    display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block}
+  h1{font-size:clamp(30px,5vw,50px);line-height:1.04;letter-spacing:-.02em;margin:.35em 0 .2em;
+    text-wrap:balance;font-weight:800}
+  h1 em{font-style:normal;color:var(--accent)}
+  .sub{color:var(--ink-soft);max-width:64ch;font-size:17px}
+  .meta-row{font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);display:flex;gap:18px;flex-wrap:wrap;
+    margin-top:20px;padding-top:16px;border-top:1px dashed var(--line-strong)}
+  .meta-row b{color:var(--ink);font-weight:600}
+
+  /* boundary banner */
+  .boundary{margin:26px 0 8px;border:1px solid var(--line-strong);border-left:4px solid var(--accent);
+    background:var(--panel);border-radius:10px;padding:16px 18px}
+  .boundary .lab{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);
+    display:block;margin-bottom:6px}
+  .boundary p{margin:0;font-size:14.5px;color:var(--ink-soft)}
+  .boundary b{color:var(--ink)}
+
+  /* stat tiles */
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:26px 0}
+  .tile{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 16px 14px}
+  .tile .n{font-size:30px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
+  .tile .n small{font-size:15px;font-weight:600;color:var(--ink-soft)}
+  .tile .l{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);
+    margin-top:8px}
+
+  /* nav */
+  nav.toc{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 90%,transparent);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin:8px 0 0}
+  nav.toc .inner{display:flex;gap:6px;overflow-x:auto;padding:10px 0;font-family:var(--mono);font-size:12px}
+  nav.toc a{color:var(--ink-soft);text-decoration:none;white-space:nowrap;padding:5px 10px;border-radius:7px;
+    border:1px solid transparent}
+  nav.toc a:hover{color:var(--ink);border-color:var(--line-strong);background:var(--panel)}
+
+  section{padding:30px 0;border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;gap:14px;align-items:baseline;margin-bottom:6px}
+  .sec-num{font-family:var(--mono);font-size:13px;color:var(--accent);font-weight:600}
+  h2{font-size:clamp(21px,3vw,27px);letter-spacing:-.01em;margin:0;font-weight:750;text-wrap:balance}
+  .lede{color:var(--ink-soft);max-width:70ch;margin:.5em 0 1.2em;font-size:15.5px}
+  h3{font-size:16px;margin:22px 0 8px;font-weight:700;letter-spacing:.01em}
+  p{max-width:74ch}
+  ul{padding-left:18px;max-width:74ch}li{margin:5px 0}
+  strong{font-weight:680}
+
+  /* tables */
+  .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:14px 0}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:560px}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  thead th{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);
+    background:var(--panel-2);position:sticky;top:0}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:var(--panel-2)}
+  td .num{font-variant-numeric:tabular-nums;font-family:var(--mono);color:var(--ink-soft)}
+  .price{font-family:var(--mono);font-weight:600;color:var(--accent-ink);white-space:nowrap}
+  .flag{background:var(--accent);color:#111;font-family:var(--mono);font-size:10px;padding:2px 6px;border-radius:5px;
+    font-weight:700;letter-spacing:.03em;white-space:nowrap}
+
+  /* chips */
+  .chip{display:inline-block;font-family:var(--mono);font-size:11px;padding:2px 8px;border-radius:999px;
+    letter-spacing:.03em;border:1px solid transparent}
+  .chip.good{background:var(--good-bg);color:var(--good);border-color:color-mix(in srgb,var(--good) 30%,transparent)}
+  .chip.threat{background:var(--threat-bg);color:var(--threat);border-color:color-mix(in srgb,var(--threat) 30%,transparent)}
+
+  /* cards for methodology / strategy */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:16px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 17px}
+  .card h4{margin:0 0 6px;font-size:15px;font-weight:720}
+  .card .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);
+    display:block;margin-bottom:9px}
+  .card p{font-size:13.5px;color:var(--ink-soft);margin:.3em 0}
+  .card.op{border-top:3px solid var(--good)}
+  .card.th{border-top:3px solid var(--threat)}
+
+  blockquote{margin:14px 0;padding:12px 16px;border-left:3px solid var(--accent-soft);background:var(--panel-2);
+    border-radius:0 8px 8px 0;color:var(--ink-soft);font-size:14.5px}
+  blockquote b{color:var(--ink)}
+
+  footer{padding:30px 0 60px;color:var(--ink-soft);font-size:12.5px;font-family:var(--mono)}
+  footer a{color:var(--accent)}
+  ::selection{background:var(--accent);color:#111}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+  @media (max-width:640px){h1{font-size:32px}.meta-row{gap:12px}}
+</style>
+
+<header class="top">
+  <div class="wrap" style="padding-top:34px;padding-bottom:28px">
+    <div class="kicker"><span class="dot"></span> Competitive Intelligence · Field Dossier v2 · NFL + MLB</div>
+    <h1>FantasyGuru.com — <em>the whole board, mapped</em></h1>
+    <p class="sub">A structural and strategic teardown of a 30-year fantasy-sports incumbent — every product, tool, franchise, price, analyst, and the corporate reality behind it — plus working GSE engines that rebuild their signature metrics across both sports (MLB SMASH/BURR/Solds and NFL QB-Types/Trench/WR) from free public data. Assembled from the public surface only, for Galaxy Sports Edge.</p>
+    <div class="meta-row">
+      <span><b>Compiled</b> 2026-07-10</span>
+      <span><b>Sources</b> public sitemap · section pages · tool pages · pricing · explainers</span>
+      <span><b>Pages harvested</b> 81 + 46,844 URL index</span>
+      <span><b>Boundary</b> no paywalled bodies accessed</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc"><div class="wrap"><div class="inner">
+  <a href="#pos">01 Positioning</a>
+  <a href="#price">02 Pricing</a>
+  <a href="#tools">03 Data &amp; Tools</a>
+  <a href="#nfl">04 NFL Franchises</a>
+  <a href="#mlb">05 MLB Franchises</a>
+  <a href="#roster">06 Roster</a>
+  <a href="#inv">07 Inventory</a>
+  <a href="#strat">08 Strategic Read</a>
+  <a href="#deep">09 Deep Intel</a>
+  <a href="#engine">10 MLB Engine</a>
+  <a href="#nfl-engine">11 NFL Engine</a>
+</div></div></nav>
+
+<div class="wrap">
+
+  <div class="boundary">
+    <span class="lab">◇ Collection boundary</span>
+    <p>Everything here comes from FantasyGuru's <b>public</b> surface — pages any non-subscriber can see. Their rankings, projections, DFS grids, and "Elite Data" bodies sit behind a paid login and are <b>© Guru Fantasy Reports, Inc.</b> Those paywalled bodies were <b>not</b> accessed or reproduced — that stays on the right side of copyright and the passive-only rule. This is a map of their business, not a copy of their product. Their <code>robots.txt</code> allows public crawling except <code>/account</code>, <code>/api/</code>, <code>/join-today</code>.</p>
+  </div>
+
+  <div class="tiles">
+    <div class="tile"><div class="n">46,844</div><div class="l">Public article URLs (1995–2026)</div></div>
+    <div class="tile"><div class="n"><small>$</small>499<small>/yr</small></div><div class="l">Football "All-In" (flagship price)</div></div>
+    <div class="tile"><div class="n">26</div><div class="l">Named analysts on staff</div></div>
+    <div class="tile"><div class="n">20<small>+ yrs</small></div><div class="l">"100k+ members" · SiriusXM Ch.87</div></div>
+    <div class="tile"><div class="n">1,568</div><div class="l">Practice Reports (top franchise)</div></div>
+  </div>
+
+  <section id="pos">
+    <div class="sec-head"><span class="sec-num">01</span><h2>Positioning — a personality-and-community moat</h2></div>
+    <p class="lede">FantasyGuru sells expertise and belonging first, data second. Two on-air personalities anchor the brand and a 24/7 Discord keeps members inside it.</p>
+    <ul>
+      <li><strong>Brand claim:</strong> "Expert Analysis, Strategy, and Fantasy Tools to <strong>more than 100k members for more than 20 years</strong>." Entity: Guru Fantasy Reports, Inc., © 1995–2026.</li>
+      <li><strong>Distribution moat:</strong> <strong>SiriusXM Fantasy Sports Radio — "Elite Sports with Jeff Mans," Channel 87, Mon–Fri 2–5 PM ET.</strong> Part of the <strong>Elite Sports Network / EliteFantasy</strong> group. GSE has no equivalent broadcast pipeline.</li>
+      <li><strong>Two faces:</strong> <strong>Jeff Mans</strong> (NFL, Owner/Chief Content Officer) and <strong>Ray Flowers</strong> (MLB, EVP EliteFantasy, full-time since 2001). <strong>Rob Brink</strong> is Owner/CEO. GSE's own "beat Jeff Mans" benchmark points straight here.</li>
+      <li><strong>Community:</strong> members-only 24/7 Discord + "Daily Office Hours with experts," pushed on every tier — a relationship moat, not a data one.</li>
+      <li><strong>Breadth:</strong> NFL · MLB · NBA · NHL · NCAAB · PGA · MMA · Soccer · NASCAR · Horse Racing · CFB · CFL · UFL. NFL &amp; MLB are the two flagship paid tracks.</li>
+    </ul>
+  </section>
+
+  <section id="price">
+    <div class="sec-head"><span class="sec-num">02</span><h2>Pricing — football is the profit center, data is unbundled</h2></div>
+    <p class="lede">Two overlapping plan systems run in parallel: modular per-sport tiers and a cross-sport "VIP" ladder. Football is priced ~2.5× baseball, and the data feed is sold separately on top.</p>
+
+    <h3>Football (flagship pricing)</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Tier</th><th>Price</th><th>Scope</th></tr></thead>
+      <tbody>
+        <tr><td>Seasonal</td><td class="price">$59.99/yr</td><td>Draft guide, season rankings, best ball, league sync + waiver, office hours, Discord</td></tr>
+        <tr><td>Daily</td><td class="price">$269.99/yr</td><td>DFS plays, cheat sheets, optimizer + projections, cash+GPP breakdowns, podcasts</td></tr>
+        <tr><td>Betting</td><td class="price">$269.99/yr</td><td>Sharp picks, prop research, parlay/alt-line tools, podcasts</td></tr>
+        <tr><td><span class="flag">FLAGSHIP</span> All-In</td><td class="price">$499.99/yr</td><td>Everything above + Elite Data + office hours</td></tr>
+        <tr><td>+ add-on · Training Camp</td><td class="price">$39.99/yr</td><td>Daily camp reports, risers, depth-chart shifts</td></tr>
+        <tr><td>+ add-on · Franchise Mode</td><td class="price">$49.99/yr</td><td>Dynasty/keeper: contract values, rookie scouting, trades</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>Baseball (~40–60% cheaper)</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Tier</th><th>Price</th><th>Scope</th></tr></thead>
+      <tbody>
+        <tr><td>Elite Seasonal</td><td class="price">$59.99/yr</td><td>Draft guide, rankings, best ball, league sync, office hours</td></tr>
+        <tr><td>Elite DFS</td><td class="price">$119.99/yr</td><td>DFS plays, cheat sheets, optimizer, cash+GPP, podcasts</td></tr>
+        <tr><td>Elite Gaming</td><td class="price">$119.99/yr</td><td>Sharp picks, prop research, parlay tools, podcasts</td></tr>
+        <tr><td><span class="flag">POPULAR</span> All-In</td><td class="price">$199.99/yr</td><td>Everything + Elite Data</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>Cross-sport "VIP" + universal add-ons</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Plan</th><th>Price</th><th>Scope</th></tr></thead>
+      <tbody>
+        <tr><td>VIP Seasonal</td><td class="price">$109.99/yr</td><td>Season-long, all sports</td></tr>
+        <tr><td>VIP DFS / VIP Gaming</td><td class="price">$59.99/mo</td><td>Daily / betting, all sports</td></tr>
+        <tr><td>VIP Platinum <span class="flag">POPULAR</span></td><td class="price">$99.99/mo</td><td>Seasonal + DFS + Gaming + Elite Data combined</td></tr>
+        <tr><td>MVP</td><td class="price">$219.99/yr</td><td>Daily + betting: NBA, NCAABB, NHL, MMA, PGA, Soccer, Horse, NASCAR</td></tr>
+        <tr><td>All-Access</td><td class="price">$109.99/yr</td><td>Everything, all sports, Elite Data unlocked, all camps</td></tr>
+        <tr><td>Elite+ (add-on)</td><td class="price">$69.99/yr</td><td>Members-only podcasts, livestreams, bonus editorial</td></tr>
+        <tr><td>Elite Data (add-on)</td><td class="price">$19.99/mo</td><td><strong>Premium props data, ownership projections, live-edge alerts</strong> — gates SMASH/BURR/props</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:14px"><strong>Reads:</strong> Football All-In ($499) vs Baseball All-In ($199) = fantasy football carries the business. "Elite Data" is deliberately unbundled — members pay <em>again</em> for the numbers. Two naming systems (per-sport + VIP) is genuinely confusing — a clarity opening for a cleaner competitor.</p>
+  </section>
+
+  <section id="tools">
+    <div class="sec-head"><span class="sec-num">03</span><h2>Data &amp; tools — the "Elite Data" black box</h2></div>
+    <p class="lede">Every data grid is subscriber-gated; only tool names, a suite blurb, and SMASH's color legend are public. The tool catalog — and the philosophy they advertise to sell it — is the intel.</p>
+
+    <h3>Tool catalog (all gated)</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">MLB · /data/mlb</span><h4>13+ tools</h4>
+        <p>SMASH Report (Pitchers · Hitters) · Bullpen Usage Chart · BURR Report · Projected Strikeouts · Projected Total Bases · Projected Odds · MLB Weather · Batter vs Pitcher · DFS Projections &amp; Ownership (DK + FD) · Prop Finder · Odds Comparison · Elite Staff Bets</p></div>
+      <div class="card"><span class="tag">NFL · /data/nfl</span><h4>10+ tools</h4>
+        <p>Player Props · Odds Comparison · Futures Comparison · Weekly Matchups · Prop Finder · SMASH Report — Ratings · SMASH Report — O-line/D-line Matchups · SMASH Report — WR Coverage · Player/Team Statistics</p></div>
+    </div>
+
+    <h3>Signature methodology (from public explainers — what they reveal to sell it)</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">Flagship metric</span><h4>SMASH — "the WAR of fantasy baseball"</h4>
+        <p>"A proprietary combination of <strong>batted-ball data, pitch mix, zone data</strong>… vs league average." Core creed: <strong>"focuses on the skills of the player directly, versus the results."</strong></p>
+        <p>Green = target · White = average · Red = avoid. Windows: (S) season, (30) last-30. "Advantage Score" grades a hitter vs the <em>entire</em> opposing staff. Exact calc gated.</p></div>
+      <div class="card"><span class="tag">Reliever index</span><h4>BURR — Bullpen Usage &amp; Reliever Ratings</h4>
+        <p>Since 2017. Rolls <strong>14 bullpen categories</strong> into one number vs league average: <strong>&lt;1.00 (green)</strong> = weak pen, good for hitters; <strong>&gt;1.00 (red)</strong> = tough.</p></div>
+      <div class="card"><span class="tag">Proprietary stat</span><h4>"Solds" = Saves + Holds</h4>
+        <p>Ray Flowers' reliever-value metric, pitched publicly as a replacement for "the standard outdated saves category." Drives the Closer Grid + Solds Rankings.</p></div>
+      <div class="card"><span class="tag">NFL model</span><h4>QB Types (mobility)</h4>
+        <p>Mike Horn classifies starters as "Very Mobile / Running" on the thesis that running QBs score more — a stated <strong>+2–4 fantasy points/game edge</strong>. Feeds draft cheat-sheets.</p></div>
+    </div>
+    <blockquote><b>Live opening:</b> the MLB Umpire Report notes FantasyGuru <b>dropped Swish Analytics</b> in 2026 ("no longer provides the stats I once used") and rebuilt around home-plate ump tendencies + K-props + team K-rates by handedness. A competitor with durable strike-zone/pitch sourcing can contest that product <em>now</em>.</blockquote>
+  </section>
+
+  <section id="nfl">
+    <div class="sec-head"><span class="sec-num">04</span><h2>NFL content franchises</h2></div>
+    <p class="lede">A weekly content machine. Bodies paywalled; cadence + author public. Volume = sitemap keyword count.</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Franchise</th><th>Cadence</th><th>Author(s)</th><th>What it is</th><th>Vol.</th></tr></thead>
+      <tbody>
+        <tr><td>Practice Reports</td><td>Weekly (Wk 1–18)</td><td>Justin Fensterman</td><td>Practice participation → fantasy read</td><td class="num">1,568</td></tr>
+        <tr><td>NFL DFS Breakdowns</td><td>Weekly/slate</td><td>Armando, Buecher, Hogan, Pucks</td><td>Slate breakdowns, cash+GPP</td><td class="num">1,236</td></tr>
+        <tr><td>QB Types / By the Numbers</td><td>Annual + updates</td><td>Mike Horn, Ray Flowers</td><td>QB-mobility model; positional retrospectives</td><td class="num">216</td></tr>
+        <tr><td>Rookie Profiles/Expectations</td><td>Pre-draft, multi/wk</td><td>Clay, Buecher, Marsal</td><td>Prospect profiles + rookie projections</td><td class="num">178</td></tr>
+        <tr><td>Dynasty Ratings Updates</td><td>Weekly–biweekly</td><td>Russell Clay</td><td>Rolling dynasty ratings</td><td class="num">104</td></tr>
+        <tr><td>Player Profiles</td><td>Pre-draft</td><td>Buecher, Clay, Marsal</td><td>Deep player breakdowns</td><td class="num">80</td></tr>
+        <tr><td>Coach Breakdowns</td><td>Annual, all 32</td><td>Rob Povia (since '05) + Horn charts</td><td>HC/coordinator system → player impact</td><td class="num">66</td></tr>
+        <tr><td>Best Ball / Drafters</td><td>Seasonal</td><td>Buecher, Marsal, Clay</td><td>Best-ball rankings, ADP, stacking</td><td class="num">38</td></tr>
+        <tr><td>Targets &amp; Touches</td><td>Weekly</td><td>Russell Clay</td><td>Opportunity/usage tracking</td><td class="num">34</td></tr>
+        <tr><td>Waiver Wire</td><td>Weekly</td><td>Tyler Buecher</td><td>Pickup recommendations</td><td class="num">33</td></tr>
+        <tr><td>Training Camp Reports</td><td>Weekly (Jul–Sep)</td><td>Clay, Buecher, Fensterman +</td><td>Camp risers, depth-chart shifts</td><td class="num">31</td></tr>
+        <tr><td>Offensive Line Breakdown</td><td>Annual</td><td>Marsal + Ted Schuster</td><td>Every NFL O-line graded (w/ audio)</td><td class="num">10</td></tr>
+        <tr><td>Mock Drafts</td><td>Annual (June)</td><td>Clay, Flowers, Maletto</td><td>Staff 12-team PPR mocks + Q&amp;A</td><td class="num">5</td></tr>
+        <tr><td>Franchise Mode</td><td>Weekly</td><td>Clay, Buecher, Mans, Backert</td><td>Dynasty/keeper: contracts, trades</td><td class="num">—</td></tr>
+        <tr><td>NFL Roster Coach (live)</td><td>Weekly, 7 PM ET</td><td>Marsal, Clay, Buecher, Maletto</td><td>Seasonal-help livestream</td><td class="num">—</td></tr>
+      </tbody>
+    </table></div>
+    <p><strong>2026 NFL Draft Guide</strong> (built incrementally Jun 1–Aug 5): Rankings (PPR/Non-PPR/IDP/Superflex/Top 200/Dynasty), QB/RB/WR/TE Outlooks, QB Bye-Week Cheat Sheet, Early Mock, Scoring Dependency, NFL Optimizer, Auction/Betting guides.</p>
+  </section>
+
+  <section id="mlb">
+    <div class="sec-head"><span class="sec-num">05</span><h2>MLB content franchises</h2></div>
+    <p class="lede">A near-daily in-season engine anchored by Ray Flowers, with an unusually transparent umpire-edge product.</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Franchise</th><th>Cadence</th><th>Author(s)</th><th>What it is</th><th>Vol.</th></tr></thead>
+      <tbody>
+        <tr><td>MLB DFS Breakdowns (DK+FD)</td><td>Daily</td><td>Chris Rose, Jorge Pucks +</td><td>Slate bats/pitchers to target, cash+GPP</td><td class="num">290</td></tr>
+        <tr><td>Umpire Report — Strike Zone</td><td>Daily (game-day)</td><td>"Patio" Joe Baldino</td><td>Best plays via HP-ump tendencies + K-props</td><td class="num">167</td></tr>
+        <tr><td>Ray's Plays</td><td>Daily</td><td>Ray Flowers</td><td>DFS "plays of the day," all positions</td><td class="num">131</td></tr>
+        <tr><td>Ray's Ramblings</td><td>Multi/week</td><td>Ray Flowers</td><td>Analysis column: workload, trends, xStats</td><td class="num">94</td></tr>
+        <tr><td>FAAB Values</td><td>Weekly</td><td>Ray Flowers</td><td>Free-agent auction bid values</td><td class="num">51</td></tr>
+        <tr><td>MLB Planner</td><td>Weekly</td><td>Ray Flowers</td><td>Week-ahead pitching-schedule planner</td><td class="num">49</td></tr>
+        <tr><td>Bullpens / Closer Grid / Solds</td><td>Bi-weekly / monthly</td><td>Ray Flowers</td><td>Reliever value via "Solds" (Saves+Holds)</td><td class="num">14+</td></tr>
+        <tr><td>MLB Cheat Sheet</td><td>Per slate</td><td>Jorge Pucks</td><td>Consolidated DFS cheat sheet</td><td class="num">—</td></tr>
+        <tr><td>Rankings / ADP</td><td>Monthly</td><td>Ray Flowers</td><td>Season-long rankings + ADP</td><td class="num">—</td></tr>
+        <tr><td>Battle of the Experts</td><td>Daily</td><td>Elfrink, Povia, Clifford +</td><td>Competitive picks show</td><td class="num">—</td></tr>
+        <tr><td>Fantasy Sports Daily (pod)</td><td>Mon–Fri 12 PM ET</td><td>Ray Flowers, Fensterman</td><td>Daily ~1hr show</td><td class="num">—</td></tr>
+      </tbody>
+    </table></div>
+    <blockquote>Umpire Report method, stated publicly: <b>"the best plays of the day for DFS, seasonal, and now strikeout props based on who is working home plate that day… home-plate umpire tendencies, current strikeout props, and team strikeout rates against right-handed and left-handed pitching."</b></blockquote>
+  </section>
+
+  <section id="roster">
+    <div class="sec-head"><span class="sec-num">06</span><h2>The roster — 26 named analysts</h2></div>
+    <p class="lede">The human bench is the product. Names members follow across radio, Discord, and byline.</p>
+    <div class="cards">
+      <div class="card"><span class="tag">Ownership / leads</span><h4>Jeff Mans · Ray Flowers · Rob Brink</h4>
+        <p>Mans — Owner/CCO, "Fantasy Legend," SiriusXM host (NFL). Flowers — EVP EliteFantasy, full-time since 2001, multi-FSWA (MLB). Brink — Owner/CEO, "MLB Guru."</p></div>
+      <div class="card"><span class="tag">Editors</span><h4>Armando Marsal · Rob Povia · Ted Schuster</h4>
+        <p>Marsal — Site Manager, 2020 FSWA Football Writer of the Year. Povia — Managing Editor (baseball; writes Coach Breakdowns). Schuster — Senior Analyst.</p></div>
+      <div class="card"><span class="tag">Core NFL</span><h4>Buecher · Clay · Horn · Backert</h4>
+        <p>Buecher — analytics/ADP/best-ball/waivers. Clay — dynasty since 2012, rookies. Horn — coach-breakdown charts + QB-types. Backert — IDP.</p></div>
+      <div class="card"><span class="tag">Core MLB &amp; others</span><h4>Baldino · Rose · Bondar · Pucks +</h4>
+        <p>"Patio" Joe Baldino — umpire reports. Rose/Bondar — MLB/NFL. Pucks/Clifford/Rodriguez — NHL. Fensterman — NBA "Basketball Diaries" + NFL practice reports. Plus Maletto, Reinhard, Hogan, Singh, Cillo, Rodrigue, Sridhar, Engel, White.</p></div>
+    </div>
+  </section>
+
+  <section id="inv">
+    <div class="sec-head"><span class="sec-num">07</span><h2>Inventory — the full public catalog</h2></div>
+    <p class="lede">The complete public sitemap was parsed into a structured index (saved as CSV alongside this dossier).</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Sport (keyword-classified)</th><th>Public URLs</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>NFL</td><td class="num">4,081</td><td>Highest-value paid track</td></tr>
+        <tr><td>MLB</td><td class="num">1,128</td><td>Near-daily in-season cadence</td></tr>
+        <tr><td>MMA</td><td class="num">1,479</td><td>Under MVP tier</td></tr>
+        <tr><td>NBA / NHL / NASCAR / CFB</td><td class="num">589 / 424 / 186 / 172</td><td>MVP + betting tracks</td></tr>
+        <tr><td>Legacy news / player wire</td><td class="num">~38,700</td><td>"NewsGuru" daily injury/status blurbs, player-name posts</td></tr>
+        <tr><td><strong>Total public URLs</strong></td><td class="num"><strong>46,844</strong></td><td>8 post-sitemaps, 1995–2026</td></tr>
+      </tbody>
+    </table></div>
+    <p>Full inventory delivered as <code>inventory-master.csv</code> (every URL + slug + last-modified + sport + franchise), plus sport-filtered <code>inventory-nfl.csv</code> and <code>inventory-mlb.csv</code>.</p>
+  </section>
+
+  <section id="strat">
+    <div class="sec-head"><span class="sec-num">08</span><h2>Strategic read for Galaxy Sports Edge</h2></div>
+    <p class="lede">Where FantasyGuru is strong, respect it; where it's exposed, GSE's trust-first, prove-it thesis has clean wedges.</p>
+    <div class="cards">
+      <div class="card op"><span class="tag">Opportunity</span><h4>Open the black box</h4>
+        <p>SMASH/BURR are sold as opaque "proprietary" numbers. GSE's glass-box, cited-source, calibrated approach is the direct counter — <em>show</em> the reasoning they hide.</p></div>
+      <div class="card op"><span class="tag">Opportunity</span><h4>Publish an audited hit-rate</h4>
+        <p>FG posts picks but never a public, audited win-rate. GSE's ≥70% "prove-it-don't-fake-it" north star attacks exactly that trust vacuum.</p></div>
+      <div class="card op"><span class="tag">Opportunity</span><h4>Their vendor just churned</h4>
+        <p>They lost Swish Analytics for umpire/strike-zone data. Durable strike-zone/pitch sourcing makes the umpire-edge product contestable right now.</p></div>
+      <div class="card op"><span class="tag">Opportunity</span><h4>Undercut the "pay-again" data tax</h4>
+        <p>Elite Data is $19.99/mo on top of a $199–499 plan. Bundling transparent, calibrated data undercuts the model — and the confusing dual pricing.</p></div>
+      <div class="card th"><span class="tag">Threat</span><h4>Personality + radio distribution</h4>
+        <p>Jeff Mans / Ray Flowers on SiriusXM Ch.87 + a 24/7 Discord is a relationship moat GSE can't buy quickly. Compete on trust &amp; proof, not fame.</p></div>
+      <div class="card th"><span class="tag">Threat</span><h4>Content volume &amp; branded vocabulary</h4>
+        <p>46k+ articles, near-daily coverage, and sticky named tools (SMASH/BURR/Solds) members already trust. Branding the <em>number</em> matters — mirror it with GSE Rating.</p></div>
+    </div>
+    <p style="margin-top:16px"><strong>Formats worth emulating (as templates, not copies):</strong> Coach Breakdowns (system→player impact), O-line Breakdown, Umpire/Strike-Zone report, SMASH-style matchup heatmap, BURR bullpen index, "Solds" reliever metric, QB-types mobility model, Targets &amp; Touches usage tracker, Closer Grid, FAAB Values, MLB Planner.</p>
+  </section>
+
+  <section id="deep">
+    <div class="sec-head"><span class="sec-num">09</span><h2>Deep intel — who they really are</h2></div>
+    <p class="lede">Second-pass research (public sitemap timestamps + passive fingerprint + public filings/archives) reframes the incumbent: a small, PE-owned lifestyle-media business, not a venture-scale data company.</p>
+
+    <h3>Corporate reality (the bios oversell "ownership")</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>When</th><th>Event</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1995</td><td>Founded by <strong>John Hansen</strong> as the <em>Guru Report Newsletter</em> (mail/fax) → website 1998. Hansen = the original "Fantasy Guru," FSWA Hall of Famer. <strong>Not with the site today.</strong></td></tr>
+        <tr><td class="num">2015</td><td>Hansen sells; rolled into <strong>Gaming Nation Inc.</strong> (TSX-V: FAN). 2016: launches "Fantasy Guru Elite" / DFS.</td></tr>
+        <tr><td class="num">2017</td><td><strong>Orange Capital Ventures buys Gaming Nation, ~$44M all-stock take-private.</strong> FG becomes a <strong>PE portfolio company</strong> — so "Owner" on the bios is nuanced.</td></tr>
+        <tr><td class="num">~2019</td><td>Hansen departs (→ Fantasy Points). <strong>Jeff Mans</strong> takes over as operator/CCO; <strong>Rob Brink</strong> CEO since 2018.</td></tr>
+        <tr><td class="num">Jun 2023</td><td><strong>LiveOne/PodcastOne signs a binding LOI to acquire FG</strong> (~$4–6.4M all-stock). Completion unconfirmed in public sources.</td></tr>
+      </tbody>
+    </table></div>
+    <p style="font-size:13px;color:var(--ink-soft)">Umbrella brand <strong>EliteFantasy.com</strong>; SiriusXM Ch. 86/87. <em>Not</em> related to RotoExperts/FNTSY/Baseball Guys (a common conflation); Mans's pre-FG home was Fantasy Alarm.</p>
+
+    <h3>Business scale — their own disclosed 2023 numbers</h3>
+    <div class="tiles">
+      <div class="tile"><div class="n">~24k</div><div class="l">Paying subscribers (2023 disclosure)</div></div>
+      <div class="tile"><div class="n"><small>$</small>8<small>+/mo</small></div><div class="l">ARPU</div></div>
+      <div class="tile"><div class="n">~<small>$</small>2.5M</div><div class="l">Revenue · ~$600K EBITDA</div></div>
+      <div class="tile"><div class="n">~11–38k</div><div class="l">Monthly site visits (~76% direct)</div></div>
+      <div class="tile"><div class="n">4.7★</div><div class="l">iOS app (WebView wrapper); Android pulled Apr 2025</div></div>
+    </div>
+
+    <div class="cards">
+      <div class="card"><span class="tag">Publishing velocity</span><h4>MLB is the soft flank</h4>
+        <p>NFL out-publishes MLB <strong>~10–15× in-season</strong> — NFL hits ~3,000–3,700 posts/mo (~125/day) Sep–Jan; MLB peaks near ~80/mo. ~22% of the whole site (~10,097 URLs) is automated <strong>NFL</strong> player-news wire.</p></div>
+      <div class="card"><span class="tag">Key-person risk</span><h4>MLB ≈ Ray Flowers</h4>
+        <p>MLB volume is concentrated in one analyst (Flowers: daily plays, FAAB, workload/closer). Concentrated risk on the exact vertical where they just lost a data vendor (Swish Analytics).</p></div>
+      <div class="card"><span class="tag">Tech posture</span><h4>Media company, tools bolted on</h4>
+        <p>Headless <strong>WordPress + WooCommerce</strong> merch store + <strong>Google Tag Manager</strong> + <strong>ESPN-CDN</strong> images on <strong>DigitalOcean/Cloudflare</strong>. No modern data/experimentation stack visible. Different technical DNA than a modeling company.</p></div>
+    </div>
+    <p style="font-size:13px;color:var(--ink-soft)">All §09 facts from public sitemap timestamps, public response headers/HTML, public filings (GlobeNewswire/SEC-adjacent), Wikipedia, Similarweb, and app-store listings. No gated infrastructure probed.</p>
+  </section>
+
+  <section id="engine">
+    <div class="sec-head"><span class="sec-num">10</span><h2>The GSE Engine — SMASH · BURR · Solds, rebuilt and yours</h2></div>
+    <p class="lede">We didn't copy their black boxes — we reconstructed the <em>methods</em> (uncopyrightable per 17 U.S.C. §102(b)) and built GSE-owned, glass-box versions from free public data (MLB Stats API + Baseball Savant). Below are <strong>live 2026 outputs</strong> from <code>gse_engine.py</code>. 311 relievers, 30 bullpens, 463 hitters, 337 pitchers scored.</p>
+
+    <div class="boundary" style="border-left-color:var(--good)">
+      <span class="lab" style="color:var(--good)">◇ Why this is clean &amp; better</span>
+      <p>Baseball stats are uncopyrightable facts; "Saves+Holds," league-normalized indices, and expected-stats matchup models are <b>methods</b>, which copyright doesn't protect. Every input is public and free. Unlike FG's sealed numbers, every component and weight here is <b>visible and back-testable</b> — the glass-box counter to their black box, and IP <b>you own</b>.</p>
+    </div>
+
+    <h3>GSE-Solds → Reliever Value Score (RVS)</h3>
+    <p style="font-size:13.5px;color:var(--ink-soft)">Their "Solds" = Saves+Holds (backward-looking volume). Ours blends leverage-weighted volume + skill (K-BB%, FIP) + reliability (Solds%) + a role tag — forward-looking value. Top of the live table:</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Reliever</th><th>Tm</th><th>Role</th><th>SV</th><th>HLD</th><th>BS</th><th>Solds%</th><th>RVS</th></tr></thead>
+      <tbody>
+        <tr><td>Mason Miller</td><td>SD</td><td>Closer</td><td class="num">23</td><td class="num">0</td><td class="num">0</td><td class="num">100</td><td class="num"><strong>99.6</strong></td></tr>
+        <tr><td>Louis Varland</td><td>TOR</td><td>Closer</td><td class="num">18</td><td class="num">5</td><td class="num">0</td><td class="num">100</td><td class="num">98.7</td></tr>
+        <tr><td>Jhoan Duran</td><td>PHI</td><td>Closer</td><td class="num">23</td><td class="num">0</td><td class="num">1</td><td class="num">96</td><td class="num">98.6</td></tr>
+        <tr><td>Cade Smith</td><td>CLE</td><td>Closer</td><td class="num">27</td><td class="num">0</td><td class="num">3</td><td class="num">90</td><td class="num">97.5</td></tr>
+        <tr><td>Raisel Iglesias</td><td>ATL</td><td>Closer</td><td class="num">18</td><td class="num">0</td><td class="num">1</td><td class="num">95</td><td class="num">95.7</td></tr>
+        <tr><td>Dylan Lee</td><td>ATL</td><td>Setup (high-lev)</td><td class="num">0</td><td class="num">19</td><td class="num">1</td><td class="num">95</td><td class="num">94.3</td></tr>
+        <tr><td>David Bednar</td><td>NYY</td><td>Closer</td><td class="num">17</td><td class="num">0</td><td class="num">2</td><td class="num">89</td><td class="num">93.3</td></tr>
+      </tbody>
+    </table></div>
+    <p style="font-size:13px;color:var(--ink-soft)">Sanity check: elite closers on top, high-leverage setup men (Dylan Lee, 19 holds) surfacing right below — exactly what a reliever-value stat should do, and it separates a <em>secure, skilled</em> closer from a volume-only one.</p>
+
+    <h3>GSE-BURR → Bullpen Rating (14 categories → one number vs league)</h3>
+    <p style="font-size:13.5px;color:var(--ink-soft)">Convention matches theirs: <strong>&gt;1.00 = strong pen (tough on hitters)</strong>, <strong>&lt;1.00 = weak pen (hitter-friendly)</strong>. All 14 component indices are output (FIP + xwOBA-allowed weighted highest). Strongest and weakest live:</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>#</th><th>Team</th><th>Pen ERA</th><th>FIP</th><th>K-BB%</th><th>xwOBA-a</th><th>BURR</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td>ATL</td><td class="num">3.24</td><td class="num">3.68</td><td class="num">.161</td><td class="num">.253</td><td class="num"><span class="chip good">1.205</span></td></tr>
+        <tr><td class="num">2</td><td>NYY</td><td class="num">3.15</td><td class="num">3.56</td><td class="num">.146</td><td class="num">.277</td><td class="num"><span class="chip good">1.180</span></td></tr>
+        <tr><td class="num">3</td><td>NYM</td><td class="num">3.15</td><td class="num">3.47</td><td class="num">.165</td><td class="num">.279</td><td class="num"><span class="chip good">1.167</span></td></tr>
+        <tr><td class="num">4</td><td>SD</td><td class="num">3.48</td><td class="num">3.72</td><td class="num">.173</td><td class="num">.276</td><td class="num"><span class="chip good">1.159</span></td></tr>
+        <tr><td class="num">…</td><td>…</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+        <tr><td class="num">28</td><td>CIN</td><td class="num">4.66</td><td class="num">5.07</td><td class="num">.075</td><td class="num">.330</td><td class="num"><span class="chip threat">0.879</span></td></tr>
+        <tr><td class="num">30</td><td>WSH</td><td class="num">6.60</td><td class="num">5.60</td><td class="num">.080</td><td class="num">.368</td><td class="num"><span class="chip threat">0.763</span></td></tr>
+      </tbody>
+    </table></div>
+    <p style="font-size:13px;color:var(--ink-soft)">A hitter facing Washington's pen (0.76) has a large late-inning edge; facing Atlanta's (1.21) does not. That's the matchup call, quantified and explainable.</p>
+
+    <h3>GSE-SMASH → Skill-Matchup Index + Advantage Score</h3>
+    <p style="font-size:13.5px;color:var(--ink-soft)">"Skills over results" = expected stats. Z-scored vs league, scaled to a 50±10 "OVR," tiered green/red. Live leaders:</p>
+    <div class="cards">
+      <div class="card"><span class="tag">SMASH hitters (top)</span>
+        <div class="tbl-wrap" style="border:none;margin:0"><table style="min-width:0">
+          <thead><tr><th>Hitter</th><th>xwOBA</th><th>SMASH</th></tr></thead>
+          <tbody>
+            <tr><td>Yordan Alvarez</td><td class="num">.468</td><td class="num"><span class="chip good">71.2</span></td></tr>
+            <tr><td>Juan Soto</td><td class="num">.434</td><td class="num"><span class="chip good">69.1</span></td></tr>
+            <tr><td>James Wood</td><td class="num">.432</td><td class="num"><span class="chip good">68.0</span></td></tr>
+            <tr><td>Mike Trout</td><td class="num">.410</td><td class="num"><span class="chip good">67.5</span></td></tr>
+            <tr><td>Aaron Judge</td><td class="num">.415</td><td class="num"><span class="chip good">65.6</span></td></tr>
+            <tr><td>Shohei Ohtani</td><td class="num">.411</td><td class="num"><span class="chip good">63.9</span></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="card"><span class="tag">SMASH pitchers (top, suppression)</span>
+        <div class="tbl-wrap" style="border:none;margin:0"><table style="min-width:0">
+          <thead><tr><th>Pitcher</th><th>xwOBA-a</th><th>SMASH</th></tr></thead>
+          <tbody>
+            <tr><td>Mason Miller</td><td class="num">.177</td><td class="num"><span class="chip good">81.3</span></td></tr>
+            <tr><td>Dylan Lee</td><td class="num">.214</td><td class="num"><span class="chip good">70.5</span></td></tr>
+            <tr><td>Jacob Misiorowski</td><td class="num">.224</td><td class="num"><span class="chip good">69.7</span></td></tr>
+            <tr><td>Jhoan Duran</td><td class="num">.231</td><td class="num"><span class="chip good">67.0</span></td></tr>
+            <tr><td>Louis Varland</td><td class="num">.217</td><td class="num"><span class="chip good">66.3</span></td></tr>
+            <tr><td>Dylan Cease</td><td class="num">.264</td><td class="num"><span class="chip good">62.6</span></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+    <blockquote><b>Advantage Score</b> (Log5 odds-ratio on xwOBA, league .309): <b>Juan Soto vs Mason Miller → expected .248 xwOBA</b> — a strong pitcher edge. Even an elite bat is a quantified underdog against an elite arm; "vs the whole staff" averages this across the opposing SP + likely relievers. This is FG's "Advantage Score" done as a published formula, not a mystery number.</blockquote>
+    <p style="margin-top:14px">Deliverables: <code>gse_engine.py</code> (the engine), <code>METHODOLOGY-SMASH-BURR-SOLDS.md</code> (full formulas + legal basis), and four live tables — <code>solds_table.csv</code>, <code>burr_table.csv</code>, <code>smash_hitters.csv</code>, <code>smash_pitchers.csv</code>. Re-runs daily; rolling-30 window, platoon splits, park factors, and the NFL analogs (nflverse) are one-parameter extensions.</p>
+  </section>
+
+  <section id="nfl-engine">
+    <div class="sec-head"><span class="sec-num">11</span><h2>The NFL engine — their flagship, rebuilt</h2></div>
+    <p class="lede">NFL is where FantasyGuru makes its money. Same clean-room method, from free <strong>nflverse</strong> 2025 data: the QB-Types mobility model, the O-line/D-line trench SMASH, and WR SMASH. 45 QBs, 32 teams, 160 pass-catchers scored.</p>
+
+    <h3>QB-Types — their mobility thesis, confirmed with receipts</h3>
+    <p style="font-size:13.5px;color:var(--ink-soft)">FG claims mobile QBs score +2–4 FP/G. We classified every QB by rush rate and measured it. The premium is real — and this season, <strong>bigger than they claim</strong>:</p>
+    <div class="cards">
+      <div class="card op"><span class="tag">The finding</span><h4>+5.0 FP/G mobility premium</h4>
+        <p><strong>Very Mobile/Running: 18.2 FP/G</strong> (n=7) · Mobile: 15.6 (n=14) · <strong>Pocket: 13.2</strong> (n=24). Josh Allen, Jalen Hurts, Drake Maye lead; Stafford/Goff are the elite-pocket exceptions. GSE can publish this <em>with</em> the proof — FG only asserts it.</p></div>
+      <div class="card"><span class="tag">Top QBs · FP/G</span>
+        <div class="tbl-wrap" style="border:none;margin:0"><table style="min-width:0">
+          <thead><tr><th>QB</th><th>Type</th><th>FP/G</th></tr></thead>
+          <tbody>
+            <tr><td>Josh Allen</td><td><span class="chip good">Very Mobile</span></td><td class="num">22.8</td></tr>
+            <tr><td>Drake Maye</td><td><span class="chip good">Very Mobile</span></td><td class="num">20.6</td></tr>
+            <tr><td>Matthew Stafford</td><td>Pocket</td><td class="num">20.6</td></tr>
+            <tr><td>Patrick Mahomes</td><td>Mobile</td><td class="num">20.3</td></tr>
+            <tr><td>Jalen Hurts</td><td><span class="chip good">Very Mobile</span></td><td class="num">18.8</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <h3>Trench SMASH — O-line vs D-line (feeds their O-Line Breakdown)</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Team</th><th>Pressure% allowed</th><th>Sack rate</th><th>Pocket time</th><th>O-line</th><th>D-line rush</th></tr></thead>
+      <tbody>
+        <tr><td>LA Rams</td><td class="num">18.5</td><td class="num">3.7%</td><td class="num">2.40</td><td class="num"><span class="chip good">69.0</span></td><td class="num">64.5</td></tr>
+        <tr><td>Denver</td><td class="num">19.1</td><td class="num">3.5%</td><td class="num">2.40</td><td class="num"><span class="chip good">66.5</span></td><td class="num"><span class="chip good">69.8</span></td></tr>
+        <tr><td>Buffalo</td><td class="num">16.7</td><td class="num">7.5%</td><td class="num">2.51</td><td class="num"><span class="chip good">66.3</span></td><td class="num">45.1</td></tr>
+        <tr><td>…</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+        <tr><td>Minnesota</td><td class="num">25.7</td><td class="num">11.0%</td><td class="num">—</td><td class="num"><span class="chip threat">35.6</span></td><td class="num">—</td></tr>
+        <tr><td>Cleveland</td><td class="num">29.5</td><td class="num">9.6%</td><td class="num">—</td><td class="num"><span class="chip threat">32.3</span></td><td class="num">—</td></tr>
+      </tbody>
+    </table></div>
+    <p style="font-size:13px;color:var(--ink-soft)">Top pass-rush units: Denver (228 pressures/68 sacks), Seattle, LA Rams, Dallas. A matchup = an offense's O-line index vs the opponent's D-line index — the exact "smash spot" read their O-Line Breakdown sells.</p>
+
+    <h3>WR SMASH — receiving skill index</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Player</th><th>Tm</th><th>Rec yds/g</th><th>aDOT</th><th>SMASH</th></tr></thead>
+      <tbody>
+        <tr><td>Puka Nacua</td><td>LA</td><td class="num">107.2</td><td class="num">9.3</td><td class="num"><span class="chip good">74.5</span></td></tr>
+        <tr><td>Jaxon Smith-Njigba</td><td>SEA</td><td class="num">105.5</td><td class="num">11.2</td><td class="num"><span class="chip good">70.2</span></td></tr>
+        <tr><td>George Pickens</td><td>DAL</td><td class="num">84.1</td><td class="num">11.3</td><td class="num"><span class="chip good">66.2</span></td></tr>
+        <tr><td>Trey McBride (TE)</td><td>ARI</td><td class="num">72.9</td><td class="num">6.8</td><td class="num"><span class="chip good">65.2</span></td></tr>
+        <tr><td>Zay Flowers</td><td>BAL</td><td class="num">71.2</td><td class="num">10.2</td><td class="num"><span class="chip good">63.8</span></td></tr>
+      </tbody>
+    </table></div>
+    <h3>Coaching / Scheme engine — their Coaching Breakdown, as numbers</h3>
+    <p style="font-size:13.5px;color:var(--ink-soft)">Their coaching breakdown translates "system → player production." Built directly from play-by-play (pace, <strong>PROE</strong> = pass-rate-over-expected, red-zone lean, RB bellcow-vs-committee, WR1 funnel) for all 32 teams. <em>Their 2026 coaching set isn't published yet (2025 posted July 11, 2025) — this gives GSE the same read now, paywall-free.</em></p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Team</th><th>PROE</th><th>Plays/G</th><th>RB lead share</th><th>Scheme (auto-labeled)</th></tr></thead>
+      <tbody>
+        <tr><td>Kansas City</td><td class="num">+4.6</td><td class="num">64.5</td><td class="num">.47</td><td>Pass-heavy · fast · committee-RB</td></tr>
+        <tr><td>Arizona</td><td class="num">+4.2</td><td class="num">66.6</td><td class="num">.32</td><td>Pass-heavy · fast · committee · WR1-funnel</td></tr>
+        <tr><td>Cincinnati</td><td class="num">+2.1</td><td class="num">64.5</td><td class="num">.70</td><td>Pass-heavy · fast · bellcow-RB · WR1-funnel</td></tr>
+        <tr><td>Baltimore</td><td class="num">−8.2</td><td class="num">58.5</td><td class="num">.78</td><td>Run-heavy · slow · bellcow-RB · WR1-funnel</td></tr>
+        <tr><td>NY Jets</td><td class="num">−8.2</td><td class="num">61.2</td><td class="num">.73</td><td>Run-heavy · bellcow-RB</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>Team Defense + Rolling windows — completing the matchup pairs</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">Team defense (top)</span>
+        <div class="tbl-wrap" style="border:none;margin:0"><table style="min-width:0">
+          <thead><tr><th>Team</th><th>Pass-D</th><th>Rush-D</th><th>Overall</th></tr></thead>
+          <tbody>
+            <tr><td>Seattle</td><td class="num">65.8</td><td class="num"><span class="chip good">68.3</span></td><td class="num"><span class="chip good">66.8</span></td></tr>
+            <tr><td>Houston</td><td class="num">62.4</td><td class="num">64.0</td><td class="num"><span class="chip good">65.7</span></td></tr>
+            <tr><td>Minnesota</td><td class="num">62.2</td><td class="num">50.0</td><td class="num">64.1</td></tr>
+            <tr><td>Cleveland</td><td class="num">58.4</td><td class="num">56.0</td><td class="num">64.1</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="card"><span class="tag">Rolling form (last 4 wks)</span>
+        <h4>Recency the season number hides</h4>
+        <p><strong>Baltimore PROE −8.2 (season) → −18.8 (last 4)</strong> — a hard late run-lean. KC dropped +4.6 → −1.5. Every metric recomputes over any trailing window (L2W/L4W/since-a-coaching-change); the same mechanic drives the MLB rolling-30 SMASH.</p>
+      </div>
+    </div>
+    <p style="margin-top:14px">NFL deliverables: <code>nfl_engine.py</code>, <code>nfl_scheme_defense.py</code> + <code>qb_types.csv</code>, <code>trench_smash.csv</code>, <code>wr_smash.csv</code>, <code>scheme_coaching.csv</code>, <code>team_defense.csv</code>, <code>rolling_form.csv</code>. Combined with the MLB engine, GSE now has clean-room, glass-box rebuilds of FantasyGuru's <strong>entire</strong> signature toolkit across both sports — including a coaching-breakdown analog theirs hasn't even published for 2026 yet.</p>
+  </section>
+
+  <footer>
+    FantasyGuru competitive dossier v2 · public-surface + passive OSINT · paywalled bodies not accessed or reproduced ·
+    GSE engine built from free public data (MLB Stats API + Baseball Savant), methods per 17 U.S.C. §102(b) ·
+    prepared for Galaxy Sports Edge · 2026-07-10 · raw data + CSV inventory delivered separately.
+  </footer>
+</div>
+
+<script>
+  // smooth in-page nav
+  document.querySelectorAll('nav.toc a').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var t=document.querySelector(this.getAttribute('href'));
+      if(t){e.preventDefault();t.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'start'});}
+    });
+  });
+</script>

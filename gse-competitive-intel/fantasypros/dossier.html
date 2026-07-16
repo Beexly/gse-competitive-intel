@@ -1,0 +1,215 @@
+<title>FantasyPros — Competitive Intelligence Dossier</title>
+<style>
+  :root{
+    --bg:#f5f6f3; --panel:#fff; --panel-2:#faf9f6; --ink:#1a1e26; --ink-soft:#4a5262;
+    --line:#e3e0d6; --line-strong:#cec8b9;
+    --accent:#1f7a6b; --accent-soft:#bfe0d8; --accent-ink:#0f5548;
+    --good:#2f855a; --good-bg:#e4f1e8; --threat:#b23b34; --threat-bg:#f6e2df;
+    --amber:#b5791a;
+    --mono:'SFMono-Regular',ui-monospace,'Cascadia Code','JetBrains Mono',Consolas,monospace;
+    --sans:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#0e1418; --panel:#151d21; --panel-2:#121a1e; --ink:#e7eae9; --ink-soft:#98a6a3;
+    --line:#243239; --line-strong:#31434b; --accent:#3fb8a2; --accent-soft:#123029; --accent-ink:#66d6bf;
+    --good:#4bb98a; --good-bg:#132a22; --threat:#e5675c; --threat-bg:#2c1a18; --amber:#e0a43b;
+  }}
+  :root[data-theme="light"]{--bg:#f5f6f3;--panel:#fff;--panel-2:#faf9f6;--ink:#1a1e26;--ink-soft:#4a5262;--line:#e3e0d6;--line-strong:#cec8b9;--accent:#1f7a6b;--accent-soft:#bfe0d8;--accent-ink:#0f5548;--good:#2f855a;--good-bg:#e4f1e8;--threat:#b23b34;--threat-bg:#f6e2df;--amber:#b5791a;}
+  :root[data-theme="dark"]{--bg:#0e1418;--panel:#151d21;--panel-2:#121a1e;--ink:#e7eae9;--ink-soft:#98a6a3;--line:#243239;--line-strong:#31434b;--accent:#3fb8a2;--accent-soft:#123029;--accent-ink:#66d6bf;--good:#4bb98a;--good-bg:#132a22;--threat:#e5675c;--threat-bg:#2c1a18;--amber:#e0a43b;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  a{color:var(--accent)}
+  header.top{border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--panel-2),transparent)}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block}
+  h1{font-size:clamp(30px,5vw,50px);line-height:1.04;letter-spacing:-.02em;margin:.35em 0 .2em;text-wrap:balance;font-weight:800}
+  h1 em{font-style:normal;color:var(--accent)}
+  .sub{color:var(--ink-soft);max-width:66ch;font-size:17px}
+  .meta-row{font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);display:flex;gap:18px;flex-wrap:wrap;margin-top:20px;padding-top:16px;border-top:1px dashed var(--line-strong)}
+  .meta-row b{color:var(--ink);font-weight:600}
+  .boundary{margin:26px 0 8px;border:1px solid var(--line-strong);border-left:4px solid var(--accent);background:var(--panel);border-radius:10px;padding:16px 18px}
+  .boundary .lab{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);display:block;margin-bottom:6px}
+  .boundary p{margin:0;font-size:14.5px;color:var(--ink-soft)}.boundary b{color:var(--ink)}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:26px 0}
+  .tile{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .tile .n{font-size:29px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
+  .tile .n small{font-size:14px;font-weight:600;color:var(--ink-soft)}
+  .tile .l{font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-soft);margin-top:8px}
+  nav.toc{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin:8px 0 0}
+  nav.toc .inner{display:flex;gap:6px;overflow-x:auto;padding:10px 0;font-family:var(--mono);font-size:12px}
+  nav.toc a{color:var(--ink-soft);text-decoration:none;white-space:nowrap;padding:5px 10px;border-radius:7px;border:1px solid transparent}
+  nav.toc a:hover{color:var(--ink);border-color:var(--line-strong);background:var(--panel)}
+  section{padding:30px 0;border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;gap:14px;align-items:baseline;margin-bottom:6px}
+  .sec-num{font-family:var(--mono);font-size:13px;color:var(--accent);font-weight:600}
+  h2{font-size:clamp(21px,3vw,27px);letter-spacing:-.01em;margin:0;font-weight:750;text-wrap:balance}
+  .lede{color:var(--ink-soft);max-width:70ch;margin:.5em 0 1.2em;font-size:15.5px}
+  h3{font-size:16px;margin:22px 0 8px;font-weight:700}
+  p{max-width:74ch}ul{padding-left:18px;max-width:74ch}li{margin:5px 0}strong{font-weight:680}
+  .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:14px 0}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  thead th{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);background:var(--panel-2)}
+  tbody tr:last-child td{border-bottom:none}tbody tr:hover{background:var(--panel-2)}
+  td .num,.num{font-variant-numeric:tabular-nums}
+  .price{font-family:var(--mono);font-weight:600;color:var(--accent-ink);white-space:nowrap}
+  .chip{display:inline-block;font-family:var(--mono);font-size:11px;padding:2px 8px;border-radius:999px;letter-spacing:.03em;border:1px solid transparent}
+  .chip.good{background:var(--good-bg);color:var(--good);border-color:color-mix(in srgb,var(--good) 30%,transparent)}
+  .chip.threat{background:var(--threat-bg);color:var(--threat);border-color:color-mix(in srgb,var(--threat) 30%,transparent)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px;margin:16px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 17px}
+  .card h4{margin:0 0 6px;font-size:15px;font-weight:720}
+  .card .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:9px}
+  .card p{font-size:13.5px;color:var(--ink-soft);margin:.3em 0}
+  .card.op{border-top:3px solid var(--good)}.card.th{border-top:3px solid var(--threat)}
+  .seam{counter-reset:none;display:flex;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line)}
+  .seam:last-child{border-bottom:none}
+  .seam .k{font-family:var(--mono);font-weight:700;color:var(--amber);font-size:13px;flex:0 0 auto;width:20px}
+  .seam .t{font-size:13.7px}.seam .t b{color:var(--ink)}
+  blockquote{margin:14px 0;padding:12px 16px;border-left:3px solid var(--accent-soft);background:var(--panel-2);border-radius:0 8px 8px 0;color:var(--ink-soft);font-size:14.5px}
+  blockquote b{color:var(--ink)}
+  footer{padding:30px 0 60px;color:var(--ink-soft);font-size:12.5px;font-family:var(--mono)}
+  ::selection{background:var(--accent);color:#fff}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+  @media (max-width:640px){h1{font-size:32px}}
+</style>
+
+<header class="top"><div class="wrap" style="padding:34px 22px 28px">
+  <div class="kicker"><span class="dot"></span> Competitive Intelligence · Field Dossier · NFL + MLB</div>
+  <h1>FantasyPros — <em>the field, averaged and sold</em></h1>
+  <p class="sub">A teardown of fantasy sports' biggest aggregator: a bootstrapped, sub-20-person, ~4-million-page SEO engine that sells the consensus of 100+ experts — and grades their accuracy with a method that quietly rewards chalk. Public surface + passive OSINT only, for Galaxy Sports Edge.</p>
+  <div class="meta-row">
+    <span><b>Compiled</b> 2026-07-10</span>
+    <span><b>Sources</b> llms.txt · sitemaps · headers · public search · Wayback</span>
+    <span><b>Method verified</b> Accuracy-Gap + z-score, live &amp; 2018 archive</span>
+    <span><b>Boundary</b> no paywall / no /api / no data reproduced</span>
+  </div>
+</div></header>
+
+<nav class="toc"><div class="wrap"><div class="inner">
+  <a href="#pos">01 Positioning</a><a href="#corp">02 Corporate</a><a href="#seo">03 SEO Engine</a>
+  <a href="#tech">04 Stack</a><a href="#price">05 Pricing</a><a href="#sys">06 ECR + Accuracy</a>
+  <a href="#seams">07 The Loopholes</a><a href="#tools">08 Tools</a><a href="#strat">09 Strategic Read</a>
+</div></div></nav>
+
+<div class="wrap">
+  <div class="boundary"><span class="lab">◇ Collection boundary</span>
+    <p>Everything here is from FantasyPros' <b>public</b> surface — their own <code>llms.txt</code> and sitemaps, public headers/HTML, public search, and the Wayback Machine. Nothing behind login/paywall; nothing under the robots-disallowed <code>/api/ /json/ /ajax/ /ranker/</code>; and <b>none of their ECR/consensus data tables were reproduced</b> (proprietary compilation). Methods and statistics aren't copyrightable — so this documents <b>how their systems work</b>, and builds ours, without taking their output.</p>
+  </div>
+
+  <div class="tiles">
+    <div class="tile"><div class="n">~4<small>M</small></div><div class="l">Est. programmatic doorway pages</div></div>
+    <div class="tile"><div class="n">38<small>M</small></div><div class="l">Claimed annual visitors</div></div>
+    <div class="tile"><div class="n">&lt;20</div><div class="l">Employees · $0 outside funding</div></div>
+    <div class="tile"><div class="n">~90+</div><div class="l">Experts averaged into ECR</div></div>
+    <div class="tile"><div class="n"><small>$</small>3.99<small>/mo</small></div><div class="l">PRO entry price (freemium)</div></div>
+  </div>
+
+  <section id="pos"><div class="sec-head"><span class="sec-num">01</span><h2>Positioning — an aggregator, not a modeler</h2></div>
+    <p class="lede">FantasyPros' entire product is other people's opinions, averaged and distributed at scale. Its signature — ECR (Expert Consensus Rankings) — is a blend of ~90–100+ experts from 100+ outlets. It has no first-party predictive signal of its own.</p>
+    <ul>
+      <li><strong>The core:</strong> ECR = the mean of the field; the "Expert Accuracy" leaderboard is a grading layer that legitimizes it; everything else (projections, Draft Wizard, My Playbook, DFS) is tooling wrapped around the consensus + league-sync.</li>
+      <li><strong>The crux for GSE:</strong> you can't out-aggregate them (they own the field) or cheaply out-SEO them. You beat them on the one thing consensus <em>cannot</em> produce — a differentiated, calibrated, provable prediction. Their own accuracy engine literally can't detect when the whole field is wrong (§07, seam 6) — a real model can.</li>
+    </ul>
+    <blockquote><b>The smoking gun — aggregation all the way down:</b> even their <em>own</em> projections are averages of others. <b>Zeile</b>, their consensus projection, is by their own description a <b>straight-up average of the other projection systems</b> — and it <em>won their own 2025 baseball projection-accuracy study</em> (the crowd mean beat every individual modeler). ATC is an accuracy-<em>weighted</em> average; the real models they blend (THE BAT, etc.) are third parties'. ECR averages rankings (Borda-count "Rank Points"); Zeile averages projections. <b>FantasyPros manufactures zero first-party prediction.</b> Bonus: ATC beating Zeile — accuracy-weighting the sources beats a plain average — validates GSE's accuracy-weighted-consensus engine with their own data.</blockquote>
+  </section>
+
+  <section id="corp"><div class="sec-head"><span class="sec-num">02</span><h2>Corporate reality — bootstrapped, lean, marketing-born</h2></div>
+    <p class="lede">A ~4M-page, 38M-visit business run by fewer than 20 people with zero outside capital — only possible because the content is templated and the intelligence is borrowed.</p>
+    <ul>
+      <li><strong>Founded 2010 by David Kim (CEO) &amp; Tom Nguyen</strong> — both from <strong>Hotwire</strong> (online marketing / marketing analytics). Founder DNA is performance marketing, not sports science — which is exactly why it's an SEO machine.</li>
+      <li><strong>Entity: Marzen Media LLC</strong>, Las Vegas NV. Also owns <strong>BettingPros.com</strong>.</li>
+      <li><strong>Bootstrapped — no VC/PE on record.</strong> Grown via tuck-ins: Pickemfirst LLC (2013), Sports Injury Alert (2015).</li>
+      <li><strong>Scale (3rd-party est.):</strong> ~$5–10M revenue, 10–19 employees; own claim 38M annual visitors.</li>
+    </ul>
+    <blockquote><b>Read:</b> they won't out-R&amp;D a focused, funded modeling effort. Their advantage is inertia + SEO breadth + league-sync lock-in — not data-science velocity. That's a moat you route around, not out-spend.</blockquote>
+  </section>
+
+  <section id="seo"><div class="sec-head"><span class="sec-num">03</span><h2>The programmatic-SEO engine — where "38M visits" comes from</h2></div>
+    <p class="lede">Their traffic is manufactured at template scale, not earned per insight.</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Signal</th><th>Finding</th></tr></thead>
+      <tbody>
+        <tr><td>Sitemap index</td><td class="num">231 child sitemaps — 120 MLB + 87 NFL (+ NBA/NHL/articles/news)</td></tr>
+        <tr><td>One child sitemap (NFL QB "start")</td><td class="num">21,063 URLs — draft &amp; trade variants identical size</td></tr>
+        <tr><td>Deep positions (MLB OF "start")</td><td class="num">paginated ×10 (~206k for one position/type)</td></tr>
+        <tr><td><strong>Estimated total programmatic pages</strong></td><td class="num"><strong>~3–4 MILLION</strong> ("should I start [player] wk N", per player × action × format)</td></tr>
+        <tr><td>Hand-written editorial articles</td><td class="num">~42</td></tr>
+      </tbody>
+    </table></div>
+    <p>The ratio <em>is</em> the company: a long-tail surface that captures every "should I start X" search and funnels to consensus + a cheap subscription upsell. <strong>Don't out-page them — route around with proprietary signal and a native, trustworthy product.</strong></p>
+  </section>
+
+  <section id="tech"><div class="sec-head"><span class="sec-num">04</span><h2>Tech stack (passive fingerprint)</h2></div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Layer</th><th>Finding</th></tr></thead><tbody>
+        <tr><td>Origin</td><td>Apache/2.4.52 (Ubuntu) — <strong>PHP monolith</strong></td></tr>
+        <tr><td>CDN</td><td><strong>AWS CloudFront</strong> (not Cloudflare)</td></tr>
+        <tr><td>Analytics</td><td><strong>Mixpanel + GA + GTM</strong> (24× gtag) — instrumented, experiment-driven</td></tr>
+        <tr><td>Consent</td><td>OneTrust (enterprise)</td></tr>
+        <tr><td>Integrations</td><td><strong>Sleeper</strong> (deep league sync), Shopify (merch), Vue/Next widgets</td></tr>
+      </tbody></table></div>
+    <p>More mature and instrumented than FantasyGuru's WordPress/editorial setup — but still conventional web engineering, not a modeling/data-science stack. Edge = product + distribution, not first-party analytics.</p>
+  </section>
+
+  <section id="price"><div class="sec-head"><span class="sec-num">05</span><h2>Pricing — cheap, freemium, volume-driven</h2></div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Tier</th><th>Annual</th><th>Monthly</th><th>Unlocks (cumulative)</th></tr></thead><tbody>
+        <tr><td>PRO</td><td class="price">$3.99/mo</td><td class="price">$11.99</td><td>Draft kit, mock drafts &amp; cheat sheets, waiver/trade analysis, Start/Sit, 2 leagues/sport</td></tr>
+        <tr><td>MVP <span class="chip good">popular</span></td><td class="price">$5.99/mo</td><td class="price">$16.99</td><td>+ Live-sync Draft Assistant, keeper/dynasty, salary-cap tools, auto-lineups, 10 leagues/sport</td></tr>
+        <tr><td>HOF</td><td class="price">$8.99/mo</td><td class="price">$22.99</td><td>+ 50 leagues, Coach AI, Waiver Planner, DFS Optimizer + Projections + ROI Analyzer</td></tr>
+      </tbody></table></div>
+    <p>All tiers bundle NFL/MLB/NBA + apps. <strong>Far cheaper than FantasyGuru</strong> ($59–499/yr) — a hook-the-SEO-funnel, convert-a-slice-cheaply model. Consensus rankings and accuracy leaderboards are <strong>free</strong>; personalization, live sync, and DFS are the wall.</p>
+  </section>
+
+  <section id="sys"><div class="sec-head"><span class="sec-num">06</span><h2>The two signature systems</h2></div>
+    <div class="cards">
+      <div class="card"><span class="tag">Consensus</span><h4>ECR — Expert Consensus Rankings</h4>
+        <p><strong>Not a simple average</strong> — a "Rank Points" system per player by ranked position, to avoid unranked-player skew. Exposes Best/Worst/AVG/StdDev + ADP + "vs. ADP." A "Pick Experts" control recomputes from a chosen subset. Types: Draft/Weekly/ROS/Dynasty/Rookies/Waiver/Sleepers. Formats: Std/Half/PPR/Superflex/2QB/BestBall.</p></div>
+      <div class="card"><span class="tag">Credibility engine</span><h4>Expert Accuracy (verified)</h4>
+        <p>Rank slot → expected pts (historical avg) → |expected−actual| = <strong>Accuracy Gap</strong>. Pool = union of top-N by ECR &amp; top-N by actual. Weekly gaps → <strong>z-scores</strong> vs field → <strong>drop each expert's worst-z week</strong> (after Wk8) → sum Wks 1–17. Half-PPR. 150+ experts in-season, 190–225+ preseason. MLB = 5×5 roto.</p></div>
+    </div>
+    <blockquote>Verified against the live page <b>and the 2018 Wayback archive</b>: the Accuracy-Gap + z-score + drop-worst-week skeleton has been <b>stable since ≥2018</b> — they only widened pools (RB 35→40, WR 35→50), switched Standard→Half-PPR, and split out IDP. The entire "most accurate experts" brand has rested on this the whole time.</blockquote>
+  </section>
+
+  <section id="seams"><div class="sec-head"><span class="sec-num">07</span><h2>The accuracy loopholes — the corner worth prying open</h2></div>
+    <p class="lede">Their credibility rests on a grader with six exploitable seams. The z-score design is genuinely clever — and genuinely biased toward chalk.</p>
+    <div style="background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:6px 18px">
+      <div class="seam"><div class="k">1</div><div class="t"><b>Rank→generic-curve baseline ignores conviction.</b> Two experts who rank a player the same score identically — tiering and gaps (the real signal) are invisible. Rewards ordinal guessing, not calibrated magnitude.</div></div>
+      <div class="seam"><div class="k">2</div><div class="t"><b>Drop-worst-z-week launders the biggest blowup</b> while z-scoring caps upside → structurally rewards low-variance chalk-huggers, which then biases the whole ECR toward chalk.</div></div>
+      <div class="seam"><div class="k">3</div><div class="t"><b>Omission seam (verified, narrower than first thought).</b> They defend it, but the penalty for omitting a boomer is capped at ~ECR+1, not his actual finish — so omitting deep sleepers still costs far less than the miss is worth.</div></div>
+      <div class="seam"><div class="k">4</div><div class="t"><b>Snapshot timing = free accuracy.</b> Two fixed snapshots reward whoever updates latest (info timing), not foresight.</div></div>
+      <div class="seam"><div class="k">5</div><div class="t"><b>Chalk-week z-noise.</b> Tiny raw-gap spreads get magnified into big z-swings — leaderboard motion that is statistical noise presented as skill.</div></div>
+      <div class="seam"><div class="k">6</div><div class="t"><b>Relative, not absolute (the deepest).</b> A z-score says "better than the field," never "actually right." <b>Consensus-wide error is undetectable and unpenalized</b> — being wrong with everyone is free. Exactly the error a differentiated model exists to catch.</div></div>
+    </div>
+    <p style="margin-top:14px;font-size:13px;color:var(--ink-soft)">Full detail: <code>fp-accuracy-loopholes.md</code> + <code>fp-zscore-deepdive.md</code> (with the 2018→2025 diff).</p>
+  </section>
+
+  <section id="tools"><div class="sec-head"><span class="sec-num">08</span><h2>Tools catalog</h2></div>
+    <div class="cards">
+      <div class="card"><span class="tag">Flagship</span><h4>Draft Wizard</h4><p>Mock Draft Simulator, Mock Draft Lobby (live vs real opponents), Draft Assistant (real-time), Draft Analyzer, Draft Intel, Cheat Sheet Creator, salary-cap (auction) sim + calculator.</p></div>
+      <div class="card"><span class="tag">In-season</span><h4>My Playbook</h4><p>Start/Sit Assistant, Who Should I Start, Trade Analyzer, Trade Finder, Waiver Assistant, League Analyzer, Research Assistant, multi-league dashboard.</p></div>
+      <div class="card"><span class="tag">Data</span><h4>Pages &amp; feeds</h4><p>Projections (draft/weekly/ROS), Stats, Strength of Schedule, Depth Charts, <strong>MLB Closer Depth Chart</strong>, Player News, Props, Gameday Live (win-prob/lineup tracker).</p></div>
+      <div class="card"><span class="tag">HOF tier</span><h4>DFS + AI</h4><p>NFL/MLB/NBA Lineup Optimizer, DFS projections, ownership, ROI Analyzer; <strong>Coach AI</strong> + Waiver Planner. Sister site <strong>BettingPros</strong> (picks/odds/props).</p></div>
+    </div>
+  </section>
+
+  <section id="strat"><div class="sec-head"><span class="sec-num">09</span><h2>Strategic read for Galaxy Sports Edge</h2></div>
+    <div class="cards">
+      <div class="card op"><span class="tag">Opportunity</span><h4>Beat consensus where it's blind</h4><p>ECR is a mean; its accuracy engine can't see consensus-wide error (seam 6). A calibrated, absolutely-scored model catches exactly that — and it's provable.</p></div>
+      <div class="card op"><span class="tag">Opportunity</span><h4>Publish an honest accuracy board</h4><p>Their z-score/drop-worst-week method rewards chalk and launders blowups. A proper scoring rule (Brier/log-loss, calibration, no dropped week, coverage-adjusted) is a fairer scoreboard — and a public one undercuts their core credibility asset.</p></div>
+      <div class="card op"><span class="tag">Opportunity</span><h4>Own the number</h4><p>They sell the field's opinion; GSE sells its own rating with receipts. "We don't average pundits — we out-predict them, here's the back-test" is a pitch consensus can't answer.</p></div>
+      <div class="card th"><span class="tag">Respect</span><h4>Distribution + lock-in</h4><p>Massive SEO breadth, ESPN/Yahoo/Sleeper/CBS league-sync lock-in, a huge free funnel — run absurdly lean. Compete on signal &amp; trust, not page count.</p></div>
+    </div>
+    <p style="margin-top:14px"><strong>Formats worth emulating (templates, not copies):</strong> ECR-style dispersion display (Best/Worst/StdDev), "vs. market" divergence (ADP/line), Strength-of-Schedule grades (GSE has the scheme/defense engine), Closer Depth Chart (GSE has Solds/BURR), Draft-Wizard-style simulation, and an accuracy leaderboard done honestly.</p>
+  </section>
+
+  <footer>FantasyPros competitive dossier · public-surface + passive OSINT · methodology described in original words, no ranking/consensus data reproduced · prepared for Galaxy Sports Edge · 2026-07-10</footer>
+</div>
+
+<script>
+  document.querySelectorAll('nav.toc a').forEach(function(a){a.addEventListener('click',function(e){
+    var t=document.querySelector(this.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'start'});}});});
+</script>
