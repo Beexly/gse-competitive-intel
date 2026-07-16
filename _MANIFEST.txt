@@ -5,7 +5,14 @@
 #   inforeg_kiito.md, kiito-inforegister.md (all national-ID/DOB carriers).
 # _scores24-teardown-final.md had 4 inline PII strings redacted (national ID + DOB of the
 #   scores24.live beneficial owner) — see _INDEX-for-nfl-session.md personal-data section.
-# Generated file count: 537
+# Generated file count: 537 (original scores24/FantasyPros research set, enumerated below).
+#
+# ADDED after this manifest (not enumerated below): gse-competitive-intel/ subfolder,
+#   45 files copied PII-clean from the local GSE-competitive-intel repo — runnable NFL/MLB
+#   engines (nfl_engine.py, nfl_scheme_defense.py, gse_engine.py), precomputed feature CSVs
+#   (qb_types, trench_smash, wr_smash, scheme_coaching, team_defense, rolling_form, smash_*,
+#   burr/solds), FantasyGuru + FantasyPros dossiers & methodology, and a data-pull README.
+#   Total tracked files in repo now: 582. Full current list: `git ls-files`.
 
 .firecrawl/_verify-terms-live.md
 .firecrawl/homepage-footer.md
