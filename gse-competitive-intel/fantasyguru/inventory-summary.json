@@ -1,0 +1,40 @@
+{
+  "total": 46844,
+  "sport_counts": {
+    "CFB": 172,
+    "NFL": 4081,
+    "MLB": 1128,
+    "NBA": 589,
+    "CFL": 54,
+    "NASCAR": 186,
+    "OTHER/UNKNOWN": 38700,
+    "PGA": 5,
+    "MMA": 1479,
+    "NHL": 424,
+    "UFL": 26
+  },
+  "franchise_counts": {
+    "Offensive Line Breakdown": 10,
+    "Ray's Ramblings": 94,
+    "MLB Cheat Sheet": 1,
+    "MLB DFS Breakdown": 290,
+    "MLB Umpire Report": 167,
+    "NFL DFS Breakdown": 1236,
+    "Dynasty": 104,
+    "Podcast/Livestream": 104,
+    "Ray's Plays": 131,
+    "QB Analysis": 216,
+    "Rookie Expectation/Profile": 178,
+    "Best Ball": 38,
+    "Mock Draft": 5,
+    "Player Profile (NFL)": 80,
+    "Training Camp Report": 31,
+    "MLB Bullpen": 1,
+    "Betting/Props": 40,
+    "Practice Report": 1568,
+    "MLB Rankings/ADP": 5,
+    "Targets & Touches": 34,
+    "Waiver Wire": 33,
+    "Coach Breakdown": 66
+  }
+}
