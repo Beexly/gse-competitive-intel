@@ -577,3 +577,83 @@ test("pick selection is NOT in DOM for FREE tier users", async ({ page }) => {
 25. **NEW** Run pgvector backfill script on existing picks → add "Similar Historical Picks" to pick detail page
 26. Evaluate nflverse (`nfl_data_py`) as canonical NFL stats layer
 27. Add ESPN public API fallback (sprig-dashboard pattern)
+
+**Month 2 (Wave 5 — observability + growth):**
+28. **CRITICAL** `npm install @sentry/nextjs` → add `sentry.client.config.ts`, wrap BullMQ workers with `withSentryWorker` → zero production error blind spots
+29. **HIGH** `npm install posthog-js posthog-node` → instrument `pick_viewed`, `paywall_hit`, `upgrade_clicked` → build conversion funnel in PostHog dashboard
+30. **HIGH** `brew install ollama && ollama pull llama3.1:8b` → add Ollama to LiteLLM config → pre-screen 50 games/day locally, reducing Sonnet calls by ~80%
+31. **HIGH** `npm install @react-email/components react-email resend` → build ELITE welcome, WIN alert, and 7-day drip templates → `npx react-email dev` for live preview
+32. **MEDIUM** `npm install @opentelemetry/sdk-node @opentelemetry/auto-instrumentations-node` → add `src/instrumentation.ts` → run Jaeger locally → identify which step causes 4s pick latency
+
+---
+
+## Wave 5 — Observability + Growth Layer (5 repos, targeting unaddressed gaps)
+
+**Gap analysis**: Cross-referenced all 4 previous waves + existing app stack (AgentOps, LiteLLM, n8n, Trigger.dev, Vercel, Sentry) against GSN's production blindspots. Five genuine gaps identified — zero overlap with existing tools.
+
+### The 5 Gaps Addressed
+
+| Gap | Tool | Stars | What Existing Tools Miss |
+|---|---|---|---|
+| Production error visibility | Sentry (`getsentry/sentry-javascript`) | 30k | AgentOps = AI sessions only; Vercel logs = no aggregation |
+| User behavior data | PostHog (`PostHog/posthog`) | 24k | AgentOps/LiteLLM/n8n = zero user funnel analytics |
+| Local AI inference | Ollama (`ollama/ollama`) | 106k | All AI is cloud-only; LiteLLM can route to Ollama already |
+| Email template rendering | react-email (`resend/react-email`) | 14k | n8n routes emails but renders only raw HTML |
+| Distributed request tracing | OpenTelemetry (`open-telemetry/opentelemetry-js`) | — | AgentOps = AI only; Sentry = errors only; nothing traces HTTP→BullMQ→Prisma→Claude |
+
+### What Was Added
+
+| File | Content |
+|---|---|
+| `docs/ai/integrations/SENTRY-ERROR-TRACKING.md` | `@sentry/nextjs` setup, `withSentryWorker` for BullMQ, paywall bypass tracking, release health |
+| `docs/ai/integrations/POSTHOG-ANALYTICS.md` | `posthog-js` + `posthog-node`, conversion funnel, feature flags for ELITE rollouts |
+| `docs/ai/integrations/OLLAMA-LOCAL-MODELS.md` | Local LLM runner, LiteLLM integration, game pre-screening, local embeddings |
+| `docs/ai/integrations/REACT-EMAIL-TEMPLATES.md` | React email templates, ELITE welcome, WIN alerts, Resend delivery |
+| `docs/ai/integrations/OPENTELEMETRY-TRACING.md` | SDK Node setup, manual spans for pick pipeline, BullMQ trace propagation, Jaeger local dev |
+
+### Immediate ROI (can be done today)
+
+```bash
+# Sentry — 30-minute install, immediate production error visibility
+npm install @sentry/nextjs --workspace=apps/web
+npx @sentry/wizard@latest -i nextjs --workspace=apps/web
+# Set SENTRY_DSN in Vercel env → done
+
+# PostHog — one analytics.capture() call reveals conversion drop-off
+npm install posthog-js posthog-node --workspace=apps/web
+# Add <PHProvider> to layout.tsx, add 3 posthog.capture() calls → done
+
+# Ollama — free local pre-screening
+brew install ollama && ollama pull llama3.1:8b
+# Add to LiteLLM config: model_name: ollama/llama3.1:8b → done
+# ~80% Sonnet call reduction for game screening tasks
+
+# react-email — previews work before any Resend account
+npm install @react-email/components react-email --workspace=apps/web
+npx react-email dev --dir apps/web/src/emails
+# Build welcome-elite.tsx → see it live in browser
+
+# OpenTelemetry — run Jaeger, generate one pick, see the flame graph
+docker run -d -p 16686:16686 -p 4318:4318 jaegertracing/all-in-one:latest
+# Add src/instrumentation.ts → pick request trace appears in Jaeger at localhost:16686
+```
+
+### Integration Architecture (Wave 5 → Existing Stack)
+
+```
+HTTP Request
+  ├── OpenTelemetry (trace the full request path)
+  ├── Sentry (capture any exceptions)
+  └── → PostHog (user behavior events)
+        └── → n8n (trigger automation on behavior events)
+
+Pick Generation Pipeline
+  ├── Ollama/llama3.1:8b (pre-screen via LiteLLM)
+  ├── Claude Sonnet (deep analysis on screened games only)
+  ├── AgentOps (AI session telemetry)
+  └── OpenTelemetry (end-to-end latency attribution)
+
+Email Delivery
+  ├── react-email (render typed templates)
+  └── → Resend (send) ← n8n (schedule/route)
+```
