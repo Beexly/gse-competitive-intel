@@ -311,24 +311,129 @@ Complete config to add to `~/.claude/claude_desktop_config.json`:
 
 ---
 
+---
+
+## Wave 3: Next 5 Highest-Leverage Repos
+
+> Added: 2026-07-21
+> Branch: claude/ecc-gse-gsn-commands-weaxnk
+> Integration guides: `/workspace/sports/docs/ai/integrations/`
+
+### Why These 5 (300iq Reasoning)
+
+Wave 1 added skills/audit tools. Wave 2 filled memory, cost, and async gaps.
+Wave 3 fills four remaining gaps:
+
+1. **App-layer AI gap** — GSN calls `anthropic.messages.create()` directly. No streaming, no abort, no tool use in RSC. Users stare at loading spinners.
+2. **Editor-level AI gap** — Claude Code is CLI-only. There's no AI inside the editor itself for quick, cursor-aware queries without context-switching.
+3. **Secret history gap** — `/push-safe` scans staged files only. Secrets committed 6 months ago and later deleted still live in git history.
+4. **Pick quality gap** — LiteLLM tracks cost. Nothing tracks whether the picks are actually good. Model upgrades could silently degrade pick accuracy.
+5. **Observability gap** — No distributed tracing. When pick generation takes 4s, which step caused it? Which user costs $2/session?
+
+| Repo | Stars | Priority | Gap Filled |
+|---|---|---|---|
+| `vercel/ai` | 14k | CRITICAL | App-layer AI gap — streaming, hooks, RSC tool use |
+| `continuedev/continue` | 22k | HIGH | Editor-level AI gap — Claude inside VS Code |
+| `trufflesecurity/trufflehog` | 18k | HIGH | Secret history gap — git history scan, CI integration |
+| `microsoft/promptflow` | 10k | MEDIUM | Pick quality gap — prompt A/B testing, accuracy tracking |
+| `agentops-ai/agentops` | 4k | MEDIUM | Observability gap — session tracing, per-user cost attribution |
+
+### INTEGRATED INTO GSN (this session, Wave 3)
+
+| Repo | What Was Added |
+|---|---|
+| `vercel/ai` | `VERCEL-AI-SDK.md` — streamText/streamObject/useChat patterns, LiteLLM routing, migration path |
+| `continuedev/continue` | `CONTINUE-DEV.md` — VS Code config, repo-level GSN system message, custom slash commands |
+| `trufflesecurity/trufflehog` | `TRUFFLEHOG-SECRETS.md` — full history scan, CI GitHub Actions step, pre-push hook; `/scan-secrets` slash command |
+| `microsoft/promptflow` | `PROMPTFLOW-EVAL.md` — pick evaluation flow, ground truth dataset export, CI quality gate; `/eval-picks` slash command |
+| `agentops-ai/agentops` | `AGENTOPS-OBSERVABILITY.md` — TypeScript SDK integration, BullMQ tracing, per-user cost attribution, alert config |
+
+### LOCAL MACHINE SETUP (Wave 3)
+
+```bash
+# 1. Vercel AI SDK — add to Sports repo
+cd /workspace/sports && npm install ai @ai-sdk/anthropic zod
+
+# 2. Continue.dev — VS Code extension
+code --install-extension Continue.continue
+# Then configure ~/.continue/config.json with Claude Sonnet + Haiku (see CONTINUE-DEV.md)
+
+# 3. TruffleHog — Docker (zero install)
+docker pull trufflesecurity/trufflehog:latest
+# Run immediate full scan:
+docker run --rm -v "$PWD:/pwd" trufflesecurity/trufflehog:latest git file:///pwd --only-verified
+
+# 4. PromptFlow — Python
+pip install promptflow promptflow-tools promptflow-evals
+# Set up evaluation flow: see PROMPTFLOW-EVAL.md
+
+# 5. AgentOps — TypeScript
+cd /workspace/sports && npm install agentops
+# Get API key at app.agentops.ai (free: 10k sessions/month)
+# Add AGENTOPS_API_KEY to .env.local and Vercel
+```
+
+### Wave 3 — Continue.dev Config Block
+
+Complete `~/.continue/config.json` for GSN development:
+
+```json
+{
+  "models": [
+    {
+      "title": "Claude Sonnet (fast)",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-20250514",
+      "apiKey": "$ANTHROPIC_API_KEY"
+    },
+    {
+      "title": "Claude Haiku (cheap)",
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5-20251001",
+      "apiKey": "$ANTHROPIC_API_KEY"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "provider": "anthropic",
+    "model": "claude-haiku-4-5-20251001",
+    "apiKey": "$ANTHROPIC_API_KEY"
+  },
+  "contextProviders": [
+    { "name": "diff" }, { "name": "repo-map" }, { "name": "file" },
+    { "name": "terminal" }, { "name": "problems" }, { "name": "open" }
+  ]
+}
+```
+
+Plus `.continue/config.json` committed to the Sports repo root with the GSN system message (see CONTINUE-DEV.md).
+
+---
+
 ## Next Steps (Priority Order — Updated)
 
 **This week (Wave 1 + Wave 2 local setup):**
 1. Install Claude Code plugins locally (ECC, pm-skills, hallmark, superpowers, karpathy-skills, last30days)
 2. Install `codebase-memory-mcp` and index the Sports repo
-3. **NEW** Add MCP servers (filesystem, memory, git, fetch) to `~/.claude/claude_desktop_config.json`
-4. **NEW** `npm install -g @mem0/cli && mem0 login` → run `/memory seed` in Claude Code
+3. Add MCP servers (filesystem, memory, git, fetch) to `~/.claude/claude_desktop_config.json`
+4. `npm install -g @mem0/cli && mem0 login` → run `/memory seed` in Claude Code
 5. Run `/security-pentest` against local GSN instance
 
+**This week (Wave 3 additions):**
+6. **NEW** `code --install-extension Continue.continue` → configure with Claude (see CONTINUE-DEV.md)
+7. **NEW** `docker pull trufflesecurity/trufflehog:latest` → run `/scan-secrets` on full Sports repo history
+8. **NEW** `npm install ai @ai-sdk/anthropic` → create streaming picks endpoint (see VERCEL-AI-SDK.md)
+
 **Next week:**
-6. Install Strix (Docker) and run dynamic auth bypass scan
-7. **NEW** Deploy LiteLLM Docker container → update `ANTHROPIC_API_KEY` usage to `LITELLM_URL`
-8. **NEW** `pip install llm && llm install llm-anthropic` → start using `/llm-query` for pre-screening
-9. Run `/refactor-clean` on `packages/data-ingestion/src/`
+9. Install Strix (Docker) and run dynamic auth bypass scan
+10. Deploy LiteLLM Docker container → update `ANTHROPIC_API_KEY` usage to `LITELLM_URL`
+11. `pip install llm && llm install llm-anthropic` → start using `/llm-query` for pre-screening
+12. Run `/refactor-clean` on `packages/data-ingestion/src/`
+13. **NEW** `npm install agentops` → instrument pick generation with session tracing
 
 **Month 2:**
-10. **NEW** Set up OpenHands nightly health agent (runs tests, opens fix PRs autonomously)
-11. **NEW** Add Mem0 SDK to `apps/web` for per-user betting preference memory
-12. Set up Agent-Reach for weekly sports market research workflow
-13. Evaluate nflverse (`nfl_data_py`) as canonical NFL stats layer
-14. Add ESPN public API fallback (sprig-dashboard pattern)
+14. Set up OpenHands nightly health agent (runs tests, opens fix PRs autonomously)
+15. Add Mem0 SDK to `apps/web` for per-user betting preference memory
+16. Set up Agent-Reach for weekly sports market research workflow
+17. **NEW** `pip install promptflow` → export historical game data → run `/eval-picks` baseline
+18. Evaluate nflverse (`nfl_data_py`) as canonical NFL stats layer
+19. Add ESPN public API fallback (sprig-dashboard pattern)
