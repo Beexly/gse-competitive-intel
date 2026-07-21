@@ -211,22 +211,124 @@ The present document supersedes and extends it for the AI tool/agent layer.
 
 ---
 
-## Next Steps (Priority Order)
+## Wave 2: Next 5 Highest-Leverage Repos
 
-**This week:**
+> Added: 2026-07-21
+> Branch: claude/ecc-gse-gsn-commands-weaxnk
+> Integration guides: `/workspace/sports/docs/ai/integrations/`
+
+### Why These 5 (300iq Reasoning)
+
+Wave 1 added skills and audit tools — things that make Claude Code sessions smarter.
+Wave 2 fills three gaps Wave 1 left open:
+
+1. **Memory gap** — every Claude Code session starts cold; every GSN user gets generic picks
+2. **Cost visibility gap** — AI calls are a black box; no per-user, per-model spend tracking
+3. **Async automation gap** — all AI work is synchronous; nothing runs while you sleep
+
+| Repo | Stars | Priority | Gap Filled |
+|---|---|---|---|
+| `modelcontextprotocol/servers` | 88k | CRITICAL | Native Claude Code tool protocol |
+| `mem0ai/mem0` | 61k | HIGH | Cross-session memory (dev + user) |
+| `BerriAI/litellm` | 54k | HIGH | AI gateway, cost tracking, multi-model |
+| `All-Hands-AI/OpenHands` | ~50k | MEDIUM | Async dev automation, nightly agents |
+| `simonw/llm` | 12k | MEDIUM | Shell-native AI, audit log, CI gates |
+
+### INTEGRATED INTO GSN (this session, Wave 2)
+
+| Repo | What Was Added |
+|---|---|
+| `modelcontextprotocol/servers` | `MCP-SERVERS.md` — filesystem/memory/git/fetch config + GSN query patterns |
+| `mem0ai/mem0` | `MEM0-MEMORY.md` — per-user betting preference memory + dev session persistence; `/memory` slash command |
+| `BerriAI/litellm` | `LITELLM-GATEWAY.md` — Docker proxy config, virtual keys per tier, pick A/B testing, MCP gateway |
+| `All-Hands-AI/OpenHands` | `OPENHANDS-AGENT.md` — nightly health agent, schema migration automation, parallel fleet |
+| `simonw/llm` | `LLM-CLI.md` — pipe patterns, audit log, CI model comparison; `/llm-query` slash command |
+
+### LOCAL MACHINE SETUP (Wave 2)
+
+```bash
+# 1. MCP Servers — add to ~/.claude/claude_desktop_config.json
+# (zero install — npx/uvx on demand)
+# Config: see MCP-SERVERS.md
+
+# 2. Mem0 — developer session memory CLI
+npm install -g @mem0/cli
+mem0 login  # authenticate with app.mem0.ai (free: 1,000 ops/month)
+# Then run /memory seed from Claude Code to store GSN baseline
+
+# 3. LiteLLM — AI gateway Docker container
+pip install 'litellm[proxy]'  # for local dev
+# OR
+docker pull ghcr.io/berriai/litellm:main-latest
+docker run -p 4000:4000 -e ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY ghcr.io/berriai/litellm:main-latest
+
+# 4. LLM CLI — shell-native AI
+pip install llm && llm install llm-anthropic
+llm keys set anthropic
+llm models default claude-haiku-4-5-20251001
+
+# 5. OpenHands Agent Canvas
+npm install -g @openhands/agent-canvas
+# OR Docker: docker run -p 8000:8000 ghcr.io/openhands/agent-canvas:1
+```
+
+### Wave 2 — MCP Config Block
+
+Complete config to add to `~/.claude/claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem",
+               "/workspace/sports", "/home/user/gse-competitive-intel"]
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "git": {
+      "command": "uvx",
+      "args": ["mcp-server-git", "--repository", "/workspace/sports"]
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"]
+    },
+    "mem0": {
+      "command": "mem0",
+      "args": ["mcp", "serve"],
+      "env": { "MEM0_API_KEY": "${MEM0_API_KEY}" }
+    },
+    "litellm": {
+      "url": "http://localhost:4000/mcp/",
+      "headers": { "x-litellm-api-key": "Bearer ${LITELLM_MASTER_KEY}" }
+    }
+  }
+}
+```
+
+---
+
+## Next Steps (Priority Order — Updated)
+
+**This week (Wave 1 + Wave 2 local setup):**
 1. Install Claude Code plugins locally (ECC, pm-skills, hallmark, superpowers, karpathy-skills, last30days)
 2. Install `codebase-memory-mcp` and index the Sports repo
-3. Run `/security-pentest` against local GSN instance — fix CRITICAL findings from audit
-4. Run `/hallmark audit apps/web/app/` to triage design token compliance
+3. **NEW** Add MCP servers (filesystem, memory, git, fetch) to `~/.claude/claude_desktop_config.json`
+4. **NEW** `npm install -g @mem0/cli && mem0 login` → run `/memory seed` in Claude Code
+5. Run `/security-pentest` against local GSN instance
 
 **Next week:**
-5. Install Strix (Docker) and run dynamic auth bypass scan
-6. Configure OmniRoute for local dev token savings
-7. Run `/refactor-clean` on `packages/data-ingestion/src/` and `apps/web/lib/data-sources/`
-8. Fix `dispatchWatchlistAlert` no-op — implement or remove Elite alert claim
+6. Install Strix (Docker) and run dynamic auth bypass scan
+7. **NEW** Deploy LiteLLM Docker container → update `ANTHROPIC_API_KEY` usage to `LITELLM_URL`
+8. **NEW** `pip install llm && llm install llm-anthropic` → start using `/llm-query` for pre-screening
+9. Run `/refactor-clean` on `packages/data-ingestion/src/`
 
 **Month 2:**
-9. Set up Agent-Reach for weekly sports market research workflow
-10. Evaluate nflverse (`nfl_data_py`) as canonical NFL stats layer (per GSE_GSN_REPO_INTEGRATION_PLAN.md)
-11. Add ESPN public API fallback (sprig-dashboard pattern)
-12. Add categraf/synthetic health check for data freshness monitoring
+10. **NEW** Set up OpenHands nightly health agent (runs tests, opens fix PRs autonomously)
+11. **NEW** Add Mem0 SDK to `apps/web` for per-user betting preference memory
+12. Set up Agent-Reach for weekly sports market research workflow
+13. Evaluate nflverse (`nfl_data_py`) as canonical NFL stats layer
+14. Add ESPN public API fallback (sprig-dashboard pattern)
