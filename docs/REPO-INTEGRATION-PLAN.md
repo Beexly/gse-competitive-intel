@@ -409,6 +409,136 @@ Plus `.continue/config.json` committed to the Sports repo root with the GSN syst
 
 ---
 
+---
+
+## Wave 4: Next 5 Highest-Leverage Repos
+
+> Added: 2026-07-21
+> Branch: claude/ecc-gse-gsn-commands-weaxnk
+> Integration guides: `/workspace/sports/docs/ai/integrations/`
+
+### Why These 5 (300iq Reasoning)
+
+Waves 1–3 added skills/tools, memory/cost/async, and app-layer/editor/observability layers.
+Wave 4 fills five critical infrastructure gaps that sit between having code that works and having
+a system that's tested, intelligent, reliable, and automated end-to-end:
+
+1. **E2E testing gap** — 10,281 Vitest unit tests cover pure functions. Zero browser tests.
+   Checkout, auth, and paywall enforcement can silently break in production while every unit test passes.
+   The paywall bypass risk alone is a critical revenue and legal exposure.
+
+2. **Intelligent database gap** — All DB queries are exact-match: `WHERE gameId = ?`. The 10k+ picks,
+   games, and user interactions cannot answer "find picks similar to this", "how did similar games
+   perform historically", or "which picks match this user's style". Vector search turns the DB
+   into a semantic search engine — same PostgreSQL, zero new infrastructure.
+
+3. **Claude usage gap** — GSN calls `anthropic.messages.create()` with no caching, no extended thinking,
+   no multi-agent coordination. The prompt caching alone saves 86% on the repeated 5k-token system
+   prompt. Extended thinking measurably improves complex spread analysis. Multi-agent pipeline
+   (parallel Haiku specialists + Sonnet synthesizer) produces richer picks. These are production-ready
+   Anthropic features being left unused.
+
+4. **Reliable async gap** — Vercel cron has a 60s timeout, no retry, and no dashboard. A full NFL
+   settlement run (15 games × multiple picks each) takes 3–5 minutes and silently fails. BullMQ
+   requires an always-on Node.js worker process separate from Next.js. Trigger.dev is the exact
+   middle: serverless, Next.js-native, 60-minute max duration, built-in retry, real-time dashboard.
+
+5. **Workflow automation gap** — All personal productivity and operations tasks require dev effort
+   to wire up. There's no way to say "when a high-confidence WIN settles, draft a tweet" or "every
+   Monday, scrape competitors and update a Google Sheet" without writing TypeScript. n8n is the
+   visual glue layer that connects all of GSN's systems to the outside world.
+
+| Repo | Stars | Priority | Gap Filled |
+|---|---|---|---|
+| `microsoft/playwright` | 71k | CRITICAL | E2E browser tests (paywall, Stripe, auth) |
+| `pgvector/pgvector` | 16k | HIGH | Semantic vector search in existing PostgreSQL |
+| `anthropics/anthropic-quickstarts` | 6k | HIGH | Prompt caching (86% savings), extended thinking, multi-agent |
+| `trigger-dev/trigger.dev` | 15k | HIGH | Reliable serverless background jobs (replaces Vercel cron) |
+| `n8n-io/n8n` | 62k | MEDIUM | Visual workflow automation — the glue layer |
+
+### INTEGRATED INTO GSN (this session, Wave 4)
+
+| Repo | What Was Added |
+|---|---|
+| `microsoft/playwright` | `PLAYWRIGHT-E2E.md` — pre-installed Chromium config, paywall enforcement tests, Stripe checkout redirect, NextAuth flows, API mocking, CI job; `/e2e` slash command |
+| `pgvector/pgvector` | `PGVECTOR-SEMANTIC-SEARCH.md` — Prisma schema changes, voyage-3 embeddings, HNSW index, 4 use cases: similar picks, RAG context, user preference clustering, RAG-augmented pick generation |
+| `anthropics/anthropic-quickstarts` | `ANTHROPIC-QUICKSTARTS.md` — extended thinking for ELITE tier, prompt caching (86% cost reduction), computer use for sports-reference.com/ESPN, multi-agent pipeline, tool use agentic loop |
+| `trigger-dev/trigger.dev` | `TRIGGER-DEV.md` — `settle-picks` migration from Vercel cron, ELITE alerts with `wait.until`, nightly market research at 3am UTC, per-game fan-out pattern, 4-week migration path |
+| `n8n-io/n8n` | `N8N-WORKFLOW-AUTOMATION.md` — morning sports briefing, PR → Claude review → Slack, competitor intelligence scrape, WIN alert → social post draft, ELITE 7-day onboarding drip |
+
+### LOCAL MACHINE SETUP (Wave 4)
+
+```bash
+# 1. Playwright — add to Sports repo root
+cd /workspace/sports
+npm install -D @playwright/test
+# Chromium already at /opt/pw-browsers/chromium — no download needed
+# PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 in .env
+
+# 2. pgvector — one-time database setup
+psql $DATABASE_URL -c "CREATE EXTENSION IF NOT EXISTS vector;"
+npm install @prisma/extension-pgvector pgvector
+# Then add embedding columns + HNSW index to schema.prisma (see PGVECTOR-SEMANTIC-SEARCH.md)
+npx prisma migrate dev --name add-pgvector-embeddings
+
+# 3. Anthropic quickstarts — reference clone only
+git clone https://github.com/anthropics/anthropic-quickstarts /tmp/anthropic-quickstarts
+# Study: computer-use-demo/loop.py, customer-service-agent/, multiagent-orchestrator/
+# Add cache_control: { type: "ephemeral" } to pick generation — IMMEDIATE 86% savings
+
+# 4. Trigger.dev — add to apps/web
+cd /workspace/sports
+npm install @trigger.dev/sdk@beta
+npx trigger.dev@beta init --project-ref <your-project-ref>
+# Sign up at trigger.dev → create project → get TRIGGER_SECRET_KEY
+# Add TRIGGER_SECRET_KEY + TRIGGER_PROJECT_REF to .env.local and Vercel env vars
+
+# 5. n8n — Docker (self-hosted)
+docker run -it --rm \
+  -p 5678:5678 \
+  -v ~/.n8n:/home/node/.n8n \
+  -e N8N_BASIC_AUTH_ACTIVE=true \
+  -e N8N_BASIC_AUTH_USER=admin \
+  -e N8N_BASIC_AUTH_PASSWORD=changeme \
+  n8nio/n8n
+# Access at http://localhost:5678
+# Add credentials: Anthropic, Slack, GitHub, Google Sheets, The Odds API
+```
+
+### Wave 4 — Critical One-Liner (Immediate ROI)
+
+This one change to pick generation pays for itself immediately — before setting up any other Wave 4 tooling:
+
+```typescript
+// In your existing anthropic.messages.create() call, add cache_control to the system prompt:
+system: [
+  {
+    type: "text",
+    text: YOUR_EXISTING_SYSTEM_PROMPT,  // no other changes
+    cache_control: { type: "ephemeral" },
+  },
+],
+// Result: 86% cost reduction on the 5k-token system prompt for every subsequent call
+// ~$7.50/day → ~$1.03/day at 100 picks/day
+```
+
+### Wave 4 — Playwright First Test (Paywall Enforcement)
+
+The highest-risk flow to add browser coverage to:
+
+```typescript
+// e2e/picks.spec.ts — run with: npx playwright test e2e/picks.spec.ts
+test("pick selection is NOT in DOM for FREE tier users", async ({ page }) => {
+  await page.goto("/picks");
+  const premiumPick = page.getByTestId("pick-card-premium").first();
+  // Server-side enforcement: content must not exist in DOM, not just hidden
+  await expect(premiumPick.getByTestId("pick-selection")).not.toBeAttached();
+  await expect(premiumPick.getByTestId("paywall-gate")).toBeVisible();
+});
+```
+
+---
+
 ## Next Steps (Priority Order — Updated)
 
 **This week (Wave 1 + Wave 2 local setup):**
@@ -423,17 +553,27 @@ Plus `.continue/config.json` committed to the Sports repo root with the GSN syst
 7. **NEW** `docker pull trufflesecurity/trufflehog:latest` → run `/scan-secrets` on full Sports repo history
 8. **NEW** `npm install ai @ai-sdk/anthropic` → create streaming picks endpoint (see VERCEL-AI-SDK.md)
 
+**This week (Wave 4 — immediate ROI):**
+9. **CRITICAL** Add `cache_control: { type: "ephemeral" }` to pick generation system prompt → instant 86% cost reduction
+10. **CRITICAL** `npm install -D @playwright/test` → write `e2e/picks.spec.ts` paywall enforcement test
+11. **HIGH** `psql $DATABASE_URL -c "CREATE EXTENSION IF NOT EXISTS vector;"` → add pgvector migration
+12. **HIGH** Sign up at trigger.dev → migrate `settle-picks` Vercel cron (3–5 min NFL settlement was silently failing)
+
 **Next week:**
-9. Install Strix (Docker) and run dynamic auth bypass scan
-10. Deploy LiteLLM Docker container → update `ANTHROPIC_API_KEY` usage to `LITELLM_URL`
-11. `pip install llm && llm install llm-anthropic` → start using `/llm-query` for pre-screening
-12. Run `/refactor-clean` on `packages/data-ingestion/src/`
-13. **NEW** `npm install agentops` → instrument pick generation with session tracing
+13. Install Strix (Docker) and run dynamic auth bypass scan
+14. Deploy LiteLLM Docker container → update `ANTHROPIC_API_KEY` usage to `LITELLM_URL`
+15. `pip install llm && llm install llm-anthropic` → start using `/llm-query` for pre-screening
+16. Run `/refactor-clean` on `packages/data-ingestion/src/`
+17. **NEW** `npm install agentops` → instrument pick generation with session tracing
+18. **NEW** Wire `generatePickWithExtendedThinking()` for ELITE tier (see ANTHROPIC-QUICKSTARTS.md)
 
 **Month 2:**
-14. Set up OpenHands nightly health agent (runs tests, opens fix PRs autonomously)
-15. Add Mem0 SDK to `apps/web` for per-user betting preference memory
-16. Set up Agent-Reach for weekly sports market research workflow
-17. **NEW** `pip install promptflow` → export historical game data → run `/eval-picks` baseline
-18. Evaluate nflverse (`nfl_data_py`) as canonical NFL stats layer
-19. Add ESPN public API fallback (sprig-dashboard pattern)
+19. Set up OpenHands nightly health agent (runs tests, opens fix PRs autonomously)
+20. Add Mem0 SDK to `apps/web` for per-user betting preference memory
+21. Set up Agent-Reach for weekly sports market research workflow
+22. **NEW** `pip install promptflow` → export historical game data → run `/eval-picks` baseline
+23. **NEW** Deploy n8n to $5/mo DigitalOcean droplet → build morning sports briefing + ELITE onboarding drip
+24. **NEW** Wire multi-agent pipeline for ELITE picks (4 Haiku specialists + Sonnet synthesizer)
+25. **NEW** Run pgvector backfill script on existing picks → add "Similar Historical Picks" to pick detail page
+26. Evaluate nflverse (`nfl_data_py`) as canonical NFL stats layer
+27. Add ESPN public API fallback (sprig-dashboard pattern)
