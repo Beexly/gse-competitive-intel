@@ -657,3 +657,186 @@ Email Delivery
   ├── react-email (render typed templates)
   └── → Resend (send) ← n8n (schedule/route)
 ```
+
+---
+
+## Wave 6 — Agent Framework + Real-Time Sync + Personal Dev Tools
+
+> Added: 2026-07-21
+> Branch: claude/ecc-gse-gsn-commands-weaxnk
+> Integration guides: `/workspace/sports/docs/ai/integrations/`
+
+### Why These 5 (300iq Reasoning)
+
+Waves 1–5 covered: skills/tools, memory/cost/async, app-layer/editor/observability, testing/vector/background/automation, and error tracking/analytics/local inference/email/tracing.
+
+Wave 6 fills three remaining gaps:
+
+1. **Orchestration gap** — GSN calls Claude as one-shot API calls. No typed step workflow, no retry per step, no memory across pick sessions, no step-level observability. Mastra wraps LiteLLM (already installed) and adds all of this with zero model routing changes.
+
+2. **Real-time data gap** — Pick odds update in Postgres every few minutes. Users see stale data until they refresh, or the frontend polls every N seconds (wasting Vercel invocations). ElectricSQL streams Postgres changes to the browser via HTTP long-polling — no WebSocket, no custom push infrastructure.
+
+3. **Edge + personal tooling gap** — Edge Functions (Vercel middleware) can't use TCP Redis, so rate limiting and response caching don't work in middleware. Upstash HTTP Redis fills this. Fabric gives the developer 150+ AI patterns in the terminal without touching production code. Zed replaces VS Code with 300MB RAM and <500ms cold start.
+
+| Repo | Stars | Gap Filled |
+|---|---|---|
+| `mastra-ai/mastra` | 15k | Pick generation as typed step workflow with memory + RAG |
+| `electric-sql/electric` | 10k | Real-time Postgres→browser sync, no WebSocket |
+| `upstash/upstash-redis` + `upstash/qstash-js` | — | HTTP Redis + durable jobs for Vercel Edge |
+| `danielmiessler/fabric` | 26k | Personal developer AI CLI (150+ patterns) |
+| `zed-industries/zed` | 58k | GPU-rendered editor with Claude built-in |
+
+### What Was Added
+
+| File | Content |
+|---|---|
+| `docs/ai/integrations/MASTRA-AGENT-FRAMEWORK.md` | Typed pick workflow (fetchOdds→prescreen→analyze), pgvector memory, RAG pipeline, Mastra playground at port 4111 |
+| `docs/ai/integrations/ELECTRIC-REALTIME-SYNC.md` | `useShape` hook, `LivePicksFeed`, `RecentResultsFeed`, auth proxy for tier-gated shapes |
+| `docs/ai/integrations/UPSTASH-SERVERLESS-REDIS.md` | Edge rate limiting (100 req/min per IP), odds API caching (55-min TTL), QStash pick generation with signature verification |
+| `docs/ai/integrations/FABRIC-AI-PATTERNS.md` | `extract_wisdom`, `improve_prompt`, `analyze_pick_rationale` custom pattern, `extract_competitor_features` custom pattern |
+| `docs/ai/integrations/ZED-AI-EDITOR.md` | `~/.config/zed/settings.json` with claude-sonnet-5, Cmd+K inline edits, `.zed/settings.json` per-project config |
+
+### Integration Architecture (Wave 6 → Existing Stack)
+
+```
+Pick Generation Pipeline (Mastra):
+  fetchOddsStep (typed Zod) → prescreenStep (Ollama local) → analyzeStep (Claude Sonnet)
+    ↓ each step logged with input/output/duration (AgentOps sees the Claude call)
+    ↓ agent memory backed by existing pgvector
+    → result saved to Postgres → ElectricSQL streams update to browser
+
+Edge Layer (Upstash):
+  Vercel middleware → Upstash Redis rate limiting (100 req/min per IP)
+  API routes → QStash (durable job queue, replaces BullMQ for Edge-triggered jobs)
+  Cloudflare Worker (Wave 7) → D1 edge counters → Upstash KV fallback
+
+Developer Workflow:
+  Zed editor (Cmd+K inline edits) → Claude Code CLI (agentic terminal tasks)
+  Fabric (terminal pipes: cat pick.txt | fabric --pattern analyze_pick_rationale)
+```
+
+### Immediate Setup
+
+```bash
+# Mastra
+npm install @mastra/core @mastra/memory @mastra/rag --workspace=packages/ai
+
+# ElectricSQL (Docker local)
+docker run -d --name electric \
+  -e DATABASE_URL=postgresql://sports:sports_test@host.docker.internal:5432/sports \
+  -p 3000:3000 electricsql/electric:latest
+
+# Upstash
+npm install @upstash/redis @upstash/ratelimit @upstash/qstash --workspace=apps/web
+
+# Fabric
+brew install fabric && fabric --setup  # → select Anthropic, enter API key
+
+# Zed
+brew install --cask zed
+# Configure ~/.config/zed/settings.json with claude-sonnet-5
+```
+
+---
+
+## Wave 7 — Edge Platform + SEO + API Monetization + Toolchain + Self-Hosting
+
+> Added: 2026-07-21
+> Branch: claude/ecc-gse-gsn-commands-weaxnk
+> Integration guides: `/workspace/sports/docs/ai/integrations/`
+> Ecosystem strategy: `/home/user/gse-competitive-intel/docs/GSE-ECOSYSTEM-LEVERAGE.md`
+
+### Why These 5 (300iq Reasoning)
+
+Waves 1–6 built the complete technical foundation. Wave 7 addresses the **business leverage layer** — the gap between "working technical stack" and "compounding revenue machine":
+
+1. **Infrastructure cost gap** — Vercel Edge functions cost 400x more per request than Cloudflare Workers for equivalent workloads. R2 has $0 egress vs S3's $0.09/GB. Cloudflare for Startups gives $250k in products.
+
+2. **Organic acquisition gap** — 100% of GSN's user acquisition is paid or word-of-mouth. Zero organic search traffic. Sports betting keywords are $2-15 CPC in paid search — every organic visitor is worth real money. Astro generates static pick pages that Google indexes.
+
+3. **Revenue diversification gap** — GSN has one revenue stream: subscriptions. The same pick data can generate affiliate income (sportsbooks pay $200-400/user referral), B2B API licensing ($49-499/month from other apps), and newsletter revenue.
+
+4. **Developer toolchain gap** — CI takes 4+ minutes partly because ESLint + Prettier are slow Node.js tools. Biome (Rust) does both in <500ms. CI cost and iteration speed improve immediately.
+
+5. **Worker cost gap** — BullMQ workers, Redis, ElectricSQL, n8n all need persistent processes. Vercel can't run them. Railway/Render cost $80-120/month for these services. A Hetzner CX31 server managed by Coolify runs everything for €14.64/month.
+
+| Repo | Stars | Gap Filled |
+|---|---|---|
+| `cloudflare/workers-sdk` | 3k | Edge compute ($250k credits) + R2 (zero egress) + D1 + KV |
+| `withastro/astro` | 47k | Sports pick SEO content engine → organic acquisition |
+| `scalar/scalar` | 12k | API docs → B2B licensing → passive revenue |
+| `biomejs/biome` | 18k | Rust lint+format replacing ESLint+Prettier (30-50x faster) |
+| `coollabsio/coolify` | 38k | Self-hosted worker platform on $15/mo Hetzner server |
+
+### What Was Added
+
+| File | Content |
+|---|---|
+| `docs/ai/integrations/CLOUDFLARE-EDGE-PLATFORM.md` | Workers (400x cheaper than Vercel for high-traffic routes), R2 (zero egress), D1 (edge SQLite), KV (edge cache), $250k startup program |
+| `docs/ai/integrations/ASTRO-SEO-CONTENT.md` | Public pick pages with JSON-LD structured data, win/loss record page, email capture, blog, Cloudflare Pages deployment (free) |
+| `docs/ai/integrations/SCALAR-API-DOCS.md` | Interactive API docs, OpenAPI spec generation, API key management, RapidAPI listing, B2B sales targets |
+| `docs/ai/integrations/BIOME-TOOLCHAIN.md` | Replaces ESLint+Prettier, `biome.json` config, CI step from 90s→10s, VS Code + Zed config |
+| `docs/ai/integrations/COOLIFY-SELF-HOSTING.md` | BullMQ worker Dockerfile, Redis on Hetzner, ElectricSQL sidecar, n8n, Mastra playground — all on one €14.64/mo server |
+
+**Also added:**
+- `docs/GSE-ECOSYSTEM-LEVERAGE.md` — Complete non-repo strategy: $600k+ in startup credits (AWS, Google, Cloudflare, Anthropic, Microsoft, NVIDIA), sportsbook affiliate programs ($300-55,000/month passive), B2B API licensing, SEO keyword strategy, GitHub open-source presence, Product Hunt launch, 30-day sprint plan
+
+### Immediate ROI (Ranked by Impact)
+
+```bash
+# 1. Apply for cloud credits TODAY (3.5 hours → potentially $600k+ in infrastructure value)
+# aws.amazon.com/activate → AWS Activate ($1k-$100k)
+# cloud.google.com/startup → GCP ($2k-$200k)
+# cloudflare.com/lp/cloudflare-for-startups → Cloudflare ($250k)
+# startups.microsoft.com → Azure ($150k)
+
+# 2. Sign up for sportsbook affiliate programs (1 hour → passive income starts immediately)
+# DraftKings Affiliates: draftkings.com/affiliates
+# FanDuel Affiliates: fanduel.com/affiliates
+# BetMGM Affiliates: betmgm.com/en/affiliates
+
+# 3. Replace ESLint+Prettier with Biome (30 minutes → CI 7-10x faster, instant)
+npm install --save-dev @biomejs/biome
+npx @biomejs/biome migrate eslint --write
+npx @biomejs/biome migrate prettier --write
+
+# 4. Deploy Cloudflare Worker for odds proxy (2 hours → 400x cheaper per request)
+npm install -g wrangler && wrangler login
+wrangler deploy cloudflare/workers/odds-proxy/src/index.ts
+
+# 5. Create Astro SEO site (1 day → Google indexing starts within 72 hours)
+npm create astro@latest packages/seo-site -- --template minimal --typescript strict
+```
+
+### Full Architecture After Wave 7
+
+```
+User Browser
+  ├── Next.js app (Vercel) — authenticated picks, payments, dashboard
+  ├── Astro SEO site (Cloudflare Pages, free) — public picks, blog, email capture
+  └── ElectricSQL (Hetzner via Coolify) — real-time Postgres sync to browser
+
+API Layer
+  ├── Vercel Edge Functions — SSR pages, auth, payments
+  ├── Cloudflare Workers — high-traffic public API routes, odds proxy
+  └── Scalar API docs (/api-docs) — B2B customer portal
+
+Background Processing
+  ├── BullMQ workers (Hetzner via Coolify) — pick generation, settlement
+  ├── Redis (Hetzner) — BullMQ queue
+  ├── Trigger.dev — serverless cron (60-min max duration jobs)
+  └── n8n (Hetzner) — workflow automation (affiliate emails, social posts)
+
+Storage
+  ├── Neon Postgres — primary data store
+  ├── pgvector — semantic search (picks, embeddings)
+  ├── Cloudflare R2 — media, reports (zero egress)
+  └── Cloudflare KV — edge cache (sessions, odds snapshots)
+
+Revenue Streams
+  ├── Subscriptions (Stripe) — primary
+  ├── Sportsbook affiliates — $300-55k/month depending on subscribers
+  ├── B2B API licensing (RapidAPI) — $2k-25k/month at scale
+  ├── Newsletter affiliate links — $50-5k/month
+  └── Data licensing — $1k-10k/year for historical dataset
+```
