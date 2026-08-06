@@ -16,3 +16,12 @@
 
 ## Agent rule
 Complete work by **finishing the product** or **keeping it dark**. Never default-open foundation routes.
+
+## Pass-2 (2026-08-06)
+
+| Item | Improvement |
+|------|-------------|
+| Contest Bay | Settlement path + locked store + rate limit + tests |
+| GSN | Real `loadBoardState` lanes (published / gated / scoring-now) |
+| StatKing | Still dark by default; sitemap gated on `STATS_PUBLIC` |
+| Podcast / Newsletter | Episode + issue URLs in sitemap |
