@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DataLayer · frontier intelligence, without the frontier bill</title>
+  <meta name="description" content="Infrastructure for cost-efficient reasoning. DataLayer runs frontier-quality intelligence at a fraction of the price: a big model plans once, a small model executes, up to 30× cheaper on recurring workloads. One OpenAI-compatible endpoint." />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="brand" href="#top"><img class="logo" src="logo.png" alt="DataLayer" width="26" height="26" /> <span class="brand-name">DataLayer</span></a>
+        <nav class="nav-links">
+          <a href="#how">How it works</a>
+          <a href="#amortize">The 30× lever</a>
+          <a href="#savings">Savings</a>
+          <a href="#pricing">Pricing</a>
+          <a href="https://platform.datalayer.xyz/docs">Docs</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn-ghost" href="https://platform.datalayer.xyz">Sign in</a>
+          <a class="btn-primary" href="https://platform.datalayer.xyz">Start free →</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <canvas class="flowfx" id="flow" aria-hidden="true"></canvas>
+    <div class="container hero-inner">
+      <div class="tagline reveal">Infrastructure for cost-efficient reasoning</div>
+      <h1 class="reveal hero-h1">
+        Frontier intelligence for<br />
+        <span class="rot grad" id="rotWord">background agents</span>
+      </h1>
+      <p class="lede reveal">
+        DataLayer runs frontier-quality reasoning at a fraction of the price: a big model plans the
+        task once, a small model executes every call after. <strong>Up to 30× cheaper</strong> on
+        recurring workloads.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn-primary lg" href="https://platform.datalayer.xyz">Start free · $5 credit</a>
+        <a class="btn-link" href="#how">See how it works ›</a>
+      </div>
+
+      <!-- hero product visual -->
+      <div class="hero-visual reveal">
+        <div class="hv-card">
+          <div class="hv-head">
+            <span class="d r"></span><span class="d y"></span><span class="d g"></span>
+            <span class="hv-title">POST /v1/chat/completions</span>
+          </div>
+          <div class="hv-body">
+            <div class="hv-line"><span class="mono dim">model</span> <span class="mono str">"nexus"</span></div>
+            <div class="hv-line"><span class="mono dim">input</span> <span class="mono str">"Triage this ticket &amp; draft a reply"</span></div>
+            <div class="hv-route">
+              <span class="hv-step"><i>1</i>Route</span><span class="hv-arr">→</span>
+              <span class="hv-step"><i>2</i>Plan ✦</span><span class="hv-arr">→</span>
+              <span class="hv-step"><i>3</i>Execute · small model</span>
+            </div>
+            <div class="hv-foot">
+              <div class="hv-ok">✓ Frontier-quality answer</div>
+              <div class="hv-cost"><span class="mono dim">cost</span> <b class="mono">$0.0006</b>
+                <span class="hv-save">94% cheaper than gpt-4o</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="hv-glow" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats">
+    <div class="container stats-row">
+      <div class="stat reveal"><div class="stat-n">30×</div><div class="stat-l">cheaper on recurring workloads</div></div>
+      <div class="stat reveal"><div class="stat-n">100+</div><div class="stat-l">models, one endpoint</div></div>
+      <div class="stat reveal"><div class="stat-n">4</div><div class="stat-l">reasoning strategies</div></div>
+      <div class="stat reveal"><div class="stat-n">2</div><div class="stat-l">SDKs · OpenAI &amp; Anthropic</div></div>
+    </div>
+  </section>
+
+  <!-- ============ HOW (interactive router) ============ -->
+  <section class="band" id="how">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">The optimizer</div>
+        <h2>One request. The cheapest path to the right answer.</h2>
+        <p>Set a cost/quality target; for every call DataLayer predicts difficulty, ranks models on
+           a cost/quality curve, and picks a strategy, then runs the cheapest path that still gets
+           it right.</p>
+      </div>
+      <div class="router">
+        <div class="slider-wrap card">
+          <div class="slider-caps"><span>Simpler · cheaper</span><span>Harder · smarter</span></div>
+          <div class="slider-track">
+            <input type="range" class="tier-slider" id="tierSlider" min="0" max="3" step="1" value="1"
+                   aria-label="Choose a tier from simpler to harder" />
+          </div>
+          <div class="slider-ticks" id="tierTicks">
+            <button class="tk" data-i="0">nexus-mini</button>
+            <button class="tk" data-i="1">nexus</button>
+            <button class="tk" data-i="2">nexus-pro</button>
+            <button class="tk" data-i="3">nexus-max</button>
+          </div>
+        </div>
+        <div class="router-card card">
+          <div class="router-top">
+            <div><div class="muted small">Example request</div>
+              <div class="prompt" id="rPrompt">“Summarize this support ticket in one line.”</div></div>
+            <span class="badge" id="rStrategy">direct</span>
+          </div>
+          <div class="flow" id="rFlow"></div>
+          <div class="router-bottom">
+            <div class="bar-wrap">
+              <div class="bar-label"><span>On a premium model (gpt-4o)</span><span id="rBase">$0.0105</span></div>
+              <div class="bar base"><i style="width:100%"></i></div>
+              <div class="bar-label"><span>With DataLayer</span><span id="rOurs">$0.0006</span></div>
+              <div class="bar ours"><i id="rOursFill" style="width:6%"></i></div>
+            </div>
+            <div class="savings-chip"><span id="rSaved">94%</span> cheaper</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE 30× LEVER ============ -->
+  <section class="band alt" id="amortize">
+    <div class="container split">
+      <div class="split-copy">
+        <div class="kicker">Plan once. Execute cheap.</div>
+        <h2>Why recurring work gets <em>30× cheaper</em>.</h2>
+        <p>Apps repeat the same task shapes thousands of times. So for a recurring task we have a
+          <strong>frontier model write the reasoning plan once</strong>, cache it, and let a
+          <strong>small model execute</strong> every call after. The expensive thinking amortizes to
+          near-zero, so you keep frontier-grade reasoning at a small-model price.</p>
+        <ul class="ticks">
+          <li>Frontier reasoning, designed once</li>
+          <li>Cheap execution, repeated at scale</li>
+          <li>Cost per request collapses as volume grows</li>
+        </ul>
+      </div>
+      <div class="card amort">
+        <div class="amort-head">Cost per request, as a task repeats</div>
+        <div class="amort-bars">
+          <div class="ab"><span class="ab-l">#1 plan + execute</span><div class="ab-bar"><i style="width:100%"></i></div><span class="ab-v">$0.018</span></div>
+          <div class="ab"><span class="ab-l">#10</span><div class="ab-bar"><i style="width:24%"></i></div><span class="ab-v">$0.0043</span></div>
+          <div class="ab"><span class="ab-l">#100</span><div class="ab-bar"><i style="width:7%"></i></div><span class="ab-v">$0.0012</span></div>
+          <div class="ab best"><span class="ab-l">#1,000+</span><div class="ab-bar"><i style="width:3.5%"></i></div><span class="ab-v">$0.0006</span></div>
+        </div>
+        <div class="amort-foot"><span>vs $0.018 on a frontier model every time</span><b>≈30× cheaper at scale</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUICKSTART ============ -->
+  <section class="band" id="quickstart">
+    <div class="container split">
+      <div class="split-copy">
+        <div class="kicker">Drop-in</div>
+        <h2>Change the base URL. Keep your code.</h2>
+        <p>Wire-compatible with the <strong>OpenAI</strong> and <strong>Anthropic</strong> SDKs.
+           Migrate in minutes, with no rewrite and no lock-in.</p>
+        <ul class="ticks">
+          <li>OpenAI- &amp; Anthropic-compatible APIs</li>
+          <li>Streaming, tools, and usage included</li>
+          <li>100+ models behind one key &amp; one bill</li>
+        </ul>
+        <a class="btn-primary" href="https://platform.datalayer.xyz/docs">Read the docs ›</a>
+      </div>
+      <div class="code">
+        <div class="code-head">
+          <div class="code-tabs" id="codeTabs">
+            <button class="ct active" data-i="0">OpenAI SDK</button>
+            <button class="ct" data-i="1">Anthropic SDK</button>
+            <button class="ct" data-i="2">curl</button>
+          </div>
+          <button class="copy" id="copyBtn">Copy</button>
+        </div>
+        <pre class="code-body"><code id="codeBody"></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STRATEGIES ============ -->
+  <section class="band alt" id="strategies">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Four strategies, one decision</div>
+        <h2>Not just the right model. The right way to think.</h2>
+        <p>Most gateways pick a model and stop. DataLayer also picks <em>how</em> to reason, then runs
+           the cheapest path that still gets it right.</p>
+      </div>
+      <div class="grid-4">
+        <div class="card feat"><span class="fic">→</span><h3>Direct</h3><p>Easy query → one well-chosen, cost-effective model. Zero overhead.</p></div>
+        <div class="card feat"><span class="fic">◌</span><h3>Plan</h3><p>Recurring task → plan once with a frontier model, cache it, execute cheap. <b>Up to 30× cheaper.</b></p></div>
+        <div class="card feat"><span class="fic">⟳</span><h3>Orchestrate</h3><p>Hard query → plan → solve → verify, escalating only when needed.</p></div>
+        <div class="card feat"><span class="fic">✦</span><h3>Fuse</h3><p>Highest-stakes → a panel proposes, one model aggregates the best answer.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SAVINGS (calculator) ============ -->
+  <section class="band" id="savings">
+    <div class="container split">
+      <div class="split-copy">
+        <div class="kicker">Provable savings</div>
+        <h2>See exactly what you saved.</h2>
+        <p>Every request is metered at its real model cost, and your dashboard shows spend against
+           what the <em>same</em> traffic would cost on a premium model: savings you can watch,
+           not a claim you take on faith.</p>
+        <ul class="ticks">
+          <li>Per-request cost &amp; strategy, live</li>
+          <li>Savings vs a premium baseline, by day &amp; strategy</li>
+          <li>Per-API-key usage &amp; billing</li>
+        </ul>
+      </div>
+      <div class="card calc">
+        <div class="calc-head">Estimate your savings</div>
+        <label class="calc-row"><span>Monthly tokens</span><output id="tokOut">50M</output></label>
+        <input type="range" id="tokRange" min="1" max="2000" value="50" />
+        <label class="calc-row"><span>Workload mix</span><output id="mixOut">Balanced</output></label>
+        <input type="range" id="mixRange" min="0" max="3" value="1" step="1" />
+        <div class="calc-out">
+          <div class="calc-stat"><div class="cs-l">On a premium model</div><div class="cs-v" id="calcBase">$0</div></div>
+          <div class="calc-stat"><div class="cs-l">With DataLayer</div><div class="cs-v accent" id="calcOurs">$0</div></div>
+          <div class="calc-stat hero"><div class="cs-l">You save / mo</div><div class="cs-v save" id="calcSave">$0</div></div>
+        </div>
+        <p class="muted xs">Illustrative, vs gpt-4o pricing for each mix. Your real numbers show in the dashboard.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="band alt">
+    <div class="container">
+      <div class="section-head"><div class="kicker">Everything included</div><h2>Built for production.</h2></div>
+      <div class="grid-3">
+        <div class="mini"><h4>One endpoint, every model</h4><p>OpenAI &amp; Anthropic SDKs, 100+ models, one key, one bill.</p></div>
+        <div class="mini"><h4>Cost-aware optimization</h4><p>Per-request model + strategy selection tuned to your target.</p></div>
+        <div class="mini"><h4>Savings dashboard</h4><p>Real spend vs premium baseline, savings you can prove.</p></div>
+        <div class="mini"><h4>Streaming &amp; tools</h4><p>SSE streaming, system prompts, and tool calls work unchanged.</p></div>
+        <div class="mini"><h4>Keys, credits &amp; usage</h4><p>Create keys, top up credits, track usage per key, all self-serve.</p></div>
+        <div class="mini"><h4>Scales with you</h4><p>Pay-as-you-go, prepaid credits, no sales call to start.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MANIFESTO ============ -->
+  <section class="band manifesto" id="why">
+    <div class="container narrow">
+      <div class="kicker">Our thesis</div>
+      <h2>Access stopped being the hard part.</h2>
+      <p>Every team can call the same frontier models through an API. The waste moved somewhere else:
+        <strong>choice</strong>. Modern apps fire millions of model calls, and most teams point
+        every one at a single expensive model. They pay frontier prices to answer “hi,” and still
+        gamble on quality where it counts.</p>
+      <p><strong>DataLayer is infrastructure for cost-efficient intelligence.</strong> For each request we predict difficulty,
+        rank models on a cost/quality curve, and choose how to reason: direct, plan-and-execute,
+        orchestrate, or fuse. Easy work runs cheap; recurring work amortizes to a small-model price;
+        hard work escalates to match or beat the frontier.</p>
+      <p>And because we meter every real cost, we show the one number nobody else will:
+        <em>how much you saved by not running everything on a premium model.</em> Intelligence per
+        dollar, measured, not promised.</p>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="band alt" id="pricing">
+    <div class="container">
+      <div class="section-head"><div class="kicker">Pricing</div><h2>Two ways to build.</h2></div>
+      <div class="plans">
+        <div class="card plan">
+          <div class="plan-name">Self-serve</div>
+          <div class="plan-price">Free <span>to start · pay-as-you-go</span></div>
+          <p class="muted">Get your API key and let the tokens flow.</p>
+          <ul class="ticks">
+            <li><strong>$5 in free credits</strong> to start</li>
+            <li>Usage-based pricing, prepaid credits</li>
+            <li>100+ models, all four strategies</li>
+            <li>Savings dashboard &amp; per-key usage</li>
+          </ul>
+          <a class="btn-primary block" href="https://platform.datalayer.xyz">Start free</a>
+        </div>
+        <div class="card plan dark">
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-price">Custom</div>
+          <p class="muted">Workloads at scale, with controls.</p>
+          <ul class="ticks light">
+            <li>Volume pricing, billed monthly</li>
+            <li>SSO, audit logs, region controls</li>
+            <li>Uptime &amp; latency SLAs</li>
+            <li>Dedicated support &amp; early access</li>
+          </ul>
+          <a class="btn-light block" href="mailto:founders@datalayer.xyz">Talk to us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta">
+    <div class="container reveal">
+      <h2>Stop paying frontier prices for every token.</h2>
+      <p>Point your existing SDK at DataLayer and watch the savings add up.</p>
+      <a class="btn-primary lg" href="https://platform.datalayer.xyz">Start free · $5 credit</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot-inner">
+      <div class="brand"><img class="logo" src="logo.png" alt="DataLayer" width="24" height="24" /> DataLayer</div>
+      <div class="foot-links">
+        <a href="https://platform.datalayer.xyz">Console</a>
+        <a href="https://platform.datalayer.xyz/docs">Docs</a>
+        <a href="https://platform.datalayer.xyz/playground">Playground</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="muted xs">© 2026 DataLayer · Infrastructure for cost-efficient reasoning</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

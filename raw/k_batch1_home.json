@@ -1,0 +1,92 @@
+{
+ "4for4.com": {
+  "status": 200,
+  "err": null,
+  "hdrs": {
+   "server": "nginx/1.21.0",
+   "via": "1.1 varnish (Varnish/5.2)"
+  },
+  "len": 171987,
+  "scripts": [
+   "https://www.google.com/recaptcha/api.js?hl=en",
+   "https://a.pub.network/4for4-com/pubfig.min.js",
+   "//html5shiv.googlecode.com/svn/trunk/html5.js",
+   "https://wsv3cdn.audioeye.com/static-scripts/audioeye-scanner/v8.0.3/audioeye-scanner.js",
+   "https://www.4for4.com/sites/default/files/advagg_js/js__1WJCiBB9dx_rMpsCGwJ3uB--1QXuVGgImD3sfeFqvOs__H8CG_zemg77_Ld_KlEc7Sq-ArMcGCMKfCYgOWNQ5TKo__hIksS-s6w-mrxYRE4mL0aaSGmZLsNRnRv-1GKKiUbDQ.js",
+   "https://www.4for4.com/sites/default/files/advagg_js/js__vjV0COenGLLygcoR6epTWNPR-MGfns2BVFZ_YIq_fzE__8e-jpRLBhMkGh1BJ9CQKPAibSc3szzDFgfOP9hfJfQA__hIksS-s6w-mrxYRE4mL0aaSGmZLsNRnRv-1GKKiUbDQ.js",
+   "https://www.4for4.com/sites/default/files/advagg_js/js__NzuYM5L5_s90FqcEbbyg0ievWqEYGKnjkWRqiK7hKRs__RgP6qJYnm2prYV4LS6s5hdnz2nrq0U8WtIZK1eJd1wc__hIksS-s6w-mrxYRE4mL0aaSGmZLsNRnRv-1GKKiUbDQ.js",
+   "https://www.4for4.com/sites/default/files/advagg_js/js__6TOywNwEZU8__0_KrVXILLh4ZSb4if7_Czp9zBte4RE__OhX-rIZth3vpEmf2K0QaJ6cxX6ddSm02Ob5JBSJYZwA__hIksS-s6w-mrxYRE4mL0aaSGmZLsNRnRv-1GKKiUbDQ.js",
+   "https://www.4for4.com/sites/default/files/advagg_js/js__AbgteLDZrVyDoajsR0xApPhhnomcPjhLCAOXtOVfDDw__WPK4ILp2hILKztWD1Px3rIvEtMR753tWSp19Ze2t0t0__hIksS-s6w-mrxYRE4mL0aaSGmZLsNRnRv-1GKKiUbDQ.js",
+   "https://www.4for4.com/sites/default/files/advagg_js/js__jq17M-Yn_NCLn9fAP1e9VYcwYPzfnHMvZJeRHnXxzb0__Eb6lKcH_m17idr7gsrEY7-M8ZzzuhGRfALj8WgvtM9k__hIksS-s6w-mrxYRE4mL0aaSGmZLsNRnRv-1GKKiUbDQ.js"
+  ]
+ },
+ "fantasypros.com": {
+  "status": 200,
+  "err": null,
+  "hdrs": {
+   "server": "Apache/2.4.52 (Ubuntu)",
+   "via": "1.1 14086943eeebbd644c0a7eb9d98e199c.cloudfront.net (CloudFront)"
+  },
+  "len": 363301,
+  "scripts": [
+   "https://cdn.cookielaw.org/consent/042af040-2d8c-401b-961f-8d39045cf0aa/otSDKStub.js",
+   "https://middycdn-a.akamaihd.net/bootstrap/bootstrap.js",
+   "//js-sec.indexww.com/ht/p/189460-208271681629377.js",
+   "https://www.googletagmanager.com/gtag/js?id=G-W3D53EQTE0",
+   "//cdn.fantasypros.com/assets/js/min/fp-events-8c05c1902cf98a832fb9.js",
+   "//cdn.fantasypros.com/realtime/media_trust.js?v=1788891",
+   "//get.s-onetag.com/4f104b46-65a7-4cb0-8279-a8225673d442/tag.min.js",
+   "https://a.pub.network/fantasypros-com/pubfig.min.js",
+   "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+   "https://apis.google.com/js/platform.js",
+   "//cdn.fantasypros.com/assets/js/min/pages/myplaybook/mpb/bundle-c9f979852a6d5a9a3886.js",
+   "//cdn.fantasypros.com/assets/js/min/pages/icon-nav/bundle-f08fcc217cac67b7d849.js",
+   "//cdn.fantasypros.com/assets/js/min/vendor-135449af3d2576c9a99a.js",
+   "//cdn.fantasypros.com/assets/js/min/core-c08a530fda5b7ab9c045.js",
+   "//cdn.fantasypros.com/assets/js/min/pages/sport-landing-page/bundle-6081b97c77a6ecc1d8ae.js",
+   "//cdn.fantasypros.com/assets/js/min/global-nav-754fb9a36ad70a01c99d.js",
+   "//cdn.fantasypros.com/assets/js/min/tickers-f0290d4169acaea555e9.js",
+   "//cdn.fantasypros.com/assets/js/min/fp-user-84145db004232d84b725.js",
+   "//cdn.fantasypros.com/assets/js/min/sticky-ads-baf66e6c00a0b46f8042.js"
+  ]
+ },
+ "draftsharks.com": {
+  "status": 200,
+  "err": null,
+  "hdrs": {
+   "server": "cloudflare",
+   "cf-ray": "a37fdca5796dddab-DFW"
+  },
+  "len": 333949,
+  "scripts": [
+   "/js/bootstrap.draftsharks.js?v=1768857666",
+   "/js/ds-tooltip.min.js?v=1786374804",
+   "/js/ds-modal.min.js?v=1785943668",
+   "/js/main.min.js?v=1788452162",
+   "/js/header.min.js?v=1788463661",
+   "/js/vue@3.2.47/vue.global.prod.js?v=1738942887",
+   "/assets/65e6afb3/dsvue/apps/LandingDominate.js?v=1788889935",
+   "/js/ds-tabs.min.js?v=1782225482",
+   "/assets/65e6afb3/dsvue/apps/Subscription.js?v=1788889935"
+  ]
+ },
+ "footballguys.com": {
+  "status": 200,
+  "err": null,
+  "hdrs": {
+   "server": "nginx/1.24.0 (Ubuntu)"
+  },
+  "len": 237118,
+  "scripts": [
+   "https://www.googletagmanager.com/gtag/js?id=G-8CVK1154FV",
+   "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4493287485945115",
+   "https://static.zdassets.com/ekr/snippet.js?key=3af8625a-989e-4ba3-9e2e-3b2d864fd504",
+   "https://www.footballguys.com/js/bundle.js?_cb=1788697179",
+   "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit",
+   "https://www.footballguys.com/fbgstatic/js/wz-tooltip.js",
+   "https://f.convertkit.com/ckjs/ck.5.js",
+   "https://f.convertkit.com/ckjs/ck.5.js",
+   "https://f.convertkit.com/ckjs/ck.5.js"
+  ]
+ }
+}

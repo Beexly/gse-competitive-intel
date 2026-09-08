@@ -1,0 +1,8 @@
+[
+ "/openapi.json -> 404 <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title",
+ "/swagger.json -> 404 <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title",
+ "/api/v1 -> 404 <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title",
+ "/api -> 404 <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title",
+ "/docs -> 404 <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title",
+ ".well-known/openapi.json -> None URLError:<urlopen error [Errno 11001] getaddrinfo failed>"
+]

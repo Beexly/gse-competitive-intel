@@ -1,0 +1,23 @@
+URL: https://www.draftsharks.com/robots.txt
+STATUS: 200
+
+User-agent: *
+Disallow:
+
+Sitemap: https://www.draftsharks.com/news.xml
+Sitemap: https://www.draftsharks.com/kb-sitemap.xml
+Sitemap: https://www.draftsharks.com/article-sitemap.xml
+Sitemap: https://www.draftsharks.com/sharkbite-sitemap.xml
+Sitemap: https://www.draftsharks.com/adp-sitemap.xml
+Sitemap: https://www.draftsharks.com/rankings-dynasty-sitemap.xml
+Sitemap: https://www.draftsharks.com/rankings-sitemap.xml
+Sitemap: https://www.draftsharks.com/rankings-weekly-sitemap.xml
+Sitemap: https://www.draftsharks.com/rankings-ros-sitemap.xml
+Sitemap: https://www.draftsharks.com/rankings-bestball-sitemap.xml
+Sitemap: https://www.draftsharks.com/tvc-sitemap.xml
+Sitemap: https://www.draftsharks.com/stats-player-data-sitemap.xml
+Sitemap: https://www.draftsharks.com/core-sitemap.xml
+Sitemap: https://www.draftsharks.com/keeper-sitemap.xml
+Sitemap: https://www.draftsharks.com/auction-values-sitemap.xml
+Sitemap: https://www.draftsharks.com/depth-chart-sitemap.xml
+Sitemap: https://www.draftsharks.com/trade-calculator-sitemap.xml

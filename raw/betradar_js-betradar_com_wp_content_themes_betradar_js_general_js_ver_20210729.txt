@@ -1,0 +1,679 @@
+$ = jQuery.noConflict();
+
+function isValidEmailAddress(emailAddress) {
+    var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+    return pattern.test(emailAddress);
+};
+    
+$(window).ready( function () {
+    if(typeof(Storage) !== "undefined") {
+        if( localStorage.getItem('cookie') ) {
+        }
+        else {
+            $('div#cookie').show();
+            localStorage.setItem('cookie', 'true');
+        }
+    } else {
+        if (document.cookie == "") {
+            $('div#cookie').show();
+            var now = new Date();
+            var time = now.getTime();
+            var expireTime = time + 1000*36000;
+            now.setTime(expireTime);
+            document.cookie = 'cookie=ok;expires='+now.toGMTString()+';';
+        }
+    }
+    
+    // tracking external links
+    $('#content a').each(function (i,e) {
+				try {
+						if(e.href.indexOf(location.host) == -1 && e.href !== '')
+								$(e).click(function(){
+										ga('send', 'event', 'external', 'click', e.href, {'nonInteraction': 1});
+								})
+				}
+				catch (e) {
+						
+				}
+    })
+});
+
+var last_level = window.location.pathname.slice(0,-1).split('/').pop();
+
+$(window).load(function() {
+    $('#content .carousel-inner').each( function(i,e) {
+	var max = Math.max.apply(Math, $(e).children(".item").map(
+            function(){
+              return $(this).height();
+            })
+        );
+        $(e).height(max);
+    });
+});
+
+$(window).bind("load",function(){
+    $('.row.slides').each( function (i,e) { // news - front page
+	var $this = $(e);
+	
+	var findLastFirst = function findfirstlast(event) {
+	    var hideagain = false;
+	    if ( !$this.is(":visible")) {
+		hideagain = true;
+		$this.show();
+	    }
+	    $this.find('.last').removeClass('last');
+	    $this.find('.first').removeClass('first');
+	    id = $this.attr('id');
+	    if ( id == undefined) {
+		id = i;
+		$this.attr('id', i);
+	    }
+	    $nitems = $this.find('.item').length;
+	    $this.find('.item:first-of-type').addClass('first');
+	    
+	    $height = $this.children('.slides').height();
+	    $('.left, .right').height($height);
+	    
+	    $width = $this.children('.slides').width();
+	    $first = $this.find('.item:first-of-type');
+	    $used = 0;$first.outerWidth();
+	    $first.attr('outerwidth', $first.outerWidth());
+	    //$first = $first.next( '.item' );
+	    while( $first.length > 0) {
+		$outerwidth = $first.outerWidth();
+		$used += $outerwidth;//$first.width() + $width * $marginright;//150;
+		$first.attr('outerwidth', $outerwidth);
+		if ( $used + $first.next( '.item' ).outerWidth() < $width + 15) {
+		    $first = $first.next( '.item' );
+		}
+		else break;
+	    }
+	    $first.addClass('last');
+	    while( $first.length > 0 && $(e).find('.slides .item.first.last').length > 0){
+		$first = $first.next( '.item' );
+		$first.css('margin-left', '100%');
+	    }
+	    if (hideagain) {
+		$this.hide();
+	    }
+	};
+	//$this.resize(findLastFirst);
+	findLastFirst();
+	/*
+	 * left and right navigation button if needed
+	 */
+	if ($this.find('.last').length > 0) {
+	    
+	    $this.find('.left').click( function() { // Left button
+		if ($this.find('.item.first.last').length > 0) { //small screen
+		    $this.find('.item.first').css('margin-left', '100%');//.prev().css('margin-left', '-200%').next();
+		    setTimeout( function() {
+			$this.find('.item.first').hide().removeClass('last').removeClass('first').prev('.item').show( function() {
+			    $(this).css('margin-left', '').addClass('last').addClass('first');
+			    if ( $this.find('.item.first:first-of-type').length > 0 ) { // hide left button
+				$this.find('.left').hide(); // there is no more itemes to show
+			    }
+			    } );
+			}, 200);
+		    $this.find('.right').show();
+		    return ;
+		}
+		$this.find('.item.first').removeClass('first').prev('.item').css('margin-left', '0%').addClass('first');
+		$used += $this.find('.item.first').outerWidth(); //show new item from left
+		do { //move out items till there's enough space
+		    $used -= $this.find('.item.last').outerWidth(); //substract the width of removed element
+		    $this.find('.item.last').removeClass('last').prev('.item').addClass('last');
+		} while ( $used > $width + 15 && $this.find('.item.first:first-of-type').length == 0 && $this.find('.item.last:first-of-type').length == 0);
+		if ( $this.find('.item.first:first-of-type').length > 0 ) { // hide left button
+		    $this.find('.left').hide(); // there is no more itemes to show
+		}
+		$this.find('.right').show();
+	    });
+	    
+	    $this.find('.right').click( function() { // Right button
+		//substract the width of removed element
+		$used -= $this.find('.item.first').css('margin-left', '-100%').outerWidth();
+		window.el = $this.find('.item.first');
+		if ($this.find('.item.first.last').length > 0) { //small screen
+		    var item = $this.find('.item.first');
+		    item.css('margin-left', '-150%').next('.item').show();
+		    setTimeout( function() { item.hide(); item.next('.item').css('margin-left','');}, 200);
+		    $used = $this.children('.slides').outerWidth();
+		}
+		$this.find('.item.first').removeClass('first').next('.item').addClass('first');
+		do { //move in last item till there is space
+		    $used += $this.find('.item.last').removeClass('last').next('.item').addClass('last').outerWidth();
+		} while ( $used + $this.find('.item.last').next('.item').outerWidth() < $width
+			 && $this.find('.item.last:last-of-type').length == 0 && $this.find('.item.first:last-of-type').length == 0);
+		if ( $this.find('.item.last:last-of-type').length > 0 ){ //hide right button
+		    $this.find('.right').hide(); // there is no more items to show
+		}
+		$this.find('.left').show();
+	    });
+	}
+	else {
+	    $this.find('.right').hide();
+	    $this.children('.slides').addClass('col-xs-12').find('.item:first-of-type').css('margin-left', 0);
+	}
+	
+    });
+});
+
+// general.js
+ $(document).ready(function ($) {
+    /**
+     * Youtube player etc
+     */
+    currentonlist = "";
+    //$('.youtubevideo1').each( function( i,e ){
+    //    $(e).click( function(id) {
+    //        window.videoID = id;
+    //        alert(id);
+    //        $('#videoplayerout').fadeIn( );
+    //    });
+    //});
+    $('#videoplayerout').click( function() {
+        try {
+            player[0].pauseVideo();
+        }
+        catch (err) {
+            $('iframe#player').attr('src','');
+        }
+        $(this).fadeOut();
+    });
+
+     /**
+    * Sportradar Accordion
+    */
+    
+    var allPanels = $(".accordion-content-wrapper > .content").hide();
+
+    $(".sportradar-accordion .expand-all").on("click", function() {
+        if($(this).hasClass("open")) {
+            allPanels.slideUp();
+            $(this).removeClass("open").text("Expand all");
+        } else {
+            allPanels.slideDown();
+
+            $.each(allPanels, function() {
+                $(this).height() > 500 ? $(this).children(".accordion-backtotop").show() : $(this).children(".accordion-backtotop").hide();
+            });
+
+            $(this).addClass("open").text("Collapse all");
+        }
+    });
+
+    $(".accordion-content-wrapper > .sr-Accordion_Box > a").click(function() {
+        if(!$(this)) {
+            allPanels.slideUp();
+            $(".accordion-content-wrapper").removeClass("active");
+        }
+
+        $(this).parent().next().height() > 600 ? $(".accordion-backtotop").show() : $(".accordion-backtotop").hide();
+
+        $(this).parent().next().slideDown();
+        $(this).parent().parent().addClass("active");
+
+        return false;
+    });
+
+    $(".accordion-content-wrapper > .content > .close").click(function() {
+        //allPanels.slideUp();
+        $(this).parent().slideUp();
+        $(".accordion-content-wrapper").removeClass("active");
+    });
+
+    $(".accordion-backtotop").click( function( ) {
+        var pane = $(this);
+        setTimeout(function(){
+         var $panel = pane.closest(".content");
+            $("html,body").animate({
+                scrollTop: $panel.offset().top - 200
+            }, 500); 
+        }, 300 );
+    });
+
+    /*----------- end ----------*/
+    /**
+     *! Youtube player
+     */
+    
+    eventValue = '0';
+    
+    $(".container-fluid.footer #subscription input").keypress(function(event) {
+                   if (event.which == 13) {
+                       jQuery('#subscription .modal-footer button').click();
+                   }
+    });
+    $(".container-fluid.footer #subscription input#email").focusout(function (){
+                   if(isValidEmailAddress($(this).val())) $(this).parent().find('span#good').css('opacity','1');
+                   else $(this).parent().find('span#wrong').css('opacity','1');
+                   }).focusin(function () { $(this).parent().find('span').css('opacity','0'); });
+    //function isValidEmailAddress(emailAddress) {
+    //var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+    //return pattern.test(emailAddress);
+    //};
+
+    /**
+     * our clients script
+     */
+     $(".sr-Worldcup_Card").on("click.sr.worldcup.card", function(e) {
+          $(e.delegateTarget).toggleClass("sr-Worldcup_Card-flip");
+      });
+
+    $('.dem').text("CLICK HERE TO SEE MORE....");
+    $(document).on('click', '.dem', function(){    
+        if($(this).text().trim() === 'CLICK HERE TO SEE MORE....' ){
+            $('.demo').css('padding-bottom','97%');
+            $('.demo').css('display','inline-block');
+            $(this).remove(); 
+            $('.hold1').after('<p style="text-align: center;"><button type="button" class="worldcup dem" data-toggle="collapse" data-target=".demo">SHOW LESS....</button></p>');
+            $(window).trigger("pixgridder");
+        }else{
+            $('.demo').fadeOut();
+            $('.demo').css('padding-bottom','0%');
+            $('html,body,.set').scrollTop(4500);
+            $(this).remove();
+            $('.hold').after('<p style="text-align: center;"><button type="button" class="worldcup dem" data-toggle="collapse" data-target=".demo">CLICK HERE TO SEE MORE....</button></p>');
+        }
+    });
+
+      // Mobile menu
+        $(".sr-Mobile_Ul .menu-item-has-children").on("click.sr.menu.mobile", function(e) {
+            if (this === e.target) {
+                $(this).toggleClass("open-submenu");
+            }
+        });
+        $(".sr-Mobile_Ul > .menu-item-has-children > a").click(function(e){
+            e.preventDefault();
+            $(this).parent().toggleClass("menu-item-has-children-on");
+            $(this).next(".sub-menu").toggleClass("sub-menu-on");
+        });
+        
+    
+    $('#ourclients .tab-pane p').hover(function( e ) {
+            $(e.target).siblings().find('img').stop().fadeTo(400,0.2);
+        },
+        function( e ) {
+            $(e.target).siblings().find('img').stop().fadeTo(400,1);
+        });
+    $('#ourclients .tab-pane p img').hover( function( e ) {
+            $(e.target).closest('p').siblings().find('img').stop().fadeTo(400,0.2);
+        },
+        function( e ) {
+            $(e.target).closest('p').siblings().find('img').stop().fadeTo(400,1);
+        });
+    
+    $('.container.clients img,.container-fluid.clients img').hover( function( e ) {
+            $(e.target).closest('.container').find('img').stop().fadeTo(400,0.2);
+            $(e.target).stop().fadeTo(100,1);
+        },
+        function( e ) {
+            $(e.target).closest('.container').find('img').stop().fadeTo(400,1);
+        });
+    
+    /* mobile */
+    $('.menu-menu-1-container').click( function (e) {
+        if($(window).width() <= 768){
+            if($(e.target).is('li')) {
+                $(e.target).children('ul').toggle();
+                $(e.target).toggleClass('hovered').children('ul').toggleClass('hovered');
+            }
+            else $('#menu-menu-1').toggle();
+        }
+    });
+    
+    window.mobile = false;
+    
+    var client_ref = function client_ref() {
+        if ($(window).width() < 768 && !window.mobile) {
+            window.mobile = true;
+            var mobile = $('#mobile .mobile').detach();
+            mobile.first().addClass('active');
+            $('#clientref .carousel-inner').append(mobile);
+            $('#mobile').append($('#clientref .carousel-inner .desktop').detach());
+            
+            var mobile = $('#mobile1 .mobile').detach();
+            mobile.first().addClass('active');
+            $('#partner-logos .carousel-inner').append(mobile);
+            $('#mobile1').append($('#partner-logos .carousel-inner .desktop').detach());
+        }
+        else if ($(window).width() >= 768 && window.mobile) {
+            window.mobile = false;
+            $('#mobile .desktop').first().addClass('active');
+            $('#clientref .carousel-inner').append($('#mobile .desktop').detach());
+            $('#mobile').append($('#clientref .carousel-inner .mobile').detach());
+            
+            $('#mobile1 .desktop').first().addClass('active');
+            $('#partner-logos .carousel-inner').append($('#mobile1 .desktop').detach());
+            $('#mobile1').append($('#partner-logos .carousel-inner .mobile').detach());
+        }
+    }
+    
+    client_ref();
+    $( window ).resize( client_ref );
+    /* end of: tap fix for navigation */
+    
+    /* iframe fix */
+    $("iframe").each(function(){
+        var ifr_source = $(this).attr('src');
+        var wmode = "wmode=transparent";
+        if(ifr_source) {
+        	if(ifr_source.indexOf('?') != -1) $(this).attr('src',ifr_source+'&'+wmode);
+        	else $(this).attr('src',ifr_source+'?'+wmode);
+        }
+    });
+    
+    /* google analytics tracking */
+    $('#downloads-section #buttons a.product-demo').click(function () { // demobuttons
+        ga('send', 'event', 'demo', 'click', $(this).attr('href'), {'nonInteraction': 1, 'page' : document.location.pathname});
+    })
+    $('iframe').click(function () { //videos
+        ga('send', 'event', 'video', 'click', $(this).attr('href'), {'nonInteraction': 1});
+    })
+    $('a[href^="mailto:"]').click(function () { // email
+        ga('send', 'event', 'email', 'click', $(this).attr('href'), {'nonInteraction': 1});
+    })
+    $('footer #social-icons a').click(function () { // social icons footer
+        ga('send', 'event', 'socialmedia', 'click', 'button ' + $(this).children().first().attr('id'), {'nonInteraction': 1});
+    })
+    $('a[href^="/wp-content/uploads/sites"][href$=".pdf"]').click(function () { // brochures
+        ga('send', 'event', 'brochures', 'click', 'brochure ' + $(this).attr('href'), {'nonInteraction': 1});
+    })
+    
+    
+    $('a[data-target="#subscription"]').click(function (e) { // newsletter registration click, step 1 - breadcrumbs/header
+        newsletter_opened = 'header';
+        ga('send', 'event', 'newsletter', 'open_socialicon', 'empty_form', {'page': 'vp/' + last_level + '/newsletter', 'title' : 'header'});
+        //ga('send', 'pageview', {'page': 'vp/' + last_level + '/newsletter', 'title' : 'header'});
+    });
+    $('button[data-target="#subscription"]').click(function (e) { // newsletter registration click, step 1 - footer
+        newsletter_opened = 'footer';
+        ga('send', 'event', 'newsletter', 'open_footer', 'empty_form', {'page': 'vp/' + last_level + '/newsletter', 'title' : 'footer'});
+        //ga('send', 'pageview', {'page': 'vp/' + last_level + '/newsletter', 'title' : 'footer'});
+        $(this).unbind('click');
+    });
+    $('#subscription input').focusout(function () { // newsletter registration focus input, step 2
+        $('[data-target="#subscription"]').unbind('click');
+        eventValue = '';
+        $('#subscription input').each(function(i,e) { if($(e).val() == '') eventValue += '0'; else eventValue += '1';});
+    });
+    
+    // contact us google analytics tracking
+    $('[data-target="#contactus"]').click(function () { // contact us - click, step 1
+        ga('send', 'event', 'contactus', 'open', 'header', {'page': 'vp/' + last_level + '/contactus', 'title' : 'header'});
+        //ga('send', 'pageview', {'page': 'vp/' + last_level + '/contactus', 'title' : 'header'});
+    })
+    var contact_closed = true;
+    $('.row.contact-us button').click(function () { // contact us - click, step 1
+        if (contact_closed) {
+            ga('send', 'event', 'contactus', 'open', 'bottom', {'page': 'vp/' + last_level + '/contactus', 'title' : 'bottom'});
+            //ga('send', 'pageview', {'page': 'vp/' + last_level + '/contactus', 'title' : 'bottom'});
+            contact_closed = false;
+        }
+    })
+    
+    var navigation_bread_affix = $('header#masthead').outerHeight() - $('#breadcrumb').height() - 100;
+    $('nav#site-navigation').affix({ offset: {top: navigation_bread_affix}});
+    navigation_bread_affix += $('#breadcrumb').height();
+    $('#breadcrumb').affix({ offset: {top: navigation_bread_affix}});
+
+    // contact us iframe resize
+    $('.container-fluid iframe.contact-us').load(function() {
+        $(this).height( $(this).contents().find("body").height() );
+    });
+    $('#contactus').on('shown.bs.modal', function () {
+        $(this).find('iframe.contact-us').contents().find('input').first().focus();
+    })
+    
+    /** Micro - interaction **/
+    $('#subscription-contact .modal-body button').click(function (e) {
+    if (isValidEmailAddress($('#subscription-contact input').val())) {
+        $('#subscription-contact p.fail').text('')
+        var name = $('#subscription-contact input#name-contact-subscription').val();
+        var email = $('#subscription-contact input#email-contact-subscription').val();
+        if (email == "") {
+            $("#subscription-contact .fail").html("Please enter your eMail address");
+            $("#subscription-contact input#email").focus();
+            return false;
+        }
+        if ( !isValidEmailAddress(email)){
+            $('#subscription-contact .fail').html("Please enter valid email");
+            $("#email").focus();
+            return false;
+        }
+        ga('send', 'event', 'micro-newsletter', 'submit', 'bottom', {'page': 'vp/' + last_level + '/micro-newsletter/submit', 'title' : 'bottom'});
+        $('#subscription-contact .modal-body').html("<h3>Thank you for your registration!</h3><p>&nbsp;</p>")
+            .append("<p>Your data has successfully been sent. You will receive a confirmation email shortly.</p>")
+            .hide()
+            .fadeIn(1500, function() {
+              //jQuery('#message').append("<img id='checkmark' src='images/check.png' />");
+            });
+        dataString = 'agnCI=1&agnFN=' + dataString;
+        dataString += '&EMAIL=' + email + '&FIRSTNAME='+ name + '&LASTNAME=&RECIPIENT_COMPANY=';
+        $.ajax({
+                type: "GET",
+                url: "http://newsletter.betradar.com/form.do",
+                data: dataString,
+                success: function() { }
+        });
+    }
+    else {
+            $('#subscription-contact p.fail').text('Please enter valid e-mail address');
+    }
+    return false;
+})
+});
+ 
+// contact-us iframe
+var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+var eventer = window[eventMethod];
+var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+
+eventer(messageEvent,function(event)
+{
+    if (event.origin !== window.location.origin)
+        return;
+    var resize_iframe = event.source.frameElement;
+    if (event.data == "resize")
+        $(resize_iframe).height( $(resize_iframe).contents().find("body").height() );
+    else if (event.data =="submit") {
+        if (event.source.frameElement.id == "header") {
+            ga('send', 'event', 'contactus', 'submit', 'header', {'page': 'vp/' + last_level + '/contactus/submit', 'title' : 'header'});
+            //ga('send', 'pageview', {'page': 'vp/' + last_level + '/contactus/submit', 'title' : 'header'});
+        }
+        else {
+            ga('send', 'event', 'contactus', 'submit', 'footer', {'page': 'vp/' + last_level + '/contactus/submit', 'title' : 'footer'});
+            //ga('send', 'pageview', {'page': 'vp/' + last_level + '/contactus/submit', 'title' : 'footer'});
+        }
+        var message = '<p>Thank you. Your entry has been successfully submitted.<br><br>Your ';
+        if ($('body').is('.betradar'))
+            message += 'Betradar';
+        else
+            message += 'Sportradar';
+        message += ' team</p>';
+        $(event.source.frameElement).hide().parent().append(message);
+    }
+    else if (event.data.action == "resize")
+        $(resize_iframe).height( $(resize_iframe).contents().find("body").height() );
+    else if (event.data.action =="submit") {
+        if (typeof event.data.event_page === 'undefined') event.data.event_page = event.data.event_label;
+        if (event.source.frameElement.id == "header") {
+            ga('send', 'event', event.data.event_label, 'submit', 'header', {'page': 'vp/' + last_level + '/' + event.data.event_page + '/submit', 'title' : 'header'});
+        }
+        else {
+            ga('send', 'event', event.data.event_label, 'submit', 'footer', {'page': 'vp/' + last_level + '/' + event.data.event_page + '/submit', 'title' : 'footer'});
+        }
+        if ('message' in event.data) {
+            message = event.data.message;
+        }
+        else {
+            var message = '<p>Thank you. Your entry has been successfully submitted.<br><br>Your ';
+            if ($('body').is('.betradar'))
+                message += 'Betradar';
+            else
+                message += 'Sportradar';
+            message += ' team</p>';
+        }
+        $(event.source.frameElement).hide().parent().append(message);
+    }
+})
+
+/** youtube scripts */
+function youtube_parser(url){
+    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+    var match = url.match(regExp);
+    if (match&&match[7].length==11){
+	return match[7];
+    }else{
+	return '';
+    }
+}
+
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player = [];
+playYTvideo = function playYTvideo ( id ) {
+    try {
+        if ( currentonlist != id ){
+            player[0].loadVideoById(id);
+            currentonlist = id;
+        }
+        else {
+            player[0].playVideo();
+        }
+    }
+    catch (err) {
+        $('iframe#player').attr('src','//www.youtube.com/embed/' + id + '?autoplay=1&controls=0');
+    }
+    $('#videoplayerout').fadeIn( );
+}
+function onYouTubeIframeAPIReady() {
+    player.push(new YT.Player('player', {
+        height: '390',
+        width: '640',
+        playerVars: {
+            'controls' : '0',
+        },
+        events: {
+            'onStateChange': onPlayerStateChange
+        },
+        origin: window.location.protocol + '//' + window.location.host
+    }));
+    player[0].gaData = {};
+    $('iframe[src*="youtube.com"]:not([id="player"])').each(function (i,e) {
+        if ($(e).attr('id') == undefined) {
+            var id = Date.now().toString();
+        }
+        else var id = $(e).attr('id');
+        var vidID = youtube_parser($(e).attr('src'));
+        var height = $(e).attr('height');
+        var width = $(e).attr('width');
+        $(e).replaceWith('<div id="' + id + '"></div>');
+        
+        player.push(new YT.Player(id, {
+            height: height,
+            width: width,
+            videoId: vidID,
+            playerVars: {
+                'controls' : '1',
+            },
+             events: {
+                'onStateChange': onPlayerStateChange
+            },
+            origin: window.location.protocol + '//' + window.location.host
+        }));
+        player[i+1].gaData = {};
+    });
+}
+
+var done = false;
+function onPlayerStateChange(event) {
+    if ( event.data == 2) {
+        event.target.gaData[event.target.getVideoData().video_id] = ['send', 'event', 'video', 'pause', event.target.getVideoData().title, Math.round(event.target.getCurrentTime())];
+    }
+    else if (event.data == -1 && event.target.gaData[event.target.getVideoData().video_id]) {
+        ga.apply(this, event.target.gaData[event.target.getVideoData().video_id]);
+    }
+}
+
+/* finish page unload */
+$(window).unload(function () {
+    $(player).each(function (i,e) {
+        for(data in e.gaData){
+            ga.apply(this, e.gaData[data]);
+        }
+    })
+})
+
+/**
+ * Helper functions
+ **/
+
+/**
+ * News letter
+ */
+newslettersubmit = function newslettersubmit(data) {
+    // validate and process form here
+    
+    var name = jQuery("input#name").val();
+    
+    var lname = jQuery("input#lname").val();
+    
+    var company = jQuery("input#company").val();
+    
+    
+    var email = jQuery("input#email").val();
+    if (email == "") {
+        jQuery(".fail").html("Please enter your eMail address");
+        jQuery("input#email").focus();
+        ga('send', 'event', 'newsletter', 'click', 'submit-failed', parseInt(eventValue));
+        return false;
+    }
+    if ( !isValidEmailAddress(email)){
+        jQuery('.fail').html("Please enter valid email");
+        jQuery("#email").focus();
+        ga('send', 'event', 'newsletter', 'click', 'submit-failed', parseInt(eventValue));
+        return false;
+    }
+    ga('send', 'event', 'newsletter', 'submit', newsletter_opened , parseInt(eventValue), {'page': 'vp/' + last_level + '/newsletter/submit', 'title' : 'newsletter_opened'});
+    //ga('send', 'pageview', {'page': 'vp' + window.location.pathname + 'newsletter/submit', 'title' : 'newsletter_opened'});
+    
+    dataString = 'agnCI=1&agnFN=' + data;
+    dataString += '&EMAIL=' + email + '&FIRSTNAME='+ name + '&LASTNAME='+ lname + '&RECIPIENT_COMPANY=' + company;
+    jQuery('#subscription .modal-body').html("<div id='message'>Sending");
+    jQuery('#subscription .modal-footer').html('');
+    jQuery('#message').html("<h3>Thank you for your registration!</h3><p>&nbsp;</p>")
+        .append("<p>Your data has successfully been sent. You will receive a confirmation email shortly.</p>")
+        .hide()
+        .fadeIn(1500, function() {
+          //jQuery('#message').append("<img id='checkmark' src='images/check.png' />");
+        });
+    jQuery.ajax({
+        type: "GET",
+        url: "https://newsletter.betradar.com/form.do",
+        data: dataString,
+        success: function() { }
+    });
+    return false;
+}
+
+/**
+ * Micro interaction
+ */
+eventer(messageEvent,function(event)
+    {
+        if (event.origin !== window.location.origin)
+            return;
+        if (event.data.action =="submit" && event.source.frameElement.id !== "header" && event.data.event_label == "contactus") {
+            $('#subscription-contact').modal('show');
+            $('#subscription-contact input#email-contact-subscription').val(event.data.email);
+            $('#subscription-contact input#name-contact-subscription').val(event.data.name);
+        }
+    })
+

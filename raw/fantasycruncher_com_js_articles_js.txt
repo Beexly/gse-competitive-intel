@@ -1,0 +1,726 @@
+const categoryOrderImportance = ['NFL', 'MLB', 'NBA', 'NHL', 'CFB', 'XFL', 'CBB', 'GOLF', 'MMA', 'CFL', 'NAS', 'WNBA', 'SOC', 'eSPORTS', 'TEN', 'F1', 'USFL']
+const mainContentElem         = document.querySelector('.insights-main-content')
+const leftNavSportListElem    = document.querySelector('ul.insights-menu-list')
+const sortSportByImportance   = (a,b) => categoryOrderImportance.indexOf(a) - categoryOrderImportance.indexOf(b)
+let lastDisplayedArticleId    = null
+
+const gameTimeFormatOpts   = {weekday: 'short', hour:'numeric', minute:'2-digit', hour12: true}
+const periodFormatOpts     = {weekday: 'short',month: 'short',day: 'numeric' }
+const isFootballCheck      = (league) => ['NFL','CFB','CFL','XFL','USFL','UFL'].includes(league)
+const formatPeriodDisplay  = (period) => {
+	if(period == '' || period == null) return ''
+	return (new Date(period + "T00:00:00")).toLocaleDateString("en-US", periodFormatOpts).replace(",", "")
+}
+
+const formatFootballPeriodDisplay = (period) => {
+	if(period == '' || period == null) return ''
+	return period.split('-').map(v => v.capitalize()).join(' ')
+}
+
+const sortPeriods = (a,b) => {
+    const [aYear, aMonth, aDay] = a.split('-').map(v => Number(v))
+    const [bYear, bMonth, bDay] = b.split('-').map(v => Number(v))
+    if( isNaN(aMonth) || isNaN(bMonth) ){
+        return aYear - bYear || aDay - bDay
+    }
+
+    return aYear - bYear || aMonth - bMonth || aDay - bDay
+}
+
+
+const formatAsSimpleMoney = (val) => {
+
+	const num = parseFloat(val)
+	const formatter = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: num % 1 === 0 ? 0 : 2,
+      maximumFractionDigits: 2,
+    })
+
+    return formatter.format(num)
+}
+
+
+const getCrunchPeriodsArr = (league) => {
+
+	const crunchSites = allLeagues[league].optimizer // ['draftkings', 'draftkings_pickem', 'draftkings_showdown', 'fanduel', 'fanduel_single', 'yahoo', 'yahoo_single']
+
+	const getCrunchPeriods = () => {
+		
+		if(league == 'eSPORTS') {
+			const crunchSites   = ['draftkings', 'draftkings_showdown']
+			const eSportLeagues = Object.keys(allLeagues['eSPORTS'].display_names) // ['LOL', 'CSGO', 'COD', 'RL', 'VAL']
+			const periodsArr    = crunchSites.flatMap(siteName => {
+				return eSportLeagues.flatMap(eLeague => crunchSites.flatMap(siteName => all_sports_periods.cruncher[eLeague]?.[siteName]))
+			}).filter(v => v)
+
+			return [...new Set(periodsArr)] 
+		}
+
+		if(league == 'GOLF') {
+			const crunchSites = ['draftkings', 'draftkings_pickem', 'draftkings_showdown', 'fanduel', 'yahoo']
+			const periodsArr  = crunchSites.flatMap(siteName => all_sports_periods.cruncher['PGA']?.[siteName])
+			return [...new Set(periodsArr)] 
+		}
+
+		const periodsArr = crunchSites.flatMap(siteName => all_sports_periods.cruncher[league]?.[siteName])
+		return [...new Set(periodsArr)] 
+	}
+
+	return getCrunchPeriods()
+
+}
+
+
+const contestTableConfig = [
+    {
+        type:'both', 
+        header: {txt:'Site', class:''},
+        cell: {
+            getVal: (rowDataObj) => {
+                return elemCreator('td', {}, 
+                    elemCreator('span', {}, [
+                        elemCreator('div', {class:`site-icon ${rowDataObj['site']}` }),
+                        rowDataObj['siteNameFormatted']     
+                    ])
+                )
+            }
+        } 
+    },
+    {
+        type:'both', 
+        header: {txt:'Slate', class:'text-center'},
+        cell: {
+            getVal: (rowDataObj) => elemCreator('td', {class:''}, rowDataObj['Title'])
+        } 
+    },
+    {
+        type:'crunch', 
+        header: {txt:'Optimize', class:'text-center'},
+        cell: {
+            getVal: (rowDataObj) => {
+                return elemCreator('td', {class:'text-center cruncher-link-cell'}, [
+                    elemCreator('a', {href:`/lineup-cruncher/${rowDataObj['Site']}/${rowDataObj['League']}/${rowDataObj['Period']}/?slateId=${rowDataObj['slate']}`}, [
+                        elemCreator('img', {src:'/img-share/FC_logos/badge_drk_light_transparent_400.png'}),
+                        'CRUNCHER'
+                    ])
+                ])
+            }
+        } 
+    },
+    {
+        type:'rewind', 
+        header: {txt:'Review', class:'text-center'},
+        cell: {
+            getVal: (rowDataObj) => {
+                return elemCreator('td', {class:'text-center cruncher-link-cell'}, [
+                    elemCreator('a', {href:`/lineup-rewind/${rowDataObj['Site']}/${rowDataObj['League']}/${rowDataObj['Period']}/?slateId=${rowDataObj['slate']}`}, [
+                        elemCreator('img', {src:'/img-share/FC_logos/badge_drk_light_transparent_400.png'}),
+                        'REWIND'
+                    ])
+                ])
+            }
+        }  
+    },
+    {
+        type:'both', 
+        header: {txt:'Contest', class:''},
+        cell: {
+            getVal: (rowDataObj) => elemCreator('td', {}, elemCreator('a', { class:'external-contest-link', href:`${rowDataObj['link']}`, target:'_blank' }, rowDataObj['name']) )
+        } 
+    },
+    {
+        type:'both', 
+        header: {txt:'Games', class:'text-center'},
+        cell: {
+            getVal: (rowDataObj) => elemCreator('td', {class:'text-center'}, rowDataObj['gameCell'])
+        }  
+    },
+    {
+        type:'both', 
+        header: {txt:'Entries', class:'text-center'},
+        cell: {
+            getVal: (rowDataObj) => elemCreator('td', {class:'text-center'}, parseInt(rowDataObj['max_entries']).toLocaleString('en-US') )
+        }  
+    },
+    {
+        type:'both', 
+        header: {txt:'Entry Fee', class:'text-center'},
+        cell: {
+            getVal: (rowDataObj) => elemCreator('td', {class:'text-center'}, formatAsSimpleMoney(rowDataObj['cost']) ) 
+        }  
+    },
+    {
+        type:'both', 
+        header: {txt:'Prize Pool', class:'text-center'},
+        cell: {
+            getVal: (rowDataObj) => elemCreator('td', {class:'text-center'}, formatAsSimpleMoney(rowDataObj['prizepool']) )
+        }  
+    },
+    {
+        type:'crunch', 
+        header: {txt:'Max Entries', class:'text-center'},
+        cell: {
+            getVal: (rowDataObj) => elemCreator('td', {class:'text-center'}, parseInt(rowDataObj['max_entrants']).toLocaleString('en-US') )
+        }  
+    },
+    {
+        type:'crunch', 
+        header: {txt:'StartTime', class:'text-center'},
+        cell: {
+            getVal: (rowDataObj) => {
+                const displayVal = (rowDataObj['secs_til_start'] < 0) ? 'In Progress' : ''
+                return elemCreator('td', {class:'text-center secs-til-start', 'data-secs_til_start':rowDataObj['secs_til_start'] }, displayVal)
+            }
+        }  
+    },
+    {
+        type:'rewind', 
+        header: {txt:'Act. Entries', class:'text-center'},
+        cell: {
+            getVal: (rowDataObj) => elemCreator('td', {class:'text-center'}, `${rowDataObj['total_entrants'] ?? 0}` )
+        }  
+    },
+    {
+        type:'rewind', 
+        header: {txt:'PctFull', class:'text-center'},
+        cell: {
+            getVal: (rowDataObj) => {
+                const pctVal =  (rowDataObj['total_entrants'] / rowDataObj['max_entrants'] * 100).round(1) + '%'
+                return elemCreator('td', {class:'text-right'}, pctVal )
+            }
+        }  
+    },
+    {
+        type:'rewind', 
+        header: {txt:'minScore', class:'text-center'},
+        cell: {
+            getVal: (rowDataObj) => {
+                const val = Number(rowDataObj['mincash_score']).round(1)
+                return elemCreator('td', {class:'text-center'}, `${val}`)
+            }
+        }  
+    },
+    {
+        type:'rewind', 
+        header: {txt:'maxScore', class:'text-center'},
+        cell: {
+            getVal: (rowDataObj) => {
+                const val = Number(rowDataObj['winning_score']).round(1)
+                return elemCreator('td', {class:'text-center'}, `${val}` )
+            }
+        }  
+    },
+
+]
+
+
+const createContestListTableElem = (league, contestsArr) => {
+
+	const displayConfig    = {
+	    cruncher: {
+	        sectionTitle: `Current ${league} Fantasy Contests`,
+	        allContestsLinkText: `Checkout All Current ${league} Contests`,
+	        contestTable: contestTableConfig.filter(({type}) => type == 'crunch' || type == 'both')
+
+	    },
+	    rewind: {
+	        sectionTitle: `Completed ${league} Fantasy Contests`,
+	        allContestsLinkText: `Checkout All Completed ${league} Contests`,
+	        contestTable: contestTableConfig.filter(({type}) => type == 'rewind' || type == 'both')
+	    }
+	}
+
+	//blank contest elem
+	if(!contestsArr || contestsArr.length < 1) {
+
+		return elemCreator('section',  {class:'insights-sub-section-block contests'}, [
+	        elemCreator('div',  {class:'contests-table-header'}, elemCreator('h2',  {class:'inights-section-title'}, 'Fantasy Contests')),
+	        elemCreator('div',  {class:'insights-contests-table-container'},
+	            elemCreator('table',  {class:'insights-contests'}, [
+                    elemCreator('thead', {}, elemCreator('tr', {}, displayConfig.cruncher.contestTable.map(({header}) => elemCreator('th', {class:`${header.class}`}, header.txt)))),
+                    elemCreator('tr', {}, elemCreator('td', {colspan:'100', class:'text-center'}, 'No contests found, check back later!' ))
+                ])
+	        )
+	    ])
+	}
+
+	const uniqBaseSites  = [... new Set(contestsArr.map(c => c.site))]
+	const uniqSiteStyles = [... new Set(contestsArr.map(c => c.style))]
+	const firstSlateId  = contestsArr[0].slate
+	const { Period:period,
+			unix_time 
+		  } = allSlates[firstSlateId]
+
+	const crunchPeriodsArr = getCrunchPeriodsArr(league)
+	const sectionType      = crunchPeriodsArr.includes(period) ? 'cruncher' : 'rewind'
+	
+
+	const { sectionTitle, allContestsLinkText, contestTable	} = (sectionType == 'cruncher') ? displayConfig.cruncher : displayConfig.rewind
+
+
+	const contestRowCreator = (c) => {
+
+		const rowDataObj = Object.assign(c, allSlates[c.slate])
+		const cellElems  = contestTable.map(({cell}) => cell.getVal(rowDataObj) )
+
+		return elemCreator('tr', {'data-site': c.site, 'data-style':c.style }, cellElems)
+
+	}
+
+	const getSiteStylesFilter = (uniqSiteStyles) => {
+
+		if(uniqSiteStyles.length < 2) return ''
+
+		const getSiteStyleFilterElems = () => {
+
+			const returnElems = [
+				elemCreator('li', {class: 'on', 'data-filter':'all'}, elemCreator('span', {}, 'ALL'))
+			]
+			
+			if(uniqSiteStyles.includes('classic')){
+				returnElems.push( elemCreator('li', {'data-filter':'classic'}, elemCreator('span', {}, 'Classic')) )
+			}
+
+			if( uniqSiteStyles.includes('showdown') || uniqSiteStyles.includes('single')){
+				returnElems.push( elemCreator('li', {'data-filter':'showdown,single'}, elemCreator('span', {}, 'Single/SD')) )
+			}
+
+			return returnElems
+		}
+
+		return elemCreator('ul',  {class:'unselectable contest-filter', 'data-field':'style'}, getSiteStyleFilterElems())
+
+	}
+
+
+
+	return elemCreator('section',  {class:'insights-sub-section-block contests'}, [
+		elemCreator('div',  {class:'contests-table-header'}, [
+			elemCreator('h2',  {class:'inights-section-title'}, sectionTitle),
+
+			elemCreator('div', {class:'contest-filters-container'}, [
+
+				elemCreator('ul',  {class:'unselectable contest-filter', 'data-field':'site'}, [
+					elemCreator('li',  {class:'on', 'data-filter':'all'}, elemCreator('span',{},'ALL' )),
+					...uniqBaseSites.map(name => 
+						elemCreator('li', {'data-filter':name}, elemCreator('div', {class:`site-icon ${name}`}))
+					)
+				]),
+
+				getSiteStylesFilter(uniqSiteStyles)
+				
+			])
+		]),
+
+
+		elemCreator('div',  {class:'insights-contests-table-container'}, [
+
+			elemCreator('table',  {class:'insights-contests'}, [
+				elemCreator('thead', {}, [
+					elemCreator('tr', {}, contestTable.map(({header}) =>  elemCreator('th', {class:`${header.class}`}, header.txt)) )
+				]),
+				elemCreator('tbody', {}, contestsArr.map(contestRowCreator))
+			])
+
+		]),
+
+		elemCreator('a', {class:'all-contests-link', href:`/contest-links/${league}/${period}`}, allContestsLinkText )
+
+	])
+
+	
+}
+
+const createLeftNavListItem = (league) => {
+	const liElem              = document.createElement('li')
+		  liElem.classList    = 'section-nav'
+		  liElem.dataset.view = `${league}-insights`
+		  liElem.innerHTML    = `${league}<i class="${allLeagues[league].faIconClass}"></i>`
+	return liElem
+}
+
+const createPeriodChangeElem = (league) => {
+
+	const {period, games, otherPeriods} = gamesByLeague[league] ?? {}
+	const hasOtherPeriods               = otherPeriods?.length > 0
+	if(!hasOtherPeriods) return ''
+
+	const periodFormatter  = isFootballCheck(league) ? formatFootballPeriodDisplay : formatPeriodDisplay
+	const thisPeriodsIndex = otherPeriods.indexOf(period)
+	const prevPeriod       = otherPeriods[thisPeriodsIndex-1] ?? ''
+	const nextPeriod       = otherPeriods[thisPeriodsIndex+1] ?? ''
+
+	return elemCreator('div', {class:'period-selector', 'data-league':league}, [
+		elemCreator('i', {class:'fad fa-triangle change-period-icon prev has-tip', 'data-period':`${prevPeriod}`, title:`${periodFormatter(prevPeriod)}`}),
+		elemCreator('h2', {class:'inights-section-title period-selector'}, periodFormatter(period)),
+		elemCreator('i', {class:'fad fa-triangle change-period-icon next has-tip', 'data-period':`${nextPeriod}`, title:`${periodFormatter(nextPeriod)}`})
+	])
+
+}
+
+const createSportSectionElem = (league) => {
+	
+	return elemCreator('section', {id:`${league}-insights`, class:'insights-main-section-block' , 'data-league':league}, [
+		elemCreator('div', {class:'sport-section-title-container'}, [
+			elemCreator('h1', {class:'sport-section-title'}, [
+				elemCreator('i', {class:'far fa-caret-circle-right open-side-nav'}),
+				league
+			]),
+
+			createPeriodChangeElem(league)
+			
+		])
+	])
+
+}
+
+const addSlateInfo = (slateObj, index) => {
+	
+	slateObj.index             = index
+	slateObj.gameCell          = getGameCell(slateObj)
+	slateObj.siteNameFormatted = getSiteNameFormatted(slateObj)
+	
+}
+
+
+const getLeaguePeriodData = (() => {
+	  
+	const dataCache = new Map();
+
+	return (league, period, name) => {
+
+		const data_key = league+"_"+period+"_"+name
+
+		if(!dataCache.has(data_key)){
+
+			const urls = [
+				`/ajax/get-games.php?period=${period}&league=${league}`,
+				`/funcs/get-contest-list.php?period=${period}&league=${league}`
+			]
+
+			const url = (name == 'games') ? urls[0] : urls[1]
+			const req = fetch(url).then(res => res.json())
+			dataCache.set(data_key, req)
+		}
+
+		return dataCache.get(data_key)
+
+	}
+
+})()
+
+const fetchLeaguePeriodData = async (league, period) => {
+
+	const leagueData = gamesByLeague[league]
+	const [gameRes, contestRes] = await Promise.all([
+		getLeaguePeriodData(league, period, 'games'),
+		getLeaguePeriodData(league, period, 'contests'),
+	])
+
+
+	//add the periods to the global leagueData obj
+	leagueData.otherPeriods = [... new Set([...leagueData.otherPeriods, ...gameRes.otherPeriods])].sort(sortPeriods)
+
+	//add the slate data to global allSlates obj
+	Object.values(contestRes.slates).forEach(addSlateInfo)
+	Object.assign(allSlates, contestRes.slates)
+
+	//create the new elems
+	const gamesSecElem   = createGamesContainerElem(league, period, gameRes.games)
+	const contestSecElem = createContestListTableElem(league, contestRes.contests)
+
+	//init the table sorter
+	$(contestSecElem.querySelector('table.insights-contests'))
+	.tablesorter({
+		sortInitialOrder: 'desc', 
+		sortList:[ [7,1] ] 
+	})
+
+	return {
+		games: gameRes.games,
+		elems: {gamesSecElem, contestSecElem}
+	}
+	
+}
+
+
+const loadLeaguePeriodData = async (league, newPeriod) => {
+
+	const leagueSection  = document.querySelector(`section.insights-main-section-block[data-league="${league}"]`)
+	const leagueData     = gamesByLeague[league]
+	const currVisPeriod  = leagueData.period
+	const gamesSecElem   = leagueSection.querySelector('section.games')
+	const contestSecElem = leagueSection.querySelector('section.contests')
+	const periodSelectElem = leagueSection.querySelector('.period-selector')
+
+	//setup and move existing displayed data to gamesByPeriod
+	leagueData.gamesByPeriod ??= {}
+	leagueData.gamesByPeriod[currVisPeriod] ??= { games: [...leagueData.games], elems: { gamesSecElem, contestSecElem }  }
+
+	//get the new data if needed
+	leagueData.gamesByPeriod[newPeriod] ??= await fetchLeaguePeriodData(league, newPeriod)
+
+	//set the displayed period
+	leagueData.period = newPeriod
+
+	gamesSecElem.replaceWith(leagueData.gamesByPeriod[newPeriod].elems.gamesSecElem)
+	contestSecElem.replaceWith(leagueData.gamesByPeriod[newPeriod].elems.contestSecElem)
+	periodSelectElem.replaceWith(createPeriodChangeElem(league))
+
+}
+
+
+
+const createGamesContainerElem = (league, period, games) => {
+	
+	const isFootball           = isFootballCheck(league)
+	const periodTitleFormatted = (isFootball) ? formatFootballPeriodDisplay(period) : formatPeriodDisplay(period)
+
+	const createGameElem = (game) => {
+
+		const gameTimeFormatted = new Intl.DateTimeFormat('en-US', gameTimeFormatOpts).format(new Date(game.ts * 1000));
+		const lta               = `${league}_${game.AwayTeam}`
+		const lth               = `${league}_${game.HomeTeam}`
+		const gameHasOdds       = game.favorite != '' && Number(game.odds) != 0
+		const gameTotalDisp     = (!gameHasOdds || !game.total) ? '' : `o${game.total}` 
+		const spreadPlusMinus   = (!gameHasOdds) ? '' : (game.favorite == game.HomeTeam) ? '-' : '+'
+		const gameSpreadOrMLtxt = (!gameHasOdds) ? '' : spreadPlusMinus + game.odds
+
+		let awayTeamScoreElem = (game.finalscore_AwayTeam) ? elemCreator('div', {class:`game-team-info score`}, `${game.finalscore_AwayTeam}`) : ''
+		let homeTeamScoreElem = (game.finalscore_HomeTeam) ? elemCreator('div', {class:`game-team-info score`}, `${game.finalscore_HomeTeam}`) : ''
+		game.status ??= (game.finalscore_AwayTeam && game.finalscore_HomeTeam) ? 'FINAL' : ''
+
+		return elemCreator('div', {}, [
+			elemCreator('span', {class:'game-info'}, [
+				elemCreator('span', {class:'game-time'}, gameTimeFormatted),
+				elemCreator('span', {class:'game-list-status'}, game.status),
+			]),
+			elemCreator('div', {class:`game-list-game-team ${lta}`}, [
+				elemCreator('div', {class:`teamIcon ${lta}`}),
+				elemCreator('div', {class:`game-team-info`}, `${game.AwayTeam}`),
+				elemCreator('div', {class:`game-team-info`}, `${gameTotalDisp}`),
+				awayTeamScoreElem
+			]),
+			elemCreator('div', {class:`game-list-game-team ${lth}`}, [
+				elemCreator('div', {class:`teamIcon ${lth}`}),
+				elemCreator('div', {class:`game-team-info`}, `${game.HomeTeam}`),
+				elemCreator('div', {class:`game-team-info`}, `${gameSpreadOrMLtxt}`),
+				homeTeamScoreElem
+			]),
+
+		])
+
+	}
+
+	return 	elemCreator('section', {class:'insights-sub-section-block games'}, [
+				elemCreator('div', {class:'front-games-container'}, games.map(createGameElem))
+			])
+
+}
+
+const initalizeContestStartTimesAndTableSorting = () =>{
+
+	const formatTimeRemaining = (time_obj) =>{
+		let time_str = '<span class="timer-countdown">'
+		if(time_obj.days > 0) time_str += `${time_obj.days}<span class="countdown-unit">d</span> `
+		if(time_obj.hours > 0) time_str += `${time_obj.hours}<span class="countdown-unit">h</span> `
+		time_str += `${time_obj.minutes}<span class="countdown-unit">m</span> `
+		time_str += `${time_obj.seconds}<span class="countdown-unit">s</span>`
+		time_str += '</span>'
+		return time_str;
+	}
+
+	let uniqueTimeSecs = [...new Set([...document.querySelectorAll('td.secs-til-start')].map(td => td.dataset.secs_til_start).filter(secs => secs > 0))]
+
+	uniqueTimeSecs.forEach(secs => {
+		let timer = new easytimer.Timer();
+		timer.start({countdown: true, startValues: {seconds: parseInt(secs)}})
+		const tdElemsWithThisTime = document.querySelectorAll(`td.secs-til-start[data-secs_til_start='${secs}']`)
+		tdElemsWithThisTime.forEach(tdElem => tdElem.innerHTML = formatTimeRemaining(timer.getTimeValues()) )
+		timer.addEventListener('secondsUpdated', () => {
+			tdElemsWithThisTime.forEach(tdElem => tdElem.innerHTML = formatTimeRemaining(timer.getTimeValues()) )
+		})
+	})
+
+	$('table.insights-contests').tablesorter({
+		sortInitialOrder: 'desc', 
+		sortList:[ [7,1] ] 
+	})
+
+}
+
+const getGameCell = (slateInfo) => {
+
+	const gameCount  = slateInfo.gameCount ?? 1
+	const teamAbrevs = slateInfo.Teams?.split(',') ?? []
+
+	if(gameCount > 1 || teamAbrevs.length !== 2) {
+		return `<td class="text-center" data-text="${gameCount}">${gameCount}</td>`
+	}
+
+	const teamIcons = teamAbrevs.map(abrev => `<div class="teamIcon ${slateInfo.League}_${abrev}"></div>`).join('')
+	return `<td class="text-center" data-text="${gameCount}.${slateInfo.index}"><div class="teamIcons">${teamIcons}</div></td>`
+	
+}
+
+const getSiteNameFormatted = (slateInfo) => {
+
+	const [baseSite, style] = slateInfo.Site.split('_')
+
+	const siteAbrev = (site) => {
+		if(site == 'draftkings') return 'DK'
+		if(site == 'fanduel') return 'FD'
+		if(site == 'yahoo') return 'Y!'
+	}
+
+	const styleDisp = (style) => {
+		if(!style) return 'Classic'
+		if(style == 'showdown') return 'Showdown'
+		if(style == 'single') return 'Single'
+		if(style == 'pickem') return 'Tiers'
+		return ''
+	}
+
+	return (siteAbrev(baseSite) +' '+ styleDisp(style)).trim()
+
+}
+
+
+const loadUpcomingContests2 = async () => {
+
+	// const fetchReq    = await fetch('/funcs/get-upcoming-contests-list.php')
+	// const allContests = await fetchReq.json()
+	
+	const upcomingContestsByLeague = Object.groupBy(allContests, ({league}) => {
+		if(['LOL', 'CSGO', 'COD', 'VAL'].includes(league)) return 'eSPORTS'
+		if(['PGA', 'EURO'].includes(league)) return 'GOLF'
+		return league
+	})
+	
+	Object.values(allSlates).forEach(addSlateInfo)
+
+	const leaguesWithUpcomingContests = Object.keys(upcomingContestsByLeague).sort(sortSportByImportance)
+	await leftNavSportListElem.append(...leaguesWithUpcomingContests.map(createLeftNavListItem))
+
+	const sectionElems = leaguesWithUpcomingContests.map(league => {
+
+		const hasGames    = gamesByLeague[league] != undefined
+		const {period, games, otherPeriods} = gamesByLeague[league] ?? {}
+
+		const sectionElem = createSportSectionElem(league)
+
+		if(hasGames){
+			sectionElem.append(createGamesContainerElem(league, period, games))
+		}
+
+		sectionElem.append(createContestListTableElem(league, upcomingContestsByLeague[league]))
+		return sectionElem
+	})
+
+	await mainContentElem.append(...sectionElems)
+	initalizeContestStartTimesAndTableSorting()
+
+}
+
+
+document.addEventListener("DOMContentLoaded", loadUpcomingContests2);
+
+
+document.addEventListener('click', function(event){
+	const targetElem = event.target
+
+	//temp for www until main.js can be updated
+	if(targetElem.closest('.cruncher-link-cell')){
+	    
+	    event.preventDefault();
+
+	    const anchorElem = targetElem.closest('a')
+	    const url        = new URL(anchorElem.href)
+	    const slateId    = url.searchParams.get('slateId')
+	    const [
+	        page, 
+	        site, 
+	        league, 
+	        period
+	    ] = url.pathname.split('/').filter(p => p) //['lineup-cruncher', 'draftkings', 'MLB', '2026-04-14']
+
+	    const storageKey                = `${site}${league}${period}`
+	    const currLocalStorageData      = JSON.parse(localStorage.getItem(storageKey) ?? '{}')
+	    currLocalStorageData.gamefilter = slateId
+
+	    localStorage.setItem(storageKey, JSON.stringify(currLocalStorageData))
+
+	    window.open(url.pathname, '_blank')
+	    
+	}
+
+	if(targetElem.closest('.change-period-icon') != null){
+		
+		const newPeriod = targetElem.dataset.period
+		const league    = targetElem.closest('.period-selector').dataset.league
+		
+		if(!newPeriod) return;
+
+		targetElem.classList.remove('fa-triangle')
+		targetElem.classList.add(...['fa-spinner', 'fa-pulse'])
+
+		loadLeaguePeriodData(league, newPeriod)
+	}
+
+
+	if(targetElem.closest('ul.contest-filter') != null){
+
+		const clickedItem        = targetElem.closest('li')
+		const tableElem          = clickedItem.closest('section').querySelector('table.insights-contests')
+		const contestFilterElems = clickedItem.closest('div').querySelectorAll('ul.contest-filter')
+
+		clickedItem.classList.add('on')
+		getSiblings(clickedItem, '.on').forEach(s => s.classList.remove('on'))
+
+		// [ {fieldName:'site', selectedVal:'draftkings'} {fieldName:'style', selectedVal:'all'}]
+		const activeFilters = [...contestFilterElems].map(filterElem => {
+			const fieldName = filterElem.dataset.field
+			const selectedVals = filterElem.querySelector('li.on').dataset.filter.split(',')
+			return {fieldName, selectedVals}
+		}).filter(({selectedVals}) => !selectedVals.includes('all'))
+
+
+		for( const row of tableElem.querySelectorAll('tbody tr')){
+
+			const matchedFilters = activeFilters.filter(f => f.selectedVals.includes(row.dataset[f.fieldName]) )
+			const show = (matchedFilters.length == activeFilters.length)
+		    
+		    if(show){
+		    	row.classList.remove('hidden')
+		    } else {
+		    	row.classList.add('hidden')
+		    }
+
+		}
+
+	}
+	
+	if(targetElem.closest('li.section-nav') != null){
+		const menuTarget = targetElem.closest('li.section-nav')
+		const pageAnchorId = menuTarget?.dataset.view
+		document.getElementById(pageAnchorId).scrollIntoView({behavior: "smooth"});
+		setTimeout(()=>{ window.location.hash = '#'+pageAnchorId }, 500)
+	}
+
+	if(targetElem.closest('.open-side-nav') != null){
+		document.querySelector('.insights-vertical-menu').scroll(0,0) // make sure its at the top
+		document.querySelector('.main-page-content-container').classList.remove('menu-closed')
+	} else {
+
+		if(targetElem.closest('.close-section-nav') != null){
+			document.querySelector('.main-page-content-container').classList.add('menu-closed')
+		}
+
+		if(targetElem.closest('.main-page-content-container:not(.menu-closed) .insights-main-content') != null){
+			document.querySelector('.main-page-content-container').classList.add('menu-closed')
+		}
+	}
+
+})

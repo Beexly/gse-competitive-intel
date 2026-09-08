@@ -1,0 +1,91 @@
+{
+ "domain": "football-data.org",
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED (no model evidence in raw files)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "simulation_engine": {
+  "num_simulations": null,
+  "correlation_method": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "self: first-party football data provider (Opta-style licensed data NOT CONFIRMED)"
+  ],
+  "citations": [
+   "raw/footballdata_org_home.html"
+  ]
+ },
+ "product_limits": {
+  "limits": [
+   "Free tier: 10 calls/min; top tier 120 calls/min — the most restrictive cap among major football APIs"
+  ],
+  "upgrade_triggers": [
+   "competition coverage depth gated per tier (docs: free = major comps only)"
+  ],
+  "citation": "raw/footballdata_org_pricing.html"
+ },
+ "pricing": {
+  "web": "Free EUR 0 (10 calls/min); Standard EUR 49; PRO EUR 59 (EUR 30/mo annual); Advanced EUR 99 (raw/footballdata_org_pricing.html)",
+  "ios": "N/A",
+  "android": "N/A",
+  "citations": [
+   "raw/footballdata_org_pricing.html"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Looking for a free (or very cheap) football data API (r/sportsanalytics)",
+   "source": "https://www.reddit.com/r/sportsanalytics/comments/1q970y2/looking_for_a_free_or_very_cheap_football_data/",
+   "date": "2025 (thread id 1q970y2)"
+  },
+  {
+   "quote": "Does anyone uses API-Football? (r/sportsanalytics — competitor-comparison pain)",
+   "source": "https://www.reddit.com/r/sportsanalytics/comments/1tnipj4/does_anyone_uses_apifootball/",
+   "date": "2026 (thread id 1tnipj4)"
+  }
+ ],
+ "discovered_paths": [],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "fetcher.py scan: all 200 incl. pricing; STOMP bundle found in JS",
+  "timestamp": "2026-09-08T15:20:00-05:00"
+ },
+ "tech_stack": {
+  "frontend": "Server-rendered + small main.js; STOMP client (@stomp/stompjs@5.0.0 via jsdelivr) for live match updates",
+  "backend": "nginx/1.14.2 (server header); app server NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "self-hosted signals (nginx 1.14.2, no cloud headers)",
+  "cdn": "jsdelivr for STOMP lib; plausible.io analytics (privacy-first, no GA)",
+  "citations": [
+   "raw/scan-footballdata_org.json",
+   "raw/footballdata_org_home.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/v4/* REST API (X-Auth-Token header auth; /v4/competitions, /v4/matches families per docs)",
+    "auth_required": "yes (API token)",
+    "tier": "Free (10 calls/min) to Advanced",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "raw/footballdata_org_pricing.html + docs references in scan"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "STOMP over WebSocket: subscribe('/user/queue/match') with JSON match payloads, id -2 signals a state flag (raw/footballdata_org_js0.js: F.connect({},function(){F.ws._transport.url,F.subscribe(\"/user/queue/match\",...)}) — live push used on their own site",
+  "rate_limits": "10 calls/min (Free), 20/20/30/60/60/100/120 calls/min across paid tiers (raw/footballdata_org_pricing.html)",
+  "citations": [
+   "raw/footballdata_org_pricing.html",
+   "raw/footballdata_org_js0.js",
+   "raw/scan-footballdata_org.json"
+  ]
+ },
+ "disposition": "live",
+ "notes": "GSE-relevant: THE developer-default football API; STOMP live push proves small vendors ship realtime on a budget (no vendor lock-in needed); robots only blocks dotbot; Plausible over GA = developer-trust positioning."
+}

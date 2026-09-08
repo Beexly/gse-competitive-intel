@@ -1,0 +1,1497 @@
+![](https://www.thesportsdb.com/images/search.png)
+
+## Getting Started
+
+### [Introduction](https://www.thesportsdb.com/docs_api_guide\#Introduction)
+
+### [Free vs Premium](https://www.thesportsdb.com/docs_api_guide\#free_vs_premium)
+
+### [v1 vs v2 API](https://www.thesportsdb.com/docs_api_guide\#v1_vs_v2)
+
+## Choose an API version
+
+[V1 API](https://www.thesportsdb.com/docs_api_guide#v1) /
+[V2 API](https://www.thesportsdb.com/docs_api_guide#v2)
+
+## API Reference Guide
+
+### [Base URL](https://www.thesportsdb.com/docs_api_guide\#base_url)
+
+### [Authentication](https://www.thesportsdb.com/docs_api_guide\#authentication_v1)
+
+### [Images](https://www.thesportsdb.com/docs_api_guide\#images)
+
+### [Rate Limit](https://www.thesportsdb.com/docs_api_guide\#rate_limit)
+
+## v1 Rest API Reference
+
+### [v1 Search](https://www.thesportsdb.com/docs_api_guide\#search_v1)
+
+### [v1 Lookup](https://www.thesportsdb.com/docs_api_guide\#lookup_v1)
+
+### [v1 List](https://www.thesportsdb.com/docs_api_guide\#list_v1)
+
+### [v1 Schedule](https://www.thesportsdb.com/docs_api_guide\#schedule_v1)
+
+### [v1 Video](https://www.thesportsdb.com/docs_api_guide\#video_v1)
+
+## v2 Rest API Reference
+
+### [v2 Search](https://www.thesportsdb.com/docs_api_guide\#search_v2)
+
+### [v2 Lookup](https://www.thesportsdb.com/docs_api_guide\#lookup_v2)
+
+### [v2 List](https://www.thesportsdb.com/docs_api_guide\#list_v2)
+
+### [v2 Filter](https://www.thesportsdb.com/docs_api_guide\#filter_v2)
+
+### [v2 All](https://www.thesportsdb.com/docs_api_guide\#all_v2)
+
+### [v2 Schedule](https://www.thesportsdb.com/docs_api_guide\#schedule_v2)
+
+### [v2 Livescores](https://www.thesportsdb.com/docs_api_guide\#livescores_v2)
+
+## API Extras
+
+### [Readme.io Docs](https://www.thesportsdb.com/docs_api_guide\#readme)
+
+### [Swagger / OpenAPI](https://www.thesportsdb.com/docs_api_guide\#openapi)
+
+### [Postman Collection](https://www.thesportsdb.com/docs_api_guide\#postman)
+
+### [AI MCP](https://www.thesportsdb.com/docs_api_guide\#mcp)
+
+# TheSportsDB API Documentation
+
+# Introduction
+
+Welcome to TheSportsDB API, your ultimate destination for seamless access to free, real-time sports data.
+Whether you're building an app, running a fantasy league, or simply want to stay updated with live scores, player stats, team standings,
+or match schedules, our powerful and easy-to-use API has you covered.
+With support for a wide range of sports and leagues worldwide, TheSportsDB API is designed for developers, enthusiasts,
+and startups looking to integrate reliable sports data without the hassle of expensive subscriptions.
+Get started today and bring the game to life in your application!
+
+
+# Free vs Premium
+
+We offer a free API that anyone can use. The site originally had all methods available to use under the free API with no limits,
+but sadly it became too popular and was abused.
+So over the years we have had to limit certain methods, while trying to keep the core functionality.
+The Free API should work in many use cases, so please do test it out.
+
+The current free API key is: 123
+
+Premium API keys can be found on your user profile, once upgraded.
+
+The Premium API includes all methods in V1 with larger limits as well as some extra stuff like livescores and video highlight links.
+Premium also allows you to use the more modern V2 API. You can find your Premium API key on your user profile if you are a supporter.
+
+
+[Go Premium ($9 per month)](https://www.thesportsdb.com/pricing)
+
+# API v1 vs v2
+
+The v1 API was written over 10 years ago and has been addded to since with many extra features.
+It uses basic PHP code to produce JSON objects that are returned to the user.
+API users are authenticated with a simple numeric API key in the URL.
+The naming is a little messy and the authentication is not great, as the key is visible to anyone who wants to poke around your web requests.
+Saying that, it works and is simple to use and easy to test in any web browser. Ideal for beginners!
+
+V2 API is more modern and verbous API.
+This means it should be easier to understand in a logical way.
+It also uses more modern authentication requiring the API key to be sent in the header.
+When something goes wrong, the API will return standard HTTP response codes.
+V2 is only for premium subscribers and will be the only version developed going forward.
+
+
+# Base URL
+
+The Base URL is a crucial element for making API calls, enabling you to clearly specify the root URL(s) for API requests.
+When making API calls, you combine the base URL with the specific endpoint path to form the complete request URL.
+
+```html
+v1 Base URL = https://www.thesportsdb.com/api/v1/json
+v2 Base URL = https://www.thesportsdb.com/api/v2/json
+```
+
+# V1 Authentication
+
+v1 of the API has a very simple authentication process.
+Simply use the base URL above and append the number /123/ to the URL for the free key or replace with your premium API key.
+
+Using the free key:
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t=Arsenal
+```
+
+Using your premium API key:
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/YOUR_API_KEY_GOES_HERE/searchteams.php?t=Arsenal
+```
+
+You can see an example below using a simple web browser using the free '123' API key:
+
+![Httpie Example Auth](https://www.thesportsdb.com/images/v1_browser.jpg)
+
+# V2 Authentication
+
+v2 takes a more secure, modern approach to Authentication.
+
+When sending a request to the API base URL, you must include API key in the header using this attribute 'X-API-KEY'.
+
+You can see an example below using the popular free API testing software: [Httpie](https://httpie.io/)
+
+![Httpie Example Auth](https://www.thesportsdb.com/images/v2_httpie.jpg)
+
+# Images
+
+Our site has a huge amount of images for things like events, players and teams. Most are fan created.
+
+There are 2 types of images available. JPEG fanart and transparent PNG mostly used for badges and logos.
+
+You can see the different [types of artwork and sizes](https://www.thesportsdb.com/docs_artwork.php) on this page.
+
+You can access any image from the front-end using the image URL from the returned JSON data.
+
+**Preview Images**
+
+Most of the time you won't want to download the original large image, just get a small preview.
+
+This is possible simple by appending '/medium', '/small', '/tiny' onto the end URL. This will give you a smaller version.
+
+Original 720px- [/league/fanart/xpwsrw1421853005.jpg](https://r2.thesportsdb.com/images/media/league/fanart/xpwsrw1421853005.jpg)
+
+![Medium version of league fanart](https://r2.thesportsdb.com/images/media/league/fanart/xpwsrw1421853005.jpg)
+
+Medium 500px - [/league/fanart/xpwsrw1421853005.jpg/medium](https://r2.thesportsdb.com/images/media/league/fanart/xpwsrw1421853005.jpg/medium)
+
+![Medium version of league fanart](https://r2.thesportsdb.com/images/media/league/fanart/xpwsrw1421853005.jpg/medium)
+
+Small 250px - [/league/fanart/xpwsrw1421853005.jpg/small](https://r2.thesportsdb.com/images/media/league/fanart/xpwsrw1421853005.jpg/small)
+
+![Small version of league fanart](https://r2.thesportsdb.com/images/media/league/fanart/xpwsrw1421853005.jpg/small)
+
+Tiny 50px - [/league/fanart/xpwsrw1421853005.jpg/tiny](https://r2.thesportsdb.com/images/media/league/fanart/xpwsrw1421853005.jpg/tiny)
+
+![Tiny version of league fanart](https://r2.thesportsdb.com/images/media/league/fanart/xpwsrw1421853005.jpg/tiny)
+
+# Rate Limit
+
+The site has different rate limits for different levels of users.
+You will recieve a "429" http header if you breach the limit, then you will need to wait another minute until requests will work again.
+We enforce these not just to differentiate our tiers, but to keep the overall performance of the site stable.
+
+
+![arrow list](https://www.thesportsdb.com/images/icons/bullet-arrow.png) Free users 30 requests per minute.
+
+![arrow list](https://www.thesportsdb.com/images/icons/bullet-arrow.png) Premium 100 per minute
+
+![arrow list](https://www.thesportsdb.com/images/icons/bullet-arrow.png) Business 120 per minute
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+# V1 API Documentation
+
+**v1 API Search**
+
+Most API requests will start with a string search. Examples of this may be to find a team or player details.
+
+All searches will return the entities data but also an ID number which can be used for later faster lookups.
+
+**Search Teams**
+
+Type: {String}
+Parameter: t
+Free Limit: 1
+Premium Limit: 100
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t=Arsenal)
+
+Search for any sports team by its name. {strTeam}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t=ArsenalNOTE: Free tier limited to just "Arsenal". Upgrade for full search.
+```
+
+**Search Events:**
+
+Type: {String}
+Parameter: e
+
+Type: {Date}
+Parameter: d
+
+Type: {String}
+Parameter: s
+
+Free Limit: 1
+Premium Limit: 10
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/searchevents.php?e=Arsenal_vs_Chelsea)
+
+Example with season: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/searchevents.php?e=Arsenal_vs_Chelsea&s=2016-2017)
+
+Example with date: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/searchevents.php?e=Arsenal_vs_Chelsea&d=2015-04-26)
+
+Example with filename: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/searchevents.php?f=English_Premier_League_2015-04-26_Arsenal_vs_Chelsea)
+
+Description: Search for any sports event by it's title with extra filters for season, date or filename: {strEvent}
+
+
+Optional strings: {strSeason} {strDate} {strFilename}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/searchevents.php?e=Arsenal_vs_Chelsea
+https://www.thesportsdb.com/api/v1/json/123/searchevents.php?e=Arsenal_vs_Chelsea&s=2016-2017
+https://www.thesportsdb.com/api/v1/json/123/searchevents.php?e=Arsenal_vs_Chelsea&d=2015-04-26
+https://www.thesportsdb.com/api/v1/json/123/searchevents.php?f=English_Premier_League_2015-04-26_Arsenal_vs_Chelsea
+```
+
+**Search Filename:**
+
+Type: {String}
+Parameter: e
+
+Type: {String}
+Parameter: s
+
+Free Limit: 1
+Premium Limit: 10
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/searchfilename.php?e=English_Premier_League_2015-04-26_Arsenal_vs_Chelsea)
+
+Example with season: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/searchfilename.php?e=English_Premier_League_2015-04-26_Arsenal_vs_Chelsea&s=2016-2017)
+
+Description: Search for any sports event by filename with an optional season filter. {strFilename}
+
+
+Optional strings: {strSeason}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/searchfilename.php?e=English_Premier_League_2015-04-26_Arsenal_vs_Chelsea
+https://www.thesportsdb.com/api/v1/json/123/searchfilename.php?e=English_Premier_League_2015-04-26_Arsenal_vs_Chelsea&s=2016-2017
+```
+
+**Search Players:**
+
+Type: {String}
+Parameter: p
+Free Limit: 1
+Premium Limit: 10
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/searchplayers.php?p=Danny_Welbeck)
+
+Description: Search for any sports person by their main or alternate name. {strPlayer}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/searchplayers.php?p=Danny_Welbeck
+```
+
+**Search Venues:**
+
+Type: {String}
+Parameter: v
+Free Limit: 1
+Premium Limit: 10
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/searchvenues.php?v=Wembley)
+
+Description: Search any venue by its name or alternate name {strVenue}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/searchvenues.php?v=Wembley
+```
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+**v1 API Lookup**
+
+While the string search is useful above to find things, it is actually much quicker and simpler to retrieve data using the unique ID.
+
+Lookups will return all data from that entity, you can find any ID by simply looking at the frontend websites URL usually.
+
+For example the British Premier League's ID is 4328, or Formula 1's is 4370.
+
+**Lookup League:**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 1
+Premium Limit: 1
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4328)
+
+Lookup a leagues details using its ID {idLeague}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4328
+```
+
+**Lookup League Table:**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 5
+Premium Limit: 100
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookuptable.php?l=4328&s=2020-2021)
+
+Lookup a current league points table using its ID: {idLeague}
+Optional: {strSeason} (\*Limited to featured soccer leagues ONLY)
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookuptable.php?l=4328
+https://www.thesportsdb.com/api/v1/json/123/lookuptable.php?l=4328&s=2020-2021
+```
+
+**Lookup Team**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 1
+Premium Limit: 1
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookupteam.php?id=133604)
+
+Lookup a teams details using its ID. {idTeam}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookupteam.php?id=133604
+```
+
+**Lookup Team Equipment**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 2
+Premium Limit: 100
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookupequipment.php?id=133597)
+
+Lookup a teams historical and current equipment using its ID. {idTeam}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookupequipment.php?id=133597
+```
+
+**Lookup Player**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 1
+Premium Limit: 1
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookupplayer.php?id=34145937)
+
+Lookup a players details using their ID. {idPlayer}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookupplayer.php?id=34145937
+```
+
+**Lookup Player Honours**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 5
+Premium Limit: 500
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookuphonours.php?id=34147178)
+
+Lookup all honours for a player using their ID. {idPlayer}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookuphonours.php?id=34147178
+```
+
+**Lookup Player Former Teams**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 5
+Premium Limit: 100
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookupformerteams.php?id=34147178)
+
+Lookup all former teams for a player using their ID. {idPlayer}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookupformerteams.php?id=34147178
+```
+
+**Lookup Player Milestones**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 5
+Premium Limit: 100
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookupmilestones.php?id=34161397)
+
+Lookup all Milestones for a player using their ID. {idPlayer}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookupmilestones.php?id=34161397
+```
+
+**Lookup Player Contracts**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 1
+Premium Limit: 100
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookupcontracts.php?id=34147178)
+
+Lookup all contracts for a player using their ID. {idPlayer}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookupcontracts.php?id=34147178
+```
+
+**Lookup Player Results**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 5
+Premium Limit: 500
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/playerresults.php?id=34160573)
+
+Lookup all results for a player using their ID. {idPlayer}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/playerresults.php?id=34160573
+```
+
+**Lookup Player Statistics**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 10
+Premium Limit: 10000
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookupplayerstats.php?id=34146304)
+
+Lookup the statistics for a player using its ID. {idPlayer}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookupplayerstats.php?id=34146304
+```
+
+**Lookup Event**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 1
+Premium Limit: 1
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookupevent.php?id=441613)
+
+Lookup a teams details using its ID. {idEvent}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookupevent.php?id=441613
+```
+
+**Lookup Event Results**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 5
+Premium Limit: 100
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventresults.php?id=652890)
+
+Lookup all results for an event using its ID. {idEvent}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/eventresults.php?id=652890
+```
+
+**Lookup Event Lineup**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 5
+Premium Limit: 100
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookuplineup.php?id=1032723)
+
+Lookup the team lineups for an event using its ID. {idEvent}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookuplineup.php?id=1032723
+```
+
+**Lookup Event Timeline**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 5
+Premium Limit: 100
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookuptimeline.php?id=1032718)
+
+Lookup the timeline for an event using its ID. {idEvent}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookuptimeline.php?id=1032718
+```
+
+**Lookup Event Statistics**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 5
+Premium Limit: 100
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookupeventstats.php?id=1032723)
+
+Lookup the statistics for an event using its ID. {idEvent}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookupeventstats.php?id=1032723
+```
+
+**Lookup Event TV Broadcasts**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 2
+Premium Limit: 100
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookuptv.php?id=584911)
+
+Lookup all TV channels showing an event using its ID. {idEvent}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookuptv.php?id=584911
+```
+
+**Lookup Venue**
+
+Type: {Integer}
+Parameter: id
+Free Limit: 1
+Premium Limit: 1
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookupvenue.php?id=16163)
+
+Lookup a team using its ID. {idTeam}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookupvenue.php?id=16163
+```
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+**v1 API List**
+
+Using the list API means we can return more than one record.
+
+This can be useful for example to list sports or countries
+
+**All Sports:**
+
+Type: NULL
+Parameter: none
+Free Limit: 2
+Premium Limit: 50
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/all_sports.php)
+
+List all the sport categories supported on the website.
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/all_sports.php
+```
+
+**All Countries:**
+
+Type: NULL
+Parameter: none
+Free Limit: 50
+Premium Limit: 500
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/all_countries.php)
+
+List all the geographical countries supported on the website.
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/all_countries.php
+```
+
+**All Leagues:**
+
+Type: {NULL}
+Parameter: None
+Free Limit: 10
+Premium Limit: 3000
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/all_leagues.php)
+
+List all the leagues on TheSportsDB.
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/all_leagues.php
+```
+
+**List Leagues:**
+
+Type: {String}
+Parameter: c
+The country name
+
+Type: {String}
+Parameter: s
+The sport name
+
+Free Limit: 10limit:
+Premium Limit: 100
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/search_all_leagues.php?c=England&s=Soccer)
+
+List all the leagues in a country for a specific sport. {strCountry} {strSport}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/search_all_leagues.php?c=England&s=Soccer
+```
+
+**List Seasons:**
+
+Type: Integer
+Parameter: id
+Free Limit: 5
+Premium Limit: 500
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/search_all_seasons.php?id=4328)
+
+Example2: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/search_all_seasons.php?id=4328&poster=1)
+
+Example3: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/search_all_seasons.php?id=4328&badge=1)
+
+Example4: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/search_all_seasons.php?id=4328&description=1)
+
+List all the seasons available for a specific league ID. {idLeague}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/search_all_seasons.php?id=4328
+https://www.thesportsdb.com/api/v1/json/123/search_all_seasons.php?id=4328&poster=1
+https://www.thesportsdb.com/api/v1/json/123/search_all_seasons.php?id=4328&badge=1
+https://www.thesportsdb.com/api/v1/json/123/search_all_seasons.php?id=4328&description=1
+```
+
+**List Teams:**
+
+Type: String
+Parameter: l
+
+Type: String
+Parameter: s
+
+Type: String
+Parameter: c
+
+Free Limit: 10
+Premium Limit: 3000
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=English_Premier_League)
+
+Example2: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?s=Soccer&c=Spain)
+
+List all the teams in a specific league by the leagues name, country and sport or ID. {strLeague} {strCountry} {strSport}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=English_Premier_League
+https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?s=Soccer&c=Spain
+```
+
+**List Players:**
+
+Type: Integer
+Parameter: id
+Free Limit: 10
+Premium Limit: 3000
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/lookup_all_players.php?id=133604)
+
+List all the Players who play for a team by the teams ID. {idTeam}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/lookup_all_players.php?id=133604
+```
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+**v1 API Schedule**
+
+The Schedule API allows you to look up past, present and future events.
+
+It includes the ability to lookup entire seasons as well as the just a few of the next and past events.
+
+**Schedule Team Next:**
+
+Type: Integer
+Parameter: id
+Free Limit: 1
+Premium Limit: 10
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventsnext.php?id=133602)
+
+See the next few upcoming events for a team using the Team ID. \*free key only shows home event
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/eventsnext.php?id=133602
+```
+
+**Schedule Team Previous:**
+
+Type: Integer
+Parameter: id
+Free Limit: 1
+Premium Limit: 10
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventslast.php?id=133602)
+
+See the last few recent events for a team using the Team ID. \*free key only shows home event
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/eventslast.php?id=133602
+```
+
+**Schedule League Next:**
+
+Type: Integer
+Parameter: id
+Free Limit: 1
+Premium Limit: 20
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventsnextleague.php?id=4328)
+
+See the next upcoming events for a team using the league ID.
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/eventsnextleague.php?id=4328
+```
+
+**Schedule League Previous:**
+
+Type: Integer
+Parameter: id
+Free Limit: 1
+Premium Limit: 20
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventspastleague.php?id=4328)
+
+See the next upcoming events for a team using the league ID. {idLeague}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/eventspastleague.php?id=4328
+```
+
+**Schedule Day:**
+
+Type: date
+Parameter: d
+
+Type: String
+Parameter (Optional): s
+
+Type: String
+Parameter (Optional): l
+
+Free Limit: 3
+Premium Limit: 1500
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=2014-10-10)
+
+Example2: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=2014-10-10&s=Baseball)
+
+Example3: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=2014-10-10&l=MLB)
+
+Example4: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=2014-10-10&l=4424)
+
+See the events on a specific day in the future, past or present.
+
+You can also add an optional filter for league ID or name. {dateEvent} {strSport} {idLeague}
+
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=2014-10-10
+https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=2014-10-10&s=Baseball
+https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=2014-10-10&l=4424
+```
+
+**Schedule Season:**
+
+Type: Integer
+Parameter: id
+Type: String
+Parameter: s
+Free Limit: 15
+Premium Limit: 3000
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventsseason.php?id=4328&s=2014-2015)
+
+See all the events for a particular season and filter by league ID. {idSeason} {strSeason}
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/eventsseason.php?id=4328&s=2014-2015
+```
+
+**Schedule TV:**
+
+Type: Integer
+Parameter: d
+Type: Date
+Parameter: s
+Type: String
+Parameter: a
+Type: String
+Parameter: c
+Type: String
+Parameter: ID
+Type: Integer
+Free Limit: 1
+Premium Limit: 1500
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventstv.php?d=2024-07-07)
+
+Example2: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventstv.php?d=2018-07-07&s=Fighting)
+
+Example3: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventstv.php?d=2019-09-28&a=United_Kingdom&s=Cycling)
+
+Example4: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventstv.php?c=Peacock_Premium)
+
+Example5: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventstv.php?id=7000)
+
+See the TV schedual for a particular date. {dateEvent} {strSport} {strCountry} {strChannel} {idChannel}
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/eventstv.php?d=2024-07-07
+https://www.thesportsdb.com/api/v1/json/123/eventstv.php?d=2018-07-07&s=Fighting
+https://www.thesportsdb.com/api/v1/json/123/eventstv.php?d=2019-09-28&a=United_Kingdom&s=Cycling
+https://www.thesportsdb.com/api/v1/json/123/eventstv.php?c=Peacock_Premium
+https://www.thesportsdb.com/api/v1/json/123/eventstv.php?id=7000
+```
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+**v1 API Video**
+
+The video API allows you to list any YouTube highlights associated with an event.
+
+Please be aware that we have no control of YouTube and some videos may be geolocked to specific countries.
+
+You can use various filters including date on its own or with a League ID or Sport.
+
+**Video Youtube Highlights:**
+
+Type: Date
+Parameter: d
+
+Type: Integer
+Parameter (optional): l {League ID}
+
+Type: String
+Parameter (optional): s {Sport\_Name}
+
+Free Limit: 2
+Premium Limit: 50
+
+Example: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventshighlights.php?d=2024-07-07)
+
+Example 2: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventshighlights.php?d=2024-07-07&l=4684)
+
+Example 3: [JSON Data](https://www.thesportsdb.com/api/v1/json/123/eventshighlights.php?d=2024-07-07&s=motorsport)
+
+See the TV schedual for a particular date
+
+```html
+https://www.thesportsdb.com/api/v1/json/123/eventshighlights.php?d=2024-07-07
+https://www.thesportsdb.com/api/v1/json/123/eventshighlights.php?d=2024-07-07&l=4684
+https://www.thesportsdb.com/api/v1/json/123/eventshighlights.php?d=2024-07-07&s=motorsport
+```
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+# V2 API Documentation
+
+**v2 API Search**
+
+**Search League**
+
+Type: {String}
+Limit: 10
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/search_league.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/search/league/english_premier_league)
+
+Search for any sports league using a text string.
+
+
+```html
+/api/v2/json/search/league/english_premier_league
+```
+
+**Search Team**
+
+Type: {String}
+Limit: 10
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/search_team.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/search/league/english_premier_league)
+
+Search for any sports team using a text string.
+
+
+```html
+/api/v2/json/search/team/manchester_united
+```
+
+**Search Player**
+
+Type: {String}
+Limit: 10
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/search_player.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/search/player/harry_kane)
+
+Search for any sports person using a text string.
+
+
+```html
+/api/v2/json/search/player/harry_kane
+```
+
+**Search Event**
+
+Type: {String}
+Limit: 10
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/search_event.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/search/event/fifa_world_cup_2022-12-18_argentina_vs_france)
+
+Search for any sports event using a text string.
+
+
+```html
+/api/v2/json/search/event/fifa_world_cup_2022-12-18_argentina_vs_france
+```
+
+**Search Venue**
+
+Type: {String}
+Limit: 10
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/search_venue.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/search/venue/wembley)
+
+Search for any sports venue using a text string.
+
+
+```html
+/api/v2/json/search/venue/wembley
+```
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+**v2 API Lookup**
+
+**Lookup League**
+
+Type: {Integer}
+Limit: 1
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/lookup_league.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/lookup/league/4328)
+
+Lookup for any league using its unique ID {idLeague}.
+
+
+```html
+/api/v2/json/lookup/league/4328
+```
+
+**Lookup Team**
+
+Type: {Integer}
+Limit: 1
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/lookup_team.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/lookup/team/133597)
+
+Lookup for any team using its unique ID {idTeam}.
+
+
+```html
+/api/v2/json/lookup/team/133597
+```
+
+**Lookup Team Equipment**
+
+Type: {Integer}
+Limit: 1
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/lookup_team_equipment.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/lookup/team_equipment/133597)
+
+Lookup for any team equipment artwork using its unique ID {idTeam}.
+
+
+```html
+/api/v2/json/lookup/team_equipment/133597
+```
+
+**Lookup Player**
+
+Type: {Integer}
+Limit: 1
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/lookup_player.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/lookup/player/34172575)
+
+Lookup for any player using their unique ID {idPlayer}.
+
+
+```html
+/api/v2/json/lookup/player/34172575
+```
+
+**Lookup Player Contracts**
+
+Type: {Integer}
+Limit: 1
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/lookup_player_contracts.json)
+
+[... middle omitted — see footer ...]
+
+
+
+```html
+/api/v2/json/list/seasons/4328
+```
+
+**List Team Players**
+
+Type: {Integer}
+Limit: 100
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/list_team_players.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/list/players/133604)
+
+Lookup for all the players for a team using its unique ID {idTeam}.
+
+
+```html
+/api/v2/json/list/players/133604
+```
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+**v2 API Filter**
+
+**Filter TV Events by Date**
+
+Type: {Date}
+Limit: 100
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/filter_tv_events_by_date.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/filter/tv/day/2024-06-22)
+
+Filter All TV Events on a specific date {dateEvent}.
+
+
+```html
+/api/v2/json/filter/tv/day/2024-06-22
+```
+
+**Filter TV Events by Country**
+
+Type: {String}
+Limit: 100
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/filter_tv_events_by_country.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/filter/tv/day/2024-06-22)
+
+Filter TV Events by the channels country {strCountry}.
+
+
+```html
+/api/v2/json/filter/tv/country/united_kingdom
+```
+
+**Filter TV Events by Sport**
+
+Type: {String}
+Limit: 100
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/filter_tv_events_by_sport.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/filter/tv/sport/motorsport)
+
+Filter upcoming TV Events by sport {strSport}.
+
+
+```html
+/api/v2/json/filter/tv/sport/motorsport
+```
+
+**Filter TV Events by Channel**
+
+Type: {String}
+Limit: 100
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/filter_tv_events_by_channel.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/filter/tv/channel/sky_sports_main_event)
+
+Filter upcoming TV Events by Channel Name {strChannel}.
+
+
+```html
+/api/v2/json/filter/tv/channel/sky_sports_main_event
+```
+
+**Filter TV Events by Channel ID**
+
+Type: {Integer}
+Limit: 100
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/filter_tv_events_by_channel.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/filter/tv/channel/sky_sports_main_event)
+
+Filter upcoming TV Events by Channel ID {idChannel}.
+
+
+```html
+/api/v2/json/filter/tv/channelid/3834
+```
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+**v2 API All**
+
+**All Countries**
+
+Type: {NULL}
+Limit: 500
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/all_countries.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/all/countries)
+
+Show all the countries supported.
+
+
+```html
+/api/v2/json/all/countries
+```
+
+**All Sports**
+
+Type: {NULL}
+Limit: 500
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/all_sports.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/all/sports)
+
+Show all the sports supported.
+
+
+```html
+/api/v2/json/all/sports
+```
+
+**All Leagues**
+
+Type: {NULL}
+Limit: 3000
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/all_leagues.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/all/leagues)
+
+Show all the leagues supported.
+
+
+```html
+/api/v2/json/all/leagues
+```
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+**v2 API Schedule**
+
+**Next 10 Events in League**
+
+Type: {Integer}
+Limit: 10
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/next_10_events_in_league.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/schedule/next/league/4328)
+
+List the next 5 events in a league using its unique ID {idLeague}
+
+
+```html
+/api/v2/json/schedule/next/league/4328
+```
+
+**Previous 10 Events in League**
+
+Type: {Integer}
+Limit: 10
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/previous_10_events_in_league.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/schedule/previous/league/4328)
+
+List the previous 5 events in a league using its unique ID {idLeague}
+
+
+```html
+/api/v2/json/schedule/previous/league/4328
+```
+
+**Next 10 Events in Team**
+
+Type: {Integer}
+Limit: 10
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/next_10_events_in_team.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/schedule/next/team/133612)
+
+List the next 5 events for a team using its unique ID {idTeam}
+
+
+```html
+/api/v2/json/schedule/next/team/133612
+```
+
+**Previous 10 Events in Team**
+
+Type: {Integer}
+Limit: 10
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/previous_10_events_in_team.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/schedule/previous/team/133612)
+
+List the previous 5 events for a team using its unique ID {idTeam}
+
+
+```html
+/api/v2/json/schedule/previous/team/133612
+```
+
+**Next 10 Events in Venue**
+
+Type: {Integer}
+Limit: 10
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/next_10_events_in_venue.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/schedule/next/venue/24413)
+
+List the next 5 events for a venue using its unique ID {idVenue}
+
+
+```html
+/api/v2/json/schedule/next/venue/24413
+```
+
+**Previous 10 Events in Venue**
+
+Type: {Integer}
+Limit: 10
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/previous_10_events_in_venue.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/schedule/previous/venue/24413)
+
+List the previous 5 events for a venue using its unique ID {idVenue}
+
+
+```html
+/api/v2/json/schedule/previous/venue/24413
+```
+
+**Full Team Season Schedule**
+
+Type: {Integer}
+Limit: 250
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/full_team_season_schedule.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/schedule/full/team/133612)
+
+List the full seasons schedule for a team using its unique ID {idTeam}
+
+
+```html
+/api/v2/json/schedule/full/team/133612
+```
+
+**Full League Season Schedule**
+
+Type: {String}
+Limit: 3000
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/full_league_season_schedule.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/schedule/league/4328/2023-2024)
+
+List the full seasons schedule for a league using its unique ID {idLeague}
+
+
+```html
+/api/v2/json/schedule/league/4328/2023-2024
+```
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+**v2 API Livescores**
+
+**Livescore Sport**
+
+Type: {String}
+Limit: 100
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/livescore_sport.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/livescore/soccer)
+
+Show the current Livescores for a particular sport {strSport}
+
+
+```html
+/api/v2/json/livescore/soccer
+```
+
+**Livescore League**
+
+Type: {Integer}
+Limit: 100
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/livescore_league.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/livescore/4399)
+
+Show the current Livescores for a particular league by its unique ID {idLeague}
+
+
+```html
+/api/v2/json/livescore/4399
+```
+
+**Livescore All**
+
+Type: {NULL}
+Limit: 500
+
+Example: [Static](https://www.thesportsdb.com/api/v2/examples/livescore_all.json)
+/ [Live](https://www.thesportsdb.com/api/v2/json/livescore/all)
+
+Show the current Livescores for all sports.
+
+
+```html
+/api/v2/json/livescore/all
+```
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+# Readme.io Documentation
+
+**Introduction**
+
+![openapi logo](https://www.thesportsdb.com/images/icons/svg/readme_io.svg)
+
+Readme.io is a great resource to check the documentation (a mirror of here) but also to test the API and see sample code in many different languages.
+The sandbox feature with realtime logs and data is particularly useful for new developers.
+
+[v1 Readme.io Documentation](https://thedatadb.readme.io/reference/getteambyname#/) [v2 Readme.io Documentation](https://thedatadb.readme.io/reference/searchleaguebyname#/)
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+# OpenAPI / Swagger
+
+**Introduction**
+
+![openapi logo](https://www.thesportsdb.com/images/icons/svg/openapi.svg)
+
+The OpenAPI Specification (OAS) defines a standard,
+language-agnostic interface to HTTP APIs which allows both humans and computers to discover and understand the capabilities of the service without access to source code,
+documentation, or through network traffic inspection. When properly defined, a consumer can understand and interact with the remote service with a
+minimal amount of implementation logic.
+
+An OpenAPI Description can then be used by documentation generation tools to display the API,
+code generation tools to generate servers and clients in various programming languages, testing tools, and many other use cases.
+
+[v1 OpenAPI Specification](https://www.thesportsdb.com/api/spec/v1/openapi.yaml) [v2 OpenAPI Specification](https://www.thesportsdb.com/api/spec/v2/openapi.yaml)
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+# Postman Collection
+
+**Introduction**
+
+![postman logo](https://www.thesportsdb.com/images/icons/svg/postman.svg)
+
+Postman is the single platform for designing, building, and scaling APIs—together.
+Join over 40 million users who have consolidated their workflows and leveled up their API game—all in one powerful platform.
+
+[v1 Postman Collection](https://www.postman.com/thedatadb/thesportsdb/collection/0t5rbv8/thesportsdb-v1-api) [v2 Postman Collection](https://www.postman.com/thedatadb/thesportsdb/collection/d7hdb1o/thesportsdb-v2-api)
+
+![seperator bar](https://www.thesportsdb.com/images/divider.png)
+
+# Artificial Inteligence MCP
+
+**Introduction**
+
+![MCP logo](https://www.thesportsdb.com/images/icons/svg/mcp.svg)
+
+MCP (Model Context Protocol) is an open protocol that standardizes how applications provide context to LLMs.
+Think of MCP like a USB-C port for AI applications.
+Just as USB-C provides a standardized way to connect your devices to various peripherals and accessories,
+MCP provides a standardized way to connect AI models to different data sources and tools.
+
+[v1 MCP Specification](https://www.thesportsdb.com/api/spec/v1/MCP/index.js) [v2 MCP Specification](https://www.thesportsdb.com/api/spec/v2/MCP/index.js)
+
+[Back to Top](https://www.thesportsdb.com/docs_api_guide#)
+
+──────── [TRUNCATED] ────────
+Showing 29,998 chars (head) + 9,928 chars (tail) of 45,323 total clean characters.
+Full text saved to: C:\Users\Garrett\AppData\Local\hermes\cache\web\www.thesportsdb.com-b1477ec57a.md
+To read the omitted middle: read_file path="C:\Users\Garrett\AppData\Local\hermes\cache\web\www.thesportsdb.com-b1477ec57a.md" offset=1107 limit=200  (the file is the complete page; raise/lower offset to page through it).
+─────────────────────────────

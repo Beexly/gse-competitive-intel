@@ -1,0 +1,61 @@
+{
+ "outlier_bet_ext_app_index.js": {
+  "urls": [
+   "http://www.example.com",
+   "http://www.w3.org/1998/Math/MathML",
+   "http://www.w3.org/1999/xhtml",
+   "http://www.w3.org/1999/xlink",
+   "http://www.w3.org/2000/svg",
+   "http://www.w3.org/XML/1998/namespace",
+   "https://api-js.mixpanel.com",
+   "https://api.outlier.bet",
+   "https://app.outlier.bet/",
+   "https://apps.apple.com/app/id6443885102",
+   "https://aws-amplify.github.io/docs/js/authentication",
+   "https://cdn.mxpnl.com",
+   "https://cdn.mxpnl.com/libs/",
+   "https://docs.amplify.aws/lib/troubleshooting/upgrading/q/platform/js",
+   "https://docs.sentry.io/platforms/javascript/best-practices/browser-extensions/",
+   "https://evilmartians.com/chronicles/postcss-8-plugin-migration",
+   "https://github.com/prerender/prerender",
+   "https://lnk.bet",
+   "https://mixpanel.com",
+   "https://mixpanel.com/projects/replay-redirect",
+   "https://play.google.com/store/apps/details",
+   "https://reactjs.org/docs/error-decoder.html",
+   "https://www.w3ctech.com/topic/2226"
+  ],
+  "api_paths": [],
+  "graphql": []
+ },
+ "outlier_bet_ext_app_main.js": {
+  "urls": [
+   "http://www.w3.org/2000/svg",
+   "https://api-iam.au.intercom.io",
+   "https://api-iam.eu.intercom.io",
+   "https://api-iam.intercom.io",
+   "https://app.referralsaasquatch.com",
+   "https://bit.ly/3cXEKWf",
+   "https://fast.ssqt.io/assets/css/widget/errorpage.css",
+   "https://fast.ssqt.io/assets/images/face.png",
+   "https://fast.ssqt.io/npm",
+   "https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md",
+   "https://redux-toolkit.js.org/Errors",
+   "https://redux.js.org/Errors",
+   "https://use.fontawesome.com/7f85a56ba4.css",
+   "https://widget.intercom.io/widget/",
+   "https://www.i18next.com/translation-function/formatting"
+  ],
+  "api_paths": [
+   "/api/v1/"
+  ],
+  "graphql": [
+   "/graphql"
+  ]
+ },
+ "outlier_bet_ext_app_flags.js": {
+  "urls": [],
+  "api_paths": [],
+  "graphql": []
+ }
+}

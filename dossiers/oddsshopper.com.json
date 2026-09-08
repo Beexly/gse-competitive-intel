@@ -1,0 +1,67 @@
+{
+ "domain": "oddsshopper.com",
+ "type": "live-site",
+ "disposition": "live",
+ "tech_stack": {
+  "frontend": "Next.js (_next/static chunks; bf6a786c chunk saved)",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/i_oddsshopper_com_home.html",
+   "raw/i_oddsshopper_com_js___next_static_chunks_bf6a786c_af04107773f583ad_js.js.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "saved Next.js chunk contains no absolute API hosts \u2014 data likely fetched via relative routes; deeper chunk set not saved"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Bookmaker references in homepage: Pinnacle, DraftKings, FanDuel (odds comparison sources; feed vendor NOT CONFIRMED)"
+  ],
+  "citations": [
+   "raw/i_oddsshopper_com_home.html"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "pricing": {
+  "web": "a $6 price string present on homepage (tier context NOT CONFIRMED)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/i_oddsshopper_com_home.html"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/_next/static/chunks/bf6a786c-af04107773f583ad.js"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "homepage + largest Next.js chunk mined",
+  "timestamp": "2026-09-08T14:13:58.404821"
+ }
+}

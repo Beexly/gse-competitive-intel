@@ -1,0 +1,160 @@
+{
+ "home_status": 200,
+ "home_url": "https://allsportsapi.com/",
+ "robots_status": 200,
+ "robots_body": "Sitemap: https://allsportsapi.com/sitemap.xml\n\nUser-agent: *\nDisallow:",
+ "robots_sitemaps": [
+  "https://allsportsapi.com/sitemap.xml"
+ ],
+ "sitemap_status": 200,
+ "sitemap_url": "https://allsportsapi.com/sitemap.xml",
+ "sitemap_loc_count": 15,
+ "sitemap_sample": [
+  "https://allsportsapi.com/",
+  "https://allsportsapi.com/contact",
+  "https://allsportsapi.com/login",
+  "https://allsportsapi.com/register",
+  "https://allsportsapi.com/soccer-football-api",
+  "https://allsportsapi.com/soccer-football-api-documentation",
+  "https://allsportsapi.com/soccer-football-api-coverage",
+  "https://allsportsapi.com/basketball-api",
+  "https://allsportsapi.com/basketball-api-documentation",
+  "https://allsportsapi.com/basketball-api-coverage",
+  "https://allsportsapi.com/about-us",
+  "https://allsportsapi.com/cricket-api"
+ ],
+ "js_candidates_total": 3,
+ "js_fetched": [
+  {
+   "url": "https://code.jquery.com/jquery-3.3.1.min.js",
+   "status": 200,
+   "bytes": 86927
+  },
+  {
+   "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+   "status": 200,
+   "bytes": 21004
+  }
+ ],
+ "greps": {
+  "subscri_home": [
+   {
+    "file": "home.html",
+    "ctx": "e bring you a plethora of sports so that you do not have to subscribe to different sites to successfully power your website or mobile application. "
+   }
+  ]
+ },
+ "pricing_links": [
+  "https://allsportsapi.com/register",
+  "https://allsportsapi.com/soccer-football-api#plans",
+  "https://allsportsapi.com/basketball-api#plans"
+ ],
+ "pricing_status": 200,
+ "pricing_body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n    <title>All Sports API - Register</title>\n\n    <meta name=\"keywords\" content=\"Sports API, Sports Livescore API, Livescore Feed, Livescore API, Sports Feed, Sports XML, Football API, Football Feed, Basketball API, Basketball Feed\" />\n    <meta name=\"description\" content=\"Register\">\n    <meta name=\"author\" content=\"AllSportsAPI\">\n\t<link rel=\"canonical\" href=\"https://allsportsapi.com\" />\n\n\t<meta property=\"og:url\" content=\"https://allsportsapi.com\">\n\t<meta property=\"og:site_name\" content=\"AllSportsAPI\">\n\t<meta property=\"og:type\" content=\"website\">\n\t<meta property=\"og:title\" content=\"All Sports API - LiveScore API - Sports Feeds - Sports Data\">\n\t<meta property=\"og:image\" content=\"https://allsportsapi.com/images/badge.png\">\n\t<meta property=\"og:image:secure_url\" content=\"https://allsportsapi.com/images/badge.png\">\n\t<meta property=\"og:description\" content=\"Register\">\n\n    <link rel=\"shortcut icon\" href=\"https://allsportsapi.com/images/badge.ico\" type=\"image/x-icon\" />\n    <link rel=\"apple-touch-icon\" href=\"https://allsportsapi.com/images/badge.ico\">\n\n\t <!-- Bootstrap CSS -->\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\n <!-- Font Awesome CSS -->\n    <link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\" integrity=\"sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">\n\n<!-- Main CSS -->\n<link rel=\"stylesheet\" href=\"style_new.css\">\n\n\n    <!-- Hotjar Tracking Code for https://allsportsapi.com -->\n<script>\n    (function(h,o,t,j,a,r){\n        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};\n        h._hjSettings={hjid:1188893,hjsv:6};\n        a=o.getElementsByTagName('head')[0];\n        r=o.createElement('script');r.async=1;\n        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;\n        a.appendChild(r);\n    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');\n</script>\n</head>\n  <body class=\"coverage-body\">\n\n <!-- Navigation Start -->\n<section></section>\n<div id=\"upper-nav-line\" class=\"menu-area\">\n  <div class=\"container\">\n        <div class=\"row\">\n      <ul id=\"upper-navbar\" class=\"list-inline ml-auto mb-0\">\n      <li class=\"list-inline-item\"><a class=\"\" href=\"/contact\"><i class=\"fa fa-headphones\"></i> Support</a></li>\n   <!-- <li class=\"list-inline-item\"><a class=\"\" target=\"_blank\" href=\"#\"><i class=\"fa fa-user\"></i> Login</a></li>\n   <li class=\"list-inline-item mr-3\"><a class=\"\" target=\"_blank\" href=\"#\"><i class=\"fa fa-sign-in\"></i> Sign Up</a></li> -->\n    \n\n<li class=\"list-inline-item\"><a class=\"\" href=\"../login\" title=\"Login\"><i class=\"fa fa-user\"></i> Login</a></li>\n   <li class=\"list-inline-item mr-3\"><a class=\"\" href=\"/register\" title=\"Sign Up\"><i class=\"fa fa-sign-in\"></i> Sign Up</a></li>\n\n\n      </ul>\n    </div>\n  </div>\n</div>\n<div id=\"menu_area\" class=\"menu-area\">\n<div class=\"container\">\n        <div class=\"row\">\n            <nav class=\"navbar navbar-dark navbar-expand-lg mainmenu\">\n              <a href=\"/\" id=\"logo-img\">\n                <img alt=\"Logo AllSportsAPI\" src=\"images/logo.png\" height=\"58px\">\n              </a>\n                <button class=\"navbar-toggler mr-4\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                <span class=\"navbar-toggler-icon\"></span>\n                </button>\n                <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n                    <ul class=\"navbar-nav ml-auto\">\n                        <li class=\"\"><a class=\"first-li border-link\" href=\"/\">Home</a></li>\n                        <li class=\"dropdown\">\n                           <a href=\"/#services\" class=\"d-none d-lg-block first-li border-link\">Services</a>\n                            <a class=\"d-block d-lg-none first-li border-link\" href=\"/#services\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Services</a>\n                            <ul class=\"dropdown-menu animate slideIn\" aria-labelledby=\"navbarDropdown\">\n                                  <li class=\"dropdown\">\n                                <a href=\"/soccer-api\" class=\"d-none d-lg-block\">Football (Soccer) API <i class=\"float-right fa fa-angle-double-right\" aria-hidden=\"true\"></i>\n\n</a>\n                                <a class=\"dropdown-toggle d-block d-lg-none\" href=\"/soccer-api\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Football (Soccer) API <i class=\"float-right fa fa-angle-double-right\" aria-hidden=\"true\"></i></a>\n                                <ul class=\"dropdown-menu animate slideIn\" aria-labelledby=\"navbarDropdown\">\n                                <li><a href=\"/soccer-api\">Service Description</a></li>\n                                <li><a href=\"/soccer-api#plans\">Plans</a></li>\n                                <li><a href=\"/soccer-api-documentation\">Documentation</a></li>\n                                <li><a href=\"/soccer-api-coverage\">Coverage</a></li>\n                                <li><a href=\"/football-soccer-widgets\" title=\"Football Soccer Widgets\">Widgets</a></li>\n                                <li><a href=\"/football-soccer-wordpress\" title=\"Wordpress Plugin\">Wordpress</a></li>\n                                <li><a href=\"/soccer-football-socket-documentation\" title=\"WebSockets Documentation\">WebSockets Documentation</a></li>\n\n                                </ul>\n                            </li>\n                             <li class=\"dropdown\">\n                                <a href=\"/basketball-api\" class=\"d-none d-lg-block\">Basketball API <i class=\"float-right fa fa-angle-double-right\" aria-hidden=\"true\"></i>\n\n</a>\n                                <a class=\"dropdown-toggle d-block d-lg-none\" href=\"/basketball-api\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Basketball API <i class=\"float-right fa fa-angle-double-right\" aria-hidden=\"true\"></i></a>\n                                <ul class=\"dropdown-menu animate slideIn\" aria-labelledby=\"navbarDropdown\">\n                                <li><a href=\"/basketball-api\">Service Description</a></li>\n                                <li><a href=\"/basketball-api#plans\">Plans</a></li>\n                                <li><a href=\"/basketball-api-documentation\">Documentation</a></li>\n                                <li><a href=\"/basketball-api-coverage\">Coverage</a></li>\n                                </ul>\n                            </li>\n                             <li class=\"dropdown\">\n                                <a href=\"/cricket-api\" class=\"d-none d-lg-block\">Cricket API <i class=\"float-right fa fa-angle-double-right\" aria-hidden=\"true\"></i>\n\n</a>\n                                <a class=\"dropdown-toggle d-block d-lg-none\" href=\"/cricket-api\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Cricket API <i class=\"float-right fa fa-angle-double-right\" aria-hidden=\"true\"></i></a>\n                                <ul class=\"dropdown-menu animate slideIn\" aria-labelledby=\"navbarDropdown\">\n                                <li><a href=\"/cricket-api\">Service Description</a></li>\n                                <li><a href=\"/cricket-api#plans\">Plans</a></li>\n                                <li><a href=\"/cricket-api-documentation\">Documentation</a></li>\n                                <li><a href=\"/cricket-api-coverage\">Coverage</a></li>\n                                </ul>\n                            </li>\n                            <li class=\"dropdown\">\n                               <a href=\"/tennis-api\" class=\"d-none d-lg-block\">Tennis API <i class=\"float-right fa fa-angle-double-right\" aria-hidden=\"true\"></i></a>\n                               <a class=\"dropdown-toggle d-block d-lg-none\" href=\"/tennis-api\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Tennis API <i class=\"float-right fa fa-angle-double-right\" aria-hidden=\"true\"></i></a>\n                               <ul class=\"dropdown-menu animate slideIn\" aria-labelledby=\"navbarDropdown\">\n                               <li><a href=\"/tennis-api\">Service Description</a></li>\n                               <li><a href=\"/tennis-api#plans\">Plans</a></li>\n                               <li><a href=\"/tennis-api-documentation\">Documentation</a></li>\n                               <li><a href=\"/tennis-socket-documentation\"  title=\"WebSockets Documentation\">WebSockets Documentation</a></li>\n                               \n                               <!-- <li><a href=\"/tennis-api-coverage\">Coverage</a></li> -->\n                               </ul>\n                           </li>\n                            <li><a href=\"#\">Hockey API</a></li>\n                            <li><a href=\"#\">Baseball API</a></li>\n                     <li><a href=\"#\">American Football API</a></li>\n\n                            </ul>\n                        </li>\n                        <li><a class=\"first-li border-link\" href=\"/about-us\">About Us</a></li>\n                        <li><a class=\"first-li border-link\" href=\"/contact\">Suport</a></li>\n                    </ul>\n                </div>\n            </nav>\n        </div>\n    </div>\n</div>\n</section>\n<!-- Navigation End -->\n\n<!-- Sub-Header Start -->\n<div class=\"subheader\">\n<span class=\"subheader-transparent\"></span>\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-md-12\">\n<h1>Create Account</h1>\n</div>\n<div class=\"col-md-12\">\n<ul class=\"subheader-breadcrumb mb-0\">\n<li><a href=\"/\">Home</a></li>\n<li>Create Account</li>\n</ul>\n</div>\n</div>\n</div>\n</div>\n<!-- Sub-Header End -->\n\n\n\n\n\n\n<style>\n    /* Absolute Center Spinner */\n        .loading {\n        position: fixed;\n        z-index: 999;\n        height: 2em;\n        width: 2em;\n        overflow: show;\n        margin: auto;\n        top: 0;\n        left: 0;\n        bottom: 0;\n        right: 0;\n        }\n\n        /* Transparent Overlay */\n        .loading:before {\n        content: '';\n        display: block;\n        position: fixed;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        background-color: rgba(0,0,0,0.3);\n        }\n\n        /* :not(:required) hides these rules from IE9 and below */\n        .loading:not(:required) {\n        /* hide \"loading...\" text */\n        font: 0/0 a;\n        color: transparent;\n        text-shadow: none;\n        background-color: transparent;\n        border: 0;\n        }\n\n        .loading:not(:required):after {\n        content: '';\n        display: block;\n        font-size: 10px;\n        width: 1em;\n        height: 1em;\n        margin-top: -0.5em;\n        -webkit-animation: spinner 1500ms infinite linear;\n        -moz-animation: spinner 1500ms infinite linear;\n        -ms-animation: spinner 1500ms infinite linear;\n        -o-animation: spinner 1500ms infinite linear;\n        animation: spinner 1500ms infinite linear;\n        border-radius: 0.5em;\n        -webkit-box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;\n        box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0, rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;\n        }\n\n        /* Animation */\n\n        @-webkit-keyframes spinner {\n        0% {\n        -webkit-transform: rotate(0deg);\n        -moz-transform: rotate(0deg);\n        -ms-transform: rotate(0deg);\n        -o-transform: rotate(0deg);\n        transform: rotate(0deg);\n        }\n        100% {\n        -webkit-transform: rotate(360deg);\n        -moz-transform: rotate(360deg);\n        -ms-transform: rotate(360deg);\n        -o-transform: rotate(360deg);\n        transform: rotate(360deg);\n        }\n        }\n        @-moz-keyframes spinner {\n        0% {\n        -webkit-transform: rotate(0deg);\n        -moz-transform: rotate(0deg);\n        -ms-transform: rotate(0deg);\n        -o-transform: rotate(0deg);\n        transform: rotate(0deg);\n        }\n        100% {\n        -webkit-transform: rotate(360deg);\n        -moz-transform: rotate(360deg);\n        -ms-transform: rotate(360deg);\n        -o-transform: rotate(360deg);\n        transform: rotate(360deg);\n        }\n        }\n        @-o-keyframes spinner {\n        0% {\n        -webkit-transform: rotate(0deg);\n        -moz-transform: rotate(0deg);\n        -ms-transform: rotate(0deg);\n        -o-transform: rotate(0deg);\n        transform: rotate(0deg);\n        }\n        100% {\n        -webkit-transform: rotate(360deg);\n        -moz-transform: rotate(360deg);\n        -ms-transform: rotate(360deg);\n        -o-transform: rotate(360deg);\n        transform: rotate(360deg);\n        }\n        }\n        @keyframes spinner {\n        0% {\n        -webkit-transform: rotate(0deg);\n        -moz-transform: rotate(0deg);\n        -ms-transform: rotate(0deg);\n        -o-transform: rotate(0deg);\n        transform: rotate(0deg);\n        }\n        100% {\n        -webkit-transform: rotate(360deg);\n        -moz-transform: rotate(360deg);\n        -ms-transform: rotate(360deg);\n        -o-transform: rotate(360deg);\n        transform: rotate(360deg);\n        }\n        }\n    </style>\n\n\n\n <div style=\"display: none\" class=\"loading\">Loading&#8230;</div>\n\n\t\t\t<section class=\"my-5\">\n\t\t\t\t<div class=\"container\">\n\t\t\t\t\t<div class=\"row\">\n\n                        <div class=\"col-md-12\">\n                            <div class=\"register-contact-form success-register\" style=\"display: none;\">\n                                <div class=\"row\">\n                                    <div class=\"panel panel-primary\">\n                                        <div class=\"panel-body\">\n\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"display-form register\">\n                               <form id=\"register\">\n                                    <ul class=\"row px-0 px-md-4\">\n                                        <li class=\"full-input col-12\">\n                                            <label>Email:  <span style=\"float: right; display: none\" class=\"error\"></span></label>\n                                            <p>\n                                                <input placeholder=\"Type here\" onblur=\"if(this.value == '') { this.value ='Type here'; }\" onfocus=\"if(this.value =='Type here') { this.value = ''; }\" type=\"email\" name=\"email\" id=\"email\">\n                                                <span><i class=\"fa fa-envelope\"></i></span>\n                                            </p>\n                                        </li>\n\n                                        <li class=\"full-input col-12\">\n                                            <label>Password: <span style=\"float: right; display: none\" class=\"error\"></span></label>\n                                            <p>\n                                                <input placeholder=\"Type here\" type=\"password\" required name=\"password\" id=\"password\">\n                                                <span><i class=\"fa fa-key\"></i></span>\n                                            </p>\n                                        </li>\n                                        <li class=\"full-input col-12\">\n                                            <label>Password again: <span style=\"float: right; display: none\" class=\"error\"></span></label>\n                                            <p>\n                                                <input placeholder=\"Type here\" type=\"password\" required name=\"passwordAgain\" id=\"passwordAgain\">\n                                                <span><i class=\"fa fa-key\"></i></span>\n                                            </p>\n                                        </li>\n                                        <li class=\"full-input col-12\">\n                                                <label>By creating an account, you agree to our <a style=\"color: #337ab7;\" href=\"terms-of-use\">Terms of Use</a>.</label>\n                                        </li>\n                                        <li class=\"full-input col-12\">\n                                                <label>Already have an account? <a style=\"color: #337ab7;\" href=\"login\">Sign in</a></label>\n                                        </li>\n                                        <li class=\"full-input col-12\">\n                                            <div class=\"g-recaptcha\" data-sitekey=\"6Lf4EWEUAAAAAMzOymTa0ACCm9gLbtgOWAyK0-O4\"></div>\n                                        </li>\n                                        <li>\n                                            <p><label><input value=\"Create your account\" type=\"submit\"></label></p>\n                                        </li>\n\n                                    </ul>\n                                </form>\n                            </div>\n                        </div>\n\n\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n</section>\n\n<style>\n.float{\n\tposition:fixed;\n\twidth:60px;\n\theight:60px;\n\tbottom:40px;\n\tright:40px;\n\tbackground-color:#25d366;\n\tcolor:#FFF;\n\tborder-radius:50px;\n\ttext-align:center;\n  font-size:30px;\n\tbox-shadow: 2px 2px 3px #999;\n  z-index:100;\n}\n\n.my-float{\n\tmargin-top:16px;\n}\n</style>\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\">\n<a href=\"https://wa.link/mwz5jj\" class=\"float\" target=\"_blank\">\n<i class=\"fa fa-whatsapp my-float\"></i>\n</a>\n<!-- Start Footer -->\n<footer id=\"\" class=\"footer-main\">\n<span class=\"footer-transparent\"></span>\n\n<div class=\"footer-main-content\">\n<div class=\"container\">\n<div class=\"row justify-content-between\">\n\n<aside class=\"col-md-6 col-lg-5 col-xl-4 widget widget_link\">\n<div class=\"footer-main-widget-title\"><h2>ALL SPORTS API Services</h2></div>\n<ul class=\"pl-0\">\n<li><a href=\"/soccer-api\"><i class=\"fa fa-angle-double-right\"></i> Football (Soccer) API</a></li>\n<li><a href=\"/basketball-api\"><i class=\"fa fa-angle-double-right\"></i> Basketball API</a></li>\n<li><a href=\"/cricket-api\"><i class=\"fa fa-angle-double-right\"></i> Cricket API</a></li>\n<li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> Hockey API</a></li>\n<li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> Baseball API</a></li>\n<li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> American Football API</a></li>\n<li></li>\n<li></li>\n<li></li>\n<li></li>\n<li></li>\n<li></li>\n<li></li>\n<li></li>\n<li><a href=\"/about-us\"><i class=\"fa fa-angle-double-right\"></i> About Us</a></li>\n<li><a href=\"/contact\"><i class=\"fa fa-angle-double-right\"></i> Suport</a></li>\n<li><a href=\"/terms-of-use\"><i class=\"fa fa-angle-double-right\"></i> Terms and Conditions</a></li>\n<li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> Privacy Policy</a></li>\n</ul>\n</aside>\n\n\n\n<aside class=\"col-md-6 col-lg-5 col-xl-4 widget text-center\">\n<iframe src=\"https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAllSportsApi%2F&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId=1409650885961738\" height=\"400\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>\n</aside>\n\n\n<div class=\"col-md-12 p-0\">\n<div class=\"footer-copyright\">\n  <div class=\"hr-theme-slash-2\">\n  <div class=\"hr-line\"></div>\n  <div class=\"hr-icon\"><p class=\"back-to-top mb-0\"><i class=\"fa-2x fa fa-angle-up\"></i></p></div>\n  <div class=\"hr-line\"></div>\n</div>\n\n<p class=\"right-reserved-p\">\u00a9 <span id=\"setFooterYear\"></span>, All Right Reserved</p>\n\n</div>\n</div>\n\n</div>\n</div>\n</div>\n\n</footer>\n<!-- End Footer -->\n\n\n\n\n    <!-- Optional JavaScript -->\n    <!-- jQuery first, then Popper.js, then Bootstrap JS -->\n    <script src=\"https://code.jquery.com/jquery-3.3.1.min.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\" integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>\n   <script type=\"text/javascript\" src=\"script/functions_new.js\"></script>\n\n\n\n    <script src='https://www.google.com/recaptcha/api.js'></script>\n\t<script type=\"text/javascript\" src=\"script/register-login.js\"></script>\n\n<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-90418748-2\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-90418748-2');\n</script>\n<script type=\"text/javascript\">\n        document.getElementById(\"setFooterYear\").innerHTML = new Date().getFullYear();\n    </script>\n  </body>\n</html>\n",
+ "request_log": [
+  {
+   "url": "https://allsportsapi.com/",
+   "status": 200,
+   "error": null,
+   "ms": 662,
+   "bytes": 35294,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a380489b388853fd-ATL",
+    "content-type": "text/html; charset=UTF-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\allsportsapi_com_home.html"
+  },
+  {
+   "url": "https://allsportsapi.com/robots.txt",
+   "status": 200,
+   "error": null,
+   "ms": 846,
+   "bytes": 70,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38048a6aa0b4ce6-BOS",
+    "content-type": "text/plain"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\allsportsapi_com_robots.txt"
+  },
+  {
+   "url": "https://allsportsapi.com/sitemap.xml",
+   "status": 200,
+   "error": null,
+   "ms": 814,
+   "bytes": 2549,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38048b23d0f0dd1-BOS",
+    "content-type": "application/xml"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\allsportsapi_com_sitemap.xml"
+  },
+  {
+   "url": "https://code.jquery.com/jquery-3.3.1.min.js",
+   "status": 200,
+   "error": null,
+   "ms": 52,
+   "bytes": 86927,
+   "hdrs": {
+    "server": "nginx",
+    "via": "1.1 varnish, 1.1 varnish",
+    "content-type": "application/javascript; charset=utf-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\allsportsapi_com_js0.js"
+  },
+  {
+   "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+   "status": 200,
+   "error": null,
+   "ms": 58,
+   "bytes": 21004,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38048c28ce55c89-IAH",
+    "content-type": "application/javascript; charset=utf-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\allsportsapi_com_js1.js"
+  },
+  {
+   "url": "https://allsportsapi.com/register",
+   "status": 200,
+   "error": null,
+   "ms": 573,
+   "bytes": 21961,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38048c9a99dd4a4-ATL",
+    "content-type": "text/html; charset=UTF-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\allsportsapi_com_pricing.html"
+  },
+  {
+   "url": "https://allsportsapi.com/openapi.json",
+   "status": 404,
+   "error": null,
+   "ms": 446,
+   "bytes": 225,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38048d38fedbfca-ATL",
+    "content-type": "text/html; charset=iso-8859-1"
+   },
+   "saved": null
+  },
+  {
+   "url": "https://allsportsapi.com/swagger.json",
+   "status": 404,
+   "error": null,
+   "ms": 430,
+   "bytes": 225,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38048dc88fbb2e1-ATL",
+    "content-type": "text/html; charset=iso-8859-1"
+   },
+   "saved": null
+  }
+ ]
+}

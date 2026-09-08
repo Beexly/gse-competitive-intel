@@ -1,0 +1,172 @@
+{
+ "domain": "dailyfantasyoptimizer.com",
+ "tech_stack": {
+  "frontend": "Next.js (x-powered-by: Next.js, Turbopack chunks _next/static/chunks/*) + Chakra UI",
+  "backend": "NOT CONFIRMED (server-side optimizer; /faq cites 'heavy server demand' and 'server overload' causing optimizer failures)",
+  "database": "NOT CONFIRMED (no exposure)",
+  "cloud": "Cloudflare (cf-ray ...-IAH)",
+  "cdn": "Cloudflare",
+  "citations": [
+   "https://dailyfantasyoptimizer.com",
+   "https://dailyfantasyoptimizer.com/faq"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED (not probed - no JS evidence)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED (no public API; FAQ: 'optimizer failed' errors from 'heavy server demand' - https://dailyfantasyoptimizer.com/faq)",
+  "citations": [
+   "https://dailyfantasyoptimizer.com/_next/static/chunks/f2f8c094ec07b7fb.js",
+   "https://dailyfantasyoptimizer.com/_next/static/chunks/2375e3fd2a9b8844.js"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "Exposure-constrained lineup optimization (product mechanics)",
+   "raw_snippet": "FAQ: 'Min exposure = the minimum % of lineups a player appears in (setting to 100% locks them in all lineups). Max exposure = the maximum % of lineups a player appears in'; 'try limiting Max Total Ownership % in the player menu - this often results in lineups under max salary but requires uploading ownership data in the Player menu'; 'Projections are always updated automatically once per hour, on the hour. They update every 30 minutes as lock approaches'",
+   "reconstruction": "LP/MIP-style lineup generation under DK/FD salary cap with per-player/per-team/per-game min/max exposure % constraints, optional max-total-ownership constraint (user-uploaded ownership CSV), player stacking rules incl. 'Avoid Opposing Pitchers'. Projections refresh hourly (30-min near lock); users can override via CSV/manual edits (reset on slate change). No lineup-wide salary min/max constraint (on roadmap).",
+   "citation": "https://dailyfantasyoptimizer.com/faq"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED (in-house projections, update cadence documented; method not exposed)",
+  "training_data": "Historical DFS slates for backtesting (~24h delay post-slate)",
+  "update_frequency": "Hourly, 30-min near lock (FAQ)",
+  "citation": "https://dailyfantasyoptimizer.com/faq"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED (deterministic optimizer, not sim-based; user sets number of lineups, e.g. 20 for a 20-entry contest)",
+  "correlation_method": "Stacking tools (same-game stacks); 'Avoid Opposing Pitchers' toggle",
+  "citation": "https://dailyfantasyoptimizer.com/faq"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "NOT CONFIRMED (no vendor strings in fetched HTML/JS; in-house projections implied by FAQ)",
+   "DraftKings/FanDuel as contest integration targets"
+  ],
+  "citations": [
+   "https://dailyfantasyoptimizer.com",
+   "https://dailyfantasyoptimizer.com/faq"
+  ]
+ },
+ "product_limits": {
+  "limits": [
+   "Free optimizer (all sports: NFL, NBA, MLB, NHL, WNBA, golf)",
+   "Backtesting requires (free) account sign-up; ~24h slate delay",
+   "No lineup-wide salary min/max constraint (roadmap)",
+   "No late-swap support (roadmap)",
+   "No NFL preseason projections",
+   "Optimizer can fail under heavy server demand"
+  ],
+  "upgrade_triggers": "NONE FOUND - product is free; monetization is Google AdSense (ca-pub-2414134099962771 in homepage HTML); paid tier NOT CONFIRMED",
+  "citation": "https://dailyfantasyoptimizer.com/faq"
+ },
+ "pricing": {
+  "web": "FREE ('The optimizer is free to use and works on desktop, tablet or mobile' - homepage); ad-supported via Google AdSense; no paid tiers found",
+  "ios": "NOT CONFIRMED (no app found; web app works on mobile per homepage)",
+  "android": "NOT CONFIRMED (no app found)",
+  "citations": [
+   "https://dailyfantasyoptimizer.com",
+   "https://dailyfantasyoptimizer.com/faq"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "I appreciate your feedback. I'm sure this will help a lot of other ... I'm leaning towards simply using a fantasy optimizer with Daily ...",
+   "source": "https://www.reddit.com/r/dgfantasy/comments/18maz03/dfs_optimizer_worth_it/",
+   "title": "DFS Optimizer Worth It? : r/dgfantasy - Reddit"
+  },
+  {
+   "quote": "We got tired of optimizers that just throw numbers at you without context. building and improving based on feedback.",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1h7lp6l/we_built_a_free_dfs_lineup_optimizer_with_ai/",
+   "title": "We Built a Free DFS Lineup Optimizer with AI Explanations : r/fantasyfootball"
+  },
+  {
+   "quote": "Hello. New draft sharks subscriber this year looking for help with DFS optimizer tool. What are some good settings to use if I pay a weekly ...",
+   "source": "https://www.reddit.com/r/DraftSharks/comments/1fgo8i4/dfs_lineup_optimizer/",
+   "title": "DFS Lineup Optimizer : r/DraftSharks - Reddit"
+  },
+  {
+   "quote": "Their MLB projections are considerably worse than the free sites. other than that they are horrible.",
+   "source": "https://www.reddit.com/r/fantasybaseball/comments/1jiytqq/best_website_for_daily_lineup_rankings/",
+   "title": "Best website for Daily lineup rankings? : r/fantasybaseball - Reddit"
+  },
+  {
+   "quote": "I am curious for those of you that play DFS, do you use an optimizer? Which sites do you like best and how much do they typically cost?",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1u1gud9/dfs_optimizers/",
+   "title": "DFS Optimizers : r/fantasyfootball - Reddit"
+  },
+  {
+   "quote": "I built FFVisualizer to make lineup decisions easier and faster, whether you're in one league or 10+ like me. What it does: Optimal lineup based ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1n8nrgu/ffvisualizer_simplify_setting_your_best_lineups/",
+   "title": "FFVisualizer - Simplify Setting Your Best Lineups : r/fantasyfootball"
+  },
+  {
+   "quote": "DFS lineups built using FFA projections, VOR metrics, and FFA Lineup Optimizer, each pick including an explanation and fantasy outlook.",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1f7zzgc/what_are_the_best_apps_to_optimize_fantasy/",
+   "title": "What are the best apps to optimize fantasy football lineups on a week ..."
+  },
+  {
+   "quote": "He was added to the injury report after being removed completely. looking for quick feedback PropsDailycom",
+   "source": "https://www.reddit.com/user/PropsDailycom/",
+   "title": "PropsDaily | DFS Optimizer (u/PropsDailycom) - Reddit"
+  }
+ ],
+ "discovered_paths": [
+  "/about",
+  "/blog",
+  "/contact",
+  "/contest-analysis",
+  "/faq",
+  "/optimizer",
+  "/tutorials",
+  "/tutorials/backtesting"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "urllib GET (fetcher.py pattern) + FAQ extraction",
+  "timestamp": "2026-09-08T14:17:37-0500",
+  "http_requests_used": 7,
+  "request_log": [
+   {
+    "url": "https://dailyfantasyoptimizer.com",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyoptimizer-home.html",
+    "err": null
+   },
+   {
+    "url": "https://dailyfantasyoptimizer.com/robots.txt",
+    "status": 404,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyoptimizer-robots.txt",
+    "err": null
+   },
+   {
+    "url": "https://dailyfantasyoptimizer.com/sitemap.xml",
+    "status": 404,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyoptimizer-sitemap.xml",
+    "err": null
+   },
+   {
+    "url": "https://dailyfantasyoptimizer.com/sitemaps.xml",
+    "status": 404,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyoptimizer-sitemaps.xml",
+    "err": null
+   },
+   {
+    "url": "https://dailyfantasyoptimizer.com/_next/static/chunks/f2f8c094ec07b7fb.js",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyoptimizer-js0.js",
+    "err": null
+   },
+   {
+    "url": "https://dailyfantasyoptimizer.com/_next/static/chunks/2375e3fd2a9b8844.js",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyoptimizer-js1.js",
+    "err": null
+   }
+  ]
+ },
+ "product_pain_note": null,
+ "disposition": "live (derived from 8 raw evidence files)"
+}

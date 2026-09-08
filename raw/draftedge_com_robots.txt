@@ -1,0 +1,18 @@
+URL: https://draftedge.com/robots.txt\nSTATUS: 200\n\nUser-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /account/
+Disallow: /api/account/
+Disallow: /api/auth/
+Disallow: /api/cli/
+Disallow: /api/includes/
+Disallow: /api/notify/
+Disallow: /api/optimizer/
+Disallow: /api/payments/
+Disallow: /api/props/
+Disallow: /api/sso/
+Disallow: /api/subscription/
+Disallow: /api/support/
+Disallow: /api/tokens/
+
+Sitemap: https://draftedge.com/sitemap.xml

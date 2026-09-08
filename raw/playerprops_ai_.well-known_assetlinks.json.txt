@@ -1,0 +1,13 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "ai.playerprops.app",
+        "sha256_cert_fingerprints": [
+          "13:12:2D:22:17:17:26:97:42:C5:27:DB:1E:D2:8B:BC:7B:B4:A1:D0:85:D4:C9:C6:4A:A7:A0:F1:C1:C2:B9:99",
+          "F4:5B:B5:32:3A:B3:F9:36:D2:2B:2E:C1:0D:BC:21:DB:0F:24:85:16:A6:03:E8:0D:21:4C:12:4A:26:AF:7B:FB"
+        ]
+      }
+    }
+]

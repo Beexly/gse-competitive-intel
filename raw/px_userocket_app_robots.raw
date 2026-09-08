@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocket</title>
+    <script type="module" crossorigin src="/assets/main-BI3uMxAH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-DJDbc6Eg.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"a791e218683a4b8aa43f84eaf97f05f8","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{
+ "domain": "footballguys.com",
+ "tech_stack": {
+  "frontend": "Custom bundle.js app + wz-tooltip static JS; Zendesk widget; ConvertKit email forms",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "Cloudflare (Turnstile captcha widget embedded: challenges.cloudflare.com/turnstile)",
+  "citations": [
+   "https://www.footballguys.com/ (saved: raw/footballguys_com_home.html)"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED (no traces in homepage)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "https://www.footballguys.com/ (saved: raw/footballguys_com_home.html)"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "No vendor strings (sportradar/statsperform/opta etc.) in homepage"
+  ],
+  "citations": [
+   "https://www.footballguys.com/ (saved: raw/footballguys_com_home.html)"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "Subscriber-only content model ('$50k Subscriber Contest' for subscribers; testimonial cites subscription value)",
+  "citation": "https://www.footballguys.com/ (saved: raw/footballguys_com_home.html)"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED (homepage carries no prices; /subscribe page not fetched in this pass)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://www.footballguys.com/ (saved: raw/footballguys_com_home.html)"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/js/bundle.js",
+  "/fbgstatic/js/wz-tooltip.js",
+  "ConvertKit forms (f.convertkit.com)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "fetched homepage only; robots/sitemap NOT saved by subagent (missing from raw/)",
+  "timestamp": "2026-09-08T13:52:22.131113"
+ },
+ "disposition": "live (derived from 1 raw evidence files)"
+}

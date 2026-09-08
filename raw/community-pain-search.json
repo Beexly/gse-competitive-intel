@@ -1,0 +1,110 @@
+{
+  "floodlight python package sports tracking review OR issue reddit": [
+    {
+      "url": "https://github.com/floodlight-sports/floodlight",
+      "title": "floodlight-sports/floodlight: Python package for streamlined ... - GitHub",
+      "desc": "# floodlight\n## A high-level, data-driven sports analytics framework\n### Installation\n```\npip install floodlight\n```\n\n### Citing\n```\n@article{Raabe2022,\n    doi = {10.21105/joss.04588},\n    url = {https://doi.org/10.2110"
+    },
+    {
+      "url": "https://arxiv.org/abs/2206.02562",
+      "title": "floodlight -- A high-level, data-driven sports analytics framework - arXiv",
+      "desc": "Abstract:The present work introduces floodlight, an open source Python package built to support and automate team sport data analysis."
+    },
+    {
+      "url": "https://floodlight.readthedocs.io/",
+      "title": "floodlight Documentation \u2014 floodlight v1.2.0 documentation",
+      "desc": "floodlight is a Python package for streamlined analysis of sports data. Load, integrate, and process tracking and event data, codes and other match-related ..."
+    },
+    {
+      "url": "https://mm4spa.github.io/project/2022-02-03-floodlight/",
+      "title": "\u201cfloodlight\u201d \u2013 a high-level, data-driven sports analytics framework",
+      "desc": "\u201cfloodlight\u201d \u2013 a high-level, data-driven sports analytics framework. Open source python package for streamlined analysis of sports data released."
+    },
+    {
+      "url": "https://www.reddit.com/r/sportsbook/comments/kyosd6/python_library_that_gets_odds_on_any_event_for/",
+      "title": "Python library that gets odds on any event for all major sports ... - Reddit",
+      "desc": "What's up fellow degens. I wrote and released a Python package that accesses Sportsbook Review's GraphQL endpoint (sportsbookreview.com)."
+    }
+  ],
+  "pydfs-lineup-optimizer vs lineup-optimizer python DFS reddit": [
+    {
+      "url": "https://www.reddit.com/r/Python/comments/pwv1k0/draftfast_or_pydfslineupoptimizer_for_building/",
+      "title": "r/Python on Reddit: DraftFast or pydfs-lineup-optimizer for building ...",
+      "desc": "I came across these two python packages for buidling daily fantays lineups and i was wondering if anyone has come across these and had any input ..."
+    },
+    {
+      "url": "https://pydfs-lineup-optimizer.readthedocs.io/",
+      "title": "pydfs-lineup-optimizer",
+      "desc": "# pydfs-lineup-optimizer [\u00b6](https://pydfs-lineup-optimizer.readthedocs.io/en/latest/#pydfs-lineup-optimizer)\n**pydfs-lineup-optimizer** is a tool for creating optimal lineups for daily fantasy sport."
+    },
+    {
+      "url": "https://www.reddit.com/r/learnpython/comments/wbcilx/creating_a_batch_of_generic_dfs_lineups/",
+      "title": "Creating a batch of generic DFS lineups : r/learnpython - Reddit",
+      "desc": "I have been working on a model for daily fantasy sports and I would like to create a (preferably) somewhat large amount of lineups to model ..."
+    },
+    {
+      "url": "https://pypi.org/project/pydfs-lineup-optimizer/",
+      "title": "pydfs-lineup-optimizer - PyPI",
+      "desc": "# PYDFS-LINEUP-OPTIMIZER [![Build Status](https://pypi-camo.freetls.fastly.net/61f84acfd9acb80c3162fea60728a477a863ae45/68747470733a2f2f7472617669732d63692e636f6d2f44696d614b75646f73682f70796466732d6c696e6575702d6f707469"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=F0KTXHuHRL8",
+      "title": "Python for DFS | pydfs-lineup-optimizer - YouTube",
+      "desc": "# Python for DFS | pydfs-lineup-optimizer | Repeating Players\nToday we're going to continue exploring the different parameters available within the pydfs-lineup-optimizer.\n\nPython for DFS | pydfs-lineup-optimizer | Repea"
+    }
+  ],
+  "the-odds-api free tier limit reddit complaint": [
+    {
+      "url": "https://www.reddit.com/r/algobetting/comments/1scvcii/built_a_dropin_replacement_for_theoddsapi_with/",
+      "title": "Built a drop-in replacement for the-odds-api with prediction market ...",
+      "desc": "the-odds-api charges $30/mo for 20K credits. Free: 1,000 credits/mo, no credit card $5/mo: 20,000 credits (vs their $30) per-tier connection ..."
+    },
+    {
+      "url": "https://www.reddit.com/r/algobetting/comments/1gfu1hx/free_odds_api/",
+      "title": "Free Odds API : r/algobetting - Reddit",
+      "desc": "I would suggest The Odds API. You get 500 free credits per month which should be plenty if you don't need to constantly update the odds. If you ..."
+    },
+    {
+      "url": "https://www.reddit.com/r/algobetting/comments/1squ8in/building_cheap_odds_api_alternative_whod_actually/",
+      "title": "Building cheap odds API alternative, who'd actually use this? - Reddit",
+      "desc": "Been burned by odds API pricing. Building replacement. Free right now while I test locally. Looking for feedback before I go further:."
+    },
+    {
+      "url": "https://www.reddit.com/r/ParlayAPI/comments/1t8vtbl/the_complete_sports_betting_data_stack_for_2026/",
+      "title": "every free and paid source, ranked by what real models need : r/ParlayAPI",
+      "desc": "The Odds API has a free tier at 500 requests per month. Enough to play with the data shape, not enough to run any real polling."
+    },
+    {
+      "url": "https://www.reddit.com/r/ParlayAPI/",
+      "title": "r/ParlayAPI - Reddit",
+      "desc": "The Odds API has a free tier at 500 requests per month. Enough to play with the data shape, not enough to run any real polling. Their free tier ..."
+    }
+  ],
+  "sleeper auction draft assistant chrome extension reddit": [
+    {
+      "url": "https://www.reddit.com/r/fantasyfootball/comments/1w8btbk/has_anyone_used_fantasypros_realtime_draft/",
+      "title": "Has anyone used FantasyPros Real-Time Draft Assistant? - Reddit",
+      "desc": "3 days ago \u00b7 I use it on sleeper for suggestions and it seems to do a good job at tracking the picks without me needing to do anything, but I always click \" ..."
+    },
+    {
+      "url": "https://www.reddit.com/r/fantasyfootball/comments/1llz3c3/free_fantasy_draft_tool_with_chrome_extension/",
+      "title": "Free fantasy draft tool with Chrome extension that syncs and ... - Reddit",
+      "desc": "Live-syncs your draft with ESPN and Sleeper. I really believe that the biggest edge in fantasy football comes during the draft, and even more ..."
+    },
+    {
+      "url": "https://www.reddit.com/r/fantasyfootballadvice/comments/1w4lk0t/built_a_free_draft_assistant_that_follows_your/",
+      "title": "Built a free draft assistant that follows your ESPN or Sleeper draft live and ...",
+      "desc": "7 days ago \u00b7 Live draft assistant that shows best available player valued for YOUR exact scoring and current roster shape. \u00b7 Weekly optimal lineup suggestions ..."
+    },
+    {
+      "url": "https://www.reddit.com/r/fantasyfootball/comments/16010b8/i_built_a_free_version_of_fantasypros_draft/",
+      "title": "I built a Free version of Fantasypro's Draft Assistant: Website that syncs ...",
+      "desc": "TL; DR: I built a free draft assistant that allows you to sync picks with life drafts on Yahoo, Sleeper, CBS and now ESPN!"
+    },
+    {
+      "url": "https://www.reddit.com/r/fantasyfootball/comments/9akgoy/fantasy_draft_live_yahoo_ff_draft_assistant/",
+      "title": "Fantasy Draft + (Live Yahoo FF Draft Assistant) (Chrome Extension)",
+      "desc": "I built a Free version of Fantasypro's Draft Assistant: Website that syncs live with your Yahoo/Sleeper/CBS drafts using BorisChen Tiers (Update ..."
+    }
+  ]
+}

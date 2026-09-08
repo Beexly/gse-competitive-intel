@@ -1,0 +1,18 @@
+{
+ "timestamp": "2026-09-08T22:05Z",
+ "target": "https://www.galaxysportsedge.com",
+ "llms_txt_generated": "2026-09-08T21:58:58.679Z",
+ "receipts_total": 1111,
+ "pages": 45,
+ "hash_recompute_match": true,
+ "invalid_odds_rows": 199,
+ "valid_subset_units": -52.47,
+ "valid_subset_roi": -5.9,
+ "calibration_inversion": "realized WR falls as committed confidence rises, within every sport",
+ "publication_state": "OFF (PUBLISH_LEDGER unset)",
+ "bugs": [
+  "/ai.txt 308 -> http://localhost:3000/llms.txt (prod redirect bug, apps/web/app/ai.txt/route.ts uses request.url)",
+  "entryOdds population bug: 199 rows with non-American odds (17.9%)",
+  "confidence anti-predictive at conf>=60 (engine-side, fix forward as v5.2.8+)"
+ ]
+}

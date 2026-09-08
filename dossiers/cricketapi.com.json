@@ -1,0 +1,77 @@
+{
+ "domain": "cricketapi.com",
+ "tech_stack": {
+  "frontend": "Large SSR HTML (651KB home) + Google Optimize + Razorpay checkout.js (payment SDK) + CloudFront-hosted v5 docs CSS (d16ppiey8peuxi.cloudfront.net)",
+  "backend": "NOT CONFIRMED - robots.txt blocks /nimda/ /rest/ /apps/ /orders/ /app/ (admin/store-like paths)",
+  "database": "NOT CONFIRMED",
+  "cloud": "AWS CloudFront CDN (d16ppiey8peuxi.cloudfront.net)",
+  "cdn": "AWS CloudFront",
+  "citations": [
+   "https://www.cricketapi.com/",
+   "https://www.cricketapi.com/robots.txt",
+   "https://checkout.razorpay.com/v1/checkout.js",
+   "https://d16ppiey8peuxi.cloudfront.net/cricketapi/v5/css/v5docs.704dba77.css"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "GraphQL offered per page title 'Roanuz Cricket API - APIs & GraphQL'; schema endpoints NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "Marketing claim: 'process millions of requests per hour at an average latency of 300ms' (unverified)",
+  "citations": [
+   "https://www.cricketapi.com/",
+   "https://www.cricketapi.com/v5/get-started/"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": null
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": null
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED - no sportradar/statsperform/opta strings in fetched bundles; self-branded 'Roanuz Cricket API'",
+  "citations": [
+   "https://www.cricketapi.com/"
+  ]
+ },
+ "product_limits": {
+  "limits": "Essential: 100 matches/month + 400,000 API requests/month; Business: 200 matches/month (per pricing page)",
+  "upgrade_triggers": "Historical data ('Access to completed matches and tournaments') gated behind Enterprise plan",
+  "citation": "https://www.cricketapi.com/v5/package-pricing/"
+ },
+ "pricing": {
+  "web": "Essential: INR 15,902/mo billed annually (INR 17,669 billed monthly), 100 matches/mo, 400k API requests/mo; Business: INR 27,999/mo; further tiers at INR 34,999 / 47,999 / 59,999 (names NOT CONFIRMED - regex-extracted from pricing page); Enterprise: custom",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://www.cricketapi.com/v5/package-pricing/"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/v5/docs/",
+  "/v5/package-pricing/",
+  "/v5/get-started/",
+  "/live-score-stats-api/",
+  "/fantasy-api/",
+  "/chatbot-api/",
+  "/performance-api/",
+  "/support-and-usage-plans/"
+ ],
+ "discovered_targets": [
+  "roanuz.com"
+ ],
+ "discovery_metadata": {
+  "method": "GET homepage/robots/sitemap + package-pricing + get-started pages + 2 JS bundles (Google Optimize, Razorpay)",
+  "timestamp": "2026-09-08T15:59:24.859512-05:00"
+ },
+ "disposition": "live",
+ "notes": "Roanuz Cricket API - India-based (INR pricing, Razorpay). Live score, stats, fantasy (player credits/performance points) + chatbot/performance APIs. No reddit-specific pain threads surfaced in search."
+}

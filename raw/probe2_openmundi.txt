@@ -1,0 +1,153 @@
+URL: https://openmundi.github.io/
+STATUS: 200
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Welcome - world.db - Open Mundi - Open World Data</title>
+   <link rel="stylesheet" href="openmundi.css" type="text/css">
+</head>
+<body>
+
+  
+<div class='banner'>
+open public domain data | 
+   <a href='http://openmundi.github.io'>world.db</a>
+     •
+   <a href='http://openfootball.github.io'>football.db</a>
+     •
+   <a href='http://openbeer.github.io'>beer.db</a>
+     •
+   <a href='http://opensport.github.io'>more</a>
+</div>
+
+
+
+  <div id="header">
+    <span class='big'>world.db</span>
+    <span class='small'>free open public domain world data</span>
+  </div>
+
+  <div id="nav">
+   
+    <a href="index.html">Home</a> | 
+    <a href="build.html">How To Build Your Own Copy</a> | 
+<!-- 
+    <a href="api.html">Web Service / HTTP JSON API</a> |
+-->
+
+    <a href="https://github.com/openmundi">Data, Repos</a> |
+
+    <a href="http://groups.google.com/group/openmundi">What's New? &middot; Forum (Questions? Comments?)</a>
+     
+  </div>
+    
+    <div id="content">
+      <h1 id="welcome">Welcome</h1>
+
+<div class="toc">
+  <p>Contents:</p>
+
+  <ul>
+    <li><a href="#whatis">What’s <code>world.db</code>?</a></li>
+    <li><a href="#datasets">Datasets</a>
+      <ul>
+        <li><a href="#countries">Countries</a></li>
+        <li><a href="#cities">Cities</a></li>
+      </ul>
+    </li>
+    <li><a href="#webadmin">Web Admin Site</a></li>
+    <li><a href="#license">About, License</a></li>
+    <li><a href="#questions">Questions? Comments?</a></li>
+  </ul>
+</div>
+
+<h2 id="whatis">What’s <code>world.db</code>?</h2>
+
+<p>A free open public domain world database ‘n’ schema
+for use in any (programming) language (e.g. uses plain text datasets).</p>
+
+<p><strong>Schema Diagram</strong></p>
+
+<p><img src="i/worlddb-models.png" alt="" /></p>
+
+<p>Everything is a place.</p>
+
+<p><img src="i/worlddb-models-place.png" alt="" /></p>
+
+<h2 id="datasets">Datasets</h2>
+
+<h3 id="countries">Countries</h3>
+
+<pre><code>ca, Canada,          CAN, 9 984 670 km²,  34 278 406, un|north america
+mx, México [Mexico], MEX, 1 972 550 km², 112 322 757, un|north america
+us, United States,   USA, 9 629 091 km², 314 167 157, un|north america
+</code></pre>
+
+<p>Source: <a href="https://github.com/openmundi/world.db/blob/master/north-america/countries.txt"><code>north-america/countries.txt</code></a>:</p>
+
+<h3 id="cities">Cities</h3>
+
+<pre><code>Toronto,            ON,   5 583 064
+Montréal|Montreal,  QC,   3 824 221
+Vancouver,          BC,   2 313 328
+Ottawa,             ON,   1 236 324
+Calgary,            AB,   1 214 839
+Edmonton,           AB,   1 159 869
+Québec,             QC,     765 706
+Winnipeg,           MB,     730 018
+</code></pre>
+
+<p>Source: <a href="https://github.com/openmundi/world.db/blob/master/north-america/ca-canada/cities.txt"><code>north-america/ca-canada/cities.txt</code></a>:</p>
+
+<h2 id="webadmin">Web Admin Site</h2>
+
+<p>Try the <code>world.db</code> web admin app running
+on Heroku <a href="http://worlddb.herokuapp.com"><code>worlddb.herokuapp.com</code></a>.</p>
+
+<h2 id="real-world-usage">Real World Usage</h2>
+
+<p><a href="https://github.com/geraldb/world.db.admin">world.db.admin</a> - A free, open source web admin tool for world.db in Ruby on Rails (version 3.2 and up).</p>
+
+<p><a href="https://github.com/opensport">sport.db</a> - free open public domain sports database &amp; schema.</p>
+
+<p><a href="https://github.com/openfootball">football.db</a> -  free open public domain football (soccer) database &amp; schema</p>
+
+<p><a href="https://github.com/opensport/formula1.db">formula1.db</a> - free open public domain Formula 1/Formula One database &amp; schema</p>
+
+<p><a href="https://github.com/opensport/ski.db">ski.db</a> -  free open public domain ski alpin/alpine ski database &amp; schema</p>
+
+<p><a href="https://github.com/openbeer">beer.db</a> - free open public domain beer database &amp; schema</p>
+
+<p><a href="https://github.com/openbookie/sportbook">Sportbook</a> - free, open source sports betting (prediction) pool
+in Ruby on Rails (version 3.2 and up). </p>
+
+<h2 id="alternatives">Alternatives</h2>
+
+<p>See the <a href="https://github.com/planetopendata/awesome-world"><code>awesome-world</code></a> page at the Planet Open Data.</p>
+
+<h2 id="license">License</h2>
+
+<p>The <code>world.db</code> schema, data and scripts are dedicated to the public domain.
+Use it as you please with no restrictions whatsoever.</p>
+
+<h2 id="questions">Questions? Comments?</h2>
+
+<p>Send them along to the <a href="http://groups.google.com/group/openmundi">Open World Database (world.db) and Friends Forum/Mailing List</a>.
+Thanks!</p>
+
+
+      
+      <div class='editme'>
+ <p>
+  Edit Me! This website is a <a href='https://github.com/openmundi/openmundi.github.io'>public GitHub repo</a>.
+  Please help by forking the project and adding to it.
+ </p>
+</div>
+
+      
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+{
+ "domain": "baozi.bet",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/b2-baozi_bet-home.html"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b2-baozi_bet-home.html",
+   "raw\\b2-baozi_bet-robots.txt",
+   "raw\\b2-baozi_bet-visible.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apis.com",
+    "apis.com/css2",
+    "https://api.fontshare.com/v2/css",
+    "API.md",
+    "api.json"
+   ],
+   "citation": "raw/b2-baozi_bet-home.html"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-baozi_bet-home.html"
+  },
+  "rate_limits": {
+   "value": "rate limit",
+   "citation": "raw/b2-baozi_bet-home.html"
+  },
+  "citations": [
+   "raw\\b2-baozi_bet-home.html",
+   "raw\\b2-baozi_bet-robots.txt",
+   "raw\\b2-baozi_bet-visible.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Trade prediction markets on Solana with SOL. Pari-mutuel betting on crypto, spor' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "polymarket"
+   ],
+   "citation": "raw/b2-baozi_bet-home.html"
+  },
+  "citations": [
+   "raw\\b2-baozi_bet-home.html",
+   "raw\\b2-baozi_bet-robots.txt",
+   "raw\\b2-baozi_bet-visible.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "rate limit",
+    "requests per",
+    "Rate limit"
+   ],
+   "citation": "raw/b2-baozi_bet-home.html"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\b2-baozi_bet-home.html"
+ },
+ "pricing": {
+  "web": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-baozi_bet-home.html"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b2-baozi_bet-home.html",
+   "raw\\b2-baozi_bet-robots.txt",
+   "raw\\b2-baozi_bet-visible.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Allow: /.well-known/",
+  "Allow: /mcp",
+  "Allow: /skill",
+  "Allow: /agents",
+  "Allow: /llms.txt",
+  "Allow: /skill.txt",
+  "Allow: /ai.html",
+  "Disallow: /solana-admin/",
+  "Disallow: /solana-admin-v5/",
+  "Disallow: /v5/",
+  "Disallow: /docs"
+ ],
+ "discovered_targets": [
+  "API.md",
+  "api.json",
+  "apis.com",
+  "apis.com/css2",
+  "https://api.fontshare.com/v2/css"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:44.137546"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Baozi - Prediction Markets on Solana",
+  "description": "Trade prediction markets on Solana with SOL. Pari-mutuel betting on crypto, sports, politics, culture. 68 MCP tools for AI agents. On-chain settlement."
+ }
+}

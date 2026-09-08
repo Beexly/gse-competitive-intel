@@ -1,0 +1,74 @@
+{
+ "domain": "draftkings.com/predictions",
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED (no model evidence in raw files)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "simulation_engine": {
+  "num_simulations": null,
+  "correlation_method": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "data_supply_chain": {
+  "vendors": [],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": [],
+  "upgrade_triggers": [],
+  "citation": ""
+ },
+ "pricing": {
+  "web": "N/A (sportsbook)",
+  "ios": "N/A",
+  "android": "N/A",
+  "citations": [
+   "NOT CONFIRMED — /predictions does not exist"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "DraftKings restricts another (winner-limiting pain, r/DraftKingsDiscussion)",
+   "source": "https://www.reddit.com/r/DraftKingsDiscussion/comments/15xtyqo/draftkings_restricts_another/",
+   "date": "2023 (thread id 15xtyqo)"
+  },
+  {
+   "quote": "Fraudulent account (r/DraftKingsDiscussion)",
+   "source": "https://www.reddit.com/r/DraftKingsDiscussion/comments/1aphgck/fraudulent_account/",
+   "date": "2024 (thread id 1aphgck)"
+  }
+ ],
+ "discovered_paths": [
+  "robots.txt disallows /lineup/, /contest/, /draft/, /account/ — internal product path map; sitemap providers leak Gatsby+Contentstack naming (raw/draftkings_com_predictions_robots.txt, raw/draftkings_com_predictions_sitemap.xml)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "fetcher.py scan: /predictions 404 (90KB SPA error page); robots+sitemap 200",
+  "timestamp": "2026-09-08T15:20:00-05:00"
+ },
+ "tech_stack": {
+  "frontend": "NOT CONFIRMED at /predictions (404); DK content platform fingerprints Gatsby + Contentstack CMS (sitemap URI providers: DFSCrawlerUriProvider_0.xml, GatsbyDFSContentstackUriProvider_0.xml)",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "robots.txt served with server: AmazonS3 via CloudFront (raw/scan-draftkings_com_predictions.json request_log)",
+  "cdn": "CloudFront/S3",
+  "citations": [
+   "raw/scan-draftkings_com_predictions.json",
+   "raw/draftkings_com_predictions_sitemap.xml"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/scan-draftkings_com_predictions.json"
+  ]
+ },
+ "disposition": "dead",
+ "notes": "GSE-relevant: target URL dead — DK's predictions content lives elsewhere (DK Network/DK Live); the assigned URL was a placeholder. Sitemap URI-provider names (GatsbyDFSContentstackUriProvider) are an infra fingerprint worth reusing for DK-family targets."
+}

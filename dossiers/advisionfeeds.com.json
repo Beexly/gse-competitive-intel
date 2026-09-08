@@ -1,0 +1,57 @@
+{
+  "domain": "advisionfeeds.com",
+  "disposition": "dead",
+  "notes": "Parent re-verification 2026-09-08: curl https://advisionfeeds.com/ and /robots.txt both returned HTTP 000 (connection failed). Batch-3 child wrote dossier with 0 raw files and 0 resolvable citations; 'live' claim NOT CONFIRMED. Connection failure => dead.",
+  "tech_stack": {
+    "frontend": "NOT CONFIRMED",
+    "backend": "NOT CONFIRMED",
+    "database": "NOT CONFIRMED",
+    "cloud": "NOT CONFIRMED",
+    "cdn": "NOT CONFIRMED",
+    "citations": [
+      "raw/fx_advisionfeeds_com_home.raw",
+      "raw/fx_advisionfeeds_com_robots.raw"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": []
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [],
+    "citations": []
+  },
+  "product_limits": {
+    "limits": "NOT CONFIRMED",
+    "upgrade_triggers": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "pricing": {
+    "web": "NOT CONFIRMED",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": []
+  },
+  "customer_pain": [],
+  "discovered_paths": [],
+  "discovered_targets": [],
+  "discovery_metadata": {
+    "method": "parent re-verification fetch (curl) after delegation batch; composed from raw/ evidence",
+    "timestamp": "2026-09-08T16:35:00-05:00"
+  }
+}

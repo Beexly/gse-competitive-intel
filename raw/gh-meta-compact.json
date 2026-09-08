@@ -1,0 +1,103 @@
+{
+  "floodlight-sports/floodlight": {
+    "default_branch": "main",
+    "language": "Python",
+    "stars": 130,
+    "license": "MIT",
+    "description": "Python package for streamlined analysis of sports data.",
+    "topics": [
+      "python",
+      "sports-analytics",
+      "sports-stats"
+    ],
+    "pushed_at": "2026-05-04T16:10:27Z",
+    "archived": false,
+    "size_kb": 5339
+  },
+  "eddwebster/football_analytics": {
+    "default_branch": "master",
+    "language": "Jupyter Notebook",
+    "stars": 2775,
+    "license": null,
+    "description": "\ud83d\udcca\u26bd  A collection of football analytics projects, data, and analysis by Edd Webster (@eddwebster), including a curated list of publicly available resources published by the football analytics community.",
+    "topics": [
+      "analytics",
+      "awesome",
+      "awesome-list",
+      "data-science",
+      "expected-goals",
+      "fbref",
+      "fifa",
+      "football",
+      "football-analytics",
+      "football-data",
+      "futbol",
+      "opta",
+      "soccer",
+      "soccer-analytics",
+      "soccer-data",
+      "sports-analytics",
+      "sports-stats",
+      "statsbomb",
+      "transfermarkt",
+      "xg"
+    ],
+    "pushed_at": "2025-10-09T10:51:47Z",
+    "archived": false,
+    "size_kb": 1176278
+  },
+  "n-roth12/DFSLineupOptimizer": {
+    "default_branch": "main",
+    "language": "Python",
+    "stars": 12,
+    "license": "MIT",
+    "description": "A Python project for generating NFL daily fantasy contest lineups.",
+    "topics": [
+      "daily-fantasy-sports",
+      "dfs",
+      "draftkings",
+      "fanduel",
+      "fantasy-football",
+      "football-analytics",
+      "football-data",
+      "nfl",
+      "optimization-algorithms"
+    ],
+    "pushed_at": "2024-09-13T06:04:20Z",
+    "archived": false,
+    "size_kb": 225
+  },
+  "chanzer0/MLB-DFS-Tools": {
+    "default_branch": "main",
+    "language": "Python",
+    "stars": 6,
+    "license": null,
+    "description": "A great set of free-to-use MLB dfs tools, such as an optimizer and gpp contest simulator",
+    "topics": [],
+    "pushed_at": "2024-07-22T22:37:58Z",
+    "archived": false,
+    "size_kb": 1455
+  },
+  "jscanga/Sports-Arbitrage-Finder": {
+    "default_branch": "main",
+    "language": "TypeScript",
+    "stars": 0,
+    "license": "MIT",
+    "description": "A real-time sports odds aggregator and arbitrage detection tool built with Next.js.",
+    "topics": [],
+    "pushed_at": "2026-05-19T19:29:24Z",
+    "archived": false,
+    "size_kb": 2112
+  },
+  "tonyntran/fantasy-auction-assistant": {
+    "default_branch": "main",
+    "language": "Python",
+    "stars": 1,
+    "license": "AGPL-3.0",
+    "description": "Real-time fantasy football auction draft assistant \u2014 AI-powered bid advice, VORP/FMV math, and a live React dashboard, built for Sleeper (with ESPN support)",
+    "topics": [],
+    "pushed_at": "2026-02-22T06:12:44Z",
+    "archived": false,
+    "size_kb": 253
+  }
+}

@@ -1,0 +1,36 @@
+# All crawlers
+User-agent: *
+Allow: /
+
+# Content Signals (https://contentsignals.org/) — machine-readable statement of
+# how this content may be used, expressed alongside the crawl permission above.
+# search=yes and ai-input=yes: Octagon wants to be indexed and to be cited as a
+# grounding source in AI answers; both send readers back here.
+# ai-train=no: crawling for model-training corpora is not permitted.
+# A Content-Signal is a declaration of preference, not an access control.
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+# LLM-friendly guidance
+# https://www.octagonai.co/llms.txt
+# https://www.octagonai.co/llms-full.txt
+
+Sitemap: https://www.octagonai.co/sitemap.xml
+Sitemap: https://www.octagonai.co/sitemap-news.xml
+Sitemap: https://www.octagonai.co/sitemap-answers.xml
+
+# API documentation (served via the /docs rewrite; www is the canonical host there)
+Sitemap: https://www.octagonai.co/docs/sitemap.xml
+
+# Agent discovery: ARD capability manifest (spec §6.1 robots.txt mechanism).
+# The well-known path is the primary location; this line is the pointer for
+# crawlers that read robots.txt first.
+Agentmap: https://www.octagonai.co/.well-known/ai-catalog.json
+
+# RSS feeds (Google accepts RSS/Atom feeds as sitemaps)
+Sitemap: https://www.octagonai.co/news/feed.xml
+Sitemap: https://www.octagonai.co/news/politics/feed.xml
+Sitemap: https://www.octagonai.co/news/economics/feed.xml
+Sitemap: https://www.octagonai.co/news/markets/feed.xml
+Sitemap: https://www.octagonai.co/news/crypto/feed.xml
+Sitemap: https://www.octagonai.co/news/companies/feed.xml
+Sitemap: https://www.octagonai.co/news/sports/feed.xml

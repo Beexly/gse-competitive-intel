@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17625708377"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'AW-17625708377');
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="apple-touch-icon" href="/192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/512.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Trade.fun - Memecoins. Leverage. Yield. All powered by $TRADE" />
+    <meta name="keywords" content="crypto, trading, solana, perpetuals, memecoins, copy trading, leverage, yield, hyperliquid, trade.fun" />
+    <meta name="theme-color" content="#101010" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Trade.fun" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-TileColor" content="#101010" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <meta property="og:title" content="Trade.fun" />
+    <meta property="og:description" content="Memecoins. Leverage. Yield. All powered by $TRADE" />
+    <meta property="og:image" content="https://trade.fun/SocialPreview2.png" />
+    <meta property="og:url" content="https://trade.fun" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Trade.fun" />
+    <meta name="twitter:description" content="Memecoins. Leverage. Yield. All powered by $TRADE" />
+    <meta name="twitter:image" content="https://trade.fun/SocialPreview2.png" />
+    <meta name="twitter:site" content="@tradedotfun_" />
+    <meta name="twitter:domain" content="trade.fun" />
+    <meta name="twitter:image:alt" content="Trade.fun - Memecoins. Leverage. Yield. All powered by $TRADE" />
+
+    <link rel="preload" href="/datafeeds/udf/dist/bundle.js" as="script" />
+    <link rel="preload" href="/charting_library/charting_library.standalone.js" as="script" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+
+    <title>Trade.fun</title>
+    <script type="module" crossorigin src="/assets/index.zThWIOSX.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/datadog-rum.Cyd1PiWE.js">
+    <link rel="modulepreload" crossorigin href="/assets/ethers.Bigk_R5B.js">
+    <link rel="stylesheet" crossorigin href="/assets/index.BFVuSO0w.css">
+  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+  <body>
+    <div id="root"></div>
+    <script src="/datafeeds/udf/dist/bundle.js" defer></script>
+    <script src="/charting_library/charting_library.standalone.js" defer></script>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"fde16f6195534e908ab5fc41fe8dd453","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

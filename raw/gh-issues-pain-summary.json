@@ -1,0 +1,61 @@
+{
+  "floodlight-sports/floodlight": [
+    {
+      "num": 187,
+      "title": "Space-control aggregation returns numeric zero for fully unobserved frames",
+      "comments": 1,
+      "url": "https://github.com/floodlight-sports/floodlight/issues/187",
+      "created": "2026-07-17T02:14:33Z"
+    },
+    {
+      "num": 160,
+      "title": "[FEAT] Kloppy integration to `floodlight.io`",
+      "comments": 0,
+      "url": "https://github.com/floodlight-sports/floodlight/issues/160",
+      "created": "2025-05-23T12:44:41Z"
+    },
+    {
+      "num": 155,
+      "title": "[BUG] Parser DFL Event Data ",
+      "comments": 0,
+      "url": "https://github.com/floodlight-sports/floodlight/issues/155",
+      "created": "2024-12-09T18:25:34Z"
+    }
+  ],
+  "eddwebster/football_analytics": [
+    {
+      "num": 17,
+      "title": "Resource suggestion: World Cup AI Forecast",
+      "comments": 0,
+      "url": "https://github.com/eddwebster/football_analytics/issues/17",
+      "created": "2026-06-25T20:58:41Z"
+    },
+    {
+      "num": 5,
+      "title": "FBref Player Stats Web Scraping defunct",
+      "comments": 0,
+      "url": "https://github.com/eddwebster/football_analytics/issues/5",
+      "created": "2023-04-01T21:41:05Z"
+    },
+    {
+      "num": 4,
+      "title": "Transfermarkt advanced search",
+      "comments": 0,
+      "url": "https://github.com/eddwebster/football_analytics/issues/4",
+      "created": "2023-03-08T19:27:54Z"
+    }
+  ],
+  "n-roth12/DFSLineupOptimizer": [],
+  "chanzer0/MLB-DFS-Tools": [
+    {
+      "num": 17,
+      "title": "Total Estimated Cost Calculation Too Low",
+      "comments": 0,
+      "url": "https://github.com/chanzer0/MLB-DFS-Tools/issues/17",
+      "created": "2025-07-21T21:06:57Z"
+    }
+  ],
+  "jscanga/Sports-Arbitrage-Finder": [],
+  "tonyntran/fantasy-auction-assistant": [],
+  "J-A-Stone-LLC/fantasy-football-gm-plugin": []
+}

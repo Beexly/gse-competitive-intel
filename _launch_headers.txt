@@ -1,0 +1,1364 @@
+=== devig/oracle.ts (229 lines) ===
+/**
+ * De-vig oracle — seven methods that turn decimal odds into a fair probability
+ * vector (sum = 1). This is the reference implementation; existing in-repo Shin
+ * helpers (`shin-devig.ts`, `edge-lab/devig.ts`) should be validated against it
+ * before any de-duplication.
+ *
+ * Ported from penaltyblog (MIT), github.com/martineastwood/penaltyblog
+ * (`implied.py`; verified against 1.12.0 commit 5ebd602, numpy 2.4.6 / scipy 1.17.1).
+ *
+ * Field integration: `DevigResult.probabilities` are fair calibration *inputs*
+ * to the pick pipeline. They must never bypass scoring (Prediction Engine Rules).
+ *
+ * Pure, deterministic, no I/O.
+ */
+
+export type DevigMethod =
+  | "multiplicative"
+  | "additive"
+  | "power"
+  | "shin"
+  | "differential_margin_weighting"
+  | "odds_ratio"
+  | "logarithmic";
+
+export interface DevigResult {
+  probabilities: number[];
+  method: DevigMethod;
+  margin: number;
+  methodParams?: Record<string, number>;
+}
+
+const POWER_HI = 100;
+const SHIN_HI = 1 - 1e-12;
+const ODDS_RATIO_HI = 100;
+const LOG_HI = 20;
+const ROOT_TOL = 1e-12;
+const ZERO_MARGIN = 1e-9;
+
+function sum(xs: readonly number[]): number {
+  let total = 0;
+  for (const x of xs) total += x;
+  return total;
+}
+
+function assertValidOdds(decimalOdds: readonly number[]): void {
+
+=== kelly.ts (225 lines) ===
+// ============================================================
+// Kelly Criterion stake sizing (v6.0.0)
+//
+// Computes a *fractional* Kelly stake recommendation for a pick,
+// expressed in "units" relative to a 100-unit bankroll. The classic
+// Kelly criterion (Kelly 1956) sizes bets according to the player's
+// edge, treating the win probability p as known:
+//
+//     f* = (b·p - q) / b
+//
+// where:
+//   p = win probability  (fair-value probability from removed-vig market)
+//   q = 1 - p
+//   b = decimal odds payout - 1  (e.g. -110 → 0.909, +200 → 2.0)
+//
+// Full Kelly is growth-optimal for a known p but is notoriously
+// volatile (Thorp 2006; MacLean, Thorp & Ziemba 2011). This module
+// applies two *variance* defenses; it does NOT haircut p for Knightian
+// uncertainty (that Beta-credible-set worst case lives in robust-kelly.ts):
+//
+//   1. Fractional Kelly (default 0.25) — scales the stake down 4×
+//      to reduce variance at a small cost to long-run growth.
+//   2. Confidence gate — only return a stake when confidence and
+//      edgeScore meet our publish thresholds; below that we return
+//      null (display "stake: research only" in the UI).
+//
+// IMPORTANT — this is NOT a recommendation to bet. It is a sizing
+// helper for users who have *already decided* to bet. The platform
+// does NOT take wagers, does NOT promise outcomes, and does NOT
+// imply that any of these picks will win. Stake sizing is bounded
+// at MAX_UNITS_PER_PICK to prevent any single suggestion from
+// implying overconfidence.
+//
+// References:
+//   - Kelly, J. L. (1956). "A New Interpretation of Information Rate."
+//     Bell System Technical Journal 35(4).
+//   - Thorp, E. O. (2006). "The Kelly Criterion in Blackjack, Sports
+//     Betting, and the Stock Market." In: Handbook of Asset and Liability
+//     Management.
+//   - MacLean, L. C., Thorp, E. O. & Ziemba, W. T. (2011). The Kelly
+//     Capital Growth Investment Criterion. (fractional Kelly)
+//   - Brown, A. (2011). Red-Blooded Risk. (variance reduction at
+//     fractional sizes)
+// ============================================================
+
+
+=== dixon-coles.ts (198 lines) ===
+/**
+ * Dixon–Coles (1997) low-score correlation on independent Poisson joints.
+ *
+ * Port of machina-predictions-templates monte-carlo.py `dixon_coles_tau` into pure
+ * TypeScript for GSE ranking independents. Market-free: uses the same TeamGameLog
+ * λ path as poissonIndependentFairValue (Maher attack/defense), then multiplies
+ * P(X=x)P(Y=y) by τ(ρ) on {0-0, 0-1, 1-0, 1-1} and renormalises the joint.
+ *
+ * Why a separate independent (source: "dixon_coles"), not a silent Poisson swap:
+ *   - Ranking wants diversified non-book trueProb signals.
+ *   - ρ is a fixed literature default until form-fit lands — honest and frozen.
+ *   - Soccer-only: low-score correlation is the Dixon–Coles claim; hockey/baseball
+ *     keep independent Poisson without τ.
+ *
+ * Never reads sportsbook lines. Never fabricates λ (reuses validated team rates).
+ *
+ * References:
+ *   - Dixon, M. J. & Coles, S. G. (1997). Applied Statistics 46(2), 265–280.
+ *   - machina-sports soccer monte-carlo (rho ≈ −0.12).
+ */
+
+import { poissonPmf } from "./poisson.js";
+import {
+  computeTeamScoringRates,
+  estimateMatchupLambdas,
+  isPoissonValidSport,
+  type PoissonFairValue,
+  type PoissonFairValueInput,
+} from "./team-rates.js";
+
+/** Literature default for football low-score dependence (Machina: −0.12). */
+export const DEFAULT_DIXON_COLES_RHO = -0.13;
+
+/** Clamp ρ to a safe negative band; 0 disables adjustment (identity). */
+export function clampDixonColesRho(rho: number): number {
+  if (!Number.isFinite(rho)) return DEFAULT_DIXON_COLES_RHO;
+  if (rho === 0) return 0;
+  return Math.max(-0.2, Math.min(0, rho));
+}
+
+/**
+ * Dixon–Coles τ factor. Only {0-0,0-1,1-0,1-1} deviate from 1 when ρ ≠ 0.
+ * Formula matches Dixon & Coles (1997) / Machina monte-carlo.py.
+ */
+export function dixonColesTau(
+
+=== edge-engine.ts (258 lines) ===
+/**
+ * Edge engine — the part that makes picks *smarter*, not just confident.
+ *
+ * THE PROBLEM IT FIXES
+ * The legacy scorer derives "fair value" and "edge" entirely from the sportsbook
+ * itself: fairProb = de-vigged average of the books' own prices, edge = fairProb
+ * − offeredProb. That measures the vig and cross-book scatter, not an opinion —
+ * the market grading itself. You cannot beat the close by re-pricing the close.
+ *
+ * THE FIX — INDEPENDENT ESTIMATORS, MARKET AS BENCHMARK, CLV AS JUDGE
+ * Real edge is the gap between an estimate the market has NOT already absorbed
+ * and the market's fair price. So this engine takes one or more *independent*
+ * estimators — the Poisson model (poisson.ts) and the Kalshi exchange (an
+ * independent market, not the sportsbook) — and surfaces a pick only when the
+ * independent blend:
+ *   1. diverges from the sportsbook's de-vigged fair probability, AND
+ *   2. is not contradicted by a referee (see next paragraph), AND
+ *   3. clears an evidence/uncertainty-shrunk edge threshold.
+ *
+ * WHAT "REFEREE" ACTUALLY GUARANTEES — AND ITS LIMIT AT ONE SOURCE
+ * Cross-checking requires ≥2 independent estimators; only then can they referee
+ * each other, and the edge is scaled by their agreement (agreementFactor):
+ *   • CONFIRMS  (≥2, all on the edge's side)                    → ×1.0 full credit
+ *   • SPLIT     (≥2, some neutral, none opposing)               → ×0.5 half credit
+ *   • CONTRADICTS (any estimator on the sportsbook's side)      → ×0   forced PASS
+ * That forced PASS on disagreement is the part tout tools skip: if the exchange
+ * sides with the sportsbook, our model is the outlier and we stand down rather
+ * than fade the world on one signal.
+ *   • SOLO      (exactly one estimator) → ×0.6 discounted, but NOT refereed.
+ * With a single source requirement #2 cannot bind — there is no second opinion to
+ * contradict it — so a large enough lone divergence can still SPEAK, merely at the
+ * 0.6 discount. Single-source picks are therefore un-refereed and should be read
+ * as correspondingly less proven, not as clearing the cross-check above.
+ *
+ * The honest default is silence. With no independent estimate we PASS — we never
+ * manufacture an edge from the market's own price. Every surfaced pick carries an
+ * expected-CLV number, because beating the close is the claim we actually make.
+ *
+ * Pure functions, no I/O — fully unit-testable. Sign convention: all probabilities
+ * are P(the side under consideration is correct), in [0, 1].
+ */
+
+import { clamp } from "./scoring.js";
+
+/** Edge below this (after shrink) → PASS. Above LEAN_EDGE → LEAN; above SPEAK_EDGE → SPEAK. */
+
+=== calibration/cvap.ts (186 lines) ===
+/**
+ * Cross Venn-Abers Predictor (CVAP)
+ *
+ * K-fold inductive Venn-Abers with log-space geometric-mean aggregation.
+ * For a test score, each fold trains an IVAP on the complementary calibration
+ * points and produces a multiprobability; the fold multiprobabilities are
+ * then aggregated via the minimax (log-space geometric mean) rule from
+ * aggregation.ts. Yields tighter intervals than single IVAP while preserving
+ * finite-sample validity under exchangeability (within the usual caveats of
+ * the inductive/cross construction).
+ *
+ * Pure TypeScript, side-effect free. Does not modify existing IVAP/PAV.
+ *
+ * Reference: Vovk et al. Inductive / Cross Venn-Abers predictors.
+ */
+
+import {
+  InductiveVennAbers,
+  type IvapCalibrationPoint,
+  type IvapPrediction,
+} from "./ivap.js";
+import {
+  logSpaceGeometricMeanAggregation,
+  arithmeticMeanAggregation,
+  toFull,
+  type Multiprobability,
+  type FullMultiprobability,
+} from "./aggregation.js";
+
+export type CvapAggregationMode = "geometric" | "arithmetic";
+
+export interface CvapOptions {
+  /** Number of folds (default 5). Must be >= 2 and <= calibration size. */
+  readonly folds?: number;
+  /** Aggregation rule across folds (default geometric / minimax). */
+  readonly aggregation?: CvapAggregationMode;
+  /** Optional seed for deterministic fold assignment (simple LCG). */
+  readonly seed?: number;
+}
+
+export interface CvapPrediction extends FullMultiprobability {
+  readonly foldPredictions: readonly Multiprobability[];
+  readonly aggregation: CvapAggregationMode;
+  readonly foldsUsed: number;
+}
+
+=== calibration/ivap.ts (126 lines) ===
+/**
+ * Inductive Venn-Abers Predictor (IVAP)
+ *
+ * Distribution-free multiprobability calibration for binary outcomes.
+ * Given a calibration set of (score, label) pairs, produces for any new score
+ * a valid multiprobability interval (p0, p1) that is guaranteed under
+ * exchangeability. Uses the Pool Adjacent Violators (PAV) algorithm for
+ * isotonic regression.
+ *
+ * Reference: Vovk, Petej, Fedorova — "Large-scale probabilistic predictors
+ * with guarantees" / Inductive Venn-Abers predictors.
+ *
+ * Status: ready for integration into the honesty / selective-gate path.
+ * Coding agent: verify, add tests, wire; do not rewrite the core algorithm.
+ */
+
+import { pavIsotonic } from "./pav.js";
+
+export interface IvapCalibrationPoint {
+  readonly score: number;
+  readonly label: 0 | 1;
+}
+
+export interface IvapPrediction {
+  /** Lower multiprobability (force label = 0 at the test point) */
+  readonly p0: number;
+  /** Upper multiprobability (force label = 1 at the test point) */
+  readonly p1: number;
+  /** Point prediction (midpoint, for convenience only — not a validity claim) */
+  readonly pMid: number;
+  /** Width of the multiprobability interval */
+  readonly width: number;
+}
+
+function clamp01(x: number): number {
+  if (Number.isNaN(x) || !Number.isFinite(x)) return 0.5;
+  return Math.min(1, Math.max(0, x));
+}
+
+/**
+ * Fit an Inductive Venn-Abers Predictor on a calibration set.
+ * Scores should be real-valued (higher = more evidence for label 1).
+ */
+export class InductiveVennAbers {
+  private readonly sorted: IvapCalibrationPoint[];
+
+=== calibration/pav.ts (84 lines) ===
+/**
+ * Pool Adjacent Violators (PAV) — linear-time isotonic regression.
+ *
+ * Extracted for reuse by IVAP, CVAP, local isotonic patches, and multicalibration.
+ * Supports optional positive weights. Pure function; no side effects.
+ *
+ * Algorithm matches the block-merge implementation previously private in ivap.ts.
+ * Coding agent note: core algorithm is verified; extend only, do not rewrite.
+ */
+
+export interface PavBlock {
+  readonly value: number;
+  readonly weight: number;
+  readonly start: number;
+  readonly end: number;
+}
+
+/**
+ * Unweighted or weighted PAV under non-decreasing constraint.
+ * @param ys Observed values (already ordered by the isotonic covariate, e.g. score).
+ * @param weights Optional positive weights; defaults to 1 for every observation.
+ * @returns Fitted values in the same order as ys.
+ */
+export function pavIsotonic(
+  ys: readonly number[],
+  weights?: readonly number[],
+): number[] {
+  const n = ys.length;
+  if (n === 0) return [];
+
+  if (weights !== undefined && weights.length !== n) {
+    throw new Error("pavIsotonic: weights length must match ys length");
+  }
+
+  // Work with weighted blocks: value, weight, start, end
+  const blocks: { value: number; weight: number; start: number; end: number }[] = ys.map(
+    (y, i) => ({
+      value: y,
+      weight: weights ? Math.max(Number.EPSILON, weights[i]!) : 1,
+      start: i,
+      end: i,
+    }),
+  );
+
+  let i = 0;
+
+=== calibration/local-isotonic-patch.ts (132 lines) ===
+/**
+ * Local Isotonic Patch
+ *
+ * Used by multicalibration audit-and-patch loops: on a detected group × bin
+ * violation, fit a local PAV / isotonic correction and softly blend it back
+ * into the base probability map with strength λ.
+ *
+ * Pure functions. Min-sample guards prevent overfitting on tiny groups.
+ * Reuses the extracted pavIsotonic; does not touch IVAP core.
+ */
+
+import { pavIsotonic } from "./pav.js";
+
+export interface LocalPatchPoint {
+  readonly score: number;
+  readonly label: 0 | 1;
+  /** Optional sample weight */
+  readonly weight?: number;
+}
+
+export interface LocalIsotonicPatchOptions {
+  /** Minimum samples required to apply a patch (default 20). */
+  readonly minSamples?: number;
+  /** Soft blend strength in [0, 1]. 0 = no patch, 1 = full local isotonic. Default 0.5. */
+  readonly lambda?: number;
+  /** Whether to clamp fitted values to [0, 1]. Default true. */
+  readonly clamp?: boolean;
+}
+
+export interface LocalIsotonicPatchResult {
+  readonly applied: boolean;
+  readonly sampleSize: number;
+  /** Score-sorted unique knot points and fitted values (for lookup). */
+  readonly knots: readonly { score: number; fitted: number }[];
+  readonly lambda: number;
+  readonly reason?: string;
+}
+
+function clamp01(x: number): number {
+  if (Number.isNaN(x) || !Number.isFinite(x)) return 0.5;
+  return Math.min(1, Math.max(0, x));
+}
+
+/**
+ * Fit a local isotonic regression on a group/bin subset.
+
+=== calibration/multicalib-audit-patch.ts (432 lines) ===
+/**
+ * Multicalibration Audit-and-Patch
+ *
+ * A global calibration curve can look perfect in aggregate while being badly
+ * wrong on a subpopulation ("home underdogs at short prices", "NBA totals in
+ * back-to-backs"). Aggregate reliability plots hide those failures because the
+ * over- and under-confident cells cancel. This module makes them visible and
+ * then repairs them: audit every (group × score-bin) cell for a calibration
+ * gap, flag the cells that fail with enough evidence to accuse, fit a local
+ * isotonic patch on exactly those cells, re-score, and re-audit until the
+ * failures are gone or the iteration budget is spent.
+ *
+ * SCOPE — read this before assuming more than is delivered.
+ * This is the BINARY / group-indicator special case of multicalibration: the
+ * function class is the set of indicator functions over a finite, explicitly
+ * supplied set of group labels, crossed with score bins. Full Venn-style
+ * multicalibration over arbitrary (real-valued, learned, or adaptively chosen)
+ * function classes is DELIBERATELY DEFERRED and is NOT implemented here. No
+ * multiaccuracy guarantee over unseen or continuous subgroups is claimed or
+ * implied. Groups must be named up front; overlapping groups must be encoded by
+ * the caller as separate group labels on duplicated samples.
+ *
+ * Pure functions, deterministic output (groups and bins are emitted in sorted
+ * order). Reuses fitLocalIsotonicPatch / applyLocalIsotonicPatch; does not
+ * touch the PAV or IVAP cores.
+ */
+
+import {
+  applyLocalIsotonicPatch,
+  fitLocalIsotonicPatch,
+  type LocalIsotonicPatchResult,
+  type LocalPatchPoint,
+} from "./local-isotonic-patch.js";
+
+export interface AuditSample {
+  /** Model score / predicted probability being audited. */
+  readonly score: number;
+  readonly label: 0 | 1;
+  /** Group label. Overlapping memberships must be encoded as separate samples. */
+  readonly group: string;
+  /** Optional positive sample weight (default 1). */
+  readonly weight?: number;
+}
+
+export type BinningStrategy = "equal-mass" | "equal-width";
+
+=== calibration/aggregation.ts (136 lines) ===
+/**
+ * Multiprobability aggregation utilities for Cross Venn-Abers (CVAP)
+ * and related ensemble calibrators.
+ *
+ * Includes log-space geometric mean (minimax) with Neumaier compensated summation
+ * and a simple arithmetic mean fallback.
+ */
+
+export interface Multiprobability {
+  p0: number;
+  p1: number;
+}
+
+export interface FullMultiprobability extends Multiprobability {
+  midpoint: number;
+  width: number;
+}
+
+function clamp(value: number, min: number, max: number): number {
+  return Math.max(min, Math.min(max, value));
+}
+
+/** Neumaier compensated summation — robust when terms differ in magnitude. */
+export function neumaierSum(values: readonly number[]): number {
+  let sum = 0;
+  let compensation = 0;
+
+  for (const value of values) {
+    const t = sum + value;
+    if (Math.abs(sum) >= Math.abs(value)) {
+      compensation += (sum - t) + value;
+    } else {
+      compensation += (value - t) + sum;
+    }
+    sum = t;
+  }
+
+  return sum + compensation;
+}
+
+/**
+ * Log-space geometric-mean aggregation of CVAP fold multiprobabilities.
+ * Numerically stable via Neumaier summation of the logs.
+ */
+export function logSpaceGeometricMeanAggregation(
+
+=== ensemble/baee-ensemble.ts (162 lines) ===
+/**
+ * Beexly Adaptive E-Optimal Ensemble (BAEE) — online Bayesian model averaging
+ * of per-model probabilities against realized outcomes.
+ *
+ * NOT WIRED FOR BLENDING YET. It updates in shadow mode only (learns from
+ * settled outcomes) — nothing routes live predictions through `blend()`. See
+ * `LiveOrchestrator.evaluateGame`'s `modelProbs` field (persisted on
+ * `ShadowSignal`) for where the per-model probabilities come from.
+ *
+ * CORRECTED FROM AN EARLIER DRAFT. That draft's `update()` computed
+ * `grad_k = p_{t,k}(y_t) / p_t(y_t)` and multiplied weights by `exp(η·grad_k)`,
+ * with a docblock claiming this equals exact Bayesian updating
+ * `w_k' = w_k · p_k(y)/p(y)` at η=1. Checked numerically against the literal
+ * formula: for w=[0.5,0.5], modelProbs=[0.9,0.3], y=1, `exp(grad)` update gives
+ * [0.7311, 0.2689]; direct Bayes gives [0.75, 0.25]. Not equal — exponentiating
+ * a ratio is not the same operation as the ratio itself. The two are legitimate
+ * but DIFFERENT algorithms (Hedge/Exponentiated-Gradient vs. literal Bayesian
+ * mixing), and only the latter has the clean, T-independent regret bound the
+ * docblock claimed. This class now implements literal Bayesian mixing, which
+ * is simpler (no learning-rate hyperparameter to misjustify) and has the
+ * stronger guarantee for free.
+ *
+ * MATH. Each model k is scored by the probability it assigned to what actually
+ * happened: `p_k(y_t) = y_t · p_{t,k} + (1-y_t) · (1-p_{t,k})`. The update is
+ * `w_k ← w_k · p_k(y_t)`, renormalized. This is Bayes' rule applied online with
+ * a uniform prior over models — the blend at time t, `Σ_k w_{t,k}·p_{t,k}`, is
+ * exactly the predictive distribution a single fixed Bayesian mixture (prior
+ * 1/K, updated on y_1..y_{t-1}) would produce, because posterior weight
+ * updating is associative: `w_t(k) ∝ (1/K) · Π_{s<t} p_k(y_s)`.
+ *
+ * REGRET BOUND (exact, no O(·), holds for every T — not merely asymptotic).
+ * The mixture's total sequence probability is at least any single model's
+ * weighted contribution: `p_mix(y_1..y_T) = Σ_k (1/K)·Π_t p_k(y_t) ≥
+ * (1/K)·Π_t p_{k*}(y_t)` for the best model k* in hindsight (a sum of
+ * nonnegative terms is at least any one term). Taking logs:
+ * `Σ_t log p_mix(y_t) ≥ Σ_t log p_{k*}(y_t) − log K`. The cumulative log-score
+ * of the online blend equals `Σ_t log p_mix(y_t)` by the associativity above,
+ * so the blend's cumulative log-score is within `log K` of the best individual
+ * model's, for every T, unconditionally. Verified by executed simulation, not
+ * merely derived: see the "converges toward the model with the highest
+ * log-score" test.
+ */
+const PROB_EPSILON = 1e-12; // clamp away from 0/1 to avoid 0/0 = NaN
+
+export class BAEEEnsemble {
+
+=== expected-metrics/expected-points.ts (283 lines) ===
+/**
+ * Expected Points (EP) → our own EPA, from first principles on public play-by-play.
+ *
+ * nflverse ships `ep`/`epa` columns from ITS next-score model. We do NOT re-serve
+ * those numbers. Instead we fit our OWN expected-points surface from public
+ * situation columns (down, distance, field position, its curvature, goal-to-go,
+ * time) as a set of one-vs-rest binary logistics over the next scoring event, then
+ * define
+ *
+ *     EP(state) = Σ_k P(next-score = k) · value(k)
+ *     EPA       = EP(after) − EP(before)     (possession-frame corrected)
+ *
+ * The model is fit at load time on the real season (fit-on-load), so the served
+ * metric is always our computation on current public data — never hardcoded and
+ * never nflverse's figure. We then PROVE the metric by correlating our per-play EP
+ * against nflverse `ep` (and our EPA against `epa`) as REFEREE only (validation.ts)
+ * — same season, same season type, same `game_id`+`play_id` join, non-terminal
+ * plays only.
+ *
+ * Honest limitation: nflverse uses more history and heavier smoothing than a
+ * six-feature situation model; our per-play EP differs. The claim we can defend is
+ * reproduction of the situational EP surface, measured by correlation — not
+ * identity of the model.
+ */
+
+import { fitLogistic, predictLogistic, type LogisticModel } from "./logistic.js";
+import { computeFeatureSchemaHash, type ExpectedMetricProvenance } from "./types.js";
+
+/** One play state, mapped from an nflverse play-by-play row. */
+export interface EpPlay {
+  /** `game_id`+"-"+`play_id` — join/audit key, not a feature. */
+  readonly playId: string;
+  /** `down` 1–4. */
+  readonly down: number;
+  /** `ydstogo`. */
+  readonly ydstogo: number;
+  /** `yardline_100` 1–99, yards to THIS possession team's target end zone. */
+  readonly yardline100: number;
+  /** `half_seconds_remaining`; null → imputed to EP_DEFAULT_HALF_SECONDS. */
+  readonly halfSecondsRemaining: number | null;
+  /** `goal_to_go`, 0/1. */
+  readonly goalToGo: 0 | 1;
+  /** §next-score label; null = unlabelled (excluded from the fit). */
+  readonly nextScore: NextScoreOutcome | null;
+}
+
+=== expected-metrics/win-probability.ts (203 lines) ===
+/**
+ * Win Probability (WP) → our own WPA, from first principles on public play-by-play.
+ *
+ * nflverse ships `wp`/`wpa` columns from ITS win-probability model. We do NOT
+ * re-serve those numbers. Instead we fit OUR OWN single binary logistic of
+ * P(possession team ultimately wins | score margin, time, field position,
+ * down/distance, timeouts, market spread), and define
+ *
+ *     WP(state) = σ(β · features)      (already in the open interval (0, 1))
+ *     WPA       = WP(after) − WP(before)   (possession-frame corrected)
+ *
+ * Fit-on-load on the real season; the served metric is always our computation on
+ * current public data. We PROVE it by correlating our per-play WP against nflverse
+ * `wp` as REFEREE only (validation.ts) — same season, same season type, same
+ * `game_id`+`play_id` join, at play grain.
+ *
+ * SIGN-CONVENTION HAZARD: EP is a signed point expectation, so a possession flip
+ * NEGATES it (−EP). WP is a probability in [0, 1], so the opponent's win
+ * probability is the COMPLEMENT (1 − WP). These are different operations; treating
+ * a WP flip as a negation is the classic win-probability bug. See
+ * `winProbabilityAdded` below.
+ */
+
+import { fitLogistic, predictLogistic, type LogisticModel } from "./logistic.js";
+import { computeFeatureSchemaHash, type ExpectedMetricProvenance } from "./types.js";
+
+/** One play state, mapped from an nflverse play-by-play row. */
+export interface WpPlay {
+  /** `game_id`+"-"+`play_id` — join/audit key, not a feature. */
+  readonly playId: string;
+  /** `score_differential` (posteam − defteam), possession frame. */
+  readonly scoreDifferential: number;
+  /** `game_seconds_remaining`. */
+  readonly gameSecondsRemaining: number;
+  /** `yardline_100`, possession frame. */
+  readonly yardline100: number;
+  /** `down`. */
+  readonly down: number;
+  /** `ydstogo`. */
+  readonly ydstogo: number;
+  /** `posteam_timeouts_remaining`. */
+  readonly posteamTimeouts: number;
+  /** `defteam_timeouts_remaining`. */
+  readonly defteamTimeouts: number;
+  /** `spread_line`, possession frame; null → 0 (missing treated as pick'em, v1). */
+
+=== expected-metrics/success-rate.ts (174 lines) ===
+/**
+ * Success rate — a deterministic, closed-form play-quality metric (no fit).
+ *
+ * A play is "successful" on the standard down-conditioned yardage rule: gain at
+ * least 40% of yards-to-go on 1st down, 60% on 2nd, 100% on 3rd or 4th. A
+ * touchdown is a forced success; a turnover is a forced failure and DOMINATES a
+ * touchdown flag (a defensive-score turnover — the offense lost the ball — is an
+ * offensive failure). Plays with an unratable down (kickoff, two-point try, etc.)
+ * OR a non-finite `yardsGained`/`ydstogo` return null and are dropped from every
+ * count — never silently scored as a failure.
+ *
+ * This is a definitional metric: there is no model, no correlation gate, only
+ * determinism. It deliberately does not reuse `fitLogistic`/`fitRidge`/
+ * `rollupByPlayer` — those aggregate (actual, expected) pairs, whereas this counts
+ * a boolean over ratable plays; genuinely a different metric. There is no
+ * "over expected" here (an expected-success surface is out of scope for v1).
+ */
+
+import { round } from "./numeric.js";
+import { computeFeatureSchemaHash, type ExpectedMetricProvenance } from "./types.js";
+
+/** One scrimmage play, mapped from an nflverse play-by-play row. */
+export interface SuccessPlay {
+  /** `game_id`+"-"+`play_id` — join/audit key, not a feature. */
+  readonly playId: string;
+  /** `posteam`. */
+  readonly teamId: string;
+  /** `rusher_player_id` ?? `receiver_player_id`, or "" when neither applies. */
+  readonly playerId: string;
+  /** `down`. */
+  readonly down: number;
+  /** `ydstogo`. */
+  readonly ydstogo: number;
+  /** `yards_gained`. */
+  readonly yardsGained: number;
+  /** `touchdown` → forced success. */
+  readonly touchdown: 0 | 1;
+  /** `interception` | `fumble_lost` → forced failure (dominates a touchdown). */
+  readonly turnover: 0 | 1;
+}
+
+export const SUCCESS_RATE_MODEL_VERSION = "gse-success-v1";
+
+/** Fraction of yards-to-go that counts as success, keyed by down. */
+export const SUCCESS_YARDAGE_FRACTION: Readonly<Record<1 | 2 | 3 | 4, number>> = {
+
+=== expected-metrics/expected-completion.ts (174 lines) ===
+/**
+ * Expected Completion Probability → our own CPOE (completion % over expected).
+ *
+ * NGS publishes a `completion_percentage_above_expectation` per passer, computed
+ * from its private tracking-based expected-completion model. We do NOT re-serve
+ * that number. Instead we fit OUR OWN expected-completion model on public
+ * play-by-play features — pass depth (air yards, and its curvature), pressure
+ * (QB hit), throw location, and down/distance/field position — and define
+ *
+ *     GSE-CPOE(passer) = 100 × mean(complete − P̂(complete))
+ *
+ * over the passer's qualifying dropbacks. The model is fit at load time on the
+ * real season of dropbacks (fit-on-load), so the served metric is always our
+ * computation on current public data, never hardcoded and never NGS's figure.
+ * We then PROVE the metric by correlating GSE-CPOE against NGS CPOE as ground
+ * truth (see validation.ts) — same player, same season, same qualifier.
+ *
+ * Honest limitation: NGS's expected-completion model also sees receiver
+ * separation and defender proximity (tracking data we do not have), so our
+ * per-play probabilities differ. The claim we can defend is reproduction of the
+ * per-passer RANKING/level, measured by correlation — not identity of the model.
+ */
+
+import { fitLogistic, predictLogistic, type LogisticModel } from "./logistic.js";
+import { rollupByPlayer, type PlayerPlayOutcome } from "./rollup.js";
+import { computeFeatureSchemaHash, type ExpectedMetricProvenance, type PlayerExpectedMetric } from "./types.js";
+
+/** One dropback pass attempt, mapped from an nflverse play-by-play row. */
+export interface DropbackPlay {
+  /** Passer gsis id (`passer_player_id`). */
+  readonly passerId: string;
+  /** Outcome: 1 if the pass was completed (`complete_pass`), else 0. */
+  readonly complete: 0 | 1;
+  /** Intended air yards (`air_yards`); negative for throws behind the line. */
+  readonly airYards: number;
+  /** Field position, yards to opponent goal (`yardline_100`), 1–99. */
+  readonly yardline100: number;
+  /** Down (`down`), 1–4. */
+  readonly down: number;
+  /** Yards to go (`ydstogo`). */
+  readonly ydstogo: number;
+  /** Shotgun snap (`shotgun`), 0/1. */
+  readonly shotgun: 0 | 1;
+  /** No-huddle (`no_huddle`), 0/1. */
+  readonly noHuddle: 0 | 1;
+
+=== expected-metrics/expected-rush-yards.ts (154 lines) ===
+/**
+ * Expected Rush Yards → our own RYOE (rush yards over expected per attempt).
+ *
+ * NGS publishes `rush_yards_over_expected_per_att` from a tracking model that
+ * knows defenders-in-the-box and player speed. We do NOT re-serve it. We fit OUR
+ * OWN expected-rush-yards model on public play-by-play — field position, down,
+ * distance, shotgun, score differential, and run direction (location + gap) — and
+ * define
+ *
+ *     GSE-RYOE(rusher) = mean(rushingYards − ŷ(rushingYards))
+ *
+ * over the rusher's qualifying carries, fit-on-load against the real season.
+ *
+ * Honest limitation: without tracking we cannot see the box count or the runner's
+ * closing speed, which are exactly what NGS's model keys on. So our per-carry
+ * expectation is coarser and our RYOE will correlate only moderately with NGS
+ * RYOE (documented in validation.ts). That gap is the honest boundary of a
+ * public-data reconstruction — we report the correlation we actually earn.
+ */
+
+import { fitRidge, predictRidge, type LinearModel } from "./linear.js";
+import { rollupByPlayer, type PlayerPlayOutcome } from "./rollup.js";
+import { computeFeatureSchemaHash, type ExpectedMetricProvenance, type PlayerExpectedMetric } from "./types.js";
+
+/** One designed rush attempt, mapped from an nflverse play-by-play row. */
+export interface RushPlay {
+  /** Rusher gsis id (`rusher_player_id`). */
+  readonly rusherId: string;
+  /** Outcome: yards gained on the carry (`rushing_yards`). */
+  readonly rushingYards: number;
+  /** Field position, yards to opponent goal (`yardline_100`), 1–99. */
+  readonly yardline100: number;
+  /** Down (`down`), 1–4. */
+  readonly down: number;
+  /** Yards to go (`ydstogo`). */
+  readonly ydstogo: number;
+  /** Shotgun snap (`shotgun`), 0/1. */
+  readonly shotgun: 0 | 1;
+  /** Offense score minus defense score at snap (`score_differential`). */
+  readonly scoreDifferential: number;
+  /** Run location (`run_location`): left/middle/right, or null. */
+  readonly runLocation: "left" | "middle" | "right" | null;
+  /** Run gap (`run_gap`): end/tackle/guard, or null. */
+  readonly runGap: "end" | "tackle" | "guard" | null;
+}
+
+=== expected-metrics/expected-yac.ts (142 lines) ===
+/**
+ * Expected YAC → our own YAC-over-expected (yards after catch above expectation).
+ *
+ * NGS publishes `avg_yac_above_expectation` per receiver from a tracking model.
+ * We do NOT re-serve it. We fit OUR OWN expected-YAC model on public play-by-play
+ * — pass depth (air yards), throw location, field position, and down/distance —
+ * and define
+ *
+ *     GSE-xYAC(receiver) = mean(yardsAfterCatch − ŷ(yardsAfterCatch))
+ *
+ * over the receiver's qualifying receptions, fit-on-load against the real season.
+ *
+ * Honest limitation: air yards is a strong public proxy for expected YAC (short,
+ * in-stride catches carry more YAC potential than deep contested ones), but NGS
+ * also sees defender proximity at the catch point. We report the correlation we
+ * earn against NGS (validation.ts), not an assumed identity.
+ */
+
+import { fitRidge, predictRidge, type LinearModel } from "./linear.js";
+import { rollupByPlayer, type PlayerPlayOutcome } from "./rollup.js";
+import { computeFeatureSchemaHash, type ExpectedMetricProvenance, type PlayerExpectedMetric } from "./types.js";
+
+/** One completed reception, mapped from an nflverse play-by-play row. */
+export interface CatchPlay {
+  /** Receiver gsis id (`receiver_player_id`). */
+  readonly receiverId: string;
+  /** Outcome: yards after catch (`yards_after_catch`). */
+  readonly yardsAfterCatch: number;
+  /** Intended air yards (`air_yards`); negative for catches behind the line. */
+  readonly airYards: number;
+  /** Field position, yards to opponent goal (`yardline_100`), 1–99. */
+  readonly yardline100: number;
+  /** Down (`down`), 1–4. */
+  readonly down: number;
+  /** Yards to go (`ydstogo`). */
+  readonly ydstogo: number;
+  /** Throw location (`pass_location`): left/middle/right, or null. */
+  readonly passLocation: "left" | "middle" | "right" | null;
+}
+
+/** Canonical, ordered feature contract for the expected-YAC model. */
+export const EXPECTED_YAC_FEATURE_KEYS = [
+  "airYards",
+  "yardline100",
+  "down",
+
+=== gse-score/model-parliament.ts (141 lines) ===
+export type ModelParliamentStatus = "OK" | "WARN" | "BLOCK";
+
+export interface ModelVote {
+  readonly modelId: string;
+  readonly probability: number;
+  readonly confidence: number;
+  readonly evidenceWeight?: number;
+  readonly stale?: boolean;
+}
+
+export interface ModelParliamentInput {
+  readonly votes: readonly ModelVote[];
+  readonly maxDisagreement?: number;
+}
+
+export interface ModelParliamentDriver {
+  readonly name: string;
+  readonly impact: number;
+  readonly explanation: string;
+}
+
+export interface ModelParliamentResult {
+  readonly status: ModelParliamentStatus;
+  readonly modeledProbability: number | null;
+  readonly confidenceScore: number;
+  readonly disagreement: number;
+  readonly votesUsed: number;
+  readonly warnings: readonly string[];
+  readonly drivers: readonly ModelParliamentDriver[];
+}
+
+export function aggregateModelParliament(input: ModelParliamentInput): ModelParliamentResult {
+  const validVotes = input.votes.filter(
+    (vote) =>
+      Number.isFinite(vote.probability) &&
+      vote.probability >= 0 &&
+      vote.probability <= 1 &&
+      Number.isFinite(vote.confidence) &&
+      vote.confidence > 0,
+  );
+
+  if (validVotes.length === 0) {
+    return {
+      confidenceScore: 0,
+      disagreement: 1,
+
+=== gse-score/gse-action-score.ts (250 lines) ===
+import {
+  assessCalibrationContract,
+  type CalibrationContractInput,
+  type CalibrationContractResult,
+} from "./calibration-contract.js";
+import {
+  calibrationActionCap,
+  calibrationRequiresHardPass,
+  calibrationRiskSeverity,
+} from "./calibration-action-policy.js";
+import {
+  evaluateFeatureContract,
+  type FeatureContractInput,
+  type FeatureContractResult,
+} from "./feature-contract.js";
+import {
+  aggregateModelParliament,
+  type ModelParliamentInput,
+  type ModelParliamentResult,
+} from "./model-parliament.js";
+import {
+  computeNoBetStrength,
+  type NoBetRiskInput,
+  type NoBetStrengthResult,
+} from "./no-bet-strength.js";
+
+export type GseActionDecision = "PLAY" | "LEAN" | "WATCH" | "PASS" | "HARD_PASS";
+
+export interface GseActionScoreInput {
+  readonly marketProbability: number;
+  readonly modelParliament: ModelParliamentInput;
+  readonly featureContract: FeatureContractInput;
+  readonly calibration: CalibrationContractInput;
+  readonly additionalNoBetRisks?: readonly NoBetRiskInput[];
+}
+
+export interface GseActionDriver {
+  readonly name: string;
+  readonly direction: "UP" | "DOWN" | "NEUTRAL";
+  readonly impact: number;
+  readonly explanation: string;
+}
+
+export interface GseActionScoreResult {
+  readonly score: number;
+
+=== gse-score/no-bet-strength.ts (105 lines) ===
+export type NoBetDecision = "CLEAR" | "WATCH" | "SOFT_PASS" | "HARD_PASS";
+
+export type NoBetRiskFactor =
+  | "MISSING_REQUIRED_DATA"
+  | "STALE_DATA"
+  | "MODEL_DISAGREEMENT"
+  | "CALIBRATION_NOT_VALIDATED"
+  | "SOURCE_RIGHTS_BLOCKED"
+  | "LOW_EVIDENCE"
+  | "MARKET_VOLATILITY"
+  | "RESPONSIBLE_GAMING";
+
+export interface NoBetRiskInput {
+  readonly factor: NoBetRiskFactor;
+  readonly severity: number;
+  readonly reason: string;
+  readonly hardBlock?: boolean;
+}
+
+export interface NoBetDriver {
+  readonly name: string;
+  readonly impact: number;
+  readonly explanation: string;
+}
+
+export interface NoBetStrengthInput {
+  readonly risks: readonly NoBetRiskInput[];
+  readonly evidenceHealth?: number;
+}
+
+export interface NoBetStrengthResult {
+  readonly score: number;
+  readonly decision: NoBetDecision;
+  readonly hardPassReasons: readonly string[];
+  readonly drivers: readonly NoBetDriver[];
+}
+
+const RISK_IMPACT: Record<NoBetRiskFactor, number> = {
+  CALIBRATION_NOT_VALIDATED: 16,
+  LOW_EVIDENCE: 18,
+  MARKET_VOLATILITY: 12,
+  MISSING_REQUIRED_DATA: 45,
+  MODEL_DISAGREEMENT: 22,
+  RESPONSIBLE_GAMING: 100,
+  SOURCE_RIGHTS_BLOCKED: 70,
+
+=== gse-score/calibration-contract.ts (98 lines) ===
+export type CalibrationContractStatus =
+  | "VALIDATED"
+  | "WATCH"
+  | "INSUFFICIENT_SAMPLE"
+  | "DRIFTING"
+  | "BLOCKED";
+
+export interface CalibrationContractInput {
+  readonly sampleCount: number;
+  readonly minSampleCount?: number;
+  readonly expectedCalibrationError?: number;
+  readonly maxExpectedCalibrationError?: number;
+  readonly brierScore?: number;
+  readonly baselineBrierScore?: number;
+  readonly driftScore?: number;
+  readonly maxDriftScore?: number;
+}
+
+export interface CalibrationContractResult {
+  readonly status: CalibrationContractStatus;
+  readonly probabilityClaimsAllowed: boolean;
+  readonly scoreModifier: number;
+  readonly reasons: readonly string[];
+}
+
+export function assessCalibrationContract(input: CalibrationContractInput): CalibrationContractResult {
+  const minSampleCount = input.minSampleCount ?? 250;
+  const maxEce = input.maxExpectedCalibrationError ?? 0.06;
+  const maxDrift = input.maxDriftScore ?? 0.1;
+  const reasons: string[] = [];
+
+  if (input.sampleCount < minSampleCount) {
+    reasons.push(`Calibration sample ${input.sampleCount} is below required ${minSampleCount}.`);
+    return {
+      probabilityClaimsAllowed: false,
+      reasons,
+      scoreModifier: -18,
+      status: "INSUFFICIENT_SAMPLE",
+    };
+  }
+
+  if (input.expectedCalibrationError === undefined || !Number.isFinite(input.expectedCalibrationError)) {
+    reasons.push("Expected calibration error is missing.");
+    return {
+      probabilityClaimsAllowed: false,
+
+=== consensus.ts (128 lines) ===
+/**
+ * Consensus / divergence aggregator — reduces the independent referees (Kalshi,
+ * Elo, Poisson, …; each an IndependentMarketFairValue) into a single consensus
+ * probability plus DIVERGENCE metrics: dispersion, agreement score, outliers, and
+ * the gap to the market line. This is the data layer behind the first-of-kind
+ * public glass-box "consensus surface" — show where the referees AGREE (confidence)
+ * and where they DIVERGE (the edge) — and a divergence feature the edge engine can weight.
+ *
+ * Distinct from edge-engine.ts (which decides PASS/LEAN/SPEAK on a single side):
+ * this summarizes the whole source field for display + as a feature. Pure, no I/O.
+ * Sign convention: all probabilities are P(home wins), in [0, 1].
+ */
+import type { IndependentMarketFairValue } from "@sports/types";
+
+export interface SourceProb {
+  readonly source: string;
+  readonly homeProb: number;
+  readonly weight: number;
+}
+
+export interface ConsensusOutlier {
+  readonly source: string;
+  readonly homeProb: number;
+  /** Standardized distance from consensus (>0 = sees home as more likely). */
+  readonly z: number;
+}
+
+export interface ConsensusResult {
+  /** Weighted-mean P(home); null if no source had a home quote. */
+  readonly consensusHomeProb: number | null;
+  /** Weighted std-dev of source home probs (0 = perfect agreement). */
+  readonly dispersion: number;
+  /** 0–1; 1 = unanimous, 0 = maximally split. */
+  readonly agreementScore: number;
+  readonly sources: number;
+  /**
+   * Sources ≥2σ from consensus, standardized against the weighted *population*
+   * std-dev (`dispersion`). Scanned only when ≥3 sources and dispersion>0. That
+   * ≥3 guard is a conservative floor, not the count at which a flag first becomes
+   * feasible: see `computeConsensus` for why an equal-weight field cannot reach
+   * the 2σ bar until ≥5 sources (max |z| = √(n−1)).
+   */
+  readonly outliers: readonly ConsensusOutlier[];
+  /** consensus − market P(home); >0 = referees rate home higher than the book. Null if no market. */
+  readonly marketDivergence: number | null;
+
+=== green-board.ts (53 lines) ===
+export const GREEN_P_MIN = 0.70;          // board average target ≥ 0.72
+export const INDEPENDENT_DISSENT_BAND = 0.06; // independent > 6pts under p* = veto
+export interface GreenGateInput {
+  calibratedP: number;
+  bookmakerCount: number;
+  freshnessOk: boolean;
+  independents: {
+    elo?: number | null;
+    poisson?: number | null;
+    fpi?: number | null;
+  };
+  vetoFlags: readonly string[];
+}
+export type BoardTier = "PRIME" | "GREEN" | null; // PRIME: p>=0.80, GREEN: p>=0.70
+export interface GreenGateResult {
+  tier: BoardTier;
+  green: boolean;
+  reasons: readonly string[];
+}
+export function greenBoardEligible(input: GreenGateInput): GreenGateResult {
+  const PRIME_P_MIN = 0.80;
+  const reasons: string[] = [];
+
+  if (input.calibratedP < GREEN_P_MIN) {
+    reasons.push("GREEN_P_MIN");
+    return { tier: null, green: false, reasons };
+  }
+  if (input.bookmakerCount < 2 || !input.freshnessOk) {
+    reasons.push(input.bookmakerCount < 2 ? "BOOKMAKER_COUNT" : "FRESHNESS");
+    return { tier: null, green: false, reasons };
+  }
+  const { elo, poisson, fpi } = input.independents;
+  const dissentBands = [];
+  if (elo !== null && elo !== undefined && input.calibratedP - elo > INDEPENDENT_DISSENT_BAND) {
+    dissentBands.push("elo");
+  }
+  if (poisson !== null && poisson !== undefined && input.calibratedP - poisson > INDEPENDENT_DISSENT_BAND) {
+    dissentBands.push("poisson");
+  }
+  if (fpi !== null && fpi !== undefined && input.calibratedP - fpi > INDEPENDENT_DISSENT_BAND) {
+    dissentBands.push("fpi");
+  }
+  if (dissentBands.length > 0) {
+    reasons.push("INDEPENDENT_DISSENT");
+    return { tier: null, green: false, reasons };
+
+=== clv.ts (177 lines) ===
+/**
+ * Closing-Line Value (CLV) — the sharp's gold-standard credibility metric.
+ *
+ * CLV measures whether the price/line you locked beat where the market closed.
+ * Beating the close is the strongest *leading* indicator of genuine edge: it
+ * predicts long-run profitability even before a single game settles, because the
+ * closing line is the market's most efficient estimate. Every serious tool
+ * (OddsJam, Unabated, Pikkit) centers CLV — and a platform whose thesis is
+ * "calibrated, not just confident" should publish it as proof, not promise.
+ *
+ * Pure functions only — no DB, no side effects, fully unit-testable. These are
+ * engine primitives; surfacing CLV in the public track record is a separate,
+ * deliberate step.
+ *
+ * Line conventions match settlement.ts:
+ *   SPREAD `line` is from the HOME team's perspective
+ *     (negative = home favored / laying points; positive = home getting points).
+ *   TOTAL `line` is the combined points total.
+ *   MONEYLINE prices are American odds.
+ *
+ * Sign convention for all CLV outputs: POSITIVE = you beat the close (good).
+ */
+
+import { americanToImpliedProbability } from "./scoring.js";
+
+export type ClvVerdict = "BEAT_CLOSE" | "MATCHED_CLOSE" | "LOST_TO_CLOSE";
+
+export type SpreadSide = "HOME" | "AWAY";
+export type TotalSide = "OVER" | "UNDER";
+
+// Lines move in half-points; treat anything within this as "no movement".
+const POINTS_EPSILON = 1e-9;
+// Default tolerance for moneyline implied-probability CLV (0.5 percentage points)
+// so trivial price wiggles read as MATCHED rather than a beat/loss.
+const DEFAULT_ML_EPSILON = 0.005;
+
+function verdictFromValue(value: number, epsilon: number): ClvVerdict {
+  if (value > epsilon) return "BEAT_CLOSE";
+  if (value < -epsilon) return "LOST_TO_CLOSE";
+  return "MATCHED_CLOSE";
+}
+
+function round(value: number, digits = 4): number {
+  const scale = 10 ** digits;
+  return Math.round(value * scale) / scale;
+
+=== composite-score.ts (97 lines) ===
+/**
+ * Weighted composite score — the "weight absolutely everything" matrix.
+ *
+ * Blends any set of signals (hard metrics AND soft signals — practice
+ * participation, injury/concussion status, rehab visits, beat-reporter rumors)
+ * into ONE score, and reports each signal's attributed contribution so the
+ * interpretation/narration layer can say WHY.
+ *
+ * Two honesty valves keep soft signals from masquerading as facts:
+ *   - confidence (0..1): a settled stat ≈ 1.0, a rumor ≈ 0.2.
+ *   - freshness: exponential half-life decay on signal age, so stale rumors fade.
+ *
+ * Scale-agnostic: `value` is each signal's directional reading on a shared scale
+ * (e.g. z-scores or −1..1). The caller maps the blended score to a 0–100 index.
+ * Pure and db-free.
+ */
+
+export interface WeightedSignal {
+  readonly key: string;
+  /** Directional reading on a scale shared across signals (e.g. z-score; + good, − bad). */
+  readonly value: number;
+  /** Base importance (>= 0). */
+  readonly weight: number;
+  /** Reliability 0..1 (default 1). The valve that keeps a rumor from voting like a fact. */
+  readonly confidence?: number;
+  /** Age in days for freshness decay (default 0 = fresh). */
+  readonly ageDays?: number;
+}
+
+export interface SignalContribution {
+  readonly key: string;
+  readonly value: number;
+  readonly effectiveWeight: number; // weight × confidence × freshness
+  readonly contribution: number; // value × effectiveWeight (signed)
+  /** Share of the total effective weight — how much this signal influenced the blend. */
+  readonly weightShare: number;
+}
+
+export interface CompositeScore {
+  readonly score: number; // effective-weighted average of the signal values
+  readonly totalWeight: number;
+  readonly signalsUsed: number;
+  /** Contributions sorted by |contribution| desc — the narration order ("what drove it"). */
+  readonly contributions: readonly SignalContribution[];
+}
+
+=== conviction-tier.ts (172 lines) ===
+/**
+ * Conviction tier — the honest "70% tier" selector.
+ *
+ * WHAT THIS IS
+ * A pure classifier that decides whether a pick belongs in the high-conviction
+ * tier we are willing to stand behind publicly. It does NOT predict anything and
+ * does NOT change the confidence score — it reads already-computed signals and
+ * applies a single, honest bar:
+ *
+ *   1. a CALIBRATED probability of winning (not the raw heuristic confidence —
+ *      see probability-calibration.ts), strictly in [0, 1], AND
+ *   2. the pick must clear the PRICE-SPECIFIC break-even (a -200 favorite needs
+ *      66.7%, not the -110 default of 52.4%), AND
+ *   3. an independent EDGE decision of SPEAK (Poisson + Kalshi agree — edge-engine.ts), AND
+ *   4. a CLV track record on the segment that is both strong enough AND large
+ *      enough to be real (we have actually, repeatedly beaten the close — clv.ts).
+ *
+ * WHY IT IS GATED OFF
+ * The whole point of a "70% tier" is that the number is real. That requires
+ * calibration (currently founder-gated behind a MODEL_VERSION bump) and a settled
+ * sample. So this module is additive and inert: nothing in the live scoring or
+ * publishing path calls it yet. It exists so the selection logic is written,
+ * tested, and ready to wire the moment the calibration switch is thrown.
+ *
+ * HONESTY GUARDS (added per review)
+ * - Out-of-range probability is REJECTED, not clamped: if the future wiring ever
+ *   passes the raw 0–100 confidence by mistake, 70 would clamp to 1.0 and certify
+ *   a 100% pick. We treat anything outside [0, 1] as missing calibration → PASS.
+ * - Conviction requires a MINIMUM CLV sample: a single graded pick that beat the
+ *   close (rate = 1.0, n = 1) must not certify a "proven" track record.
+ * - Break-even is PRICE-SPECIFIC: playability is judged against the pick's own
+ *   American price, so heavy favorites are held to their true (higher) break-even.
+ *
+ * See docs/path-to-70.md for the staged plan this implements.
+ *
+ * Pure functions, no I/O — fully unit-testable. All probabilities are in [0, 1].
+ */
+
+import { clamp, americanToImpliedProbability } from "./scoring.js";
+import type { EdgeDecision } from "./edge-engine.js";
+
+/** Break-even win rate at standard -110 odds, used when no pick price is supplied. */
+export const BREAK_EVEN_PROBABILITY = 0.524;
+/** Calibrated-probability floor for the high-conviction ("70%") tier. */
+export const CONVICTION_MIN_PROBABILITY = 0.65;
+
+=== conformal/conformal-intervals.ts :: MISSING ===
+=== edge-lab/falsify.ts :: MISSING ===
+=== honesty/glass-receipts.ts (143 lines) ===
+/**
+ * Glass Ledger receipt chain (pure) — demo fingerprint for open recompute.
+ * Production anchors with stronger hash + OpenTimestamps; structure matches.
+ */
+
+export interface PickReceipt {
+  readonly pickId: string;
+  readonly sport: string;
+  readonly market: string;
+  readonly selection: string;
+  readonly modelVersion: string;
+  readonly committedAt: string;
+  readonly settledAt: string | null;
+  readonly result: "WIN" | "LOSS" | "PUSH" | "OPEN" | "BOOTSTRAP";
+  readonly edgeIndex: number | null;
+  readonly clv: number | null;
+  readonly fingerprint: string;
+  readonly prevFingerprint: string | null;
+}
+
+export interface LedgerHead {
+  readonly masterFingerprint: string;
+  readonly n: number;
+  readonly nSettled: number;
+  readonly nBootstrap: number;
+  readonly winRatePublic: boolean;
+  readonly winRate: number | null;
+  readonly gate: string;
+}
+
+/** FNV-1a 32-bit — deterministic demo fingerprint (not production crypto). */
+export function fingerprintPayload(payload: string): string {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < payload.length; i++) {
+    h ^= payload.charCodeAt(i);
+    h = Math.imul(h, 0x01000193);
+  }
+  return ("00000000" + (h >>> 0).toString(16)).slice(-8);
+}
+
+export function buildReceipt(input: {
+  pickId: string;
+  sport: string;
+  market: string;
+  selection: string;
+
+=== honesty/no-bet-gate.ts (97 lines) ===
+/**
+ * Product No-Bet Gate — refuse-default surface codes for board UI / logging.
+ * Complements computeNoBetStrength (GSE score engine) without colliding names.
+ * Fire on calibrated edge e = pLo - q, never confidence.
+ */
+
+export type ProductNoBetCode =
+  | "LIVE_BOARD_OFF"
+  | "FRESHNESS_FAILED"
+  | "PRICE_BELOW_THRESHOLD"
+  | "MODEL_DISAGREEMENT"
+  | "SAMPLE_FLOOR"
+  | "WIDTH_EXCEEDED"
+  | "EDGE_BELOW_TAU"
+  | "STALE_ODDS"
+  | "MISSING_INPUT"
+  | "RIGHTS_HOLD";
+
+export interface ProductNoBetEvidence {
+  readonly oddsAgeMs: number;
+  readonly maxOddsAgeMs: number;
+  readonly n: number;
+  readonly nMin: number;
+  readonly width: number;
+  readonly widthMax: number;
+  readonly pLo: number;
+  readonly q: number;
+  readonly tau: number;
+  readonly liveBoardEnabled: boolean;
+  readonly missingInput?: string | null;
+  readonly rightsHold?: boolean;
+}
+
+export interface ProductNoBetResult {
+  readonly action: "PLAY" | "NO_BET";
+  readonly codes: readonly ProductNoBetCode[];
+  readonly modelVersion: string;
+  readonly edge: number;
+  readonly summary: string;
+  readonly logged: true;
+}
+
+export const PRODUCT_NO_BET_COPY: Record<ProductNoBetCode, string> = {
+  LIVE_BOARD_OFF: "Live board flag is off — founder-gated.",
+  FRESHNESS_FAILED: "Quote freshness failed the age clamp.",
+
+=== honesty/devig-method-compare.ts (105 lines) ===
+/**
+ * Honesty helper: multiplicative (proportional) de-vig vs Shin vs goto
+ * on the same two-way book.
+ *
+ * Hegarty & Whelan (2025) / sportcal: multiplicative de-vig manufactures
+ * longshot "value" by shrinking the favourite too little and the longshot
+ * too much. GSE still stamps multiplicative_devig_v1 on some quote-plane
+ * paths while Shin lives in prediction-engine. This module does not change
+ * live scoring — it exposes the three fairs so an honesty surface can show
+ * the disagreement instead of pretending they are the same p.
+ *
+ * Not wired into pick minting. MODEL_VERSION untouched.
+ */
+
+import { removeVig } from "../scoring.js";
+import { gotoConversion, shinDevig } from "../shin-devig.js";
+
+export type DevigMethodName = "multiplicative" | "shin" | "goto";
+
+export interface TwoWayBook {
+  /** Raw implied probability (1/decimal), vig still in. */
+  readonly homeImplied: number;
+  readonly awayImplied: number;
+}
+
+export interface MethodFair {
+  readonly method: DevigMethodName;
+  readonly home: number;
+  readonly away: number;
+}
+
+export interface DevigMethodCompare {
+  readonly booksum: number;
+  readonly multiplicative: MethodFair;
+  readonly shin: MethodFair;
+  readonly goto: MethodFair;
+  /**
+   * multiplicative[longshot] − shin[longshot]. Positive means multiplicative
+   * inflated the longshot relative to Shin (the Hegarty/Whelan pattern).
+   */
+  readonly longshotInflation: number;
+  readonly longshotSide: "home" | "away";
+}
+
+function longshotSide(homeImplied: number, awayImplied: number): "home" | "away" {

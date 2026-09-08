@@ -1,0 +1,36 @@
+{
+  "domain": "sportradar.com",
+  "disposition": "live",
+  "disposition_reason": "Developer portal + Odds Comparison API docs (/llms.txt → /odds/reference/*.md) fully public; API host api.sportradar.com with trial/production OpenAPI specs; pricing/contact-gated tiers. B2B enterprise pricing.",
+  "tech_stack": {
+    "frontend": "Marketing site Next.js React (Vercel cle1:iad1 edge). Developer docs on readmeio-style portal (developer.sportradar.com).",
+    "backend": "API host https://api.sportradar.com serving Odds Comparison v2 (prematch/live-odds/player-props/futures/core) + Mapping feeds; access-tier key configuration (OC Core = global crawlers vs default US Magic Crawlers).",
+    "database": "NOT CONFIRMED",
+    "cloud_cdn": "Vercel (Next.js) + Cloudflare; README.io docs",
+    "citations": ["https://sportradar.com","https://developer.sportradar.com/odds/","https://developer.sportradar.com/odds/reference/oc-core-overview.md","https://api.sportradar.com/oddscomparison-prematch/trial/v2/openapi/swagger/index.html"]
+  },
+  "api_architecture": {
+    "rest_endpoints": [
+      {"method":"GET","path":"https://api.sportradar.com/oddscomparison-prematch/trial/v2/openapi/swagger/index.html","auth_required":"API key (trial)","tier":"trial","sample_response":"NOT CONFIRMED","citation":"https://developer.sportradar.com/odds/reference/oc-prematch-overview.md"},
+      {"method":"GET","path":"https://api.sportradar.com/oddscomparison-liveodds/production/v2/openapi/swagger/index.html","auth_required":"API key (production)","tier":"production","sample_response":"NOT CONFIRMED","citation":"https://developer.sportradar.com/odds/reference/oc-core-overview.md"},
+      {"method":"GET","path":"https://api.sportradar.com/oddscomparison-player-props/trial/v2/openapi/swagger/index.html","auth_required":"API key","tier":"trial","sample_response":"NOT CONFIRMED","citation":"https://developer.sportradar.com/odds/reference/oc-core-overview.md"},
+      {"method":"GET","path":"https://api.sportradar.com/oddscomparison-futures/trial/v2/openapi/swagger/index.html","auth_required":"API key","tier":"trial","sample_response":"NOT CONFIRMED","citation":"https://developer.sportradar.com/odds/reference/oc-core-overview.md"},
+      {"method":"GET","path":"OC Prematch feeds: Books / Competition Schedules / Daily Schedules / Sport Event Markets / Sports / Sport Categories / Competitions / Stages","auth_required":"API key (x-api-key)","tier":"US Prematch (default); OC Core = global","sample_response":"books list w/ bookmaker IDs (MGM 17324, DraftKings 18149, FanDuel 18186, BetRivers 27447, PointsBet 27769, Bet365.US.NJ 28901, WilliamHillNewJersey 32219, ESPNbetCom 40316, Consensus 25080)","citation":"https://developer.sportradar.com/odds/reference/oc-prematch-overview.md"},
+      {"method":"GET","path":"Mapping endpoints (Competition/Competitor/Player/Sport-Event/Sport/Stages Mappings)","auth_required":"API key","tier":"OC Core","sample_response":"league-specific ID ↔ General Sport ID mappings","citation":"https://developer.sportradar.com/odds/reference/oc-core-overview.md"}
+    ],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED — documented per-key tier; no numeric rate-limit captured",
+    "citations": ["https://developer.sportradar.com/odds/llms.txt","https://developer.sportradar.com/odds/reference/oc-core-overview.md","https://developer.sportradar.com/odds/reference/oc-prematch-overview.md"]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {"model_types":"NOT CONFIRMED","training_data":"NOT CONFIRMED","update_frequency":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "simulation_engine": {"num_simulations":"NOT CONFIRMED","correlation_method":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "data_supply_chain": {"vendors":"Sportradar is itself a primary odds/data vendor — Odds Comparison aggregator across 140+ global bookmakers (OC Core) and 9 US bookmakers (default Prematch pipeline); NOT CONFIRMED as consumer of upstream stats vendors from fetched docs","citations":["https://developer.sportradar.com/odds/reference/oc-prematch-overview.md","https://developer.sportradar.com/odds/reference/oc-core-overview.md"]},
+  "product_limits": {"limits":"NOT CONFIRMED — OC Core access requires Support key-level enablement (no self-service limits surfaced)","upgrade_triggers":"OC Core upgrade from default US 'Magic Crawlers' pipeline via Support","citation":"https://developer.sportradar.com/odds/reference/oc-core-overview.md"},
+  "pricing": {"web":"NOT CONFIRMED — no public SKU/price table; 'Contact Sales' / trial keys only; /pricing and /trial are region-selector shells","ios":"NOT CONFIRMED","android":"NOT CONFIRMED","citations":["https://sportradar.com/pricing/","https://sportradar.com/trial/","https://developer.sportradar.com/odds/reference/oc-core-overview.md"]},
+  "customer_pain": [],
+  "discovered_paths": ["/developers/","/pricing/","/trial/","/odds/","/odds/reference/oc-core-overview.md","/odds/reference/oc-prematch-overview.md","https://api.sportradar.com/oddscomparison-prematch/trial/v2/openapi/swagger/index.html"],
+  "discovered_targets": ["api.sportradar.com","developer.sportradar.com"],
+  "discovery_metadata": {"method":"read-only HTTP GET of developer.sportradar.com docs + llms.txt .md crawl + OpenAPI swagger host extraction","timestamp":"2026-09-08T21:26:00Z"}
+}

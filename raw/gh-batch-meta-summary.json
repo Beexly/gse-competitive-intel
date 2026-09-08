@@ -1,0 +1,30 @@
+{
+  "floodlight-sports/floodlight": {
+    "status": 200,
+    "rate_remaining": null
+  },
+  "eddwebster/football_analytics": {
+    "status": 200,
+    "rate_remaining": null
+  },
+  "n-roth12/DFSLineupOptimizer": {
+    "status": 200,
+    "rate_remaining": null
+  },
+  "chanzer0/MLB-DFS-Tools": {
+    "status": 200,
+    "rate_remaining": null
+  },
+  "jscanga/Sports-Arbitrage-Finder": {
+    "status": 200,
+    "rate_remaining": null
+  },
+  "tonyntran/fantasy-auction-assistant": {
+    "status": 200,
+    "rate_remaining": null
+  },
+  "J-A-Stone-LLC/fantasy-football-gm": {
+    "status": 404,
+    "rate_remaining": null
+  }
+}

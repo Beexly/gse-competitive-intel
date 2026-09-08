@@ -1,0 +1,122 @@
+{
+ "domain": "pizzint.watch",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/px_pizzint_watch_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_pizzint_watch_home.raw",
+   "raw\\px_pizzint_watch_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "ws.com/food-drink/how-papa-johns-pizza-surge-near-pentagon-tipped-off-social-media-before-trumps-decisive-iran-strike",
+    "ws.com/us-anti-cartel-operation-outside-of-the-us-before-april-EiRwQTcBGKTa.jpg",
+    "ws.com/will-the-us-invade-iran-in-2025-0Eh3J0ku_Fbj.jpg",
+    "ws.com/us-strike-on-colombia-by-january-31-P4KCpXnvCj4O.jpg",
+    "ws.com/us-strike-on-cuba-by-december-31-pSKqauf5Hk1c.jpg",
+    "ws.com/israel-x-turkey-military-clash-by-MraP5uAn87e2.jpg"
+   ],
+   "citation": "raw/px_pizzint_watch_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_pizzint_watch_home.raw"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_pizzint_watch_home.raw"
+  },
+  "citations": [
+   "raw\\px_pizzint_watch_home.raw",
+   "raw\\px_pizzint_watch_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'The Pentagon Pizza Index tracks real-time pizza activity near the Pentagon as an' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "Polymarket",
+    "polymarket"
+   ],
+   "citation": "raw/px_pizzint_watch_home.raw"
+  },
+  "citations": [
+   "raw\\px_pizzint_watch_home.raw",
+   "raw\\px_pizzint_watch_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_pizzint_watch_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_pizzint_watch_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "Free"
+   ],
+   "citation": "raw/px_pizzint_watch_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_pizzint_watch_home.raw",
+   "raw\\px_pizzint_watch_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /"
+ ],
+ "discovered_targets": [
+  "ws.com/food-drink/how-papa-johns-pizza-surge-near-pentagon-tipped-off-social-media-before-trumps-decisive-iran-strike",
+  "ws.com/israel-x-turkey-military-clash-by-MraP5uAn87e2.jpg",
+  "ws.com/nato-x-russia-military-clash-in-2025-DteCDkmbVLj_.jpg",
+  "ws.com/us-anti-cartel-operation-outside-of-the-us-before-april-EiRwQTcBGKTa.jpg",
+  "ws.com/us-strike-on-colombia-by-january-31-P4KCpXnvCj4O.jpg",
+  "ws.com/us-strike-on-cuba-by-december-31-pSKqauf5Hk1c.jpg",
+  "ws.com/us-strike-on-mexico-by-january-31-ob2_r_nqU3Z4.jpg",
+  "ws.com/will-the-us-invade-iran-in-2025-0Eh3J0ku_Fbj.jpg"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:08.188408"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Pentagon Pizza Index — Live DEFCON Level &amp; Doomsday Clock | PizzINT",
+  "description": "The Pentagon Pizza Index tracks real-time pizza activity near the Pentagon as an OSINT indicator of military tension. Check the live doomsday clock, current DEFCON level, prediction market odds, and see if something is brewing."
+ }
+}

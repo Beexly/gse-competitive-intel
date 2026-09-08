@@ -1,0 +1,63 @@
+{
+  "domain": "leans.ai",
+  "type": "live-site",
+  "disposition": "live",
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "'Remi' AI handicapper persona making picks; computer-model handicapping positioning ('forefront of sports handicapping utilizing computer models')",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "daily picks",
+    "citation": "raw/leans-home.html"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "customer_pain": [],
+  "discovered_targets": [],
+  "tech_stack": {
+    "frontend": "WordPress + Stripe + GTM",
+    "backend": "NOT CONFIRMED",
+    "database": "NOT CONFIRMED",
+    "cloud": "NOT CONFIRMED",
+    "cdn": "NOT CONFIRMED",
+    "citations": [
+      "raw/leans-home.html",
+      "raw/leans-sitemap.xml.txt"
+    ]
+  },
+  "pricing": {
+    "web": "membership with 7-day free trial; strings $12/$19/$25/$55/$67/$100",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "raw/leans-home.html"
+    ]
+  },
+  "product_limits": {
+    "limits": "membership picks access; transparency of predictions as differentiator",
+    "upgrade_triggers": "trial -> membership",
+    "citation": "raw/leans-home.html"
+  },
+  "data_supply_chain": {
+    "vendors": "NOT CONFIRMED",
+    "citations": "NOT CONFIRMED"
+  },
+  "discovered_paths": [
+    "/ (Remi picks, testimonials)"
+  ],
+  "discovery_metadata": {
+    "method": "batch-saved homepage (512KB) + sitemap",
+    "timestamp": "2026-09-08T14:31:22.220713"
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed.",
+    "websocket_endpoints": [],
+    "rate_limits": "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed.",
+    "citations": [
+      "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed."
+    ]
+  }
+}

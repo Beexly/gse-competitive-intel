@@ -1,0 +1,2694 @@
+URL: https://www.goalserve.com/sitemap.xml\nSTATUS: 200\n\n<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.goalserve.com/en/sport-data-feeds" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.goalserve.com/es/sport-data-feeds" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.goalserve.com/it/sport-data-feeds" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.goalserve.com/ru/sport-data-feeds" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.goalserve.com/fr/sport-data-feeds" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/soccer-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/soccer-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/soccer-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/soccer-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/soccer-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/soccer-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/soccer-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nfl-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nfl-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nfl-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nfl-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nfl-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nfl-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nfl-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/odds-comparison-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/odds-comparison-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/odds-comparison-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/odds-comparison-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/odds-comparison-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/cricket-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/cricket-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/cricket-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/cricket-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/cricket-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/cricket-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/cricket-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/mlb-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/mlb-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/mlb-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/mlb-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/mlb-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/mlb-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/mlb-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nba-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nba-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nba-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nba-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nba-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nba-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nba-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ice-hockey-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ice-hockey-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ice-hockey-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ice-hockey-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ice-hockey-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/tennis-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/tennis-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/tennis-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/tennis-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/tennis-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/tennis-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/tennis-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/video-feed</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.goalserve.com/en/video-feed" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.goalserve.com/es/video-feed" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.goalserve.com/it/video-feed" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.goalserve.com/ru/video-feed" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.goalserve.com/fr/video-feed" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.goalserve.com/video-feed" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/contact-us</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.goalserve.com/en/contact-us" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.goalserve.com/es/contact-us" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.goalserve.com/it/contact-us" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.goalserve.com/ru/contact-us" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.goalserve.com/fr/contact-us" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.goalserve.com/contact-us" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/account/login</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.goalserve.com/en/account/login" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.goalserve.com/es/account/login" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.goalserve.com/it/account/login" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.goalserve.com/ru/account/login" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.goalserve.com/fr/account/login" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.goalserve.com/account/login" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/horse-racing-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/horse-racing-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/horse-racing-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/horse-racing-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/horse-racing-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/horse-racing-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/horse-racing-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/esports-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/esports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/esports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/esports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/esports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/esports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/esports-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ussports-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ussports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ussports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ussports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ussports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ussports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ussports-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/full-package-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/full-package-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/full-package-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/full-package-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/full-package-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/full-package-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/full-package-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/about-us</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.goalserve.com/en/about-us" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.goalserve.com/es/about-us" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.goalserve.com/it/about-us" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.goalserve.com/ru/about-us" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.goalserve.com/fr/about-us" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.goalserve.com/about-us" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/partners</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.goalserve.com/en/partners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.goalserve.com/es/partners" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.goalserve.com/it/partners" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.goalserve.com/ru/partners" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.goalserve.com/fr/partners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.goalserve.com/partners" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/terms-and-conditions</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/terms-and-conditions" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/terms-and-conditions" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/terms-and-conditions" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/terms-and-conditions" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/terms-and-conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/terms-and-conditions" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.goalserve.com/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.goalserve.com/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.goalserve.com/it/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.goalserve.com/ru/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.goalserve.com/fr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.goalserve.com/privacy-policy" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/golf-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/golf-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/golf-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/golf-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/golf-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/golf-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/golf-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/motorsports-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/motorsports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/motorsports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/motorsports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/motorsports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/motorsports-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/motorsports-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/afl-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/afl-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/afl-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/afl-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/afl-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/afl-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/afl-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/rugby-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/rugby-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/rugby-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/rugby-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/rugby-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/rugby-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/rugby-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/handball-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/handball-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/handball-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/handball-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/handball-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/handball-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/handball-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/volleyball-api/prices</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/volleyball-api/prices" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/volleyball-api/prices" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/volleyball-api/prices" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/volleyball-api/prices" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/volleyball-api/prices" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/volleyball-api/prices" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/soccer-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/soccer-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/soccer-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/soccer-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/soccer-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/soccer-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/soccer-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/soccer-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/soccer-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/soccer-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/soccer-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/soccer-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/soccer-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/soccer-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/soccer-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/soccer-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/soccer-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/soccer-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/soccer-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/soccer-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/soccer-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/feedspackages/subscribe?packageId=</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/feedspackages/subscribe?packageId=" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/feedspackages/subscribe?packageId=" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/feedspackages/subscribe?packageId=" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/feedspackages/subscribe?packageId=" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/feedspackages/subscribe?packageId=" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/feedspackages/subscribe?packageId=" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/NFL-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/NFL-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/NFL-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/NFL-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/NFL-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/NFL-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/NFL-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/NFL-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/NFL-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/NFL-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/NFL-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/NFL-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/NFL-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/NFL-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/NFL-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/NFL-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/NFL-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/NFL-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/NFL-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/NFL-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/NFL-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/odds-comparison-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/odds-comparison-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/odds-comparison-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/odds-comparison-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/odds-comparison-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/odds-comparison-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/odds-comparison-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/odds-comparison-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/odds-comparison-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/odds-comparison-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/odds-comparison-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/odds-comparison-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/odds-comparison-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/odds-comparison-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/odds-comparison-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/MLB-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/MLB-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/MLB-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/MLB-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/MLB-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/MLB-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/MLB-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/MLB-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/MLB-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/MLB-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/MLB-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/MLB-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/MLB-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/MLB-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/MLB-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/MLB-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/MLB-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/MLB-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/MLB-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/MLB-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/MLB-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/NBA-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/NBA-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/NBA-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/NBA-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/NBA-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/NBA-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/NBA-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/NBA-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/NBA-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/NBA-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/NBA-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/NBA-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/NBA-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/NBA-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/NBA-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/NBA-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/NBA-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/NBA-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/NBA-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/NBA-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/NBA-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ice-hockey-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ice-hockey-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ice-hockey-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ice-hockey-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ice-hockey-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ice-hockey-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ice-hockey-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ice-hockey-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ice-hockey-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ice-hockey-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ice-hockey-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ice-hockey-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ice-hockey-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ice-hockey-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ice-hockey-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/tennis-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/tennis-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/tennis-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/tennis-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/tennis-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/tennis-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/tennis-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/tennis-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/tennis-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/tennis-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/tennis-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/tennis-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/tennis-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/tennis-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/tennis-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/tennis-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/tennis-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/tennis-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/tennis-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/tennis-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/tennis-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/cricket-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/cricket-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/cricket-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/cricket-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/cricket-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/cricket-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/cricket-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/cricket-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/cricket-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/cricket-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/cricket-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/cricket-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/cricket-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/cricket-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/cricket-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/cricket-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/cricket-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/cricket-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/cricket-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/cricket-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/cricket-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/horse-racing-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/horse-racing-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/horse-racing-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/horse-racing-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/horse-racing-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/horse-racing-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/horse-racing-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/horse-racing-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/horse-racing-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/horse-racing-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/horse-racing-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/horse-racing-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/horse-racing-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/horse-racing-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/horse-racing-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/horse-racing-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/horse-racing-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/horse-racing-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/horse-racing-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/horse-racing-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/horse-racing-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/account/passwordreset</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/account/passwordreset" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/account/passwordreset" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/account/passwordreset" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/account/passwordreset" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/account/passwordreset" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/account/passwordreset" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/account/register</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.goalserve.com/en/account/register" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.goalserve.com/es/account/register" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.goalserve.com/it/account/register" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.goalserve.com/ru/account/register" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.goalserve.com/fr/account/register" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/account/register" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ussports-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ussports-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ussports-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ussports-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ussports-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ussports-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ussports-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ussports-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ussports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ussports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ussports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ussports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ussports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ussports-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ussports-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ussports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ussports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ussports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ussports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ussports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ussports-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/full-package-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/full-package-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/full-package-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/full-package-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/full-package-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/full-package-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/full-package-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/full-package-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/full-package-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/full-package-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/full-package-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/full-package-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/full-package-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/full-package-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/full-package-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/full-package-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/full-package-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/full-package-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/full-package-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/full-package-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/full-package-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/Golf-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/Golf-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/Golf-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/Golf-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/Golf-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/Golf-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/Golf-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/Golf-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/Golf-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/Golf-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/Golf-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/Golf-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/Golf-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/Golf-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/Golf-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/Golf-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/Golf-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/Golf-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/Golf-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/Golf-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/Golf-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/esports-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/esports-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/esports-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/esports-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/esports-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/esports-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/esports-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/esports-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/esports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/esports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/esports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/esports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/esports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/esports-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/esports-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/esports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/esports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/esports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/esports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/esports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/esports-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/motorsports-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/motorsports-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/motorsports-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/motorsports-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/motorsports-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/motorsports-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/motorsports-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/motorsports-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/motorsports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/motorsports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/motorsports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/motorsports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/motorsports-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/motorsports-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/motorsports-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/motorsports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/motorsports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/motorsports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/motorsports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/motorsports-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/motorsports-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/afl-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/afl-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/afl-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/afl-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/afl-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/afl-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/afl-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/afl-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/afl-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/afl-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/afl-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/afl-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/afl-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/afl-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/afl-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/afl-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/afl-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/afl-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/afl-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/afl-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/afl-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/handball-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/handball-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/handball-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/handball-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/handball-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/handball-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/handball-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/handball-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/handball-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/handball-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/handball-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/handball-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/handball-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/handball-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/handball-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/handball-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/handball-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/handball-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/handball-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/handball-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/handball-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/rugby-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/rugby-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/rugby-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/rugby-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/rugby-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/rugby-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/rugby-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/rugby-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/rugby-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/rugby-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/rugby-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/rugby-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/rugby-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/rugby-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/rugby-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/rugby-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/rugby-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/rugby-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/rugby-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/rugby-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/rugby-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/volleyball-api/description</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/volleyball-api/description" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/volleyball-api/description" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/volleyball-api/description" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/volleyball-api/description" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/volleyball-api/description" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/volleyball-api/description" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/volleyball-api/coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/volleyball-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/volleyball-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/volleyball-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/volleyball-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/volleyball-api/coverage" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/volleyball-api/coverage" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/volleyball-api/samples</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/volleyball-api/samples" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/volleyball-api/samples" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/volleyball-api/samples" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/volleyball-api/samples" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/volleyball-api/samples" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/volleyball-api/samples" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/4</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/4" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/soccer-api/sample/4" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/soccer-api/sample/4" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/soccer-api/sample/4" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/soccer-api/sample/4" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/soccer-api/sample/4" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/5</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/5" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/soccer-api/sample/5" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/soccer-api/sample/5" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/soccer-api/sample/5" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/soccer-api/sample/5" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/soccer-api/sample/5" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/6</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/6" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/soccer-api/sample/6" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/soccer-api/sample/6" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/soccer-api/sample/6" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/soccer-api/sample/6" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/soccer-api/sample/6" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/7</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/7" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/soccer-api/sample/7" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/soccer-api/sample/7" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/soccer-api/sample/7" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/soccer-api/sample/7" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/soccer-api/sample/7" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/8</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/8" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/soccer-api/sample/8" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/soccer-api/sample/8" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/soccer-api/sample/8" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/soccer-api/sample/8" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/soccer-api/sample/8" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/9</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/9" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/soccer-api/sample/9" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/soccer-api/sample/9" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/soccer-api/sample/9" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/soccer-api/sample/9" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/soccer-api/sample/9" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/10</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/10" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/soccer-api/sample/10" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/soccer-api/sample/10" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/soccer-api/sample/10" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/soccer-api/sample/10" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/soccer-api/sample/10" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/11</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/soccer-api/sample/11" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/soccer-api/sample/11" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/soccer-api/sample/11" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/soccer-api/sample/11" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/soccer-api/sample/11" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/soccer-api/sample/11" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/12</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/12" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nfl-api/sample/12" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nfl-api/sample/12" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nfl-api/sample/12" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nfl-api/sample/12" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nfl-api/sample/12" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/13</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/13" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nfl-api/sample/13" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nfl-api/sample/13" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nfl-api/sample/13" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nfl-api/sample/13" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nfl-api/sample/13" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/51</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/51" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nfl-api/sample/51" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nfl-api/sample/51" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nfl-api/sample/51" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nfl-api/sample/51" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nfl-api/sample/51" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/52</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/52" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nfl-api/sample/52" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nfl-api/sample/52" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nfl-api/sample/52" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nfl-api/sample/52" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nfl-api/sample/52" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/53</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/53" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nfl-api/sample/53" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nfl-api/sample/53" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nfl-api/sample/53" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nfl-api/sample/53" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nfl-api/sample/53" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/54</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/54" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nfl-api/sample/54" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nfl-api/sample/54" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nfl-api/sample/54" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nfl-api/sample/54" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nfl-api/sample/54" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/55</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/55" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nfl-api/sample/55" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nfl-api/sample/55" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nfl-api/sample/55" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nfl-api/sample/55" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nfl-api/sample/55" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/56</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nfl-api/sample/56" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nfl-api/sample/56" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nfl-api/sample/56" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nfl-api/sample/56" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nfl-api/sample/56" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nfl-api/sample/56" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/14</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/14" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nba-api/sample/14" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nba-api/sample/14" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nba-api/sample/14" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nba-api/sample/14" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nba-api/sample/14" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/15</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/15" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nba-api/sample/15" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nba-api/sample/15" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nba-api/sample/15" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nba-api/sample/15" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nba-api/sample/15" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/16</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/16" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nba-api/sample/16" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nba-api/sample/16" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nba-api/sample/16" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nba-api/sample/16" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nba-api/sample/16" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/57</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/57" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nba-api/sample/57" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nba-api/sample/57" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nba-api/sample/57" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nba-api/sample/57" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nba-api/sample/57" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/58</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/58" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nba-api/sample/58" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nba-api/sample/58" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nba-api/sample/58" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nba-api/sample/58" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nba-api/sample/58" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/59</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/59" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nba-api/sample/59" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nba-api/sample/59" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nba-api/sample/59" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nba-api/sample/59" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nba-api/sample/59" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/60</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/60" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nba-api/sample/60" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nba-api/sample/60" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nba-api/sample/60" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nba-api/sample/60" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nba-api/sample/60" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/61</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/nba-api/sample/61" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/nba-api/sample/61" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/nba-api/sample/61" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/nba-api/sample/61" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/nba-api/sample/61" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/nba-api/sample/61" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/20</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/20" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ussports-api/sample/20" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ussports-api/sample/20" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ussports-api/sample/20" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ussports-api/sample/20" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ussports-api/sample/20" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/21</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/21" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ussports-api/sample/21" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ussports-api/sample/21" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ussports-api/sample/21" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ussports-api/sample/21" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ussports-api/sample/21" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/22</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/22" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ussports-api/sample/22" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ussports-api/sample/22" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ussports-api/sample/22" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ussports-api/sample/22" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ussports-api/sample/22" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/23</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/23" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ussports-api/sample/23" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ussports-api/sample/23" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ussports-api/sample/23" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ussports-api/sample/23" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ussports-api/sample/23" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/24</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/24" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ussports-api/sample/24" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ussports-api/sample/24" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ussports-api/sample/24" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ussports-api/sample/24" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ussports-api/sample/24" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/25</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/25" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ussports-api/sample/25" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ussports-api/sample/25" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ussports-api/sample/25" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ussports-api/sample/25" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ussports-api/sample/25" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/26</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/26" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ussports-api/sample/26" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ussports-api/sample/26" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ussports-api/sample/26" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ussports-api/sample/26" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ussports-api/sample/26" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/27</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/27" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ussports-api/sample/27" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ussports-api/sample/27" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ussports-api/sample/27" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ussports-api/sample/27" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ussports-api/sample/27" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/28</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ussports-api/sample/28" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ussports-api/sample/28" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ussports-api/sample/28" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ussports-api/sample/28" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ussports-api/sample/28" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ussports-api/sample/28" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/mlb-api/sample/17</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/mlb-api/sample/17" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/mlb-api/sample/17" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/mlb-api/sample/17" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/mlb-api/sample/17" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/mlb-api/sample/17" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/mlb-api/sample/17" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/mlb-api/sample/62</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/mlb-api/sample/62" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/mlb-api/sample/62" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/mlb-api/sample/62" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/mlb-api/sample/62" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/mlb-api/sample/62" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/mlb-api/sample/62" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/mlb-api/sample/63</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/mlb-api/sample/63" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/mlb-api/sample/63" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/mlb-api/sample/63" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/mlb-api/sample/63" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/mlb-api/sample/63" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/mlb-api/sample/63" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/mlb-api/sample/64</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/mlb-api/sample/64" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/mlb-api/sample/64" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/mlb-api/sample/64" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/mlb-api/sample/64" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/mlb-api/sample/64" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/mlb-api/sample/64" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/mlb-api/sample/65</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/mlb-api/sample/65" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/mlb-api/sample/65" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/mlb-api/sample/65" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/mlb-api/sample/65" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/mlb-api/sample/65" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/mlb-api/sample/65" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/mlb-api/sample/66</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/mlb-api/sample/66" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/mlb-api/sample/66" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/mlb-api/sample/66" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/mlb-api/sample/66" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/mlb-api/sample/66" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/mlb-api/sample/66" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/18</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/18" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ice-hockey-api/sample/18" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ice-hockey-api/sample/18" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ice-hockey-api/sample/18" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ice-hockey-api/sample/18" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ice-hockey-api/sample/18" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/19</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/19" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ice-hockey-api/sample/19" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ice-hockey-api/sample/19" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ice-hockey-api/sample/19" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ice-hockey-api/sample/19" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ice-hockey-api/sample/19" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/67</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/67" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ice-hockey-api/sample/67" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ice-hockey-api/sample/67" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ice-hockey-api/sample/67" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ice-hockey-api/sample/67" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ice-hockey-api/sample/67" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/68</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/68" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ice-hockey-api/sample/68" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ice-hockey-api/sample/68" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ice-hockey-api/sample/68" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ice-hockey-api/sample/68" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ice-hockey-api/sample/68" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/69</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/69" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ice-hockey-api/sample/69" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ice-hockey-api/sample/69" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ice-hockey-api/sample/69" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ice-hockey-api/sample/69" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ice-hockey-api/sample/69" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/70</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/70" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ice-hockey-api/sample/70" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ice-hockey-api/sample/70" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ice-hockey-api/sample/70" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ice-hockey-api/sample/70" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ice-hockey-api/sample/70" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/71</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/sample/71" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/ice-hockey-api/sample/71" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/ice-hockey-api/sample/71" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/ice-hockey-api/sample/71" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/ice-hockey-api/sample/71" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/ice-hockey-api/sample/71" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/sample/29</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/sample/29" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/odds-comparison-api/sample/29" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/odds-comparison-api/sample/29" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/odds-comparison-api/sample/29" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/odds-comparison-api/sample/29" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/odds-comparison-api/sample/29" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/sample/30</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/sample/30" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/odds-comparison-api/sample/30" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/odds-comparison-api/sample/30" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/odds-comparison-api/sample/30" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/odds-comparison-api/sample/30" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/odds-comparison-api/sample/30" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/sample/31</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/sample/31" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/odds-comparison-api/sample/31" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/odds-comparison-api/sample/31" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/odds-comparison-api/sample/31" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/odds-comparison-api/sample/31" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/odds-comparison-api/sample/31" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/sample/32</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/sample/32" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/odds-comparison-api/sample/32" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/odds-comparison-api/sample/32" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/odds-comparison-api/sample/32" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/odds-comparison-api/sample/32" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/odds-comparison-api/sample/32" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/sample/33</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/sample/33" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/odds-comparison-api/sample/33" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/odds-comparison-api/sample/33" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/odds-comparison-api/sample/33" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/odds-comparison-api/sample/33" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/odds-comparison-api/sample/33" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/sample/74</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/sample/74" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/odds-comparison-api/sample/74" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/odds-comparison-api/sample/74" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/odds-comparison-api/sample/74" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/odds-comparison-api/sample/74" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/odds-comparison-api/sample/74" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/tennis-api/sample/34</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/tennis-api/sample/34" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/tennis-api/sample/34" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/tennis-api/sample/34" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/tennis-api/sample/34" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/tennis-api/sample/34" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/tennis-api/sample/34" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/tennis-api/sample/35</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/tennis-api/sample/35" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/tennis-api/sample/35" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/tennis-api/sample/35" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/tennis-api/sample/35" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/tennis-api/sample/35" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/tennis-api/sample/35" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/tennis-api/sample/72</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/tennis-api/sample/72" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/tennis-api/sample/72" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/tennis-api/sample/72" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/tennis-api/sample/72" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/tennis-api/sample/72" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/tennis-api/sample/72" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/tennis-api/sample/75</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/tennis-api/sample/75" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/tennis-api/sample/75" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/tennis-api/sample/75" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/tennis-api/sample/75" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/tennis-api/sample/75" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/tennis-api/sample/75" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/cricket-api/sample/36</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/cricket-api/sample/36" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/cricket-api/sample/36" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/cricket-api/sample/36" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/cricket-api/sample/36" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/cricket-api/sample/36" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/cricket-api/sample/36" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/cricket-api/sample/37</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/cricket-api/sample/37" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/cricket-api/sample/37" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/cricket-api/sample/37" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/cricket-api/sample/37" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/cricket-api/sample/37" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/cricket-api/sample/37" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/cricket-api/sample/38</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/cricket-api/sample/38" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/cricket-api/sample/38" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/cricket-api/sample/38" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/cricket-api/sample/38" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/cricket-api/sample/38" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/cricket-api/sample/38" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/cricket-api/sample/73</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/cricket-api/sample/73" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/cricket-api/sample/73" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/cricket-api/sample/73" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/cricket-api/sample/73" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/cricket-api/sample/73" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/cricket-api/sample/73" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/cricket-api/sample/76</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/cricket-api/sample/76" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/cricket-api/sample/76" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/cricket-api/sample/76" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/cricket-api/sample/76" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/cricket-api/sample/76" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/cricket-api/sample/76" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/rugby-api/sample/39</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/rugby-api/sample/39" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/rugby-api/sample/39" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/rugby-api/sample/39" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/rugby-api/sample/39" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/rugby-api/sample/39" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/rugby-api/sample/39" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/rugby-api/sample/77</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/rugby-api/sample/77" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/rugby-api/sample/77" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/rugby-api/sample/77" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/rugby-api/sample/77" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/rugby-api/sample/77" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/rugby-api/sample/77" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/rugby-api/sample/78</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/rugby-api/sample/78" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/rugby-api/sample/78" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/rugby-api/sample/78" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/rugby-api/sample/78" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/rugby-api/sample/78" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/rugby-api/sample/78" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/rugby-api/sample/79</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/rugby-api/sample/79" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/rugby-api/sample/79" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/rugby-api/sample/79" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/rugby-api/sample/79" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/rugby-api/sample/79" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/rugby-api/sample/79" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/horse-racing-api/sample/40</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/horse-racing-api/sample/40" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/horse-racing-api/sample/40" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/horse-racing-api/sample/40" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/horse-racing-api/sample/40" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/horse-racing-api/sample/40" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/horse-racing-api/sample/40" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/horse-racing-api/sample/41</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/horse-racing-api/sample/41" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/horse-racing-api/sample/41" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/horse-racing-api/sample/41" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/horse-racing-api/sample/41" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/horse-racing-api/sample/41" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/horse-racing-api/sample/41" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/golf-api/sample/42</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/golf-api/sample/42" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/golf-api/sample/42" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/golf-api/sample/42" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/golf-api/sample/42" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/golf-api/sample/42" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/golf-api/sample/42" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/golf-api/sample/43</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/golf-api/sample/43" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/golf-api/sample/43" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/golf-api/sample/43" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/golf-api/sample/43" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/golf-api/sample/43" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/golf-api/sample/43" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/esports-api/sample/44</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/esports-api/sample/44" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/esports-api/sample/44" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/esports-api/sample/44" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/esports-api/sample/44" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/esports-api/sample/44" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/esports-api/sample/44" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/esports-api/sample/45</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/esports-api/sample/45" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/esports-api/sample/45" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/esports-api/sample/45" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/esports-api/sample/45" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/esports-api/sample/45" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/esports-api/sample/45" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/motorsports-api/sample/46</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/motorsports-api/sample/46" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/motorsports-api/sample/46" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/motorsports-api/sample/46" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/motorsports-api/sample/46" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/motorsports-api/sample/46" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/motorsports-api/sample/46" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/motorsports-api/sample/47</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/motorsports-api/sample/47" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/motorsports-api/sample/47" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/motorsports-api/sample/47" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/motorsports-api/sample/47" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/motorsports-api/sample/47" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/motorsports-api/sample/47" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/motorsports-api/sample/81</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/motorsports-api/sample/81" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/motorsports-api/sample/81" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/motorsports-api/sample/81" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/motorsports-api/sample/81" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/motorsports-api/sample/81" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/motorsports-api/sample/81" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/motorsports-api/sample/82</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/motorsports-api/sample/82" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/motorsports-api/sample/82" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/motorsports-api/sample/82" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/motorsports-api/sample/82" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/motorsports-api/sample/82" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/motorsports-api/sample/82" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/handball-api/sample/50</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/handball-api/sample/50" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/handball-api/sample/50" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/handball-api/sample/50" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/handball-api/sample/50" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/handball-api/sample/50" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/handball-api/sample/50" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/volleyball-api/sample/49</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/volleyball-api/sample/49" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/volleyball-api/sample/49" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/volleyball-api/sample/49" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/volleyball-api/sample/49" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/volleyball-api/sample/49" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/volleyball-api/sample/49" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/afl-api/sample/48</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/afl-api/sample/48" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/afl-api/sample/48" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/afl-api/sample/48" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/afl-api/sample/48" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/afl-api/sample/48" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/afl-api/sample/48" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/sport-data-feeds/afl-api/sample/80</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/sport-data-feeds/afl-api/sample/80" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/sport-data-feeds/afl-api/sample/80" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/sport-data-feeds/afl-api/sample/80" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/sport-data-feeds/afl-api/sample/80" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/sport-data-feeds/afl-api/sample/80" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/sport-data-feeds/afl-api/sample/80" />
+  </url>
+  <url>
+    <loc>
+      https://www.goalserve.com/en/account/login?returnurl=%2fen%2ffeedspackages%2fsubscribe%3fpackageId%3d</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/account/login?returnurl=%2fen%2ffeedspackages%2fsubscribe%3fpackageId%3d" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/account/login?returnurl=%2fen%2ffeedspackages%2fsubscribe%3fpackageId%3d" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/account/login?returnurl=%2fen%2ffeedspackages%2fsubscribe%3fpackageId%3d" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/account/login?returnurl=%2fen%2ffeedspackages%2fsubscribe%3fpackageId%3d" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/account/login?returnurl=%2fen%2ffeedspackages%2fsubscribe%3fpackageId%3d" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/account/login?returnurl=%2fen%2ffeedspackages%2fsubscribe%3fpackageId%3d" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/admin/products/sampleedit/46</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/admin/products/sampleedit/46" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/admin/products/sampleedit/46" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/admin/products/sampleedit/46" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/admin/products/sampleedit/46" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/admin/products/sampleedit/46" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/admin/products/sampleedit/46" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/admin</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.goalserve.com/en/admin" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.goalserve.com/es/admin" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.goalserve.com/it/admin" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.goalserve.com/ru/admin" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.goalserve.com/fr/admin" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.goalserve.com/admin" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/admin/users/list</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.goalserve.com/en/admin/users/list" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.goalserve.com/es/admin/users/list" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.goalserve.com/it/admin/users/list" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.goalserve.com/ru/admin/users/list" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.goalserve.com/fr/admin/users/list" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/admin/users/list" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/admin/products/list</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/admin/products/list" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/admin/products/list" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/admin/products/list" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/admin/products/list" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/admin/products/list" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/admin/products/list" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/admin/feedspackages/list</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/admin/feedspackages/list" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/admin/feedspackages/list" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/admin/feedspackages/list" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/admin/feedspackages/list" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/admin/feedspackages/list" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/admin/feedspackages/list" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/admin/subscriptions/list</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/admin/subscriptions/list" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/admin/subscriptions/list" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/admin/subscriptions/list" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/admin/subscriptions/list" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/admin/subscriptions/list" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/admin/subscriptions/list" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/admin/bookmakers/list</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/admin/bookmakers/list" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/admin/bookmakers/list" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/admin/bookmakers/list" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/admin/bookmakers/list" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/admin/bookmakers/list" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/admin/bookmakers/list" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/admin/partners/list</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/admin/partners/list" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/admin/partners/list" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/admin/partners/list" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/admin/partners/list" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/admin/partners/list" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/admin/partners/list" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/admin/languages/list</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/admin/languages/list" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/admin/languages/list" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/admin/languages/list" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/admin/languages/list" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/admin/languages/list" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/admin/languages/list" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/admin/products/edit/14</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/admin/products/edit/14" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/admin/products/edit/14" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/admin/products/edit/14" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/admin/products/edit/14" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/admin/products/edit/14" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/admin/products/edit/14" />
+  </url>
+  <url>
+    <loc>
+      https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fproducts%2fsampleedit%2f46</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fproducts%2fsampleedit%2f46" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/account/login?returnurl=%2fen%2fadmin%2fproducts%2fsampleedit%2f46" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/account/login?returnurl=%2fen%2fadmin%2fproducts%2fsampleedit%2f46" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/account/login?returnurl=%2fen%2fadmin%2fproducts%2fsampleedit%2f46" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/account/login?returnurl=%2fen%2fadmin%2fproducts%2fsampleedit%2f46" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/account/login?returnurl=%2fen%2fadmin%2fproducts%2fsampleedit%2f46" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/account/login?returnurl=%2fen%2fadmin" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/account/login?returnurl=%2fen%2fadmin" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/account/login?returnurl=%2fen%2fadmin" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/account/login?returnurl=%2fen%2fadmin" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/account/login?returnurl=%2fen%2fadmin" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fproducts%2flist</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fproducts%2flist" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/account/login?returnurl=%2fen%2fadmin%2fproducts%2flist" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/account/login?returnurl=%2fen%2fadmin%2fproducts%2flist" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/account/login?returnurl=%2fen%2fadmin%2fproducts%2flist" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/account/login?returnurl=%2fen%2fadmin%2fproducts%2flist" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/account/login?returnurl=%2fen%2fadmin%2fproducts%2flist" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fusers%2flist</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fusers%2flist" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/account/login?returnurl=%2fen%2fadmin%2fusers%2flist" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/account/login?returnurl=%2fen%2fadmin%2fusers%2flist" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/account/login?returnurl=%2fen%2fadmin%2fusers%2flist" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/account/login?returnurl=%2fen%2fadmin%2fusers%2flist" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/account/login?returnurl=%2fen%2fadmin%2fusers%2flist" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2ffeedspackages%2flist</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2ffeedspackages%2flist" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/account/login?returnurl=%2fen%2fadmin%2ffeedspackages%2flist" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/account/login?returnurl=%2fen%2fadmin%2ffeedspackages%2flist" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/account/login?returnurl=%2fen%2fadmin%2ffeedspackages%2flist" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/account/login?returnurl=%2fen%2fadmin%2ffeedspackages%2flist" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/account/login?returnurl=%2fen%2fadmin%2ffeedspackages%2flist" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fsubscriptions%2flist</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fsubscriptions%2flist" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/account/login?returnurl=%2fen%2fadmin%2fsubscriptions%2flist" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/account/login?returnurl=%2fen%2fadmin%2fsubscriptions%2flist" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/account/login?returnurl=%2fen%2fadmin%2fsubscriptions%2flist" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/account/login?returnurl=%2fen%2fadmin%2fsubscriptions%2flist" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/account/login?returnurl=%2fen%2fadmin%2fsubscriptions%2flist" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fbookmakers%2flist</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fbookmakers%2flist" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/account/login?returnurl=%2fen%2fadmin%2fbookmakers%2flist" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/account/login?returnurl=%2fen%2fadmin%2fbookmakers%2flist" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/account/login?returnurl=%2fen%2fadmin%2fbookmakers%2flist" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/account/login?returnurl=%2fen%2fadmin%2fbookmakers%2flist" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/account/login?returnurl=%2fen%2fadmin%2fbookmakers%2flist" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fpartners%2flist</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fpartners%2flist" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/account/login?returnurl=%2fen%2fadmin%2fpartners%2flist" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/account/login?returnurl=%2fen%2fadmin%2fpartners%2flist" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/account/login?returnurl=%2fen%2fadmin%2fpartners%2flist" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/account/login?returnurl=%2fen%2fadmin%2fpartners%2flist" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/account/login?returnurl=%2fen%2fadmin%2fpartners%2flist" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2flanguages%2flist</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2flanguages%2flist" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/account/login?returnurl=%2fen%2fadmin%2flanguages%2flist" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/account/login?returnurl=%2fen%2fadmin%2flanguages%2flist" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/account/login?returnurl=%2fen%2fadmin%2flanguages%2flist" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/account/login?returnurl=%2fen%2fadmin%2flanguages%2flist" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/account/login?returnurl=%2fen%2fadmin%2flanguages%2flist" />
+  </url>
+  <url>
+    <loc>https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fproducts%2fedit%2f14</loc>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://www.goalserve.com/en/account/login?returnurl=%2fen%2fadmin%2fproducts%2fedit%2f14" />
+    <xhtml:link rel="alternate" hreflang="es"
+      href="https://www.goalserve.com/es/account/login?returnurl=%2fen%2fadmin%2fproducts%2fedit%2f14" />
+    <xhtml:link rel="alternate" hreflang="it"
+      href="https://www.goalserve.com/it/account/login?returnurl=%2fen%2fadmin%2fproducts%2fedit%2f14" />
+    <xhtml:link rel="alternate" hreflang="ru"
+      href="https://www.goalserve.com/ru/account/login?returnurl=%2fen%2fadmin%2fproducts%2fedit%2f14" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://www.goalserve.com/fr/account/login?returnurl=%2fen%2fadmin%2fproducts%2fedit%2f14" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://www.goalserve.com/account/login?returnurl=%2fen%2fadmin%2fproducts%2fedit%2f14" />
+  </url>
+</urlset>

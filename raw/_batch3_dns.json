@@ -1,0 +1,26 @@
+[
+ [
+  "horseapi.com",
+  "FAIL:gaierror"
+ ],
+ [
+  "advisionfeeds.com",
+  "FAIL:gaierror"
+ ],
+ [
+  "trade360.com",
+  "91.238.237.11"
+ ],
+ [
+  "www.trade360.com",
+  "91.238.237.11"
+ ],
+ [
+  "api.trade360.com",
+  "91.238.237.18"
+ ],
+ [
+  "app.trade360.com",
+  "FAIL:gaierror"
+ ]
+]

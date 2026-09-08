@@ -1,0 +1,109 @@
+{
+ "domain": "underdogsports.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "live site, framework unclear",
+   "citation": "raw/px_underdogsports_com_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_underdogsports_com_home.raw",
+   "raw\\px_underdogsports_com_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apis.com",
+    "apis.com/ajax/libs/webfont/1.6.26/webfont.js",
+    "apis.com/underdog-inc/assets/branding/UD-Logo-Nowords.webp",
+    "ws-star.svg",
+    "ws-logo.svg",
+    "API.showConsentBanner"
+   ],
+   "citation": "raw/px_underdogsports_com_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_underdogsports_com_home.raw"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_underdogsports_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_underdogsports_com_home.raw",
+   "raw\\px_underdogsports_com_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_underdogsports_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_underdogsports_com_home.raw",
+   "raw\\px_underdogsports_com_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_underdogsports_com_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_underdogsports_com_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "FREE"
+   ],
+   "citation": "raw/px_underdogsports_com_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_underdogsports_com_home.raw",
+   "raw\\px_underdogsports_com_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Sitemap: https://www.underdogsports.com/sitemap.xml"
+ ],
+ "discovered_targets": [
+  "API.showConsentBanner",
+  "apis.com",
+  "apis.com/ajax/libs/webfont/1.6.26/webfont.js",
+  "apis.com/underdog-inc/assets/branding/UD-Logo-Nowords.webp",
+  "ws-logo.svg",
+  "ws-star.svg"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:32.968919"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Underdog Sports: Predictions, Pick&#x27;em and Season-long Fantasy for NFL, NBA &amp; more",
+  "description": "NOT CONFIRMED"
+ }
+}

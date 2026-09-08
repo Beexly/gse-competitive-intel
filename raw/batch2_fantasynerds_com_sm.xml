@@ -1,0 +1,27 @@
+URL: https://fantasynerds.com/sitemap.xml\nSTATUS: 200\n\n<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap>
+  <loc>https://www.fantasynerds.com/sitemap_pages.xml</loc>
+  <lastmod>2026-08-14T16:36:16-04:00</lastmod>
+</sitemap>
+<sitemap>
+  <loc>https://www.fantasynerds.com/sitemap_players_nfl.xml</loc>
+  <lastmod>2026-08-14T16:36:16-04:00</lastmod>
+</sitemap>
+<sitemap>
+  <loc>https://www.fantasynerds.com/sitemap_players_mlb.xml</loc>
+  <lastmod>2026-08-14T16:36:16-04:00</lastmod>
+</sitemap>
+<sitemap>
+  <loc>https://www.fantasynerds.com/sitemap_players_nba.xml</loc>
+  <lastmod>2026-08-14T16:36:16-04:00</lastmod>
+</sitemap>
+<sitemap>
+  <loc>https://www.fantasynerds.com/sitemap_articles.xml</loc>
+  <lastmod>2026-08-14T16:36:16-04:00</lastmod>
+</sitemap>
+<sitemap>
+  <loc>https://www.fantasynerds.com/sitemap_news.xml</loc>
+  <lastmod>2026-08-14T16:36:16-04:00</lastmod>
+</sitemap>
+</sitemapindex>

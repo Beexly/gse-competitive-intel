@@ -1,0 +1,5 @@
+﻿User-agent: *
+Allow: *
+# Disallow crawling of game details pages to prevent GoogleBot from pulling old games.
+Disallow: /site/browse/game.aspx
+Crawl-delay: 30

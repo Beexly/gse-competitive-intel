@@ -1,0 +1,103 @@
+{
+ "domain": "clickhouse.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/b45_com_clickhouse_com_home.txt"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b45_com_clickhouse_com_home.txt",
+   "raw\\b45_com_clickhouse_com_robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "wsfckoc.svg"
+   ],
+   "citation": "raw/b45_com_clickhouse_com_home.txt"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_clickhouse_com_home.txt"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_clickhouse_com_home.txt"
+  },
+  "citations": [
+   "raw\\b45_com_clickhouse_com_home.txt",
+   "raw\\b45_com_clickhouse_com_robots.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'ClickHouse is a fast open-source column-oriented database management system that' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_clickhouse_com_home.txt"
+  },
+  "citations": [
+   "raw\\b45_com_clickhouse_com_home.txt",
+   "raw\\b45_com_clickhouse_com_robots.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_clickhouse_com_home.txt"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\b45_com_clickhouse_com_home.txt"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "enterprise",
+    "Free"
+   ],
+   "citation": "raw/b45_com_clickhouse_com_home.txt"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b45_com_clickhouse_com_home.txt",
+   "raw\\b45_com_clickhouse_com_robots.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Disallow: /admin/",
+  "Disallow: /marketo-forms/",
+  "Sitemap: https://clickhouse.com/sitemap.xml"
+ ],
+ "discovered_targets": [
+  "wsfckoc.svg"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:45.016869"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Fast Open-Source OLAP DBMS | ClickHouse",
+  "description": "ClickHouse is a fast open-source column-oriented database management system that allows generating analytical data reports in real-time using SQL queries"
+ }
+}

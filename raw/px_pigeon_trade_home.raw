@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>Pigeon—Your AI quant for infinite markets</title>
+    <meta
+      name="description"
+      content="Make money in any market. Trade strategies across crypto, stocks, perps, predictions, and memes all in one chat."
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Pigeon" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Pigeon—Your AI quant for infinite markets"
+    />
+    <meta
+      property="og:description"
+      content="Make money in any market. Trade strategies across crypto, stocks, perps, predictions, and memes all in one chat."
+    />
+    <meta property="og:image" content="https://pigeon.trade/images/og.jpg" />
+    <meta property="og:url" content="https://pigeon.trade" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Pigeon—Your AI quant for infinite markets"
+    />
+    <meta
+      name="twitter:description"
+      content="Make money in any market. Trade strategies across crypto, stocks, perps, predictions, and memes all in one chat."
+    />
+    <meta name="twitter:image" content="https://pigeon.trade/images/og.jpg" />
+    <meta name="twitter:site" content="@pigeon_trade" />
+    <!-- Browser.T Shim -->
+    <script>
+      if (typeof window !== 'undefined') {
+        window.Browser = {
+          T: () => {},
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-DwY4gZIR.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-druMsonN.css">
+  </head>
+  <body>
+    <noscript>Please, turn on JavaScript to see this page.</noscript>
+    <div id="root" />
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"5e604fafa9614176a3cf76fc52b59782","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

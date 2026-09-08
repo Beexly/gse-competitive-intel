@@ -1,0 +1,7 @@
+# agents.txt
+# Standard: https://agents-txt.com
+# JSON: https://outlier.bet/agents.json
+#
+# Outlier is a marketing and education site. No agent payment,
+# authorization, MCP, or skill protocols are declared yet.
+# For content briefing, use https://outlier.bet/llms.txt

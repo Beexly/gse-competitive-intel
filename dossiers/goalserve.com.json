@@ -1,0 +1,75 @@
+{
+ "domain": "goalserve.com",
+ "tech_stack": {
+  "frontend": "NOT CONFIRMED",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": []
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "Various sports feeds",
+    "auth_required": true,
+    "tier": "Custom",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "https://goalserve.com/en/pricing"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": []
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED",
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "Contact for trial/packages",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "https://goalserve.com/en/pricing"
+ },
+ "pricing": {
+  "web": "Custom / Contact for Pricing",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://goalserve.com/en/pricing"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Cheapest reliable route I've found is Goalserve for Bet365",
+   "source": "https://www.reddit.com/r/algobetting/comments/1nxprwy/any_reliable_bet365_odds_api_out_there/",
+   "date": "NOT CONFIRMED"
+  },
+  {
+   "quote": "I also found BetsAPI and GoalServe, but they don't offer live bet settlement.",
+   "source": "https://www.reddit.com/r/algobetting/comments/1j5jxuv/odds_api_with_settlement/",
+   "date": "NOT CONFIRMED"
+  }
+ ],
+ "discovered_paths": [],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "automated-probe",
+  "timestamp": "2026-09-08T20:50:24.724723"
+ },
+ "disposition": "live"
+}

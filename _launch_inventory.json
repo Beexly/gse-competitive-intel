@@ -1,0 +1,7612 @@
+{
+ "(root)": [
+  {
+   "file": "adaptive-delta-analysis.ts",
+   "lines": 133,
+   "bytes": 4574,
+   "n_exports": 2,
+   "exports_head": [
+    "HedgeAdaptiveDeltaAnalysis",
+    "analyzeAdaptiveDeltaHedge"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "adaptive-delta-hedge.ts",
+   "lines": 197,
+   "bytes": 5740,
+   "n_exports": 6,
+   "exports_head": [
+    "DeltaExpertSample",
+    "AdaptiveDeltaOptions",
+    "AdaptiveDeltaStep",
+    "AdaptiveDeltaReport",
+    "expertLossAtDelta",
+    "runAdaptiveDeltaHedge"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "anytime-ledger.ts",
+   "lines": 404,
+   "bytes": 17627,
+   "n_exports": 8,
+   "exports_head": [
+    "AnytimeLedgerPoint",
+    "AnytimeLedgerResult",
+    "AnytimeLedgerOptions",
+    "anytimeValidLedger",
+    "AnytimeFoldState",
+    "AnytimeFoldOptions",
+    "initAnytimeFold",
+    "foldAnytimePick"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "availability-role-tenure.ts",
+   "lines": 244,
+   "bytes": 8939,
+   "n_exports": 13,
+   "exports_head": [
+    "AvailabilityStatus",
+    "PracticeStatus",
+    "ReturnSpellObservation",
+    "KaplanMeierReturnPoint",
+    "RoleTenureObservation",
+    "AvailabilityCoxCoefficients",
+    "AvailabilityRoleInput",
+    "RoleTenureProjection"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "bankroll.ts",
+   "lines": 90,
+   "bytes": 3176,
+   "n_exports": 6,
+   "exports_head": [
+    "KellyMode",
+    "BankrollOptions",
+    "BankrollStake",
+    "recommendStake",
+    "PortfolioSummary",
+    "summarizePortfolio"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "bernoulli-eprocess.ts",
+   "lines": 215,
+   "bytes": 7002,
+   "n_exports": 13,
+   "exports_head": [
+    "BernoulliOutcome",
+    "eStep",
+    "EProcessResult",
+    "eProcess",
+    "MixtureProcessResult",
+    "mixtureEProcess",
+    "BettingEStepInput",
+    "BettingEStepResult"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "brier-ogd-ensemble.ts",
+   "lines": 260,
+   "bytes": 8262,
+   "n_exports": 7,
+   "exports_head": [
+    "BrierOgdMemberProbs",
+    "BrierOgdSample",
+    "BrierOgdOptions",
+    "BrierOgdStep",
+    "BrierOgdReport",
+    "runBrierOgdEnsemble",
+    "equalWeightBlend"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-apply.ts",
+   "lines": 105,
+   "bytes": 4504,
+   "n_exports": 4,
+   "exports_head": [
+    "DEFAULT_MIN_CALIBRATION_SAMPLE",
+    "CalibratedProbability",
+    "Calibrator",
+    "buildCalibrator"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-commitment.ts",
+   "lines": 219,
+   "bytes": 10809,
+   "n_exports": 6,
+   "exports_head": [
+    "CalibrationCommitmentInput",
+    "CalibrationCommitment",
+    "CommitmentEnvelope",
+    "buildCalibrationCommitment",
+    "verifyCalibrationCommitment",
+    "toCommitmentEnvelope"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-drift.ts",
+   "lines": 106,
+   "bytes": 3371,
+   "n_exports": 7,
+   "exports_head": [
+    "ScoredOutcome",
+    "WindowCalibration",
+    "DriftOptions",
+    "DriftSeverity",
+    "DriftReport",
+    "computeWindowCalibration",
+    "assessDrift"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-kelly-bridge.ts",
+   "lines": 203,
+   "bytes": 6496,
+   "n_exports": 5,
+   "exports_head": [
+    "TimedCalibrationSample",
+    "SizeAfterCalibrationArgs",
+    "SizeAfterCalibrationResult",
+    "applyCalibrator",
+    "sizeAfterCalibration"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-map.ts",
+   "lines": 597,
+   "bytes": 25106,
+   "n_exports": 10,
+   "exports_head": [
+    "CalibrationMethod",
+    "CalibratorFit",
+    "PlattModel",
+    "plattScaling",
+    "BetaModel",
+    "betaCalibration",
+    "equalMassEce",
+    "CalibratorScore"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-monitor.ts",
+   "lines": 76,
+   "bytes": 2643,
+   "n_exports": 2,
+   "exports_head": [
+    "CalibrationHealthResult",
+    "checkCalibrationHealth"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-sequence.ts",
+   "lines": 273,
+   "bytes": 11615,
+   "n_exports": 6,
+   "exports_head": [
+    "CalibrationSequenceSample",
+    "CalibrationSequencePoint",
+    "CalibrationBinDiagnostic",
+    "CalibrationSequenceResult",
+    "CalibrationSequenceOptions",
+    "anytimeCalibrationMonitor"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "clv-capture.ts",
+   "lines": 213,
+   "bytes": 8382,
+   "n_exports": 7,
+   "exports_head": [
+    "PickKind",
+    "ClosingOddsRow",
+    "ClosingSnapshot",
+    "ClvKind",
+    "ClvGrade",
+    "deriveClosingSnapshotFromOdds",
+    "gradePickClv"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "clv-decomposition.ts",
+   "lines": 224,
+   "bytes": 9967,
+   "n_exports": 4,
+   "exports_head": [
+    "ClvDecompositionItem",
+    "ClvDecompositionResult",
+    "informationScore",
+    "decomposeClv"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "clv.ts",
+   "lines": 177,
+   "bytes": 6915,
+   "n_exports": 10,
+   "exports_head": [
+    "ClvVerdict",
+    "SpreadSide",
+    "TotalSide",
+    "PointsClvResult",
+    "MoneylineClvResult",
+    "computeSpreadClv",
+    "computeTotalClv",
+    "computeMoneylineClv"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "composite-score.ts",
+   "lines": 97,
+   "bytes": 3780,
+   "n_exports": 5,
+   "exports_head": [
+    "WeightedSignal",
+    "SignalContribution",
+    "CompositeScore",
+    "CompositeScoreOptions",
+    "compositeScore"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "conformal-intervals.ts",
+   "lines": 180,
+   "bytes": 7226,
+   "n_exports": 8,
+   "exports_head": [
+    "ConformalProjectionSample",
+    "RollingConformalOptions",
+    "RollingConformalWindow",
+    "MondrianConformalInterval",
+    "PositionCoverage",
+    "RollingConformalReport",
+    "buildRollingConformalWindows",
+    "runRollingMondrianConformal"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "conformal-margin-set.ts",
+   "lines": 129,
+   "bytes": 4619,
+   "n_exports": 7,
+   "exports_head": [
+    "MIN_SAMPLES_MARGIN_SET",
+    "DEFAULT_MARGIN_SET_ALPHA",
+    "MarginCalibrationRow",
+    "MarginPredictionSet",
+    "splitConformalQuantile",
+    "conformalMarginSet",
+    "marginSetCovers"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "consensus-view.ts",
+   "lines": 69,
+   "bytes": 2801,
+   "n_exports": 6,
+   "exports_head": [
+    "AgreementLevel",
+    "DivergenceDirection",
+    "VerificationStatus",
+    "ConsensusView",
+    "ConsensusViewOptions",
+    "buildConsensusView"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "consensus.ts",
+   "lines": 128,
+   "bytes": 5107,
+   "n_exports": 5,
+   "exports_head": [
+    "SourceProb",
+    "ConsensusOutlier",
+    "ConsensusResult",
+    "extractSourceProbs",
+    "computeConsensus"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "constants.ts",
+   "lines": 106,
+   "bytes": 5174,
+   "n_exports": 7,
+   "exports_head": [
+    "MODEL_VERSION",
+    "PREMIUM_CONFIDENCE_THRESHOLD",
+    "MIN_PUBLISH_CONFIDENCE",
+    "GRADE_THRESHOLDS",
+    "WEIGHTS",
+    "RISK_THRESHOLDS",
+    "MIN_BOOKMAKERS"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "contest-scoring.ts",
+   "lines": 146,
+   "bytes": 5307,
+   "n_exports": 10,
+   "exports_head": [
+    "Side",
+    "GameLine",
+    "UserPick",
+    "GameResult",
+    "PickScore",
+    "ContestEntryScore",
+    "scoreContestEntry",
+    "awardVirtualCoins"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "conviction-tier.ts",
+   "lines": 172,
+   "bytes": 7861,
+   "n_exports": 9,
+   "exports_head": [
+    "BREAK_EVEN_PROBABILITY",
+    "CONVICTION_MIN_PROBABILITY",
+    "CONVICTION_MIN_CLV_BEAT_RATE",
+    "CONVICTION_MIN_CLV_SAMPLE",
+    "ConvictionTier",
+    "ConvictionInput",
+    "ConvictionResult",
+    "convictionTier"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "coverage-self-audit.ts",
+   "lines": 168,
+   "bytes": 6733,
+   "n_exports": 5,
+   "exports_head": [
+    "CoverageVerdict",
+    "CoverageSelfAuditResult",
+    "CoverageSelfAuditOptions",
+    "bcaCoverageSelfAudit",
+    "studentizedCoverageSelfAudit"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "dixon-coles.ts",
+   "lines": 198,
+   "bytes": 6402,
+   "n_exports": 9,
+   "exports_head": [
+    "DEFAULT_DIXON_COLES_RHO",
+    "clampDixonColesRho",
+    "dixonColesTau",
+    "jointScoreMatrixDixonColes",
+    "dixonColesMoneylineProbabilities",
+    "isDixonColesValidSport",
+    "DixonColesFairValueInput",
+    "DixonColesFairValue"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "earned-weight-ensemble.ts",
+   "lines": 183,
+   "bytes": 7782,
+   "n_exports": 8,
+   "exports_head": [
+    "EnsemblePredictionSample",
+    "EarnedWeightEnsembleOptions",
+    "EarnedWeightPrediction",
+    "EarnedWeightPromotionGate",
+    "EarnedWeightEnsembleReport",
+    "boundedAbsoluteLoss",
+    "updateHedgeWeights",
+    "runEarnedWeightEnsembleBacktest"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "edge-engine.ts",
+   "lines": 258,
+   "bytes": 11828,
+   "n_exports": 8,
+   "exports_head": [
+    "SPEAK_EDGE",
+    "LEAN_EDGE",
+    "IndependentEstimate",
+    "EdgeInput",
+    "EdgeDecision",
+    "AnchorAgreement",
+    "EdgeAssessment",
+    "assessEdge"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "edge-significance.ts",
+   "lines": 103,
+   "bytes": 3674,
+   "n_exports": 4,
+   "exports_head": [
+    "SettledPick",
+    "SignificanceOptions",
+    "SignificanceResult",
+    "edgeSignificance"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "elo-backtest.ts",
+   "lines": 113,
+   "bytes": 4290,
+   "n_exports": 4,
+   "exports_head": [
+    "EloBacktestGame",
+    "EloBacktestReport",
+    "EloBacktestOptions",
+    "eloBacktest"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "elo-estimator.ts",
+   "lines": 107,
+   "bytes": 4413,
+   "n_exports": 5,
+   "exports_head": [
+    "EloOptions",
+    "eloWinProbability",
+    "EloUpdate",
+    "updateEloRatings",
+    "toEloFairValue"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "elo-from-results.ts",
+   "lines": 97,
+   "bytes": 3375,
+   "n_exports": 4,
+   "exports_head": [
+    "EloResultGame",
+    "fitEloRatingsFromResults",
+    "eloFairValueFromRatings",
+    "eloHomeWinFromRatings"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "espn-powerindex.ts",
+   "lines": 139,
+   "bytes": 4399,
+   "n_exports": 9,
+   "exports_head": [
+    "PowerIndexSport",
+    "POWERINDEX_MARGIN_SCALE",
+    "POWERINDEX_HFA",
+    "resolvePowerIndexSport",
+    "sigmoidMargin",
+    "PowerIndexLogisticInput",
+    "PowerIndexLogisticResult",
+    "powerIndexToWinProbs"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "evidence-readiness-matrix.ts",
+   "lines": 536,
+   "bytes": 18648,
+   "n_exports": 11,
+   "exports_head": [
+    "EvidenceFactorKey",
+    "EvidenceMatrixStatus",
+    "FailureHorizon",
+    "EvidenceFactorDefinition",
+    "EvidenceMatrixRow",
+    "EvidenceReadinessMatrix",
+    "EVIDENCE_FACTOR_DEFINITIONS",
+    "EdgeLabVerdictInput"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "forecast-skill-eprocess.ts",
+   "lines": 737,
+   "bytes": 35884,
+   "n_exports": 14,
+   "exports_head": [
+    "ForecastSkillPoint",
+    "ForecastSkillOptions",
+    "ForecastSkillVerdict",
+    "ForecastSkillResult",
+    "DEFAULT_FORECAST_SKILL_ALPHA",
+    "DEFAULT_FORECAST_SKILL_EPSILON",
+    "DEFAULT_FORECAST_SKILL_FLOOR",
+    "DEFAULT_FORECAST_SKILL_MIN_PICKS"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "game-context.ts",
+   "lines": 753,
+   "bytes": 27674,
+   "n_exports": 11,
+   "exports_head": [
+    "GameContextScores",
+    "computeLineMovementScore",
+    "computeRestAdvantageScore",
+    "computeHistoricalFormScore",
+    "computeDataQuality",
+    "computeHeadToHeadScore",
+    "computeVenueFormScore",
+    "computeCrossMarketScore"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "game-script.ts",
+   "lines": 237,
+   "bytes": 8251,
+   "n_exports": 13,
+   "exports_head": [
+    "GameScriptSide",
+    "GameScriptCheckpoint",
+    "PaceLabel",
+    "ScriptLabel",
+    "GameScriptAssumptions",
+    "TeamScriptInput",
+    "GameScriptInput",
+    "WinProbabilityPathPoint"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "green-board.ts",
+   "lines": 53,
+   "bytes": 1904,
+   "n_exports": 6,
+   "exports_head": [
+    "GREEN_P_MIN",
+    "INDEPENDENT_DISSENT_BAND",
+    "GreenGateInput",
+    "BoardTier",
+    "GreenGateResult",
+    "greenBoardEligible"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "hawkes-steam.ts",
+   "lines": 867,
+   "bytes": 40416,
+   "n_exports": 16,
+   "exports_head": [
+    "SteamSide",
+    "SteamEvent",
+    "HawkesFit",
+    "HawkesPrior",
+    "HawkesFitOptions",
+    "HawkesSteamOptions",
+    "SteamSignal",
+    "DEFAULT_PRIOR_MU"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "historical-replay.ts",
+   "lines": 431,
+   "bytes": 18355,
+   "n_exports": 14,
+   "exports_head": [
+    "RawScheduleRow",
+    "POST_KICKOFF_FIELDS",
+    "PostKickoffField",
+    "PreGameFeatures",
+    "SettlementFacts",
+    "LookaheadLeakError",
+    "assemblePreGameFeatures",
+    "extractSettlementFacts"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "index.ts",
+   "lines": 1951,
+   "bytes": 69621,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "information-edge-bits.ts",
+   "lines": 626,
+   "bytes": 26103,
+   "n_exports": 19,
+   "exports_head": [
+    "EdgeCandidate",
+    "InformationEdgeBasis",
+    "InformationEdgeOptions",
+    "InformationEdgeVerdict",
+    "InformationEdgeNullBand",
+    "DEFAULT_INFORMATION_EDGE_THRESHOLD_BITS",
+    "DEFAULT_PROBABILITY_FLOOR",
+    "DEFAULT_BASE_RATE"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "instrumented-eprocess.ts",
+   "lines": 293,
+   "bytes": 12818,
+   "n_exports": 11,
+   "exports_head": [
+    "ValueEProcessConfig",
+    "ValueRound",
+    "ValueEProcessState",
+    "hoeffdingWidth",
+    "ipwScore",
+    "initValueEProcess",
+    "updateValueEProcess",
+    "ShiftEProcessState"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "isotonic-debug.ts",
+   "lines": 206,
+   "bytes": 7271,
+   "n_exports": 2,
+   "exports_head": [
+    "IsotonicDebugReport",
+    "debugIsotonicCalibration"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "kelly.ts",
+   "lines": 225,
+   "bytes": 10349,
+   "n_exports": 10,
+   "exports_head": [
+    "KELLY_FRACTION",
+    "MAX_UNITS_PER_PICK",
+    "MIN_CONFIDENCE_FOR_STAKE",
+    "MIN_EDGE_FOR_STAKE",
+    "KellyStake",
+    "americanToDecimalOdds",
+    "fullKellyFraction",
+    "unitsFromKelly"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "linear-thompson.ts",
+   "lines": 326,
+   "bytes": 13364,
+   "n_exports": 8,
+   "exports_head": [
+    "MAX_LIN_TS_DIM",
+    "LinTsOptions",
+    "LinTsState",
+    "LinTsDecision",
+    "createLinTsState",
+    "selectAction",
+    "updateLinTs",
+    "thetaEstimate"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "log-loss-optimize.ts",
+   "lines": 198,
+   "bytes": 5776,
+   "n_exports": 6,
+   "exports_head": [
+    "meanLogLossAtTemperature",
+    "temperatureLogLossGradient",
+    "fitTemperatureNewton",
+    "LogLossSliceReport",
+    "diagnoseLogLoss",
+    "holdoutLogLoss"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "market-anchored-reconciliation.ts",
+   "lines": 339,
+   "bytes": 12716,
+   "n_exports": 11,
+   "exports_head": [
+    "MarketAnchorTeamSide",
+    "MarketAnchorAssumptions",
+    "MarketAnchorInput",
+    "TeamVolumeAnchor",
+    "MarketAnchoredPlayerInput",
+    "MarketAnchoredPlayerProjection",
+    "MarketAnchorConservationCheck",
+    "MarketAnchoredReconciliation"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "market-read.ts",
+   "lines": 231,
+   "bytes": 9236,
+   "n_exports": 8,
+   "exports_head": [
+    "MarketRead",
+    "noVigFromAmericanPrices",
+    "ConsensusMarketRead",
+    "consensusNoVig",
+    "GravityBand",
+    "MarketGravity",
+    "marketGravityIndex",
+    "marketDisagreementPct"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "ml-estimator.ts",
+   "lines": 592,
+   "bytes": 24757,
+   "n_exports": 12,
+   "exports_head": [
+    "MlFeatureVector",
+    "computeFeatureSchemaHash",
+    "FEATURE_SCHEMA_HASH",
+    "DecisionStump",
+    "MlModelProvenance",
+    "MlModelObject",
+    "MIN_SAMPLE_SIZE",
+    "MODEL_MAX_AGE_DAYS"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "model-limitations.ts",
+   "lines": 89,
+   "bytes": 3328,
+   "n_exports": 6,
+   "exports_head": [
+    "UncertaintyInput",
+    "ReliabilityTier",
+    "LimitationFlag",
+    "UncertaintyDisclosure",
+    "wilsonInterval",
+    "assessUncertainty"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "narrative-signal.ts",
+   "lines": 248,
+   "bytes": 9111,
+   "n_exports": 4,
+   "exports_head": [
+    "AnalyzeOptions",
+    "analyzeNarrative",
+    "DEFAULT_NARRATIVE_EDGE_CAP",
+    "narrativeEdgeAdjustment"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-epa-fair-value.ts",
+   "lines": 82,
+   "bytes": 2641,
+   "n_exports": 6,
+   "exports_head": [
+    "NFL_EPA_MARGIN_SCALE",
+    "NFL_EPA_HFA",
+    "NFL_EPA_MIN_GAMES",
+    "NflEpaFairValueInput",
+    "nflEpaToWinProbs",
+    "nflEpaToIndependentFairValue"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nflverse-replay-parser.ts",
+   "lines": 137,
+   "bytes": 3757,
+   "n_exports": 4,
+   "exports_head": [
+    "NflverseScheduleRow",
+    "ReplayGame",
+    "nflverseSchedulesToReplayGames",
+    "orderReplayGames"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "oco-pipeline.ts",
+   "lines": 329,
+   "bytes": 10101,
+   "n_exports": 6,
+   "exports_head": [
+    "OcoMemberSample",
+    "OcoPipelineOptions",
+    "OcoPipelineStep",
+    "OcoPipelineReport",
+    "runOcoPipeline",
+    "runOcoPipelineFromSingleP"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "online-beta-recalibration.ts",
+   "lines": 401,
+   "bytes": 11182,
+   "n_exports": 9,
+   "exports_head": [
+    "OnlineBetaParams",
+    "OnlineBetaOptions",
+    "OnlineBetaStep",
+    "OnlineBetaReport",
+    "applyOnlineBeta",
+    "runOnlineBetaRecalibration",
+    "ResCalibratorOptions",
+    "ResCalibratorReport"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "online-beta-sliding-window.ts",
+   "lines": 163,
+   "bytes": 5279,
+   "n_exports": 4,
+   "exports_head": [
+    "SlidingWindowBetaOptions",
+    "SlidingWindowOgdMetrics",
+    "runOnlineBetaSlidingWindow",
+    "analyzeSlidingWindowOgd"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "opponent-adjusted.ts",
+   "lines": 110,
+   "bytes": 3852,
+   "n_exports": 4,
+   "exports_head": [
+    "TeamGameEfficiency",
+    "TeamRating",
+    "OpponentAdjustOptions",
+    "opponentAdjustedRatings"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "pedersen-ledger.ts",
+   "lines": 290,
+   "bytes": 12997,
+   "n_exports": 16,
+   "exports_head": [
+    "PEDERSEN_P",
+    "PEDERSEN_Q",
+    "PEDERSEN_G",
+    "PEDERSEN_H",
+    "PedersenGroup",
+    "DEFAULT_PEDERSEN_GROUP",
+    "verifyGroup",
+    "PedersenCommitment"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "performance-analytics.ts",
+   "lines": 166,
+   "bytes": 5985,
+   "n_exports": 9,
+   "exports_head": [
+    "SettledPickRecord",
+    "SegmentPerformance",
+    "CalibrationBucket",
+    "PerformanceReport",
+    "computeSegment",
+    "calibrationCurve",
+    "streaks",
+    "beatCloseRate"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "performance-ci.ts",
+   "lines": 601,
+   "bytes": 24926,
+   "n_exports": 15,
+   "exports_head": [
+    "CiMethod",
+    "PerformanceCi",
+    "normalCdf",
+    "normalQuantile",
+    "Statistic",
+    "meanStatistic",
+    "bcaCi",
+    "percentileCi"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "pick-proof-receipt.ts",
+   "lines": 169,
+   "bytes": 7360,
+   "n_exports": 4,
+   "exports_head": [
+    "PickProofInput",
+    "PickProofReceipt",
+    "buildPickProofReceipt",
+    "verifyPickProofReceipt"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "platform-config.ts",
+   "lines": 178,
+   "bytes": 7888,
+   "n_exports": 3,
+   "exports_head": [
+    "ConfidenceDisplayMode",
+    "PlatformConfig",
+    "getPlatformConfig"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "player-archetype.ts",
+   "lines": 54,
+   "bytes": 2135,
+   "n_exports": 4,
+   "exports_head": [
+    "UsageProfileInput",
+    "WorkloadTier",
+    "UsageProfile",
+    "classifyUsageProfile"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "player-projection.ts",
+   "lines": 106,
+   "bytes": 4235,
+   "n_exports": 5,
+   "exports_head": [
+    "PlayerSeasonLine",
+    "PlayerProjection",
+    "projectPlayerSeason",
+    "ProjectionBacktest",
+    "backtestProjections"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "player-rate-posteriors.ts",
+   "lines": 284,
+   "bytes": 11750,
+   "n_exports": 12,
+   "exports_head": [
+    "DEFAULT_PLAYER_RATE_SHRINKAGE_K",
+    "PlayerRatePosteriorFamily",
+    "PlayerRatePrior",
+    "EmpiricalBayesRateObservation",
+    "EmpiricalBayesPriorOptions",
+    "BetaBinomialPosteriorInput",
+    "NormalNormalPosteriorInput",
+    "PlayerRatePosterior"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "player-rush-scheme.ts",
+   "lines": 49,
+   "bytes": 1826,
+   "n_exports": 3,
+   "exports_head": [
+    "RushDirectionCounts",
+    "RushSchemeProfile",
+    "classifyRushScheme"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "poisson.ts",
+   "lines": 276,
+   "bytes": 11617,
+   "n_exports": 9,
+   "exports_head": [
+    "assertTeamRatesAvailable",
+    "factorial",
+    "poissonPmf",
+    "poissonCdf",
+    "jointScoreMatrix",
+    "moneylineProbabilities",
+    "overUnderProbabilities",
+    "poissonConsistencyScore"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "probability-calibration.ts",
+   "lines": 547,
+   "bytes": 20593,
+   "n_exports": 16,
+   "exports_head": [
+    "CalibrationSample",
+    "IsotonicModel",
+    "isotonicCalibration",
+    "centeredIsotonicCalibration",
+    "countDistinctPredictions",
+    "BrierDecomposition",
+    "brierDecomposition",
+    "expectedCalibrationError"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "projection-evaluation.ts",
+   "lines": 50,
+   "bytes": 1701,
+   "n_exports": 3,
+   "exports_head": [
+    "ClarkWestSample",
+    "ClarkWestReport",
+    "clarkWestTest"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "proof-of-record.ts",
+   "lines": 164,
+   "bytes": 7100,
+   "n_exports": 11,
+   "exports_head": [
+    "HashFn",
+    "PickRecord",
+    "MerkleSibling",
+    "MerkleProof",
+    "hashLeaf",
+    "merkleRoot",
+    "merkleRootFromLeafHashes",
+    "inclusionProof"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "provenance.ts",
+   "lines": 114,
+   "bytes": 4218,
+   "n_exports": 8,
+   "exports_head": [
+    "ProvenanceTier",
+    "SourceSnapshot",
+    "FreshnessVerdict",
+    "PredictionProvenance",
+    "ProvenanceOptions",
+    "ProvenanceInput",
+    "buildProvenance",
+    "provenancePayload"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "publication-coin.ts",
+   "lines": 135,
+   "bytes": 5147,
+   "n_exports": 7,
+   "exports_head": [
+    "EPSILON_BASELINE",
+    "CANDIDATE_PI",
+    "PublicationDraw",
+    "EpochVerification",
+    "commitSeed",
+    "drawPublicationCoin",
+    "verifyEpoch"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "ranking-prob.ts",
+   "lines": 109,
+   "bytes": 3431,
+   "n_exports": 3,
+   "exports_head": [
+    "RankingProbSource",
+    "RankingProbResult",
+    "deriveRankingProbability"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "readiness.ts",
+   "lines": 182,
+   "bytes": 7257,
+   "n_exports": 3,
+   "exports_head": [
+    "ReadinessGates",
+    "getReadinessGates",
+    "bootstrapGateResponse"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "regression-detector.ts",
+   "lines": 141,
+   "bytes": 5028,
+   "n_exports": 5,
+   "exports_head": [
+    "CalibrationSnapshot",
+    "RegressionCheckOptions",
+    "RegressionVerdict",
+    "buildCalibrationSnapshot",
+    "checkForRegression"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "replay-harness.ts",
+   "lines": 272,
+   "bytes": 7089,
+   "n_exports": 8,
+   "exports_head": [
+    "HistoricalWeekTarget",
+    "HistoricalWeekReplay",
+    "ReplaySplitOptions",
+    "WalkForwardSplit",
+    "ReplayBacktestReport",
+    "replayHistoricalWeek",
+    "buildPurgedEmbargoedSplits",
+    "runMarketTotalReplayBacktest"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "responsible-gaming.ts",
+   "lines": 109,
+   "bytes": 5497,
+   "n_exports": 5,
+   "exports_head": [
+    "PlayState",
+    "RgOptions",
+    "RgReason",
+    "RgVerdict",
+    "evaluateResponsiblePlay"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "robust-kelly.ts",
+   "lines": 510,
+   "bytes": 26138,
+   "n_exports": 10,
+   "exports_head": [
+    "DEFAULT_ROBUST_ALPHA",
+    "betaCdf",
+    "betaPdf",
+    "betaQuantile",
+    "BetaConfidenceSet",
+    "betaConfidenceSet",
+    "RobustKellyInput",
+    "RobustKellyResult"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "scoring.ts",
+   "lines": 1105,
+   "bytes": 44451,
+   "n_exports": 8,
+   "exports_head": [
+    "americanToImpliedProbability",
+    "impliedProbabilityToAmerican",
+    "averageAmericanPrices",
+    "removeVig",
+    "clamp",
+    "toEdgeIndex",
+    "scoreGame",
+    "scoreGames"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "settlement.ts",
+   "lines": 143,
+   "bytes": 6332,
+   "n_exports": 4,
+   "exports_head": [
+    "SettlementResult",
+    "selectionIsHomeSide",
+    "calculatePickResult",
+    "selectGradingLine"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "shin-devig.ts",
+   "lines": 159,
+   "bytes": 5992,
+   "n_exports": 6,
+   "exports_head": [
+    "impliedFromDecimalOdds",
+    "ShinResult",
+    "shinDevig",
+    "gotoConversion",
+    "PowerDevigResult",
+    "powerDevig"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "signal-ledger.ts",
+   "lines": 99,
+   "bytes": 4583,
+   "n_exports": 4,
+   "exports_head": [
+    "LedgerSignalRow",
+    "ComposeLedgerOptions",
+    "ledgerAgeDays",
+    "composeLedger"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "signal-snapshot.ts",
+   "lines": 205,
+   "bytes": 7526,
+   "n_exports": 2,
+   "exports_head": [
+    "PickSignalSnapshotData",
+    "buildPickSignalSnapshot"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "simhash.ts",
+   "lines": 326,
+   "bytes": 14329,
+   "n_exports": 11,
+   "exports_head": [
+    "SimhashModel",
+    "SimhashSignature",
+    "buildSimhashModel",
+    "signature",
+    "hammingDistance",
+    "estimatedCosine",
+    "multiProbeSignatures",
+    "SimhashIndex"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "skellam.ts",
+   "lines": 193,
+   "bytes": 6252,
+   "n_exports": 13,
+   "exports_head": [
+    "DEFAULT_SKELLAM_MAX_GOALS",
+    "SKELLAM_SPORT_PREFIXES",
+    "SKELLAM_COVER_SOURCE",
+    "isSkellamValidSport",
+    "SkellamCoverInput",
+    "SkellamCoverProbabilities",
+    "SkellamPmfPoint",
+    "skellamPmf"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "slate-commitment.ts",
+   "lines": 191,
+   "bytes": 7340,
+   "n_exports": 10,
+   "exports_head": [
+    "SlateCommitment",
+    "SlateLeaf",
+    "buildSlateCommitment",
+    "provePickInSlate",
+    "SlateVerification",
+    "verifyPickInSlate",
+    "dailySlateKey",
+    "SlatePlanInput"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "standings-strength.ts",
+   "lines": 96,
+   "bytes": 2952,
+   "n_exports": 3,
+   "exports_head": [
+    "StandingsStrengthInput",
+    "standingsWinPctToWinProbs",
+    "standingsWinPctToIndependentFairValue"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "suppression-curve.ts",
+   "lines": 237,
+   "bytes": 6943,
+   "n_exports": 15,
+   "exports_head": [
+    "SUPPRESSION_CURVE_SEED",
+    "Outcome",
+    "CurvePoint",
+    "RandomBand",
+    "KeepMask",
+    "SuppressionPolicy",
+    "mulberry32",
+    "scoreOnMask"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "team-index-registry.ts",
+   "lines": 140,
+   "bytes": 6205,
+   "n_exports": 9,
+   "exports_head": [
+    "DEFAULT_TEAM_CAPACITY",
+    "TeamIndexRegistry",
+    "AssignTeamIndexResult",
+    "createTeamIndexRegistry",
+    "normalizeTeamKey",
+    "assignTeamIndex",
+    "lookupTeamIndex",
+    "teamCount"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "team-rates.ts",
+   "lines": 232,
+   "bytes": 8809,
+   "n_exports": 11,
+   "exports_head": [
+    "MIN_GAMES_FOR_RATES",
+    "DEFAULT_HOME_ADVANTAGE",
+    "TeamGameRecord",
+    "TeamScoringRates",
+    "MatchupLambdas",
+    "PoissonFairValueInput",
+    "PoissonFairValue",
+    "isPoissonValidSport"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "team-strength-filter.ts",
+   "lines": 1041,
+   "bytes": 42317,
+   "n_exports": 16,
+   "exports_head": [
+    "MAX_STRENGTH_DIM",
+    "MAX_TEAMS",
+    "MAX_PARTICLES",
+    "DEFAULT_PARTICLES",
+    "MAX_PARTICLE_CELLS",
+    "ResamplingScheme",
+    "TeamStrengthFilterOptions",
+    "TeamIntervention"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "temperature-scaling.ts",
+   "lines": 103,
+   "bytes": 2818,
+   "n_exports": 3,
+   "exports_head": [
+    "TemperatureModel",
+    "applyTemperature",
+    "fitTemperature"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "trend-discovery.ts",
+   "lines": 166,
+   "bytes": 6071,
+   "n_exports": 9,
+   "exports_head": [
+    "Observation",
+    "Bucket",
+    "TrendConfig",
+    "Trend",
+    "twoSidedP",
+    "welchCompare",
+    "discoverCohortTrends",
+    "significantTrends"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "tweedie-aci.ts",
+   "lines": 63,
+   "bytes": 2409,
+   "n_exports": 3,
+   "exports_head": [
+    "AciObservation",
+    "AciInterval",
+    "adaptiveConformalIntervals"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "tweedie-baseline.ts",
+   "lines": 270,
+   "bytes": 11089,
+   "n_exports": 12,
+   "exports_head": [
+    "TweedieProjectionSample",
+    "TweedieBaselineOptions",
+    "TweedieStump",
+    "TweedieBaselineModel",
+    "TemporalProjectionSplit",
+    "ProjectionSplitOptions",
+    "TweedieBacktestReport",
+    "tweedieDeviance"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "calibration": [
+  {
+   "file": "aggregation.ts",
+   "lines": 136,
+   "bytes": 3617,
+   "n_exports": 8,
+   "exports_head": [
+    "Multiprobability",
+    "FullMultiprobability",
+    "neumaierSum",
+    "logSpaceGeometricMeanAggregation",
+    "arithmeticMeanAggregation",
+    "toFull",
+    "PointConversionMode",
+    "multiprobToPoint"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "cvap.ts",
+   "lines": 186,
+   "bytes": 5991,
+   "n_exports": 6,
+   "exports_head": [
+    "CvapAggregationMode",
+    "CvapOptions",
+    "CvapPrediction",
+    "cvapPredict",
+    "CrossVennAbers",
+    "fitCvap"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "ivap.ts",
+   "lines": 126,
+   "bytes": 4339,
+   "n_exports": 5,
+   "exports_head": [
+    "IvapCalibrationPoint",
+    "IvapPrediction",
+    "InductiveVennAbers",
+    "fitIvap",
+    "ivapPredict"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "local-isotonic-patch.ts",
+   "lines": 132,
+   "bytes": 3866,
+   "n_exports": 5,
+   "exports_head": [
+    "LocalPatchPoint",
+    "LocalIsotonicPatchOptions",
+    "LocalIsotonicPatchResult",
+    "fitLocalIsotonicPatch",
+    "applyLocalIsotonicPatch"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "multicalib-audit-patch.ts",
+   "lines": 432,
+   "bytes": 14596,
+   "n_exports": 9,
+   "exports_head": [
+    "AuditSample",
+    "BinningStrategy",
+    "AuditCell",
+    "MulticalibAuditOptions",
+    "AuditAndPatchResult",
+    "auditCells",
+    "fitPatchesForFailures",
+    "applyPatches"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "pav.ts",
+   "lines": 84,
+   "bytes": 2409,
+   "n_exports": 3,
+   "exports_head": [
+    "PavBlock",
+    "pavIsotonic",
+    "pavBinary"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "certificate": [
+  {
+   "file": "decision-certificate.ts",
+   "lines": 294,
+   "bytes": 10303,
+   "n_exports": 12,
+   "exports_head": [
+    "DECISION_CERTIFICATE_SCHEMA",
+    "DecisionKind",
+    "NoBetReasonCode",
+    "MultiprobInterval",
+    "DecisionCertificate",
+    "omitUndefined",
+    "canonicalizeForHash",
+    "parseDecisionCertificate"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "gate-certificate-bridge.ts",
+   "lines": 92,
+   "bytes": 2379,
+   "n_exports": 2,
+   "exports_head": [
+    "GateCandidateView",
+    "BridgeOptions"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "index.ts",
+   "lines": 15,
+   "bytes": 423,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "kelly-lower-endpoint.ts",
+   "lines": 54,
+   "bytes": 1296,
+   "n_exports": 3,
+   "exports_head": [
+    "KellyInput",
+    "KellyResult",
+    "kellyFromLowerEndpoint"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "proper-scoring.ts",
+   "lines": 63,
+   "bytes": 1956,
+   "n_exports": 5,
+   "exports_head": [
+    "brierScore",
+    "meanBrier",
+    "logLoss",
+    "meanLogLoss",
+    "reliabilityDiagram"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "selective-abstention.ts",
+   "lines": 133,
+   "bytes": 5225,
+   "n_exports": 7,
+   "exports_head": [
+    "Interval",
+    "AbstentionConfig",
+    "DEFAULT_ABSTENTION",
+    "chowStyleShouldAbstain",
+    "npStyleLowerEndpointFire",
+    "sampleFloorAbstain",
+    "evaluateAbstentionHelpers"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "stratum-coverage.ts",
+   "lines": 67,
+   "bytes": 1693,
+   "n_exports": 7,
+   "exports_head": [
+    "StratumParts",
+    "stratumKey",
+    "parseStratumKey",
+    "StratumCoverage",
+    "coverageFor",
+    "refuseIfEmptyStratum",
+    "floorStrata"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "certificate\\__tests__": [
+  {
+   "file": "certificate-modules.test.ts",
+   "lines": 277,
+   "bytes": 8273,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "conformal": [
+  {
+   "file": "levene-welch.ts",
+   "lines": 370,
+   "bytes": 13760,
+   "n_exports": 10,
+   "exports_head": [
+    "VarianceTestResult",
+    "WelchTResult",
+    "SplitQuality",
+    "mean",
+    "median",
+    "sampleVariance",
+    "levene",
+    "brownForsythe"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "lwt-mcps-sketch.ts",
+   "lines": 411,
+   "bytes": 15684,
+   "n_exports": 11,
+   "exports_head": [
+    "ROOT_LEAF_ID",
+    "UNMATCHED_LEAF_ID",
+    "SplitCandidate",
+    "LeafPathStep",
+    "LeafDefinition",
+    "PartitionSample",
+    "GreedyPartitionOptions",
+    "bestSplit"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "mondrian.ts",
+   "lines": 146,
+   "bytes": 4765,
+   "n_exports": 3,
+   "exports_head": [
+    "MondrianResidualStoreOptions",
+    "QuantileLookupResult",
+    "MondrianResidualManager"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "sports-taxonomy.ts",
+   "lines": 133,
+   "bytes": 4298,
+   "n_exports": 10,
+   "exports_head": [
+    "TaxonomyCategory",
+    "SportsGameContext",
+    "RestBucket",
+    "restBucket",
+    "tier1Categories",
+    "tier2Intersections",
+    "assignMondrianCategory",
+    "parentCategory"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "devig": [
+  {
+   "file": "oracle.ts",
+   "lines": 229,
+   "bytes": 7060,
+   "n_exports": 4,
+   "exports_head": [
+    "DevigMethod",
+    "DevigResult",
+    "bisectRoot",
+    "devig"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "dispersion": [
+  {
+   "file": "estimate-phi.ts",
+   "lines": 167,
+   "bytes": 5603,
+   "n_exports": 5,
+   "exports_head": [
+    "DispersionVerdict",
+    "PhiEstimate",
+    "MIN_SAMPLES_FOR_DISPERSION",
+    "estimatePhi",
+    "impliedVmr"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "dispersion\\__tests__": [
+  {
+   "file": "estimate-phi.test.ts",
+   "lines": 112,
+   "bytes": 4170,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "edge-lab": [
+  {
+   "file": "agent-roles.ts",
+   "lines": 107,
+   "bytes": 3532,
+   "n_exports": 8,
+   "exports_head": [
+    "EdgeLabAgentRole",
+    "EdgeLabContext",
+    "AgentOpinion",
+    "DebateRound",
+    "DebateSummary",
+    "EdgeLabAgent",
+    "EdgeLabCouncil",
+    "staticOpinion"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "asof-store.ts",
+   "lines": 197,
+   "bytes": 7977,
+   "n_exports": 5,
+   "exports_head": [
+    "FeatureObservation",
+    "ServedRecord",
+    "AsOfViolationError",
+    "IngestOptions",
+    "AsOfFeatureStore"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-blend.ts",
+   "lines": 208,
+   "bytes": 7641,
+   "n_exports": 8,
+   "exports_head": [
+    "CalibrationMap",
+    "BlendOptions",
+    "applyBeta",
+    "monotoneEnvelope",
+    "tailBlendMap",
+    "BlendCandidate",
+    "OofCalibrationFit",
+    "fitOofCalibration"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "close-distillation.ts",
+   "lines": 195,
+   "bytes": 6895,
+   "n_exports": 6,
+   "exports_head": [
+    "CloseRow",
+    "CloseDistiller",
+    "trainCloseDistiller",
+    "DistillationFoldScore",
+    "scoreDistillation",
+    "predictedMoveEdge"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "covariate-bus.ts",
+   "lines": 186,
+   "bytes": 8388,
+   "n_exports": 11,
+   "exports_head": [
+    "COVARIATE_BUS_METHOD_TAG",
+    "StatType",
+    "CovariateRow",
+    "CovariateField",
+    "CovariateGrain",
+    "CovariateProvenance",
+    "CovariateCell",
+    "covariateKey"
+   ],
+   "method_tags": [
+    "covariate_bus_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "cpoe-falsify-run.ts",
+   "lines": 21,
+   "bytes": 1091,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "devig.ts",
+   "lines": 149,
+   "bytes": 6279,
+   "n_exports": 4,
+   "exports_head": [
+    "impliedFromDecimal",
+    "proportionalDevig",
+    "ShinResult",
+    "shinDevig"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "edge-lab-council.ts",
+   "lines": 448,
+   "bytes": 16065,
+   "n_exports": 10,
+   "exports_head": [
+    "DEFAULT_MAX_GUARDIAN_WIDTH",
+    "marketMicrostructureAnalyst",
+    "featureAnalyst",
+    "placeboAnalyst",
+    "calibrationAnalyst",
+    "riskHonestyGuardian",
+    "decisionAgent",
+    "glassLedgerRecorder"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "fair-skill-brier.ts",
+   "lines": 91,
+   "bytes": 3573,
+   "n_exports": 6,
+   "exports_head": [
+    "FAIR_SKILL_BRIER_METHOD_TAG",
+    "indifferenceBrier",
+    "originalBrier",
+    "originalBrierFromBinaryUnit",
+    "fairSkillBrier",
+    "meanFairSkillBrier"
+   ],
+   "method_tags": [
+    "fair_skill_brier_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "fire-authority.ts",
+   "lines": 244,
+   "bytes": 6330,
+   "n_exports": 6,
+   "exports_head": [
+    "FireRefuseReason",
+    "FireAuthorityInput",
+    "FireAuthorityDecision",
+    "topologyScore",
+    "evaluateFireAuthority",
+    "FIRE_DEMO_SCENARIOS"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "game-row.ts",
+   "lines": 60,
+   "bytes": 2501,
+   "n_exports": 2,
+   "exports_head": [
+    "GameRow",
+    "americanToDecimal"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "grouped-climatology.ts",
+   "lines": 241,
+   "bytes": 7571,
+   "n_exports": 15,
+   "exports_head": [
+    "GROUPED_CLIMATOLOGY_METHOD_TAG",
+    "DEFAULT_MIN_CELL_N",
+    "BinaryOutcome",
+    "ClimatologySource",
+    "ClimTrainRow",
+    "CellRate",
+    "GroupedClimatology",
+    "GroupedPrediction"
+   ],
+   "method_tags": [
+    "grouped_climatology_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "honest-ceiling.ts",
+   "lines": 150,
+   "bytes": 6303,
+   "n_exports": 10,
+   "exports_head": [
+    "BREAK_EVEN",
+    "BLIND_ATS_CEILING",
+    "SelectiveClaimFloor",
+    "SELECTIVE_CLAIM_FLOOR",
+    "PerformanceClaimScope",
+    "SelectiveClaimProof",
+    "PerformanceClaimInput",
+    "HonestCeilingError"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "kalshi-book-divergence.ts",
+   "lines": 122,
+   "bytes": 4001,
+   "n_exports": 9,
+   "exports_head": [
+    "KALSHI_BOOK_METHOD_TAG",
+    "DEFAULT_KALSHI_BOOK_TAU",
+    "DEFAULT_KALSHI_MAX_SPREAD",
+    "KalshiTwoWay",
+    "NamedBookTwoWay",
+    "KalshiBookFlag",
+    "KalshiBookResult",
+    "KalshiBookDenied"
+   ],
+   "method_tags": [
+    "kalshi_book_div_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "kaunitz-outlier.ts",
+   "lines": 166,
+   "bytes": 5124,
+   "n_exports": 12,
+   "exports_head": [
+    "KAUNITZ_METHOD_TAG",
+    "DEFAULT_KAUNITZ_TAU",
+    "MIN_KAUNITZ_BOOKS",
+    "KaunitzSide",
+    "KaunitzBookQuote",
+    "KaunitzBookRead",
+    "KaunitzFlag",
+    "KaunitzResult"
+   ],
+   "method_tags": [
+    "kaunitz_shin_outlier_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "kelly.ts",
+   "lines": 428,
+   "bytes": 18760,
+   "n_exports": 9,
+   "exports_head": [
+    "fractionalKellyStake",
+    "jamesSteinShrink",
+    "LedoitWolfResult",
+    "ledoitWolfShrinkCovariance",
+    "clvDeflator",
+    "PortfolioKellyArgs",
+    "PortfolioKellyDiagnostics",
+    "PortfolioKellyResult"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "ladder-boost-scanners.ts",
+   "lines": 308,
+   "bytes": 10222,
+   "n_exports": 8,
+   "exports_head": [
+    "LADDER_BOOST_METHOD_TAG",
+    "LadderLevel",
+    "LadderLevelScan",
+    "SoftnessMapResult",
+    "SoftnessMapOptions",
+    "scanLadderBoost",
+    "scanBoostOpportunities",
+    "BoostOpportunity"
+   ],
+   "method_tags": [
+    "ladder_boost_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "ledger-anchor.ts",
+   "lines": 102,
+   "bytes": 4603,
+   "n_exports": 5,
+   "exports_head": [
+    "AnchorPayload",
+    "GatedActionError",
+    "buildAnchorPayload",
+    "AnchorInstructions",
+    "anchorExternally"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "ledger-chain.ts",
+   "lines": 465,
+   "bytes": 19708,
+   "n_exports": 18,
+   "exports_head": [
+    "LedgerPickEntry",
+    "LedgerSettlement",
+    "LedgerEntry",
+    "LedgerChain",
+    "PickEntryInput",
+    "SettlementEntryInput",
+    "isSettlement",
+    "GENESIS_HASH"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "logistic.ts",
+   "lines": 120,
+   "bytes": 4197,
+   "n_exports": 5,
+   "exports_head": [
+    "LabeledExample",
+    "Predictor",
+    "Trainer",
+    "LogisticOptions",
+    "logisticTrainer"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "logit-pool.ts",
+   "lines": 162,
+   "bytes": 5432,
+   "n_exports": 2,
+   "exports_head": [
+    "LogitPoolResult",
+    "logitPoolTest"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "market-consensus-q.ts",
+   "lines": 118,
+   "bytes": 4000,
+   "n_exports": 6,
+   "exports_head": [
+    "LabeledQ",
+    "ConsensusQ",
+    "ReanchorResidual",
+    "bradleyTerryPair",
+    "consensusMarketQ",
+    "marketReanchorResidual"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-change-point.ts",
+   "lines": 310,
+   "bytes": 12223,
+   "n_exports": 7,
+   "exports_head": [
+    "NFL_CHANGEPOINT_METHOD_TAG",
+    "RegimeDirection",
+    "ChangePointFlag",
+    "WeeklyPerformance",
+    "ChangePointOptions",
+    "detectRegimeShift",
+    "weeklyPerformancesFromGames"
+   ],
+   "method_tags": [
+    "nfl_changepoint_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-epa-path.ts",
+   "lines": 54,
+   "bytes": 1466,
+   "n_exports": 3,
+   "exports_head": [
+    "NFL_EPA_PATH_TAG",
+    "EpaPathStatus",
+    "nflEpaPathStatus"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "ngs-measurement-loop.ts",
+   "lines": 139,
+   "bytes": 4244,
+   "n_exports": 9,
+   "exports_head": [
+    "NGS_MEASURE_METHOD_TAG",
+    "SepPrediction",
+    "SepTruth",
+    "SepMeasurement",
+    "MeasureDenied",
+    "measureSeparationAgainstNgs",
+    "ExpectedFamily",
+    "ExpectedMeasurement"
+   ],
+   "method_tags": [
+    "ngs_measurement_loop_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "phase4-research.ts",
+   "lines": 114,
+   "bytes": 4375,
+   "n_exports": 7,
+   "exports_head": [
+    "ChannelRecord",
+    "ChannelPrecision",
+    "channelPrecision",
+    "fuseSignals",
+    "aciUpdate",
+    "LttCandidate",
+    "learnThenTest"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "placebo.ts",
+   "lines": 492,
+   "bytes": 20004,
+   "n_exports": 12,
+   "exports_head": [
+    "EvalRow",
+    "evVsClose",
+    "FiredPlay",
+    "OofScore",
+    "EvalReport",
+    "walkForwardEval",
+    "PlaceboOptions",
+    "PlaceboReport"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "player-research-log.ts",
+   "lines": 73,
+   "bytes": 2238,
+   "n_exports": 5,
+   "exports_head": [
+    "RESEARCH_LOG_METHOD_TAG",
+    "ResearchFeatureInput",
+    "ResearchLog",
+    "ResearchDenied",
+    "playerResearchLog"
+   ],
+   "method_tags": [
+    "player_research_log_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-context-bind.ts",
+   "lines": 316,
+   "bytes": 12014,
+   "n_exports": 8,
+   "exports_head": [
+    "CONTEXT_BIND_METHOD_TAG",
+    "ContextField",
+    "ContextCell",
+    "ContextBindRequest",
+    "ContextRefuse",
+    "ContextBindResult",
+    "bindTeamContext",
+    "bindTeamContextBatch"
+   ],
+   "method_tags": [
+    "props_context_bind_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-fire-gate.ts",
+   "lines": 96,
+   "bytes": 3090,
+   "n_exports": 5,
+   "exports_head": [
+    "FIRE_GATE_METHOD_TAG",
+    "FireOpen",
+    "FireClosed",
+    "FireDenied",
+    "firePostedProp"
+   ],
+   "method_tags": [
+    "props_fire_gate_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-adot-catch.ts",
+   "lines": 200,
+   "bytes": 6521,
+   "n_exports": 11,
+   "exports_head": [
+    "ADOT_CATCH_METHOD_TAG",
+    "AdotBucket",
+    "SHORT_ADOT_MAX",
+    "INTERMEDIATE_ADOT_MAX",
+    "AdotCatchSample",
+    "BucketedCatchFit",
+    "adotOf",
+    "bucketAdot"
+   ],
+   "method_tags": [
+    "props_hb_adot_catch_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-adot-sep-bind.ts",
+   "lines": 134,
+   "bytes": 5234,
+   "n_exports": 5,
+   "exports_head": [
+    "SEP_BIND_METHOD_TAG",
+    "SepBindRequest",
+    "SepBindResult",
+    "bindSepSamples",
+    "boundSepSamples"
+   ],
+   "method_tags": [
+    "sep_bind_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-adot-sep.ts",
+   "lines": 139,
+   "bytes": 4154,
+   "n_exports": 10,
+   "exports_head": [
+    "ADOT_SEP_METHOD_TAG",
+    "TIGHT_SEP_MAX",
+    "SepBucket",
+    "AdotSepCell",
+    "AdotSepCatchSample",
+    "AdotSepFit",
+    "bucketSep",
+    "adotSepCell"
+   ],
+   "method_tags": [
+    "props_hb_adot_sep_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-air-yac-bind.ts",
+   "lines": 173,
+   "bytes": 6661,
+   "n_exports": 6,
+   "exports_head": [
+    "YAC_BIND_METHOD_TAG",
+    "YacBindRequest",
+    "BoundAirYacSample",
+    "YacBindResult",
+    "bindYacSamples",
+    "boundYacSamples"
+   ],
+   "method_tags": [
+    "yac_bind_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-air-yac.ts",
+   "lines": 216,
+   "bytes": 7004,
+   "n_exports": 11,
+   "exports_head": [
+    "AIR_YAC_METHOD_TAG",
+    "AirYacSample",
+    "AirYacPriors",
+    "AirYacPosteriors",
+    "fitAirYacPriors",
+    "posteriorAirYac",
+    "nbPredictiveCdf",
+    "nbPredictivePmf"
+   ],
+   "method_tags": [
+    "props_hb_air_yac_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-atd.ts",
+   "lines": 152,
+   "bytes": 5572,
+   "n_exports": 9,
+   "exports_head": [
+    "ATD_HB_METHOD_TAG",
+    "TouchTdSample",
+    "fitTdPerTouchPrior",
+    "pooledTdPerTouch",
+    "tdProbZeroPoisson",
+    "posteriorTdPerTouch",
+    "tdProbZero",
+    "probAnytimeTdGivenTouches"
+   ],
+   "method_tags": [
+    "props_hb_atd_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-catch-cushion-bind.ts",
+   "lines": 187,
+   "bytes": 6984,
+   "n_exports": 6,
+   "exports_head": [
+    "CATCH_CUSHION_BIND_METHOD_TAG",
+    "CatchCushionBindRequest",
+    "BoundCatchSample",
+    "CatchCushionBindResult",
+    "bindCatchCushionSamples",
+    "boundCatchCushionSamples"
+   ],
+   "method_tags": [
+    "catch_cushion_bind_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-catch.ts",
+   "lines": 206,
+   "bytes": 7419,
+   "n_exports": 9,
+   "exports_head": [
+    "CATCH_HB_METHOD_TAG",
+    "CatchSample",
+    "BetaPrior",
+    "BetaPosterior",
+    "fitCatchPrior",
+    "posteriorCatch",
+    "betaBinomialProbOver",
+    "probOverReceptions"
+   ],
+   "method_tags": [
+    "props_hb_catch_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-comp-air-yards-diff-bind.ts",
+   "lines": 189,
+   "bytes": 7355,
+   "n_exports": 6,
+   "exports_head": [
+    "COMP_AIR_YARDS_DIFF_BIND_METHOD_TAG",
+    "CompAirYardsDiffBindRequest",
+    "BoundCompSample",
+    "CompAirYardsDiffBindResult",
+    "bindCompAirYardsDiffSamples",
+    "boundCompAirYardsDiffSamples"
+   ],
+   "method_tags": [
+    "comp_air_yards_diff_bind_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-comp.ts",
+   "lines": 84,
+   "bytes": 2753,
+   "n_exports": 7,
+   "exports_head": [
+    "COMP_HB_METHOD_TAG",
+    "CompSample",
+    "fitCompletionPrior",
+    "posteriorCompletion",
+    "betaBinomialProbOverCompletions",
+    "probOverCompletions",
+    "scoreCompletionsOver"
+   ],
+   "method_tags": [
+    "props_hb_comp_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-cpoe-comp-bind.ts",
+   "lines": 253,
+   "bytes": 9666,
+   "n_exports": 7,
+   "exports_head": [
+    "CPOE_COMP_BIND_METHOD_TAG",
+    "GSE_CPOE_PROVENANCE",
+    "CpoeCompBindRequest",
+    "BoundCompSample",
+    "CpoeCompBindResult",
+    "bindCpoeCompSamples",
+    "boundCpoeCompSamples"
+   ],
+   "method_tags": [
+    "cpoe_comp_bind_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-int-bind.ts",
+   "lines": 213,
+   "bytes": 7987,
+   "n_exports": 6,
+   "exports_head": [
+    "INT_BIND_METHOD_TAG",
+    "IntBindRequest",
+    "BoundIntSample",
+    "IntBindResult",
+    "bindIntSamples",
+    "boundIntSamples"
+   ],
+   "method_tags": [
+    "int_bind_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-int.ts",
+   "lines": 133,
+   "bytes": 5195,
+   "n_exports": 9,
+   "exports_head": [
+    "INT_HB_METHOD_TAG",
+    "IntSample",
+    "fitIntPerAttemptPrior",
+    "pooledIntPerAttempt",
+    "intProbZeroPoisson",
+    "posteriorIntPerAttempt",
+    "intProbZero",
+    "probIntGivenAttempts"
+   ],
+   "method_tags": [
+    "props_hb_int_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-nested.ts",
+   "lines": 533,
+   "bytes": 19459,
+   "n_exports": 17,
+   "exports_head": [
+    "GroupedRateSample",
+    "VarianceMethod",
+    "VarianceDecomposition",
+    "NestedGroupPrior",
+    "NestedFit",
+    "NestedShrinkageRow",
+    "gammaFromMoments",
+    "fitVarianceDecomposition"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-obs.ts",
+   "lines": 495,
+   "bytes": 17354,
+   "n_exports": 19,
+   "exports_head": [
+    "CountFamily",
+    "MeanVarianceFit",
+    "GameCount",
+    "PlayerGameLog",
+    "GameLogOptions",
+    "RegimeDirection",
+    "RegimeShift",
+    "fitMeanVariance"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-pass-td.ts",
+   "lines": 120,
+   "bytes": 4555,
+   "n_exports": 9,
+   "exports_head": [
+    "PASS_TD_HB_METHOD_TAG",
+    "PassTdSample",
+    "fitPassTdPerAttemptPrior",
+    "pooledPassTdPerAttempt",
+    "passTdProbZeroPoisson",
+    "posteriorPassTdPerAttempt",
+    "passTdProbZero",
+    "probPassTdGivenAttempts"
+   ],
+   "method_tags": [
+    "props_hb_pass_td_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-pass-yards.ts",
+   "lines": 179,
+   "bytes": 7412,
+   "n_exports": 6,
+   "exports_head": [
+    "PASS_YARDS_HB_METHOD_TAG",
+    "PassYardsSample",
+    "fitPassYardsPerAttemptPrior",
+    "posteriorPassYardsPerAttempt",
+    "probOverPassYardsGivenAttempts",
+    "probOverPassYards"
+   ],
+   "method_tags": [
+    "props_hb_pass_yards_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-rec-td-cushion-bind.ts",
+   "lines": 189,
+   "bytes": 7046,
+   "n_exports": 6,
+   "exports_head": [
+    "REC_TD_CUSHION_BIND_METHOD_TAG",
+    "RecTdCushionBindRequest",
+    "BoundRecTdSample",
+    "RecTdCushionBindResult",
+    "bindRecTdCushionSamples",
+    "boundRecTdCushionSamples"
+   ],
+   "method_tags": [
+    "rec_td_cushion_bind_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-rec-td.ts",
+   "lines": 154,
+   "bytes": 5877,
+   "n_exports": 9,
+   "exports_head": [
+    "REC_TD_HB_METHOD_TAG",
+    "RecTdSample",
+    "fitRecTdPerTargetPrior",
+    "pooledRecTdPerTarget",
+    "recTdProbZeroPoisson",
+    "posteriorRecTdPerTarget",
+    "recTdProbZero",
+    "probRecTdGivenTargets"
+   ],
+   "method_tags": [
+    "props_hb_rec_td_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-rush-attempts.ts",
+   "lines": 97,
+   "bytes": 4097,
+   "n_exports": 5,
+   "exports_head": [
+    "RUSH_ATTEMPTS_HB_METHOD_TAG",
+    "RushAttemptsSample",
+    "fitRushAttemptsPrior",
+    "posteriorRushAttempts",
+    "probOverRushAttempts"
+   ],
+   "method_tags": [
+    "props_hb_rush_attempts_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-rush-td.ts",
+   "lines": 152,
+   "bytes": 5791,
+   "n_exports": 9,
+   "exports_head": [
+    "RUSH_TD_HB_METHOD_TAG",
+    "RushTdSample",
+    "fitRushTdPerAttemptPrior",
+    "pooledRushTdPerAttempt",
+    "rushTdProbZeroPoisson",
+    "posteriorRushTdPerAttempt",
+    "rushTdProbZero",
+    "probRushTdGivenAttempts"
+   ],
+   "method_tags": [
+    "props_hb_rush_td_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-rush-yards-bind.ts",
+   "lines": 213,
+   "bytes": 8285,
+   "n_exports": 6,
+   "exports_head": [
+    "RUSH_YARDS_BIND_METHOD_TAG",
+    "RushYardsBindRequest",
+    "BoundRushSample",
+    "RushYardsBindResult",
+    "bindRushYardsSamples",
+    "boundRushYardsSamples"
+   ],
+   "method_tags": [
+    "rush_yards_bind_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-rush.ts",
+   "lines": 130,
+   "bytes": 4273,
+   "n_exports": 6,
+   "exports_head": [
+    "RUSH_HB_METHOD_TAG",
+    "RushSample",
+    "fitYardsPerAttemptPrior",
+    "posteriorYardsPerAttempt",
+    "probOverRushYardsGivenAttempts",
+    "probOverRushYards"
+   ],
+   "method_tags": [
+    "props_hb_rush_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-sack-ttt-bind.ts",
+   "lines": 186,
+   "bytes": 6863,
+   "n_exports": 6,
+   "exports_head": [
+    "SACK_TTT_BIND_METHOD_TAG",
+    "SackTttBindRequest",
+    "BoundSackSample",
+    "SackTttBindResult",
+    "bindSackTttSamples",
+    "boundSackTttSamples"
+   ],
+   "method_tags": [
+    "sack_ttt_bind_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-sacks.ts",
+   "lines": 74,
+   "bytes": 2164,
+   "n_exports": 7,
+   "exports_head": [
+    "SACK_HB_METHOD_TAG",
+    "SackSample",
+    "fitSackPrior",
+    "posteriorSack",
+    "betaBinomialProbOverSacks",
+    "probOverSacks",
+    "scoreSacksOver"
+   ],
+   "method_tags": [
+    "props_hb_sacks_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-snap-exposure.ts",
+   "lines": 92,
+   "bytes": 3079,
+   "n_exports": 7,
+   "exports_head": [
+    "SNAP_EXPOSURE_METHOD_TAG",
+    "SnapSample",
+    "SnapShare",
+    "SnapDenied",
+    "snapShare",
+    "pooledSnapShare",
+    "expectedSnapsNext"
+   ],
+   "method_tags": [
+    "props_hb_snap_exposure_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb.ts",
+   "lines": 427,
+   "bytes": 21031,
+   "n_exports": 10,
+   "exports_head": [
+    "RateSample",
+    "GammaPrior",
+    "GammaPosterior",
+    "ShrinkageRow",
+    "fitGroupPrior",
+    "posteriorRate",
+    "probOver",
+    "regularizedGammaQ"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-juice-floor.ts",
+   "lines": 95,
+   "bytes": 3024,
+   "n_exports": 6,
+   "exports_head": [
+    "JUICE_FLOOR_METHOD_TAG",
+    "BREAK_EVEN_MINUS_110",
+    "JuiceFloorResult",
+    "JuiceFloorDenied",
+    "postedBreakEven",
+    "edgeClearsPosted"
+   ],
+   "method_tags": [
+    "props_juice_floor_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-line-shop.ts",
+   "lines": 107,
+   "bytes": 3144,
+   "n_exports": 5,
+   "exports_head": [
+    "LINE_SHOP_METHOD_TAG",
+    "ShopBook",
+    "ShopPick",
+    "ShopDenied",
+    "shopPostedPrices"
+   ],
+   "method_tags": [
+    "props_line_shop_v1"
+   ],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-priced-edge.ts",
+   "lines": 171,
+   "bytes": 4978,
+   "n_exports": 7,
+   "exports_head": [
+    "PROPS_HB_SOURCE",
+    "PropBookQuote",
+    "PricedPropEdge",
+    "UnpricedPropEdge",
+    "PropEdgeResult",
+    "pricePropAgainstMarket",
+    "confidenceFromPOver"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "provenance.ts",
+   "lines": 92,
+   "bytes": 3661,
+   "n_exports": 6,
+   "exports_head": [
+    "Canonical",
+    "canonicalJson",
+    "sha256Hex",
+    "ProvenanceStamp",
+    "stampProvenance",
+    "verifyReproduction"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "recompute-verifier.ts",
+   "lines": 125,
+   "bytes": 4521,
+   "n_exports": 3,
+   "exports_head": [
+    "ClvDiscrepancy",
+    "RecomputeReport",
+    "recomputeLedger"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "residual-gbm.ts",
+   "lines": 423,
+   "bytes": 16626,
+   "n_exports": 6,
+   "exports_head": [
+    "ResidualGbmRow",
+    "ResidualGbmOptions",
+    "ResidualGbmLossPoint",
+    "ResidualGbmDiagnostics",
+    "ResidualGbmModel",
+    "trainResidualGbm"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "rng.ts",
+   "lines": 38,
+   "bytes": 1297,
+   "n_exports": 4,
+   "exports_head": [
+    "Rng",
+    "mulberry32",
+    "shuffled",
+    "uniformInstant"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "schedule-features.ts",
+   "lines": 167,
+   "bytes": 6168,
+   "n_exports": 3,
+   "exports_head": [
+    "SCHEDULE_FEATURE_KEYS",
+    "ScheduleFeatureResult",
+    "buildScheduleFeatureRows"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "selective-gate.ts",
+   "lines": 567,
+   "bytes": 24073,
+   "n_exports": 17,
+   "exports_head": [
+    "VennAbersInterval",
+    "MultiprobSource",
+    "MultiprobGateOptions",
+    "NoBetReason",
+    "GateSetOverlapError",
+    "vennAbersInterval",
+    "GateDecisionRow",
+    "FiredDecision"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "standings-math.ts",
+   "lines": 154,
+   "bytes": 6820,
+   "n_exports": 6,
+   "exports_head": [
+    "PLAYOFF_SPOTS_PER_CONFERENCE",
+    "TeamStandingRow",
+    "StandingsFacts",
+    "points",
+    "maxPoints",
+    "standingsFacts"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "stats.ts",
+   "lines": 280,
+   "bytes": 10489,
+   "n_exports": 11,
+   "exports_head": [
+    "wilsonLowerBound",
+    "WilsonInterval",
+    "wilsonInterval",
+    "gammaLn",
+    "regularizedIncompleteBeta",
+    "betaInv",
+    "clopperPearsonLowerBound",
+    "ClopperPearsonInterval"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "trials-registry.ts",
+   "lines": 323,
+   "bytes": 12610,
+   "n_exports": 16,
+   "exports_head": [
+    "TRIALS_GENESIS_HASH",
+    "TrialKind",
+    "TrialOutcome",
+    "TrialInput",
+    "TrialEntry",
+    "TrialsRegistryError",
+    "TrialsRegistry",
+    "createTrialsRegistry"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "unified-prefire.ts",
+   "lines": 179,
+   "bytes": 4872,
+   "n_exports": 5,
+   "exports_head": [
+    "PrefireRefuseReason",
+    "UnifiedPrefireInput",
+    "UnifiedPrefireDecision",
+    "evaluateUnifiedPrefire",
+    "composePrefireWithSelective"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "walk-forward-taxonomy-source.ts",
+   "lines": 158,
+   "bytes": 7541,
+   "n_exports": 3,
+   "exports_head": [
+    "realGameContextFromPreGame",
+    "settledHistoricalPickToTaxonomyRow",
+    "nflverseScheduleRowsToTaxonomyRows"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "walk-forward-taxonomy.ts",
+   "lines": 203,
+   "bytes": 7186,
+   "n_exports": 6,
+   "exports_head": [
+    "WalkForwardTaxonomyRow",
+    "WalkForwardTaxonomyOptions",
+    "CategoryAlert",
+    "WalkForwardTaxonomyReport",
+    "runWalkForwardTaxonomy",
+    "contextFromLevel1Category"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "walk-forward.ts",
+   "lines": 211,
+   "bytes": 8962,
+   "n_exports": 9,
+   "exports_head": [
+    "TimedRow",
+    "WalkForwardFold",
+    "WalkForwardOptions",
+    "walkForwardSplits",
+    "FOUNDER_HOLDOUT_TOKEN",
+    "HOLDOUT_OPEN_ENV_VAR",
+    "SealedHoldoutError",
+    "SealedSplit"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "edge-lab\\calibration": [
+  {
+   "file": "clf-v0.ts",
+   "lines": 228,
+   "bytes": 8471,
+   "n_exports": 6,
+   "exports_head": [
+    "DEFAULT_MIN_CALIBRATION_SAMPLE",
+    "DEFAULT_PRIOR_STRENGTH",
+    "ClfCalibrator",
+    "ClfResult",
+    "fitClfCalibrator",
+    "applyClfBatch"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "edge-lab\\features": [
+  {
+   "file": "nfl-body-clock.ts",
+   "lines": 164,
+   "bytes": 6417,
+   "n_exports": 5,
+   "exports_head": [
+    "BODY_CLOCK_FEATURE_KEYS",
+    "NFL_TEAM_UTC_OFFSET",
+    "BodyClockFeatureResult",
+    "bodyClockShiftHours",
+    "buildBodyClockFeatureRows"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-incentive-calendar.ts",
+   "lines": 297,
+   "bytes": 12112,
+   "n_exports": 9,
+   "exports_head": [
+    "INCENTIVE_FEATURE_KEYS",
+    "IncentiveFeatureKey",
+    "NFL_SEASON_WEEKS",
+    "RuleChange",
+    "NFL_RULE_CHANGES",
+    "RuleCalendarEntry",
+    "isRuleActive",
+    "IncentiveResult"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-ladder-boost.ts",
+   "lines": 392,
+   "bytes": 15504,
+   "n_exports": 7,
+   "exports_head": [
+    "LADDER_FEATURE_KEYS",
+    "SOFTNESS_FEATURE_KEYS",
+    "LadderScanResult",
+    "BoostFlag",
+    "scanLadderBoost",
+    "buildLadderScanRows",
+    "buildSoftnessMapRows"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-regime-change.ts",
+   "lines": 340,
+   "bytes": 12681,
+   "n_exports": 5,
+   "exports_head": [
+    "CHANGEPOINT_FEATURE_KEYS",
+    "RegimeScannerResult",
+    "RegimeFlag",
+    "scanRegimeChange",
+    "buildRegimeChangeRows"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-regime-detector.ts",
+   "lines": 368,
+   "bytes": 15747,
+   "n_exports": 6,
+   "exports_head": [
+    "REGIME_FEATURE_KEYS",
+    "RegimeDetectorOptions",
+    "RegimeDetection",
+    "RegimeDetectResult",
+    "detectRegimeShift",
+    "buildRegimeDetectionRows"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-team-form.ts",
+   "lines": 478,
+   "bytes": 17639,
+   "n_exports": 10,
+   "exports_head": [
+    "NFL_TEAM_FORM_FEATURE_KEYS",
+    "NflTeamFormFeatureKey",
+    "NFL_TEAM_FORM_PBP_COLUMNS",
+    "TeamFormPbpRow",
+    "TeamGamePbpAggregate",
+    "PbpAggregationResult",
+    "aggregateNflPbpTeamGames",
+    "TeamFormOptions"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-weather.ts",
+   "lines": 195,
+   "bytes": 7390,
+   "n_exports": 5,
+   "exports_head": [
+    "WEATHER_FEATURE_KEYS",
+    "GameWeatherForecast",
+    "WeatherFeatureResult",
+    "totalSuppressionIndex",
+    "buildWeatherFeatureRows"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "edge-lab\\kernel": [
+  {
+   "file": "conformance.ts",
+   "lines": 164,
+   "bytes": 5932,
+   "n_exports": 4,
+   "exports_head": [
+    "ConformanceOptions",
+    "ConformanceViolation",
+    "distributionConformance",
+    "assertDistributionConformance"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "contract.ts",
+   "lines": 495,
+   "bytes": 23682,
+   "n_exports": 48,
+   "exports_head": [
+    "Probability",
+    "PValue",
+    "Rng",
+    "KernelErrorCode",
+    "KernelError",
+    "assertFinite",
+    "assertProbability",
+    "assertCount"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "numeric.ts",
+   "lines": 217,
+   "bytes": 7697,
+   "n_exports": 10,
+   "exports_head": [
+    "logGamma",
+    "logBeta",
+    "logChoose",
+    "regularizedGammaP",
+    "erf",
+    "erfc",
+    "normalCdf",
+    "normalQuantile"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "edge-lab\\loaders": [
+  {
+   "file": "mlb-feature-ingest.ts",
+   "lines": 158,
+   "bytes": 6862,
+   "n_exports": 6,
+   "exports_head": [
+    "mlbPlayerEntityId",
+    "FeatureIngestCount",
+    "MlbFeatureIngestResult",
+    "ingestStatcastPriorSeasonFeatures",
+    "ingestPlatoonPriorSeasonFeatures",
+    "ingestMlbPriorSeasonFeatures"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "mlb-games.ts",
+   "lines": 170,
+   "bytes": 7312,
+   "n_exports": 2,
+   "exports_head": [
+    "LoadMlbGamesOptions",
+    "mlbScheduleUrl"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "mlb-platoon-splits.ts",
+   "lines": 268,
+   "bytes": 12345,
+   "n_exports": 4,
+   "exports_head": [
+    "PlatoonStatGroup",
+    "LoadMlbPlatoonSplitsPriorSeasonOptions",
+    "PlatoonSplitRecord",
+    "mlbPlatoonSplitsUrl"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "mlb-season-boundaries.ts",
+   "lines": 40,
+   "bytes": 2253,
+   "n_exports": 1,
+   "exports_head": [
+    "mlbSeasonEndIso"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-games.ts",
+   "lines": 311,
+   "bytes": 12975,
+   "n_exports": 2,
+   "exports_head": [
+    "NFLDATA_GAMES_CSV_URL",
+    "LoadNflGamesOptions"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "statcast-features.ts",
+   "lines": 313,
+   "bytes": 14374,
+   "n_exports": 4,
+   "exports_head": [
+    "StatcastPlayerType",
+    "LoadStatcastPriorSeasonFeaturesOptions",
+    "StatcastPlayerSeasonFeature",
+    "baseballSavantLeaderboardUrl"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "edge-lab\\__tests__": [
+  {
+   "file": "cascade-audit-remediation.test.ts",
+   "lines": 219,
+   "bytes": 8016,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "clf-v0.test.ts",
+   "lines": 177,
+   "bytes": 6721,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "close-distillation.test.ts",
+   "lines": 75,
+   "bytes": 3043,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "council-gate-alignment.test.ts",
+   "lines": 273,
+   "bytes": 10161,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "covariate-bus.test.ts",
+   "lines": 177,
+   "bytes": 6480,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "devig.test.ts",
+   "lines": 137,
+   "bytes": 5387,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "edge-lab-council.test.ts",
+   "lines": 375,
+   "bytes": 13702,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "fair-skill-brier.test.ts",
+   "lines": 59,
+   "bytes": 2241,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "falsify-all-real.run.ts",
+   "lines": 61,
+   "bytes": 2713,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "fire-authority.test.ts",
+   "lines": 90,
+   "bytes": 2906,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "grouped-climatology.test.ts",
+   "lines": 136,
+   "bytes": 5620,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "historical-replay-placebo.test.ts",
+   "lines": 423,
+   "bytes": 15542,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "honest-ceiling.test.ts",
+   "lines": 162,
+   "bytes": 6021,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "honesty-engine.test.ts",
+   "lines": 332,
+   "bytes": 14382,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "kalshi-book-divergence.test.ts",
+   "lines": 49,
+   "bytes": 1762,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "kaunitz-outlier.test.ts",
+   "lines": 112,
+   "bytes": 3745,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "kelly.test.ts",
+   "lines": 333,
+   "bytes": 12141,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "ladder-boost-scanners.test.ts",
+   "lines": 232,
+   "bytes": 9369,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "leak-gate.test.ts",
+   "lines": 474,
+   "bytes": 21385,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "ledger-chain.test.ts",
+   "lines": 301,
+   "bytes": 11138,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "market-consensus-q.test.ts",
+   "lines": 55,
+   "bytes": 2116,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "mlb-feature-ingest.test.ts",
+   "lines": 197,
+   "bytes": 9476,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "mlb-games.test.ts",
+   "lines": 145,
+   "bytes": 5439,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "mlb-platoon-splits.test.ts",
+   "lines": 291,
+   "bytes": 11250,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-body-clock.test.ts",
+   "lines": 117,
+   "bytes": 4334,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-change-point.test.ts",
+   "lines": 331,
+   "bytes": 12706,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-epa-path.test.ts",
+   "lines": 19,
+   "bytes": 567,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-games.test.ts",
+   "lines": 177,
+   "bytes": 8249,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-incentive-calendar.test.ts",
+   "lines": 302,
+   "bytes": 11484,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-ladder-boost.test.ts",
+   "lines": 490,
+   "bytes": 16411,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-regime-change.test.ts",
+   "lines": 392,
+   "bytes": 13626,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-regime-detector.test.ts",
+   "lines": 266,
+   "bytes": 10911,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-team-form.test.ts",
+   "lines": 307,
+   "bytes": 12221,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-weather.test.ts",
+   "lines": 146,
+   "bytes": 5335,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "ngs-measurement-loop.test.ts",
+   "lines": 81,
+   "bytes": 3887,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "phase4-research.test.ts",
+   "lines": 67,
+   "bytes": 2618,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "player-research-log.test.ts",
+   "lines": 25,
+   "bytes": 811,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-context-bind.test.ts",
+   "lines": 767,
+   "bytes": 26361,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-fire-gate.test.ts",
+   "lines": 38,
+   "bytes": 1313,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-adot-catch.test.ts",
+   "lines": 69,
+   "bytes": 2492,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-adot-sep-bind.test.ts",
+   "lines": 133,
+   "bytes": 5724,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-adot-sep.test.ts",
+   "lines": 47,
+   "bytes": 1856,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-air-yac-bind.test.ts",
+   "lines": 128,
+   "bytes": 4851,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-air-yac.test.ts",
+   "lines": 100,
+   "bytes": 3815,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-atd.test.ts",
+   "lines": 94,
+   "bytes": 3355,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-catch-cushion-bind.test.ts",
+   "lines": 166,
+   "bytes": 6203,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-catch.test.ts",
+   "lines": 95,
+   "bytes": 3346,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-comp-air-yards-diff-bind.test.ts",
+   "lines": 166,
+   "bytes": 6586,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-comp.test.ts",
+   "lines": 88,
+   "bytes": 3161,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-cpoe-comp-bind.test.ts",
+   "lines": 183,
+   "bytes": 8487,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-int-bind.test.ts",
+   "lines": 180,
+   "bytes": 6787,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-int.test.ts",
+   "lines": 94,
+   "bytes": 3404,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-nested.test.ts",
+   "lines": 287,
+   "bytes": 10787,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-obs.test.ts",
+   "lines": 228,
+   "bytes": 8189,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-pass-td.test.ts",
+   "lines": 79,
+   "bytes": 2810,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-pass-yards.test.ts",
+   "lines": 154,
+   "bytes": 6630,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-rec-td-cushion-bind.test.ts",
+   "lines": 166,
+   "bytes": 6184,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-rec-td.test.ts",
+   "lines": 94,
+   "bytes": 3461,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-rush-attempts.test.ts",
+   "lines": 125,
+   "bytes": 4738,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-rush-td.test.ts",
+   "lines": 94,
+   "bytes": 3550,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-rush-yards-bind.test.ts",
+   "lines": 180,
+   "bytes": 7098,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-rush.test.ts",
+   "lines": 66,
+   "bytes": 2504,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-sack-ttt-bind.test.ts",
+   "lines": 166,
+   "bytes": 6110,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-sacks.test.ts",
+   "lines": 68,
+   "bytes": 2248,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb-snap-exposure.test.ts",
+   "lines": 33,
+   "bytes": 1132,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-hb.test.ts",
+   "lines": 310,
+   "bytes": 12105,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-juice-floor.test.ts",
+   "lines": 51,
+   "bytes": 1652,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-line-shop.test.ts",
+   "lines": 54,
+   "bytes": 1943,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "props-priced-edge.test.ts",
+   "lines": 102,
+   "bytes": 4084,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "recompute-verifier.test.ts",
+   "lines": 137,
+   "bytes": 4810,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "residual-gbm.test.ts",
+   "lines": 276,
+   "bytes": 12035,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "schedule-features.test.ts",
+   "lines": 92,
+   "bytes": 3835,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "selective-gate-multiprob.test.ts",
+   "lines": 192,
+   "bytes": 7286,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "standings-math.test.ts",
+   "lines": 193,
+   "bytes": 8872,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "statcast-features.test.ts",
+   "lines": 178,
+   "bytes": 8393,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "stats.test.ts",
+   "lines": 186,
+   "bytes": 6417,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "trials-registry.test.ts",
+   "lines": 216,
+   "bytes": 7690,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "unified-prefire.test.ts",
+   "lines": 94,
+   "bytes": 2772,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "walk-forward-taxonomy-source.test.ts",
+   "lines": 225,
+   "bytes": 10062,
+   "n_exports": 1,
+   "exports_head": [
+    "syntheticReplayRows"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "walk-forward-taxonomy.test.ts",
+   "lines": 164,
+   "bytes": 6471,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "ensemble": [
+  {
+   "file": "baee-ensemble.ts",
+   "lines": 162,
+   "bytes": 7341,
+   "n_exports": 1,
+   "exports_head": [
+    "BAEEEnsemble"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "remote-model-client.ts",
+   "lines": 719,
+   "bytes": 28430,
+   "n_exports": 19,
+   "exports_head": [
+    "ModelEndpoint",
+    "GameContext",
+    "RemoteModelPrediction",
+    "RemoteModelFailureReason",
+    "RemoteModelFailure",
+    "RemoteModelOutcome",
+    "DEFAULT_TIMEOUT_MS",
+    "FetchModelPredictionDeps"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "ensemble\\__tests__": [
+  {
+   "file": "baee-ensemble.test.ts",
+   "lines": 115,
+   "bytes": 4649,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "remote-model-client.test.ts",
+   "lines": 631,
+   "bytes": 28016,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "expected-metrics": [
+  {
+   "file": "drives.ts",
+   "lines": 239,
+   "bytes": 8842,
+   "n_exports": 5,
+   "exports_head": [
+    "DrivePlay",
+    "DriveResult",
+    "Drive",
+    "DRIVES_MODEL_VERSION",
+    "buildDrives"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "expected-completion.ts",
+   "lines": 174,
+   "bytes": 6649,
+   "n_exports": 9,
+   "exports_head": [
+    "DropbackPlay",
+    "EXPECTED_COMPLETION_FEATURE_KEYS",
+    "EXPECTED_COMPLETION_MODEL_VERSION",
+    "MIN_DROPBACKS_TO_FIT",
+    "DEFAULT_MIN_PASSER_ATTEMPTS",
+    "ExpectedCompletionModel",
+    "fitExpectedCompletionModel",
+    "predictCompletionProbability"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "expected-points.ts",
+   "lines": 283,
+   "bytes": 11213,
+   "n_exports": 16,
+   "exports_head": [
+    "EpPlay",
+    "NextScoreOutcome",
+    "EP_OUTCOMES",
+    "EP_OUTCOME_VALUES",
+    "EP_REQUIRED_OUTCOMES",
+    "EXPECTED_POINTS_FEATURE_KEYS",
+    "EXPECTED_POINTS_MODEL_VERSION",
+    "MIN_EP_PLAYS_TO_FIT"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "expected-rush-yards.ts",
+   "lines": 154,
+   "bytes": 5420,
+   "n_exports": 9,
+   "exports_head": [
+    "RushPlay",
+    "EXPECTED_RUSH_FEATURE_KEYS",
+    "EXPECTED_RUSH_MODEL_VERSION",
+    "MIN_RUSHES_TO_FIT",
+    "DEFAULT_MIN_RUSHER_ATTEMPTS",
+    "ExpectedRushModel",
+    "fitExpectedRushModel",
+    "predictExpectedRushYards"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "expected-yac.ts",
+   "lines": 142,
+   "bytes": 4964,
+   "n_exports": 9,
+   "exports_head": [
+    "CatchPlay",
+    "EXPECTED_YAC_FEATURE_KEYS",
+    "EXPECTED_YAC_MODEL_VERSION",
+    "MIN_CATCHES_TO_FIT",
+    "DEFAULT_MIN_RECEIVER_CATCHES",
+    "ExpectedYacModel",
+    "fitExpectedYacModel",
+    "predictExpectedYac"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "index.ts",
+   "lines": 162,
+   "bytes": 4453,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "linear.ts",
+   "lines": 99,
+   "bytes": 3840,
+   "n_exports": 3,
+   "exports_head": [
+    "LinearModel",
+    "fitRidge",
+    "predictRidge"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "logistic.ts",
+   "lines": 105,
+   "bytes": 4222,
+   "n_exports": 4,
+   "exports_head": [
+    "LogisticModel",
+    "LogisticFitOptions",
+    "fitLogistic",
+    "predictLogistic"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nflverse-pbp-mapper.ts",
+   "lines": 643,
+   "bytes": 27095,
+   "n_exports": 6,
+   "exports_head": [
+    "NFLVERSE_PBP_EXPECTED_METRICS_COLUMNS",
+    "PbpRow",
+    "TransitionPair",
+    "MappedExpectedMetricsPlays",
+    "mapNflversePbpToExpectedMetrics",
+    "attachOwnEpa"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "numeric.ts",
+   "lines": 221,
+   "bytes": 7660,
+   "n_exports": 14,
+   "exports_head": [
+    "FeatureScaler",
+    "mean",
+    "variance",
+    "stddev",
+    "fitScaler",
+    "applyScaler",
+    "solveLinearSystem",
+    "sigmoid"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "rollup.ts",
+   "lines": 72,
+   "bytes": 2779,
+   "n_exports": 3,
+   "exports_head": [
+    "PlayerPlayOutcome",
+    "RollupOptions",
+    "rollupByPlayer"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "success-rate.ts",
+   "lines": 174,
+   "bytes": 7008,
+   "n_exports": 9,
+   "exports_head": [
+    "SuccessPlay",
+    "SUCCESS_RATE_MODEL_VERSION",
+    "SUCCESS_YARDAGE_FRACTION",
+    "isSuccessfulPlay",
+    "SuccessRateSplit",
+    "successRateByTeam",
+    "successRateByPlayer",
+    "successRateByDown"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "types.ts",
+   "lines": 68,
+   "bytes": 3013,
+   "n_exports": 3,
+   "exports_head": [
+    "ExpectedMetricProvenance",
+    "PlayerExpectedMetric",
+    "computeFeatureSchemaHash"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "validation.ts",
+   "lines": 262,
+   "bytes": 10990,
+   "n_exports": 10,
+   "exports_head": [
+    "GroundTruthPoint",
+    "CalibrationReport",
+    "buildCalibrationReport",
+    "buildEpCalibration",
+    "buildWpCalibration",
+    "GraduationVerdict",
+    "GraduationThresholds",
+    "GraduationResult"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "win-probability.ts",
+   "lines": 203,
+   "bytes": 8694,
+   "n_exports": 9,
+   "exports_head": [
+    "WpPlay",
+    "WIN_PROBABILITY_FEATURE_KEYS",
+    "WIN_PROBABILITY_MODEL_VERSION",
+    "MIN_WP_PLAYS_TO_FIT",
+    "WinProbabilityModel",
+    "fitWinProbabilityModel",
+    "WP_NEUTRAL_PROBABILITY",
+    "predictWinProbability"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "expected-metrics\\__tests__": [
+  {
+   "file": "drives.test.ts",
+   "lines": 192,
+   "bytes": 7686,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "expected-points.test.ts",
+   "lines": 259,
+   "bytes": 10073,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nflverse-pbp-mapper.test.ts",
+   "lines": 515,
+   "bytes": 29722,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "rollup.test.ts",
+   "lines": 69,
+   "bytes": 2644,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "success-rate.test.ts",
+   "lines": 144,
+   "bytes": 5928,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "win-probability.test.ts",
+   "lines": 193,
+   "bytes": 7740,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "gse-score": [
+  {
+   "file": "calibration-action-policy.ts",
+   "lines": 51,
+   "bytes": 1193,
+   "n_exports": 3,
+   "exports_head": [
+    "calibrationActionCap",
+    "calibrationRequiresHardPass",
+    "calibrationRiskSeverity"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-contract.ts",
+   "lines": 98,
+   "bytes": 2728,
+   "n_exports": 4,
+   "exports_head": [
+    "CalibrationContractStatus",
+    "CalibrationContractInput",
+    "CalibrationContractResult",
+    "assessCalibrationContract"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "feature-contract.ts",
+   "lines": 132,
+   "bytes": 4263,
+   "n_exports": 8,
+   "exports_head": [
+    "FeatureContractStatus",
+    "FeatureSourceStatus",
+    "FeatureSourcePolicy",
+    "GseFeatureValue",
+    "FeatureContractInput",
+    "FeatureContractDriver",
+    "FeatureContractResult",
+    "evaluateFeatureContract"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "gse-action-score.ts",
+   "lines": 250,
+   "bytes": 8696,
+   "n_exports": 5,
+   "exports_head": [
+    "GseActionDecision",
+    "GseActionScoreInput",
+    "GseActionDriver",
+    "GseActionScoreResult",
+    "computeGseActionScore"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "model-parliament.ts",
+   "lines": 141,
+   "bytes": 4441,
+   "n_exports": 6,
+   "exports_head": [
+    "ModelParliamentStatus",
+    "ModelVote",
+    "ModelParliamentInput",
+    "ModelParliamentDriver",
+    "ModelParliamentResult",
+    "aggregateModelParliament"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "no-bet-strength.ts",
+   "lines": 105,
+   "bytes": 2791,
+   "n_exports": 7,
+   "exports_head": [
+    "NoBetDecision",
+    "NoBetRiskFactor",
+    "NoBetRiskInput",
+    "NoBetDriver",
+    "NoBetStrengthInput",
+    "NoBetStrengthResult",
+    "computeNoBetStrength"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "gse-score\\__tests__": [
+  {
+   "file": "calibration-action-policy.test.ts",
+   "lines": 41,
+   "bytes": 1726,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-contract.test.ts",
+   "lines": 165,
+   "bytes": 6076,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "feature-contract.test.ts",
+   "lines": 164,
+   "bytes": 5930,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "gse-action-score.test.ts",
+   "lines": 200,
+   "bytes": 6796,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "model-parliament.test.ts",
+   "lines": 26,
+   "bytes": 933,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "no-bet-governor-integration.test.ts",
+   "lines": 192,
+   "bytes": 6024,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "no-bet-strength.test.ts",
+   "lines": 30,
+   "bytes": 945,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "guards": [
+  {
+   "file": "display-substantiated.ts",
+   "lines": 148,
+   "bytes": 5508,
+   "n_exports": 8,
+   "exports_head": [
+    "ConfidenceBoundMethod",
+    "SubstantiationEvidence",
+    "DisplayClaim",
+    "UnsubstantiatedClaimError",
+    "isDisplaySubstantiated",
+    "assertDisplaySubstantiated",
+    "displayIfSubstantiated",
+    "wilsonLowerBound"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "guards\\__tests__": [
+  {
+   "file": "display-substantiated.test.ts",
+   "lines": 117,
+   "bytes": 4613,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "honesty": [
+  {
+   "file": "commit-reveal.ts",
+   "lines": 86,
+   "bytes": 2454,
+   "n_exports": 6,
+   "exports_head": [
+    "PickCommitmentBody",
+    "PickCommitment",
+    "isPublicPicksEnabled",
+    "commitPick",
+    "revealPick",
+    "publicCommitPick"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "devig-method-compare.ts",
+   "lines": 105,
+   "bytes": 3335,
+   "n_exports": 6,
+   "exports_head": [
+    "DevigMethodName",
+    "TwoWayBook",
+    "MethodFair",
+    "DevigMethodCompare",
+    "compareDevigMethods",
+    "shinFairForSide"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "glass-receipts.ts",
+   "lines": 143,
+   "bytes": 4150,
+   "n_exports": 7,
+   "exports_head": [
+    "PickReceipt",
+    "LedgerHead",
+    "fingerprintPayload",
+    "buildReceipt",
+    "chainReceipts",
+    "recomputeChain",
+    "ledgerHead"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "no-bet-gate.ts",
+   "lines": 97,
+   "bytes": 2823,
+   "n_exports": 5,
+   "exports_head": [
+    "ProductNoBetCode",
+    "ProductNoBetEvidence",
+    "ProductNoBetResult",
+    "PRODUCT_NO_BET_COPY",
+    "evaluateProductNoBet"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "placebo-leak.ts",
+   "lines": 218,
+   "bytes": 7520,
+   "n_exports": 6,
+   "exports_head": [
+    "PlaceboTrial",
+    "PlaceboPair",
+    "PlaceboReport",
+    "shuffleInPlace",
+    "runShuffledTimePlacebo",
+    "mulberry32"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "honesty\\__tests__": [
+  {
+   "file": "commit-reveal.test.ts",
+   "lines": 51,
+   "bytes": 1738,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "devig-method-compare.test.ts",
+   "lines": 36,
+   "bytes": 1727,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "glass-receipts.test.ts",
+   "lines": 259,
+   "bytes": 8878,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "no-bet-gate.test.ts",
+   "lines": 362,
+   "bytes": 12754,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "placebo-leak.test.ts",
+   "lines": 82,
+   "bytes": 2616,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "ladder": [
+  {
+   "file": "heartbeat.ts",
+   "lines": 108,
+   "bytes": 3907,
+   "n_exports": 3,
+   "exports_head": [
+    "GameSettledFanoutInput",
+    "GameSettledFanoutResult",
+    "fanoutGameSettledHeartbeat"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "reduce.ts",
+   "lines": 316,
+   "bytes": 9181,
+   "n_exports": 1,
+   "exports_head": [
+    "reduceLadder"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "ladder\\__tests__": [
+  {
+   "file": "heartbeat.test.ts",
+   "lines": 114,
+   "bytes": 4757,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "reduce.test.ts",
+   "lines": 232,
+   "bytes": 7475,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "metrics\\calibration": [
+  {
+   "file": "calibration-integrity-grade.ts",
+   "lines": 217,
+   "bytes": 8896,
+   "n_exports": 5,
+   "exports_head": [
+    "CalibrationIntegrityLetter",
+    "CalibrationIntegritySourcePosture",
+    "CalibrationIntegrityGradeInput",
+    "CalibrationIntegrityGradeMetric",
+    "calibrationIntegrityGrade"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "conformal-uncertainty-width.ts",
+   "lines": 280,
+   "bytes": 11344,
+   "n_exports": 7,
+   "exports_head": [
+    "ConformalUncertaintyWidthBand",
+    "ConformalUncertaintyWidthSourcePosture",
+    "ConformalUncertaintyIntervalInput",
+    "ConformalUncertaintyWidthInput",
+    "ConformalUncertaintyWidthMetric",
+    "conformalUncertaintyWidth",
+    "conformalUncertaintyWidthFromReport"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "drift-pressure-index.ts",
+   "lines": 225,
+   "bytes": 9755,
+   "n_exports": 5,
+   "exports_head": [
+    "DriftPressureBand",
+    "DriftPressureSourcePosture",
+    "DriftPressureIndexInput",
+    "DriftPressureIndexMetric",
+    "driftPressureIndex"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "metrics\\core": [
+  {
+   "file": "driver.ts",
+   "lines": 31,
+   "bytes": 839,
+   "n_exports": 5,
+   "exports_head": [
+    "MetricDirection",
+    "MetricDriver",
+    "MetricDriverInput",
+    "metricDriver",
+    "sortedDrivers"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "index.ts",
+   "lines": 311,
+   "bytes": 10320,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "math.ts",
+   "lines": 146,
+   "bytes": 6023,
+   "n_exports": 11,
+   "exports_head": [
+    "clamp",
+    "clamp01",
+    "clampScore",
+    "normalizeClamped",
+    "sigmoid",
+    "logit",
+    "softplus",
+    "zScore"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-asset.ts",
+   "lines": 117,
+   "bytes": 3889,
+   "n_exports": 14,
+   "exports_head": [
+    "MetricApiExposure",
+    "MetricLicensingStatus",
+    "MetricEvidenceStatus",
+    "MetricValidationReportStatus",
+    "MetricDriftCardStatus",
+    "SourceRightsEnvelope",
+    "GseModelCard",
+    "MetricValidationMeasure"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-birth-certificate-registry.ts",
+   "lines": 737,
+   "bytes": 38151,
+   "n_exports": 1,
+   "exports_head": [
+    "GSE_METRIC_BIRTH_CERTIFICATES"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-birth-certificate.ts",
+   "lines": 83,
+   "bytes": 2317,
+   "n_exports": 7,
+   "exports_head": [
+    "GseMetricFamily",
+    "GseFormulaClass",
+    "MetricValidationMethod",
+    "MetricPublicExposure",
+    "GseMetricBirthCertificate",
+    "metricBirthCertificate",
+    "requireMetricBirthCertificate"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-evidence-card-fixtures.ts",
+   "lines": 252,
+   "bytes": 8693,
+   "n_exports": 6,
+   "exports_head": [
+    "ShadowEvidenceMetricId",
+    "ShadowMetricEvidenceFixture",
+    "ShadowMetricEvidenceFixtureCards",
+    "SHADOW_METRIC_EVIDENCE_FIXTURES",
+    "generateShadowMetricEvidenceFixtureCards",
+    "generateAllShadowMetricEvidenceFixtureCards"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-evidence-cards.ts",
+   "lines": 198,
+   "bytes": 8122,
+   "n_exports": 6,
+   "exports_head": [
+    "MetricDriftDirection",
+    "MetricModelCardInput",
+    "MetricDriftCheck",
+    "MetricDriftCardInput",
+    "generateMetricModelCard",
+    "generateMetricDriftCard"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-evidence-report-markdown.ts",
+   "lines": 93,
+   "bytes": 3138,
+   "n_exports": 4,
+   "exports_head": [
+    "ShadowMetricEvidenceMarkdownReport",
+    "renderShadowMetricEvidenceReportMarkdown",
+    "renderAllShadowMetricEvidenceReportsMarkdown",
+    "renderShadowMetricEvidenceReportIndexMarkdown"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-graduation.ts",
+   "lines": 88,
+   "bytes": 3561,
+   "n_exports": 4,
+   "exports_head": [
+    "MetricGraduationStatus",
+    "MetricGraduationInput",
+    "MetricGraduationDecision",
+    "evaluateMetricGraduation"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-historical-distribution-adapter.ts",
+   "lines": 345,
+   "bytes": 15040,
+   "n_exports": 11,
+   "exports_head": [
+    "HistoricalDistributionMetricId",
+    "HistoricalDistributionPayloadProfile",
+    "HistoricalDistributionAdapterStatus",
+    "HistoricalCalibrationDistributionRecord",
+    "HistoricalPortfolioDistributionRecord",
+    "HistoricalDriftPressureDistributionRecord",
+    "HistoricalConformalUncertaintyDistributionRecord",
+    "HistoricalDistributionRecord"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-historical-distribution-fixtures.ts",
+   "lines": 254,
+   "bytes": 8058,
+   "n_exports": 4,
+   "exports_head": [
+    "HistoricalDistributionAdapterSummary",
+    "HISTORICAL_DISTRIBUTION_ADAPTER_FIXTURES",
+    "runHistoricalDistributionAdapterFixtures",
+    "summarizeHistoricalDistributionAdapterResults"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-historical-distribution-payload.ts",
+   "lines": 49,
+   "bytes": 1721,
+   "n_exports": 1,
+   "exports_head": [
+    "reviewHistoricalDistributionPayload"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-historical-validation-adapter-fixtures.ts",
+   "lines": 185,
+   "bytes": 6095,
+   "n_exports": 4,
+   "exports_head": [
+    "HistoricalValidationAdapterSummary",
+    "HISTORICAL_VALIDATION_ADAPTER_FIXTURES",
+    "runHistoricalValidationAdapterFixtures",
+    "summarizeHistoricalValidationAdapterResults"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-historical-validation-adapter.ts",
+   "lines": 244,
+   "bytes": 9716,
+   "n_exports": 13,
+   "exports_head": [
+    "HistoricalValidationMetricId",
+    "HistoricalValidationAdapterStatus",
+    "HistoricalValidationPayloadProfile",
+    "HistoricalValidationSourceReview",
+    "HistoricalRoleStabilityRecord",
+    "HistoricalDecisionWindowRecord",
+    "HistoricalMarketMirageRecord",
+    "HistoricalNoBetPressureRecord"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-historical-validation-payload.ts",
+   "lines": 53,
+   "bytes": 1834,
+   "n_exports": 1,
+   "exports_head": [
+    "reviewHistoricalValidationPayload"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-payload-envelope-fixture-data.ts",
+   "lines": 188,
+   "bytes": 7699,
+   "n_exports": 3,
+   "exports_head": [
+    "ComposedDecisionMetricPayloadFixtureId",
+    "ComposedDecisionMetricPayloadFixture",
+    "COMPOSED_DECISION_METRIC_PAYLOAD_FIXTURES"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-payload-envelope-fixtures.ts",
+   "lines": 62,
+   "bytes": 2371,
+   "n_exports": 4,
+   "exports_head": [
+    "ComposedDecisionMetricPayloadFixtureResult",
+    "ComposedDecisionMetricPayloadFixtureSummary",
+    "runComposedDecisionMetricPayloadFixtures",
+    "summarizeComposedDecisionMetricPayloadFixtures"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-validation-split-fixture-data.ts",
+   "lines": 177,
+   "bytes": 5100,
+   "n_exports": 4,
+   "exports_head": [
+    "RoleStabilityValidationSplit",
+    "DecisionWindowValidationSplit",
+    "ROLE_STABILITY_VALIDATION_SPLITS",
+    "DECISION_WINDOW_VALIDATION_SPLITS"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-validation-split-fixtures.ts",
+   "lines": 139,
+   "bytes": 5305,
+   "n_exports": 8,
+   "exports_head": [
+    "ValidationSplitMetricId",
+    "ValidationSplitStatus",
+    "MetricValidationSplitResult",
+    "MetricValidationSplitSummary",
+    "runRoleStabilityValidationSplits",
+    "runDecisionWindowValidationSplits",
+    "runMetricValidationSplitFixtures",
+    "summarizeMetricValidationSplitResults"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "payload-envelope.ts",
+   "lines": 71,
+   "bytes": 2248,
+   "n_exports": 5,
+   "exports_head": [
+    "MetricPayloadEnvelopeField",
+    "MetricPayloadEnvelopeInput",
+    "MetricPayloadEnvelopeMeta",
+    "MetricPayloadEnvelope",
+    "filterMetricPayloadEnvelope"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "payload-rights.ts",
+   "lines": 133,
+   "bytes": 4171,
+   "n_exports": 6,
+   "exports_head": [
+    "MetricPayloadExposure",
+    "MetricPayloadFieldKind",
+    "MetricPayloadField",
+    "MetricPayloadRightsInput",
+    "MetricPayloadRightsDecision",
+    "evaluateMetricPayloadRights"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "residual-rollup.ts",
+   "lines": 221,
+   "bytes": 8282,
+   "n_exports": 9,
+   "exports_head": [
+    "MetricResidualMetricId",
+    "MetricResidualRollupKind",
+    "MetricResidualRollupExposure",
+    "MetricResidualConfidenceMeaning",
+    "MetricResidualPlayInput",
+    "MetricResidualRollup",
+    "buildMetricResidualRollups",
+    "metricResidualRollupKey"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "shrinkage.ts",
+   "lines": 132,
+   "bytes": 6315,
+   "n_exports": 5,
+   "exports_head": [
+    "EmpiricalBayesShrinkageInput",
+    "empiricalBayesShrink",
+    "ProbabilityShrinkageInput",
+    "shrinkProbability",
+    "shrinkWeightedMean"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "source-rights-registry-adapter.ts",
+   "lines": 72,
+   "bytes": 2505,
+   "n_exports": 3,
+   "exports_head": [
+    "MetricSourceRightsRegistryEntry",
+    "metricSourceRightsPolicyFromRegistryEntry",
+    "metricSourceRightsPoliciesFromRegistry"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "source-rights-registry-fixtures.ts",
+   "lines": 276,
+   "bytes": 10867,
+   "n_exports": 2,
+   "exports_head": [
+    "GSE_METRIC_SOURCE_RIGHTS_REGISTRY_FIXTURES",
+    "GSE_METRIC_SOURCE_RIGHTS_POLICIES"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "source-rights.ts",
+   "lines": 194,
+   "bytes": 5842,
+   "n_exports": 11,
+   "exports_head": [
+    "MetricSourceRightsUse",
+    "MetricSourceRightsStatus",
+    "MetricSourceRightsPermissionSet",
+    "MetricSourceAttributionPolicy",
+    "MetricSourceRightsPolicy",
+    "MetricSourceRightsInput",
+    "MetricSourceRightsDecision",
+    "metricSourceRightsPolicy"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "validation.ts",
+   "lines": 214,
+   "bytes": 10238,
+   "n_exports": 10,
+   "exports_head": [
+    "MetricLifecycleStatus",
+    "MetricUncertaintyBand",
+    "MetricSourceStatus",
+    "MetricSourcePolicy",
+    "MetricValidationIssue",
+    "MetricValidationResult",
+    "rightsCleanliness",
+    "sourcePoliciesAllowed"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "metrics\\core\\__tests__": [
+  {
+   "file": "metric-asset.test.ts",
+   "lines": 49,
+   "bytes": 2182,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-graduation.test.ts",
+   "lines": 334,
+   "bytes": 11702,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "payload-envelope.test.ts",
+   "lines": 136,
+   "bytes": 4662,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "payload-rights.test.ts",
+   "lines": 367,
+   "bytes": 11450,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "source-rights-registry-adapter.test.ts",
+   "lines": 207,
+   "bytes": 7664,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "metrics\\decision": [
+  {
+   "file": "gse-signal-score.ts",
+   "lines": 186,
+   "bytes": 9746,
+   "n_exports": 4,
+   "exports_head": [
+    "GseSignalGrade",
+    "GseSignalScoreInput",
+    "GseSignalScore",
+    "gseSignalScore"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "no-bet-pressure.ts",
+   "lines": 242,
+   "bytes": 13296,
+   "n_exports": 5,
+   "exports_head": [
+    "NoBetPressureBand",
+    "NoBetPressureSourcePosture",
+    "NoBetPressureInput",
+    "NoBetPressureMetric",
+    "noBetPressureMetric"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "playable-window-score.ts",
+   "lines": 292,
+   "bytes": 12919,
+   "n_exports": 5,
+   "exports_head": [
+    "PlayableWindowBand",
+    "PlayableWindowSourcePosture",
+    "PlayableWindowScoreInput",
+    "PlayableWindowScoreMetric",
+    "playableWindowScore"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "portfolio-fit-score.ts",
+   "lines": 223,
+   "bytes": 9270,
+   "n_exports": 5,
+   "exports_head": [
+    "PortfolioFitBand",
+    "PortfolioFitSourcePosture",
+    "PortfolioFitScoreInput",
+    "PortfolioFitScoreMetric",
+    "portfolioFitScore"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "metrics\\market": [
+  {
+   "file": "market-gravity-index.ts",
+   "lines": 124,
+   "bytes": 5316,
+   "n_exports": 4,
+   "exports_head": [
+    "MarketGravitySignal",
+    "MarketGravityInput",
+    "MarketGravityIndex",
+    "marketGravityIndex"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "market-mirage-score.ts",
+   "lines": 286,
+   "bytes": 14445,
+   "n_exports": 5,
+   "exports_head": [
+    "MarketMirageBand",
+    "MarketMirageSourcePosture",
+    "MarketMirageScoreInput",
+    "MarketMirageScore",
+    "marketMirageScore"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "stale-line-risk-score.ts",
+   "lines": 243,
+   "bytes": 11948,
+   "n_exports": 4,
+   "exports_head": [
+    "StaleLineRiskBand",
+    "StaleLineRiskInput",
+    "StaleLineRiskScore",
+    "staleLineRiskScore"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "metrics\\passing": [
+  {
+   "file": "expected-completion.ts",
+   "lines": 179,
+   "bytes": 9690,
+   "n_exports": 3,
+   "exports_head": [
+    "ExpectedCompletionInput",
+    "ExpectedCompletionMetric",
+    "expectedCompletionGse"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "qb-burden-index.ts",
+   "lines": 254,
+   "bytes": 13229,
+   "n_exports": 5,
+   "exports_head": [
+    "QbBurdenBand",
+    "QbBurdenSourcePosture",
+    "QbBurdenIndexInput",
+    "QbBurdenIndexMetric",
+    "qbBurdenIndex"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "metrics\\receiving": [
+  {
+   "file": "expected-yac.ts",
+   "lines": 106,
+   "bytes": 4407,
+   "n_exports": 3,
+   "exports_head": [
+    "ExpectedYacInput",
+    "ExpectedYacMetric",
+    "expectedYacGse"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "receiver-difficulty.ts",
+   "lines": 156,
+   "bytes": 7472,
+   "n_exports": 3,
+   "exports_head": [
+    "ReceiverDifficultyInput",
+    "ReceiverDifficultyMetric",
+    "receiverDifficultyIndex"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "yac-creation.ts",
+   "lines": 95,
+   "bytes": 4127,
+   "n_exports": 3,
+   "exports_head": [
+    "YacCreationInput",
+    "YacCreationMetric",
+    "yacCreationGse"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "metrics\\role": [
+  {
+   "file": "role-volatility-index.ts",
+   "lines": 196,
+   "bytes": 8212,
+   "n_exports": 5,
+   "exports_head": [
+    "RoleVolatilityBand",
+    "RoleVolatilitySourcePosture",
+    "RoleVolatilityIndexInput",
+    "RoleVolatilityIndexMetric",
+    "roleVolatilityIndex"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "metrics\\rushing": [
+  {
+   "file": "expected-rush-yards.ts",
+   "lines": 155,
+   "bytes": 8212,
+   "n_exports": 3,
+   "exports_head": [
+    "ExpectedRushYardsInput",
+    "ExpectedRushYardsMetric",
+    "expectedRushYardsGse"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "rush-environment-index.ts",
+   "lines": 188,
+   "bytes": 9415,
+   "n_exports": 3,
+   "exports_head": [
+    "RushEnvironmentInput",
+    "RushEnvironmentIndex",
+    "rushEnvironmentIndex"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "rush-over-expected.ts",
+   "lines": 161,
+   "bytes": 8227,
+   "n_exports": 3,
+   "exports_head": [
+    "RushOverExpectedInput",
+    "RushOverExpectedMetric",
+    "rushOverExpectedGse"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "metrics\\source": [
+  {
+   "file": "data-reliability-index.ts",
+   "lines": 181,
+   "bytes": 9212,
+   "n_exports": 4,
+   "exports_head": [
+    "DataReliabilityGrade",
+    "DataReliabilityInput",
+    "DataReliabilityIndex",
+    "dataReliabilityIndex"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "metrics\\__tests__": [
+  {
+   "file": "calibration-integrity-grade.test.ts",
+   "lines": 102,
+   "bytes": 4746,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "conformal-uncertainty-width.test.ts",
+   "lines": 147,
+   "bytes": 5204,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "data-reliability-index.test.ts",
+   "lines": 137,
+   "bytes": 6097,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "drift-pressure-index.test.ts",
+   "lines": 123,
+   "bytes": 5496,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "driver.test.ts",
+   "lines": 50,
+   "bytes": 1932,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "expected-completion.test.ts",
+   "lines": 91,
+   "bytes": 3577,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "expected-rush-yards.test.ts",
+   "lines": 153,
+   "bytes": 4890,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "expected-yac.test.ts",
+   "lines": 67,
+   "bytes": 2468,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "gse-signal-score.test.ts",
+   "lines": 96,
+   "bytes": 3660,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "market-gravity-index.test.ts",
+   "lines": 102,
+   "bytes": 3909,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "market-mirage-score.test.ts",
+   "lines": 113,
+   "bytes": 4162,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "math.test.ts",
+   "lines": 141,
+   "bytes": 3779,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-asset-graduation.test.ts",
+   "lines": 168,
+   "bytes": 6266,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-birth-certificate.test.ts",
+   "lines": 99,
+   "bytes": 3779,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-evidence-cards.test.ts",
+   "lines": 225,
+   "bytes": 9159,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-evidence-report-markdown.test.ts",
+   "lines": 68,
+   "bytes": 2788,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-historical-distribution-adapter.test.ts",
+   "lines": 116,
+   "bytes": 5161,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-historical-validation-adapter.test.ts",
+   "lines": 108,
+   "bytes": 4813,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-payload-envelope-fixtures.test.ts",
+   "lines": 79,
+   "bytes": 3629,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-payload-envelope.test.ts",
+   "lines": 121,
+   "bytes": 4291,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-source-payload-rights.test.ts",
+   "lines": 160,
+   "bytes": 5838,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-validation-split-fixtures.test.ts",
+   "lines": 112,
+   "bytes": 4385,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "no-bet-pressure.test.ts",
+   "lines": 158,
+   "bytes": 6797,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "playable-window-score.test.ts",
+   "lines": 154,
+   "bytes": 6489,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "portfolio-fit-score.test.ts",
+   "lines": 177,
+   "bytes": 6595,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "qb-burden-index.test.ts",
+   "lines": 142,
+   "bytes": 5861,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "receiver-difficulty.test.ts",
+   "lines": 97,
+   "bytes": 3416,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "residual-rollup.test.ts",
+   "lines": 143,
+   "bytes": 5141,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "role-volatility-index.test.ts",
+   "lines": 153,
+   "bytes": 5906,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "rush-environment-index.test.ts",
+   "lines": 134,
+   "bytes": 4368,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "rush-over-expected.test.ts",
+   "lines": 84,
+   "bytes": 2872,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "shrinkage.test.ts",
+   "lines": 70,
+   "bytes": 3492,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "source-rights.test.ts",
+   "lines": 109,
+   "bytes": 3655,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "stale-line-risk-score.test.ts",
+   "lines": 163,
+   "bytes": 6386,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "validation.test.ts",
+   "lines": 127,
+   "bytes": 5180,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "yac-creation.test.ts",
+   "lines": 92,
+   "bytes": 3265,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "nfl": [
+  {
+   "file": "expected-completion.ts",
+   "lines": 94,
+   "bytes": 3611,
+   "n_exports": 3,
+   "exports_head": [
+    "GseExpectedCompletionInput",
+    "GseExpectedCompletion",
+    "gseExpectedCompletion"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "expected-yac.ts",
+   "lines": 73,
+   "bytes": 2889,
+   "n_exports": 3,
+   "exports_head": [
+    "GseExpectedYacInput",
+    "GseExpectedYac",
+    "gseExpectedYac"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "margin-mixture-model.ts",
+   "lines": 264,
+   "bytes": 8704,
+   "n_exports": 14,
+   "exports_head": [
+    "NFL_KEY_NUMBERS",
+    "NFL_SIGNED_KEY_NUMBERS",
+    "MIN_SAMPLES_FOR_MARGIN_MIXTURE",
+    "MarginMixtureVerdict",
+    "KeyNumberMass",
+    "NflMarginMixtureFit",
+    "marginsFromTeamGameRecords",
+    "fitNflMarginMixture"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-birth-certificate.ts",
+   "lines": 175,
+   "bytes": 9062,
+   "n_exports": 5,
+   "exports_head": [
+    "GseMetricFamily",
+    "MetricPublicExposure",
+    "GseMetricBirthCertificate",
+    "GSE_NFL_METRIC_BIRTH_CERTIFICATES",
+    "metricBirthCertificate"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-core.ts",
+   "lines": 20,
+   "bytes": 367,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-drift.ts",
+   "lines": 60,
+   "bytes": 2371,
+   "n_exports": 5,
+   "exports_head": [
+    "MetricDriftStatus",
+    "MetricDriftInput",
+    "MetricDriftResult",
+    "populationStabilityIndex",
+    "evaluateMetricDrift"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "metric-validation.ts",
+   "lines": 49,
+   "bytes": 2266,
+   "n_exports": 4,
+   "exports_head": [
+    "GseMetricValidationStatus",
+    "GseMetricValidationInput",
+    "GseMetricValidationResult",
+    "validateGseMetric"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "qb-burden.ts",
+   "lines": 76,
+   "bytes": 3010,
+   "n_exports": 3,
+   "exports_head": [
+    "GseQbBurdenInput",
+    "GseQbBurden",
+    "gseQbBurden"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "receiver-difficulty.ts",
+   "lines": 76,
+   "bytes": 3069,
+   "n_exports": 3,
+   "exports_head": [
+    "GseReceiverDifficultyInput",
+    "GseReceiverDifficulty",
+    "gseReceiverDifficulty"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "role-volatility.ts",
+   "lines": 82,
+   "bytes": 3227,
+   "n_exports": 3,
+   "exports_head": [
+    "GseRoleVolatilityInput",
+    "GseRoleVolatility",
+    "gseRoleVolatility"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "rush-environment.ts",
+   "lines": 74,
+   "bytes": 2921,
+   "n_exports": 3,
+   "exports_head": [
+    "GseRushEnvironmentInput",
+    "GseRushEnvironment",
+    "gseRushEnvironment"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "nfl\\__tests__": [
+  {
+   "file": "gse-nfl-metrics.test.ts",
+   "lines": 182,
+   "bytes": 6046,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "margin-mixture-model.test.ts",
+   "lines": 178,
+   "bytes": 6728,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "parlay": [
+  {
+   "file": "correlationAdjuster.ts",
+   "lines": 206,
+   "bytes": 6116,
+   "n_exports": 9,
+   "exports_head": [
+    "PARLAY_MRI_PRICED",
+    "PARLAY_MRI_SCOPE",
+    "poissonPmf",
+    "bivariatePoissonPmf",
+    "buildScoreGrid",
+    "SameMatchLeg",
+    "ParlayEvaluation",
+    "evaluateParlay"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "pipeline": [
+  {
+   "file": "live-orchestrator.ts",
+   "lines": 358,
+   "bytes": 16974,
+   "n_exports": 5,
+   "exports_head": [
+    "OrchestratorOptions",
+    "OrchestratorGameContext",
+    "ShadowSignalObservation",
+    "OrchestratorSettlementResult",
+    "LiveOrchestrator"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "pipeline\\__tests__": [
+  {
+   "file": "live-orchestrator.test.ts",
+   "lines": 247,
+   "bytes": 9230,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "promotion": [
+  {
+   "file": "clv-non-inferiority.ts",
+   "lines": 154,
+   "bytes": 5768,
+   "n_exports": 3,
+   "exports_head": [
+    "ClvNonInferiorityOptions",
+    "ClvNonInferiorityResult",
+    "welchOneSidedNonInferiority"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "empirical-bernstein.ts",
+   "lines": 82,
+   "bytes": 3019,
+   "n_exports": 2,
+   "exports_head": [
+    "PairedBrierLcbResult",
+    "pairedBrierLcb"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "evaluate.ts",
+   "lines": 114,
+   "bytes": 4744,
+   "n_exports": 2,
+   "exports_head": [
+    "evaluatePromotion",
+    "recomputePromotionDecision"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "index.ts",
+   "lines": 38,
+   "bytes": 1325,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "integrity.ts",
+   "lines": 185,
+   "bytes": 8202,
+   "n_exports": 2,
+   "exports_head": [
+    "PromotionIntegrityError",
+    "validateWalkForwardIntegrity"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "normal-quantile.ts",
+   "lines": 82,
+   "bytes": 3125,
+   "n_exports": 2,
+   "exports_head": [
+    "standardNormalQuantile",
+    "zCritOneSided"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "types.ts",
+   "lines": 172,
+   "bytes": 7314,
+   "n_exports": 8,
+   "exports_head": [
+    "PairedBrierRow",
+    "ClvRow",
+    "RegisteredWindow",
+    "PromotionInput",
+    "Verdict",
+    "Leg1Result",
+    "Leg2Result",
+    "PromotionDecision"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "window-hash.ts",
+   "lines": 44,
+   "bytes": 1825,
+   "n_exports": 1,
+   "exports_head": [
+    "computeWindowHash"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "promotion\\__tests__": [
+  {
+   "file": "clv-non-inferiority.test.ts",
+   "lines": 89,
+   "bytes": 3806,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "empirical-bernstein.test.ts",
+   "lines": 84,
+   "bytes": 3490,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "evaluate.test.ts",
+   "lines": 252,
+   "bytes": 10101,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "fixtures.ts",
+   "lines": 103,
+   "bytes": 3998,
+   "n_exports": 8,
+   "exports_head": [
+    "WINDOW_START",
+    "WINDOW_END",
+    "WINDOW_REGISTERED_AT",
+    "eventUniverse",
+    "baseWindow",
+    "makeBrierRows",
+    "makeClvRows",
+    "deterministicOutcome"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "founder-gate.test.ts",
+   "lines": 68,
+   "bytes": 2413,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "integrity.test.ts",
+   "lines": 161,
+   "bytes": 7204,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "no-aggregate-inputs.test.ts",
+   "lines": 105,
+   "bytes": 4214,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "normal-quantile.test.ts",
+   "lines": 44,
+   "bytes": 2017,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "placebo.test.ts",
+   "lines": 122,
+   "bytes": 5491,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "window-hash.test.ts",
+   "lines": 104,
+   "bytes": 3735,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "research": [
+  {
+   "file": "capital.ts",
+   "lines": 142,
+   "bytes": 4608,
+   "n_exports": 8,
+   "exports_head": [
+    "CapitalPath",
+    "stepCapital",
+    "RunOptions",
+    "runCapital",
+    "NullReport",
+    "runNullSuite",
+    "PlantedReport",
+    "runPlantedComparison"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "dml-panel.ts",
+   "lines": 140,
+   "bytes": 4052,
+   "n_exports": 6,
+   "exports_head": [
+    "QbStatus",
+    "DmlGameRow",
+    "PanelDesign",
+    "DEFAULT_PANEL",
+    "timeIndex",
+    "generateDmlPanel"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "dml-qb-out.test.ts",
+   "lines": 57,
+   "bytes": 1957,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "dml-qb-out.ts",
+   "lines": 369,
+   "bytes": 11501,
+   "n_exports": 10,
+   "exports_head": [
+    "TRIM_LOW",
+    "TRIM_HIGH",
+    "N_FOLDS",
+    "FILTER_INTERVENTION_GAIN",
+    "DmlEstimate",
+    "DmlDiagnostics",
+    "estimateQbOutAtt",
+    "placeboAtt"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nb-rbpf.test.ts",
+   "lines": 95,
+   "bytes": 3114,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nb-rbpf.ts",
+   "lines": 683,
+   "bytes": 24051,
+   "n_exports": 10,
+   "exports_head": [
+    "R9_SNAPSHOT_VERSION",
+    "FIXED_LAMBDA",
+    "MAX_PARTICLES",
+    "MAX_UNITS",
+    "ResamplingScheme",
+    "NbRbpfOptions",
+    "NbRbpfSnapshot",
+    "NbRbpfDiagnostics"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "null-acceptance.test.ts",
+   "lines": 29,
+   "bytes": 1179,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "synthetic-nb.ts",
+   "lines": 132,
+   "bytes": 4650,
+   "n_exports": 5,
+   "exports_head": [
+    "SyntheticGame",
+    "SyntheticDesign",
+    "DEFAULT_DESIGN",
+    "drawNb",
+    "generateSyntheticGames"
+   ],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "research\\__tests__": [
+  {
+   "file": "nb2-dispersion-property.test.ts",
+   "lines": 109,
+   "bytes": 4322,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "__tests__": [
+  {
+   "file": "aggregation.test.ts",
+   "lines": 144,
+   "bytes": 4712,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "anytime-fold.test.ts",
+   "lines": 121,
+   "bytes": 5004,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "anytime-ledger.test.ts",
+   "lines": 215,
+   "bytes": 10483,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "availability-role-tenure.test.ts",
+   "lines": 117,
+   "bytes": 4067,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "bankroll.test.ts",
+   "lines": 45,
+   "bytes": 1616,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "bernoulli-eprocess.test.ts",
+   "lines": 203,
+   "bytes": 6985,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "brier-ogd-ensemble.test.ts",
+   "lines": 62,
+   "bytes": 1992,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-apply.test.ts",
+   "lines": 57,
+   "bytes": 2507,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-commitment.test.ts",
+   "lines": 111,
+   "bytes": 5042,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-drift.test.ts",
+   "lines": 48,
+   "bytes": 2007,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-kelly-bridge.test.ts",
+   "lines": 102,
+   "bytes": 3529,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-map.test.ts",
+   "lines": 258,
+   "bytes": 11544,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-monitor.test.ts",
+   "lines": 85,
+   "bytes": 3440,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-property.test.ts",
+   "lines": 317,
+   "bytes": 12508,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "calibration-sequence.test.ts",
+   "lines": 210,
+   "bytes": 9819,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "clv-capture.test.ts",
+   "lines": 184,
+   "bytes": 6369,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "clv-decomposition.test.ts",
+   "lines": 106,
+   "bytes": 4853,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "clv-moneyline-averaging.test.ts",
+   "lines": 85,
+   "bytes": 3777,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "clv.test.ts",
+   "lines": 99,
+   "bytes": 3499,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "composite-score.test.ts",
+   "lines": 94,
+   "bytes": 4274,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "conformal-intervals.test.ts",
+   "lines": 87,
+   "bytes": 2848,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "conformal-margin-set.test.ts",
+   "lines": 94,
+   "bytes": 3140,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "consensus-view.test.ts",
+   "lines": 51,
+   "bytes": 1773,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "consensus.test.ts",
+   "lines": 44,
+   "bytes": 1864,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "contest-scoring.test.ts",
+   "lines": 84,
+   "bytes": 2959,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "conviction-tier.test.ts",
+   "lines": 119,
+   "bytes": 5297,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "coverage-self-audit.test.ts",
+   "lines": 107,
+   "bytes": 5509,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "cvap.test.ts",
+   "lines": 148,
+   "bytes": 5657,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "devig-method-honesty.test.ts",
+   "lines": 105,
+   "bytes": 3978,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "devig-oracle.test.ts",
+   "lines": 77,
+   "bytes": 2708,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "dixon-coles.test.ts",
+   "lines": 155,
+   "bytes": 5505,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "earned-weight-ensemble.test.ts",
+   "lines": 75,
+   "bytes": 2633,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "edge-engine.test.ts",
+   "lines": 166,
+   "bytes": 6652,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "edge-significance.test.ts",
+   "lines": 40,
+   "bytes": 1653,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "elo-backtest.test.ts",
+   "lines": 56,
+   "bytes": 2343,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "elo-estimator.test.ts",
+   "lines": 45,
+   "bytes": 1767,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "elo-from-results.test.ts",
+   "lines": 65,
+   "bytes": 1722,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "eprocess-property.test.ts",
+   "lines": 337,
+   "bytes": 11979,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "espn-powerindex.test.ts",
+   "lines": 75,
+   "bytes": 2206,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "evidence-readiness-matrix.test.ts",
+   "lines": 202,
+   "bytes": 6971,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "expected-metrics.test.ts",
+   "lines": 452,
+   "bytes": 17687,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "filter-snapshot.test.ts",
+   "lines": 107,
+   "bytes": 4033,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "forecast-skill-eprocess.test.ts",
+   "lines": 839,
+   "bytes": 38051,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "game-context.test.ts",
+   "lines": 147,
+   "bytes": 6825,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "game-script.test.ts",
+   "lines": 59,
+   "bytes": 2698,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "green-board.test.ts",
+   "lines": 170,
+   "bytes": 5893,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "hawkes-steam.test.ts",
+   "lines": 473,
+   "bytes": 21367,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "historical-replay-determinism.test.ts",
+   "lines": 72,
+   "bytes": 2621,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "historical-replay-lookahead-invariance.test.ts",
+   "lines": 124,
+   "bytes": 5304,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "historical-replay.test.ts",
+   "lines": 249,
+   "bytes": 10948,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "information-edge-bits.test.ts",
+   "lines": 695,
+   "bytes": 31196,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "instrumented-eprocess.test.ts",
+   "lines": 227,
+   "bytes": 9203,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "ivap.test.ts",
+   "lines": 122,
+   "bytes": 4482,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "kelly.test.ts",
+   "lines": 219,
+   "bytes": 7525,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "levene-welch.test.ts",
+   "lines": 206,
+   "bytes": 7504,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "linear-thompson.test.ts",
+   "lines": 231,
+   "bytes": 10298,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "local-isotonic-patch.test.ts",
+   "lines": 128,
+   "bytes": 4884,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "log-loss-isotonic-debug.test.ts",
+   "lines": 86,
+   "bytes": 2830,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "log-loss-optimize.test.ts",
+   "lines": 160,
+   "bytes": 6532,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "lwt-mcps-sketch.test.ts",
+   "lines": 189,
+   "bytes": 7584,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "market-anchored-reconciliation.test.ts",
+   "lines": 102,
+   "bytes": 5671,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "market-read.test.ts",
+   "lines": 183,
+   "bytes": 6599,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "ml-estimator.test.ts",
+   "lines": 465,
+   "bytes": 17813,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "model-limitations.test.ts",
+   "lines": 45,
+   "bytes": 1728,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "mondrian.test.ts",
+   "lines": 100,
+   "bytes": 4148,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "multicalib-audit-patch.test.ts",
+   "lines": 148,
+   "bytes": 5731,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "narrative-signal.test.ts",
+   "lines": 70,
+   "bytes": 2870,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nfl-epa-fair-value.test.ts",
+   "lines": 39,
+   "bytes": 1042,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "nflverse-replay-parser.test.ts",
+   "lines": 100,
+   "bytes": 3219,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "oco-res-calibration.test.ts",
+   "lines": 113,
+   "bytes": 3678,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "opponent-adjusted.test.ts",
+   "lines": 66,
+   "bytes": 2969,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "parlay-mri.test.ts",
+   "lines": 119,
+   "bytes": 4121,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "parse-canonical-payload.test.ts",
+   "lines": 42,
+   "bytes": 1533,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "pav.test.ts",
+   "lines": 85,
+   "bytes": 3015,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "pedersen-ledger.test.ts",
+   "lines": 163,
+   "bytes": 7402,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "performance-analytics.test.ts",
+   "lines": 124,
+   "bytes": 5303,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "performance-ci.test.ts",
+   "lines": 509,
+   "bytes": 26107,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "pick-proof-receipt.test.ts",
+   "lines": 101,
+   "bytes": 4229,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "platform-config-stale-gate.test.ts",
+   "lines": 57,
+   "bytes": 2189,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "player-archetype.test.ts",
+   "lines": 46,
+   "bytes": 1900,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "player-projection.test.ts",
+   "lines": 67,
+   "bytes": 2942,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "player-rate-posteriors.test.ts",
+   "lines": 142,
+   "bytes": 4923,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "player-rush-scheme.test.ts",
+   "lines": 35,
+   "bytes": 1469,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "poisson-fairvalue.test.ts",
+   "lines": 20,
+   "bytes": 915,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "poisson.test.ts",
+   "lines": 242,
+   "bytes": 7669,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "probability-calibration.test.ts",
+   "lines": 321,
+   "bytes": 11678,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "projection-evaluation.test.ts",
+   "lines": 166,
+   "bytes": 6939,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "proof-of-record.test.ts",
+   "lines": 79,
+   "bytes": 3301,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "property-stress.test.ts",
+   "lines": 406,
+   "bytes": 20420,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "provenance.test.ts",
+   "lines": 78,
+   "bytes": 2621,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "publication-coin.test.ts",
+   "lines": 111,
+   "bytes": 3849,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "ranking-prob.test.ts",
+   "lines": 128,
+   "bytes": 3718,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "regression-detector.test.ts",
+   "lines": 152,
+   "bytes": 5852,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "replay-harness.test.ts",
+   "lines": 110,
+   "bytes": 4877,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "responsible-gaming.test.ts",
+   "lines": 41,
+   "bytes": 1651,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "robust-kelly-property.test.ts",
+   "lines": 228,
+   "bytes": 8882,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "robust-kelly.test.ts",
+   "lines": 711,
+   "bytes": 28504,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "scoring-independent-edge.test.ts",
+   "lines": 113,
+   "bytes": 4938,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "scoring.test.ts",
+   "lines": 911,
+   "bytes": 34382,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "settlement.test.ts",
+   "lines": 279,
+   "bytes": 12804,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "shin-devig.test.ts",
+   "lines": 107,
+   "bytes": 4249,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "signal-ledger.test.ts",
+   "lines": 64,
+   "bytes": 2939,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "signal-snapshot.test.ts",
+   "lines": 185,
+   "bytes": 6356,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "simhash.test.ts",
+   "lines": 357,
+   "bytes": 15402,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "skellam-spread-rank.test.ts",
+   "lines": 112,
+   "bytes": 3735,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "skellam.test.ts",
+   "lines": 117,
+   "bytes": 3625,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "slate-commitment.test.ts",
+   "lines": 168,
+   "bytes": 5901,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "sliding-hedge-analysis.test.ts",
+   "lines": 65,
+   "bytes": 2308,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "sports-taxonomy.test.ts",
+   "lines": 156,
+   "bytes": 5161,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "spread-line-convention.test.ts",
+   "lines": 75,
+   "bytes": 2640,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "standings-strength.test.ts",
+   "lines": 57,
+   "bytes": 1527,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "suppression-curve.test.ts",
+   "lines": 108,
+   "bytes": 4029,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "team-index-registry.test.ts",
+   "lines": 125,
+   "bytes": 5114,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "team-rates.test.ts",
+   "lines": 152,
+   "bytes": 5801,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "team-strength-filter.test.ts",
+   "lines": 891,
+   "bytes": 43337,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "temperature-scaling.test.ts",
+   "lines": 36,
+   "bytes": 1197,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "trend-discovery.test.ts",
+   "lines": 98,
+   "bytes": 3340,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "tweedie-aci.test.ts",
+   "lines": 174,
+   "bytes": 6775,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "tweedie-baseline.test.ts",
+   "lines": 160,
+   "bytes": 6197,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "uq-calibration.test.ts",
+   "lines": 185,
+   "bytes": 6384,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  },
+  {
+   "file": "uq-section2.test.ts",
+   "lines": 1052,
+   "bytes": 41699,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ],
+ "__tests__\\honesty": [
+  {
+   "file": "honesty-surface.test.ts",
+   "lines": 133,
+   "bytes": 4090,
+   "n_exports": 0,
+   "exports_head": [],
+   "method_tags": [],
+   "edge_thesis": false
+  }
+ ]
+}

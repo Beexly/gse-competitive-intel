@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="robots" content="all" />
+    <title>Outlier</title>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      var cid = "3f7jndf6b4o9oo56m3r3s8fqqh";
+      var clau = localStorage.getItem(
+        `CognitoIdentityServiceProvider.${cid}.LastAuthUser`,
+      );
+      var olau = localStorage.getItem(
+        `Outlier.CognitoUser.${clau}.LastAuthUser`,
+      );
+      window.dataLayer.push({
+        user_id: olau,
+      });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KH724W6X");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '772880730942944'); 
+    fbq('track', 'PageView');
+    </script> 
+  <!-- End Meta Pixel Code -->
+
+    <!-- TikTok Pixel Code -->
+    <script>
+    // Pixel ID from TikTok Events Manager (Data Sources -> pixel -> Settings -> ID).
+    // Empty / unreplaced ID = pixel disabled; all ttq calls in app code no-op.
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+      var tiktokPixelId = "DACSVMRC77U250DBLQS0";
+      // Second check guards against an unreplaced Vite placeholder (missing env var).
+      if (tiktokPixelId && tiktokPixelId.indexOf("%") === -1) {
+        ttq.load(tiktokPixelId);
+        ttq.page();
+      }
+    }(window, document, 'ttq');
+    </script>
+    <!-- End TikTok Pixel Code -->
+
+    <!-- Reddit Pixel Code -->
+    <script>
+      // Pixel ID from Reddit Events Manager. Empty / unreplaced ID = pixel
+      // disabled; window.rdt stays undefined and all rdt calls in app code no-op.
+      var redditPixelId = "a2_jee2von2kp0m";
+      if (redditPixelId && redditPixelId.indexOf("%") === -1) {
+        !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js";t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);
+        window.rdt("init", redditPixelId);
+        // No PageVisit here: app code fires it with a conversionId for CAPI dedup.
+      }
+    </script>
+    <!-- End Reddit Pixel Code -->
+
+    <!-- Snap Pixel Code -->
+    <script>
+      // Pixel ID from Snapchat Events Manager. Empty / unreplaced ID = pixel
+      // disabled; window.snaptr stays undefined and all snaptr calls no-op.
+      var snapPixelId = "818ca3bd-35ce-4a0a-be12-a932982edf62";
+      if (snapPixelId && snapPixelId.indexOf("%") === -1) {
+        (function (e, t, n) { if (e.snaptr) return; var a = e.snaptr = function () {
+          a.handleRequest ? a.handleRequest.apply(a, arguments) : a.queue.push(arguments);
+        }; a.queue = []; var s = "script"; var r = t.createElement(s); r.async = !0;
+        r.src = n; var u = t.getElementsByTagName(s)[0]; u.parentNode.insertBefore(r, u);
+        })(window, document, "https://sc-static.net/scevent.min.js");
+        window.snaptr("init", snapPixelId);
+        window.snaptr("track", "PAGE_VIEW");
+      }
+    </script>
+    <!-- End Snap Pixel Code -->
+    <script type="module" crossorigin src="/assets/main-e84309a4.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/index-5e85de75.js">
+    <link rel="modulepreload" crossorigin href="/assets/feature-flags-provider-factory-94a02e35.js">
+    <link rel="stylesheet" href="/assets/index-e370de64.css">
+  </head>
+  <body>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=772880730942944&amp;ev=PageView&amp;noscript=1"
+      />
+    </noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KH724W6X"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
+    
+  </body>
+</html>

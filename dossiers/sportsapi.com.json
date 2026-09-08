@@ -1,0 +1,85 @@
+{
+ "domain": "sportsapi.com",
+ "tech_stack": {
+  "frontend": "Custom ASP.NET-style server-rendered site behind Cloudflare (cf-ray DFW), jQuery 1.x + validate.min.js + Cloudflare Turnstile captcha",
+  "backend": "Not exposed — informational directory site, no public API of its own",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare-proxied",
+  "cdn": "Cloudflare (cf-ray present every response)",
+  "citations": [
+   "https://sportsapi.com/ (server: cloudflare, turnstile script)",
+   "https://sportsapi.com/robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "None documented",
+  "rate_limits": "N/A — no own API exposed",
+  "citations": [
+   "https://sportsapi.com/",
+   "https://sportsapi.com/api (404)",
+   "https://sportsapi.com/docs (404)"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "None — it is a comparison/review directory for sports data vendors, not a data provider itself",
+  "training_data": "N/A",
+  "update_frequency": "N/A",
+  "citation": "https://sportsapi.com/"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED — no simulation product",
+  "correlation_method": null,
+  "citation": "https://sportsapi.com/"
+ },
+ "data_supply_chain": {
+  "vendors": "Aggregates third-party vendor listings: FantasyNerds, FantasyData.com, CricketAPI, FootballAPI, StatPal, GoalServe, API-Sports.io, SportMonks, The Odds API, JsonOdds, HorseAPI, Broker Sports; also lists BetRadar, BettingData.com, AllSports API, BallDontLie",
+  "citations": [
+   "https://sportsapi.com/api-directory"
+  ]
+ },
+ "product_limits": {
+  "limits": "Site monetizes via 'Pricing Tool — Unlock 25% Off Plans' affiliate/discount deals with vendors; Login section present (login wall for accounts)",
+  "upgrade_triggers": "Affiliate discount unlocking",
+  "citation": "https://sportsapi.com/"
+ },
+ "pricing": {
+  "web": "No own pricing; publishes third-party vendor prices (e.g. API-Sports.io $19/mo, API-Tennis $40/mo, APIFootball $15/mo, AllSports API $79/mo, BettingData.com $99/mo, Broker Sports $48/mo) — citation https://sportsapi.com/api-directory",
+  "ios": "No app found",
+  "android": "No app found",
+  "citations": [
+   "https://sportsapi.com/api-directory"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/api-directory",
+  "/pricing",
+  "/blog",
+  "/faq"
+ ],
+ "discovered_targets": [
+  "statpal.io",
+  "goalserve.com",
+  "api-sports.io",
+  "sportmonks.com",
+  "jsonodds.com",
+  "horseapi.com",
+  "brokersports.com",
+  "betradar.com",
+  "bettingdata.com",
+  "balldontlie.io",
+  "apisoccer.com",
+  "apifootball.com",
+  "api-tennis.com",
+  "cricketapi.com",
+  "fantasynerds.com"
+ ],
+ "discovery_metadata": {
+  "method": "urllib GET: home/robots/docs/api + api-directory crawl + subdomain DNS probes (api/app/staging all NXDOMAIN)",
+  "timestamp": "2026-09-08T18:14:57.774174Z"
+ },
+ "disposition": "live (derived from 14 raw evidence files)"
+}

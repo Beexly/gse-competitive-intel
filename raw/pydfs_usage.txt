@@ -1,0 +1,419 @@
+URL: https://pydfs-lineup-optimizer.readthedocs.io/en/latest/usage.html\nSTATUS: 200\n\n
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Usage &#8212; pydfs-lineup-optimizer 2.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="canonical" href="https://pydfs-lineup-optimizer.readthedocs.io/en/latest/usage.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Rules" href="rules.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  
+<!-- RTD Extra Head -->
+
+
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "build_date": "2021-09-27T19:35:18Z", "builder": "sphinx", "canonical_url": null, "commit": "429db968", "docroot": "/docs/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "usage", "programming_language": "py", "project": "pydfs-lineup-optimizer", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "alabaster", "user_analytics_code": "", "version": "latest"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+
+
+<!-- end RTD <extrahead> -->
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="pydfs-lineup-optimizer" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/usage.html" /><meta name="readthedocs-http-status" content="200" /></head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="usage">
+<span id="pydfs-lineup-optimizer-usage"></span><h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="base-usage">
+<h2>Base Usage<a class="headerlink" href="#base-usage" title="Permalink to this headline">¶</a></h2>
+<p>Creating optimal lineups with <strong>pydfs-lineup-optimizer</strong> is very simple.
+Firstly you should create an optimizer. You can do this using
+shortcut get_optimizer. You must provide a daily fantasy site for it and the kind of sport.
+If the site doesn’t support the specified sport you will get NotImplementedError.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pydfs_lineup_optimizer</span> <span class="kn">import</span> <span class="n">get_optimizer</span><span class="p">,</span> <span class="n">Site</span><span class="p">,</span> <span class="n">Sport</span>
+
+
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">get_optimizer</span><span class="p">(</span><span class="n">Site</span><span class="o">.</span><span class="n">FANDUEL</span><span class="p">,</span> <span class="n">Sport</span><span class="o">.</span><span class="n">BASKETBALL</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>After that, you need to load players into your optimizer. You have 2 options:
+The first is to load players from CSV file like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">load_players_from_csv</span><span class="p">(</span><span class="s2">&quot;path_to_csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">CSV file must have the same format as an export file in a specified dfs site, if you have a custom CSV file this method will not work.
+Also, this method raises <cite>NotImplementedError</cite> for FanBall site because it hasn’t export csv feature.</p>
+</div>
+<p>Or you can load players using load_players method and pass list with players.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pydfs_lineup_optimizer</span> <span class="kn">import</span> <span class="n">Player</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">load_players</span><span class="p">(</span><span class="n">players</span><span class="p">)</span>  <span class="c1"># players is list of Player objects</span>
+</pre></div>
+</div>
+<p>After player loading you can create your optimal lineups with the following code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lineups</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Where n is a number of lineups that you want generate.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Optimize method returns generator instead of list.</p>
+</div>
+</div>
+<div class="section" id="example-of-base-usage">
+<h2>Example of base usage<a class="headerlink" href="#example-of-base-usage" title="Permalink to this headline">¶</a></h2>
+<p>Below is a full example of how <strong>pydfs-lineup-optimizer</strong> can be used to generate optimal lineups.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span> <span class="o">=</span> <span class="n">get_optimizer</span><span class="p">(</span><span class="n">Site</span><span class="o">.</span><span class="n">YAHOO</span><span class="p">,</span> <span class="n">Sport</span><span class="o">.</span><span class="n">BASKETBALL</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">load_players_from_csv</span><span class="p">(</span><span class="s2">&quot;yahoo-NBA.csv&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">lineup</span> <span class="ow">in</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lineup</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lineup</span><span class="o">.</span><span class="n">players</span><span class="p">)</span>  <span class="c1"># list of players</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lineup</span><span class="o">.</span><span class="n">fantasy_points_projection</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lineup</span><span class="o">.</span><span class="n">salary_costs</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="player-pool">
+<h2>Player Pool<a class="headerlink" href="#player-pool" title="Permalink to this headline">¶</a></h2>
+<p>After importing players to the optimizer you may need to change parameters for some players.
+You can retrieve player using following methods:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pool</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span>
+<span class="n">player</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_player_by_name</span><span class="p">(</span><span class="s1">&#39;Tom Brady&#39;</span><span class="p">)</span> <span class="c1"># using player name</span>
+<span class="n">player</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_player_by_id</span><span class="p">(</span><span class="s1">&#39;00000001&#39;</span><span class="p">)</span> <span class="c1"># using player id</span>
+<span class="n">player</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_player_by_name</span><span class="p">(</span><span class="s1">&#39;Tom Brady&#39;</span><span class="p">,</span> <span class="s1">&#39;CPT&#39;</span><span class="p">)</span>  <span class="c1"># using player name and position</span>
+</pre></div>
+</div>
+<p>For player grouping, you may need to get several players at the same time, for this you can use <cite>get_players</cite> method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pydfs_lineup_optimizer</span> <span class="kn">import</span> <span class="n">PlayerFilter</span>
+
+<span class="n">pool</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span>
+<span class="n">players</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_players</span><span class="p">(</span><span class="s1">&#39;Tom Brady&#39;</span><span class="p">,</span> <span class="s1">&#39;Rob Gronkowski&#39;</span><span class="p">,</span> <span class="s1">&#39;Chris Godwin&#39;</span><span class="p">)</span>  <span class="c1"># get players by name</span>
+<span class="n">players</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_players</span><span class="p">(</span><span class="s1">&#39;Tom Brady&#39;</span><span class="p">,</span> <span class="s1">&#39;00001&#39;</span><span class="p">,</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_player_by_name</span><span class="p">(</span><span class="s1">&#39;Rob Gronkowski&#39;</span><span class="p">,</span> <span class="s1">&#39;CPT&#39;</span><span class="p">))</span>  <span class="c1"># get players using name, id and player object</span>
+<span class="n">players</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_players</span><span class="p">(</span><span class="n">PlayerFilter</span><span class="p">(</span><span class="n">positions</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;QB&#39;</span><span class="p">]))</span>  <span class="c1"># get all QB</span>
+<span class="n">players</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_players</span><span class="p">(</span><span class="n">PlayerFilter</span><span class="p">(</span><span class="n">teams</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Tampa Bay&#39;</span><span class="p">]))</span>  <span class="c1"># get all players from team Tampa Bay</span>
+<span class="n">players</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_players</span><span class="p">(</span><span class="n">PlayerFilter</span><span class="p">(</span><span class="n">from_value</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">filter_by</span><span class="o">=</span><span class="s1">&#39;fppg&#39;</span><span class="p">))</span>  <span class="c1"># get all players with points &gt;= 10</span>
+<span class="n">players</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_players</span><span class="p">(</span><span class="n">PlayerFilter</span><span class="p">(</span><span class="n">teams</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Tampa Bay&#39;</span><span class="p">],</span> <span class="n">positions</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;WR&#39;</span><span class="p">],</span> <span class="n">from_value</span><span class="o">=</span><span class="mi">10</span><span class="p">))</span>  <span class="c1"># combined</span>
+</pre></div>
+</div>
+<p>For generating optimal lineups you may need to lock some players that you want to see in your lineup.
+You can do this using the following code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">lock_player</span><span class="p">(</span><span class="s1">&#39;Tom Brady&#39;</span><span class="p">)</span> <span class="c1"># using player name</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">lock_player</span><span class="p">(</span><span class="s1">&#39;ID00001&#39;</span><span class="p">)</span>  <span class="c1"># using player id</span>
+<span class="n">tom_brady_captain</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">get_player_by_name</span><span class="p">(</span><span class="s1">&#39;Tom Brady&#39;</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="s1">&#39;CPT&#39;</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">lock_player</span><span class="p">(</span><span class="n">tom_brady_captain</span><span class="p">)</span>  <span class="c1"># using player</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">lock_player</span><span class="p">(</span><span class="s1">&#39;Chris Godwin&#39;</span><span class="p">,</span> <span class="s1">&#39;FLEX&#39;</span><span class="p">)</span>  <span class="c1"># Lock Chris Godwin on FLEX position</span>
+<span class="c1"># Locked players can be unlocked as well</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">unlock_player</span><span class="p">(</span><span class="s1">&#39;Tom Brady&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Also you can exclude some players and teams from optimization process:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">remove_player</span><span class="p">(</span><span class="s1">&#39;Tom Brady&#39;</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">restore_player</span><span class="p">(</span><span class="s1">&#39;Tom Brady&#39;</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">exclude_teams</span><span class="p">([</span><span class="s1">&#39;Jets&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>You can specify maximum and minimum exposures for some players or max exposure for all players, you have several ways how to do this.
+You can add “Max Exposure” and “Min Exposure” columns with exposure percentage for some players to csv that will be parsed while players loading.
+Or you can set max_exposure/min_exposure property in Player object. If you want to set fixed max exposure for all players you can
+pass max_exposure parameter to optimize method</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">player</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">get_player_by_name</span><span class="p">(</span><span class="s1">&#39;Tom Brady&#39;</span><span class="p">)</span>
+<span class="n">player</span><span class="o">.</span><span class="n">max_exposure</span> <span class="o">=</span> <span class="mf">0.5</span>  <span class="c1"># set 50% max exposure</span>
+<span class="n">player</span><span class="o">.</span><span class="n">min_exposure</span> <span class="o">=</span> <span class="mf">0.3</span>  <span class="c1"># set 30% min exposure</span>
+<span class="n">lineups</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_exposure</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>  <span class="c1"># set 30% exposure for all players</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Exposure working with locked players, so if you lock some player and set max exposure to 50% percentage
+this player will appear only in 50% of lineups.
+Player max exposure has higher priority than max_exposure passed in optimize method.
+Exposure percentage rounds to ceil.</p>
+</div>
+<p>By default, the optimizer generates lineups based on the total number of lineups. It means if you have a player with a
+huge projection it will be selected only in the first n lineups.
+You can change this behavior to another algorithm where exposure calculates
+after each generated lineup. For example, if you have a player with a huge projection and
+set his max_exposure to 0.5 optimizer will select him in the first lineup then skip 2 lineups with this player
+(because he has 100% exposure after the first lineup and 50% after the second lineup that is not less than specified value)
+and will add this player to the fourth lineup. In this case, lineups can be unordered.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pydfs_lineup_optimizer</span> <span class="kn">import</span> <span class="n">AfterEachExposureStrategy</span>
+
+<span class="n">lineups</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_exposure</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">exposure_strategy</span><span class="o">=</span><span class="n">AfterEachExposureStrategy</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>After optimization you can print to console list with statistic about players used in lineups.</p>
+</div>
+<div class="section" id="example-of-advanced-usage">
+<h2>Example of advanced usage<a class="headerlink" href="#example-of-advanced-usage" title="Permalink to this headline">¶</a></h2>
+<p>Below is a full example of how <strong>pydfs-lineup-optimizer</strong> can be used to generate optimal lineups with user constraints.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span> <span class="o">=</span> <span class="n">get_optimizer</span><span class="p">(</span><span class="n">Site</span><span class="o">.</span><span class="n">YAHOO</span><span class="p">,</span> <span class="n">Sport</span><span class="o">.</span><span class="n">BASKETBALL</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">load_players_from_csv</span><span class="p">(</span><span class="s2">&quot;yahoo-NBA.csv&quot;</span><span class="p">)</span>
+<span class="n">pool</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_players</span><span class="p">(</span><span class="n">PlayerFilter</span><span class="p">(</span><span class="n">positions</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;C&#39;</span><span class="p">],</span> <span class="n">teams</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Nets&#39;</span><span class="p">])):</span>
+    <span class="n">pool</span><span class="o">.</span><span class="n">remove_player</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>  <span class="c1"># Remove all Nets centers from optimizer</span>
+<span class="n">harden</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_player_by_name</span><span class="p">(</span><span class="s1">&#39;Harden&#39;</span><span class="p">)</span>
+<span class="n">westbrook</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_player_by_name</span><span class="p">(</span><span class="s1">&#39;Westbrook&#39;</span><span class="p">)</span>  <span class="c1"># Get Harden and Westbrook</span>
+<span class="n">harden</span><span class="o">.</span><span class="n">max_exposure</span> <span class="o">=</span> <span class="mf">0.6</span>
+<span class="n">westbrook</span><span class="o">.</span><span class="n">max_exposure</span> <span class="o">=</span> <span class="mf">0.4</span>  <span class="c1"># Set exposures for Harden and Westbrook</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">lock_player</span><span class="p">(</span><span class="n">harden</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">lock_player</span><span class="p">(</span><span class="n">westbrook</span><span class="p">)</span>  <span class="c1"># Lock Harden and Westbrook</span>
+<span class="k">for</span> <span class="n">lineup</span> <span class="ow">in</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_exposure</span><span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lineup</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="late-swap">
+<h2>Late-Swap<a class="headerlink" href="#late-swap" title="Permalink to this headline">¶</a></h2>
+<p>Optimizer provides additional functionality that allows to re-optimize existed lineups.
+Currently, this feature is implemented for DK and FanDuel.
+For this you should load lineups, you can do it from csv file generated for a specific contest.
+Then you should pass loaded lineups to <cite>optimize_lineups</cite> method.
+Players with the started game will be locked on specific positions and the optimizer will change only players with the upcoming game.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">csv_filename</span> <span class="o">=</span> <span class="s2">&quot;dk_nba.csv&quot;</span>
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">get_optimizer</span><span class="p">(</span><span class="n">Site</span><span class="o">.</span><span class="n">DRAFTKINGS</span><span class="p">,</span> <span class="n">Sport</span><span class="o">.</span><span class="n">BASKETBALL</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">load_players_from_csv</span><span class="p">(</span><span class="n">csv_filename</span><span class="p">)</span>
+<span class="n">lineups</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">load_lineups_from_csv</span><span class="p">(</span><span class="n">csv_filename</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">lineup</span> <span class="ow">in</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">optimize_lineups</span><span class="p">(</span><span class="n">lineups</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lineup</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Because FanDuel doesn’t provide information about locked player and games start time you should manually add information about started games like in the example below:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">csv_filename</span> <span class="o">=</span> <span class="s2">&quot;fd_nba.csv&quot;</span>
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">get_optimizer</span><span class="p">(</span><span class="n">Site</span><span class="o">.</span><span class="n">FANDUEL</span><span class="p">,</span> <span class="n">Sport</span><span class="o">.</span><span class="n">BASKETBALL</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">load_players_from_csv</span><span class="p">(</span><span class="n">csv_filename</span><span class="p">)</span>
+<span class="n">lineups</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">load_lineups_from_csv</span><span class="p">(</span><span class="n">csv_filename</span><span class="p">)</span>
+<span class="n">locked_teams</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;DET&#39;</span><span class="p">,</span> <span class="s1">&#39;MIA&#39;</span><span class="p">,</span> <span class="s1">&#39;BOS&#39;</span><span class="p">,</span> <span class="s1">&#39;NYK&#39;</span><span class="p">}</span>
+<span class="k">for</span> <span class="n">game</span> <span class="ow">in</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">games</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">game</span><span class="o">.</span><span class="n">home_team</span> <span class="ow">in</span> <span class="n">locked_teams</span> <span class="ow">or</span> <span class="n">game</span><span class="o">.</span><span class="n">away_team</span> <span class="ow">in</span> <span class="n">locked_teams</span><span class="p">:</span>
+        <span class="n">game</span><span class="o">.</span><span class="n">game_started</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">for</span> <span class="n">lineup</span> <span class="ow">in</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">optimize_lineups</span><span class="p">(</span><span class="n">lineups</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lineup</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For parsing dates of games for DK library uses US/Eastern timezone by default.
+You can change it using <cite>set_timezone</cite> function:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pydfs_lineup_optimizer</span> <span class="kn">import</span> <span class="n">set_timezone</span>
+
+<span class="n">set_timezone</span><span class="p">(</span><span class="s1">&#39;UTC&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="export-lineups">
+<h1>Export lineups<a class="headerlink" href="#export-lineups" title="Permalink to this headline">¶</a></h1>
+<p>You can export lineups into a csv file. For this, you should call the export method of the optimizer after you generate all lineups.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pydfs_lineup_optimizer</span> <span class="kn">import</span> <span class="n">get_optimizer</span><span class="p">,</span> <span class="n">Site</span><span class="p">,</span> <span class="n">Sport</span><span class="p">,</span> <span class="n">CSVLineupExporter</span>
+
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">get_optimizer</span><span class="p">(</span><span class="n">Site</span><span class="o">.</span><span class="n">DRAFTKINGS</span><span class="p">,</span> <span class="n">Sport</span><span class="o">.</span><span class="n">BASKETBALL</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">load_players_from_csv</span><span class="p">(</span><span class="s2">&quot;players.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># if you want to see lineups on screen</span>
+<span class="k">for</span> <span class="n">lineup</span> <span class="ow">in</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lineup</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">export</span><span class="p">(</span><span class="s1">&#39;result.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># if you don&#39;t need to see lineups on screen</span>
+<span class="n">lineups</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">optimizer</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">export</span><span class="p">(</span><span class="s1">&#39;result.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="adjusting-player-fantasy-points">
+<h1>Adjusting player fantasy points<a class="headerlink" href="#adjusting-player-fantasy-points" title="Permalink to this headline">¶</a></h1>
+<p>By default optimizer uses value of <cite>fppg</cite> property of player for optimizing.
+You can change this behaviour by providing a custom fantasy points strategy using <cite>set_fantasy_points_strategy</cite> method.
+There are several strategies already implemented in this package:</p>
+<ul class="simple">
+<li>RandomFantasyPointsStrategy</li>
+<li>ProgressiveFantasyPointsStrategy</li>
+</ul>
+<p>RandomFantasyPointsStrategy adds some deviation for players projection for creating less optimized but more randomized lineups.
+You can set this deviation when creating strategy by default min deviation is 0 and max deviation is 12%.
+You also can specify player-specific deviation using <cite>min_deviation</cite> and <cite>max_deviation</cite> attributes for a player
+or using additional columns <cite>Min Deviation</cite> and <cite>Max Deviation</cite> in import csv.
+Also, you can randomize players fppg by specifying projection range using <cite>fppg_floor</cite> and <cite>fppg_ceil</cite> attributes for player or
+<cite>Projection Floor</cite> and <cite>Projection Ceil</cite> csv columns. In this case, this method has priority over deviation.
+It works only if both fields are specified.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">set_fantasy_points_strategy</span><span class="p">(</span><span class="n">RandomFantasyPointsStrategy</span><span class="p">(</span><span class="n">max_deviation</span><span class="o">=</span><span class="mf">0.2</span><span class="p">))</span>  <span class="c1"># set random strategy with custom max_deviation</span>
+<span class="n">harden</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">get_player_by_name</span><span class="p">(</span><span class="s1">&#39;Harden&#39;</span><span class="p">)</span>
+<span class="n">harden</span><span class="o">.</span><span class="n">min_deviation</span> <span class="o">=</span> <span class="mf">0.3</span>
+<span class="n">harden</span><span class="o">.</span><span class="n">max_deviation</span> <span class="o">=</span> <span class="mf">0.6</span>  <span class="c1"># Set different deviation for player</span>
+<span class="n">westbrook</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">get_player_by_name</span><span class="p">(</span><span class="s1">&#39;Westbrook&#39;</span><span class="p">)</span>
+<span class="n">westbrook</span><span class="o">.</span><span class="n">min_deviation</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Disable randomness for this player</span>
+<span class="n">westbrook</span><span class="o">.</span><span class="n">max_deviation</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">doncic</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">get_player_by_name</span><span class="p">(</span><span class="s1">&#39;Doncic&#39;</span><span class="p">)</span>
+<span class="n">doncic</span><span class="o">.</span><span class="n">fppg_floor</span> <span class="o">=</span> <span class="mi">60</span>  <span class="c1"># Randomize using projection range</span>
+<span class="n">doncic</span><span class="o">.</span><span class="n">fppg_ceil</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="n">lineups</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">With RandomFantasyPointsStrategy optimizer generate lineups without ordering by max points projection.</p>
+</div>
+<p>ProgressiveFantasyPointsStrategy is another method to randomize optimizer results.
+It increases fantasy points for each player that wasn’t used in the previous lineup by some specified percent of original fantasy points.
+It works cumulatively so fantasy points will be greater if the player wasn’t used in the lineup multiple times.
+After the player will be selected to lineup his points will be reset to the original value.
+You can change this value for a specific player by setting <cite>progressive_scale</cite> property of Player or by adding <cite>Progressive Scale</cite> column to import csv.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">set_fantasy_points_strategy</span><span class="p">(</span><span class="n">ProgressiveFantasyPointsStrategy</span><span class="p">(</span><span class="mf">0.01</span><span class="p">))</span>  <span class="c1"># Set progressive strategy that increase player points by 1%</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">get_player_by_name</span><span class="p">(</span><span class="s1">&#39;Stephen Curry&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">progressive_scale</span> <span class="o">=</span> <span class="mf">0.02</span>  <span class="c1"># For curry points will be increased by 2%</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exclude-lineups">
+<h1>Exclude lineups<a class="headerlink" href="#exclude-lineups" title="Permalink to this headline">¶</a></h1>
+<p>You can run the optimizer several times. In this case, you probably want to avoid duplicated lineups in the result.
+You can provide a list of excluded lineups to the optimize method.
+All of these lineups will be excluded from optimization and newly generated lineups will count them in max repeating players rule.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Setup optimizer</span>
+<span class="n">lineups</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">optimizer</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="c1"># Change optimizer settings or players settings</span>
+<span class="n">lineups</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">optimizer</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">exclude_lineups</span><span class="o">=</span><span class="n">lineups</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">lineup</span> <span class="ow">in</span> <span class="n">lineups</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lineup</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">print_statistic</span><span class="p">()</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">export</span><span class="p">(</span><span class="s1">&#39;export.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="additional-columns-in-csv">
+<h2>Additional columns in csv<a class="headerlink" href="#additional-columns-in-csv" title="Permalink to this headline">¶</a></h2>
+<p>The optimizer can parse those additional columns that can be added to imported csv:</p>
+<ul class="simple">
+<li>Max Exposure</li>
+<li>Min Exposure</li>
+<li>Roster Order</li>
+<li>Projected Ownership</li>
+<li>Min Deviation</li>
+<li>Max Deviation</li>
+<li>Projection Floor</li>
+<li>Projection Ceil</li>
+<li>Confirmed Starter</li>
+<li>Progressive Scale</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">pydfs-lineup-optimizer</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#base-usage">Base Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-of-base-usage">Example of base usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#player-pool">Player Pool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-of-advanced-usage">Example of advanced usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#late-swap">Late-Swap</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#export-lineups">Export lineups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#adjusting-player-fantasy-points">Adjusting player fantasy points</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#exclude-lineups">Exclude lineups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#additional-columns-in-csv">Additional columns in csv</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rules.html">Rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rules.html#stacking">Stacking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performance-and-optimization.html">Performance and Optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-settings.html">Custom Settings</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="installation.html" title="previous chapter">Installation</a></li>
+      <li>Next: <a href="rules.html" title="next chapter">Rules</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Dima Kudosh.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/usage.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

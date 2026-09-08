@@ -1,0 +1,82 @@
+{
+ "domain": "clutch.market",
+ "tech_stack": {
+  "frontend": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw/b45_com_clutch_market_home.txt"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": []
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "no-evidence"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "no-evidence"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "no-evidence"
+  },
+  "citations": []
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "no-evidence"
+  },
+  "citations": []
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "no-evidence"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "pricing": {
+  "web": {
+   "value": "NOT CONFIRMED",
+   "citation": "no-evidence"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": []
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "NOT CONFIRMED"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:45.019872"
+ },
+ "disposition": "dead",
+ "_site_identity": {
+  "title": "NOT CONFIRMED",
+  "description": "NOT CONFIRMED"
+ }
+}

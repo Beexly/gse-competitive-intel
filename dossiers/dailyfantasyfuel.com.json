@@ -1,0 +1,162 @@
+{
+ "domain": "dailyfantasyfuel.com",
+ "tech_stack": {
+  "frontend": "Server-rendered jQuery 2.2.4 SPA-style app + GSAP + Swiper; main app bundle dff-common.s3.amazonaws.com/base_mini.gz.js (S3-hosted, 13KB after gzip)",
+  "backend": "Node/Express (x-powered-by: Express); JSON session endpoint /auth/user returning {type, user.username}; page routing via data-view attributes (auth, projections)",
+  "database": "NOT CONFIRMED (no exposure)",
+  "cloud": "AWS S3 (dff-common.s3.amazonaws.com) + Express host",
+  "cdn": "NOT CONFIRMED (no CDN headers; Cloudflare cdnjs for libs)",
+  "citations": [
+   "https://dailyfantasyfuel.com",
+   "https://dff-common.s3.amazonaws.com/base_mini.gz.js?m0nksd"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET (implied)",
+    "path": "/auth/user",
+    "auth_required": "session cookie; returns JSON user object or anon",
+    "tier": "NOT CONFIRMED",
+    "sample_response": "{type, user:{username,...}} pattern from bundle",
+    "citation": "https://dff-common.s3.amazonaws.com/base_mini.gz.js?m0nksd"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (not probed - no JS evidence)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": []
+ },
+ "extracted_formulas": [
+  {
+   "name": "Auth/session flow + view routing",
+   "raw_snippet": "$.ajax({url:\"/auth/user\",success:function(a){a&&a.type&&a.user&&\"anon\"!=a.type&&a.user.username...}); if(\"projections\"==$(\"div.ui-page-active\").data(\"view\"))",
+   "reconstruction": "Session check via GET /auth/user; 'anon' vs authenticated user types gate the UI; views (auth, projections, player-search) toggled by data-view attributes. Optimizer math not exposed in public bundles.",
+   "citation": "https://dff-common.s3.amazonaws.com/base_mini.gz.js?m0nksd"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "https://dff-common.s3.amazonaws.com/base_mini.gz.js?m0nksd"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED (optimizer exists - title: 'Advanced Lineup Optimizer and Tools for DraftKings and Fanduel' - but math not in public bundles)",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "https://dailyfantasyfuel.com"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "NOT CONFIRMED (no vendor strings in fetched HTML/JS; DraftKings/FanDuel referenced only as target sites for lineups)"
+  ],
+  "citations": [
+   "https://dailyfantasyfuel.com"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED (premium tiers exist at /premium/ but no numeric caps rendered; page text has no $ or plan features)",
+  "upgrade_triggers": "NOT CONFIRMED (premium nav item + /signup flow; gating not observable anonymously)",
+  "citation": "https://dailyfantasyfuel.com/signup"
+ },
+ "pricing": {
+  "web": {
+   "detail": "NOT CONFIRMED - /premium/ and /signup fetched (HTTP 200) but rendered zero dollar amounts and no plan names; pricing is client/auth-rendered",
+   "url": "https://dailyfantasyfuel.com/premium/",
+   "status": 200
+  },
+  "ios": "NOT CONFIRMED (not checked - no app link found)",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://dailyfantasyfuel.com/premium/",
+   "https://dailyfantasyfuel.com/signup"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Their MLB projections are considerably worse than the free sites. they are horrible.",
+   "source": "https://www.reddit.com/r/fantasybaseball/comments/1jiytqq/best_website_for_daily_lineup_rankings/",
+   "title": "Best website for Daily lineup rankings? : r/fantasybaseball - Reddit"
+  },
+  {
+   "quote": "I think the sport limitation is less of an issue than the quality of edges you're getting per pick honestly, eyeballing matchups.",
+   "source": "https://www.reddit.com/r/EVbetting/comments/1shtlmk/daily_fantasy_fuel/",
+   "title": "Daily Fantasy Fuel : r/EVbetting - Reddit"
+  },
+  {
+   "quote": "What I'm trying to figure out is how to accurately predict which NBA player will be \"owned\" by the public and at what % will the field have him.",
+   "source": "https://www.reddit.com/r/datascience/comments/c4mgsg/daily_fantasy_sports_ownership_projection/",
+   "title": "Daily Fantasy Sports Ownership Projection : r/datascience - Reddit"
+  },
+  {
+   "quote": "Hi Reddit, I am Alex \"Awesemo\" Baker, the world's No. 1 ranked daily fantasy sports player. Many years ago, I took my love of sports along ...",
+   "source": "https://www.reddit.com/r/IAmA/comments/ipjkfy/im_the_no_1_ranked_daily_fantasy_sports_player_in/",
+   "title": "I'm the No. 1 ranked Daily Fantasy Sports player in the world, Alex ..."
+  },
+  {
+   "quote": "Do they let you export the projections and include player salaries and actual points scored? That's what I love about Daily roto.",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1fgk5t2/best_dfs_subscription_site/",
+   "title": "Best DFS subscription site : r/fantasyfootball - Reddit"
+  },
+  {
+   "quote": "I have “reverse days” where I reverse at least one pick out of the optimizer. This trick has caused me to hit way more 25X's Why? Because we ...",
+   "source": "https://www.reddit.com/r/dgfantasy/comments/18maz03/dfs_optimizer_worth_it/",
+   "title": "DFS Optimizer Worth It? : r/dgfantasy - Reddit"
+  },
+  {
+   "quote": "Fantasy football is a fun game you share with your community. DFS is a lonely way to lose money to filthy rich corporations.",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1mzbbz6/what_is_the_best_app_for_dfs/",
+   "title": "What is the best app for DFS? : r/fantasyfootball - Reddit"
+  },
+  {
+   "quote": "Hey Reddit! This is Awesemo, formerly known as Alex Baker, and I am the #1 ranked player overall in daily fantasy sports.",
+   "source": "https://www.reddit.com/r/IAmA/comments/7xs3mi/im_the_1_ranked_daily_fantasy_sports_player/",
+   "title": "I'm the #1 ranked daily fantasy sports player, Awesemo. AMA! - Reddit"
+  }
+ ],
+ "discovered_paths": [
+  "/auth/user",
+  "/premium/",
+  "/public/js/radar-component.js",
+  "/signup"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "urllib GET (fetcher.py pattern) + offline mining of saved HTML/JS",
+  "timestamp": "2026-09-08T14:11:19-0500",
+  "http_requests_used": 6,
+  "request_log": [
+   {
+    "url": "https://dailyfantasyfuel.com",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyfuel-home.html",
+    "err": null
+   },
+   {
+    "url": "https://dailyfantasyfuel.com/robots.txt",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyfuel-robots.txt",
+    "err": null
+   },
+   {
+    "url": "https://dailyfantasyfuel.com/sitemap.xml",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyfuel-sitemap.xml",
+    "err": null
+   },
+   {
+    "url": "https://dailyfantasyfuel.com/public/js/radar-component.js?radar20260817",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyfuel-js0.js",
+    "err": null
+   },
+   {
+    "url": "https://dailyfantasyfuel.com/signup",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyfuel-pricing.html",
+    "err": null
+   }
+  ]
+ },
+ "disposition": "live (derived from 8 raw evidence files)"
+}

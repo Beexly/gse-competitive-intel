@@ -1,0 +1,115 @@
+{
+ "domain": "thesportsdb.com",
+ "tech_stack": {
+  "frontend": "Server-rendered PHP (XHTML-strict error pages); JS: app.rybbit.io/api/script.js (rybbit API script) + bootstrap.bundle.min.js; robots Content-Signal: ai-train=no, search=yes, ai-input=no",
+  "backend": "PHP server-rendered (apache-style error pages)",
+  "database": "NOT CONFIRMED (crowd-sourced DB)",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED (local /js/ paths)",
+  "citations": [
+   "https://www.thesportsdb.com/",
+   "https://app.rybbit.io/api/script.js",
+   "https://thesportsdb.com/js/bootstrap.bundle.min.js",
+   "https://www.thesportsdb.com/robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "https://www.thesportsdb.com/api/v1/json/{APIKEY}/search_all_teams.php?l={league}",
+    "auth_required": true,
+    "tier": "free+premium",
+    "sample_response": "captured 63KB team JSON (raw/www.thesportsdb.com_api_v1_json_3_search_all_teams.php_l=English%20Premier%20League.txt)",
+    "citation": "https://www.thesportsdb.com/api.php + raw capture"
+   },
+   {
+    "method": "GET",
+    "path": "https://www.thesportsdb.com/api/v1/json/{APIKEY}/eventsday.php?d={date}&s={sport}",
+    "auth_required": true,
+    "tier": "free+premium",
+    "sample_response": "captured 4.4KB events JSON (raw/www.thesportsdb.com_api_v1_json_3_eventsday.php_d=2026-09-12&s=Soccer.txt)",
+    "citation": "https://www.thesportsdb.com/api.php + raw capture"
+   },
+   {
+    "method": "GET",
+    "path": "https://www.thesportsdb.com/api/v1/json/{APIKEY}/lookuptable.php?l={league}&s={season}",
+    "auth_required": true,
+    "tier": "free+premium",
+    "sample_response": "captured 2.7KB standings JSON (raw/www.thesportsdb.com_api_v1_json_3_lookuptable.php_l=4328&s=2025-2026.txt)",
+    "citation": "https://www.thesportsdb.com/api.php + raw capture"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED - free tier limits lower than premium (per api.php copy)",
+  "citations": [
+   "https://www.thesportsdb.com/api.php",
+   "https://www.thesportsdb.com/api/v1/json/3/all_leagues.php (raw capture)"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": null
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": null
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED - crowd-sourced (user-contributed data/artwork, editor program); openapi spec captured at raw/www.thesportsdb.com_api_spec_v1_openapi.yaml.txt",
+  "citations": [
+   "https://www.thesportsdb.com/free_sports_api"
+  ]
+ },
+ "product_limits": {
+  "limits": "Free JSON API with limits; 'upgrade to premium for more features and larger limits'",
+  "upgrade_triggers": "Usage limits + premium-only features (api.php copy: 'You may wish to upgrade to premium for more features and larger limits')",
+  "citation": "https://www.thesportsdb.com/free_sports_api"
+ },
+ "pricing": {
+  "web": "Free tier + Premium (USD 9-tier visible on pricing/api page; exact premium price/caps NOT CONFIRMED beyond '$9' string on api.php)",
+  "ios": "LiveScore app integration (per site nav 'LiveScore'); IAP tiers NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://www.thesportsdb.com/api.php",
+   "raw/www.thesportsdb.com_pricing.txt"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "where is the profit of that site because they are totally free and everything is available for free",
+   "source": "https://www.reddit.com/r/sportsanalytics/comments/1oggair/free_sports_api/",
+   "date": "2085-11-03"
+  },
+  {
+   "quote": "1. TheSportsDB. TheSportsDB is a crowd-sourced sports database that exposes a free JSON API covering many...",
+   "source": "https://www.reddit.com/r/SportXster/comments/1u25pk5/the_hobbyists_guide_to_sports_data_apis/",
+   "date": "2096-07-29"
+  }
+ ],
+ "discovered_paths": [
+  "/api.php",
+  "/api/v1/json/{APIKEY}/ (v1+v3 keyed API)",
+  "/free_sports_api",
+  "/pricing",
+  "/docs_api_data",
+  "/docs_api_testing",
+  "/docs_api_examples",
+  "app.rybbit.io/api/script.js (rybbit script host)",
+  "raw: openapi spec captured (api_spec_v1)"
+ ],
+ "discovered_targets": [
+  "app.rybbit.io"
+ ],
+ "discovery_metadata": {
+  "method": "GET homepage/robots/sitemap + api.php + free_sports_api + 2 JS bundles; local grep of earlier-captured raw API responses + openapi yaml",
+  "timestamp": "2026-09-08T15:59:24.859512-05:00"
+ },
+ "disposition": "live",
+ "notes": "Crowd-sourced, free-first sports DB (soccer-centric but 20+ sports); the '3' in sample URLs is likely test/free API key (v1 JSON API). Premium ~$9 tier. Prior run already captured extensive raw API responses + OpenAPI spec in raw/."
+}

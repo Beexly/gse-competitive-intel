@@ -1,0 +1,135 @@
+{
+ "domain": "establishtherun.com",
+ "requests": [
+  {
+   "url": "https://establishtherun.com",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-home.html",
+   "err": null
+  },
+  {
+   "url": "https://establishtherun.com/robots.txt",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-robots.txt",
+   "err": null
+  },
+  {
+   "url": "https://establishtherun.com/sitemap.xml",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-sitemap.xml",
+   "err": null
+  },
+  {
+   "url": "https://js.sparkloop.app/team_a5a08658b31b.js",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-js0.js",
+   "err": null
+  },
+  {
+   "url": "https://www.google.com/recaptcha/api.js?render=6LcVYf0UAAAAADM4EIr9G4lEBc_tym1JpPMO2TBU",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-js1.js",
+   "err": null
+  },
+  {
+   "url": "https://establishtherun.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-js2.js",
+   "err": null
+  },
+  {
+   "url": "https://establishtherun.com/wp-content/plugins/woocommerce-memberships/assets/css/frontend/wc-memberships-frontend.min.css?ver=1.29.1",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-pricing.html",
+   "err": null
+  }
+ ],
+ "homepage_status": 200,
+ "homepage_headers": {
+  "server": "cloudflare",
+  "cf-ray": "a3803a4569b12cd0-DFW",
+  "content-type": "text/html; charset=UTF-8"
+ },
+ "robots_status": 200,
+ "sitemap_status": 200,
+ "sitemap_url": "https://establishtherun.com/sitemap.xml",
+ "sitemap_locs_sample": [
+  "https://establishtherun.com/wp-sitemap-posts-post-1.xml",
+  "https://establishtherun.com/wp-sitemap-posts-post-2.xml",
+  "https://establishtherun.com/wp-sitemap-posts-post-3.xml",
+  "https://establishtherun.com/wp-sitemap-posts-post-4.xml",
+  "https://establishtherun.com/wp-sitemap-posts-post-5.xml",
+  "https://establishtherun.com/wp-sitemap-posts-post-6.xml",
+  "https://establishtherun.com/wp-sitemap-posts-page-1.xml",
+  "https://establishtherun.com/wp-sitemap-posts-product-1.xml",
+  "https://establishtherun.com/wp-sitemap-taxonomies-category-1.xml",
+  "https://establishtherun.com/wp-sitemap-taxonomies-post_tag-1.xml",
+  "https://establishtherun.com/wp-sitemap-taxonomies-post_format-1.xml",
+  "https://establishtherun.com/wp-sitemap-taxonomies-product_cat-1.xml",
+  "https://establishtherun.com/wp-sitemap-taxonomies-projection_dataset_category-1.xml",
+  "https://establishtherun.com/wp-sitemap-users-1.xml"
+ ],
+ "sitemap_loc_count_seen": 14,
+ "js_candidates": [
+  "https://establishtherun.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+  "https://establishtherun.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+  "https://establishtherun.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.11.0.0",
+  "https://establishtherun.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=11.0.0",
+  "https://establishtherun.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.11.0.0",
+  "https://establishtherun.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=11.0.0",
+  "https://establishtherun.com/wp-content/plugins/woocommerce/assets/js/frontend/country-select.min.js?ver=11.0.0",
+  "https://establishtherun.com/wp-content/themes/divi-child/assets/build/js/frontend.min.js?ver=1782150293",
+  "https://establishtherun.com/wp-content/themes/divi-child/assets/libraries/jquery.inputmask.min.js?ver=1782150293",
+  "https://establishtherun.com/wp-content/themes/divi-child/assets/libraries/featherlight.min.js?ver=1782150293",
+  "https://establishtherun.com/wp-content/themes/divi-child/assets/build/react/react-components.js?ver=1788824732",
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js",
+  "https://www.google.com/recaptcha/api.js?render=6LcVYf0UAAAAADM4EIr9G4lEBc_tym1JpPMO2TBU",
+  "https://js.sparkloop.app/team_a5a08658b31b.js",
+  "https://establishtherun.com/wp-content/plugins/metronet-profile-picture/js/mpp-frontend.js?ver=2.6.4"
+ ],
+ "js_fetched": [
+  {
+   "url": "https://js.sparkloop.app/team_a5a08658b31b.js",
+   "status": 200,
+   "bytes": 131824
+  },
+  {
+   "url": "https://www.google.com/recaptcha/api.js?render=6LcVYf0UAAAAADM4EIr9G4lEBc_tym1JpPMO2TBU",
+   "status": 200,
+   "bytes": 1582
+  },
+  {
+   "url": "https://establishtherun.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+   "status": 200,
+   "bytes": 12332
+  }
+ ],
+ "pricing_url": "https://establishtherun.com/wp-content/plugins/woocommerce-memberships/assets/css/frontend/wc-memberships-frontend.min.css?ver=1.29.1",
+ "pricing_status": 200,
+ "vendors_found": [
+  "sportsdata.io"
+ ],
+ "price_tokens": [],
+ "dns": {
+  "api.establishtherun.com": "NXDOMAIN (gaierror)",
+  "app.establishtherun.com": "NXDOMAIN (gaierror)",
+  "staging.establishtherun.com": "172.66.41.15"
+ },
+ "search_used": "site:reddit.com <domain> complaint OR review",
+ "grep_summary": {
+  "https://js.sparkloop.app/team_a5a08658b31b.js": {
+   "fetch(": [
+    "r),i={components:e,options:r,clientHash:F(V(e)),version:\"1.6.0\"};n&&(i.visitorId=n);let o=fetch(t,{method:\"POST\",headers:{\"x-api-key\":r.api_key,Authorization:\"custom-authorized\",\"Content-Type\":\"application/json\"},body:JSON.str"
+   ],
+   "subscription": [
+    "(t),subscribed:l,hadInteraction:n.hadInteraction,renderTime:n.renderTime}),r.api.trackPageSubscription(r.config.uuid,{page:\"upscribe_recommendations\",shown:Array.from(t),subscribed:l}).catch(()=>{})}catch(c){console.error(\"SignupFlo"
+   ],
+   "localStorage": [
+    "orage_property_name:r.property_name_factory(nr)}var Gt=`${Jt}_${nr}`;function zt(r,e){try{localStorage.setItem(ir(e),r)}catch{}}var sr=\"cache\";function Yt(r){try{let e=localStorage.getItem(r.property_name_factory(sr));return JSON.pa"
+   ],
+   "endpoint": [
+    "ry)return u.apiResponse}(r);if(l)return Promise.resolve(l)}if(ae)return ae;let t=`${r.api_endpoint||Qt}/thumbmark`,n=function(l){try{let c=ir(l),u=localStorage.getItem(c);return u||c===Gt||(u=localStorage.getItem(Gt),u&&zt(u,l))"
+   ]
+  }
+ }
+}

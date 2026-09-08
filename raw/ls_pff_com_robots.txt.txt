@@ -1,0 +1,8 @@
+URL: https://www.pff.com/robots.txt\nSTATUS: 200\n\nSitemap: https://www.pff.com/sitemap.xml
+User-agent: *
+Disallow: /partners/
+Disallow: /api/partners/
+Disallow: /amember/
+Disallow: /login*
+Disallow: /logout*
+Disallow: /join

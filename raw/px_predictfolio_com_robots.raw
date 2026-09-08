@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://predictfolio.com
+Sitemap: https://predictfolio.com/sitemap.xml

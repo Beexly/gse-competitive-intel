@@ -1,0 +1,96 @@
+{
+ "domain": "polyfund.so",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/px_polyfund_so_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_polyfund_so_home.raw",
+   "raw\\px_polyfund_so_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyfund_so_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyfund_so_home.raw"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyfund_so_home.raw"
+  },
+  "citations": [
+   "raw\\px_polyfund_so_home.raw",
+   "raw\\px_polyfund_so_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Fully decentralized fund management platform built on top of Polymarket.' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "Polymarket"
+   ],
+   "citation": "raw/px_polyfund_so_home.raw"
+  },
+  "citations": [
+   "raw\\px_polyfund_so_home.raw",
+   "raw\\px_polyfund_so_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyfund_so_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_polyfund_so_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyfund_so_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_polyfund_so_home.raw",
+   "raw\\px_polyfund_so_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "NOT CONFIRMED"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:13.036288"
+ },
+ "disposition": "walled",
+ "_site_identity": {
+  "title": "PolyFund | Create and Invest in Prediction Funds",
+  "description": "Fully decentralized fund management platform built on top of Polymarket."
+ }
+}

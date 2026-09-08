@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Adanos Market Sentiment API for Stocks & Crypto</title>
+    <meta name="title" content="Adanos Market Sentiment API for Stocks & Crypto">
+    <meta name="description" content="Sentiment and attention data for stocks and crypto from Reddit, X, news and Polymarket in one API.">
+    <meta name="keywords" content="market sentiment API, stock sentiment API, crypto sentiment API, Reddit sentiment, social sentiment data, stock buzz, sentiment analysis, Polymarket">
+    <meta name="author" content="Adanos Software GmbH">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://adanos.org">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+
+    <!-- Font Preloading -->
+    <link rel="preload" href="/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adanos.org">
+    <meta property="og:title" content="Adanos Market Sentiment API for Stocks & Crypto">
+    <meta property="og:description" content="Sentiment and attention data for stocks and crypto from Reddit, X, news and Polymarket in one API.">
+    <meta property="og:site_name" content="Adanos Software">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://adanos.org/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Adanos - Market Sentiment API for Stocks and Crypto">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://adanos.org">
+    <meta name="twitter:title" content="Adanos Market Sentiment API for Stocks & Crypto">
+    <meta name="twitter:description" content="Sentiment and attention data for stocks and crypto from Reddit, X, news and Polymarket in one API.">
+    <meta name="twitter:image" content="https://adanos.org/images/og-image.png">
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="geo.region" content="DE-BE">
+    <meta name="geo.placename" content="Berlin">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://adanos.org/#website",
+        "name": "Adanos",
+        "url": "https://adanos.org",
+        "description": "Market sentiment data API for stocks and crypto. Reddit, X, news and Polymarket signals in one API.",
+        "publisher": { "@id": "https://adanos.org/#organization" },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": { "@type": "EntryPoint", "urlTemplate": "https://adanos.org/stocks/{search_term_string}" },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://adanos.org/#organization",
+        "name": "Adanos Software GmbH",
+        "url": "https://adanos.org",
+        "logo": "https://adanos.org/images/favicon.svg",
+        "sameAs": [
+            "https://github.com/adanos-software",
+            "https://www.wikidata.org/wiki/Q140388225"
+        ],
+        "description": "German software company providing sentiment and attention data for stocks and crypto from Reddit, X, news and Polymarket in one API.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Käthe-Niederkirchner-Str. 30",
+            "addressLocality": "Berlin",
+            "postalCode": "10407",
+            "addressCountry": "DE"
+        },
+        "makesOffer": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "SoftwareApplication",
+                    "name": "StockAlert.pro",
+                    "applicationCategory": "FinanceApplication",
+                    "url": "https://stockalert.pro",
+                    "operatingSystem": "Web",
+                    "offers": {
+                        "@type": "Offer",
+                        "url": "https://stockalert.pro",
+                        "availability": "https://schema.org/OnlineOnly",
+                        "price": "0",
+                        "priceCurrency": "EUR"
+                    }
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "WebAPI",
+                    "name": "Reddit Stock Sentiment API",
+                    "url": "https://adanos.org/reddit-stock-sentiment"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "WebAPI",
+                    "name": "Reddit Crypto Sentiment API",
+                    "url": "https://adanos.org/reddit-crypto-sentiment"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "WebAPI",
+                    "name": "X Stock Sentiment API",
+                    "url": "https://adanos.org/x-stock-sentiment"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "WebAPI",
+                    "name": "Stock News Sentiment API",
+                    "url": "https://adanos.org/stock-news-sentiment"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "WebAPI",
+                    "name": "Polymarket Stock Sentiment API",
+                    "url": "https://adanos.org/polymarket-stock-sentiment"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "SoftwareApplication",
+                    "name": "Finance Sentiment CLI",
+                    "url": "https://adanos.org/finance-sentiment-cli",
+                    "applicationCategory": "DeveloperApplication",
+                    "operatingSystem": "Windows, macOS, Linux",
+                    "offers": {
+                        "@type": "Offer",
+                        "url": "https://adanos.org/finance-sentiment-cli",
+                        "availability": "https://schema.org/OnlineOnly",
+                        "price": "0",
+                        "priceCurrency": "USD"
+                    }
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="global.css">
+    <style>
+/* ── Network Hero ─────────────────────────────────── */
+.hn-hero { position: relative; z-index: 10; padding-bottom: 0; }
+.hn-top { max-width: var(--max-width); margin: 0 auto; padding: 116px 48px 28px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.hn-badge { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 14px; text-transform: uppercase; letter-spacing: .05em; color: var(--c-text-secondary); margin-bottom: 12px; }
+.hn-pdot { width: 6px; height: 6px; border-radius: 50%; background: var(--c-green); animation: hnPdot 2.2s ease-out infinite; }
+@keyframes hnPdot { 0% { box-shadow: 0 0 0 0 rgba(46,125,50,.45); } 60% { box-shadow: 0 0 0 7px rgba(46,125,50,0); } 100% { box-shadow: 0 0 0 0 rgba(46,125,50,0); } }
+.hn-h1 { font-size: var(--h1-page-desktop-size); max-width: 100%; margin-bottom: 18px; }
+.hn-sub { font-size: 20px; color: var(--c-text-secondary); line-height: 1.6; max-width: 700px; margin-bottom: 20px; }
+@media (min-width: 769px) { .hn-top .hero-cta .btn { padding: 16px 58px; } }
+.hn-brand-row { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.hn-brand-row img { width: 32px; height: 32px; border-radius: 8px; object-fit: contain; }
+.hn-brand-news { width: 32px; height: 32px; border-radius: 8px; background: #16a34a; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.hn-brand-news svg { width: 18px; height: 18px; fill: #fff; }
+.hn-brand-plus { font-size: 16px; color: #ccc; font-weight: 300; }
+.hn-visual { --hn-feed-gap: clamp(36px, 5vw, 80px); position: relative; z-index: 10; max-width: 1400px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: 240px minmax(0, 1fr) 240px; column-gap: var(--hn-feed-gap); align-items: stretch; min-height: 520px; }
+.hn-col { display: flex; flex-direction: column; justify-content: center; gap: 16px; position: relative; z-index: 3; }
+.hn-left { overflow: visible; }
+.hn-card { display: flex; align-items: center; gap: 10px; width: 100%; background: #f8f6f1; border: 1px solid #ebe7df; border-radius: 10px; padding: 14px 16px; box-shadow: 0 1px 2px rgba(15,23,42,0.04); user-select: none; font: inherit; color: inherit; text-align: left; position: relative; cursor: default; }
+.hn-left .hn-source-card::after { content: ''; position: absolute; top: 50%; left: 100%; width: calc(var(--hn-feed-gap) + 2px); height: 2px; border-radius: 999px; background: linear-gradient(90deg, rgba(var(--hn-source-rgb, 132,145,165), 0.08), rgba(var(--hn-source-rgb, 132,145,165), 0.92), rgba(var(--hn-source-rgb, 132,145,165), 0.08)); transform: translateY(-50%); pointer-events: none; background-size: 200% 100%; animation: hnConnectorFlow 1.55s linear infinite; }
+.hn-left .hn-source-card::before { content: ''; position: absolute; top: 50%; left: 100%; width: 8px; height: 8px; border-radius: 50%; background: rgba(var(--hn-source-rgb, 132,145,165), 0.96); transform: translate(-4px, -50%); opacity: .98; pointer-events: none; animation: hnPacketTravel 1.55s ease-in-out infinite; }
+.hn-right .hn-card::after { content: ''; position: absolute; top: 50%; right: 100%; width: calc(var(--hn-feed-gap) + 2px); height: 2px; border-radius: 999px; background: linear-gradient(90deg, rgba(var(--hn-outcome-rgb, 132,145,165), 0.92), rgba(var(--hn-outcome-rgb, 132,145,165), 0.24), rgba(var(--hn-outcome-rgb, 132,145,165), 0.08)); transform: translateY(-50%); pointer-events: none; background-size: 200% 100%; animation: hnConnectorFlow 1.65s linear infinite; }
+.hn-right .hn-card::before { content: ''; position: absolute; top: 50%; right: calc(100% + var(--hn-feed-gap)); width: 8px; height: 8px; border-radius: 50%; background: rgba(var(--hn-outcome-rgb, 132,145,165), 0.96); transform: translate(4px, -50%); opacity: .98; pointer-events: none; animation: hnOutcomePacketTravel 1.65s ease-in-out infinite; }
+#hn-card-reddit { --hn-source-rgb: 255,69,0; }
+#hn-card-x { --hn-source-rgb: 17,17,17; }
+#hn-card-news { --hn-source-rgb: 22,163,74; }
+#hn-card-polymarket { --hn-source-rgb: 47,91,218; }
+#hn-card-analysis { --hn-outcome-rgb: 37,99,235; }
+#hn-card-fintech { --hn-outcome-rgb: 124,58,237; }
+#hn-card-agents { --hn-outcome-rgb: 234,88,12; }
+#hn-card-quant { --hn-outcome-rgb: 5,150,105; }
+#hn-card-reddit::after, #hn-card-reddit::before { animation-delay: 0s; }
+#hn-card-x::after, #hn-card-x::before { animation-delay: .18s; }
+#hn-card-news::after, #hn-card-news::before { animation-delay: .36s; }
+#hn-card-polymarket::after, #hn-card-polymarket::before { animation-delay: .54s; }
+#hn-card-analysis::after, #hn-card-analysis::before { animation-delay: .1s; }
+#hn-card-fintech::after, #hn-card-fintech::before { animation-delay: .28s; }
+#hn-card-agents::after, #hn-card-agents::before { animation-delay: .46s; }
+#hn-card-quant::after, #hn-card-quant::before { animation-delay: .64s; }
+@keyframes hnConnectorFlow { from { background-position: 200% 50%; } to { background-position: 0% 50%; } }
+@keyframes hnPacketTravel {
+    0% { left: 100%; opacity: 0; transform: translate(-5px, -50%) scale(0.85); }
+    12% { opacity: 1; }
+    82% { opacity: 1; }
+    100% { left: calc(100% + var(--hn-feed-gap)); opacity: 0; transform: translate(-5px, -50%) scale(1.08); }
+}
+@keyframes hnOutcomePacketTravel {
+    0% { right: calc(100% + var(--hn-feed-gap)); opacity: 0; transform: translate(5px, -50%) scale(0.85); }
+    12% { opacity: 1; }
+    82% { opacity: 1; }
+    100% { right: 100%; opacity: 0; transform: translate(5px, -50%) scale(1.08); }
+}
+.hn-card-ico { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; background: var(--hn-icon-bg, var(--nav-icon-bg, var(--field-bg))); color: var(--hn-icon-fg, var(--nav-icon-fg, var(--c-text))); }
+.hn-card-ico svg { width: 22px; height: 22px; color: currentColor; fill: currentColor; }
+.hn-card-ico.reddit svg { width: 26px; height: 26px; }
+.hn-card-ico--analysis { --hn-icon-bg: #dde8ff; --hn-icon-fg: #215bd8; }
+.hn-card-ico--fintech { --hn-icon-bg: #ece2ff; --hn-icon-fg: #7c3aed; }
+.hn-card-ico--agents { --hn-icon-bg: #f7e3d8; --hn-icon-fg: #c96a1a; }
+.hn-card-ico--quant { --hn-icon-bg: #d1fae5; --hn-icon-fg: #059669; }
+.hn-card-copy { display: grid; gap: 2px; }
+.hn-card-lbl { font-size: 13px; font-weight: 600; letter-spacing: -.01em; }
+.hn-card-meta { font-size: 13px; line-height: 1.45; color: #6B7280; }
+.hn-term { height: 100%; background: #0D1117; border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-lg) var(--radius-lg) 0 0; box-shadow: 0 18px 40px rgba(0,0,0,0.22), 0 2px 10px rgba(0,0,0,0.10); overflow: hidden; position: relative; z-index: 10; display: flex; flex-direction: column; }
+.hn-term-rail { position: absolute; left: -1px; top: 52px; bottom: 36px; width: 3px; border-radius: 999px; background: linear-gradient(180deg, rgba(148,163,184,0.14), rgba(148,163,184,0.52) 48%, rgba(148,163,184,0.14)); z-index: 2; pointer-events: none; animation: hnRailPulse 2.1s ease-in-out infinite; }
+@keyframes hnRailPulse {
+    0%, 100% { opacity: 0.72; }
+    50% { opacity: 1; }
+}
+.hn-tbar { background: #161B22; border-bottom: 1px solid rgba(255,255,255,0.06); padding: 10px 14px; display: flex; align-items: center; }
+.hn-tl-wrap { display: flex; gap: 6px; flex-shrink: 0; margin-right: 14px; }
+.hn-tl { width: 11px; height: 11px; border-radius: 50%; }
+.hn-tl-r { background: #FF5F57; } .hn-tl-y { background: #FFBD2E; } .hn-tl-g { background: #28C840; }
+.hn-tabs { display: flex; flex: 1; gap: 6px; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
+.hn-tabs::-webkit-scrollbar { display: none; }
+.hn-tab { padding: 7px 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.04); font-family: var(--font-mono); font-size: 13px; color: rgba(255,255,255,0.58); cursor: pointer; white-space: nowrap; user-select: none; transition: background .15s, border-color .15s, color .15s, box-shadow .15s; appearance: none; }
+.hn-tab:hover { color: rgba(255,255,255,0.84); background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.14); }
+.hn-tab-input { display: none; }
+#hn-tab-trending:checked ~ .hn-term .hn-tab[for="hn-tab-trending"],
+#hn-tab-stock:checked ~ .hn-term .hn-tab[for="hn-tab-stock"],
+#hn-tab-market:checked ~ .hn-term .hn-tab[for="hn-tab-market"],
+#hn-tab-compare:checked ~ .hn-term .hn-tab[for="hn-tab-compare"],
+#hn-tab-mentions:checked ~ .hn-term .hn-tab[for="hn-tab-mentions"],
+#hn-tab-explain:checked ~ .hn-term .hn-tab[for="hn-tab-explain"] { color: #F8FAFC; background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.18); box-shadow: inset 0 1px 0 rgba(255,255,255,0.08); font-weight: 600; }
+.hn-tbar,
+.hn-tbody { position: relative; z-index: 1; }
+.hn-body-wrap { position: relative; flex: 1 1 auto; min-height: 0; --hn-body-pad-top: 20px; --hn-body-pad-side: 22px; --hn-body-pad-bottom: 22px; }
+.hn-tbody { height: 100%; padding: var(--hn-body-pad-top) calc(var(--hn-body-pad-side) + 20px) var(--hn-body-pad-bottom) var(--hn-body-pad-side); box-sizing: border-box; font-family: var(--font-mono); font-size: 16px; line-height: 1.75; display: none; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none; }
+.hn-tbody::-webkit-scrollbar { width: 0; height: 0; }
+#hn-tab-trending:checked ~ .hn-term .hn-tbody--trending,
+#hn-tab-stock:checked ~ .hn-term .hn-tbody--stock,
+#hn-tab-market:checked ~ .hn-term .hn-tbody--market,
+#hn-tab-compare:checked ~ .hn-term .hn-tbody--compare,
+#hn-tab-mentions:checked ~ .hn-term .hn-tbody--mentions,
+#hn-tab-explain:checked ~ .hn-term .hn-tbody--explain { display: block; }
+.hn-json { display: grid; gap: 5px; overflow: visible; padding-top: 2px; }
+.hn-json-line { white-space: pre-wrap; min-width: 0; overflow-wrap: anywhere; color: #E5E7EB; font-size: 15px; line-height: 1.7; }
+/* ── Hero terminal: request line, status, source highlight (conversion) ── */
+.hn-reqline { font-family: var(--font-mono); font-size: clamp(12px, 1.5vh, 14px); line-height: 1.7; letter-spacing: .01em; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; margin-bottom: clamp(8px, 1.4vh, 13px); }
+.hn-method { color: #34D399; font-weight: 700; }
+.hn-path { color: #93C5FD; }
+.hn-req-call { min-width: 0; overflow-wrap: break-word; }
+.hn-status { font-family: var(--font-mono); font-size: clamp(11px, 1.3vh, 12.5px); color: rgba(255,255,255,0.46); display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; flex: none; }
+.hn-status .hn-ok { color: #34D399; font-weight: 600; }
+.hn-status .hn-note { color: rgba(252,211,77,0.92); }
+.hn-sep { opacity: 0.4; }
+.hn-dot { width: 7px; height: 7px; border-radius: 50%; background: #28C840; flex-shrink: 0; animation: hnDotPulse 2s ease-out infinite; }
+@media (prefers-reduced-motion: reduce) { .hn-dot { animation: none; } }
+@keyframes hnDotPulse { 0% { box-shadow: 0 0 0 0 rgba(40,200,64,0.45); } 60% { box-shadow: 0 0 0 6px rgba(40,200,64,0); } 100% { box-shadow: 0 0 0 0 rgba(40,200,64,0); } }
+.hn-json-line.hn-hl { background: linear-gradient(90deg, rgba(88,166,255,0.12), rgba(88,166,255,0)); border-left: 2px solid rgba(88,166,255,0.6); margin-left: -10px; padding-left: 8px; border-radius: 2px; }
+.hn-path .hn-src { color: #FCA5A5; font-weight: 700; }
+
+@media (min-width: 1101px) {
+    .hn-hero {
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+    }
+    .hn-top {
+        width: 100%;
+        flex: 1 1 auto;
+        justify-content: center;
+        padding: clamp(96px, 8vw, 116px) 48px clamp(20px, 1.5vw, 28px);
+    }
+    .hn-h1 {
+        margin-bottom: clamp(14px, 1vw, 18px);
+    }
+    .hn-sub {
+        font-size: clamp(18px, 2vw, 20px);
+        line-height: 1.5;
+        max-width: 700px;
+        margin-bottom: clamp(16px, 1.2vw, 20px);
+    }
+    .hn-visual {
+        width: 100%;
+        flex: none;
+        height: clamp(280px, 48vh, 520px);
+        min-height: 0;
+    }
+    .hn-col {
+        gap: clamp(10px, 1.4vh, 16px);
+    }
+    .hn-card {
+        padding: clamp(10px, 1.2vh, 14px) clamp(12px, 1.4vh, 16px);
+    }
+    .hn-card-ico {
+        width: clamp(34px, 4vh, 40px);
+        height: clamp(34px, 4vh, 40px);
+    }
+    .hn-card-ico svg {
+        width: clamp(19px, 2.2vh, 22px);
+        height: clamp(19px, 2.2vh, 22px);
+    }
+    .hn-card-lbl {
+        font-size: 13px;
+    }
+    .hn-card-meta {
+        font-size: 13px;
+    }
+    .hn-tbar {
+        padding: 9px 13px;
+    }
+    .hn-tab {
+        padding: 6px clamp(10px, 1.2vh, 14px);
+        font-size: 13px;
+    }
+    .hn-body-wrap {
+        --hn-body-pad-top: clamp(14px, 1.8vh, 20px);
+        --hn-body-pad-side: clamp(16px, 2vh, 22px);
+        --hn-body-pad-bottom: clamp(16px, 2vh, 22px);
+    }
+    .hn-tbody {
+        font-size: clamp(13px, 1.5vh, 16px);
+        line-height: 1.6;
+    }
+    .hn-json-line {
+        font-size: clamp(13px, 1.5vh, 15px);
+        line-height: 1.65;
+    }
+}
+@media (max-width: 1100px) {
+    .hero-wrapper { min-height: auto; }
+    .hn-hero { display: flex; flex-direction: column; }
+    .hn-brand-row { display: flex; }
+    .hn-top { padding: 124px 32px 50px; flex: 1 1 auto; justify-content: center; }
+    .hn-visual { max-width: 820px; padding: 0 24px; display: flex; flex-direction: column; gap: 20px; min-height: 0; flex: none; height: clamp(320px, 45vh, 460px); }
+    .hn-col.hn-left { display: none; }
+    .hn-col.hn-right { display: none; }
+    .hn-term { order: 1; height: auto; flex: 1 1 auto; }
+    .hn-body-wrap { height: auto; flex: 1 1 auto; min-height: 200px; }
+    .hn-tbody { height: 100%; }
+    .hn-term-rail { display: none; }
+}
+@media (max-width: 768px) {
+    .hn-hero { padding-bottom: 0; min-height: auto; display: block; }
+    .hn-top { padding: 108px 20px 26px; align-items: flex-start; text-align: left; }
+    .hn-h1 { font-size: 36px; max-width: 100%; }
+    .hn-sub { font-size: 17px; max-width: 100%; margin-bottom: 16px; line-height: 1.55; }
+    .hn-sub br { display: none; }
+    .hn-visual { padding: 0 20px; gap: 16px; }
+    .hn-tab { font-size: 13px; padding: 7px 10px; }
+    .hn-body-wrap { --hn-body-pad-top: 16px; --hn-body-pad-side: 16px; --hn-body-pad-bottom: 16px; flex: 1 1 auto; min-height: 220px; }
+    .hn-tbody { height: 100%; font-size: 14px; }
+    .hn-json-line { font-size: 13px; line-height: 1.65; }
+    /* Drop the request query params and response status on phones: they wrap awkwardly. Kept on desktop. */
+    .hn-query, .hn-status { display: none; }
+}
+
+/* ── Use Cases Section ─────────────────────────────── */
+#use-cases { padding-top: clamp(60px, 8vw, 80px); }
+#use-cases .about-highlight { overflow: hidden; padding: 0; }
+#use-cases .about-highlight img { width: 100%; height: auto; display: block; padding: 24px 24px 0; }
+#use-cases .about-highlight h3 { padding: 24px 32px 0; }
+#use-cases .about-highlight p { padding: 0 32px 32px; }
+
+    </style>
+
+<script src="/scripts/posthog-web-analytics.js" defer></script></head>
+<body>
+    <nav>
+        <input type="checkbox" id="nav-mobile-checkbox">
+        <div class="nav-inner">
+            <div class="nav-left">
+                <div class="logo">
+                    <a href="/" aria-label="Adanos homepage">
+                        <img src="/images/adanos-logo.svg" alt="Adanos Market Sentiment API" width="126" height="36">
+                    </a>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle">
+                        Solutions
+                        <svg class="nav-dropdown-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="/reddit-stock-sentiment" class="nav-dropdown-item">
+                            <span class="nav-dropdown-icon-wrap reddit">
+                                <svg viewBox="0 0 24 24"><path d="M17.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+                            </span>
+                            <span class="nav-dropdown-text">
+                                <span class="nav-dropdown-title">Reddit Stock Sentiment API</span>
+                                <span class="nav-dropdown-desc">Stock sentiment from Reddit</span>
+                            </span>
+                        </a>
+                        <a href="/x-stock-sentiment" class="nav-dropdown-item">
+                            <span class="nav-dropdown-icon-wrap x">
+                                <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </span>
+                            <span class="nav-dropdown-text">
+                                <span class="nav-dropdown-title">X.com Sentiment API</span>
+                                <span class="nav-dropdown-desc">Stock sentiment from FinTwit</span>
+                            </span>
+                        </a>
+                        <a href="/stock-news-sentiment" class="nav-dropdown-item">
+                            <span class="nav-dropdown-icon-wrap news">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="18.5" r="2.25"/><path d="M5 13a5.5 5.5 0 0 1 5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"/><path d="M5 8a10.5 10.5 0 0 1 10.5 10.5" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"/><path d="M5 3a15.5 15.5 0 0 1 15.5 15.5" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" opacity="0.68"/></svg>
+                            </span>
+                            <span class="nav-dropdown-text">
+                                <span class="nav-dropdown-title">Stock News Sentiment API</span>
+                                <span class="nav-dropdown-desc">Stock sentiment from news</span>
+                            </span>
+                        </a>
+                        <a href="/polymarket-stock-sentiment" class="nav-dropdown-item">
+                            <span class="nav-dropdown-icon-wrap polymarket">
+                                <svg viewBox="0 0 24 24"><rect x="3" y="12" width="4" height="9" rx="1"/><rect x="10" y="7" width="4" height="14" rx="1"/><rect x="17" y="3" width="4" height="18" rx="1"/></svg>
+                            </span>
+                            <span class="nav-dropdown-text">
+                                <span class="nav-dropdown-title">Polymarket Sentiment API</span>
+                                <span class="nav-dropdown-desc">Prediction market signals</span>
+                            </span>
+                        </a>
+                        <a href="/reddit-crypto-sentiment" class="nav-dropdown-item">
+                            <span class="nav-dropdown-icon-wrap crypto">
+                                <svg viewBox="0 0 24 24"><path d="M13.6 16.5v1.5h-1.2v-1.4h-1.6v1.4h-1.2v-1.5H8.5v-1.5h1.1V9h-1V7.5h1V6h1.2v1.4h1.6V6h1.2v1.5c1.5.1 2.6.9 2.6 2.3 0 1-.6 1.7-1.5 2 1 .3 1.8 1 1.8 2.2 0 1.6-1.2 2.5-2.9 2.5zm-2.8-5.8h2.5c.8 0 1.2-.4 1.2-1 0-.7-.5-1-1.3-1h-2.4zm0 4.3h2.7c.9 0 1.4-.4 1.4-1.1 0-.8-.6-1.1-1.5-1.1h-2.6z"/></svg>
+                            </span>
+                            <span class="nav-dropdown-text">
+                                <span class="nav-dropdown-title">Reddit Crypto Sentiment API</span>
+                                <span class="nav-dropdown-desc">Crypto sentiment from Reddit</span>
+                            </span>
+                        </a>
+                        <a href="/finance-sentiment-cli" class="nav-dropdown-item">
+                            <span class="nav-dropdown-icon-wrap cli">
+                                <svg viewBox="0 0 24 24"><path d="M2 3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H2zm1 2h18v14H3V5zm3 3l4 4-4 4 1.5 1.5L13 12 7.5 6.5 6 8zm6 8h6v2h-6v-2z"/></svg>
+                            </span>
+                            <span class="nav-dropdown-text">
+                                <span class="nav-dropdown-title">Finance Sentiment CLI</span>
+                                <span class="nav-dropdown-desc">Terminal tool for traders & agents</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="/pricing" class="nav-link">Pricing</a>
+                <a href="/register" class="nav-btn">Get API Key</a>
+            </div>
+            <label for="nav-mobile-checkbox" class="nav-mobile-toggle" aria-label="Toggle menu">
+                <span class="nav-mobile-bar"></span>
+                <span class="nav-mobile-bar"></span>
+                <span class="nav-mobile-bar"></span>
+            </label>
+        </div>
+        <div class="nav-mobile-menu">
+            <div class="nav-mobile-section">
+                <div class="nav-mobile-label">Solutions</div>
+                <a href="/reddit-stock-sentiment" class="nav-mobile-link">
+                    <span class="nav-mobile-icon reddit">
+                        <svg viewBox="0 0 24 24"><path d="M17.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+                    </span>
+                    Reddit Stock Sentiment API
+                </a>
+                <a href="/x-stock-sentiment" class="nav-mobile-link">
+                    <span class="nav-mobile-icon x">
+                        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </span>
+                    X.com Sentiment API
+                </a>
+                <a href="/stock-news-sentiment" class="nav-mobile-link">
+                    <span class="nav-mobile-icon news">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="18.5" r="2.25"/><path d="M5 13a5.5 5.5 0 0 1 5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"/><path d="M5 8a10.5 10.5 0 0 1 10.5 10.5" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"/><path d="M5 3a15.5 15.5 0 0 1 15.5 15.5" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" opacity="0.68"/></svg>
+                    </span>
+                    Stock News Sentiment API
+                </a>
+                <a href="/polymarket-stock-sentiment" class="nav-mobile-link">
+                    <span class="nav-mobile-icon polymarket">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="12" width="4" height="9" rx="1"/><rect x="10" y="7" width="4" height="14" rx="1"/><rect x="17" y="3" width="4" height="18" rx="1"/></svg>
+                    </span>
+                    Polymarket Sentiment API
+                </a>
+                <a href="/reddit-crypto-sentiment" class="nav-mobile-link">
+                    <span class="nav-mobile-icon crypto">
+                        <svg viewBox="0 0 24 24"><path d="M13.6 16.5v1.5h-1.2v-1.4h-1.6v1.4h-1.2v-1.5H8.5v-1.5h1.1V9h-1V7.5h1V6h1.2v1.4h1.6V6h1.2v1.5c1.5.1 2.6.9 2.6 2.3 0 1-.6 1.7-1.5 2 1 .3 1.8 1 1.8 2.2 0 1.6-1.2 2.5-2.9 2.5zm-2.8-5.8h2.5c.8 0 1.2-.4 1.2-1 0-.7-.5-1-1.3-1h-2.4zm0 4.3h2.7c.9 0 1.4-.4 1.4-1.1 0-.8-.6-1.1-1.5-1.1h-2.6z"/></svg>
+                    </span>
+                    Reddit Crypto Sentiment API
+                </a>
+                <a href="/finance-sentiment-cli" class="nav-mobile-link">
+                    <span class="nav-mobile-icon cli">
+                        <svg viewBox="0 0 24 24"><path d="M2 3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H2zm1 2h18v14H3V5zm3 3l4 4-4 4 1.5 1.5L13 12 7.5 6.5 6 8zm6 8h6v2h-6v-2z"/></svg>
+                    </span>
+                    Finance Sentiment CLI
+                </a>
+            </div>
+            <div class="nav-mobile-section">
+                <a href="/pricing" class="btn btn-secondary nav-mobile-btn">Pricing</a>
+                <a href="/register" class="btn nav-mobile-btn">Get API Key</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-wrapper">
+        <div class="hero-grid hero-grid--animated" aria-hidden="true"></div>
+        <div class="hn-hero">
+            <div class="hn-top">
+                <div class="hn-badge">Market sentiment API <span class="hn-pdot"></span></div>
+                <h1 class="hn-h1">The sentiment layer<br>for markets.</h1>
+                <div class="hn-brand-row">
+                    <img src="/images/reddit.webp" alt="Reddit" width="32" height="32" loading="lazy">
+                    <span class="hn-brand-plus">+</span>
+                    <img src="/images/x.webp" alt="X" width="32" height="32" loading="lazy">
+                    <span class="hn-brand-plus">+</span>
+                    <span class="hn-brand-news"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="18.5" r="2.25"/><path d="M5 13a5.5 5.5 0 0 1 5.5 5.5" fill="none" stroke="#fff" stroke-width="2.25" stroke-linecap="round"/><path d="M5 8a10.5 10.5 0 0 1 10.5 10.5" fill="none" stroke="#fff" stroke-width="2.25" stroke-linecap="round"/><path d="M5 3a15.5 15.5 0 0 1 15.5 15.5" fill="none" stroke="#fff" stroke-width="2.25" stroke-linecap="round" opacity="0.68"/></svg></span>
+                    <span class="hn-brand-plus">+</span>
+                    <img src="/images/polymarket.webp" alt="Polymarket" width="32" height="32" loading="lazy">
+                </div>
+                <p class="hn-sub">Sentiment and attention data for stocks and crypto in one API. <br>Across Reddit, X, financial news, Polymarket and crypto communities - unified into clean, comparable sentiment signals.</p>
+                <div class="hero-cta">
+                    <a href="/register" class="btn">Get API Key</a>
+                    <a href="https://api.adanos.org/docs" target="_blank" rel="noopener" class="btn btn-secondary">API Docs</a>
+                </div>
+            </div>
+            <div class="hn-visual">
+                <input type="radio" name="hn-tab" id="hn-tab-trending" checked class="hn-tab-input">
+                <input type="radio" name="hn-tab" id="hn-tab-stock" class="hn-tab-input">
+                <input type="radio" name="hn-tab" id="hn-tab-market" class="hn-tab-input">
+                <input type="radio" name="hn-tab" id="hn-tab-compare" class="hn-tab-input">
+                <input type="radio" name="hn-tab" id="hn-tab-explain" class="hn-tab-input">
+                <input type="radio" name="hn-tab" id="hn-tab-mentions" class="hn-tab-input">
+                <div class="hn-col hn-left">
+                    <div class="hn-card hn-source-card" id="hn-card-reddit">
+                        <div class="hn-card-ico nav-dropdown-icon-wrap reddit">
+                            <svg viewBox="0 0 24 24"><path d="M17.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+                        </div>
+                        <div class="hn-card-copy">
+                            <div class="hn-card-lbl">Reddit</div>
+                            <div class="hn-card-meta">Stocks, ETFs, crypto</div>
+                        </div>
+                    </div>
+                    <div class="hn-card hn-source-card" id="hn-card-x">
+                        <div class="hn-card-ico nav-dropdown-icon-wrap x">
+                            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </div>
+                        <div class="hn-card-copy">
+                            <div class="hn-card-lbl">X / Twitter</div>
+                            <div class="hn-card-meta">Cashtags Sentiment</div>
+                        </div>
+                    </div>
+                    <div class="hn-card hn-source-card" id="hn-card-news">
+                        <div class="hn-card-ico nav-dropdown-icon-wrap news">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="18.5" r="2.25"/><path d="M5 13a5.5 5.5 0 0 1 5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"/><path d="M5 8a10.5 10.5 0 0 1 10.5 10.5" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"/><path d="M5 3a15.5 15.5 0 0 1 15.5 15.5" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" opacity="0.68"/></svg>
+                        </div>
+                        <div class="hn-card-copy">
+                            <div class="hn-card-lbl">Financial News</div>
+                            <div class="hn-card-meta">100+ publishers</div>
+                        </div>
+                    </div>
+                    <div class="hn-card hn-source-card" id="hn-card-polymarket">
+                        <div class="hn-card-ico nav-dropdown-icon-wrap polymarket">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="12" width="4" height="9" rx="1"/><rect x="10" y="7" width="4" height="14" rx="1"/><rect x="17" y="3" width="4" height="18" rx="1"/></svg>
+                        </div>
+                        <div class="hn-card-copy">
+                            <div class="hn-card-lbl">Polymarket</div>
+                            <div class="hn-card-meta">Real-money predictions</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hn-term">
+                    <div class="hn-term-rail" aria-hidden="true"></div>
+                    <div class="hn-tbar">
+                        <div class="hn-tl-wrap"><div class="hn-tl hn-tl-r"></div><div class="hn-tl hn-tl-y"></div><div class="hn-tl hn-tl-g"></div></div>
+                        <div class="hn-tabs">
+                            <label for="hn-tab-trending" class="hn-tab">/trending</label>
+                            <label for="hn-tab-stock" class="hn-tab">/stock</label>
+                            <label for="hn-tab-market" class="hn-tab">/market</label>
+                            <label for="hn-tab-compare" class="hn-tab">/compare</label>
+                            <label for="hn-tab-explain" class="hn-tab">/explain</label>
+                            <label for="hn-tab-mentions" class="hn-tab">/mentions</label>
+                        </div>
+                    </div>
+                    <div class="hn-body-wrap">
+                        <div class="hn-tbody hn-tbody--trending">
+                            <div class="hn-reqline"><span class="hn-req-call"><span class="hn-method">GET</span> <span class="hn-path">/<span class="hn-src">reddit</span>/stocks/v1/trending<span class="hn-query">?limit=20</span></span></span><span class="hn-status"><span class="hn-dot"></span><span class="hn-ok">200 OK</span><span class="hn-sep">·</span><span>142 ms</span></span></div>
+                            <div class="hn-json">
+                            <div class="hn-json-line"><span class="jb">[</span></div>
+                            <div class="hn-json-line">  <span class="jb">{</span></div>
+                            <div class="hn-json-line">    <span class="jk">"ticker"</span><span class="jp">:</span> <span class="js">"TSLA"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"company_name"</span><span class="jp">:</span> <span class="js">"Tesla, Inc."</span><span class="jp">,</span></div>
+                            <div class="hn-json-line hn-hl">    <span class="jk">"buzz_score"</span><span class="jp">:</span> <span class="jn jn-hl">87.5</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"trend"</span><span class="jp">:</span> <span class="js">"rising"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"mentions"</span><span class="jp">:</span> <span class="jn">342</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"unique_posts"</span><span class="jp">:</span> <span class="jn">45</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"subreddit_count"</span><span class="jp">:</span> <span class="jn">8</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.23</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"bullish_pct"</span><span class="jp">:</span> <span class="jn">45</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"bearish_pct"</span><span class="jp">:</span> <span class="jn">18</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"total_upvotes"</span><span class="jp">:</span> <span class="jn">15234</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"trend_history"</span><span class="jp">:</span> <span class="jb">[</span><span class="jn">45.2</span><span class="jp">,</span> <span class="jn">52.1</span><span class="jp">,</span> <span class="jn">48.7</span><span class="jp">,</span> <span class="jn">67.3</span><span class="jp">,</span> <span class="jn">72.1</span><span class="jp">,</span> <span class="jn">78.4</span><span class="jp">,</span> <span class="jn">87.5</span><span class="jb">]</span></div>
+                            <div class="hn-json-line">  <span class="jb">}</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jb">{</span></div>
+                            <div class="hn-json-line">    <span class="jk">"ticker"</span><span class="jp">:</span> <span class="js">"NVDA"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"company_name"</span><span class="jp">:</span> <span class="js">"NVIDIA Corporation"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"buzz_score"</span><span class="jp">:</span> <span class="jn">72.3</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"trend"</span><span class="jp">:</span> <span class="js">"stable"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"mentions"</span><span class="jp">:</span> <span class="jn">189</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"unique_posts"</span><span class="jp">:</span> <span class="jn">31</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"subreddit_count"</span><span class="jp">:</span> <span class="jn">6</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.45</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"bullish_pct"</span><span class="jp">:</span> <span class="jn">52</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"bearish_pct"</span><span class="jp">:</span> <span class="jn">17</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"total_upvotes"</span><span class="jp">:</span> <span class="jn">8921</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jk">"trend_history"</span><span class="jp">:</span> <span class="jb">[</span><span class="jn">38.1</span><span class="jp">,</span> <span class="jn">40.7</span><span class="jp">,</span> <span class="jn">44.9</span><span class="jp">,</span> <span class="jn">51.5</span><span class="jp">,</span> <span class="jn">57.4</span><span class="jp">,</span> <span class="jn">63</span><span class="jp">,</span> <span class="jn">72.3</span><span class="jb">]</span></div>
+                            <div class="hn-json-line">  <span class="jb">}</span></div>
+                            <div class="hn-json-line"><span class="jb">]</span></div>
+                            </div>
+                        </div>
+                        <div class="hn-tbody hn-tbody--stock">
+                            <div class="hn-reqline"><span class="hn-req-call"><span class="hn-method">GET</span> <span class="hn-path">/<span class="hn-src">reddit</span>/stocks/v1/stock/TSLA</span></span><span class="hn-status"><span class="hn-dot"></span><span class="hn-ok">200 OK</span><span class="hn-sep">·</span><span>138 ms</span></span></div>
+                            <div class="hn-json">
+                            <div class="hn-json-line"><span class="jb">{</span></div>
+                            <div class="hn-json-line">  <span class="jk">"ticker"</span><span class="jp">:</span> <span class="js">"TSLA"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"company_name"</span><span class="jp">:</span> <span class="js">"Tesla, Inc."</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"found"</span><span class="jp">:</span> <span class="jn">true</span><span class="jp">,</span></div>
+                            <div class="hn-json-line hn-hl">  <span class="jk">"buzz_score"</span><span class="jp">:</span> <span class="jn jn-hl">87.5</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"mentions"</span><span class="jp">:</span> <span class="jn">342</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.23</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"total_upvotes"</span><span class="jp">:</span> <span class="jn">15234</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"unique_posts"</span><span class="jp">:</span> <span class="jn">45</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"subreddit_count"</span><span class="jp">:</span> <span class="jn">8</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"trend"</span><span class="jp">:</span> <span class="js">"rising"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"bullish_pct"</span><span class="jp">:</span> <span class="jn">45</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"bearish_pct"</span><span class="jp">:</span> <span class="jn">18</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"period_days"</span><span class="jp">:</span> <span class="jn">7</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"top_subreddits"</span><span class="jp">:</span> <span class="jb">[</span></div>
+                            <div class="hn-json-line">    <span class="jb">{</span> <span class="jk">"subreddit"</span><span class="jp">:</span> <span class="js">"wallstreetbets"</span><span class="jp">,</span> <span class="jk">"mentions"</span><span class="jp">:</span> <span class="jn">89</span><span class="jp">,</span> <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.31</span><span class="jp">,</span> <span class="jk">"buzz_score"</span><span class="jp">:</span> <span class="jn">68.4</span> <span class="jb">}</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jb">{</span> <span class="jk">"subreddit"</span><span class="jp">:</span> <span class="js">"stocks"</span><span class="jp">,</span> <span class="jk">"mentions"</span><span class="jp">:</span> <span class="jn">67</span><span class="jp">,</span> <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.18</span><span class="jp">,</span> <span class="jk">"buzz_score"</span><span class="jp">:</span> <span class="jn">55.2</span> <span class="jb">}</span></div>
+                            <div class="hn-json-line">  <span class="jb">]</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"daily_trend"</span><span class="jp">:</span> <span class="jb">[</span></div>
+                            <div class="hn-json-line">    <span class="jb">{</span></div>
+                            <div class="hn-json-line">      <span class="jk">"date"</span><span class="jp">:</span> <span class="js">"2026-06-28"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"mentions"</span><span class="jp">:</span> <span class="jn">52</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.31</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"buzz_score"</span><span class="jp">:</span> <span class="jn">42.8</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"bullish_pct"</span><span class="jp">:</span> <span class="jn">58</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"bearish_pct"</span><span class="jp">:</span> <span class="jn">19</span></div>
+                            <div class="hn-json-line">    <span class="jb">}</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jb">{</span></div>
+                            <div class="hn-json-line">      <span class="jk">"date"</span><span class="jp">:</span> <span class="js">"2026-06-27"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"mentions"</span><span class="jp">:</span> <span class="jn">48</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.18</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"buzz_score"</span><span class="jp">:</span> <span class="jn">38.5</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"bullish_pct"</span><span class="jp">:</span> <span class="jn">46</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"bearish_pct"</span><span class="jp">:</span> <span class="jn">21</span></div>
+                            <div class="hn-json-line">    <span class="jb">}</span></div>
+                            <div class="hn-json-line">  <span class="jb">]</span></div>
+                            <div class="hn-json-line"><span class="jb">}</span></div>
+                            </div>
+                        </div>
+                        <div class="hn-tbody hn-tbody--market">
+                            <div class="hn-reqline"><span class="hn-req-call"><span class="hn-method">GET</span> <span class="hn-path">/<span class="hn-src">reddit</span>/stocks/v1/market-sentiment</span></span><span class="hn-status"><span class="hn-dot"></span><span class="hn-ok">200 OK</span><span class="hn-sep">·</span><span>96 ms</span></span></div>
+                            <div class="hn-json">
+                            <div class="hn-json-line"><span class="jb">{</span></div>
+                            <div class="hn-json-line hn-hl">  <span class="jk">"buzz_score"</span><span class="jp">:</span> <span class="jn jn-hl">57.4</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"trend"</span><span class="jp">:</span> <span class="js">"stable"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"mentions"</span><span class="jp">:</span> <span class="jn">3992</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"unique_posts"</span><span class="jp">:</span> <span class="jn">418</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"subreddit_count"</span><span class="jp">:</span> <span class="jn">21</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"active_tickers"</span><span class="jp">:</span> <span class="jn">1000</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.045</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"bullish_pct"</span><span class="jp">:</span> <span class="jn">36</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"bearish_pct"</span><span class="jp">:</span> <span class="jn">25</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"trend_history"</span><span class="jp">:</span> <span class="jb">[</span><span class="jn">49.8</span><span class="jp">,</span> <span class="jn">52.1</span><span class="jp">,</span> <span class="jn">50.7</span><span class="jp">,</span> <span class="jn">55.6</span><span class="jp">,</span> <span class="jn">58.3</span><span class="jp">,</span> <span class="jn">60.2</span><span class="jp">,</span> <span class="jn">57.4</span><span class="jb">]</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"drivers"</span><span class="jp">:</span> <span class="jb">[</span></div>
+                            <div class="hn-json-line">    <span class="jb">{</span></div>
+                            <div class="hn-json-line">      <span class="jk">"ticker"</span><span class="jp">:</span> <span class="js">"SPY"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"mentions"</span><span class="jp">:</span> <span class="jn">129</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"buzz_score"</span><span class="jp">:</span> <span class="jn">74.1</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.009</span></div>
+                            <div class="hn-json-line">    <span class="jb">}</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jb">{</span></div>
+                            <div class="hn-json-line">      <span class="jk">"ticker"</span><span class="jp">:</span> <span class="js">"GOOGL"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"mentions"</span><span class="jp">:</span> <span class="jn">106</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"buzz_score"</span><span class="jp">:</span> <span class="jn">71.8</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.029</span></div>
+                            <div class="hn-json-line">    <span class="jb">}</span></div>
+                            <div class="hn-json-line">  <span class="jb">]</span></div>
+                            <div class="hn-json-line"><span class="jb">}</span></div>
+                            </div>
+                        </div>
+                        <div class="hn-tbody hn-tbody--compare">
+                            <div class="hn-reqline"><span class="hn-req-call"><span class="hn-method">GET</span> <span class="hn-path">/<span class="hn-src">reddit</span>/stocks/v1/compare<span class="hn-query">?tickers=TSLA,NVDA,AMD</span></span></span><span class="hn-status"><span class="hn-dot"></span><span class="hn-ok">200 OK</span><span class="hn-sep">·</span><span>151 ms</span></span></div>
+                            <div class="hn-json">
+                            <div class="hn-json-line"><span class="jb">{</span></div>
+                            <div class="hn-json-line">  <span class="jk">"period_days"</span><span class="jp">:</span> <span class="jn">7</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"stocks"</span><span class="jp">:</span> <span class="jb">[</span></div>
+                            <div class="hn-json-line">    <span class="jb">{</span></div>
+                            <div class="hn-json-line">      <span class="jk">"ticker"</span><span class="jp">:</span> <span class="js">"TSLA"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"company_name"</span><span class="jp">:</span> <span class="js">"Tesla, Inc."</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"buzz_score"</span><span class="jp">:</span> <span class="jn">87.5</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.23</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"trend"</span><span class="jp">:</span> <span class="js">"rising"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"mentions"</span><span class="jp">:</span> <span class="jn">342</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"bullish_pct"</span><span class="jp">:</span> <span class="jn">45</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"bearish_pct"</span><span class="jp">:</span> <span class="jn">18</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"trend_history"</span><span class="jp">:</span> <span class="jb">[</span><span class="jn">45.2</span><span class="jp">,</span> <span class="jn">52.1</span><span class="jp">,</span> <span class="jn">48.7</span><span class="jp">,</span> <span class="jn">67.3</span><span class="jp">,</span> <span class="jn">72.1</span><span class="jp">,</span> <span class="jn">78.4</span><span class="jp">,</span> <span class="jn">87.5</span><span class="jb">]</span></div>
+                            <div class="hn-json-line">    <span class="jb">}</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jb">{</span></div>
+                            <div class="hn-json-line">      <span class="jk">"ticker"</span><span class="jp">:</span> <span class="js">"NVDA"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"company_name"</span><span class="jp">:</span> <span class="js">"NVIDIA Corporation"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"buzz_score"</span><span class="jp">:</span> <span class="jn">72.3</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.45</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"trend"</span><span class="jp">:</span> <span class="js">"stable"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"mentions"</span><span class="jp">:</span> <span class="jn">189</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"bullish_pct"</span><span class="jp">:</span> <span class="jn">52</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"bearish_pct"</span><span class="jp">:</span> <span class="jn">17</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"trend_history"</span><span class="jp">:</span> <span class="jb">[</span><span class="jn">38.1</span><span class="jp">,</span> <span class="jn">40.7</span><span class="jp">,</span> <span class="jn">44.9</span><span class="jp">,</span> <span class="jn">51.5</span><span class="jp">,</span> <span class="jn">57.4</span><span class="jp">,</span> <span class="jn">63</span><span class="jp">,</span> <span class="jn">72.3</span><span class="jb">]</span></div>
+                            <div class="hn-json-line">    <span class="jb">}</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jb">{</span></div>
+                            <div class="hn-json-line">      <span class="jk">"ticker"</span><span class="jp">:</span> <span class="js">"AMD"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"company_name"</span><span class="jp">:</span> <span class="js">"Advanced Micro Devices, Inc."</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"buzz_score"</span><span class="jp">:</span> <span class="jn">66.2</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.28</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"trend"</span><span class="jp">:</span> <span class="js">"rising"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"mentions"</span><span class="jp">:</span> <span class="jn">156</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"bullish_pct"</span><span class="jp">:</span> <span class="jn">46</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"bearish_pct"</span><span class="jp">:</span> <span class="jn">20</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"trend_history"</span><span class="jp">:</span> <span class="jb">[</span><span class="jn">40.2</span><span class="jp">,</span> <span class="jn">45.1</span><span class="jp">,</span> <span class="jn">50.7</span><span class="jp">,</span> <span class="jn">57.2</span><span class="jp">,</span> <span class="jn">62.5</span><span class="jp">,</span> <span class="jn">64.8</span><span class="jp">,</span> <span class="jn">66.2</span><span class="jb">]</span></div>
+                            <div class="hn-json-line">    <span class="jb">}</span></div>
+                            <div class="hn-json-line">  <span class="jb">]</span></div>
+                            <div class="hn-json-line"><span class="jb">}</span></div>
+                            </div>
+                        </div>
+                        <div class="hn-tbody hn-tbody--explain">
+                            <div class="hn-reqline"><span class="hn-req-call"><span class="hn-method">GET</span> <span class="hn-path">/<span class="hn-src">reddit</span>/stocks/v1/stock/GME/explain</span></span><span class="hn-status"><span class="hn-dot"></span><span class="hn-ok">200 OK</span><span class="hn-sep">·</span><span>38 ms</span><span class="hn-sep">·</span><span class="hn-note">cached</span></span></div>
+                            <div class="hn-json">
+                            <div class="hn-json-line"><span class="jb">{</span></div>
+                            <div class="hn-json-line">  <span class="jk">"ticker"</span><span class="jp">:</span> <span class="js">"GME"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"company_name"</span><span class="jp">:</span> <span class="js">"Gamestop Corporation - Class A"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line hn-hl">  <span class="jk">"explanation"</span><span class="jp">:</span> <span class="js">"GME is trending due to viral GameStop social media activity and large position posts on r/Superstonk."</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"cached"</span><span class="jp">:</span> <span class="jn">true</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"generated_at"</span><span class="jp">:</span> <span class="js">"2026-06-28T14:30:00+00:00"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"model"</span><span class="jp">:</span> <span class="js">"llama-3.1-8b-instant"</span></div>
+                            <div class="hn-json-line"><span class="jb">}</span></div>
+                            </div>
+                        </div>
+                        <div class="hn-tbody hn-tbody--mentions">
+                            <div class="hn-reqline"><span class="hn-req-call"><span class="hn-method">GET</span> <span class="hn-path">/<span class="hn-src">reddit</span>/stocks/v1/stock/TSLA/mentions</span></span><span class="hn-status"><span class="hn-dot"></span><span class="hn-ok">200 OK</span><span class="hn-sep">·</span><span>168 ms</span></span></div>
+                            <div class="hn-json">
+                            <div class="hn-json-line"><span class="jb">{</span></div>
+                            <div class="hn-json-line">  <span class="jk">"ticker"</span><span class="jp">:</span> <span class="js">"TSLA"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"period_days"</span><span class="jp">:</span> <span class="jn">7</span><span class="jp">,</span></div>
+                            <div class="hn-json-line hn-hl">  <span class="jk">"count"</span><span class="jp">:</span> <span class="jn jn-hl">1284</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">  <span class="jk">"results"</span><span class="jp">:</span> <span class="jb">[</span></div>
+                            <div class="hn-json-line">    <span class="jb">{</span></div>
+                            <div class="hn-json-line">      <span class="jk">"post_id"</span><span class="jp">:</span> <span class="js">"abc123"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"comment_id"</span><span class="jp">:</span> <span class="js">"def456"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"subreddit"</span><span class="jp">:</span> <span class="js">"wallstreetbets"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"author"</span><span class="jp">:</span> <span class="js">"user123"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"text_snippet"</span><span class="jp">:</span> <span class="js">"TSLA looks strong into earnings..."</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"created_utc"</span><span class="jp">:</span> <span class="js">"2026-06-28T18:42:10Z"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"upvotes"</span><span class="jp">:</span> <span class="jn">381</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">0.62</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"sentiment_label"</span><span class="jp">:</span> <span class="js">"positive"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"is_inherited"</span><span class="jp">:</span> <span class="jn">false</span></div>
+                            <div class="hn-json-line">    <span class="jb">}</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">    <span class="jb">{</span></div>
+                            <div class="hn-json-line">      <span class="jk">"post_id"</span><span class="jp">:</span> <span class="js">"ghi789"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"comment_id"</span><span class="jp">:</span> <span class="js">"jkl012"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"subreddit"</span><span class="jp">:</span> <span class="js">"stocks"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"author"</span><span class="jp">:</span> <span class="js">"trader_jane"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"text_snippet"</span><span class="jp">:</span> <span class="js">"Trimmed my TSLA position before the print, IV is rich"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"created_utc"</span><span class="jp">:</span> <span class="js">"2026-06-28T17:05:44Z"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"upvotes"</span><span class="jp">:</span> <span class="jn">142</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"sentiment_score"</span><span class="jp">:</span> <span class="jn">-0.18</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"sentiment_label"</span><span class="jp">:</span> <span class="js">"negative"</span><span class="jp">,</span></div>
+                            <div class="hn-json-line">      <span class="jk">"is_inherited"</span><span class="jp">:</span> <span class="jn">false</span></div>
+                            <div class="hn-json-line">    <span class="jb">}</span></div>
+                            <div class="hn-json-line">  <span class="jb">]</span></div>
+                            <div class="hn-json-line"><span class="jb">}</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hn-col hn-right">
+                    <div class="hn-card hn-source-card" id="hn-card-analysis">
+                        <div class="hn-card-ico hn-card-ico--analysis">
+                            <svg viewBox="0 0 24 24"><path d="M21 21H4a1 1 0 0 1-1-1V3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 14l4-4 4 4 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="hn-card-copy">
+                            <div class="hn-card-lbl">Stock Analysis</div>
+                            <div class="hn-card-meta">Per-ticker deep dive</div>
+                        </div>
+                    </div>
+                    <div class="hn-card hn-source-card" id="hn-card-fintech">
+                        <div class="hn-card-ico hn-card-ico--fintech">
+                            <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="13" width="4" height="7" rx="1" fill="currentColor"/><rect x="10" y="9" width="4" height="11" rx="1" fill="currentColor" opacity=".85"/><rect x="16" y="5" width="4" height="15" rx="1" fill="currentColor" opacity=".7"/></svg>
+                        </div>
+                        <div class="hn-card-copy">
+                            <div class="hn-card-lbl">Fintech Apps</div>
+                            <div class="hn-card-meta">Alerts and watchlists</div>
+                        </div>
+                    </div>
+                    <div class="hn-card hn-source-card" id="hn-card-agents">
+                        <div class="hn-card-ico hn-card-ico--agents">
+                            <svg viewBox="0 0 24 24" fill="none"><rect x="5" y="9" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.8"/><circle cx="9.5" cy="14" r="1.5" fill="currentColor"/><circle cx="14.5" cy="14" r="1.5" fill="currentColor"/><path d="M12 4V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="3" r="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                        </div>
+                        <div class="hn-card-copy">
+                            <div class="hn-card-lbl">AI Agents</div>
+                            <div class="hn-card-meta">Context for LLMs</div>
+                        </div>
+                    </div>
+                    <div class="hn-card hn-source-card" id="hn-card-quant">
+                        <div class="hn-card-ico hn-card-ico--quant">
+                            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg>
+                        </div>
+                        <div class="hn-card-copy">
+                            <div class="hn-card-lbl">Quant</div>
+                            <div class="hn-card-meta">Backtest signals</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="use-cases">
+        <div class="section-label">Use Cases</div>
+        <h2>What teams build with our data</h2>
+        <div class="about-highlights">
+            <div class="about-highlight card card--padded-sm">
+                <img src="/images/uc-buzz-leads-price.svg" alt="Chart showing buzz score spiking before stock price follows" width="320" height="216" loading="lazy">
+                <h3>Social buzz leads price</h3>
+                <p>Retail attention on Reddit, X and Polymarket spikes before price moves. Our buzz score tracks that buildup across 5 sources so you can position before the breakout.</p>
+            </div>
+            <div class="about-highlight card card--padded-sm">
+                <img src="/images/uc-cross-source.svg" alt="TSLA sentiment comparison across Reddit, X, News and Polymarket" width="320" height="216" loading="lazy">
+                <h3>One ticker, four perspectives</h3>
+                <p>Reddit bullish, X bearish on the same ticker. That spread is a signal. Our API returns sentiment from every source in one call so you catch what single-source tools miss.</p>
+            </div>
+            <div class="about-highlight card card--padded-sm">
+                <img src="/images/uc-agent-workflow.svg" alt="AI agent workflow calling adanos-cli to get sentiment from 5 sources" width="320" height="216" loading="lazy">
+                <h3>Your agent's market expert</h3>
+                <p>Your agent calls adanos-cli and gets structured JSON from 5 sources in under 200ms. Works with Claude, ChatGPT or any tool-use framework out of the box.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="customers">
+        <div class="section-label">Our users</div>
+        <h2>Join engineers and researchers from</h2>
+        <ul class="customer-logos-grid">
+            <li class="card card--padded-sm"><img src="/images/customers/harvard.svg" alt="Harvard University" loading="lazy" width="420" height="140" data-brand="harvard"></li>
+            <li class="card card--padded-sm"><img src="/images/customers/alibaba.svg" alt="Alibaba" loading="lazy" width="1000" height="128" data-brand="alibaba"></li>
+            <li class="card card--padded-sm"><img src="/images/customers/mit.svg" alt="MIT" loading="lazy" width="449" height="252" data-brand="mit"></li>
+            <li class="card card--padded-sm"><img src="/images/customers/google.svg" alt="Google" loading="lazy" width="272" height="92" data-brand="google"></li>
+            <li class="card card--padded-sm"><img src="/images/customers/openai.svg" alt="OpenAI" loading="lazy" width="1180" height="320" data-brand="openai"></li>
+            <li class="card card--padded-sm"><img src="/images/customers/columbia.svg" alt="Columbia University" loading="lazy" width="1692" height="252" data-brand="columbia"></li>
+        </ul>
+    </section>
+
+    <section id="products">
+        <div class="section-label">Sentiment APIs</div>
+        <h2>Market sentiment APIs and tools.</h2>
+        <div class="products-grid">
+            <a href="/reddit-stock-sentiment" class="product-card card" data-product="reddit">
+                <span class="product-card-watermark"><svg viewBox="0 0 24 24"><path d="M17.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg></span>
+                <div class="product-card-top">
+                    <span class="product-card-dot"></span>
+                    <h3>Reddit Stock Sentiment API</h3>
+                </div>
+                <p>Track what retail investors say about stocks & ETFs on Reddit's largest trading communities.</p>
+                <ul>
+                    <li>Sentiment data for stocks & ETFs</li>
+                    <li>Ticker mention tracking & trend detection</li>
+                    <li>RESTful API with JSON responses</li>
+                </ul>
+                <span class="product-card-cta">View API <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </a>
+            <a href="/stock-news-sentiment" class="product-card card" data-product="news">
+                <span class="product-card-watermark"><svg viewBox="0 0 24 24"><circle cx="5.5" cy="18.5" r="2.25"/><path d="M5 13a5.5 5.5 0 0 1 5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"/><path d="M5 8a10.5 10.5 0 0 1 10.5 10.5" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"/><path d="M5 3a15.5 15.5 0 0 1 15.5 15.5" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" opacity="0.68"/></svg></span>
+                <div class="product-card-top">
+                    <span class="product-card-dot"></span>
+                    <h3>Stock News Sentiment API</h3>
+                </div>
+                <p>Track stock sentiment across 100+ financial news sources, including Reuters, Benzinga and Finviz.</p>
+                <ul>
+                    <li>News mentions, source counts and buzz scores</li>
+                    <li>Trend detection across normalized publisher feeds</li>
+                    <li>RESTful API with JSON responses</li>
+                </ul>
+                <span class="product-card-cta">View API <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </a>
+            <a href="/x-stock-sentiment" class="product-card card" data-product="x">
+                <span class="product-card-watermark"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></span>
+                <div class="product-card-top">
+                    <span class="product-card-dot"></span>
+                    <h3>X.com Stock Sentiment API</h3>
+                </div>
+                <p>Track what FinTwit says about stocks & ETFs on X/Twitter's most active trading communities.</p>
+                <ul>
+                    <li>Sentiment data for stocks & ETFs</li>
+                    <li>Cashtag tracking & trend detection</li>
+                    <li>RESTful API with JSON responses</li>
+                </ul>
+                <span class="product-card-cta">View API <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </a>
+            <a href="/polymarket-stock-sentiment" class="product-card card" data-product="polymarket">
+                <span class="product-card-watermark"><svg viewBox="0 0 24 24"><rect x="3" y="12" width="4" height="9" rx="1"/><rect x="10" y="7" width="4" height="14" rx="1"/><rect x="17" y="3" width="4" height="18" rx="1"/></svg></span>
+                <div class="product-card-top">
+                    <span class="product-card-dot"></span>
+                    <h3>Polymarket Stock Sentiment API</h3>
+                </div>
+                <p>Stock sentiment from Polymarket prediction markets. Probability-implied signals backed by real money.</p>
+                <ul>
+                    <li>Real-money prediction market data</li>
+                    <li>Market count, trade activity & liquidity</li>
+                    <li>RESTful API with JSON responses</li>
+                </ul>
+                <span class="product-card-cta">View API <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </a>
+            <a href="/reddit-crypto-sentiment" class="product-card card" data-product="crypto">
+                <span class="product-card-watermark"><svg viewBox="0 0 24 24"><path d="M13.6 16.5v1.5h-1.2v-1.4h-1.6v1.4h-1.2v-1.5H8.5v-1.5h1.1V9h-1V7.5h1V6h1.2v1.4h1.6V6h1.2v1.5c1.5.1 2.6.9 2.6 2.3 0 1-.6 1.7-1.5 2 1 .3 1.8 1 1.8 2.2 0 1.6-1.2 2.5-2.9 2.5zm-2.8-5.8h2.5c.8 0 1.2-.4 1.2-1 0-.7-.5-1-1.3-1h-2.4zm0 4.3h2.7c.9 0 1.4-.4 1.4-1.1 0-.8-.6-1.1-1.5-1.1h-2.6z"/></svg></span>
+                <div class="product-card-top">
+                    <span class="product-card-dot"></span>
+                    <h3>Reddit Crypto Sentiment API</h3>
+                </div>
+                <p>Sentiment analysis for cryptocurrencies from Reddit's largest crypto communities.</p>
+                <ul>
+                    <li>Coverage of top crypto subreddits</li>
+                    <li>Bitcoin, Ethereum, altcoins & memecoins</li>
+                    <li>Same reliable API, new asset class</li>
+                </ul>
+                <span class="product-card-cta">View API <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </a>
+            <a href="/finance-sentiment-cli" class="product-card card" data-product="cli">
+                <span class="product-card-watermark"><svg viewBox="0 0 24 24"><path d="M2 3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H2zm1 2h18v14H3V5zm3 3l4 4-4 4 1.5 1.5L13 12 7.5 6.5 6 8zm6 8h6v2h-6v-2z"/></svg></span>
+                <div class="product-card-top">
+                    <span class="product-card-dot"></span>
+                    <h3>Finance Sentiment CLI</h3>
+                </div>
+                <p>Interactive terminal tool for querying stock and crypto sentiment. Built for traders, developers and AI agents.</p>
+                <ul>
+                    <li>Interactive shell with natural language</li>
+                    <li>Market scanner, briefings & watchlists</li>
+                    <li>JSON output for AI agent integration</li>
+                </ul>
+                <span class="product-card-cta">View CLI <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-header">
+            <div class="about-coins about-mark-wrap" aria-hidden="true">
+                <svg class="about-mark" width="418" height="505" viewBox="0 -44 417.9 506" aria-hidden="true">
+                    <defs>
+                        <style>.about-mark-base{fill:#727f87}.about-mark-bottom{fill:#c7c7c7}.about-mark-mid{fill:#454e54}.about-mark-top{fill:url(#about-mark-gradient)}</style>
+                        <path id="about-mark-plate" d="M408.87,79.5L232.12,5.26l-.06-.03c-14.69-6.97-31.53-6.97-46.22,0l-.13.06L9.02,79.5c-5.65,2.71-9.02,8.07-9.02,14.34s3.37,11.63,9.02,14.34l48.29,20.28,3.96,1.66,3.96,1.66,82.44,34.63,3.96,1.66,3.96,1.66,30.2,12.68.06.03c14.69,6.97,31.53,6.97,46.22,0l.13-.06,30.13-12.66,3.96-1.66,3.96-1.66,82.44-34.63,3.96-1.66,3.96-1.66,48.29-20.28c5.65-2.71,9.02-8.07,9.02-14.34s-3.37-11.63-9.02-14.34Z"/>
+                        <linearGradient id="about-mark-gradient" x1="208.95" y1="375.39" x2="208.95" y2="-241.72" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#c76745"/><stop offset=".55" stop-color="#e5b86f"/><stop offset=".84" stop-color="#f8dda1"/><stop offset="1" stop-color="#f8ddd9"/></linearGradient>
+                    </defs>
+                    <g class="about-mark-layer" style="--mark-i:0"><path class="about-mark-bottom" d="M408.87,309.26l-48.29-20.28-125.96,52.91c-8.16,3.86-16.92,5.8-25.67,5.8s-17.51-1.93-25.67-5.8l-125.96-52.91-48.29,20.28c-5.65,2.71-9.02,8.07-9.02,14.34s3.37,11.63,9.02,14.34l176.75,74.24.06.03c14.69,6.97,31.53,6.97,46.22,0l.13-.06,176.69-74.22c5.65-2.71,9.02-8.07,9.02-14.34s-3.37-11.63-9.02-14.34Z"/><use class="about-mark-full about-mark-bottom" href="#about-mark-plate" transform="translate(0 229.77)"/></g>
+                    <g class="about-mark-layer" style="--mark-i:1"><path class="about-mark-base" d="M408.87,232.67l-48.29-20.28-82.44,34.63-3.96,1.66-3.96,1.66-35.61,14.96c-8.16,3.86-16.92,5.8-25.67,5.8s-17.51-1.93-25.67-5.8l-35.61-14.96-3.96-1.66-3.96-1.66-82.44-34.63-48.29,20.28c-5.65,2.71-9.02,8.07-9.02,14.34s3.37,11.63,9.02,14.34l48.29,20.28,3.96,1.66,3.96,1.66,120.55,50.63.06.03c14.69,6.97,31.53,6.97,46.22,0l.13-.06,120.48-50.61,3.96-1.66,3.96-1.66,48.29-20.28c5.65-2.71,9.02-8.07,9.02-14.34s-3.37-11.63-9.02-14.34Z"/><use class="about-mark-full about-mark-base" href="#about-mark-plate" transform="translate(0 153.18)"/></g>
+                    <g class="about-mark-layer" style="--mark-i:2"><path class="about-mark-mid" d="M408.87,156.09l-48.29-20.28-82.44,34.63-3.96,1.66-3.96,1.66-35.61,14.96c-8.16,3.86-16.92,5.8-25.67,5.8s-17.51-1.93-25.67-5.8l-35.61-14.96-3.96-1.66-3.96-1.66-82.44-34.63-48.29,20.28c-5.65,2.71-9.02,8.07-9.02,14.34s3.37,11.63,9.02,14.34l48.29,20.28,3.96,1.66,3.96,1.66,82.44,34.63,3.96,1.66,3.96,1.66,30.2,12.68.06.03c14.69,6.97,31.53,6.97,46.22,0l.13-.06,30.13-12.66,3.96-1.66,3.96-1.66,82.44-34.63,3.96-1.66,3.96-1.66,48.29-20.28c5.65-2.71,9.02-8.07,9.02-14.34s-3.37-11.63-9.02-14.34Z"/><use class="about-mark-full about-mark-mid" href="#about-mark-plate" transform="translate(0 76.59)"/></g>
+                    <g class="about-mark-layer" style="--mark-i:3"><path class="about-mark-top" d="M408.87,79.5L232.12,5.26l-.06-.03c-14.69-6.97-31.53-6.97-46.22,0l-.13.06L9.02,79.5c-5.65,2.71-9.02,8.07-9.02,14.34s3.37,11.63,9.02,14.34l48.29,20.28,3.96,1.66,3.96,1.66,82.44,34.63,3.96,1.66,3.96,1.66,30.2,12.68.06.03c14.69,6.97,31.53,6.97,46.22,0l.13-.06,30.13-12.66,3.96-1.66,3.96-1.66,82.44-34.63,3.96-1.66,3.96-1.66,48.29-20.28c5.65-2.71,9.02-8.07,9.02-14.34s-3.37-11.63-9.02-14.34Z"/></g>
+                </svg>
+            </div>
+            <div class="section-label">Why Adanos?</div>
+            <h2>One API key. Five data sources.</h2>
+            <p class="about-lead">We turn noisy market conversations into clean sentiment signals. Our API covers Reddit, X, financial news, Polymarket and crypto communities so you can focus on analysis instead of data collection.</p>
+            <p class="about-lead">One API key for five sentiment APIs across stocks and crypto. Built in Berlin and used by quant teams, fintech startups and independent researchers.</p>
+        </div>
+        <div class="about-highlights">
+            <div class="about-highlight card card--padded-sm">
+                <div class="about-highlight-icon card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                </div>
+                <h3>Hourly refresh</h3>
+                <p>Sentiment data from Reddit, X, crypto communities and prediction markets. Continuously ingested, typically refreshed about every hour.</p>
+            </div>
+            <div class="about-highlight card card--padded-sm">
+                <div class="about-highlight-icon card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </div>
+                <h3>High availability</h3>
+                <p>We target 99.9% uptime and monitor around the clock. A contractual SLA is included on the Professional plan.</p>
+            </div>
+            <div class="about-highlight card card--padded-sm">
+                <div class="about-highlight-icon card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+                </div>
+                <h3>Developer-first</h3>
+                <p>RESTful APIs, JSON responses and CLI tools. Built for developers and AI agents.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="also">
+        <div class="section-label">Also by Adanos</div>
+        <h2>More from our team</h2>
+        <div class="products-grid">
+            <a href="https://stockalert.pro" target="_blank" rel="noopener" class="product-card product-card--external card" data-product="stockalert">
+                <span class="product-card-watermark"><svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 0 0 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg></span>
+                <div class="product-card-top">
+                    <span class="product-card-dot"></span>
+                    <h3>StockAlert.pro</h3>
+                </div>
+                <p>Real-time market monitoring with watchlists, 21 alert types, daily AI screening and in-depth analysis reports.</p>
+                <ul>
+                    <li>Technical: RSI, MA crossovers, Bollinger Bands, Golden Cross</li>
+                    <li>Fundamental: Earnings, dividends, P/E ratio alerts</li>
+                    <li>Email, SMS, Webhook & REST API</li>
+                </ul>
+                <span class="product-card-cta">stockalert.pro <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+            <a href="https://ls-lint.org" target="_blank" rel="noopener" class="product-card product-card--external card" data-product="lslint">
+                <span class="product-card-watermark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 12c0 4.97 3.026 9.217 7.335 10.977.578.236 1.173.436 1.665.523.493-.087 1.087-.287 1.665-.523C17.974 21.217 21 16.97 21 12c0-1.065-.138-2.098-.382-3.016z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <div class="product-card-top">
+                    <span class="product-card-dot"></span>
+                    <h3>ls-lint</h3>
+                </div>
+                <p>An extremely fast file and directory name linter to enforce consistent naming conventions across your project.</p>
+                <ul>
+                    <li>Lint thousands of files in milliseconds</li>
+                    <li>Simple YAML configuration</li>
+                    <li>8M+ downloads on NPM</li>
+                </ul>
+                <span class="product-card-cta">ls-lint.org <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+        </div>
+    </section>
+
+    <div class="contact-section" id="contact">
+        <div class="section-label">Contact</div>
+        <div class="contact-title">Let's talk</div>
+        <p>Get in touch for API access, higher rate limits or custom data feeds. We work with quant teams, fintech startups and research groups across stock and crypto sentiment.</p>
+        <a href="mailto:contact@adanos.org">contact@adanos.org</a>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-heading">Solutions</div>
+                <p><a href="/reddit-stock-sentiment">Reddit Stock Sentiment API</a></p>
+                <p><a href="/reddit-crypto-sentiment">Reddit Crypto Sentiment API</a></p>
+                <p><a href="/x-stock-sentiment">X Stock Sentiment API</a></p>
+                <p><a href="/stock-news-sentiment">Stock News Sentiment API</a></p>
+                <p><a href="/polymarket-stock-sentiment">Polymarket Sentiment API</a></p>
+                <p><a href="/widgets">Webmaster Widgets</a></p>
+                <p><a href="/finance-sentiment-cli">Finance Sentiment CLI</a></p>
+                <p><a href="/finance-sentiment-analyzer">Finance Sentiment Analyzer</a></p>
+                <p><a href="/buzzscore-whitepaper.pdf" target="_blank" rel="noopener">BuzzScore Whitepaper</a></p>
+            </div>
+            <div class="footer-col">
+                <div class="footer-heading">Rankings</div>
+                <p><a href="/stocks/">Stock Sentiment Tracker</a></p>
+                <p><a href="/stock-market-sentiment-index">Fear &amp; Greed Index</a></p>
+                <p><a href="/market-movers-today">Market Movers Today</a></p>
+                <p><a href="/reddit-top-100-stocks">Reddit Top 100 Stocks</a></p>
+                <p><a href="/reddit-top-100-crypto">Reddit Top 100 Crypto Coins</a></p>
+                <p><a href="/x-top-100-stocks">X Top 100 Stocks</a></p>
+                <p><a href="/news-top-50-stocks">News Top 50 Stocks</a></p>
+                <p><a href="/polymarket-top-50-stocks">Polymarket Top 50 Stocks</a></p>
+            </div>
+            <div class="footer-col">
+                <div class="footer-heading">Resources</div>
+                <p><a href="/ticker-database/">Ticker Database</a></p>
+                <p><a href="/insights/">Insights</a></p>
+                <p><a href="/contact">Contact</a></p>
+                <p><a href="/about">About</a></p>
+                <p><a href="/pricing">Pricing</a></p>
+                <p><a href="/privacy">Privacy Policy</a></p>
+                <p><a href="/terms">Terms of Service</a></p>
+            </div>
+            <div class="footer-col">
+                <div class="footer-heading">Status</div>
+                <p><a href="https://status.adanos.org/" target="_blank" rel="noopener nofollow">System Status</a></p>
+                <p><a href="https://api.adanos.org/docs" target="_blank" rel="noopener">API Docs</a></p>
+                <p><a href="https://api.adanos.org/changelog" target="_blank" rel="noopener">Changelog</a></p>
+                <p><a href="https://github.com/adanos-software" target="_blank" rel="noopener">GitHub</a></p>
+                <p><a href="/key" rel="nofollow">Recover API key</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Adanos Software GmbH</span>
+            <span class="footer-green"><svg width="14" height="14" viewBox="0 0 24 24" fill="var(--c-green)"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg><span class="m-hidden">Hosted with </span>100% renewable<span class="m-hidden"> energy</span></span>
+        </div>
+    </footer>
+<script src="scripts/sentiment-shared.js" defer></script>
+<script>
+(function () {
+  var ids = ['hn-tab-trending', 'hn-tab-stock', 'hn-tab-market', 'hn-tab-compare', 'hn-tab-explain', 'hn-tab-mentions'];
+  var radios = ids.map(function (id) { return document.getElementById(id); });
+  if (radios.some(function (r) { return !r; })) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var visual = document.querySelector('.hn-visual');
+  var i = 0, paused = false, inView = true, timer = null;
+  radios.forEach(function (r, idx) { if (r.checked) i = idx; });
+  // any real user interaction with the tabs stops auto-rotation for good
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+  radios.forEach(function (r) { r.addEventListener('change', stop); });
+  if (visual) {
+    visual.addEventListener('mouseenter', function () { paused = true; });
+    visual.addEventListener('mouseleave', function () { paused = false; });
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { inView = es[0].isIntersecting; }, { threshold: 0.25 }).observe(visual);
+    }
+  }
+  timer = setInterval(function () {
+    if (paused || document.hidden || !inView) return;
+    i = (i + 1) % radios.length;
+    radios[i].checked = true;
+  }, 3800);
+})();
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"b6728a19306b4393b9690f7434f70d8a","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+User-agent: *
+
+Disallow: /email_template/
+
+
+Disallow: /webadmin/
+Disallow: /REVAMP/
+Disallow: /APP/
+
+Disallow: /cappertechadmin/
+
+Disallow: /h2h$
+Disallow: /odds$
+Disallow: /lineup$
+Disallow: /standings$
+Disallow: /soccer-news-detail/
+Disallow: /mysqlminiadmin.php
+Disallow: /mysqlminiadmin11.php
+Disallow: /webadmin/
+Disallow: /soccer-news.html
+
+Disallow: /cgi-bin/
+
+Sitemap: http://www.betfame.com/sitemap.xml
+
+User-Agent: Googlebot
+
+User-Agent: Googlebot-Mobile
+
+User-Agent: Slurp
+
+User-Agent: Baidu

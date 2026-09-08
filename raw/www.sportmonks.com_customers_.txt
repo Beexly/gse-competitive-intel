@@ -1,0 +1,1722 @@
+<!doctype html>
+<html lang="en-US">
+
+<!-- Created by Stimmt - www.stimmt.digital - Copyright Sportmonks -->
+
+<head>
+    <title>Sportmonks Customer Stories | Football API Case Studies</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="dns-prefetch" href="https://www.sportmonks.com">
+    <link rel="preconnect" href="https://www.sportmonks.com">
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.sportmonks.com/wp-content/themes/sportmonks/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.sportmonks.com/wp-content/themes/sportmonks/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.sportmonks.com/wp-content/themes/sportmonks/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://www.sportmonks.com/wp-content/themes/sportmonks/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://www.sportmonks.com/wp-content/themes/sportmonks/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffa800">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        @media only screen and (min-width: 992px) {
+            .item-resources .item-wrapper {
+                max-width: 75% !important;
+                flex: 1 1 75% !important;
+            }
+        }
+    </style>
+
+    
+    
+
+    <link rel="preload" href="https://www.sportmonks.com/wp-content/themes/sportmonks/assets/fonts/AvenirNext-HeavyItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.sportmonks.com/wp-content/themes/sportmonks/assets/fonts/AvenirNext-MediumItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.sportmonks.com/wp-content/themes/sportmonks/assets/fonts/SofiaProSoft.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.sportmonks.com/wp-content/themes/sportmonks/assets/fonts/SofiaProSoft-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.sportmonks.com/wp-content/themes/sportmonks/assets/fonts/SofiaProSoft-BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.sportmonks.com/wp-content/themes/sportmonks/assets/fonts/SofiaProSoft-Medium.woff2" as="font" type="font/woff2" crossorigin>
+
+    <script type="text/javascript">
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+
+	gtag("consent", "default", {
+		ad_personalization: "denied",
+		ad_storage: "denied",
+		ad_user_data: "denied",
+		analytics_storage: "denied",
+		functionality_storage: "denied",
+		personalization_storage: "denied",
+		security_storage: "granted",
+		wait_for_update: 500,
+	});
+	gtag("set", "ads_data_redaction", true);
+	</script>
+<script type="text/javascript">
+		(function (w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+		var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(
+		window,
+		document,
+		'script',
+		'dataLayer',
+		'GTM-55GQZFP'
+	);
+</script>
+<script type="text/javascript"
+		id="Cookiebot"
+		src="https://consent.cookiebot.com/uc.js"
+		data-implementation="wp"
+		data-cbid="e28d310e-d570-4e01-9e28-8666d9fde07b"
+								></script>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+        <script type="text/javascript">
+            var wpcs_is_mobile = 0;
+            var wpcs_drop_down_view = "ddslick";
+            var wpcs_current_currency = {"name":"USD","rate":1,"interest":"","symbol":"&#36;","position":"right","is_etalon":1,"description":"USA dollar","hide_cents":0,"flag":""};
+            var wpcs_default_currency = {"name":"USD","rate":1,"interest":"","symbol":"&#36;","position":"right","is_etalon":1,"description":"USA dollar","hide_cents":0,"flag":""};
+            var wpcs_array_of_get = '{}';
+        
+            wpcs_array_no_cents = '["JPY","TWD"]';
+
+            var wpcs_ajaxurl = "https://www.sportmonks.com/wp-admin/admin-ajax.php";
+            var wpcs_lang_loading = "loading";
+            var wpcs_shop_is_cached =0;
+            var wpcs_special_ajax_mode = 0;
+        </script>
+        
+	<!-- This site is optimized with the Yoast SEO plugin v28.3 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<meta name="description" content="See how clubs, fantasy games, betting tools and AI media platforms build on the Sportmonks Football API. Real customers, real results, filterable by use case." />
+	<link rel="canonical" href="https://www.sportmonks.com/customers/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Sportmonks Customer Stories | Football API Case Studies" />
+	<meta property="og:description" content="See how clubs, fantasy games, betting tools and AI media platforms build on the Sportmonks Football API. Real customers, real results, filterable by use case." />
+	<meta property="og:url" content="https://www.sportmonks.com/customers/" />
+	<meta property="og:site_name" content="Sportmonks" />
+	<meta property="article:publisher" content="https://www.facebook.com/SP0RTM0NKS.C0M" />
+	<meta property="article:modified_time" content="2026-08-12T14:17:02+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@SportMonks_com" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="10 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/www.sportmonks.com\/customers\/","url":"https:\/\/www.sportmonks.com\/customers\/","name":"Sportmonks Customer Stories | Football API Case Studies","isPartOf":{"@id":"https:\/\/www.sportmonks.com\/#website"},"datePublished":"2023-09-05T14:23:38+00:00","dateModified":"2026-08-12T14:17:02+00:00","description":"See how clubs, fantasy games, betting tools and AI media platforms build on the Sportmonks Football API. Real customers, real results, filterable by use case.","breadcrumb":{"@id":"https:\/\/www.sportmonks.com\/customers\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/www.sportmonks.com\/customers\/"]}]},{"@type":"BreadcrumbList","@id":"https:\/\/www.sportmonks.com\/customers\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/www.sportmonks.com\/"},{"@type":"ListItem","position":2,"name":"Why clients use Sportmonks?","item":"https:\/\/www.sportmonks.com\/customers\/"}]},{"@type":"WebSite","@id":"https:\/\/www.sportmonks.com\/#website","url":"https:\/\/www.sportmonks.com\/","name":"Sportmonks","description":"football, cricket and Formula One API&#039;s","publisher":{"@id":"https:\/\/www.sportmonks.com\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.sportmonks.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https:\/\/www.sportmonks.com\/#organization","name":"Sportmonks","alternateName":"Sportmonks","url":"https:\/\/www.sportmonks.com\/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/www.sportmonks.com\/#\/schema\/logo\/image\/","url":"https:\/\/www.sportmonks.com\/wp-content\/uploads\/2024\/02\/logo-zwart-1-1.png","contentUrl":"https:\/\/www.sportmonks.com\/wp-content\/uploads\/2024\/02\/logo-zwart-1-1.png","width":641,"height":80,"caption":"Sportmonks"},"image":{"@id":"https:\/\/www.sportmonks.com\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.facebook.com\/SP0RTM0NKS.C0M","https:\/\/x.com\/SportMonks_com","https:\/\/www.instagram.com\/sportmonks\/","https:\/\/www.linkedin.com\/company\/sportmonks\/","https:\/\/www.youtube.com\/channel\/UCVRpMzpDOCLiuHrSm4Fx0yQ"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.google.com' />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='popup-maker-site-css' href='//www.sportmonks.com/wp-content/uploads/pum/pum-site-styles.css?generated=1787060832&#038;ver=1.24.0' media='all' />
+<link rel='stylesheet' id='__EPYT__style-css' href='https://www.sportmonks.com/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=14.2.6' media='all' />
+<style id="__EPYT__style-inline-css">
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+/*# sourceURL=__EPYT__style-inline-css */
+</style>
+<link rel='stylesheet' id='theme-css-css' href='https://www.sportmonks.com/wp-content/themes/sportmonks/dist/bundle.1c3c801a.css?ver=7.0.4' media='all' />
+<link rel='stylesheet' id='currency-switcher-css' href='https://www.sportmonks.com/wp-content/plugins/currency-switcher/css/front.css?ver=1.3.2' media='all' />
+<script id="jquery-core-js" src="https://www.sportmonks.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://www.sportmonks.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="wpml-legacy-dropdown-0-js" src="https://www.sportmonks.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown/script.min.js?ver=1"></script>
+<script id="__ytprefs__-js-extra">
+var _EPYT_ = {"ajaxurl":"https://www.sportmonks.com/wp-admin/admin-ajax.php","security":"bd646334c9","gallery_scrolloffset":"20","eppathtoscripts":"https://www.sportmonks.com/wp-content/plugins/youtube-embed-plus/scripts/","eppath":"https://www.sportmonks.com/wp-content/plugins/youtube-embed-plus/","epresponsiveselector":"[\"iframe.__youtube_prefs_widget__\"]","epdovol":"1","version":"14.2.6","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com/embed/\"], iframe[src*=\"youtube-nocookie.com/embed/\"]","ajax_compat":"","maxres_facade":"eager","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","facade_mode":"1","not_live_on_channel":""};
+//# sourceURL=__ytprefs__-js-extra
+</script>
+<script id="__ytprefs__-js" defer src="https://www.sportmonks.com/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js?ver=14.2.6"></script>
+<script id="jquery.ddslick.min-js" src="https://www.sportmonks.com/wp-content/plugins/currency-switcher/js/jquery.ddslick.min.js?ver=1.3.2"></script>
+<script id="currency-switcher-js" src="https://www.sportmonks.com/wp-content/plugins/currency-switcher/js/front.js?ver=1.3.2"></script>
+<meta name="generator" content="WPML ver:4.9.7 stt:37,1,4,3,42,41,2;" />
+		<script type="text/javascript">
+			(function(c, l, a, r, i, t, y) {
+				c[a] = c[a] || function() {
+					(c[a].q = c[a].q || []).push(arguments)
+				};
+				t = l.createElement(r);
+				t.async = 1;
+				t.src = "https://www.clarity.ms/tag/" + i + "?ref=wordpress";
+				y = l.getElementsByTagName(r)[0];
+				y.parentNode.insertBefore(t, y);
+			})(window, document, "clarity", "script", "vy85ooiwqs");
+		</script>
+	<style id="sm-pricing-save-badge-css">
+.save-badge {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0F1221;
+    background: #26E080;
+    border-radius: 100px;
+    padding: 3px 15px;
+    margin-right: -20px;
+    margin-left: 12px;
+}
+.switch__switch {
+    opacity: 1 !important;
+    color: rgb(255 255 255 / 40%) !important;
+}
+.switch__switch--active {
+    color: #01002C !important;
+}
+</style>
+		<script>
+			document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+		</script>
+		<!-- SportMonks — Login Link Click Tracking -->
+<!-- WPCode: Code Type = HTML Snippet · Insert = Site Wide Header -->
+
+<script>
+(function() {
+  'use strict';
+
+  var tagged = false;
+  var tries = 0;
+  var MAX_TRIES = 600; // ~10s at 60fps
+
+  function tagLogin() {
+    if (tagged) return;
+    tries++;
+
+    // Try multiple selectors to catch the Login link wherever it lives
+    var loginLink =
+      document.querySelector('#menu-item-18 > a') ||
+      document.querySelector('a[href="https://my.sportmonks.com/login"]') ||
+      document.querySelector('a[href*="my.sportmonks.com/login"]');
+
+    if (loginLink) {
+      loginLink.id = 'nav-login-link';
+      loginLink.setAttribute('data-track', 'nav-login-link');
+      loginLink.setAttribute('data-event', 'click_nav_login');
+      tagged = true;
+      return;
+    }
+    if (tries < MAX_TRIES) {
+      requestAnimationFrame(tagLogin);
+    }
+  }
+
+  requestAnimationFrame(tagLogin);
+})();
+</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.sportmonks.com/#organization","name":"Sportmonks","url":"https://www.sportmonks.com/","logo":{"@type":"ImageObject","url":"https://www.sportmonks.com/wp-content/uploads/2024/02/logo-zwart-1-1.png","width":641,"height":80},"description":"Sportmonks is the most approachable sports data API. 2,200+ football leagues plus cricket and Formula 1, with real-time data, proprietary metrics (xG, Pressure Index, Predictions) and 99.99% uptime.","foundingDate":"2014","address":{"@type":"PostalAddress","streetAddress":"Papenstraat 26","addressLocality":"Deventer","postalCode":"7411 ND","addressCountry":"NL"},"email":"support@sportmonks.com","sameAs":["https://www.linkedin.com/company/sportmonks/","https://twitter.com/sportmonks_com","https://www.facebook.com/SP0RTM0NKS.C0M/","https://www.instagram.com/sportmonks/","https://github.com/sportmonks"],"knowsAbout":["Football Data API","Sports Data API","Expected Goals (xG)","Live Football Scores","Football Predictions","Cricket Data API","Formula 1 Data API","Sports Betting Data","Premier League Data"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.sportmonks.com/#website","url":"https://www.sportmonks.com/","name":"Sportmonks","description":"The most approachable sports data API.","publisher":{"@id":"https://www.sportmonks.com/#organization"},"inLanguage":"en-US"}</script>
+<style id="sm-cookiebot-mobile">
+/* Cookiebot Swift — MOBILE ONLY (<=600px). Desktop unaffected. */
+@media only screen and (max-width: 600px) {
+
+  /* 1. Slim bottom sheet, height-capped so it never blocks the page */
+  #CybotCookiebotDialog {
+    position: fixed !important;
+    top: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    max-height: 46vh !important;
+    margin: 0 !important;
+    border-radius: 12px 12px 0 0 !important;
+    overflow-y: auto !important;
+    box-shadow: 0 -2px 14px rgba(0, 0, 0, .25) !important;
+  }
+
+  /* 2. Tighten inner padding */
+  #CybotCookiebotDialogBody,
+  #CybotCookiebotDialogBodyContent,
+  .CybotCookiebotDialogContentWrapper,
+  .CybotCookiebotDialogBodyBottomWrapper {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  /* 3. Hide logos + header to save height */
+  #CybotCookiebotDialogHeader,
+  #CybotCookiebotDialogBodyLogo,
+  #CybotCookiebotDialogPoweredbyImage,
+  .CybotCookiebotDialogPoweredbyLink,
+  #CybotCookiebotDialogPoweredByText {
+    display: none !important;
+  }
+
+  /* 4. Smaller title + body text */
+  #CybotCookiebotDialogBodyContentTitle {
+    font-size: 15px !important;
+    margin-bottom: 4px !important;
+  }
+  #CybotCookiebotDialogBodyContentText,
+  #CybotCookiebotDialogBodyContentText p {
+    font-size: 13px !important;
+    line-height: 1.35 !important;
+  }
+
+  /* 5. Compact buttons (Allow all / Customize / Deny) */
+  #CybotCookiebotDialogBodyButtonsWrapper,
+  #CybotCookiebotDialogBodyButtons,
+  #CybotCookiebotDialogBodyLevelButtonsSelectPane {
+    gap: 8px !important;
+  }
+  #CybotCookiebotDialogBodyButtonsWrapper a,
+  #CybotCookiebotDialogBodyButtonsWrapper button,
+  #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
+  #CybotCookiebotDialogBodyLevelButtonCustomize,
+  #CybotCookiebotDialogBodyButtonDecline,
+  .CybotCookiebotDialogBodyButton {
+    padding: 9px 14px !important;
+    font-size: 14px !important;
+    min-height: 0 !important;
+    line-height: 1.2 !important;
+  }
+}
+</style>
+		
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-55GQZFP');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- begin Convert Experiences code--><script type="text/javascript" src="//cdn-4.convertexperiments.com/v1/js/10048205-100417408.js?environment=production"></script><!-- end Convert Experiences code -->
+</head>
+
+<body class="wp-singular page-template-default page page-id-18782 page-parent wp-theme-sportmonks currency-usd">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55GQZFP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="live-now">Live now!</div>
+                    <nav class="top-navigation">
+                                            </nav>
+                    
+<div
+	 role="navigation" aria-label="Language Switcher" class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-dropdown js-wpml-ls-legacy-dropdown" id="lang_sel">
+	<ul>
+		<li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-last-item wpml-ls-item-legacy-dropdown">
+									<a href="#" hreflang="en" lang="en" class="js-wpml-ls-item-toggle wpml-ls-item-toggle lang_sel_sel icl-en" aria-current="page" aria-expanded="false" aria-controls="wpml-ls-submenu-lang_sel" aria-label="EN – Language switcher, press tab to navigate to other languages" title="Switch to EN">
+				<span class="wpml-ls-native icl_lang_sel_native">EN</span></a>
+
+			<ul id="wpml-ls-submenu-lang_sel" class="wpml-ls-sub-menu">
+							</ul>
+
+		</li>
+
+	</ul>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="header__bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="/" class="page-logo" aria-label="Go to homepage">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240 30"><defs><path id="a" d="M.27.124h22.355v29.501H.271z"/><path id="c" d="M.232.061H39.68v22.355H.232z"/></defs><g fill="none" fill-rule="evenodd"><path d="M10.857 8.983c1.893 0 3.517.678 4.872 2.033 1.355 1.336 2.032 2.96 2.032 4.872 0 1.91-.677 3.535-2.032 4.871-1.355 1.355-2.979 2.032-4.872 2.032H0V17.53h10.857c.446 0 .825-.157 1.142-.473.334-.334.5-.724.5-1.17 0-.445-.166-.835-.5-1.17a1.558 1.558 0 00-1.142-.472H6.905c-1.912 0-3.537-.677-4.873-2.032C.678 10.858 0 9.233 0 7.34 0 5.43.678 3.805 2.033 2.469 3.368 1.115 4.992.437 6.905.437h10.188V5.7H6.904a1.65 1.65 0 00-1.17.473 1.586 1.586 0 00-.472 1.169c0 .445.157.835.473 1.17.334.315.724.472 1.17.472h3.952z" fill="#FFF"/><g transform="translate(19.5 .314)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M11.462 5.385c-1.633 0-3.034.575-4.204 1.726-1.15 1.17-1.726 2.57-1.726 4.204 0 1.614.576 3.006 1.726 4.175 1.17 1.152 2.57 1.726 4.204 1.726 1.615 0 3.007-.574 4.176-1.726 1.15-1.169 1.726-2.56 1.726-4.175 0-1.633-.576-3.035-1.726-4.204-1.17-1.15-2.56-1.726-4.176-1.726zM5.532 29.61l-5.261.016v-17.67h.028a8.534 8.534 0 01-.028-.64c0-3.1 1.094-5.735 3.285-7.906C5.727 1.219 8.362.124 11.462.124c3.08 0 5.707 1.095 7.879 3.285 2.19 2.171 3.284 4.806 3.284 7.906 0 3.08-1.095 5.706-3.284 7.878-2.172 2.19-4.798 3.285-7.879 3.285-2.153 0-4.13-.566-5.93-1.698v8.83z" fill="#FFF" mask="url(#b)"/></g><path d="M55.327 5.699c-1.633 0-3.034.575-4.204 1.726-1.15 1.169-1.726 2.56-1.726 4.175 0 1.634.575 3.035 1.726 4.204 1.17 1.151 2.57 1.726 4.204 1.726 1.615 0 3.006-.575 4.175-1.726 1.15-1.17 1.726-2.57 1.726-4.204 0-1.614-.575-3.006-1.726-4.175-1.169-1.151-2.56-1.726-4.175-1.726m0 17.093c-3.1 0-5.735-1.095-7.906-3.285-2.19-2.172-3.285-4.807-3.285-7.907 0-3.08 1.094-5.706 3.285-7.878 2.171-2.19 4.806-3.285 7.906-3.285 3.08 0 5.707 1.095 7.878 3.285 2.19 2.172 3.285 4.798 3.285 7.878 0 3.1-1.095 5.735-3.285 7.907-2.171 2.19-4.798 3.285-7.878 3.285M68.5 11.6c0-3.08 1.095-5.706 3.285-7.878 2.172-2.19 4.806-3.285 7.907-3.285h4.593V5.7h-4.593c-1.634 0-3.035.575-4.204 1.726-1.151 1.169-1.726 2.56-1.726 4.175v11.192H68.5V11.6z" fill="#FFF"/><g transform="translate(103.875 .314)"><mask id="d" fill="#fff"><use xlink:href="#c"/></mask><path d="M34.418 11.225c0-1.615-.575-3.007-1.726-4.176-1.15-1.15-2.543-1.726-4.176-1.726s-3.034.575-4.203 1.726c-1.151 1.169-1.727 2.56-1.727 4.176v11.19h-5.26v-11.19c0-1.615-.577-3.007-1.727-4.176-1.17-1.15-2.56-1.726-4.175-1.726-1.634 0-3.035.575-4.204 1.726-1.151 1.169-1.726 2.56-1.726 4.176v11.19H.232v-11.19c0-3.08 1.095-5.707 3.286-7.879C5.688 1.156 8.324.061 11.424.061c3.452 0 6.3 1.327 8.546 3.981 2.227-2.654 5.076-3.98 8.546-3.98 3.08 0 5.717 1.095 7.906 3.284 2.172 2.172 3.257 4.798 3.257 7.879v11.19h-5.261v-11.19z" fill="#FFF" mask="url(#d)"/></g><path d="M156.765 5.699c-1.634 0-3.035.575-4.204 1.726-1.15 1.169-1.726 2.56-1.726 4.175 0 1.634.575 3.035 1.726 4.204 1.17 1.151 2.57 1.726 4.204 1.726 1.614 0 3.006-.575 4.175-1.726 1.15-1.17 1.726-2.57 1.726-4.204 0-1.614-.575-3.006-1.726-4.175-1.169-1.151-2.56-1.726-4.175-1.726m0 17.093c-3.1 0-5.735-1.095-7.907-3.285-2.19-2.172-3.285-4.807-3.285-7.907 0-3.08 1.095-5.706 3.285-7.878 2.172-2.19 4.806-3.285 7.907-3.285 3.08 0 5.707 1.095 7.878 3.285 2.19 2.172 3.285 4.798 3.285 7.878 0 3.1-1.095 5.735-3.285 7.907-2.171 2.19-4.798 3.285-7.878 3.285M175.208 22.791h-5.262v-11.19c0-3.081 1.095-5.707 3.285-7.88 2.172-2.188 4.807-3.284 7.907-3.284 3.08 0 5.706 1.096 7.878 3.285 2.19 2.172 3.285 4.798 3.285 7.878v11.191h-5.261v-11.19c0-1.615-.576-3.007-1.727-4.176-1.169-1.15-2.56-1.726-4.175-1.726-1.634 0-3.035.575-4.204 1.726-1.151 1.169-1.726 2.56-1.726 4.175v11.191zM199.553 22.791h-5.261V.437h5.261v8.491c2.21-.167 4.074-1.058 5.596-2.673 1.522-1.651 2.283-3.59 2.283-5.818h5.261c0 4.696-1.912 8.417-5.734 11.163 3.822 2.766 5.734 6.496 5.734 11.191h-5.261c0-2.227-.761-4.166-2.283-5.818-1.522-1.614-3.387-2.505-5.596-2.672v8.49zM225.57 8.983c1.893 0 3.517.678 4.871 2.033 1.355 1.336 2.033 2.96 2.033 4.872 0 1.91-.678 3.535-2.033 4.871-1.354 1.355-2.978 2.032-4.87 2.032h-10.858V17.53h10.857c.445 0 .825-.157 1.14-.473.335-.334.502-.724.502-1.17 0-.445-.167-.835-.501-1.17a1.557 1.557 0 00-1.14-.472h-3.954c-1.912 0-3.536-.677-4.872-2.032-1.355-1.355-2.032-2.98-2.032-4.872 0-1.911.677-3.536 2.032-4.872 1.336-1.354 2.96-2.032 4.872-2.032h10.189V5.7h-10.19a1.65 1.65 0 00-1.169.473 1.587 1.587 0 00-.473 1.169c0 .445.158.835.473 1.17.334.315.724.472 1.17.472h3.953zM97.495 17.53c-1.633 0-3.034-.576-4.204-1.726-1.15-1.169-1.726-2.56-1.726-4.176v-5.93h7.563V.439H86.304v11.19c0 3.081 1.094 5.707 3.285 7.879 2.171 2.19 4.806 3.284 7.906 3.284h4.593v-5.26h-4.593z" fill="#FFF"/><path d="M239.994 20.06a2.732 2.732 0 11-5.464-.001 2.732 2.732 0 015.464 0" fill="#FF0F50"/></g></svg>
+                    </a>
+
+                    <div class="mobile-wrapper-new">
+                        <nav class="page-navigation">
+                            <ul id="menu-2024-hoofdmenu-test" class="page-navigation__menu"><li id="menu-item-588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-588"><a href="https://www.sportmonks.com/football-api/">Football</a>
+<div class='sub-menu-toggle'><svg width="6" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M.5 10.5l5-5-5-5z" fill="#FFF" fill-rule="evenodd"/></svg></div><div class='sub-menu-first'><ul class='sub-menu-first__wrapper'>
+	<li id="menu-item-24589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24589"><a href="https://www.sportmonks.com/football-api/">API</a></li>
+	<li id="menu-item-24841" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24841"><a target="_blank" href="https://docs.sportmonks.com/football">Documentation</a></li>
+	<li id="menu-item-48921" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-48921"><a href="#">Add-ons</a>
+	<ul class='sub-menu'>
+		<li id="menu-item-24548" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24548"><a href="https://www.sportmonks.com/football-api/xg-data/">xG Data</a></li>
+		<li id="menu-item-43629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43629"><a href="https://www.sportmonks.com/football-api/expected-lineups-api/">Expected Lineups</a></li>
+		<li id="menu-item-1937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1937"><a href="https://www.sportmonks.com/football-api/football-predictions-api/">Predictions</a></li>
+		<li id="menu-item-24550" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24550"><a href="https://www.sportmonks.com/football-api/football-pressure-index/">Pressure Index</a></li>
+		<li id="menu-item-24549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24549"><a href="https://www.sportmonks.com/football-api/premium-odds-feed/">Premium Odds Feed</a></li>
+		<li id="menu-item-43630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43630"><a href="https://www.sportmonks.com/football-api/transfer-rumours-api/">Transfer Rumours API</a></li>
+		<li id="menu-item-44628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44628"><a href="https://www.sportmonks.com/football-api/football-match-facts/">Football Match Facts</a></li>
+		<li id="menu-item-1938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1938"><a href="https://www.sportmonks.com/football-api/football-news-api/">News</a></li>
+</ul>
+</li>
+	<li id="menu-item-686" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-686"><a href="https://www.sportmonks.com/football-api/plans-pricing">Plans &#038; Pricing</a></li>
+	<li id="menu-item-4692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4692"><a href="https://www.sportmonks.com/football-api/coverage/">Coverage</a>
+	<ul class='sub-menu'>
+		<li id="menu-item-4693" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4693"><a href="https://www.sportmonks.com/football-api/plans-pricing/#alldatafeatures">Data Features</a></li>
+		<li id="menu-item-24619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24619"><a href="https://www.sportmonks.com/football-api/premier-league-api/">Premier League</a></li>
+		<li id="menu-item-24620" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24620"><a href="https://www.sportmonks.com/football-api/la-liga-api/">La Liga</a></li>
+		<li id="menu-item-24621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24621"><a href="https://www.sportmonks.com/football-api/bundesliga-api/">The Bundesliga</a></li>
+		<li id="menu-item-24623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24623"><a href="https://www.sportmonks.com/football-api/serie-a-api/">The Serie A</a></li>
+		<li id="menu-item-24622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24622"><a href="https://www.sportmonks.com/football-api/ligue-1-api/">Ligue 1</a></li>
+		<li id="menu-item-589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-589"><a href="https://www.sportmonks.com/football-api/coverage/">All Leagues</a></li>
+</ul>
+</li>
+</ul></div>
+</li>
+<li id="menu-item-2335" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2335"><a href="https://www.sportmonks.com/football-api/football-widgets/">Widgets</a>
+<div class='sub-menu-toggle'><svg width="6" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M.5 10.5l5-5-5-5z" fill="#FFF" fill-rule="evenodd"/></svg></div><div class='sub-menu-first'><ul class='sub-menu-first__wrapper'>
+	<li id="menu-item-24840" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24840"><a target="_blank" href="https://docs.sportmonks.com/football-widgets">Documentation</a></li>
+	<li id="menu-item-24591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24591"><a href="https://www.sportmonks.com/football-api/football-widgets/livescore-widgets/">Livescore</a></li>
+	<li id="menu-item-46975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46975"><a href="https://www.sportmonks.com/football-api/football-widgets/wordpress-widgets/">WordPress Widgets</a></li>
+</ul></div>
+</li>
+<li id="menu-item-1223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1223"><a href="https://www.sportmonks.com/cricket-api/">Cricket</a>
+<div class='sub-menu-toggle'><svg width="6" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M.5 10.5l5-5-5-5z" fill="#FFF" fill-rule="evenodd"/></svg></div><div class='sub-menu-first'><ul class='sub-menu-first__wrapper'>
+	<li id="menu-item-24624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24624"><a href="https://www.sportmonks.com/cricket-api/">API</a></li>
+	<li id="menu-item-24837" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24837"><a target="_blank" href="https://docs.sportmonks.com/cricket">Documentation</a></li>
+	<li id="menu-item-1638" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1638"><a href="https://www.sportmonks.com/cricket-api/#plans">Plans &#038; Pricing</a></li>
+	<li id="menu-item-1637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1637"><a href="https://www.sportmonks.com/cricket-api/coverage/">Coverage</a></li>
+</ul></div>
+</li>
+<li id="menu-item-591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-591"><a href="https://www.sportmonks.com/formula-one-api/">Formula 1</a>
+<div class='sub-menu-toggle'><svg width="6" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M.5 10.5l5-5-5-5z" fill="#FFF" fill-rule="evenodd"/></svg></div><div class='sub-menu-first'><ul class='sub-menu-first__wrapper'>
+	<li id="menu-item-24626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24626"><a href="https://www.sportmonks.com/formula-one-api/">API</a></li>
+	<li id="menu-item-24838" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24838"><a target="_blank" href="https://docs.sportmonks.com/v3/motorsport-api">Documentation</a></li>
+	<li id="menu-item-24625" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24625"><a href="https://www.sportmonks.com/formula-one-api/#formula-1-plan">Plans &#038; Pricing</a></li>
+</ul></div>
+</li>
+<li id="menu-item-38087" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-38087"><a href="https://www.sportmonks.com/football-api/solutions/">Solutions</a>
+<div class='sub-menu-toggle'><svg width="6" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M.5 10.5l5-5-5-5z" fill="#FFF" fill-rule="evenodd"/></svg></div><div class='sub-menu-first'><ul class='sub-menu-first__wrapper'>
+	<li id="menu-item-38089" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38089"><a href="https://www.sportmonks.com/football-api/solutions/livescore-api/">Livescore Portals</a></li>
+	<li id="menu-item-38091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38091"><a href="https://www.sportmonks.com/football-api/solutions/sports-betting-api/">Sports Betting Platforms</a></li>
+	<li id="menu-item-38088" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38088"><a href="https://www.sportmonks.com/football-api/solutions/fantasy-football-api/">Fantasy Football Games</a></li>
+	<li id="menu-item-38092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38092"><a href="https://www.sportmonks.com/football-api/solutions/football-clubs/">Football Clubs &#038; Scouting</a></li>
+	<li id="menu-item-38090" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38090"><a href="https://www.sportmonks.com/football-api/solutions/sports-media/">Sports Media</a></li>
+	<li id="menu-item-24565" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-18782 current_page_item menu-item-24565"><a href="https://www.sportmonks.com/customers/" aria-current="page">Case Studies</a></li>
+</ul></div>
+</li>
+<li id="menu-item-25126" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25126"><a href="#">Resources</a>
+<div class='sub-menu-toggle'><svg width="6" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M.5 10.5l5-5-5-5z" fill="#FFF" fill-rule="evenodd"/></svg></div><div class='sub-menu-first'><ul class='sub-menu-first__wrapper'>
+	<li id="menu-item-612" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-612"><a target="_blank" href="https://docs.sportmonks.com/football/">Documentation</a>
+	<ul class='sub-menu'>
+		<li id="menu-item-613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-613"><a target="_blank" href="https://docs.sportmonks.com/football/">Football 3.0</a></li>
+		<li id="menu-item-615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-615"><a target="_blank" href="https://docs.sportmonks.com/cricket">Cricket</a></li>
+		<li id="menu-item-614" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-614"><a target="_blank" href="https://docs.sportmonks.com/v3/motorsport-api">Formula 1</a></li>
+		<li id="menu-item-24710" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24710"><a target="_blank" href="https://docs.sportmonks.com/football-widgets">Widgets</a></li>
+</ul>
+</li>
+	<li id="menu-item-595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-595"><a href="https://www.sportmonks.com/contact-support/">Contact<span class="sub-menu-first__icon"><img width="24" height="24" src="https://www.sportmonks.com/wp-content/uploads/2020/09/contact-icon.svg" loading="lazy" /></span></a></li>
+	<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://www.sportmonks.com/faq/">FAQ<span class="sub-menu-first__icon"><img width="24" height="24" src="https://www.sportmonks.com/wp-content/uploads/2020/09/careers-icon.svg" loading="lazy" /></span></a></li>
+	<li id="menu-item-24566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24566"><a href="https://www.sportmonks.com/terms-of-service/">Terms of Service</a></li>
+	<li id="menu-item-24588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-24588"><a rel="privacy-policy" href="https://www.sportmonks.com/privacy-policy/">Privacy Policy</a></li>
+</ul></div>
+</li>
+<li id="menu-item-594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-594"><a href="https://www.sportmonks.com/about-sportmonks/">About Sportmonks</a></li>
+<li id="menu-item-605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-605"><a href="https://www.sportmonks.com/blogs/">Blogs</a>
+<div class='sub-menu-toggle'><svg width="6" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M.5 10.5l5-5-5-5z" fill="#FFF" fill-rule="evenodd"/></svg></div><div class='sub-menu-first'><ul class='sub-menu-first__wrapper'>
+	<li id="menu-item-43623" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-43623"><a href="https://www.sportmonks.com/blogs/introducing-our-new-pricing-setup/">Introducing our new pricing setup</a></li>
+	<li id="menu-item-40255" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-40255"><a href="https://www.sportmonks.com/blogs/how-to-choose-a-football-api-provider/">How to select the right football data provider [2025]</a></li>
+	<li id="menu-item-40259" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-40259"><a href="https://www.sportmonks.com/blogs/whats-new-with-sportmonks-football-api-transfer-rumours/">New Football API Feature: Transfer Rumours</a></li>
+	<li id="menu-item-24587" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24587"><a href="https://www.sportmonks.com/blogs/">All Blogs</a></li>
+</ul></div>
+</li>
+</ul>                            <div class="page-navigation__overlay"></div>
+                        </nav>
+                        <nav class="button-navigation">
+                            <ul id="menu-hoofdmenu-rechts" class="button-navigation__menu"><li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a target="_blank" href="https://my.sportmonks.com/login">Login</a></li>
+<li id="menu-item-19" class="button button--red menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a target="_blank" href="https://my.sportmonks.com/register">Try for free</a></li>
+</ul>                        </nav>
+                    </div>
+
+                    <div class="mobile-toggle">
+
+                        <div class="mobile-toggle__open">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 14"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h28v2H0zM0 6h28v2H0zM0 12h28v2H0z"/></g></svg>
+                        </div>
+
+                        <div class="mobile-toggle__close">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><g fill="#FFF" fill-rule="evenodd"><path d="M1.929.515L17.485 16.07l-1.414 1.414L.515 1.93z"/><path d="M.515 16.071L16.07.515l1.414 1.414L1.93 17.485z"/></g></svg>
+                        </div>
+
+                        <div class="mobile-toggle__back">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12"><path d="M0 5h14.17l-3.58-3.59L12 0l6 6-6 6-1.41-1.41L14.17 7H0z" fill="#FFF" fill-rule="evenodd"/></svg>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+<section
+    class="page-top  "
+    id="page-top">
+
+    
+    <div class="container">
+
+                    <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="breadcrumbs"><span><span><a href="https://www.sportmonks.com/">Home</a></span>  <span class="breadcrumb_last" aria-current="page">Why clients use Sportmonks?</span></span></div>                </div>
+            </div>
+
+        
+        
+    <div class="row redesign-reverse">
+                    <div class="col-12 editor">
+                                    <!--
+  Sportmonks — Customers hub, Block 00: HERO  (v2 "live builder board")
+  Left: headline with a rotating audience word, each in its segment colour.
+  Right: a slow auto-scrolling board of REAL customers (customer-proof.md),
+  styled like a live scoreboard/departures ticker with a live pulse, tying
+  the hero to the live-data brand and showing breadth of who builds on us.
+  Segment dot colours match block 03/04. Pauses on prefers-reduced-motion.
+  Namespace sm-csh. Pillars: P1 + P3.
+-->
+<style>
+.sm-csh { background:#01002C; padding:64px 20px 52px; font-family:'Sofia Pro','Inter',sans-serif; color:#fff; overflow:hidden; }
+.sm-csh * { box-sizing:border-box; }
+.sm-csh .sm-inner { max-width:1180px; margin:0 auto; display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); gap:56px; align-items:center; }
+.sm-csh .sm-inner > * { min-width:0; }
+.sm-csh .sm-eyebrow { display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:#FF0F50; margin:0 0 20px; }
+.sm-csh h1 { font-family:'Avenir Next Heavy Italic','Avenir Next',sans-serif; font-style:italic; font-weight:900; font-size:clamp(34px,4.6vw,58px); line-height:1.02; letter-spacing:-.02em; margin:0 0 22px; color:#fff; }
+.sm-csh h1 .rot-wrap { display:block; height:1.06em; overflow:hidden; }
+.sm-csh h1 .rot { display:inline-block; transition:opacity .4s ease, transform .4s ease, color .4s ease; }
+.sm-csh h1 .rot.out { opacity:0; transform:translateY(-40%); }
+.sm-csh .sm-sub { font-size:17.5px; line-height:1.6; color:rgba(255,255,255,.8); margin:0 0 28px; max-width:500px; }
+.sm-csh .sm-ctas { display:flex; flex-wrap:wrap; gap:14px; margin-bottom:22px; }
+.sm-csh .sm-btn { display:inline-flex; align-items:center; gap:8px; padding:15px 30px; border-radius:14px; font:700 16px/1 'Sofia Pro',sans-serif; text-decoration:none; transition:transform .18s ease; }
+.sm-csh .sm-btn-p, .sm-csh .sm-btn-p:link, .sm-csh .sm-btn-p:visited, .sm-csh .sm-btn-p:hover { color:#fff !important; }
+.sm-csh .sm-btn-p { background:#FF0F50; box-shadow:0 12px 28px -10px rgba(255,15,80,.55); }
+.sm-csh .sm-btn-p:hover { transform:translateY(-2px); }
+.sm-csh .sm-btn-g, .sm-csh .sm-btn-g:link, .sm-csh .sm-btn-g:visited, .sm-csh .sm-btn-g:hover { color:#fff !important; }
+.sm-csh .sm-btn-g { background:transparent; border:1px solid rgba(255,255,255,.25); }
+.sm-csh .sm-btn-g:hover { transform:translateY(-2px); background:rgba(255,255,255,.06); }
+.sm-csh .sm-trust { display:flex; flex-wrap:wrap; gap:16px; font-size:13.5px; color:rgba(255,255,255,.6); }
+.sm-csh .sm-trust span { display:inline-flex; align-items:center; gap:6px; }
+.sm-csh .sm-trust b { color:#53e0ac; font-weight:400; }
+
+/* live board */
+.sm-csh .sm-board { position:relative; background:rgba(0,0,0,.4); border:1px solid rgba(255,255,255,.10); border-radius:20px; box-shadow:0 44px 100px -50px rgba(0,0,0,.95); overflow:hidden; }
+.sm-csh .sm-board-head { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:15px 20px; border-bottom:1px solid rgba(255,255,255,.10); background:rgba(255,255,255,.03); }
+.sm-csh .sm-live { display:inline-flex; align-items:center; gap:9px; font-size:11.5px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.85); }
+.sm-csh .sm-live .pulse { width:9px; height:9px; border-radius:50%; background:#22C55E; box-shadow:0 0 0 0 rgba(34,197,94,.6); animation:sm-csh-pulse 2s infinite; }
+.sm-csh .sm-board-note { font-size:11.5px; font-weight:700; color:rgba(255,255,255,.4); font-family:'Menlo','Monaco',monospace; }
+.sm-csh .sm-viewport { position:relative; height:452px; -webkit-mask-image:linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent); mask-image:linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent); }
+.sm-csh .sm-track { display:flex; flex-direction:column; animation:sm-csh-scroll 46s linear infinite; will-change:transform; }
+.sm-csh .sm-board:hover .sm-track { animation-play-state:paused; }
+.sm-csh .sm-row { display:flex; align-items:center; gap:14px; padding:15px 22px; border-bottom:1px solid rgba(255,255,255,.06); }
+.sm-csh .sm-dot { width:9px; height:9px; border-radius:50%; background:var(--c); flex-shrink:0; box-shadow:0 0 10px -1px var(--c); }
+.sm-csh .sm-rtext { min-width:0; flex-grow:1; }
+.sm-csh .sm-rname { font-family:'Avenir Next','Sofia Pro',sans-serif; font-weight:800; font-size:15.5px; color:#fff; }
+.sm-csh .sm-rdesc { font-size:12.5px; color:rgba(255,255,255,.55); margin-top:2px; }
+.sm-csh .sm-rseg { font-size:10px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--c); white-space:nowrap; flex-shrink:0; }
+.sm-csh .sm-board-foot { display:flex; align-items:center; gap:11px; padding:14px 20px; border-top:1px solid rgba(255,255,255,.10); background:rgba(255,255,255,.03); }
+.sm-csh .sm-fstars { color:#FF0F50; font-size:14px; letter-spacing:2px; flex-shrink:0; }
+.sm-csh .sm-ftext { font-size:12.5px; color:rgba(255,255,255,.6); line-height:1.4; }
+.sm-csh .sm-ftext b { color:#fff; font-weight:700; }
+@keyframes sm-csh-scroll { from { transform:translateY(0); } to { transform:translateY(-50%); } }
+@keyframes sm-csh-pulse { 0%{ box-shadow:0 0 0 0 rgba(34,197,94,.5);} 70%{ box-shadow:0 0 0 9px rgba(34,197,94,0);} 100%{ box-shadow:0 0 0 0 rgba(34,197,94,0);} }
+@media (max-width:980px){ .sm-csh .sm-inner { grid-template-columns:1fr; gap:40px; } .sm-csh .sm-viewport { height:360px; } }
+@media (max-width:560px){ .sm-csh { padding:48px 16px 40px; } .sm-csh .sm-viewport { height:320px; } }
+@media (prefers-reduced-motion:reduce){ .sm-csh .sm-track { animation:none; } .sm-csh .sm-live .pulse { animation:none; } .sm-csh h1 .rot { transition:none; } }
+</style>
+<section class="sm-csh">
+  <div class="sm-inner">
+    <div>
+      <span class="sm-eyebrow">Customer stories</span>
+      <h1>The <span class="rot-wrap"><span class="rot" id="sm-csh-rot" style="color:#53E0AC;">betting tools</span></span>shipping on Sportmonks</h1>
+      <p class="sm-sub">Club fan apps, fantasy games, betting tools, AI media platforms. Over 30,000 builders run on the same live football data. Here is what they built.</p>
+      <div class="sm-ctas">
+        <a class="sm-btn sm-btn-p" href="https://my.sportmonks.com/register">Start free with the same data</a>
+        <a class="sm-btn sm-btn-g" href="https://docs.sportmonks.com/football">Read the docs</a>
+      </div>
+      <div class="sm-trust">
+        <span><b>✓</b> No contracts, no minimums</span>
+        <span><b>✓</b> First call in minutes</span>
+        <span><b>✓</b> 99.99% uptime</span>
+      </div>
+    </div>
+
+    <div class="sm-board">
+      <div class="sm-board-head">
+        <span class="sm-live"><span class="pulse"></span> Live on Sportmonks</span>
+        <span class="sm-board-note">30,000+ builders</span>
+      </div>
+      <div class="sm-viewport">
+        <div class="sm-track" id="sm-csh-track">
+          <!-- SET A (15 real customers) -->
+          <div class="sm-row" style="--c:#34D399;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">ShiftOneZero</div><div class="sm-rdesc">Dinamo Zagreb fan app</div></div><span class="sm-rseg">Clubs</span></div>
+          <div class="sm-row" style="--c:#C4B5FD;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Botbrains</div><div class="sm-rdesc">AI live commentary, 12+ languages</div></div><span class="sm-rseg">Media</span></div>
+          <div class="sm-row" style="--c:#FF6FA0;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Starcks</div><div class="sm-rdesc">Web3 fantasy platform</div></div><span class="sm-rseg">Fantasy</span></div>
+          <div class="sm-row" style="--c:#53E0AC;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Packball</div><div class="sm-rdesc">Betting analytics tool</div></div><span class="sm-rseg">Betting</span></div>
+          <div class="sm-row" style="--c:#8AB4FF;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">PlayerStats.Football</div><div class="sm-rdesc">Raw football stats platform</div></div><span class="sm-rseg">Developer</span></div>
+          <div class="sm-row" style="--c:#C4B5FD;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">ScorePlay</div><div class="sm-rdesc">AI asset management for clubs &amp; media</div></div><span class="sm-rseg">Media</span></div>
+          <div class="sm-row" style="--c:#34D399;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">SoFIFA</div><div class="sm-rdesc">Real data into FIFA career mode</div></div><span class="sm-rseg">Analytics</span></div>
+          <div class="sm-row" style="--c:#FF6FA0;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">FantaMaster</div><div class="sm-rdesc">Fantasy football platform</div></div><span class="sm-rseg">Fantasy</span></div>
+          <div class="sm-row" style="--c:#53E0AC;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">BF Bot Manager</div><div class="sm-rdesc">Automated betting bots</div></div><span class="sm-rseg">Betting</span></div>
+          <div class="sm-row" style="--c:#34D399;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">ScoutsLand</div><div class="sm-rdesc">AI-enhanced scouting platform</div></div><span class="sm-rseg">Analytics</span></div>
+          <div class="sm-row" style="--c:#C4B5FD;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Last5Games</div><div class="sm-rdesc">Form &amp; head-to-head stats</div></div><span class="sm-rseg">Media</span></div>
+          <div class="sm-row" style="--c:#FF6FA0;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Sportspoule</div><div class="sm-rdesc">Prediction &amp; community app</div></div><span class="sm-rseg">Fantasy</span></div>
+          <div class="sm-row" style="--c:#FF6FA0;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Footholics</div><div class="sm-rdesc">LaLiga fantasy game</div></div><span class="sm-rseg">Fantasy</span></div>
+          <div class="sm-row" style="--c:#34D399;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Elevenstats</div><div class="sm-rdesc">Football stats platform</div></div><span class="sm-rseg">Analytics</span></div>
+          <div class="sm-row" style="--c:#8AB4FF;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Little Thunder</div><div class="sm-rdesc">Football app &amp; dev tooling</div></div><span class="sm-rseg">Developer</span></div>
+          <!-- SET B (duplicate for seamless loop) -->
+          <div class="sm-row" style="--c:#34D399;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">ShiftOneZero</div><div class="sm-rdesc">Dinamo Zagreb fan app</div></div><span class="sm-rseg">Clubs</span></div>
+          <div class="sm-row" style="--c:#C4B5FD;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Botbrains</div><div class="sm-rdesc">AI live commentary, 12+ languages</div></div><span class="sm-rseg">Media</span></div>
+          <div class="sm-row" style="--c:#FF6FA0;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Starcks</div><div class="sm-rdesc">Web3 fantasy platform</div></div><span class="sm-rseg">Fantasy</span></div>
+          <div class="sm-row" style="--c:#53E0AC;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Packball</div><div class="sm-rdesc">Betting analytics tool</div></div><span class="sm-rseg">Betting</span></div>
+          <div class="sm-row" style="--c:#8AB4FF;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">PlayerStats.Football</div><div class="sm-rdesc">Raw football stats platform</div></div><span class="sm-rseg">Developer</span></div>
+          <div class="sm-row" style="--c:#C4B5FD;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">ScorePlay</div><div class="sm-rdesc">AI asset management for clubs &amp; media</div></div><span class="sm-rseg">Media</span></div>
+          <div class="sm-row" style="--c:#34D399;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">SoFIFA</div><div class="sm-rdesc">Real data into FIFA career mode</div></div><span class="sm-rseg">Analytics</span></div>
+          <div class="sm-row" style="--c:#FF6FA0;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">FantaMaster</div><div class="sm-rdesc">Fantasy football platform</div></div><span class="sm-rseg">Fantasy</span></div>
+          <div class="sm-row" style="--c:#53E0AC;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">BF Bot Manager</div><div class="sm-rdesc">Automated betting bots</div></div><span class="sm-rseg">Betting</span></div>
+          <div class="sm-row" style="--c:#34D399;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">ScoutsLand</div><div class="sm-rdesc">AI-enhanced scouting platform</div></div><span class="sm-rseg">Analytics</span></div>
+          <div class="sm-row" style="--c:#C4B5FD;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Last5Games</div><div class="sm-rdesc">Form &amp; head-to-head stats</div></div><span class="sm-rseg">Media</span></div>
+          <div class="sm-row" style="--c:#FF6FA0;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Sportspoule</div><div class="sm-rdesc">Prediction &amp; community app</div></div><span class="sm-rseg">Fantasy</span></div>
+          <div class="sm-row" style="--c:#FF6FA0;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Footholics</div><div class="sm-rdesc">LaLiga fantasy game</div></div><span class="sm-rseg">Fantasy</span></div>
+          <div class="sm-row" style="--c:#34D399;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Elevenstats</div><div class="sm-rdesc">Football stats platform</div></div><span class="sm-rseg">Analytics</span></div>
+          <div class="sm-row" style="--c:#8AB4FF;"><span class="sm-dot"></span><div class="sm-rtext"><div class="sm-rname">Little Thunder</div><div class="sm-rdesc">Football app &amp; dev tooling</div></div><span class="sm-rseg">Developer</span></div>
+        </div>
+      </div>
+      <div class="sm-board-foot">
+        <span class="sm-fstars">★★★★★</span>
+        <span class="sm-ftext">Rated <b>10/10</b> for support by ShiftOneZero &amp; Botbrains</span>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var el=document.getElementById('sm-csh-rot'); if(!el) return;
+  var words=[
+    {t:'betting tools', c:'#53E0AC'},
+    {t:'fantasy games', c:'#FF6FA0'},
+    {t:'club fan apps', c:'#34D399'},
+    {t:'AI media platforms', c:'#C4B5FD'},
+    {t:'developer tools', c:'#8AB4FF'}
+  ];
+  var i=0;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(reduce) return;
+  setInterval(function(){
+    el.classList.add('out');
+    setTimeout(function(){
+      i=(i+1)%words.length;
+      el.textContent=words[i].t;
+      el.style.color=words[i].c;
+      el.classList.remove('out');
+    },400);
+  },2600);
+})();
+</script>
+                                <div class="button-wrapper">
+                                                        </div>
+            </div>
+
+            </div>
+
+    
+    
+    </div>
+
+    
+</section>
+
+
+
+
+                
+        
+<section class="section section--flex section--code-snippet section--darkblue section--hide-gradient" >
+    <!--
+  ═══════════════════════════════════════════════════════════════
+  xG DATA API — BLOCK 01, TRUSTED-BY GRID (HeyReach pattern)
+  ═══════════════════════════════════════════════════════════════
+  HeyReach-pattern. Headline + 3 chips + 2-row logo grid where
+  every case-study customer carries a green "Case Study" pill.
+  Hovering a pilled logo opens a popover restyled to match the
+  existing 01b testimonial cards: 5 stars, colored use-case
+  category badge, bold italic headline quote, lighter body
+  description, hairline divider, plain gray initials avatar, and
+  a compact green stat callout in the footer.
+  Width: 1280px. Inline HTML, no JS.
+  ═══════════════════════════════════════════════════════════════
+-->
+<section style="background:#01002C; border-top:1px solid rgba(255,255,255,0.06); padding:72px 20px 56px; font-family:'Sofia Pro','Inter',sans-serif; color:#fff; position:relative;">
+  <div style="max-width:1280px; margin:0 auto;">
+
+    <!-- Headline -->
+    <div style="text-align:center; margin:0 0 18px;">
+      <h2 style="font-family:'Avenir Next Heavy Italic','Avenir Next',sans-serif; font-style:italic; font-weight:900; font-size:clamp(22px,2.4vw,28px); color:#f1f5f9; margin:0; letter-spacing:-0.005em;">
+        Trusted by 30,000+ sports builders
+      </h2>
+    </div>
+
+    <!-- Jump to the filterable story grid below -->
+    <div style="display:flex; justify-content:center; align-items:center; margin:0 0 56px;" class="sm-cs-tg-chips">
+      <a href="#sm-cs-stories" style="color:#FF0F50; font-family:'Sofia Pro',sans-serif; font-size:14px; font-weight:700; text-decoration:none;">
+        Browse all stories ↓
+      </a>
+    </div>
+
+    <!-- Logo grid -->
+    <div style="display:grid; grid-template-columns:repeat(11, 1fr); gap:60px 12px; align-items:start; position:relative;" class="sm-cs-tg-grid">
+
+      <!-- ═════ ROW 1 ═════ -->
+
+      <div class="sm-cs-tg-cell"><img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2023/12/KNVB.png" alt="KNVB" loading="lazy"></div>
+      <div class="sm-cs-tg-cell"><img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2023/11/Belgian_Pro_League_logo.svg_.png" alt="Belgian Pro League" loading="lazy"></div>
+
+      <!-- Dinamo Zagreb (app developed by ShiftOneZero) -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/shiftonezero/" aria-label="Read Dinamo Zagreb case study">
+        <img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2024/03/Dinamo_Zagreb_logo.png" alt="Dinamo Zagreb" loading="lazy">
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-below" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-data">Club App</span>
+          <p class="sm-cs-tg-pop-headline">"The quality of the data itself stands out."</p>
+          <p class="sm-cs-tg-pop-body">Once you start utilising it, you realise its excellence isn't just superficial.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-attr"><div class="sm-cs-tg-pop-avatar">JB</div><div class="sm-cs-tg-pop-meta"><div class="sm-cs-tg-pop-name">Josip Božić</div><div class="sm-cs-tg-pop-role">CEO, ShiftOneZero</div></div></div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">10/10</div><div class="sm-cs-tg-pop-stat-lbl">Support</div></div>
+          </div>
+        </div>
+      </a>
+      <div class="sm-cs-tg-cell"><img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2024/02/bk_hacken.png" alt="BK Häcken" loading="lazy"></div>
+
+      <!-- Packball -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/packball/" aria-label="Read Packball case study">
+        <img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2025/07/Packball-logo.webp" alt="Packball" loading="lazy">
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-below" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-betting">Betting</span>
+          <p class="sm-cs-tg-pop-headline">"Data reliability has been constantly improving."</p>
+          <p class="sm-cs-tg-pop-body">I particularly highlight the support team's agility and efficiency in resolving any issues.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-attr"><div class="sm-cs-tg-pop-avatar">W</div><div class="sm-cs-tg-pop-meta"><div class="sm-cs-tg-pop-name">Willian</div><div class="sm-cs-tg-pop-role">Developer, Packball</div></div></div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">8/10</div><div class="sm-cs-tg-pop-stat-lbl">Rating</div></div>
+          </div>
+        </div>
+      </a>
+
+      <div class="sm-cs-tg-cell"><img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2024/03/Voetbal_International_logo.png" alt="Voetbal International" loading="lazy"></div>
+      <div class="sm-cs-tg-cell"><img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2020/09/logo-media-monks-2.png" alt="Media.Monks" loading="lazy"></div>
+
+      <!-- FantaMaster -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/digitalgoal-ltd/" aria-label="Read FantaMaster case study">
+        <img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2025/03/DigitalGoal-Ltd-logo-e1742220379522.webp" alt="FantaMaster" loading="lazy">
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-below sm-cs-tg-pop-anchor-right" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-fantasy">Fantasy</span>
+          <p class="sm-cs-tg-pop-headline">"Sportmonks has proven to be a great partner."</p>
+          <p class="sm-cs-tg-pop-body">Finding high-quality football and betting data is challenging. When available, it's often too expensive or hard to integrate.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-attr"><div class="sm-cs-tg-pop-avatar">P</div><div class="sm-cs-tg-pop-meta"><div class="sm-cs-tg-pop-name">Pasquale</div><div class="sm-cs-tg-pop-role">Co-founder, FantaMaster</div></div></div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">Hours</div><div class="sm-cs-tg-pop-stat-lbl">To integrate</div></div>
+          </div>
+        </div>
+      </a>
+
+      <div class="sm-cs-tg-cell"><img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2024/02/TXODDS-LOGO-1.png" alt="TXOdds" loading="lazy"></div>
+
+      <!-- SoFIFA -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/sofifa/" aria-label="Read SoFIFA case study">
+        <img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2024/01/sofifa-logo.png" alt="SoFIFA" loading="lazy">
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-below sm-cs-tg-pop-anchor-right" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-fantasy">Gaming</span>
+          <p class="sm-cs-tg-pop-headline">"Real-world football, inside FIFA Career Mode."</p>
+          <p class="sm-cs-tg-pop-body">SoFIFA pulls up-to-date squads, ratings and historical seasons into the game.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-cta">Read case study →</div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">2007</div><div class="sm-cs-tg-pop-stat-lbl">Since</div></div>
+          </div>
+        </div>
+      </a>
+
+      <!-- ═════ ROW 2 ═════ -->
+
+      <div class="sm-cs-tg-cell"><img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2020/09/logo-match.png" alt="Match" loading="lazy"></div>
+
+      <!-- BF Bot Manager -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/sodens-ltd/" aria-label="Read BF Bot Manager case study">
+        <img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2025/09/Sodens-limited-logo.png" alt="BF Bot Manager" loading="lazy">
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-above sm-cs-tg-pop-anchor-left" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-betting">Betting</span>
+          <p class="sm-cs-tg-pop-headline">"Seven years. No major problems."</p>
+          <p class="sm-cs-tg-pop-body">Other services provided the same data at much higher prices that we could not afford.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-attr"><div class="sm-cs-tg-pop-avatar">R</div><div class="sm-cs-tg-pop-meta"><div class="sm-cs-tg-pop-name">Rade</div><div class="sm-cs-tg-pop-role">Developer, BF Bot Manager</div></div></div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">7+</div><div class="sm-cs-tg-pop-stat-lbl">Years</div></div>
+          </div>
+        </div>
+      </a>
+
+      <!-- ScorePlay -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/scoreplay/" aria-label="Read ScorePlay case study">
+        <img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2025/04/Logo-ScorePlay.png" alt="ScorePlay" loading="lazy">
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-above" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-data">Media</span>
+          <p class="sm-cs-tg-pop-headline">"Automated sports media at scale."</p>
+          <p class="sm-cs-tg-pop-body">ScorePlay powers sports media management with real-time Sportmonks data: every match, every moment.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-cta">Read case study →</div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">5+</div><div class="sm-cs-tg-pop-stat-lbl">Elite clubs</div></div>
+          </div>
+        </div>
+      </a>
+
+      <!-- ScoutsLand — now Case Study -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/scoutsland/" aria-label="Read ScoutsLand case study">
+        <span class="sm-cs-tg-wordmark">ScoutsLand</span>
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-above" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-scouting">Scouting</span>
+          <p class="sm-cs-tg-pop-headline">"Sportmonks feels like a partner rather than just a service."</p>
+          <p class="sm-cs-tg-pop-body">The support team is fast, helpful, and actually understands what you're trying to achieve.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-attr"><div class="sm-cs-tg-pop-avatar">AS</div><div class="sm-cs-tg-pop-meta"><div class="sm-cs-tg-pop-name">Ahmet Sayarlioglu</div><div class="sm-cs-tg-pop-role">Co-founder, ScoutsLand</div></div></div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">AI-Ready</div><div class="sm-cs-tg-pop-stat-lbl">Docs</div></div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Botbrains -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/botbrains/" aria-label="Read Botbrains case study">
+        <img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2025/04/botbrains_io_logo.jpg" alt="Botbrains" loading="lazy">
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-above" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-scouting">AI</span>
+          <p class="sm-cs-tg-pop-headline">"AI football commentary in 12+ languages."</p>
+          <p class="sm-cs-tg-pop-body">Botbrains scales generative match commentary across markets, powered by Sportmonks data.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-cta">Read case study →</div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">60%</div><div class="sm-cs-tg-pop-stat-lbl">Faster dev</div></div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Fanzword -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/fanzword/" aria-label="Read Fanzword case study">
+        <img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2025/06/Fanzword-Logo-RGB-Final-01-1.png" alt="Fanzword" loading="lazy">
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-above" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-scouting">Fan App</span>
+          <p class="sm-cs-tg-pop-headline">"Middle East's fastest-growing football fan platform."</p>
+          <p class="sm-cs-tg-pop-body">Built on Sportmonks data to power live experiences for millions of fans.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-cta">Read case study →</div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">Weeks</div><div class="sm-cs-tg-pop-stat-lbl">Saved</div></div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Sportspoule -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/sportspoule/" aria-label="Read Sportspoule case study">
+        <span class="sm-cs-tg-wordmark">Sportspoule</span>
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-above" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-fantasy">Predictions</span>
+          <p class="sm-cs-tg-pop-headline">"Fast and consistent, critical for live features."</p>
+          <p class="sm-cs-tg-pop-body">Getting started was very smooth. Within a short time we were retrieving data and integrating it into the platform.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-attr"><div class="sm-cs-tg-pop-avatar">L</div><div class="sm-cs-tg-pop-meta"><div class="sm-cs-tg-pop-name">Leon</div><div class="sm-cs-tg-pop-role">Co-founder, Sportspoule</div></div></div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">9/10</div><div class="sm-cs-tg-pop-stat-lbl">Support</div></div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Fine Line -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/fine-line/" aria-label="Read Fine Line case study">
+        <img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2025/06/Fine-Line-logo-e1750081659915.png" alt="Fine Line" loading="lazy">
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-above" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-betting">Betting</span>
+          <p class="sm-cs-tg-pop-headline">"Logic over gut feeling in sports betting."</p>
+          <p class="sm-cs-tg-pop-body">Fine Line replaces guesswork with data-driven decisions across 2,200+ leagues.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-cta">Read case study →</div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">15K+</div><div class="sm-cs-tg-pop-stat-lbl">Users</div></div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Footi -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/footi/" aria-label="Read Footi case study">
+        <img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2023/03/footi.team-logo.jpg" alt="Footi" loading="lazy">
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-above" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-data">Media</span>
+          <p class="sm-cs-tg-pop-headline">"Side project to sustainable football platform."</p>
+          <p class="sm-cs-tg-pop-body">Footi built and scaled the whole product on Sportmonks data.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-cta">Read case study →</div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">10x</div><div class="sm-cs-tg-pop-stat-lbl">Less CO₂</div></div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Last5Games -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/last5games/" aria-label="Read Last5Games case study">
+        <span class="sm-cs-tg-wordmark">Last5Games</span>
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-above sm-cs-tg-pop-anchor-right" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-data">Analytics</span>
+          <p class="sm-cs-tg-pop-headline">"Worldwide coverage at unmatched price."</p>
+          <p class="sm-cs-tg-pop-body">Depth of coverage on the worldwide package was unmatched at the price point.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-attr"><div class="sm-cs-tg-pop-avatar">M</div><div class="sm-cs-tg-pop-meta"><div class="sm-cs-tg-pop-name">Mik</div><div class="sm-cs-tg-pop-role">Co-founder, Last5Games</div></div></div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">11</div><div class="sm-cs-tg-pop-stat-lbl">Endpoints</div></div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Fotboll -->
+      <a class="sm-cs-tg-cell sm-cs-tg-cell-link sm-cs-tg-has-pop" href="https://www.sportmonks.com/customers/fotboll/" aria-label="Read Fotboll case study">
+        <img class="sm-cs-tg-logo" src="https://www.sportmonks.com/wp-content/uploads/2023/03/fotboll_com_logo.png" alt="Fotboll" loading="lazy">
+        <span class="sm-cs-tg-pill sm-cs-tg-pill-cs">Case study</span>
+        <div class="sm-cs-tg-pop sm-cs-tg-pop-above sm-cs-tg-pop-anchor-right" role="tooltip">
+          <div class="sm-cs-tg-pop-stars">★★★★★</div>
+          <span class="sm-cs-tg-pop-cat sm-cs-tg-pop-cat-data">Media</span>
+          <p class="sm-cs-tg-pop-headline">"Sweden's most complete football site."</p>
+          <p class="sm-cs-tg-pop-body">Fotboll.com is built end-to-end on Sportmonks data across all major leagues.</p>
+          <div class="sm-cs-tg-pop-foot">
+            <div class="sm-cs-tg-pop-cta">Read case study →</div>
+            <div class="sm-cs-tg-pop-stat"><div class="sm-cs-tg-pop-stat-num">60K</div><div class="sm-cs-tg-pop-stat-lbl">Fans / mo</div></div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* Logo cell */
+  .sm-cs-tg-cell { display:flex; flex-direction:column; align-items:center; justify-content:flex-start; gap:10px; min-height:78px; padding:6px 4px 0; text-decoration:none; color:inherit; position:relative; z-index:1; }
+  .sm-cs-tg-cell-link { cursor:pointer; transition:transform .25s ease; }
+  .sm-cs-tg-cell-link:hover { transform:translateY(-2px); }
+  .sm-cs-tg-cell-link:focus-visible { outline:2px solid #FF0F50; outline-offset:4px; border-radius:6px; }
+  .sm-cs-tg-has-pop:hover, .sm-cs-tg-has-pop:focus-within { z-index:200; }
+  .sm-cs-tg-logo { max-height:30px; max-width:100%; width:auto; height:auto; object-fit:contain; opacity:0.85; transition:opacity .25s ease; }
+  .sm-cs-tg-cell-link:hover .sm-cs-tg-logo { opacity:1; }
+  .sm-cs-tg-wordmark { font-family:'Avenir Next Heavy Italic','Avenir Next',sans-serif; font-style:italic; font-weight:900; font-size:15px; text-transform:uppercase; color:rgba(255,255,255,0.78); letter-spacing:-0.005em; height:30px; line-height:30px; transition:color .2s ease; }
+  .sm-cs-tg-cell-link:hover .sm-cs-tg-wordmark { color:#fff; }
+
+  /* Pills on grid logos */
+  .sm-cs-tg-pill { display:inline-flex; align-items:center; padding:0; font-family:'Sofia Pro',sans-serif; font-size:9px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; line-height:1; transition:color .2s ease, opacity .2s ease; }
+  .sm-cs-tg-pill-cs { color:rgba(83,224,172,0.55); opacity:0.85; }
+  .sm-cs-tg-cell-link:hover .sm-cs-tg-pill-cs { color:#53e0ac; opacity:1; }
+
+  /* ─── Popover ─── */
+  .sm-cs-tg-pop {
+    position:absolute;
+    left:50%;
+    width:340px;
+    background:#15102c;
+    border:1px solid rgba(255,255,255,0.10);
+    border-radius:16px;
+    padding:22px;
+    z-index:50;
+    box-shadow:0 30px 80px -20px rgba(0,0,0,0.85), 0 0 0 1px rgba(255,255,255,0.04);
+    opacity:0; visibility:hidden; pointer-events:none;
+    transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
+    text-align:left;
+    cursor:pointer;
+  }
+  .sm-cs-tg-pop-below { top:calc(100% + 16px); transform:translateX(-50%) translateY(8px); }
+  .sm-cs-tg-pop-above { bottom:calc(100% + 16px); transform:translateX(-50%) translateY(-8px); }
+  .sm-cs-tg-pop-anchor-left { left:0 !important; transform:translateX(-12px) translateY(8px); }
+  .sm-cs-tg-pop-anchor-left.sm-cs-tg-pop-above { transform:translateX(-12px) translateY(-8px); }
+  .sm-cs-tg-pop-anchor-right { left:auto !important; right:0 !important; transform:translateX(12px) translateY(8px); }
+  .sm-cs-tg-pop-anchor-right.sm-cs-tg-pop-above { transform:translateX(12px) translateY(-8px); }
+
+  /* Arrow */
+  .sm-cs-tg-pop::before { content:''; position:absolute; left:50%; transform:translateX(-50%) rotate(45deg); width:12px; height:12px; background:#15102c; }
+  .sm-cs-tg-pop-below::before { top:-7px; border-left:1px solid rgba(255,255,255,0.10); border-top:1px solid rgba(255,255,255,0.10); }
+  .sm-cs-tg-pop-above::before { bottom:-7px; border-right:1px solid rgba(255,255,255,0.10); border-bottom:1px solid rgba(255,255,255,0.10); }
+  .sm-cs-tg-pop-anchor-left::before { left:34px; }
+  .sm-cs-tg-pop-anchor-right::before { left:auto; right:22px; transform:rotate(45deg); }
+
+  .sm-cs-tg-has-pop:hover .sm-cs-tg-pop, .sm-cs-tg-has-pop:focus-visible .sm-cs-tg-pop { opacity:1; visibility:visible; pointer-events:auto; }
+  .sm-cs-tg-has-pop:hover .sm-cs-tg-pop-below, .sm-cs-tg-has-pop:focus-visible .sm-cs-tg-pop-below { transform:translateX(-50%) translateY(0); }
+  .sm-cs-tg-has-pop:hover .sm-cs-tg-pop-above, .sm-cs-tg-has-pop:focus-visible .sm-cs-tg-pop-above { transform:translateX(-50%) translateY(0); }
+  .sm-cs-tg-has-pop:hover .sm-cs-tg-pop-anchor-left { transform:translateX(0) translateY(0); }
+  .sm-cs-tg-has-pop:hover .sm-cs-tg-pop-anchor-right { transform:translateX(0) translateY(0); }
+
+  /* Stars */
+  .sm-cs-tg-pop-stars { color:#FF0F50; font-size:13px; letter-spacing:2px; line-height:1; margin:0 0 16px; }
+
+  /* Category badge — matches 01b testimonial card style */
+  .sm-cs-tg-pop-cat { display:inline-block; font-family:'Avenir Next',sans-serif; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.5px; padding:4px 10px; border-radius:6px; margin:0 0 16px; }
+  .sm-cs-tg-pop-cat-betting { background:rgba(83,224,172,0.14); color:#53E0AC; }
+  .sm-cs-tg-pop-cat-fantasy { background:rgba(255,111,160,0.14); color:#FF6FA0; }
+  .sm-cs-tg-pop-cat-scouting { background:rgba(52,211,153,0.14); color:#34D399; }
+  .sm-cs-tg-pop-cat-data { background:rgba(196,181,253,0.14); color:#C4B5FD; }
+
+  /* Headline + body */
+  .sm-cs-tg-pop-headline { font-family:'Avenir Next Heavy Italic','Avenir Next',sans-serif; font-weight:900; font-style:italic; font-size:16px; line-height:1.32; color:#f1f5f9; margin:0 0 12px; letter-spacing:-0.005em; }
+  .sm-cs-tg-pop-body { font-family:'Sofia Pro Soft Light','Sofia Pro',sans-serif; font-weight:300; font-size:13.5px; line-height:1.6; color:rgba(255,255,255,0.6); margin:0 0 18px; }
+
+  /* Footer */
+  .sm-cs-tg-pop-foot { display:flex; align-items:center; justify-content:space-between; gap:14px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.08); }
+  .sm-cs-tg-pop-attr { display:flex; align-items:center; gap:10px; min-width:0; flex:1; }
+  .sm-cs-tg-pop-avatar { width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; font-family:'Avenir Next',sans-serif; font-weight:800; font-size:13px; color:rgba(255,255,255,0.5); flex-shrink:0; }
+  .sm-cs-tg-pop-meta { display:flex; flex-direction:column; min-width:0; }
+  .sm-cs-tg-pop-name { font-family:'Sofia Pro',sans-serif; font-weight:700; font-size:13px; color:#f1f5f9; line-height:1.3; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .sm-cs-tg-pop-role { font-family:'Sofia Pro Soft Light','Sofia Pro',sans-serif; font-weight:300; font-size:11px; color:rgba(255,255,255,0.4); line-height:1.3; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+  /* Stat callout in footer */
+  .sm-cs-tg-pop-stat { background:rgba(83,224,172,0.08); border:1px solid rgba(83,224,172,0.22); border-radius:8px; padding:6px 10px; text-align:center; flex-shrink:0; min-width:74px; }
+  .sm-cs-tg-pop-stat-num { font-family:'Avenir Next Heavy Italic','Avenir Next',sans-serif; font-style:italic; font-weight:900; font-size:16px; color:#53e0ac; line-height:1; letter-spacing:-0.01em; }
+  .sm-cs-tg-pop-stat-lbl { font-family:'Sofia Pro',sans-serif; font-size:9px; font-weight:700; color:rgba(83,224,172,0.85); text-transform:uppercase; letter-spacing:0.08em; margin-top:3px; }
+
+  /* CTA for description-only popovers (no avatar/name) */
+  .sm-cs-tg-pop-cta { color:#FF0F50; font-family:'Sofia Pro',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.02em; flex:1; }
+
+  /* Responsive */
+  @media (max-width:1080px) { .sm-cs-tg-grid { grid-template-columns:repeat(6, 1fr) !important; row-gap:48px !important; } }
+  @media (max-width:720px) {
+    .sm-cs-tg-grid { grid-template-columns:repeat(4, 1fr) !important; }
+    .sm-cs-tg-chips { gap:18px !important; }
+    .sm-cs-tg-logo { max-height:26px; }
+    .sm-cs-tg-wordmark { font-size:13px; height:26px; line-height:26px; }
+    .sm-cs-tg-pop { display:none !important; }
+  }
+  @media (max-width:480px) { .sm-cs-tg-grid { grid-template-columns:repeat(3, 1fr) !important; gap:36px 8px !important; } }
+  @media (prefers-reduced-motion: reduce) {
+    .sm-cs-tg-cell-link, .sm-cs-tg-logo, .sm-cs-tg-pill, .sm-cs-tg-wordmark, .sm-cs-tg-pop { transition:none !important; }
+  }
+
+</style></section>
+
+        
+    
+        
+<section class="section section--flex section--code-snippet section--darkblue section--hide-gradient" >
+    <!--
+  Sportmonks — Customers hub, Block 03: FILTERABLE STORY GRID  (CORE BLOCK)
+  Fixes the biggest research gap: cards now carry a metric + segment tag and
+  the grid filters by audience. 15 cards, every quote/metric verbatim or an
+  honest operational before/after from customer-proof.md (verified 23 Jul 2026).
+  Primary filter axis = audience/use-case, mirroring the Solutions pages.
+  Namespace sm-csg. Pillars: P1 + P2 + P3.
+  NOTE for David: card hrefs point to the migrated /customers/<company>/ URLs.
+  Until those pages exist, point them at the current /blogs/casestudy/<name>/.
+-->
+<style>
+.sm-csg { background:#01002C; padding:24px 20px 64px; font-family:'Sofia Pro','Inter',sans-serif; color:#fff; }
+.sm-csg * { box-sizing:border-box; }
+.sm-csg .sm-inner { max-width:1180px; margin:0 auto; }
+.sm-csg .sm-eyebrow { display:block; text-align:center; font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:#FF0F50; margin:0 0 14px; }
+.sm-csg .sm-h2 { font-family:'Avenir Next Heavy Italic','Avenir Next',sans-serif; font-style:italic; font-weight:900; font-size:clamp(26px,3.4vw,40px); line-height:1.1; color:#f1f5f9; margin:0 0 10px; text-align:center; }
+.sm-csg .sm-lede { font-size:16px; color:rgba(255,255,255,.7); text-align:center; max-width:600px; margin:0 auto 32px; line-height:1.55; }
+/* filter bar */
+.sm-csg .sm-filters { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:36px; }
+.sm-csg .sm-fbtn { display:inline-flex; align-items:center; gap:8px; font:700 13.5px/1 'Sofia Pro',sans-serif; color:rgba(255,255,255,.75); background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.14); padding:11px 20px; border-radius:100px; cursor:pointer; transition:all .16s ease; }
+.sm-csg .sm-fbtn:hover { border-color:rgba(255,255,255,.35); color:#fff; }
+.sm-csg .sm-fbtn[data-f]:not([data-f="all"])::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--cat); flex-shrink:0; }
+.sm-csg .sm-fbtn.is-active { background:#FF0F50; border-color:#FF0F50; color:#fff; box-shadow:0 10px 24px -12px rgba(255,15,80,.6); }
+.sm-csg .sm-fbtn.is-active::before { background:#fff; }
+/* grid */
+.sm-csg .sm-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.sm-csg .sm-c { display:flex; flex-direction:column; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.10); border-radius:16px; padding:24px 24px 20px; transition:transform .18s ease, border-color .18s ease; }
+.sm-csg .sm-c:hover { transform:translateY(-4px); border-color:rgba(255,255,255,.28); }
+.sm-csg .sm-c-top { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:16px; }
+.sm-csg .sm-c-name { font-family:'Avenir Next','Sofia Pro',sans-serif; font-weight:800; font-size:19px; color:#fff; }
+.sm-csg .sm-c-tag { display:inline-flex; align-items:center; gap:7px; font-size:10.5px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--cat,rgba(255,255,255,.7)); background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.14); padding:5px 11px; border-radius:100px; white-space:nowrap; }
+.sm-csg .sm-c-tag::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--cat,rgba(255,255,255,.5)); flex-shrink:0; }
+.sm-csg .sm-c-metric { font-family:'Sofia Pro','Inter',sans-serif; font-weight:700; font-size:15px; line-height:1.4; color:#fff; margin:0 0 12px; }
+.sm-csg .sm-c-quote { font-size:14px; line-height:1.55; color:rgba(255,255,255,.82); margin:0 0 18px; flex-grow:1; }
+.sm-csg .sm-c-foot { display:flex; align-items:center; justify-content:space-between; gap:10px; border-top:1px solid rgba(255,255,255,.08); padding-top:14px; }
+.sm-csg .sm-c-who { font-size:12px; color:rgba(255,255,255,.5); }
+.sm-csg .sm-c-link, .sm-csg .sm-c-link:link, .sm-csg .sm-c-link:visited { font-size:12.5px; font-weight:700; color:#FF0F50; text-decoration:none; white-space:nowrap; }
+.sm-csg .sm-c-link:hover { text-decoration:underline; }
+.sm-csg .sm-c-soon { font-size:12px; font-weight:600; color:rgba(255,255,255,.35); white-space:nowrap; }
+.sm-csg .sm-empty { display:none; text-align:center; color:rgba(255,255,255,.6); padding:40px 0; font-size:15px; }
+@media (max-width:900px){ .sm-csg .sm-grid { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:600px){ .sm-csg .sm-grid { grid-template-columns:1fr; } .sm-csg { padding:16px 16px 48px; } }
+</style>
+<section class="sm-csg" id="sm-cs-stories">
+  <div class="sm-inner">
+    <span class="sm-eyebrow">Customer stories</span>
+    <h2 class="sm-h2">Find a story like yours</h2>
+    <p class="sm-lede">Filter by what you are building. Every card shows a real customer, what changed, and a quote in their own words.</p>
+
+    <div class="sm-filters" role="tablist">
+      <button class="sm-fbtn is-active" data-f="all" type="button">All stories</button>
+      <button class="sm-fbtn" data-f="dev" type="button" style="--cat:#8AB4FF;">Developers</button>
+      <button class="sm-fbtn" data-f="fantasy" type="button" style="--cat:#FF6FA0;">Fantasy</button>
+      <button class="sm-fbtn" data-f="betting" type="button" style="--cat:#53E0AC;">Betting &amp; odds</button>
+      <button class="sm-fbtn" data-f="media" type="button" style="--cat:#C4B5FD;">Media</button>
+      <button class="sm-fbtn" data-f="clubs" type="button" style="--cat:#34D399;">Clubs &amp; analytics</button>
+    </div>
+
+    <div class="sm-grid">
+
+      <!-- CLUBS & ANALYTICS -->
+      <article class="sm-c" data-seg="clubs">
+        <div class="sm-c-top"><span class="sm-c-name">ShiftOneZero</span><span class="sm-c-tag" style="--cat:#34D399;">Clubs &amp; scouting</span></div>
+        <p class="sm-c-metric">10/10 support · powers the Dinamo Zagreb fan app</p>
+        <p class="sm-c-quote">"The quality of the data itself stands out. It's incredibly fast, and you always know what to expect."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Josip Bozic, CEO</span><a class="sm-c-link" href="https://www.sportmonks.com/customers/shiftonezero/">Read →</a></div>
+      </article>
+
+      <article class="sm-c" data-seg="clubs">
+        <div class="sm-c-top"><span class="sm-c-name">SoFIFA</span><span class="sm-c-tag" style="--cat:#34D399;">Analytics</span></div>
+        <p class="sm-c-metric">Manual scraping → daily structured sync</p>
+        <p class="sm-c-quote">"Sportmonks gives us a clean, stable framework we can build on without worrying about inconsistent naming or missing relationships."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Khachin Borjigin, Founder</span><a class="sm-c-link" href="https://www.sportmonks.com/customers/sofifa/">Read →</a></div>
+      </article>
+
+      <article class="sm-c" data-seg="clubs">
+        <div class="sm-c-top"><span class="sm-c-name">ScoutsLand</span><span class="sm-c-tag" style="--cat:#34D399;">Analytics · AI</span></div>
+        <p class="sm-c-metric">Beat API-Football, Wyscout and Sportsbase on coverage, cost and DX</p>
+        <p class="sm-c-quote">"Sportmonks feels like a partner rather than just a service. The support team is fast, helpful, and actually understands what you're trying to achieve."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Ahmet, Co-founder</span><a class="sm-c-link" href="https://www.sportmonks.com/customers/scoutsland/">Read →</a></div>
+      </article>
+
+      <article class="sm-c" data-seg="clubs">
+        <div class="sm-c-top"><span class="sm-c-name">Elevenstats</span><span class="sm-c-tag" style="--cat:#34D399;">Analytics</span></div>
+        <p class="sm-c-metric">Best balance of cost and coverage</p>
+        <p class="sm-c-quote">"The balance between cost and coverage makes them the most valuable data partner we've worked with."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Gaurav, Founding member</span><a class="sm-c-link" href="https://www.sportmonks.com/customers/elevenstats/">Read →</a></div>
+      </article>
+
+      <!-- MEDIA -->
+      <article class="sm-c" data-seg="media">
+        <div class="sm-c-top"><span class="sm-c-name">Botbrains</span><span class="sm-c-tag" style="--cat:#C4B5FD;">Media · AI</span></div>
+        <p class="sm-c-metric">60% faster development · live AI commentary in 12+ languages</p>
+        <p class="sm-c-quote">"It's rare to find a provider who feels like an extension of your own dev team. Sportmonks truly supports your growth."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Liveticker.AI</span><a class="sm-c-link" href="https://www.sportmonks.com/customers/botbrains/">Read →</a></div>
+      </article>
+
+      <article class="sm-c" data-seg="media">
+        <div class="sm-c-top"><span class="sm-c-name">ScorePlay</span><span class="sm-c-tag" style="--cat:#C4B5FD;">Media</span></div>
+        <p class="sm-c-metric">Manual player entry → automated at scale (AS Monaco, Brazil NT, Benfica)</p>
+        <p class="sm-c-quote">"We chose Sportmonks because of the accuracy of their API, its ease of use, and their outstanding customer service."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">ScorePlay</span><a class="sm-c-link" href="https://www.sportmonks.com/customers/scoreplay/">Read →</a></div>
+      </article>
+
+      <article class="sm-c" data-seg="media">
+        <div class="sm-c-top"><span class="sm-c-name">Last5Games</span><span class="sm-c-tag" style="--cat:#C4B5FD;">Media</span></div>
+        <p class="sm-c-metric">Worldwide coverage at an unmatched price point</p>
+        <p class="sm-c-quote">"Depth of coverage on the worldwide package was unmatched at the price point."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Mik, Co-founder</span><a class="sm-c-link" href="https://www.sportmonks.com/customers/last5games/">Read →</a></div>
+      </article>
+
+      <!-- BETTING -->
+      <article class="sm-c" data-seg="betting">
+        <div class="sm-c-top"><span class="sm-c-name">Packball</span><span class="sm-c-tag" style="--cat:#53E0AC;">Betting</span></div>
+        <p class="sm-c-metric">Full betting coverage at early-stage startup pricing</p>
+        <p class="sm-c-quote">"The search for the ideal provider was long and costly. We discovered Sportmonks and realized it offered the best value."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Willian, Partner</span><a class="sm-c-link" href="https://www.sportmonks.com/customers/packball/">Read →</a></div>
+      </article>
+
+      <article class="sm-c" data-seg="betting">
+        <div class="sm-c-top"><span class="sm-c-name">BF Bot Manager</span><span class="sm-c-tag" style="--cat:#53E0AC;">Betting</span></div>
+        <p class="sm-c-metric">7-year customer · automated betting bots</p>
+        <p class="sm-c-quote">"Seven years ago we found Sportmonks offering more data at an affordable price. We have not noticed any major problems over the years."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Rade, Developer</span><a class="sm-c-link" href="https://www.sportmonks.com/customers/sodens-ltd/">Read →</a></div>
+      </article>
+
+      <!-- FANTASY -->
+      <article class="sm-c" data-seg="fantasy">
+        <div class="sm-c-top"><span class="sm-c-name">Starcks</span><span class="sm-c-tag" style="--cat:#FF6FA0;">Fantasy · Web3</span></div>
+        <p class="sm-c-metric">Overpriced full package → pay only for the data used</p>
+        <p class="sm-c-quote">"Sportmonks allowed us to select only the data we needed, significantly reducing unnecessary expenses."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Nick, Founder</span><span class="sm-c-soon">Story coming soon</span></div>
+      </article>
+
+      <article class="sm-c" data-seg="fantasy">
+        <div class="sm-c-top"><span class="sm-c-name">FantaMaster</span><span class="sm-c-tag" style="--cat:#FF6FA0;">Fantasy</span></div>
+        <p class="sm-c-metric">High-quality fantasy data, finally affordable</p>
+        <p class="sm-c-quote">"Finding high-quality football and betting data is challenging. This is where Sportmonks has proven to be a great partner."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Pasquale, Co-founder</span><a class="sm-c-link" href="https://www.sportmonks.com/customers/digitalgoal-ltd/">Read →</a></div>
+      </article>
+
+      <article class="sm-c" data-seg="fantasy">
+        <div class="sm-c-top"><span class="sm-c-name">Footholics</span><span class="sm-c-tag" style="--cat:#FF6FA0;">Fantasy</span></div>
+        <p class="sm-c-metric">Switched for data availability and speed · LaLiga</p>
+        <p class="sm-c-quote">"Because Sportmonks is so affordable, we are considering expanding to other national and international leagues."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Javier</span><span class="sm-c-soon">Story coming soon</span></div>
+      </article>
+
+      <article class="sm-c" data-seg="fantasy">
+        <div class="sm-c-top"><span class="sm-c-name">Sportspoule</span><span class="sm-c-tag" style="--cat:#FF6FA0;">Fantasy</span></div>
+        <p class="sm-c-metric">Live speed and reliability for real-time predictions</p>
+        <p class="sm-c-quote">"The data is fast and consistent, which is critical for live features. Sportmonks feels like a partner that understands both the technical and product side."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Leon, Co-founder</span><a class="sm-c-link" href="https://www.sportmonks.com/customers/sportspoule/">Read →</a></div>
+      </article>
+
+      <!-- DEVELOPERS -->
+      <article class="sm-c" data-seg="dev">
+        <div class="sm-c-top"><span class="sm-c-name">PlayerStats.Football</span><span class="sm-c-tag" style="--cat:#8AB4FF;">Developer</span></div>
+        <p class="sm-c-metric">Many stitched calls → one request with includes</p>
+        <p class="sm-c-quote">"Instead of making multiple calls and stitching data together on our end, we can pull exactly what we need in a single request."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Josh, Founder</span><a class="sm-c-link" href="https://www.sportmonks.com/customers/playerstats/">Read →</a></div>
+      </article>
+
+      <article class="sm-c" data-seg="dev">
+        <div class="sm-c-top"><span class="sm-c-name">Little Thunder</span><span class="sm-c-tag" style="--cat:#8AB4FF;">Developer</span></div>
+        <p class="sm-c-metric">Docs make no assumptions, plenty of examples</p>
+        <p class="sm-c-quote">"Sportmonks make no assumptions and provide plenty of examples to help you use the API."</p>
+        <div class="sm-c-foot"><span class="sm-c-who">Tim, Director</span><span class="sm-c-soon">Story coming soon</span></div>
+      </article>
+
+    </div>
+    <p class="sm-empty">No stories in that segment yet. <a class="sm-c-link" href="https://my.sportmonks.com/register">Be the first →</a></p>
+  </div>
+</section>
+<script>
+(function(){
+  var root=document.querySelector('.sm-csg'); if(!root) return;
+  var btns=root.querySelectorAll('.sm-fbtn');
+  var cards=root.querySelectorAll('.sm-c');
+  var empty=root.querySelector('.sm-empty');
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      btns.forEach(function(x){x.classList.remove('is-active');});
+      b.classList.add('is-active');
+      var f=b.getAttribute('data-f'); var shown=0;
+      cards.forEach(function(c){
+        var on = f==='all' || c.getAttribute('data-seg')===f;
+        c.style.display = on ? 'flex' : 'none';
+        if(on) shown++;
+      });
+      empty.style.display = shown ? 'none' : 'block';
+    });
+  });
+})();
+</script></section>
+
+        
+    
+        
+<section class="section section--flex section--code-snippet section--darkblue section--hide-gradient" >
+    <!--
+  Sportmonks — Customers hub, Block 04: PULL-QUOTE PROOF BAND
+  Four attributed quotes, colour-coded label + top accent.
+  Real headshots where available (Josip Bozic, Ahmet Sayarlioglu — from the
+  Sportmonks CDN). Packball has no personal headshot → initials "W". Botbrains
+  is a company → wordmark "B".
+  Stars from REAL ratings only: ShiftOneZero 10/10, Botbrains 10/10 (5 stars),
+  Packball 8/10 (4 stars). ScoutsLand gave no numeric score, so its card shows
+  a qualitative proof line ("AI-navigable docs") instead of an invented number.
+  Namespace sm-csq. Pillars: P1 / P2 / P3.
+-->
+<style>
+.sm-csq { background:#01002C; padding:8px 20px 64px; font-family:'Sofia Pro','Inter',sans-serif; color:#fff; }
+.sm-csq * { box-sizing:border-box; }
+.sm-csq .sm-inner { max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+.sm-csq .sm-q { position:relative; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.10); border-radius:16px; padding:26px 22px; display:flex; flex-direction:column; overflow:hidden; }
+.sm-csq .sm-q::before { content:""; position:absolute; top:0; left:0; width:100%; height:3px; background:var(--cat); }
+.sm-csq .sm-cat { font-size:11px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--cat); margin-bottom:14px; }
+.sm-csq .sm-stars { display:flex; align-items:center; gap:8px; margin-bottom:16px; flex-wrap:wrap; }
+.sm-csq .sm-stars .st { color:#FF0F50; font-size:15px; letter-spacing:2px; }
+.sm-csq .sm-stars .st .e { color:rgba(255,255,255,.22); }
+.sm-csq .sm-stars .sc { font-size:12px; font-weight:700; color:rgba(255,255,255,.6); }
+.sm-csq .sm-qt { font-size:15px; line-height:1.58; color:#fff; margin:0 0 20px; flex-grow:1; }
+.sm-csq .sm-who { display:flex; align-items:center; gap:12px; }
+.sm-csq .sm-av { width:44px; height:44px; border-radius:50%; flex-shrink:0; object-fit:cover; display:flex; align-items:center; justify-content:center; font-family:'Avenir Next','Sofia Pro',sans-serif; font-weight:800; font-size:15px; color:#fff; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.16); }
+.sm-csq .sm-by { font-size:13px; font-weight:700; color:rgba(255,255,255,.9); line-height:1.35; }
+.sm-csq .sm-by span { display:block; font-weight:400; color:rgba(255,255,255,.5); margin-top:2px; }
+@media (max-width:1024px){ .sm-csq .sm-inner { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:560px){ .sm-csq { padding:0 16px 48px; } .sm-csq .sm-inner { grid-template-columns:1fr; } }
+</style>
+<section class="sm-csq">
+  <div class="sm-inner">
+
+    <div class="sm-q" style="--cat:#8AB4FF;">
+      <div class="sm-cat">Reliability</div>
+      <div class="sm-stars"><span class="st">★★★★★</span><span class="sc">Rates Sportmonks 10/10</span></div>
+      <p class="sm-qt">"It's incredibly fast, and you always know what to expect. The API's uniform and clear responses provide assurance that your data fetching engine will handle everything smoothly."</p>
+      <div class="sm-who">
+        <img class="sm-av" src="https://www.sportmonks.com/wp-content/uploads/2026/07/Josip-Bozic.jpeg" alt="Josip Bozic" loading="lazy">
+        <div class="sm-by">ShiftOneZero<span>Josip Bozic, CEO · Dinamo Zagreb fan app</span></div>
+      </div>
+    </div>
+
+    <div class="sm-q" style="--cat:#53E0AC;">
+      <div class="sm-cat">Value</div>
+      <div class="sm-stars"><span class="st">★★★★<span class="e">★</span></span><span class="sc">Rates Sportmonks 8/10</span></div>
+      <p class="sm-qt">"The search for the ideal provider was long and costly, as most solutions are expensive. We discovered Sportmonks and realized it offered the best value."</p>
+      <div class="sm-who">
+        <!-- David: no personal headshot on file for Willian — replace with <img class="sm-av" src="…"> if one is provided -->
+        <div class="sm-av">W</div>
+        <div class="sm-by">Packball<span>Willian, Developer &amp; Partner</span></div>
+      </div>
+    </div>
+
+    <div class="sm-q" style="--cat:#FF0F50;">
+      <div class="sm-cat">Experience</div>
+      <div class="sm-stars"><span class="st">★★★★★</span><span class="sc">Rates support 10/10</span></div>
+      <p class="sm-qt">"It's rare to find a provider who feels like an extension of your own dev team. Sportmonks truly supports your growth."</p>
+      <div class="sm-who">
+        <div class="sm-av">B</div>
+        <div class="sm-by">Botbrains<span>Liveticker.AI · AI live commentary, 12+ languages</span></div>
+      </div>
+    </div>
+
+    <div class="sm-q" style="--cat:#C4B5FD;">
+      <div class="sm-cat">Documentation</div>
+      <div class="sm-stars"><span class="st">★★★★★</span><span class="sc">AI-navigable docs</span></div>
+      <p class="sm-qt">"We use Claude Code as part of our workflow, and the Sportmonks documentation has been remarkably easy for both human and AI to navigate."</p>
+      <div class="sm-who">
+        <img class="sm-av" src="https://www.sportmonks.com/wp-content/uploads/2026/07/Ahmet-Sayarlioglu-Co-Founder-ScoutsLand.png" alt="Ahmet Sayarlioglu" loading="lazy">
+        <div class="sm-by">ScoutsLand<span>Ahmet Sayarlioglu, Co-founder</span></div>
+      </div>
+    </div>
+
+  </div>
+</section></section>
+
+        
+    
+        
+<section class="section section--flex section--code-snippet section--darkblue section--hide-gradient" >
+    <!--
+  Sportmonks — Customers hub, Block 05: CLOSING CTA + SOLUTIONS LINKS
+  Outcome-tied closing CTA (trial + docs) plus internal links to the five
+  Solutions pages so each audience segment feeds its matching solution
+  (research internal-linking rec). Namespace sm-csc. Pillar: P3.
+-->
+<style>
+.sm-csc { background:#01002C; padding:24px 20px 80px; font-family:'Sofia Pro','Inter',sans-serif; color:#fff; border-top:1px solid rgba(255,255,255,.06); }
+.sm-csc * { box-sizing:border-box; }
+.sm-csc .sm-inner { max-width:1180px; margin:0 auto; text-align:center; }
+.sm-csc .sm-eyebrow { display:block; font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:#FF0F50; margin:0 0 14px; }
+.sm-csc h2 { font-family:'Avenir Next Heavy Italic','Avenir Next',sans-serif; font-style:italic; font-weight:900; font-size:clamp(28px,3.8vw,44px); line-height:1.1; color:#f1f5f9; margin:0 0 16px; }
+.sm-csc .sm-sub { font-size:16.5px; color:rgba(255,255,255,.75); line-height:1.6; margin:0 auto 30px; max-width:620px; }
+.sm-csc .sm-ctas { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:20px; }
+.sm-csc .sm-btn { display:inline-flex; align-items:center; gap:8px; padding:15px 30px; border-radius:14px; font:700 16px/1 'Sofia Pro',sans-serif; text-decoration:none; transition:transform .18s ease; }
+.sm-csc .sm-btn-p, .sm-csc .sm-btn-p:link, .sm-csc .sm-btn-p:visited, .sm-csc .sm-btn-p:hover { color:#fff !important; }
+.sm-csc .sm-btn-p { background:#FF0F50; box-shadow:0 12px 28px -10px rgba(255,15,80,.55); }
+.sm-csc .sm-btn-p:hover { transform:translateY(-2px); }
+.sm-csc .sm-btn-g, .sm-csc .sm-btn-g:link, .sm-csc .sm-btn-g:visited, .sm-csc .sm-btn-g:hover { color:#fff !important; }
+.sm-csc .sm-btn-g { background:transparent; border:1px solid rgba(255,255,255,.25); }
+.sm-csc .sm-btn-g:hover { transform:translateY(-2px); background:rgba(255,255,255,.06); }
+.sm-csc .sm-trust { display:flex; flex-wrap:wrap; gap:16px; justify-content:center; font-size:13.5px; color:rgba(255,255,255,.6); margin-bottom:48px; }
+.sm-csc .sm-trust b { color:#53e0ac; font-weight:400; }
+.sm-csc .sm-relhead { font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.5); margin-bottom:18px; }
+.sm-csc .sm-rel { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+.sm-csc .sm-rel a { display:inline-flex; padding:11px 20px; border-radius:100px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); font-size:13.5px; font-weight:600; color:rgba(255,255,255,.85); text-decoration:none; transition:border-color .15s ease; }
+.sm-csc .sm-rel a:hover { border-color:rgba(255,255,255,.3); }
+@media (max-width:560px){ .sm-csc { padding:16px 16px 60px; } }
+</style>
+<section class="sm-csc">
+  <div class="sm-inner">
+    <span class="sm-eyebrow">Start building</span>
+    <h2>Build your product on the same data</h2>
+    <p class="sm-sub">Every story here started with a free API token. No contracts, no minimums, and a real person on support seven days a week. Start today and see your first call in minutes.</p>
+    <div class="sm-ctas">
+      <a class="sm-btn sm-btn-p" href="https://my.sportmonks.com/register">Get your free API token</a>
+      <a class="sm-btn sm-btn-g" href="https://docs.sportmonks.com/football">Read the docs</a>
+    </div>
+    <div class="sm-trust">
+      <span><b>✓</b> No contracts, no minimums</span>
+      <span><b>✓</b> First call in minutes</span>
+      <span><b>✓</b> Human support, 7 days a week</span>
+    </div>
+    <div class="sm-relhead">Explore the solution for what you're building</div>
+    <div class="sm-rel">
+      <a href="https://www.sportmonks.com/football-api/solutions/livescore-api/">Livescore &amp; media</a>
+      <a href="https://www.sportmonks.com/football-api/solutions/sports-betting-api/">Betting &amp; odds</a>
+      <a href="https://www.sportmonks.com/football-api/solutions/fantasy-football-api/">Fantasy</a>
+      <a href="https://www.sportmonks.com/football-api/solutions/football-clubs/">Clubs &amp; scouting</a>
+      <a href="https://www.sportmonks.com/football-api/">Football API overview</a>
+    </div>
+  </div>
+</section></section>
+
+        
+    
+<footer class="footer">
+    <!--    <a href="#page-top" class="to-top">to top</a>-->
+
+    
+    <div class="footer__middle">
+        <div class="container">
+            <div class="row footer__middle-bg">
+                <div class="col-lg-4 footer__socials-company-details">
+                    <ul class="footer__company-details">
+                        <li class="footer__heading">
+                            <a href="/" class="page-logo" aria-label="Go to homepage">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     viewBox="0 0 240 30">
+                                    <defs>
+                                        <path id="a" d="M.27.124h22.355v29.501H.271z"/>
+                                        <path id="c" d="M.232.061H39.68v22.355H.232z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path
+                                            d="M10.857 8.983c1.893 0 3.517.678 4.872 2.033 1.355 1.336 2.032 2.96 2.032 4.872 0 1.91-.677 3.535-2.032 4.871-1.355 1.355-2.979 2.032-4.872 2.032H0V17.53h10.857c.446 0 .825-.157 1.142-.473.334-.334.5-.724.5-1.17 0-.445-.166-.835-.5-1.17a1.558 1.558 0 00-1.142-.472H6.905c-1.912 0-3.537-.677-4.873-2.032C.678 10.858 0 9.233 0 7.34 0 5.43.678 3.805 2.033 2.469 3.368 1.115 4.992.437 6.905.437h10.188V5.7H6.904a1.65 1.65 0 00-1.17.473 1.586 1.586 0 00-.472 1.169c0 .445.157.835.473 1.17.334.315.724.472 1.17.472h3.952z"
+                                            fill="#FFF"/>
+                                        <g transform="translate(19.5 .314)">
+                                            <mask id="b" fill="#fff">
+                                                <use xlink:href="#a"/>
+                                            </mask>
+                                            <path
+                                                d="M11.462 5.385c-1.633 0-3.034.575-4.204 1.726-1.15 1.17-1.726 2.57-1.726 4.204 0 1.614.576 3.006 1.726 4.175 1.17 1.152 2.57 1.726 4.204 1.726 1.615 0 3.007-.574 4.176-1.726 1.15-1.169 1.726-2.56 1.726-4.175 0-1.633-.576-3.035-1.726-4.204-1.17-1.15-2.56-1.726-4.176-1.726zM5.532 29.61l-5.261.016v-17.67h.028a8.534 8.534 0 01-.028-.64c0-3.1 1.094-5.735 3.285-7.906C5.727 1.219 8.362.124 11.462.124c3.08 0 5.707 1.095 7.879 3.285 2.19 2.171 3.284 4.806 3.284 7.906 0 3.08-1.095 5.706-3.284 7.878-2.172 2.19-4.798 3.285-7.879 3.285-2.153 0-4.13-.566-5.93-1.698v8.83z"
+                                                fill="#FFF" mask="url(#b)"/>
+                                        </g>
+                                        <path
+                                            d="M55.327 5.699c-1.633 0-3.034.575-4.204 1.726-1.15 1.169-1.726 2.56-1.726 4.175 0 1.634.575 3.035 1.726 4.204 1.17 1.151 2.57 1.726 4.204 1.726 1.615 0 3.006-.575 4.175-1.726 1.15-1.17 1.726-2.57 1.726-4.204 0-1.614-.575-3.006-1.726-4.175-1.169-1.151-2.56-1.726-4.175-1.726m0 17.093c-3.1 0-5.735-1.095-7.906-3.285-2.19-2.172-3.285-4.807-3.285-7.907 0-3.08 1.094-5.706 3.285-7.878 2.171-2.19 4.806-3.285 7.906-3.285 3.08 0 5.707 1.095 7.878 3.285 2.19 2.172 3.285 4.798 3.285 7.878 0 3.1-1.095 5.735-3.285 7.907-2.171 2.19-4.798 3.285-7.878 3.285M68.5 11.6c0-3.08 1.095-5.706 3.285-7.878 2.172-2.19 4.806-3.285 7.907-3.285h4.593V5.7h-4.593c-1.634 0-3.035.575-4.204 1.726-1.151 1.169-1.726 2.56-1.726 4.175v11.192H68.5V11.6z"
+                                            fill="#FFF"/>
+                                        <g transform="translate(103.875 .314)">
+                                            <mask id="d" fill="#fff">
+                                                <use xlink:href="#c"/>
+                                            </mask>
+                                            <path
+                                                d="M34.418 11.225c0-1.615-.575-3.007-1.726-4.176-1.15-1.15-2.543-1.726-4.176-1.726s-3.034.575-4.203 1.726c-1.151 1.169-1.727 2.56-1.727 4.176v11.19h-5.26v-11.19c0-1.615-.577-3.007-1.727-4.176-1.17-1.15-2.56-1.726-4.175-1.726-1.634 0-3.035.575-4.204 1.726-1.151 1.169-1.726 2.56-1.726 4.176v11.19H.232v-11.19c0-3.08 1.095-5.707 3.286-7.879C5.688 1.156 8.324.061 11.424.061c3.452 0 6.3 1.327 8.546 3.981 2.227-2.654 5.076-3.98 8.546-3.98 3.08 0 5.717 1.095 7.906 3.284 2.172 2.172 3.257 4.798 3.257 7.879v11.19h-5.261v-11.19z"
+                                                fill="#FFF" mask="url(#d)"/>
+                                        </g>
+                                        <path
+                                            d="M156.765 5.699c-1.634 0-3.035.575-4.204 1.726-1.15 1.169-1.726 2.56-1.726 4.175 0 1.634.575 3.035 1.726 4.204 1.17 1.151 2.57 1.726 4.204 1.726 1.614 0 3.006-.575 4.175-1.726 1.15-1.17 1.726-2.57 1.726-4.204 0-1.614-.575-3.006-1.726-4.175-1.169-1.151-2.56-1.726-4.175-1.726m0 17.093c-3.1 0-5.735-1.095-7.907-3.285-2.19-2.172-3.285-4.807-3.285-7.907 0-3.08 1.095-5.706 3.285-7.878 2.172-2.19 4.806-3.285 7.907-3.285 3.08 0 5.707 1.095 7.878 3.285 2.19 2.172 3.285 4.798 3.285 7.878 0 3.1-1.095 5.735-3.285 7.907-2.171 2.19-4.798 3.285-7.878 3.285M175.208 22.791h-5.262v-11.19c0-3.081 1.095-5.707 3.285-7.88 2.172-2.188 4.807-3.284 7.907-3.284 3.08 0 5.706 1.096 7.878 3.285 2.19 2.172 3.285 4.798 3.285 7.878v11.191h-5.261v-11.19c0-1.615-.576-3.007-1.727-4.176-1.169-1.15-2.56-1.726-4.175-1.726-1.634 0-3.035.575-4.204 1.726-1.151 1.169-1.726 2.56-1.726 4.175v11.191zM199.553 22.791h-5.261V.437h5.261v8.491c2.21-.167 4.074-1.058 5.596-2.673 1.522-1.651 2.283-3.59 2.283-5.818h5.261c0 4.696-1.912 8.417-5.734 11.163 3.822 2.766 5.734 6.496 5.734 11.191h-5.261c0-2.227-.761-4.166-2.283-5.818-1.522-1.614-3.387-2.505-5.596-2.672v8.49zM225.57 8.983c1.893 0 3.517.678 4.871 2.033 1.355 1.336 2.033 2.96 2.033 4.872 0 1.91-.678 3.535-2.033 4.871-1.354 1.355-2.978 2.032-4.87 2.032h-10.858V17.53h10.857c.445 0 .825-.157 1.14-.473.335-.334.502-.724.502-1.17 0-.445-.167-.835-.501-1.17a1.557 1.557 0 00-1.14-.472h-3.954c-1.912 0-3.536-.677-4.872-2.032-1.355-1.355-2.032-2.98-2.032-4.872 0-1.911.677-3.536 2.032-4.872 1.336-1.354 2.96-2.032 4.872-2.032h10.189V5.7h-10.19a1.65 1.65 0 00-1.169.473 1.587 1.587 0 00-.473 1.169c0 .445.158.835.473 1.17.334.315.724.472 1.17.472h3.953zM97.495 17.53c-1.633 0-3.034-.576-4.204-1.726-1.15-1.169-1.726-2.56-1.726-4.176v-5.93h7.563V.439H86.304v11.19c0 3.081 1.094 5.707 3.285 7.879 2.171 2.19 4.806 3.284 7.906 3.284h4.593v-5.26h-4.593z"
+                                            fill="#FFF"/>
+                                        <path d="M239.994 20.06a2.732 2.732 0 11-5.464-.001 2.732 2.732 0 015.464 0"
+                                              fill="#FF0F50"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>Papenstraat 26</li>
+                        <li>7411 ND Deventer</li>
+                        <li><a href="/cdn-cgi/l/email-protection#02717772726d70764271726d70766f6d6c69712c616d6f"><span class="__cf_email__" data-cfemail="afdcdadfdfc0dddbefdcdfc0dddbc2c0c1c4dc81ccc0c2">[email&#160;protected]</span></a></li>
+                        <li>KvK (Chamber of Commerce) 74390856</li>
+                    </ul>
+                    <div class="socials">
+                                                <ul>
+                            <li><a href="https://twitter.com/sportmonks_com" aria-label="X Link"
+                                   target="_blank" class="socials__icon socials__icon--twitter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 50" width="50px"
+                                         height="50px">
+                                        <path fill="#FFF"
+                                              d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"/>
+                                    </svg>
+                                </a></li>
+                            <li><a href="https://www.facebook.com/SP0RTM0NKS.C0M/"
+                                   aria-label="Facebook Link" target="_blank"
+                                   class="socials__icon socials__icon--facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 19">
+                                        <path
+                                            d="M2.314 18.518H5.65V9.522h2.502l.495-2.81H5.649V4.675c0-.657.432-1.346 1.05-1.346h1.703V.519H6.315V.53C3.05.647 2.378 2.504 2.32 4.455h-.006v2.257H.646v2.81h1.668v8.996z"
+                                            fill="#FFF" fill-rule="evenodd"/>
+                                    </svg>
+                                </a></li>
+                            <li><a href="https://www.linkedin.com/company/sportmonks/"
+                                   aria-label="LinkedIn Link" target="_blank"
+                                   class="socials__icon socials__icon--linkedin">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15">
+                                        <path
+                                            d="M3.842 4.787v9.827H.435V4.787h3.407zm7.865-.435c1.411 0 3.705.67 3.705 4.55v5.586H12.02V9.122c0-1.1-.313-2.202-1.588-2.202-1.275 0-1.808 1.102-1.808 2.229v5.34H5.223V4.661h3.401v1.323c.895-1.156 1.673-1.633 3.083-1.633zM1.9 0c1.049 0 1.899.776 1.899 1.735 0 .957-.85 1.732-1.9 1.732C.85 3.467 0 2.692 0 1.735 0 .776.85 0 1.9 0z"
+                                            fill="#FFF" fill-rule="evenodd"/>
+                                    </svg>
+                                </a></li>
+                            <li><a href="https://www.instagram.com/sportmonks/"
+                                   aria-label="Instagram Link" target="_blank"
+                                   class="socials__icon socials__icon--instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                        <g fill="#FFF" fill-rule="nonzero">
+                                            <path
+                                                d="M17.928 5.28c-.042-.954-.196-1.61-.417-2.178a4.383 4.383 0 00-1.04-1.593A4.42 4.42 0 0014.883.474c-.571-.221-1.224-.376-2.178-.418C11.742.011 11.437 0 8.998 0 6.56 0 6.254.01 5.296.053c-.954.042-1.61.196-2.178.417A4.382 4.382 0 001.525 1.51c-.457.449-.81.993-1.036 1.59C.27 3.67.114 4.322.072 5.276.026 6.24.016 6.544.016 8.982c0 2.44.01 2.744.052 3.702.042.955.197 1.61.418 2.18a4.43 4.43 0 001.039 1.592c.449.456.993.81 1.589 1.035.572.221 1.225.376 2.179.418.958.042 1.263.052 3.702.052 2.438 0 2.744-.01 3.702-.052.954-.042 1.61-.197 2.178-.418a4.594 4.594 0 002.629-2.628c.22-.572.375-1.224.417-2.179.042-.958.053-1.263.053-3.702 0-2.438-.004-2.743-.046-3.701zm-1.617 7.334c-.04.877-.186 1.35-.31 1.667a2.98 2.98 0 01-1.705 1.705c-.315.123-.792.27-1.666.309-.948.042-1.232.052-3.628.052-2.397 0-2.684-.01-3.628-.052-.878-.039-1.351-.186-1.667-.309a2.764 2.764 0 01-1.032-.67 2.792 2.792 0 01-.67-1.032c-.123-.316-.27-.793-.308-1.666-.043-.948-.053-1.232-.053-3.629 0-2.396.01-2.684.053-3.628.038-.877.185-1.35.308-1.666a2.73 2.73 0 01.674-1.032 2.788 2.788 0 011.032-.67c.315-.123.793-.27 1.666-.309.948-.042 1.232-.052 3.628-.052 2.4 0 2.684.01 3.628.052.878.039 1.351.186 1.667.309.39.144.744.372 1.032.67.298.291.526.642.67 1.032.123.316.27.793.309 1.666.042.948.052 1.232.052 3.628 0 2.397-.01 2.678-.052 3.625z"/>
+                                            <path
+                                                d="M8.998 4.368a4.615 4.615 0 000 9.228 4.615 4.615 0 000-9.228zm0 7.607A2.993 2.993 0 119 5.988a2.993 2.993 0 010 5.987zM14.872 4.186a1.077 1.077 0 11-2.155 0 1.077 1.077 0 012.155 0z"/>
+                                        </g>
+                                    </svg>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <ul id="menu-footermenu" class="footer__navigation"><li id="menu-item-48" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-48"><a href="#">API</a>
+<ul class="sub-menu">
+	<li id="menu-item-1438" class="menu-item menu-item-type-post_type menu-item-object-page current-page-parent menu-item-1438"><a href="https://www.sportmonks.com/football-api/">Football API</a></li>
+	<li id="menu-item-1488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1488"><a href="https://www.sportmonks.com/football-api/coverage/">Football Coverage</a></li>
+	<li id="menu-item-43624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43624"><a href="https://www.sportmonks.com/football-api/plans-pricing/">Plans &#038; pricing</a></li>
+	<li id="menu-item-1439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1439"><a href="https://www.sportmonks.com/cricket-api/">Cricket</a></li>
+	<li id="menu-item-24582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24582"><a href="https://www.sportmonks.com/cricket-api/coverage/">Cricket Coverage</a></li>
+	<li id="menu-item-1440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1440"><a href="https://www.sportmonks.com/formula-one-api/">Formula 1 API</a></li>
+</ul>
+</li>
+<li id="menu-item-24581" class="menu-item menu-item-type-post_type menu-item-object-page current-page-parent menu-item-has-children menu-item-24581"><a href="https://www.sportmonks.com/football-api/">Football</a>
+<ul class="sub-menu">
+	<li id="menu-item-2336" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2336"><a href="https://www.sportmonks.com/football-api/football-widgets/">Widgets</a></li>
+	<li id="menu-item-1940" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1940"><a href="https://www.sportmonks.com/football-api/football-predictions-api/">Predictions</a></li>
+	<li id="menu-item-24577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24577"><a href="https://www.sportmonks.com/football-api/xg-data/">xG Data</a></li>
+	<li id="menu-item-43625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43625"><a href="https://www.sportmonks.com/football-api/expected-lineups-api/">Expected Lineups API</a></li>
+	<li id="menu-item-24578" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24578"><a href="https://www.sportmonks.com/football-api/premium-odds-feed/">Premium Odds Feed</a></li>
+	<li id="menu-item-24579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24579"><a href="https://www.sportmonks.com/football-api/football-pressure-index/">Pressure Index</a></li>
+	<li id="menu-item-1939" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1939"><a href="https://www.sportmonks.com/football-api/football-news-api/">News API</a></li>
+	<li id="menu-item-43626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43626"><a href="https://www.sportmonks.com/football-api/transfer-rumours-api/">Transfer Rumours</a></li>
+</ul>
+</li>
+<li id="menu-item-54" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-54"><a href="#">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-43627" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43627"><a href="https://www.sportmonks.com/football-api/plans-pricing/">Plans &#038; pricing</a></li>
+	<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56"><a href="https://docs.sportmonks.com/football/">Docs</a></li>
+	<li id="menu-item-46809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46809"><a href="https://www.sportmonks.com/football-api/alternatives/">Alternatives</a></li>
+	<li id="menu-item-1442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1442"><a href="https://www.sportmonks.com/faq/">FAQ</a></li>
+	<li id="menu-item-1447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1447"><a href="https://www.sportmonks.com/blogs/">Blogs</a></li>
+	<li id="menu-item-36435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36435"><a href="https://www.sportmonks.com/glossary/">Glossary</a></li>
+</ul>
+</li>
+<li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-61"><a href="#">Sportmonks</a>
+<ul class="sub-menu">
+	<li id="menu-item-24580" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-18782 current_page_item menu-item-24580"><a href="https://www.sportmonks.com/customers/" aria-current="page">Why clients use Sportmonks?</a></li>
+	<li id="menu-item-1448" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1448"><a href="https://www.sportmonks.com/contact-support/">Contact &amp; Support</a></li>
+	<li id="menu-item-1450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1450"><a href="https://www.sportmonks.com/careers/">Sportmonks Careers</a></li>
+	<li id="menu-item-1736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1736"><a rel="privacy-policy" href="https://www.sportmonks.com/privacy-policy/">Privacy Policy</a></li>
+	<li id="menu-item-24584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24584"><a href="https://www.sportmonks.com/terms-of-service/">Terms of Service</a></li>
+</ul>
+</li>
+<li id="menu-item-wpml-ls-12-en" class="menu-item-language menu-item-language-current menu-item wpml-ls-slot-12 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-12-en"><a href="https://www.sportmonks.com/customers/" aria-current="page" aria-expanded="false" aria-controls="wpml-ls-submenu-wpml-ls-12-en"><span class="wpml-ls-native" lang="en">EN</span></a></li>
+</ul>                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul>
+                        <li><a href="/terms-of-service/">Terms and Conditions</a></li>
+                                                    <li><a href="https://www.sportmonks.com/sitemap/">Sitemap</a></li>
+                                                <li class="footer__copyright">©2026 Sportmonks  B.V. All rights reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="#page-top" class="new-to-top" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+        <path
+            d="M7 7a.26.26 0 01-.072.18l-5.51 5.745c-.096.1-.25.1-.346 0a.263.263 0 010-.36L6.409 7 1.072 1.436a.264.264 0 010-.361c.095-.1.25-.1.346 0l5.51 5.745A.26.26 0 017 7"
+            fill="#FFFFFF" stroke="#FFFFFF" fill-rule="evenodd"/>
+    </svg>
+</a>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/sportmonks/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="https://widgets.sportmonks.com/js/app.js"></script><script id="sm-pricing-save-badge-js">
+(function () {
+    var BADGE_TEXT = 'Save 20%';
+
+    function injectBadge() {
+        var yearly = document.querySelector('.switch__switch--yearly[data-id="yearly"]');
+        if (!yearly) return false;
+        if (yearly.querySelector('.save-badge')) return true;
+        var badge = document.createElement('span');
+        badge.className = 'save-badge';
+        badge.textContent = BADGE_TEXT;
+        yearly.appendChild(badge);
+        return true;
+    }
+
+    function init() {
+        if (injectBadge()) return;
+        // Fallback: pricing block rendered after initial paint (lazy load, SPA, etc.)
+        var observer = new MutationObserver(function () {
+            if (injectBadge()) observer.disconnect();
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+        // Safety net: stop watching after 10s so we don't keep an observer alive forever
+        setTimeout(function () { observer.disconnect(); }, 10000);
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+<div 
+	id="pum-2377" 
+	role="dialog" 
+	aria-modal="false"
+	class="pum pum-overlay pum-theme-1388 pum-theme-enterprise-plan-form popmake-overlay click_open" 
+	data-popmake="{&quot;id&quot;:2377,&quot;slug&quot;:&quot;enterprise-plan-football-basic&quot;,&quot;theme_id&quot;:1388,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;medium&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center top&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}">
+
+	<div id="popmake-2377" class="pum-container popmake theme-1388 pum-responsive pum-responsive-medium responsive size-medium">
+
+				
+				
+		
+				<div class="pum-content popmake-content" tabindex="0">
+			
+		</div>
+
+				
+							<button type="button" class="pum-close popmake-close" aria-label="Close">
+			X			</button>
+		
+	</div>
+
+</div>
+<div 
+	id="pum-1574" 
+	role="dialog" 
+	aria-modal="false"
+	class="pum pum-overlay pum-theme-1388 pum-theme-enterprise-plan-form popmake-overlay click_open" 
+	data-popmake="{&quot;id&quot;:1574,&quot;slug&quot;:&quot;enterprise-plan-contact-cricket&quot;,&quot;theme_id&quot;:1388,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;medium&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center top&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}">
+
+	<div id="popmake-1574" class="pum-container popmake theme-1388 pum-responsive pum-responsive-medium responsive size-medium">
+
+				
+				
+		
+				<div class="pum-content popmake-content" tabindex="0">
+			
+		</div>
+
+				
+							<button type="button" class="pum-close popmake-close" aria-label="Close">
+			X			</button>
+		
+	</div>
+
+</div>
+<div 
+	id="pum-1389" 
+	role="dialog" 
+	aria-modal="false"
+	class="pum pum-overlay pum-theme-1388 pum-theme-enterprise-plan-form popmake-overlay pum-click-to-close click_open" 
+	data-popmake="{&quot;id&quot;:1389,&quot;slug&quot;:&quot;enterprise-plan-contact-football&quot;,&quot;theme_id&quot;:1388,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;medium&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;Close&quot;,&quot;button_delay&quot;:&quot;1000&quot;,&quot;overlay_click&quot;:&quot;1&quot;,&quot;esc_press&quot;:&quot;1&quot;,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}">
+
+	<div id="popmake-1389" class="pum-container popmake theme-1388 pum-responsive pum-responsive-medium responsive size-medium">
+
+				
+				
+		
+				<div class="pum-content popmake-content" tabindex="0">
+			
+		</div>
+
+				
+							<button type="button" class="pum-close popmake-close" aria-label="Close">
+			Close			</button>
+		
+	</div>
+
+</div>
+<script type="text/javascript">/* <![CDATA[ */!function(e,n){var r={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"dracula","language":"generic","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""},"resources":["https:\/\/www.sportmonks.com\/wp-content\/plugins\/enlighter\/cache\/enlighterjs.min.css?cQmpcUerrNS3Cmd","https:\/\/www.sportmonks.com\/wp-content\/plugins\/enlighter\/resources\/enlighterjs\/enlighterjs.min.js"]},o=document.getElementsByTagName("head")[0],t=n&&(n.error||n.log)||function(){};e.EnlighterJSINIT=function(){!function(e,n){var r=0,l=null;function c(o){l=o,++r==e.length&&(!0,n(l))}e.forEach(function(e){switch(e.match(/\.([a-z]+)(?:[#?].*)?$/)[1]){case"js":var n=document.createElement("script");n.onload=function(){c(null)},n.onerror=c,n.src=e,n.async=!0,o.appendChild(n);break;case"css":var r=document.createElement("link");r.onload=function(){c(null)},r.onerror=c,r.rel="stylesheet",r.type="text/css",r.href=e,r.media="all",o.appendChild(r);break;default:t("Error: invalid file extension",e)}})}(r.resources,function(e){e?t("Error: failed to dynamically load EnlighterJS resources!",e):"undefined"!=typeof EnlighterJS?EnlighterJS.init(r.selectors.block,r.selectors.inline,r.options):t("Error: EnlighterJS resources not loaded yet!")})},(document.querySelector(r.selectors.block)||document.querySelector(r.selectors.inline))&&e.EnlighterJSINIT()}(window,console); /* ]]> */</script><script id="gforms_recaptcha_recaptcha-js-extra">
+var gforms_recaptcha_recaptcha_strings = {"nonce":"3362bb743b","disconnect":"Disconnecting","change_connection_type":"Resetting","spinner":"https://www.sportmonks.com/wp-content/plugins/gravityforms/images/spinner.svg","connection_type":"enterprise","disable_badge":"1","change_connection_type_title":"Change Connection Type","change_connection_type_message":"Changing the connection type will delete your current settings.  Do you want to proceed?","disconnect_title":"Disconnect","disconnect_message":"Disconnecting from reCAPTCHA will delete your current settings.  Do you want to proceed?","site_key":"6LctOsMrAAAAAEba6Ph6rIwZM1daA00Lu1clGKAH","key_type":"","ajaxurl":"https://www.sportmonks.com/wp-admin/admin-ajax.php"};
+//# sourceURL=gforms_recaptcha_recaptcha-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="gforms_recaptcha_recaptcha-js" src="https://www.google.com/recaptcha/enterprise.js?render=6LctOsMrAAAAAEba6Ph6rIwZM1daA00Lu1clGKAH&#038;ver=2.2.2"></script>
+<script data-wp-strategy="defer" defer id="gforms_recaptcha_frontend-js" src="https://www.sportmonks.com/wp-content/plugins/gravityformsrecaptcha/js/frontend.min.js?ver=2.2.2"></script>
+<script id="jquery-ui-core-js" src="https://www.sportmonks.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"></script>
+<script id="wp-hooks-js" src="https://www.sportmonks.com/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d"></script>
+<script id="popup-maker-site-js-extra">
+var pum_vars = {"version":"1.24.0","pm_dir_url":"https://www.sportmonks.com/wp-content/plugins/popup-maker/","ajaxurl":"https://www.sportmonks.com/wp-admin/admin-ajax.php","restapi":"https://www.sportmonks.com/wp-json/pum/v1","rest_nonce":null,"default_theme":"1378","debug_mode":"","disable_tracking":"","disable_url_params":"","home_url":"/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"cookie_domain":"","paramNames":{"popup_id":"pid","cta":"cta","notrack":"notrack"},"analytics_enabled":"1","analytics_route":"analytics","analytics_api":"https://www.sportmonks.com/wp-json/pum/v1"};
+var pum_sub_vars = {"ajaxurl":"https://www.sportmonks.com/wp-admin/admin-ajax.php","message_position":"top"};
+var pum_popups = {"pum-2377":{"triggers":[],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"1388","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"enterprise-plan-form","id":2377,"slug":"enterprise-plan-football-basic"},"pum-1574":{"triggers":[],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"1388","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"enterprise-plan-form","id":1574,"slug":"enterprise-plan-contact-cricket"},"pum-1389":{"triggers":[],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"1388","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"1000","fi_promotion":null,"close_on_form_submission":true,"close_on_form_submission_delay":"500","close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"enterprise-plan-form","id":1389,"slug":"enterprise-plan-contact-football"}};
+//# sourceURL=popup-maker-site-js-extra
+</script>
+<script id="popup-maker-site-js" src="//www.sportmonks.com/wp-content/uploads/pum/pum-site-scripts.js?defer&#038;generated=1787060832&#038;ver=1.24.0"></script>
+<script id="theme-js-js-extra">
+var wordpress_urls = {"templateUrl":"https://www.sportmonks.com/wp-content/themes/sportmonks"};
+//# sourceURL=theme-js-js-extra
+</script>
+<script id="theme-js-js" src="https://www.sportmonks.com/wp-content/themes/sportmonks/dist/bundle.1c3c801a.js"></script>
+<script id="__ytprefsfitvids__-js" defer src="https://www.sportmonks.com/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js?ver=14.2.6"></script>
+		<script>
+		(function() {
+			'use strict';
+			var parentSelector = '.menu-item.wpml-ls-current-language.menu-item-has-children';
+			
+			function toggleSubmenu(link, forceClose) {
+				var isExpanded = link.getAttribute('aria-expanded') === 'true';
+				if (forceClose || isExpanded) {
+					link.setAttribute('aria-expanded', 'false');
+				} else {
+					link.setAttribute('aria-expanded', 'true');
+				}
+			}
+			
+			function handleKeydown(e) {
+				var key = e.key || e.keyCode;
+				if (key === 'Enter' || key === ' ' || key === 13 || key === 32) {
+					e.preventDefault();
+					toggleSubmenu(this);
+				} else if (key === 'Escape' || key === 'Esc' || key === 27) {
+					if (this.getAttribute('aria-expanded') === 'true') {
+						e.preventDefault();
+						toggleSubmenu(this, true);
+					}
+				}
+			}
+			
+			function handleBlur(e) {
+				var link = this;
+				var parent = link.closest(parentSelector);
+				if (!parent) return;
+				
+				setTimeout(function() {
+					if (!parent.contains(document.activeElement)) {
+						toggleSubmenu(link, true);
+					}
+				}, 100);
+			}
+			
+			function init() {
+				var parents = document.querySelectorAll(parentSelector);
+				for (var i = 0; i < parents.length; i++) {
+					var link = parents[i].querySelector('a[aria-expanded]');
+					if (link) {
+						link.addEventListener('keydown', handleKeydown);
+						link.addEventListener('blur', handleBlur);
+					}
+				}
+			}
+			
+			if (document.readyState === 'loading') {
+				document.addEventListener('DOMContentLoaded', init);
+			} else {
+				init();
+			}
+		})();
+		</script>
+		<script defer type='text/javascript' src='https://www.sportmonks.com/wp-content/themes/sportmonks/src/js/components/minified/price-toggle.js'></script>
+
+
+            
+    </body>
+</html>

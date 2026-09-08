@@ -1,0 +1,171 @@
+{
+ "domain": "propfinder.app",
+ "tech_stack": {
+  "frontend": [
+   "Next.js (X-Powered-By: Next.js)",
+   "React",
+   "Material UI (MUI)",
+   "PostHog analytics",
+   "Reddit pixel"
+  ],
+  "backend": [
+   ".NET (Hangfire job-scheduler dashboards at hangfire/hangfire-odds subdomains)",
+   "nginx/1.24.0 (Ubuntu)"
+  ],
+  "database": [
+   "NOT CONFIRMED - no DB evidence in public assets"
+  ],
+  "cloud": [
+   "DigitalOcean (web www/staging: 104.131.63.28, api: 45.55.120.10, hangfire: 138.197.22.153 - DO IP ranges)"
+  ],
+  "cdn": [
+   "NOT CONFIRMED - no CF-RAY/x-vercel-id/Via headers; served directly by nginx"
+  ],
+  "citations": [
+   "https://propfinder.app/ (Server: nginx/1.24.0 (Ubuntu), X-Powered-By: Next.js)",
+   "https://hangfire.propfinder.app/hangfire (401, exists)",
+   "https://hangfire-odds.propfinder.app/hangfire (401, exists)",
+   "https://propfinder.app/_next/static/chunks/48cd4238f4df1750.js (hangfire URLs, PostHog us.i.posthog.com)",
+   "DNS probes: api.propfinder.app=45.55.120.10, staging.propfinder.app=104.131.63.28, hangfire*.propfinder.app=138.197.22.153"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/api",
+    "auth_required": null,
+    "tier": "",
+    "sample_response": "404 Not Found",
+    "citation": "https://propfinder.app/api probe"
+   },
+   {
+    "method": "GET",
+    "path": "/api/v1",
+    "auth_required": null,
+    "tier": "",
+    "sample_response": "404 Not Found",
+    "citation": "https://propfinder.app/api/v1 probe"
+   },
+   {
+    "method": "GET",
+    "path": "/nba/projections, /projections/, /odds/{nba,nhl,mlb,nfl}, /cfb/games, /nfl/games, /odds/soccer, /soccer/props",
+    "auth_required": "unknown (app routes, /projections + /odds disallowed in robots.txt -> behind app/login)",
+    "tier": "Free=1 game/league; paid=all",
+    "sample_response": "NOT CONFIRMED (routes referenced in robots.txt + JS chunk 48cd4238f4df1750.js)",
+    "citation": "https://propfinder.app/robots.txt; https://propfinder.app/_next/static/chunks/48cd4238f4df1750.js"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED - no /graphql probe success, no graphql strings in fetched chunks",
+  "websocket_endpoints": [
+   "NOT CONFIRMED - no websocket/socket.io strings in fetched chunks"
+  ],
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "robots.txt disallows /odds/*, /projections/*, /admin, /auth/, /health, /status - implies server-rendered app routes behind login; public REST/OpenAPI not exposed"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "PF Ratings (community-described)",
+   "raw_snippet": "\"Shows the rating of the bet based on blowout factor, spread, matchup, last 5, 10, and 20 games\" (user review, not source code)",
+   "reconstruction": "PF Rating = composite of player's hit rate over last 5/10/20 games vs prop line, adjusted for matchup, spread (blowout risk), and matchup context. Exact weights NOT CONFIRMED - no constants found in fetched public JS chunks.",
+   "citation": "https://www.reddit.com/r/EVbetting/comments/1jqsm1k/best_sports_betting_research_apps/"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": [
+   "NOT CONFIRMED - no model/simulation evidence in public assets"
+  ],
+  "training_data": [
+   "Historical player prop results per game (marketing: 'Break down historical stats, player matchups, and trends')"
+  ],
+  "update_frequency": "NOT CONFIRMED (Hangfire dashboards imply scheduled background jobs for odds/data ingest)",
+  "citation": "https://propfinder.app/; https://hangfire.propfinder.app/hangfire (401)"
+ },
+ "simulation_engine": {
+  "num_simulations": null,
+  "correlation_method": "NOT CONFIRMED - no numSims/monteCarlo/correlation strings in any fetched JS chunk",
+  "citation": "grep of 8 fetched /_next/static/chunks files"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "NOT CONFIRMED - no sportradar/statsperform/opta/genius/the-odds-api/sportsdata.io/nflverse/fantasydata strings in fetched HTML+JS"
+  ],
+  "citations": [
+   "keyword grep over propfinder-home.txt + 8 chunk files = 0 hits"
+  ]
+ },
+ "product_limits": {
+  "limits": [
+   "Free tier: 'Access to 1 game per league'",
+   "Free tier: 'Access to limited props'"
+  ],
+  "upgrade_triggers": [
+   "1-game-per-league cap on Free forces upgrade to Monthly/Yearly for all US major leagues + all prop markets + PF Ratings + Cheatsheets"
+  ],
+  "citation": "https://propfinder.app/_next/static/chunks/9380fb88a2eda003.js (Products array: Free id='', prod_S7KtdrFAmmHTjB, prod_SAg8s1ck7yU1Ma)"
+ },
+ "pricing": {
+  "web": "Free $0; Monthly $14.99 USD/month (Stripe price_1RGL0fC4i2Oo8jAIKNIvpCbp, buy.stripe.com/fZeaFu2GS4zsf8Q4gg); Yearly $149.99 USD/year 'Most Popular' (price_1RK4ndC4i2Oo8jAIYlJiIKt2, buy.stripe.com/5kA14U81caXQbWE3ce)",
+  "ios": "App id6773949831 'PropFinder: Prop Research'; IAP: PropFinder Premium Monthly $19.99, PropFinder Premium Yearly $199.99 (mobile ~33% pricier than web); ~3-star, 22 ratings",
+  "android": "NOT CONFIRMED as same company - Play listing com.propfinder.prem 'Prop Finder' found via search but ownership unverified",
+  "citations": [
+   "https://propfinder.app/_next/static/chunks/9380fb88a2eda003.js",
+   "https://apps.apple.com/us/app/propfinder-prop-research/id6773949831"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Would not recommend unless you do major volume and originate props profitably bc you're not going to recoup the subscription fee in EV otherwise",
+   "source": "https://www.reddit.com/r/sportsbook/comments/1ivmkvt/of_all_the_risingtop_sportsbook_aids_for_prop_a",
+   "date": "2025 (thread id 1ivmkvt, exact date NOT CONFIRMED)"
+  },
+  {
+   "quote": "Shows the rating of the bet based on blowout factor, spread, matchup, last 5, 10, and 20 games",
+   "source": "https://www.reddit.com/r/EVbetting/comments/1jqsm1k/best_sports_betting_research_apps/ (positive - describes PF Rating basis)",
+   "date": "NOT CONFIRMED"
+  },
+  {
+   "quote": "iOS rating ~3 stars from 22 ratings (low volume, mixed reception)",
+   "source": "https://apps.apple.com/us/app/propfinder-prop-research/id6773949831",
+   "date": "2026-09-08 fetch"
+  }
+ ],
+ "discovered_paths": [
+  "/pricing",
+  "/tutorials",
+  "/weather",
+  "/privacy",
+  "/terms",
+  "/login",
+  "/status",
+  "/subscribed",
+  "/announcements",
+  "/popups",
+  "/health",
+  "/promotions",
+  "/admin",
+  "/reset",
+  "/auth/*",
+  "/odds/nba",
+  "/odds/nhl",
+  "/odds/mlb",
+  "/odds/nfl",
+  "/nba/projections",
+  "/projections/*",
+  "/cfb/games",
+  "/nfl/games",
+  "/odds/soccer",
+  "/soccer/props",
+  "https://blog.propfinder.app",
+  "https://hangfire.propfinder.app/hangfire (401)",
+  "https://hangfire-odds.propfinder.app/hangfire (401)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "raw HTTP GET (urllib): homepage, robots.txt, sitemap.xml, /pricing, 8 JS chunks, API probes, 2 Hangfire dashboards (401); DNS A-record probes on api/app/dev/staging/hangfire subdomains; App Store page fetch; web_search for mobile + reddit",
+  "timestamp": "2026-09-08T13:38:49.743553"
+ },
+ "disposition": "live (derived from 26 raw evidence files)"
+}

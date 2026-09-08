@@ -1,0 +1,130 @@
+{
+  "domain": "novig.com",
+  "disposition": "live",
+  "status": "CONFIRMED (Expo/React-Native-web app; REST + GraphQL + WS on api.novig.us; no subscription model - exchange)",
+  "key_findings": "NOVIG is a no-vig peer-to-peer sports prediction market/exchange. Web app is Expo (React Native for web) on S3+CloudFront. Client config exposed in main JS bundle: REST base https://api.novig.us/nbx/v1, GraphQL https://api.novig.us/v1/graphql, websocket wss://api.novig.us/v1/graphql, auth domain auth.novig.us, live Stripe key pk_live_51TnfUm... (deposits), iOS app id6443958997, Android us.novig.app. Market-state enum includes FINAL/SETTLED/CANCELED statuses. No subscription/isPremium gating found - monetization is exchange-side (rebates observed: 0.62% rebate at 100k made volume per community), not subscription paywalls.",
+  "tech_stack": {
+    "frontend": "Expo (React Native Web) SPA - _expo/static/js/web/*, no __NEXT_DATA__",
+    "backend": "REST https://api.novig.us/nbx/v1 + GraphQL https://api.novig.us/v1/graphql + WS wss://api.novig.us/v1/graphql",
+    "database": "NOT CONFIRMED",
+    "cloud": "AWS S3 + CloudFront; auth.novig.us (likely Cognito); Stripe live key in bundle",
+    "cdn": "CloudFront",
+    "citations": [
+      "raw/novig.com_js_index-85ec0b2ab960c6f26f28938e9f45edb5.js.js",
+      "raw/novig.com_home.html"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [
+      {
+        "method": "POST/GET",
+        "path": "https://api.novig.us/nbx/v1/*",
+        "auth_required": true,
+        "tier": "exchange users",
+        "sample_response": null,
+        "citation": "raw/novig.com_js_index-85ec0b2ab960c6f26f28938e9f45edb5.js.js"
+      },
+      {
+        "method": "POST",
+        "path": "https://api.novig.us/v1/graphql",
+        "auth_required": true,
+        "tier": "exchange users",
+        "sample_response": null,
+        "citation": "raw/novig.com_js_index-85ec0b2ab960c6f26f28938e9f45edb5.js.js"
+      }
+    ],
+    "graphql_schema": "GraphQL endpoint exposed (api.novig.us/v1/graphql) - schema NOT CONFIRMED (auth required)",
+    "websocket_endpoints": [
+      "wss://api.novig.us/v1/graphql (subscriptions)"
+    ],
+    "rate_limits": "NOT CONFIRMED",
+    "citations": [
+      "raw/novig.com_js_index-85ec0b2ab960c6f26f28938e9f45edb5.js.js"
+    ]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [
+      "Sportradar (17 string hits in bundle)",
+      "Sportsdata.io (2 hits)",
+      "Opta (39 hits, incl possible minified false positives)"
+    ],
+    "citations": [
+      "raw/novig.com_js_index-85ec0b2ab960c6f26f28938e9f45edb5.js.js (marker counts from first 1.5MB of bundle - truncated fetch)"
+    ]
+  },
+  "product_limits": {
+    "limits": "Marketing claims \"no fees, no limits\" (P2P exchange); per-market position caps NOT CONFIRMED (liquidity-bound)",
+    "upgrade_triggers": "None found - no subscription tiers",
+    "citation": "https://apps.apple.com/us/app/novig-sports-prediction-market/id6443958997"
+  },
+  "pricing": {
+    "web": "No subscription - no-vig P2P exchange; exchange rebate 0.62% at 100k made volume (community-reported)",
+    "ios": "id6443958997 Novig: Sports Prediction Market",
+    "android": "us.novig.app",
+    "citations": [
+      "raw/novig.com_js_index-85ec0b2ab960c6f26f28938e9f45edb5.js.js (app store URLs in config)",
+      "https://www.reddit.com/r/algobetting/comments/1ibhtr8/sporttrade_novig_and_market_makers_shady_dealings/"
+    ]
+  },
+  "customer_pain": [
+    {
+      "quote": "Novig is leaving ny, they already did this in colorado. ny is cracking down on social gambling sites.",
+      "source": "https://www.reddit.com/r/EVbetting/comments/1ijhtmt/novig/",
+      "date": "2025"
+    },
+    {
+      "quote": "Novig has a 0.62% rebate for anyone who does 100k of \"made\" volume that gets matched.",
+      "source": "https://www.reddit.com/r/algobetting/comments/1ibhtr8/sporttrade_novig_and_market_makers_shady_dealings/",
+      "date": "2025"
+    },
+    {
+      "quote": "I would highly recommend staying away from Novig. They ban my account and forfeited all funds in my account",
+      "source": "https://www.reddit.com/r/sportsbook/comments/1uzoq0z/novig_scammed_me_out_5000/",
+      "date": "2026"
+    },
+    {
+      "quote": "Peer to peer websites like Novig are 1000% better in my opinion than a traditional sports book.",
+      "source": "https://www.reddit.com/r/EVbetting/comments/1st1dcm/whats_the_difference_between_novig_and_a/",
+      "date": "2026"
+    }
+  ],
+  "discovered_paths": [
+    "/_expo/static/js/web/*",
+    "/api/",
+    "/landing",
+    "/newsroom",
+    "/careers/*",
+    "api.novig.us",
+    "auth.novig.us"
+  ],
+  "discovered_targets": [],
+  "discovery_metadata": {
+    "method": "urllib GET via fetcher.py pattern; 6 of 8 HTTP requests used",
+    "timestamp": "2026-09-08"
+  },
+  "requests_log": [],
+  "raw_files": [
+    "novig.com_home.html",
+    "novig.com_js___common-335ceb59293ffc5f899cabc834db2f84.js.js",
+    "novig.com_js___expo-metro-runtime-c3b84c7febd0dd58cdb6fa30806fc65c.js.js",
+    "novig.com_js_index-85ec0b2ab960c6f26f28938e9f45edb5.js.js",
+    "novig.com_robots.txt",
+    "novig.com_sitemap.xml"
+  ],
+  "notes": [
+    "bundle fetch capped at 1.5MB by fetcher max_bytes; vendor marker counts from truncated portion - treat as indicative",
+    "robots.txt Disallow /_next/ is vestigial (site is Expo, not Next.js)"
+  ]
+}

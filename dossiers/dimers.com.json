@@ -1,0 +1,79 @@
+{
+ "domain": "dimers.com",
+ "type": "live-site",
+ "tech_stack": {
+  "frontend": "Angular (polyfills-RV3JTMEC.js / main-5EYIASKB.js bundles)",
+  "backend": "Headless CMS: Cosmic JS, bucket ciphercms-production queried client-side with exposed read key",
+  "database": "Cosmic JS object store (CMS)",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "cdn.ciphersports.io (Cipher Sports own CDN)",
+  "citations": [
+   "raw/dimers_com_home.html",
+   "raw/browser-net-dimers.json"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "https://api.cosmicjs.com/v3/buckets/ciphercms-production/objects?read_key=kIszTMwQkliPYn5yOQCHtMAZoW76qEs5Kp8Kr2jxoXf2",
+    "auth_required": "read key only (embedded in client)",
+    "tier": "public read",
+    "sample_response": "NOT CONFIRMED (request observed in browser network log; body not saved)",
+    "citation": "raw/browser-net-dimers.json"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/browser-net-dimers.json"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Bookmaker integrations observed: BetMGM, DraftKings, FanDuel, William Hill (odds/affiliate links; feed vendor NOT CONFIRMED)"
+  ],
+  "citations": [
+   "raw/browser-net-dimers.json (bookmaker-logos/*)"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "$99-for-6-months subscription CTA on homepage",
+  "citation": "raw/dimers_com_home.html"
+ },
+ "pricing": {
+  "web": "$99 for 6 months (subscription CTA)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/dimers_com_home.html"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/subscription",
+  "/sitemap-main.xml",
+  "/authors-sitemap.xml",
+  "/news-sitemap.xml"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "homepage HTML + Angular bundle + browser network log (229 requests)",
+  "timestamp": "2026-09-08T14:05:36.761690"
+ },
+ "disposition": "live (derived from 8 raw evidence files)"
+}

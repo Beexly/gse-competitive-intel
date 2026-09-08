@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agents-txt.com/schema/agents-json/v1.0.json",
+  "version": "1.0",
+  "standard": "https://agents-txt.com",
+  "site": {
+    "name": "Outlier",
+    "url": "https://outlier.bet",
+    "description": "The #1 Rated betting tool for player prop research and trends, team and line movement analysis, odds comparison, & place picks on your sportsbook app."
+  }
+}

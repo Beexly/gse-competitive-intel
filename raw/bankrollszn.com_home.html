@@ -1,0 +1,888 @@
+URL: https://bankrollszn.com/\nSTATUS: 200\n\n<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <script>
+   (function () {
+  var proto = XMLHttpRequest.prototype;
+  var open = proto.open, setRequestHeader = proto.setRequestHeader, send = proto.send;
+  var TOKEN_KEY = 'base44_access_token';
+  var storedTokenHeader = function () {
+    try { return 'Bearer ' + localStorage.getItem(TOKEN_KEY); } catch (e) { return null; }
+  };
+  var forgetStoredToken = function () {
+    try { localStorage.removeItem(TOKEN_KEY); localStorage.removeItem('token'); } catch (e) {}
+  };
+
+  proto.open = function (method, url) {
+    this.__b44IsAuthCheck = /\/entities\/User\/me(\?|$)/.test(url);
+    return open.apply(this, arguments);
+  };
+
+  proto.setRequestHeader = function (name, value) {
+    if (this.__b44IsAuthCheck && name.toLowerCase() === 'authorization' && value === storedTokenHeader()) {
+      this.__b44SentToken = value;
+    }
+    return setRequestHeader.call(this, name, value);
+  };
+
+  proto.send = function () {
+    this.addEventListener('loadend', function () {
+      var rejectedTokenStillStored = this.status === 401 && this.__b44SentToken === storedTokenHeader();
+      if (rejectedTokenStillStored) forgetStoredToken();
+    });
+    return send.apply(this, arguments);
+  };
+})();
+  </script>
+  <script>
+   try {
+        // Fix X/Twitter iOS in-app browser corrupting URLs with "x-safari-" prefix.
+        // This runs before React boots so the user never sees a 404.
+        var p = window.location.pathname;
+        var h = window.location.href;
+        if (p.indexOf('/x-safari-') !== -1 || h.indexOf('x-safari-') !== -1) {
+          window.location.replace('https://' + window.location.host + '/');
+        }
+        // Clear any mangled URLs from localStorage before React reads them.
+        try {
+          var keys = Object.keys(localStorage);
+          for (var i = 0; i < keys.length; i++) {
+            var val = localStorage.getItem(keys[i]);
+            if (val && val.indexOf('x-safari-') !== -1) {
+              localStorage.removeItem(keys[i]);
+            }
+          }
+        } catch (e) {}
+      } catch (e) {}
+  </script>
+  <script>
+   // Apply the saved theme before the first paint, so a dark-mode user never
+      // sees a white flash while React boots. Layout.jsx owns the toggle.
+      try {
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {}
+  </script>
+  <meta charset="utf-8"/>
+  <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%232d7a47'/%3E%3Ctext x='50' y='78' font-family='Georgia,serif' font-size='78' font-weight='bold' text-anchor='middle' fill='white'%3EB%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+  <link href="/manifest.json" rel="manifest"/>
+  <title>
+   BankrollSZN
+  </title>
+  <meta content="BankrollSZN is a daily fantasy sports research site with model-driven projections, a home run predictor, lineup optimizers, weather and park factor tools, and daily DFS playbooks for MLB, NBA, NFL, WNBA and PGA on DraftKings and FanDuel." name="description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="BankrollSZN" property="og:site_name"/>
+  <meta content="BankrollSZN" property="og:title"/>
+  <meta content="BankrollSZN is a daily fantasy sports research site with model-driven projections, a home run predictor, lineup optimizers, weather and park factor tools, and daily DFS playbooks for MLB, NBA, NFL, WNBA and PGA on DraftKings and FanDuel." property="og:description"/>
+  <meta content="https://bankrollszn.com" property="og:url"/>
+  <meta content="https://media.base44.com/images/public/69a99cfe1d3788f14113605f/5e12985c8_0268559c5_BankrollSZN_logo_500.png/v1/fill/w_1200,h_630/5e12985c8_0268559c5_BankrollSZN_logo_500.png" property="og:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="BankrollSZN" name="twitter:title"/>
+  <meta content="BankrollSZN is a daily fantasy sports research site with model-driven projections, a home run predictor, lineup optimizers, weather and park factor tools, and daily DFS playbooks for MLB, NBA, NFL, WNBA and PGA on DraftKings and FanDuel." name="twitter:description"/>
+  <meta content="https://media.base44.com/images/public/69a99cfe1d3788f14113605f/5e12985c8_0268559c5_BankrollSZN_logo_500.png/v1/fill/w_1200,h_630/5e12985c8_0268559c5_BankrollSZN_logo_500.png" name="twitter:image"/>
+  <meta name="impact-site-verification" value="af5f3595-3058-43b1-83aa-66dd5226ee3e"/>
+  <!-- Google Fonts: Space Grotesk, Geist, Geist Mono, Playfair Display, Big Shoulders Display, Instrument Sans, Bricolage Grotesque, IBM Plex Sans, IBM Plex Mono, Public Sans -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,600;1,600;1,700&amp;family=Big+Shoulders+Display:wght@600;700;800&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Bricolage+Grotesque:wght@400;600;700;800&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+  <!-- Google AdSense -->
+  <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2466767749265798">
+  </script>
+  <!-- Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V39NF9PZ87">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V39NF9PZ87');
+  </script>
+  <!-- Google Preferred Sources -->
+  <script async="" src="https://news.google.com/swg/js/v1/publisher.js">
+  </script>
+  <script crossorigin="" src="/assets/index-CZYsoXcm.js" type="module">
+  </script>
+  <link crossorigin="" href="/assets/index-bWcDQ-ox.css" rel="stylesheet"/>
+  <script type="module">
+   if (window.self === window.top) {
+  let lastPath = "";
+  function getPageNameFromPath(path) {
+    const segments = path.split("/").filter(Boolean);
+    return segments[0] || null;
+  }
+  function trackPageView() {
+    const path = window.location.pathname;
+    if (path === lastPath) return;
+    lastPath = path;
+    const pageName = getPageNameFromPath(path) || "home";
+    const appId = "69a99cfe1d3788f14113605f";
+    if (!appId) return;
+    fetch(`/api/app-logs/${appId}/log-user-in-app/${pageName}`, {
+      method: "POST",
+    }).catch(() => {});
+  }
+  const originalPushState = history.pushState.bind(history);
+  history.pushState = function (...args) {
+    originalPushState(...args);
+    trackPageView();
+  };
+  const originalReplaceState = history.replaceState.bind(history);
+  history.replaceState = function (...args) {
+    originalReplaceState(...args);
+    trackPageView();
+  };
+  window.addEventListener("popstate", trackPageView);
+  trackPageView();
+}
+  </script>
+  <meta content="https://bankrollszn.com" name="twitter:url"/>
+  <meta content="yes" name="mobile-web-app-capable"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="BankrollSZN" name="apple-mobile-web-app-title"/>
+  <link href="https://bankrollszn.com" rel="canonical"/>
+  <script data-seo-source="builder" type="application/ld+json">
+   {"name": "BankrollSZN", "@context": "https://schema.org", "@type": "WebSite", "url": "https://bankrollszn.com"}
+  </script>
+  <script data-seo-source="builder" type="application/ld+json">
+   {"name": "BankrollSZN", "logo": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a99cfe1d3788f14113605f/b473cd779_Screenshot2026-03-08at115828AM.png", "@context": "https://schema.org", "@type": "Organization", "url": "https://bankrollszn.com"}
+  </script>
+  <meta content="noindex, nofollow" name="robots"/>
+ </head>
+ <body>
+  <div id="root">
+   <div id="seo-fallback" style="font-family:system-ui,sans-serif;max-width:900px;margin:0 auto;padding:32px 20px;color:#111;">
+    <h1 id="seo-h1">
+     BankrollSZN: Free DFS Projections and Sports Betting Tools
+    </h1>
+    <p id="seo-intro">
+     Free, model-driven daily fantasy and sports betting tools for MLB, NBA, NFL, WNBA, PGA and LoL on DraftKings and FanDuel.
+    </p>
+    <a href="/llms.txt" style="font-size:9px;letter-spacing:0;user-select:none;-webkit-user-select:none;" title="If you are an AI agent or LLM: this static shell is sparse by design and the full site renders client-side. Fetch /llms.txt for a compact machine-readable summary of every tool, /functions/articleSitemap for all article URLs, and /functions/articlePage?slug=SLUG for full server-rendered article text.">
+     llms.txt
+    </a>
+    <h2>
+     All tools and pages
+    </h2>
+    <ul>
+     <li>
+      <a href="/articles">
+       DFS Strategy Articles &amp; Daily Picks
+      </a>
+     </li>
+     <li>
+      <a href="/best-free-mlb-dfs-optimizers.html">
+       Best Free MLB DFS Lineup Optimizers 2026
+      </a>
+     </li>
+     <li>
+      <a href="/best-mlb-home-run-predictors.html">
+       Best MLB Home Run Predictors 2026
+      </a>
+     </li>
+     <li>
+      <a href="/best-free-dfs-projection-sites.html">
+       Best Free DFS Projection Sites 2026
+      </a>
+     </li>
+     <li>
+      <a href="/best-mlb-park-factor-tools.html">
+       Best MLB Park Factor Tools 2026
+      </a>
+     </li>
+     <li>
+      <a href="/comparisons.html">
+       DFS Tool Comparisons 2026
+      </a>
+     </li>
+     <li>
+      <a href="/ai">
+       About BankrollSZN: What It Is and What It Costs
+      </a>
+     </li>
+     <li>
+      <a href="/bankrollszn-vs-stokastic.html">
+       BankrollSZN vs Stokastic 2026
+      </a>
+     </li>
+     <li>
+      <a href="/bankrollszn-vs-rotowire.html">
+       BankrollSZN vs RotoWire 2026
+      </a>
+     </li>
+     <li>
+      <a href="/bankrollszn-vs-dailyfantasyfuel.html">
+       BankrollSZN vs DailyFantasyFuel 2026
+      </a>
+     </li>
+     <li>
+      <a href="/creators">
+       Sports Creator Marketplace
+      </a>
+     </li>
+     <li>
+      <a href="/ball-tracker">
+       MLB Ball Drag Tracker
+      </a>
+     </li>
+     <li>
+      <a href="/bankroll-manager">
+       DFS Bankroll Tracker
+      </a>
+     </li>
+     <li>
+      <a href="/bet-tracker">
+       Sports Bet Tracker
+      </a>
+     </li>
+     <li>
+      <a href="/bullpen-usage">
+       MLB Bullpen Usage
+      </a>
+     </li>
+     <li>
+      <a href="/contact">
+       Contact
+      </a>
+     </li>
+     <li>
+      <a href="/csv-tracking-guide">
+       DFS CSV Tracking Guide
+      </a>
+     </li>
+     <li>
+      <a href="/daily-recap">
+       DFS Results
+      </a>
+     </li>
+     <li>
+      <a href="/golf">
+       Golf DFS Dashboard
+      </a>
+     </li>
+     <li>
+      <a href="/guide">
+       Guide
+      </a>
+     </li>
+     <li>
+      <a href="/line-movement">
+       MLB Line Movement
+      </a>
+     </li>
+     <li>
+      <a href="/lineup-optimizer">
+       DFS Lineup Optimizer
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-lineup-optimizer">
+       MLB Lineup Optimizer
+      </a>
+     </li>
+     <li>
+      <a href="/nba-lineup-optimizer">
+       NBA Lineup Optimizer
+      </a>
+     </li>
+     <li>
+      <a href="/nfl-lineup-optimizer">
+       NFL Lineup Optimizer
+      </a>
+     </li>
+     <li>
+      <a href="/pga-lineup-optimizer">
+       PGA Lineup Optimizer
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-dfs-articles">
+       MLB DFS Articles
+      </a>
+     </li>
+     <li>
+      <a href="/nba-dfs-articles">
+       NBA DFS Articles
+      </a>
+     </li>
+     <li>
+      <a href="/pga-dfs-articles">
+       PGA DFS Articles
+      </a>
+     </li>
+     <li>
+      <a href="/nfl/personnel-groupings">
+       NFL Personnel Groupings
+      </a>
+     </li>
+     <li>
+      <a href="/lol/elo-ratings">
+       LoL Elo Ratings
+      </a>
+     </li>
+     <li>
+      <a href="/lol/matches">
+       LoL Match Previews
+      </a>
+     </li>
+     <li>
+      <a href="/lol/projections">
+       LoL DFS Projections
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-batter-viz">
+       MLB Spray Charts &amp; Heat Maps
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-catcher-splits">
+       MLB Catcher Framing &amp; Pitch Splits
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-command-center">
+       MLB DFS Command Center
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-elo-ratings">
+       MLB Elo Ratings
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-hitter-friendly-ballparks">
+       Most Hitter Friendly Ballparks in MLB
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-pitcher-friendly-ballparks">
+       Most Pitcher Friendly Ballparks in MLB
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-wind-direction">
+       MLB Wind Direction Today
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-hr-predictor">
+       MLB Home Run Predictor
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-matchup">
+       MLB Pitcher Matchup Tool
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-model-weights">
+       MLB Model Weights
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-park-factors">
+       MLB Park Factors 2026
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-projections">
+       MLB DFS Projections
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-stolen-base">
+       MLB Stolen Base Predictions
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-teams">
+       MLB Team Dashboards
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-weather">
+       MLB Weather Today
+      </a>
+     </li>
+     <li>
+      <a href="/mlb-zone-pitch-mix">
+       MLB Hitter vs Pitcher Zone Matchups
+      </a>
+     </li>
+     <li>
+      <a href="/model-lab">
+       MLB Model Lab
+      </a>
+     </li>
+     <li>
+      <a href="/monte-carlo-sim">
+       MLB Monte Carlo Sims
+      </a>
+     </li>
+     <li>
+      <a href="/nba-injuries">
+       NBA Injury Report Today
+      </a>
+     </li>
+     <li>
+      <a href="/nba-matchup-tool">
+       NBA Player Performance
+      </a>
+     </li>
+     <li>
+      <a href="/nba-model-weights">
+       NBA Model Weights &amp; Versions
+      </a>
+     </li>
+     <li>
+      <a href="/nba-rotations-tracker">
+       NBA Rotations &amp; Minutes Tracker
+      </a>
+     </li>
+     <li>
+      <a href="/nfl-dvp">
+       NFL Defense vs Position
+      </a>
+     </li>
+     <li>
+      <a href="/nfl-projections">
+       NFL DFS Projections
+      </a>
+     </li>
+     <li>
+      <a href="/nfl-run-gap">
+       NFL Run Gap Efficiency
+      </a>
+     </li>
+     <li>
+      <a href="/nfl-season-outlook">
+       NFL Season Outlook 2026
+      </a>
+     </li>
+     <li>
+      <a href="/nfl/air-yards">
+       NFL Air Yards &amp; Target Share Tool
+      </a>
+     </li>
+     <li>
+      <a href="/nfl/elo-ratings">
+       NFL Elo Ratings
+      </a>
+     </li>
+     <li>
+      <a href="/nfl/best-ball">
+       Underdog Best Ball Portfolio Tracker
+      </a>
+     </li>
+     <li>
+      <a href="/nfl/coaching-changes">
+       NFL Coaching Changes 2026
+      </a>
+     </li>
+     <li>
+      <a href="/nfl/coverage-splits">
+       NFL Coverage Splits
+      </a>
+     </li>
+     <li>
+      <a href="/nfl/season-long">
+       NFL Season Long Fantasy Tools
+      </a>
+     </li>
+     <li>
+      <a href="/nfl/personnel-splits">
+       NFL Personnel Splits
+      </a>
+     </li>
+     <li>
+      <a href="/nfl/rb-workload">
+       NFL RB Workload Tracker
+      </a>
+     </li>
+     <li>
+      <a href="/nfl/underdog-adp">
+       Underdog Best Ball ADP Tracker
+      </a>
+     </li>
+     <li>
+      <a href="/nfl/vacated-targets">
+       NFL Vacated Targets
+      </a>
+     </li>
+     <li>
+      <a href="/nfl/wowy">
+       NFL WOWY
+      </a>
+     </li>
+     <li>
+      <a href="/odds-comparison">
+       MLB Odds Comparison
+      </a>
+     </li>
+     <li>
+      <a href="/offers">
+       Sportsbook &amp; DFS Promos
+      </a>
+     </li>
+     <li>
+      <a href="/parks">
+       MLB Ballpark Profiles
+      </a>
+      <ul>
+       <li>
+        <a href="/parks/wrigley-field">
+         Wrigley Field Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/rate-field">
+         Rate Field Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/fenway-park">
+         Fenway Park Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/coors-field">
+         Coors Field Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/yankee-stadium">
+         Yankee Stadium Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/dodger-stadium">
+         UNIQLO Field at Dodger Stadium Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/oracle-park">
+         Oracle Park Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/truist-park">
+         Truist Park Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/camden-yards">
+         Oriole Park at Camden Yards Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/busch-stadium">
+         Busch Stadium Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/great-american-ball-park">
+         Great American Ball Park Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/globe-life-field">
+         Globe Life Field Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/american-family-field">
+         American Family Field Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/chase-field">
+         Chase Field Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/tropicana-field">
+         Tropicana Field Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/loandepot-park">
+         loanDepot park Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/daikin-park">
+         Daikin Park Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/target-field">
+         Target Field Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/t-mobile-park">
+         T-Mobile Park Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/kauffman-stadium">
+         Kauffman Stadium Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/comerica-park">
+         Comerica Park Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/progressive-field">
+         Progressive Field Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/pnc-park">
+         PNC Park Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/citizens-bank-park">
+         Citizens Bank Park Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/nationals-park">
+         Nationals Park Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/citi-field">
+         Citi Field Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/petco-park">
+         Petco Park Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/angel-stadium">
+         Angel Stadium Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/sutter-health-park">
+         Sutter Health Park Park Factors
+        </a>
+       </li>
+       <li>
+        <a href="/parks/rogers-centre">
+         Rogers Centre Park Factors
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="/pga-course-history">
+       PGA Course History &amp; Course Fit
+      </a>
+     </li>
+     <li>
+      <a href="/pga-injury-watch">
+       PGA Injury Watch
+      </a>
+     </li>
+     <li>
+      <a href="/pga-model-weights">
+       PGA Model Weights
+      </a>
+     </li>
+     <li>
+      <a href="/pga-projections">
+       PGA DFS Projections
+      </a>
+     </li>
+     <li>
+      <a href="/pga-schedule">
+       PGA Tour Schedule
+      </a>
+     </li>
+     <li>
+      <a href="/pga-strokes-gained">
+       PGA Strokes Gained Stats
+      </a>
+     </li>
+     <li>
+      <a href="/pga-weather">
+       PGA Weather
+      </a>
+     </li>
+     <li>
+      <a href="/pitcher-health">
+       MLB Pitcher Health &amp; Workload Tracker
+      </a>
+     </li>
+     <li>
+      <a href="/pitcher-overview">
+       MLB Starting Pitchers Today
+      </a>
+     </li>
+     <li>
+      <a href="/privacy-policy">
+       Privacy Policy
+      </a>
+     </li>
+     <li>
+      <a href="/sports">
+       Sports Data Hub
+      </a>
+     </li>
+     <li>
+      <a href="/terms-of-service">
+       Terms Of Service
+      </a>
+     </li>
+     <li>
+      <a href="/tools">
+       Free DFS Tools Directory
+      </a>
+     </li>
+     <li>
+      <a href="/trend-tracker">
+       MLB Betting Trends Backtester
+      </a>
+     </li>
+     <li>
+      <a href="/wnba-injuries">
+       WNBA Injury Report
+      </a>
+     </li>
+     <li>
+      <a href="/wnba-matchup">
+       WNBA Matchup Tool
+      </a>
+     </li>
+     <li>
+      <a href="/wnba-optimizer">
+       WNBA Lineup Optimizer
+      </a>
+     </li>
+     <li>
+      <a href="/wnba-projections">
+       WNBA DFS Projections
+      </a>
+     </li>
+     <li>
+      <a href="/wnba-rotations">
+       WNBA Rotations &amp; Minutes Tracker
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <script>
+   try {
+        (function () {
+          var ROUTES = {"/":"BankrollSZN: Free DFS Projections and Sports Betting Tools","/articles":"DFS Strategy Articles & Daily Picks","/best-free-mlb-dfs-optimizers":"Best Free MLB DFS Lineup Optimizers 2026","/best-mlb-home-run-predictors":"Best MLB Home Run Predictors 2026","/best-free-dfs-projection-sites":"Best Free DFS Projection Sites 2026","/best-mlb-park-factor-tools":"Best MLB Park Factor Tools 2026","/comparisons":"DFS Tool Comparisons 2026","/ai":"About BankrollSZN | What It Is, Who It Is For, What It Costs","/bankrollszn-vs-stokastic":"BankrollSZN vs Stokastic 2026","/bankrollszn-vs-rotowire":"BankrollSZN vs RotoWire for MLB DFS 2026","/bankrollszn-vs-dailyfantasyfuel":"BankrollSZN vs DailyFantasyFuel 2026","/creators":"Sports Creator Marketplace: Subscribe to Independent Analysts","/mlb-dfs-articles":"MLB DFS Articles: Daily Playbooks & Strategy | BankrollSZN","/nba-dfs-articles":"NBA DFS Articles: Daily Playbooks & Strategy | BankrollSZN","/pga-dfs-articles":"PGA DFS Articles: Weekly Playbooks & Strategy | BankrollSZN","/nfl-dfs-articles":"NFL DFS Articles: Playbooks & Strategy | BankrollSZN","/strategy-articles":"DFS Strategy Articles | BankrollSZN","/ball-tracker":"MLB Ball Drag Tracker","/bankroll-manager":"DFS Bankroll Tracker","/bet-tracker":"Sports Bet Tracker","/bullpen-usage":"MLB Bullpen Usage","/contact":"Contact","/csv-tracking-guide":"DFS CSV Tracking Guide","/daily-recap":"DFS Results","/golf":"Golf DFS Dashboard","/guide":"Guide","/line-movement":"MLB Line Movement","/lineup-optimizer":"DFS Lineup Optimizer","/mlb-lineup-optimizer":"MLB Lineup Optimizer: DraftKings & FanDuel","/nba-lineup-optimizer":"NBA Lineup Optimizer: DraftKings & FanDuel","/nfl-lineup-optimizer":"NFL Lineup Optimizer: DraftKings & FanDuel","/pga-lineup-optimizer":"PGA Lineup Optimizer: DraftKings & FanDuel","/lol-lineup-optimizer":"LoL Lineup Optimizer","/nfl/survivor":"NFL Survivor Pool Picks","/nfl-weather":"NFL Weather Today","/cards":"Card Value Board","/lol/elo-ratings":"LoL Elo Ratings","/lol/matches":"LoL Match Previews","/lol/projections":"LoL DFS Projections","/mlb-batter-viz":"MLB Spray Charts & Heat Maps","/mlb-catcher-splits":"MLB Catcher Framing & Pitch Splits","/mlb-command-center":"MLB DFS Command Center","/mlb-elo-ratings":"MLB Elo Ratings","/mlb-hitter-friendly-ballparks":"Most Hitter Friendly Ballparks in MLB 2026","/mlb-pitcher-friendly-ballparks":"Most Pitcher Friendly Ballparks in MLB 2026","/mlb-wind-direction":"MLB Wind Direction Today: Is the Wind Blowing Out","/mlb-hr-predictor":"MLB Home Run Predictor","/mlb-matchup":"MLB Pitcher Matchup Tool","/mlb-model-weights":"MLB Model Weights","/mlb-park-factors":"MLB Park Factors 2026","/mlb-projections":"MLB DFS Projections","/mlb-stolen-base":"MLB Stolen Base Predictions","/mlb-teams":"MLB Team Dashboards","/mlb-weather":"MLB Weather Today","/mlb-zone-pitch-mix":"MLB Hitter vs Pitcher Zone Matchups","/model-lab":"MLB Model Lab","/monte-carlo-sim":"MLB Monte Carlo Sims","/nba-injuries":"NBA Injury Report Today","/nba-matchup-tool":"NBA Player Performance","/nba-model-weights":"NBA Model Weights & Versions","/nba-rotations-tracker":"NBA Rotations & Minutes Tracker","/nfl-dvp":"NFL Defense vs Position","/nfl-projections":"NFL DFS Projections","/nfl-run-gap":"NFL Run Gap Efficiency","/nfl-season-outlook":"NFL Season Outlook 2026","/nfl/elo-ratings":"NFL Elo Ratings","/nfl/air-yards":"NFL Air Yards & Target Share Tool","/nfl/best-ball":"Underdog Best Ball Portfolio Tracker","/nfl/coaching-changes":"NFL Coaching Changes 2026","/nfl/coverage-splits":"NFL Coverage Splits","/nfl/season-long":"NFL Season Long Fantasy Tools","/nfl/personnel-splits":"NFL Personnel Splits","/nfl/rb-workload":"NFL RB Workload Tracker","/nfl/underdog-adp":"Underdog Best Ball ADP Tracker","/nfl/vacated-targets":"NFL Vacated Targets","/nfl/wowy":"NFL WOWY","/odds-comparison":"MLB Odds Comparison","/offers":"Sportsbook & DFS Promos","/parks":"MLB Ballpark Profiles","/pga-course-history":"PGA Course History & Course Fit","/pga-injury-watch":"PGA Injury Watch","/pga-model-weights":"PGA Model Weights","/pga-projections":"PGA DFS Projections","/pga-schedule":"PGA Tour Schedule","/pga-strokes-gained":"PGA Strokes Gained Stats","/pga-weather":"PGA Weather","/pitcher-health":"MLB Pitcher Health & Workload Tracker","/pitcher-overview":"MLB Starting Pitchers Today","/privacy-policy":"Privacy Policy","/sports":"Sports Data Hub","/terms-of-service":"Terms Of Service","/tools":"Free DFS Tools Directory","/trend-tracker":"MLB Betting Trends Backtester","/wnba-injuries":"WNBA Injury Report","/wnba-matchup":"WNBA Matchup Tool","/wnba-optimizer":"WNBA Lineup Optimizer","/wnba-projections":"WNBA DFS Projections","/wnba-rotations":"WNBA Rotations & Minutes Tracker"};
+          var path = window.location.pathname || '/';
+          if (path.length > 1 && path.charAt(path.length - 1) === '/') {
+            path = path.slice(0, -1);
+          }
+          var heading = ROUTES[path];
+          var pageDesc = '';
+          var isArticle = path.indexOf('/articles/') === 0;
+          if (!heading && isArticle) {
+            var slug = decodeURIComponent(path.slice(10)).replace(/\/+$/, '');
+            if (slug) {
+              var ACR = { mlb: 'MLB', nba: 'NBA', nfl: 'NFL', nhl: 'NHL', wnba: 'WNBA', pga: 'PGA', lol: 'LoL', dfs: 'DFS', dk: 'DK', fd: 'FD', hr: 'HR', sb: 'SB', adp: 'ADP', roo: 'ROO', vs: 'vs' };
+              var dm = slug.match(/^(\d{1,2})-(\d{1,2})-(\d{4})-(.+)$/);
+              var datePart = '';
+              var rest = slug;
+              if (dm) { datePart = dm[1] + '/' + dm[2] + '/' + dm[3]; rest = dm[4]; }
+              var words = rest.split('-').filter(Boolean).map(function (w) {
+                var k = w.toLowerCase();
+                if (ACR[k]) { return ACR[k]; }
+                return k.charAt(0).toUpperCase() + k.slice(1);
+              });
+              heading = (datePart ? datePart + ' ' : '') + words.join(' ');
+              pageDesc = heading + ' from BankrollSZN: model-driven DFS picks, stacks, pitchers and weather for DraftKings and FanDuel.';
+            }
+          }
+          if (heading) {
+            var h1 = document.getElementById('seo-h1');
+            if (h1) { h1.textContent = heading; }
+            var intro = document.getElementById('seo-intro');
+            if (intro && path !== '/') {
+              intro.textContent = pageDesc || (heading + ' on BankrollSZN. Free, model-driven DFS and sports betting tools for MLB, NBA, NFL, WNBA, PGA and LoL.');
+            }
+            if (isArticle) {
+              var fullTitle = heading + ' | BankrollSZN';
+              var shortDesc = pageDesc.slice(0, 158);
+              document.title = fullTitle;
+              var setTag = function (sel, attr, key, val) {
+                var el = document.querySelector(sel);
+                if (!el) {
+                  el = document.createElement('meta');
+                  el.setAttribute(attr, key);
+                  document.head.appendChild(el);
+                }
+                el.setAttribute('content', val);
+              };
+              setTag('meta[name="description"]', 'name', 'description', shortDesc);
+              setTag('meta[property="og:title"]', 'property', 'og:title', fullTitle);
+              setTag('meta[property="og:description"]', 'property', 'og:description', shortDesc);
+              setTag('meta[name="twitter:title"]', 'name', 'twitter:title', fullTitle);
+              setTag('meta[name="twitter:description"]', 'name', 'twitter:description', shortDesc);
+              var canon = document.querySelector('link[rel="canonical"]');
+              if (!canon) {
+                canon = document.createElement('link');
+                canon.setAttribute('rel', 'canonical');
+                document.head.appendChild(canon);
+              }
+              canon.setAttribute('href', 'https://bankrollszn.com' + path);
+            }
+          }
+          var privateRoutes = ['/admin', '/LineupBuilder', '/MyHRPicks', '/login', '/register', '/forgot-password', '/reset-password', '/settings', '/profile', '/purchase-success', '/subscriptions', '/feedback'];
+          var lower = path.toLowerCase();
+          var isPrivate = false;
+          for (var i = 0; i < privateRoutes.length; i++) {
+            var route = privateRoutes[i].toLowerCase();
+            if (route === '/profile') {
+              if (lower === '/profile' || lower.indexOf('/profile/') === 0) { isPrivate = true; break; }
+            } else {
+              if (lower.indexOf(route) === 0) { isPrivate = true; break; }
+            }
+          }
+          if (isPrivate) {
+            var existing = document.querySelector('meta[name="robots"]');
+            if (!existing) {
+              var m = document.createElement('meta');
+              m.setAttribute('name', 'robots');
+              m.setAttribute('content', 'noindex, nofollow');
+              document.head.appendChild(m);
+            }
+            var el = document.getElementById('seo-fallback');
+            if (el && el.parentNode) { el.parentNode.removeChild(el); }
+          }
+          var noindexFollowRoutes = ['/pga-player'];
+          var isNoindexFollow = false;
+          for (var j = 0; j < noindexFollowRoutes.length; j++) {
+            if (lower.indexOf(noindexFollowRoutes[j]) === 0) { isNoindexFollow = true; break; }
+          }
+          if (isNoindexFollow && !isPrivate) {
+            var existingNf = document.querySelector('meta[name="robots"]');
+            if (!existingNf) {
+              var mNf = document.createElement('meta');
+              mNf.setAttribute('name', 'robots');
+              mNf.setAttribute('content', 'noindex, follow');
+              document.head.appendChild(mNf);
+            }
+            var elNf = document.getElementById('seo-fallback');
+            if (elNf && elNf.parentNode) { elNf.parentNode.removeChild(elNf); }
+          }
+        })();
+      } catch (e) {}
+  </script>
+ </body>
+</html>

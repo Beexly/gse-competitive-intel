@@ -1,0 +1,99 @@
+{
+ "domain": "aura.money",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/b2-aura_money-home.html"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b2-aura_money-home.html",
+   "raw\\b2-aura_money-robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-aura_money-home.html"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-aura_money-home.html"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-aura_money-home.html"
+  },
+  "citations": [
+   "raw\\b2-aura_money-home.html",
+   "raw\\b2-aura_money-robots.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'The fastest, cheapest way to trade Hyperliquid perps, spot, HIP-3 markets and Po' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "Polymarket",
+    "polymarket"
+   ],
+   "citation": "raw/b2-aura_money-home.html"
+  },
+  "citations": [
+   "raw\\b2-aura_money-home.html",
+   "raw\\b2-aura_money-robots.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-aura_money-home.html"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\b2-aura_money-home.html"
+ },
+ "pricing": {
+  "web": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-aura_money-home.html"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b2-aura_money-home.html",
+   "raw\\b2-aura_money-robots.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Disallow: /api/",
+  "Sitemap: https://aura.money/sitemap.xml"
+ ],
+ "discovered_targets": [
+  "NOT CONFIRMED"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:43.886357"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Aura — Trade Hyperliquid &amp; Polymarket in one app",
+  "description": "The fastest, cheapest way to trade Hyperliquid perps, spot, HIP-3 markets and Polymarket predictions. One wallet, lowest fees — on iOS, Android, and desktop."
+ }
+}

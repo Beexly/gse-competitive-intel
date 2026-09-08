@@ -1,0 +1,67 @@
+{
+  "domain": "propsoptimizer.com",
+  "type": "live-site",
+  "disposition": "live",
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "'Proprietary algorithms analyze thousands of data points' for player props",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "live prop tracking",
+    "citation": "raw/propsoptimizer-home.html"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "customer_pain": [],
+  "discovered_targets": [],
+  "tech_stack": {
+    "frontend": "Next.js + GTM; has /.well-known/ai-plugin.json (ChatGPT plugin manifest path)",
+    "backend": "NOT CONFIRMED",
+    "database": "NOT CONFIRMED",
+    "cloud": "NOT CONFIRMED",
+    "cdn": "NOT CONFIRMED",
+    "citations": [
+      "raw/propsoptimizer-home.html",
+      "raw/propsoptimizer-probe_.well-known_ai-plugin.json.txt (returned app HTML shell, 200)"
+    ]
+  },
+  "pricing": {
+    "web": "freemium: 'Access premium data free with ads' + Go Pro ad-free; strings $9.99/$19.99/$95.99/$99.99/$199.99",
+    "ios": "4.9 rating claim",
+    "android": "4.7 rating claim",
+    "citations": [
+      "raw/propsoptimizer-home.html"
+    ]
+  },
+  "product_limits": {
+    "limits": "ad-supported free tier; slip building direct-to-books",
+    "upgrade_triggers": "ad removal",
+    "citation": "raw/propsoptimizer-home.html"
+  },
+  "data_supply_chain": {
+    "vendors": [
+      "DraftKings, FanDuel, Underdog, PrizePicks, BetMGM line comparison + direct slip send"
+    ],
+    "citations": [
+      "raw/propsoptimizer-home.html"
+    ]
+  },
+  "discovered_paths": [
+    "/.well-known/ai-plugin.json"
+  ],
+  "discovery_metadata": {
+    "method": "batch-saved homepage (126KB) + plugin manifest probe",
+    "timestamp": "2026-09-08T14:31:22.220713"
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed.",
+    "websocket_endpoints": [],
+    "rate_limits": "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed.",
+    "citations": [
+      "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed."
+    ]
+  }
+}

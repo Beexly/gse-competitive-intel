@@ -1,0 +1,64 @@
+{
+ "tech_stack": {
+  "frontend": "Webflow (window.__WEBFLOW_CURRENCY_SETTINGS in pricing page) + app bundle",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/rithmm-pricing.html",
+   "raw/rithmm-app-home.html",
+   "raw/rithmm-app-index-bundle.js"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": [],
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/rithmm-app-index-bundle.js"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "AI picks (ESPN-featured brand; internals NOT CONFIRMED)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "Scout usage quotas included by tier (Pro gets more; named 'Scout usage' in pricing copy)",
+  "upgrade_triggers": "7-day free trial -> paid tier",
+  "citation": "raw/rithmm-pricing.html"
+ },
+ "pricing": {
+  "web": "$29.99/mo, $49.99/mo (Scout usage included), $99.99/mo tier; all '7 days free, cancel anytime'",
+  "ios": "App Store id1641010681 'Rithmm: AI Sports Betting' (Apple App Store listing)",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/rithmm-pricing.html"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/pricing",
+  "/ai-sports-picks"
+ ],
+ "discovered_targets": [],
+ "domain": "rithmm.com",
+ "discovery_metadata": {
+  "method": "solo self-run (subagents disabled per operator)",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 12 raw evidence files)"
+}

@@ -1,0 +1,124 @@
+{
+ "domain": "balldontlie.io",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/batch2_balldontlie_io_apiprobe.txt"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\batch2_balldontlie_io_apiprobe.txt",
+   "raw\\batch2_balldontlie_io_home.html",
+   "raw\\batch2_balldontlie_io_js1.js",
+   "raw\\batch2_balldontlie_io_probe.txt",
+   "raw\\batch2_balldontlie_io_robots.txt",
+   "raw\\batch2_balldontlie_io_sitemap.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "api.yml",
+    "api.yaml"
+   ],
+   "citation": "raw/batch2_balldontlie_io_apiprobe.txt"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\batch2_balldontlie_io_apiprobe.txt"
+  },
+  "rate_limits": {
+   "value": "Rate Limit",
+   "citation": "raw/batch2_balldontlie_io_apiprobe.txt"
+  },
+  "citations": [
+   "raw\\batch2_balldontlie_io_apiprobe.txt",
+   "raw\\batch2_balldontlie_io_home.html",
+   "raw\\batch2_balldontlie_io_js1.js",
+   "raw\\batch2_balldontlie_io_probe.txt",
+   "raw\\batch2_balldontlie_io_robots.txt",
+   "raw\\batch2_balldontlie_io_sitemap.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Access real-time sports data with BALLDONTLIE API. Comprehensive stats for NBA, ' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "balldontlie",
+    "BALLDONTLIE"
+   ],
+   "citation": "raw/batch2_balldontlie_io_apiprobe.txt"
+  },
+  "citations": [
+   "raw\\batch2_balldontlie_io_apiprobe.txt",
+   "raw\\batch2_balldontlie_io_home.html",
+   "raw\\batch2_balldontlie_io_js1.js",
+   "raw\\batch2_balldontlie_io_probe.txt",
+   "raw\\batch2_balldontlie_io_robots.txt",
+   "raw\\batch2_balldontlie_io_sitemap.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "Rate Limit"
+   ],
+   "citation": "raw/batch2_balldontlie_io_apiprobe.txt"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\batch2_balldontlie_io_apiprobe.txt"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "Free tier",
+    "Free",
+    "free"
+   ],
+   "citation": "raw/batch2_balldontlie_io_apiprobe.txt"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\batch2_balldontlie_io_apiprobe.txt",
+   "raw\\batch2_balldontlie_io_home.html",
+   "raw\\batch2_balldontlie_io_js1.js",
+   "raw\\batch2_balldontlie_io_probe.txt",
+   "raw\\batch2_balldontlie_io_robots.txt",
+   "raw\\batch2_balldontlie_io_sitemap.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Sitemap: https://balldontlie.io/sitemap.xml"
+ ],
+ "discovered_targets": [
+  "api.yaml",
+  "api.yml"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:29.090522"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "BALLDONTLIE | The #1 Sports API for 20+ Leagues - NBA, NFL, MLB, NHL, Soccer, Tennis, Golf, Esports & More",
+  "description": "Access real-time sports data with BALLDONTLIE API. Comprehensive stats for NBA, NFL, MLB, NHL, WNBA, NCAAF, NCAAB, NCAAW, EPL, La Liga, Serie A, Bundesliga, Ligue 1, Champions League, MLS, World Cup, MMA, Tennis (ATP/WTA), PGA Golf, F1, CS2, Valorant, LoL, and Dota 2. Free tier available."
+ }
+}

@@ -1,0 +1,56 @@
+{
+  "domain": "dfsace.com",
+  "disposition": "dead",
+  "notes": "Parent verification 2026-09-08: curl https://dfsace.com/ returned HTTP 000 (connection failed). Previously unset; now dispositioned dead on connectivity failure.",
+  "tech_stack": {
+    "frontend": "NOT CONFIRMED",
+    "backend": "NOT CONFIRMED",
+    "database": "NOT CONFIRMED",
+    "cloud": "NOT CONFIRMED",
+    "cdn": "NOT CONFIRMED",
+    "citations": [
+      "raw/fx_dfsace_com_home.raw"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": []
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [],
+    "citations": []
+  },
+  "product_limits": {
+    "limits": "NOT CONFIRMED",
+    "upgrade_triggers": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "pricing": {
+    "web": "NOT CONFIRMED",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": []
+  },
+  "customer_pain": [],
+  "discovered_paths": [],
+  "discovered_targets": [],
+  "discovery_metadata": {
+    "method": "parent re-verification fetch (curl) \u2014 previously unset",
+    "timestamp": "2026-09-08T16:40:00-05:00"
+  }
+}

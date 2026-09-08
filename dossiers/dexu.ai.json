@@ -1,0 +1,114 @@
+{
+ "domain": "dexu.ai",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/dexu.ai.html"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\dexu.ai.html",
+   "raw\\dexu.ai.robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "api.tsx"
+   ],
+   "citation": "raw/dexu.ai.html"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\dexu.ai.html"
+  },
+  "rate_limits": {
+   "value": "credit",
+   "citation": "raw/dexu.ai.html"
+  },
+  "citations": [
+   "raw\\dexu.ai.html",
+   "raw\\dexu.ai.robots.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Dexu is crypto intelligence that finds the signal within the noise — track minds' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\dexu.ai.html"
+  },
+  "citations": [
+   "raw\\dexu.ai.html",
+   "raw\\dexu.ai.robots.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "credit"
+   ],
+   "citation": "raw/dexu.ai.html"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\dexu.ai.html"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "Free plan",
+    "free plan",
+    "free",
+    "Free tier"
+   ],
+   "citation": "raw/dexu.ai.html"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\dexu.ai.html",
+   "raw\\dexu.ai.robots.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Allow: /",
+  "Disallow: /auth/"
+ ],
+ "discovered_targets": [
+  "api.tsx"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:45.553384"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Dexu — Crypto mindshare, KOL &amp; narrative intelligence",
+  "description": "Dexu is crypto intelligence that finds the signal within the noise — track mindshare, sentiment, KOLs, narratives and catalysts across X, YouTube, TikTok, Reddit, Telegram and Instagram, plus market and on-chain data. Re-indexed all day and analyzed by AI, so you find the trends early. Use the dashb"
+ }
+}

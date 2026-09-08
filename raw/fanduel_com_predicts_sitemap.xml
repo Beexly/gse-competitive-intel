@@ -1,0 +1,21 @@
+URL: https://www.fanduel.com/sitemap.xml\nSTATUS: 200\n\n<?xml version="1.0" encoding="utf-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+    http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd">
+      <sitemap>
+        <loc>https://www.fanduel.com/sitemap-main.xml</loc>
+      </sitemap>
+      <sitemap>
+        <loc>https://www.fanduel.com/research/server-sitemap-index.xml</loc>
+      </sitemap>
+      <sitemap>
+        <loc>https://www.fanduel.com/fantasy/nfl/sitemap.xml</loc>
+      </sitemap>
+      <sitemap>
+        <loc>https://www.fanduel.com/cms-sitemap.xml</loc>
+      </sitemap>
+      <sitemap>
+        <loc>https://www.fanduel.com/about/sitemap.xml</loc>
+      </sitemap>
+</sitemapindex>

@@ -1,0 +1,2 @@
+URL: https://www.bettingpros.com/robots.txt\nSTATUS: 200\n\nUser-Agent: *
+Allow: /

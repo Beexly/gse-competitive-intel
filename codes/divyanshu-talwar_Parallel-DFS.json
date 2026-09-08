@@ -1,0 +1,1 @@
+{"repo": "github.com/divyanshu-talwar/Parallel-DFS", "stars": 28, "topic": "dfs", "desc": "CUDA implementation of parallel Depth First Search (DFS) algorithm and it's comparison with a serial C++ DFS i", "updated": "2018-06-28", "license_first_line": "none-found", "readme_chars": 30, "readme_head": "![Parallel-DFS](./poster.jpg).", "apis_detected": []}

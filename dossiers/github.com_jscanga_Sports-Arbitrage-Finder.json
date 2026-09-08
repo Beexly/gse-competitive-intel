@@ -1,0 +1,103 @@
+{
+ "domain": "github.com/jscanga/Sports-Arbitrage-Finder",
+ "type": "open-source-repo",
+ "tech_stack": {
+  "frontend": "Next.js app (next.config.ts, src/)",
+  "backend": "TypeScript",
+  "database": "n/a",
+  "cloud": "Vercel deployment (sports-arbitrage-finder.vercel.app)",
+  "cdn": "n/a",
+  "citations": [
+   "raw/gh-meta-jscanga__Sports-Arbitrage-Finder.json",
+   "raw/gh-tree-jscanga__Sports-Arbitrage-Finder.json"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "sportsbook odds aggregation endpoints (Next.js src/; specifics NOT CONFIRMED without clone)"
+  ],
+  "graphql_schema": "none",
+  "websocket_endpoints": [],
+  "rate_limits": "n/a (client-side lib)",
+  "citations": [
+   "raw/gh-tree-jscanga__Sports-Arbitrage-Finder.json"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "arbitrage opportunity detection across aggregated odds",
+   "where": "src/ (Next.js/TypeScript app)",
+   "evidence": "README description 'real-time sports odds aggregator and arbitrage detection tool'"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "n/a (research repo)",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "sportsbook odds (names NOT CONFIRMED)"
+  ],
+  "citations": [
+   "raw/gh-tree-jscanga__Sports-Arbitrage-Finder.json"
+  ]
+ },
+ "product_limits": {
+  "limits": "open source, no caps",
+  "upgrade_triggers": "n/a",
+  "citation": "raw/gh-meta-jscanga__Sports-Arbitrage-Finder.json"
+ },
+ "pricing": {
+  "web": "free/open source",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "raw/gh-meta-jscanga__Sports-Arbitrage-Finder.json"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  ".gitignore",
+  "LICENSE",
+  "README.md",
+  "agenda.txt",
+  "eslint.config.mjs",
+  "next.config.ts",
+  "package-lock.json",
+  "package.json",
+  "postcss.config.mjs",
+  "public",
+  "public/file.svg",
+  "public/globe.svg",
+  "public/next.svg",
+  "public/vercel.svg",
+  "public/window.svg",
+  "src",
+  "src/app",
+  "src/app/api",
+  "src/app/api/odds",
+  "src/app/api/odds/route.ts",
+  "src/app/dashboard",
+  "src/app/dashboard/page.tsx",
+  "src/app/favicon.ico",
+  "src/app/globals.css",
+  "src/app/layout.tsx"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "stars": 0,
+  "license": "MIT",
+  "archived": false,
+  "pushed_at": "2026-05-19T19:29:24Z",
+  "description": "A real-time sports odds aggregator and arbitrage detection tool built with Next.js.",
+  "timestamp": "2026-09-08T14:07:11.916123"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

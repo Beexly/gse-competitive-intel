@@ -1,0 +1,106 @@
+{
+ "domain": "api-tennis.com",
+ "tech_stack": {
+  "frontend": "Server-rendered HTML with jQuery 3.0.0 + jquery-modal (cdnjs.cloudflare.com); no SPA framework observed",
+  "backend": "NOT CONFIRMED - apache-style 404 pages",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "cdnjs.cloudflare.com",
+  "citations": [
+   "https://api-tennis.com/",
+   "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js",
+   "https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "https://api.api-tennis.com/tennis/?method=get_events&APIkey={key}",
+    "auth_required": true,
+    "tier": "any paid plan",
+    "sample_response": "{\"success\":1,\"result\":[{\"event_type_key\":\"267\",\"event_type_type\":\"Atp Doubles\"},{\"event_type_key\":\"265\",\"event_type_type\":\"Atp Singles\"}]}",
+    "citation": "https://api-tennis.com/documentation"
+   },
+   {
+    "method": "GET",
+    "path": "https://api.api-tennis.com/tennis/?method=get_tournaments&APIkey={key}",
+    "auth_required": true,
+    "tier": "any paid plan",
+    "sample_response": "{\"success\":1,\"result\":[{\"tournament_key\":\"2833\",\"tournament_name\":\"Aachen\",...}]}",
+    "citation": "https://api-tennis.com/documentation"
+   },
+   {
+    "method": "GET",
+    "path": "api.api-tennis.com/tennis/?method=get_{fixtures|livescore|standings|players|odds|live_odds|news|draw}",
+    "auth_required": true,
+    "tier": "NOT CONFIRMED",
+    "sample_response": null,
+    "citation": "https://api-tennis.com/documentation (method list in docs)"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED - no GraphQL referenced",
+  "websocket_endpoints": "Documented at /documentation_websocket (sitemap); endpoint details NOT CONFIRMED (page not fetched)",
+  "rate_limits": "NOT CONFIRMED - not exposed in docs excerpt",
+  "citations": [
+   "https://api-tennis.com/documentation",
+   "https://api-tennis.com/sitemap.xml",
+   "https://api-tennis.com/documentation_websocket"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED - none observed",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": null
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": null
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED - no sportradar/statsperform/opta/odds-api strings in fetched JS (jQuery bundles only)",
+  "citations": [
+   "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"
+  ]
+ },
+ "product_limits": {
+  "limits": "API methods return only data 'included in your current subscription plan'",
+  "upgrade_triggers": "'Available exclusively on the Ultra plan' / 'Ultra plan only' in docs (feature gating at Ultra tier)",
+  "citation": "https://api-tennis.com/documentation"
+ },
+ "pricing": {
+  "web": "Tiers include 'Ultra' (top tier referenced in docs); exact tier prices NOT CONFIRMED - /plans returns 404, homepage pricing section is post-registration",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://api-tennis.com/",
+   "https://api-tennis.com/plans (404)",
+   "https://api-tennis.com/documentation"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "I was paying 116 euros per month for this API but it is a very high price for the quality and precision of the data I'm getting",
+   "source": "https://www.reddit.com/r/webdev/comments/1i6t8e6/looking_for_the_best_bootball_soccer_data_api_my/",
+   "date": "2073-10-30"
+  }
+ ],
+ "discovered_paths": [
+  "/mcp",
+  "/mcp-documentation",
+  "/documentation_websocket",
+  "/register",
+  "api.api-tennis.com (API host subdomain)",
+  "/blog/"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "GET homepage/robots/sitemap + docs page + 2 cdnjs bundles; probes /openapi.json /swagger.json /api /docs (all 404)",
+  "timestamp": "2026-09-08T15:59:24.859512-05:00"
+ },
+ "disposition": "live",
+ "notes": "Tennis-only data API (ATP/WTA events, fixtures, livescore, h2h, odds, draw); MCP server offered (AI-agent angle); API key passed as query param APIkey. Reddit quote is generic sports-API pain (no api-tennis-specific thread surfaced)."
+}

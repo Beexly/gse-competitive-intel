@@ -1,0 +1,14 @@
+URL: https://propsoptimizer.com/robots.txt\nSTATUS: 200\n\nUser-Agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /api/
+Disallow: */preview
+Disallow: /download/private/*
+
+User-Agent: GPTBot
+Allow: /
+Disallow: /api/
+
+Host: https://propsoptimizer.com
+Sitemap: https://propsoptimizer.com/sitemap.xml

@@ -1,0 +1,141 @@
+{
+ "domain": "rotowire.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "vIte",
+   "citation": "raw/px_rotowire_com_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_rotowire_com_home.raw",
+   "raw\\px_rotowire_com_robots.raw",
+   "raw\\rotowire_com_dfs_home.html",
+   "raw\\rotowire_com_dfs_robots.txt",
+   "raw\\rotowire_com_dfs_sitemap.xml",
+   "raw\\rotowire_com_home_webextract.md"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apis.com",
+    "apis.com/css",
+    "wsrlsuu3iemou9ed.jpg",
+    "ws.php",
+    "ws-sitemap.php",
+    "ws.xml"
+   ],
+   "citation": "raw/px_rotowire_com_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_rotowire_com_home.raw"
+  },
+  "rate_limits": {
+   "value": "Credit",
+   "citation": "raw/px_rotowire_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_rotowire_com_home.raw",
+   "raw\\px_rotowire_com_robots.raw",
+   "raw\\rotowire_com_dfs_home.html",
+   "raw\\rotowire_com_dfs_robots.txt",
+   "raw\\rotowire_com_dfs_sitemap.xml",
+   "raw\\rotowire_com_home_webextract.md"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'RotoWire is the trusted leader in fantasy sports news, rankings, analysis and sp' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_rotowire_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_rotowire_com_home.raw",
+   "raw\\px_rotowire_com_robots.raw",
+   "raw\\rotowire_com_dfs_home.html",
+   "raw\\rotowire_com_dfs_robots.txt",
+   "raw\\rotowire_com_dfs_sitemap.xml",
+   "raw\\rotowire_com_home_webextract.md"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "Credit",
+    "credit"
+   ],
+   "citation": "raw/px_rotowire_com_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_rotowire_com_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "Free",
+    "free"
+   ],
+   "citation": "raw/px_rotowire_com_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_rotowire_com_home.raw",
+   "raw\\px_rotowire_com_robots.raw",
+   "raw\\rotowire_com_dfs_home.html",
+   "raw\\rotowire_com_dfs_robots.txt",
+   "raw\\rotowire_com_dfs_sitemap.xml",
+   "raw\\rotowire_com_home_webextract.md"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Sitemap: https://www.rotowire.com/sitemap.xml",
+  "Sitemap: https://www.rotowire.com/news-sitemap.php",
+  "Sitemap: https://www.rotowire.com/start-sit.xml",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /"
+ ],
+ "discovered_targets": [
+  "apis.com",
+  "apis.com/css",
+  "ws-sitemap.php",
+  "ws.php",
+  "ws.xml",
+  "wskrheuzvd.jpg",
+  "wsm3mouhi6ujqgdiq.jpg",
+  "wsrlsuu3iemou9ed.jpg"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:33.862222"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "RotoWire Fantasy Football, Baseball, Basketball and More",
+  "description": "RotoWire is the trusted leader in fantasy sports news, rankings, analysis and sports betting. Our expert insights and tools help fans win big across every major sport."
+ }
+}

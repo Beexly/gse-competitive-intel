@@ -1,0 +1,160 @@
+{
+ "domain": "thesolver.com",
+ "tech_stack": {
+  "frontend": "Next.js (React) static-exported pages; X-Powered-By: Next.js; __NEXT_DATA__ inline; 21 script bundles on homepage",
+  "backend": "ASP.NET Core on AWS Lambda (api.thesolver.com and api-sim.thesolver.com both return 'Welcome to running ASP.NET Core on AWS Lambda'); separate sim API subdomain",
+  "database": "NOT CONFIRMED",
+  "cloud": "AWS (Lambda + S3 bucket the-solver-prod.s3.us-east-2.amazonaws.com for assets) behind CloudFront CDN",
+  "cdn": "CloudFront (Via: 1.1 ...cloudfront.net, X-Amz-Cf-Id header)",
+  "citations": [
+   "https://www.thesolver.com/ (response headers: X-Powered-By: Next.js, Via CloudFront)",
+   "https://api.thesolver.com/ (200 'Welcome to running ASP.NET Core on AWS Lambda')",
+   "https://api-sim.thesolver.com/ (200 same Lambda welcome)",
+   "https://the-solver-prod.s3.us-east-2.amazonaws.com (referenced in _app JS bundle)"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "https://api.thesolver.com/api/auth/login",
+    "auth_required": true,
+    "tier": "any",
+    "sample_response": "NOT CONFIRMED (login wall)",
+    "citation": "https://www.thesolver.com/_next/static/chunks/pages/_app-0ab2fdd17670fda7.js"
+   },
+   {
+    "method": "GET",
+    "path": "https://api.thesolver.com/api/auth/me",
+    "auth_required": true,
+    "tier": "any",
+    "sample_response": "NOT CONFIRMED (unauthenticated probe 404 at /api/auth/me path variants)",
+    "citation": "https://www.thesolver.com/_next/static/chunks/pages/_app-0ab2fdd17670fda7.js"
+   },
+   {
+    "method": "POST",
+    "path": "https://api.thesolver.com/api/refresh/logger",
+    "auth_required": true,
+    "tier": "any",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "https://www.thesolver.com/_next/static/chunks/pages/_app-0ab2fdd17670fda7.js"
+   },
+   {
+    "method": "POST",
+    "path": "sim runs via https://api-sim.thesolver.com/api/...",
+    "auth_required": true,
+    "tier": "paid (single-lineup sim $24.99/mo+)",
+    "sample_response": "NOT CONFIRMED (auth wall)",
+    "citation": "https://www.thesolver.com/_next/static/chunks/pages/_app-0ab2fdd17670fda7.js"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (no GraphQL traces in fetched bundles)",
+  "websocket_endpoints": "NOT CONFIRMED (none observed in fetched bundles)",
+  "rate_limits": "NOT CONFIRMED (no public API docs; robots.txt/sitemap.xml/openapi.json all 404)",
+  "citations": [
+   "https://www.thesolver.com/_next/static/chunks/pages/_app-0ab2fdd17670fda7.js (baseURL strings: https://api.thesolver.com/api, https://api-sim.thesolver.com/api)",
+   "https://www.thesolver.com/robots.txt (404), /sitemap.xml (404), /openapi.json (404), /docs (404)"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "Thumbs UP/DOWN player projection boost",
+   "raw_snippet": "\"Each Thumbs UP/Thumbs DOWN boosts or docks a player by 4% in NBA and 8% in all other sports respectively.\" (FAQ text in production JS bundle)",
+   "reconstruction": "projection_adjusted = projection * (1 + 0.04) per Thumbs UP in NBA; * (1 + 0.08) in all other sports; Thumbs DOWN docks by the same percentages. Applied as a flat percentage multiplier to the player's base projection.",
+   "citation": "https://www.thesolver.com/_next/static/chunks/2913-c097b036b5bbe92c.js"
+  },
+  {
+   "name": "Contest simulation methodology (DFS Simulator)",
+   "raw_snippet": "\"we then simulate the actual DFS tournament tens of thousands of times (the exact number varies by slate and contest)\" ... \"the simulations are accounting for ... the correlation between players on the same team and in the same game. Other factors include Vegas totals, weather, teams play calling tendencies, opponents, schemes, and so on.\" ... \"field lineups modeled on what actually gets entered into your specific contest, correlation-aware simulations of every game, and a post-lock dashboard that re-sims your lineups against the actual lineups entered\"",
+   "reconstruction": "Contest-level Monte Carlo: (1) model opponent field lineups from actual contest entry distributions; (2) simulate every game with player-level correlation within team and game, adjusting for Vegas totals, weather, play-calling tendencies, opponent, scheme; (3) run tens of thousands of tournament iterations (count varies by slate); (4) post-lock, re-simulate user lineups against the real entered field.",
+   "citation": "https://www.thesolver.com/_next/static/chunks/2913-c097b036b5bbe92c.js (ETR DFS Simulator FAQ) and https://www.thesolver.com/_next/static/chunks/pages/index-267eba5babb577da.js (Simulator product copy)"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "Game/contest simulation engine (correlation-aware Monte Carlo over player projections); player projections sourced from ETR (Establish The Run) in-house models. No public ML training details.",
+  "training_data": "NOT CONFIRMED (no exposure in client bundles; ETR internal)",
+  "update_frequency": "NOT CONFIRMED (projections update around news per product copy; no exact cadence published)",
+  "citation": "https://www.thesolver.com/_next/static/chunks/2913-c097b036b5bbe92c.js; https://www.thesolver.com/_next/static/chunks/pages/index-267eba5babb577da.js"
+ },
+ "simulation_engine": {
+  "num_simulations": "\"tens of thousands\" per contest; exact number varies by slate and contest (NOT CONFIRMED beyond this wording)",
+  "correlation_method": "explicit same-team and same-game player correlation inside game simulations, plus Vegas totals, weather, play-calling tendencies, opponents, schemes as sim inputs; field lineups modeled on actual contest entries",
+  "citation": "https://www.thesolver.com/_next/static/chunks/2913-c097b036b5bbe92c.js"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "ETR / Establish The Run (default player projections; company founded by ETR founders - in-house)",
+   "Partner projection sync: MoonshotsMLB, BallPark Pal (user-synced third-party premium projections)",
+   "DraftKings, FanDuel, Yahoo, DraftStars (lineup export targets)"
+  ],
+  "citations": [
+   "https://www.thesolver.com/pricing (partner subscription sync FAQ text)",
+   "https://www.thesolver.com/_next/static/chunks/pages/index-267eba5babb577da.js ('ETR player projections', export targets)"
+  ]
+ },
+ "product_limits": {
+  "limits": [
+   "Optimizer plan tiers by max lineups: single-lineup simulator $24.99/mo; 25 lineups $39.99/mo (older page copy: $47.99); 3,000 lineups $224.99/mo (older copy: $224.99 at 3000)",
+   "Lineup Builder (faster, fewer rules) caps at 3,000 lineups",
+   "Multi Lineup Simulator options: 1 / 25 / 3000 lineups per submit",
+   "Best Ball Draft Assistant: NFL $34.99/mo (contests <=$99 entry) or $74.99/mo (all entry fees); NBA daily-draft $149.99/mo; Golf daily-draft $29.99/mo",
+   "Bankroll Tracker: currently free"
+  ],
+  "upgrade_triggers": "Most restrictive free->paid trigger: any optimizer/simulator use requires a paid plan starting $24.99/mo (no free optimizer tier); tier caps lineups-per-submit at 1/25/3000",
+  "citation": "https://www.thesolver.com/pricing; https://www.thesolver.com/_next/static/chunks/2913-c097b036b5bbe92c.js (FAQ pricing answers); https://www.thesolver.com/_next/static/chunks/pages/index-267eba5babb577da.js"
+ },
+ "pricing": {
+  "web": {
+   "optimizer_single_lineup_simulator": "$24.99/mo or $224.29/yr",
+   "optimizer_25_lineups": "$39.99/mo or $359.99/yr (older FAQ copy: $47.99/mo)",
+   "optimizer_3000_lineups": "$224.99/mo",
+   "bestball_nfl": "$34.99/mo (contests up to $99 entry) or $74.99/mo (all entry fees)",
+   "bestball_nba_daily": "$149.99/mo",
+   "bestball_golf_daily": "$29.99/mo",
+   "wnba_fifa_daily": "free with active NFL or NBA Draft Assistant subscription",
+   "bankroll_tracker": "free (for now)"
+  },
+  "ios": "NOT CONFIRMED (no iOS app found; product is web-only as of fetch)",
+  "android": "NOT CONFIRMED (no Android app found; product is web-only as of fetch)",
+  "citations": [
+   "https://www.thesolver.com/pricing (fetched 2026-09-08, saved raw/thesolver-pricing.txt)",
+   "https://www.thesolver.com/_next/static/chunks/2913-c097b036b5bbe92c.js (FAQ pricing text)",
+   "https://www.thesolver.com/_next/static/chunks/pages/index-267eba5babb577da.js ('Plans start at $24.99/month')"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Adblock breaks the site: 'we don't have a great solution for this on our end, so we recommend customers disable their adblocker while using www.thesolver.com' (official FAQ workaround)",
+   "source": "https://www.thesolver.com/_next/static/chunks/2913-c097b036b5bbe92c.js (FAQ: bankroll tracker sync issues)",
+   "date": "2026-09-08 (fetched)"
+  },
+  {
+   "quote": "'Unable to find optimal lineup' error is common enough that it has a dedicated FAQ entry (caused by users forcing at least X players per TEAM instead of per LINEUP)",
+   "source": "https://www.thesolver.com/pricing FAQ text",
+   "date": "2026-09-08 (fetched)"
+  }
+ ],
+ "discovered_paths": [
+  "https://api.thesolver.com/api/auth/login",
+  "https://api.thesolver.com/api/auth/me",
+  "https://api.thesolver.com/api/auth/logout",
+  "https://api.thesolver.com/api/refresh/logger",
+  "https://api-sim.thesolver.com/api/ (sim engine API base)",
+  "https://the-solver-prod.s3.us-east-2.amazonaws.com (asset bucket)",
+  "/optimizer/{nfl,nba,mlb,nhl,golf,wnba,cbb,cfb,cfl,nas,mma,soc,ten,f1,ufl,nrl,afl,nbl,cod,csgo,lol,val,cricket} (23 sport/league routes)",
+  "/simulator/{nfl,golf,faq}",
+  "/users/settings",
+  "/auth/manage-sub",
+  "/pricing/bestball"
+ ],
+ "discovered_targets": [
+  "moonshotsmlb.com (MoonshotsMLB - partner projection provider)",
+  "ballparkpal.com (BallPark Pal - partner projection provider)",
+  "establishtherun.com (ETR - parent/affiliate projection source)"
+ ],
+ "discovery_metadata": {
+  "method": "urllib raw GET of homepage, /pricing, 10 Next.js chunk bundles; grep of bundle strings for API base URLs, auth endpoints, FAQ/pricing JSON, sim methodology; unauth probes of api./api-sim. subdomains",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 14 raw evidence files)"
+}

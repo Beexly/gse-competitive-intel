@@ -1,0 +1,140 @@
+{
+ "domain": "play.google.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "angular",
+   "citation": "raw/dycers-playstore.html"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\dycers-playstore.html",
+   "raw\\fantasylabs-tools-player-models.html",
+   "raw\\outlier_bet_ext_play_page.html",
+   "raw\\playerprops_ai_.well-known_assetlinks.json.txt",
+   "raw\\playerprops_ai_api.txt",
+   "raw\\playerprops_ai_apple-app-site-association.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apis.com/css",
+    "apis.com/ajax/libs/angularjs/1.3.8/angular.min.js",
+    "apis.com/ajax/libs/angularjs/1.3.8/angular-sanitize.min.js",
+    "apis.com/ajax/libs/angularjs/1.2.26/angular-touch.js",
+    "apis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
+    "ws.com/js/xchassis.js"
+   ],
+   "citation": "raw/dycers-playstore.html"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\dycers-playstore.html"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\dycers-playstore.html"
+  },
+  "citations": [
+   "raw\\dycers-playstore.html",
+   "raw\\fantasylabs-tools-player-models.html",
+   "raw\\outlier_bet_ext_play_page.html",
+   "raw\\playerprops_ai_.well-known_assetlinks.json.txt",
+   "raw\\playerprops_ai_api.txt",
+   "raw\\playerprops_ai_apple-app-site-association.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Unlock smarter picks with AI sports betting tools, data, and projections at Play' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "polymarket",
+    "Polymarket",
+    "kalshi",
+    "Kalshi"
+   ],
+   "citation": "raw/dycers-playstore.html"
+  },
+  "citations": [
+   "raw\\dycers-playstore.html",
+   "raw\\fantasylabs-tools-player-models.html",
+   "raw\\outlier_bet_ext_play_page.html",
+   "raw\\playerprops_ai_.well-known_assetlinks.json.txt",
+   "raw\\playerprops_ai_api.txt",
+   "raw\\playerprops_ai_apple-app-site-association.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\dycers-playstore.html"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\dycers-playstore.html"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free"
+   ],
+   "citation": "raw/dycers-playstore.html"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\dycers-playstore.html",
+   "raw\\fantasylabs-tools-player-models.html",
+   "raw\\outlier_bet_ext_play_page.html",
+   "raw\\playerprops_ai_.well-known_assetlinks.json.txt",
+   "raw\\playerprops_ai_api.txt",
+   "raw\\playerprops_ai_apple-app-site-association.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Disallow: /profile",
+  "Disallow: /referral",
+  "Disallow: /discord",
+  "Disallow: /verify",
+  "Disallow: /onboarding",
+  "Disallow: /choose-location",
+  "Disallow: /sentry-example-page",
+  "Disallow: /*?*afmc=",
+  "Disallow: /*?*e-filter-",
+  "Disallow: /*?*hzet=",
+  "Disallow: /*?*utm_source="
+ ],
+ "discovered_targets": [
+  "apis.com/ajax/libs/angularjs/1.2.26/angular-touch.js",
+  "apis.com/ajax/libs/angularjs/1.3.8/angular-sanitize.min.js",
+  "apis.com/ajax/libs/angularjs/1.3.8/angular.min.js",
+  "apis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
+  "apis.com/css",
+  "ws.com/js/xchassis.js"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:36.955568"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "AI Sports Betting &amp; Player Prop Predictions | PlayerProps.ai",
+  "description": "Unlock smarter picks with AI sports betting tools, data, and projections at PlayerProps.ai. Win more with expert insights across all major leagues."
+ }
+}

@@ -1,0 +1,32 @@
+User-agent: *
+
+Disallow: /email_template/
+
+
+Disallow: /webadmin/
+Disallow: /APP/
+Disallow: /REVAMP/
+Disallow: /phpMyAdmin/
+Disallow: /cappertechadmin/
+
+Disallow: /cgi-bin/
+
+Disallow: /h2h$
+Disallow: /odds$
+Disallow: /lineup$
+Disallow: /standings$
+Disallow: /soccer-news-detail/
+Disallow: /mysqlminiadmin.php
+Disallow: /mysqlminiadmin11.php
+Disallow: /webadmin/
+Disallow: /soccer-news.html
+
+Sitemap: https://www.soccertipsters.com/sitemap.xml
+
+User-Agent: Googlebot
+
+User-Agent: Googlebot-Mobile
+
+User-Agent: Slurp
+
+User-Agent: Baidu

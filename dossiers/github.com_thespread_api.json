@@ -1,0 +1,69 @@
+{
+ "domain": "github.com/thespread/api",
+ "type": "open-source-repo",
+ "disposition": "live (repo, empty/minimal)",
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "customer_pain": [],
+ "discovered_targets": [],
+ "tech_stack": {
+  "frontend": "none",
+  "backend": "n/a (4KB repo \u2014 README/docs only)",
+  "database": "NOT CONFIRMED",
+  "cloud": "n/a",
+  "cdn": "n/a",
+  "citations": [
+   "raw/probe2_gh-thespread.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "TheSpread.io Vegas odds aggregation API (described; code not in repo)"
+  ],
+  "graphql_schema": "none",
+  "websocket_endpoints": [],
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/probe2_gh-thespread.txt"
+  ]
+ },
+ "pricing": {
+  "web": "n/a",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "raw/probe2_gh-thespread.txt"
+  ]
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Vegas sportsbook odds aggregation (TheSpread.io)"
+  ],
+  "citations": [
+   "raw/probe2_gh-thespread.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": "repo is docs-only placeholder; last pushed 2018-11-05 (dead); no license",
+  "upgrade_triggers": "n/a",
+  "citation": "raw/probe2_gh-thespread.txt"
+ },
+ "discovered_paths": [],
+ "discovery_metadata": {
+  "stars": 25,
+  "license": "none",
+  "pushed_at": "2018-11-05",
+  "description": "TheSpread.io API - Vegas Sports Betting Odds Aggregation API",
+  "timestamp": "2026-09-08T14:30:45.047151"
+ }
+}

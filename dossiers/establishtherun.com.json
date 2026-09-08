@@ -1,0 +1,183 @@
+{
+ "domain": "establishtherun.com",
+ "tech_stack": {
+  "frontend": "WordPress + WooCommerce 11.0.0 + WooCommerce Memberships 1.29.1 (wp-content assets in homepage HTML)",
+  "backend": "PHP/WordPress (Apache behind Cloudflare)",
+  "database": "NOT CONFIRMED (no exposure)",
+  "cloud": "Cloudflare",
+  "cdn": "Cloudflare + cdn.establishtherun.com (Cloudflare CDN wp-content uploads)",
+  "citations": [
+   "https://establishtherun.com"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/wp-json/ (WordPress REST root; not probed - budget)",
+    "auth_required": "public root, auth for membership content",
+    "tier": "N/A",
+    "sample_response": "not fetched",
+    "citation": "https://establishtherun.com"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (not probed - no JS evidence)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED (no public rate-limit doc)",
+  "citations": [
+   "https://js.sparkloop.app/team_a5a08658b31b.js"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "Content paywall via WooCommerce Memberships",
+   "raw_snippet": "wc-memberships-frontend-css?ver=1.29.1; my-account/edit-account; subscribe.establishtherun.com/nfl/ subdomain; footer sponsor sportsdataio-dark-270.png",
+   "reconstruction": "WordPress content + projections products sold through WooCommerce; memberships restrict article/tool access; separate subscribe. subdomain handles funnel; SportsData.io listed as footer sponsor (data partnership signal).",
+   "citation": "https://establishtherun.com"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "https://establishtherun.com"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "https://establishtherun.com"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "SportsData.io (footer sponsor logo, cdn.establishtherun.com/.../sportsdataio-dark-270.png)",
+   "SparkLoop (newsletter referral, js.sparkloop.app/team_a5a08658b31b.js)",
+   "reCAPTCHA",
+   "Metorik (Woo helper)"
+  ],
+  "citations": [
+   "https://establishtherun.com",
+   "https://js.sparkloop.app/team_a5a08658b31b.js"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED (memberships gated behind WooCommerce login; caps not published)",
+  "upgrade_triggers": "WooCommerce Memberships paywall: subscriber-only content/product pages + my-account area; product FAQ pages published per sport (NFL/CFB/NBA/golf)",
+  "citation": "https://establishtherun.com/wp-content/plugins/woocommerce-memberships/assets/css/frontend/wc-memberships-frontend.min.css?ver=1.29.1"
+ },
+ "pricing": {
+  "web": {
+   "detail": "Tier structure NOT CONFIRMED from fetched pages: /subscribe/ + /subscribe-nfl|cfb|nba|golf product pages exist but prices not captured (budget). Sale/customer-win pages confirm premium pricing exists ('ETR subscriber turns $45 into $1.2M', 'subscriber wins $1,000,000').",
+   "url": "https://establishtherun.com/subscribe/",
+   "status": "NOT CONFIRMED (not fetched - budget)"
+  },
+  "ios": "NOT CONFIRMED (not checked - no app link found)",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://establishtherun.com/subscribe/",
+   "https://establishtherun.com"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Please reach out to support@establishtherun.com with any questions or concerns you may have. Has anyone paid for EstablishTheRun.com?",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1cfe4f2/establish_the_run_sub_hike/",
+   "title": "Establish the Run sub hike : r/fantasyfootball - Reddit"
+  },
+  {
+   "quote": "I paid for their Draft Kit and really love it. I couldn't bring myself to pay for their yearly sub at that price, it's just way too expensive ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/ox9trn/establish_the_run_subscription/",
+   "title": "Establish the Run Subscription : r/fantasyfootball - Reddit"
+  },
+  {
+   "quote": "we always provide a full refund if someone feels like they didn't want the renewed subscription for any reason.",
+   "source": "https://www.reddit.com/user/EstablishTheRunNFL/",
+   "title": "Establish The Run (u/EstablishTheRunNFL) - Reddit"
+  },
+  {
+   "quote": "For many, it would totally erode the profit gained from their money league. It didn't help me win anything either lol. Not really worth it ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/dwaf1w/those_of_you_who_paid_40_a_month_for_establish/",
+   "title": "Those of you who paid 40$ a month for Establish the Run, how did it ..."
+  },
+  {
+   "quote": "We're Adam Levitan, John Daigle, and Pat Thorman of Establish The Run. Have a question about 2025 sleepers, busts, breakouts, or anything in ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1mxf1nd/were_adam_levitan_john_daigle_and_pat_thorman/",
+   "title": "We're Adam Levitan, John Daigle, and Pat Thorman from ... - Reddit"
+  },
+  {
+   "quote": "Their subscription was unfortunately mostly bestball and DFS focused. They had redraft content but didn't think it was their bread and butter.",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/15vjfc9/review_of_several_subscriptions_sites/",
+   "title": "Review of several subscriptions sites : r/fantasyfootball - Reddit"
+  },
+  {
+   "quote": "My name is Pat Thorman and I am a writer, ranker, and (occasional) podcaster with Establish The Run . I mainly focus on offensive pace and play ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/15mmjg1/i_write_and_rank_for_establish_the_run_ama/",
+   "title": "I Write and Rank for Establish The Run - AMA : r/fantasyfootball"
+  },
+  {
+   "quote": "Yes. It's among the best content out there. They do really good, entertaining work on a number of fronts (strategy, rankings, OLine breakdowns, ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1mp90lt/is_etr_inseason_package_worth_it/",
+   "title": "Is ETR In-Season Package worth it? : r/fantasyfootball - Reddit"
+  }
+ ],
+ "discovered_paths": [
+  "/etr-nfl-product-overview/",
+  "/my-account/edit-account/",
+  "/subscribe-cfb/",
+  "/subscribe-golf/",
+  "/subscribe-nba/",
+  "/subscribe-nfl/",
+  "/subscribe/",
+  "https://subscribe.establishtherun.com/nfl/"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "urllib GET (fetcher.py pattern) + offline HTML mining of saved homepage",
+  "timestamp": "2026-09-08T14:06:07-0500",
+  "http_requests_used": 7,
+  "request_log": [
+   {
+    "url": "https://establishtherun.com",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-home.html",
+    "err": null
+   },
+   {
+    "url": "https://establishtherun.com/robots.txt",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-robots.txt",
+    "err": null
+   },
+   {
+    "url": "https://establishtherun.com/sitemap.xml",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-sitemap.xml",
+    "err": null
+   },
+   {
+    "url": "https://js.sparkloop.app/team_a5a08658b31b.js",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-js0.js",
+    "err": null
+   },
+   {
+    "url": "https://www.google.com/recaptcha/api.js?render=6LcVYf0UAAAAADM4EIr9G4lEBc_tym1JpPMO2TBU",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-js1.js",
+    "err": null
+   },
+   {
+    "url": "https://establishtherun.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-js2.js",
+    "err": null
+   },
+   {
+    "url": "https://establishtherun.com/wp-content/plugins/woocommerce-memberships/assets/css/frontend/wc-memberships-frontend.min.css?ver=1.29.1",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\establishtherun-pricing.html",
+    "err": null
+   }
+  ]
+ },
+ "disposition": "live (derived from 8 raw evidence files)"
+}

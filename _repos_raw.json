@@ -1,0 +1,3476 @@
+{
+ "github.com/nautechsystems/nautilus_trader": {
+  "stars": 28669,
+  "topic": "sports-betting",
+  "desc": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+  "updated": "2026-09-08"
+ },
+ "github.com/kyleskom/NBA-Machine-Learning-Sports-Betting": {
+  "stars": 1702,
+  "topic": "sports-analytics",
+  "desc": "NBA sports betting using machine learning",
+  "updated": "2026-01-09"
+ },
+ "github.com/georgedouzas/sports-betting": {
+  "stars": 783,
+  "topic": "sports-analytics",
+  "desc": "Collection of sports betting AI tools.",
+  "updated": "2026-07-28"
+ },
+ "github.com/pretrehr/Sports-betting": {
+  "stars": 532,
+  "topic": "sports-betting",
+  "desc": "Sports betting assistant (with interface) which optimizes earnings regarding odds and offers",
+  "updated": "2023-12-21"
+ },
+ "github.com/sedemmler/WagerBrain": {
+  "stars": 312,
+  "topic": "sports-betting",
+  "desc": "A package containing the essential math required for sports betting and gambling.",
+  "updated": "2020-05-02"
+ },
+ "github.com/jordantete/OddsHarvester": {
+  "stars": 241,
+  "topic": "sports-betting",
+  "desc": "A python app designed to scrape and process sports betting data directly from oddsportal.com \ud83c\udfaf",
+  "updated": "2026-09-03"
+ },
+ "github.com/martineastwood/penaltyblog": {
+  "stars": 217,
+  "topic": "sports-analytics",
+  "desc": "\u26bd High-performance football analytics: build data pipelines, scrape data, model matches, rank teams, and bet s",
+  "updated": "2026-08-21"
+ },
+ "github.com/NBA-Betting/NBA_Betting": {
+  "stars": 208,
+  "topic": "sports-analytics",
+  "desc": "Using data analytics and machine learning to create a comprehensive and profitable system for predicting the o",
+  "updated": "2026-01-31"
+ },
+ "github.com/nutcas3/lets-bet": {
+  "stars": 162,
+  "topic": "sports-betting",
+  "desc": "Tier-1 betting platform for Kenya, Nigeria, Ghana. Sports betting, crash games, M-Pesa/Flutterwave payments, r",
+  "updated": "2026-06-17"
+ },
+ "github.com/cvidan/bet365-scraper": {
+  "stars": 154,
+  "topic": "sports-betting",
+  "desc": "Python script to scrape Bet365 odds using Selenium.",
+  "updated": "2019-02-04"
+ },
+ "github.com/klane/databall": {
+  "stars": 151,
+  "topic": "sports-analytics",
+  "desc": "Betting on the NBA with data",
+  "updated": "2025-01-01"
+ },
+ "github.com/1canhhoa/sports-betting-toolbox": {
+  "stars": 135,
+  "topic": "sports-betting",
+  "desc": "sports betting toolbox to predict soccer matchs with betting model",
+  "updated": "2026-09-03"
+ },
+ "github.com/AhmedHazem02/fifa-world-cup-2026-prediction-agent": {
+  "stars": 130,
+  "topic": "sports-betting",
+  "desc": "FIFA World Cup 2026 match outcomes, group standings for sports betting market, sports betting market",
+  "updated": "2026-09-03"
+ },
+ "github.com/dos-2/oddshub": {
+  "stars": 125,
+  "topic": "sports-data",
+  "desc": "A terminal UI designed for analyzing sports betting odds\ud83d\udcb0",
+  "updated": "2025-09-16"
+ },
+ "github.com/NBA-Betting/NBA_AI": {
+  "stars": 116,
+  "topic": "sports-analytics",
+  "desc": "Using AI to predict the outcomes of NBA games.",
+  "updated": "2026-08-26"
+ },
+ "github.com/gotoConversion/goto_conversion": {
+  "stars": 115,
+  "topic": "sports-analytics",
+  "desc": "goto_conversion - Powered $47,000 of prize money, 10+ Gold Medals and 100+ Medals on Kaggle",
+  "updated": "2026-09-06"
+ },
+ "github.com/day-mon/sports-betting-ai": {
+  "stars": 110,
+  "topic": "sports-betting",
+  "desc": "A website that utilizes a deep learning neural network to detect who will win NBA games",
+  "updated": "2026-07-29"
+ },
+ "github.com/sportsdataverse/cfbfastR": {
+  "stars": 110,
+  "topic": "sports-analytics",
+  "desc": "An R package to quickly obtain clean and tidy college football play by play data",
+  "updated": "2026-09-07"
+ },
+ "github.com/elonbiz/sports-betting-sportsbook": {
+  "stars": 103,
+  "topic": "sports-betting",
+  "desc": "sports betting sports betting sports betting sports betting sports betting sports betting sports betting sport",
+  "updated": "2026-08-21"
+ },
+ "github.com/echandsome/Polymarket-betting-bot": {
+  "stars": 99,
+  "topic": "sports-betting",
+  "desc": "A comprehensive TypeScript/Node.js backend system for automated trading on Polymarket. This platform supports ",
+  "updated": "2026-03-16"
+ },
+ "github.com/kachence/polymm": {
+  "stars": 92,
+  "topic": "sports-betting",
+  "desc": "A Polymarket sports market-making / arbitrage bot in Python - de-vig sportsbook odds, quote, hedge. The retire",
+  "updated": "2026-08-16"
+ },
+ "github.com/whisdev/NBA-prediction-sports-betting": {
+  "stars": 90,
+  "topic": "sports-betting",
+  "desc": "NBA sports betting app using machine learning",
+  "updated": "2026-09-03"
+ },
+ "github.com/tradinglabpremium/sports-prediction-market-scanner": {
+  "stars": 85,
+  "topic": "prediction-market",
+  "desc": "sports prediction market scanner: pull feeds, price markets, replay portfolio history, and emit live signals, ",
+  "updated": "2026-09-03"
+ },
+ "github.com/papagorgio23/bettoR": {
+  "stars": 78,
+  "topic": "sports-analytics",
+  "desc": "R Package for Sports betting",
+  "updated": "2023-05-19"
+ },
+ "github.com/rockscripts/Sport-Betting-APP-Betfair-Market": {
+  "stars": 67,
+  "topic": "sports-betting",
+  "desc": "PHP: Web based app for sports betting using Betfair API",
+  "updated": "2023-04-02"
+ },
+ "github.com/byteforge9190/casino-game-sportsbook-sports-betting": {
+  "stars": 66,
+  "topic": "sports-analytics",
+  "desc": "casino game casino game casino game casino game casino game casino slot game casino slot game casino slot game",
+  "updated": "2026-08-21"
+ },
+ "github.com/sanchitvj/sports_betting_analytics_engine": {
+  "stars": 52,
+  "topic": "sports-betting",
+  "desc": "A data and analytics engineering platform designed for real-time sports betting analytics.",
+  "updated": "2025-03-21"
+ },
+ "github.com/flancast90/sportsbookreview-scraper": {
+  "stars": 51,
+  "topic": "sports-data",
+  "desc": "Sportsbookreview.com scraper + complete 10Y games+odds data for NFL, NBA, NHL, MLB for bettors and sports anal",
+  "updated": "2024-07-12"
+ },
+ "github.com/agad495/DKscraPy": {
+  "stars": 47,
+  "topic": "sports-betting",
+  "desc": "Scrape Draftkings Sportsbook using Python's Beautiful Soup library and DraftKings' API.",
+  "updated": "2023-11-28"
+ },
+ "github.com/avalos010/sportsbook-odds-comparer": {
+  "stars": 46,
+  "topic": "sports-betting",
+  "desc": "A sleek and responsive web app built to help users quickly compare betting odds from multiple sportsbooks acro",
+  "updated": "2026-08-18"
+ },
+ "github.com/slieb74/NFL-Betting-Data": {
+  "stars": 43,
+  "topic": "sports-betting",
+  "desc": "Model to Predict Over/Under Outcomes for the Upcoming NFL Season",
+  "updated": "2018-10-31"
+ },
+ "github.com/nntrn/espn-wiki": {
+  "stars": 42,
+  "topic": "sports-betting",
+  "desc": "Collection of espn notes for api endpoints",
+  "updated": "2025-07-16"
+ },
+ "github.com/Dmitrii-I/sportmonks": {
+  "stars": 40,
+  "topic": "sports-data",
+  "desc": "sportmonks is a Python 3.5+ package that implements SportMonks API. ",
+  "updated": "2022-12-08"
+ },
+ "github.com/KevinTrinhDev/Prize-Pick-Predictions": {
+  "stars": 39,
+  "topic": "sports-data",
+  "desc": "A sport predictions full-stack application that generates betting recommendations & data on Prize Picks using ",
+  "updated": "2025-10-27"
+ },
+ "github.com/Jan17392/asianodds": {
+  "stars": 38,
+  "topic": "sports-betting",
+  "desc": "Smart API-Wrapper for the Asianodds Betting API - The go to service to automate your sports trading strategies",
+  "updated": "2017-05-01"
+ },
+ "github.com/saiemgilani/cfbscrapR": {
+  "stars": 36,
+  "topic": "sports-data",
+  "desc": "A scraping and aggregating package using the CollegeFootballData API",
+  "updated": "2021-04-03"
+ },
+ "github.com/ratsam3474/autoarbitrage": {
+  "stars": 35,
+  "topic": "sports-betting",
+  "desc": "An automated arbitrage betting system that finds and places bets across multiple bookmakers to guarantee profi",
+  "updated": "2025-07-05"
+ },
+ "github.com/TyWalters/NFL-Prediction-Model": {
+  "stars": 33,
+  "topic": "sports-data",
+  "desc": "Model created for FiveThirtyEight Forecast Competition",
+  "updated": "2022-07-11"
+ },
+ "github.com/cloudbet/docs": {
+  "stars": 32,
+  "topic": "sports-betting",
+  "desc": "Public Documentation",
+  "updated": "2023-01-06"
+ },
+ "github.com/callmevojtko/Recommended-Bets-By-Email-MLB": {
+  "stars": 31,
+  "topic": "sports-data",
+  "desc": "An advanced machine learning model utilizes a Random Forest Regressor to generate betting recommendations for ",
+  "updated": "2023-08-10"
+ },
+ "github.com/papagorgio23/VegasLines": {
+  "stars": 28,
+  "topic": "sports-betting",
+  "desc": "Historical Vegas betting lines for the NBA and NFL",
+  "updated": "2024-05-10"
+ },
+ "github.com/odds-api/odds-api": {
+  "stars": 26,
+  "topic": "odds-api",
+  "desc": "OpenAPI sports betting odds API for coding agents with REST examples, SDKs, MCP, mock mode, arbitrage, positiv",
+  "updated": "2026-07-23"
+ },
+ "github.com/angelle-sw/sbp": {
+  "stars": 25,
+  "topic": "sports-betting",
+  "desc": "Decentralized sports & event betting platform powered by Ethereum smart contracts and automated market making.",
+  "updated": "2021-02-25"
+ },
+ "github.com/Sports-Betting-Sportsbook/sports-betting": {
+  "stars": 25,
+  "topic": "sports-betting",
+  "desc": "Sports Betting platform for odds tracking, analytics, and sportsbook integration.",
+  "updated": "2025-12-02"
+ },
+ "github.com/thespread/api": {
+  "stars": 25,
+  "topic": "sports-betting",
+  "desc": "TheSpread.io API - Vegas Sports Betting Odds Aggregation API",
+  "updated": "2018-11-05"
+ },
+ "github.com/umitkaanusta/MacTahminBotu": {
+  "stars": 24,
+  "topic": "sports-betting",
+  "desc": "A bot that provides soccer predictions using Poisson regression",
+  "updated": "2024-12-21"
+ },
+ "github.com/fearandesire/Pluto-Betting-Bot": {
+  "stars": 24,
+  "topic": "sports-betting",
+  "desc": "Pluto - A multi-sport betting bot for Discord",
+  "updated": "2026-07-20"
+ },
+ "github.com/kheller18/sportsbook-4": {
+  "stars": 24,
+  "topic": "sports-betting",
+  "desc": "A React.js sports betting website where users can place bets and track their earnings.",
+  "updated": "2023-01-24"
+ },
+ "github.com/t00ts/maverick": {
+  "stars": 22,
+  "topic": "sports-betting",
+  "desc": "A robust bet365 betting bot",
+  "updated": "2024-11-25"
+ },
+ "github.com/minus5/go-uof-sdk": {
+  "stars": 21,
+  "topic": "sports-betting",
+  "desc": "Betradar Unified Odds Feed SDK for the Go programming language. ",
+  "updated": "2023-11-30"
+ },
+ "github.com/S1M0N38/aao": {
+  "stars": 21,
+  "topic": "sports-betting",
+  "desc": "A simple environment where testing betting strategy on real odds",
+  "updated": "2020-01-15"
+ },
+ "github.com/papagorgio23/NFL-Playoff-Sim": {
+  "stars": 20,
+  "topic": "sports-betting",
+  "desc": "Monte Carlo Simulation of the 2019 NFL playoffs",
+  "updated": "2020-01-17"
+ },
+ "github.com/haris-sujethan/live-sportsbook-arbitrage": {
+  "stars": 18,
+  "topic": "sports-betting",
+  "desc": "Live sportsbook arbitrage tool with research-backed betting strategy (Ontario focused)",
+  "updated": "2026-05-28"
+ },
+ "github.com/pwu97/bettingtools": {
+  "stars": 18,
+  "topic": "sports-betting",
+  "desc": "Sports Betting Tools",
+  "updated": "2020-05-27"
+ },
+ "github.com/brandonsoft/ASP-Sports-Betting": {
+  "stars": 17,
+  "topic": "sports-betting",
+  "desc": "Sports Betting",
+  "updated": "2024-05-13"
+ },
+ "github.com/juancarlospaco/cloudbet": {
+  "stars": 17,
+  "topic": "sports-betting",
+  "desc": "Cloudbet Virtual Crypto Casino API Client",
+  "updated": "2025-12-16"
+ },
+ "github.com/carterlasalle/SportsArbFinder": {
+  "stars": 16,
+  "topic": "odds-api",
+  "desc": "Sports Betting Arbitrage Finder: Python tool for identifying profitable arbitrage opportunities across bookmak",
+  "updated": "2024-10-29"
+ },
+ "github.com/arbbets/Prediction-Market-Arbitrage": {
+  "stars": 16,
+  "topic": "sports-betting",
+  "desc": "Automated arbitrage detection for prediction markets",
+  "updated": "2025-07-06"
+ },
+ "github.com/timdagostino/NCAAB-Game-Simulator": {
+  "stars": 15,
+  "topic": "sports-betting",
+  "desc": "Game simulator created for NCAA basketball (Based on team possession statistics)",
+  "updated": "2022-04-25"
+ },
+ "github.com/mverab/WorldCupBench": {
+  "stars": 14,
+  "topic": "sports-betting",
+  "desc": "\u26bd\ud83e\udd16 11 frontier LLMs predicted the entire 2026 World Cup \u2014 frozen before kickoff. Live leaderboard: Brier score",
+  "updated": "2026-07-31"
+ },
+ "github.com/roboflow/sports": {
+  "stars": 5346,
+  "topic": "sports-analytics",
+  "desc": "computer vision and sports",
+  "updated": "2026-08-28"
+ },
+ "github.com/hudl/open-data": {
+  "stars": 3597,
+  "topic": "sports-data",
+  "desc": "Free football data from StatsBomb",
+  "updated": "2026-09-07"
+ },
+ "github.com/probberechts/soccerdata": {
+  "stars": 2062,
+  "topic": "sports-data",
+  "desc": "\u26cf\u26bd Scrape soccer data from Club Elo, ESPN, FBref, Football-Data.co.uk, Sofascore, SoFIFA, Understat and WhoSco",
+  "updated": "2026-08-21"
+ },
+ "github.com/pnxenopoulos/awpy": {
+  "stars": 611,
+  "topic": "sports-analytics",
+  "desc": "Python library to parse, analyze and visualize Counter-Strike 2 data",
+  "updated": "2026-09-03"
+ },
+ "github.com/JaseZiv/worldfootballR": {
+  "stars": 602,
+  "topic": "sports-data",
+  "desc": "A wrapper for extracting world football (soccer) data from FBref, Transfermark, Understat",
+  "updated": "2025-09-18"
+ },
+ "github.com/roclark/sportsipy": {
+  "stars": 570,
+  "topic": "sports-data",
+  "desc": "A free sports API written for python",
+  "updated": "2025-01-31"
+ },
+ "github.com/ScrapingBee/google-sports-results-api": {
+  "stars": 256,
+  "topic": "sports-data",
+  "desc": "Extract live scores, match results, and league standings directly from Google Search. A flexible sports data A",
+  "updated": "2026-04-09"
+ },
+ "github.com/CFBD/cfbd-python": {
+  "stars": 218,
+  "topic": "sports-analytics",
+  "desc": "Python wrapper for the CFBD API",
+  "updated": "2026-09-07"
+ },
+ "github.com/rollerderby/scoreboard": {
+  "stars": 189,
+  "topic": "sports-data",
+  "desc": "CRG Derby Scoreboard",
+  "updated": "2026-07-03"
+ },
+ "github.com/laberning/openrowingmonitor": {
+  "stars": 182,
+  "topic": "sports-analytics",
+  "desc": "A free and open source performance monitor for rowing machines",
+  "updated": "2026-04-05"
+ },
+ "github.com/saccofrancesco/deepshot": {
+  "stars": 173,
+  "topic": "sports-data",
+  "desc": "AI-powered NBA game outcome predictor that uses advanced team stats and trend-based features to forecast winne",
+  "updated": "2026-09-07"
+ },
+ "github.com/ThemeBoy/SportsPress": {
+  "stars": 164,
+  "topic": "sports-data",
+  "desc": "An open source league statistics plugin for WordPress created by ThemeBoy.",
+  "updated": "2026-08-30"
+ },
+ "github.com/livetennisapi/livetennisapi-mcp": {
+  "stars": 158,
+  "topic": "sports-api",
+  "desc": "MCP server for the Live Tennis API \u2014 give Claude, Cursor and other LLM agents real-time tennis scores, odds an",
+  "updated": "2026-09-06"
+ },
+ "github.com/ChenFengYe/SportsCap": {
+  "stars": 149,
+  "topic": "sports-analytics",
+  "desc": "[IJCV 2021] SportsCap: Monocular 3D Human Motion Capture and Fine-grained Understanding in Challenging Sports ",
+  "updated": "2021-08-17"
+ },
+ "github.com/salimt/football-datasets": {
+  "stars": 141,
+  "topic": "sports-analytics",
+  "desc": "Complete football/soccer datalake with 93000+ players from Transfermarkt. Includes player profiles, performanc",
+  "updated": "2025-10-18"
+ },
+ "github.com/MCG-NJU/MultiSports": {
+  "stars": 138,
+  "topic": "sports-analytics",
+  "desc": "[ICCV 2021] MultiSports: A Multi-Person Video Dataset of Spatio-Temporally Localized Sports Actions",
+  "updated": "2023-08-04"
+ },
+ "github.com/droher/boxball": {
+  "stars": 132,
+  "topic": "sports-data",
+  "desc": "Prebuilt Docker images with Retrosheet's complete baseball history data for many analytical frameworks. Includ",
+  "updated": "2026-05-20"
+ },
+ "github.com/gingeleski/odds-portal-scraper": {
+  "stars": 129,
+  "topic": "sports-data",
+  "desc": "Sports odds and results scraping for Odds Portal (oddsportal.com).",
+  "updated": "2026-07-10"
+ },
+ "github.com/sportsdataverse/sportyR": {
+  "stars": 118,
+  "topic": "sports-analytics",
+  "desc": "R package for drawing regulation playing surfaces for several sports",
+  "updated": "2026-08-27"
+ },
+ "github.com/sportsdataverse/sportsdataverse-py": {
+  "stars": 116,
+  "topic": "sports-analytics",
+  "desc": "sportsdataverse python package",
+  "updated": "2026-09-08"
+ },
+ "github.com/nflverse/nflreadr": {
+  "stars": 113,
+  "topic": "sports-data",
+  "desc": "Efficiently download nflverse data",
+  "updated": "2026-09-07"
+ },
+ "github.com/dynastyprocess/data": {
+  "stars": 110,
+  "topic": "fantasy-football",
+  "desc": "An open-data fantasy football repository, maintained by DynastyProcess.com",
+  "updated": "2026-09-08"
+ },
+ "github.com/nealmick/Sports-Betting-ML-Tools-NBA": {
+  "stars": 87,
+  "topic": "sports-data",
+  "desc": "NBA Machine Learning Tools ",
+  "updated": "2026-06-08"
+ },
+ "github.com/SCasanova/f1dataR": {
+  "stars": 80,
+  "topic": "sports-data",
+  "desc": "An R package to access Formula 1 Data from the Ergast API and the unofficial F1 data stream via the fastf1 pyt",
+  "updated": "2026-04-28"
+ },
+ "github.com/josedv82/public_sport_science_datasets": {
+  "stars": 79,
+  "topic": "sports-analytics",
+  "desc": "An ongoing compilation of publicly available datasets for sport science projects.",
+  "updated": "2022-02-26"
+ },
+ "github.com/alexadam/sport-stats": {
+  "stars": 74,
+  "topic": "sports-data",
+  "desc": "Sport stats UI components",
+  "updated": "2016-11-07"
+ },
+ "github.com/BlueSCar/cfb-data": {
+  "stars": 66,
+  "topic": "sports-data",
+  "desc": "NPM package for retrieving NCAA football data",
+  "updated": "2021-05-06"
+ },
+ "github.com/MySportsFeeds/mysportsfeeds-node": {
+  "stars": 65,
+  "topic": "dfs",
+  "desc": "NodeJS wrapper for the MySportsFeeds Sports Data API",
+  "updated": "2023-04-18"
+ },
+ "github.com/kabaddiPy/kabaddiPy": {
+  "stars": 53,
+  "topic": "sports-data",
+  "desc": "Code for kabaddiPy API published on PyPI.",
+  "updated": "2026-01-26"
+ },
+ "github.com/seanyboi/rugbypy": {
+  "stars": 51,
+  "topic": "sports-data",
+  "desc": "Repository for rugby data analytics",
+  "updated": "2026-05-25"
+ },
+ "github.com/sportsdataverse/sportypy": {
+  "stars": 50,
+  "topic": "sports-data",
+  "desc": "Python package for drawing regulation playing surfaces for several sports",
+  "updated": "2026-08-27"
+ },
+ "github.com/manucabral/EasySoccerData": {
+  "stars": 48,
+  "topic": "sports-data",
+  "desc": "A Python package for fetching live football/soccer stats from multiple online sources (Sofascore, FBref, Promi",
+  "updated": "2026-05-14"
+ },
+ "github.com/nprasad2077/nbaStats": {
+  "stars": 48,
+  "topic": "sports-data",
+  "desc": "NBA API Documentation",
+  "updated": "2025-12-16"
+ },
+ "github.com/MySportsFeeds/mysportsfeeds-api": {
+  "stars": 45,
+  "topic": "dfs",
+  "desc": "Feature requests for the MySportsFeeds Sports Data API.",
+  "updated": "2017-01-20"
+ },
+ "github.com/dianaow/flask-react-d3-celery": {
+  "stars": 44,
+  "topic": "sports-data",
+  "desc": "A full-stack dockerized web application to visualize Formula 1 race statistics from 2016 to present, with a Py",
+  "updated": "2022-12-09"
+ },
+ "github.com/TralahM/thesportsdb": {
+  "stars": 43,
+  "topic": "sports-data",
+  "desc": "Unofficial Python API client wrapper package around TheSportsDB.com API.An open, crowd-sourced database of spo",
+  "updated": "2025-12-06"
+ },
+ "github.com/junhwanjang/whoscored": {
+  "stars": 43,
+  "topic": "sports-data",
+  "desc": "Football player rating analysis and position recommendation",
+  "updated": "2017-08-19"
+ },
+ "github.com/baronet2/FirstCyclingAPI": {
+  "stars": 33,
+  "topic": "sports-data",
+  "desc": "An unofficial Python API wrapper for firstcycling.com",
+  "updated": "2023-06-22"
+ },
+ "github.com/aajfranklin/Click-And-Roll": {
+  "stars": 29,
+  "topic": "sports-data",
+  "desc": "Hover on an NBA player's name on any web page to quickly view their career stats. Thousands of active users ac",
+  "updated": "2023-09-17"
+ },
+ "github.com/felipeam86/garpy": {
+  "stars": 28,
+  "topic": "sports-data",
+  "desc": "Make your garmin data yours again!",
+  "updated": "2023-04-29"
+ },
+ "github.com/MySportsFeeds/mysportsfeeds-r": {
+  "stars": 28,
+  "topic": "sports-data",
+  "desc": "R wrapper functions for the MySportsFeeds Sports Data API",
+  "updated": "2023-10-06"
+ },
+ "github.com/corriporai/runpandas": {
+  "stars": 26,
+  "topic": "sports-data",
+  "desc": "RunPandas - Python Package for handing running data from GPS-enabled devices to worldwide race results.",
+  "updated": "2023-03-15"
+ },
+ "github.com/dhmay/jamstats": {
+  "stars": 23,
+  "topic": "sports-data",
+  "desc": "Tools for making plots on roller derby scoreboard data and following live game data",
+  "updated": "2026-08-30"
+ },
+ "github.com/lacausecrypto/mcp-sports-hub": {
+  "stars": 22,
+  "topic": "sports-data",
+  "desc": "Unified MCP server \u2014 41 sports API providers, 396 tools in one process: scores, stats, odds, esports, F1/MotoG",
+  "updated": "2026-08-19"
+ },
+ "github.com/erdieee/allusion": {
+  "stars": 21,
+  "topic": "sports-data",
+  "desc": "Sports betting (Arbitrage) bot ",
+  "updated": "2024-03-11"
+ },
+ "github.com/mbjoseph/bbr": {
+  "stars": 20,
+  "topic": "sports-data",
+  "desc": "R package to scrape data from basketball-reference.com",
+  "updated": "2018-02-01"
+ },
+ "github.com/RentoSaijo/nhlscraper": {
+  "stars": 20,
+  "topic": "sports-data",
+  "desc": "Scraper for National Hockey League Data on R",
+  "updated": "2026-07-24"
+ },
+ "github.com/pseudo-r/Public-MLB-API": {
+  "stars": 19,
+  "topic": "sports-data",
+  "desc": "The Public MLB API documentation provides a complete list of undocumented API endpoints, URL parameters, and J",
+  "updated": "2026-03-26"
+ },
+ "github.com/sportsdataverse/sportsdataverse-R": {
+  "stars": 19,
+  "topic": "sports-data",
+  "desc": "",
+  "updated": "2026-08-27"
+ },
+ "github.com/bszek213/deepCFB": {
+  "stars": 17,
+  "topic": "sports-data",
+  "desc": "Deep learning to predict college football outcomes",
+  "updated": "2024-12-12"
+ },
+ "github.com/CFBD/cfb.js": {
+  "stars": 17,
+  "topic": "sports-data",
+  "desc": "JavaScript client library for accessing the CollegeFootballData API",
+  "updated": "2024-08-27"
+ },
+ "github.com/FantasyFootballAnalytics/FantasyFootballAnalyticsR": {
+  "stars": 502,
+  "topic": "fantasy-football",
+  "desc": "R scripts and data files for the Fantasy Football Analytics website",
+  "updated": "2026-05-15"
+ },
+ "github.com/DimaKudosh/pydfs-lineup-optimizer": {
+  "stars": 447,
+  "topic": "fantasy-sports",
+  "desc": "Daily Fantasy Sports lineup optimzer for all popular daily fantasy sports sites",
+  "updated": "2024-03-01"
+ },
+ "github.com/mkreiser/ESPN-Fantasy-Football-API": {
+  "stars": 351,
+  "topic": "fantasy-football",
+  "desc": "Connect to ESPN's fantasy football API via this JS API client for web and NodeJS. Available as an npm package.",
+  "updated": "2025-01-04"
+ },
+ "github.com/amosbastian/fpl": {
+  "stars": 329,
+  "topic": "fantasy-football",
+  "desc": "An asynchronous Python wrapper for the Fantasy Premier League API.",
+  "updated": "2024-07-26"
+ },
+ "github.com/dtcarls/fantasy_football_chat_bot": {
+  "stars": 307,
+  "topic": "fantasy-football",
+  "desc": "GroupMe Discord and Slack Chatbot for ESPN Fantasy Football ",
+  "updated": "2026-09-07"
+ },
+ "github.com/giovanigenerali/cartrolandofc": {
+  "stars": 279,
+  "topic": "fantasy-football",
+  "desc": "\ud83c\udfa9 CartrolandoFC \u00e9 um site para consultar os pontos parciais do seu time no Cartola FC.",
+  "updated": "2018-02-01"
+ },
+ "github.com/nmelhado/league-page": {
+  "stars": 279,
+  "topic": "fantasy-football",
+  "desc": "Create a custom league page for your Sleeper fantasy football league!",
+  "updated": "2026-08-06"
+ },
+ "github.com/uberfastman/yfpy": {
+  "stars": 263,
+  "topic": "fantasy-sports",
+  "desc": "Python API wrapper for the Yahoo Fantasy Sports public API (supports NFL, NHL, MLB, and NBA).",
+  "updated": "2026-04-21"
+ },
+ "github.com/uberfastman/fantasy-football-metrics-weekly-report": {
+  "stars": 227,
+  "topic": "fantasy-football",
+  "desc": "Command line application to create weekly reports (containing stats, metrics, and rankings) for Fantasy Footba",
+  "updated": "2025-10-01"
+ },
+ "github.com/FantasyFootballAnalytics/ffanalytics": {
+  "stars": 190,
+  "topic": "fantasy-football",
+  "desc": "ffanalytics R package ",
+  "updated": "2026-08-31"
+ },
+ "github.com/spinach/FantasyPremierLeague.py": {
+  "stars": 134,
+  "topic": "fantasy-sports",
+  "desc": "\u26bd  Statistics for your mini leagues.",
+  "updated": "2023-08-28"
+ },
+ "github.com/vbudhram/fantasy-football-io": {
+  "stars": 118,
+  "topic": "fantasy-football",
+  "desc": "Fantasy Football News, Player and League API",
+  "updated": "2015-09-03"
+ },
+ "github.com/ffverse/ffscrapr": {
+  "stars": 94,
+  "topic": "fantasy-football",
+  "desc": "R API Client for Fantasy Football League Platforms",
+  "updated": "2024-11-01"
+ },
+ "github.com/joeyagreco/leeger": {
+  "stars": 86,
+  "topic": "fantasy-football",
+  "desc": "Instant stats for any fantasy football league.",
+  "updated": "2024-12-25"
+ },
+ "github.com/SwapnikKatkoori/sleeper-api-wrapper": {
+  "stars": 83,
+  "topic": "fantasy-football",
+  "desc": "A Python wrapper for the Sleeper Fantasy Football API.",
+  "updated": "2023-05-22"
+ },
+ "github.com/jjti/ff": {
+  "stars": 78,
+  "topic": "fantasy-football",
+  "desc": "fantasy football draft assistant with projections from ESPN, CBS, and NFL",
+  "updated": "2026-08-10"
+ },
+ "github.com/wiscostret/fplscrapR": {
+  "stars": 77,
+  "topic": "fantasy-football",
+  "desc": "This package enables those interested in Fantasy Premier League to perform detailed data analysis of the game,",
+  "updated": "2022-09-05"
+ },
+ "github.com/bendominguez0111/nflfastpy": {
+  "stars": 76,
+  "topic": "fantasy-football",
+  "desc": "Python package for loading nflfastR play by play data",
+  "updated": "2021-10-09"
+ },
+ "github.com/derekrbreese/fantasy-football-mcp-public": {
+  "stars": 76,
+  "topic": "fantasy-sports",
+  "desc": "Yahoo Fantasy Football MCP server for Claude Desktop - Advanced lineup optimization, draft assistance, and lea",
+  "updated": "2026-09-06"
+ },
+ "github.com/philipfong/free-agent-sleeper": {
+  "stars": 74,
+  "topic": "fantasy-football",
+  "desc": "Automate adding of free agents in fantasy football leagues ",
+  "updated": "2022-10-05"
+ },
+ "github.com/amosbastian/FPLbot": {
+  "stars": 70,
+  "topic": "fantasy-football",
+  "desc": "A bot made for /r/FantasyPL",
+  "updated": "2022-12-08"
+ },
+ "github.com/mikemountain/fantasy-football-scoreboard": {
+  "stars": 65,
+  "topic": "fantasy-football",
+  "desc": "Display the score of your fantasy football team on a Raspberry Pi driven RGB LED matrix for maximum ease of di",
+  "updated": "2024-09-04"
+ },
+ "github.com/piopy/fantacalcio-py": {
+  "stars": 63,
+  "topic": "fantasy-football",
+  "desc": "Piccolo tool per guidarci all'asta spendendo poco",
+  "updated": "2026-09-07"
+ },
+ "github.com/kt474/fantasy-football-wrapped": {
+  "stars": 60,
+  "topic": "fantasy-football",
+  "desc": "Detailed insights and charts for Sleeper and ESPN fantasy football leagues ",
+  "updated": "2026-08-19"
+ },
+ "github.com/uPeppe/fantabeto": {
+  "stars": 56,
+  "topic": "fantasy-football",
+  "desc": "Machine learning model for predicting Serie A players performance in a match, in terms of Fantacalcio (italian",
+  "updated": "2023-10-05"
+ },
+ "github.com/amarvin/fantasy-football-bot": {
+  "stars": 56,
+  "topic": "fantasy-football",
+  "desc": "Automate playing Yahoo Fantasy Football",
+  "updated": "2026-09-01"
+ },
+ "github.com/jokecamp/epl-fantasy-geek": {
+  "stars": 53,
+  "topic": "fantasy-football",
+  "desc": "English Premier League 2017-18 Fantasy Stats for Geeks",
+  "updated": "2018-05-17"
+ },
+ "github.com/tom-draper/pldashboard": {
+  "stars": 49,
+  "topic": "fantasy-football",
+  "desc": "A Premier League football dashboard.",
+  "updated": "2026-08-31"
+ },
+ "github.com/JakePartusch/fantasy-tools": {
+  "stars": 48,
+  "topic": "fantasy-football",
+  "desc": "A suite of tools for fantasy football players",
+  "updated": "2022-10-05"
+ },
+ "github.com/rushfive/FFDB": {
+  "stars": 44,
+  "topic": "fantasy-football",
+  "desc": "NFL Database Engine for PostgreSql and Mongo (easily works with other custom databases too)",
+  "updated": "2024-02-03"
+ },
+ "github.com/KBThree13/mcp_espn_ff": {
+  "stars": 44,
+  "topic": "fantasy-football",
+  "desc": "ESPN Fantasy API with LLMs!",
+  "updated": "2025-12-19"
+ },
+ "github.com/saheedniyi02/fpl-ai": {
+  "stars": 44,
+  "topic": "fantasy-football",
+  "desc": "A machine learning system that predicts fpl points of players",
+  "updated": "2023-11-02"
+ },
+ "github.com/mjk2244/pro-football-reference-web-scraper": {
+  "stars": 41,
+  "topic": "fantasy-football",
+  "desc": "Web scraper to retrieve player and team data from Pro Football Reference.",
+  "updated": "2024-05-21"
+ },
+ "github.com/joeyagreco/sleeper": {
+  "stars": 39,
+  "topic": "fantasy-football",
+  "desc": "A Python wrapper for the Sleeper API.",
+  "updated": "2024-12-25"
+ },
+ "github.com/SwapnikKatkoori/sleeper-ff-bot": {
+  "stars": 37,
+  "topic": "fantasy-football",
+  "desc": "A GroupMe/Slack/Discord Bot for Sleeper fantasy leagues",
+  "updated": "2023-05-22"
+ },
+ "github.com/nickfrerichs/fflproject": {
+  "stars": 30,
+  "topic": "fantasy-football",
+  "desc": "Fantasy Football League Project",
+  "updated": "2021-02-26"
+ },
+ "github.com/k5cents/fflr": {
+  "stars": 29,
+  "topic": "fantasy-football",
+  "desc": "Get ESPN fantasy football data in R",
+  "updated": "2025-08-10"
+ },
+ "github.com/bapairaew/open-fpl": {
+  "stars": 28,
+  "topic": "fantasy-football",
+  "desc": "Open-source Fantasy Premier League tools",
+  "updated": "2022-03-02"
+ },
+ "github.com/ItsTitle/fantasy-football-draft-room": {
+  "stars": 27,
+  "topic": "fantasy-sports",
+  "desc": "A fantasy football draft tool with two modes: a mock draft against a room you can tune, and an assistant that ",
+  "updated": "2026-09-02"
+ },
+ "github.com/lastmaj/graphql-fpl": {
+  "stars": 26,
+  "topic": "fantasy-football",
+  "desc": "A GraphQL wrapper for the Fantasy Premier League REST API, using node.js and graphql-yoga.",
+  "updated": "2023-05-06"
+ },
+ "github.com/Externoak/LaLigaApp": {
+  "stars": 24,
+  "topic": "fantasy-football",
+  "desc": "Aplicaci\u00f3n de escritorio para LaLiga Fantasy que centraliza toda la gesti\u00f3n de tu equipo y tu liga: mercado, a",
+  "updated": "2026-07-21"
+ },
+ "github.com/jonortega20/fantasybot": {
+  "stars": 24,
+  "topic": "fantasy-football",
+  "desc": "Agente aut\u00f3nomo para LALIGA Fantasy: lee el juego, decide y act\u00faa (pujas, ventas, clausulazos, alineaci\u00f3n). Py",
+  "updated": "2026-09-02"
+ },
+ "github.com/ffverse/ffopportunity": {
+  "stars": 23,
+  "topic": "fantasy-football",
+  "desc": "Models for Fantasy Football Expected Points",
+  "updated": "2025-12-11"
+ },
+ "github.com/d-t/fantacalcio": {
+  "stars": 22,
+  "topic": "fantasy-football",
+  "desc": "Analysis of Serie A Fantasy Football data",
+  "updated": "2017-08-01"
+ },
+ "github.com/ffverse/ffsimulator": {
+  "stars": 22,
+  "topic": "fantasy-football",
+  "desc": "Simulate Fantasy Football Seasons",
+  "updated": "2024-10-03"
+ },
+ "github.com/chrisparsons83/FFDiscordBot": {
+  "stars": 21,
+  "topic": "fantasy-football",
+  "desc": "Discord Bot for Fantasy Football",
+  "updated": "2023-03-06"
+ },
+ "github.com/gtonic/nfl_mcp": {
+  "stars": 19,
+  "topic": "fantasy-football",
+  "desc": "MCP Server providing NFL intelligence - ESPN Newsfeed and Sleeper API",
+  "updated": "2026-09-07"
+ },
+ "github.com/isaactpetersen/Fantasy-Football-Analytics-Textbook": {
+  "stars": 19,
+  "topic": "fantasy-football",
+  "desc": "Textbook for Fantasy Football Analytics course",
+  "updated": "2026-09-08"
+ },
+ "github.com/ikushlianski/football-score-simulator-2017": {
+  "stars": 18,
+  "topic": "fantasy-football",
+  "desc": "The app simulates football matches. Choose team names, relative strength, home crowd support, tactics and othe",
+  "updated": "2024-03-17"
+ },
+ "github.com/jdguggs10/flaim": {
+  "stars": 17,
+  "topic": "fantasy-sports",
+  "desc": "Fantasy Sports MCP Platform",
+  "updated": "2026-09-08"
+ },
+ "github.com/FloSchl8/sleeper-mcp": {
+  "stars": 17,
+  "topic": "fantasy-football",
+  "desc": "MCP for Sleeper Fantasy Football",
+  "updated": "2025-10-05"
+ },
+ "github.com/protoblock/protoblock": {
+  "stars": 15,
+  "topic": "fantasy-football",
+  "desc": "Protoblock blockchain protocol core",
+  "updated": "2022-08-29"
+ },
+ "github.com/afelsen/fantasy-football-nn": {
+  "stars": 15,
+  "topic": "fantasy-football",
+  "desc": "A neural network that predicts fantasy football scores",
+  "updated": "2019-07-05"
+ },
+ "github.com/ebrown-32/LeaguePulse": {
+  "stars": 15,
+  "topic": "fantasy-football",
+  "desc": "Free custom website for any Sleeper fantasy football league to bring more immersion and life to the game. Set ",
+  "updated": "2026-09-07"
+ },
+ "github.com/hkyplyr/yfantasy-api": {
+  "stars": 13,
+  "topic": "fantasy-sports",
+  "desc": "Python API client that can be used to make calls to the Yahoo! Fantasy Sports API. Developed specifically for ",
+  "updated": "2026-05-21"
+ },
+ "github.com/edavis25/Fantasy-Football-Database": {
+  "stars": 13,
+  "topic": "fantasy-football",
+  "desc": "Fantasy football data scraping and projections.",
+  "updated": "2017-03-31"
+ },
+ "github.com/casudo/Kickbase-Insights": {
+  "stars": 13,
+  "topic": "fantasy-sports",
+  "desc": "This project is a used to gather data from Kickbase API endpoint and automate various interactions. The data i",
+  "updated": "2026-08-28"
+ },
+ "github.com/ppourmand/nfl-stats-py": {
+  "stars": 13,
+  "topic": "fantasy-football",
+  "desc": "Python library to pull NFL data for fantasy purposes",
+  "updated": "2022-12-08"
+ },
+ "github.com/priyanshux/FPL-Defence-Rotations": {
+  "stars": 12,
+  "topic": "fantasy-football",
+  "desc": "Best options to rotate defenders in Fantasy Premier League 2023-24",
+  "updated": "2023-06-29"
+ },
+ "github.com/KengoA/fantasy-basketball": {
+  "stars": 269,
+  "topic": "sports-analytics",
+  "desc": " Scraping statistics, predicting NBA player performance with neural networks and boosting algorithms, and opti",
+  "updated": "2023-07-25"
+ },
+ "github.com/whatadewitt/yahoo-fantasy-sports-api": {
+  "stars": 228,
+  "topic": "fantasy-sports",
+  "desc": "NodeJS wrapper for the Yahoo! Fantasy Sports API",
+  "updated": "2026-08-06"
+ },
+ "github.com/LandonPatmore/yahoo-fantasy-bot": {
+  "stars": 86,
+  "topic": "fantasy-sports",
+  "desc": "Bot that alerts GroupMe, Discord, and Slack users about various things happening in their Yahoo Fantasy Sports",
+  "updated": "2022-09-06"
+ },
+ "github.com/pankajrawat9075/fantasy-sports-prediction": {
+  "stars": 49,
+  "topic": "fantasy-sports",
+  "desc": "We have used our skill of machine learning along with our passion for cricket to predict the performance of pl",
+  "updated": "2024-03-28"
+ },
+ "github.com/zlisto/Daily-Fantasy-Baseball-Contests-in-DraftKings": {
+  "stars": 42,
+  "topic": "fantasy-sports",
+  "desc": "This is the code for constructing a portfolio of lineups for DraftKings baseball contests with a top heavy pay",
+  "updated": "2018-12-04"
+ },
+ "github.com/DMcP89/harambot": {
+  "stars": 34,
+  "topic": "fantasy-sports",
+  "desc": "A Yahoo Fantasy Sports bot for Discord",
+  "updated": "2026-08-21"
+ },
+ "github.com/jpzhangvincent/NBAFantasySportBetting-ML-project": {
+  "stars": 20,
+  "topic": "fantasy-sports",
+  "desc": "Use Machine Learning to infer best betting strategy to play the NBA fantasy sport game on DraftKings ",
+  "updated": "2022-06-16"
+ },
+ "github.com/ian-whitestone/nba-dfs": {
+  "stars": 18,
+  "topic": "fantasy-sports",
+  "desc": "NBA Daily Fantasy Sports EDA and Player Modelling with R",
+  "updated": "2017-02-04"
+ },
+ "github.com/elwan9880/Yahoo_fantasy_basketball_analyzer": {
+  "stars": 16,
+  "topic": "fantasy-sports",
+  "desc": "Yahoo fantasy basketball analyzer in Python",
+  "updated": "2021-10-24"
+ },
+ "github.com/magnusbakken/espn-fantasy-autopick": {
+  "stars": 13,
+  "topic": "fantasy-sports",
+  "desc": "A Chrome extension that lets you automatically add active players to the current roster in an ESPN NBA/NHL fan",
+  "updated": "2023-11-05"
+ },
+ "github.com/geoffharcourt/cbs_fantasy_sports_api_token_fetcher": {
+  "stars": 10,
+  "topic": "fantasy-sports",
+  "desc": "A gem to retrieve your CBS fantasy sports API token",
+  "updated": "2017-03-29"
+ },
+ "github.com/michaelwayman/python-genetic": {
+  "stars": 10,
+  "topic": "fantasy-sports",
+  "desc": "Genetic algorithm to solve np-complete maximization problems. Originally intended for fantasy sports.",
+  "updated": "2017-05-14"
+ },
+ "github.com/tradestars-app/tradestars-cards": {
+  "stars": 10,
+  "topic": "fantasy-sports",
+  "desc": "Main TradeStars protocol contracts",
+  "updated": "2024-07-17"
+ },
+ "github.com/AthleteX-DAO/ax_dapp": {
+  "stars": 9,
+  "topic": "fantasy-sports",
+  "desc": "frontend UI for AX",
+  "updated": "2026-06-28"
+ },
+ "github.com/agent515/sports_private_pool": {
+  "stars": 8,
+  "topic": "fantasy-sports",
+  "desc": "A flutter application for a simplified version of Fantasy Cricket like Dream11. Users can create private pools",
+  "updated": "2025-11-05"
+ },
+ "github.com/potternate/PropBet": {
+  "stars": 8,
+  "topic": "fantasy-sports",
+  "desc": "PropBet is a modern React-based NBA sports betting web app featuring real-time player props, dynamic leaderboa",
+  "updated": "2025-02-14"
+ },
+ "github.com/swanson/slotback-labs": {
+  "stars": 8,
+  "topic": "fantasy-sports",
+  "desc": ":canada: :football: Advanced Canadian Football (CFL) stats and fantasy analytics ",
+  "updated": "2023-07-12"
+ },
+ "github.com/andystanley/canplfantasy": {
+  "stars": 7,
+  "topic": "fantasy-sports",
+  "desc": "The unofficial fantasy game of the Canadian Premier League",
+  "updated": "2023-01-04"
+ },
+ "github.com/vaquierm/F1_Fantasy_Helper": {
+  "stars": 7,
+  "topic": "fantasy-sports",
+  "desc": "\ud83c\udfce Helper program to find best team compositions for the F1 fantasy league",
+  "updated": "2021-11-10"
+ },
+ "github.com/lightningcookies/Custom-Fantasy-Projections": {
+  "stars": 7,
+  "topic": "fantasy-sports",
+  "desc": "Welcome to the Custom-Fantasy-Projections repository! This personal project aims to provide a way to make your",
+  "updated": "2026-05-17"
+ },
+ "github.com/pseudo-r/Public-ESPN-Fantasy-API": {
+  "stars": 7,
+  "topic": "fantasy-sports",
+  "desc": "The ESPN Fantasy API documentation provides comprehensive API endpoints, URL parameters, authentication method",
+  "updated": "2026-03-26"
+ },
+ "github.com/KengoA/fantasy-ga": {
+  "stars": 6,
+  "topic": "fantasy-sports",
+  "desc": "Genetic algorithm library to generate daily fantasy sports lineups for DraftKings",
+  "updated": "2024-10-22"
+ },
+ "github.com/DanielTomaro13/sportsdata-agents": {
+  "stars": 6,
+  "topic": "fantasy-sports",
+  "desc": "Free, open-source agentic sports-data workbench \u2014 32 specialist agents over live odds + stats from 64 provider",
+  "updated": "2026-09-03"
+ },
+ "github.com/furysport/furya-chain": {
+  "stars": 5,
+  "topic": "fantasy-sports",
+  "desc": "\ud83c\udfdf The Furya Chain aims to redefine the Sports and Gaming DeFi landscape ---- \ud83e\udd68 It provides the foundational in",
+  "updated": "2024-05-30"
+ },
+ "github.com/texasbe2trill/hooplytics": {
+  "stars": 5,
+  "topic": "odds-api",
+  "desc": "Hooplytics turns NBA box-score data into player intelligence through machine learning, interactive analytics, ",
+  "updated": "2026-05-09"
+ },
+ "github.com/mdoege/IBM1620-Baseball": {
+  "stars": 5,
+  "topic": "fantasy-sports",
+  "desc": "Instructions and files for running the pioneering 1960s baseball simulation by John W. Burgeson in an emulator",
+  "updated": "2025-05-13"
+ },
+ "github.com/Praveennaik8/Dream-Team-clone": {
+  "stars": 5,
+  "topic": "fantasy-sports",
+  "desc": "Fantasy team building website.",
+  "updated": "2022-02-22"
+ },
+ "github.com/whatadewitt/fantasy-starter-express": {
+  "stars": 5,
+  "topic": "fantasy-sports",
+  "desc": "A Yahoo! Fantasy starter app to save me time/effort going forward...",
+  "updated": "2018-09-12"
+ },
+ "github.com/ronakjkothari/FantasyCricket": {
+  "stars": 5,
+  "topic": "fantasy-sports",
+  "desc": "\ud83c\udfcfRealistic and Fun Fantasy Cricket Game for everyone!",
+  "updated": "2023-03-06"
+ },
+ "github.com/dannyreg/ffawards.app": {
+  "stars": 4,
+  "topic": "fantasy-sports",
+  "desc": "FFAwards generates fun weekly and season awards and insights for your fantasy football league.",
+  "updated": "2025-12-12"
+ },
+ "github.com/longoodr/deep-field": {
+  "stars": 4,
+  "topic": "fantasy-sports",
+  "desc": "A baseball-reference.com play-by-play scraper and database generator",
+  "updated": "2024-04-26"
+ },
+ "github.com/cristobalmitchell/sport-scraper": {
+  "stars": 4,
+  "topic": "fantasy-sports",
+  "desc": "Simple web scraper package for gathering sports data from ESPN.com",
+  "updated": "2020-11-26"
+ },
+ "github.com/zak-510/BerkeleyBets": {
+  "stars": 4,
+  "topic": "fantasy-sports",
+  "desc": "Full-stack app that predicts player performance across MLB, NBA, and NFL using position-specific Random Forest",
+  "updated": "2025-11-30"
+ },
+ "github.com/kortirso/fantasy_sports": {
+  "stars": 4,
+  "topic": "fantasy-sports",
+  "desc": "Web application for creating and maintaining fantasy leagues for different kinds of sport competitions.",
+  "updated": "2024-05-24"
+ },
+ "github.com/6figpsolseeker/rostr": {
+  "stars": 4,
+  "topic": "fantasy-sports",
+  "desc": "Open-source fantasy sports on Solana. Immutable league rules, escrowed prize pools, and automatic settlement. ",
+  "updated": "2026-08-30"
+ },
+ "github.com/wazam/fantasy-baseball-buzz": {
+  "stars": 3,
+  "topic": "fantasy-sports",
+  "desc": "Self-hosted dashboard for tracking MLB player trends, stats, and projections from top fantasy baseball sources",
+  "updated": "2026-07-23"
+ },
+ "github.com/pgilmor/congress-the-game": {
+  "stars": 3,
+  "topic": "fantasy-sports",
+  "desc": "Congress The Game is a fantasy sports style approach to politics.  Get points based on the performance of your",
+  "updated": "2019-01-13"
+ },
+ "github.com/chrisgarvin/fantasy_foobar": {
+  "stars": 3,
+  "topic": "fantasy-sports",
+  "desc": "",
+  "updated": "2017-12-14"
+ },
+ "github.com/edavis25/Fantasy-Cycling": {
+  "stars": 2,
+  "topic": "fantasy-sports",
+  "desc": "Application for running a fantasy cycling league.",
+  "updated": "2023-01-05"
+ },
+ "github.com/spiflicate/yfs-api": {
+  "stars": 2,
+  "topic": "fantasy-sports",
+  "desc": "Fully-typed TypeScript wrapper for Yahoo Fantasy Sports API with OAuth 1.0/2.0, automatic token refresh, and c",
+  "updated": "2026-07-31"
+ },
+ "github.com/daniel-mehta/FPL-Expected-Points": {
+  "stars": 2,
+  "topic": "fantasy-sports",
+  "desc": "Predict Fantasy Premier League (FPL) points using two models: a Random Forest regression (ML_xP.py) and a cust",
+  "updated": "2024-10-30"
+ },
+ "github.com/63BeetleSmurf/ZeusProUnofficial": {
+  "stars": 2,
+  "topic": "fantasy-sports",
+  "desc": "Unofficial update to Geeksoft's Zeus Pro wrestling simulator.",
+  "updated": "2026-07-29"
+ },
+ "github.com/dingyiyi0226/fantasy-baseball": {
+  "stars": 2,
+  "topic": "fantasy-sports",
+  "desc": "a fantasy baseball helper website to compare the stats of league and team",
+  "updated": "2026-03-30"
+ },
+ "github.com/gautam0826/FMLS-Projections": {
+  "stars": 2,
+  "topic": "fantasy-sports",
+  "desc": "Creates points projections for Fantasy MLS game",
+  "updated": "2020-07-18"
+ },
+ "github.com/nguyenank/fantasy-hockey-league": {
+  "stars": 2,
+  "topic": "fantasy-sports",
+  "desc": "A website for tracking the statistics of the PHF 2021-2022 Fantasy League run by The Ice Garden",
+  "updated": "2022-04-12"
+ },
+ "github.com/Zeekeey-jpeg/Sleeper_Draft_Buddy": {
+  "stars": 2,
+  "topic": "fantasy-sports",
+  "desc": "Your live draft war room for Sleeper fantasy football \u2014 who to take, why, right now. Phone + desktop, no login",
+  "updated": "2026-08-13"
+ },
+ "github.com/wazam/fantasy-sync-extension": {
+  "stars": 1,
+  "topic": "fantasy-sports",
+  "desc": "Firefox extension for syncing ESPN fantasy baseball transactions to a Fantrax mirrored league",
+  "updated": "2026-08-27"
+ },
+ "github.com/fantasyfundshq/FantasyFunds": {
+  "stars": 1,
+  "topic": "fantasy-sports",
+  "desc": "Making investing feel just as competitive and social as fantasy sports",
+  "updated": "2025-07-22"
+ },
+ "github.com/dkaslovsky/YAFSA": {
+  "stars": 1,
+  "topic": "fantasy-sports",
+  "desc": "Yet Another Fantasy Sports Analysis",
+  "updated": "2018-02-11"
+ },
+ "github.com/YoannDelage/nba_volutions": {
+  "stars": 1,
+  "topic": "fantasy-sports",
+  "desc": "Analyse des \u00e9volutions de la NBA et pipeline de pr\u00e9diction de scores fantasy  \u2014 scraping, feature engineering,",
+  "updated": "2026-05-12"
+ },
+ "github.com/nicoguin/fantrax-salary-agent": {
+  "stars": 1,
+  "topic": "fantasy-sports",
+  "desc": "Serverless multi-league NBA salary-cap sync for Fantrax \u2014 headless Playwright scraping, GitHub Actions (no ser",
+  "updated": "2026-08-18"
+ },
+ "github.com/NateRice/NBADailyFantasy": {
+  "stars": 1,
+  "topic": "daily-fantasy",
+  "desc": "NBA daily fantasy lineup analysis",
+  "updated": "2021-01-14"
+ },
+ "github.com/robertbingaman/dfs-odds": {
+  "stars": 1,
+  "topic": "daily-fantasy",
+  "desc": "My final project for a Machine Learning course exploring if daily fantasy salary data can be exploited to iden",
+  "updated": "2023-01-17"
+ },
+ "github.com/sherxon/AlgoDS": {
+  "stars": 3430,
+  "topic": "dfs",
+  "desc": "Implementation of Algorithms and Data Structures, Problems and Solutions",
+  "updated": "2023-10-27"
+ },
+ "github.com/yourtion/LearningMasteringAlgorithms-C": {
+  "stars": 766,
+  "topic": "dfs",
+  "desc": "Mastering Algorithms with C \u300a\u7b97\u6cd5\u7cbe\u89e3\uff1aC\u8bed\u8a00\u63cf\u8ff0\u300b\u6e90\u7801\u53caXcode\u5de5\u7a0b\u3001Linux\u5de5\u7a0b",
+  "updated": "2020-05-31"
+ },
+ "github.com/sadanandpai/algo-visualizers": {
+  "stars": 717,
+  "topic": "dfs",
+  "desc": "Algorithms Visualizers",
+  "updated": "2026-08-29"
+ },
+ "github.com/itwanger/PaiAgent": {
+  "stars": 666,
+  "topic": "dfs",
+  "desc": "\ud83d\udd25\u8f7b\u91cf\u7ea7\u7684AI\u5de5\u4f5c\u6d41\u7f16\u6392\u7cfb\u7edf\uff0c\u7c7b\u4f3cdify\u3001n8n\uff0c\u5168\u7a0b\u4f7f\u7528Vibe Coding\uff0cAI\u5de5\u5177\u4e3aQoder+CLI\u3002\u6d89\u53ca\u5230\u7684\u6280\u672f\u6808\u5305\u62ecSpringAI\u3001LangGraph4J\u3001SSE\u3001MinIO\u3001DAG\u81ea\u5b9a\u5f15\u64ce\u7b49\u3002",
+  "updated": "2026-09-03"
+ },
+ "github.com/Mcdonoughd/CS2223": {
+  "stars": 424,
+  "topic": "dfs",
+  "desc": "This a repository for WPI CS2223 Algorithms D Term 2018",
+  "updated": "2020-05-23"
+ },
+ "github.com/bobluppes/graaf": {
+  "stars": 413,
+  "topic": "dfs",
+  "desc": "A general-purpose lightweight C++ graph library",
+  "updated": "2026-09-08"
+ },
+ "github.com/BenBrostoff/draftfast": {
+  "stars": 298,
+  "topic": "dfs",
+  "desc": "A tool to automate and optimize DraftKings and FanDuel lineup construction.",
+  "updated": "2026-02-05"
+ },
+ "github.com/hetianyi/godfs": {
+  "stars": 288,
+  "topic": "dfs",
+  "desc": "A simple fast, easy use distributed file system written in go.",
+  "updated": "2020-05-11"
+ },
+ "github.com/hongbo-miao/leetcode": {
+  "stars": 202,
+  "topic": "dfs",
+  "desc": "LeetCode solutions",
+  "updated": "2024-01-11"
+ },
+ "github.com/DHI/mikeio": {
+  "stars": 183,
+  "topic": "dfs",
+  "desc": "Read, write and manipulate dfs0, dfs1, dfs2, dfs3, dfsu and mesh files.",
+  "updated": "2026-09-08"
+ },
+ "github.com/103style/LeetCode": {
+  "stars": 149,
+  "topic": "dfs",
+  "desc": "leetcode\u7684\u7ec3\u4e60\u8bb0\u5f55",
+  "updated": "2022-11-18"
+ },
+ "github.com/descire/LeetCode": {
+  "stars": 114,
+  "topic": "dfs",
+  "desc": "JavaScript AC solutions to problems on LeetCode",
+  "updated": "2023-03-05"
+ },
+ "github.com/geraldholdsworth/DiscImageManager": {
+  "stars": 110,
+  "topic": "dfs",
+  "desc": "To manage retro floppy disc images",
+  "updated": "2026-08-24"
+ },
+ "github.com/freakmaxi/kertish-dos": {
+  "stars": 107,
+  "topic": "dfs",
+  "desc": "Kertish-dos is a simple distributed object storage platform, implements object storage on a single distributed",
+  "updated": "2024-12-15"
+ },
+ "github.com/gsurma/slitherin": {
+  "stars": 91,
+  "topic": "dfs",
+  "desc": "AI research environment for the game of Snake \ud83d\udc0d .",
+  "updated": "2021-07-09"
+ },
+ "github.com/ngryman/tree-crawl": {
+  "stars": 89,
+  "topic": "dfs",
+  "desc": ":leaves: Agnostic tree traversal library.",
+  "updated": "2024-06-19"
+ },
+ "github.com/zhenv5/breaking_cycles_in_noisy_hierarchies": {
+  "stars": 78,
+  "topic": "dfs",
+  "desc": "breaking cycles in noisy hierarchies",
+  "updated": "2022-10-30"
+ },
+ "github.com/sergeyleschev/leetcode-swift": {
+  "stars": 70,
+  "topic": "dfs",
+  "desc": "TOP 200 #Dev \ud83c\udfc6 LeetCode, Solutions in \uf8ff Swift, Shell, Database (T-SQL, PL/SQL, MySQL), Concurrency (Python3). ",
+  "updated": "2024-06-02"
+ },
+ "github.com/sowmen/FXGraphAlgorithmSimulator": {
+  "stars": 65,
+  "topic": "dfs",
+  "desc": "Visualizes specific Graph Algorithms like BFS, DFS, MST etc. on interactive user input graphs.",
+  "updated": "2021-02-05"
+ },
+ "github.com/bcanfield/southpaw": {
+  "stars": 58,
+  "topic": "dfs",
+  "desc": "Python Fanduel API - Lineup Automation",
+  "updated": "2026-06-05"
+ },
+ "github.com/dfs-with-r/coach": {
+  "stars": 51,
+  "topic": "dfs",
+  "desc": "Lineup optimization for daily fantasy sports",
+  "updated": "2021-12-08"
+ },
+ "github.com/morpheusthewhite/parallel-dfs-dag": {
+  "stars": 50,
+  "topic": "dfs",
+  "desc": "A parallel implementation of DFS for Directed Acyclic Graphs (https://research.nvidia.com/publication/parallel",
+  "updated": "2021-03-02"
+ },
+ "github.com/souraavv/NPTEL-DAA-Programming-Assignment-Solutions": {
+  "stars": 47,
+  "topic": "dfs",
+  "desc": "Programming assignments of NPTEL DAA course taken by Prof. Madhavan Mukund of Chennai Mathematical Institute.",
+  "updated": "2022-12-08"
+ },
+ "github.com/dchen327/ruzzle-solver": {
+  "stars": 45,
+  "topic": "dfs",
+  "desc": "A python script that solves ruzzle boards",
+  "updated": "2020-02-25"
+ },
+ "github.com/mr-adult/tree-iterators-rs": {
+  "stars": 44,
+  "topic": "dfs",
+  "desc": "tree-iterators-rs is a library built to provide you with the iterators to easily work with tree data structure",
+  "updated": "2026-02-17"
+ },
+ "github.com/Lord-of-Algorithms/DSA-in-Java": {
+  "stars": 36,
+  "topic": "dfs",
+  "desc": "Algorithms and data structures implemented in Java",
+  "updated": "2026-08-14"
+ },
+ "github.com/Lord-of-Algorithms/DSA-in-Python": {
+  "stars": 36,
+  "topic": "dfs",
+  "desc": "Algorithms and data structures implemented in Python",
+  "updated": "2026-08-14"
+ },
+ "github.com/yanpozka/solvedchallenges": {
+  "stars": 34,
+  "topic": "dfs",
+  "desc": "My solved challenges and hacks (Go, Python, Java)",
+  "updated": "2023-02-10"
+ },
+ "github.com/burakgon/KernelSU-WiFi-Country-Code": {
+  "stars": 33,
+  "topic": "dfs",
+  "desc": "KernelSU / Magisk module to force WiFi country code on Android. Unlock restricted 5GHz, 6GHz (WiFi 6E/7), and ",
+  "updated": "2026-07-20"
+ },
+ "github.com/will2dye4/labyrinth": {
+  "stars": 29,
+  "topic": "dfs",
+  "desc": "Generate and solve mazes using various algorithms",
+  "updated": "2023-10-19"
+ },
+ "github.com/abpaudel/8-puzzle": {
+  "stars": 29,
+  "topic": "dfs",
+  "desc": "8 puzzle solver using BFS, DFS, IDDFS and A-star algorithm",
+  "updated": "2021-05-20"
+ },
+ "github.com/divyanshu-talwar/Parallel-DFS": {
+  "stars": 28,
+  "topic": "dfs",
+  "desc": "CUDA implementation of parallel Depth First Search (DFS) algorithm and it's comparison with a serial C++ DFS i",
+  "updated": "2018-06-28"
+ },
+ "github.com/danyalimran93/Artificial-Intelligence-State-Space-Search": {
+  "stars": 27,
+  "topic": "dfs",
+  "desc": "Different Searching algorithms (DFS, BFS, IDS, Greedy, A*) opting to find optimal path from source to destinat",
+  "updated": "2017-08-27"
+ },
+ "github.com/Leonardpepa/Pathfinding-Visualizer": {
+  "stars": 27,
+  "topic": "dfs",
+  "desc": "Pathfinding Visualizer application that visualizes graph based search algorithms used to find the shortest pat",
+  "updated": "2022-02-02"
+ },
+ "github.com/wasim15185/AlgoVisualizer": {
+  "stars": 26,
+  "topic": "dfs",
+  "desc": "React Base Algorithm Visualization.",
+  "updated": "2022-08-16"
+ },
+ "github.com/KalimAmzad/Graph-Theory-in-Python": {
+  "stars": 26,
+  "topic": "dfs",
+  "desc": "Graph Theory Algorithm is implemented in python. Jupyter Notebook is used to demonstrate the concept and Netwo",
+  "updated": "2018-10-15"
+ },
+ "github.com/DICL/VeloxDFS": {
+  "stars": 26,
+  "topic": "dfs",
+  "desc": "DHT-based Distributed File System for MapReduce Jobs",
+  "updated": "2026-03-06"
+ },
+ "github.com/NodiraTillayeva/IntroToAI": {
+  "stars": 25,
+  "topic": "dfs",
+  "desc": "CS50\u2019s Introduction to Artificial Intelligence with Python. This course explores the concepts and algorithms a",
+  "updated": "2021-09-13"
+ },
+ "github.com/29DCH/Walking-the-maze": {
+  "stars": 25,
+  "topic": "dfs",
+  "desc": "\u8d70\u8ff7\u5bab\u95ee\u9898\u7684\u7b97\u6cd5\u53ef\u89c6\u5316(UI)\u53ca\u8ff7\u5bab\u751f\u6210",
+  "updated": "2018-12-02"
+ },
+ "github.com/Farid-Karimi/Pac-Man": {
+  "stars": 24,
+  "topic": "dfs",
+  "desc": "This project is a simplified version of Pac-Man with randomly generated maps, custom colors, and a leaderboard",
+  "updated": "2026-01-31"
+ },
+ "github.com/AlaminPu1007/algorithm-visualizer": {
+  "stars": 23,
+  "topic": "dfs",
+  "desc": "Showcasing popular algorithm visualizations.",
+  "updated": "2024-10-15"
+ },
+ "github.com/khalidsaifullaah/pathfinding-visualizer": {
+  "stars": 22,
+  "topic": "dfs",
+  "desc": "A web app to help visualizing typical graph searching algorithms",
+  "updated": "2021-07-29"
+ },
+ "github.com/gabrieldrn/Java-Maze-Solver": {
+  "stars": 22,
+  "topic": "dfs",
+  "desc": "Maze solving in java with BFS, DFS, A*",
+  "updated": "2018-11-28"
+ },
+ "github.com/Sandruski/htn-planner": {
+  "stars": 22,
+  "topic": "dfs",
+  "desc": "A C++ hierarchical task network (HTN) planner library that interprets a custom domain language.",
+  "updated": "2026-08-29"
+ },
+ "github.com/itmisx/go-dfs": {
+  "stars": 21,
+  "topic": "dfs",
+  "desc": "\u4e00\u6b3e\u6613\u7528\u7684\u5206\u5e03\u5f0f\u6587\u4ef6\u7cfb\u7edf\uff0c\u514d\u8d39\u3001\u5f00\u6e90\u3002",
+  "updated": "2021-06-24"
+ },
+ "github.com/cemasma/water-sort-puzzle-solver": {
+  "stars": 21,
+  "topic": "dfs",
+  "desc": "water sort puzzle solver",
+  "updated": "2023-08-20"
+ },
+ "github.com/lewismj/functional_graph_algos": {
+  "stars": 21,
+  "topic": "dfs",
+  "desc": "Library for functional graph & geometry algorithms",
+  "updated": "2019-04-22"
+ },
+ "github.com/footprintjs/footPrint": {
+  "stars": 20,
+  "topic": "dfs",
+  "desc": "The flowchart pattern for backend code \u2014 self-explainable systems that AI can reason about. Causal traces, aut",
+  "updated": "2026-09-07"
+ },
+ "github.com/sergeyleschev/leetcode-typescript": {
+  "stars": 20,
+  "topic": "dfs",
+  "desc": "TOP 200 #Dev \ud83c\udfc6 LeetCode, Solutions in TypeScript, Shell, Database (T-SQL, PL/SQL, MySQL), Concurrency (Python3",
+  "updated": "2024-12-11"
+ },
+ "github.com/agorinenko/data-structures-and-algorithms": {
+  "stars": 19,
+  "topic": "dfs",
+  "desc": "\u0410\u043b\u0433\u043e\u0440\u0438\u0442\u043c\u044b \u0438 \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u044b \u0434\u0430\u043d\u043d\u044b\u0445",
+  "updated": "2025-03-20"
+ },
+ "github.com/nspo/graphs-cpp": {
+  "stars": 18,
+  "topic": "dfs",
+  "desc": "Weighted and unweighted graphs and digraphs with C++",
+  "updated": "2021-02-07"
+ },
+ "github.com/courseworks/AUT_AP_2025_Spring_HW1": {
+  "stars": 18,
+  "topic": "dfs",
+  "desc": "This repo contains Homework 1 for AUT_AP_2025_Spring, featuring 3 tasks: a Bash file organizer, a C++ 3D point",
+  "updated": "2025-02-12"
+ },
+ "github.com/thm-mni-ii/sea": {
+  "stars": 18,
+  "topic": "dfs",
+  "desc": "Space efficient (graph) algorithms",
+  "updated": "2020-09-10"
+ },
+ "github.com/MorvanZhou/pathfind": {
+  "stars": 17,
+  "topic": "dfs",
+  "desc": "path finding algorithms",
+  "updated": "2024-04-17"
+ },
+ "github.com/Shikha-code36/Competitive-Python": {
+  "stars": 17,
+  "topic": "dfs",
+  "desc": "Python Algorithms Package used in competitive programming",
+  "updated": "2023-03-19"
+ },
+ "github.com/jchrys/icpc": {
+  "stars": 17,
+  "topic": "dfs",
+  "desc": "Resources for Competitive Programming",
+  "updated": "2023-07-20"
+ },
+ "github.com/shervinchen/crazycat": {
+  "stars": 17,
+  "topic": "dfs",
+  "desc": "\u4f7f\u7528Canvas\u5236\u4f5c\u7684\u56f4\u4f4f\u795e\u7ecf\u732b\uff0c\u7b97\u6cd5\u57fa\u4e8e\u5e7f\u5ea6\u4f18\u5148\u641c\u7d22\u5b9e\u73b0\u3002",
+  "updated": "2018-07-16"
+ },
+ "github.com/kevalmorabia97/Graph-Theory-Implementations-in-Java": {
+  "stars": 16,
+  "topic": "dfs",
+  "desc": "This project contains the implementation of basic graph theory algorithms like BFS, DFS, Kruskal's MST, Prim's",
+  "updated": "2020-08-31"
+ },
+ "github.com/infersports/infersports-skill": {
+  "stars": 33,
+  "topic": "odds-api",
+  "desc": "InferSports Agent Skill \u2014 live Asian-priced football & basketball odds + scores. Read-only, keyless. Claude Co",
+  "updated": "2026-06-11"
+ },
+ "github.com/Johnserf-Seed/SportteryAPI": {
+  "stars": 12,
+  "topic": "odds-api",
+  "desc": "China Sports Lottery \u7ade\u5f69\u8db3\u7403 (Jingcai football) odds API \u2014 a Cloudflare Worker REST API + local MCP server that d",
+  "updated": "2026-07-24"
+ },
+ "github.com/sarartur/oddsapi": {
+  "stars": 11,
+  "topic": "odds-api",
+  "desc": "Python wrapper around The Odds-Api",
+  "updated": "2023-07-20"
+ },
+ "github.com/odds-api-io/odds-api-python": {
+  "stars": 9,
+  "topic": "odds-api",
+  "desc": "Official Python SDK for Odds-API.io - Real-time sports betting odds from 265+ bookmakers",
+  "updated": "2026-07-24"
+ },
+ "github.com/oddsflowai-team/oddsflow-partners-platform": {
+  "stars": 3,
+  "topic": "odds-api",
+  "desc": "AI-powered odds intelligence and agentic AI infrastructure for sportsbooks and odds feed providers. Real-time ",
+  "updated": "2026-03-28"
+ },
+ "github.com/Boran-Sert/MacMetrik": {
+  "stars": 3,
+  "topic": "odds-api",
+  "desc": "Tarihsel ma\u00e7 verileri ve oranlar \u00fczerinden benzerlik analizi yaparak bahis pazarlar\u0131ndaki \u00f6r\u00fcnt\u00fcleri tespit ed",
+  "updated": "2026-05-23"
+ },
+ "github.com/Muhozgu/zendek": {
+  "stars": 3,
+  "topic": "odds-api",
+  "desc": "AI Player support platform for iGaming operations, automating ticket classification, response generation, and ",
+  "updated": "2026-05-18"
+ },
+ "github.com/lumifyai/lumify": {
+  "stars": 3,
+  "topic": "sports-api",
+  "desc": "Official TypeScript & Python SDKs + MCP integration for the Lumify sports-intelligence API: schedules, live sc",
+  "updated": "2026-09-03"
+ },
+ "github.com/odds-api-io/odds-api-node": {
+  "stars": 2,
+  "topic": "odds-api",
+  "desc": "Official Node.js SDK for Odds-API.io - Real-time sports betting odds from 265+ bookmakers",
+  "updated": "2026-07-24"
+ },
+ "github.com/isportsapiofficial/isports-sdk-java": {
+  "stars": 2,
+  "topic": "sports-api",
+  "desc": "iSports API is a global sports data API provider delivering real-time sports data, live score APIs, and histor",
+  "updated": "2026-04-28"
+ },
+ "github.com/big-main/chalkpicks-pro": {
+  "stars": 2,
+  "topic": "odds-api",
+  "desc": "AI sports betting analytics \u2014 picks, +EV, CLV & immutable Pick Ledger. Free odds/ROI/parlay tools. Not a sport",
+  "updated": "2026-08-13"
+ },
+ "github.com/louaih/bonus-hedge": {
+  "stars": 2,
+  "topic": "odds-api",
+  "desc": "Find optimal hedging opportunities for sportsbook bonus bets with guaranteed profit calculations across multip",
+  "updated": "2026-03-02"
+ },
+ "github.com/odds-api-io/odds-api-r": {
+  "stars": 1,
+  "topic": "odds-api",
+  "desc": "Official R client for Odds-API.io - real-time sports betting odds from 265+ bookmakers",
+  "updated": "2026-07-27"
+ },
+ "github.com/rustchainer/sportsbook-odds-streaming-api": {
+  "stars": 1,
+  "topic": "odds-api",
+  "desc": "Public showcase of a multi-source sportsbook odds streaming API with normalized WebSocket feeds, snapshot deli",
+  "updated": "2026-03-07"
+ },
+ "github.com/Pridabruno/CryptoSportsBook": {
+  "stars": 1,
+  "topic": "odds-api",
+  "desc": "SportsBook like Stake. SportsBook SportsBook SportsBook SportsBook SportsBook SportsBook SportsBook Crypto Cry",
+  "updated": "2026-05-07"
+ },
+ "github.com/odds-api-io/odds-api-mcp-server": {
+  "stars": 1,
+  "topic": "odds-api",
+  "desc": "Official MCP server for Odds-API.io: live sports betting odds from 265+ bookmakers in Claude, Cursor and other",
+  "updated": "2026-07-24"
+ },
+ "github.com/brendan-macdonald/arbitrage-betting-platform": {
+  "stars": 1,
+  "topic": "odds-api",
+  "desc": "Real-time arbitrage betting platform built with Next.js, TypeScript, Node.js, PostgreSQL, and Docker",
+  "updated": "2025-10-10"
+ },
+ "github.com/sportlogic-io/sportlogic-virtuals-examples": {
+  "stars": 1,
+  "topic": "sports-api",
+  "desc": "Code samples for the SportLogic Virtuals API \u2014 Python, TypeScript, PHP",
+  "updated": "2026-08-08"
+ },
+ "github.com/odds-api/arbitrage-betting-scanner-bot": {
+  "stars": 1,
+  "topic": "odds-api",
+  "desc": "Python arbitrage scanner for sports betting odds using odds-api.net, with mock mode, stake sizing, JSON output",
+  "updated": "2026-06-09"
+ },
+ "github.com/sdamianiw/pollagol-sim": {
+  "stars": 1,
+  "topic": "odds-api",
+  "desc": "Deterministic Dixon-Coles score predictor that won a 27-person FIFA World Cup 2026 prediction pool, rank 1/27.",
+  "updated": "2026-09-07"
+ },
+ "github.com/Sharp-API/SharpAPI-Sample-Data": {
+  "stars": 1,
+  "topic": "odds-api",
+  "desc": "World Cup and MLB odds samples from 23 sources. Free under CC BY 4.0.",
+  "updated": "2026-09-08"
+ },
+ "github.com/SethSharp/odds-api": {
+  "stars": 1,
+  "topic": "odds-api",
+  "desc": "Open Source Composer API Wrapper for \"The Odds-API\"",
+  "updated": "2025-06-05"
+ },
+ "github.com/Propertyscout001/puntersedge-mcp": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "MCP server for the PuntersEdge Odds API \u2014 live Australian racing and sports odds from 11 bookmakers, inside Cl",
+  "updated": "2026-08-20"
+ },
+ "github.com/Randysweatpants/Gamblebot3.0": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "New gamble bot specializing in NHL",
+  "updated": "2026-03-22"
+ },
+ "github.com/Pinnodds/pinnodds-sdk": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Official Python and Node.js clients for the pinnodds real-time Pinnacle odds API",
+  "updated": "2026-08-13"
+ },
+ "github.com/JacobiusMakes/parlayapi-collections": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Ready-to-import ParlayAPI collections for Bruno, Postman, Insomnia, and HTTPie. Sports odds, props, arbitrage,",
+  "updated": "2026-09-05"
+ },
+ "github.com/JacobiusMakes/parlay-api-js": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Official ParlayAPI JavaScript/TypeScript SDK: sports odds across 30+ sportsbooks, player props, arbitrage, +EV",
+  "updated": "2026-09-05"
+ },
+ "github.com/Sharp-API/SharpAPI-TS": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Official TypeScript and JavaScript SDK for SharpAPI sports betting data.",
+  "updated": "2026-09-08"
+ },
+ "github.com/JacobiusMakes/parlayapi-obs-overlay": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Free OBS browser-source overlay for betting streamers: rotating best-line ticker, keyless by design, one HTML ",
+  "updated": "2026-09-05"
+ },
+ "github.com/JacobiusMakes/awesome-sports-betting-data": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "A curated list of sports betting data resources: odds APIs, historical datasets, open source tools, modeling e",
+  "updated": "2026-09-05"
+ },
+ "github.com/addaia/odds2beat": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "AI-powered sports betting research agent: pick a game, get an intel briefing with odds, injuries, form, and co",
+  "updated": "2026-03-07"
+ },
+ "github.com/JacobiusMakes/parlay-api-arb-starter": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Find live cross-book arbitrage in under 150 lines of Python. Powered by ParlayAPI - free tier works.",
+  "updated": "2026-09-05"
+ },
+ "github.com/JacobiusMakes/parlayapi-betting-agent-starter": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Betting agent starter for the ParlayAPI sports odds API: live moneylines in, no-vig fair lines out, one marked",
+  "updated": "2026-09-06"
+ },
+ "github.com/JacobiusMakes/betting-model-starter": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Template: build a sports betting model on the ParlayAPI odds API. Fetch odds and props, devig, scan edges, bac",
+  "updated": "2026-09-05"
+ },
+ "github.com/sportlogic-io/sportlogic-php": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "PHP client for the SportLogic Virtual Racing API",
+  "updated": "2026-08-16"
+ },
+ "github.com/lovewaddddddddaa19-ship-it/oddsscv-sports-odds-api": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "\uc2e4\uc2dc\uac04 \uc2a4\ud3ec\uce20 \ubc30\ub2f9 \ub370\uc774\ud130 API (oddsscv.com) \u2014 \ud504\ub9ac\ub9e4\uce58\u00b7\uc778\ud50c\ub808\uc774 \ubc30\ub2f9 JSON\ud53c\ub4dc \uc608\uc81c",
+  "updated": "2026-07-12"
+ },
+ "github.com/JacobiusMakes/parlayapi-discord-bot": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Personal Discord odds assistant: one configured owner, private replies, and your own ParlayAPI account or a li",
+  "updated": "2026-09-05"
+ },
+ "github.com/JacobiusMakes/parlayapi-odds-action": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Fetch ParlayAPI odds for private GitHub workflows into protected temporary JSON or CSV files. Each customer us",
+  "updated": "2026-09-05"
+ },
+ "github.com/TopTrenDev/sports-betting-platform": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Oddsmith is a full-stack sports betting platform inspired by FanDuel. Users browse NFL and NBA games with spre",
+  "updated": "2026-06-23"
+ },
+ "github.com/keidev-sol/Sports-Casino-Betting-Book": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Full-stack crypto sports betting & casino platform \u2014 live odds, realtime provably-fair games, dark-neon UI.",
+  "updated": "2026-06-29"
+ },
+ "github.com/Propertyscout001/puntersedge-python": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Official Python client for the PuntersEdge Australian Sports Odds API \u2014 live bookmaker odds, racing, best-odds",
+  "updated": "2026-08-30"
+ },
+ "github.com/JacobiusMakes/parlayapi-raycast": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Sports Odds extension for Raycast: search the best available lines across 30+ sportsbooks and run betting math",
+  "updated": "2026-09-05"
+ },
+ "github.com/rapidoddsapi/rapidoddsapi-node": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Official Node.js SDK for RapidOddsAPI - bookmaker odds, live scores and player stats",
+  "updated": "2026-08-03"
+ },
+ "github.com/kishpatel1222-prog/theoddsapi-examples": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Working Python, JavaScript, and Node quickstart examples for The Odds API \u2014 live sports odds, best-line compar",
+  "updated": "2026-07-02"
+ },
+ "github.com/JacobiusMakes/parlayapi-data-bounty": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Catch ParlayAPI serving a wrong line, earn free credits. Public data-accuracy bounty with an append-only resol",
+  "updated": "2026-09-05"
+ },
+ "github.com/JacobiusMakes/parlayapi-line-shopper": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Shop the line from your terminal: every book's price per outcome, best/worst flagged, cents of hold saved. Zer",
+  "updated": "2026-09-05"
+ },
+ "github.com/SJTreadway/mlb_py": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "MLB HR & game winner prediction models built on Statcast data. XGBoost/LightGBM with barrel rate, exit velocit",
+  "updated": "2026-08-17"
+ },
+ "github.com/Propertyscout001/au-racing-odds-dashboard": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Next-to-go dashboard for Australian horse, greyhound and harness racing \u2014 one dependency-free Python file on t",
+  "updated": "2026-08-30"
+ },
+ "github.com/Propertyscout001/puntersedge-examples": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Runnable Python examples for the PuntersEdge odds API \u2014 Australian racing next-to-go, best odds, firmers/drift",
+  "updated": "2026-08-30"
+ },
+ "github.com/JacobiusMakes/parlayapi-agent-tools": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Ready made ParlayAPI sports odds tools for LangChain, LlamaIndex and raw OpenAI/Anthropic function calling",
+  "updated": "2026-09-05"
+ },
+ "github.com/pipeworx-io/mcp-odds-api": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "The Odds API MCP \u2014 sportsbook odds across 70+ books, 30+ leagues",
+  "updated": "2026-08-26"
+ },
+ "github.com/JacobiusMakes/parlayapi-arb-scanner": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Python CLI arbitrage scanner for sportsbook odds, powered by ParlayAPI. Runs with zero setup against keyless s",
+  "updated": "2026-09-05"
+ },
+ "github.com/odds-api/odds-api-go": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Official Go SDK for odds-api.net",
+  "updated": "2026-06-30"
+ },
+ "github.com/JacobiusMakes/parlayapi-sheets": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Live sports odds, line shopping, devig and Kelly staking as Google Sheets formulas. Copy one Apps Script file,",
+  "updated": "2026-09-05"
+ },
+ "github.com/rapidoddsapi/rapidoddsapi-python": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "Official Python SDK for RapidOddsAPI - bookmaker odds, live scores and player stats",
+  "updated": "2026-08-02"
+ },
+ "github.com/sportlogic-io/sportlogic-python": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Python client for the SportLogic Virtual Racing API",
+  "updated": "2026-08-16"
+ },
+ "github.com/realyoussefhossam/xbet-api": {
+  "stars": 0,
+  "topic": "odds-api",
+  "desc": "",
+  "updated": "2026-09-02"
+ },
+ "github.com/rezarahiminia/livescoreFootball": {
+  "stars": 460,
+  "topic": "sports-api",
+  "desc": "Free open-source football API and live score center for Premier League, LaLiga, fixtures, results, standings a",
+  "updated": "2026-09-08"
+ },
+ "github.com/oritzio/football-database": {
+  "stars": 26,
+  "topic": "sports-api",
+  "desc": "Mainly football leagues database of 2026/2027 season in JSON format",
+  "updated": "2026-07-27"
+ },
+ "github.com/n-eq/kooora-unofficial-api": {
+  "stars": 25,
+  "topic": "sports-api",
+  "desc": "\u26bd\ufe0f kooora.com unofficial API",
+  "updated": "2023-10-25"
+ },
+ "github.com/mlxger/sports-card-ai": {
+  "stars": 11,
+  "topic": "sports-api",
+  "desc": "The best transaction card identification and field parsing platform",
+  "updated": "2026-09-08"
+ },
+ "github.com/pseudo-r/Public-FotMob-API": {
+  "stars": 11,
+  "topic": "sports-api",
+  "desc": "\ud83d\udcda Documentation & Django REST proxy for the unofficial FotMob football API \u2014 matches, leagues, teams, players,",
+  "updated": "2026-03-27"
+ },
+ "github.com/pseudo-r/Public-Sofascore-API": {
+  "stars": 10,
+  "topic": "sports-api",
+  "desc": "Documentation, Python clients, and a standalone Django API proxy service for the undocumented Sofascore sports",
+  "updated": "2026-03-26"
+ },
+ "github.com/Backspace-me/sportscore-mcp": {
+  "stars": 10,
+  "topic": "sports-api",
+  "desc": "MCP server exposing the free SportScore sports-data API as tool calls for Claude, Cursor, and Zed. Live scores",
+  "updated": "2026-04-23"
+ },
+ "github.com/cu-sanjay/IPL-2026-API-Free": {
+  "stars": 9,
+  "topic": "sports-api",
+  "desc": "A simple and free IPL cricket API that provides live scores, schedule, points table, team squads, and past win",
+  "updated": "2026-05-04"
+ },
+ "github.com/ethemdemirkaya/transfermarkt-api-guide": {
+  "stars": 6,
+  "topic": "sports-api",
+  "desc": "Unofficial documentation for Transfermarkt's private API endpoints. A community-driven guide for developers.",
+  "updated": "2025-08-14"
+ },
+ "github.com/zporsdata/SportsDataFeedAPI": {
+  "stars": 6,
+  "topic": "sports-api",
+  "desc": "XML / JSON Formatlar\u0131nda Spor Veri Hizmetleri (XML / JSON Sports Data Feed API Services) [zporsdata.com]",
+  "updated": "2020-10-24"
+ },
+ "github.com/radkomih/football_api": {
+  "stars": 5,
+  "topic": "sports-api",
+  "desc": "A Ruby interface to the https://www.api-football.com.",
+  "updated": "2023-07-24"
+ },
+ "github.com/mrdogeco/docs": {
+  "stars": 4,
+  "topic": "sports-api",
+  "desc": "Open-source components for sports apps. Built with Tailwind and shadcn/ui.",
+  "updated": "2026-08-14"
+ },
+ "github.com/Lipikas7710/stake.com-api": {
+  "stars": 4,
+  "topic": "sports-api",
+  "desc": "Explore Stake.com GraphQL API docs and a Telegram bot for balance, bets, withdrawals, tips, sessions, KYC, and",
+  "updated": "2026-09-08"
+ },
+ "github.com/slashgolf/slashgolf": {
+  "stars": 4,
+  "topic": "sports-api",
+  "desc": ":golf: Samples for using the Slash Golf API",
+  "updated": "2026-08-26"
+ },
+ "github.com/ddzyx/qiuxiaoce-football-data": {
+  "stars": 3,
+  "topic": "sports-api",
+  "desc": "\u7403\u5c0f\u7b56\u5b98\u65b9\u5f00\u6e90\u8db3\u7403\u6570\u636e\u96c6\u4e0e AI Agent Skill\u3002\u6bcf\u65e5\u81ea\u52a8\u5316\u66f4\u65b0\u4e94\u5927\u8054\u8d5b\u4e0e\u6b27\u51a0\u8d5b\u524d\u91cf\u5316\u6570\u636e\u4e0e\u8d5b\u540e\u6bd4\u5206\u6bd4\u5bf9\uff0c\u652f\u6301\u521b\u4f5c\u8005 API \u5feb\u901f\u8c03\u7528\u3002",
+  "updated": "2026-09-08"
+ },
+ "github.com/TamB10/ourhub-racing-api": {
+  "stars": 3,
+  "topic": "sports-api",
+  "desc": "Real-time UK & Irish horse racing API \u2013 racecards, runners, jockey/trainer stats, and AI-powered predictions.",
+  "updated": "2025-11-18"
+ },
+ "github.com/WilliamRossCrane/sportz-websockets": {
+  "stars": 2,
+  "topic": "sports-api",
+  "desc": "Real-time live sports broadcast engine built with Node.js, Express, MongoDB, and WebSockets (ws), featuring ma",
+  "updated": "2026-03-10"
+ },
+ "github.com/isportsapiofficial/isports-sdk": {
+  "stars": 2,
+  "topic": "sports-api",
+  "desc": "iSports API is a global sports data API provider delivering real-time sports data, live score APIs, and histor",
+  "updated": "2026-04-28"
+ },
+ "github.com/fearandesire/resolve-team": {
+  "stars": 2,
+  "topic": "sports-api",
+  "desc": "Instantly identify & resolve sports team names with fuzzy search & more",
+  "updated": "2026-04-13"
+ },
+ "github.com/forcemaredart/stake.com-api": {
+  "stars": 2,
+  "topic": "sports-api",
+  "desc": "Unofficial Stake.com GraphQL API documentation \u2014 balance, bets, withdrawals, tips, sessions.",
+  "updated": "2026-03-23"
+ },
+ "github.com/mrdogeco/sdk": {
+  "stars": 2,
+  "topic": "sports-api",
+  "desc": "Mr. Doge's official SDK",
+  "updated": "2026-08-07"
+ },
+ "github.com/roysti10/sportscaster": {
+  "stars": 2,
+  "topic": "sports-api",
+  "desc": "A one stop API solution for your sports data",
+  "updated": "2023-04-01"
+ },
+ "github.com/amillolive/StatLine": {
+  "stars": 2,
+  "topic": "sports-api",
+  "desc": "StatLine \u2014 Advanced weighted player scoring and analytics, with modular tools for awards, performance evaluati",
+  "updated": "2026-09-01"
+ },
+ "github.com/LimitlessSiddh/hockeyScores": {
+  "stars": 1,
+  "topic": "sports-api",
+  "desc": "Full-stack NHL dashboard for live scores, recent games, and searchable player and goalie statistics.",
+  "updated": "2026-08-26"
+ },
+ "github.com/erickouassi/The-Football-API-": {
+  "stars": 1,
+  "topic": "sports-api",
+  "desc": "It\u2019s a free GitHub database that gives you all the match schedules and results for big football tournaments su",
+  "updated": "2026-07-19"
+ },
+ "github.com/Ryzellx/football-live-api": {
+  "stars": 1,
+  "topic": "sports-api",
+  "desc": "\u26bd Powerful football data API \u2014 Live scores, match stats, lineups, standings, player & club data from 500+ leag",
+  "updated": "2026-06-28"
+ },
+ "github.com/LeSingh1/tennis-api": {
+  "stars": 1,
+  "topic": "sports-api",
+  "desc": "Unofficial, typed Node client for ESPN's TENNIS data. Clean game logs, scoreboards, rosters and odds. Retry tr",
+  "updated": "2026-09-08"
+ },
+ "github.com/LeSingh1/wnba-api": {
+  "stars": 1,
+  "topic": "sports-api",
+  "desc": "Unofficial, typed Node client for ESPN's WNBA data. Clean game logs, scoreboards, rosters and odds. Retry tran",
+  "updated": "2026-08-30"
+ },
+ "github.com/bari199/Local-Sports-Indoor-Games-Partner-Finder-Platform": {
+  "stars": 1,
+  "topic": "sports-api",
+  "desc": "The Local Sports & Indoor Games Partner Finder Platform helps users find nearby partners for games like chess,",
+  "updated": "2026-08-26"
+ },
+ "github.com/Backspace-me/sportscore-py": {
+  "stars": 1,
+  "topic": "sports-api",
+  "desc": "Python client for the free SportScore sports-data API (football, basketball, cricket, tennis). No API key requ",
+  "updated": "2026-04-23"
+ },
+ "github.com/vikash212000yadav/Sports-API": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "A REST API that allows you to book sports events or update existing odds.",
+  "updated": "2022-12-08"
+ },
+ "github.com/stat-api/mcp": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Remote MCP server for stat-api.com \u2014 NFL/NBA/MLB/NHL/PGA + DFS and prediction-market data",
+  "updated": "2026-07-07"
+ },
+ "github.com/harlanljones/baseball-dashboard": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Live MLB scoreboard and game dashboard with sabermetric matchup stats, weather, and player props",
+  "updated": "2026-08-27"
+ },
+ "github.com/iFan6oy/flash-props-discord-bot": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "A Discord bot that posts live sports player props from the Flash Props API. Fork it, add your keys, deploy in ",
+  "updated": "2026-07-13"
+ },
+ "github.com/JhookC/league-list": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Sports league explorer built with React, Vite, and Tailwind \u2014 search, filter, and browse season badges via The",
+  "updated": "2026-03-08"
+ },
+ "github.com/livetennisapi/.github": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Organisation profile for Live Tennis API",
+  "updated": "2026-09-05"
+ },
+ "github.com/ddevetak/footballcharts-mcp": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Football data MCP server: tables, results, fixtures, goal timing and season projections for 93 leagues incl. t",
+  "updated": "2026-09-06"
+ },
+ "github.com/livetennisapi/livetennisapi-python": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Official Python client for the Live Tennis API \u2014 real-time tennis scores for ATP, WTA, Challenger, ITF and jun",
+  "updated": "2026-09-05"
+ },
+ "github.com/LeSingh1/ncaaf-api": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Unofficial, typed Node client for ESPN's NCAAF data. Clean game logs, scoreboards, rosters and odds. Retry tra",
+  "updated": "2026-09-08"
+ },
+ "github.com/pepediazrio-commits/powerhouse-api-examples": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Official cURL, Node.js, and Python examples for the PowerHouse Enterprise sports picks API.",
+  "updated": "2026-07-29"
+ },
+ "github.com/jcasman/nhl-schedule-cli": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Simple Python CLI for finding NHL regular-season games against your favorite opponents.",
+  "updated": "2026-07-18"
+ },
+ "github.com/LeSingh1/ncaam-api": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Unofficial, typed Node client for ESPN's NCAAM data. Clean game logs, scoreboards, rosters and odds. Retry tra",
+  "updated": "2026-09-08"
+ },
+ "github.com/abhranilsingharoy-cloud/FIFA-Pro": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "A premium, high-performance analytics dashboard and interactive hub for the 2026 FIFA World Cup. Features real",
+  "updated": "2026-06-25"
+ },
+ "github.com/juanpablomonsalvezb-alt/nebbuler-mundial-sdk": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "TypeScript SDK for Nebbuler Mundial 2026 open API. Zero deps, optional React widget.",
+  "updated": "2026-05-22"
+ },
+ "github.com/UFCalendar/ufcalendar-python": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Python client for the UFCalendar Fight API: UFC, PFL, OKTAGON & BKFC events, fight cards, results, per-round s",
+  "updated": "2026-09-05"
+ },
+ "github.com/ArdaTuncay/football-app": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "S\u00fcper Lig i\u00e7in canl\u0131 skor, fikst\u00fcr ve puan durumu g\u00f6steren Next.js/TypeScript uygulamas\u0131",
+  "updated": "2026-09-08"
+ },
+ "github.com/LeSingh1/mlb-api": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Unofficial, typed Node client for ESPN's MLB data. Clean game logs, scoreboards, rosters and odds. Retry trans",
+  "updated": "2026-09-08"
+ },
+ "github.com/vamsishesamsetti/CricketPulse": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Real-time cricket scores, live match updates, fixtures and results",
+  "updated": "2026-05-19"
+ },
+ "github.com/LeSingh1/nba-api": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Unofficial, typed Node client for ESPN's NBA data. Clean game logs, scoreboards, rosters and odds. Retry trans",
+  "updated": "2026-06-13"
+ },
+ "github.com/LeSingh1/ncaaw-api": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Unofficial, typed Node client for ESPN's NCAAW data. Clean game logs, scoreboards, rosters and odds. Retry tra",
+  "updated": "2026-09-08"
+ },
+ "github.com/chayan-1906/Sportz-Websocket-Node.js": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "\u26a1 Real-time sports match tracking & live commentary via WebSocket pub/sub \ud83c\udfdf\ufe0f\ud83d\udd0c",
+  "updated": "2026-02-28"
+ },
+ "github.com/LeSingh1/nhl-api": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Unofficial, typed Node client for ESPN's NHL data. Clean game logs, scoreboards, rosters and odds. Retry trans",
+  "updated": "2026-06-14"
+ },
+ "github.com/LeSingh1/nfl-api": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Unofficial, typed Node client for ESPN's NFL data. Clean game logs, scoreboards, rosters and odds. Retry trans",
+  "updated": "2026-09-08"
+ },
+ "github.com/LeSingh1/soccer-api": {
+  "stars": 0,
+  "topic": "sports-api",
+  "desc": "Unofficial, typed Node client for ESPN's SOCCER data. Clean game logs, scoreboards, rosters and odds. Retry tr",
+  "updated": "2026-09-08"
+ },
+ "github.com/eddwebster/football_analytics": {
+  "stars": 2775,
+  "topic": "sports-analytics",
+  "desc": "\ud83d\udcca\u26bd  A collection of football analytics projects, data, and analysis by Edd Webster (@eddwebster), including a ",
+  "updated": "2025-10-09"
+ },
+ "github.com/ML-KULeuven/socceraction": {
+  "stars": 812,
+  "topic": "sports-analytics",
+  "desc": "Convert soccer event stream data to SPADL and value player actions using VAEP or xT",
+  "updated": "2026-01-07"
+ },
+ "github.com/matiasmascioto/awesome-soccer-analytics": {
+  "stars": 626,
+  "topic": "sports-analytics",
+  "desc": ":soccer::chart_with_upwards_trend: A curated list of awesome resources related to Soccer Analytics.",
+  "updated": "2020-11-17"
+ },
+ "github.com/r-follador/CubeTrek": {
+  "stars": 556,
+  "topic": "sports-analytics",
+  "desc": "Home for all your GPS Tracks: Visualize, share and manage your GPS tracks.",
+  "updated": "2026-05-06"
+ },
+ "github.com/SkalskiP/sports": {
+  "stars": 554,
+  "topic": "sports-analytics",
+  "desc": "Cool experiments at the intersection of Computer Vision and Sports \u26bd\ud83c\udfc3",
+  "updated": "2023-12-12"
+ },
+ "github.com/nflverse/nflfastR": {
+  "stars": 541,
+  "topic": "sports-analytics",
+  "desc": "A Set of Functions to Efficiently Scrape NFL Play by Play Data",
+  "updated": "2026-08-13"
+ },
+ "github.com/SoccerNet/sn-gamestate": {
+  "stars": 450,
+  "topic": "sports-analytics",
+  "desc": "[CVPRW'24] SoccerNet Game State Reconstruction: End-to-End Athlete Tracking and Identification on a Minimap (C",
+  "updated": "2026-05-02"
+ },
+ "github.com/2417467487-hub/WorldCupROI": {
+  "stars": 354,
+  "topic": "sports-analytics",
+  "desc": "Sports sponsorship intelligence platform for World Cup match data, real-source text signals, ROI prediction, u",
+  "updated": "2026-06-16"
+ },
+ "github.com/rjtavares/football-crunching": {
+  "stars": 330,
+  "topic": "sports-analytics",
+  "desc": "Analysis and datasets about football (soccer)",
+  "updated": "2021-12-31"
+ },
+ "github.com/AtomScott/SportsLabKit": {
+  "stars": 321,
+  "topic": "sports-analytics",
+  "desc": "A python package for turning sports video into csv files",
+  "updated": "2023-12-19"
+ },
+ "github.com/davidpagnon/Sports2D": {
+  "stars": 298,
+  "topic": "sports-analytics",
+  "desc": "Compute 2D human pose and angles from a video or a webcam. ",
+  "updated": "2026-08-25"
+ },
+ "github.com/UnravelSports/unravelsports": {
+  "stars": 247,
+  "topic": "sports-analytics",
+  "desc": "The unravelsports package aims to aid researchers, analysts and enthusiasts by providing intermediary steps in",
+  "updated": "2026-01-16"
+ },
+ "github.com/jyrao/UniSoccer": {
+  "stars": 232,
+  "topic": "sports-analytics",
+  "desc": "[CVPR 2025] \"Towards Universal Soccer Video Understanding\".",
+  "updated": "2025-09-08"
+ },
+ "github.com/withqwerty/reep": {
+  "stars": 226,
+  "topic": "sports-analytics",
+  "desc": "The football entity register. Maps player, team, and coach identities across Transfermarkt, FBref, UEFA, Sofas",
+  "updated": "2026-08-20"
+ },
+ "github.com/jimmykane/quantified-self": {
+  "stars": 226,
+  "topic": "sports-analytics",
+  "desc": "Analyze your data from Garmin, Suunto, Coros to one centralized app",
+  "updated": "2026-09-08"
+ },
+ "github.com/diegopastor/awesome-football-analytics": {
+  "stars": 215,
+  "topic": "sports-analytics",
+  "desc": "A curated list of football analytics awesome resources, articles, books and more!",
+  "updated": "2022-03-30"
+ },
+ "github.com/nflverse/nflreadpy": {
+  "stars": 208,
+  "topic": "sports-analytics",
+  "desc": "python port of nflreadr package for loading nflverse data",
+  "updated": "2026-09-08"
+ },
+ "github.com/mradovic38/football-analysis": {
+  "stars": 177,
+  "topic": "sports-analytics",
+  "desc": "A comprehensive tool for processing and analyzing video footage, producing detailed insights into gameplay and",
+  "updated": "2025-01-14"
+ },
+ "github.com/coreyjs/nhl-api-py": {
+  "stars": 150,
+  "topic": "sports-analytics",
+  "desc": "NHL API (2026/2027 Updated) - For accessing most of the NHL EDGE statistical API's, scores, schedules and more",
+  "updated": "2026-09-07"
+ },
+ "github.com/rodmoioliveira/football-graphs": {
+  "stars": 139,
+  "topic": "sports-analytics",
+  "desc": "Graphs and passing networks in football.",
+  "updated": "2026-08-10"
+ },
+ "github.com/op7418/guizang-sports-skill": {
+  "stars": 138,
+  "topic": "sports-analytics",
+  "desc": "\ud83d\udeb4 Claude Code / Codex skill for FIT & KML sports analysis \u2014 cycling, running, hiking, sensor and grade insight",
+  "updated": "2026-08-09"
+ },
+ "github.com/floodlight-sports/floodlight": {
+  "stars": 130,
+  "topic": "sports-analytics",
+  "desc": "Python package for streamlined analysis of sports data.",
+  "updated": "2026-05-04"
+ },
+ "github.com/masouduut94/volleyball_analytics": {
+  "stars": 122,
+  "topic": "sports-analytics",
+  "desc": "This project is designed to display how we can utilize deep learning methods for Sports Data Analytics.",
+  "updated": "2026-09-08"
+ },
+ "github.com/SherryJYC/3D-Tracking-MVS": {
+  "stars": 120,
+  "topic": "sports-analytics",
+  "desc": "3D position tracking for soccer players with multi-camera videos",
+  "updated": "2022-06-09"
+ },
+ "github.com/thomascamminady/LeTourDataSet": {
+  "stars": 113,
+  "topic": "sports-analytics",
+  "desc": "Every cyclist and stage of the Tour de France (up to including 2026) in four CSV files.",
+  "updated": "2026-08-17"
+ },
+ "github.com/themm1/procyclingstats": {
+  "stars": 104,
+  "topic": "sports-analytics",
+  "desc": "procyclingstats scraper",
+  "updated": "2026-08-09"
+ },
+ "github.com/Torvaney/regista": {
+  "stars": 94,
+  "topic": "sports-analytics",
+  "desc": "An R package for soccer modelling",
+  "updated": "2025-11-17"
+ },
+ "github.com/Hicruben/world-cup-2026-prediction-model": {
+  "stars": 93,
+  "topic": "sports-analytics",
+  "desc": "Open-source statistical model (Elo + Dixon-Coles + Monte Carlo) for the 2026 FIFA World Cup \u2014 now running year",
+  "updated": "2026-07-19"
+ },
+ "github.com/hadjdeh/football-data-analysis": {
+  "stars": 92,
+  "topic": "sports-analytics",
+  "desc": "Football Data Processing & Visualization",
+  "updated": "2024-06-01"
+ },
+ "github.com/OrcustD/RacketVision": {
+  "stars": 88,
+  "topic": "sports-analytics",
+  "desc": "The official repository of the paper \"RacketVision: A Multiple Racket Sports Benchmark for Unified Ball and Ra",
+  "updated": "2026-04-11"
+ },
+ "github.com/j-andrews7/kenpompy": {
+  "stars": 88,
+  "topic": "sports-analytics",
+  "desc": "A simple yet comprehensive web scraper for kenpom.com.",
+  "updated": "2025-11-02"
+ },
+ "github.com/openathleteorg/openathlete": {
+  "stars": 83,
+  "topic": "sports-analytics",
+  "desc": "The open-source European alternative to TrainingPeaks. Self-hostable endurance training platform. Your data st",
+  "updated": "2026-08-22"
+ },
+ "github.com/AtomScott/TeamTrack": {
+  "stars": 78,
+  "topic": "sports-analytics",
+  "desc": "TeamTrack: An Algorithm and Benchmark Dataset for Multi-Sport Multi-Object Tracking in Full-pitch Videos",
+  "updated": "2024-04-22"
+ },
+ "github.com/bcongelio/nfl-analytics-with-r-book": {
+  "stars": 76,
+  "topic": "sports-analytics",
+  "desc": "The repo for Introduction to NFL Analytics with R (published with CRC Press)",
+  "updated": "2025-02-12"
+ },
+ "github.com/rustyneuron01/Real-Time-Football-Detection": {
+  "stars": 73,
+  "topic": "sports-analytics",
+  "desc": "Real-time football video analytics: player/ball/referee tracking and pitch keypoints. YOLO, HRNet, OSNet, Byte",
+  "updated": "2026-03-13"
+ },
+ "github.com/hikmatazimzade/tennis-ai": {
+  "stars": 69,
+  "topic": "sports-analytics",
+  "desc": "Tennis AI to predict the winner in ATP matches with 3 different models and a web UI",
+  "updated": "2025-07-03"
+ },
+ "github.com/asigatchov/fast-volleyball-tracking-inference": {
+  "stars": 67,
+  "topic": "sports-analytics",
+  "desc": "Fast Volleyball Tracking Inference: Real-time volleyball ball detection and tracking at 100 FPS on CPU (Intel ",
+  "updated": "2026-09-08"
+ },
+ "github.com/ropensci/Athlytics": {
+  "stars": 63,
+  "topic": "sports-analytics",
+  "desc": "\ud83c\udfc3  An R package for advanced sports performance analysis and training load monitoring using Strava data.",
+  "updated": "2026-06-15"
+ },
+ "github.com/mominullptr/FIFA-World-Cup-2026-Dataset": {
+  "stars": 63,
+  "topic": "sports-analytics",
+  "desc": "The most complete and actively updated FIFA World Cup 2026 dataset on Kaggle. A clean, authentic, relational d",
+  "updated": "2026-08-17"
+ },
+ "github.com/kuestcom/prediction-market": {
+  "stars": 1086,
+  "topic": "prediction-market",
+  "desc": "Launch your own web3 decentralized prediction market in minutes (Polymarket like)",
+  "updated": "2026-09-08"
+ },
+ "github.com/lawmaster10/howcryptoworksbook": {
+  "stars": 888,
+  "topic": "prediction-market",
+  "desc": "A free, open-source book that explains how crypto actually works. 15 chapters covering Bitcoin, Ethereum, Sola",
+  "updated": "2026-03-15"
+ },
+ "github.com/aarora4/Awesome-Prediction-Market-Tools": {
+  "stars": 729,
+  "topic": "prediction-market",
+  "desc": "A curated list of Prediction Market Tools - AI Agents, Analytics, APIs, Dashboards, Copy Trading, Alerting, Tr",
+  "updated": "2026-09-03"
+ },
+ "github.com/nahrek/polyledger": {
+  "stars": 622,
+  "topic": "prediction-market",
+  "desc": "Resumable Polymarket indexer: CLOB market metadata plus on-chain trades from Polygon, in one DuckDB file you c",
+  "updated": "2026-09-07"
+ },
+ "github.com/microsoft/0xDeCA10B": {
+  "stars": 609,
+  "topic": "prediction-market",
+  "desc": "Sharing Updatable Models (SUM) on Blockchain",
+  "updated": "2025-04-30"
+ },
+ "github.com/HarrierOnChain/Prediction-Markets-Trading-Bot-Toolkits": {
+  "stars": 434,
+  "topic": "prediction-market",
+  "desc": "Rust trading bots for prediction markets \u2014 Polymarket, Kalshi, Limitless. Copy Trading is production-ready; ni",
+  "updated": "2026-09-07"
+ },
+ "github.com/YichengYang-Ethan/oracle3": {
+  "stars": 253,
+  "topic": "prediction-market",
+  "desc": "Prediction-market trading engine \u2014 Wang Transform pricing on 291K+ contracts; paper-traded across Kalshi \u00b7 Pol",
+  "updated": "2026-05-08"
+ },
+ "github.com/jtranq/polyfill-rs": {
+  "stars": 225,
+  "topic": "prediction-market",
+  "desc": "The Fastest Polymarket Rust Client",
+  "updated": "2026-09-08"
+ },
+ "github.com/openpredictionmarkets/socialpredict": {
+  "stars": 223,
+  "topic": "prediction-market",
+  "desc": "Prediction Market Platform: Easy to Deploy, Open Source MIT Licensed ",
+  "updated": "2026-09-06"
+ },
+ "github.com/Benjam1nCup/Polymarket-trading-bot-python-V2": {
+  "stars": 182,
+  "topic": "prediction-market",
+  "desc": "polymarket trading bot polymarket bot polymarket twap bot polymarket arbitrage bot polymarket trading bot poly",
+  "updated": "2026-08-27"
+ },
+ "github.com/zeryswin168/polymarket-clone": {
+  "stars": 158,
+  "topic": "prediction-market",
+  "desc": " Open-source Polymarket clone | \u5f00\u6e90\u9884\u6d4b\u5e02\u573a\u5e73\u53f0 \u2014 On-chain USDT escrow on Polygon. Vue 3 + Solidity + Java. Buy Yes/N",
+  "updated": "2026-08-24"
+ },
+ "github.com/kazelad/prediction-market-trade-sdk": {
+  "stars": 141,
+  "topic": "prediction-market",
+  "desc": "Trade SDK for prediction-market data and hosted trading",
+  "updated": "2026-09-03"
+ },
+ "github.com/Drakkar-Software/OctoBot-Prediction-Market": {
+  "stars": 112,
+  "topic": "prediction-market",
+  "desc": "Polymarket open source trading bot to automate copy trading and arbitrage strategies on crypto prediction mark",
+  "updated": "2026-03-30"
+ },
+ "github.com/valory-xyz/trader": {
+  "stars": 77,
+  "topic": "prediction-market",
+  "desc": "AI agent for trading on prediction markets (specifically, Omen on Gnosis and Polymarket on Polygon)",
+  "updated": "2026-09-08"
+ },
+ "github.com/tri2820/imply": {
+  "stars": 61,
+  "topic": "prediction-market",
+  "desc": "Open-source news site",
+  "updated": "2026-02-01"
+ },
+ "github.com/gnosis/prediction-market-agent-tooling": {
+  "stars": 60,
+  "topic": "prediction-market",
+  "desc": "Tools to benchmark, deploy and monitor prediction market agents. ",
+  "updated": "2026-04-22"
+ },
+ "github.com/gtg7784/dr-manhattan-ts": {
+  "stars": 56,
+  "topic": "prediction-market",
+  "desc": "A CCXT-style unified API for prediction markets (Polymarket, Limitless, Opinion, Kalshi, Predict.fun) with Typ",
+  "updated": "2026-09-07"
+ },
+ "github.com/gtg7784/dr-manhattan-rust": {
+  "stars": 54,
+  "topic": "prediction-market",
+  "desc": "A CCXT-style unified API for prediction markets (Polymarket, Limitless, Opinion, Kalshi and Predict.fun) with ",
+  "updated": "2026-01-04"
+ },
+ "github.com/Mattdgn/pm-amm": {
+  "stars": 47,
+  "topic": "prediction-market",
+  "desc": "Implementation of the Paradigm pm-AMM on Solana. ",
+  "updated": "2026-05-25"
+ },
+ "github.com/crimsonfox2000/polymarket-prediction-bot": {
+  "stars": 41,
+  "topic": "prediction-market",
+  "desc": "Polymarket trading bot for prediction markets \u2014 browse CLOB markets, watch the order book in the terminal, run",
+  "updated": "2026-08-01"
+ },
+ "github.com/JKorf/Polymarket.Net": {
+  "stars": 39,
+  "topic": "prediction-market",
+  "desc": "A C# client library for the Polymarket REST and Websocket API focusing on clear usage and models",
+  "updated": "2026-09-02"
+ },
+ "github.com/Sealva-Devs/Prediction-Market-Web3": {
+  "stars": 32,
+  "topic": "prediction-market",
+  "desc": "Production-ready crypto prediction market platform with secure smart contracts and modern React frontend. Feat",
+  "updated": "2026-06-22"
+ },
+ "github.com/cutupdev/Solana-Prediction-Market-Backend": {
+  "stars": 29,
+  "topic": "prediction-market",
+  "desc": "Solana prediction market backend, polymarket fork(clone)",
+  "updated": "2026-03-27"
+ },
+ "github.com/cutupdev/Solana-Prediction-Market-Frontend": {
+  "stars": 27,
+  "topic": "prediction-market",
+  "desc": "Solana prediction market frontend, polymarket fork(clone)",
+  "updated": "2026-03-27"
+ },
+ "github.com/a2871031921/polymarket-weather-copy-trading-bot": {
+  "stars": 26,
+  "topic": "prediction-market",
+  "desc": "polymarket-copy-trading-bot-weather-market polymarket-copy-trading-bot-weather-market polymarket-copy-trading-",
+  "updated": "2026-08-13"
+ },
+ "github.com/Wammero/polymarket-sdk-cpp": {
+  "stars": 26,
+  "topic": "prediction-market",
+  "desc": "High-performance C++23 SDK for Polymarket \u2014 Gamma, CLOB, Data, WebSocket, RTDS, RFQ. 3x faster than Rust SDK.",
+  "updated": "2026-06-13"
+ },
+ "github.com/web3xiaogong/Forecasting-market-hedging-arbitrage": {
+  "stars": 24,
+  "topic": "prediction-market",
+  "desc": "\u9884\u6d4b\u5e02\u573a\u5bf9\u51b2\u5957\u5229\u7b56\u7565\u4e0e\u5b9e\u6218\u6307\u5357 \u2014 Polymarket / Opinion \u8de8\u5e73\u53f0\u5957\u5229",
+  "updated": "2026-04-04"
+ },
+ "github.com/cutupdev/EVM-Prediction-Market-Frontend": {
+  "stars": 24,
+  "topic": "prediction-market",
+  "desc": "EVM prediction market frontend, polymarket fork(clone)",
+  "updated": "2026-03-27"
+ },
+ "github.com/Alessandroitz/Predict-Fun-Farming-Bot": {
+  "stars": 23,
+  "topic": "prediction-market",
+  "desc": "Automated multi-account bot for predict.fun \u2014 places predictions, completes daily tasks, and farms points acro",
+  "updated": "2026-03-18"
+ },
+ "github.com/fluidity-money/9lives.so": {
+  "stars": 21,
+  "topic": "prediction-market",
+  "desc": "9lives is Arbitrum's most advanced short-term prediction market.",
+  "updated": "2026-09-08"
+ },
+ "github.com/kachence/prediction-almanac": {
+  "stars": 20,
+  "topic": "prediction-market",
+  "desc": "A self-updating awesome list of prediction markets, their data coverage, and tools - regenerated from structur",
+  "updated": "2026-09-08"
+ },
+ "github.com/viet64th2/Polymarket-trade-bot": {
+  "stars": 20,
+  "topic": "prediction-market",
+  "desc": "Automated multi-account bot for Polymarket \u2014 places predictions, farms volume, completes streaks, and maximize",
+  "updated": "2026-03-22"
+ },
+ "github.com/talhareltal/awesome-prediction-market-analytics-tools": {
+  "stars": 19,
+  "topic": "prediction-market",
+  "desc": "A curated list of prediction market analytics, trading, and monitoring tools: odds, volume, and wallet trackin",
+  "updated": "2026-09-07"
+ },
+ "github.com/bodhiproject/bodhi-ui": {
+  "stars": 18,
+  "topic": "prediction-market",
+  "desc": "ReactJS frontend that interacts with the Bodhi backend services",
+  "updated": "2019-09-03"
+ },
+ "github.com/CorvusCodex/FiAi": {
+  "stars": 16,
+  "topic": "prediction-market",
+  "desc": "Simple Finance Forecasting Ai. This Ai Model uses historical price data to forecast future prices. The model i",
+  "updated": "2024-12-28"
+ },
+ "github.com/versatility519/polyMarket_frontend": {
+  "stars": 15,
+  "topic": "prediction-market",
+  "desc": "This project is forking the https://polymarket.com/ that is the world's largest cryptocurrency-based predictio",
+  "updated": "2025-02-03"
+ },
+ "github.com/Polymarket/polymarket-us-typescript": {
+  "stars": 15,
+  "topic": "prediction-market",
+  "desc": "Official Polymarket US Typescript SDKs",
+  "updated": "2026-06-02"
+ },
+ "github.com/LuciferForge/polymarket-btc-autotrader": {
+  "stars": 15,
+  "topic": "prediction-market",
+  "desc": "Autonomous BTC & SOL trading bot for Polymarket. ARB (100% WR) + SNIPE strategies. Auto-trades via py-clob-cli",
+  "updated": "2026-03-14"
+ },
+ "github.com/0xtkm/anchor-prediction-market": {
+  "stars": 13,
+  "topic": "prediction-market",
+  "desc": "Anchor program for a cricket prediction market",
+  "updated": "2025-03-05"
+ },
+ "github.com/swswsw/predictionmkt": {
+  "stars": 12,
+  "topic": "prediction-market",
+  "desc": "prediction market on lotionjs with tendermint",
+  "updated": "2018-09-28"
+ },
+ "github.com/ruuda/hanson": {
+  "stars": 11,
+  "topic": "prediction-market",
+  "desc": "Self-hosted prediction market app",
+  "updated": "2025-12-03"
+ },
+ "github.com/Future3lab/iran-skill": {
+  "stars": 11,
+  "topic": "prediction-market",
+  "desc": "119-file AI geopolitical analysis OS for the 2026 Iran crisis. 2500 years of Persian history + 80 years of US ",
+  "updated": "2026-04-15"
+ },
+ "github.com/polyfrontlabs/polyfrontbot-client": {
+  "stars": 11,
+  "topic": "prediction-market",
+  "desc": "Client-side system for the PolyFront MEV bot, providing fast execution, Polygon integration, and automated tra",
+  "updated": "2026-04-04"
+ },
+ "github.com/0xTan1319/prediction-market-fe-be-solana": {
+  "stars": 11,
+  "topic": "prediction-market",
+  "desc": "Solana prediction market project powered by Meteora DLMM, built with the Anchor framework.",
+  "updated": "2025-08-07"
+ },
+ "github.com/declansx/sports-prediction-market-aggregator": {
+  "stars": 10,
+  "topic": "prediction-market",
+  "desc": "Aggregator and smart order router for sports prediction markets. Fetches real-time odds and liquidity from SX ",
+  "updated": "2026-06-15"
+ },
+ "github.com/0xagarg/EVM-Solana-Prediction-Market": {
+  "stars": 10,
+  "topic": "prediction-market",
+  "desc": "Solana | EVM Prediction Market where users can create market, add liquidity, and bet, forking polymarket",
+  "updated": "2026-04-18"
+ },
+ "github.com/juster-finance/juster-app": {
+  "stars": 10,
+  "topic": "prediction-market",
+  "desc": "Decentralized betting protocol built on Tezos blockchain",
+  "updated": "2024-12-17"
+ },
+ "github.com/StabilityNexus/Fate-EVM-Frontend": {
+  "stars": 9,
+  "topic": "prediction-market",
+  "desc": "Decentralized Prediction Pools on EVM chains",
+  "updated": "2026-09-08"
+ },
+ "github.com/valory-xyz/market-creator": {
+  "stars": 9,
+  "topic": "prediction-market",
+  "desc": "Market creator agent for AI prediction markets on Gnosis",
+  "updated": "2026-07-03"
+ },
+ "github.com/the-ccrs/ccrs": {
+  "stars": 9,
+  "topic": "prediction-market",
+  "desc": "A simple, unified Rust library for trading across crypto and prediction markets.",
+  "updated": "2026-08-24"
+ },
+ "github.com/juster-finance/juster-core": {
+  "stars": 8,
+  "topic": "prediction-market",
+  "desc": "Juster smart contracts for Tezos blockchain",
+  "updated": "2023-02-02"
+ },
+ "github.com/Mint-Scripts-Studio/polymarket-clone-script-open-source": {
+  "stars": 8,
+  "topic": "prediction-market",
+  "desc": "Enterprise-grade Polymarket Script Clone (Open Source Core). Premium Web3 Prediction Market Platform. Buy full",
+  "updated": "2026-06-18"
+ },
+ "github.com/LuciferForge/polymarket-pnl": {
+  "stars": 7,
+  "topic": "prediction-market",
+  "desc": "Instant P&L breakdown for any Polymarket wallet. One command, zero API keys. Analyze any trader \u2014 win rate, sp",
+  "updated": "2026-06-21"
+ },
+ "github.com/rafaelfariasbsb/polymarket": {
+  "stars": 6,
+  "topic": "prediction-market",
+  "desc": "Real-time scalping radar for Polymarket crypto Up/Down markets (BTC, ETH, SOL, XRP). Binance WebSocket + 6-com",
+  "updated": "2026-02-28"
+ },
+ "github.com/Uptions-market/uptions-infra": {
+  "stars": 6,
+  "topic": "prediction-market",
+  "desc": "Core infrastructure and backend services powering uptions.xyz, a platform for building workflows and receiving",
+  "updated": "2026-07-20"
+ },
+ "github.com/mli3w/world-vs-model": {
+  "stars": 6,
+  "topic": "prediction-market",
+  "desc": "Can a model beat the betting market? Two transparent models vs the crowd across 240 Polymarket World Cup 2026 ",
+  "updated": "2026-08-18"
+ },
+ "github.com/SORADATA/Alphaedge-quant-analytics": {
+  "stars": 6,
+  "topic": "prediction-market",
+  "desc": "Machine Learning portfolio optimization : Ridge, LogisticRegressions,LightGBM, XGBoost ,  Black-litterman , CV",
+  "updated": "2026-09-07"
+ },
+ "github.com/mooncitydev/worldcup-2026-prediction": {
+  "stars": 6,
+  "topic": "prediction-market",
+  "desc": "FIFA 2026 world cup prediction (spain, brazil, uk, france etc...) prediction market, worldcup sports betting p",
+  "updated": "2026-05-15"
+ },
+ "github.com/gtg7784/howcryptoworksbook-kr": {
+  "stars": 5,
+  "topic": "prediction-market",
+  "desc": "This is Korean version of https://github.com/lawmaster10/howcryptoworksbook (Fully automated maintained by cla",
+  "updated": "2026-03-15"
+ },
+ "github.com/martj42/international_results": {
+  "stars": 523,
+  "topic": "soccer-data",
+  "desc": "",
+  "updated": "2026-08-26"
+ },
+ "github.com/jfjelstul/worldcup": {
+  "stars": 336,
+  "topic": "soccer-data",
+  "desc": "A Comprehensive Database on the FIFA World Cup (Men's and Women's)",
+  "updated": "2026-06-11"
+ },
+ "github.com/jfjelstul/englishfootball": {
+  "stars": 73,
+  "topic": "soccer-data",
+  "desc": "A Comprehensive Database on the Premier League and the English Football League (1888-2024)",
+  "updated": "2024-05-26"
+ },
+ "github.com/schochastics/football-data": {
+  "stars": 68,
+  "topic": "soccer-data",
+  "desc": "football (soccer) datasets",
+  "updated": "2026-03-24"
+ },
+ "github.com/Mostafa-Nafie/Football-Object-Detection": {
+  "stars": 64,
+  "topic": "soccer-data",
+  "desc": "This is a computer vision project that utilizes object detection algorithms to analyze football matches videos",
+  "updated": "2023-09-04"
+ },
+ "github.com/im-parsa/LiveSoccer": {
+  "stars": 41,
+  "topic": "soccer-data",
+  "desc": "The Open-Source Live Football Standing",
+  "updated": "2022-07-25"
+ },
+ "github.com/sanjitva/Predicting-Football-Player-Transfer-Values": {
+  "stars": 41,
+  "topic": "soccer-data",
+  "desc": "Flatiron School Capstone project. Trying to find out how well players' on-field performance metrics can be use",
+  "updated": "2021-10-13"
+ },
+ "github.com/MatheusGatti/Soccer-Corners-Crawler-and-Bot": {
+  "stars": 37,
+  "topic": "soccer-data",
+  "desc": "It's a crawler for statistics of corners and goals for the future games and a bot for Telegram to send the sta",
+  "updated": "2020-08-09"
+ },
+ "github.com/hoyishian/footballwebscraper": {
+  "stars": 32,
+  "topic": "soccer-data",
+  "desc": "This is a web scraper that helps to scrape football data from FBRef.com. It can scrape data from the top 5 Dom",
+  "updated": "2025-09-10"
+ },
+ "github.com/Torvaney/understat-db": {
+  "stars": 28,
+  "topic": "soccer-data",
+  "desc": "Create a database of \u26bd\ufe0f data from understat.com",
+  "updated": "2021-10-19"
+ },
+ "github.com/selviler/livescore-service": {
+  "stars": 28,
+  "topic": "soccer-data",
+  "desc": "Live Score Client for api-football.com",
+  "updated": "2024-12-03"
+ },
+ "github.com/somdeep/Statball": {
+  "stars": 25,
+  "topic": "soccer-data",
+  "desc": "Statball - Football soccer stats analyser from top 5 european leagues with data obtained by web scraping from ",
+  "updated": "2025-11-02"
+ },
+ "github.com/USSoccerFederation/glass_onion": {
+  "stars": 24,
+  "topic": "soccer-data",
+  "desc": "Simplifying soccer object identifier synchronization.",
+  "updated": "2026-06-22"
+ },
+ "github.com/Mg30/odds-portal-scraper": {
+  "stars": 24,
+  "topic": "soccer-data",
+  "desc": "A Nodejs CLI for scraping oddsportal.com",
+  "updated": "2025-11-24"
+ },
+ "github.com/Torvaney/wyscoutapi": {
+  "stars": 20,
+  "topic": "soccer-data",
+  "desc": "wyscoutapi is an extremely basic API client for the Wyscout API (v2 & v3) for Python",
+  "updated": "2021-10-01"
+ },
+ "github.com/akshdeepsingh7/football-api": {
+  "stars": 17,
+  "topic": "soccer-data",
+  "desc": "Live standings from 15 major football leagues across the world, with tables, stats, and JSON output.",
+  "updated": "2026-09-08"
+ },
+ "github.com/Costasgk/ScoreCast": {
+  "stars": 16,
+  "topic": "soccer-data",
+  "desc": "https://costas.pythonanywhere.com/",
+  "updated": "2026-06-20"
+ },
+ "github.com/ricardo-mattoss/Brazilian-Soccer-Data": {
+  "stars": 13,
+  "topic": "soccer-data",
+  "desc": "Scraping and updating of data from the championships that Brazilian soccer teams participate in",
+  "updated": "2022-10-09"
+ },
+ "github.com/EmilDanielsson/Player-Rating-Project": {
+  "stars": 13,
+  "topic": "soccer-data",
+  "desc": "This project aims to rate football players using data and statistics recorded from the last match they partici",
+  "updated": "2021-11-22"
+ },
+ "github.com/ErcinDedeoglu/LiveSoccerScores": {
+  "stars": 13,
+  "topic": "soccer-data",
+  "desc": "\u26bd\ufe0f\ud83d\udca5\u26bd\ufe0fLive soccer scores, fixtures, and results. It uses API to retrieve up-to-date information from a reliable",
+  "updated": "2024-10-09"
+ },
+ "github.com/d2ski/football-transfers-data": {
+  "stars": 10,
+  "topic": "soccer-data",
+  "desc": "Major European football leagues transfers dataset",
+  "updated": "2021-11-26"
+ },
+ "github.com/MS3B09/Botola-Scout": {
+  "stars": 9,
+  "topic": "soccer-data",
+  "desc": "Interactive Football Scouting Web App for BotolaPro Moroccan League using Streamlit ",
+  "updated": "2026-07-31"
+ },
+ "github.com/cosmoduende/r-ggsoccer": {
+  "stars": 9,
+  "topic": "soccer-data",
+  "desc": "StrangeR things: Visualizing Soccer Data with R\u2026 on a Soccer\u00a0Pitch? How to analyze, visualize and report socce",
+  "updated": "2022-08-25"
+ },
+ "github.com/sathishprasad/Football-Analytics-with-python": {
+  "stars": 9,
+  "topic": "soccer-data",
+  "desc": "This repository will contain all sorts of basic visualisation to step into the world of football analytics",
+  "updated": "2020-06-12"
+ },
+ "github.com/teomores/epl-oracle": {
+  "stars": 8,
+  "topic": "soccer-data",
+  "desc": "Predicting EPL results improving the betting odds.",
+  "updated": "2021-01-11"
+ },
+ "github.com/buckthorndev/The-Football-Data": {
+  "stars": 8,
+  "topic": "soccer-data",
+  "desc": "Home of football data",
+  "updated": "2020-07-28"
+ },
+ "github.com/salimt/Transfermarkt-ETL-and-LIVE-Scores": {
+  "stars": 7,
+  "topic": "soccer-data",
+  "desc": "asyncIO, Github Actions, GCP, dbt, Terraform, Docker",
+  "updated": "2026-09-08"
+ },
+ "github.com/akshdeepsingh7/football-stats": {
+  "stars": 7,
+  "topic": "soccer-data",
+  "desc": "Live football standings from 15 major leagues across 3 confederations with rich visual statistics.",
+  "updated": "2026-08-04"
+ },
+ "github.com/jmlee8939/whoscored_crawling": {
+  "stars": 6,
+  "topic": "soccer-data",
+  "desc": "soccer_data_crawling",
+  "updated": "2026-02-22"
+ },
+ "github.com/Ryo-N7/CanPL_Analysis": {
+  "stars": 6,
+  "topic": "soccer-data",
+  "desc": "Provide some examples for creating a data pipeline with the {googledrive} package and Github Actions",
+  "updated": "2021-12-13"
+ },
+ "github.com/arinzecode/Nunez-vs-Haaland-Radar-Plot": {
+  "stars": 6,
+  "topic": "soccer-data",
+  "desc": "The top teams in the English Premier League in the 2021-22 season, Manchester City and Liverpool FC, have gone",
+  "updated": "2022-06-17"
+ },
+ "github.com/SankalpMehani/premier-league-predictor": {
+  "stars": 5,
+  "topic": "soccer-data",
+  "desc": "This project utilizes machine learning regression algorithms to predict the outcomes and standings of the curr",
+  "updated": "2024-06-17"
+ },
+ "github.com/NikosKont/FBref-Scraper": {
+  "stars": 5,
+  "topic": "soccer-data",
+  "desc": "FBref player stats scraper",
+  "updated": "2023-06-01"
+ },
+ "github.com/R4XZ/PY-Sports": {
+  "stars": 5,
+  "topic": "soccer-data",
+  "desc": "Python Discord bot, powered by the API-Football API, designed to bring you real-time sports data right into yo",
+  "updated": "2024-06-20"
+ },
+ "github.com/adam23483/thechampions": {
+  "stars": 4,
+  "topic": "soccer-data",
+  "desc": "Data Science Project Using Soccer Data",
+  "updated": "2024-08-08"
+ },
+ "github.com/lightbluetitan/fifa_world_cup_1930_2022": {
+  "stars": 4,
+  "topic": "soccer-data",
+  "desc": "Curated dataset of FIFA World Cup history and statistics (1930\u20132022), covering all 22 editions with Final Four",
+  "updated": "2026-04-10"
+ },
+ "github.com/Airmime/java-football-data": {
+  "stars": 4,
+  "topic": "soccer-data",
+  "desc": "\u26bd\ufe0f Java library for football-data.org's API.",
+  "updated": "2019-03-01"
+ },
+ "github.com/jimtje/totalcorner": {
+  "stars": 4,
+  "topic": "soccer-data",
+  "desc": "totalcorner.com api client",
+  "updated": "2019-11-30"
+ },
+ "github.com/jaschrs/laliga-api": {
+  "stars": 4,
+  "topic": "soccer-data",
+  "desc": "(deprecated) An API to extract live LaLiga player statistics, standings, and fixtures.",
+  "updated": "2026-02-27"
+ },
+ "github.com/LordArma/Iranian-League-Table": {
+  "stars": 4,
+  "topic": "soccer-data",
+  "desc": "A WordPress plugin that helps WordPress sites display the Iranian Premier League (Persian Gulf League) or the ",
+  "updated": "2025-04-06"
+ },
+ "github.com/horony/ftsy-bundesliga": {
+  "stars": 4,
+  "topic": "soccer-data",
+  "desc": "Private Bundesliga fantasy manager game.",
+  "updated": "2026-08-22"
+ },
+ "github.com/otaviofbrito/Transfermarkt-Scraper": {
+  "stars": 3,
+  "topic": "soccer-data",
+  "desc": "A web scraper focused on collecting soccer player transfers from Transfermarkt.",
+  "updated": "2024-08-12"
+ },
+ "github.com/nineshoot/arsims-soccer-analysis": {
+  "stars": 3,
+  "topic": "soccer-data",
+  "desc": "Automated pre-match football prediction system",
+  "updated": "2026-09-07"
+ },
+ "github.com/dills122/footy-data-kit": {
+  "stars": 3,
+  "topic": "soccer-data",
+  "desc": "English football stats & scripts to pull/create data (Wikipedia, RSSSF)",
+  "updated": "2026-07-03"
+ },
+ "github.com/joseparreiras/transfermarkt": {
+  "stars": 3,
+  "topic": "soccer-data",
+  "desc": "Scrapping of Historical Market Values (MV) of football players from www.transfermarkt.com using Scrapy.",
+  "updated": "2020-09-21"
+ },
+ "github.com/ShahabHassanK/match-analyzer": {
+  "stars": 3,
+  "topic": "soccer-data",
+  "desc": "Full-stack football match analysis platform. Search any team, scrape live event data from WhoScored, and gener",
+  "updated": "2026-04-25"
+ },
+ "github.com/HannahIgboke/EPL-Soccer-Data--an-exploratory-data-analysis-using-python": {
+  "stars": 3,
+  "topic": "soccer-data",
+  "desc": "This is an exploratory analysis of the EPL soccer data for the 2018\u20132019 season. Using Python, I identified in",
+  "updated": "2024-01-30"
+ },
+ "github.com/lucacazzanti/tfutils": {
+  "stars": 3,
+  "topic": "soccer-data",
+  "desc": "A library for parsing and plotting Tracab soccer data from XML files",
+  "updated": "2023-01-23"
+ },
+ "github.com/BUAADreamer/ILovePy-soccerDataAnalysisProject": {
+  "stars": 2,
+  "topic": "soccer-data",
+  "desc": "This is a Web system project about Soccer data analysis.",
+  "updated": "2021-02-04"
+ },
+ "github.com/toddrob99/mynflapi": {
+  "stars": 5,
+  "topic": "nfl-data",
+  "desc": "Python wrapper for NFL API",
+  "updated": "2022-08-04"
+ },
+ "github.com/pratikthanki/FourthDown": {
+  "stars": 3,
+  "topic": "nfl-data",
+  "desc": "NFL play-by-play API providing a language agnostic wrapper over nflfastR",
+  "updated": "2025-04-01"
+ },
+ "github.com/kjeverson/NFLDraftTracker": {
+  "stars": 1,
+  "topic": "nfl-data",
+  "desc": "NFL Draft Tracker using Python, Flask, and Bootstrap",
+  "updated": "2026-04-25"
+ },
+ "github.com/JovaniPink/awesome-nfl-data": {
+  "stars": 1,
+  "topic": "nfl-data",
+  "desc": "Curated NFL data sources, APIs, analytics tools, film study, podcasts, and research methods.",
+  "updated": "2026-09-07"
+ },
+ "github.com/n-roth12/fantasy-rankings-scraper": {
+  "stars": 0,
+  "topic": "nfl-data",
+  "desc": "A Python package for scraping fantasy football draft rankings across multiple websites.",
+  "updated": "2023-08-22"
+ },
+ "github.com/dunlapjack/fantasy-football-rankings": {
+  "stars": 0,
+  "topic": "nfl-data",
+  "desc": "Statistics-only NFL fantasy football draft boards. Projects per-game points under any league's scoring rules, ",
+  "updated": "2026-08-27"
+ },
+ "github.com/BrandoPolistirolo/Tennis-Betting-ML": {
+  "stars": 52,
+  "topic": "betting-models",
+  "desc": "Machine Learning model(specifically log-regression with stochastic gradient descent) for tennis matches predic",
+  "updated": "2022-02-18"
+ },
+ "github.com/xandao-dev/monte-carlo-betting-simulations": {
+  "stars": 26,
+  "topic": "betting-models",
+  "desc": "A bunch of betting simulations using Monte Carlo method. Useful for showing how your bankroll will collapse (o",
+  "updated": "2022-12-08"
+ },
+ "github.com/davidweatherall/League-Data-Scraping-And-Analytics": {
+  "stars": 20,
+  "topic": "betting-models",
+  "desc": "Tools to scrape data from the riot API and calculate stats used for eSports betting, such as first blood %",
+  "updated": "2018-01-28"
+ },
+ "github.com/scibrokes/kelly-criterion": {
+  "stars": 18,
+  "topic": "betting-models",
+  "desc": "\u51ef\u5229\u6807\u51c6\u8ba1\u6570|\u673a\u6570\u9020\u7269\u3002",
+  "updated": "2024-05-15"
+ },
+ "github.com/btg94/bfscraper": {
+  "stars": 13,
+  "topic": "betting-models",
+  "desc": "Scrapes Betfair price data (BSP, WAP etc) for Australian horse racing",
+  "updated": "2019-02-02"
+ },
+ "github.com/brianbailey18/NFL-Betting-Models": {
+  "stars": 13,
+  "topic": "betting-models",
+  "desc": "This repository aims to provide robust NFL Betting Models based on play by play data.",
+  "updated": "2023-10-31"
+ },
+ "github.com/wrcarpenter/MMA-Betting-Model": {
+  "stars": 9,
+  "topic": "betting-models",
+  "desc": "Data-driven, sports wagering model for MMA (mixed-martial-arts) contests. ",
+  "updated": "2024-08-24"
+ },
+ "github.com/odyssey017/iceberg-betting-bot": {
+  "stars": 9,
+  "topic": "betting-models",
+  "desc": "The Iceberg Bot is a sports betting bot for the SX Bet exchange. The bot allows users to programmatically crea",
+  "updated": "2025-02-25"
+ },
+ "github.com/jackeiel/NBA": {
+  "stars": 8,
+  "topic": "betting-models",
+  "desc": "NBA Score Prediction",
+  "updated": "2022-12-08"
+ },
+ "github.com/Roho11/SofaScore-Player-Card-Analysis": {
+  "stars": 3,
+  "topic": "betting-models",
+  "desc": "Daily football/soccer lineup scraper and analyser for card betting. ",
+  "updated": "2025-06-20"
+ },
+ "github.com/flancast90/NFL_Markov_Predictor": {
+  "stars": 3,
+  "topic": "betting-models",
+  "desc": "Example Markov Chain model for predicting the results of a sports game given historic probability",
+  "updated": "2025-01-21"
+ },
+ "github.com/polmarin/Data-Analysis-Tennis": {
+  "stars": 2,
+  "topic": "betting-models",
+  "desc": "This project's about analyzing tennis stats and features to determine which are important and relevant to pred",
+  "updated": "2021-07-22"
+ },
+ "github.com/orkunaaa111/betting-arbitrage": {
+  "stars": 2,
+  "topic": "betting-models",
+  "desc": "",
+  "updated": "2024-11-27"
+ },
+ "github.com/s7ex-j/A.N.D.R.E-Modelo-predictivo-mundiales": {
+  "stars": 2,
+  "topic": "betting-models",
+  "desc": "2026 World Cup predictor: Dixon-Coles + XGBoost + Neural Net + Hierarchical Bayesian (Stan/brms), stacked via ",
+  "updated": "2026-07-15"
+ },
+ "github.com/ebjaime/Quiniela-Filler": {
+  "stars": 1,
+  "topic": "betting-models",
+  "desc": "La Quiniela is the name of a Spanish game of chance, managed by Loter\u00edas y Apuestas del Estado, which is based",
+  "updated": "2024-10-19"
+ },
+ "github.com/dinethlive/fishing-game-patterns-recognizer": {
+  "stars": 1,
+  "topic": "betting-models",
+  "desc": "A Python-based tool for recognizing patterns in CSV data, originally created for a fishing game. ",
+  "updated": "2024-11-17"
+ },
+ "github.com/Snowstorm08/Mixed-Martial-Arts-MMA-Betting-Model": {
+  "stars": 1,
+  "topic": "betting-models",
+  "desc": "Data-driven, sports wagering model for MMA (mixed-martial-arts) contests.",
+  "updated": "2025-10-01"
+ },
+ "github.com/kush0o7/Bet_Model": {
+  "stars": 1,
+  "topic": "betting-models",
+  "desc": "End-to-end EPL model comparing XGBoost predictions with bookmaker odds, including calibration, backtests, and ",
+  "updated": "2026-01-15"
+ },
+ "github.com/markbakos/ufc-predictor": {
+  "stars": 1,
+  "topic": "betting-models",
+  "desc": "UFC fight prediction tool built with TensorFlow and Python, UI built with Vue and Tailwind. Uses machine learn",
+  "updated": "2025-05-12"
+ },
+ "github.com/tanamsethi31/footymodel": {
+  "stars": 1,
+  "topic": "betting-models",
+  "desc": "Stats-first football betting research: Dixon-Coles + lineup-aware models, walk-forward backtested for real edg",
+  "updated": "2026-09-08"
+ },
+ "github.com/joechan22/racetrack-analytics": {
+  "stars": 0,
+  "topic": "betting-models",
+  "desc": "",
+  "updated": "2024-10-13"
+ },
+ "github.com/lainezharley/FinalProject-NFLBettingMethodAnalysis": {
+  "stars": 0,
+  "topic": "betting-models",
+  "desc": "Analyzed NFL Week 10 2025 betting data to evaluate the profitability of moneylines, spreads, and over/under to",
+  "updated": "2026-08-24"
+ },
+ "github.com/yiannimercer/NFL_Betting_and_Fantasy_Tool": {
+  "stars": 0,
+  "topic": "betting-models",
+  "desc": "NFL Betting & Fantasy Tool",
+  "updated": "2022-09-13"
+ },
+ "github.com/fullscreen-triangle/morphine": {
+  "stars": 0,
+  "topic": "betting-models",
+  "desc": "Computer Vision-Powered Streaming Platform with Real-Time Analytics and Micro-Betting",
+  "updated": "2025-06-01"
+ },
+ "github.com/harmanveer-2546/Sports-Bets-Winning-Algorithm": {
+  "stars": 0,
+  "topic": "betting-models",
+  "desc": "Sports betting is the activity of predicting sports results and placing a wager on the outcome.",
+  "updated": "2024-09-17"
+ },
+ "github.com/BressettJ21/GTA-Indoor-Horse-Betting": {
+  "stars": 0,
+  "topic": "betting-models",
+  "desc": "This repository contains my efforts in successfully building a profitable horse betting algorithm for the indo",
+  "updated": "2022-10-05"
+ },
+ "github.com/blake-noske/blake-noske.github.io": {
+  "stars": 0,
+  "topic": "betting-models",
+  "desc": "",
+  "updated": "2026-09-08"
+ },
+ "github.com/rollingrock/ff-house-rules": {
+  "stars": 0,
+  "topic": "lineup-optimizer",
+  "desc": "A fantasy football draft companion and season manager that scores every projection under your league's actual ",
+  "updated": "2026-08-29"
+ },
+ "github.com/rmfosha/fg-fantasy-lineup": {
+  "stars": 0,
+  "topic": "lineup-optimizer",
+  "desc": "Python project that connects to FootballGuys.com to fetch weekly player rankings and optimize fantasy football",
+  "updated": "2025-10-09"
+ },
+ "github.com/scout-bowie-analytics/temp-repo": {
+  "stars": 0,
+  "topic": "lineup-optimizer",
+  "desc": "Quantitative fantasy analytics suite: Live Sleeper draft companion & AFK queue builder, 10,000-run Monte Carlo",
+  "updated": "2026-08-31"
+ },
+ "github.com/LeSingh1/edgeboard": {
+  "stars": 0,
+  "topic": "lineup-optimizer",
+  "desc": "Personal real-time PrizePicks board + lineup optimizer. Real player projections (MLB Stats API, ESPN), live in",
+  "updated": "2026-07-09"
+ },
+ "github.com/jessecmaddox3/fantasy-football-toolkit": {
+  "stars": 0,
+  "topic": "lineup-optimizer",
+  "desc": "Read-only Sleeper and ESPN fantasy football toolkit: draft boards, lineup optimization, weekly briefs, and an ",
+  "updated": "2026-09-07"
+ },
+ "github.com/Sabastianangulo12/fantasy-front-office": {
+  "stars": 0,
+  "topic": "lineup-optimizer",
+  "desc": "Fantasy football decision system featuring Fantasy Cheat Code for lineup, waiver, trade, matchup, dynasty, and",
+  "updated": "2026-06-05"
+ },
+ "github.com/scout-bowie-analytics/sleeper-analytics-suite": {
+  "stars": 0,
+  "topic": "lineup-optimizer",
+  "desc": "Quantitative fantasy analytics suite: Live Sleeper draft companion & AFK queue builder, 10,000-run Monte Carlo",
+  "updated": "2026-09-07"
+ }
+}

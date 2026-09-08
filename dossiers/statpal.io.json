@@ -1,0 +1,119 @@
+{
+ "domain": "statpal.io",
+ "tech_stack": {
+  "frontend": {
+   "value": "react",
+   "citation": "raw/batch2_statpal_io_apiprobe.txt"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\batch2_statpal_io_apiprobe.txt",
+   "raw\\batch2_statpal_io_home.html",
+   "raw\\batch2_statpal_io_js1.js",
+   "raw\\batch2_statpal_io_js2.js",
+   "raw\\batch2_statpal_io_probe.txt",
+   "raw\\batch2_statpal_io_robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "api-compiled.yaml"
+   ],
+   "citation": "raw/batch2_statpal_io_apiprobe.txt"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\batch2_statpal_io_apiprobe.txt"
+  },
+  "rate_limits": {
+   "value": "calls per",
+   "citation": "raw/batch2_statpal_io_apiprobe.txt"
+  },
+  "citations": [
+   "raw\\batch2_statpal_io_apiprobe.txt",
+   "raw\\batch2_statpal_io_home.html",
+   "raw\\batch2_statpal_io_js1.js",
+   "raw\\batch2_statpal_io_js2.js",
+   "raw\\batch2_statpal_io_probe.txt",
+   "raw\\batch2_statpal_io_robots.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'StatPal is a sports data API with live scores, stats and betting odds for 12+ sp' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\batch2_statpal_io_apiprobe.txt"
+  },
+  "citations": [
+   "raw\\batch2_statpal_io_apiprobe.txt",
+   "raw\\batch2_statpal_io_home.html",
+   "raw\\batch2_statpal_io_js1.js",
+   "raw\\batch2_statpal_io_js2.js",
+   "raw\\batch2_statpal_io_probe.txt",
+   "raw\\batch2_statpal_io_robots.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "calls per",
+    "per day",
+    "rate limit"
+   ],
+   "citation": "raw/batch2_statpal_io_apiprobe.txt"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\batch2_statpal_io_apiprobe.txt"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "Free"
+   ],
+   "citation": "raw/batch2_statpal_io_apiprobe.txt"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\batch2_statpal_io_apiprobe.txt",
+   "raw\\batch2_statpal_io_home.html",
+   "raw\\batch2_statpal_io_js1.js",
+   "raw\\batch2_statpal_io_js2.js",
+   "raw\\batch2_statpal_io_probe.txt",
+   "raw\\batch2_statpal_io_robots.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Disallow: /dashboard/*"
+ ],
+ "discovered_targets": [
+  "api-compiled.yaml"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:28.277873"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "StatPal Sports Data API – Live Scores, Odds & News JSON",
+  "description": "StatPal is a sports data API with live scores, stats and betting odds for 12+ sports and 1,000+ leagues. Fast JSON API, clear interactive docs and a 14-day free trial."
+ }
+}

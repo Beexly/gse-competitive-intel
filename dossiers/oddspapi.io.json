@@ -1,0 +1,72 @@
+{
+ "domain": "oddspapi.io",
+ "tech_stack": {
+  "frontend": "NOT CONFIRMED",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": []
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "Pre-game REST API",
+    "auth_required": true,
+    "tier": "Free",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "https://oddspapi.io"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "B2B Plan provides real-time odds via WebSocket",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "https://oddspapi.io"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED",
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "250 requests/month on Free plan",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "https://oddspapi.io"
+ },
+ "pricing": {
+  "web": "Free (250 req/mo), Custom Plan, B2B Plan",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://oddspapi.io"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "oddspapi.io is probably your best shot if their MyStake history is real",
+   "source": "https://www.reddit.com/r/algobetting/comments/1ubskl7/oddspedia_apiscraper/",
+   "date": "NOT CONFIRMED"
+  }
+ ],
+ "discovered_paths": [],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "automated-probe",
+  "timestamp": "2026-09-08T20:50:29.114521"
+ },
+ "disposition": "live"
+}

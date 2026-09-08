@@ -1,0 +1,21 @@
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: facebot
+User-agent: Applebot
+User-agent: UptimeRobot
+User-agent: archive.org_bot
+User-agent: ia_archiver
+User-agent: Slurp
+Crawl-delay: 5
+Disallow: /pages/admin/
+Disallow: /admin*
+Disallow: /my-profile*
+Disallow: /js/tinymce*
+Disallow: /articles/wp-admin*
+Disallow: 
+Allow: /
+
+User-agent: *
+Disallow: /
+

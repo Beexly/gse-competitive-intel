@@ -1,0 +1,90 @@
+{
+ "domain": "grid.gg",
+ "type": "odds-data-api (rights-holder supplier)",
+ "disposition": "live",
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "customer_pain": [],
+ "discovered_targets": [],
+ "tech_stack": {
+  "frontend": "Cloudflare-fronted marketing site; HelpJuice-hosted developer docs",
+  "backend": "GraphQL API (probe file saved) + Central Data API + File Download API",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare",
+  "cdn": "Cloudflare",
+  "citations": [
+   "raw/grid.gg-homepage.html",
+   "raw/grid.gg-helpjuice-central-data-api.html",
+   "raw/grid.gg-graphql-unauth-probe.json"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "Central Data API (HelpJuice doc page 75KB)",
+    "auth_required": true,
+    "tier": "partner/Open Access",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "raw/grid.gg-helpjuice-central-data-api.html"
+   },
+   {
+    "method": "GET",
+    "path": "File Download API (data file delivery)",
+    "auth_required": true,
+    "tier": "partner",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "raw/grid.gg-helpjuice-file-download-api.html"
+   }
+  ],
+  "graphql_schema": "GraphQL endpoint probed unauthenticated (257B response saved \u2014 likely auth error object)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/grid.gg-graphql-unauth-probe.json"
+  ]
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "RIGHTS-HOLDER data supplier: official esports data via Riot, ESL, BLAST partnerships; sells to 'fantasy and betting operators'; also 'GRID Play / GRID Esports' consumer products"
+  ],
+  "citations": [
+   "raw/grid.gg-open-access.html",
+   "raw/grid.gg-homepage.html"
+  ]
+ },
+ "product_limits": {
+  "limits": "Open Access program: 'Free access to official esports match data for your next project' (quickstart doc saved); commercial/partner tiers beyond",
+  "upgrade_triggers": "commercial use -> Open Data Platform Agreement (PDF saved)",
+  "citation": "raw/grid.gg-open-access.html"
+ },
+ "pricing": {
+  "web": "Open Access free tier; partner pricing NOT CONFIRMED (agreement PDF on disk)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/grid.gg-open-data-platform-agreement.pdf"
+  ]
+ },
+ "discovered_paths": [
+  "/open-access",
+  "/ai-insights",
+  "/live-esports-data",
+  "HelpJuice docs: central-data-api, file-download-api, open-access-quickstart",
+  "/sitemap.xml"
+ ],
+ "discovery_metadata": {
+  "method": "10 files saved incl. docs, quickstart, GraphQL probe, legal agreement PDF",
+  "timestamp": "2026-09-08T14:27:58.643229"
+ }
+}

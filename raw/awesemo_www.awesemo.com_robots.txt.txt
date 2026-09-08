@@ -1,0 +1,15 @@
+URL: https://www.awesemo.com/robots.txt\nSTATUS: 200\n\n# *
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /account/
+Disallow: /admin/
+Disallow: /_next/
+
+# Host
+Host: https://www.stokastic.com
+
+# Sitemaps
+Sitemap: https://www.stokastic.com/sitemap.xml
+Sitemap: https://www.stokastic.com/sitemaps/articles.xml
+Sitemap: https://www.stokastic.com/sitemaps/news.xml

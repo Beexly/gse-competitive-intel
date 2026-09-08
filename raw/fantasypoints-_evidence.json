@@ -1,0 +1,100 @@
+{
+ "domain": "fantasypoints.com",
+ "requests": [
+  {
+   "url": "https://fantasypoints.com",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasypoints-home.html",
+   "err": null
+  },
+  {
+   "url": "https://fantasypoints.com/robots.txt",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasypoints-robots.txt",
+   "err": null
+  },
+  {
+   "url": "https://fantasypoints.com/sitemap.xml",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasypoints-sitemap.xml",
+   "err": null
+  },
+  {
+   "url": "https://fantasypoints.com/_nuxt/CPuyVrKP.js",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasypoints-js0.js",
+   "err": null
+  },
+  {
+   "url": "https://fantasypoints.com/plans",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasypoints-pricing.html",
+   "err": null
+  }
+ ],
+ "homepage_status": 200,
+ "homepage_headers": {
+  "server": "cloudflare",
+  "x-powered-by": "Nuxt",
+  "cf-ray": "a38030b14b566c58-DFW",
+  "content-type": "text/html;charset=utf-8"
+ },
+ "robots_status": 200,
+ "sitemap_status": 200,
+ "sitemap_url": "https://fantasypoints.com/sitemap.xml",
+ "sitemap_locs_sample": [
+  "https://www.fantasypoints.com/sitemap-news.xml",
+  "https://www.fantasypoints.com/sitemap-articles.xml",
+  "https://www.fantasypoints.com/sitemap-players.xml",
+  "https://www.fantasypoints.com/sitemap-pages.xml",
+  "https://www.fantasypoints.com/sitemap-downloads.xml"
+ ],
+ "sitemap_loc_count_seen": 5,
+ "js_candidates": [
+  "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+ ],
+ "js_fetched": [
+  {
+   "url": "https://fantasypoints.com/_nuxt/CPuyVrKP.js",
+   "status": 200,
+   "bytes": 1607946
+  }
+ ],
+ "pricing_url": "https://fantasypoints.com/plans",
+ "pricing_status": 200,
+ "vendors_found": [
+  "fantasydata"
+ ],
+ "price_tokens": [
+  "$1",
+  "$500",
+  "FREE",
+  "Free",
+  "free"
+ ],
+ "dns": {
+  "api.fantasypoints.com": "172.67.69.206",
+  "app.fantasypoints.com": "NXDOMAIN (gaierror)",
+  "staging.fantasypoints.com": "NXDOMAIN (gaierror)"
+ },
+ "search_used": "site:reddit.com <domain> complaint OR review",
+ "grep_summary": {
+  "https://fantasypoints.com/_nuxt/CPuyVrKP.js": {
+   "baseURL": [
+    "|(u.options.headers=new n(u.options.headers||{}))),typeof u.request==\"string\"&&(u.options.baseURL&&(u.request=Ux(u.request,u.options.baseURL)),u.options.query&&(u.request=aT(u.request,u.options.query),delete u.options.query),\"q"
+   ],
+   "fetch(": [
+    "ls=\"omit\":i.credentials=\"same-origin\",i}function r(a){if(a.ep)return;a.ep=!0;const i=n(a);fetch(a.href,i)}})();function cr(e){const t=Object.create(null);for(const n of e.split(\",\"))t[n]=1;return n=>n in t}const nt={},Gs=[],fn"
+   ],
+   "subscription": [
+    "nt\",()=>{const e=j([]),t=j(!1),n=j(null),r=j(!1),a=j([]),i=j(!1),s=j(!1),o=j(null);return{subscriptions:e,subscriptionsFetched:t,billingInfo:n,billingInfoFetched:r,invoices:a,invoicesFetched:i,isLoading:s,error:o,setSubscriptions:y="
+   ],
+   "localStorage": [
+    "{if(t&&t!==s)throw new Error(\"Context conflict\")};let a;if(e.asyncContext){const s=e.AsyncLocalStorage||globalThis.AsyncLocalStorage;s?a=new s:console.warn(\"[unctx] `AsyncLocalStorage` is not provided.\")}const i=()=>{if(a){const s=a"
+   ],
+   "endpoint": [
+    "e.public.logger?.level??1);qo=hP({level:t});const n=e.public.hyperdx;return n?.enabled&&n.endpoint&&qo.addReporter(JO(n.endpoint,n.service??\"nuxt\")),qo},Ga=(e,t,n)=>{let r=QO();return n&&(r=r.withDefaults({requestId:n})),e&&(r=r"
+   ]
+  }
+ }
+}

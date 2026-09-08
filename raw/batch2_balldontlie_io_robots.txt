@@ -1,0 +1,3 @@
+URL: https://balldontlie.io/robots.txt\nSTATUS: 200\n\nUser-agent: *
+Allow: /
+Sitemap: https://balldontlie.io/sitemap.xml

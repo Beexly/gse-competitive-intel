@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content>
+<meta name="description" content="Track Elon Musk’s tweets in real-time with Elontweets.live.">
+<meta property="og:title" content="ElonTweets.Live">
+<meta property="og:description" content="Track Elon Musk’s tweets in real-time with Elontweets.live.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://elontweets.live/favicon.webp">
+<meta property="og:url" content="https://elontweets.live">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ElonTweets.Live">
+<meta name="twitter:description" content="Track Elon Musk’s tweets in real-time with Elontweets.live.">
+<meta name="twitter:image" content="https://elontweets.live/favicon.webp">
+<meta name="twitter:url" content="https://elontweets.live">
+<link rel="shortcut icon" href="/favicon.webp">
+<title>ElonTweets.Live</title>
+<link rel="stylesheet" href="/umi.5ed06199.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="/umi.52d03048.js"></script>
+<script defer data-cf-beacon="{&quot;token&quot;:&quot;b80b3b0d4e894618a176a3293afbcbcb&quot;}" src="https://static.cloudflareinsights.com/beacon.min.js"></script>
+</body>
+</html>

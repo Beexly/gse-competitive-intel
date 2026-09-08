@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<sitemap>
+		<loc>https://www.geniussports.com/sitemaps/post-sitemap.xml</loc>
+		<lastmod>2026-08-05T11:27:55+00:00</lastmod>
+	</sitemap>
+<sitemap>
+		<loc>https://www.geniussports.com/sitemaps/page-sitemap.xml</loc>
+		<lastmod>2026-08-12T10:52:23+00:00</lastmod>
+	</sitemap>
+<sitemap>
+		<loc>https://www.geniussports.com/sitemaps/customer-stories-sitemap.xml</loc>
+		<lastmod>2026-07-29T09:30:09+00:00</lastmod>
+	</sitemap>
+<sitemap>
+		<loc>https://www.geniussports.com/sitemaps/newsroom-sitemap1.xml</loc>
+		<lastmod>2026-08-06T12:37:15+00:00</lastmod>
+	</sitemap>
+<sitemap>
+		<loc>https://www.geniussports.com/sitemaps/newsroom-sitemap2.xml</loc>
+		<lastmod>2026-08-06T10:28:56+00:00</lastmod>
+	</sitemap>
+<sitemap>
+		<loc>https://www.geniussports.com/sitemaps/newsroom-sitemap3.xml</loc>
+		<lastmod>2026-08-04T12:25:37+00:00</lastmod>
+	</sitemap>
+</sitemapindex>
+  

@@ -1,0 +1,123 @@
+{
+ "domain": "dgfantasy.com",
+ "requests": [
+  {
+   "url": "https://dgfantasy.com",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-home.html",
+   "err": null
+  },
+  {
+   "url": "https://dgfantasy.com/robots.txt",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-robots.txt",
+   "err": null
+  },
+  {
+   "url": "https://dgfantasy.com/sitemap.xml",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-sitemap.xml",
+   "err": null
+  },
+  {
+   "url": "https://dgfantasy.com/_next/static/chunks/0_l_3gjh2.uxr.js",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-js0.js",
+   "err": null
+  },
+  {
+   "url": "https://dgfantasy.com/_next/static/chunks/0o341koett55p.js",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-js1.js",
+   "err": null
+  },
+  {
+   "url": "https://dgfantasy.com/_next/static/chunks/0exc-x.lkothf.js",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-js2.js",
+   "err": null
+  },
+  {
+   "url": "https://dgfantasy.com/dgf/membership-signup",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-pricing.html",
+   "err": null
+  }
+ ],
+ "homepage_status": 200,
+ "homepage_headers": {
+  "server": "cloudflare",
+  "x-powered-by": "Next.js",
+  "cf-ray": "a38042212b7a071f-ATL",
+  "via": "1.1 google",
+  "content-type": "text/html; charset=utf-8"
+ },
+ "robots_status": 200,
+ "sitemap_status": 200,
+ "sitemap_url": "https://dgfantasy.com/sitemap.xml",
+ "sitemap_locs_sample": [
+  "https://oddsjam.com/sitemap-0.xml",
+  "https://oddsjam.com/server-sitemap.xml",
+  "https://oddsjam.com/news-sitemap.xml",
+  "https://oddsjam.com/teams-sitemap.xml",
+  "https://oddsjam.com/oai-sitemap.xml",
+  "https://oddsjam.com/games-sitemap.xml"
+ ],
+ "sitemap_loc_count_seen": 6,
+ "js_candidates": [
+  "https://dgfantasy.com/_next/static/chunks/0_l_3gjh2.uxr.js",
+  "https://dgfantasy.com/_next/static/chunks/0o341koett55p.js",
+  "https://dgfantasy.com/_next/static/chunks/0exc-x.lkothf.js",
+  "https://dgfantasy.com/_next/static/chunks/0xen0cjkl65v3.js",
+  "https://dgfantasy.com/_next/static/chunks/0d9rf52e7kwz_.js",
+  "https://dgfantasy.com/_next/static/chunks/124mjasi7u5ij.js",
+  "https://dgfantasy.com/_next/static/chunks/0zgyxkch8t.85.js",
+  "https://dgfantasy.com/_next/static/chunks/0v8q93ys-e.wu.js",
+  "https://dgfantasy.com/_next/static/chunks/07dmgr4ze21c5.js",
+  "https://dgfantasy.com/_next/static/chunks/0n31gb6rtfxwi.js",
+  "https://dgfantasy.com/_next/static/chunks/023h10vyh_m4_.js",
+  "https://dgfantasy.com/_next/static/chunks/0n97db8vik40w.js",
+  "https://dgfantasy.com/_next/static/chunks/064_~be7941xk.js",
+  "https://dgfantasy.com/_next/static/chunks/0gs0ucuzs67zj.js",
+  "https://dgfantasy.com/_next/static/chunks/0c3bzi_hnpi~6.js"
+ ],
+ "js_fetched": [
+  {
+   "url": "https://dgfantasy.com/_next/static/chunks/0_l_3gjh2.uxr.js",
+   "status": 200,
+   "bytes": 16790
+  },
+  {
+   "url": "https://dgfantasy.com/_next/static/chunks/0o341koett55p.js",
+   "status": 200,
+   "bytes": 22314
+  },
+  {
+   "url": "https://dgfantasy.com/_next/static/chunks/0exc-x.lkothf.js",
+   "status": 200,
+   "bytes": 25798
+  }
+ ],
+ "pricing_url": "https://dgfantasy.com/dgf/membership-signup",
+ "pricing_status": 200,
+ "vendors_found": [],
+ "price_tokens": [],
+ "dns": {
+  "api.dgfantasy.com": "NXDOMAIN (gaierror)",
+  "app.dgfantasy.com": "104.21.57.236",
+  "staging.dgfantasy.com": "NXDOMAIN (gaierror)"
+ },
+ "search_used": "site:reddit.com <domain> complaint OR review",
+ "grep_summary": {
+  "https://dgfantasy.com/_next/static/chunks/0_l_3gjh2.uxr.js": {
+   "fetch(": [
+    "=e.i(391398),r=e.i(191788),a=e.i(29626),n=e.i(35829);let i=!1,s=async()=>{try{let e=await fetch(\"/api/build-time\",{cache:\"no-store\",headers:{\"Cache-Control\":\"no-cache\"}});if(!e.ok)return console.error(\"Failed to fetch build ti"
+   ]
+  },
+  "https://dgfantasy.com/_next/static/chunks/0exc-x.lkothf.js": {
+   "correlation": [
+    "cot\",0,e=>{let t;return(t=e.split(\"-\").pop()??\"\").charAt(0).toUpperCase()+t.slice(1)},\"getCorrelationSportOrLeague\",0,(e,t)=>\"soccer\"===e?e:t,\"getHomeVsAwayStringForEvent\",0,e=>e?e.homeTeamObject&&(0,i.isStringDefined)(e?.homeTeamO"
+   ]
+  }
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "domain": "fantasyteamadvice.com",
+ "tech_stack": {
+  "frontend": "Tailwind CSS + Stimulus controllers (data-controller attributes e.g. 'player-search#toggle', 'correlationWarning' targets) bundled via asset pipeline 'application-9099dbea5baddd2ec20db5f8e742ff3831107f.js' (1,945,492 bytes); dark-mode via localStorage 'theme' (raw/fantasyteamadvice_com_home.html, raw/fantasyteamadvice_com_js0.js)",
+  "backend": "Rails-style stack: @rails/actioncable bundled in main JS (node_modules/@rails/actioncable/src/adapters.js strings), Turbo Drive (X-Turbo-Request-Id header appended in fetch wrapper, isPrefixedBy/baseURL helpers from turbo), admin endpoint /admin/hype-videos/search_players (raw/fantasyteamadvice_com_js0.js)",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare (server: cloudflare, cf-ray a38047b0c92c2dab-BOS) (raw/scan-fantasyteamadvice_com.json)",
+  "cdn": "Cloudflare (raw/scan-fantasyteamadvice_com.json)",
+  "citations": [
+   "raw/scan-fantasyteamadvice_com.json",
+   "raw/fantasyteamadvice_com_js0.js",
+   "raw/fantasyteamadvice_com_home.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/admin/hype-videos/search_players?q=<query>",
+    "auth_required": "presumably admin session (path prefix /admin)",
+    "tier": "NOT CONFIRMED",
+    "sample_response": "NC",
+    "citation": "raw/fantasyteamadvice_com_js0.js (fetch wrapper: `await fetch(\\`/admin/hype-videos/search_players?q=${encodeURIComponent(query)}\\`)`)"
+   },
+   {
+    "method": "POST",
+    "path": "/cable (ActionCable websocket consumer with confirm_subscription/reject_subscription protocol)",
+    "auth_required": "NOT CONFIRMED",
+    "tier": "NOT CONFIRMED",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "raw/fantasyteamadvice_com_js0.js"
+   },
+   {
+    "method": "GET",
+    "path": "/api/agent (OpenAPI-style spec embed: spec.servers[0].url || '/api/agent')",
+    "auth_required": "NOT CONFIRMED",
+    "tier": "NOT CONFIRMED",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "raw/fantasyteamadvice_com_js0.js"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (no graphql strings in bundle greps)",
+  "websocket_endpoints": [
+   "Rails ActionCable /cable (WebSocket adapter + consumer/subscription protocol strings bundled in application JS) - citation: raw/fantasyteamadvice_com_js0.js"
+  ],
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/fantasyteamadvice_com_js0.js",
+   "raw/scan-fantasyteamadvice_com.json"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "DFS lineup optimizer using 'projections, salary caps, ownership percentages, stacking correlations, and roster constraints to generate lineups that maximize expected value'; proprietary projections model claimed 'back-tested and improved for over 15 years'",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "raw/fantasyteamadvice_com_home.html (optimizer description greps), raw/fantasyteamadvice_com_pricing.html ('back-tested and improved for over 15 years')"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "Betting tools implement same-game-parley correlation warnings: Stimulus controller with correlationWarning/legLimitWarning/estimatedPayout/approxOdds targets; flags duplicate player legs ('hasDupes = playerIds.length !== new Set(playerIds).size') and toggles correlation warning UI (raw/fantasyteamadvice_com_js0.js)",
+  "citation": "raw/fantasyteamadvice_com_js0.js (correlation greps), raw/fantasyteamadvice_com_home.html ('Stacking and correlation rules for cash and GPP')"
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED (vendor-string grep found only false positives: 'opta' matched inside 'closest'/'dropTarget'; no sportradar/statsperform/genius/sportsdata strings)",
+  "citations": [
+   "raw/fantasyteamadvice_com_js0.js",
+   "raw/scan-fantasyteamadvice_com.json (greps opta false-positive)"
+  ]
+ },
+ "product_limits": {
+  "limits": "Single all-sports membership (NFL/NBA/MLB/NHL) - 'One membership unlocks the full model across every sport. No per-sport upsells, no tiers to decode' (homepage meta via raw/pain-search-recovery2.json result for fantasyteamadvice.com); tools: DFS Optimizer, Ownership, Player Props, Draft Board",
+  "upgrade_triggers": "Free tier exists for content; FTA+ gates optimizers/ownership/props. Specific free-vs-paid caps NOT CONFIRMED",
+  "citation": "raw/fantasyteamadvice_com_pricing.html (FTA+ section, 'Go Premium' CTA in home.html)"
+ },
+ "pricing": {
+  "web": "FTA+ Monthly $39.99/mo; Annual $149.99/yr with early-bird first year $104.99 (code EARLYBIRD2026, '29c/day', renews at $149.99/yr); 23,362 members claimed; early-bird not available with PayPal",
+  "ios": "NOT CONFIRMED (schema.org JSON-LD Product 'FTA+ Premium Monthly Membership' price 9.99 USD on memberships page is a stale/legacy offer artifact - raw/fantasyteamadvice_com_pricing.html JSON-LD)",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/fantasyteamadvice_com_pricing.html (membership pricing block + JSON-LD Product/Offer price 9.99 USD)",
+   "raw/fantasyteamadvice_com_home.html"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Going to have to check you guys out. I used a competitor last year and it did not end well for me.",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/15gh2zx/best_paid_or_not_paid_fantasy_subscription (raw/pain-search-recovery2.json)",
+   "date": "2023 (thread id 15gh2zx, exact date NC)"
+  },
+  {
+   "quote": "Probably worth the subscription just to get rid of the ads and annoying blurred (useless) content.",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/q7qp2s/can_we_get_some_reviews_for_yahoo_fantasy_p (raw/pain-search-recovery2.json - category pain: blurred paywalled content)",
+   "date": "NOT CONFIRMED"
+  }
+ ],
+ "discovered_paths": [
+  "/memberships",
+  "/nfl/dfs/optimizer",
+  "/mlb/dfs/optimizer",
+  "/nhl/dfs/optimizer",
+  "/admin/hype-videos/search_players",
+  "/cable",
+  "/api/agent"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "recovery composition from raw/ evidence (scan JSON + 1.9MB application bundle grep + pricing page JSON-LD)",
+  "timestamp": "2026-09-08T15:09:13.685021"
+ },
+ "disposition": "live"
+}

@@ -1,0 +1,199 @@
+{
+ "leads": {
+  "fantasycalc.com": "dataforceff.com",
+  "trade360.com": "lsports.eu",
+  "advisionfeeds.com": "oddstrader.com",
+  "tradingtechnologies.com": "og.com",
+  "ninjatrader.com": "onyxodds.com",
+  "opticodds.com": "sportsdata.io",
+  "metabet.ai": "predictiondata.io",
+  "donbest.com": "therundown.io",
+  "txodds.com": "predictiondata.io",
+  "kalshi.com": "predictiondata.io",
+  "polymarket.com": "predictiondata.io",
+  "prophetx.co": "prophetx.com",
+  "statpal.io": "sportsapi.com",
+  "jsonodds.com": "sportsapi.com",
+  "horseapi.com": "sportsapi.com",
+  "brokersports.com": "sportsapi.com",
+  "betradar.com": "sportsapi.com",
+  "bettingdata.com": "sportsapi.com",
+  "balldontlie.io": "sportsapi.com",
+  "apisoccer.com": "sportsapi.com",
+  "apifootball.com": "sportsapi.com",
+  "api-tennis.com": "sportsapi.com",
+  "cricketapi.com": "sportsapi.com",
+  "fantasynerds.com": "sportsapi.com",
+  "monitoredtips.com": "sportstrade.io",
+  "soccertipsters.com": "sportstrade.io",
+  "betfame.com": "sportstrade.io",
+  "feedinco.com": "sportstrade.io",
+  "moonshotsmlb.com": "thesolver.com",
+  "ballparkpal.com": "thesolver.com",
+  "underdogsports.com": "underdogfantasy.com/predict"
+ },
+ "repos": [
+  "github.com/1canhhoa/sports-betting-toolbox",
+  "github.com/AhmedHazem02/fifa-world-cup-2026-prediction-agent",
+  "github.com/CFBD/cfbd-python",
+  "github.com/ChenFengYe/SportsCap",
+  "github.com/DimaKudosh/pydfs-lineup-optimizer",
+  "github.com/FantasyFootballAnalytics/FantasyFootballAnalyticsR",
+  "github.com/FantasyFootballAnalytics/ffanalytics",
+  "github.com/JaseZiv/worldfootballR",
+  "github.com/MCG-NJU/MultiSports",
+  "github.com/NBA-Betting/NBA_AI",
+  "github.com/NBA-Betting/NBA_Betting",
+  "github.com/ScrapingBee/google-sports-results-api",
+  "github.com/SwapnikKatkoori/sleeper-api-wrapper",
+  "github.com/ThemeBoy/SportsPress",
+  "github.com/amosbastian/fpl",
+  "github.com/bendominguez0111/nflfastpy",
+  "github.com/cvidan/bet365-scraper",
+  "github.com/day-mon/sports-betting-ai",
+  "github.com/derekrbreese/fantasy-football-mcp-public",
+  "github.com/dos-2/oddshub",
+  "github.com/droher/boxball",
+  "github.com/dtcarls/fantasy_football_chat_bot",
+  "github.com/dynastyprocess/data",
+  "github.com/echandsome/Polymarket-betting-bot",
+  "github.com/elonbiz/sports-betting-sportsbook",
+  "github.com/ffverse/ffscrapr",
+  "github.com/georgedouzas/sports-betting",
+  "github.com/gingeleski/odds-portal-scraper",
+  "github.com/giovanigenerali/cartrolandofc",
+  "github.com/gotoConversion/goto_conversion",
+  "github.com/hudl/open-data",
+  "github.com/jjti/ff",
+  "github.com/joeyagreco/leeger",
+  "github.com/jordantete/OddsHarvester",
+  "github.com/klane/databall",
+  "github.com/kyleskom/NBA-Machine-Learning-Sports-Betting",
+  "github.com/laberning/openrowingmonitor",
+  "github.com/livetennisapi/livetennisapi-mcp",
+  "github.com/martineastwood/penaltyblog",
+  "github.com/mkreiser/ESPN-Fantasy-Football-API",
+  "github.com/nautechsystems/nautilus_trader",
+  "github.com/nmelhado/league-page",
+  "github.com/nutcas3/lets-bet",
+  "github.com/pnxenopoulos/awpy",
+  "github.com/pretrehr/Sports-betting",
+  "github.com/probberechts/soccerdata",
+  "github.com/roboflow/sports",
+  "github.com/roclark/sportsipy",
+  "github.com/rollerderby/scoreboard",
+  "github.com/saccofrancesco/deepshot",
+  "github.com/salimt/football-datasets",
+  "github.com/sedemmler/WagerBrain",
+  "github.com/spinach/FantasyPremierLeague.py",
+  "github.com/sportsdataverse/cfbfastR",
+  "github.com/uberfastman/fantasy-football-metrics-weekly-report",
+  "github.com/uberfastman/yfpy",
+  "github.com/vbudhram/fantasy-football-io",
+  "github.com/wiscostret/fplscrapR"
+ ],
+ "roundups": {
+  "reddit.com": [
+   "best fantasy football tools and websites list 2026",
+   "best DFS optimizer tools sites compared",
+   "sports betting analytics sites like action network alternatives list",
+   "player prop projection tools websites list",
+   "sports data API providers list comparison"
+  ],
+  "draftsharks.com": [
+   "best fantasy football tools and websites list 2026"
+  ],
+  "fantasyfootballcalculator.com": [
+   "best fantasy football tools and websites list 2026"
+  ],
+  "rotowire.com": [
+   "best fantasy football tools and websites list 2026"
+  ],
+  "fantasypros.com": [
+   "best fantasy football tools and websites list 2026"
+  ],
+  "youtube.com": [
+   "best fantasy football tools and websites list 2026",
+   "sports betting analytics sites like action network alternatives list",
+   "player prop projection tools websites list"
+  ],
+  "fantasypoints.com": [
+   "best fantasy football tools and websites list 2026"
+  ],
+  "thefantasyfootballers.com": [
+   "best fantasy football tools and websites list 2026"
+  ],
+  "thesolver.com": [
+   "best DFS optimizer tools sites compared"
+  ],
+  "sabersim.com": [
+   "best DFS optimizer tools sites compared"
+  ],
+  "rotogrinders.com": [
+   "best DFS optimizer tools sites compared",
+   "sports betting analytics sites like action network alternatives list"
+  ],
+  "propsbot.ai": [
+   "best DFS optimizer tools sites compared",
+   "player prop projection tools websites list"
+  ],
+  "cheatsheetwarroom.com": [
+   "best DFS optimizer tools sites compared"
+  ],
+  "dgfantasy.com": [
+   "best DFS optimizer tools sites compared"
+  ],
+  "dfshero.com": [
+   "best DFS optimizer tools sites compared"
+  ],
+  "apps.apple.com": [
+   "sports betting analytics sites like action network alternatives list",
+   "player prop projection tools websites list"
+  ],
+  "actionnetwork.com": [
+   "sports betting analytics sites like action network alternatives list"
+  ],
+  "play.google.com": [
+   "sports betting analytics sites like action network alternatives list"
+  ],
+  "cbssports.com": [
+   "sports betting analytics sites like action network alternatives list"
+  ],
+  "sportshandle.com": [
+   "sports betting analytics sites like action network alternatives list"
+  ],
+  "propfinder.app": [
+   "player prop projection tools websites list"
+  ],
+  "props.cash": [
+   "player prop projection tools websites list"
+  ],
+  "pff.com": [
+   "player prop projection tools websites list"
+  ],
+  "unabated.com": [
+   "player prop projection tools websites list"
+  ],
+  "api-sports.io": [
+   "sports data API providers list comparison"
+  ],
+  "sportsapi.com": [
+   "sports data API providers list comparison"
+  ],
+  "sportsdata.io": [
+   "sports data API providers list comparison"
+  ],
+  "lsports.eu": [
+   "sports data API providers list comparison"
+  ],
+  "datarade.ai": [
+   "sports data API providers list comparison"
+  ],
+  "sportsgameodds.com": [
+   "sports data API providers list comparison"
+  ],
+  "isportsapi.com": [
+   "sports data API providers list comparison"
+  ]
+ }
+}

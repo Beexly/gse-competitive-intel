@@ -1,0 +1,43 @@
+{
+ "propfinder-js-3b49.txt": {
+  "urls": [
+   "https://youtu.be/Df2Yg8iS9WU",
+   "https://youtu.be/fqx2vM-RxN4"
+  ],
+  "api": []
+ },
+ "propfinder-js-48cd.txt": {
+  "urls": [
+   "https://blog.propfinder.app",
+   "https://discord.gg/propfinder",
+   "https://hangfire-odds.propfinder.app/hangfire",
+   "https://hangfire.propfinder.app/hangfire",
+   "https://us.i.posthog.com",
+   "https://www.instagram.com/propfinderapp/",
+   "https://www.redditstatic.com/ads/pixel.js",
+   "https://www.tiktok.com/",
+   "https://www.youtube.com/",
+   "https://x.com/propfinderapp"
+  ],
+  "api": []
+ },
+ "propfinder-js-7d54fe1aef4f7e55.js": {
+  "urls": [
+   "https://nextjs.org/docs/messages/failed-to-find-server-action"
+  ],
+  "api": []
+ },
+ "propfinder-js-926a.txt": {
+  "urls": [
+   "https://react.dev/errors/"
+  ],
+  "api": []
+ },
+ "propfinder-js-9380fb88a2eda003.js": {
+  "urls": [
+   "https://buy.stripe.com/5kA14U81caXQbWE3ce",
+   "https://buy.stripe.com/fZeaFu2GS4zsf8Q4gg"
+  ],
+  "api": []
+ }
+}

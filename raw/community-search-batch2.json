@@ -1,0 +1,162 @@
+{
+ "thesportsdb.com review reddit complaints rate limit": [
+  {
+   "url": "https://www.thesportsdb.com/forum_topic.php?t=5749",
+   "title": "Rate Limit - TheSportsDB Forum",
+   "description": "Please remember to limit requests to at maximum 2 per second. You will get a 429 response if you go over and be banned for 1 minute.",
+   "category": null
+  },
+  {
+   "url": "https://www.thesportsdb.com/docs_api_guide",
+   "title": "TheSportsDB Free Sports API Documentation",
+   "description": "# Base URL\n```html\nv1 Base URL = https://www.thesportsdb.com/api/v1/json\nv2 Base URL = https://www.thesportsdb.com/api/v2/json\n```\n\n# V1 API Documentation\n```html\nhttps://www.thesportsdb.com/api/v1/json/123/lookuptable.php?l=4328\nhttps://www.thesportsdb.com/api/v1/json/123/lookuptable.php?l=4328&s=2020-2021\n```\n\n```html\nhttps://www.thesportsdb.com/api/v1/json/123/playerresults.php?id=34160573\n```\n\n```html\nhttps://www.thesportsdb.com/api/v1/json/123/eventresults.php?id=652890\n```\n\n```html\nhttps://www.thesportsdb.com/api/v1/json/123/lookupeventstats.php?id=1032723\n```\n\n```html\nhttps://www.thesportsdb.com/api/v1/json/123/eventsnext.php?id=133602\n```\n\n```html\nhttps://www.thesportsdb.com/api/v1/json/123/eventslast.php?id=133602\n```\n\n```html\nhttps://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=2014-10-10\nhttps://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=2014-10-10&s=Baseball\nhttps://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=2014-10-10&l=4424\n```",
+   "category": null
+  },
+  {
+   "url": "https://www.reddit.com/r/webdev/comments/a98vi6/sports_apis/",
+   "title": "Sports APIs? : r/webdev - Reddit",
+   "description": "Sportradar is top tier. https://www.thesportsdb.com/api.php. Sports data apis are a complete scam for solo devs. Web scraping and content ...",
+   "category": null
+  },
+  {
+   "url": "https://www.reddit.com/r/webdev/comments/1i6t8e6/looking_for_the_best_bootball_soccer_data_api_my/",
+   "title": "Looking for the best bootball (soccer) data API (my experience ... - Reddit",
+   "description": "EDIT: I recently tested api-football their API only costs 19USD, after 2 weeks testing their data I found that it is also trash and inaccurate ...",
+   "category": null
+  },
+  {
+   "url": "https://www.thesportsdb.com/forum_topic.php?t=5762",
+   "title": "Api Limit rate - Forum - TheSportsDB",
+   "description": "The rate limit is set to stop abuse of our site and resources. Before we introduced it the site was really struggling under the pressure of a ...",
+   "category": null
+  }
+ ],
+ "fantasydata.com API review reddit developers complaints": [
+  {
+   "url": "https://www.reddit.com/r/NFLstatheads/comments/14884lz/need_recommendations_on_the_best_nfl_stats_api/",
+   "title": "Need recommendations on the best NFL Stats API for a Fantasy Website",
+   "description": "I've used FantasyData.com for non-live updates also which was a solid option but only updates once per day. fantasydata also abruptly stopped ...",
+   "category": null
+  },
+  {
+   "url": "https://www.reddit.com/r/fantasyfootballcoding/comments/1vyluji/yahoo_fantasy_api_anybody_gaining_progress_on_this/",
+   "title": "Yahoo Fantasy API - Anybody gaining progress on this? - Reddit",
+   "description": "I heard from one fellow Redditor that they never heard back, but tested their app a couple of days ago and it worked. I'm not amongst that ...",
+   "category": null
+  },
+  {
+   "url": "https://www.reddit.com/r/fantasyfootball/comments/1vpwwqs/i_just_started_rfantasydata_for_anyone_interested/",
+   "title": "I just started r/FantasyData for anyone interested in the technical side of ...",
+   "description": "APIs and data sources \u2026 if you're tool hunting it could be hit or miss, a good resource for devs who are looking for data, api, resources, etc",
+   "category": null
+  },
+  {
+   "url": "https://www.reddit.com/r/YahooFantasy/comments/1v7x3zk/tech_support_general_questions_weekly_thread/",
+   "title": "Tech Support & General Questions [Weekly Thread] : r/YahooFantasy",
+   "description": "This thread is for members experiencing any issues with Yahoo Fantasy. I've received no communication besides the 403 response due to yahoo ...",
+   "category": null
+  },
+  {
+   "url": "https://www.reddit.com/r/fantasyfootballcoding/comments/1vj9rwe/has_anyone_been_approved_by_yahoo_for_api_access/",
+   "title": "Has anyone been approved by yahoo for api access? - Reddit",
+   "description": "It's honestly wild how there's no transparency here. No notification they were restricting the API, no notification that we had to apply for ...",
+   "category": null
+  }
+ ],
+ "goalserve.com review reddit complaints feed quality": [
+  {
+   "url": "https://www.goalserve.com/en",
+   "title": "Goalserve: Live Sports Data Feeds API | Live Score API Provider",
+   "description": "Goalserve provides Sports Data Feeds API solutions since 2005 and offer Live score api, Live Game stats feeds, Historical Data, Prematch and In-play data",
+   "category": null
+  },
+  {
+   "url": "https://www.goalserve.com/en/blog/how-to-choose-the-best-sports-API-for-your-needs",
+   "title": "How to Choose the Best Sports API for Your Needs - Goalserve",
+   "description": "there will be some level of trade-off in quality, customer support, and data richness. Feed include live score data, live fantasy stats data, bookmaker pregame ...",
+   "category": null
+  },
+  {
+   "url": "https://www.reddit.com/r/algobetting/comments/1t856ed/sportbook_provider/",
+   "title": "sportbook provider : r/algobetting - Reddit",
+   "description": "I pay Don Best for an XML feed. I've been paying monthly for almost 10 years. It's extremely reliable.",
+   "category": null
+  },
+  {
+   "url": "https://slashdot.org/software/p/Goalserve/",
+   "title": "Goalserve Reviews - 2026 - Slashdot",
+   "description": "Goalserve user reviews from verified software and service customers. Explore ratings, reviews, pricing, features, remarkable 99% uptime guarantee.",
+   "category": null
+  },
+  {
+   "url": "https://www.goalserve.com/en/about-us",
+   "title": "About Us - Goalserve",
+   "description": "Goalserve was established in 2005 with the promise to deliver high quality live sports data feeds at affordable prices.",
+   "category": null
+  }
+ ],
+ "football-data.org free tier review reddit limits": [
+  {
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1q970y2/looking_for_a_free_or_very_cheap_football_data/",
+   "title": "Looking for a free (or very cheap) football data API - Reddit",
+   "description": "There are rate limits (requests/interval) which can slow things down, but it's manageable in my opinion. It's really easy to get started with.",
+   "category": null
+  },
+  {
+   "url": "https://www.reddit.com/r/dataengineering/comments/1iziyyr/endtoend_data_project_about_collecting_and/",
+   "title": "End-to-End Data Project About Collecting And Summarizing ...",
+   "description": "I use football-data.org for the match results ( it has very generous usage limits on free tier.), although in the recent days it has been ...",
+   "category": null
+  },
+  {
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1sp8fxw/football_soccer_data_api/",
+   "title": "Football (Soccer) data API : r/sportsanalytics - Reddit",
+   "description": "For basic player/club info, football-data.org has a free tier that's decent enough for prototyping. API-Football (on RapidAPI) covers like ...",
+   "category": null
+  },
+  {
+   "url": "https://www.football-data.org/pricing",
+   "title": "Pricing - Football-Data.org",
+   "description": "Free Plan is Free Forever. Check out the paid packages below. ... Go to Football Coverage to find out what competitions and data-points are included in each tier.",
+   "category": null
+  },
+  {
+   "url": "https://www.thestatsapi.com/blog/thestatsapi-vs-football-data-org",
+   "title": "TheStatsAPI vs football-data.org: Free Tier, Pricing & Limits Compared",
+   "description": "## TL;DR\n- **Stay on football-data.org if** a permanent free tier is a hard requirement and 12 major leagues + delayed scores + no player stats is enough for your project (tutorials, hobby dashboards, learning).\n\n## football-data.org Free Tier Limits (2026)\nfootball-data.org's free tier is useful, but it is intentionally narrow. You get exactly 10 API calls per minute and access to 12 competitions only: Champions League, Premier League, La Liga, Bundesliga, Serie A, Ligue 1, Eredivisie, Primeira Liga, the Championship, Brazilian Serie A, the FIFA World Cup, and the European Championship.\n\nThat means no MLS, J-League, Saudi Pro League, Turkish Super Lig, or most second divisions on the free plan. Scores are delayed on free, not real-time, so live-score products need a paid livescores plan. Historical data is limited to the current season on free, which is fine for a dashboard but thin for model training or long-term analysis.\n\nThe free and basic plans also do not include the player data most production apps need, such as lineups, cards, and substitutions. Match statistics like corners, possession, and shots require the statistics add-on, and broader historical access requires a separate historical package. If your app needs more than scores, standings, and fixtures for the 12 free competitions, the real cost is the base plan plus the add-ons that unlock the missing data.\n\n## Quick Verdict\n| Feature | football-data.org (Free) | football-data.org (Standard, \u20ac49/mo) | TheStatsAPI (Starter, $50/mo) |\n|-|-|-|-|\n| **Competitions** | 12 | 30 | 150 (up to 1,196 on request) |\n| **Players** | Not on free tier | Requires \u20ac29/mo deep data add-on | 84,000+ with season stats |\n| **Rate limit** | 10 calls/min | 60 calls/min | 30 calls/min (100k req/mo) |\n| **Historical data** | Current season only | Up to 10 seasons (\u20ac29/mo ML add-on) | 10 years included |\n| **Livescores** | Delayed on free | Included | Live data where available |\n| **Odds** | Not included | \u20ac15/mo add-on | Live and pre-match odds included |\n| **Statistics (corners, shots, possession)** | Not included | \u20ac15/mo add-on | Included |\n| **Lineups, subs, cards** | Not on free tier | Included | Included |\n| **Free trial** | Free tier (forever) | No trial | 7-day trial |\n| **All endpoints on all plans** | No, tiered by plan | No, tiered by plan | Yes |\n\n## Where You Hit the Limits\n### 10 calls per minute is restrictive\nThe free tier allows 10 API calls per minute.\n\n### Delayed scores on free\nFree tier scores are delayed, not real-time. If you are building anything that needs up-to-date match data, you need at least the \u20ac12/mo tier for livescores.\n\n## FAQ\n### Is football-data.org really free?\nYes. However, the free tier comes with delayed scores, no player data (lineups, subs, cards), no match statistics (corners, possession, shots), and limited rate limits.",
+   "category": null
+  }
+ ],
+ "allsportsapi.com review reddit": [
+  {
+   "url": "https://www.reddit.com/r/react/comments/xtvorb/sports_api/",
+   "title": "Sports API : r/react - Reddit",
+   "description": "Does anyone know of a reliable API for sports. Specifically for statistics for individual players? I've tried using the NFL API, ...",
+   "category": null
+  },
+  {
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1ryuf24/after_years_of_frustration_i_finally_built_the/",
+   "title": "After years of frustration I finally built the sports API I wish existed - Reddit",
+   "description": "This is a v2 of the sports api pro and it is amazing . Note : My other reddit acc got banned for no reason here is my new account. Let keep the ...",
+   "category": null
+  },
+  {
+   "url": "https://www.reddit.com/r/webdev/comments/xqemro/free_sports_api/",
+   "title": "Free sports Api? : r/webdev - Reddit",
+   "description": "I've seen some lists but they seem unreliable and many make false claims of costs and reliability. Cheers.",
+   "category": null
+  },
+  {
+   "url": "https://allsportsapi.com/",
+   "title": "All Sports API - LiveScore API - Sports Feeds - Sports Data - Sports Widgets",
+   "description": "All Sports API is a reliable sports information provider. affordable rates. Our site is easy to navigate and implement. have any complaints, just reach out to ...",
+   "category": null
+  },
+  {
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1tnipj4/does_anyone_uses_apifootball/",
+   "title": "Does anyone uses API-Football? : r/sportsanalytics - Reddit",
+   "description": "Pretty cool app, I love the AI briefs. 25 metrics across 6 groups: total & accurate passes, key passes, assists, crosses (total/accurate), long ...",
+   "category": null
+  }
+ ]
+}

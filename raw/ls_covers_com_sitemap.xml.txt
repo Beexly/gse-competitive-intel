@@ -1,0 +1,19 @@
+URL: https://www.covers.com/sitemap.xml\nSTATUS: 200\n\n<?xml version="1.0" encoding="UTF-8" ?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        <sitemap>
+            <loc>https://www.covers.com/betting/sitemap.xml</loc>
+            <lastmod>2026-09-08T18:19:02&#x2B;00:00</lastmod>
+        </sitemap>
+        <sitemap>
+            <loc>https://www.covers.com/casino/sitemap.xml</loc>
+            <lastmod>2026-09-08T18:19:02&#x2B;00:00</lastmod>
+        </sitemap>
+        <sitemap>
+            <loc>https://www.covers.com/news-sitemap.xml</loc>
+            <lastmod>2026-09-08T18:07:00.000Z</lastmod>
+        </sitemap>
+        <sitemap>
+            <loc>https://www.covers.com/editorial-sitemap.xml</loc>
+            <lastmod>2026-09-08T18:07:00.000Z</lastmod>
+        </sitemap>
+</sitemapindex>

@@ -1,0 +1,167 @@
+[
+[
+"Overview",
+"introduction",
+"basic"
+],
+[
+"Getting started",
+"getting-started",
+"basic"
+],
+[
+"Plan reference",
+"plan-reference",
+"basic"
+],
+[
+"Fundamentals",
+"fundamentals",
+"basic"
+],
+[
+"Authentication",
+"authentication",
+"basic"
+],
+[
+"Rate and connections limits",
+"rate-and-connections-limits",
+"basic"
+],
+[
+"Make and interpret your first request",
+"make-your-first-request",
+"basic"
+],
+[
+"Discord match score-bot",
+"discord-score-bot",
+"basic"
+],
+[
+"Counter-Strike 2 migration",
+"counter-strike-2-migration",
+"basic"
+],
+[
+"Formats",
+"formats",
+"basic"
+],
+[
+"Tracking changes",
+"tracking-changes",
+"basic"
+],
+[
+"Tournaments in-depth",
+"tournaments-in-depth",
+"basic"
+],
+[
+"Matches lifecycle",
+"matches-lifecycle",
+"basic"
+],
+[
+"Match formats",
+"match-formats",
+"basic"
+],
+[
+"Filtering and sorting",
+"filtering-and-sorting",
+"basic"
+],
+[
+"Pagination",
+"pagination",
+"basic"
+],
+[
+"Errors",
+"errors",
+"basic"
+],
+[
+"Image optimization",
+"image-optimization",
+"basic"
+],
+[
+"About players' age",
+"about-players-age",
+"basic"
+],
+[
+"Frequently asked questions",
+"frequently-asked-questions",
+"basic"
+],
+[
+"Overview",
+"websockets-overview",
+"basic"
+],
+[
+"Data samples",
+"data-samples",
+"basic"
+],
+[
+"Counter-Strike",
+"data-sample-csgo",
+"basic"
+],
+[
+"League of Legends",
+"data-sample-league-of-legends",
+"basic"
+],
+[
+"Events recovery",
+"events-recovery",
+"basic"
+],
+[
+"Disconnections",
+"disconnections",
+"basic"
+],
+[
+"Sandbox environment",
+"sandbox-environment",
+"basic"
+],
+[
+"Seasons and circuits",
+"seasons-and-circuits",
+"basic"
+],
+[
+"Dota 2",
+"dota-2",
+"basic"
+],
+[
+"League of Legends",
+"league-of-legends",
+"basic"
+],
+[
+"Counter-Strike",
+"counter-strike",
+"basic"
+],
+[
+"Valorant",
+"valorant",
+"basic"
+],
+[
+"Overview",
+"low-latency-feed-overview",
+"basic"
+]
+]

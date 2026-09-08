@@ -1,0 +1,147 @@
+{
+ "api-tennis.com": {
+  "domain": "api-tennis.com",
+  "home_status": 200,
+  "robots_status": 200,
+  "sitemap_status": 200,
+  "sitemap_url": "https://api-tennis.com/sitemap.xml",
+  "title": "API for Tennis",
+  "scripts": [
+   "https://www.googletagmanager.com/gtag/js?id=G-SY423BMX35",
+   "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js",
+   "https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js",
+   "https://code.jquery.com/jquery-3.3.1.min.js",
+   "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+   "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js",
+   "https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js",
+   "https://api-tennis.com/js/owl.carousel.min.js",
+   "https://api-tennis.com/js/main.js?v=1",
+   "https://api-tennis.com/script/register-login.js"
+  ],
+  "pricing_links": [
+   "#plans",
+   "../register",
+   "/register"
+  ],
+  "apiish_links": [],
+  "headers": {
+   "Server": "Apache/2.4.52 (Ubuntu)",
+   "Content-Type": "text/html; charset=UTF-8"
+  },
+  "email": "contact@api-tennis.com"
+ },
+ "cricketapi.com": {
+  "domain": "cricketapi.com",
+  "home_status": 200,
+  "robots_status": 200,
+  "sitemap_status": 200,
+  "sitemap_url": "https://cricketapi.com/sitemap.xml",
+  "title": "Roanuz Cricket API - APIs &amp; GraphQL for live cricket score, Stats, Fantasy apps and Chatbots",
+  "scripts": [
+   "https://www.googleoptimize.com/optimize.js?id=OPT-PWQJ6NR",
+   "https://js.stripe.com/v3",
+   "https://checkout.razorpay.com/v1/checkout.js",
+   "https://d16ppiey8peuxi.cloudfront.net/cricketapi/v5/js/manifest.6f0bed67.js",
+   "https://d16ppiey8peuxi.cloudfront.net/cricketapi/v5/js/v5web.3a634596.js",
+   "https://d16ppiey8peuxi.cloudfront.net/cricketapi/v5/js/v5docs~v5web.0f0d57e2.js",
+   "https://d16ppiey8peuxi.cloudfront.net/cricketapi/v5/js/v5ob~v5web.ee7668b0.js",
+   "https://d16ppiey8peuxi.cloudfront.net/cricketapi/v5/js/vendor.2411922b.js",
+   "https://d16ppiey8peuxi.cloudfront.net/cricketapi/v5/js/main.010f2b89.js"
+  ],
+  "pricing_links": [
+   "/v5/docs/",
+   "/v5/get-started",
+   "/v5/package-pricing",
+   "/v5/pricing",
+   "https://d16ppiey8peuxi.cloudfront.net/cricketapi/v5/css/v5docs.704dba77.css",
+   "https://d16ppiey8peuxi.cloudfront.net/cricketapi/v5/css/v5docs~v5ob.83bd8d4d.css",
+   "https://d16ppiey8peuxi.cloudfront.net/cricketapi/v5/css/v5docs~v5web.869afed0.css",
+   "https://d16ppiey8peuxi.cloudfront.net/cricketapi/v5/js/v5docs.15a747bf.js",
+   "https://d16ppiey8peuxi.cloudfront.net/cricketapi/v5/js/v5docs~v5ob.b8750a4a.js",
+   "https://d16ppiey8peuxi.cloudfront.net/cricketapi/v5/js/v5docs~v5web.0f0d57e2.js",
+   "https://footballapi.com/plans/",
+   "https://kabaddiapi.com/plans/"
+  ],
+  "apiish_links": [],
+  "headers": {
+   "Content-Type": "text/html; charset=utf-8",
+   "x-powered-by": "Express",
+   "server": "envoy"
+  },
+  "email": "support@cricketapi.com"
+ },
+ "horseapi.com": {
+  "domain": "horseapi.com",
+  "home_status": null,
+  "robots_status": null,
+  "sitemap_status": null,
+  "sitemap_url": null,
+  "title": null,
+  "scripts": [],
+  "pricing_links": [],
+  "apiish_links": [],
+  "headers": {},
+  "email": null
+ },
+ "advisionfeeds.com": {
+  "domain": "advisionfeeds.com",
+  "home_status": null,
+  "robots_status": null,
+  "sitemap_status": null,
+  "sitemap_url": null,
+  "title": null,
+  "scripts": [],
+  "pricing_links": [],
+  "apiish_links": [],
+  "headers": {},
+  "email": null
+ },
+ "thesportsdb.com": {
+  "domain": "thesportsdb.com",
+  "home_status": 200,
+  "robots_status": 200,
+  "sitemap_status": 200,
+  "sitemap_url": "https://thesportsdb.com/sitemap.xml",
+  "title": "TheSportsDB | Open Sports Database &amp; Free Sports API",
+  "scripts": [
+   "https://app.rybbit.io/api/script.js",
+   "https://thesportsdb.com/js/bootstrap.bundle.min.js",
+   "https://thesportsdb.com/js/webmcp.js"
+  ],
+  "pricing_links": [
+   "/docs_about.php",
+   "/docs_api_data",
+   "/docs_api_examples",
+   "/docs_api_testing",
+   "/docs_artwork",
+   "/docs_contact.php",
+   "/docs_kodi_scraper",
+   "/docs_libraries",
+   "/docs_privacy_policy.php",
+   "/docs_refunds.php",
+   "/docs_terms_of_use.php",
+   "/pricing"
+  ],
+  "apiish_links": [],
+  "headers": {
+   "Content-Type": "text/html; charset=UTF-8",
+   "Server": "cloudflare",
+   "X-Powered-By": "PHP/8.4.14",
+   "CF-RAY": "a380d05b4b5c475d-DFW"
+  },
+  "email": null
+ },
+ "trade360.com": {
+  "domain": "trade360.com",
+  "home_status": null,
+  "robots_status": null,
+  "sitemap_status": null,
+  "sitemap_url": null,
+  "title": null,
+  "scripts": [],
+  "pricing_links": [],
+  "apiish_links": [],
+  "headers": {},
+  "email": null
+ }
+}

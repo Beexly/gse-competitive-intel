@@ -1,0 +1,43 @@
+Title: Oddpool | Compare Kalshi & Polymarket Odds in Real Time
+
+URL Source: https://oddpool.com/
+
+Markdown Content:
+Who we work with
+
+## Built for institutional desks.
+
+### Market makers
+
+*   Calibrate spreads and skew against full tick history.
+*   Backtest quoting on the same schema you run live.
+*   Signed price level deltas rebuild exact book state at any timestamp.
+*   Hedge ratios across venues derived from the reference layer.
+
+### Prop trading firms
+
+*   Read full book depth before sizing, so the edge survives the quote.
+*   Every execution carries price, size, and taker side for flow analysis.
+*   Price divergence across venues arrives with fee and spread context attached.
+*   One normalized WebSocket keyed by market covers every venue.
+
+### Hedge funds & macro research
+
+*   Continuously updated distributions on CPI, payrolls, and FOMC outcomes.
+*   A second opinion from a structurally different participant base.
+*   Versioned reference data means an ID you cite today still resolves next quarter.
+*   Reproduce results months later from the same Parquet archive, queried natively in DuckDB or Spark.
+
+Self-serve
+
+## Not an institution? Start with a key.
+
+A slice of the same normalized data, metered and self-serve. Search across 700K+ markets, pull historical orderbooks, stream live probabilities. Free tier, no credit card, no sales call. Point a coding agent at[docs.oddpool.com/llms.txt](https://docs.oddpool.com/llms.txt)and it will write working code against us on the first try.
+
+Free tier: 1,000 requests/month. Pro $30/mo. Premium $100/mo. Institutional delivery is priced on the call.
+
+## See the data before you decide.
+
+Thirty minutes, a real sample of the archive, and a straight answer on whether it fits your workflow.
+
+Or email[founders@oddpool.com](mailto:founders@oddpool.com)

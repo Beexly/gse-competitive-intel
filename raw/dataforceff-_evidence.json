@@ -1,0 +1,140 @@
+{
+ "domain": "dataforceff.com",
+ "requests": [
+  {
+   "url": "https://dataforceff.com",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dataforceff-home.html",
+   "err": null
+  },
+  {
+   "url": "https://dataforceff.com/robots.txt",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dataforceff-robots.txt",
+   "err": null
+  },
+  {
+   "url": "https://dataforceff.com/sitemap.xml",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dataforceff-sitemap.xml",
+   "err": null
+  },
+  {
+   "url": "https://dataforceff.com/js/appskin.js?v=1788558901",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dataforceff-js0.js",
+   "err": null
+  },
+  {
+   "url": "https://dataforceff.com/js/skinfx.js?v=1788558928",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dataforceff-js1.js",
+   "err": null
+  },
+  {
+   "url": "https://dataforceff.com/js/lockerroom.js?v=1788558921",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dataforceff-js2.js",
+   "err": null
+  }
+ ],
+ "homepage_status": 200,
+ "homepage_headers": {
+  "server": "cloudflare",
+  "cf-ray": "a3803a0dcd226d82-DFW",
+  "content-type": "text/html; charset=UTF-8"
+ },
+ "robots_status": 200,
+ "sitemap_status": 200,
+ "sitemap_url": "https://dataforceff.com/sitemap.xml",
+ "sitemap_locs_sample": [
+  "https://www.dataforceff.com/",
+  "https://www.dataforceff.com/what-is-fantasy-football",
+  "https://www.dataforceff.com/training-popups",
+  "https://www.dataforceff.com/fantasy-football-getting-started",
+  "https://www.dataforceff.com/fantasy-football-videos",
+  "https://www.dataforceff.com/fantasy-football-games",
+  "https://www.dataforceff.com/fantasy-football-scoring-rules",
+  "https://www.dataforceff.com/fantasy-football-glossary",
+  "https://www.dataforceff.com/covid-rules",
+  "https://www.dataforceff.com/fantasy-football-lineup-options",
+  "https://www.dataforceff.com/fantasy-football-drafts",
+  "https://www.dataforceff.com/software-features",
+  "https://www.dataforceff.com/dynasty-leagues",
+  "https://www.dataforceff.com/year-long-fantasy-football",
+  "https://www.dataforceff.com/weekly-fantasy-schedule",
+  "https://www.dataforceff.com/home",
+  "https://www.dataforceff.com/fantasy-football-lobby",
+  "https://www.dataforceff.com/fantasy-football-rules",
+  "https://www.dataforceff.com/prize-payouts",
+  "https://www.dataforceff.com/about-us",
+  "https://www.dataforceff.com/newsletters",
+  "https://www.dataforceff.com/what-is-bonus-money",
+  "https://www.dataforceff.com/my-account",
+  "https://www.dataforceff.com/locker-room",
+  "https://www.dataforceff.com/shopping-cart",
+  "https://www.dataforceff.com/my-leagues",
+  "https://www.dataforceff.com/trade-rights",
+  "https://www.dataforceff.com/renew-teams",
+  "https://www.dataforceff.com/orphan-auction",
+  "https://www.dataforceff.com/orphan-marketplace",
+  "https://www.dataforceff.com/charity-league",
+  "https://www.dataforceff.com/tournament-of-warriors",
+  "https://www.dataforceff.com/southern-bluegrass",
+  "https://www.dataforceff.com/draft-boards",
+  "https://www.dataforceff.com/help-faq",
+  "https://www.dataforceff.com/help-faq2",
+  "https://www.dataforceff.com/house-rules",
+  "https://www.dataforceff.com/dataforce-sign-in",
+  "https://www.dataforceff.com/privacy-policy",
+  "https://www.dataforceff.com/protection"
+ ],
+ "sitemap_loc_count_seen": 500,
+ "js_candidates": [
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js",
+  "https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js",
+  "https://dataforceff.com/js/jquery.highlight.js",
+  "https://dataforceff.com/js/skinfx.js?v=1788558928",
+  "https://dataforceff.com/js/appskin.js?v=1788558901",
+  "https://dataforceff.com/js/lockerroom.js?v=1788558921",
+  "https://dataforceff.com/js/geolocation.js?v=1788558914",
+  "https://dataforceff.com/js/trulioo.js?v=1788558929",
+  "https://dataforceff.com/js/common.js?v=1788558909",
+  "https://dataforceff.com/js/graphics.js?v=1788558916",
+  "https://dataforceff.com/js/backbutton.js?v=1788558903",
+  "https://cdn.fantasypros.com/playercards/v2/auto_parse_nfl.js?junk=Tuesday 8th of September 2026 03:05:48 PM",
+  "https://dataforceff.com/js/jquery.jqplot.min.js",
+  "https://dataforceff.com/uploadifive/jquery.uploadifive.min.js",
+  "https://dataforceff.com/webcam/jquery.webcam.min.js"
+ ],
+ "js_fetched": [
+  {
+   "url": "https://dataforceff.com/js/appskin.js?v=1788558901",
+   "status": 200,
+   "bytes": 1140
+  },
+  {
+   "url": "https://dataforceff.com/js/skinfx.js?v=1788558928",
+   "status": 200,
+   "bytes": 20503
+  },
+  {
+   "url": "https://dataforceff.com/js/lockerroom.js?v=1788558921",
+   "status": 200,
+   "bytes": 13064
+  }
+ ],
+ "pricing_url": null,
+ "pricing_status": null,
+ "vendors_found": [
+  "sportsdata.io"
+ ],
+ "price_tokens": [],
+ "dns": {
+  "api.dataforceff.com": "NXDOMAIN (gaierror)",
+  "app.dataforceff.com": "NXDOMAIN (gaierror)",
+  "staging.dataforceff.com": "NXDOMAIN (gaierror)"
+ },
+ "search_used": "site:reddit.com <domain> complaint OR review",
+ "grep_summary": {}
+}

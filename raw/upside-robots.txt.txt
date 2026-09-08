@@ -1,0 +1,5 @@
+URL: https://upside.tools/robots.txt\nSTATUS: 200\n\nUser-Agent: *
+Allow: /
+Disallow: /api
+
+Sitemap: https://upside.tools/sitemap.xml

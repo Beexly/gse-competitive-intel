@@ -1,0 +1,23 @@
+URL: https://statpal.io/sitemap.xml\nSTATUS: 200\n\n<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://statpal.io</loc>
+        <priority>1.0</priority>
+        <changefreq>Monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://statpal.io/coverage/</loc>
+        <priority>0.8</priority>
+        <changefreq>Monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://statpal.io/privacy-policy/</loc>
+        <priority>0.1</priority>
+        <changefreq>Yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://statpal.io/terms-of-service/</loc>
+        <priority>0.1</priority>
+        <changefreq>Yearly</changefreq>
+    </url>
+</urlset>

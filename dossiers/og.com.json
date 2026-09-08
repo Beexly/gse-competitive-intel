@@ -1,0 +1,107 @@
+{
+  "domain": "og.com",
+  "disposition": "live",
+  "status": "CONFIRMED (Crypto.com-affiliated prediction market; Next.js on CloudFront+Cloudflare; no subscription pricing - trading platform with VIP program)",
+  "key_findings": "OG.com is a CFTC-regulated-style prediction market / event trading platform (\"Prediction Markets & Real-Time Odds\"), heavily promoted by Crypto.com (r/Crypto_com launch posts; Trading Technologies integration). Next.js app (web-assets.og.com chunks, app router: main-app chunk) behind Cloudflare + CloudFront. Nav exposes \"APIs\" and \"Ask Alpha\" (AI assistant). Markets span sports (NFL/NCAAF, ATP/WTA, MLB, soccer leagues, NBA, golf, esports, F1/NASCAR), crypto minute/2-hour/daily/weekly markets (BTC/ETH/XRP/SOL/ADA/DOGE/AVAX/LINK/DOT/XLM/BCH), economics, politics, climate. /vip page: invite-only VIP program (higher deposit limits, dedicated relationship manager, priority support) - NOT a subscription paywall; all prices on VIP page are contract/stake prices ($0.01-$1.00 range typical prediction-market share prices, plus promo amounts to $750). No isPremium/subscription tier gating found in bundles.",
+  "tech_stack": {
+    "frontend": "Next.js (app router; chunks on web-assets.og.com asset domain)",
+    "backend": "NOT CONFIRMED",
+    "database": "NOT CONFIRMED",
+    "cloud": "CloudFront via 1.1 d779abd... + Cloudflare edge",
+    "cdn": "Cloudflare + CloudFront",
+    "citations": [
+      "raw/og.com_home.html",
+      "raw/og.com_robots.txt"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": [
+      "NOT CONFIRMED: API docs page exists in nav (\"APIs\") but not fetched within budget"
+    ]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "\"Ask Alpha\" AI assistant surfaced in nav",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "raw/og.com_home.html"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [],
+    "citations": [
+      "no vendor strings (sportradar/statsperform/opta/genius/the-odds-api) found in fetched bundles"
+    ]
+  },
+  "product_limits": {
+    "limits": "Standard deposit limits; VIP tier raises deposit limits (invite-only)",
+    "upgrade_triggers": "VIP invite (higher deposit limits, rewards) - not a paywall",
+    "citation": "raw/og.com_vip.html"
+  },
+  "pricing": {
+    "web": "No subscription; trading platform with contract prices $0.01-$1.00; VIP is invite-only perks program",
+    "ios": "Get the App link present - app id NOT CONFIRMED within budget",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "raw/og.com_vip.html",
+      "raw/og.com_home.html"
+    ]
+  },
+  "customer_pain": [
+    {
+      "quote": "Has anyone tried this and is it legit? Prediction markets are a tough business. AI Bots Are Winning 98% of Pre[diction markets]",
+      "source": "https://www.reddit.com/r/PredictionMarkets/comments/1u8wzic/og_prediction_market/",
+      "date": "2026"
+    },
+    {
+      "quote": "We're excited to officially unveil the new era of prediction markets for sports fans with the launch of OG! (Crypto.com official)",
+      "source": "https://www.reddit.com/r/Crypto_com/comments/1qvcbb3/were_excited_to_officially_unveil_the_new_era_of/",
+      "date": "2026"
+    },
+    {
+      "quote": "OG.com gives users a way to trade event-style markets instead of placing traditional sportsbook bets. Promo CLEATZ gets new users up to $100",
+      "source": "https://www.reddit.com/r/PlayerPropsTonight/comments/1u29fqy/trying_ogcom_promo_code_cleatz_gets_new_users_up/",
+      "date": "2026"
+    }
+  ],
+  "discovered_paths": [
+    "/vip",
+    "/login",
+    "/signup",
+    "/climate",
+    "/crypto/*",
+    "/settings (robots-disallowed)",
+    "/portfolio (robots-disallowed)",
+    "web-assets.og.com"
+  ],
+  "discovered_targets": [
+    "crypto.com (OG.com operator affiliation)",
+    "tradingtechnologies.com (integration partner)"
+  ],
+  "discovery_metadata": {
+    "method": "urllib GET via fetcher.py pattern; 7 of 8 HTTP requests used",
+    "timestamp": "2026-09-08"
+  },
+  "requests_log": [],
+  "raw_files": [
+    "og.com_home.html",
+    "og.com_js_2513468b943a0bf0.css.js",
+    "og.com_js_39e93764-3a8a606352ff4227.js.js",
+    "og.com_js_517-50938a26d403d773.js.js",
+    "og.com_robots.txt",
+    "og.com_sitemap.xml",
+    "og.com_vip.html"
+  ],
+  "notes": [
+    "robots.txt explicitly allows GPTBot/ChatGPT-User/Google-Extended/PerplexityBot/ClaudeBot - AI-crawler-friendly policy",
+    "1 web_search used for community pain"
+  ]
+}

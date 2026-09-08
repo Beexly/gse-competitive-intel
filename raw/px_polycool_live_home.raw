@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17870675354"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17870675354');
+    </script>
+
+    <!-- X (Twitter) Pixel base code -->
+    <script>
+      !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exec?s.exec.apply(s,arguments):s.queue.push(arguments);
+      },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+      a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+      twq('config','qtqqu');
+    </script>
+    <!-- End X (Twitter) Pixel base code -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1044089854735801');
+      fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+
+    <!-- DataFast Analytics -->
+    <script
+      defer
+      data-website-id="dfid_9422pC4yF0yZ5FAIqE1SW"
+      data-domain="polycoolapp.com"
+      src="https://datafa.st/js/script.js">
+    </script>
+    
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polycool — Discover Top Wallets Across Prediction Markets</title>
+    <meta name="description" content="Polycool is the analytics and discovery app for prediction markets. Track top wallets, explore real-time activity, and uncover trends across thousands of markets.">
+    <meta name="author" content="Polycool" />
+    <meta name="keywords" content="prediction markets, analytics, wallet tracking, market discovery, on-chain insights, prediction market app, market trends">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="OeQNMPsxW_WcnE6qA4cng2aZMwE89bX6CB_TjR3jdTU" />
+    
+    <!-- Schema.org - SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Polycool",
+      "description": "Polycool is the analytics and discovery app for prediction markets. Track top wallets, explore real-time activity, and uncover trends across thousands of markets.",
+      "url": "https://polycoolapp.com",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free to download. 1% fee per trade."
+      }
+    }
+    </script>
+
+    <!-- Schema.org - Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Polycool",
+      "url": "https://polycoolapp.com",
+      "logo": "https://polycoolapp.com/favicon.png",
+      "sameAs": [
+        "https://x.com/PolycoolApp",
+        "https://t.me/PolycoolApp_bot"
+      ]
+    }
+    </script>
+
+    <!-- Schema.org - WebSite (enables sitelinks search) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Polycool",
+      "url": "https://polycoolapp.com"
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://polycoolapp.com/">
+    <meta property="og:site_name" content="Polycool">
+    <meta property="og:title" content="Polycool — Discover Top Wallets Across Prediction Markets">
+    <meta property="og:description" content="Polycool is the analytics and discovery app for prediction markets. Track top wallets, explore real-time activity, and uncover trends across thousands of markets.">
+    <meta property="og:image" content="https://polycoolapp.com/og-image-v2.png?v=2">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@polycoolapp" />
+    <meta name="twitter:creator" content="@polycoolapp" />
+    <meta name="twitter:title" content="Polycool — Discover Top Wallets Across Prediction Markets">
+    <meta name="twitter:description" content="Polycool is the analytics and discovery app for prediction markets. Track top wallets, explore real-time activity, and uncover trends across thousands of markets.">
+    <meta name="twitter:image" content="https://polycoolapp.com/og-image-v2.png?v=2">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <script type="module" crossorigin src="/assets/index-BR8QJ2U8.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DXi8Swd5.css">
+  </head>
+
+  <body>
+    <!-- Meta Pixel noscript fallback -->
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1044089854735801&ev=PageView&noscript=1"
+    /></noscript>
+    <div id="root"></div>
+    <noscript>
+      <div style="max-width:800px;margin:0 auto;padding:40px 20px;font-family:system-ui,sans-serif;color:#333">
+        <h1>Polycool — Discover Top Wallets Across Prediction Markets</h1>
+        <p>Polycool is the analytics and discovery app for prediction markets. Track top wallets, explore real-time activity, and uncover trends across thousands of markets. Non-custodial. Mobile-first.</p>
+        <h2>Features</h2>
+        <ul>
+          <li><a href="/features/copy-trading">Wallet Tracking</a> — Follow high-performing wallet activity across prediction markets</li>
+          <li><a href="/features/smart-feed">Smart Feed</a> — Real-time activity from verified high-performing wallets</li>
+          <li><a href="/features/alerts">Activity Alerts</a> — Custom notifications on wallet activity that matters</li>
+          <li><a href="/features/insiders">Insider Signals</a> — Surface large or unusual wallet movements as they happen</li>
+          <li><a href="/features/news">Market News</a> — Stay informed on prediction-market trends and narratives</li>
+          <li><a href="/features/auto-redeem">Resolution Tracking</a> — Follow market resolutions in real time</li>
+        </ul>
+        <h2>Pricing</h2>
+        <p>Free to download. 1% fee per trade. No subscription. No signup fee. <a href="/pricing">Learn more</a>.</p>
+        <h2>Top Polymarket Trader Leaderboards</h2>
+        <ul>
+          <li><a href="/top-10-polymarket-politics-traders">Top 10 Polymarket Politics Traders</a></li>
+          <li><a href="/top-10-polymarket-crypto-traders">Top 10 Polymarket Crypto Traders</a></li>
+          <li><a href="/top-10-polymarket-sports-traders">Top 10 Polymarket Sports Traders</a></li>
+          <li><a href="/top-10-polymarket-finance-traders">Top 10 Polymarket Finance Traders</a></li>
+          <li><a href="/top-10-polymarket-culture-traders">Top 10 Polymarket Culture Traders</a></li>
+          <li><a href="/top-10-polymarket-weather-traders">Top 10 Polymarket Weather Traders</a></li>
+          <li><a href="/top-10-polymarket-basketball-traders">Top 10 Polymarket Basketball Traders</a></li>
+          <li><a href="/top-10-polymarket-soccer-traders">Top 10 Polymarket Soccer Traders</a></li>
+          <li><a href="/top-10-polymarket-tennis-traders">Top 10 Polymarket Tennis Traders</a></li>
+          <li><a href="/top-10-polymarket-nhl-traders">Top 10 Polymarket NHL Traders</a></li>
+          <li><a href="/top-10-polymarket-esports-traders">Top 10 Polymarket Esports Traders</a></li>
+        </ul>
+        <h2>Learn</h2>
+        <ul>
+          <li><a href="/learn/how-polymarket-works">How Polymarket Works</a></li>
+          <li><a href="/learn/how-to-copy-trade">How to Copy Trade on Polymarket</a></li>
+          <li><a href="/learn/prediction-market-odds">Prediction Market Odds Explained</a></li>
+          <li><a href="/learn/polymarket-trading-strategies">Best Polymarket Trading Strategies</a></li>
+          <li><a href="/learn/polymarket-beginner-guide">Polymarket Beginner Guide</a></li>
+        </ul>
+        <h2>Free Tools</h2>
+        <ul>
+          <li><a href="/tools/odds-converter">Prediction Market Odds Converter</a></li>
+          <li><a href="/tools/profit-calculator">Polymarket Profit Calculator</a></li>
+        </ul>
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="/docs">Documentation & Video Tutorials</a></li>
+          <li><a href="/blog">Blog — Prediction Market Insights</a></li>
+          <li><a href="/hiring">Careers at Polycool</a></li>
+        </ul>
+        <h2>FAQ</h2>
+        <dl>
+          <dt>What is Polycool?</dt><dd>A discovery and analytics app for prediction markets, with wallet tracking, smart feeds, activity alerts, news, and resolution tracking.</dd>
+          <dt>Is Polycool a market or an exchange?</dt><dd>No. Polycool is not a market, exchange, or broker. Markets, pricing, and order matching live on third-party prediction-market platforms — Polycool is the discovery, analytics, and wallet layer on top.</dd>
+          <dt>Where do my funds sit?</dt><dd>Always in your own non-custodial wallet, secured by Privy. Polycool never holds, custodies, or has access to your funds.</dd>
+          <dt>What happens when I act on something I discover?</dt><dd>Your own non-custodial wallet interacts directly with the underlying third-party prediction market. Polycool surfaces the opportunity and helps you act on it from your wallet — it does not run the market itself.</dd>
+          <dt>How much does Polycool cost?</dt><dd>Free to download and use as a discovery and analytics app. A 1% fee applies on each trade you choose to make. Standard third-party market fees may also apply on the underlying prediction-market platforms.</dd>
+        </dl>
+        <p><a href="https://t.me/PolycoolApp_bot">Open Polycool App</a> | <a href="https://x.com/PolycoolApp">Twitter/X</a> | <a href="https://t.me/+koYrnHPGHLFkMzNk">Telegram Community</a></p>
+      </div>
+    </noscript>
+  </body>
+</html>

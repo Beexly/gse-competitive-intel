@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Prediction Market Leaderboard - Top Polymarket & Kalshi Traders | Live P&L Rankings 2025</title>
+
+    <meta name="description" content="Track the top prediction market traders on our live leaderboard. Compare real-time P&L performance, profit stats, and trading activity from Polymarket and Kalshi's best traders. Daily, weekly, monthly rankings updated live. Find top prediction market top traders and their wallet addresses." />
+    <meta name="keywords" content="prediction market leaderboard, prediction leaderboard, prediction market top traders, top prediction market traders, polymarket leaderboard, polymarket traders, polymarket top traders, kalshi leaderboard, kalshi traders, kalshi top traders, prediction market rankings, best prediction traders, polymarket wallet, kalshi wallet, prediction market stats, trading leaderboard, forecasting leaderboard, prediction markets, best traders, trading performance, polymarket profits, kalshi profits, prediction market PnL, top traders 2025, crypto prediction markets, election prediction markets, sports prediction markets, polymarket rankings, kalshi rankings" />
+    <meta name="author" content="Prediction Market Leaderboard" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    <link rel="canonical" href="https://predicting.top/" />
+    <link rel="sitemap" type="application/xml" href="https://predicting.top/sitemap.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Prediction Market Leaderboard" />
+    <meta property="og:title" content="Prediction Market Leaderboard - Top Polymarket & Kalshi Traders | Live Rankings" />
+    <meta property="og:description" content="Live prediction market leaderboard tracking top traders from Polymarket and Kalshi. Real-time P&L rankings, profit stats, and wallet addresses for the best prediction market traders." />
+    <meta property="og:url" content="https://predicting.top/" />
+    <meta property="og:image" content="https://predicting.top/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Prediction Market Leaderboard showing top Polymarket and Kalshi traders with P&L rankings" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@predictionlb" />
+    <meta name="twitter:title" content="Prediction Market Leaderboard - Top Traders Rankings" />
+    <meta name="twitter:description" content="Live prediction leaderboard tracking top prediction market traders from Polymarket & Kalshi. Real-time P&L, profits, and wallet stats." />
+    <meta name="twitter:image" content="https://predicting.top/og-image.png" />
+    <meta name="twitter:image:alt" content="Prediction Market Leaderboard with top trader rankings" />
+    
+    <meta name="theme-color" content="#000000" />
+    <meta name="application-name" content="Prediction Market Leaderboard" />
+    <meta name="apple-mobile-web-app-title" content="PM Leaderboard" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    <link rel="icon" type="image/png" href="/favicon.png?v=2" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-93TYW3C6G5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-93TYW3C6G5');
+    </script>
+
+    <!-- Theme script in head to prevent flash of unstyled content -->
+    <script>
+      (function() {
+        var t = localStorage.getItem('theme');
+        document.documentElement.classList.add(!t || t === 'dark' ? 'dark' : 'light');
+      })();
+    </script>
+
+    <!-- Preload critical API data - starts fetching before JS loads -->
+    <link rel="preload" href="/api/leaderboard?period=1d" as="fetch" crossorigin="anonymous">
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Prediction Market Leaderboard",
+      "alternateName": ["Prediction Leaderboard", "Polymarket Leaderboard", "Kalshi Leaderboard"],
+      "applicationCategory": "FinanceApplication",
+      "description": "Live prediction market leaderboard tracking top traders from Polymarket and Kalshi. View real-time P&L rankings, profit stats, wallet addresses, and trading performance for the best prediction market traders.",
+      "url": "https://predicting.top/",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "100"
+      },
+      "keywords": "prediction market leaderboard, prediction leaderboard, prediction market top traders, polymarket leaderboard, polymarket traders, kalshi leaderboard, kalshi traders, prediction market rankings, trading leaderboard, forecasting, market rankings, polymarket wallet, kalshi wallet"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Prediction Market Leaderboard",
+      "url": "https://predicting.top/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://predicting.top/?search={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Top Prediction Market Traders",
+      "description": "Ranked list of top prediction market traders from Polymarket and Kalshi platforms",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": "100"
+    }
+    </script>
+    <script type="module" crossorigin src="/assets/index-BrpBzAGO.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/query-Dwavczjw.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-76DDk0xX.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-iOFsfg_z.css">
+  </head>
+  <body>
+    <div id="root">
+      <!-- Instant skeleton - shows before React loads, makes page feel instant -->
+      <style>
+        .skeleton-page{min-height:100vh;background:#0a0a0a;color:#fff;padding:20px;font-family:system-ui,sans-serif}
+        .skeleton-header{max-width:56rem;margin:0 auto}
+        .skeleton-title{font-size:1.5rem;margin-bottom:8px;color:#fff}
+        .skeleton-subtitle{font-size:0.875rem;color:#888;margin-bottom:24px}
+        .skeleton-controls{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+        .skeleton-btn{height:32px;width:60px;background:#222;border-radius:4px}
+        .skeleton-search{height:32px;width:180px;background:#222;border-radius:4px}
+        .skeleton-table{width:100%;border-collapse:collapse}
+        .skeleton-row{border-bottom:1px solid #222}
+        .skeleton-cell{padding:12px 8px}
+        .skeleton-avatar{width:36px;height:36px;background:#222;border-radius:50%}
+        .skeleton-text{height:16px;background:#222;border-radius:4px}
+        .skeleton-text-sm{height:12px;background:#222;border-radius:4px;width:60%}
+        @keyframes shimmer{0%{opacity:0.5}50%{opacity:1}100%{opacity:0.5}}
+        .shimmer{animation:shimmer 1.5s infinite}
+        @media(prefers-color-scheme:light){.skeleton-page{background:#fff}.skeleton-title{color:#000}.skeleton-btn,.skeleton-search,.skeleton-avatar,.skeleton-text,.skeleton-text-sm{background:#eee}.skeleton-row{border-color:#eee}}
+      </style>
+      <div class="skeleton-page">
+        <div class="skeleton-header">
+          <div class="skeleton-title">Prediction Leaderboard</div>
+          <div class="skeleton-subtitle">Track the Top Prediction Traders in Realtime</div>
+          <div class="skeleton-controls">
+            <div class="skeleton-search shimmer"></div>
+            <div class="skeleton-btn shimmer"></div>
+            <div class="skeleton-btn shimmer"></div>
+            <div class="skeleton-btn shimmer"></div>
+          </div>
+          <table class="skeleton-table">
+            <tbody>
+              <tr class="skeleton-row"><td class="skeleton-cell" style="width:40px"><div class="skeleton-text shimmer" style="width:20px"></div></td><td class="skeleton-cell" style="width:50px"><div class="skeleton-avatar shimmer"></div></td><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:120px"></div></td><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:80px"></div></td></tr>
+              <tr class="skeleton-row"><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:20px"></div></td><td class="skeleton-cell"><div class="skeleton-avatar shimmer"></div></td><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:100px"></div></td><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:70px"></div></td></tr>
+              <tr class="skeleton-row"><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:20px"></div></td><td class="skeleton-cell"><div class="skeleton-avatar shimmer"></div></td><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:140px"></div></td><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:60px"></div></td></tr>
+              <tr class="skeleton-row"><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:20px"></div></td><td class="skeleton-cell"><div class="skeleton-avatar shimmer"></div></td><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:90px"></div></td><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:75px"></div></td></tr>
+              <tr class="skeleton-row"><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:20px"></div></td><td class="skeleton-cell"><div class="skeleton-avatar shimmer"></div></td><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:110px"></div></td><td class="skeleton-cell"><div class="skeleton-text shimmer" style="width:65px"></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

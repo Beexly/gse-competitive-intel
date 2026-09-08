@@ -1,0 +1,11 @@
+URL: https://www.goalserve.com/robots.txt\nSTATUS: 200\n\nUser-agent: *
+Disallow: /getfeed/
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /

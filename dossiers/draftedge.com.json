@@ -1,0 +1,95 @@
+{
+ "domain": "draftedge.com",
+ "tech_stack": {
+  "frontend": "NOT CONFIRMED (scan fetched 0 JS bundles; home.html shows inline vanilla JS for mode toggle with localStorage 'de-mode', premium badge CSS classes)",
+  "backend": "Server headers show 'Sucuri/Cloudproxy' at edge; /api/optimizer returns an Apache-style '403 Forbidden' (raw/draftedge_com_api_optimizer.txt) implying Apache origin server behind Sucuri",
+  "database": "NOT CONFIRMED (no evidence in raw files)",
+  "cloud": "Sucuri Cloudproxy WAF/CDN in front of origin (raw/scan-draftedge_com.json request_log headers)",
+  "cdn": "Sucuri/Cloudproxy (server header, raw/scan-draftedge_com.json)",
+  "citations": [
+   "raw/scan-draftedge_com.json",
+   "raw/draftedge_com_home.html",
+   "raw/draftedge_com_api_optimizer.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/api/optimizer",
+    "auth_required": "yes (403 Forbidden without session)",
+    "tier": "NOT CONFIRMED",
+    "sample_response": "403 Forbidden HTML (Apache default)",
+    "citation": "raw/draftedge_com_api_optimizer.txt"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (no graphql evidence in raw files)",
+  "websocket_endpoints": "NOT CONFIRMED (no ws/wss strings in raw/scan-draftedge_com.json greps or home.html)",
+  "rate_limits": "Plan-based build caps act as product limits (15 builds/day on Rookie); API-level rate limits NOT CONFIRMED",
+  "citations": [
+   "raw/draftedge_com_api_optimizer.txt",
+   "raw/draftedge_com_pricing.html"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "AI-graded player props ('AI that grades every prop: over, under, or pass') and 'AI prop breakdowns' (matchup edge, recent form, line value, recommended action); token-metered at 50 tokens per full breakdown",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "Projections refresh every 5 minutes (meta description, raw/draftedge_com_home.html)",
+  "citation": "raw/draftedge_com_home.html (og:description), raw/draftedge_com_pricing.html (token FAQ)"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED (no numSims/monteCarlo strings in scan greps; home.html greps for monte/simulation returned only marketing copy)",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "raw/scan-draftedge_com.json (greps section), raw/draftedge_com_home.html"
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED (grep for sportradar|statsperform|opta|genius|the-odds-api|sportsdata|nflverse|fantasydata across home+pricing returned zero matches)",
+  "citations": [
+   "raw/draftedge_com_home.html",
+   "raw/draftedge_com_pricing.html"
+  ]
+ },
+ "product_limits": {
+  "limits": "Rookie $34.85/mo: 20 lineups/build, 15 builds/day, 25 saved lineups, 50 AI prop breakdowns/mo (2,500 tokens), no backtesting archive. Pro $49.95/mo: 150 lineups/build, unlimited builds, unlimited saved, 400 breakdowns/mo (20,000 tokens), 44-season backtesting archive, live arb alerts (daily count). Sharp $74.95/mo: 500 lineups/build, 800 breakdowns/mo (40,000 tokens), full live arb lines, priority support. All plans cover 6 sports (NFL/NBA/MLB/NHL/CFB/CBB) with CSV export to DraftKings/FanDuel",
+  "upgrade_triggers": "Most restrictive: Rookie 15 builds/day + 20 lineups/build + no backtesting archive; token cap (2,500/mo) caps AI prop breakdowns at ~50/mo",
+  "citation": "raw/draftedge_com_pricing.html (pricing body in raw/scan-draftedge_com.json pricing_body)"
+ },
+ "pricing": {
+  "web": "Rookie $34.85/mo, Pro $49.95/mo, Sharp $74.95/mo; month-to-month cancel anytime; 25% off forever if user sets DraftEdge logo as DraftKings/FanDuel avatar; prorated upgrades",
+  "ios": "NOT CONFIRMED (no iOS app evidence in raw files)",
+  "android": "NOT CONFIRMED (no Android app evidence in raw files)",
+  "citations": [
+   "raw/draftedge_com_pricing.html",
+   "raw/scan-draftedge_com.json"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "DFS optimizers are largely overrated IMO. Perhaps I am not using them properly though, would someone care to chime in?",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/d0v0sq/fantasy_pros_dfs_optimizer/ (saved in raw/community-pain-draftedge.json; re-confirmed via raw/pain-search-recovery2.json)",
+   "date": "NOT CONFIRMED"
+  },
+  {
+   "quote": "I am curious for those of you that play DFS, do you use an optimizer? Which sites do you like best and how much do they typically cost?",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1u1gud9/dfs_optimizers/ (raw/pain-search-recovery2.json)",
+   "date": "NOT CONFIRMED"
+  }
+ ],
+ "discovered_paths": [
+  "/api/optimizer (403)",
+  "/membership-info/",
+  "/register/?plan=pro",
+  "/nfl/optimizer/",
+  "/nba/optimizer/",
+  "/nfl/nfl-weekly-projections/",
+  "/nfl/nfl-defense-vs-pos/",
+  "/nfl/nfl-fantasy-football-player-props/"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "recovery composition from raw/ evidence collected by prior scan agent (homepage+robots+sitemap+pricing fetch; no JS bundles fetched by prior agent)",
+  "timestamp": "2026-09-08T15:09:13.685021"
+ },
+ "disposition": "live"
+}

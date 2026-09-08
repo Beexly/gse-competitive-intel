@@ -1,0 +1,100 @@
+{
+  "domain": "truegamestats.com",
+  "disposition": "live",
+  "status": "NOT CONFIRMED (parked/placeholder - no product deployed)",
+  "key_findings": "Domain is LIVE but serves only a Squarespace \"Coming Soon / under construction\" placeholder page (UploadServer + varnish via Squarespace). robots.txt returns 401 Unauthorized (misconfigured or auth-gated); sitemap.xml returns the Coming Soon HTML, not XML; /api and /api/v1 return the same placeholder HTML. No product, no API, no pricing, no JS app bundles of its own (fetched JS was generic Squarespace polyfiller). One opta string in Squarespace runtime JS is a false positive (Squarespace platform code, not product integration).",
+  "tech_stack": {
+    "frontend": "Squarespace placeholder (\"Coming Soon\")",
+    "backend": "NOT CONFIRMED (none exposed)",
+    "database": "NOT CONFIRMED",
+    "cloud": "Squarespace",
+    "cdn": "Squarespace/UploadServer + varnish (via header)",
+    "citations": [
+      "raw/truegamestats.com_home.html",
+      "raw/truegamestats.com_sitemap.xml"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": [
+      "raw/truegamestats.com_sitemap.xml (all probes return placeholder HTML)"
+    ]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [],
+    "citations": [
+      "raw/truegamestats.com_js_modern.js.js (opta hit is Squarespace runtime code, false positive)"
+    ]
+  },
+  "product_limits": {
+    "limits": "NOT CONFIRMED",
+    "upgrade_triggers": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "pricing": {
+    "web": "NOT CONFIRMED (no product/pricing page exists)",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "raw/truegamestats.com_home.html"
+    ]
+  },
+  "customer_pain": [],
+  "discovered_paths": [],
+  "discovered_targets": [],
+  "discovery_metadata": {
+    "method": "urllib GET via fetcher.py pattern; 8-HTTP-req budget",
+    "timestamp": "2026-09-08"
+  },
+  "requests_log": [
+    {
+      "url": "https://truegamestats.com/",
+      "status": 200
+    },
+    {
+      "url": "https://truegamestats.com/robots.txt",
+      "status": 401
+    },
+    {
+      "url": "https://truegamestats.com/sitemap.xml",
+      "status": 200,
+      "note": "Coming Soon HTML, not XML"
+    },
+    {
+      "url": "https://truegamestats.com/api",
+      "status": 200,
+      "note": "placeholder HTML"
+    },
+    {
+      "url": "https://truegamestats.com/api/v1",
+      "status": 200,
+      "note": "placeholder HTML"
+    }
+  ],
+  "raw_files": [
+    "truegamestats.com_home.html",
+    "truegamestats.com_robots.txt",
+    "truegamestats.com_sitemap.xml",
+    "truegamestats.com_js_modern.js.js"
+  ],
+  "notes": [
+    "robots.txt 401 is unusual - documented as-is; domain not dead (200 on HTTP) but product NOT CONFIRMED (parked)",
+    "6 HTTP requests used - budget honored",
+    "web_search returned only irrelevant hits (gaming subs matching \"true game stats\" words) - no community presence for the betting product; customer_pain left empty"
+  ]
+}

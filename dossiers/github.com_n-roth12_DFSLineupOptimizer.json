@@ -1,0 +1,103 @@
+{
+ "domain": "github.com/n-roth12/DFSLineupOptimizer",
+ "type": "open-source-repo",
+ "tech_stack": {
+  "frontend": "none (library/notebooks)",
+  "backend": "Python",
+  "database": "CSV inputs (DK/FD/Yahoo roster exports)",
+  "cloud": "n/a",
+  "cdn": "n/a",
+  "citations": [
+   "raw/gh-meta-n-roth12__DFSLineupOptimizer.json",
+   "raw/gh-tree-n-roth12__DFSLineupOptimizer.json"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "DraftKings/FanDuel/Yahoo salary CSV ingestion (parsers/ in lineup_optimizer)"
+  ],
+  "graphql_schema": "none",
+  "websocket_endpoints": [],
+  "rate_limits": "n/a (client-side lib)",
+  "citations": [
+   "raw/gh-tree-n-roth12__DFSLineupOptimizer.json"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "DFS lineup construction as constrained optimization",
+   "where": "lineup_optimizer/lineup_builder.py, multi_lineup_builder.py, lineup_tag_rules.py",
+   "evidence": "module layout in tree; parsers for DK/FD/Yahoo salary CSVs; multi-lineup builder"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "n/a (research repo)",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "DraftKings, FanDuel, Yahoo (salary CSVs)"
+  ],
+  "citations": [
+   "raw/gh-tree-n-roth12__DFSLineupOptimizer.json"
+  ]
+ },
+ "product_limits": {
+  "limits": "open source, no caps",
+  "upgrade_triggers": "n/a",
+  "citation": "raw/gh-meta-n-roth12__DFSLineupOptimizer.json"
+ },
+ "pricing": {
+  "web": "free/open source",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "raw/gh-meta-n-roth12__DFSLineupOptimizer.json"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  ".circleci",
+  ".circleci/config.yml",
+  ".gitignore",
+  ".vscode",
+  ".vscode/settings.json",
+  "DK_full_roster_example.csv",
+  "FANDUEL_FULL_ROSTER_export.csv",
+  "FanDuel_full_roster_example.csv",
+  "LICENSE",
+  "Pipfile",
+  "Pipfile.lock",
+  "README.md",
+  "Yahoo_full_roster_example.csv",
+  "generate.py",
+  "lineup_optimizer",
+  "lineup_optimizer/__init__.py",
+  "lineup_optimizer/exceptions.py",
+  "lineup_optimizer/exporter",
+  "lineup_optimizer/exporter/__init__.py",
+  "lineup_optimizer/exporter/exporter.py",
+  "lineup_optimizer/lineup.py",
+  "lineup_optimizer/lineup_builder.py",
+  "lineup_optimizer/lineup_builder_slot.py",
+  "lineup_optimizer/lineup_tag_rules.py",
+  "lineup_optimizer/multi_lineup_builder.py"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "stars": 12,
+  "license": "MIT",
+  "archived": false,
+  "pushed_at": "2024-09-13T06:04:20Z",
+  "description": "A Python project for generating NFL daily fantasy contest lineups.",
+  "timestamp": "2026-09-08T14:07:11.916123"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

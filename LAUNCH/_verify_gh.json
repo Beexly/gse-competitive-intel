@@ -1,0 +1,479 @@
+{
+ "repos": {
+  "PySport/kloppy": {
+   "found": true,
+   "full": "PySport/kloppy",
+   "stars": 550,
+   "lic": "BSD-3-Clause",
+   "pushed": "2026-09-01",
+   "desc": "kloppy: standardizing soccer tracking- and event data",
+   "url": "https://github.com/PySport/kloppy",
+   "lang": "Python",
+   "archived": false
+  },
+  "swar/nba_api": {
+   "found": true,
+   "full": "swar/nba_api",
+   "stars": 3768,
+   "lic": "MIT",
+   "pushed": "2026-08-16",
+   "desc": "An API Client package to access the APIs for NBA.com",
+   "url": "https://github.com/swar/nba_api",
+   "lang": "Python",
+   "archived": false
+  },
+  "probberechts/soccerdata": {
+   "found": true,
+   "full": "probberechts/soccerdata",
+   "stars": 2062,
+   "lic": "NOASSERTION",
+   "pushed": "2026-08-21",
+   "desc": "\u26cf\u26bd Scrape soccer data from Club Elo, ESPN, FBref, Football-Data.co.uk, Sofascore, SoFIFA, Understat and WhoScored. ",
+   "url": "https://github.com/probberechts/soccerdata",
+   "lang": "Python",
+   "archived": false
+  },
+  "scikit-learn-contrib/MAPIE": {
+   "found": true,
+   "full": "scikit-learn-contrib/MAPIE",
+   "stars": 1587,
+   "lic": "BSD-3-Clause",
+   "pushed": "2026-09-08",
+   "desc": "A scikit-learn-compatible library for estimating prediction intervals and controlling risks, based on conformal predictions.",
+   "url": "https://github.com/scikit-learn-contrib/MAPIE",
+   "lang": "Jupyter Notebook",
+   "archived": false
+  },
+  "henrikbostrom/crepes": {
+   "found": true,
+   "full": "henrikbostrom/crepes",
+   "stars": 582,
+   "lic": "BSD-3-Clause",
+   "pushed": "2026-07-08",
+   "desc": "Python package for conformal prediction",
+   "url": "https://github.com/henrikbostrom/crepes",
+   "lang": "Python",
+   "archived": false
+  },
+  "deel-ai/puncc": {
+   "found": true,
+   "full": "deel-ai/puncc",
+   "stars": 404,
+   "lic": null,
+   "pushed": "2026-09-07",
+   "desc": "\ud83d\udc4b Puncc is a python library for predictive uncertainty quantification using conformal prediction.",
+   "url": "https://github.com/deel-ai/puncc",
+   "lang": "Python",
+   "archived": false
+  },
+  "ffverse/ffsimulator": {
+   "found": false,
+   "status": 403
+  },
+  "JeffSackmann/tennis_atp": {
+   "found": false,
+   "status": 403
+  },
+  "nntrn/espn-wiki": {
+   "found": false,
+   "status": 403
+  },
+  "pseudo-r/Public-ESPN-API": {
+   "found": false,
+   "status": 403
+  },
+  "CFBD/cfbd-python": {
+   "found": false,
+   "status": 403
+  },
+  "pipeworx-io/mcp-odds-api": {
+   "found": false,
+   "status": 403
+  },
+  "odds-api-io/odds-api-mcp-server": {
+   "found": false,
+   "status": 403
+  },
+  "coreyjs/nhl-api-py": {
+   "found": false,
+   "status": 403
+  },
+  "statsbomb/statsbombpy": {
+   "found": false,
+   "status": 403
+  },
+  "martineastwood/penaltyblog": {
+   "found": false,
+   "status": 403
+  },
+  "LeSingh1/nba-api": {
+   "found": false,
+   "status": 403
+  },
+  "OpenLigaDB/OpenLigaDB-Samples": {
+   "found": false,
+   "status": 403
+  },
+  "valeman/awesome-conformal-prediction": {
+   "found": false,
+   "status": 403
+  },
+  "aangelopoulos/conformal-prediction": {
+   "found": false,
+   "status": 403
+  },
+  "ml-stat-Sustech/TorchCP": {
+   "found": false,
+   "status": 403
+  },
+  "superlinear-ai/conformal-tights": {
+   "found": false,
+   "status": 403
+  },
+  "salesforce/online_conformal": {
+   "found": false,
+   "status": 403
+  },
+  "climate/properscoring": {
+   "found": false,
+   "status": 403
+  },
+  "FabianKueppers/netcal": {
+   "found": false,
+   "status": 403
+  },
+  "ddella/libcalibration": {
+   "found": false,
+   "status": 403
+  },
+  "JeffSackmann/tennis_wta": {
+   "found": false,
+   "status": 403
+  },
+  "sportradar": {
+   "found": false,
+   "status": 403
+  },
+  "fastf1": {
+   "found": false,
+   "status": 403
+  },
+  "TheLionNet/nhlscraper": {
+   "found": false,
+   "status": 403
+  },
+  "sinhrks/nhlscraper": {
+   "found": false,
+   "status": 403
+  },
+  "Colehaigler/nhl_data": {
+   "found": false,
+   "status": 403
+  },
+  "Hicruben/world-cup-2026-prediction-model": {
+   "found": false,
+   "status": 403
+  },
+  "Mstolte02/cfb-model-v3": {
+   "found": false,
+   "status": 403
+  },
+  "xandao-dev/monte-carlo-betting-simulations": {
+   "found": false,
+   "status": 403
+  },
+  "kyleskom/NFL-Medical": {
+   "found": false,
+   "status": 403
+  },
+  "roclark/sportsipy": {
+   "found": false,
+   "status": 403
+  },
+  "tsysms/statsmodels": {
+   "found": false,
+   "status": 403
+  },
+  "nicoderv/football-data-co-uk": {
+   "found": false,
+   "status": 403
+  },
+  "pysgambler/football-data-co-uk": {
+   "found": false,
+   "status": 403
+  }
+ },
+ "search": {
+  "nhl_data": [
+   {
+    "full": "HarryShomer/Hockey-Scraper",
+    "stars": 157,
+    "lic": "GPL-3.0",
+    "pushed": "2024-06-26",
+    "desc": "Python Package for scraping NHL Play-by-Play and Shift data",
+    "url": "https://github.com/HarryShomer/Hockey-Scraper"
+   },
+   {
+    "full": "Cophy08/nhlscrapi",
+    "stars": 0,
+    "lic": "Apache-2.0",
+    "pushed": "2015-08-20",
+    "desc": "Python based web scraper API for NHL game data",
+    "url": "https://github.com/Cophy08/nhlscrapi"
+   },
+   {
+    "full": "KingKobra7899/nhl-scraper",
+    "stars": 0,
+    "lic": "MIT",
+    "pushed": "2025-12-21",
+    "desc": "A python library for scraping nhl data",
+    "url": "https://github.com/KingKobra7899/nhl-scraper"
+   },
+   {
+    "full": "Hest0/nhl_score_scraper",
+    "stars": 0,
+    "lic": null,
+    "pushed": "2023-05-07",
+    "desc": "Python script to parse nhl data",
+    "url": "https://github.com/Hest0/nhl_score_scraper"
+   },
+   {
+    "full": "cjtdevil/nhl_playbyplay_scraper",
+    "stars": 0,
+    "lic": "MIT",
+    "pushed": "2025-05-31",
+    "desc": "NHL play-by-play data scraper and parser in Python, using requests, pandas, etc.",
+    "url": "https://github.com/cjtdevil/nhl_playbyplay_scraper"
+   }
+  ],
+  "netcal": [],
+  "openligadb": [
+   {
+    "full": "OpenLigaDB/OpenLigaDB-Samples",
+    "stars": 181,
+    "lic": "Apache-2.0",
+    "pushed": "2026-06-07",
+    "desc": "Code-Samples und Issue-Tracker for using OpenLigaDB-Api",
+    "url": "https://github.com/OpenLigaDB/OpenLigaDB-Samples"
+   },
+   {
+    "full": "naltatis/openligadb-json-api",
+    "stars": 20,
+    "lic": null,
+    "pushed": "2014-10-17",
+    "desc": "a simple json api to openLigaDB's soap api",
+    "url": "https://github.com/naltatis/openligadb-json-api"
+   },
+   {
+    "full": "oweitman/ioBroker.openligadb",
+    "stars": 5,
+    "lic": "MIT",
+    "pushed": "2026-09-08",
+    "desc": "ioBroker Adapter to get soccer sport match results from OpenLigaDB",
+    "url": "https://github.com/oweitman/ioBroker.openligadb"
+   },
+   {
+    "full": "andinger/OpenLigaDbApi",
+    "stars": 2,
+    "lic": null,
+    "pushed": "2016-04-05",
+    "desc": "Wraps the SOAP-based API of http://www.openligadb.de/ and returns easy-to-use PHP-Objects",
+    "url": "https://github.com/andinger/OpenLigaDbApi"
+   },
+   {
+    "full": "wlbr/openligadb",
+    "stars": 0,
+    "lic": null,
+    "pushed": "2026-03-23",
+    "desc": "Go client library to OpenligaDB https://www.openligadb.de/",
+    "url": "https://github.com/wlbr/openligadb"
+   }
+  ],
+  "scoremeridian": [],
+  "sportsgeek": [
+   {
+    "full": "rushabh-jain-452/sportsgeek_backend_api",
+    "stars": 0,
+    "lic": null,
+    "pushed": "2023-03-12",
+    "desc": "SportsGeek Project Backend developed in Spring Boot.",
+    "url": "https://github.com/rushabh-jain-452/sportsgeek_backend_api"
+   }
+  ],
+  "elo-sports-burke": [
+   {
+    "full": "Larryzpl123/FOOSBALL-ELOSYSTEM",
+    "stars": 8,
+    "lic": "MIT",
+    "pushed": "2026-07-27",
+    "desc": "An Elo rating and ranking system for casual foosball: separate offense and defense ratings, a custom Fibonacci rating-protection scheme, an 11-tier rank ladder,",
+    "url": "https://github.com/Larryzpl123/FOOSBALL-ELOSYSTEM"
+   },
+   {
+    "full": "btatkinson/sportsball-elo",
+    "stars": 9,
+    "lic": null,
+    "pushed": "2019-03-04",
+    "desc": "A python implementation of Elo that compares it to other ratings methods",
+    "url": "https://github.com/btatkinson/sportsball-elo"
+   },
+   {
+    "full": "Geeniee1/python_elo",
+    "stars": 0,
+    "lic": "NOASSERTION",
+    "pushed": "2025-12-04",
+    "desc": "Elo rating system for top sports leagues across seasons*",
+    "url": "https://github.com/Geeniee1/python_elo"
+   },
+   {
+    "full": "tefirman/sportsref-nfl",
+    "stars": 1,
+    "lic": "MIT",
+    "pushed": "2026-02-17",
+    "desc": "Comprehensive Python library for scraping NFL data from Pro Football Reference, including schedules, player statistics, draft information, and advanced metrics ",
+    "url": "https://github.com/tefirman/sportsref-nfl"
+   },
+   {
+    "full": "except-pass/sports-parity",
+    "stars": 0,
+    "lic": "NOASSERTION",
+    "pushed": "2026-06-16",
+    "desc": "Is competitive parity increasing in sports? One schedule-adjusted rating engine across seven competitions (NFL/NBA/MLB/NHL + college FB/BB + international socce",
+    "url": "https://github.com/except-pass/sports-parity"
+   }
+  ],
+  "dixon-coles-ai": [
+   {
+    "full": "abailey81/MatchOracle",
+    "stars": 7,
+    "lic": "MIT",
+    "pushed": "2026-03-15",
+    "desc": "Deep ensemble EPL match prediction engine \u2014 13 base learners, Dixon-Coles statistical model, 376+ engineered features, 8 data sources, NLP sentiment analysis. 6",
+    "url": "https://github.com/abailey81/MatchOracle"
+   },
+   {
+    "full": "BhunZ/StatStriker",
+    "stars": 5,
+    "lic": null,
+    "pushed": "2026-09-07",
+    "desc": "Premier League match predictor \u2014 automated weekly pipeline, three-model ensemble with Dixon-Coles, FastAPI dashboard",
+    "url": "https://github.com/BhunZ/StatStriker"
+   },
+   {
+    "full": "callumfm/dixon-coles",
+    "stars": 0,
+    "lic": "MIT",
+    "pushed": "2026-08-27",
+    "desc": "Fast Python implementation of the Dixon-Coles football match prediction model",
+    "url": "https://github.com/callumfm/dixon-coles"
+   },
+   {
+    "full": "Charliedrakebro/dixon-coles-football-betting-model",
+    "stars": 0,
+    "lic": null,
+    "pushed": "2026-08-30",
+    "desc": "Dixon-Coles football prediction model in Python \u2014 maximum likelihood estimation with time-decay weighting, validated via walk-forward backtesting against bookma",
+    "url": "https://github.com/Charliedrakebro/dixon-coles-football-betting-model"
+   },
+   {
+    "full": "GitSimaao/pl-dixon-coles",
+    "stars": 0,
+    "lic": "MIT",
+    "pushed": "2026-09-01",
+    "desc": "Dixon-Coles model for the Premier League, backtested walk-forward over nine seasons against Pinnacle's closing line. It loses by 0.017 nats per match \u2014 and says",
+    "url": "https://github.com/GitSimaao/pl-dixon-coles"
+   }
+  ],
+  "mlb-statsapi": [
+   {
+    "full": "toddrob99/MLB-StatsAPI",
+    "stars": 843,
+    "lic": "GPL-3.0",
+    "pushed": "2026-06-02",
+    "desc": "Python wrapper for MLB Stats API",
+    "url": "https://github.com/toddrob99/MLB-StatsAPI"
+   },
+   {
+    "full": "zero-sum-seattle/python-mlb-statsapi",
+    "stars": 106,
+    "lic": "MIT",
+    "pushed": "2026-09-03",
+    "desc": "Python Wrapper for the MLB's Official Stats API",
+    "url": "https://github.com/zero-sum-seattle/python-mlb-statsapi"
+   },
+   {
+    "full": "trevor-viljoen/mlbapi",
+    "stars": 15,
+    "lic": "NOASSERTION",
+    "pushed": "2026-05-02",
+    "desc": "mlbapi is a Python library that provides Pythonic bindings for MLB Advanced Media's StatsAPI \u2014 the same data source that powers MLB.com's live game data, box sc",
+    "url": "https://github.com/trevor-viljoen/mlbapi"
+   },
+   {
+    "full": "nitrowv/mlb-discord-bot",
+    "stars": 3,
+    "lic": null,
+    "pushed": "2023-07-25",
+    "desc": "Discord bot that provides MLB data using pybaseball and MLB-StatsAPI.",
+    "url": "https://github.com/nitrowv/mlb-discord-bot"
+   },
+   {
+    "full": "power-edge/pymlb_statsapi",
+    "stars": 2,
+    "lic": "MIT",
+    "pushed": "2026-01-26",
+    "desc": "A clean, Pythonic wrapper for MLB Stats API with automatic schema-driven parameter validation",
+    "url": "https://github.com/power-edge/pymlb_statsapi"
+   }
+  ],
+  "espn-web-api": [],
+  "ncaa-data-api": [
+   {
+    "full": "hopetambala/aframe-NCAAB",
+    "stars": 0,
+    "lic": "MIT",
+    "pushed": "2019-04-26",
+    "desc": "[Data-Visualization] Visualizing in Virtual Reality NCAA Historical Data with A-Frame and Python's BigQuery API",
+    "url": "https://github.com/hopetambala/aframe-NCAAB"
+   },
+   {
+    "full": "JaredHutchinson/NCAA_MBB_Database",
+    "stars": 1,
+    "lic": null,
+    "pushed": "2026-06-27",
+    "desc": "Python + SQL Server pipeline for ingesting NCAA men\u2019s basketball data from the balldontlie API, with historical loads and incremental game updates for analytics",
+    "url": "https://github.com/JaredHutchinson/NCAA_MBB_Database"
+   },
+   {
+    "full": "Codex-Crusader/Uni-basketball-ETL-pipeline",
+    "stars": 2,
+    "lic": "AGPL-3.0",
+    "pushed": "2026-08-28",
+    "desc": "Self-improving NCAA basketball predictor - auto-fetches ESPN data, trains 6 models, eliminates data leakage, and runs a full analytics dashboard. No API key nee",
+    "url": "https://github.com/Codex-Crusader/Uni-basketball-ETL-pipeline"
+   },
+   {
+    "full": "omkar-mandhare26/ncaafb-analytics-platform",
+    "stars": 0,
+    "lic": null,
+    "pushed": "2025-11-20",
+    "desc": "Sports analytics app using Sportradar NCAAFB API to collect, store, and visualize real-time NCAA Football data. Built with Python, SQL, and Streamlit for intera",
+    "url": "https://github.com/omkar-mandhare26/ncaafb-analytics-platform"
+   },
+   {
+    "full": "satkar605/ncaa-referee-analysis",
+    "stars": 0,
+    "lic": null,
+    "pushed": "2025-05-13",
+    "desc": "An end-to-end data project that scrapes and analyzes 5,900+ NCAA basketball games to map referee travel, build structured datasets, and visualize insights throu",
+    "url": "https://github.com/satkar605/ncaa-referee-analysis"
+   }
+  ],
+  "kloppy": [],
+  "tennis-atp": [],
+  "world-cup-2026": [],
+  "cfb-model-2026": [],
+  "nfl-elo": [],
+  "conformal-sports": []
+ }
+}

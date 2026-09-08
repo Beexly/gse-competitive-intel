@@ -1,0 +1,4 @@
+URL: https://www.statisticsports.com/robots.txt\nSTATUS: 200\n\nUser-agent: *
+Disallow:
+Allow: /
+Sitemap: https://statisticsports.com/sitemap.xml

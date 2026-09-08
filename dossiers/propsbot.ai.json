@@ -1,0 +1,64 @@
+{
+ "tech_stack": {
+  "frontend": "WordPress (wp-json exposed)",
+  "backend": "PHP/WordPress",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/propsbot_ai_wp-json.txt",
+   "raw/propsbot_ai_home.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "wp-json REST API open (posts endpoint captured with per_page=2)"
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/propsbot_ai_wp-json_wp_v2_posts_per_page=2.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "AI picks marketing; internals NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "NOT CONFIRMED"
+  ],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": []
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/wp-json/wp/v2/posts"
+ ],
+ "discovered_targets": [],
+ "domain": "propsbot.ai",
+ "discovery_metadata": {
+  "method": "direct HTTP probes + raw evidence extraction (self-run)",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 5 raw evidence files)"
+}

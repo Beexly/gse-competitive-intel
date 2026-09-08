@@ -1,0 +1,225 @@
+{
+ "smarkets-ws-config": {
+  "name": "smarkets-ws-config",
+  "url": "https://hub.smarkets.com/datafeed/websocket_configuration.json",
+  "status": "ERR",
+  "error": "HTTPSConnectionPool(host='hub.smarkets.com', port=443): Max retries exceeded with url: /datafeed/websocket_configuration.json (Caused by NameResolutionError(\"HTTPSConnection(host='hub.smarkets.com', p",
+  "ok": false
+ },
+ "smarkets-root": {
+  "name": "smarkets-root",
+  "url": "https://smarkets.com/",
+  "status": 200,
+  "ctype": "text/html; charset=utf-8",
+  "bytes": 1205219,
+  "ms": 1174,
+  "body_head": "<!DOCTYPE html><html lang=\"en-GB\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/77d36a89e89bb4fd.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/css/c66d4e78105da3df.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1ac7226d23947c8d.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/css/fb1cc7cfed85d9aa.css\" data-precedence=\"nex",
+  "ok": true
+ },
+ "ssb-nfl-spreads-2026": {
+  "name": "ssb-nfl-spreads-2026",
+  "url": "https://www.ssbdata.com/csvfiles/nflspreads/nflspreadsgames.csv",
+  "status": "ERR",
+  "error": "HTTPSConnectionPool(host='www.ssbdata.com', port=443): Max retries exceeded with url: /csvfiles/nflspreads/nflspreadsgames.csv (Caused by NameResolutionError(\"HTTPSConnection(host='www.ssbdata.com', p",
+  "ok": false
+ },
+ "ssb-root": {
+  "name": "ssb-root",
+  "url": "https://www.ssbdata.com/",
+  "status": "ERR",
+  "error": "HTTPSConnectionPool(host='www.ssbdata.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.ssbdata.com', port=443): Failed to resolve 'www.ssbdat",
+  "ok": false
+ },
+ "cfbd-stats2026": {
+  "name": "cfbd-stats2026",
+  "url": "https://api.collegefootballdata.com/team/stats?year=2026",
+  "status": 404,
+  "ctype": "text/html; charset=utf-8",
+  "bytes": 1087,
+  "ms": 148,
+  "body_head": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /team/stats</pre>\n<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a381303839d3da5d',t:'MTc4ODkwNDQzMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(",
+  "ok": false
+ },
+ "cfbd-conferences": {
+  "name": "cfbd-conferences",
+  "url": "https://api.collegefootballdata.com/conferences?year=2026",
+  "status": 401,
+  "ctype": "application/json; charset=utf-8",
+  "bytes": 255,
+  "ms": 150,
+  "body_head": "{\"message\":\"Unauthorized. Did you forget to add \\\"Bearer \\\" before your key? Go to CollegeFootballData.com to register for your free API key. See the CFBD Blog for examples on usage: https://blog.collegefootballdata.com/using-api-keys-with-the-cfbd-api.\"}",
+  "ok": false
+ },
+ "mlb-schedule-today": {
+  "name": "mlb-schedule-today",
+  "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=09/08/2026&hydrate=team",
+  "status": 200,
+  "ctype": "application/json;charset=UTF-8",
+  "bytes": 43239,
+  "ms": 146,
+  "body_head": "{\"copyright\":\"Copyright 2026 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt\",\"totalItems\":15,\"totalEvents\":0,\"totalGames\":15,\"totalGamesInProgress\":0,\"dates\":[{\"date\":\"2026-09-08\",\"totalItems\":15,\"totalEvents\":0,\"totalGames\":15,\"totalGamesInProgress\":0,\"games\":[{\"gamePk\":824792,\"gameGuid\":\"c7dcc0af-622c-42cd-a633-d893ce563aaa\",\"link\":\"/api/v1.1/game/824792/feed/live\",\"gameType\":\"R\",\"season\":\"20",
+  "ok": true
+ },
+ "mlb-versions": {
+  "name": "mlb-versions",
+  "url": "https://statsapi.mlb.com/api/versions",
+  "status": 404,
+  "ctype": "application/json;charset=UTF-8",
+  "bytes": 101,
+  "ms": 155,
+  "body_head": "{\"error\":\"Not Found\",\"path\":\"api/versions\",\"status\":404,\"timestamp\":\"2026-09-08T21:53:51.902155069Z\"}",
+  "ok": false
+ },
+ "nhl-score-2026": {
+  "name": "nhl-score-2026",
+  "url": "https://api-web.nhle.com/v1/score/2026-09-08",
+  "status": 200,
+  "ctype": "application/json",
+  "bytes": 2498,
+  "ms": 152,
+  "body_head": "{\"prevDate\":\"2026-06-14\",\"currentDate\":\"2026-09-08\",\"nextDate\":\"2026-09-19\",\"gameWeek\":[{\"date\":\"2026-09-05\",\"dayAbbrev\":\"SAT\",\"numberOfGames\":0},{\"date\":\"2026-09-06\",\"dayAbbrev\":\"SUN\",\"numberOfGames\":0},{\"date\":\"2026-09-07\",\"dayAbbrev\":\"MON\",\"numberOfGames\":0},{\"date\":\"2026-09-08\",\"dayAbbrev\":\"TUE\",\"numberOfGames\":0},{\"date\":\"2026-09-09\",\"dayAbbrev\":\"WED\",\"numberOfGames\":0},{\"date\":\"2026-09-10\",\"dayAbbrev\":\"THU\",\"numberOfGames\":0},{\"date\":\"2026-09-11\",\"dayAbbrev\":\"FRI\",\"numberOfGames\":0}],\"odds",
+  "ok": true
+ },
+ "nhl-club-shell": {
+  "name": "nhl-club-shell",
+  "url": "https://statsapi.web.nhl.com/api/v1/teams",
+  "status": "ERR",
+  "error": "HTTPSConnectionPool(host='statsapi.web.nhl.com', port=443): Max retries exceeded with url: /api/v1/teams (Caused by NameResolutionError(\"HTTPSConnection(host='statsapi.web.nhl.com', port=443): Failed ",
+  "ok": false
+ },
+ "espn-scores-nfl": {
+  "name": "espn-scores-nfl",
+  "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
+  "status": 403,
+  "ctype": "text/html",
+  "bytes": 442,
+  "ms": 81,
+  "body_head": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;site&#46;api&#46;espn&#46;com&#47;apis&#47;site&#47;v2&#47;sports&#47;football&#47;nfl&#47;scoreboard\" on this server.<P>\nReference&#32;&#35;18&#46;92cadc17&#46;1788904432&#46;1113c52d\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;92cadc17&#46;1788904432&#46;1113c52d</P>\n</BODY>\n</HTML>\n",
+  "ok": false
+ },
+ "espn-swift-nfl": {
+  "name": "espn-swift-nfl",
+  "url": "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events?limit=1&lang=en&region=us",
+  "status": 200,
+  "ctype": "application/json;charset=utf-8",
+  "bytes": 249,
+  "ms": 193,
+  "body_head": "{\"$meta\":{\"parameters\":{\"week\":[\"1\"],\"season\":[\"2026\"],\"seasontypes\":[\"2\"]}},\"count\":16,\"pageIndex\":1,\"pageSize\":1,\"pageCount\":16,\"items\":[{\"$ref\":\"http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/401872656?lang=en&region=us\"}]}",
+  "ok": true
+ },
+ "nba-stats-today": {
+  "name": "nba-stats-today",
+  "url": "https://stats.nba.com/stats/scoreboardv2?GameDate=09/07/2026&LeagueID=00&DayOffset=0",
+  "status": "ERR",
+  "error": "HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=15)",
+  "ok": false
+ },
+ "nba-cdn": {
+  "name": "nba-cdn",
+  "url": "https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json",
+  "status": 403,
+  "ctype": "text/html",
+  "bytes": 445,
+  "ms": 97,
+  "body_head": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;cdn&#46;nba&#46;com&#47;static&#47;json&#47;liveData&#47;scoreboard&#47;todaysScoreboard&#95;00&#46;json\" on this server.<P>\nReference&#32;&#35;18&#46;b025c017&#46;1788904447&#46;1c85982e\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;b025c017&#46;1788904447&#46;1c85982e</P>\n</BODY>\n</HTML>\n",
+  "ok": false
+ },
+ "sdataverse-manifest": {
+  "name": "sdataverse-manifest",
+  "url": "https://api.sportsdataverse.org/api/v1/manifest/nfl",
+  "status": 404,
+  "ctype": "application/json",
+  "bytes": 22,
+  "ms": 3522,
+  "body_head": "{\"detail\":\"Not Found\"}",
+  "ok": false
+ },
+ "sdataverse-root": {
+  "name": "sdataverse-root",
+  "url": "https://www.sportsdataverse.org/",
+  "status": 200,
+  "ctype": "text/html; charset=utf-8",
+  "bytes": 53390,
+  "ms": 363,
+  "body_head": "<!DOCTYPE html><html lang=\"en\" class=\"inter_3b15303-module__VSZTjG__variable barlow_699b33e8-module__e-n5Fq__variable sarina_a8705caf-module__7D178G__variable barlowcondensed_f994866e-module__SDeyxq__variable\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" href=\"/_next/static/media/BarlowCondensed_600-s.p.289y3avl9x-vx.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"/><link rel=\"preload\" href=\"/_next/static/media/BarlowConde",
+  "ok": true
+ },
+ "proxy-nfl-week1": {
+  "name": "proxy-nfl-week1",
+  "url": "https://proxy-sports.com/nfl/2026/week/1",
+  "status": "ERR",
+  "error": "HTTPSConnectionPool(host='proxy-sports.com', port=443): Max retries exceeded with url: /nfl/2026/week/1 (Caused by NameResolutionError(\"HTTPSConnection(host='proxy-sports.com', port=443): Failed to re",
+  "ok": false
+ },
+ "proxy-root": {
+  "name": "proxy-root",
+  "url": "https://proxy-sports.com",
+  "status": "ERR",
+  "error": "HTTPSConnectionPool(host='proxy-sports.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='proxy-sports.com', port=443): Failed to resolve 'proxy-sp",
+  "ok": false
+ },
+ "hoopr-github": {
+  "name": "hoopr-github",
+  "url": "https://hoopr.sportsdataverse.org/",
+  "status": 200,
+  "ctype": "text/html; charset=utf-8",
+  "bytes": 28695,
+  "ms": 200,
+  "body_head": "<!DOCTYPE html>\n<!-- Generated by pkgdown: do not edit by hand --><html lang=\"en\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n<meta charset=\"utf-8\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n<title>hoopR \u2022 Data and Tools for Men's Basketball \u2022 hoopR</title>\n<!-- favicons --><link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"favicon-96x96.png\">\n<link rel=\"icon\" typ",
+  "ok": true
+ },
+ "nflverse-root": {
+  "name": "nflverse-root",
+  "url": "https://github.com/nflverse",
+  "status": 200,
+  "ctype": "text/html; charset=utf-8",
+  "bytes": 293375,
+  "ms": 764,
+  "body_head": "\n\n<!DOCTYPE html>\n<html\n  lang=\"en\"\n  \n  data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"\n  data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"\n  \n  >\n\n\n\n\n  <head>\n    <meta charset=\"utf-8\">\n  <link rel=\"dns-prefetch\" href=\"https://github.githubassets.com\">\n  <link rel=\"dns-prefetch\" href=\"https://avatars.githubusercontent.com\">\n  <link rel=\"dns-prefetch\" href=\"https://github-cloud.s3.amazonaws.com\">\n  <link rel=\"dns-prefetch\" href=\"https://user-images.githu",
+  "ok": true
+ },
+ "oddspapi-root": {
+  "name": "oddspapi-root",
+  "url": "https://data.oddspapi.io",
+  "status": "ERR",
+  "error": "HTTPSConnectionPool(host='data.oddspapi.io', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='data.oddspapi.io', port=443): Failed to resolve 'data.odd",
+  "ok": false
+ },
+ "pipeworx-books": {
+  "name": "pipeworx-books",
+  "url": "https://api.sportsbookapi.net/v1/sportsbooks",
+  "status": "ERR",
+  "error": "HTTPSConnectionPool(host='api.sportsbookapi.net', port=443): Max retries exceeded with url: /v1/sportsbooks?sport=soccer_epl (Caused by NameResolutionError(\"HTTPSConnection(host='api.sportsbookapi.net",
+  "ok": false
+ },
+ "nhle-github": {
+  "name": "nhle-github",
+  "url": "https://github.com/seanmcarroll/NHLe",
+  "status": 404,
+  "ctype": "text/html; charset=utf-8",
+  "bytes": 266704,
+  "ms": 337,
+  "body_head": "\n\n\n\n\n\n\n\n<!DOCTYPE html>\n<html\n  lang=\"en\"\n  \n  data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"\n  data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"\n  \n  >\n\n\n\n\n  <head>\n    <meta charset=\"utf-8\">\n  <link rel=\"dns-prefetch\" href=\"https://github.githubassets.com\">\n  <link rel=\"dns-prefetch\" href=\"https://avatars.githubusercontent.com\">\n  <link rel=\"dns-prefetch\" href=\"https://github-cloud.s3.amazonaws.com\">\n  <link rel=\"dns-prefetch\" href=\"https://user-images",
+  "ok": false
+ },
+ "cbbfastr-repo": {
+  "name": "cbbfastr-repo",
+  "url": "https://github.com/sportsdataverse/cbbfastR",
+  "status": 404,
+  "ctype": "text/html; charset=utf-8",
+  "bytes": 266788,
+  "ms": 338,
+  "body_head": "\n\n\n\n\n\n\n\n<!DOCTYPE html>\n<html\n  lang=\"en\"\n  \n  data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"\n  data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"\n  \n  >\n\n\n\n\n  <head>\n    <meta charset=\"utf-8\">\n  <link rel=\"dns-prefetch\" href=\"https://github.githubassets.com\">\n  <link rel=\"dns-prefetch\" href=\"https://avatars.githubusercontent.com\">\n  <link rel=\"dns-prefetch\" href=\"https://github-cloud.s3.amazonaws.com\">\n  <link rel=\"dns-prefetch\" href=\"https://user-images",
+  "ok": false
+ },
+ "theoddsapi-pricing": {
+  "name": "theoddsapi-pricing",
+  "url": "https://the-odds-api.com/liveapi/guides/v4/",
+  "status": 200,
+  "ctype": "text/html; charset=utf-8",
+  "bytes": 319543,
+  "ms": 60,
+  "body_head": "<!DOCTYPE html>\n<html lang=\"en-US\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <title>Odds API Documentation V4 | The Odds API</title>\n    <meta name=\"generator\" content=\"VuePress 1.9.2\">\n    <link rel=\"icon\" href=\"/assets/img/fav.ico\">\n    <script src=\"https://www.google.com/recaptcha/api.js\" async=\"true\"></script>\n    <script src=\"https://js.stripe.com/v3/\" async=\"true\"></script>\n    <meta name=\"description\" content=\"Document",
+  "ok": true
+ }
+}

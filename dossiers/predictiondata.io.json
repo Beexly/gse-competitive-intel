@@ -1,0 +1,70 @@
+{
+  "domain": "predictiondata.io",
+  "disposition": "live",
+  "notes": "Parent re-verification 2026-09-08: child claimed 404/dead; direct fetches show fully live site — / 200 (54KB), /pricing 200 (33KB), /docs 200 (82KB), all captured in raw/. Docs describe a normalized sportsbook + prediction-market data API with Pull API and push delivery modes across North American leagues + global soccer. Product line: Prediction Markets API, Sports Betting API, Odds Screen, SGP Pricing Engine, Pinnacle/Kalshi/Polymarket/DraftKings APIs. Pricing page is a JS shell — dollar figures NOT CONFIRMED (SPA-gated). Directly relevant to the GSE polymarket-x-kalshi corridor.",
+  "tech_stack": {
+    "frontend": "SPA (marketing shell + JS-loaded pricing)",
+    "backend": "NOT CONFIRMED",
+    "database": "NOT CONFIRMED",
+    "cloud": "NOT CONFIRMED",
+    "cdn": "NOT CONFIRMED",
+    "citations": [
+      "raw/fx_predictiondata_io_home.raw",
+      "raw/fx_predictiondata_io_pricing.raw",
+      "raw/fx_predictiondata_io_docs.raw"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED (docs page captured; endpoint list loads via JS)",
+    "citations": [
+      "raw/fx_predictiondata_io_docs.raw"
+    ]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [
+      "aggregates sportsbook + prediction-market feeds (Pinnacle/Kalshi/Polymarket/DraftKings named as product surfaces)"
+    ],
+    "citations": [
+      "raw/fx_predictiondata_io_docs.raw"
+    ]
+  },
+  "product_limits": {
+    "limits": "NOT CONFIRMED",
+    "upgrade_triggers": "NOT CONFIRMED",
+    "citation": "raw/fx_predictiondata_io_docs.raw"
+  },
+  "pricing": {
+    "web": "NOT CONFIRMED",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "raw/fx_predictiondata_io_pricing.raw"
+    ]
+  },
+  "customer_pain": [],
+  "discovered_paths": [
+    "/pricing",
+    "/docs",
+    "/about"
+  ],
+  "discovered_targets": [],
+  "discovery_metadata": {
+    "method": "parent re-verification fetch (curl) after delegation batch; composed from raw/ evidence",
+    "timestamp": "2026-09-08T16:35:00-05:00"
+  }
+}

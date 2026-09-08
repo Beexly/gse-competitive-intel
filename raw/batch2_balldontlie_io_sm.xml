@@ -1,0 +1,28 @@
+URL: https://balldontlie.io/sitemap.xml\nSTATUS: 200\n\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://balldontlie.io</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://epl.balldontlie.io</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nba.balldontlie.io</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nfl.balldontlie.io</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mlb.balldontlie.io</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+</urlset>

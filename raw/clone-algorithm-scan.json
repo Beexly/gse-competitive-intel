@@ -1,0 +1,146 @@
+{
+ "draftfast": [
+  {
+   "repo": "draftfast",
+   "file": "draftfast\\draftfast\\lineup_constraints.py",
+   "line": 138,
+   "code": "def has_group_constraints(self) -> bool:"
+  },
+  {
+   "repo": "draftfast",
+   "file": "draftfast\\draftfast\\optimizer.py",
+   "line": 109,
+   "code": "self._set_player_constraints()"
+  },
+  {
+   "repo": "draftfast",
+   "file": "draftfast\\draftfast\\optimizer.py",
+   "line": 110,
+   "code": "self._set_player_group_constraints()"
+  },
+  {
+   "repo": "draftfast",
+   "file": "draftfast\\draftfast\\optimizer.py",
+   "line": 122,
+   "code": "self._set_position_team_constraints()"
+  },
+  {
+   "repo": "draftfast",
+   "file": "draftfast\\draftfast\\optimizer.py",
+   "line": 137,
+   "code": "def _set_player_constraints(self):"
+  },
+  {
+   "repo": "draftfast",
+   "file": "draftfast\\draftfast\\optimizer.py",
+   "line": 166,
+   "code": "def _set_player_group_constraints(self):"
+  },
+  {
+   "repo": "draftfast",
+   "file": "draftfast\\draftfast\\optimizer.py",
+   "line": 318,
+   "code": "def _set_position_team_constraints(self):"
+  },
+  {
+   "repo": "draftfast",
+   "file": "draftfast\\draftfast\\orm.py",
+   "line": 268,
+   "code": "def projected(self):"
+  },
+  {
+   "repo": "draftfast",
+   "file": "draftfast\\draftfast\\pickem\\pickem_optimize.py",
+   "line": 8,
+   "code": "def optimize("
+  },
+  {
+   "repo": "draftfast",
+   "file": "draftfast\\draftfast\\pickem\\pickem_optimize.py",
+   "line": 18,
+   "code": "if constraints.has_group_constraints():"
+  },
+  {
+   "repo": "draftfast",
+   "file": "draftfast\\draftfast\\test\\test_optimize.py",
+   "line": 521,
+   "code": "def test_impossible_constraints():"
+  }
+ ],
+ "penaltyblog": [
+  {
+   "repo": "penaltyblog",
+   "file": "penaltyblog\\penaltyblog\\betting\\arbitrage.py",
+   "line": 5,
+   "code": "from scipy.optimize import linprog"
+  },
+  {
+   "repo": "penaltyblog",
+   "file": "penaltyblog\\penaltyblog\\betting\\arbitrage.py",
+   "line": 127,
+   "code": "res = linprog(c=c, A_ub=A_ub, b_ub=b_ub, bounds=bounds, method=\"highs\")"
+  },
+  {
+   "repo": "penaltyblog",
+   "file": "penaltyblog\\penaltyblog\\betting\\arbitrage.py",
+   "line": 303,
+   "code": "def arbitrage_hedge("
+  },
+  {
+   "repo": "penaltyblog",
+   "file": "penaltyblog\\penaltyblog\\betting\\arbitrage.py",
+   "line": 414,
+   "code": "Objective: Maximize G (minimize -G in linprog)"
+  },
+  {
+   "repo": "penaltyblog",
+   "file": "penaltyblog\\penaltyblog\\betting\\arbitrage.py",
+   "line": 433,
+   "code": "This is solved with ``scipy.optimize.linprog``. If ``target_profit`` is"
+  },
+  {
+   "repo": "penaltyblog",
+   "file": "penaltyblog\\penaltyblog\\betting\\kelly.py",
+   "line": 315,
+   "code": "def kelly_criterion("
+  },
+  {
+   "repo": "penaltyblog",
+   "file": "penaltyblog\\penaltyblog\\fpl\\fpl.py",
+   "line": 10,
+   "code": "import pulp"
+  },
+  {
+   "repo": "penaltyblog",
+   "file": "penaltyblog\\penaltyblog\\fpl\\fpl.py",
+   "line": 389,
+   "code": "problem = pulp.LpProblem(\"FPL\", pulp.LpMaximize)"
+  },
+  {
+   "repo": "penaltyblog",
+   "file": "penaltyblog\\penaltyblog\\fpl\\fpl.py",
+   "line": 392,
+   "code": "x = pulp.LpVariable.dict("
+  },
+  {
+   "repo": "penaltyblog",
+   "file": "penaltyblog\\penaltyblog\\fpl\\fpl.py",
+   "line": 393,
+   "code": "\"player\", players[\"full_name\"].tolist(), 0, 1, cat=pulp.LpInteger"
+  },
+  {
+   "repo": "penaltyblog",
+   "file": "penaltyblog\\penaltyblog\\fpl\\fpl.py",
+   "line": 424,
+   "code": "problem.solve(pulp.PULP_CBC_CMD(msg=False))"
+  },
+  {
+   "repo": "penaltyblog",
+   "file": "penaltyblog\\penaltyblog\\fpl\\fpl.py",
+   "line": 427,
+   "code": "selected = [i for i in players[\"full_name\"] if pulp.value(x[i]) == 1]"
+  }
+ ],
+ "WagerBrain": [],
+ "Sports-betting": []
+}

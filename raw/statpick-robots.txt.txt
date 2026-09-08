@@ -1,0 +1,71 @@
+URL: https://statpick.ai/robots.txt\nSTATUS: 200\n\nUser-agent: *
+Allow: /
+
+# Machine-readable entry points for AI agents and crawlers:
+#   https://www.statpick.ai/llms.txt      — plain-language site guide
+#   https://www.statpick.ai/openapi.json  — OpenAPI 3.1 spec for the public API
+#   https://www.statpick.ai/sitemap.xml   — sitemap index (per-surface maps below)
+
+# Block only routes that genuinely shouldn't be crawled. Auth pages like
+# /log-in, /register, /get-started, and personalized surfaces like
+# /my-picks, /favorites, /activity, /profile stay crawlable so Google can
+# rank them and consider them as sitelink candidates on branded queries.
+Disallow: /admin
+Disallow: /r/
+Disallow: /api/
+
+# --- AI assistant crawlers -------------------------------------------------
+# GPTBot and ClaudeBot are the crawlers behind ChatGPT and Claude. They get the
+# same access as any search engine, programmatic prop/player/team pages
+# included: being citable in an AI answer is worth more than the crawl cost,
+# and a thin corpus is exactly what makes an assistant answer about us from
+# somebody else's page.
+#
+# COST NOTE — this is the trade being made. /props, /players, /teams, /games,
+# /box-scores, /stats, /nrfi, and /start-sit are tens of thousands of ISR
+# pages, and every crawler hit on an expired one is a Worker render plus an
+# R2 write. The public API (see /openapi.json) serves the same numbers with
+# no render cost, which is why llms.txt points agents there first. If crawl
+# spend becomes a problem, throttle at Cloudflare rather than re-closing this
+# door — a rate limit slows a crawl, a Disallow deletes us from the corpus.
+User-agent: GPTBot
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin
+Disallow: /r/
+Disallow: /api/
+# Advisory pacing. Cloudflare's Free plan can't rate-limit on User-Agent, so
+# this is the only crawl-rate lever available; support is inconsistent across
+# crawlers, so treat it as a request, not a control. ~2s => ~43k pages/day if
+# honoured, which covers a full crawl of the programmatic surface in about a
+# day without hammering it.
+Crawl-delay: 2
+
+# Bulk crawlers with no search-referral value. Every hit on an expired ISR
+# page is a Worker render plus an R2 write, so training-only AI scrapers and SEO-tool
+# crawlers are barred site-wide. CCBot is the deliberate exception: Common
+# Crawl feeds a large share of LLM training corpora, so it buys corpus reach
+# the others don't, and it is allowed under the `*` group above. Search bots (Googlebot, Bingbot) and
+# AI *search* bots that send referrals (OAI-SearchBot, PerplexityBot) stay
+# allowed. robots.txt is advisory — the Cloudflare WAF rule is the
+# enforcement for the ones that ignore it.
+User-agent: meta-externalagent
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: PetalBot
+User-agent: Amazonbot
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: MJ12bot
+User-agent: DotBot
+User-agent: DataForSeoBot
+User-agent: BLEXBot
+Disallow: /
+
+Sitemap: https://www.statpick.ai/sitemap.xml
+Sitemap: https://www.statpick.ai/props/sitemap/nba.xml
+Sitemap: https://www.statpick.ai/props/sitemap/mlb.xml
+Sitemap: https://www.statpick.ai/props/sitemap/wnba.xml
+Sitemap: https://www.statpick.ai/props/sitemap/nfl.xml
+Sitemap: https://www.statpick.ai/nrfi/sitemap.xml
+Sitemap: https://www.statpick.ai/start-sit/sitemap.xml

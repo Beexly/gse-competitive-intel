@@ -1,0 +1,242 @@
+[
+ {
+  "repo": "sportsdataverse/cfbfastR-data",
+  "stars": 19,
+  "lang": "R",
+  "desc": "cfbfastR data 2002-present",
+  "license": null,
+  "pushed": "2026-09-08T18:13:57Z"
+ },
+ {
+  "repo": "sportsdataverse/wehoop-wnba-stats-data",
+  "stars": 1,
+  "lang": "Python",
+  "desc": null,
+  "license": "NOASSERTION",
+  "pushed": "2026-09-08T17:54:56Z"
+ },
+ {
+  "repo": "sportsdataverse/cfbfastR-cfb-data",
+  "stars": 1,
+  "lang": "Python",
+  "desc": "Analysis-ready college-football datasets reshaped from cfbfastR-cfb-raw enriched JSON (sibling of cfbfastR-cfb-raw).",
+  "license": null,
+  "pushed": "2026-09-08T17:43:28Z"
+ },
+ {
+  "repo": "sportsdataverse/baseballr-data",
+  "stars": 15,
+  "lang": null,
+  "desc": "MLB and NCAA Baseball data",
+  "license": "NOASSERTION",
+  "pushed": "2026-09-08T15:49:11Z"
+ },
+ {
+  "repo": "sportsdataverse/nfl-raw",
+  "stars": 0,
+  "lang": "Python",
+  "desc": "Raw + enriched NFL game JSON scraped from the NFL Shield API via sportsdataverse (1999-2025; sibling of nfl-data).",
+  "license": null,
+  "pushed": "2026-09-08T15:20:45Z"
+ },
+ {
+  "repo": "sportsdataverse/.github",
+  "stars": 2,
+  "lang": "Python",
+  "desc": null,
+  "license": null,
+  "pushed": "2026-09-08T13:48:53Z"
+ },
+ {
+  "repo": "sportsdataverse/wehoop-wnba-stats-raw",
+  "stars": 0,
+  "lang": "Python",
+  "desc": null,
+  "license": "NOASSERTION",
+  "pushed": "2026-09-08T13:01:57Z"
+ },
+ {
+  "repo": "sportsdataverse/sportsdataverse-baseball-data",
+  "stars": 8,
+  "lang": "Python",
+  "desc": "Houses baseball data from various sources from the internet",
+  "license": "MIT",
+  "pushed": "2026-09-08T12:09:50Z"
+ },
+ {
+  "repo": "sportsdataverse/wehoop-wnba-data",
+  "stars": 23,
+  "lang": "Python",
+  "desc": null,
+  "license": "NOASSERTION",
+  "pushed": "2026-09-08T11:43:12Z"
+ },
+ {
+  "repo": "sportsdataverse/wehoop-wnba-raw",
+  "stars": 3,
+  "lang": "Python",
+  "desc": null,
+  "license": "NOASSERTION",
+  "pushed": "2026-09-08T11:33:45Z"
+ },
+ {
+  "repo": "sportsdataverse/sportsdataverse-py",
+  "stars": 116,
+  "lang": "Python",
+  "desc": "sportsdataverse python package",
+  "license": "MIT",
+  "pushed": "2026-09-08T02:13:24Z"
+ },
+ {
+  "repo": "sportsdataverse/hoopR-nba-stats-data",
+  "stars": 1,
+  "lang": "Python",
+  "desc": null,
+  "license": "NOASSERTION",
+  "pushed": "2026-09-07T19:16:18Z"
+ },
+ {
+  "repo": "sportsdataverse/fastRhockey-nhl-raw",
+  "stars": 1,
+  "lang": "Python",
+  "desc": "fastRhockey's NHL raw json files",
+  "license": null,
+  "pushed": "2026-09-07T11:28:01Z"
+ },
+ {
+  "repo": "sportsdataverse/fastRhockey-nhl-data",
+  "stars": 1,
+  "lang": "R",
+  "desc": null,
+  "license": "NOASSERTION",
+  "pushed": "2026-09-07T11:28:04Z"
+ },
+ {
+  "repo": "sportsdataverse/cfbfastR",
+  "stars": 110,
+  "lang": "R",
+  "desc": "An R package to quickly obtain clean and tidy college football play by play data",
+  "license": "NOASSERTION",
+  "pushed": "2026-09-07T09:35:01Z"
+ },
+ {
+  "repo": "sportsdataverse/ncaa-wbb-hoops-data",
+  "stars": 0,
+  "lang": "Python",
+  "desc": "NCAA WBB Data",
+  "license": null,
+  "pushed": "2026-09-07T07:03:48Z"
+ },
+ {
+  "repo": "sportsdataverse/cfbfastR-cfb-raw",
+  "stars": 3,
+  "lang": "Python",
+  "desc": "Raw + enriched college-football game JSON scraped from ESPN via sportsdataverse (offline-reprocessable; sibling of cfbfastR-cfb-data).",
+  "license": null,
+  "pushed": "2026-09-08T18:15:33Z"
+ },
+ {
+  "repo": "sportsdataverse/ncaa-mfb-football-raw",
+  "stars": 0,
+  "lang": "HTML",
+  "desc": null,
+  "license": null,
+  "pushed": "2026-09-07T02:41:05Z"
+ },
+ {
+  "repo": "sportsdataverse/wehoop-wbb-data",
+  "stars": 2,
+  "lang": "Python",
+  "desc": null,
+  "license": "NOASSERTION",
+  "pushed": "2026-09-08T03:11:11Z"
+ },
+ {
+  "repo": "sportsdataverse/fastRhockey",
+  "stars": 37,
+  "lang": "R",
+  "desc": "Boxscore and play-by-play stat scraper for the Premier Hockey Federation (PHF, formerly known as the NWHL).",
+  "license": "NOASSERTION",
+  "pushed": "2026-08-27T11:08:52Z"
+ },
+ {
+  "repo": "sportsdataverse/hoopR",
+  "stars": 144,
+  "lang": "R",
+  "desc": "An R package to quickly obtain clean and tidy men's basketball play by play data.",
+  "license": "NOASSERTION",
+  "pushed": "2026-08-27T18:10:40Z"
+ },
+ {
+  "repo": "sportsdataverse/sportsdataverse-data",
+  "stars": 9,
+  "lang": "Python",
+  "desc": "Automated SportsDataverse data repository",
+  "license": "MIT",
+  "pushed": "2026-09-08T03:01:43Z"
+ },
+ {
+  "repo": "sportsdataverse/sportsdataverse-js",
+  "stars": 84,
+  "lang": "TypeScript",
+  "desc": "Retrieves sports data from a popular sports website as well as from the NCAA website, with support for NBA, WNBA, NFL, NHL, College Football and mens and womens college basketball, ",
+  "license": "MIT",
+  "pushed": "2026-08-19T06:34:07Z"
+ },
+ {
+  "repo": "sportsdataverse/fastRhockey-pwhl-data",
+  "stars": 1,
+  "lang": "Python",
+  "desc": "fastRhockey's PWHL datasets",
+  "license": "NOASSERTION",
+  "pushed": "2026-09-02T11:42:56Z"
+ },
+ {
+  "repo": "sportsdataverse/nfl-data",
+  "stars": 1,
+  "lang": "Python",
+  "desc": "NFL compiled PBP datasets + EP/WP/CP models built from sportsdataverse/nfl-raw; published to sportsdataverse-data.",
+  "license": null,
+  "pushed": "2026-09-03T08:04:05Z"
+ },
+ {
+  "repo": "sportsdataverse/baseballr-mlb-raw",
+  "stars": 0,
+  "lang": "Python",
+  "desc": "MLB raw capture: MLB Stats API feed/live + Baseball Savant per-game Statcast, committed as gzipped per-game payloads. Scraping-only; baseballr-data reshapes and publishes.",
+  "license": "NOASSERTION",
+  "pushed": "2026-09-03T04:00:47Z"
+ },
+ {
+  "repo": "sportsdataverse/sportyR",
+  "stars": 118,
+  "lang": "R",
+  "desc": "R package for drawing regulation playing surfaces for several sports",
+  "license": "GPL-3.0",
+  "pushed": "2026-08-27T10:54:31Z"
+ },
+ {
+  "repo": "sportsdataverse/ncaa-mbb-hoops-data",
+  "stars": 0,
+  "lang": "Python",
+  "desc": "NCAA MBB Data",
+  "license": null,
+  "pushed": "2026-09-02T23:19:24Z"
+ },
+ {
+  "repo": "sportsdataverse/hoopR-nba-stats-raw",
+  "stars": 1,
+  "lang": null,
+  "desc": null,
+  "license": "NOASSERTION",
+  "pushed": "2026-09-02T20:30:10Z"
+ },
+ {
+  "repo": "sportsdataverse/fastRhockey-pwhl-raw",
+  "stars": 0,
+  "lang": "Python",
+  "desc": "fastRhockey PWHL raw JSON data",
+  "license": "NOASSERTION",
+  "pushed": "2026-09-02T18:47:51Z"
+ }
+]

@@ -1,0 +1,19 @@
+URL: https://www.lsports.eu/robots.txt\nSTATUS: 200\n\nUser-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+# Termly scanner
+User-agent: TermlyBot
+Allow: /
+
+User-agent: *
+Disallow: /?ref=
+Disallow: /?utm_source=
+Disallow: /?wordfence_lh=
+Disallow: /?cat=
+Disallow: /?__hstc=
+Disallow: /?msclkid=
+Disallow: /?trk=
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://www.lsports.eu/sitemap_index.xml

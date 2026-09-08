@@ -1,0 +1,149 @@
+{
+  "domain": "vsin.com/pro",
+  "disposition": "live",
+  "status": "CONFIRMED (WordPress + Piano paywall; exact $ price NOT CONFIRMED in static HTML)",
+  "key_findings": "VSiN Pro is a premium subscription tier of VSiN (Sports Betting Network), WordPress site behind Cloudflare with Piano (tinypass) paywall platform (tp.push / pianoId in page JS; #inline-lock paywall element with MutationObserver). Free vs Pro feature-compare table confirms Pro gates: unlimited Pro articles, daily expert picks, real-time betting splits, Opta AI prop projections (NFL/NBA/MLB), NFL/NBA prop analyzers, daily picks email, pro betting guides, live video broadcast, WR/CB matchup tool \"Powered by Fantasy Points\", Makinen power ratings. Annual subscription saves 50% vs monthly (per FAQ); annual subscribers get 10+ special betting guides/year. Exact $ prices load via Piano checkout (not in static HTML) - NOT CONFIRMED. Data vendors visible in nav: Opta AI projections, Fantasy Points tooling.",
+  "tech_stack": {
+    "frontend": "WordPress (wp-json, Newspaper/td theme classes) + custom VSiN Pro compare UI",
+    "backend": "WordPress REST (wp-json/oembed observed)",
+    "database": "NOT CONFIRMED",
+    "cloud": "NOT CONFIRMED",
+    "cdn": "Cloudflare (cf-ray DFW)",
+    "citations": [
+      "raw/vsin.com_pro_home.html",
+      "raw/vsin.com_pro_subscribe.html"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [
+      {
+        "method": "GET",
+        "path": "/wp-json/oembed/1.0/embed",
+        "auth_required": false,
+        "tier": "public",
+        "sample_response": null,
+        "citation": "raw/vsin.com_pro_subscribe.html"
+      }
+    ],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": [
+      "raw/vsin.com_pro_subscribe.html"
+    ]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "Opta AI player prop projections (NFL/NBA/MLB) - third-party AI projections surfaced in VSiN Pro nav",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "daily",
+    "citation": "raw/vsin.com_pro_home.html"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [
+      "Opta (Opta AI prop projections)",
+      "Fantasy Points (WR/CB matchup tool)"
+    ],
+    "citations": [
+      "raw/vsin.com_pro_home.html"
+    ]
+  },
+  "product_limits": {
+    "limits": "Free: limited articles, free primers, daily betting email, live audio, podcasts. Pro: unlimited articles + all tools.",
+    "upgrade_triggers": "Pro article cap on free tier (\"Limited VSiN Articles\" vs \"Unlimited Pro Articles\"); #inline-lock paywall with Piano observer on gated content",
+    "citation": "raw/vsin.com_pro_home.html (compare table)"
+  },
+  "pricing": {
+    "web": "NOT CONFIRMED exact $: Piano-hosted checkout not in static HTML; FAQ states annual = 50% off monthly price",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "raw/vsin.com_pro_subscribe.html"
+    ]
+  },
+  "customer_pain": [
+    {
+      "quote": "Would it be worth signing up for one of these and pay the monthly or yearly subscription? Any feedba[ck]",
+      "source": "https://www.reddit.com/r/sportsbook/comments/jb1s20/vsin_spotsline_action/",
+      "date": "2020"
+    },
+    {
+      "quote": "Overall it is super helpful to use as a betting tool, information or if you just want to tail plays.",
+      "source": "https://www.reddit.com/r/vsin/comments/1imzkpl/subscription/",
+      "date": "2025"
+    },
+    {
+      "quote": "Anybody interested in sharing a subscription to VSIN to try it out and see if it's worth it?",
+      "source": "https://www.reddit.com/r/vsin/",
+      "date": "2026"
+    },
+    {
+      "quote": "vsin data refreshes/updates every 10 mins so I would say it gets sent pretty often or whenever the i[app refreshes]",
+      "source": "https://www.reddit.com/r/sportsbook/comments/yki0qe/how_accurate_are_action_app_betting_splits_vs/",
+      "date": "2022"
+    }
+  ],
+  "discovered_paths": [
+    "/subscribe/",
+    "/wp-json/",
+    "/pro",
+    "#inline-lock",
+    "#subscribe-panel"
+  ],
+  "discovered_targets": [],
+  "discovery_metadata": {
+    "method": "urllib GET via fetcher.py pattern; 8-HTTP-req budget",
+    "timestamp": "2026-09-08"
+  },
+  "requests_log": [
+    {
+      "url": "https://vsin.com/pro",
+      "status": 200
+    },
+    {
+      "url": "https://vsin.com/robots.txt",
+      "status": 404
+    },
+    {
+      "url": "https://vsin.com/sitemap.xml",
+      "status": 404
+    },
+    {
+      "url": "https://cdn.hu-manity.co/hu-banner.min.js",
+      "status": 200,
+      "note": "third-party cookie banner"
+    },
+    {
+      "url": "https://vsin.com/_static/??-eJyFjUEO...",
+      "status": 200,
+      "note": "WordPress combined JS"
+    },
+    {
+      "url": "https://vsin.com/_static/??-eJydzMES...",
+      "status": 200
+    },
+    {
+      "url": "https://vsin.com/subscribe/",
+      "status": 200
+    }
+  ],
+  "raw_files": [
+    "vsin.com_pro_home.html",
+    "vsin.com_pro_robots.txt",
+    "vsin.com_pro_sitemap.xml",
+    "vsin.com_pro_subscribe.html",
+    "vsin.com_pro_js_hu-banner.min.js.js",
+    "vsin.com_pro_js_eJyFjUEO.js.js"
+  ],
+  "notes": [
+    "7 HTTP requests - budget honored",
+    "no robots.txt / sitemap.xml on vsin.com (both 404)",
+    "Piano (tinypass) is the paywall/subscription platform - pricing served dynamically at checkout",
+    "vsin.com/pro did NOT redirect to vsin.com/subscribe - both pages serve the subscriptions funnel"
+  ]
+}

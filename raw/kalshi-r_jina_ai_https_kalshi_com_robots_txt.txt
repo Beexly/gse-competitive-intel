@@ -1,0 +1,12 @@
+Title: Vercel Security Checkpoint
+
+URL Source: https://kalshi.com/robots.txt
+
+Warning: Target URL returned error 429: Too Many Requests
+
+Markdown Content:
+Vercel Security Checkpoint
+
+|
+
+sfo1::1788900716-7wITvCh1Rgx5CX3AI0N37yiFkjxgleI2

@@ -1,0 +1,4 @@
+URL: https://predictiondata.io/robots.txt\nSTATUS: 200\n\nUser-Agent: *
+Allow: /
+
+Sitemap: https://www.predictiondata.io/sitemap.xml

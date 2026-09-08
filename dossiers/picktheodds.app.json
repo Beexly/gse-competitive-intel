@@ -1,0 +1,68 @@
+{
+ "domain": "picktheodds.app",
+ "type": "live-site",
+ "disposition": "live",
+ "tech_stack": {
+  "frontend": "Next.js + React behind Cloudflare (dedicated app pages: /expectedvalue, /welcome)",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare",
+  "cdn": "Cloudflare",
+  "citations": [
+   "raw/picktheodds-home.html",
+   "raw/picktheodds-expectedvalue.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "home + EV page HTML carry no /api paths in saved evidence (data likely via Next.js data routes not captured)"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "Expected-value betting product (dedicated /expectedvalue page)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "raw/picktheodds-expectedvalue.html"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Pinnacle, DraftKings, FanDuel odds references"
+  ],
+  "citations": [
+   "raw/picktheodds-home.html"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "many price points ($0-$1000 range incl. $133.33, $139.39, $15.17 \u2014 consistent with subscription calculator + dynamic EV numbers)",
+  "citation": "raw/picktheodds-home.html"
+ },
+ "pricing": {
+  "web": "Price points $0/$1/$10/$20/$100/$110/$130/$150/$160/$170/$1000 on home+EV pages (exact tier map NOT CONFIRMED without pricing page)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/picktheodds-home.html"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/welcome",
+  "/expectedvalue"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "home + welcome + expectedvalue pages (92 files saved by batch incl. app subpages)",
+  "timestamp": "2026-09-08T14:13:58.404821"
+ }
+}

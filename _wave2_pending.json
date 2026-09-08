@@ -1,0 +1,3476 @@
+[
+ {
+  "domain": "github.com/0xagarg/evm-solana-prediction-market",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "10* Solana | EVM Prediction Market where users can create market, add liquidity, and bet, forking po"
+ },
+ {
+  "domain": "github.com/0xtan1319/prediction-market-fe-be-solana",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "11* Solana prediction market project powered by Meteora DLMM, built with the Anchor framework."
+ },
+ {
+  "domain": "github.com/0xtkm/anchor-prediction-market",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "13* Anchor program for a cricket prediction market"
+ },
+ {
+  "domain": "github.com/103style/leetcode",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "149* leetcode\u7684\u7ec3\u4e60\u8bb0\u5f55"
+ },
+ {
+  "domain": "github.com/1canhhoa/sports-betting-toolbox",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "135* sports betting toolbox to predict soccer matchs with betting model"
+ },
+ {
+  "domain": "github.com/2417467487-hub/worldcuproi",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "354* Sports sponsorship intelligence platform for World Cup match data, real-source text signals, RO"
+ },
+ {
+  "domain": "github.com/29dch/walking-the-maze",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "25* \u8d70\u8ff7\u5bab\u95ee\u9898\u7684\u7b97\u6cd5\u53ef\u89c6\u5316(UI)\u53ca\u8ff7\u5bab\u751f\u6210"
+ },
+ {
+  "domain": "github.com/63beetlesmurf/zeusprounofficial",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* Unofficial update to Geeksoft's Zeus Pro wrestling simulator."
+ },
+ {
+  "domain": "github.com/6figpsolseeker/rostr",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* Open-source fantasy sports on Solana. Immutable league rules, escrowed prize pools, and automatic"
+ },
+ {
+  "domain": "github.com/a2871031921/polymarket-weather-copy-trading-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "26* polymarket-copy-trading-bot-weather-market polymarket-copy-trading-bot-weather-market polymarket"
+ },
+ {
+  "domain": "github.com/aajfranklin/click-and-roll",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "29* Hover on an NBA player's name on any web page to quickly view their career stats. Thousands of a"
+ },
+ {
+  "domain": "github.com/aarora4/awesome-prediction-market-tools",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "729* A curated list of Prediction Market Tools - AI Agents, Analytics, APIs, Dashboards, Copy Tradin"
+ },
+ {
+  "domain": "github.com/abhranilsingharoy-cloud/fifa-pro",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* A premium, high-performance analytics dashboard and interactive hub for the 2026 FIFA World Cup. "
+ },
+ {
+  "domain": "github.com/abpaudel/8-puzzle",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "29* 8 puzzle solver using BFS, DFS, IDDFS and A-star algorithm"
+ },
+ {
+  "domain": "github.com/adam23483/thechampions",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* Data Science Project Using Soccer Data"
+ },
+ {
+  "domain": "github.com/addaia/odds2beat",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* AI-powered sports betting research agent: pick a game, get an intel briefing with odds, injuries,"
+ },
+ {
+  "domain": "github.com/afelsen/fantasy-football-nn",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "15* A neural network that predicts fantasy football scores"
+ },
+ {
+  "domain": "github.com/agad495/dkscrapy",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "47* Scrape Draftkings Sportsbook using Python's Beautiful Soup library and DraftKings' API."
+ },
+ {
+  "domain": "github.com/agent515/sports_private_pool",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "8* A flutter application for a simplified version of Fantasy Cricket like Dream11. Users can create "
+ },
+ {
+  "domain": "github.com/agorinenko/data-structures-and-algorithms",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "19* \u0410\u043b\u0433\u043e\u0440\u0438\u0442\u043c\u044b \u0438 \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u044b \u0434\u0430\u043d\u043d\u044b\u0445"
+ },
+ {
+  "domain": "github.com/ahmedhazem02/fifa-world-cup-2026-prediction-agent",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "130* FIFA World Cup 2026 match outcomes, group standings for sports betting market, sports betting m"
+ },
+ {
+  "domain": "github.com/airmime/java-football-data",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* \u26bd\ufe0f Java library for football-data.org's API."
+ },
+ {
+  "domain": "github.com/akshdeepsingh7/football-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "17* Live standings from 15 major football leagues across the world, with tables, stats, and JSON out"
+ },
+ {
+  "domain": "github.com/akshdeepsingh7/football-stats",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "7* Live football standings from 15 major leagues across 3 confederations with rich visual statistics"
+ },
+ {
+  "domain": "github.com/alaminpu1007/algorithm-visualizer",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "23* Showcasing popular algorithm visualizations."
+ },
+ {
+  "domain": "github.com/alessandroitz/predict-fun-farming-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "23* Automated multi-account bot for predict.fun \u2014 places predictions, completes daily tasks, and far"
+ },
+ {
+  "domain": "github.com/alexadam/sport-stats",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "74* Sport stats UI components"
+ },
+ {
+  "domain": "github.com/amarvin/fantasy-football-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "56* Automate playing Yahoo Fantasy Football"
+ },
+ {
+  "domain": "github.com/amillolive/statline",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* StatLine \u2014 Advanced weighted player scoring and analytics, with modular tools for awards, perform"
+ },
+ {
+  "domain": "github.com/amosbastian/fpl",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "329* An asynchronous Python wrapper for the Fantasy Premier League API."
+ },
+ {
+  "domain": "github.com/amosbastian/fplbot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "70* A bot made for /r/FantasyPL"
+ },
+ {
+  "domain": "github.com/andystanley/canplfantasy",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "7* The unofficial fantasy game of the Canadian Premier League"
+ },
+ {
+  "domain": "github.com/angelle-sw/sbp",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "25* Decentralized sports & event betting platform powered by Ethereum smart contracts and automated "
+ },
+ {
+  "domain": "github.com/arbbets/prediction-market-arbitrage",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "16* Automated arbitrage detection for prediction markets"
+ },
+ {
+  "domain": "github.com/ardatuncay/football-app",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* S\u00fcper Lig i\u00e7in canl\u0131 skor, fikst\u00fcr ve puan durumu g\u00f6steren Next.js/TypeScript uygulamas\u0131"
+ },
+ {
+  "domain": "github.com/arinzecode/nunez-vs-haaland-radar-plot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "6* The top teams in the English Premier League in the 2021-22 season, Manchester City and Liverpool "
+ },
+ {
+  "domain": "github.com/asigatchov/fast-volleyball-tracking-inference",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "67* Fast Volleyball Tracking Inference: Real-time volleyball ball detection and tracking at 100 FPS "
+ },
+ {
+  "domain": "github.com/athletex-dao/ax_dapp",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "9* frontend UI for AX"
+ },
+ {
+  "domain": "github.com/atomscott/sportslabkit",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "321* A python package for turning sports video into csv files"
+ },
+ {
+  "domain": "github.com/atomscott/teamtrack",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "78* TeamTrack: An Algorithm and Benchmark Dataset for Multi-Sport Multi-Object Tracking in Full-pitc"
+ },
+ {
+  "domain": "github.com/avalos010/sportsbook-odds-comparer",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "46* A sleek and responsive web app built to help users quickly compare betting odds from multiple sp"
+ },
+ {
+  "domain": "github.com/backspace-me/sportscore-mcp",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "10* MCP server exposing the free SportScore sports-data API as tool calls for Claude, Cursor, and Ze"
+ },
+ {
+  "domain": "github.com/backspace-me/sportscore-py",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Python client for the free SportScore sports-data API (football, basketball, cricket, tennis). No"
+ },
+ {
+  "domain": "github.com/bapairaew/open-fpl",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "28* Open-source Fantasy Premier League tools"
+ },
+ {
+  "domain": "github.com/bari199/local-sports-indoor-games-partner-finder-platform",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* The Local Sports & Indoor Games Partner Finder Platform helps users find nearby partners for game"
+ },
+ {
+  "domain": "github.com/baronet2/firstcyclingapi",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "33* An unofficial Python API wrapper for firstcycling.com"
+ },
+ {
+  "domain": "github.com/bcanfield/southpaw",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "58* Python Fanduel API - Lineup Automation"
+ },
+ {
+  "domain": "github.com/bcongelio/nfl-analytics-with-r-book",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "76* The repo for Introduction to NFL Analytics with R (published with CRC Press)"
+ },
+ {
+  "domain": "github.com/benbrostoff/draftfast",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "298* A tool to automate and optimize DraftKings and FanDuel lineup construction."
+ },
+ {
+  "domain": "github.com/bendominguez0111/nflfastpy",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "76* Python package for loading nflfastR play by play data"
+ },
+ {
+  "domain": "github.com/benjam1ncup/polymarket-trading-bot-python-v2",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "182* polymarket trading bot polymarket bot polymarket twap bot polymarket arbitrage bot polymarket t"
+ },
+ {
+  "domain": "github.com/big-main/chalkpicks-pro",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* AI sports betting analytics \u2014 picks, +EV, CLV & immutable Pick Ledger. Free odds/ROI/parlay tools"
+ },
+ {
+  "domain": "github.com/blake-noske/blake-noske.github.io",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* "
+ },
+ {
+  "domain": "github.com/bluescar/cfb-data",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "66* NPM package for retrieving NCAA football data"
+ },
+ {
+  "domain": "github.com/bobluppes/graaf",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "413* A general-purpose lightweight C++ graph library"
+ },
+ {
+  "domain": "github.com/bodhiproject/bodhi-ui",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "18* ReactJS frontend that interacts with the Bodhi backend services"
+ },
+ {
+  "domain": "github.com/boran-sert/macmetrik",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* Tarihsel ma\u00e7 verileri ve oranlar \u00fczerinden benzerlik analizi yaparak bahis pazarlar\u0131ndaki \u00f6r\u00fcnt\u00fcl"
+ },
+ {
+  "domain": "github.com/brandonsoft/asp-sports-betting",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "17* Sports Betting"
+ },
+ {
+  "domain": "github.com/brandopolistirolo/tennis-betting-ml",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "52* Machine Learning model(specifically log-regression with stochastic gradient descent) for tennis "
+ },
+ {
+  "domain": "github.com/brendan-macdonald/arbitrage-betting-platform",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Real-time arbitrage betting platform built with Next.js, TypeScript, Node.js, PostgreSQL, and Doc"
+ },
+ {
+  "domain": "github.com/bressettj21/gta-indoor-horse-betting",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* This repository contains my efforts in successfully building a profitable horse betting algorithm"
+ },
+ {
+  "domain": "github.com/brianbailey18/nfl-betting-models",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "13* This repository aims to provide robust NFL Betting Models based on play by play data."
+ },
+ {
+  "domain": "github.com/bszek213/deepcfb",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "17* Deep learning to predict college football outcomes"
+ },
+ {
+  "domain": "github.com/btg94/bfscraper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "13* Scrapes Betfair price data (BSP, WAP etc) for Australian horse racing"
+ },
+ {
+  "domain": "github.com/buaadreamer/ilovepy-soccerdataanalysisproject",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* This is a Web system project about Soccer data analysis."
+ },
+ {
+  "domain": "github.com/buckthorndev/the-football-data",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "8* Home of football data"
+ },
+ {
+  "domain": "github.com/burakgon/kernelsu-wifi-country-code",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "33* KernelSU / Magisk module to force WiFi country code on Android. Unlock restricted 5GHz, 6GHz (Wi"
+ },
+ {
+  "domain": "github.com/byteforge9190/casino-game-sportsbook-sports-betting",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "66* casino game casino game casino game casino game casino game casino slot game casino slot game ca"
+ },
+ {
+  "domain": "github.com/callmevojtko/recommended-bets-by-email-mlb",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "31* An advanced machine learning model utilizes a Random Forest Regressor to generate betting recomm"
+ },
+ {
+  "domain": "github.com/carterlasalle/sportsarbfinder",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "16* Sports Betting Arbitrage Finder: Python tool for identifying profitable arbitrage opportunities "
+ },
+ {
+  "domain": "github.com/casudo/kickbase-insights",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "13* This project is a used to gather data from Kickbase API endpoint and automate various interactio"
+ },
+ {
+  "domain": "github.com/cemasma/water-sort-puzzle-solver",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "21* water sort puzzle solver"
+ },
+ {
+  "domain": "github.com/cfbd/cfb.js",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "17* JavaScript client library for accessing the CollegeFootballData API"
+ },
+ {
+  "domain": "github.com/cfbd/cfbd-python",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "218* Python wrapper for the CFBD API"
+ },
+ {
+  "domain": "github.com/chayan-1906/sportz-websocket-node.js",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* \u26a1 Real-time sports match tracking & live commentary via WebSocket pub/sub \ud83c\udfdf\ufe0f\ud83d\udd0c"
+ },
+ {
+  "domain": "github.com/chenfengye/sportscap",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "149* [IJCV 2021] SportsCap: Monocular 3D Human Motion Capture and Fine-grained Understanding in Chal"
+ },
+ {
+  "domain": "github.com/chrisgarvin/fantasy_foobar",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* "
+ },
+ {
+  "domain": "github.com/chrisparsons83/ffdiscordbot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "21* Discord Bot for Fantasy Football"
+ },
+ {
+  "domain": "github.com/cloudbet/docs",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "32* Public Documentation"
+ },
+ {
+  "domain": "github.com/coreyjs/nhl-api-py",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "150* NHL API (2026/2027 Updated) - For accessing most of the NHL EDGE statistical API's, scores, sch"
+ },
+ {
+  "domain": "github.com/corriporai/runpandas",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "26* RunPandas - Python Package for handing running data from GPS-enabled devices to worldwide race r"
+ },
+ {
+  "domain": "github.com/corvuscodex/fiai",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "16* Simple Finance Forecasting Ai. This Ai Model uses historical price data to forecast future price"
+ },
+ {
+  "domain": "github.com/cosmoduende/r-ggsoccer",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "9* StrangeR things: Visualizing Soccer Data with R\u2026 on a Soccer\u00a0Pitch? How to analyze, visualize and"
+ },
+ {
+  "domain": "github.com/costasgk/scorecast",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "16* https://costas.pythonanywhere.com/"
+ },
+ {
+  "domain": "github.com/courseworks/aut_ap_2025_spring_hw1",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "18* This repo contains Homework 1 for AUT_AP_2025_Spring, featuring 3 tasks: a Bash file organizer, "
+ },
+ {
+  "domain": "github.com/crimsonfox2000/polymarket-prediction-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "41* Polymarket trading bot for prediction markets \u2014 browse CLOB markets, watch the order book in the"
+ },
+ {
+  "domain": "github.com/cristobalmitchell/sport-scraper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* Simple web scraper package for gathering sports data from ESPN.com"
+ },
+ {
+  "domain": "github.com/cu-sanjay/ipl-2026-api-free",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "9* A simple and free IPL cricket API that provides live scores, schedule, points table, team squads,"
+ },
+ {
+  "domain": "github.com/cutupdev/evm-prediction-market-frontend",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "24* EVM prediction market frontend, polymarket fork(clone)"
+ },
+ {
+  "domain": "github.com/cutupdev/solana-prediction-market-backend",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "29* Solana prediction market backend, polymarket fork(clone)"
+ },
+ {
+  "domain": "github.com/cutupdev/solana-prediction-market-frontend",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "27* Solana prediction market frontend, polymarket fork(clone)"
+ },
+ {
+  "domain": "github.com/cvidan/bet365-scraper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "154* Python script to scrape Bet365 odds using Selenium."
+ },
+ {
+  "domain": "github.com/d-t/fantacalcio",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "22* Analysis of Serie A Fantasy Football data"
+ },
+ {
+  "domain": "github.com/d2ski/football-transfers-data",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "10* Major European football leagues transfers dataset"
+ },
+ {
+  "domain": "github.com/daniel-mehta/fpl-expected-points",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* Predict Fantasy Premier League (FPL) points using two models: a Random Forest regression (ML_xP.p"
+ },
+ {
+  "domain": "github.com/danieltomaro13/sportsdata-agents",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "6* Free, open-source agentic sports-data workbench \u2014 32 specialist agents over live odds + stats fro"
+ },
+ {
+  "domain": "github.com/dannyreg/ffawards.app",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* FFAwards generates fun weekly and season awards and insights for your fantasy football league."
+ },
+ {
+  "domain": "github.com/danyalimran93/artificial-intelligence-state-space-search",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "27* Different Searching algorithms (DFS, BFS, IDS, Greedy, A*) opting to find optimal path from sour"
+ },
+ {
+  "domain": "github.com/davidpagnon/sports2d",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "298* Compute 2D human pose and angles from a video or a webcam. "
+ },
+ {
+  "domain": "github.com/davidweatherall/league-data-scraping-and-analytics",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "20* Tools to scrape data from the riot API and calculate stats used for eSports betting, such as fir"
+ },
+ {
+  "domain": "github.com/day-mon/sports-betting-ai",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "110* A website that utilizes a deep learning neural network to detect who will win NBA games"
+ },
+ {
+  "domain": "github.com/dchen327/ruzzle-solver",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "45* A python script that solves ruzzle boards"
+ },
+ {
+  "domain": "github.com/ddevetak/footballcharts-mcp",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Football data MCP server: tables, results, fixtures, goal timing and season projections for 93 le"
+ },
+ {
+  "domain": "github.com/ddzyx/qiuxiaoce-football-data",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* \u7403\u5c0f\u7b56\u5b98\u65b9\u5f00\u6e90\u8db3\u7403\u6570\u636e\u96c6\u4e0e AI Agent Skill\u3002\u6bcf\u65e5\u81ea\u52a8\u5316\u66f4\u65b0\u4e94\u5927\u8054\u8d5b\u4e0e\u6b27\u51a0\u8d5b\u524d\u91cf\u5316\u6570\u636e\u4e0e\u8d5b\u540e\u6bd4\u5206\u6bd4\u5bf9\uff0c\u652f\u6301\u521b\u4f5c\u8005 API \u5feb\u901f\u8c03\u7528\u3002"
+ },
+ {
+  "domain": "github.com/declansx/sports-prediction-market-aggregator",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "10* Aggregator and smart order router for sports prediction markets. Fetches real-time odds and liqu"
+ },
+ {
+  "domain": "github.com/derekrbreese/fantasy-football-mcp-public",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "76* Yahoo Fantasy Football MCP server for Claude Desktop - Advanced lineup optimization, draft assis"
+ },
+ {
+  "domain": "github.com/descire/leetcode",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "114* JavaScript AC solutions to problems on LeetCode"
+ },
+ {
+  "domain": "github.com/dfs-with-r/coach",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "51* Lineup optimization for daily fantasy sports"
+ },
+ {
+  "domain": "github.com/dhi/mikeio",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "183* Read, write and manipulate dfs0, dfs1, dfs2, dfs3, dfsu and mesh files."
+ },
+ {
+  "domain": "github.com/dhmay/jamstats",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "23* Tools for making plots on roller derby scoreboard data and following live game data"
+ },
+ {
+  "domain": "github.com/dianaow/flask-react-d3-celery",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "44* A full-stack dockerized web application to visualize Formula 1 race statistics from 2016 to pres"
+ },
+ {
+  "domain": "github.com/dicl/veloxdfs",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "26* DHT-based Distributed File System for MapReduce Jobs"
+ },
+ {
+  "domain": "github.com/diegopastor/awesome-football-analytics",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "215* A curated list of football analytics awesome resources, articles, books and more!"
+ },
+ {
+  "domain": "github.com/dills122/footy-data-kit",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* English football stats & scripts to pull/create data (Wikipedia, RSSSF)"
+ },
+ {
+  "domain": "github.com/dimakudosh/pydfs-lineup-optimizer",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "447* Daily Fantasy Sports lineup optimzer for all popular daily fantasy sports sites"
+ },
+ {
+  "domain": "github.com/dinethlive/fishing-game-patterns-recognizer",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* A Python-based tool for recognizing patterns in CSV data, originally created for a fishing game. "
+ },
+ {
+  "domain": "github.com/dingyiyi0226/fantasy-baseball",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* a fantasy baseball helper website to compare the stats of league and team"
+ },
+ {
+  "domain": "github.com/divyanshu-talwar/parallel-dfs",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "28* CUDA implementation of parallel Depth First Search (DFS) algorithm and it's comparison with a se"
+ },
+ {
+  "domain": "github.com/dkaslovsky/yafsa",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Yet Another Fantasy Sports Analysis"
+ },
+ {
+  "domain": "github.com/dmcp89/harambot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "34* A Yahoo Fantasy Sports bot for Discord"
+ },
+ {
+  "domain": "github.com/dmitrii-i/sportmonks",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "40* sportmonks is a Python 3.5+ package that implements SportMonks API. "
+ },
+ {
+  "domain": "github.com/dos-2/oddshub",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "125* A terminal UI designed for analyzing sports betting odds\ud83d\udcb0"
+ },
+ {
+  "domain": "github.com/drakkar-software/octobot-prediction-market",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "112* Polymarket open source trading bot to automate copy trading and arbitrage strategies on crypto "
+ },
+ {
+  "domain": "github.com/droher/boxball",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "132* Prebuilt Docker images with Retrosheet's complete baseball history data for many analytical fra"
+ },
+ {
+  "domain": "github.com/dtcarls/fantasy_football_chat_bot",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "307* GroupMe Discord and Slack Chatbot for ESPN Fantasy Football "
+ },
+ {
+  "domain": "github.com/dunlapjack/fantasy-football-rankings",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Statistics-only NFL fantasy football draft boards. Projects per-game points under any league's sc"
+ },
+ {
+  "domain": "github.com/dynastyprocess/data",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "110* An open-data fantasy football repository, maintained by DynastyProcess.com"
+ },
+ {
+  "domain": "github.com/ebjaime/quiniela-filler",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* La Quiniela is the name of a Spanish game of chance, managed by Loter\u00edas y Apuestas del Estado, w"
+ },
+ {
+  "domain": "github.com/ebrown-32/leaguepulse",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "15* Free custom website for any Sleeper fantasy football league to bring more immersion and life to "
+ },
+ {
+  "domain": "github.com/echandsome/polymarket-betting-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "99* A comprehensive TypeScript/Node.js backend system for automated trading on Polymarket. This plat"
+ },
+ {
+  "domain": "github.com/edavis25/fantasy-cycling",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* Application for running a fantasy cycling league."
+ },
+ {
+  "domain": "github.com/edavis25/fantasy-football-database",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "13* Fantasy football data scraping and projections."
+ },
+ {
+  "domain": "github.com/eddwebster/football_analytics",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "2775* \ud83d\udcca\u26bd  A collection of football analytics projects, data, and analysis by Edd Webster (@eddwebste"
+ },
+ {
+  "domain": "github.com/elonbiz/sports-betting-sportsbook",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "103* sports betting sports betting sports betting sports betting sports betting sports betting sport"
+ },
+ {
+  "domain": "github.com/elwan9880/yahoo_fantasy_basketball_analyzer",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "16* Yahoo fantasy basketball analyzer in Python"
+ },
+ {
+  "domain": "github.com/emildanielsson/player-rating-project",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "13* This project aims to rate football players using data and statistics recorded from the last matc"
+ },
+ {
+  "domain": "github.com/ercindedeoglu/livesoccerscores",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "13* \u26bd\ufe0f\ud83d\udca5\u26bd\ufe0fLive soccer scores, fixtures, and results. It uses API to retrieve up-to-date information f"
+ },
+ {
+  "domain": "github.com/erdieee/allusion",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "21* Sports betting (Arbitrage) bot "
+ },
+ {
+  "domain": "github.com/erickouassi/the-football-api-",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* It\u2019s a free GitHub database that gives you all the match schedules and results for big football t"
+ },
+ {
+  "domain": "github.com/ethemdemirkaya/transfermarkt-api-guide",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "6* Unofficial documentation for Transfermarkt's private API endpoints. A community-driven guide for "
+ },
+ {
+  "domain": "github.com/externoak/laligaapp",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "24* Aplicaci\u00f3n de escritorio para LaLiga Fantasy que centraliza toda la gesti\u00f3n de tu equipo y tu li"
+ },
+ {
+  "domain": "github.com/fantasyfootballanalytics/fantasyfootballanalyticsr",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "502* R scripts and data files for the Fantasy Football Analytics website"
+ },
+ {
+  "domain": "github.com/fantasyfootballanalytics/ffanalytics",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "190* ffanalytics R package "
+ },
+ {
+  "domain": "github.com/fantasyfundshq/fantasyfunds",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Making investing feel just as competitive and social as fantasy sports"
+ },
+ {
+  "domain": "github.com/farid-karimi/pac-man",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "24* This project is a simplified version of Pac-Man with randomly generated maps, custom colors, and"
+ },
+ {
+  "domain": "github.com/fearandesire/pluto-betting-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "24* Pluto - A multi-sport betting bot for Discord"
+ },
+ {
+  "domain": "github.com/fearandesire/resolve-team",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* Instantly identify & resolve sports team names with fuzzy search & more"
+ },
+ {
+  "domain": "github.com/felipeam86/garpy",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "28* Make your garmin data yours again!"
+ },
+ {
+  "domain": "github.com/ffverse/ffopportunity",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "23* Models for Fantasy Football Expected Points"
+ },
+ {
+  "domain": "github.com/ffverse/ffscrapr",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "94* R API Client for Fantasy Football League Platforms"
+ },
+ {
+  "domain": "github.com/ffverse/ffsimulator",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "22* Simulate Fantasy Football Seasons"
+ },
+ {
+  "domain": "github.com/flancast90/nfl_markov_predictor",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* Example Markov Chain model for predicting the results of a sports game given historic probability"
+ },
+ {
+  "domain": "github.com/flancast90/sportsbookreview-scraper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "51* Sportsbookreview.com scraper + complete 10Y games+odds data for NFL, NBA, NHL, MLB for bettors a"
+ },
+ {
+  "domain": "github.com/floodlight-sports/floodlight",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "130* Python package for streamlined analysis of sports data."
+ },
+ {
+  "domain": "github.com/floschl8/sleeper-mcp",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "17* MCP for Sleeper Fantasy Football"
+ },
+ {
+  "domain": "github.com/fluidity-money/9lives.so",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "21* 9lives is Arbitrum's most advanced short-term prediction market."
+ },
+ {
+  "domain": "github.com/footprintjs/footprint",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "20* The flowchart pattern for backend code \u2014 self-explainable systems that AI can reason about. Caus"
+ },
+ {
+  "domain": "github.com/forcemaredart/stake.com-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* Unofficial Stake.com GraphQL API documentation \u2014 balance, bets, withdrawals, tips, sessions."
+ },
+ {
+  "domain": "github.com/freakmaxi/kertish-dos",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "107* Kertish-dos is a simple distributed object storage platform, implements object storage on a sin"
+ },
+ {
+  "domain": "github.com/fullscreen-triangle/morphine",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Computer Vision-Powered Streaming Platform with Real-Time Analytics and Micro-Betting"
+ },
+ {
+  "domain": "github.com/furysport/furya-chain",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "5* \ud83c\udfdf The Furya Chain aims to redefine the Sports and Gaming DeFi landscape ---- \ud83e\udd68 It provides the fo"
+ },
+ {
+  "domain": "github.com/future3lab/iran-skill",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "11* 119-file AI geopolitical analysis OS for the 2026 Iran crisis. 2500 years of Persian history + 8"
+ },
+ {
+  "domain": "github.com/gabrieldrn/java-maze-solver",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "22* Maze solving in java with BFS, DFS, A*"
+ },
+ {
+  "domain": "github.com/gautam0826/fmls-projections",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* Creates points projections for Fantasy MLS game"
+ },
+ {
+  "domain": "github.com/geoffharcourt/cbs_fantasy_sports_api_token_fetcher",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "10* A gem to retrieve your CBS fantasy sports API token"
+ },
+ {
+  "domain": "github.com/georgedouzas/sports-betting",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "783* Collection of sports betting AI tools."
+ },
+ {
+  "domain": "github.com/geraldholdsworth/discimagemanager",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "110* To manage retro floppy disc images"
+ },
+ {
+  "domain": "github.com/gingeleski/odds-portal-scraper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "129* Sports odds and results scraping for Odds Portal (oddsportal.com)."
+ },
+ {
+  "domain": "github.com/giovanigenerali/cartrolandofc",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "279* \ud83c\udfa9 CartrolandoFC \u00e9 um site para consultar os pontos parciais do seu time no Cartola FC."
+ },
+ {
+  "domain": "github.com/gnosis/prediction-market-agent-tooling",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "60* Tools to benchmark, deploy and monitor prediction market agents. "
+ },
+ {
+  "domain": "github.com/gotoconversion/goto_conversion",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "115* goto_conversion - Powered $47,000 of prize money, 10+ Gold Medals and 100+ Medals on Kaggle"
+ },
+ {
+  "domain": "github.com/gsurma/slitherin",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "91* AI research environment for the game of Snake \ud83d\udc0d ."
+ },
+ {
+  "domain": "github.com/gtg7784/dr-manhattan-rust",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "54* A CCXT-style unified API for prediction markets (Polymarket, Limitless, Opinion, Kalshi and Pred"
+ },
+ {
+  "domain": "github.com/gtg7784/dr-manhattan-ts",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "56* A CCXT-style unified API for prediction markets (Polymarket, Limitless, Opinion, Kalshi, Predict"
+ },
+ {
+  "domain": "github.com/gtg7784/howcryptoworksbook-kr",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "5* This is Korean version of https://github.com/lawmaster10/howcryptoworksbook (Fully automated main"
+ },
+ {
+  "domain": "github.com/gtonic/nfl_mcp",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "19* MCP Server providing NFL intelligence - ESPN Newsfeed and Sleeper API"
+ },
+ {
+  "domain": "github.com/hadjdeh/football-data-analysis",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "92* Football Data Processing & Visualization"
+ },
+ {
+  "domain": "github.com/hannahigboke/epl-soccer-data--an-exploratory-data-analysis-using-python",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* This is an exploratory analysis of the EPL soccer data for the 2018\u20132019 season. Using Python, I "
+ },
+ {
+  "domain": "github.com/haris-sujethan/live-sportsbook-arbitrage",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "18* Live sportsbook arbitrage tool with research-backed betting strategy (Ontario focused)"
+ },
+ {
+  "domain": "github.com/harlanljones/baseball-dashboard",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Live MLB scoreboard and game dashboard with sabermetric matchup stats, weather, and player props"
+ },
+ {
+  "domain": "github.com/harmanveer-2546/sports-bets-winning-algorithm",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Sports betting is the activity of predicting sports results and placing a wager on the outcome."
+ },
+ {
+  "domain": "github.com/harrieronchain/prediction-markets-trading-bot-toolkits",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "434* Rust trading bots for prediction markets \u2014 Polymarket, Kalshi, Limitless. Copy Trading is produ"
+ },
+ {
+  "domain": "github.com/hetianyi/godfs",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "288* A simple fast, easy use distributed file system written in go."
+ },
+ {
+  "domain": "github.com/hicruben/world-cup-2026-prediction-model",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "93* Open-source statistical model (Elo + Dixon-Coles + Monte Carlo) for the 2026 FIFA World Cup \u2014 no"
+ },
+ {
+  "domain": "github.com/hikmatazimzade/tennis-ai",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "69* Tennis AI to predict the winner in ATP matches with 3 different models and a web UI"
+ },
+ {
+  "domain": "github.com/hkyplyr/yfantasy-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "13* Python API client that can be used to make calls to the Yahoo! Fantasy Sports API. Developed spe"
+ },
+ {
+  "domain": "github.com/hongbo-miao/leetcode",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "202* LeetCode solutions"
+ },
+ {
+  "domain": "github.com/horony/ftsy-bundesliga",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* Private Bundesliga fantasy manager game."
+ },
+ {
+  "domain": "github.com/hoyishian/footballwebscraper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "32* This is a web scraper that helps to scrape football data from FBRef.com. It can scrape data from"
+ },
+ {
+  "domain": "github.com/hudl/open-data",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "3597* Free football data from StatsBomb"
+ },
+ {
+  "domain": "github.com/ian-whitestone/nba-dfs",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "18* NBA Daily Fantasy Sports EDA and Player Modelling with R"
+ },
+ {
+  "domain": "github.com/ifan6oy/flash-props-discord-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* A Discord bot that posts live sports player props from the Flash Props API. Fork it, add your key"
+ },
+ {
+  "domain": "github.com/ikushlianski/football-score-simulator-2017",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "18* The app simulates football matches. Choose team names, relative strength, home crowd support, ta"
+ },
+ {
+  "domain": "github.com/im-parsa/livesoccer",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "41* The Open-Source Live Football Standing"
+ },
+ {
+  "domain": "github.com/infersports/infersports-skill",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "33* InferSports Agent Skill \u2014 live Asian-priced football & basketball odds + scores. Read-only, keyl"
+ },
+ {
+  "domain": "github.com/isaactpetersen/fantasy-football-analytics-textbook",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "19* Textbook for Fantasy Football Analytics course"
+ },
+ {
+  "domain": "github.com/isportsapiofficial/isports-sdk",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* iSports API is a global sports data API provider delivering real-time sports data, live score API"
+ },
+ {
+  "domain": "github.com/isportsapiofficial/isports-sdk-java",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* iSports API is a global sports data API provider delivering real-time sports data, live score API"
+ },
+ {
+  "domain": "github.com/itmisx/go-dfs",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "21* \u4e00\u6b3e\u6613\u7528\u7684\u5206\u5e03\u5f0f\u6587\u4ef6\u7cfb\u7edf\uff0c\u514d\u8d39\u3001\u5f00\u6e90\u3002"
+ },
+ {
+  "domain": "github.com/itstitle/fantasy-football-draft-room",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "27* A fantasy football draft tool with two modes: a mock draft against a room you can tune, and an a"
+ },
+ {
+  "domain": "github.com/itwanger/paiagent",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "666* \ud83d\udd25\u8f7b\u91cf\u7ea7\u7684AI\u5de5\u4f5c\u6d41\u7f16\u6392\u7cfb\u7edf\uff0c\u7c7b\u4f3cdify\u3001n8n\uff0c\u5168\u7a0b\u4f7f\u7528Vibe Coding\uff0cAI\u5de5\u5177\u4e3aQoder+CLI\u3002\u6d89\u53ca\u5230\u7684\u6280\u672f\u6808\u5305\u62ecSpringAI\u3001LangGraph4J\u3001SSE\u3001MinI"
+ },
+ {
+  "domain": "github.com/j-andrews7/kenpompy",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "88* A simple yet comprehensive web scraper for kenpom.com."
+ },
+ {
+  "domain": "github.com/jackeiel/nba",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "8* NBA Score Prediction"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/awesome-sports-betting-data",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* A curated list of sports betting data resources: odds APIs, historical datasets, open source tool"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/betting-model-starter",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Template: build a sports betting model on the ParlayAPI odds API. Fetch odds and props, devig, sc"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/parlay-api-arb-starter",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Find live cross-book arbitrage in under 150 lines of Python. Powered by ParlayAPI - free tier wor"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/parlay-api-js",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Official ParlayAPI JavaScript/TypeScript SDK: sports odds across 30+ sportsbooks, player props, a"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/parlayapi-agent-tools",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Ready made ParlayAPI sports odds tools for LangChain, LlamaIndex and raw OpenAI/Anthropic functio"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/parlayapi-arb-scanner",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Python CLI arbitrage scanner for sportsbook odds, powered by ParlayAPI. Runs with zero setup agai"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/parlayapi-betting-agent-starter",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Betting agent starter for the ParlayAPI sports odds API: live moneylines in, no-vig fair lines ou"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/parlayapi-collections",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Ready-to-import ParlayAPI collections for Bruno, Postman, Insomnia, and HTTPie. Sports odds, prop"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/parlayapi-data-bounty",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Catch ParlayAPI serving a wrong line, earn free credits. Public data-accuracy bounty with an appe"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/parlayapi-discord-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Personal Discord odds assistant: one configured owner, private replies, and your own ParlayAPI ac"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/parlayapi-line-shopper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Shop the line from your terminal: every book's price per outcome, best/worst flagged, cents of ho"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/parlayapi-obs-overlay",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Free OBS browser-source overlay for betting streamers: rotating best-line ticker, keyless by desi"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/parlayapi-odds-action",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Fetch ParlayAPI odds for private GitHub workflows into protected temporary JSON or CSV files. Eac"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/parlayapi-raycast",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Sports Odds extension for Raycast: search the best available lines across 30+ sportsbooks and run"
+ },
+ {
+  "domain": "github.com/jacobiusmakes/parlayapi-sheets",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Live sports odds, line shopping, devig and Kelly staking as Google Sheets formulas. Copy one Apps"
+ },
+ {
+  "domain": "github.com/jakepartusch/fantasy-tools",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "48* A suite of tools for fantasy football players"
+ },
+ {
+  "domain": "github.com/jan17392/asianodds",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "38* Smart API-Wrapper for the Asianodds Betting API - The go to service to automate your sports trad"
+ },
+ {
+  "domain": "github.com/jaschrs/laliga-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* (deprecated) An API to extract live LaLiga player statistics, standings, and fixtures."
+ },
+ {
+  "domain": "github.com/jaseziv/worldfootballr",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "602* A wrapper for extracting world football (soccer) data from FBref, Transfermark, Understat"
+ },
+ {
+  "domain": "github.com/jcasman/nhl-schedule-cli",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Simple Python CLI for finding NHL regular-season games against your favorite opponents."
+ },
+ {
+  "domain": "github.com/jchrys/icpc",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "17* Resources for Competitive Programming"
+ },
+ {
+  "domain": "github.com/jdguggs10/flaim",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "17* Fantasy Sports MCP Platform"
+ },
+ {
+  "domain": "github.com/jessecmaddox3/fantasy-football-toolkit",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Read-only Sleeper and ESPN fantasy football toolkit: draft boards, lineup optimization, weekly br"
+ },
+ {
+  "domain": "github.com/jfjelstul/englishfootball",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "73* A Comprehensive Database on the Premier League and the English Football League (1888-2024)"
+ },
+ {
+  "domain": "github.com/jfjelstul/worldcup",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "336* A Comprehensive Database on the FIFA World Cup (Men's and Women's)"
+ },
+ {
+  "domain": "github.com/jhookc/league-list",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Sports league explorer built with React, Vite, and Tailwind \u2014 search, filter, and browse season b"
+ },
+ {
+  "domain": "github.com/jimmykane/quantified-self",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "226* Analyze your data from Garmin, Suunto, Coros to one centralized app"
+ },
+ {
+  "domain": "github.com/jimtje/totalcorner",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* totalcorner.com api client"
+ },
+ {
+  "domain": "github.com/jjti/ff",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "78* fantasy football draft assistant with projections from ESPN, CBS, and NFL"
+ },
+ {
+  "domain": "github.com/jkorf/polymarket.net",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "39* A C# client library for the Polymarket REST and Websocket API focusing on clear usage and models"
+ },
+ {
+  "domain": "github.com/jmlee8939/whoscored_crawling",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "6* soccer_data_crawling"
+ },
+ {
+  "domain": "github.com/joechan22/racetrack-analytics",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* "
+ },
+ {
+  "domain": "github.com/joeyagreco/leeger",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "86* Instant stats for any fantasy football league."
+ },
+ {
+  "domain": "github.com/joeyagreco/sleeper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "39* A Python wrapper for the Sleeper API."
+ },
+ {
+  "domain": "github.com/johnserf-seed/sportteryapi",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "12* China Sports Lottery \u7ade\u5f69\u8db3\u7403 (Jingcai football) odds API \u2014 a Cloudflare Worker REST API + local MCP"
+ },
+ {
+  "domain": "github.com/jokecamp/epl-fantasy-geek",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "53* English Premier League 2017-18 Fantasy Stats for Geeks"
+ },
+ {
+  "domain": "github.com/jonortega20/fantasybot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "24* Agente aut\u00f3nomo para LALIGA Fantasy: lee el juego, decide y act\u00faa (pujas, ventas, clausulazos, a"
+ },
+ {
+  "domain": "github.com/jordantete/oddsharvester",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "241* A python app designed to scrape and process sports betting data directly from oddsportal.com \ud83c\udfaf"
+ },
+ {
+  "domain": "github.com/josedv82/public_sport_science_datasets",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "79* An ongoing compilation of publicly available datasets for sport science projects."
+ },
+ {
+  "domain": "github.com/joseparreiras/transfermarkt",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* Scrapping of Historical Market Values (MV) of football players from www.transfermarkt.com using S"
+ },
+ {
+  "domain": "github.com/jovanipink/awesome-nfl-data",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Curated NFL data sources, APIs, analytics tools, film study, podcasts, and research methods."
+ },
+ {
+  "domain": "github.com/jpzhangvincent/nbafantasysportbetting-ml-project",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "20* Use Machine Learning to infer best betting strategy to play the NBA fantasy sport game on DraftK"
+ },
+ {
+  "domain": "github.com/jtranq/polyfill-rs",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "225* The Fastest Polymarket Rust Client"
+ },
+ {
+  "domain": "github.com/juancarlospaco/cloudbet",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "17* Cloudbet Virtual Crypto Casino API Client"
+ },
+ {
+  "domain": "github.com/juanpablomonsalvezb-alt/nebbuler-mundial-sdk",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* TypeScript SDK for Nebbuler Mundial 2026 open API. Zero deps, optional React widget."
+ },
+ {
+  "domain": "github.com/junhwanjang/whoscored",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "43* Football player rating analysis and position recommendation"
+ },
+ {
+  "domain": "github.com/juster-finance/juster-app",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "10* Decentralized betting protocol built on Tezos blockchain"
+ },
+ {
+  "domain": "github.com/juster-finance/juster-core",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "8* Juster smart contracts for Tezos blockchain"
+ },
+ {
+  "domain": "github.com/jyrao/unisoccer",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "232* [CVPR 2025] \"Towards Universal Soccer Video Understanding\"."
+ },
+ {
+  "domain": "github.com/k5cents/fflr",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "29* Get ESPN fantasy football data in R"
+ },
+ {
+  "domain": "github.com/kabaddipy/kabaddipy",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "53* Code for kabaddiPy API published on PyPI."
+ },
+ {
+  "domain": "github.com/kachence/polymm",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "92* A Polymarket sports market-making / arbitrage bot in Python - de-vig sportsbook odds, quote, hed"
+ },
+ {
+  "domain": "github.com/kachence/prediction-almanac",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "20* A self-updating awesome list of prediction markets, their data coverage, and tools - regenerated"
+ },
+ {
+  "domain": "github.com/kalimamzad/graph-theory-in-python",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "26* Graph Theory Algorithm is implemented in python. Jupyter Notebook is used to demonstrate the con"
+ },
+ {
+  "domain": "github.com/kazelad/prediction-market-trade-sdk",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "141* Trade SDK for prediction-market data and hosted trading"
+ },
+ {
+  "domain": "github.com/kbthree13/mcp_espn_ff",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "44* ESPN Fantasy API with LLMs!"
+ },
+ {
+  "domain": "github.com/keidev-sol/sports-casino-betting-book",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Full-stack crypto sports betting & casino platform \u2014 live odds, realtime provably-fair games, dar"
+ },
+ {
+  "domain": "github.com/kengoa/fantasy-basketball",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "269*  Scraping statistics, predicting NBA player performance with neural networks and boosting algor"
+ },
+ {
+  "domain": "github.com/kengoa/fantasy-ga",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "6* Genetic algorithm library to generate daily fantasy sports lineups for DraftKings"
+ },
+ {
+  "domain": "github.com/kevalmorabia97/graph-theory-implementations-in-java",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "16* This project contains the implementation of basic graph theory algorithms like BFS, DFS, Kruskal"
+ },
+ {
+  "domain": "github.com/kevintrinhdev/prize-pick-predictions",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "39* A sport predictions full-stack application that generates betting recommendations & data on Priz"
+ },
+ {
+  "domain": "github.com/khalidsaifullaah/pathfinding-visualizer",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "22* A web app to help visualizing typical graph searching algorithms"
+ },
+ {
+  "domain": "github.com/kheller18/sportsbook-4",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "24* A React.js sports betting website where users can place bets and track their earnings."
+ },
+ {
+  "domain": "github.com/kishpatel1222-prog/theoddsapi-examples",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Working Python, JavaScript, and Node quickstart examples for The Odds API \u2014 live sports odds, bes"
+ },
+ {
+  "domain": "github.com/kjeverson/nfldrafttracker",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* NFL Draft Tracker using Python, Flask, and Bootstrap"
+ },
+ {
+  "domain": "github.com/klane/databall",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "151* Betting on the NBA with data"
+ },
+ {
+  "domain": "github.com/kortirso/fantasy_sports",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* Web application for creating and maintaining fantasy leagues for different kinds of sport competi"
+ },
+ {
+  "domain": "github.com/kt474/fantasy-football-wrapped",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "60* Detailed insights and charts for Sleeper and ESPN fantasy football leagues "
+ },
+ {
+  "domain": "github.com/kuestcom/prediction-market",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "1086* Launch your own web3 decentralized prediction market in minutes (Polymarket like)"
+ },
+ {
+  "domain": "github.com/kush0o7/bet_model",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* End-to-end EPL model comparing XGBoost predictions with bookmaker odds, including calibration, ba"
+ },
+ {
+  "domain": "github.com/kyleskom/nba-machine-learning-sports-betting",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "1702* NBA sports betting using machine learning"
+ },
+ {
+  "domain": "github.com/laberning/openrowingmonitor",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "182* A free and open source performance monitor for rowing machines"
+ },
+ {
+  "domain": "github.com/lacausecrypto/mcp-sports-hub",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "22* Unified MCP server \u2014 41 sports API providers, 396 tools in one process: scores, stats, odds, esp"
+ },
+ {
+  "domain": "github.com/lainezharley/finalproject-nflbettingmethodanalysis",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Analyzed NFL Week 10 2025 betting data to evaluate the profitability of moneylines, spreads, and "
+ },
+ {
+  "domain": "github.com/landonpatmore/yahoo-fantasy-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "86* Bot that alerts GroupMe, Discord, and Slack users about various things happening in their Yahoo "
+ },
+ {
+  "domain": "github.com/lastmaj/graphql-fpl",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "26* A GraphQL wrapper for the Fantasy Premier League REST API, using node.js and graphql-yoga."
+ },
+ {
+  "domain": "github.com/lawmaster10/howcryptoworksbook",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "888* A free, open-source book that explains how crypto actually works. 15 chapters covering Bitcoin,"
+ },
+ {
+  "domain": "github.com/leonardpepa/pathfinding-visualizer",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "27* Pathfinding Visualizer application that visualizes graph based search algorithms used to find th"
+ },
+ {
+  "domain": "github.com/lesingh1/edgeboard",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Personal real-time PrizePicks board + lineup optimizer. Real player projections (MLB Stats API, E"
+ },
+ {
+  "domain": "github.com/lesingh1/mlb-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Unofficial, typed Node client for ESPN's MLB data. Clean game logs, scoreboards, rosters and odds"
+ },
+ {
+  "domain": "github.com/lesingh1/nba-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Unofficial, typed Node client for ESPN's NBA data. Clean game logs, scoreboards, rosters and odds"
+ },
+ {
+  "domain": "github.com/lesingh1/ncaaf-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Unofficial, typed Node client for ESPN's NCAAF data. Clean game logs, scoreboards, rosters and od"
+ },
+ {
+  "domain": "github.com/lesingh1/ncaam-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Unofficial, typed Node client for ESPN's NCAAM data. Clean game logs, scoreboards, rosters and od"
+ },
+ {
+  "domain": "github.com/lesingh1/ncaaw-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Unofficial, typed Node client for ESPN's NCAAW data. Clean game logs, scoreboards, rosters and od"
+ },
+ {
+  "domain": "github.com/lesingh1/nfl-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Unofficial, typed Node client for ESPN's NFL data. Clean game logs, scoreboards, rosters and odds"
+ },
+ {
+  "domain": "github.com/lesingh1/nhl-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Unofficial, typed Node client for ESPN's NHL data. Clean game logs, scoreboards, rosters and odds"
+ },
+ {
+  "domain": "github.com/lesingh1/soccer-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Unofficial, typed Node client for ESPN's SOCCER data. Clean game logs, scoreboards, rosters and o"
+ },
+ {
+  "domain": "github.com/lesingh1/tennis-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Unofficial, typed Node client for ESPN's TENNIS data. Clean game logs, scoreboards, rosters and o"
+ },
+ {
+  "domain": "github.com/lesingh1/wnba-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Unofficial, typed Node client for ESPN's WNBA data. Clean game logs, scoreboards, rosters and odd"
+ },
+ {
+  "domain": "github.com/lewismj/functional_graph_algos",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "21* Library for functional graph & geometry algorithms"
+ },
+ {
+  "domain": "github.com/lightbluetitan/fifa_world_cup_1930_2022",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* Curated dataset of FIFA World Cup history and statistics (1930\u20132022), covering all 22 editions wi"
+ },
+ {
+  "domain": "github.com/lightningcookies/custom-fantasy-projections",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "7* Welcome to the Custom-Fantasy-Projections repository! This personal project aims to provide a way"
+ },
+ {
+  "domain": "github.com/limitlesssiddh/hockeyscores",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Full-stack NHL dashboard for live scores, recent games, and searchable player and goalie statisti"
+ },
+ {
+  "domain": "github.com/lipikas7710/stake.com-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* Explore Stake.com GraphQL API docs and a Telegram bot for balance, bets, withdrawals, tips, sessi"
+ },
+ {
+  "domain": "github.com/livetennisapi/.github",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Organisation profile for Live Tennis API"
+ },
+ {
+  "domain": "github.com/livetennisapi/livetennisapi-mcp",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "158* MCP server for the Live Tennis API \u2014 give Claude, Cursor and other LLM agents real-time tennis "
+ },
+ {
+  "domain": "github.com/livetennisapi/livetennisapi-python",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Official Python client for the Live Tennis API \u2014 real-time tennis scores for ATP, WTA, Challenger"
+ },
+ {
+  "domain": "github.com/longoodr/deep-field",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* A baseball-reference.com play-by-play scraper and database generator"
+ },
+ {
+  "domain": "github.com/lord-of-algorithms/dsa-in-java",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "36* Algorithms and data structures implemented in Java"
+ },
+ {
+  "domain": "github.com/lord-of-algorithms/dsa-in-python",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "36* Algorithms and data structures implemented in Python"
+ },
+ {
+  "domain": "github.com/lordarma/iranian-league-table",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* A WordPress plugin that helps WordPress sites display the Iranian Premier League (Persian Gulf Le"
+ },
+ {
+  "domain": "github.com/louaih/bonus-hedge",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* Find optimal hedging opportunities for sportsbook bonus bets with guaranteed profit calculations "
+ },
+ {
+  "domain": "github.com/lovewaddddddddaa19-ship-it/oddsscv-sports-odds-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* \uc2e4\uc2dc\uac04 \uc2a4\ud3ec\uce20 \ubc30\ub2f9 \ub370\uc774\ud130 API (oddsscv.com) \u2014 \ud504\ub9ac\ub9e4\uce58\u00b7\uc778\ud50c\ub808\uc774 \ubc30\ub2f9 JSON\ud53c\ub4dc \uc608\uc81c"
+ },
+ {
+  "domain": "github.com/lucacazzanti/tfutils",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* A library for parsing and plotting Tracab soccer data from XML files"
+ },
+ {
+  "domain": "github.com/luciferforge/polymarket-btc-autotrader",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "15* Autonomous BTC & SOL trading bot for Polymarket. ARB (100% WR) + SNIPE strategies. Auto-trades v"
+ },
+ {
+  "domain": "github.com/luciferforge/polymarket-pnl",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "7* Instant P&L breakdown for any Polymarket wallet. One command, zero API keys. Analyze any trader \u2014"
+ },
+ {
+  "domain": "github.com/lumifyai/lumify",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* Official TypeScript & Python SDKs + MCP integration for the Lumify sports-intelligence API: sched"
+ },
+ {
+  "domain": "github.com/magnusbakken/espn-fantasy-autopick",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "13* A Chrome extension that lets you automatically add active players to the current roster in an ES"
+ },
+ {
+  "domain": "github.com/manucabral/easysoccerdata",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "48* A Python package for fetching live football/soccer stats from multiple online sources (Sofascore"
+ },
+ {
+  "domain": "github.com/markbakos/ufc-predictor",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* UFC fight prediction tool built with TensorFlow and Python, UI built with Vue and Tailwind. Uses "
+ },
+ {
+  "domain": "github.com/martineastwood/penaltyblog",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "217* \u26bd High-performance football analytics: build data pipelines, scrape data, model matches, rank t"
+ },
+ {
+  "domain": "github.com/martj42/international_results",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "523* "
+ },
+ {
+  "domain": "github.com/masouduut94/volleyball_analytics",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "122* This project is designed to display how we can utilize deep learning methods for Sports Data An"
+ },
+ {
+  "domain": "github.com/matheusgatti/soccer-corners-crawler-and-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "37* It's a crawler for statistics of corners and goals for the future games and a bot for Telegram t"
+ },
+ {
+  "domain": "github.com/matiasmascioto/awesome-soccer-analytics",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "626* :soccer::chart_with_upwards_trend: A curated list of awesome resources related to Soccer Analyt"
+ },
+ {
+  "domain": "github.com/mattdgn/pm-amm",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "47* Implementation of the Paradigm pm-AMM on Solana. "
+ },
+ {
+  "domain": "github.com/mbjoseph/bbr",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "20* R package to scrape data from basketball-reference.com"
+ },
+ {
+  "domain": "github.com/mcdonoughd/cs2223",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "424* This a repository for WPI CS2223 Algorithms D Term 2018"
+ },
+ {
+  "domain": "github.com/mcg-nju/multisports",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "138* [ICCV 2021] MultiSports: A Multi-Person Video Dataset of Spatio-Temporally Localized Sports Act"
+ },
+ {
+  "domain": "github.com/mdoege/ibm1620-baseball",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "5* Instructions and files for running the pioneering 1960s baseball simulation by John W. Burgeson i"
+ },
+ {
+  "domain": "github.com/mg30/odds-portal-scraper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "24* A Nodejs CLI for scraping oddsportal.com"
+ },
+ {
+  "domain": "github.com/michaelwayman/python-genetic",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "10* Genetic algorithm to solve np-complete maximization problems. Originally intended for fantasy sp"
+ },
+ {
+  "domain": "github.com/microsoft/0xdeca10b",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "609* Sharing Updatable Models (SUM) on Blockchain"
+ },
+ {
+  "domain": "github.com/mikemountain/fantasy-football-scoreboard",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "65* Display the score of your fantasy football team on a Raspberry Pi driven RGB LED matrix for maxi"
+ },
+ {
+  "domain": "github.com/mint-scripts-studio/polymarket-clone-script-open-source",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "8* Enterprise-grade Polymarket Script Clone (Open Source Core). Premium Web3 Prediction Market Platf"
+ },
+ {
+  "domain": "github.com/minus5/go-uof-sdk",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "21* Betradar Unified Odds Feed SDK for the Go programming language. "
+ },
+ {
+  "domain": "github.com/mjk2244/pro-football-reference-web-scraper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "41* Web scraper to retrieve player and team data from Pro Football Reference."
+ },
+ {
+  "domain": "github.com/mkreiser/espn-fantasy-football-api",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "351* Connect to ESPN's fantasy football API via this JS API client for web and NodeJS. Available as "
+ },
+ {
+  "domain": "github.com/ml-kuleuven/socceraction",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "812* Convert soccer event stream data to SPADL and value player actions using VAEP or xT"
+ },
+ {
+  "domain": "github.com/mli3w/world-vs-model",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "6* Can a model beat the betting market? Two transparent models vs the crowd across 240 Polymarket Wo"
+ },
+ {
+  "domain": "github.com/mlxger/sports-card-ai",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "11* The best transaction card identification and field parsing platform"
+ },
+ {
+  "domain": "github.com/mominullptr/fifa-world-cup-2026-dataset",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "63* The most complete and actively updated FIFA World Cup 2026 dataset on Kaggle. A clean, authentic"
+ },
+ {
+  "domain": "github.com/mooncitydev/worldcup-2026-prediction",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "6* FIFA 2026 world cup prediction (spain, brazil, uk, france etc...) prediction market, worldcup spo"
+ },
+ {
+  "domain": "github.com/morpheusthewhite/parallel-dfs-dag",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "50* A parallel implementation of DFS for Directed Acyclic Graphs (https://research.nvidia.com/public"
+ },
+ {
+  "domain": "github.com/morvanzhou/pathfind",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "17* path finding algorithms"
+ },
+ {
+  "domain": "github.com/mostafa-nafie/football-object-detection",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "64* This is a computer vision project that utilizes object detection algorithms to analyze football "
+ },
+ {
+  "domain": "github.com/mr-adult/tree-iterators-rs",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "44* tree-iterators-rs is a library built to provide you with the iterators to easily work with tree "
+ },
+ {
+  "domain": "github.com/mradovic38/football-analysis",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "177* A comprehensive tool for processing and analyzing video footage, producing detailed insights in"
+ },
+ {
+  "domain": "github.com/mrdogeco/docs",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* Open-source components for sports apps. Built with Tailwind and shadcn/ui."
+ },
+ {
+  "domain": "github.com/mrdogeco/sdk",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* Mr. Doge's official SDK"
+ },
+ {
+  "domain": "github.com/ms3b09/botola-scout",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "9* Interactive Football Scouting Web App for BotolaPro Moroccan League using Streamlit "
+ },
+ {
+  "domain": "github.com/muhozgu/zendek",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* AI Player support platform for iGaming operations, automating ticket classification, response gen"
+ },
+ {
+  "domain": "github.com/mverab/worldcupbench",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "14* \u26bd\ud83e\udd16 11 frontier LLMs predicted the entire 2026 World Cup \u2014 frozen before kickoff. Live leaderboar"
+ },
+ {
+  "domain": "github.com/mysportsfeeds/mysportsfeeds-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "45* Feature requests for the MySportsFeeds Sports Data API."
+ },
+ {
+  "domain": "github.com/mysportsfeeds/mysportsfeeds-node",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "65* NodeJS wrapper for the MySportsFeeds Sports Data API"
+ },
+ {
+  "domain": "github.com/mysportsfeeds/mysportsfeeds-r",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "28* R wrapper functions for the MySportsFeeds Sports Data API"
+ },
+ {
+  "domain": "github.com/n-eq/kooora-unofficial-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "25* \u26bd\ufe0f kooora.com unofficial API"
+ },
+ {
+  "domain": "github.com/n-roth12/fantasy-rankings-scraper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* A Python package for scraping fantasy football draft rankings across multiple websites."
+ },
+ {
+  "domain": "github.com/nahrek/polyledger",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "622* Resumable Polymarket indexer: CLOB market metadata plus on-chain trades from Polygon, in one Du"
+ },
+ {
+  "domain": "github.com/naterice/nbadailyfantasy",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* NBA daily fantasy lineup analysis"
+ },
+ {
+  "domain": "github.com/nautechsystems/nautilus_trader",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "28669* Production-grade Rust-native trading engine with deterministic event-driven architecture"
+ },
+ {
+  "domain": "github.com/nba-betting/nba_ai",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "116* Using AI to predict the outcomes of NBA games."
+ },
+ {
+  "domain": "github.com/nba-betting/nba_betting",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "208* Using data analytics and machine learning to create a comprehensive and profitable system for p"
+ },
+ {
+  "domain": "github.com/nealmick/sports-betting-ml-tools-nba",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "87* NBA Machine Learning Tools "
+ },
+ {
+  "domain": "github.com/nflverse/nflfastr",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "541* A Set of Functions to Efficiently Scrape NFL Play by Play Data"
+ },
+ {
+  "domain": "github.com/nflverse/nflreadpy",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "208* python port of nflreadr package for loading nflverse data"
+ },
+ {
+  "domain": "github.com/nflverse/nflreadr",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "113* Efficiently download nflverse data"
+ },
+ {
+  "domain": "github.com/ngryman/tree-crawl",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "89* :leaves: Agnostic tree traversal library."
+ },
+ {
+  "domain": "github.com/nguyenank/fantasy-hockey-league",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* A website for tracking the statistics of the PHF 2021-2022 Fantasy League run by The Ice Garden"
+ },
+ {
+  "domain": "github.com/nickfrerichs/fflproject",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "30* Fantasy Football League Project"
+ },
+ {
+  "domain": "github.com/nicoguin/fantrax-salary-agent",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Serverless multi-league NBA salary-cap sync for Fantrax \u2014 headless Playwright scraping, GitHub Ac"
+ },
+ {
+  "domain": "github.com/nikoskont/fbref-scraper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "5* FBref player stats scraper"
+ },
+ {
+  "domain": "github.com/nineshoot/arsims-soccer-analysis",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* Automated pre-match football prediction system"
+ },
+ {
+  "domain": "github.com/nmelhado/league-page",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "279* Create a custom league page for your Sleeper fantasy football league!"
+ },
+ {
+  "domain": "github.com/nntrn/espn-wiki",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "42* Collection of espn notes for api endpoints"
+ },
+ {
+  "domain": "github.com/nodiratillayeva/introtoai",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "25* CS50\u2019s Introduction to Artificial Intelligence with Python. This course explores the concepts an"
+ },
+ {
+  "domain": "github.com/nprasad2077/nbastats",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "48* NBA API Documentation"
+ },
+ {
+  "domain": "github.com/nspo/graphs-cpp",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "18* Weighted and unweighted graphs and digraphs with C++"
+ },
+ {
+  "domain": "github.com/nutcas3/lets-bet",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "162* Tier-1 betting platform for Kenya, Nigeria, Ghana. Sports betting, crash games, M-Pesa/Flutterw"
+ },
+ {
+  "domain": "github.com/odds-api-io/odds-api-mcp-server",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Official MCP server for Odds-API.io: live sports betting odds from 265+ bookmakers in Claude, Cur"
+ },
+ {
+  "domain": "github.com/odds-api-io/odds-api-node",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* Official Node.js SDK for Odds-API.io - Real-time sports betting odds from 265+ bookmakers"
+ },
+ {
+  "domain": "github.com/odds-api-io/odds-api-python",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "9* Official Python SDK for Odds-API.io - Real-time sports betting odds from 265+ bookmakers"
+ },
+ {
+  "domain": "github.com/odds-api-io/odds-api-r",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Official R client for Odds-API.io - real-time sports betting odds from 265+ bookmakers"
+ },
+ {
+  "domain": "github.com/odds-api/arbitrage-betting-scanner-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Python arbitrage scanner for sports betting odds using odds-api.net, with mock mode, stake sizing"
+ },
+ {
+  "domain": "github.com/odds-api/odds-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "26* OpenAPI sports betting odds API for coding agents with REST examples, SDKs, MCP, mock mode, arbi"
+ },
+ {
+  "domain": "github.com/odds-api/odds-api-go",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Official Go SDK for odds-api.net"
+ },
+ {
+  "domain": "github.com/oddsflowai-team/oddsflow-partners-platform",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* AI-powered odds intelligence and agentic AI infrastructure for sportsbooks and odds feed provider"
+ },
+ {
+  "domain": "github.com/odyssey017/iceberg-betting-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "9* The Iceberg Bot is a sports betting bot for the SX Bet exchange. The bot allows users to programm"
+ },
+ {
+  "domain": "github.com/op7418/guizang-sports-skill",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "138* \ud83d\udeb4 Claude Code / Codex skill for FIT & KML sports analysis \u2014 cycling, running, hiking, sensor an"
+ },
+ {
+  "domain": "github.com/openathleteorg/openathlete",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "83* The open-source European alternative to TrainingPeaks. Self-hostable endurance training platform"
+ },
+ {
+  "domain": "github.com/openpredictionmarkets/socialpredict",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "223* Prediction Market Platform: Easy to Deploy, Open Source MIT Licensed "
+ },
+ {
+  "domain": "github.com/orcustd/racketvision",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "88* The official repository of the paper \"RacketVision: A Multiple Racket Sports Benchmark for Unifi"
+ },
+ {
+  "domain": "github.com/oritzio/football-database",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "26* Mainly football leagues database of 2026/2027 season in JSON format"
+ },
+ {
+  "domain": "github.com/orkunaaa111/betting-arbitrage",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* "
+ },
+ {
+  "domain": "github.com/otaviofbrito/transfermarkt-scraper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* A web scraper focused on collecting soccer player transfers from Transfermarkt."
+ },
+ {
+  "domain": "github.com/pankajrawat9075/fantasy-sports-prediction",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "49* We have used our skill of machine learning along with our passion for cricket to predict the per"
+ },
+ {
+  "domain": "github.com/papagorgio23/bettor",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "78* R Package for Sports betting"
+ },
+ {
+  "domain": "github.com/papagorgio23/nfl-playoff-sim",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "20* Monte Carlo Simulation of the 2019 NFL playoffs"
+ },
+ {
+  "domain": "github.com/papagorgio23/vegaslines",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "28* Historical Vegas betting lines for the NBA and NFL"
+ },
+ {
+  "domain": "github.com/pepediazrio-commits/powerhouse-api-examples",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Official cURL, Node.js, and Python examples for the PowerHouse Enterprise sports picks API."
+ },
+ {
+  "domain": "github.com/pgilmor/congress-the-game",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* Congress The Game is a fantasy sports style approach to politics.  Get points based on the perfor"
+ },
+ {
+  "domain": "github.com/philipfong/free-agent-sleeper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "74* Automate adding of free agents in fantasy football leagues "
+ },
+ {
+  "domain": "github.com/pinnodds/pinnodds-sdk",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Official Python and Node.js clients for the pinnodds real-time Pinnacle odds API"
+ },
+ {
+  "domain": "github.com/piopy/fantacalcio-py",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "63* Piccolo tool per guidarci all'asta spendendo poco"
+ },
+ {
+  "domain": "github.com/pipeworx-io/mcp-odds-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* The Odds API MCP \u2014 sportsbook odds across 70+ books, 30+ leagues"
+ },
+ {
+  "domain": "github.com/pnxenopoulos/awpy",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "611* Python library to parse, analyze and visualize Counter-Strike 2 data"
+ },
+ {
+  "domain": "github.com/polmarin/data-analysis-tennis",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* This project's about analyzing tennis stats and features to determine which are important and rel"
+ },
+ {
+  "domain": "github.com/polyfrontlabs/polyfrontbot-client",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "11* Client-side system for the PolyFront MEV bot, providing fast execution, Polygon integration, and"
+ },
+ {
+  "domain": "github.com/polymarket/polymarket-us-typescript",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "15* Official Polymarket US Typescript SDKs"
+ },
+ {
+  "domain": "github.com/potternate/propbet",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "8* PropBet is a modern React-based NBA sports betting web app featuring real-time player props, dyna"
+ },
+ {
+  "domain": "github.com/ppourmand/nfl-stats-py",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "13* Python library to pull NFL data for fantasy purposes"
+ },
+ {
+  "domain": "github.com/pratikthanki/fourthdown",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* NFL play-by-play API providing a language agnostic wrapper over nflfastR"
+ },
+ {
+  "domain": "github.com/praveennaik8/dream-team-clone",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "5* Fantasy team building website."
+ },
+ {
+  "domain": "github.com/pretrehr/sports-betting",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "532* Sports betting assistant (with interface) which optimizes earnings regarding odds and offers"
+ },
+ {
+  "domain": "github.com/pridabruno/cryptosportsbook",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* SportsBook like Stake. SportsBook SportsBook SportsBook SportsBook SportsBook SportsBook SportsBo"
+ },
+ {
+  "domain": "github.com/priyanshux/fpl-defence-rotations",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "12* Best options to rotate defenders in Fantasy Premier League 2023-24"
+ },
+ {
+  "domain": "github.com/probberechts/soccerdata",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "2062* \u26cf\u26bd Scrape soccer data from Club Elo, ESPN, FBref, Football-Data.co.uk, Sofascore, SoFIFA, Unde"
+ },
+ {
+  "domain": "github.com/propertyscout001/au-racing-odds-dashboard",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Next-to-go dashboard for Australian horse, greyhound and harness racing \u2014 one dependency-free Pyt"
+ },
+ {
+  "domain": "github.com/propertyscout001/puntersedge-examples",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Runnable Python examples for the PuntersEdge odds API \u2014 Australian racing next-to-go, best odds, "
+ },
+ {
+  "domain": "github.com/propertyscout001/puntersedge-mcp",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* MCP server for the PuntersEdge Odds API \u2014 live Australian racing and sports odds from 11 bookmake"
+ },
+ {
+  "domain": "github.com/propertyscout001/puntersedge-python",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Official Python client for the PuntersEdge Australian Sports Odds API \u2014 live bookmaker odds, raci"
+ },
+ {
+  "domain": "github.com/protoblock/protoblock",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "15* Protoblock blockchain protocol core"
+ },
+ {
+  "domain": "github.com/pseudo-r/public-espn-fantasy-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "7* The ESPN Fantasy API documentation provides comprehensive API endpoints, URL parameters, authenti"
+ },
+ {
+  "domain": "github.com/pseudo-r/public-fotmob-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "11* \ud83d\udcda Documentation & Django REST proxy for the unofficial FotMob football API \u2014 matches, leagues, t"
+ },
+ {
+  "domain": "github.com/pseudo-r/public-mlb-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "19* The Public MLB API documentation provides a complete list of undocumented API endpoints, URL par"
+ },
+ {
+  "domain": "github.com/pseudo-r/public-sofascore-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "10* Documentation, Python clients, and a standalone Django API proxy service for the undocumented So"
+ },
+ {
+  "domain": "github.com/pwu97/bettingtools",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "18* Sports Betting Tools"
+ },
+ {
+  "domain": "github.com/r-follador/cubetrek",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "556* Home for all your GPS Tracks: Visualize, share and manage your GPS tracks."
+ },
+ {
+  "domain": "github.com/r4xz/py-sports",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "5* Python Discord bot, powered by the API-Football API, designed to bring you real-time sports data "
+ },
+ {
+  "domain": "github.com/radkomih/football_api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "5* A Ruby interface to the https://www.api-football.com."
+ },
+ {
+  "domain": "github.com/rafaelfariasbsb/polymarket",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "6* Real-time scalping radar for Polymarket crypto Up/Down markets (BTC, ETH, SOL, XRP). Binance WebS"
+ },
+ {
+  "domain": "github.com/randysweatpants/gamblebot3.0",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* New gamble bot specializing in NHL"
+ },
+ {
+  "domain": "github.com/rapidoddsapi/rapidoddsapi-node",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Official Node.js SDK for RapidOddsAPI - bookmaker odds, live scores and player stats"
+ },
+ {
+  "domain": "github.com/rapidoddsapi/rapidoddsapi-python",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Official Python SDK for RapidOddsAPI - bookmaker odds, live scores and player stats"
+ },
+ {
+  "domain": "github.com/ratsam3474/autoarbitrage",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "35* An automated arbitrage betting system that finds and places bets across multiple bookmakers to g"
+ },
+ {
+  "domain": "github.com/realyoussefhossam/xbet-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* "
+ },
+ {
+  "domain": "github.com/rentosaijo/nhlscraper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "20* Scraper for National Hockey League Data on R"
+ },
+ {
+  "domain": "github.com/rezarahiminia/livescorefootball",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "460* Free open-source football API and live score center for Premier League, LaLiga, fixtures, resul"
+ },
+ {
+  "domain": "github.com/ricardo-mattoss/brazilian-soccer-data",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "13* Scraping and updating of data from the championships that Brazilian soccer teams participate in"
+ },
+ {
+  "domain": "github.com/rjtavares/football-crunching",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "330* Analysis and datasets about football (soccer)"
+ },
+ {
+  "domain": "github.com/rmfosha/fg-fantasy-lineup",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Python project that connects to FootballGuys.com to fetch weekly player rankings and optimize fan"
+ },
+ {
+  "domain": "github.com/robertbingaman/dfs-odds",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* My final project for a Machine Learning course exploring if daily fantasy salary data can be expl"
+ },
+ {
+  "domain": "github.com/roboflow/sports",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "5346* computer vision and sports"
+ },
+ {
+  "domain": "github.com/rockscripts/sport-betting-app-betfair-market",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "67* PHP: Web based app for sports betting using Betfair API"
+ },
+ {
+  "domain": "github.com/roclark/sportsipy",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "570* A free sports API written for python"
+ },
+ {
+  "domain": "github.com/rodmoioliveira/football-graphs",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "139* Graphs and passing networks in football."
+ },
+ {
+  "domain": "github.com/roho11/sofascore-player-card-analysis",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* Daily football/soccer lineup scraper and analyser for card betting. "
+ },
+ {
+  "domain": "github.com/rollerderby/scoreboard",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "189* CRG Derby Scoreboard"
+ },
+ {
+  "domain": "github.com/rollingrock/ff-house-rules",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* A fantasy football draft companion and season manager that scores every projection under your lea"
+ },
+ {
+  "domain": "github.com/ronakjkothari/fantasycricket",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "5* \ud83c\udfcfRealistic and Fun Fantasy Cricket Game for everyone!"
+ },
+ {
+  "domain": "github.com/ropensci/athlytics",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "63* \ud83c\udfc3  An R package for advanced sports performance analysis and training load monitoring using Stra"
+ },
+ {
+  "domain": "github.com/roysti10/sportscaster",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* A one stop API solution for your sports data"
+ },
+ {
+  "domain": "github.com/rushfive/ffdb",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "44* NFL Database Engine for PostgreSql and Mongo (easily works with other custom databases too)"
+ },
+ {
+  "domain": "github.com/rustchainer/sportsbook-odds-streaming-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Public showcase of a multi-source sportsbook odds streaming API with normalized WebSocket feeds, "
+ },
+ {
+  "domain": "github.com/rustyneuron01/real-time-football-detection",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "73* Real-time football video analytics: player/ball/referee tracking and pitch keypoints. YOLO, HRNe"
+ },
+ {
+  "domain": "github.com/ruuda/hanson",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "11* Self-hosted prediction market app"
+ },
+ {
+  "domain": "github.com/ryo-n7/canpl_analysis",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "6* Provide some examples for creating a data pipeline with the {googledrive} package and Github Acti"
+ },
+ {
+  "domain": "github.com/ryzellx/football-live-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* \u26bd Powerful football data API \u2014 Live scores, match stats, lineups, standings, player & club data f"
+ },
+ {
+  "domain": "github.com/s1m0n38/aao",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "21* A simple environment where testing betting strategy on real odds"
+ },
+ {
+  "domain": "github.com/s7ex-j/a.n.d.r.e-modelo-predictivo-mundiales",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* 2026 World Cup predictor: Dixon-Coles + XGBoost + Neural Net + Hierarchical Bayesian (Stan/brms),"
+ },
+ {
+  "domain": "github.com/sabastianangulo12/fantasy-front-office",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Fantasy football decision system featuring Fantasy Cheat Code for lineup, waiver, trade, matchup,"
+ },
+ {
+  "domain": "github.com/saccofrancesco/deepshot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "173* AI-powered NBA game outcome predictor that uses advanced team stats and trend-based features to"
+ },
+ {
+  "domain": "github.com/sadanandpai/algo-visualizers",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "717* Algorithms Visualizers"
+ },
+ {
+  "domain": "github.com/saheedniyi02/fpl-ai",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "44* A machine learning system that predicts fpl points of players"
+ },
+ {
+  "domain": "github.com/saiemgilani/cfbscrapr",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "36* A scraping and aggregating package using the CollegeFootballData API"
+ },
+ {
+  "domain": "github.com/salimt/football-datasets",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "141* Complete football/soccer datalake with 93000+ players from Transfermarkt. Includes player profi"
+ },
+ {
+  "domain": "github.com/salimt/transfermarkt-etl-and-live-scores",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "7* asyncIO, Github Actions, GCP, dbt, Terraform, Docker"
+ },
+ {
+  "domain": "github.com/sanchitvj/sports_betting_analytics_engine",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "52* A data and analytics engineering platform designed for real-time sports betting analytics."
+ },
+ {
+  "domain": "github.com/sandruski/htn-planner",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "22* A C++ hierarchical task network (HTN) planner library that interprets a custom domain language."
+ },
+ {
+  "domain": "github.com/sanjitva/predicting-football-player-transfer-values",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "41* Flatiron School Capstone project. Trying to find out how well players' on-field performance metr"
+ },
+ {
+  "domain": "github.com/sankalpmehani/premier-league-predictor",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "5* This project utilizes machine learning regression algorithms to predict the outcomes and standing"
+ },
+ {
+  "domain": "github.com/sarartur/oddsapi",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "11* Python wrapper around The Odds-Api"
+ },
+ {
+  "domain": "github.com/sathishprasad/football-analytics-with-python",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "9* This repository will contain all sorts of basic visualisation to step into the world of football "
+ },
+ {
+  "domain": "github.com/scasanova/f1datar",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "80* An R package to access Formula 1 Data from the Ergast API and the unofficial F1 data stream via "
+ },
+ {
+  "domain": "github.com/schochastics/football-data",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "68* football (soccer) datasets"
+ },
+ {
+  "domain": "github.com/scibrokes/kelly-criterion",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "18* \u51ef\u5229\u6807\u51c6\u8ba1\u6570|\u673a\u6570\u9020\u7269\u3002"
+ },
+ {
+  "domain": "github.com/scout-bowie-analytics/sleeper-analytics-suite",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Quantitative fantasy analytics suite: Live Sleeper draft companion & AFK queue builder, 10,000-ru"
+ },
+ {
+  "domain": "github.com/scout-bowie-analytics/temp-repo",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Quantitative fantasy analytics suite: Live Sleeper draft companion & AFK queue builder, 10,000-ru"
+ },
+ {
+  "domain": "github.com/scrapingbee/google-sports-results-api",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "256* Extract live scores, match results, and league standings directly from Google Search. A flexibl"
+ },
+ {
+  "domain": "github.com/sdamianiw/pollagol-sim",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Deterministic Dixon-Coles score predictor that won a 27-person FIFA World Cup 2026 prediction poo"
+ },
+ {
+  "domain": "github.com/sealva-devs/prediction-market-web3",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "32* Production-ready crypto prediction market platform with secure smart contracts and modern React "
+ },
+ {
+  "domain": "github.com/seanyboi/rugbypy",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "51* Repository for rugby data analytics"
+ },
+ {
+  "domain": "github.com/sedemmler/wagerbrain",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "312* A package containing the essential math required for sports betting and gambling."
+ },
+ {
+  "domain": "github.com/selviler/livescore-service",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "28* Live Score Client for api-football.com"
+ },
+ {
+  "domain": "github.com/sergeyleschev/leetcode-swift",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "70* TOP 200 #Dev \ud83c\udfc6 LeetCode, Solutions in \uf8ff Swift, Shell, Database (T-SQL, PL/SQL, MySQL), Concurren"
+ },
+ {
+  "domain": "github.com/sergeyleschev/leetcode-typescript",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "20* TOP 200 #Dev \ud83c\udfc6 LeetCode, Solutions in TypeScript, Shell, Database (T-SQL, PL/SQL, MySQL), Concur"
+ },
+ {
+  "domain": "github.com/sethsharp/odds-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Open Source Composer API Wrapper for \"The Odds-API\""
+ },
+ {
+  "domain": "github.com/shahabhassank/match-analyzer",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* Full-stack football match analysis platform. Search any team, scrape live event data from WhoScor"
+ },
+ {
+  "domain": "github.com/sharp-api/sharpapi-sample-data",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* World Cup and MLB odds samples from 23 sources. Free under CC BY 4.0."
+ },
+ {
+  "domain": "github.com/sharp-api/sharpapi-ts",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Official TypeScript and JavaScript SDK for SharpAPI sports betting data."
+ },
+ {
+  "domain": "github.com/sherryjyc/3d-tracking-mvs",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "120* 3D position tracking for soccer players with multi-camera videos"
+ },
+ {
+  "domain": "github.com/shervinchen/crazycat",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "17* \u4f7f\u7528Canvas\u5236\u4f5c\u7684\u56f4\u4f4f\u795e\u7ecf\u732b\uff0c\u7b97\u6cd5\u57fa\u4e8e\u5e7f\u5ea6\u4f18\u5148\u641c\u7d22\u5b9e\u73b0\u3002"
+ },
+ {
+  "domain": "github.com/sherxon/algods",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "3430* Implementation of Algorithms and Data Structures, Problems and Solutions"
+ },
+ {
+  "domain": "github.com/shikha-code36/competitive-python",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "17* Python Algorithms Package used in competitive programming"
+ },
+ {
+  "domain": "github.com/sjtreadway/mlb_py",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* MLB HR & game winner prediction models built on Statcast data. XGBoost/LightGBM with barrel rate,"
+ },
+ {
+  "domain": "github.com/skalskip/sports",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "554* Cool experiments at the intersection of Computer Vision and Sports \u26bd\ud83c\udfc3"
+ },
+ {
+  "domain": "github.com/slashgolf/slashgolf",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* :golf: Samples for using the Slash Golf API"
+ },
+ {
+  "domain": "github.com/slieb74/nfl-betting-data",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "43* Model to Predict Over/Under Outcomes for the Upcoming NFL Season"
+ },
+ {
+  "domain": "github.com/snowstorm08/mixed-martial-arts-mma-betting-model",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Data-driven, sports wagering model for MMA (mixed-martial-arts) contests."
+ },
+ {
+  "domain": "github.com/soccernet/sn-gamestate",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "450* [CVPRW'24] SoccerNet Game State Reconstruction: End-to-End Athlete Tracking and Identification "
+ },
+ {
+  "domain": "github.com/somdeep/statball",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "25* Statball - Football soccer stats analyser from top 5 european leagues with data obtained by web "
+ },
+ {
+  "domain": "github.com/soradata/alphaedge-quant-analytics",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "6* Machine Learning portfolio optimization : Ridge, LogisticRegressions,LightGBM, XGBoost ,  Black-l"
+ },
+ {
+  "domain": "github.com/souraavv/nptel-daa-programming-assignment-solutions",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "47* Programming assignments of NPTEL DAA course taken by Prof. Madhavan Mukund of Chennai Mathematic"
+ },
+ {
+  "domain": "github.com/sowmen/fxgraphalgorithmsimulator",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "65* Visualizes specific Graph Algorithms like BFS, DFS, MST etc. on interactive user input graphs."
+ },
+ {
+  "domain": "github.com/spiflicate/yfs-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* Fully-typed TypeScript wrapper for Yahoo Fantasy Sports API with OAuth 1.0/2.0, automatic token r"
+ },
+ {
+  "domain": "github.com/spinach/fantasypremierleague.py",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "134* \u26bd  Statistics for your mini leagues."
+ },
+ {
+  "domain": "github.com/sportlogic-io/sportlogic-php",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* PHP client for the SportLogic Virtual Racing API"
+ },
+ {
+  "domain": "github.com/sportlogic-io/sportlogic-python",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Python client for the SportLogic Virtual Racing API"
+ },
+ {
+  "domain": "github.com/sportlogic-io/sportlogic-virtuals-examples",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Code samples for the SportLogic Virtuals API \u2014 Python, TypeScript, PHP"
+ },
+ {
+  "domain": "github.com/sports-betting-sportsbook/sports-betting",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "25* Sports Betting platform for odds tracking, analytics, and sportsbook integration."
+ },
+ {
+  "domain": "github.com/sportsdataverse/cfbfastr",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "110* An R package to quickly obtain clean and tidy college football play by play data"
+ },
+ {
+  "domain": "github.com/sportsdataverse/sportsdataverse-py",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "116* sportsdataverse python package"
+ },
+ {
+  "domain": "github.com/sportsdataverse/sportsdataverse-r",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "19* "
+ },
+ {
+  "domain": "github.com/sportsdataverse/sportypy",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "50* Python package for drawing regulation playing surfaces for several sports"
+ },
+ {
+  "domain": "github.com/sportsdataverse/sportyr",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "118* R package for drawing regulation playing surfaces for several sports"
+ },
+ {
+  "domain": "github.com/stabilitynexus/fate-evm-frontend",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "9* Decentralized Prediction Pools on EVM chains"
+ },
+ {
+  "domain": "github.com/stat-api/mcp",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Remote MCP server for stat-api.com \u2014 NFL/NBA/MLB/NHL/PGA + DFS and prediction-market data"
+ },
+ {
+  "domain": "github.com/swanson/slotback-labs",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "8* :canada: :football: Advanced Canadian Football (CFL) stats and fantasy analytics "
+ },
+ {
+  "domain": "github.com/swapnikkatkoori/sleeper-api-wrapper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "83* A Python wrapper for the Sleeper Fantasy Football API."
+ },
+ {
+  "domain": "github.com/swapnikkatkoori/sleeper-ff-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "37* A GroupMe/Slack/Discord Bot for Sleeper fantasy leagues"
+ },
+ {
+  "domain": "github.com/swswsw/predictionmkt",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "12* prediction market on lotionjs with tendermint"
+ },
+ {
+  "domain": "github.com/t00ts/maverick",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "22* A robust bet365 betting bot"
+ },
+ {
+  "domain": "github.com/talhareltal/awesome-prediction-market-analytics-tools",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "19* A curated list of prediction market analytics, trading, and monitoring tools: odds, volume, and "
+ },
+ {
+  "domain": "github.com/tamb10/ourhub-racing-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* Real-time UK & Irish horse racing API \u2013 racecards, runners, jockey/trainer stats, and AI-powered "
+ },
+ {
+  "domain": "github.com/tanamsethi31/footymodel",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Stats-first football betting research: Dixon-Coles + lineup-aware models, walk-forward backtested"
+ },
+ {
+  "domain": "github.com/teomores/epl-oracle",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "8* Predicting EPL results improving the betting odds."
+ },
+ {
+  "domain": "github.com/texasbe2trill/hooplytics",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "5* Hooplytics turns NBA box-score data into player intelligence through machine learning, interactiv"
+ },
+ {
+  "domain": "github.com/the-ccrs/ccrs",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "9* A simple, unified Rust library for trading across crypto and prediction markets."
+ },
+ {
+  "domain": "github.com/themeboy/sportspress",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "164* An open source league statistics plugin for WordPress created by ThemeBoy."
+ },
+ {
+  "domain": "github.com/themm1/procyclingstats",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "104* procyclingstats scraper"
+ },
+ {
+  "domain": "github.com/thespread/api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "25* TheSpread.io API - Vegas Sports Betting Odds Aggregation API"
+ },
+ {
+  "domain": "github.com/thm-mni-ii/sea",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "18* Space efficient (graph) algorithms"
+ },
+ {
+  "domain": "github.com/thomascamminady/letourdataset",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "113* Every cyclist and stage of the Tour de France (up to including 2026) in four CSV files."
+ },
+ {
+  "domain": "github.com/timdagostino/ncaab-game-simulator",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "15* Game simulator created for NCAA basketball (Based on team possession statistics)"
+ },
+ {
+  "domain": "github.com/toddrob99/mynflapi",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "5* Python wrapper for NFL API"
+ },
+ {
+  "domain": "github.com/tom-draper/pldashboard",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "49* A Premier League football dashboard."
+ },
+ {
+  "domain": "github.com/toptrendev/sports-betting-platform",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Oddsmith is a full-stack sports betting platform inspired by FanDuel. Users browse NFL and NBA ga"
+ },
+ {
+  "domain": "github.com/torvaney/regista",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "94* An R package for soccer modelling"
+ },
+ {
+  "domain": "github.com/torvaney/understat-db",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "28* Create a database of \u26bd\ufe0f data from understat.com"
+ },
+ {
+  "domain": "github.com/torvaney/wyscoutapi",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "20* wyscoutapi is an extremely basic API client for the Wyscout API (v2 & v3) for Python"
+ },
+ {
+  "domain": "github.com/tradestars-app/tradestars-cards",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "10* Main TradeStars protocol contracts"
+ },
+ {
+  "domain": "github.com/tradinglabpremium/sports-prediction-market-scanner",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "85* sports prediction market scanner: pull feeds, price markets, replay portfolio history, and emit "
+ },
+ {
+  "domain": "github.com/tralahm/thesportsdb",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "43* Unofficial Python API client wrapper package around TheSportsDB.com API.An open, crowd-sourced d"
+ },
+ {
+  "domain": "github.com/tri2820/imply",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "61* Open-source news site"
+ },
+ {
+  "domain": "github.com/tywalters/nfl-prediction-model",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "33* Model created for FiveThirtyEight Forecast Competition"
+ },
+ {
+  "domain": "github.com/uberfastman/fantasy-football-metrics-weekly-report",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "227* Command line application to create weekly reports (containing stats, metrics, and rankings) for"
+ },
+ {
+  "domain": "github.com/uberfastman/yfpy",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "263* Python API wrapper for the Yahoo Fantasy Sports public API (supports NFL, NHL, MLB, and NBA)."
+ },
+ {
+  "domain": "github.com/ufcalendar/ufcalendar-python",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Python client for the UFCalendar Fight API: UFC, PFL, OKTAGON & BKFC events, fight cards, results"
+ },
+ {
+  "domain": "github.com/umitkaanusta/mactahminbotu",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "24* A bot that provides soccer predictions using Poisson regression"
+ },
+ {
+  "domain": "github.com/unravelsports/unravelsports",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "247* The unravelsports package aims to aid researchers, analysts and enthusiasts by providing interm"
+ },
+ {
+  "domain": "github.com/upeppe/fantabeto",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "56* Machine learning model for predicting Serie A players performance in a match, in terms of Fantac"
+ },
+ {
+  "domain": "github.com/uptions-market/uptions-infra",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "6* Core infrastructure and backend services powering uptions.xyz, a platform for building workflows "
+ },
+ {
+  "domain": "github.com/ussoccerfederation/glass_onion",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "24* Simplifying soccer object identifier synchronization."
+ },
+ {
+  "domain": "github.com/valory-xyz/market-creator",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "9* Market creator agent for AI prediction markets on Gnosis"
+ },
+ {
+  "domain": "github.com/valory-xyz/trader",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "77* AI agent for trading on prediction markets (specifically, Omen on Gnosis and Polymarket on Polyg"
+ },
+ {
+  "domain": "github.com/vamsishesamsetti/cricketpulse",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* Real-time cricket scores, live match updates, fixtures and results"
+ },
+ {
+  "domain": "github.com/vaquierm/f1_fantasy_helper",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "7* \ud83c\udfce Helper program to find best team compositions for the F1 fantasy league"
+ },
+ {
+  "domain": "github.com/vbudhram/fantasy-football-io",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "118* Fantasy Football News, Player and League API"
+ },
+ {
+  "domain": "github.com/versatility519/polymarket_frontend",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "15* This project is forking the https://polymarket.com/ that is the world's largest cryptocurrency-b"
+ },
+ {
+  "domain": "github.com/viet64th2/polymarket-trade-bot",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "20* Automated multi-account bot for Polymarket \u2014 places predictions, farms volume, completes streaks"
+ },
+ {
+  "domain": "github.com/vikash212000yadav/sports-api",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* A REST API that allows you to book sports events or update existing odds."
+ },
+ {
+  "domain": "github.com/wammero/polymarket-sdk-cpp",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "26* High-performance C++23 SDK for Polymarket \u2014 Gamma, CLOB, Data, WebSocket, RTDS, RFQ. 3x faster t"
+ },
+ {
+  "domain": "github.com/wasim15185/algovisualizer",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "26* React Base Algorithm Visualization."
+ },
+ {
+  "domain": "github.com/wazam/fantasy-baseball-buzz",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "3* Self-hosted dashboard for tracking MLB player trends, stats, and projections from top fantasy bas"
+ },
+ {
+  "domain": "github.com/wazam/fantasy-sync-extension",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Firefox extension for syncing ESPN fantasy baseball transactions to a Fantrax mirrored league"
+ },
+ {
+  "domain": "github.com/web3xiaogong/forecasting-market-hedging-arbitrage",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "24* \u9884\u6d4b\u5e02\u573a\u5bf9\u51b2\u5957\u5229\u7b56\u7565\u4e0e\u5b9e\u6218\u6307\u5357 \u2014 Polymarket / Opinion \u8de8\u5e73\u53f0\u5957\u5229"
+ },
+ {
+  "domain": "github.com/whatadewitt/fantasy-starter-express",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "5* A Yahoo! Fantasy starter app to save me time/effort going forward..."
+ },
+ {
+  "domain": "github.com/whatadewitt/yahoo-fantasy-sports-api",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "228* NodeJS wrapper for the Yahoo! Fantasy Sports API"
+ },
+ {
+  "domain": "github.com/whisdev/nba-prediction-sports-betting",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "90* NBA sports betting app using machine learning"
+ },
+ {
+  "domain": "github.com/will2dye4/labyrinth",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "29* Generate and solve mazes using various algorithms"
+ },
+ {
+  "domain": "github.com/williamrosscrane/sportz-websockets",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* Real-time live sports broadcast engine built with Node.js, Express, MongoDB, and WebSockets (ws),"
+ },
+ {
+  "domain": "github.com/wiscostret/fplscrapr",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "77* This package enables those interested in Fantasy Premier League to perform detailed data analysi"
+ },
+ {
+  "domain": "github.com/withqwerty/reep",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "226* The football entity register. Maps player, team, and coach identities across Transfermarkt, FBr"
+ },
+ {
+  "domain": "github.com/wrcarpenter/mma-betting-model",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "9* Data-driven, sports wagering model for MMA (mixed-martial-arts) contests. "
+ },
+ {
+  "domain": "github.com/xandao-dev/monte-carlo-betting-simulations",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "26* A bunch of betting simulations using Monte Carlo method. Useful for showing how your bankroll wi"
+ },
+ {
+  "domain": "github.com/yanpozka/solvedchallenges",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "34* My solved challenges and hacks (Go, Python, Java)"
+ },
+ {
+  "domain": "github.com/yiannimercer/nfl_betting_and_fantasy_tool",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "0* NFL Betting & Fantasy Tool"
+ },
+ {
+  "domain": "github.com/yichengyang-ethan/oracle3",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "253* Prediction-market trading engine \u2014 Wang Transform pricing on 291K+ contracts; paper-traded acro"
+ },
+ {
+  "domain": "github.com/yoanndelage/nba_volutions",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "1* Analyse des \u00e9volutions de la NBA et pipeline de pr\u00e9diction de scores fantasy  \u2014 scraping, feature"
+ },
+ {
+  "domain": "github.com/yourtion/learningmasteringalgorithms-c",
+  "category": "github-repo",
+  "priority": "R1",
+  "meta": "766* Mastering Algorithms with C \u300a\u7b97\u6cd5\u7cbe\u89e3\uff1aC\u8bed\u8a00\u63cf\u8ff0\u300b\u6e90\u7801\u53caXcode\u5de5\u7a0b\u3001Linux\u5de5\u7a0b"
+ },
+ {
+  "domain": "github.com/zak-510/berkeleybets",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "4* Full-stack app that predicts player performance across MLB, NBA, and NFL using position-specific "
+ },
+ {
+  "domain": "github.com/zeekeey-jpeg/sleeper_draft_buddy",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "2* Your live draft war room for Sleeper fantasy football \u2014 who to take, why, right now. Phone + desk"
+ },
+ {
+  "domain": "github.com/zeryswin168/polymarket-clone",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "158*  Open-source Polymarket clone | \u5f00\u6e90\u9884\u6d4b\u5e02\u573a\u5e73\u53f0 \u2014 On-chain USDT escrow on Polygon. Vue 3 + Solidity + "
+ },
+ {
+  "domain": "github.com/zhenv5/breaking_cycles_in_noisy_hierarchies",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "78* breaking cycles in noisy hierarchies"
+ },
+ {
+  "domain": "github.com/zlisto/daily-fantasy-baseball-contests-in-draftkings",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "42* This is the code for constructing a portfolio of lineups for DraftKings baseball contests with a"
+ },
+ {
+  "domain": "github.com/zporsdata/sportsdatafeedapi",
+  "category": "github-repo",
+  "priority": "R2",
+  "meta": "6* XML / JSON Formatlar\u0131nda Spor Veri Hizmetleri (XML / JSON Sports Data Feed API Services) [zporsda"
+ }
+]

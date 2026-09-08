@@ -1,0 +1,23 @@
+URL: https://developer.sportradar.com/odds/llms.txt\nSTATUS: 200\n\n# Odds Documentation
+
+> Unlock the power of predictive insights with our Odds APIs. Access real-time sports betting data, including odds, spreads, and more. Elevate your betting experience with Sportradar's comprehensive Odds APIs. Start integrating today for unparalleled accuracy and performance.
+
+Append .md to any documentation page URL to get its markdown version.
+
+Each section below links to its own llms.txt, which indexes every page in that section. Category links narrow to a single category.
+
+## API Reference
+
+- [API Reference index](https://developer.sportradar.com/odds/reference/llms.txt): full section index
+- [intro](https://developer.sportradar.com/odds/reference/intro/llms.txt)
+- [Odds Comparison Futures](https://developer.sportradar.com/odds/reference/odds-comparison-futures/llms.txt)
+- [Odds Comparison Live Odds](https://developer.sportradar.com/odds/reference/odds-comparison-live-odds/llms.txt)
+- [Odds Comparison Prematch](https://developer.sportradar.com/odds/reference/odds-comparison-prematch/llms.txt)
+- [Odds Comparison Player Props](https://developer.sportradar.com/odds/reference/odds-comparison-player-props/llms.txt)
+- [ODDS COMPARISON CORE](https://developer.sportradar.com/odds/reference/odds-comparison-core/llms.txt)
+- [Probabilities](https://developer.sportradar.com/odds/reference/probabilities/llms.txt)
+- [Mapping API](https://developer.sportradar.com/odds/reference/mapping-api/llms.txt)
+
+## Pages
+
+- [Pages index](https://developer.sportradar.com/odds/page/llms.txt): full section index

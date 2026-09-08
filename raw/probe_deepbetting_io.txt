@@ -1,0 +1,922 @@
+URL: https://deepbetting.io/
+STATUS: 200
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>var l=localStorage.getItem("deepbetting_language");if(l&&l!=="en"&&["/fr/","/es/","/pt/"].indexOf("/"+l+"/")!==-1)window.location.replace("/"+l+"/");</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Principal -->
+    <title>DeepBetting | AI-Powered Sports Predictions - Football, NBA, NFL, NHL, MLB</title>
+    <meta name="description" content="Maximize your betting ROI with AI-powered sports predictions. Our machine learning algorithms analyze 10+ years of data to detect value bets across Football, NBA, NFL, NHL & MLB.">
+    <meta name="keywords" content="AI sports predictions, machine learning betting, football predictions, NBA predictions, NFL predictions, value bet, algorithmic betting, sports betting AI">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="DeepBetting">
+    <link rel="canonical" href="https://deepbetting.io/">
+    <link rel="alternate" hreflang="en" href="https://deepbetting.io/">
+    <link rel="alternate" hreflang="fr" href="https://deepbetting.io/fr/">
+    <link rel="alternate" hreflang="es" href="https://deepbetting.io/es/">
+    <link rel="alternate" hreflang="pt-BR" href="https://deepbetting.io/pt/">
+    <link rel="alternate" hreflang="x-default" href="https://deepbetting.io/">
+    
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="DeepBetting | AI-Powered Sports Predictions">
+    <meta property="og:description" content="Maximize your betting ROI with AI-powered sports predictions. Machine learning algorithms trained on 10+ years of data.">
+    <meta property="og:image" content="https://deepbetting.io/assets/img/misc/og-image.jpg">
+    <meta property="og:url" content="https://deepbetting.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DeepBetting">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DeepBetting | AI-Powered Sports Predictions">
+    <meta name="twitter:description" content="Maximize your betting ROI with AI-powered sports predictions. Machine learning algorithms trained on 10+ years of data.">
+    <meta name="twitter:image" content="https://deepbetting.io/assets/img/misc/og-image.jpg">
+    
+    <!-- Hreflang (multilingue) -->
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/misc/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/img/misc/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css?v=1.4">
+    <link rel="stylesheet" href="./assets/css/cookie-consent.css">
+    <link rel="stylesheet" href="./assets/css/mockup-showcase.css?v=1.1">
+    <link rel="stylesheet" href="./assets/css/contact.css?v=1.1">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "DeepBetting",
+      "description": "AI-powered sports betting predictions platform using machine learning algorithms",
+      "url": "https://deepbetting.io",
+      "applicationCategory": "Sports",
+      "operatingSystem": "Web",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free Plan",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "Football Premium",
+          "price": "34.99",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "US Sports Premium",
+          "price": "34.99",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "Ultimate",
+          "price": "59.99",
+          "priceCurrency": "EUR"
+        }
+      ],
+      "creator": {
+        "@type": "Organization",
+        "name": "DeepBetting",
+        "url": "https://deepbetting.io"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">DEEPBETTING</div>
+        <ul class="nav-links">
+            <li><a href="#features" data-i18n="nav.features">AI & BETTING</a></li>
+            <li><a href="#pricing" data-i18n="nav.pricing">PRICING</a></li>
+            <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+            <li><a href="#about" data-i18n="nav.about">ABOUT</a></li>
+        </ul>
+        <div class="nav-cta">
+            <div class="auth-btn-container">
+                <a href="#" class="btn btn-outline auth-logged-out" id="loginBtn" data-i18n="nav.login">Login</a>
+                
+                <!-- User Menu (when logged in) -->
+                <div class="user-menu auth-logged-in" id="userMenu">
+                    <button class="btn btn-account" id="userMenuBtn">
+                        <i class="fas fa-user-circle user-icon-mobile"></i>
+                        <span class="user-name" id="userName">Mon compte</span>
+                        <i class="fas fa-chevron-down user-menu-arrow"></i>
+                    </button>
+                    <div class="user-dropdown" id="userDropdown">
+                        <a href="account.html" class="user-dropdown-item" id="accountBtn">
+                            <i class="fas fa-user"></i>
+                            <span data-i18n="nav.myAccount">My Account</span>
+                        </a>
+                        <button class="user-dropdown-item logout" id="logoutBtn">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span data-i18n="nav.logout">Logout</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <a href="#pricing" class="btn btn-primary auth-logged-out" data-i18n="nav.getStarted">Get Started</a>
+            <a href="./dashboard/index.html" class="btn btn-primary auth-logged-in" data-i18n="nav.dashboard">Dashboard</a>
+
+            <!-- Language Switcher -->
+            <div class="lang-switcher" id="langSwitcher">
+                <button class="lang-btn" id="langBtn">
+                    <img class="flag-icon" id="currentFlag" src="/assets/img/languages/gb.svg" alt="EN">
+                    <span class="lang-code" id="currentLang">EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <a href="/" class="lang-option" onclick="localStorage.setItem('deepbetting_language','en')">
+                        <img class="flag-icon" src="/assets/img/languages/gb.svg" alt="EN">
+                        <span>English</span>
+                    </a>
+                    <a href="/fr/" class="lang-option" onclick="localStorage.setItem('deepbetting_language','fr')">
+                        <img class="flag-icon" src="/assets/img/languages/fr.svg" alt="FR">
+                        <span>Français</span>
+                    </a>
+                    <a href="/es/" class="lang-option" onclick="localStorage.setItem('deepbetting_language','es')">
+                        <img class="flag-icon" src="/assets/img/languages/es.svg" alt="ES">
+                        <span>Español</span>
+                    </a>
+                    <a href="/pt/" class="lang-option" onclick="localStorage.setItem('deepbetting_language','pt')">
+                        <img class="flag-icon" src="/assets/img/languages/br.svg" alt="PT">
+                        <span>Português</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <!--
+            <div class="hero-badge">
+                <span class="dot"></span>
+                <span data-i18n="hero.badge">AI-Powered Predictions</span>
+            </div>
+            -->
+
+            <!-- NEW: US Sports Badge (Compact) -->
+            <div class="new-sports-badge">
+                <span class="new-tag">NEW</span>
+                <span class="new-sports-text" data-i18n="hero.newSports">US Sports</span>
+                <div class="new-sports-logos">
+                    <img src="./assets/img/competitions/nba.png" alt="NBA">
+                    <img src="./assets/img/competitions/nfl.png" alt="NFL">
+                    <img src="./assets/img/competitions/mlb.png" alt="MLB">
+                    <img src="./assets/img/competitions/nhl.png" alt="NHL">
+                </div>
+            </div>
+
+            <h1 data-i18n="hero.title" data-i18n-html="true">
+                Let the power of <span class="highlight">AI</span> improve your betting success
+            </h1>
+            <p data-i18n="hero.subtitle">
+                We use more than 10+ years of historical data to create the most powerful decision-making tool ever for sports betting.
+            </p>
+            <div class="hero-cta">
+                <a href="#pricing" class="btn btn-primary auth-logged-out" data-i18n="nav.getStarted">Get Started</a>
+                <a href="./dashboard/index.html" class="btn btn-primary auth-logged-in" data-i18n="nav.dashboard">Dashboard</a>
+                <a href="#features" class="btn btn-outline" data-i18n="hero.cta2">Learn More</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-value">10+</div>
+                    <div class="stat-label" data-i18n="hero.stat1">YEARS OF DATA</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label" data-i18n="hero.stat4">SPORTS COVERED</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">15+</div>
+                    <div class="stat-label" data-i18n="hero.stat2">LEAGUES COVERED</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">24/7</div>
+                    <div class="stat-label" data-i18n="hero.stat3">AI ANALYSIS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leagues Ticker -->
+    <section class="leagues-section">
+        <div class="leagues-title" data-i18n="leagues.title">Leagues We Cover</div>
+        <div class="leagues-ticker-wrapper">
+            <div class="leagues-ticker">
+                <img src="./assets/img/competitions/nba.png" alt="NBA">
+                <img src="./assets/img/competitions/nfl.png" alt="NFL">
+                <img src="./assets/img/competitions/mlb.png" alt="MLB">
+                <img src="./assets/img/competitions/nhl.png" alt="NHL">                
+                <img src="./assets/img/competitions/premierleague.png" alt="Premier League">
+                <img src="./assets/img/competitions/laliga.png" alt="La Liga">
+                <img src="./assets/img/competitions/bundesliga.png" alt="Bundesliga">
+                <img src="./assets/img/competitions/seriea.png" alt="Serie A">
+                <img src="./assets/img/competitions/ligue1.png" alt="Ligue 1">
+                <img src="./assets/img/competitions/ucl.png" alt="Champions League">
+                <img src="./assets/img/competitions/europaleague.png" alt="Europa League">
+                <img src="./assets/img/competitions/conferenceleague.png" alt="Conference League">
+                <img src="./assets/img/competitions/eredivisie.png" alt="Eredivisie">
+                <img src="./assets/img/competitions/ligaportugal.png" alt="Liga Portugal">
+                <img src="./assets/img/competitions/allsvenskan.png" alt="Allsvenskan">
+                <img src="./assets/img/competitions/eliteserien.png" alt="Eliteserien">
+                <img src="./assets/img/competitions/brazilseriea.png" alt="Brazil Serie A">
+                <!-- Duplicate for seamless loop -->
+                <img src="./assets/img/competitions/nba.png" alt="NBA">
+                <img src="./assets/img/competitions/nfl.png" alt="NFL">
+                <img src="./assets/img/competitions/mlb.png" alt="MLB">
+                <img src="./assets/img/competitions/nhl.png" alt="NHL">      
+                <img src="./assets/img/competitions/premierleague.png" alt="Premier League">
+                <img src="./assets/img/competitions/laliga.png" alt="La Liga">
+                <img src="./assets/img/competitions/bundesliga.png" alt="Bundesliga">
+                <img src="./assets/img/competitions/seriea.png" alt="Serie A">
+                <img src="./assets/img/competitions/ligue1.png" alt="Ligue 1">
+                <img src="./assets/img/competitions/ucl.png" alt="Champions League">
+                <img src="./assets/img/competitions/europaleague.png" alt="Europa League">
+                <img src="./assets/img/competitions/conferenceleague.png" alt="Conference League">
+                <img src="./assets/img/competitions/eredivisie.png" alt="Eredivisie">
+                <img src="./assets/img/competitions/ligaportugal.png" alt="Liga Portugal">
+                <img src="./assets/img/competitions/allsvenskan.png" alt="Allsvenskan">
+                <img src="./assets/img/competitions/eliteserien.png" alt="Eliteserien">
+                <img src="./assets/img/competitions/brazilseriea.png" alt="Brazil Serie A">
+                <!-- Duplicate for seamless loop -->
+                <img src="./assets/img/competitions/nba.png" alt="NBA">
+                <img src="./assets/img/competitions/nfl.png" alt="NFL">
+                <img src="./assets/img/competitions/mlb.png" alt="MLB">
+                <img src="./assets/img/competitions/nhl.png" alt="NHL">     
+                <img src="./assets/img/competitions/premierleague.png" alt="Premier League">
+                <img src="./assets/img/competitions/laliga.png" alt="La Liga">
+                <img src="./assets/img/competitions/bundesliga.png" alt="Bundesliga">
+                <img src="./assets/img/competitions/seriea.png" alt="Serie A">
+                <img src="./assets/img/competitions/ligue1.png" alt="Ligue 1">
+                <img src="./assets/img/competitions/ucl.png" alt="Champions League">
+                <img src="./assets/img/competitions/europaleague.png" alt="Europa League">
+                <img src="./assets/img/competitions/conferenceleague.png" alt="Conference League">
+                <img src="./assets/img/competitions/eredivisie.png" alt="Eredivisie">
+                <img src="./assets/img/competitions/ligaportugal.png" alt="Liga Portugal">
+                <img src="./assets/img/competitions/allsvenskan.png" alt="Allsvenskan">
+                <img src="./assets/img/competitions/eliteserien.png" alt="Eliteserien">
+                <img src="./assets/img/competitions/brazilseriea.png" alt="Brazil Serie A">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <span class="section-tag" data-i18n="features.tag">AI & BETTING</span>
+            <h2 class="section-title" data-i18n="features.title">Artificial Intelligence is Changing the Game</h2>
+            <p class="section-desc" data-i18n="features.desc">
+                AI enables machines to uncover hidden information in sports data without being explicitly told where to look.
+            </p>
+        </div>
+
+        <div class="mockup-showcase">
+        <div class="phone-wrapper">
+            <div class="screen-container">
+                <img class="screen-img" id="mockup-screenshot" src="/assets/img/misc/dbg_pred_en.PNG" alt="DeepBetting App">
+            </div>
+            <img class="mockup-frame" src="./assets/img/misc/mobile_mockup.PNG" alt="iPhone Frame">
+        </div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3 data-i18n="features.card1.title">Machine Learning</h3>
+                <p data-i18n="features.card1.desc">Our algorithms are trained on historical datasets to forecast the likelihood of particular outcomes with high accuracy.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
+                <h3 data-i18n="features.card2.title">Statistical Edge</h3>
+                <p data-i18n="features.card2.desc">Identify opportunities where our model detects a higher success probability than market estimates to maximize your performance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                <h3 data-i18n="features.card3.title">Real-Time Analysis</h3>
+                <p data-i18n="features.card3.desc">Get instant predictions for upcoming games based on the latest player and team statistics.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
+                <h3 data-i18n="features.card4.title">No Human Bias</h3>
+                <p data-i18n="features.card4.desc">AI predictions are not prone to human bias, offering objective analysis based purely on data.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-database"></i></div>
+                <h3 data-i18n="features.card5.title">Historical Data</h3>
+                <p data-i18n="features.card5.desc">More than 10 years of historical data analyzed to identify patterns and trends that humans miss.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3 data-i18n="features.card6.title">Transparent Results</h3>
+                <p data-i18n="features.card6.desc">All predictions are logged on Bet-Analytix without the chance to delete or update them later.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="section-header">
+            <span class="section-tag" data-i18n="howItWorks.tag">PROCESS</span>
+            <h2 class="section-title" data-i18n="howItWorks.title">How It Works</h2>
+            <p class="section-desc" data-i18n="howItWorks.desc">
+                Three simple steps to start making smarter betting decisions.
+            </p>
+        </div>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 data-i18n="howItWorks.step1.title">Create Your Account</h3>
+                    <p data-i18n="howItWorks.step1.desc">Sign up for a free or premium subscription to access our AI-powered predictions platform.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 data-i18n="howItWorks.step2.title">Access Daily Predictions</h3>
+                    <p data-i18n="howItWorks.step2.desc">Receive predictions for all major European league matches, updated daily with fresh analysis.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 data-i18n="howItWorks.step3.title">Make Informed Decisions</h3>
+                    <p data-i18n="howItWorks.step3.desc">Use our AI insights to make smarter betting decisions and increase your gain probability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Transparency Section -->
+    <section class="transparency">
+        <div class="transparency-content">
+            <div class="transparency-text">
+                <span class="section-tag" data-i18n="transparency.tag">TRANSPARENCY</span>
+                <h2 data-i18n="transparency.title" data-i18n-html="true">We Value <span class="highlight">Transparency</span> Above All</h2>
+                <p data-i18n="transparency.desc">
+                    All our statistics and the complete history of our predictions are fully transparent and publicly accessible. Each prediction is timestamped at the moment of publication, ensuring full traceability and accountability.
+                </p>
+            </div>
+            <div class="transparency-visual">
+                <img src="./assets/img/misc/stats_screen_nba_en.png" alt="Statistics Screenshot" class="transparency-screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section-header">
+            <span class="section-tag" data-i18n="pricing.tag">PRICING</span>
+            <h2 class="section-title" data-i18n="pricing.title">Choose Your Plan</h2>
+            <p class="section-desc" data-i18n="pricing.desc">
+                Start with our free plan or unlock full access with Premium.
+            </p>
+        </div>
+        <div class="pricing-grid-4">
+            <div class="pricing-card" data-membership-id="10">
+                <div class="pricing-header">
+                    <div class="pricing-icon"><i class="fas fa-person-running"></i></div>
+                    <div class="pricing-name" data-i18n="pricing.free.name">FREE</div>
+                    <div class="pricing-price">0€</div>
+                    <div class="pricing-period" data-i18n="pricing.perMonth">per month</div>
+                </div>
+                <ul class="pricing-features">
+                    <li data-i18n="pricing.free.feature1">Limited Football predictions</li>
+                    <li data-i18n="pricing.free.feature2">Limited US Sports predictions</li>
+                    <li data-i18n="pricing.free.feature3">Available every day</li>
+                    <li data-i18n="pricing.free.feature4">Test our services</li>
+                </ul>
+                <a href="/register-free.html" class="btn btn-outline pricing-cta" data-membership-id="10" data-i18n="pricing.free.cta">Get Started Free</a>
+            </div>
+            <div class="pricing-card" data-membership-id="11">
+                <div class="pricing-header">
+                    <div class="pricing-icon"><i class="fas fa-futbol"></i></div>
+                    <div class="pricing-name" data-i18n="pricing.football.name">FOOTBALL</div>
+                    <div class="pricing-price">34,99€</div>
+                    <div class="pricing-period" data-i18n="pricing.perMonth">per month</div>
+                </div>
+                <ul class="pricing-features">
+                    <li data-i18n="pricing.football.feature1">Full Football predictions</li>
+                    <li data-i18n="pricing.football.feature2">All European leagues</li>
+                    <li data-i18n="pricing.football.feature3">Champions League & Europa</li>
+                    <li data-i18n="pricing.football.feature4">Cancel anytime</li>
+                </ul>
+                <a href="/register-football.html" class="btn btn-primary pricing-cta" data-membership-id="11" data-i18n="pricing.subscribeNow">Subscribe Now</a>
+            </div>
+            <div class="pricing-card" data-membership-id="12">
+                <div class="pricing-header">
+                    <div class="pricing-icon"><i class="fas fa-basketball-ball"></i></div>
+                    <div class="pricing-name" data-i18n="pricing.usSports.name">US SPORTS</div>
+                    <div class="pricing-price">34,99€</div>
+                    <div class="pricing-period" data-i18n="pricing.perMonth">per month</div>
+                </div>
+                <ul class="pricing-features">
+                    <li data-i18n="pricing.usSports.feature1">Full US Sports predictions</li>
+                    <li data-i18n="pricing.usSports.feature2">Including the NBA, NHL, MLB and NFL</li>
+                    <li data-i18n="pricing.usSports.feature3">Cancel anytime</li>
+                </ul>
+                <a href="/register-us-sports.html" class="btn btn-primary pricing-cta" data-membership-id="12" data-i18n="pricing.subscribeNow">Subscribe Now</a>
+            </div>
+            <div class="pricing-card featured" data-membership-id="13" data-badge="BEST VALUE" data-i18n-badge="pricing.bestValue">
+                <div class="pricing-header">
+                    <div class="pricing-icon"><i class="fas fa-crown"></i></div>
+                    <div class="pricing-name" data-i18n="pricing.ultimate.name">ULTIMATE</div>
+                    <div class="pricing-price">59,99€</div>
+                    <div class="pricing-original-price" data-i18n="pricing.ultimate.originalPrice">instead of 69,98€</div>
+                    <div class="pricing-period" data-i18n="pricing.perMonth">per month</div>
+                </div>
+                <ul class="pricing-features">
+                    <li data-i18n="pricing.ultimate.feature1">All Football predictions</li>
+                    <li data-i18n="pricing.ultimate.feature2">All US Sports predictions</li>
+                    <li data-i18n="pricing.ultimate.feature3">Cancel anytime</li>
+                    <li data-i18n="pricing.ultimate.feature5">Best value — Save 15%</li>
+                </ul>
+                <a href="/register-ultimate.html" class="btn btn-primary pricing-cta" data-membership-id="13" data-i18n="pricing.subscribeNow">Subscribe Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="section-header">
+            <span class="section-tag" data-i18n="faq.tag">FAQ</span>
+            <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
+            <p class="section-desc" data-i18n="faq.desc">
+                You have questions, we have answers.
+            </p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item active">
+                <button class="faq-question" data-i18n="faq.q1.question">What service do we offer?</button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.q1.answer">DeepBetting is a French startup that provides betting advice based on artificial intelligence algorithms, such as machine learning and deep learning. Our models analyze historical data to predict match outcomes.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" data-i18n="faq.q2.question">How do we build prediction models?</button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.q2.answer">We train our algorithms on historical datasets, which are statistics of players and teams from the past, to apply them to upcoming games, thereby forecasting the likelihood of a particular outcome.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" data-i18n="faq.q3.question">Which sports and leagues are covered?</button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.q3.answer">We cover the major football leagues and competitions, as well as major US sports, including the NBA, NFL, MLB and NHL.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" data-i18n="faq.q4.question">What payment methods are available?</button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.q4.answer">You can pay using your credit cards via Stripe or PayPal. Both payment methods are secure and encrypted.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" data-i18n="faq.q5.question">How can I cancel my subscription?</button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.q5.answer">You can cancel your subscription on your "account" page under subscription settings. Alternatively, you can send us an email at least seven days before the end of the next renewal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <span class="section-tag" data-i18n="about.tag">ABOUT US</span>
+                <h2 data-i18n="about.title">Meet the Team Behind DeepBetting</h2>
+                <p data-i18n="about.desc1">
+                    We are sports and analytics enthusiasts who started building sports prediction models using Machine Learning algorithms. Our mission is to revolutionise sports betting by maximising yields using data from past events and players' statistics.
+                </p>
+                <p data-i18n="about.desc2">
+                    With backgrounds in data engineering, healthcare analytics, and aerospace IT, we bring diverse expertise to create the most accurate prediction models possible.
+                </p>
+                <div class="founders-names">
+                    <div class="founder">
+                        <div class="founder-avatar">A</div>
+                        <div class="founder-info">
+                            <strong>Aleks</strong>
+                            <span data-i18n="about.aleks.role">Data Engineer</span>
+                        </div>
+                    </div>
+                    <div class="founder">
+                        <div class="founder-avatar">T</div>
+                        <div class="founder-info">
+                            <strong>Antony</strong>
+                            <span data-i18n="about.toni.role">IT Entrepreneur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-box">
+            <h2 data-i18n="cta.title">Ready to Start Winning?</h2>
+            <p data-i18n="cta.desc">Join thousands of bettors who use AI-powered predictions to make smarter decisions.</p>
+            <a href="#pricing" class="btn btn-primary" data-i18n="cta.button">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <span class="section-tag" data-i18n="contact.tag">CONTACT</span>
+            <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+            <p class="section-desc" data-i18n="contact.desc">
+                Have a question or feedback? We'd love to hear from you.
+            </p>
+        </div>
+
+        <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Clé API Web3Forms (remplace par la tienne) -->
+            <input type="hidden" name="access_key" value="6f6352b0-b36c-41b2-a32f-86fb0b834115">
+            
+            <!-- Anti-spam honeypot -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+            <!-- Sujet personnalisé dans l'email reçu -->
+            <input type="hidden" name="subject" value="New contact from DeepBetting">
+            
+            <!-- Redirection après envoi (optionnel) -->
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+            <div class="form-group">
+                <label for="name" data-i18n="contact.form.name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" data-i18n="contact.form.email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message" data-i18n="contact.form.message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                <span data-i18n="contact.form.submit">Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+
+        <!-- Message de confirmation -->
+        <div id="form-success" class="form-success hidden">
+            <i class="fa-solid fa-circle-check"></i>
+            <p data-i18n="contact.form.success">Message sent successfully!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">DEEPBETTING</div>
+                <p data-i18n="footer.tagline">Smart Predictions powered by Artificial Intelligence for smarter betting decisions.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/deepbetting/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/deepbettingpro" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/DeepBetting/" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="/ai-sports-betting/">AI Sports Betting</a></li>
+                    <li><a href="/predict-sports/">Predict Sports</a></li>
+                    <li><a href="/football/">Football Predictions</a></li>
+                    <li><a href="/nba/">NBA Predictions</a></li>
+                    <li><a href="/nfl/">NFL Predictions</a></li>
+                    <li><a href="/nhl/">NHL Predictions</a></li>
+                    <li><a href="/mlb/">MLB Predictions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#features">AI & Data</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/terms.html">General Terms and Conditions</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <a href="#" onclick="CookieConsent.showPreferences(); return false;">Cookies</a>
+                </ul>
+            </div>
+        </div>
+
+        <!--
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">© 2025 DeepBetting. All Rights Reserved.</p>
+            <div class="payment-methods">
+                <span class="payment-badge"><i class="fa-brands fa-stripe"></i> Stripe</span>
+                <span class="payment-badge"><i class="fa-brands fa-paypal"></i> PayPal</span>
+                <span class="payment-badge"><i class="fa-solid fa-lock"></i> <span data-i18n="footer.sslSecure">SSL Secure</span></span>
+            </div>
+        </div>
+        -->
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">© 2026 DeepBetting. All Rights Reserved.</p>
+            <div class="payment-methods">
+                <span class="payment-badge"><i class="fa-brands fa-stripe"></i> Stripe</span>
+                <span class="payment-badge"><i class="fa-brands fa-paypal"></i> PayPal</span>
+                <span class="payment-badge"><i class="fa-solid fa-lock"></i> <span data-i18n="footer.sslSecure">SSL Secure</span></span>
+                <a href="https://twelve.tools" target="_blank" style="display:inline-flex; align-items:center;">
+                    <img src="https://twelve.tools/badge0-dark.svg" alt="Featured on Twelve Tools" width="162" height="44" style="vertical-align:middle;">
+                </a>
+                <a href="https://wired.business" target="_blank" style="display:inline-flex; align-items:center;">
+                    <img src="https://wired.business/badge3-dark.svg" alt="Featured on Wired Business" width="162" height="44" style="vertical-align:middle;">
+                </a>
+                <a href="https://www.aidirectori.es" target="_blank" style="display:inline-flex; align-items:center;">
+                    <img src="https://cdn.aidirectori.es/ai-tools/badges/no-background.png" alt="Featured on AI Directories" width="162" height="44" style="vertical-align:middle;" />
+                </a>
+                <a href="https://aiboom.tools" target="_blank">
+                    <img src="https://aiboom.tools/badge/badge_dark.svg" alt="Featured on AIBoom.Tools" width="162" height="44" />
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(10, 10, 15, 0.95)';
+            } else {
+                nav.style.background = 'rgba(10, 10, 15, 0.8)';
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .step, .pricing-card, .faq-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+
+
+<script src="./assets/js/auth.js?v=1.1" defer></script>
+
+<!-- Membership hierarchy management -->
+<script>
+(function() {
+    const API_BASE = '/backend/wp-json/deepbetting/v1';
+
+    // Textes pour le bouton désactivé (i18n)
+    const disabledTexts = {
+        en: 'Current Plan',
+        fr: 'Abonnement actuel',
+        es: 'Plan actual',
+        pt: 'Plano atual'
+    };
+
+    async function fetchMembershipHierarchy() {
+        try {
+            const response = await fetch(API_BASE + '/memberships-hierarchy', {
+                credentials: 'include'
+            });
+            if (!response.ok) return null;
+            return await response.json();
+        } catch (e) {
+            console.error('Error fetching membership hierarchy:', e);
+            return null;
+        }
+    }
+
+    function getDisabledText() {
+        const lang = localStorage.getItem('deepbetting_language') || 'en';
+        return disabledTexts[lang] || disabledTexts['en'];
+    }
+
+    function disableButton(btn) {
+        btn.classList.add('btn-disabled');
+        btn.setAttribute('aria-disabled', 'true');
+        btn.removeAttribute('href');
+        btn.style.pointerEvents = 'none';
+        
+        // Changer le texte du bouton
+        const textSpan = btn.querySelector('span');
+        if (textSpan) {
+            textSpan.textContent = getDisabledText();
+        } else {
+            btn.textContent = getDisabledText();
+        }
+        
+        // Ajouter une icône de check
+        if (!btn.querySelector('.fa-check')) {
+            const icon = document.createElement('i');
+            icon.className = 'fas fa-check';
+            icon.style.marginRight = '8px';
+            btn.prepend(icon);
+        }
+    }
+
+    function disableCard(card) {
+        card.classList.add('pricing-card-disabled');
+    }
+
+    async function applyMembershipRestrictions() {
+        const data = await fetchMembershipHierarchy();
+        
+        if (!data || !data.logged_in || data.user_level === -1) {
+            // Non connecté ou pas d'abonnement : ne rien bloquer
+            return;
+        }
+
+        const blockedIds = data.blocked || [];
+        
+        // Désactiver les boutons des memberships bloqués
+        blockedIds.forEach(membershipId => {
+            const btn = document.querySelector(`.pricing-cta[data-membership-id="${membershipId}"]`);
+            const card = document.querySelector(`.pricing-card[data-membership-id="${membershipId}"]`);
+            
+            if (btn) disableButton(btn);
+            if (card) disableCard(card);
+        });
+
+        // Marquer les memberships actuels de l'utilisateur
+        const userMemberships = data.user_memberships || [];
+        userMemberships.forEach(membershipId => {
+            const card = document.querySelector(`.pricing-card[data-membership-id="${membershipId}"]`);
+            if (card) {
+                card.classList.add('pricing-card-current');
+            }
+        });
+    }
+
+    // Exécuter après le chargement du DOM
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', applyMembershipRestrictions);
+    } else {
+        applyMembershipRestrictions();
+    }
+
+    // Ré-appliquer si la langue change (pour mettre à jour le texte du bouton)
+    document.querySelectorAll('.lang-option').forEach(option => {
+        option.addEventListener('click', function() {
+            setTimeout(() => {
+                document.querySelectorAll('.btn-disabled').forEach(btn => {
+                    const textSpan = btn.querySelector('span');
+                    if (textSpan) {
+                        textSpan.textContent = getDisabledText();
+                    } else if (!btn.querySelector('.fa-check')) {
+                        btn.textContent = getDisabledText();
+                    } else {
+                        // Préserver l'icône
+                        const icon = btn.querySelector('.fa-check');
+                        btn.textContent = getDisabledText();
+                        btn.prepend(icon);
+                    }
+                });
+            }, 100);
+        });
+    });
+})();
+</script>
+
+<!-- Override flag URLs to use local SVGs -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const flagUrls = {
+        en: './assets/img/languages/gb.svg',
+        fr: './assets/img/languages/fr.svg',
+        es: './assets/img/languages/es.svg',
+        pt: './assets/img/languages/br.svg'
+    };
+
+    // Override the global flagUrls if i18n.js defines it
+    if (typeof window.flagUrls !== 'undefined') {
+        window.flagUrls = flagUrls;
+    }
+
+    // Function to update the current flag
+    function updateCurrentFlag() {
+        const currentLang = localStorage.getItem('deepbetting_language') || 'en';
+        const currentFlag = document.getElementById('currentFlag');
+        if (currentFlag && flagUrls[currentLang]) {
+            currentFlag.src = flagUrls[currentLang];
+        }
+    }
+
+    // Update flag on page load
+    updateCurrentFlag();
+
+    // Listen for language changes
+    document.querySelectorAll('.lang-option').forEach(option => {
+        option.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            const currentFlag = document.getElementById('currentFlag');
+            if (currentFlag && flagUrls[lang]) {
+                currentFlag.src = flagUrls[lang];
+            }
+        });
+    });
+});
+</script>
+
+    <script src="./assets/js/config.js"></script>
+    <script src="./assets/js/cookie-consent.js"></script>
+    <script src="./assets/js/mockup-showcase.js"></script>
+    <script src="./assets/js/contact.js?v=1.1"></script>
+    <script>
+        CookieConsent.init({
+            googleAnalyticsId: CONFIG.googleAnalyticsId
+        });
+    </script>
+
+    <script>
+    (function() {
+        var btn = document.getElementById("langBtn");
+        var switcher = document.getElementById("langSwitcher");
+        if (btn && switcher) {
+            btn.addEventListener("click", function(e) { e.stopPropagation(); switcher.classList.toggle("active"); });
+            document.addEventListener("click", function(e) { if (!switcher.contains(e.target)) switcher.classList.remove("active"); });
+            document.addEventListener("keydown", function(e) { if (e.key === "Escape") switcher.classList.remove("active"); });
+        }
+    })();
+    </script>
+</body>
+</html>

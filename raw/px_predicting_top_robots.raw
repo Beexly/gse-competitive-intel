@@ -1,0 +1,31 @@
+# robots.txt for predicting.top
+# Prediction Market Leaderboard - Top Polymarket & Kalshi Traders
+
+User-agent: *
+Allow: /
+Allow: /account/
+
+# Sitemap location
+Sitemap: https://predicting.top/sitemap.xml
+
+# Crawl delay to be nice to search engines
+Crawl-delay: 1
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /

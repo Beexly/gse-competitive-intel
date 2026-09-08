@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://defillama.com/sitemap.xml
+Sitemap: https://defillama.com/research/sitemap.xml

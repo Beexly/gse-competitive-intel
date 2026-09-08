@@ -1,0 +1,113 @@
+{
+ "domain": "blockworks.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/blockworks.com__home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\blockworks.com__home.raw",
+   "raw\\blockworks.com__robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apiapp.com/Robinhood_Icon_514baf62d8.png",
+    "apiapp.com/canton_cdf7830c6c.jpg",
+    "apiapp.com/Base_square_blue_f6baf11d5a.svg",
+    "apiapp.com/monad_logo_193cd68e53.png",
+    "apiapp.com/9fcb2fa4_b240_46e2_9016_c4f6101a139d_7e46c6f239.jpeg",
+    "apiapp.com/ink_logo_purple_white_icon_06bcedd763.png"
+   ],
+   "citation": "raw/blockworks.com__home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\blockworks.com__home.raw"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\blockworks.com__home.raw"
+  },
+  "citations": [
+   "raw\\blockworks.com__home.raw",
+   "raw\\blockworks.com__robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Blockworks is a data and software platform for crypto markets. It offers investo' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\blockworks.com__home.raw"
+  },
+  "citations": [
+   "raw\\blockworks.com__home.raw",
+   "raw\\blockworks.com__robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\blockworks.com__home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\blockworks.com__home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\blockworks.com__home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\blockworks.com__home.raw",
+   "raw\\blockworks.com__robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Sitemap: https://blockworks.com/sitemap.xml",
+  "Sitemap: https://blockworks.com/news-sitemap-index.xml",
+  "Sitemap: https://blockworks.com/price-sitemap-index.xml",
+  "Sitemap: https://blockworks.com/tags-sitemap-index.xml",
+  "Sitemap: https://blockworks.com/events-sitemap.xml"
+ ],
+ "discovered_targets": [
+  "apiapp.com/9fcb2fa4_b240_46e2_9016_c4f6101a139d_7e46c6f239.jpeg",
+  "apiapp.com/Base_square_blue_f6baf11d5a.svg",
+  "apiapp.com/Mainnet_971817442e.svg",
+  "apiapp.com/Robinhood_Icon_514baf62d8.png",
+  "apiapp.com/canton_cdf7830c6c.jpg",
+  "apiapp.com/ink_logo_purple_white_icon_06bcedd763.png",
+  "apiapp.com/logo_symbol_c77ecf8237.png",
+  "apiapp.com/monad_logo_193cd68e53.png"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:44.878846"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Blockworks",
+  "description": "Blockworks is a data and software platform for crypto markets. It offers investor relations software, a data API, and a market research platform to its users that span across crypto-native startups and traditional institutions. The company’s focus on consistent data models and repeatable analytical "
+ }
+}

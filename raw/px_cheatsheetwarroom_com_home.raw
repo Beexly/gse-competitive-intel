@@ -1,0 +1,417 @@
+
+
+<!doctype html>
+<html lang="en">
+<head><title>
+	Fantasy Football Advice & Draft Preparation Tools
+</title>
+<meta name="description" content="Create free, customized fantasy cheat sheets for fantasy football." />
+<link href="https://www.cheatsheetwarroom.com" rel="canonical" />
+  <!-- Google Analytics -->
+  
+
+
+
+	<!-- Google Tag Manager -->
+		<script>(function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-NTHMFKJ');</script>
+	<!-- End Google Tag Manager -->
+
+
+
+	<!-- meta tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /><div id="panFacebookPixelCode">
+	
+      <!-- Facebook Pixel Code -->
+	   <!-- Meta Pixel Code -->
+			<script>
+				!function (f, b, e, v, n, t, s) {
+					if (f.fbq) return; n = f.fbq = function () {
+						n.callMethod ?
+							n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+					};
+					if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+					n.queue = []; t = b.createElement(e); t.async = !0;
+					t.src = v; s = b.getElementsByTagName(e)[0];
+					s.parentNode.insertBefore(t, s)
+				}(window, document, 'script',
+					'https://connect.facebook.net/en_US/fbevents.js');
+				fbq('init', '657832361986642');
+				fbq('track', 'PageView');
+			</script>
+			<noscript><img height="1" width="1" style="display:none"
+			  src="https://www.facebook.com/tr?id=657832361986642&ev=PageView&noscript=1"
+			/></noscript>
+			<!-- End Meta Pixel Code -->
+			<!-- End Facebook Pixel Code -->
+    
+</div><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo:regular,italic,bold,bolditalic" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" /><link rel="stylesheet" media="screen" href="/styles/prod/3.02.min.css" /></head>
+<body class="two-section-page">
+
+<form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTE0OTUzNDE3MQ8UKwACZGcWAmYPZBYCZg9kFgQCAQ9kFgICCQ8PFgIeB1Zpc2libGVnZGQCAw9kFgYCAQ9kFhoCAQ8PFgIeC05hdmlnYXRlVXJsBSFodHRwczovL3d3dy5jaGVhdHNoZWV0d2Fycm9vbS5jb21kZAIDD2QWAmYPDxYCHwEFFn4vYWNjZXNzL3JlZ2lzdGVyLmFzcHhkZAIFD2QWAmYPDxYCHwEFSH4vYWNjZXNzL2xvZ2luLmFzcHg/UmV0dXJuVVJMPWh0dHBzOi8vY2hlYXRzaGVldHdhcnJvb20uY29tL2RlZmF1bHQuYXNweGRkAgcPFgIfAGhkAgkPFgIfAGhkAgsPFgIfAGhkAg0PFgIfAGhkAhUPZBYCZg8PFgIfAQUWfi9hY2Nlc3MvcmVnaXN0ZXIuYXNweGRkAhcPZBYCZg8PFgIfAQVIfi9hY2Nlc3MvbG9naW4uYXNweD9SZXR1cm5VUkw9aHR0cHM6Ly9jaGVhdHNoZWV0d2Fycm9vbS5jb20vZGVmYXVsdC5hc3B4ZGQCGQ8WAh8AaGQCGw8WAh8AaGQCHQ8WAh8AaGQCHw8WAh8AaGQCCQ8WAh4EVGV4dAUEMjAyNmQCCw8PFgIfAgUFdjMuMDJkZGSrYFVAeI2p8DSVumfPo++WLLH/zQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=4Orp5yjAHRI6i7kdz029GY45FySGLG3nsKMs5Jhn-V5x-66nq8wZd3KZLoZznapoCY1l6Oif38KnS80NTYSF1k4F1Ts1&amp;t=638901591720898773" type="text/javascript"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="/scripts/prod/3.02.min.js" type="text/javascript"></script>
+<script type='text/javascript' async='async' data-noptimize='1' data-cfasync='false' src='//scripts.mediavine.com/tags/cheatsheet-war-room.js'></script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="QiTjwoY8PAITHlGShvE1TFXDSBMnVNjtnjzVJfPKEHfcJdf116qems0uxHXThiajCGFKwMNluYJbaCo7Nlvsy_5jn1c1" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAOmi1LqEOiRrtdjUuexi8ayoJKKlVCwpycuWBCfBfY85/eCA8om5zqcdsT1SszT0lmqSVXFKQVjJS8pEy0i8KKXLqr7aQ==" />
+</div>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTHMFKJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script type='text/javascript'>window.PLAYERCARDS_CONFIG={parseFullText:true,affiliateCode:'WarRoom'};</script>
+<script type='text/javascript' src='https://cdn.fantasypros.com/playercards/auto_parse_nfl.js'></script>
+  
+
+
+<!-- header section start -->
+<div id="panHeader">
+	
+
+<header id="main-headre">
+	<!-- ======= top bar ======= -->
+		<div class="container">
+			<div class="row headerRow">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-12 main-logo-section">
+					<div class="web-side-logo">
+            <a id="hlLogoLink" class="d-inline-block" href="https://www.cheatsheetwarroom.com"><img class="img-fluid" src="Images/Layout/cheatsheetwarroom-logo.gif" style="width:auto;height:auto;width:250px;" /></a>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-12 mobile-screen-none text-right">
+					<div class="join-and-login">
+						<ul class="j-l">
+              
+              
+							
+              <li id="liJoinUs"><a id="hlJoinUs" href="access/register.aspx"><i class="fa fa-check-square-o" aria-hidden="true"></i><span>Join us now!</span></a></li>
+							
+              <li id="liLogin"><a id="hlLogin" href="access/login.aspx?ReturnURL=https://cheatsheetwarroom.com/default.aspx"><i class="fa fa-sign-in" aria-hidden="true"></i><span>Log in</span></a></li>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+						</ul>
+					</div>
+				</div>
+				    <div class="three menu-icon" style="padding-right:10px;">
+			            <div class="hamburger" id="hamburger-1">
+			              <span class="line"></span>
+			              <span class="line"></span>
+			              <span class="line"></span>
+			            </div>
+			      	</div>
+			</div>
+		</div>
+		<hr class="separate-line">
+
+
+		<!-- primary navigation -->
+		<div class="container menu-block">
+			<div class="row">
+				<nav class="navbar navbar-default main-nav"> 
+				   
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse my-menu-section" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav navbar-primary">
+				        <li id="liMainNav_Home">
+                  <a href="Default.aspx">HOME</a>
+				        </li>
+				        <li id="liMainNav_Sheets">
+                  <a href="fantasy-football/nfl/create/custom-sheet.aspx">SHEETS</a>
+				        </li>
+               
+                
+				        <li id="liMainNav_Blog">
+                  <a href="https://www.cheatsheetwarroom.com/blog">BLOG</a>
+				        </li>
+                <li></li>
+                <li></li>
+				        <li>
+				        	<div class="join-and-login">
+							    	<ul class="j-l">
+                      
+							        
+                      <li id="liJoinUs2"><a id="hlJoinUs2" href="access/register.aspx"><i class="fa fa-check-square-o" aria-hidden="true"></i><span>Join us now!</span></a></li>
+							        
+                      <li id="liLogin2"><a id="hlLogin2" href="access/login.aspx?ReturnURL=https://cheatsheetwarroom.com/default.aspx"><i class="fa fa-sign-in" aria-hidden="true"></i><span>Log in</span></a></li>
+              
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+
+				    				</ul>
+		    					</div>
+    						</li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
+		</div>  <!-- close secondary nav -->
+
+</header>
+
+
+</div>
+
+<!-- header section end -->
+
+<!-- inner section start -->
+<section class="inner-section-one">
+	<div class="container">
+		<div class="row">
+      
+
+  
+  <div class="col-xs-12">
+    
+
+  <div class="homePage container-fluid">
+
+    <div class="row" style="width:90%;margin:auto;margin-bottom:50px;">
+
+      <h1>Create <strong>customized player rankings</strong> on an interactive, cheat sheet.  Then, generate a printable cheat sheet to take to your fantasy draft.</h1>
+
+      <div class="col-md-6">
+
+        <div class="stepContainer heading">
+          STEP 1
+        </div>
+        <!--Step Instructions-->
+        <div>
+          <h3 class="heading">CREATE CUSTOM PLAYER RANKINGS</h3>
+        </div>
+        <!--Dividor-->
+        <img src="Images/Layout/step1dasheddividor.gif" alt="Creating custom player rankings is simple and intuitive." />
+        <!--Instructions List-->
+        <ul>
+          <li>
+            <span class="bullet"></span> Drag and drop players on a custom, interactive fantasy cheat sheet
+          </li>
+          <li>
+            <span class="bullet"></span> View stats in all formats including
+            <abbr title="Points Per Reception">PPR</abbr> and standard
+              <strong>fantasy football scoring</strong>
+          </li>
+        </ul>       
+        
+        <div style="text-align:center">
+          <input type="submit" name="ctl00$ctl00$cphContent$cphContent$ctl01" value="Create Custom Cheat Sheet" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$cphContent$cphContent$ctl01&quot;, &quot;&quot;, false, &quot;&quot;, &quot;fantasy-football/nfl/create/custom-sheet.aspx&quot;, false, false))" class="btn btn-primary" />
+        </div>
+
+      </div>
+      <div class="col-md-6">
+
+        <div class="stepContainer heading">
+          STEP 2
+        </div>
+        <!--Step Instructions-->
+        <div>
+          <h3 class="heading">GENERATE A PRINTABLE CHEAT SHEET</h3>
+        </div>
+        <!--Dividor-->
+        <img src="Images/Layout/step2dasheddividor.gif" alt="Print cheat sheets incorporate important data from your cheat sheet" />
+        <!--Instructions List-->
+        <ul>
+          <li>
+            <span class="bullet"></span> Your rankings get added into your
+            <strong>printable fantasy football cheat sheets</strong>
+          </li>
+          <li>
+            <span class="bullet"></span> Choose the print format that best suits your fantasy league's draft format
+          </li>
+        </ul>
+        
+        <div style="text-align:center">
+          <input type="submit" name="ctl00$ctl00$cphContent$cphContent$ctl03" value="Generate Printable Cheat Sheet" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$cphContent$cphContent$ctl03&quot;, &quot;&quot;, false, &quot;&quot;, &quot;fantasy-football/nfl/free/printable/offense/cheat-sheet-with-roster.aspx&quot;, false, false))" class="btn btn-primary" />
+        </div>
+      </div>
+    </div>
+ 
+            
+  </div>
+
+  <div id="mediavine-settings" data-blacklist-all="1"></div>
+
+
+
+  </div>
+
+
+ 		</div>
+	</div>
+</section>
+<!-- inner section end -->
+
+<!-- Footer -->
+<footer id="newFooter">
+	<div class="container" id="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="column">
+			        <div class="title">
+			          Miscellaneous
+			        </div>
+			        <ul>
+			          <li>
+                  <a href="Contact.aspx">Contact Us</a>
+			          </li>
+			          <li>
+                  <a href="about.aspx">About Us</a>
+			          </li>
+			        </ul>
+			    </div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="column">
+			        <div class="title">
+			          Social Sites
+			        </div>
+			        <ul>
+			          <li>
+			            <i class="fa fa-twitter"></i>
+                  <a href="https://twitter.com/CSWarRoom">Twitter</a>
+			          </li>
+			          <li>
+			            <i class="fa fa-facebook"></i>
+                  <a href="https://www.facebook.com/CheatSheetWarRoom">Facebook</a>
+			          </li>
+			          <li>
+			            <i class="fa fa-pinterest"></i>
+                  <a href="https://www.pinterest.com/cheatsheetwarrm">Pinterest</a>
+			          </li>
+			        </ul>
+		      	</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="column">
+			        <div class="title">
+			          Legal
+			        </div>
+			        <ul>
+			          <li>
+			            <i class="fa fa-copyright"></i>
+                  2026 Cheat Sheet War Room
+			          </li>
+			          <li>
+                  Software Release <span id="labSoftwareVersion" class="version">v3.02</span>
+			          </li>
+			          <li>
+                  <a href="legal/termsofservice.aspx">Terms of Service</a>
+			          </li>
+			          <li>
+                  <a href="legal/privacypolicy.aspx">Privacy Policy</a>
+			          </li>
+			          <li>
+                  <a href="legal/disclaimer.aspx">Disclaimer</a>
+			          </li>
+			        </ul>
+      			</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="cAlign text-center">
+			        <p>
+			          We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.
+			        </p>
+			     </div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+<!-- footer section end -->
+
+
+
+
+  <!-- Here we initialize tooltips for the entire application -->
+
+
+  <!-- Menu Toogle -->
+  <script>
+	  $("#hamburger-1").click(function(){
+        $(this).toggleClass("is-active");
+        $("#bs-example-navbar-collapse-1").toggleClass("is-active");
+        $('#bs-example-navbar-collapse-1').slideToggle("400");
+      });
+      $("#hamburger-2").click(function(){
+        $(this).toggleClass("is-active");
+        $("#secondaryNavBarCollapse").toggleClass("is-active");
+        $("#secondaryNavBarCollapse").slideToggle("400");
+      });
+  </script>
+
+  <!-- This should make tooltips appear in UpdatePanels, even after a callback, 
+       but it does not address AJAX triggered on QTip hovers, which still don't work -->
+  
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools --> 
+
+ 
+</form>
+
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"80e2564dac0b4310b423b2864de22e0d","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+
+
+</html>

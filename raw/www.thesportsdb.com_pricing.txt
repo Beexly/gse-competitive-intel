@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head> <!--######## Header ########-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Sports API Premium Pricing Upgrades">
+    <meta name="author" content="TheSportsDB">
+    <title>Pricing - TheSportsDB.com</title>
+    <!-- CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/main2.css" rel="stylesheet">
+<meta name="insight-app-sec-validation" content="b724337f-e21c-4197-a250-1172b24ad088">
+<link rel="apple-touch-icon" sizes="57x57" href="/images/ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/ico/favicon-16x16.png">
+<link rel="manifest" href="/images/ico/manifest.json">
+
+<!-- Stats Script 
+<script
+    src="https://app.rybbit.io/api/script.js"
+    data-site-id="a4e06f799a48"
+    defer></script>
+-->    <style>
+        :root {
+            --pricing-green-900: #0e1a10;
+            --pricing-green-800: #13241a;
+            --pricing-green-700: #17311f;
+            --pricing-green-600: #21492d;
+            --pricing-green-500: #2f6f3a;
+            --pricing-green-300: #c7dfca;
+        }
+
+        .billing-toggle {
+            display: inline-flex;
+            align-items: stretch;
+            background: var(--pricing-green-900);
+            border: 2px solid var(--pricing-green-500);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+        }
+
+        .billing-toggle a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: clamp(4.1rem, 17vw, 5.8rem);
+            padding: 0.45rem 0.5rem;
+            font-size: 0.72rem;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: 0.01em;
+            text-decoration: none;
+            color: var(--pricing-green-300);
+            transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .billing-toggle a:hover {
+            text-decoration: none;
+            color: #fff;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+        }
+
+        .billing-toggle a.active:hover {
+            background: var(--pricing-green-500);
+        }
+
+        .billing-toggle a.inactive:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .pricing-surface {
+            background: var(--pricing-green-900) !important;
+        }
+
+        .pricing-surface-list {
+            background: transparent !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+        }
+
+        .pricing-heading {
+            background: var(--pricing-green-700) !important;
+            color: #fff !important;
+        }
+
+        .pricing-heading .pricing-title {
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+        }
+
+        .pricing-cost {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.1;
+        }
+
+        .pricing-footer {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .pricing-footer .btn {
+            min-width: 50%;
+            padding-top: 0.35rem;
+            padding-bottom: 0.35rem;
+            margin-top: 1rem !important;
+        }
+
+        .pricing-footer .btn-success {
+            background-color: var(--pricing-green-500);
+            border-color: var(--pricing-green-500);
+        }
+
+        .pricing-footer .btn-success:hover,
+        .pricing-footer .btn-success:focus {
+            background-color: var(--pricing-green-600);
+            border-color: var(--pricing-green-600);
+        }
+
+        .pricing-footer .btn-outline-success {
+            color: var(--pricing-green-300);
+            border-color: var(--pricing-green-500);
+        }
+
+        .pricing-footer .btn-outline-success:hover,
+        .pricing-footer .btn-outline-success:focus {
+            background-color: var(--pricing-green-500);
+            border-color: var(--pricing-green-500);
+            color: #fff;
+        }
+
+        .pricing-free-icon {
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            margin-right: 0.35rem;
+            vertical-align: -0.15em;
+            color: var(--pricing-green-500);
+        }
+
+        .pricing-business-btn {
+            background-color: #0d6efd !important;
+            border-color: #0d6efd !important;
+            color: #fff !important;
+        }
+
+        .pricing-business-btn:hover,
+        .pricing-business-btn:focus {
+            background-color: #0b5ed7 !important;
+            border-color: #0a58ca !important;
+            color: #fff !important;
+        }
+
+        .pricing-premium-btn {
+            background-color: #ffc107 !important;
+            border-color: #ffc107 !important;
+            color: #1b1b1b !important;
+        }
+
+        .pricing-premium-btn:hover,
+        .pricing-premium-btn:focus {
+            background-color: #ffca2c !important;
+            border-color: #ffca2c !important;
+            color: #1b1b1b !important;
+        }
+
+        @media (min-width: 992px) {
+            .pricing-featured-card {
+                transform-origin: center center;
+                z-index: 1;
+                box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.28) !important;
+            }
+
+            .pricing-featured-card .pricing-heading {
+                background: #1e4629 !important;
+            }
+        }
+
+        .billing-toggle a.active {
+            background: var(--pricing-green-500);
+            color: #fff;
+        }
+
+        .billing-toggle a.inactive {
+            background: transparent;
+        }
+
+        .billing-toggle a + a {
+            border-left: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        @media (max-width: 575.98px) {
+            .billing-toggle a {
+                width: clamp(4rem, 28vw, 5.6rem);
+                padding: 0.38rem 0.42rem;
+                font-size: 0.68rem;
+                line-height: 1.05;
+            }
+        }
+
+    </style>
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+    <script type="text/javascript">
+        Paddle.Initialize({
+            token: "live_2a64bae1ee2eaa39b3b43bfe624", // replace with a client-side token
+            // prints events to console for debugging
+            eventCallback: function(data) {
+                console.log(data);
+            }
+        });
+
+        // open checkout
+        function openCheckout(items, customer) {
+            Paddle.Checkout.open({
+                items: items,
+                customer: customer
+            });
+        }
+    </script>
+</head> <!--######## Header ########-->
+
+<body class="homepage">
+
+    <!-- Header -->
+    <header id="header">
+        <!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-inverse navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/"><img src="/images/svg/site_logo_dark.svg" alt="website logo" width="245" height="75"></a>
+        <!-- Burger Menu -->
+        <button class="navbar-toggler collapsed navbar-inverse" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-expanded="false">
+            <span class="navbar-toggler-icon white"></span>
+        </button>
+        <!-- Large Menu -->
+        <div class="navbar-collapse collapse" id="mynavbar">
+            <ul class="navbar-nav ms-auto">
+                <!-- Browse Dropdown -->
+                <li class=" nav-item dropdown dropdown-menu-dark nav-item">
+                    <a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Data</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li class='py-2'><a href="/activity">Site Activity</a></li>
+                        <li class='py-2'><a href="/sport/leagues">Browse Leagues</a></li>
+                        <!-- <li class='py-2'><a href="/browse_teams">Teams</a></li> -->
+                        <li class='py-2'><a href="/browse_venues">Browse Venues</a></li>
+                        <!-- <li class='py-2'><a href="/browse_players">Players</a></li> -->
+                        <!-- <li class='py-2'><a href="/browse_seasons">Seasons</a></li> -->
+                        <li class='py-2'><a href="/browse_collections">Browse Collections</a></li>
+                        <li class='py-2'><a href="/browse_honours">Browse Honours</a></li>
+                        <li class='py-2'><a href="/browse_milestones">Browse Milestones</a></li>
+                        <!-- <li class='py-2'><a href="/browse_events">Events</a></li> -->
+                        <li class='py-2'><a href="/browse_tv">TV Sport Listings</a></li>
+                        <li class='py-2'><a href="/browse_calendar">Sport Calendar</a></li>
+                        <li class='py-2'><a href="/browse_highlights">Event Highlights</a></li>
+                    </ul>
+                </li>
+
+                <!-- Contribute Dropdown -->
+                <li class="nav-item dropdown nav-item">
+                    <a href='#' class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Edit</a>
+                    <ul class="dropdown-menu dropdown-menu-dark px-1">
+                        <li class='py-2'><a href="/contribute_guide">Contribute Guide</a></li>
+                        <li class='py-2'><a href="https://www.thesportsdb.com/forum_topic.php?t=5726">Apply Editor</a></li>
+                        <li class='py-2'><a href="/player_birthday">Player Birthdays</a></li>
+                        <li class='py-2'><a href="/missing_scores">Missing Scores</a></li>
+                        <li class='py-2'><a href="/missing_highlights">Missing Highlights</a></li>
+                        <!-- <li class='py-2'><a href="/missing_artwork">Missing Artwork</a></li> -->
+                        <li class='py-2'><a href="/missing_seasons">Missing Seasons</a></li>
+                        <li class='py-2'><a href="/latest_transfers">Latest Transfers</a></li>
+                        <li class='py-2'><a href="/latest_honours">Latest Honours</a></li>
+                        <li class='py-2'><a href="/latest_stats">Latest Stats</a></li>
+                    </ul>
+                </li>
+
+                <!-- Developers Dropdown-->
+                <li class="dropdown nav-item">
+                    <a href='#' class="dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">Develop</a>
+                    <ul class="dropdown-menu dropdown-menu-dark px-1">
+                        <li class='py-2'><a href="/pricing">Pricing</a></li>
+                        <li class='py-2'><a href="/free_sports_api">Free Sports API</a></li>
+                        <li class='py-2'><a href="/documentation">API Documentation</a></li>
+                        <li class='py-2'><a href="/docs_api_examples">API Code Examples</a></li>
+                        <li class='py-2'><a href="/docs_api_testing">API Testing Guide</a></li>
+                        <li class='py-2'><a href="/docs_api_data">API Data Guide</a></li>
+                        <li class='py-2'><a href="/docs_artwork">Artwork Types</a></li>
+                        <li class='py-2'><a href="https://trello.com/b/PMumZYQg/thesportsdb">Roadmap</a></li>
+                        <li class='py-2'><a href="/docs_libraries">3rd Party Libraries</a></li>
+                        <li class='py-2'><a href="/docs_kodi_scraper">Kodi Scraper</a></li>
+                        <li class='py-2'><a href="/forum_topic.php?t=1807">Plex Scraper</a></li>
+                    </ul>
+                </li>
+
+                <!-- Tools -->
+                <li class="dropdown nav-item">
+                    <a href='#' class="dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
+                    <ul class="dropdown-menu dropdown-menu-dark px-1">
+                        <li class='py-2'><a href="/forum">Forum</a></li>
+                        <li class='py-2'><a href="https://discord.gg/pFvgaXV">Discord Chat</a></li>
+                        <li class='py-2'><a href="/top100">Top 100 Events</a></li>
+                        <li class='py-2'><a href="/hall_of_fame_player">Charts Player</a></li>
+                        <li class='py-2'><a href="/hall_of_fame_team">Charts Team</a></li>
+                        <li class='py-2'><a href="https://pixelite-photo-editor.thedatadb.chatgpt.site/">Quick Image (Beta)</a></li>
+                    </ul>
+                </li>
+
+                <!-- Username -->
+                <li class='dropdown nav-item px-1'><a href='/user_login.php'>Login</a> <a href='/user_register.php'>Signup</a></li>
+                <!-- Search Box -->
+                <li class="dropdown nav-item">
+                    <div class="search">
+                        <form role="form" action="/browse">
+                            <input type="text" name="s" class="search-form" autocomplete="off" placeholder=" Search" />
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    </header>
+    <!--/header-->
+
+    <!-- Main body  -->
+    <section id="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12"> <!--/#Padder-->
+                    <a href='/' />Home </a> / <a href='/docs_pricing' />Sports API Pricing </a>                </div>
+            </div>
+
+        </div>
+
+        <div id="pricing-tables">
+            <div class="container" style="padding:50px;">
+
+                                <div>
+                    <h1 class='center'>API Upgrade Pricing</h1>
+                                    </div>
+                <div class='center' style='margin: 24px 0 20px 0;'>
+                    <div class='billing-toggle shadow-sm' role='group' aria-label='Pricing billing selector'>
+                        <a class='active' href='/docs_pricing.php?billing=monthly'>Monthly</a>
+                        <a class='inactive' href='/docs_pricing.php?billing=annual'>Annual</a>
+                        <a class='inactive' href='/docs_pricing.php?billing=lifetime'>Lifetime</a>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-3 g-4">
+                                            <div class="col">
+                            <div class="card h-100 pricing-surface text-white border-0 shadow-sm">
+                            <div class="card-header text-center pricing-heading">
+                                <h2 class="pricing-title mb-0 py-2">🆓 Free Sports API</h2>
+                                </div>
+                                <div class="card-body text-center py-4">
+                                    <div class="pricing-cost">$0 /mo</div>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                        <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                        Search for sports players names
+                                    </li>
+                                    <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                        <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                        Search sports events
+                                    </li>
+                                    <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                        <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                        Most queries limited
+                                    </li>
+                                    <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                        <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                        30 requests per minute
+                                    </li>
+                                    <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                        <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                        List Seasons
+                                    </li>
+                                </ul>
+                                <div class="card-footer pricing-surface border-0 text-center pb-4">
+                                    <div class="pt-3"></div>
+                                    <a class="btn btn-success" role="button" href="/free_sports_api">Free API</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <div class="col">
+                        <div class="card h-100 pricing-surface text-white border-0 shadow-sm pricing-featured-card">
+                            <div class="card-header text-center pricing-heading">
+                                <h2 class="pricing-title mb-0 py-2">🧑 Single Developer</h2>
+                                                            </div>
+                            <div class="card-body text-center py-4">
+                                <div class='pricing-cost'>$9 /mo</div>                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                    <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                    2 min livescore (Soccer, NFL, NBA, MLB, NHL)
+                                </li>
+                                <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                    <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                    Full Premium JSON sports data
+                                </li>
+                                <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                    <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                    Higher data limits
+                                </li>
+                                <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                    <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                    100 requests per minute
+                                </li>
+                                <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                    <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                    YouTube sports highlight links
+                                </li>
+                            </ul>
+                            <div class="card-footer pricing-surface border-0 text-center pb-4">
+                                <div class="pt-3"></div>
+                                <a class='btn pricing-premium-btn' role='button' href='/user_register.php'>Premium $9 /mo</a>                            </div>
+                        </div>
+                    </div>
+
+                                            <div class="col">
+                            <div class="card h-100 pricing-surface text-white border-0 shadow-sm">
+                                <div class="card-header text-center pricing-heading">
+                                    <h2 class="pricing-title mb-0 py-2">🏢 Small Business</h2>
+                                </div>
+                                <div class="card-body text-center py-4">
+                                    <div class="pricing-cost">$20 /mo</div>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                        <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                        2 min livescore (Soccer, NFL, NBA, MLB, NHL)
+                                    </li>
+                                    <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                        <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                        No limit on returned data
+                                    </li>
+                                    <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                        <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                        Dedicated email support
+                                    </li>
+                                    <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                        <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                        120 requests per minute
+                                    </li>
+                                    <li class="list-group-item pricing-surface-list text-white border-secondary d-flex align-items-center">
+                                        <img src="https://www.thesportsdb.com/images/icons/bullet-arrow.png" alt="pricing bullet" width="20" height="20" class="me-2 flex-shrink-0">
+                                        Private API Key
+                                    </li>
+                                </ul>
+                            <div class="card-footer pricing-surface border-0 text-center pb-4">
+                                <div class="pt-3"></div>
+                                <a class='btn pricing-business-btn' role='button' href='/user_register.php'>Business $20 /mo</a>                                </div>
+                            </div>
+                        </div>
+                                    </div>
+
+                <div class="text-center mt-3">
+                    <img src="/images/icons/payment_options.png" width="150" alt="payment options">
+                </div>
+
+                <!-- 2nd row 
+                <div class="row">
+                    <div class="center">
+                        <br>No Paypal account? Try our <a href="https://www.patreon.com/thedatadb">patreon</a> instead.
+                    </div>
+                </div>-->
+            </div>
+        </div>
+
+    </section>
+
+    <!--######## Footer ########-->
+    <!--######## Footer ########-->
+<footer id="footer" class="midnight-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                2016 - 2026 TheSportsDB.com
+                <br>
+                <a href='/free_sports_api'>Free Sports API</a>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-center">
+                    Socials:
+                    <a href="https://www.facebook.com/profile/61588263891636"><img src="/images/icons/svg/socials/social-f.svg" width='32' height="32" alt='facebook icon'></a>
+                    <a href="https://x.com/TheAudioDB"><img src="/images/icons/svg/socials/social-x.svg" width='32' height="32" alt='twitter icon'></a>
+                    <a href="https://discord.gg/pFvgaXV"><img src="/images/icons/svg/socials/social-d.svg" width='32' height="32" alt='discord icon'></a><br>
+                    <div style="margin: 4px 0 10px 0; line-height: 1;">
+                        <i class="fa fa-clock-o" style="font-size:0.85em; margin-right:2px;" aria-hidden="true"></i>
+                        <span style="font-size:0.9em; margin-right:4px;">Timezone:</span>
+                        <span style="font-size:0.95em; text-transform:uppercase;">utc</span>
+                    </div>
+                    <a href="https://www.thecocktaildb.com" rel="noopener" target="_blank"><img src="/images/logo-tcdb.png" height="30" width="190" alt="thecocktaildb logo"></a>
+                    <a href="https://www.theaudiodb.com" rel="noopener" target="_blank"><img src="/images/logo-tadb.png" height="40" alt="theaudiodb logo"></a>
+                    <a href="https://www.themealdb.com" rel="noopener" target="_blank"><img src="/images/logo-tmdb.png" height="30" width="159" alt="themealdb logo"></a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <ul class="pull-right">
+                    <li><a href="/docs_about.php">About</a></li>
+                    <li><a href="/docs_terms_of_use.php">Terms</a></li>
+                    <li><a href="/docs_privacy_policy.php">Privacy</a></li>
+                    <li><a href="/docs_refunds.php">Refunds</a></li>
+                    <li><a href="/docs_contact.php">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--######## Footer ########-->
+    <!--######## Scripts ########-->
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/webmcp.js"></script>
+<!--######## Scripts ########-->
+    <!--######## Footer ########-->
+
+</body>
+
+</html>

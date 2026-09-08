@@ -1,0 +1,69 @@
+URL: https://draftwise.app/llms.txt\nSTATUS: 200\n\n# DraftWise
+
+> AI-powered LinkedIn post creation and optimization platform
+
+## About
+
+DraftWise is a comprehensive tool designed to help professionals and content creators craft compelling LinkedIn posts. The platform leverages AI to generate hooks, suggest hashtags, research topics, and optimize content for maximum engagement.
+
+## Key Features
+
+- **AI Hook Generator**: Generate attention-grabbing opening lines for LinkedIn posts
+- **Hashtag Suggester**: Get AI-powered hashtag recommendations based on content
+- **Topic Research**: Research topics with AI-powered insights and citations
+- **Content Analysis**: Analyze post content for optimization opportunities
+- **Visual Recommendations**: AI-generated image suggestions for posts
+- **Best Time to Post**: Data-driven posting time recommendations
+- **Draft Management**: Save, organize, and manage post drafts
+- **LinkedIn Preview**: Real-time preview of how posts will appear on LinkedIn
+- **Export Options**: Export posts in multiple formats
+
+## Target Audience
+
+- LinkedIn content creators
+- Marketing professionals
+- Business professionals building personal brand
+- Social media managers
+- Thought leaders and industry experts
+
+## Subscription Tiers
+
+- **Free Tier**: Basic features with limited daily usage
+- **Premium Tier**: Full access to all AI features with higher usage limits
+
+## Pages
+
+- `/` - Landing page with product overview
+- `/auth` - User authentication (login/signup)
+- `/app` - Main post editor and creation interface
+- `/pricing` - Subscription plans and pricing
+- `/blog` - Articles and tips for LinkedIn success
+- `/privacy-policy` - Privacy policy
+- `/terms-of-service` - Terms of service
+
+## API
+
+DraftWise provides a RESTful API for blog management:
+
+### Blog API Endpoints
+
+- `GET /functions/v1/blog-api` - List all blog posts
+- `GET /functions/v1/blog-api?published=true` - List published posts only
+- `GET /functions/v1/blog-api?slug={slug}` - Get post by slug
+- `GET /functions/v1/blog-api?id={id}` - Get post by ID
+- `POST /functions/v1/blog-api` - Create new post
+- `PUT /functions/v1/blog-api` - Update existing post
+- `DELETE /functions/v1/blog-api?slug={slug}` - Delete post by slug
+
+All API endpoints require `X-API-Key` header for authentication.
+
+## Technology Stack
+
+- React with TypeScript
+- Tailwind CSS for styling
+- Supabase for backend services
+- AI-powered content generation
+
+## Contact
+
+For API access or inquiries, contact the DraftWise team through the platform.

@@ -1,0 +1,91 @@
+{
+ "domain": "4for4.com",
+ "tech_stack": {
+  "frontend": "Server-rendered Drupal 7 site (meta generator 'Drupal 7'); aggregated JS under /sites/default/files/advagg_js/; reCAPTCHA v2 + AudioEye + pubfig ad script",
+  "backend": "Drupal 7 PHP; JSON API at /api (discovery endpoint listing resources)",
+  "database": "NOT CONFIRMED (no exposure)",
+  "cloud": "NOT CONFIRMED (no CDN/infra headers captured in saved evidence)",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "https://www.4for4.com/ (saved: raw/4for4_com_home.html)",
+   "https://www.4for4.com/api (saved: raw/4for4_com_api.txt)"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/api (JSON:API-style discovery)",
+    "auth_required": false,
+    "tier": "public",
+    "sample_response": "{\"data\":[{\"label\":\"Users\",\"description\":\"Export the User entity with cookie authentication.\",\"name\":\"users:1.0\",\"resource\":\"users\",\"majorVersion\":1,\"minorVersion\":0,\"self\":\"https://www.4for4.com/api/v1.0/users\"}],\"count\":1,\"self\":{\"title\":\"Self\",\"href\":\"https://www.4for4.com/api/v1.0/discovery\"}}",
+    "citation": "https://www.4for4.com/api (saved: raw/4for4_com_api.txt)"
+   },
+   {
+    "method": "GET",
+    "path": "/api/v1.0/users",
+    "auth_required": true,
+    "tier": "any (cookie session)",
+    "sample_response": "NOT CONFIRMED (cookie auth required; not probed further)",
+    "citation": "https://www.4for4.com/api (saved: raw/4for4_com_api.txt)"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (no GraphQL traces in homepage/aggregated JS)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED (robots.txt present, no Crawl-delay listed)",
+  "citations": [
+   "https://www.4for4.com/robots.txt (saved: raw/4for4_com_robots.txt.txt)"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Integrations surfaced on homepage: ESPN, Sleeper (account/import links, not confirmed data vendors)"
+  ],
+  "citations": [
+   "https://www.4for4.com/ (saved: raw/4for4_com_home.html)"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED (no prices in homepage HTML; premium pages exist in sitemap e.g. /tips-mfl)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://www.4for4.com/ (saved: raw/4for4_com_home.html)"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/api",
+  "/api/v1.0/discovery",
+  "/api/v1.0/users",
+  "/adp",
+  "/draft_board",
+  "/fantasy-football-projections",
+  "/fantasy-football-rankings",
+  "/tools",
+  "/news (6408 sitemap URLs)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "fetched homepage+robots+sitemap+/api via urllib (fetcher.py, UA-spoofed GET); sitemap 8523 URLs",
+  "timestamp": "2026-09-08T13:52:22.131113"
+ },
+ "disposition": "live (derived from 4 raw evidence files)"
+}

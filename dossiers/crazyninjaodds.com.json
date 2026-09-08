@@ -1,0 +1,73 @@
+{
+ "domain": "crazyninjaodds.com",
+ "type": "live-site",
+ "disposition": "live (indie/one-operator, 'still a work in progress' per own homepage)",
+ "tech_stack": {
+  "frontend": "Server-rendered ASP.NET (.aspx routes) behind Cloudflare",
+  "backend": "ASP.NET (Subscribe.aspx)",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare",
+  "cdn": "Cloudflare",
+  "citations": [
+   "raw/i_crazyninjaodds_com_home.html",
+   "raw/i_crazyninjaodds_com_page_Subscribe.aspx.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/page/API (site nav lists 'Add-ons API' section)",
+    "auth_required": "NOT CONFIRMED",
+    "tier": "NOT CONFIRMED",
+    "sample_response": "NOT CONFIRMED (API add-on page not saved in evidence)",
+    "citation": "raw/i_crazyninjaodds_com_page_Subscribe.aspx.html (nav text: Arbitrage, Positive EV, Low-Holds, Free Bet Odds Boost, Risk Free Bet, Win&Get, Bet&Get Promo, Markets, Add-ons, API, Calculators)"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/i_crazyninjaodds_com_page_Subscribe.aspx.html"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "Monte Carlo Simulator listed as a tool (nav); parameters NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "raw/i_crazyninjaodds_com_page_Subscribe.aspx.html"
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED",
+  "citations": "NOT CONFIRMED"
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "Subscribe.aspx exists; Discord community; tool add-ons",
+  "citation": "raw/i_crazyninjaodds_com_page_Subscribe.aspx.html"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED (subscribe page renders no prices in saved HTML \u2014 likely JS/portal gated or account-based)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/i_crazyninjaodds_com_page_Subscribe.aspx.html"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/page/Subscribe.aspx",
+  "tools: Hedge Calculator, Devigger, C-C-C-Combo Breaker, Up-By-X Promo Simulator, Pinch-Hit Risk Calculator, Monte Carlo Simulator"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "homepage + subscribe page (small pages, ~10KB each)",
+  "timestamp": "2026-09-08T14:13:58.404821"
+ }
+}

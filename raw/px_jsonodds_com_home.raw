@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JsonOdds</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" rel="stylesheet" media="screen" />
+    <link href="/Content/css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="/Content/css/jsonodds.css" rel="stylesheet" media="screen" />
+    <link href="/Content/css/pricingtable.css" rel="stylesheet" media="screen" />
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48422844-1', 'jsonodds.com');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+<body>
+     
+    
+<div class="navbar navbar-fixed-top navbar-default" role="navigation"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/home/")">JsonOdds</a></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav navbar-right"><li><a href="/documentation/")">Documentation</a></li><li><a href="/pricing/")">Pricing</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/contact/")">Contact</a></li><li><button type="button" class="btn btn-default navbar-btn" onclick="GoLogin()">Login</button></li><li><button type="button" class="btn btn-default navbar-btn" onclick="GoSignUp()">Sign Up</button></li></ul></div><!--/.navbar-collapse --></div></div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="index-main">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+              <img src="/Content/images/smallglobe.png" alt="..." class="img-circle pull-right">
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <h1 class="big-title text-center">A Modern API for Sports Data</h1>
+                            
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="index-container index-container-offcolor">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 col-md-offset-2" >
+            <h2 class="text-center">Easily Access our Rest API</h2>
+            <p>Quickly build robust and advanced websites or applications with our RESTful API. Track line history, display matches and results, or
+             implement the JsonOdds API in any number of ways. Get odds and results for NFL, NCAAF, NCAAB, NBA, MLB, NHL, WNBA, MMA, World Cup, KHL, AHL, SHL, HockeyAllsvenskan, World Baseball Classic, Dominican Baseball, Venezuelan Baseball. JsonOdds helps you achieve your end goals easily and effectively.</p>
+              <div class="col-md-6"><kbd>curl -X GET https://jsonodds.com/api/odds -H "x-api-key: yourapikey" -L</kbd></div>
+              <div class="col-md-6"><pre><code>[{"ID":"abc2a6db-818a-47aa-81d1-f4f59d75708d","HomeTeam":"Toronto Raptors","AwayTeam":"Chicago Bulls","Sport":1,"MatchTime":"2017-10-20T06:05:00Z","Odds":[{"ID":"f3ae1953-bb3a-49f0-b745-8491f034f08f","EventID":"abc2a6db-818a-47aa-81d1-f4f59d75708d","SiteID":3,"MoneyLineHome":-152,"MoneyLineAway":132,"PointSpreadHome":-3.0,"PointSpreadAway":3.0,"PointSpreadHomeLine":-110,"PointSpreadAwayLine":-110,"TotalNumber":182.5,"OverLine":-110,"UnderLine":-110}]}]</code></pre></div>
+              <div class="col-md-3 col-md-offset-3"><p><a href="/documentation" class="btn btn-custom-lighten btn-lg" role="button">Documentation</a></p> </div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-9 col-md-offset-2">
+          <h2 class="text-center">Why Us?</h2>
+          <p>JsonOdds is a no-nonsense and low-cost API for sports data. This API will get you up and running in no time. Build robust applications in less time with JsonOdds API.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+          <div class="col-md-8">
+              <p>&copy; JsonOdds 2013-2026</p>
+              
+        </div>
+        
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/Content/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Content/js/jsonoddscustom.js"></script>
+</body>
+</html>

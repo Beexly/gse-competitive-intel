@@ -1,0 +1,1 @@
+{"repo": "github.com/shervinchen/crazycat", "stars": 17, "topic": "dfs", "desc": "使用Canvas制作的围住神经猫，算法基于广度优先搜索实现。", "updated": "2018-07-16", "license_first_line": "none-found", "readme_chars": 42, "readme_head": "# SurroundCat\n一个围住神经猫的demo，用于练习一些基础的搜索算法。\n", "apis_detected": []}

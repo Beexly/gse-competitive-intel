@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+
+Sitemap: https://polymarket.tips/sitemap.xml
+Sitemap: https://kfiizygdnlgffjdyzfxj.supabase.co/functions/v1/get-sitemap

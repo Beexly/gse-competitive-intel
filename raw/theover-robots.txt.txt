@@ -1,0 +1,57 @@
+URL: https://theover.ai/robots.txt\nSTATUS: 200\n\n# theover.ai robots.txt
+# llms.txt: https://theover.ai/llms.txt
+
+# All crawlers — general web crawlers and AI/LLM crawlers alike — get the
+# same rules: full access to public content, blocked from authenticated /
+# private app routes. Naming the AI crawlers explicitly (rather than relying
+# on the "*" catch-all) is a deliberate GEO signal that they are welcome here.
+User-agent: *
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: cohere-ai
+User-agent: CCBot
+User-agent: Bytespider
+Disallow: /dashboard
+Disallow: /watchlist
+Disallow: /betslips
+Disallow: /totals
+Disallow: /arbitrage
+Disallow: /top-plays
+Disallow: /tracking
+Disallow: /model/
+Disallow: /props
+Disallow: /insights
+Disallow: /spreads
+Disallow: /upgrade-annual
+Disallow: /billing
+Disallow: /billing/portal
+Disallow: /profile
+Disallow: /refer-a-friend
+Disallow: /affiliate/
+Disallow: /relay/
+Disallow: /play
+Disallow: /las/
+Disallow: /paywall
+Disallow: /login
+Disallow: /register
+Disallow: /forgot-password
+Disallow: /reset-password
+Disallow: /email/verify
+Disallow: /user/
+Disallow: /api/
+Disallow: /api-v3/
+Disallow: /private-api/
+Disallow: /payment/
+Disallow: /redirect/
+Disallow: /auth/
+Disallow: /r/
+Allow: /
+
+Sitemap: https://theover.ai/sitemap.xml

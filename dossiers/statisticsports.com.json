@@ -1,0 +1,90 @@
+{
+ "domain": "statisticsports.com",
+ "tech_stack": {
+  "frontend": "Server-rendered HTML + vanilla JS bundle public_base-e77736ccdb.js (raw XMLHttpRequest GET/POST ajax helpers, modal lib, cookie banner); FontAwesome; Google reCAPTCHA",
+  "backend": "Custom server app (form-POST login 'login_form', hidden product_price_id inputs on pricing page, /build/js asset pipeline); no exposed API layer",
+  "database": "NOT CONFIRMED (no exposure)",
+  "cloud": "Cloudflare (server: cloudflare; cf-ray a3802e464824bd31-DFW on homepage fetch)",
+  "cdn": "Cloudflare",
+  "citations": [
+   "https://statisticsports.com/",
+   "https://statisticsports.com/build/js/public_base-e77736ccdb.js"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED: no public API surface; /api /api/v1 /docs /openapi.json /swagger.json all returned 404 in prior probe evidence (raw/ls_statisticsports_com_*.txt); product is a web app, not an API vendor",
+  "websocket_endpoints": "NOT CONFIRMED: live odds/momentum/charts are core product features but no websocket/socket endpoint string appears in the fetched public JS bundle",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "https://statisticsports.com/api",
+   "https://statisticsports.com/openapi.json",
+   "https://statisticsports.com/build/js/public_base-e77736ccdb.js"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "Site sells 'Historical data from 2013' as a Deluxe+ feature and markets value-game alerts, but no model/training details are exposed",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "https://statisticsports.com/en/membership-upgrade-prices"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "data_supply_chain": {
+  "vendors": "No third-party data vendor named anywhere in homepage, pricing page, or public JS (sportradar/statsperform/opta/genius all 0 hits). Positioning is first-party football statistics since 2013 plus B2B2C angle ('TRUSTED BY MAJOR SPORTSBOOKS', new 'PREDICTION MARKETS' section on homepage).",
+  "citations": [
+   "https://statisticsports.com/",
+   "https://statisticsports.com/en/membership-upgrade-prices",
+   "https://statisticsports.com/build/js/public_base-e77736ccdb.js"
+  ]
+ },
+ "product_limits": {
+  "limits": "Lite: no notification creation at all. Deluxe: 5 Active Notifications + 4 pre-set notifications, backtesting (BETA), historical data from 2013, mobile app w/ notifications. Platinum: 'Create unlimited notifications', 10 Active Notifications, Priority Notifications, 'Full functionality - Access for all the future features'.",
+  "upgrade_triggers": "Active-notification count is the forcing cap: Lite=0, Deluxe=5, Platinum=10+unlimited creation and priority queue. Backtesting and historical-2013 data also gated to Deluxe+.",
+  "citation": "https://statisticsports.com/en/membership-upgrade-prices"
+ },
+ "pricing": {
+  "web": "Lite 17.00 EUR/month; Deluxe 37.00 EUR/month; Platinum 77.00 EUR/month; billing periods month/3-month/6-month/year; 'Prices above do not include VAT'; 7-day free trial",
+  "ios": "StatisticSports iOS app exists (App Store id1396185121); mobile app + notifications included from Deluxe tier; App Store page shows 5.0/5 from 8 ratings, no IAP tiers captured",
+  "android": "Mobile APP listed as Deluxe+ feature; Play listing not fetched (budget)",
+  "citations": [
+   "https://statisticsports.com/en/membership-upgrade-prices",
+   "https://apps.apple.com/ee/app/statisticsports/id1396185121?see-all=reviews&platform=iphone"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Que software ou sites é que vocês usam para apostas ao vivo? Exemplo: previsão de golos em direto statisticsports, betmaid, betballers",
+   "source": "https://www.reddit.com/r/SoccerBetting/comments/jtrhwr/inplay_betting/",
+   "date": "2020 (thread)"
+  },
+  {
+   "quote": "...statisticsports.com/en/how-bookmakers-track-and-profile-you — thread on being blocked by a bookmaker because you are good at betting (site's own anti-limitation content circulating in r/sportsbook)",
+   "source": "https://www.reddit.com/r/sportsbook/comments/fbxqjr/being_blocked_by_a_bookmaker_because_you_are_good/",
+   "date": "2020 (thread)"
+  },
+  {
+   "quote": "These notifications are so good, you can create whatever you want (App Store review, 5.0/5 from 8 ratings — no meaningful negative review themes surfaced)",
+   "source": "https://apps.apple.com/ee/app/statisticsports/id1396185121?see-all=reviews&platform=iphone",
+   "date": "current"
+  }
+ ],
+ "discovered_paths": [
+  "/en/membership-upgrade-prices",
+  "/en/terms-privacy-and-cookies",
+  "/en/how-bookmakers-track-and-profile-you",
+  "/en/live-games",
+  "/sitemaps/sitemap-product-0.xml",
+  "/sitemaps/sitemap-game-0.xml"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "fetcher.py GETs (home, pricing page, 1 JS bundle) + prior probe files ls_statisticsports_com_* + 2 web_search calls",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 9 raw evidence files)"
+}

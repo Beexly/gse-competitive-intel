@@ -1,0 +1,101 @@
+{
+ "domain": "github.com/floodlight-sports/floodlight",
+ "type": "open-source-repo",
+ "tech_stack": {
+  "frontend": "none (library/notebooks)",
+  "backend": "Python (poetry-managed)",
+  "database": ".data dir (sample tracking data)",
+  "cloud": "n/a",
+  "cdn": "n/a",
+  "citations": [
+   "raw/gh-meta-floodlight-sports__floodlight.json",
+   "raw/gh-tree-floodlight-sports__floodlight.json"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "none",
+  "websocket_endpoints": [],
+  "rate_limits": "n/a (client-side lib)",
+  "citations": [
+   "raw/gh-tree-floodlight-sports__floodlight.json"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "tracking-data physical models",
+   "where": "floodlight/models/{geometry,kinematics,kinetics,space}.py",
+   "evidence": "module files present in git tree; docs/source/modules/models/*.rst"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "tracking-data physical models (kinematics, kinetics, geometry, space)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "n/a (research repo)",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "NOT CONFIRMED"
+  ],
+  "citations": [
+   "raw/gh-tree-floodlight-sports__floodlight.json"
+  ]
+ },
+ "product_limits": {
+  "limits": "open source, no caps",
+  "upgrade_triggers": "n/a",
+  "citation": "raw/gh-meta-floodlight-sports__floodlight.json"
+ },
+ "pricing": {
+  "web": "free/open source",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "raw/gh-meta-floodlight-sports__floodlight.json"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  ".data",
+  ".data/toy_dataset",
+  ".data/toy_dataset/ballstatus_ht1.npy",
+  ".data/toy_dataset/ballstatus_ht2.npy",
+  ".data/toy_dataset/events_away_ht1.csv",
+  ".data/toy_dataset/events_away_ht2.csv",
+  ".data/toy_dataset/events_home_ht1.csv",
+  ".data/toy_dataset/events_home_ht2.csv",
+  ".data/toy_dataset/possession_ht1.npy",
+  ".data/toy_dataset/possession_ht2.npy",
+  ".data/toy_dataset/xy_away_ht1.npy",
+  ".data/toy_dataset/xy_away_ht2.npy",
+  ".data/toy_dataset/xy_ball_ht1.npy",
+  ".data/toy_dataset/xy_ball_ht2.npy",
+  ".data/toy_dataset/xy_home_ht1.npy",
+  ".data/toy_dataset/xy_home_ht2.npy",
+  ".github",
+  ".github/ISSUE_TEMPLATE",
+  ".github/ISSUE_TEMPLATE/-collision--bug-report--collision-.md",
+  ".github/ISSUE_TEMPLATE/-scroll--documentation--scroll-.md",
+  ".github/ISSUE_TEMPLATE/-sparkles--feature-request--sparkles-.md",
+  ".github/workflows",
+  ".github/workflows/build.yaml",
+  ".github/workflows/linting.yaml",
+  ".gitignore"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "stars": 130,
+  "license": "MIT",
+  "archived": false,
+  "pushed_at": "2026-05-04T16:10:27Z",
+  "description": "Python package for streamlined analysis of sports data.",
+  "timestamp": "2026-09-08T14:07:11.916123"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

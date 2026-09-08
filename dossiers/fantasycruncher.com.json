@@ -1,0 +1,99 @@
+{
+ "tech_stack": {
+  "frontend": "server-rendered PHP-era UI",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/fantasycruncher_com_home.html.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": []
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "projection-agnostic optimizer (bring-your-own projections)",
+  "training_data": "n/a",
+  "update_frequency": "per slate",
+  "citation": "product copy"
+ },
+ "simulation_engine": {
+  "num_simulations": "n/a (optimizer focus)",
+  "correlation_method": "n/a",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "DK/FD contest feeds (inferred)"
+  ],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "MME-focused lineup caps by tier",
+  "upgrade_triggers": "MME volume tiers",
+  "citation": "product copy"
+ },
+ "pricing": {
+  "web": "tiered subscription (exact $ NOT captured this run)",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "raw/seed-pricing-pages.json"
+  ]
+ },
+ "customer_pain": [
+  {
+   "source": "https://www.reddit.com/r/DynastyFF/comments/1mwke5m/fantasy_analysts_sites_to_avoid/",
+   "quote": "I personally avoid BDGE (vibes analysis), FantasyPros (specifically their offseason articles), and DBro."
+  },
+  {
+   "source": "https://www.reddit.com/r/fantasybball/comments/3qgu7q/hi_guys_i_am_jeff_g_aka_00oreo00_of/",
+   "quote": "I started playing more and more volume after I realized I had a very good win rate. I started out playing alot of H2H's on Fanduel and kept ..."
+  },
+  {
+   "source": "https://www.dailyfantasysports101.com/fantasycruncher/",
+   "quote": "It lets you build and optimize mass entry lineups. It's user friendly with thumbs up and downs on players. They make liking/disliking players, ..."
+  },
+  {
+   "source": "https://www.reddit.com/r/fantasybball/comments/3qgu7q/hi_guys_i_am_jeff_g_aka_00oreo00_of/",
+   "quote": "We have also created the best daily fantasy optimizer that is publicly available, that creates customizable DFS lineups in seconds."
+  },
+  {
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/2kb6s1/updated_lineup_optimization_tool_for_fanduel/",
+   "quote": "fantasycruncher.com. Most importantly that you can select the entire player pool. game filtering, saving lineups and player stats/news."
+  },
+  {
+   "source": "https://www.reddit.com/r/DynastyFF/comments/1lbbd12/is_the_data_crunch_really_worth_it_anyone_look_at/",
+   "quote": "Have any of the real data cruncher fantasy nuts looked at these trends over years to see how consistent they are and if they are really a valid ..."
+  },
+  {
+   "source": "https://www.fantasycruncher.com/help/faqs/Should-I-use-default-optimized-lineup",
+   "quote": "Absolutely not. Vet every single player in the lineup. Make sure they are healthy. Also, check their last few games and make sure they are not slumping."
+  },
+  {
+   "source": "https://www.reddit.com/r/fantasybball/comments/3qgu7q/hi_guys_i_am_jeff_g_aka_00oreo00_of/",
+   "quote": "It is a very tough game to play casually. You have to treat it like a job, I don't think he is really good at basketball. And definitely not a ...Is the Data crunch really worth it? Anyone look at it over years to see if"
+  },
+  {
+   "source": "https://www.dailyfantasysports101.com/fantasycruncher/",
+   "quote": "It's by far the best tool for the job. Is it worth it? Up to you, of course. Try it for a week, it's $19.95 to use the lineup cruncher."
+  }
+ ],
+ "discovered_paths": [
+  "/pricing",
+  "/fc-pro"
+ ],
+ "discovered_targets": [],
+ "domain": "fantasycruncher.com",
+ "discovery_metadata": {
+  "method": "direct HTTP probes + raw evidence extraction (self-run)",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 22 raw evidence files)"
+}

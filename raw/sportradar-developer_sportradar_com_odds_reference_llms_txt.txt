@@ -1,0 +1,147 @@
+# Odds Documentation
+
+> Unlock the power of predictive insights with our Odds APIs. Access real-time sports betting data, including odds, spreads, and more. Elevate your betting experience with Sportradar's comprehensive Odds APIs. Start integrating today for unparalleled accuracy and performance.
+
+Fetch the complete documentation index at: https://developer.sportradar.com/odds/llms.txt. Use this file to discover all available pages before exploring further. Append .md to any documentation page URL to get its markdown version.
+
+## API Reference: intro
+
+- [intro index](https://developer.sportradar.com/odds/reference/intro/llms.txt): full category index
+- [Odds API Overview](https://developer.sportradar.com/odds/reference/intro.md)
+
+## API Reference: Odds Comparison Futures
+
+- [Odds Comparison Futures index](https://developer.sportradar.com/odds/reference/odds-comparison-futures/llms.txt): full category index
+- [OC Futures Overview](https://developer.sportradar.com/odds/reference/oc-futures-overview.md): Get started with Odds Comparison Futures API v2
+- [Statistics Summary](https://developer.sportradar.com/odds/reference/oc-futures-statistics-summary.md): Use the filter below to find a specific data point, or browse by category. Expand any category to see which endpoints return its statistics.
+- [Books](https://developer.sportradar.com/odds/reference/oc-futures-books.md): Returns a list of configured bookmakers and their IDs.
+- [Category Futures](https://developer.sportradar.com/odds/reference/oc-futures-category-futures.md): Provides a list of futures available for a given category.
+- [Competition Futures](https://developer.sportradar.com/odds/reference/oc-futures-competition-futures.md): Provides a list of futures available for a given competition.
+- [Mapping Endpoints](https://developer.sportradar.com/odds/reference/oc-futures-mapping-endpoints.md)
+- [Competition Mappings](https://developer.sportradar.com/odds/reference/oc-futures-competition-mappings.md): Provides competition ID mapping between League Specific and General Sport ID types.
+- [Competitor Mappings](https://developer.sportradar.com/odds/reference/oc-futures-competitor-mappings.md): Provides competitor ID mapping between League Specific and General Sport ID types.
+- [Player Mappings](https://developer.sportradar.com/odds/reference/oc-futures-player-mappings.md): Provides player ID mapping between League Specific and General Sport ID types.
+- [Sport Event Mappings](https://developer.sportradar.com/odds/reference/oc-futures-sport-event-mappings.md): Provides sport event ID mapping between League Specific and General Sport ID types.
+- [Stage Mappings](https://developer.sportradar.com/odds/reference/oc-futures-stage-mappings.md): Provides stage ID mapping between League Specific and General Sport ID types.
+- [Sport Categories](https://developer.sportradar.com/odds/reference/oc-futures-sport-categories.md): Returns a list of categories for a sport ID that have odds available.
+- [Sport Competitions](https://developer.sportradar.com/odds/reference/oc-futures-sport-competitions.md): Returns a list of competitions for a sport ID that have odds available.
+- [Sport Stages](https://developer.sportradar.com/odds/reference/oc-futures-sport-stages.md): Returns a list of stages and categories for a sport ID that have odds available.
+- [Sports](https://developer.sportradar.com/odds/reference/oc-futures-sports.md): Returns a list of sports and sport IDs.
+- [Change Log](https://developer.sportradar.com/odds/reference/oc-futures-change-log.md): Find all updates to Odds Comparison Futures v2
+- [FAQs](https://developer.sportradar.com/odds/reference/oc-futures-faq.md): Browse by category below. Select any group or question to jump straight to it. Use your browser's find (**Ctrl/Cmd + F**) to search the page.
+
+## API Reference: Odds Comparison Live Odds
+
+- [Odds Comparison Live Odds index](https://developer.sportradar.com/odds/reference/odds-comparison-live-odds/llms.txt): full category index
+- [OC Live Odds Overview](https://developer.sportradar.com/odds/reference/oc-live-odds-overview.md): Get started with Odds Comparison Live Odds API v2
+- [Statistics Summary](https://developer.sportradar.com/odds/reference/oc-live-odds-statistics-summary.md): Use the filter below to find a specific data point, or browse by category. Expand any category to see which endpoints return its statistics.
+- [Books](https://developer.sportradar.com/odds/reference/oc-live-odds-books.md): Returns a list of configured bookmakers and their IDs.
+- [Competition Player Props](https://developer.sportradar.com/odds/reference/oc-live-odds-competition-player-props.md): Returns player props for sport events in a given competition.<br><br><b><i>Note:</b> Live player props data is not guaranteed for any competition</i>
+- [Competition Player Props Schedule](https://developer.sportradar.com/odds/reference/oc-live-odds-competition-player-props-schedule.md): Returns scheduled sport events with player props in a given competition.<br><br><b><i>Note:</b> Live player props data is not guaranteed for any competition</i>
+- [Competition Sport Event Markets](https://developer.sportradar.com/odds/reference/oc-live-odds-competition-sport-event-markets.md): Returns markets for sport events in a given competition.
+- [Competition Sport Event Schedule](https://developer.sportradar.com/odds/reference/oc-live-odds-competition-sport-event-schedule.md): Returns scheduled sport events in a given competition.
+- [Daily Player Props](https://developer.sportradar.com/odds/reference/oc-live-odds-daily-player-props.md): Returns available player props for a given sport and date.<br><br><b><i>Note:</b> Live player props data is not guaranteed for any competition</i>
+- [Daily Player Props Schedule](https://developer.sportradar.com/odds/reference/oc-live-odds-daily-player-props-schedule.md): Provides scheduling info for all events with player props available on a given sport and date.<br><br><b><i>Note:</b> Live player props data is not guaranteed for any competition</i>
+- [Daily Sport Event Markets](https://developer.sportradar.com/odds/reference/oc-live-odds-daily-sport-event-markets.md): Returns available markets for a given sport and date.
+- [Daily Sport Event Schedule](https://developer.sportradar.com/odds/reference/oc-live-odds-daily-sport-event-schedule.md): Provides scheduling info for all events with odds available on a given sport and date.
+- [Mapping Endpoints](https://developer.sportradar.com/odds/reference/oc-live-odds-mapping-endpoints.md)
+- [Competition Mappings](https://developer.sportradar.com/odds/reference/oc-live-odds-competition-mappings.md): Provides competition ID mapping between League Specific and General Sport ID types.
+- [Competitor Mappings](https://developer.sportradar.com/odds/reference/oc-live-odds-competitor-mappings.md): Provides competitor ID mapping between League Specific and General Sport ID types.
+- [Player Mappings](https://developer.sportradar.com/odds/reference/oc-live-odds-player-mappings.md): Provides player ID mapping between League Specific and General Sport ID types.
+- [Sport Event Mappings](https://developer.sportradar.com/odds/reference/oc-live-odds-sport-event-mappings.md): Provides sport event ID mapping between League Specific and General Sport ID types.
+- [Sport Categories](https://developer.sportradar.com/odds/reference/oc-live-odds-sport-categories.md): Returns a list of categories with available odds for a given sport id.
+- [Sport Competitions](https://developer.sportradar.com/odds/reference/oc-live-odds-sport-competitions.md): Returns a list of competitions with available odds for a given sport id.
+- [Sport Event Markets](https://developer.sportradar.com/odds/reference/oc-live-odds-sport-event-markets.md): Returns markets for a given sport event.
+- [Sport Event Player Props](https://developer.sportradar.com/odds/reference/oc-live-odds-sport-event-player-props.md): Returns player props for a given sport event.<br><br><b><i>Note:</b> Live player props data is not guaranteed for any competition</i>
+- [Sports](https://developer.sportradar.com/odds/reference/oc-live-odds-sports.md): Returns a list of sports and sport IDs.
+- [Change Log](https://developer.sportradar.com/odds/reference/oc-live-odds-change-log.md): Find all updates to Odds Comparison Live Odds v2
+- [FAQs](https://developer.sportradar.com/odds/reference/oc-live-odds-faqs.md): Browse by category below. Select any group or question to jump straight to it. Use your browser's find (**Ctrl/Cmd + F**) to search the page.
+
+## API Reference: Odds Comparison Prematch
+
+- [Odds Comparison Prematch index](https://developer.sportradar.com/odds/reference/odds-comparison-prematch/llms.txt): full category index
+- [OC Prematch Overview](https://developer.sportradar.com/odds/reference/oc-prematch-overview.md): Get started with Odds Comparison Prematch API v2
+- [Statistics Summary](https://developer.sportradar.com/odds/reference/oc-prematch-statistics-summary.md): Use the filter below to find a specific data point, or browse by category. Expand any category to see which endpoints return its statistics.
+- [Books](https://developer.sportradar.com/odds/reference/oc-prematch-books.md): Returns a list of configured bookmakers and their IDs.
+- [Competition Schedules](https://developer.sportradar.com/odds/reference/oc-prematch-competition-schedules.md): Provides scheduling info for all events with odds available in a given competition.
+- [Competition Sport Event Markets](https://developer.sportradar.com/odds/reference/oc-prematch-competition-sport-event-markets.md): Returns a list of markets for a given competition.
+- [Daily Schedules](https://developer.sportradar.com/odds/reference/oc-prematch-daily-schedules.md): Provides scheduling info for all events with odds available on a given sport and date.
+- [Daily Sport Event Markets](https://developer.sportradar.com/odds/reference/oc-prematch-daily-sport-event-markets.md): Returns a list of markets for a given sport and date.
+- [Mapping Endpoints](https://developer.sportradar.com/odds/reference/oc-prematch-mapping-endpoints.md)
+- [Competition Mappings](https://developer.sportradar.com/odds/reference/oc-prematch-competition-mappings.md): Provides competition ID mapping between League Specific and General Sport ID types.
+- [Competitor Mappings](https://developer.sportradar.com/odds/reference/oc-prematch-competitor-mappings.md): Provides competitor ID mapping between League Specific and General Sport ID types.
+- [Player Mappings](https://developer.sportradar.com/odds/reference/oc-prematch-player-mappings.md): Provides player ID mapping between League Specific and General Sport ID types.
+- [Sport Event Mappings](https://developer.sportradar.com/odds/reference/oc-prematch-sport-event-mappings.md): Provides sport event ID mapping between League Specific and General Sport ID types.
+- [Stage Mappings](https://developer.sportradar.com/odds/reference/oc-prematch-stage-mappings.md): Provides stage ID mapping between League Specific and General Sport ID types.
+- [Sport Categories](https://developer.sportradar.com/odds/reference/oc-prematch-sport-categories.md): Returns a list of categories for a sport ID that have odds available.
+- [Sport Competitions](https://developer.sportradar.com/odds/reference/oc-prematch-sport-competitions.md): Returns a list of competitions for a sport ID that have odds available.
+- [Sport Event Markets](https://developer.sportradar.com/odds/reference/oc-prematch-sport-event-markets.md): Returns a list of markets for a given sport event.
+- [Sport Event Markets Change Log](https://developer.sportradar.com/odds/reference/oc-prematch-sport-event-markets-change-log.md): Returns a list of sport events with odds changes in the last 5 minutes.
+- [Sport Stages](https://developer.sportradar.com/odds/reference/oc-prematch-sport-stages.md): Returns a list of stages and categories for a sport ID that have odds available.
+- [Sports](https://developer.sportradar.com/odds/reference/oc-prematch-sports.md): Returns a list of sports and sport IDs.
+- [Change Log](https://developer.sportradar.com/odds/reference/oc-prematch-change-log.md): Find all updates to Odds Comparison Prematch v2
+- [FAQs](https://developer.sportradar.com/odds/reference/oc-prematch-faq.md): Browse by category below. Select any group or question to jump straight to it. Use your browser's find (**Ctrl/Cmd + F**) to search the page.
+
+## API Reference: Odds Comparison Player Props
+
+- [Odds Comparison Player Props index](https://developer.sportradar.com/odds/reference/odds-comparison-player-props/llms.txt): full category index
+- [OC Player Props Overview](https://developer.sportradar.com/odds/reference/oc-player-props-overview.md): Get started with Odds Comparison Player Props API v2
+- [Statistics Summary](https://developer.sportradar.com/odds/reference/oc-player-props-statistics-summary.md): Use the filter below to find a specific data point, or browse by category. Expand any category to see which endpoints return its statistics.
+- [Books](https://developer.sportradar.com/odds/reference/oc-player-props-books.md): Returns a list of configured bookmakers and their IDs.
+- [Competition Player Props](https://developer.sportradar.com/odds/reference/oc-player-props-competition-player-props.md): Returns a list of player props for a given competition ID.
+- [Competition Schedules](https://developer.sportradar.com/odds/reference/oc-player-props-competition-schedules.md): Provides scheduling info for all events with props available in a given competition.
+- [Daily Schedules](https://developer.sportradar.com/odds/reference/oc-player-props-daily-schedules.md): Provides scheduling info for all events with props available for a given sport and date.
+- [Daily Sport Player Props](https://developer.sportradar.com/odds/reference/oc-player-props-daily-sport-player-props.md): Returns a list of player props for a given sport and date.
+- [Mapping Endpoints](https://developer.sportradar.com/odds/reference/oc-player-props-mapping-endpoints.md)
+- [Competition Mappings](https://developer.sportradar.com/odds/reference/oc-player-props-competition-mappings.md): Provides competition id mapping between global and US id types.
+- [Competitor Mappings](https://developer.sportradar.com/odds/reference/oc-player-props-competitor-mappings.md): Provides competition id mapping between global and US id types.
+- [Player Mappings](https://developer.sportradar.com/odds/reference/oc-player-props-player-mappings.md): Provides player id mapping between global and US id types.
+- [Sport Event Mappings](https://developer.sportradar.com/odds/reference/oc-player-props-sport-event-mappings.md): Provides sport event id mapping between global and US id types.
+- [Stage Mappings](https://developer.sportradar.com/odds/reference/oc-player-props-stage-mappings.md): Provides stage id mapping between global and US id types.
+- [Player Props Change Log](https://developer.sportradar.com/odds/reference/oc-player-props-change-log-endpoint.md): Returns a list of the latest odds changes.
+- [Sport Categories](https://developer.sportradar.com/odds/reference/oc-player-props-sport-categories.md): Returns a list of categories for a sport ID that have odds available.
+- [Sport Competitions](https://developer.sportradar.com/odds/reference/oc-player-props-sport-competitions.md): Returns a list of competitions for a sport ID that have odds available.
+- [Sport Event Player Props](https://developer.sportradar.com/odds/reference/oc-player-props-sport-event-player-props.md): Returns a list of player props for a given sport event ID.
+- [Sports](https://developer.sportradar.com/odds/reference/oc-player-props-sports.md): Returns a list of sports and sport IDs.
+- [Sport Stages](https://developer.sportradar.com/odds/reference/oc-player-props-sport-stages.md): Returns a list of stages and categories for a sport ID that have odds available.
+- [Change Log](https://developer.sportradar.com/odds/reference/oc-player-props-change-log.md): Find all updates to Odds Comparison Player Props v2
+- [FAQs](https://developer.sportradar.com/odds/reference/oc-player-props-faq.md): Browse by category below. Select any group or question to jump straight to it. Use your browser's find (**Ctrl/Cmd + F**) to search the page.
+
+## API Reference: ODDS COMPARISON CORE
+
+- [ODDS COMPARISON CORE index](https://developer.sportradar.com/odds/reference/odds-comparison-core/llms.txt): full category index
+- [OC Core Overview](https://developer.sportradar.com/odds/reference/oc-core-overview.md)
+- [Change Log](https://developer.sportradar.com/odds/reference/oc-core-change-log.md)
+- [FAQs](https://developer.sportradar.com/odds/reference/oc-core-faqs.md): Browse by category below. Select any group or question to jump straight to it. Use your browser's find (**Ctrl/Cmd + F**) to search the page.
+
+## API Reference: Probabilities
+
+- [Probabilities index](https://developer.sportradar.com/odds/reference/probabilities/llms.txt): full category index
+- [Probabilities Overview](https://developer.sportradar.com/odds/reference/probabilities-overview.md): Get started with Probabilities API v1
+- [Statistics Summary](https://developer.sportradar.com/odds/reference/probabilities-statistics-summary.md): Use the filter below to find a specific data point, or browse by category. Expand any category to see which endpoints return its statistics.
+- [Competition Seasons](https://developer.sportradar.com/odds/reference/probabilities-competition-seasons.md): Returns a list of seasons for a given competition ID.
+- [Seasonal Outright Probabilities](https://developer.sportradar.com/odds/reference/probabilities-seasonal-outright-probabilities.md): Returns a list of probabilities for various seasonal outrights.
+- [Seasonal Probabilities](https://developer.sportradar.com/odds/reference/probabilities-seasonal-probabilities.md): Returns a list of sport events with probabilities, for a given competition season ID.
+- [Sport Competitions](https://developer.sportradar.com/odds/reference/probabilities-sport-competitions.md): Returns a list of competition IDs for a given sport ID.
+- [Sport Event Probabilities](https://developer.sportradar.com/odds/reference/probabilities-sport-event-probabilities.md): Returns probabilities for a given sport event ID.
+- [Sport Event Probabilities Timeline](https://developer.sportradar.com/odds/reference/probabilities-sport-event-probabilities-timeline.md): Returns a list of probability changes during an event for a given sport event ID.
+- [Sport Schedule](https://developer.sportradar.com/odds/reference/probabilities-sport-schedule.md): Returns a list of scheduled sport events by sport ID and date.
+- [Sports](https://developer.sportradar.com/odds/reference/probabilities-sports.md): Returns a list of sports and their IDs.
+- [Change Log](https://developer.sportradar.com/odds/reference/probabilities-change-log.md): Find all updates to Probabilities v1
+- [FAQs](https://developer.sportradar.com/odds/reference/probabilities-faq.md): Browse by category below. Select any group or question to jump straight to it. Use your browser's find (**Ctrl/Cmd + F**) to search the page.
+
+## API Reference: Mapping API
+
+- [Mapping API index](https://developer.sportradar.com/odds/reference/mapping-api/llms.txt): full category index
+- [Mapping Overview](https://developer.sportradar.com/odds/reference/mapping-overview.md): Get started with Sportradar's Mapping API
+- [Sport Competition Mappings](https://developer.sportradar.com/odds/reference/mapping-sport-competition-mappings.md): Get competition mappings for a sport. Returns mappings between external IDs and Sportradar competition/tournament IDs. Only returns competitions from providers configured for the API key.
+- [Season Competitor Mappings](https://developer.sportradar.com/odds/reference/mapping-season-competitor-mappings.md): Get competitor mappings for a season. Returns mappings between external IDs and Sportradar competitor IDs (SRIDs). Only returns competitors from providers configured for the API key.
+- [Sport Event Competitor Mappings](https://developer.sportradar.com/odds/reference/mapping-sport-event-competitor-mappings.md): Get competitor mappings for a sport event. Returns mappings between external IDs and Sportradar competitor IDs. Only returns competitors from providers configured for the API key. Results are paginated by competitors (not individual mappings). Competitors are sorted alphabetically by ID. Mappings within each competitor are sorted by bookmaker_id, then external_id.
+- [Season Player Mappings](https://developer.sportradar.com/odds/reference/mapping-season-player-mappings.md): Get player mappings for a season. Returns mappings between external IDs and Sportradar player IDs (SRIDs). Only returns players from providers configured for the API key.  Results are paginated by players (not individual mappings). Players are sorted alphabetically by ID. Mappings within each player are sorted by bookmaker_id, then external_id.
+- [Sport Event Player Mappings](https://developer.sportradar.com/odds/reference/mapping-sport-event-player-mappings.md): Get player mappings for a sport event. Returns mappings between external IDs and Sportradar player IDs (SRIDs). Only returns players from providers configured for the API key. Results are paginated by players (not individual mappings). Players are sorted alphabetically by ID. Mappings within each player are sorted by bookmaker_id, then external_id.
+- [Competition Season Mappings](https://developer.sportradar.com/odds/reference/mapping-competition-season-mappings.md): Get season mappings for a competition. Returns mappings between external IDs and Sportradar season IDs. Only returns seasons from providers configured for the API key.  Results are paginated by seasons (not individual mappings). Seasons are sorted alphabetically by ID. Mappings within each season are sorted by bookmaker_id, then external_id.
+- [Daily Sport Event Mappings](https://developer.sportradar.com/odds/reference/mapping-daily-sport-event-mappings.md): Get sport event (match) mappings for a specific sport and date. Returns mappings between external IDs and Sportradar sport event IDs. Only returns events from providers configured for the API key.
+- [Season Sport Event Mappings](https://developer.sportradar.com/odds/reference/mapping-season-sport-event-mappings.md): Get sport event mappings for a season. Returns mappings between external IDs and Sportradar sport event IDs (SRIDs). Only returns sport events from providers configured for the API key.
+- [Sport Event Mappings](https://developer.sportradar.com/odds/reference/mapping-sport-event-mappings.md): Get mappings for a single sport event. Returns mappings between external IDs and the Sportradar sport event ID. Only returns mappings from providers configured for the API key.
+- [Change Log](https://developer.sportradar.com/odds/reference/mapping-change-log.md): Find all updates to Mapping v2
+- [FAQs](https://developer.sportradar.com/odds/reference/mapping-faqs.md): Frequently asked questions on Mapping v2

@@ -1,0 +1,104 @@
+{
+ "domain": "datalayer.xyz",
+ "tech_stack": {
+  "frontend": {
+   "value": "live site, framework unclear",
+   "citation": "raw/px_datalayer_xyz_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_datalayer_xyz_home.raw",
+   "raw\\px_datalayer_xyz_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apis.com",
+    "apis.com/css2"
+   ],
+   "citation": "raw/px_datalayer_xyz_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_datalayer_xyz_home.raw"
+  },
+  "rate_limits": {
+   "value": "credit",
+   "citation": "raw/px_datalayer_xyz_home.raw"
+  },
+  "citations": [
+   "raw\\px_datalayer_xyz_home.raw",
+   "raw\\px_datalayer_xyz_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Infrastructure for cost-efficient reasoning. DataLayer runs frontier-quality int' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_datalayer_xyz_home.raw"
+  },
+  "citations": [
+   "raw\\px_datalayer_xyz_home.raw",
+   "raw\\px_datalayer_xyz_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "credit"
+   ],
+   "citation": "raw/px_datalayer_xyz_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_datalayer_xyz_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "Free",
+    "Enterprise"
+   ],
+   "citation": "raw/px_datalayer_xyz_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_datalayer_xyz_home.raw",
+   "raw\\px_datalayer_xyz_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "apis.com",
+  "apis.com/css2"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:45.159080"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "DataLayer · frontier intelligence, without the frontier bill",
+  "description": "Infrastructure for cost-efficient reasoning. DataLayer runs frontier-quality intelligence at a fraction of the price: a big model plans once, a small model executes, up to 30× cheaper on recurring workloads. One OpenAI-compatible endpoint."
+ }
+}

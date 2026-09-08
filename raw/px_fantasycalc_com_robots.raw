@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /league/analyzer
+Allow: /league/import
+Disallow: /league/
+Disallow: /average-draft-position/drafts/
+
+Sitemap: https://fantasycalc.com/sitemap.xml

@@ -1,0 +1,167 @@
+{
+ "home_status": 200,
+ "home_url": "https://underdogfantasy.com/predict",
+ "robots_status": 200,
+ "robots_body": "Sitemap: https://www.underdogsports.com/sitemap.xml",
+ "robots_sitemaps": [
+  "https://www.underdogsports.com/sitemap.xml"
+ ],
+ "sitemap_status": 200,
+ "sitemap_url": "https://www.underdogsports.com/sitemap.xml",
+ "sitemap_loc_count": 311,
+ "sitemap_sample": [
+  "https://www.underdogsports.com",
+  "https://www.underdogsports.com/average-results",
+  "https://www.underdogsports.com/responsible-gaming-resources",
+  "https://www.underdogsports.com/guarddog",
+  "https://www.underdogsports.com/promo-code",
+  "https://www.underdogsports.com/careers",
+  "https://www.underdogsports.com/games/streaks",
+  "https://www.underdogsports.com/games/drafts",
+  "https://www.underdogsports.com/games/pickem-champions",
+  "https://www.underdogsports.com/games/pickem",
+  "https://www.underdogsports.com/news",
+  "https://www.underdogsports.com/search"
+ ],
+ "js_candidates_total": 4,
+ "js_fetched": [
+  {
+   "url": "https://cdn.prod.website-files.com/67d86be30d981ef8b914a00d/js/webflow.schunk.36b8fb49256177c8.js",
+   "status": 200,
+   "bytes": 41429
+  },
+  {
+   "url": "https://cdn.prod.website-files.com/67d86be30d981ef8b914a00d/js/webflow.schunk.acb704306c633690.js",
+   "status": 200,
+   "bytes": 293346
+  }
+ ],
+ "greps": {
+  "subscri": [
+   {
+    "file": "underdogfantasy_com_predict_js0.js",
+    "ctx": "r<n.length;r++)n[r]();return t}return p({type:O.INIT}),(e={dispatch:p,subscribe:s,getState:function(){return i},replaceReducer:function(t){if(\"function\"!=typeof t)thro"
+   },
+   {
+    "file": "underdogfantasy_com_predict_js0.js",
+    "ctx": "a function.\");o=t,p({type:O.INIT})}})[w.Z]=function(){var t;return(t={subscribe:function(t){if(\"object\"!=typeof t)throw TypeError(\"Expected the observer to be an objec"
+   },
+   {
+    "file": "underdogfantasy_com_predict_js0.js",
+    "ctx": "erver to be an object.\");function n(){t.next&&t.next(i)}return n(),{unsubscribe:s(n)}}})[w.Z]=function(){return this},t},e}function A(t){for(var n,r=Object.keys(t),e={"
+   },
+   {
+    "file": "underdogfantasy_com_predict_js1.js",
+    "ctx": "tion em({store:e,select:t,onChange:n,comparator:a=ey}){let{getState:i,subscribe:d}=e,l=d(function(){let d=t(i());if(null==d)return void l();a(d,o)||n(o=d,e)}),o=t(i())"
+   }
+  ],
+  "localStorage": [
+   {
+    "file": "underdogfantasy_com_predict_js1.js",
+    "ctx": "tener(\"message\",a,!1),window.document.body.appendChild(n)},r=!1;try{r=localStorage&&localStorage.getItem&&localStorage.getItem(\"WebflowEditor\")}catch(e){}function f(){!i&"
+   },
+   {
+    "file": "underdogfantasy_com_predict_js1.js",
+    "ctx": "\",a,!1),window.document.body.appendChild(n)},r=!1;try{r=localStorage&&localStorage.getItem&&localStorage.getItem(\"WebflowEditor\")}catch(e){}function f(){!i&&/\\?edit/.test"
+   },
+   {
+    "file": "underdogfantasy_com_predict_js1.js",
+    "ctx": "t.body.appendChild(n)},r=!1;try{r=localStorage&&localStorage.getItem&&localStorage.getItem(\"WebflowEditor\")}catch(e){}function f(){!i&&/\\?edit/.test(o.hash)&&c()}function"
+   }
+  ]
+ },
+ "pricing_links": [],
+ "request_log": [
+  {
+   "url": "https://underdogfantasy.com/predict",
+   "status": 200,
+   "error": null,
+   "ms": 256,
+   "bytes": 14518,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38049952ee2c309-IAH",
+    "content-type": "text/html; charset=utf-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\underdogfantasy_com_predict_home.html"
+  },
+  {
+   "url": "https://underdogfantasy.com/robots.txt",
+   "status": 200,
+   "error": null,
+   "ms": 290,
+   "bytes": 51,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a380499ceff0c2f1-IAH",
+    "content-type": "text/plain; charset=utf-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\underdogfantasy_com_predict_robots.txt"
+  },
+  {
+   "url": "https://www.underdogsports.com/sitemap.xml",
+   "status": 200,
+   "error": null,
+   "ms": 141,
+   "bytes": 50754,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38049a3de8f6fe3-IAH",
+    "content-type": "application/rss+xml; charset=utf-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\underdogfantasy_com_predict_sitemap.xml"
+  },
+  {
+   "url": "https://cdn.prod.website-files.com/67d86be30d981ef8b914a00d/js/webflow.schunk.36b8fb49256177c8.js",
+   "status": 200,
+   "error": null,
+   "ms": 93,
+   "bytes": 41429,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38049ab0f8214ec-IAH",
+    "content-type": "text/javascript"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\underdogfantasy_com_predict_js0.js"
+  },
+  {
+   "url": "https://cdn.prod.website-files.com/67d86be30d981ef8b914a00d/js/webflow.schunk.acb704306c633690.js",
+   "status": 200,
+   "error": null,
+   "ms": 92,
+   "bytes": 293346,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38049b1fa03845b-IAH",
+    "content-type": "text/javascript"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\underdogfantasy_com_predict_js1.js"
+  },
+  {
+   "url": "https://underdogfantasy.com/openapi.json",
+   "status": 404,
+   "error": null,
+   "ms": 340,
+   "bytes": 4579,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38049bac89a52e5-IAH",
+    "content-type": "text/html; charset=utf-8"
+   },
+   "saved": null
+  },
+  {
+   "url": "https://underdogfantasy.com/swagger.json",
+   "status": 404,
+   "error": null,
+   "ms": 346,
+   "bytes": 4579,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38049c32845b5f3-IAH",
+    "content-type": "text/html; charset=utf-8"
+   },
+   "saved": null
+  }
+ ]
+}

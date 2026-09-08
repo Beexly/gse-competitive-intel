@@ -1,0 +1,233 @@
+{
+ "espn-web-scoreboard": {
+  "status": "200",
+  "bytes": "200356",
+  "ctype": "application/json;charset=UTF-8",
+  "head": "{\"leagues\":[{\"id\":\"28\",\"uid\":\"s:20~l:28\",\"name\":\"National Football League\",\"abbreviation\":\"NFL\",\"slug\":\"nfl\",\"season\":{\"year\":2026,\"startDate\":\"2026-08-06T07:00Z\",\"endDate\":\"2027-02-16T07:59Z\",\"displayName\":\"2026\",\"type\":{\"id\":\"2\",\"type\":2,\"name\":\"Regular Season\",\"abbreviation\":\"reg\"}},\"logos\":[{\"href\":\"https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png\",\"width\":500,\"height\":500,\"alt\":\"\",\"rel\":[\"full\",\"default\"],\"lastUpdated\":\"2018-06-05T12:07",
+  "err": ""
+ },
+ "espn-web-odds-nfl": {
+  "status": "200",
+  "bytes": "200356",
+  "ctype": "application/json;charset=UTF-8",
+  "head": "{\"leagues\":[{\"id\":\"28\",\"uid\":\"s:20~l:28\",\"name\":\"National Football League\",\"abbreviation\":\"NFL\",\"slug\":\"nfl\",\"season\":{\"year\":2026,\"startDate\":\"2026-08-06T07:00Z\",\"endDate\":\"2027-02-16T07:59Z\",\"displayName\":\"2026\",\"type\":{\"id\":\"2\",\"type\":2,\"name\":\"Regular Season\",\"abbreviation\":\"reg\"}},\"logos\":[{\"href\":\"https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png\",\"width\":500,\"height\":500,\"alt\":\"\",\"rel\":[\"full\",\"default\"],\"lastUpdated\":\"2018-06-05T12:07",
+  "err": ""
+ },
+ "espn-core-odds": {
+  "status": "200",
+  "bytes": "249",
+  "ctype": "application/json;charset=utf-8",
+  "head": "{\"$meta\":{\"parameters\":{\"week\":[\"1\"],\"season\":[\"2026\"],\"seasontypes\":[\"2\"]}},\"count\":16,\"pageIndex\":1,\"pageSize\":1,\"pageCount\":16,\"items\":[{\"$ref\":\"http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/401872656?lang=en&region=us\"}]}",
+  "err": ""
+ },
+ "espn-web-mlb": {
+  "status": "200",
+  "bytes": "308834",
+  "ctype": "application/json;charset=UTF-8",
+  "head": "{\"leagues\":[{\"id\":\"10\",\"uid\":\"s:1~l:10\",\"name\":\"Major League Baseball\",\"abbreviation\":\"MLB\",\"midsizeName\":\"MLB\",\"slug\":\"mlb\",\"season\":{\"year\":2026,\"startDate\":\"2026-02-19T08:00Z\",\"endDate\":\"2026-11-12T07:59Z\",\"displayName\":\"2026\",\"type\":{\"id\":\"2\",\"type\":2,\"name\":\"Regular Season\",\"abbreviation\":\"reg\"}},\"logos\":[{\"href\":\"https://a.espncdn.com/i/teamlogos/leagues/500/mlb.png\",\"width\":500,\"height\":500,\"alt\":\"\",\"rel\":[\"full\",\"default\"],\"lastUpdated\":\"",
+  "err": ""
+ },
+ "espn-web-nba": {
+  "status": "200",
+  "bytes": "9467",
+  "ctype": "application/json;charset=UTF-8",
+  "head": "{\"leagues\":[{\"id\":\"46\",\"uid\":\"s:40~l:46\",\"name\":\"National Basketball Association\",\"abbreviation\":\"NBA\",\"slug\":\"nba\",\"season\":{\"year\":2027,\"startDate\":\"2026-09-30T07:00Z\",\"endDate\":\"2027-06-26T06:59Z\",\"displayName\":\"2026-27\",\"type\":{\"id\":\"2\",\"type\":2,\"name\":\"Regular Season\",\"abbreviation\":\"reg\"}},\"logos\":[{\"href\":\"https://a.espncdn.com/i/teamlogos/leagues/500/nba.png\",\"width\":500,\"height\":500,\"alt\":\"\",\"rel\":[\"full\",\"default\"],\"lastUpdated\":\"2018-0",
+  "err": ""
+ },
+ "espn-web-nhl": {
+  "status": "200",
+  "bytes": "41495",
+  "ctype": "application/json;charset=UTF-8",
+  "head": "{\"leagues\":[{\"id\":\"90\",\"uid\":\"s:70~l:90\",\"name\":\"National Hockey League\",\"abbreviation\":\"NHL\",\"slug\":\"nhl\",\"season\":{\"year\":2027,\"startDate\":\"2026-09-15T07:00Z\",\"endDate\":\"2027-07-01T06:59Z\",\"displayName\":\"2026-27\",\"type\":{\"id\":\"2\",\"type\":2,\"name\":\"Regular Season\",\"abbreviation\":\"reg\"}},\"logos\":[{\"href\":\"https://a.espncdn.com/i/teamlogos/leagues/500/nhl.png\",\"width\":500,\"height\":500,\"alt\":\"\",\"rel\":[\"full\",\"default\"],\"lastUpdated\":\"2018-06-05T12:0",
+  "err": ""
+ },
+ "espn-web-cfb": {
+  "status": "200",
+  "bytes": "439768",
+  "ctype": "application/json;charset=UTF-8",
+  "head": "{\"leagues\":[{\"id\":\"23\",\"uid\":\"s:20~l:23\",\"name\":\"NCAA - Football\",\"abbreviation\":\"NCAAF\",\"midsizeName\":\"NCAA Football\",\"slug\":\"college-football\",\"season\":{\"year\":2026,\"startDate\":\"2026-02-01T08:00Z\",\"endDate\":\"2027-01-28T07:59Z\",\"displayName\":\"2026\",\"type\":{\"id\":\"2\",\"type\":2,\"name\":\"Regular Season\",\"abbreviation\":\"reg\"}},\"logos\":[{\"href\":\"https://a.espncdn.com/redesign/assets/img/icons/ESPN-icon-football-college.png\",\"width\":500,\"height\":500,\"alt",
+  "err": ""
+ },
+ "nfl-shield-games": {
+  "status": "401",
+  "bytes": "428",
+  "ctype": "text/html; charset=utf-8",
+  "head": "\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html>\n  <head>\n    <title>401 Unauthorized</title>\n  </head>\n  <body>\n    <h1>Error 401 Unauthorized</h1>\n    <p>Unauthorized</p>\n    <h3>Error 54113</h3>\n    <p>Details: cache-iah1720091-IAH 1788904691 564982947</p>\n    <hr>\n    <p>Varnish cache server</p>\n  </body>\n</html>\n",
+  "err": ""
+ },
+ "nfl-digital": {
+  "status": "401",
+  "bytes": "426",
+  "ctype": "text/html; charset=utf-8",
+  "head": "\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html>\n  <head>\n    <title>401 Unauthorized</title>\n  </head>\n  <body>\n    <h1>Error 401 Unauthorized</h1>\n    <p>Unauthorized</p>\n    <h3>Error 54113</h3>\n    <p>Details: cache-iah17251-IAH 1788904691 527751670</p>\n    <hr>\n    <p>Varnish cache server</p>\n  </body>\n</html>\n",
+  "err": ""
+ },
+ "fdcouk-nfl-2526": {
+  "status": "503",
+  "bytes": "489",
+  "ctype": "text/html",
+  "head": "<html>\n<head>\n<title>The page is temporarily unavailable</title>\n<style>\nbody { font-family: Tahoma, Verdana, Arial, sans-serif; }\n</style>\n</head>\n<body bgcolor=\"white\" text=\"black\">\n<table width=\"100%\" height=\"100%\">\n<tr>\n<td align=\"center\" valign=\"middle\">\nThe page you are looking for is temporarily unavailable.<br/>\nPlease try again later.\n<br />\n53f23b1766909a21635befbe64c8734e\n6355db835d9df0add2c4985e55e76772\neab1b8869c29427b2e41333c0e87a94",
+  "err": ""
+ },
+ "fdcouk-csv": {
+  "status": "503",
+  "bytes": "489",
+  "ctype": "text/html",
+  "head": "<html>\n<head>\n<title>The page is temporarily unavailable</title>\n<style>\nbody { font-family: Tahoma, Verdana, Arial, sans-serif; }\n</style>\n</head>\n<body bgcolor=\"white\" text=\"black\">\n<table width=\"100%\" height=\"100%\">\n<tr>\n<td align=\"center\" valign=\"middle\">\nThe page you are looking for is temporarily unavailable.<br/>\nPlease try again later.\n<br />\n53f23b1766909a21635befbe64c8734e\n6355db835d9df0add2c4985e55e76772\neab1b8869c29427b2e41333c0e87a94",
+  "err": ""
+ },
+ "ssb-csv": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: www.ssbdata.com\n"
+ },
+ "ssb-web": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: www.ssbdata.com\n"
+ },
+ "sportsgeek-root": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: sportsgeek.dev\n"
+ },
+ "sportsgeek-docs": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: sportsgeek.dev\n"
+ },
+ "sportsgeek-nfl-odds": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: sportsgeek.dev\n"
+ },
+ "sportsgeek-llms": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: sportsgeek.dev\n"
+ },
+ "sportsgeek-robots": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: sportsgeek.dev\n"
+ },
+ "sdataverse-docs": {
+  "status": "404",
+  "bytes": "22",
+  "ctype": "application/json",
+  "head": "{\"detail\":\"Not Found\"}",
+  "err": ""
+ },
+ "sdataverse-openapi": {
+  "status": "404",
+  "bytes": "22",
+  "ctype": "application/json",
+  "head": "{\"detail\":\"Not Found\"}",
+  "err": ""
+ },
+ "sdataverse-root": {
+  "status": "200",
+  "bytes": "49",
+  "ctype": "application/json",
+  "head": "{\"docs\":\"https://api.sportsdataverse.org/py/api\"}",
+  "err": ""
+ },
+ "sdataverse-llms": {
+  "status": "404",
+  "bytes": "22",
+  "ctype": "application/json",
+  "head": "{\"detail\":\"Not Found\"}",
+  "err": ""
+ },
+ "scoremeridian": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: www.scoremeridian.com\n"
+ },
+ "scoremeridian-llms": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: www.scoremeridian.com\n"
+ },
+ "thestatsapi": {
+  "status": "200",
+  "bytes": "165054",
+  "ctype": "text/html; charset=utf-8",
+  "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"/logo.webp\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/08pheo8fz-u4r.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/0pkrupb1wwj2z.js\"/><script src=\"/_next/static/chunks/07kz-sck15uin.js\" async=\"\"></script><script sr",
+  "err": ""
+ },
+ "openligadb-bl1": {
+  "status": "200",
+  "bytes": "572116",
+  "ctype": "application/json; charset=utf-8",
+  "head": "[{\"matchID\":77256,\"matchDateTime\":\"2025-08-22T20:30:00\",\"timeZoneID\":\"W. Europe Standard Time\",\"leagueId\":4821,\"leagueName\":\"1. Fu\u00dfball-Bundesliga 2025/2026\",\"leagueSeason\":2025,\"leagueShortcut\":\"bl1\",\"matchDateTimeUTC\":\"2025-08-22T18:30:00Z\",\"group\":{\"groupName\":\"1. Spieltag\",\"groupOrderID\":1,\"groupID\":47611},\"team1\":{\"teamId\":40,\"teamName\":\"FC Bayern M\u00fcnchen\",\"shortName\":\"Bayern\",\"teamIconUrl\":\"https://upload.wikimedia.org/wikipedia/commons/1/1",
+  "err": ""
+ },
+ "openligadb-root": {
+  "status": "200",
+  "bytes": "735",
+  "ctype": "text/html;charset=utf-8",
+  "head": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Swagger UI</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"./swagger-ui.css\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"./index.css\">\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-32x32.png\" sizes=\"32x32\" />\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-16x16.png\" sizes=\"16x16\" />\n       ",
+  "err": ""
+ },
+ "hoops-hcjones": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: hoops.hcjones.io\n"
+ },
+ "hoops-llms": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: hoops.hcjones.io\n"
+ },
+ "ncaa-data": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: data.ncaa.io\n"
+ },
+ "oddspapi-llms": {
+  "status": "200",
+  "bytes": "6038",
+  "ctype": "text/plain; charset=UTF-8",
+  "head": "# OddsPapi \u2014 Sports Betting Odds API\n\n> OddsPapi is a REST and WebSocket API that aggregates real-time and historical\n> odds from 350+ bookmakers \u2014 including sharps (Pinnacle, Singbet, SBOBet),\n> major softs (Bet365, DraftKings, FanDuel), crypto books (1xBet), and exchanges\n> (Betfair). Free tier available with no credit card required.\n\n## Quick Start\n\nAuthentication uses a **query parameter**, not a header:\n\n```\nGET https://api.oddspapi.io/v4/sp",
+  "err": ""
+ },
+ "the-odds-api-llms": {
+  "status": "404",
+  "bytes": "7537",
+  "ctype": "text/html; charset=utf-8",
+  "head": "<!DOCTYPE html>\n<html lang=\"en-US\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <title>The Odds API</title>\n    <meta name=\"generator\" content=\"VuePress 1.9.2\">\n    <link rel=\"icon\" href=\"/assets/img/fav.ico\">\n    <script src=\"https://www.google.com/recaptcha/api.js\" async=\"true\"></script>\n    <script src=\"https://js.stripe.com/v3/\" async=\"true\"></script>\n    <meta name=\"descript",
+  "err": ""
+ },
+ "betfair-api": {
+  "status": "403",
+  "bytes": "3285",
+  "ctype": "text/html; charset=UTF-8",
+  "head": "<!DOCTYPE html>\n<html manifest=\"\" lang=\"en-US\">\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n    <title>Betfair</title>\n    <meta name=\"theme-color\" content=\"#004833\" />\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      html,\n      body {\n        height: 100%;\n      }\n      body {\n        background: #000;\n        font-family: Arial, sans-serif;\n      }\n      .container {\n        widt",
+  "err": ""
+ }
+}

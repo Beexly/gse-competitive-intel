@@ -1,0 +1,68 @@
+{
+ "domain": "pikkit.com",
+ "type": "live-site",
+ "disposition": "live",
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "customer_pain": [],
+ "discovered_targets": [],
+ "tech_stack": {
+  "frontend": "Webflow marketing site (cdn.prod.website-files.com, d3e54v103j8qbb.cloudfront.net) + native mobile apps",
+  "backend": "app.pikkit.com app backend; links.pikkit.com deep links",
+  "database": "NOT CONFIRMED",
+  "cloud": "Netlify build artifact present (2ac24b63...netlify.app); Cloudflare front",
+  "cdn": "Cloudflare + Webflow CDN",
+  "citations": [
+   "raw/probe_pikkit_com.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/probe_pikkit_com.txt"
+  ]
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "BookSync: automatic sportsbook bet sync ('Learn more about BookSync') \u2014 sportsbook account-linking integrations, names NOT CONFIRMED"
+  ],
+  "citations": [
+   "raw/probe_pikkit_com.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": "mobile-app product (App Store/Google Play CTAs, SMS app-delivery)",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw/probe_pikkit_com.txt"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED (no web prices; app-based product)",
+  "ios": "App Store app",
+  "android": "Google Play app",
+  "citations": [
+   "raw/probe_pikkit_com.txt"
+  ]
+ },
+ "discovered_paths": [
+  "/booksync",
+  "app.pikkit.com",
+  "links.pikkit.com"
+ ],
+ "discovery_metadata": {
+  "method": "fresh homepage probe 200 (67KB, Cloudflare)",
+  "timestamp": "2026-09-08T14:25:08.325185"
+ }
+}

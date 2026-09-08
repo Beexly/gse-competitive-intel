@@ -1,0 +1,55 @@
+{
+ "success": true,
+ "data": {
+  "web": [
+   {
+    "url": "https://draftedge.com/",
+    "title": "DraftEdge | DFS Lineup Optimizer for DraftKings & FanDuel",
+    "description": "DraftEdge's AI-powered DFS tools: projections that refresh every 5 minutes, a 150-lineup optimizer, and AI-graded player props for DraftKings & FanDuel.",
+    "category": null
+   },
+   {
+    "url": "https://www.reddit.com/r/DraftSharks/comments/1fgo8i4/dfs_lineup_optimizer/",
+    "title": "DFS Lineup Optimizer : r/DraftSharks - Reddit",
+    "description": "Hello. New draft sharks subscriber this year looking for help with DFS optimizer tool. What are some good settings to use if I pay a weekly ...",
+    "category": null
+   },
+   {
+    "url": "https://www.reddit.com/r/fantasyfootball/comments/1u1gud9/dfs_optimizers/",
+    "title": "DFS Optimizers : r/fantasyfootball - Reddit",
+    "description": "I am curious for those of you that play DFS, do you use an optimizer? Which sites do you like best and how much do they typically cost?",
+    "category": null
+   },
+   {
+    "url": "https://www.reddit.com/r/fantasyfootball/comments/1h7lp6l/we_built_a_free_dfs_lineup_optimizer_with_ai/",
+    "title": "We Built a Free DFS Lineup Optimizer with AI Explanations : r/fantasyfootball",
+    "description": "We're back with something new: a free DFS lineup optimizer that actually explains its picks in plain English. Our team has been whipping this up ...",
+    "category": null
+   },
+   {
+    "url": "https://draftedge.com/nfl/optimizer/",
+    "title": "NFL DFS Lineup Optimizer - Build 150 Winning Lineups Fast - DraftEdge",
+    "description": "Generate up to 150 optimized NFL DFS lineups in seconds. Advanced stacking, custom rules, and late-swap optimization for DraftKings & FanDuel.",
+    "category": null
+   },
+   {
+    "url": "https://www.reddit.com/r/fantasyfootball/comments/d0v0sq/fantasy_pros_dfs_optimizer/",
+    "title": "Fantasy Pros DFS Optimizer : r/fantasyfootball - Reddit",
+    "description": "DFS optimizers are largely overrated IMO. Perhaps I am not using them properly though, would someone care to chime in?",
+    "category": null
+   },
+   {
+    "url": "https://draftedge.com/nhl/optimizer/",
+    "title": "NHL DFS Lineup Optimizer - Line Stacking & Correlation - DraftEdge",
+    "description": "NHL DFS Optimizer. Build up to 150 DraftKings and FanDuel lineups with line stacking, exposure caps, and a pattern score built from real winning lineups.",
+    "category": null
+   },
+   {
+    "url": "https://draftedge.com/cfb/optimizer/",
+    "title": "College Football DFS Optimizer - Multi-Game Stacks - DraftEdge",
+    "description": "Build winning CFB DFS lineups with our optimizer. Stack by team, target shootouts, and find low-owned GPP plays.",
+    "category": null
+   }
+  ]
+ }
+}

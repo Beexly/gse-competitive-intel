@@ -1,0 +1,12 @@
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+
+Disallow: /news/config/
+Disallow: /news/system/
+Disallow: /news/themes/
+Disallow: /news/vendor/
+Disallow: /news/cache/
+
+Disallow: /news/search/
+Disallow: /news/admin/

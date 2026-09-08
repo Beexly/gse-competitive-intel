@@ -1,0 +1,108 @@
+{
+ "domain": "fantasyfootballanalytics.net",
+ "requests": [
+  {
+   "url": "https://fantasyfootballanalytics.net",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-home.html",
+   "err": null
+  },
+  {
+   "url": "https://fantasyfootballanalytics.net/robots.txt",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-robots.txt",
+   "err": null
+  },
+  {
+   "url": "https://fantasyfootballanalytics.net/sitemap.xml",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-sitemap.xml",
+   "err": null
+  },
+  {
+   "url": "https://html5shiv.googlecode.com/svn/trunk/html5.js",
+   "status": 404,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-js0.js",
+   "err": null
+  },
+  {
+   "url": "https://www.google.com/recaptcha/api.js?ver=200b08fb808dbb63a111aa49627da524",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-js1.js",
+   "err": null
+  },
+  {
+   "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-js2.js",
+   "err": null
+  },
+  {
+   "url": "https://fantasyfootballanalytics.net/wp-content/plugins/email-subscribers/lite/public/css/email-subscribers-public.css?ver=5.3.12",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-pricing.html",
+   "err": null
+  }
+ ],
+ "homepage_status": 200,
+ "homepage_headers": {
+  "server": "Apache/2.4.58 (Ubuntu)",
+  "content-type": "text/html; charset=UTF-8"
+ },
+ "robots_status": 200,
+ "sitemap_status": 200,
+ "sitemap_url": "https://fantasyfootballanalytics.net/sitemap.xml",
+ "sitemap_locs_sample": [
+  "https://fantasyfootballanalytics.net/sitemap-1.xml",
+  "https://fantasyfootballanalytics.net/image-sitemap-1.xml"
+ ],
+ "sitemap_loc_count_seen": 2,
+ "js_candidates": [
+  "https://html5shiv.googlecode.com/svn/trunk/html5.js",
+  "https://www.google.com/recaptcha/api.js?ver=200b08fb808dbb63a111aa49627da524",
+  "https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js",
+  "https://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js",
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+  "https://stats.wp.com/e-202637.js"
+ ],
+ "js_fetched": [
+  {
+   "url": "https://html5shiv.googlecode.com/svn/trunk/html5.js",
+   "status": 404,
+   "bytes": 0
+  },
+  {
+   "url": "https://www.google.com/recaptcha/api.js?ver=200b08fb808dbb63a111aa49627da524",
+   "status": 200,
+   "bytes": 1548
+  },
+  {
+   "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+   "status": 200,
+   "bytes": 166316
+  }
+ ],
+ "pricing_url": "https://fantasyfootballanalytics.net/wp-content/plugins/email-subscribers/lite/public/css/email-subscribers-public.css?ver=5.3.12",
+ "pricing_status": 200,
+ "vendors_found": [],
+ "price_tokens": [],
+ "dns": {
+  "api.fantasyfootballanalytics.net": "143.198.75.71",
+  "app.fantasyfootballanalytics.net": "45.55.214.112",
+  "staging.fantasyfootballanalytics.net": "45.55.214.112"
+ },
+ "search_used": "site:reddit.com <domain> complaint OR review",
+ "grep_summary": {
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": {
+   "fetch(": [
+    "c+=`&${e}=${encodeURIComponent(String(d))}`});ye(c)}function ye(a){var b=window;b.fetch?b.fetch(a,{keepalive:!0,credentials:\"include\",redirect:\"follow\",method:\"get\",mode:\"no-cors\"}):ve(b,a,void 0,!1,!1)};var ue=document,P=wind"
+   ],
+   "localStorage": [
+    "le_srt===0?1:.01}else a=Math.random(),b=.01;return{kc:b,Sb:a}};function el(a){try{var b=a.localStorage.getItem(\"google_auto_fc_cmp_setting\")||null}catch(d){b=null}var c=b;return c?ti(()=>Ik(c)):qi(null)};function fl(){if(gl)return g"
+   ],
+   "endpoint": [
+    "Fetch failed with status: ${c.status}`);let d=await c.text();if(!d)throw Error(\"AbgConfig endpoint returned empty response.\");try{return xo(d)}catch(e){throw Error(`Error deserializing config: ${e instanceof Error?e.message:Stri"
+   ]
+  }
+ }
+}

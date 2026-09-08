@@ -1,0 +1,4 @@
+URL: https://api-op.grid.gg/central-data/graphql (POST {"query":"{ __typename }"} WITHOUT api key)
+STATUS: 200
+
+{"errors":[{"message":"Requester unauthorized to make query","path":["queryValue"],"extensions":{"errorType":"UNAUTHENTICATED"}}],"data":null}

@@ -1,0 +1,138 @@
+{
+ "domain": "bettingpros.com",
+ "tech_stack": {
+  "frontend": "Islands-architecture SPA (custom islands-runtime, Vite-built /dist/assets modules: global_init, home, premium_page_v2, api-client, charts), Apache/2.4.66 (Ubuntu) origin behind CloudFront, OneTrust consent, Braze (messaging) + Mixpanel (mp-events.js) + Meta Pixel 898365002449823 + AWS RUM (client.rum.us-east-1.amazonaws.com, app monitor 3085a9f1-44bf-4ef7-8ed5-50e00144135c) + PubFig ads + socket.io 2.4.0 client loaded",
+  "backend": "REST API https://api.bettingpros.com/v3 (axios instance with static x-api-key 'CHi8Hy5CEE4khd46XNYL23dCFX96oUdw6qOt1Dnh', optional x-level header from bp_level cookie); sibling API api.fantasypros.com for cross-brand calls (FantasyPros parent brand); session via /api/user-info/ same-origin endpoint + bptoken cookie; CloudFront CDN",
+  "database": "NOT CONFIRMED — no exposure",
+  "cloud": "AWS (CloudFront edge + AWS RUM us-east-1 dataplane); Apache/Ubuntu origin",
+  "cdn": "CloudFront (x-cache 'Hit from cloudfront', x-amz-cf-pop IAH50-P2) + cdn.fantasypros.com shared assets",
+  "citations": [
+   "https://www.bettingpros.com/ (headers + script tags)",
+   "https://www.bettingpros.com/dist/assets/api-client-CWAjf_hI.js"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "https://api.bettingpros.com/v3/picks?user=<id>&key=<apikey>&status=scored|unscored&limit=12&events=true&stats=true",
+    "auth_required": "x-api-key header (hardcoded public key) + per-user key param",
+    "tier": "user picks history",
+    "sample_response": null,
+    "citation": "https://www.bettingpros.com/dist/assets/api-client-CWAjf_hI.js"
+   },
+   {
+    "method": "GET",
+    "path": "https://api.bettingpros.com/v3/books, /v3/markets, /v3/sports?structure=&sport=, /v3/settings?filter=cache",
+    "auth_required": "x-api-key",
+    "tier": "reference data",
+    "sample_response": null,
+    "citation": "api-client-CWAjf_hI.js"
+   },
+   {
+    "method": "GET/POST",
+    "path": "/v3/pick-sync/books?user=&key=, /v3/user/follow?user_id=, /v3/user/group/<id>, /v3/users, /v3/users/<username>?key=<apikey>",
+    "auth_required": "x-api-key + user key",
+    "tier": "social/user",
+    "sample_response": null,
+    "citation": "api-client-CWAjf_hI.js"
+   },
+   {
+    "method": "GET",
+    "path": "https://www.bettingpros.com/api/user-info/ (same-origin session)",
+    "auth_required": "bptoken cookie",
+    "tier": "session",
+    "sample_response": null,
+    "citation": "api-client-CWAjf_hI.js"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED — no GraphQL references in fetched bundles",
+  "websocket_endpoints": [
+   {
+    "path": "NOT CONFIRMED — socket.io 2.4.0 client loaded on homepage/premium pages but server URL not exposed in fetched assets (likely live odds/line movement push)",
+    "citation": "https://www.bettingpros.com/ script tags"
+   }
+  ],
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "https://www.bettingpros.com/dist/assets/api-client-CWAjf_hI.js"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "1-5 star Bet Rating = model edge vs line (documented, not coded client-side)",
+   "raw_snippet": "\"Every prop gets a 1-5 star Bet Rating based on our model's edge vs the line. 5-star picks are the highest-confidence plays — typically 3-8 per sport per day. This is where our strongest hit rates come from.\"",
+   "reconstruction": "Bet Rating tiers derive from (model projected probability - implied line probability) mapped to 1-5 stars; 5-star = highest edge, 3-8 per sport per day. Exact numeric thresholds NOT CONFIRMED (computed server-side).",
+   "citation": "https://www.bettingpros.com/premium/ (FAQPage schema.org JSON-LD)"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "Prop projection model producing 1-5 star bet ratings per prop (server-side); no model internals in client",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "Daily pick cadence implied ('3-8 per sport per day')",
+  "citation": "https://www.bettingpros.com/premium/"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED — no simulation counts exposed",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": null
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "FantasyPros (parent brand — shared player videos cdn.fantasypros.com, api.fantasypros.com cross-calls, FantasyPros nav)",
+   "Braze (messaging)",
+   "Mixpanel + Meta Pixel + AWS RUM (analytics)",
+   "PubFig/PubNetwork (ads)",
+   "OneTrust",
+   "OneSignal-adjacent btloader.com tag"
+  ],
+  "citations": [
+   "https://www.bettingpros.com/",
+   "https://www.bettingpros.com/dist/assets/api-client-CWAjf_hI.js"
+  ],
+  "note": "No sportradar/statsperform/opta/genius/the-odds-api strings in fetched assets — odds vendor NOT CONFIRMED"
+ },
+ "product_limits": {
+  "limits": [
+   "Free tier: odds, matchups, limited picks (schema.org Offer 'Free' price 0)",
+   "Premium unlocks 'most exclusive tools'; 5-star bet ratings and premium tools gated; works across web/iOS/Android under one subscription; trial eligibility flag __bpPremiumTrialEligible and referral offer (fpReferralOffer module) present in premium bundle"
+  ],
+  "upgrade_triggers": "5-star picks + exclusive premium tools behind paywall; trial-length A/B test module (trialLengthTest) suggests free-trial length varies",
+  "citation": "https://www.bettingpros.com/premium/ + https://www.bettingpros.com/dist/assets/premium_page_v2-DDWB-ZdA.js"
+ },
+ "pricing": {
+  "web": "Premium $9.99/mo billed annually ($119.99/year single charge) or $29.99/mo month-to-month (67% savings annual); Free tier $0; switch plans anytime, cancel in two clicks from account",
+  "ios": "Included in same subscription (FAQ: 'Web, iOS, and Android apps all included in one subscription'); IAP tiers NOT CONFIRMED",
+  "android": "Included in same subscription; IAP tiers NOT CONFIRMED",
+  "citations": [
+   "https://www.bettingpros.com/premium/ (Product + FAQPage JSON-LD)"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "I just synced my fanduel account to BettingPros but it's not showing my full history. Anyone had this issue?",
+   "source": "https://www.reddit.com/r/sportsbetting/comments/1i0vxcb/i_just_synced_my_fanduel_account_to_bettingpros/",
+   "date": "2025-01 thread"
+  },
+  {
+   "quote": "BettingPros: Haven't really used this app much. Doesn't appear to have any advantage over the other three. (bet-tracking app comparison)",
+   "source": "https://www.reddit.com/r/sportsbetting/comments/13thtdy/bet_bet_tracking_app_comparison/",
+   "date": "2023-05 thread"
+  }
+ ],
+ "discovered_paths": [
+  "/premium/",
+  "/api/user-info/",
+  "api.bettingpros.com/v3 (picks, books, markets, sports, settings, users, pick-sync, user/follow, user/group)",
+  "api.fantasypros.com",
+  "/nfl/props/streaks/",
+  "/mlb/prop-record?stars=5&market_id=293",
+  "/dist/assets/*.js (islands modules)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "urllib fetcher (_fetcher.py): homepage, /premium/, 4 dist bundles (home, premium_page_v2, global_init, api-client); grep of axios config + JSON-LD pricing",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 15 raw evidence files)"
+}

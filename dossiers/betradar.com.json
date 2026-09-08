@@ -1,0 +1,32 @@
+{
+  "domain": "betradar.com",
+  "disposition": "walled",
+  "disposition_reason": "Homepage + WordPress assets + robots reachable (200); sitemap.xml returns 403 (bot-wall). JS bundles are thin UI glue (jQuery/bootstrap/CountUp); no API hosts or entitlement flags exposed in fetched JS. Pricing/solutions pages are marketing; no public pricing or API limits surfaced. Core data feeds are B2B-gated (contact sales).",
+  "tech_stack": {
+    "frontend": "WordPress (betradar theme) + jQuery 3.6.0, Bootstrap, CountUp, lightbox, pixgridder-pro; plugin 'sportradar-plugin' and 'truendo'. Cloudflare cf-Ray, WP Engine host.",
+    "backend": "WordPress PHP (wp-content, wp-json observable but 403 on sitemap; 4 wp-json matches) — NOT a public API surface",
+    "database": "NOT CONFIRMED",
+    "cloud_cdn": "Cloudflare (edge ids) + WP Engine",
+    "citations": ["https://www.betradar.com","https://www.betradar.com/robots.txt","https://betradar.com/wp-content/themes/betradar/js/general.js"]
+  },
+  "api_architecture": {
+    "rest_endpoints": [
+      {"method":"GET","path":"https://betradar.com/livescore/","auth_required":"yes","tier":"NOT CONFIRMED","sample_response":"NOT CONFIRMED","citation":"https://www.betradar.com/robots.txt (disallowed)"},
+      {"method":"GET","path":"NOT CONFIRMED","auth_required":"NOT CONFIRMED","tier":"NOT CONFIRMED","sample_response":"NOT CONFIRMED","citation":"NOT CONFIRMED"}
+    ],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": ["https://www.betradar.com/robots.txt","https://www.betradar.com"]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {"model_types":"NOT CONFIRMED","training_data":"NOT CONFIRMED","update_frequency":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "simulation_engine": {"num_simulations":"NOT CONFIRMED","correlation_method":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "data_supply_chain": {"vendors":"Brand name suggests Betradar is itself a vendor to other sportsbooks (not a consumer of upstream); no upstream vendor strings (sportradar/statsperform/opta/fantasydata) found in fetched JS","citations":["https://www.betradar.com","https://betradar.com/wp-content/plugins/sportradar-plugin/public/js/sportradar-plugin-public.js"]},
+  "product_limits": {"limits":"NOT CONFIRMED","upgrade_triggers":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "pricing": {"web":"NOT CONFIRMED — no /pricing page; commercial solutions gated ('Sportsbook Solutions' / 403 on /sportsbook-solutions/)","ios":"NOT CONFIRMED","android":"NOT CONFIRMED","citations":["https://www.betradar.com/robots.txt"]},
+  "customer_pain": [],
+  "discovered_paths": ["/robots.txt","/sitemap_index.xml","/wp-content/themes/betradar/js/general.js","/wp-json/"],
+  "discovered_targets": ["www.betradar.com","betradar.com"],
+  "discovery_metadata": {"method":"read-only HTTP GET + WordPress JS grep; r.jina.ai fallback used for sitemap (403 direct)","timestamp":"2026-09-08T21:20:00Z"}
+}

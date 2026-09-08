@@ -1,0 +1,65 @@
+{
+  "domain": "betsapi.com",
+  "disposition": "walled",
+  "notes": "Parent re-verification 2026-09-08: /robots.txt returns 200 (Cloudflare content-signals header) but homepage returns 403 bot wall; docs/probes blocked. Child summary claims paid API ~$30/mo with Reddit pain quotes (betsapi.com/docs/, r/algobetting thread) — those citations point to live pages not captured in raw/; treat claims as NOT CONFIRMED until a proxied/browser fetch. Batch-3 child had written this dossier with 0 raw evidence files and no disposition key (fixed).",
+  "tech_stack": {
+    "frontend": "NOT CONFIRMED",
+    "backend": "NOT CONFIRMED",
+    "database": "NOT CONFIRMED",
+    "cloud": "NOT CONFIRMED",
+    "cdn": "NOT CONFIRMED",
+    "citations": [
+      "raw/fx_betsapi_com_home.raw",
+      "raw/fx_betsapi_com_robots.raw"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": []
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [],
+    "citations": []
+  },
+  "product_limits": {
+    "limits": "NOT CONFIRMED",
+    "upgrade_triggers": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "pricing": {
+    "web": "~$30/mo claimed via Reddit citation (NOT CONFIRMED — no primary capture)",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "https://betsapi.com/docs/ (claimed, not captured)"
+    ]
+  },
+  "customer_pain": [
+    {
+      "quote": "I use them. In my opinion they are good for the price and have good historical data.",
+      "source": "https://www.reddit.com/r/algobetting/comments/1qb6ej3/has_anyone_got_experience_with_betsapicom/ (child-cited, not independently verified)",
+      "date": "NOT CONFIRMED"
+    }
+  ],
+  "discovered_paths": [],
+  "discovered_targets": [],
+  "discovery_metadata": {
+    "method": "parent re-verification fetch (curl) after delegation batch; composed from raw/ evidence",
+    "timestamp": "2026-09-08T16:35:00-05:00"
+  }
+}

@@ -1,0 +1,114 @@
+{
+ "domain": "dailyfantasyoptimizer.com",
+ "requests": [
+  {
+   "url": "https://dailyfantasyoptimizer.com",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyoptimizer-home.html",
+   "err": null
+  },
+  {
+   "url": "https://dailyfantasyoptimizer.com/robots.txt",
+   "status": 404,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyoptimizer-robots.txt",
+   "err": null
+  },
+  {
+   "url": "https://dailyfantasyoptimizer.com/sitemap.xml",
+   "status": 404,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyoptimizer-sitemap.xml",
+   "err": null
+  },
+  {
+   "url": "https://dailyfantasyoptimizer.com/sitemaps.xml",
+   "status": 404,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyoptimizer-sitemaps.xml",
+   "err": null
+  },
+  {
+   "url": "https://dailyfantasyoptimizer.com/_next/static/chunks/f2f8c094ec07b7fb.js",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyoptimizer-js0.js",
+   "err": null
+  },
+  {
+   "url": "https://dailyfantasyoptimizer.com/_next/static/chunks/2375e3fd2a9b8844.js",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyoptimizer-js1.js",
+   "err": null
+  }
+ ],
+ "homepage_status": 200,
+ "homepage_headers": {
+  "server": "cloudflare",
+  "x-powered-by": "Next.js",
+  "cf-ray": "a3804b21d914c2f6-IAH",
+  "content-type": "text/html; charset=utf-8"
+ },
+ "robots_status": 404,
+ "sitemap_status": 404,
+ "sitemap_url": "https://dailyfantasyoptimizer.com/sitemaps.xml",
+ "sitemap_locs_sample": [],
+ "sitemap_loc_count_seen": 0,
+ "js_candidates": [
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/f2f8c094ec07b7fb.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/2375e3fd2a9b8844.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/961311cbebbffb6d.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/797fcb0710da3be2.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/turbopack-d3ba62c148016137.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/b13e4024e66e5b34.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/3bb8c03eb8839c6a.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/5763834d5ef67c2e.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/5c6b34eb466e3cf6.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/e0bdb85d291f576b.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/76f74db82fedeb14.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/e88091fc3db526f1.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/e7f495aa580cb658.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/6f8ff3734a261047.js",
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/218e09c84be60a5f.js"
+ ],
+ "js_fetched": [
+  {
+   "url": "https://dailyfantasyoptimizer.com/_next/static/chunks/f2f8c094ec07b7fb.js",
+   "status": 200,
+   "bytes": 30229
+  },
+  {
+   "url": "https://dailyfantasyoptimizer.com/_next/static/chunks/2375e3fd2a9b8844.js",
+   "status": 200,
+   "bytes": 111301
+  },
+  {
+   "url": "https://dailyfantasyoptimizer.com/_next/static/chunks/961311cbebbffb6d.js",
+   "skipped": "budget"
+  }
+ ],
+ "pricing_url": null,
+ "pricing_status": null,
+ "vendors_found": [],
+ "price_tokens": [
+  "$1",
+  "$13",
+  "$34",
+  "Free",
+  "free"
+ ],
+ "dns": {
+  "api.dailyfantasyoptimizer.com": "NXDOMAIN (gaierror)",
+  "app.dailyfantasyoptimizer.com": "NXDOMAIN (gaierror)",
+  "staging.dailyfantasyoptimizer.com": "NXDOMAIN (gaierror)"
+ },
+ "search_used": "site:reddit.com <domain> complaint OR review",
+ "grep_summary": {
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/f2f8c094ec07b7fb.js": {
+   "localStorage": [
+    "StorageInstance\",{enumerable:!0,get:function(){return n}});let n=(0,e.r(90317).createAsyncLocalStorage)()},362266,(e,t,r)=>{\"use strict\";Object.defineProperty(r,\"__esModule\",{value:!0}),Object.defineProperty(r,\"actionAsyncStorage\",{"
+   ]
+  },
+  "https://dailyfantasyoptimizer.com/_next/static/chunks/2375e3fd2a9b8844.js": {
+   "fetch(": [
+    ";f&&(t[\"x-deployment-id\"]=f);let h=new URL(e);(0,d.setCacheBustingSearchParam)(h,t);let y=fetch(h,{credentials:\"same-origin\",headers:t,priority:r||void 0,signal:l}),v=a?(u=y,c=t,g(u,{callServer:i.callServer,findSourceMapURL:s."
+   ]
+  }
+ }
+}

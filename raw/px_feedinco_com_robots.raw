@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /info*
+Disallow: /increment*
+Disallow: /TipsFootball*
+Disallow: /TipsTennis*
+Disallow: /news/*
+Disallow: /predictions/2020-*
+Disallow: /predictions/2021-*
+Disallow: /predictions/2022-*
+Disallow: /predictions/2023-*
+Disallow: /predictions/2024-*
+Disallow: /apple-touch-icon.png
+Sitemap: https://www.feedinco.com/sitemap.xml

@@ -1,0 +1,59 @@
+User-agent: *
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /agents.txt
+Allow: /agents.json
+Allow: /
+Disallow: /api/
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: GPTBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: ChatGPT-User
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: OAI-SearchBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: ClaudeBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: anthropic-ai
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: Claude-Web
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: PerplexityBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: Google-Extended
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: Applebot-Extended
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: Bytespider
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: meta-externalagent
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: FacebookBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+Sitemap: https://outlier.bet/sitemap.xml
+Host: outlier.bet

@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Allow: /api/og/
+Disallow: /api/
+Disallow: /account
+
+Sitemap: https://www.alphascope.app/sitemap.xml
+Sitemap: https://www.alphascope.app/news-sitemap.xml

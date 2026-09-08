@@ -1,0 +1,102 @@
+{
+ "domain": "fractionai.xyz",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/px_fractionai_xyz_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_fractionai_xyz_home.raw",
+   "raw\\px_fractionai_xyz_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apital.png",
+    "apital-efficiency-defi-with-ai.png"
+   ],
+   "citation": "raw/px_fractionai_xyz_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_fractionai_xyz_home.raw"
+  },
+  "rate_limits": {
+   "value": "Credit",
+   "citation": "raw/px_fractionai_xyz_home.raw"
+  },
+  "citations": [
+   "raw\\px_fractionai_xyz_home.raw",
+   "raw\\px_fractionai_xyz_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Create agents that manage capital better than anyone' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_fractionai_xyz_home.raw"
+  },
+  "citations": [
+   "raw\\px_fractionai_xyz_home.raw",
+   "raw\\px_fractionai_xyz_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "Credit"
+   ],
+   "citation": "raw/px_fractionai_xyz_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_fractionai_xyz_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free"
+   ],
+   "citation": "raw/px_fractionai_xyz_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_fractionai_xyz_home.raw",
+   "raw\\px_fractionai_xyz_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "apital-efficiency-defi-with-ai.png",
+  "apital.png"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:05:40.900848"
+ },
+ "disposition": "walled",
+ "_site_identity": {
+  "title": "Fraction AI",
+  "description": "Create agents that manage capital better than anyone"
+ }
+}

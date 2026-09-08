@@ -1,0 +1,77 @@
+{
+ "tech_stack": {
+  "frontend": "Next.js (Vercel; dpl build ids in HTML)",
+  "backend": "Next API routes + /api/checkout/redirect (Stripe)",
+  "database": "NOT CONFIRMED",
+  "cloud": "Vercel",
+  "cdn": "Vercel",
+  "citations": [
+   "raw/stokastic_api_products.txt (Next chunks)",
+   "raw/seed-pricing-pages.json"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "stokastic.com/api/articles",
+   "stokastic.com/api/banners/active",
+   "stokastic.com/api/my-subscriptions (auth)",
+   "stokastic.com/api/products",
+   "stokastic.com/api/checkout/redirect?priceId=plan_Sp... -> Stripe Checkout (plan_/price_ IDs exposed in pricing page)"
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/stokastic_api_articles.json.txt",
+   "raw/stokastic_api_banners_active.json.txt",
+   "raw/stokastic_api_mysubscriptions.txt",
+   "raw/stokastic_api_products.txt",
+   "raw/seed-pricing-pages.json"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "contest simulation suite (full sim engine product copy; internals NOT CONFIRMED)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "per slate",
+  "citation": "product copy"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "DK/FD contest feeds (inferred)"
+  ],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "all-access packages; avg monthly discount $200 advertised",
+  "upgrade_triggers": "package upsells",
+  "citation": "raw/seed-pricing-pages.json"
+ },
+ "pricing": {
+  "web": "tiered /mo subscriptions via Stripe (plan_SpybXQ7gngTLJY, plan_SpGaJ305rACzik, price_1T6yjnCAIizu3XwYHhGEHqRc captured)",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "raw/seed-pricing-pages.json"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/api/articles",
+  "/api/products",
+  "/api/checkout/redirect",
+  "/pricing"
+ ],
+ "discovered_targets": [],
+ "domain": "stokastic.com",
+ "discovery_metadata": {
+  "method": "direct HTTP probes + raw evidence extraction (self-run)",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 34 raw evidence files)"
+}

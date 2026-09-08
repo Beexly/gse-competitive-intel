@@ -1,0 +1,1399 @@
+---
+updatedAt: 2026-08-20T09:43:30.000Z
+---
+
+Fetch the complete documentation index at: https://developer.sportradar.com/odds/llms.txt. Use this file to discover all available pages before exploring further. Append .md to any documentation page URL to get its markdown version.
+
+# OC Prematch Overview
+
+Get started with Odds Comparison Prematch API v2
+
+## Introduction
+
+The Prematch API provides aggregated odds data for a wide variety of pre-match betting markets. Top US bookmakers are available, and return odds for NFL, NBA, MLB, top soccer leagues, [and more](https://developer.sportradar.com/odds/reference/oc-prematch-overview#sportsleagues).
+
+The API is consistent in structure, format, and behavior with the other General Sport APIs. Primary feeds will return books, categories, sports, and tournaments offered.
+
+Additional feeds provide a huge selection of pre-match markets broken down by sport, league, and event.
+
+<br />
+
+<Callout icon="🗝️" theme="default">
+  ### Authentication is required for all API calls.
+</Callout>
+
+<br />
+
+***
+
+## API Map
+
+To best utilize the Odds Comparison Prematch API, you will need specific parameters to create your API calls. The map below shows every feed in the API, grouped by task; the key marks the identifier each feed takes, and each entry links out to its endpoint page.
+
+Feeds that require no ID, or only a sport ID and a date, can be called directly. Their responses provide the sport, competition, and sport event IDs that the odds and schedule feeds take.
+
+<HTMLBlock>{`
+<div style="width:100%;overflow-x:auto;font-family:Arial, Helvetica, sans-serif"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 577" width="100%" height="auto" role="img" aria-label="Odds Comparison Prematch API endpoint map" style="display:block;max-width:720px;margin:0 auto" font-family="Liberation Sans, Arial, Helvetica, sans-serif"><rect x="0" y="0" width="700" height="577" fill="#ffffff" /><circle cx="24" cy="36" r="4" fill="#6B7280" /><text x="34" y="36.5" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="9" font-weight="bold" fill="#5C6675" letter-spacing="0.4" dominant-baseline="central">NO ID NEEDED</text><circle cx="125" cy="36" r="4" fill="#B26A00" /><text x="135" y="36.5" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="9" font-weight="bold" fill="#5C6675" letter-spacing="0.4" dominant-baseline="central">DATE</text><circle cx="181" cy="36" r="4" fill="#0E7C6B" /><text x="191" y="36.5" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="9" font-weight="bold" fill="#5C6675" letter-spacing="0.4" dominant-baseline="central">SPORT ID</text><circle cx="259" cy="36" r="4" fill="#14639E" /><text x="269" y="36.5" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="9" font-weight="bold" fill="#5C6675" letter-spacing="0.4" dominant-baseline="central">COMPETITION ID</text><circle cx="371" cy="36" r="4" fill="#1C2271" /><text x="381" y="36.5" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="9" font-weight="bold" fill="#5C6675" letter-spacing="0.4" dominant-baseline="central">SPORT EVENT ID</text><rect x="20" y="60" width="320" height="242" rx="11" fill="#ffffff" stroke="#6B7280" stroke-width="1.6" /><rect x="20" y="60" width="320" height="29" rx="11" fill="#F4F5F7" /><text x="31" y="74" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="bold" fill="#6B7280" dominant-baseline="central">Getting Oriented</text><text x="31" y="99" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="8" font-weight="bold" fill="#5C6675" letter-spacing="0.3" dominant-baseline="central">START HERE · SPORTS PROVIDES THE SPORT IDS</text><a href="https://developer.sportradar.com/odds/reference/oc-prematch-sports" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="31" y="113" width="298" height="30" rx="6" fill="#F0F1F2" stroke="#C7C9CF" stroke-width="1.1" /><g transform="translate(40.00,120.00) scale(0.6667)" stroke="#6B7280" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l11 0" /> <path d="M9 12l11 0" /> <path d="M9 18l11 0" /> <path d="M5 6l0 .01" /> <path d="M5 12l0 .01" /> <path d="M5 18l0 .01" /></g><text x="64" y="128" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Sports</text><g transform="translate(305.00,120.00) scale(0.6667)" stroke="#6B7280" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><a href="https://developer.sportradar.com/odds/reference/oc-prematch-sport-categories" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="31" y="150" width="298" height="30" rx="6" fill="#E7F2F0" stroke="#A3CDC7" stroke-width="1.1" /><g transform="translate(40.00,157.00) scale(0.6667)" stroke="#0E7C6B" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l11 0" /> <path d="M9 12l11 0" /> <path d="M9 18l11 0" /> <path d="M5 6l0 .01" /> <path d="M5 12l0 .01" /> <path d="M5 18l0 .01" /></g><text x="64" y="165" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Sport Categories</text><g transform="translate(305.00,157.00) scale(0.6667)" stroke="#0E7C6B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><a href="https://developer.sportradar.com/odds/reference/oc-prematch-sport-competitions" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="31" y="187" width="298" height="30" rx="6" fill="#E7F2F0" stroke="#A3CDC7" stroke-width="1.1" /><g transform="translate(40.00,194.00) scale(0.6667)" stroke="#0E7C6B" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l11 0" /> <path d="M9 12l11 0" /> <path d="M9 18l11 0" /> <path d="M5 6l0 .01" /> <path d="M5 12l0 .01" /> <path d="M5 18l0 .01" /></g><text x="64" y="202" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Sport Competitions</text><g transform="translate(305.00,194.00) scale(0.6667)" stroke="#0E7C6B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><a href="https://developer.sportradar.com/odds/reference/oc-prematch-sport-stages" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="31" y="224" width="298" height="30" rx="6" fill="#E7F2F0" stroke="#A3CDC7" stroke-width="1.1" /><g transform="translate(40.00,231.00) scale(0.6667)" stroke="#0E7C6B" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l11 0" /> <path d="M9 12l11 0" /> <path d="M9 18l11 0" /> <path d="M5 6l0 .01" /> <path d="M5 12l0 .01" /> <path d="M5 18l0 .01" /></g><text x="64" y="239" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Sport Stages</text><g transform="translate(305.00,231.00) scale(0.6667)" stroke="#0E7C6B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><a href="https://developer.sportradar.com/odds/reference/oc-prematch-books" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="31" y="261" width="298" height="30" rx="6" fill="#F0F1F2" stroke="#C7C9CF" stroke-width="1.1" /><g transform="translate(40.00,268.00) scale(0.6667)" stroke="#6B7280" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /> <path d="M12 9h.01" /> <path d="M11 12h1v4h1" /></g><text x="64" y="276" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Books</text><g transform="translate(305.00,268.00) scale(0.6667)" stroke="#6B7280" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><rect x="20" y="326" width="320" height="131" rx="11" fill="#ffffff" stroke="#6B7280" stroke-width="1.6" /><rect x="20" y="326" width="320" height="29" rx="11" fill="#F4F5F7" /><text x="31" y="340" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="bold" fill="#6B7280" dominant-baseline="central">Schedules</text><text x="31" y="365" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="8" font-weight="bold" fill="#5C6675" letter-spacing="0.3" dominant-baseline="central">DAILY FEEDS TAKE A SPORT ID AND A DATE</text><a href="https://developer.sportradar.com/odds/reference/oc-prematch-daily-schedules" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="31" y="379" width="298" height="30" rx="6" fill="#F7F0E6" stroke="#E2C69E" stroke-width="1.1" /><g transform="translate(40.00,386.00) scale(0.6667)" stroke="#B26A00" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12" /> <path d="M16 3v4" /> <path d="M8 3v4" /> <path d="M4 11h16" /> <path d="M8 14v4" /> <path d="M12 14v4" /> <path d="M16 14v4" /></g><text x="64" y="394" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Daily Schedules</text><g transform="translate(305.00,386.00) scale(0.6667)" stroke="#B26A00" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><a href="https://developer.sportradar.com/odds/reference/oc-prematch-competition-schedules" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="31" y="416" width="298" height="30" rx="6" fill="#E6F0F8" stroke="#A3C6E3" stroke-width="1.1" /><g transform="translate(40.00,423.00) scale(0.6667)" stroke="#14639E" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12" /> <path d="M16 3v4" /> <path d="M8 3v4" /> <path d="M4 11h16" /> <path d="M8 14v4" /> <path d="M12 14v4" /> <path d="M16 14v4" /></g><text x="64" y="431" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Competition Schedules</text><g transform="translate(305.00,423.00) scale(0.6667)" stroke="#14639E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><rect x="20" y="481" width="320" height="76" rx="11" fill="#ffffff" stroke="#6B7280" stroke-width="1.6" /><rect x="20" y="481" width="320" height="29" rx="11" fill="#F4F5F7" /><text x="31" y="495" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="bold" fill="#6B7280" dominant-baseline="central">Monitor Data Changes</text><a href="https://developer.sportradar.com/odds/reference/oc-prematch-sport-event-markets-change-log" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="31" y="516" width="298" height="30" rx="6" fill="#F0F1F2" stroke="#C7C9CF" stroke-width="1.1" /><g transform="translate(40.00,523.00) scale(0.6667)" stroke="#6B7280" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8l0 4l2 2" /> <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></g><text x="64" y="531" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Sport Event Markets Change Log</text><g transform="translate(305.00,523.00) scale(0.6667)" stroke="#6B7280" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><rect x="360" y="60" width="320" height="168" rx="11" fill="#ffffff" stroke="#6B7280" stroke-width="1.6" /><rect x="360" y="60" width="320" height="29" rx="11" fill="#F4F5F7" /><text x="371" y="74" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="bold" fill="#6B7280" dominant-baseline="central">Prematch Odds</text><text x="371" y="99" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="8" font-weight="bold" fill="#5C6675" letter-spacing="0.3" dominant-baseline="central">SPORT EVENT IDS COME FROM THE SCHEDULE FEEDS</text><a href="https://developer.sportradar.com/odds/reference/oc-prematch-sport-event-markets" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="371" y="113" width="298" height="30" rx="6" fill="#E8E9F1" stroke="#A9ABC9" stroke-width="1.1" /><g transform="translate(380.00,120.00) scale(0.6667)" stroke="#1C2271" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /> <path d="M7 7m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /> <path d="M6 18l12 -12" /></g><text x="404" y="128" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Sport Event Markets</text><g transform="translate(645.00,120.00) scale(0.6667)" stroke="#1C2271" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><a href="https://developer.sportradar.com/odds/reference/oc-prematch-daily-sport-event-markets" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="371" y="150" width="298" height="30" rx="6" fill="#F7F0E6" stroke="#E2C69E" stroke-width="1.1" /><g transform="translate(380.00,157.00) scale(0.6667)" stroke="#B26A00" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /> <path d="M7 7m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /> <path d="M6 18l12 -12" /></g><text x="404" y="165" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Daily Sport Event Markets</text><g transform="translate(645.00,157.00) scale(0.6667)" stroke="#B26A00" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><a href="https://developer.sportradar.com/odds/reference/oc-prematch-competition-sport-event-markets" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="371" y="187" width="298" height="30" rx="6" fill="#E6F0F8" stroke="#A3C6E3" stroke-width="1.1" /><g transform="translate(380.00,194.00) scale(0.6667)" stroke="#14639E" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /> <path d="M7 7m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /> <path d="M6 18l12 -12" /></g><text x="404" y="202" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Competition Sport Event Markets</text><g transform="translate(645.00,194.00) scale(0.6667)" stroke="#14639E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><rect x="360" y="252" width="320" height="242" rx="11" fill="#ffffff" stroke="#6B7280" stroke-width="1.6" /><rect x="360" y="252" width="320" height="29" rx="11" fill="#F4F5F7" /><text x="371" y="266" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="bold" fill="#6B7280" dominant-baseline="central">Map IDs to League-Specific APIs</text><text x="371" y="291" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="8" font-weight="bold" fill="#5C6675" letter-spacing="0.3" dominant-baseline="central">PAIRS ODDS URNS WITH LEAGUE-SPECIFIC API IDS</text><a href="https://developer.sportradar.com/odds/reference/oc-prematch-competition-mappings" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="371" y="305" width="298" height="30" rx="6" fill="#F0F1F2" stroke="#C7C9CF" stroke-width="1.1" /><g transform="translate(380.00,312.00) scale(0.6667)" stroke="#6B7280" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 17l-18 0" /> <path d="M6 10l-3 -3l3 -3" /> <path d="M3 7l18 0" /> <path d="M18 20l3 -3l-3 -3" /></g><text x="404" y="320" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Competition Mappings</text><g transform="translate(645.00,312.00) scale(0.6667)" stroke="#6B7280" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><a href="https://developer.sportradar.com/odds/reference/oc-prematch-competitor-mappings" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="371" y="342" width="298" height="30" rx="6" fill="#F0F1F2" stroke="#C7C9CF" stroke-width="1.1" /><g transform="translate(380.00,349.00) scale(0.6667)" stroke="#6B7280" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 17l-18 0" /> <path d="M6 10l-3 -3l3 -3" /> <path d="M3 7l18 0" /> <path d="M18 20l3 -3l-3 -3" /></g><text x="404" y="357" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Competitor Mappings</text><g transform="translate(645.00,349.00) scale(0.6667)" stroke="#6B7280" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><a href="https://developer.sportradar.com/odds/reference/oc-prematch-player-mappings" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="371" y="379" width="298" height="30" rx="6" fill="#F0F1F2" stroke="#C7C9CF" stroke-width="1.1" /><g transform="translate(380.00,386.00) scale(0.6667)" stroke="#6B7280" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 17l-18 0" /> <path d="M6 10l-3 -3l3 -3" /> <path d="M3 7l18 0" /> <path d="M18 20l3 -3l-3 -3" /></g><text x="404" y="394" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Player Mappings</text><g transform="translate(645.00,386.00) scale(0.6667)" stroke="#6B7280" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><a href="https://developer.sportradar.com/odds/reference/oc-prematch-sport-event-mappings" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="371" y="416" width="298" height="30" rx="6" fill="#F0F1F2" stroke="#C7C9CF" stroke-width="1.1" /><g transform="translate(380.00,423.00) scale(0.6667)" stroke="#6B7280" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 17l-18 0" /> <path d="M6 10l-3 -3l3 -3" /> <path d="M3 7l18 0" /> <path d="M18 20l3 -3l-3 -3" /></g><text x="404" y="431" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Sport Event Mappings</text><g transform="translate(645.00,423.00) scale(0.6667)" stroke="#6B7280" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a><a href="https://developer.sportradar.com/odds/reference/oc-prematch-stage-mappings" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer"><rect x="371" y="453" width="298" height="30" rx="6" fill="#F0F1F2" stroke="#C7C9CF" stroke-width="1.1" /><g transform="translate(380.00,460.00) scale(0.6667)" stroke="#6B7280" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 17l-18 0" /> <path d="M6 10l-3 -3l3 -3" /> <path d="M3 7l18 0" /> <path d="M18 20l3 -3l-3 -3" /></g><text x="404" y="468" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="12.5" fill="#16202E" dominant-baseline="central">Stage Mappings</text><g transform="translate(645.00,460.00) scale(0.6667)" stroke="#6B7280" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></g></a></svg></div>
+`}</HTMLBlock>
+
+***
+
+### Endpoint Descriptions
+
+**Books** – Returns a list of configured bookmakers and their IDs. 
+
+**Competition Schedules** – Provides scheduling info for all events with odds available in a given competition.
+
+**Competition Sport Event Markets** – Provides a list of markets for a given competition.
+
+**Daily Schedules** – Provides scheduling info for all events with odds available on a given sport and date.
+
+**Daily Sport Event Markets** – Provides a list of markets for a given sport and date.
+
+**Sport Categories** – Returns a list of categories for a sport ID that have odds available. 
+
+**Sport Competitions** – Returns a list of competitions for a sport ID that have odds available. 
+
+**Sport Event Markets** – Returns a list of markets for a given sport event.
+
+**Sport Event Markets Change Log** – Returns a list of sport events with odds changes in the last 5 minutes.
+
+**Sport Stages** – Returns a list of stages and categories for a sport ID that have odds available. 
+
+**Sports** – Returns a list of sports and sport IDs. 
+
+**Mapping Feeds:**
+
+* **Competition Mappings** – Provides competition ID mapping between League Specific and General Sport ID types. 
+* **Competitor Mappings** – Provides competitor ID mapping between League Specific and General Sport ID types. 
+* **Player Mappings** – Provides player ID mapping between League Specific and General Sport ID types. 
+* **Sport Event Mappings** – Provides sport event ID mapping between League Specific and General Sport ID types.
+* **Stage Mappings** – Provides stage ID mapping between League Specific and General Sport ID types.
+
+***
+
+### Data Retrieval Sample
+
+To find 3-way prematch odds for a sport event on a given day:
+
+<ol><li>Call the Sports resource and make note of the Sport Id for your event</li><li>Call the Daily Sport Event Markets for your given date, using the Sport Id</li><li>Find the Sport Event Id of your event within the results</li><li>Call the Sport Event Markets using your located Sport Event Id</li><li>The prematch odds for your event are displayed</li><li>Find the "1x2" market within the results</li></ol>
+
+<br />
+
+***
+
+## What's Included?
+
+See below for included bookmakers, sports, and markets for the **US-focused** version of Prematch odds.
+
+For **globally focused** information see our <Anchor label="OC Core docs" target="_blank" href="https://developer.sportradar.com/odds/reference/oc-core-overview#pre-match-markets">OC Core docs</Anchor>.
+
+<br />
+
+### Bookmakers
+
+| ID    | Name                 |
+| :---- | :------------------- |
+| 25080 | Consensus            |
+| 17324 | MGM                  |
+| 18149 | DraftKings           |
+| 18186 | FanDuel              |
+| 27447 | BetRivers            |
+| 27769 | PointsBet            |
+| 28901 | Bet365.US.NJ         |
+| 32219 | WilliamHillNewJersey |
+| 40316 | ESPNbetCom           |
+
+<br />
+
+### Sports/Leagues
+
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Sport ID
+      </th>
+
+      <th>
+        Sport
+      </th>
+
+      <th>
+        Leagues
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        2
+      </td>
+
+      <td>
+        Basketball
+      </td>
+
+      <td>
+        NBA  
+        WNBA  
+        NCAA Men's Basketball
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        3
+      </td>
+
+      <td>
+        Baseball
+      </td>
+
+      <td>
+        MLB
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        4
+      </td>
+
+      <td>
+        Ice Hockey
+      </td>
+
+      <td>
+        NHL
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        16
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        NFL  
+        NCAA
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        1
+      </td>
+
+      <td>
+        Soccer
+      </td>
+
+      <td>
+        Premier League  
+        La Liga  
+        Ligue 1  
+        Serie A  
+        Bundesliga  
+        MLS  
+        UEFA Champions League  
+        UEFA Champions League - Women UEFA Europa League  
+        World Cup  
+        Women's World Cup  
+        European Championship  
+        Liga MX  
+        Nations League  
+        EFL Cup  
+        Championship  
+        League One  
+        League Two  
+        FA Cup  
+        Coppa Italia  
+        Brazil Serie A  
+        Liga Profesional Argentina  
+        Scottish Premiership  
+        UEFA Conference League
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+<br />
+
+### Markets
+
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Market ID/Name
+      </th>
+
+      <th>
+        Sports
+      </th>
+
+      <th>
+        Market Structure
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        **1** 1x2
+      </td>
+
+      <td>
+        American Football  
+        Basketball  
+        Soccer
+      </td>
+
+      <td>
+        Team A / Team B / Draw
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **11**  
+        Draw no Bet
+      </td>
+
+      <td>
+        Soccer
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **14**  
+        Handicap
+      </td>
+
+      <td>
+        Soccer
+      </td>
+
+      <td>
+        Team A / Team B / Draw
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **18**  
+        Total
+      </td>
+
+      <td>
+        Soccer
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **19**  
+        Home Total
+      </td>
+
+      <td>
+        Ice Hockey
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **20**  
+        Away Total
+      </td>
+
+      <td>
+        Ice Hockey
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **23**  
+        2nd Quarter Betting
+      </td>
+
+      <td>
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **26**  
+        Total Points Odd/Even
+      </td>
+
+      <td>
+        Basketball
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **47**  
+        Double Result
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Tie / Team A, Tie / Team B,  
+        Team A / Team B, Team B / Team A,  
+        Team A / Team A, Team B / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **60**  
+        1st Half - 1x2
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B / Draw
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **64**  
+        1st Half - Draw No Bet
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **66**  
+        1st Half - Handicap
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **68**  
+        1st Half - Total
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **69**  
+        1st Half - Home Total
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **70**  
+        1st Half - Away Total
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **74**  
+        1st Half Total Pts Odd/Even
+      </td>
+
+      <td>
+        Basketball
+      </td>
+
+      <td>
+        Even / Odd
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **83**  
+        2nd Half Betting
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **94**  
+        2nd Half Total Pts Odd/Even
+      </td>
+
+      <td>
+        Basketball
+      </td>
+
+      <td>
+        Even / Odd
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **219**  
+        Winner  
+        (incl. overtime)
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **220**  
+        Will There Be Overtime?
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Yes / No
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **223**  
+        Handicap  
+        (incl. overtime)
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **225**  
+        Total  
+        (incl. overtime)
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **227**  
+        Home Total  
+        (incl. overtime)
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **228**  
+        Away Total  
+        (incl. overtime)
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **231**  
+        2nd Half - Handicap  
+        (incl. overtime)
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **232**  
+        2nd Half - Total  
+        (incl. overtime)
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **234**  
+        Highest Scoring Quarter
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        920: First Quarter  
+        921: Second Quarter  
+        922: Third Quarter  
+        923: Fourth Quarter  
+        924: Equal
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **235**  
+        1st Quarter Betting
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **235**  
+        2nd Quarter Betting
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **235**  
+        3rd Quarter Betting
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **235**  
+        4th Quarter Betting
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **236**  
+        1st Quarter Total Points
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **236**  
+        2nd Quarter Total Points
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **236**  
+        3rd Quarter Total Points
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **236**  
+        4th Quarter Total Points
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **251**  
+        Winner  
+        (incl. extra innings)
+      </td>
+
+      <td>
+        Baseball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **256**  
+        Handicap  
+        (incl. extra innings)
+      </td>
+
+      <td>
+        Baseball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **260**  
+        Home Total  
+        (incl. extra innings)
+      </td>
+
+      <td>
+        Baseball
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **261**  
+        Away Total  
+        (incl. extra innings)
+      </td>
+
+      <td>
+        Baseball
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **274**  
+        Innings 1 to 5 - 1x2
+      </td>
+
+      <td>
+        Baseball
+      </td>
+
+      <td>
+        Team A / Team B / Draw
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **275**  
+        Innings 1 to 5 - Handicap
+      </td>
+
+      <td>
+        Baseball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **276**  
+        Innings 1 to 5 - Total
+      </td>
+
+      <td>
+        Baseball
+      </td>
+
+      <td>
+        Over / Under
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **293**  
+        2nd Half - 1x2  
+        (incl. overtime)
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B / Draw
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **294**  
+        2nd Half - Draw no Bet  
+        (incl. overtime)
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **302**  
+        1st Quarter Money Line
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **303**  
+        1st Quarter Spread
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **303**  
+        2nd Quarter Spread
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **303**  
+        3rd Quarter Spread
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **303**  
+        4th Quarter Spread
+      </td>
+
+      <td>
+        American Football  
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **304**  
+        1st Quarter Total Points
+      </td>
+
+      <td>
+        Basketball
+      </td>
+
+      <td>
+        Even / Odd
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **304**  
+        2nd Quarter Total Points
+      </td>
+
+      <td>
+        Basketball
+      </td>
+
+      <td>
+        Even / Odd
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **304**  
+        3rd Quarter Total Points
+      </td>
+
+      <td>
+        Basketball
+      </td>
+
+      <td>
+        Even / Odd
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **304**  
+        4th Quarter Total Points
+      </td>
+
+      <td>
+        Basketball
+      </td>
+
+      <td>
+        Even / Odd
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **1123**  
+        Inning Winner (1-8)
+      </td>
+
+      <td>
+        Baseball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **1124**  
+        Innings 1 to 5 - Winner
+      </td>
+
+      <td>
+        Baseball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **6022**  
+        Will there be a safety?
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        Yes / No
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **6023**  
+        1st Half Result / 2nd Half Result
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        (selections from 47)  
+        Team A / Tie, Team B / Tie,  
+        Team A / Team B, Tie / Team A,  
+        Tie / Team B, Team B / Team A,  
+        Tie / Tie, Team A / Team A,  
+        Team B / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **6024**  
+        1st Team Touchdown
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        4: Team A  
+        5: Team B  
+        10008: No Touchdown
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **6025**  
+        1st Scoring Play
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        10002: Team A Safety  
+        10003: Team A Field Goal  
+        10004: Team A Touchdown  
+        10005: Team B Safety  
+        10006: Team B Field Goal  
+        10007: Team B Touchdown
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **6026**  
+        Quarter of 1st Field Goal
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        First Quarter  
+        Second Quarter  
+        Third Quarter  
+        Fourth Quarter  
+        10008: No Field Goal
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **6027**  
+        Quarter of 1st Touchdown
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        First Quarter  
+        Second Quarter  
+        Third Quarter  
+        Fourth Quarter  
+        10008: No Touchdown
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **6028**  
+        Score All Quarters?
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        10009: Team A Yes  
+        10010: Team A No  
+        10011: Team B Yes  
+        10012: Team B No
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **6029**  
+        Total 1st Half TDs
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        0, 1, 2, 3, 4, or more
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **6030**  
+        Total 2nd Half TDs
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        0, 1, 2, 3, 4, or more
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **6031**  
+        1st Half Winning Margin
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **6032**  
+        Winning Margin
+      </td>
+
+      <td>
+        American Football
+      </td>
+
+      <td>
+        Team A 1-6 pts  
+        Team A 7-12 pts  
+        Team A 13-18 pts  
+        Team A 19-24 pts  
+        Team A 25-30 pts  
+        Team A 31pts or more  
+        Team B 1-6 pts  
+        Team B 7-12 pts  
+        Team B 13-18 pts  
+        Team B 19-24 pts  
+        Team B 25-30 pts  
+        Team B 31pts or more
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **8010**  
+        1st Half Winning Margin
+      </td>
+
+      <td>
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **8011**  
+        Winning Margin
+      </td>
+
+      <td>
+        Basketball
+      </td>
+
+      <td>
+        Team A / Team B
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+<br />
+
+***
+
+## Integration Resources
+
+<br />
+
+### OpenAPI Spec
+
+Our Odds Comparison Prematch API is available via OpenAPI. Click below to view and/or download the specs.
+
+[Odds Comparison Prematch v2 OpenAPI](https://api.sportradar.com/oddscomparison-prematch/trial/v2/openapi/swagger/index.html)
+
+<br />
+
+### Postman Workspace
+
+<Callout icon="🚀" theme="default">
+  ## Run in Postman
+
+  Our full Media API suite—including the Prematch Odds collection—lives in our public Postman workspace. Fork or follow any collection to get updates automatically.
+
+  <a href="https://app.getpostman.com/run-collection/17203961-2435da71-c051-4281-a69d-c04f635cecab?action=collection%2Ffork&collection-url=entityId%3D17203961-2435da71-c051-4281-a69d-c04f635cecab%26entityType%3Dcollection%26workspaceId%3Da6193b92-ee53-4979-bbfe-7ffdc589c3fc">
+    <img src="https://run.pstmn.io/button.svg" />
+  </a>
+</Callout>
+
+<br />
+
+### Schema Download
+
+Open the zip file below to access our entire Odds Comparison Prematch API XSD schema.
+
+[Odds Comparison Prematch v2 Schema](https://api-docs.sportradar.us/odds/Odds_Comparison_Prematch_v2.zip)
+
+<br />
+
+### MCP Server
+
+The **Sportradar Odds Comparison Prematch MCP Server** is a Model Context Protocol (MCP) implementation that bridges AI assistants directly to our OC Prematch API feeds. It allows LLMs to use standardized tools to fetch our sports data, helping to power your applications, assist in coding, and streamlining your integration.
+
+For detailed instructions on how to set up and use this integration, visit our <Anchor label="MCP Server" target="_blank" href="https://developer.sportradar.com/getting-started/docs/mcp-server">MCP Server</Anchor> documentation.
+
+<br />
+
+<br />
+
+<br />

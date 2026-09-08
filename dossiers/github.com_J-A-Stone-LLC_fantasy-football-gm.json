@@ -1,0 +1,58 @@
+{
+ "domain": "github.com/J-A-Stone-LLC/fantasy-football-gm",
+ "type": "open-source-repo (dead/404)",
+ "tech_stack": {
+  "frontend": "NOT CONFIRMED",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "n/a",
+  "cdn": "n/a",
+  "citations": [
+   "raw/gh-meta-J-A-Stone-LLC__fantasy-football-gm.json (HTTP 404 from api.github.com)"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": [],
+  "rate_limits": "n/a",
+  "citations": [
+   "raw/gh-meta-J-A-Stone-LLC__fantasy-football-gm.json"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED",
+  "citations": "NOT CONFIRMED"
+ },
+ "product_limits": {
+  "limits": "n/a",
+  "upgrade_triggers": "n/a",
+  "citation": "n/a"
+ },
+ "pricing": {
+  "web": "n/a",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": "n/a"
+ },
+ "customer_pain": [],
+ "discovered_paths": [],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "disposition": "DEAD/INACCESSIBLE — GitHub API returns 404 'Not Found' for the repo endpoint (private, deleted, or renamed as of 2026-09-08)",
+  "timestamp": "2026-09-08T14:08:12.265738"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

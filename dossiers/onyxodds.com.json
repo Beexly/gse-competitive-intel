@@ -1,0 +1,107 @@
+{
+  "domain": "onyxodds.com",
+  "disposition": "live",
+  "status": "CONFIRMED (Webflow marketing site + iOS app; social/sweepstakes sportsbook; no subscription pricing)",
+  "key_findings": "Onyx Odds is \"America's Premium Social Sportsbook\" (sweepstakes-style social sportsbook; Onyx Predictions LLC is a CFTC-registered introducing broker / NFA Member ID 0576468 guaranteed by NinjaTrader Clearing LLC NFA ID 0309379). Marketing site is Webflow (cdn.prod.website-files.com, Cloudflare + CloudFront). Live prediction widget shows WC France vs Portugal LIVE with \"Market Shift Probability updated +2.1%\". Tagline \"Free to play. No purchase necessary.\" Private-beta signup form. No subscription tiers or /pricing page (404); monetization is social-sportsbook deposit promos ($10 deposit -> $50-100 free picks per community posts). iOS app: id6754047293 (Onyx Sports Picks). No third-party data-vendor strings found in fetched JS.",
+  "tech_stack": {
+    "frontend": "Webflow (cdn.prod.website-files.com site 69ff17734f8534eae93a17e7) + jQuery 3.5.1",
+    "backend": "NOT CONFIRMED",
+    "database": "NOT CONFIRMED",
+    "cloud": "Cloudflare + CloudFront",
+    "cdn": "Cloudflare + CloudFront",
+    "citations": [
+      "raw/onyxodds.com_home.html",
+      "raw/onyxodds.com_js_webflow.schunk.68009f75193b.js.js"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": [
+      "NOT CONFIRMED: app itself is iOS-native/web app behind marketing site; no API surface exposed in Webflow bundles"
+    ]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "marketing shows live \"Market Shift Probability\" updates (+2.1%)",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "live",
+    "citation": "raw/onyxodds.com_home.html"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [],
+    "citations": [
+      "no vendor strings found in fetched Webflow JS"
+    ]
+  },
+  "product_limits": {
+    "limits": "Free to play; no purchase necessary; private beta access form",
+    "upgrade_triggers": "None - deposit-promo social sportsbook model, no subscription",
+    "citation": "raw/onyxodds.com_home.html"
+  },
+  "pricing": {
+    "web": "No subscription; free-to-play sweepstakes + deposit promos ($10 -> $50-100 free picks)",
+    "ios": "id6754047293 (Onyx Sports Picks)",
+    "android": "NOT CONFIRMED (no Play link on homepage)",
+    "citations": [
+      "raw/onyxodds.com_home.html",
+      "https://www.reddit.com/r/referralcodes/comments/1uu1lyh/onyx_odds_50_in_free_picks_with_10_deposit_sports/"
+    ]
+  },
+  "customer_pain": [
+    {
+      "quote": "Onyx odds provides almost no boosts or free money but they do pay out. average payout time is 5-9 hours",
+      "source": "https://www.reddit.com/r/EVbetting/comments/1iyc93m/what_are_peoples_experience_w_onyx/",
+      "date": "2026"
+    },
+    {
+      "quote": "onyxodds doesn't give free money so they can afford to provide better odds",
+      "source": "https://www.reddit.com/r/Fliff/comments/1gs1ahs/onyx_odds_new_social_sportbook_app/",
+      "date": "2025"
+    },
+    {
+      "quote": "the odds are much better than competitors in the social sportsbook and DFS space.",
+      "source": "https://www.reddit.com/r/sportsbetting/comments/1nry95l/onyx_odds/",
+      "date": "2026"
+    },
+    {
+      "quote": "No issues with OnyxOdds they are legit. 5 business days seems a little more realistic [for withdrawals].",
+      "source": "https://www.reddit.com/r/arbitragebetting/comments/1nt3nni/sportzino_thirillzz_onyx_odds_legit_withdrawals/",
+      "date": "2026"
+    }
+  ],
+  "discovered_paths": [
+    "/pricing (404)",
+    "/sitemap_index.xml (404)",
+    "apps.apple.com/us/app/onyx-sports-picks/id6754047293"
+  ],
+  "discovered_targets": [
+    "ninjatrader.com (clearing guarantee)"
+  ],
+  "discovery_metadata": {
+    "method": "urllib GET via fetcher.py pattern; 5 of 8 HTTP requests used",
+    "timestamp": "2026-09-08"
+  },
+  "requests_log": [],
+  "raw_files": [
+    "onyxodds.com_home.html",
+    "onyxodds.com_js_jquery-3.5.1.min.dc5e7f18c8.js.js",
+    "onyxodds.com_js_webflow.schunk.36b8fb49256177c8.js.js",
+    "onyxodds.com_js_webflow.schunk.68009f75193bdecd.js.js",
+    "onyxodds.com_pricing.html",
+    "onyxodds.com_robots.txt",
+    "onyxodds.com_sitemap.xml",
+    "onyxodds.com_sitemaps.xml"
+  ],
+  "notes": [
+    "robots.txt exists but is empty (status 200, 0 bytes); no sitemap.xml",
+    "1 web_search used"
+  ]
+}

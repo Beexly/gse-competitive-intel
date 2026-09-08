@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Moby — The screener lives in your pocket now</title>
+<meta name="description" content="The Moby experience is on mobile, and Pro is one tap away. Same account, same edge — sharper." />
+<link rel="canonical" href="https://moby.win/">
+<meta name="robots" content="index, follow">
+<link rel="shortcut icon" href="/moby-32.png" type="image/png">
+<link rel="apple-touch-icon" href="/moby-256.png">
+<!-- Open Graph — pointed at moby.win so shared links carry the canonical brand surface -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://moby.win/">
+<meta property="og:site_name" content="Moby">
+<meta property="og:title" content="Moby — Solana & Base Trading App | Follow Smart Money">
+<meta property="og:description" content="Moby is the Solana & Base trading app for following smart money. Real-time whale tracking, on-chain analytics, and AI-powered signals on every trade.">
+<meta property="og:image" content="https://moby.win/assets/img/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Moby — Solana & Base Trading App">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@whalewatchalert">
+<meta name="twitter:url" content="https://moby.win/">
+<meta name="twitter:title" content="Moby — Solana & Base Trading App | Follow Smart Money">
+<meta name="twitter:description" content="Moby is the Solana & Base trading app for following smart money. Real-time whale tracking, on-chain analytics, and AI-powered signals on every trade.">
+<meta name="twitter:image" content="https://moby.win/assets/img/og-card.png">
+<meta name="twitter:image:alt" content="Moby — Solana & Base Trading App">
+<!-- noindex on dev / preview hosts -->
+<script>
+if (location.hostname.includes('dev') || location.hostname.includes('pages.dev') || location.hostname === 'localhost') {
+  document.head.appendChild(Object.assign(document.createElement('meta'), {name:'robots',content:'noindex, nofollow'}));
+}
+</script>
+<!-- Google Analytics (prod only — mirrors moby.win setup) -->
+<script>
+if (location.hostname === 'mobyscreener.com' || location.hostname === 'www.mobyscreener.com') {
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-GV3M5Y2RBV';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', 'G-GV3M5Y2RBV');
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,400..800;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #111319;
+    --bg-2: #161922;
+    --ink: #ffffff;
+    --ink-dim: #adb0b9;
+    --ink-mute: #6b6f7a;
+    --line: rgba(255, 255, 255, 0.06);
+    --line-strong: rgba(255, 255, 255, 0.11);
+    --moby: #30e0a1;
+    --moby-deep: #21ce99;
+    --moby-soft: rgba(48, 224, 161, 0.10);
+    --moby-glow: rgba(48, 224, 161, 0.35);
+    --sans: "Mona Sans", -apple-system, BlinkMacSystemFont, "Proxima Nova", Arial, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  body {
+    min-height: 100vh;
+    position: relative;
+    background:
+      radial-gradient(ellipse 45% 30% at 50% 0%, rgba(48, 224, 161, 0.08), transparent 70%),
+      radial-gradient(ellipse 40% 30% at 100% 100%, rgba(48, 224, 161, 0.04), transparent 70%),
+      var(--bg);
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+      linear-gradient(to right, var(--line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+    background-size: 88px 88px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 75%);
+    opacity: 0.5;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 32px 40px 80px;
+  }
+
+  /* ===== HEADER ===== */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 88px;
+    animation: fadeDown 0.7s ease-out;
+  }
+
+  .wordmark {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 0;
+  }
+
+  .wordmark img {
+    height: 28px;
+    width: auto;
+    display: block;
+  }
+
+  .status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 13px;
+    border: 1px solid var(--line-strong);
+    border-radius: 100px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--ink-dim);
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--moby);
+    box-shadow: 0 0 8px var(--moby-glow);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.55; transform: scale(0.8); }
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    max-width: 760px;
+    margin: 0 auto 96px;
+    text-align: center;
+    animation: fadeUp 0.85s ease-out 0.1s both;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--moby);
+    margin-bottom: 32px;
+  }
+
+  .eyebrow-dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: var(--moby);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--moby-glow);
+  }
+
+  h1 {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: clamp(34px, 4.4vw, 56px);
+    line-height: 1.08;
+    letter-spacing: -0.028em;
+    margin-bottom: 22px;
+    color: var(--ink);
+  }
+
+  h1 .accent {
+    color: var(--moby);
+  }
+
+  .lede {
+    max-width: 520px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink-dim);
+    font-weight: 400;
+  }
+
+  .lede a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line-strong);
+    transition: border-color 0.2s;
+  }
+
+  .lede a:hover { border-color: var(--moby); }
+
+  /* ===== TILES ===== */
+  .tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 80px;
+  }
+
+  .tile {
+    position: relative;
+    padding: 36px;
+    border: 1px solid var(--line-strong);
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.022), rgba(255, 255, 255, 0.004));
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 360px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.4s ease;
+    animation: fadeUp 0.95s ease-out both;
+  }
+
+  .tile:nth-child(1) { animation-delay: 0.25s; }
+  .tile:nth-child(2) { animation-delay: 0.38s; }
+
+  .tile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), var(--moby-soft), transparent 50%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+
+  .tile:hover {
+    transform: translateY(-3px);
+    border-color: rgba(48, 224, 161, 0.22);
+  }
+
+  .tile:hover::before { opacity: 1; }
+
+  .tile-featured {
+    border-color: rgba(48, 224, 161, 0.26);
+    background:
+      linear-gradient(180deg, rgba(48, 224, 161, 0.04), rgba(48, 224, 161, 0.005));
+  }
+
+  .tile-featured::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--moby), transparent);
+    opacity: 0.6;
+  }
+
+  .tile-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .tile-label .dash {
+    width: 18px;
+    height: 1px;
+    background: var(--ink-mute);
+  }
+
+  .tile-featured .tile-label {
+    color: var(--moby);
+  }
+  .tile-featured .tile-label .dash {
+    background: var(--moby);
+  }
+
+  .tile h2 {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: clamp(24px, 2.4vw, 30px);
+    line-height: 1.15;
+    letter-spacing: -0.022em;
+    margin-bottom: 14px;
+  }
+
+  .tile h2 .accent { color: var(--moby); }
+
+  .tile p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-dim);
+    margin-bottom: 28px;
+    max-width: 440px;
+  }
+
+  .tile-cta {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-family: var(--sans);
+    font-size: 14.5px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .cta-primary {
+    background: var(--moby);
+    color: #052418;
+  }
+  .cta-primary:hover {
+    background: #3df0ad;
+    box-shadow: 0 8px 28px -6px var(--moby-glow);
+    transform: translateY(-1px);
+  }
+
+  .cta-secondary {
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--ink);
+    border: 1px solid var(--line-strong);
+  }
+  .cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .cta-arrow {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  .tile-cta:hover .cta-arrow { transform: translateX(3px); }
+  .cta-arrow svg { width: 16px; height: 16px; }
+
+  .tile-note {
+    margin-top: 12px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--ink-mute);
+    text-align: center;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    border-top: 1px solid var(--line);
+    padding-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    animation: fadeUp 1s ease-out 0.55s both;
+  }
+
+  .footer-copy {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--ink-mute);
+  }
+  .footer-copy .ink { color: var(--ink-dim); }
+
+  .footer-links {
+    display: flex;
+    gap: 22px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+  }
+  .footer-links a {
+    color: var(--ink-dim);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--moby); }
+
+  /* ===== ANIMATIONS ===== */
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 820px) {
+    .container { padding: 22px 18px 56px; }
+    header { padding-bottom: 48px; }
+    .hero { margin-bottom: 56px; }
+    .tiles {
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-bottom: 56px;
+    }
+    .tile {
+      padding: 28px 24px;
+      min-height: auto;
+    }
+    .wordmark img { height: 24px; }
+    .status-pill { font-size: 10px; padding: 6px 11px; }
+    footer { flex-direction: column; align-items: flex-start; }
+    .lede { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <a href="https://moby.win/" class="wordmark" data-track="wordmark_click" aria-label="Moby">
+      <img src="/moby-logo.png" srcset="/moby-logo-500.png 500w, /moby-logo.png 938w" sizes="120px" alt="Moby" width="104" height="28">
+    </a>
+    <div class="status-pill">
+      <span class="status-dot"></span>
+      <span>We're all-in on mobile</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">
+      <span class="eyebrow-dot"></span>
+      <span>A quick note</span>
+    </div>
+    <h1>Moby now lives<br>in your <span class="accent">pocket.</span></h1>
+    <p class="lede">
+      99% of the Moby community is on mobile, so that's where we're focusing. The same smart-money edge — sharper, real-time, built for how you actually trade — is in the Moby app. Pro works exactly the same: head to <a href="https://checkout.mobyscreener.com/" data-track="cta_pro_click">checkout</a> to upgrade your coin.
+    </p>
+  </section>
+
+  <section class="tiles">
+
+    <!-- TILE 1: Mobile app -->
+    <a href="https://moby.win/?utm_source=mobyscreener&utm_medium=landing&utm_campaign=mobile_consolidation&utm_content=app_tile" class="tile" target="_blank" rel="noopener" data-track="cta_app_click">
+      <div class="tile-label"><span class="dash"></span> The full experience</div>
+      <h2>Get the <span class="accent">Moby</span> app.</h2>
+      <p>Real-time whale flows, smart-money signals, and AI-powered context — in your pocket. Join 50,000+ traders. Sign in with the same account you used on mobyscreener.com.</p>
+      <span class="tile-cta cta-secondary">
+        <span>Download for iOS &amp; Android</span>
+        <span class="cta-arrow">
+          <svg viewBox="0 0 16 16" fill="none">
+            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </span>
+    </a>
+
+    <!-- TILE 2: Upgrade to Pro (revenue tile, featured) -->
+    <a href="https://checkout.mobyscreener.com/?utm_source=mobyscreener&utm_medium=landing&utm_campaign=mobile_consolidation&utm_content=pro_tile" class="tile tile-featured" target="_blank" rel="noopener" data-track="cta_pro_click">
+      <div class="tile-label"><span class="dash"></span> For token teams</div>
+      <h2>Upgrade a coin to <span class="accent">Pro.</span></h2>
+      <p>Nothing changes here — Pro works exactly as it always has. Banner tweet to 180K+ followers, trending boost, crown badge, real engagement on X, Moby, and Telegram. $150 flat.</p>
+      <span class="tile-cta cta-primary">
+        <span>Go to checkout</span>
+        <span class="cta-arrow">
+          <svg viewBox="0 0 16 16" fill="none">
+            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </span>
+    </a>
+
+  </section>
+
+  <footer>
+    <div class="footer-copy">© Moby — <span class="ink">Follow the smart money.</span></div>
+    <div class="footer-links">
+      <a href="https://moby.win/" target="_blank" rel="noopener" data-track="cta_app_click">App</a>
+      <a href="https://checkout.mobyscreener.com/" target="_blank" rel="noopener" data-track="cta_pro_click">Pro</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  // Tile hover spotlight
+  document.querySelectorAll('.tile').forEach(function (tile) {
+    tile.addEventListener('mousemove', function (e) {
+      var rect = tile.getBoundingClientRect();
+      var x = ((e.clientX - rect.left) / rect.width) * 100;
+      var y = ((e.clientY - rect.top) / rect.height) * 100;
+      tile.style.setProperty('--mx', x + '%');
+      tile.style.setProperty('--my', y + '%');
+    });
+  });
+
+  // Analytics — no-ops unless gtag is loaded (prod hosts only)
+  function track(event, params) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', event, params || {});
+    }
+  }
+
+  // Page view (gtag config also fires its own page_view; this names the event per PM brief)
+  track('landing_page_view');
+
+  // Outbound clicks
+  document.querySelectorAll('[data-track]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      track(el.dataset.track);
+    });
+  });
+</script>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"1a64d6e51f8c400f9a2cf358d8438f0e","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

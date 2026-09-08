@@ -1,0 +1,15 @@
+User-Agent: GPTBot
+Disallow: /queries
+
+User-Agent: Baiduspider
+Disallow: /queries
+
+User-Agent: Applebot
+Disallow: /queries
+
+User-Agent: *
+Allow: /
+
+Sitemap: https://dune.com/sitemap-index.xml
+Sitemap: https://prod-dune-sitemaps.s3.eu-west-1.amazonaws.com/sitemaps/sitemap-index.xml
+Sitemap: https://docs.dune.com/sitemap.xml

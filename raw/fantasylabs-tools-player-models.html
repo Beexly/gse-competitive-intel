@@ -1,0 +1,427 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+<meta charset="utf-8">
+<title>FantasyLabs: Everything you need to win in DFS.</title>
+
+    <meta name="description" content="Subscribe to FantasyLabs and get everything you need to win consistently in DFS." />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="/favicon.ico?ver=2">
+<link rel='stylesheet' id='ebor-body-font-css' href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C500%2C600&#038;ver=8da4a75caf6ca53e6d8e56db5537462e' type='text/css' media='all' />
+<link rel='stylesheet' id='ebor-heading-font-css' href='//fonts.googleapis.com/css?family=Raleway%3A100%2C400%2C300%2C500%2C600%2C700&#038;ver=8da4a75caf6ca53e6d8e56db5537462e' type='text/css' media='all' />
+<link rel='stylesheet' id='ebor-lato-font-css' href='//fonts.googleapis.com/css?family=Lato%3A300%2C400&#038;ver=8da4a75caf6ca53e6d8e56db5537462e' type='text/css' media='all' />
+<link rel='stylesheet' id='ebor-fonts-css' href='//d3vb2af1sp9voe.cloudfront.net/assets/themes/foundry/style/css/fonts.css?ver=0.7.0145' type='text/css' media='all' />
+<link rel='stylesheet' id='ebor-style-css' href='/wp-content/themes/foundry-child/style.css?ver=0.7.0145' type='text/css' media='all' />
+
+<link href="/bundles/corecss?v=aX98pByXWQSIkJAV4G8PbgTekUJplRmF4rFroe1-gXY1" rel="stylesheet"/>
+
+
+<!-- Google Tag Manager -->
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PKD4L8X');
+</script>
+<!-- End Google Tag Manager -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-sanitize.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-touch.js"></script>
+    <script src="/app/common/js/angular-core.js?version=0.7.0145"></script>
+
+
+    <link rel="canonical" href="//www.fantasylabs.com/subscribe" />
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-sanitize.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-touch.js"></script>
+<script src="/bundles/core/js?v=WUNlE4-FLU2xvVYww6os76ChO2JF7DsvRsEpLdLKS601"></script>
+
+<script type="text/javascript">
+/* Chameleon - better user onboarding */!function(t,n,o){var a="chmln",c="setup identify alias track set show on off custom help _data".split(" ");n[a]||(n[a]={}),n[a].accountToken=o,n[a].location=n.location.href.toString();for(var e=0;e<c.length;e++)!function(){var t=n[a][c[e]+"_a"]=[];n[a][c[e]]=function(){t.push(arguments)}}();var s=t.createElement("script");s.src="https://fast.trychameleon.com/messo/"+o+"/messo.min.js",s.async=!0,t.head.appendChild(s)}(document,window,"SfirMoEKiGI7y9XYhoY9PZ8ohbZKx9CRmG83qqSfx1p8ZF-1D8umb-zQRtk56vdHgY6Q1K");
+    chmln.identify("0", {   // TODO (required) replace with a stable, unique identifier
+        email: "",        // TODO replace with the email address
+        created: -62135578800, // TODO replace with when the user was added to your system
+  });                         // TODO add additional properties such as "plan", "role", "name" or "team"
+</script>  
+    <link rel="stylesheet" type="text/css" href="/PlayerModel/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/PlayerModel/css/player-model.css">
+    <script src="/app/common/js/ui-bootstrap-tpls-0.12.0.min.js"></script>
+</head>
+<body ng-app="app" class="corporate" ng-cloak style="overflow-x:auto !important;overflow-y:hidden !important;" ng-controller="StripeSubscribeController">
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKD4L8X" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script>
+    function show(id) {
+        document.getElementById(id).style.display = 'block';
+    }
+</script>
+
+<style>
+    .disclaimer-text {
+        font-size: 9px;
+        color: lightblue;
+        white-space: normal;
+        text-align: left;
+        line-height: 2;
+        vertical-align: middle;
+        max-width: 110px;
+    }
+    .disclaimer-text:hover {
+        color: white;
+    }
+    .menu-item-blue-link a {
+        color: #03A9F4 !important;
+    }
+    .menu-item-blue-link a:hover {
+        color: #FFFFFF !important;
+    }
+    .menu-item-orange-link a {
+        color: #ff6a00 !important;
+    }
+    .menu-item-orange-link a:hover {
+        color: #FFFFFF !important;
+    }
+</style>
+
+<div id="menu-bar" class="nav-container">
+    <nav class="bg-light">
+
+        <div class="nav-bar">
+
+            <div class="module left">
+                <a href="//www.fantasylabs.com/">
+                    
+                    <img class="logo" alt="FantasyLabs" src="//media.fantasylabs.com/assets/logos-fantasylabs/FantasyLabs_Logo_FullColor.svg" style="height: 43px; width: 217px;" />                    
+                </a>
+            </div>
+
+            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                <i class="fa fa-bars"></i>
+            </div>
+
+            <div class="module-group right">
+
+                <div class="module left" style="padding-right: 0px !important;">
+                    <ul id="menu-fl-top-menu" class="menu">
+                        
+                        <li id="menu-item-14874" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14874 has-dropdown">
+                            <a>NFL</a>
+                            <ul role="menu" class="subnav">
+                                <li id="menu-item-14881" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14881"><a href="/daily-fantasy-football/">Home</a></li>
+                                <li id="menu-item-14976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14976"><a href="/nfl/simlabs/">SimLabs</a></li>
+                                <li id="menu-item-14976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14976"><a href="/nfl/player-models/">Models</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-orange-link"><a href="/picklabs/prizepicks/">PickLabs</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-blue-link">
+                                    <a href="/season-long/weekly/">Weekly Projections</a>
+                                </li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/nfl/trends/all/">Trends</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/nfl/contest-ownership/">Ownership</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/nfl/contests-dashboard/">Contest Dashboard</a></li>
+                                <li id="menu-item-14885" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14885"><a href="/nfl/vegas/">Vegas</a></li>
+                                <li id="menu-item-14977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14977"><a href="/nfl/news/">News</a></li>
+                                <li id="menu-item-9999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9999"><a href="/nfl/matchups/">Matchups</a></li>
+                                <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-"><a href="/nfl/correlations-by-sport/">Correlations</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li id="menu-item-14876" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14876 has-dropdown">
+                            <a>NBA</a>
+                            <ul role="menu" class=" subnav">
+                                <li id="menu-item-14882" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14882"><a href="/daily-fantasy-basketball/">Home</a></li>
+                                <li id="menu-item-14976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14976"><a href="/nba/simlabs/">SimLabs</a></li>
+                                <li id="menu-item-14982" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14982"><a href="/nba/player-models/">Models</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-orange-link"><a href="/picklabs/prizepicks/">PickLabs</a></li>
+                                <li id="menu-item-14983" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14983"><a href="/nba/trends/all/">Trends</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/nba/contest-ownership/">Ownership</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/nba/contests-dashboard/">Contest Dashboard</a></li>
+                                <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-"><a href="/nba/vegas/">Vegas</a></li>
+                                <li id="menu-item-14977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14977"><a href="/nba/news/">News</a></li>
+                                <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-"><a href="/nba/matchups/">Matchups</a></li>
+                                
+                                <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-"><a href="/nba/on-off/">On/Off</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-14873" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14873 has-dropdown">
+                            <a>MLB</a>
+                            <ul role="menu" class=" subnav">
+                                <li id="menu-item-14884" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14884"><a href="/daily-fantasy-baseball/">Home</a></li>
+                                <li id="menu-item-14976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14976"><a href="/mlb/simlabs/">SimLabs</a></li>
+                                <li id="menu-item-14972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14972"><a href="/mlb/player-models/">Models</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-orange-link"><a href="/picklabs/prizepicks/">PickLabs</a></li>
+                                <li id="menu-item-14972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14972"><a href="/mlb/plateiq/">PlateIQ</a></li>
+                                <li id="menu-item-14973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14973"><a href="/mlb/trends/all/">Trends</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/mlb/contest-ownership/">Ownership</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/mlb/contests-dashboard/">Contest Dashboard</a></li>
+                                <li id="menu-item-14885" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14885"><a href="/mlb/vegas/">Vegas</a></li>
+                                <li id="menu-item-14975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14975"><a href="/mlb/news/">News</a></li>
+                                <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-"><a href="/mlb/lineups/">Lineups</a></li>
+                                
+                                <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-"><a href="/mlb/correlations-by-sport/">Correlations</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-14877" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14877 has-dropdown">
+                            <a>GOLF</a>
+                            <ul role="menu" class="subnav">
+                                <li id="menu-item-14883" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14883"><a href="/daily-fantasy-golf/">Home</a></li>
+                                <li id="menu-item-14976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14976"><a href="/pga/simlabs/">SimLabs</a></li>
+                                <li id="menu-item-14878" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14878"><a href="/pga/player-models/">Models</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-orange-link"><a href="/picklabs/prizepicks/">PickLabs</a></li>
+                                <li id="menu-item-14880" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14880"><a href="/pga/trends/all/">Trends</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/pga/contest-ownership/">Ownership</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/pga/contests-dashboard/">Contest Dashboard</a></li>
+                                <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-"><a href="/pga/correlations-by-sport/">Correlations</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item- has-dropdown">
+                            <a>NHL</a>
+                            <ul role="menu" class="subnav">
+                                
+                                <li id="menu-item-14972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14972"><a href="/nhl/player-models/">Models</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-orange-link"><a href="/picklabs/prizepicks/">PickLabs</a></li>
+                                <li id="menu-item-14983" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14983"><a href="/nhl/trends/all/">Trends</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/nhl/contest-ownership/">Ownership</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/nhl/contests-dashboard/">Contest Dashboard</a></li>
+                                <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-"><a href="/nhl/vegas/">Vegas</a></li>
+                                <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-"><a href="/nhl/lines/">Team Lines</a></li>
+                                <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-"><a href="/nhl/team-ratings/">Team Ratings</a></li>
+                                <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-"><a href="/nhl/daily-starting-goalies/">Starting Goalies</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item- has-dropdown">
+                            <a>MORE</a>
+                            <ul role="menu" class="subnav">
+                                <li class="menu-item menu-item-type-custom"><a href="/cbb/player-models/">CBB - Multi Lineups</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/cfb/player-models/">CFB - Multi Lineups</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/fantasy-mma/">MMA - Home</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/mma/player-models/">MMA - Multi Lineups</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/mma/contest-ownership/">MMA - Ownership</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/mma/contests-dashboard/">MMA - Contests</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/daily-fantasy-nascar/">NAS - Home</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/nas/player-models/">NAS - Multi Lineups</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/nas/contest-ownership/">NAS - Ownership</a></li>
+                                <li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/nas/contests-dashboard/">NAS - Contests</a></li>
+                                
+                                <li class="menu-item menu-item-type-custom"><a href="/wnba/player-models/">WNBA - Multi Lineups</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item- has-dropdown">
+                            <a style="color: #03A9F4 !important;">FANTASY</a>
+                            <ul role="menu" class="subnav">
+                                <li class="menu-item menu-item-type-custom"><a href="/season-long/best-ball-rankings/">Best Ball Rankings</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/season-long/projections/">Season Projections</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/season-long/custom-cheatsheet-snake/">Snake Cheat Sheet Builder</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/season-long/custom-cheatsheet-auction/">Auction Cheat Sheet BUilder</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/season-long/weekly/">Weekly Projections</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/season-long/tiered-rankings/">Weekly Tiered Rankings</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/season-long/survivor-analysis/">Survivor Analysis</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/season-long/mock-drafts/">Mock Drafts</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item- has-dropdown">
+                            <a style="color: #ff6a00 !important;">PickLabs</a>
+                            <ul role="menu" class="subnav">
+                                <li class="menu-item menu-item-type-custom"><a href="/picklabs/bet365">PickLabs - Bet365</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/picklabs/betmgm">PickLabs - BetMGM</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/picklabs/caesars">PickLabs - Caesars</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/picklabs/draftkings">PickLabs - DraftKings</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/picklabs/fanatics">PickLabs - Fanatics</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/picklabs/fanduel">PickLabs - FanDuel</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/picklabs/hardrock">PickLabs - Hardrock</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/picklabs/prizepicks">PickLabs - Prizepicks</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/picklabs/sleeper">PickLabs - Sleeper</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/picklabs/underdog">PickLabs - Underdog</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item- has-dropdown">
+                            <a href="/fantasy-sports-offers/">Offers</a>
+                            <ul role="menu" class="subnav">
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/top-dfs-sites/">Top DFS Sites</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/polymarket-promo-code/">Polymarket Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/kalshi-signup-bonus/">Kalshi Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/underdog-promo-code/">Underdog Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/dabble-promo-code/">Dabble Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/sleeper-fantasy/">Sleeper Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/how-to-dominate-draftkings-pick6/">DraftKings Pick6 Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/fliff-promo-code/">Fliff Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/novig/">Novig Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/prophetx/">ProphetX Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/betr/">Betr Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/boom-fantasy/">Boom Fantasy Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/rebet-promo-code/">Rebet Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/chalkboard-promo-code/">Chalkboard Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/bracco/">PlayBracco Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/bn-fantasy-promo-code/">Bleacher Nation Fantasy Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/thrillzz-promo-code/">Thrillzz Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/ownersbox/">OwnersBox Promo Code</a></li>
+                                <li class="menu-item menu-item-type-custom"><a href="/articles/prizepicks-promo-code/">PrizePicks Promo Code</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id='menuItemLogin' style='display:none;border-left:0px !important;' class="module widget-handle uppercase left">
+                    <a class="btn btn-success" href="/subscribe" style="
+                       height: 30px;
+                       padding: 4px 6px;letter-spacing: 1px;
+                       width: 100px;
+                       min-width: 80px;
+                       line-height: 18px;font-weight:700;border: 2px solid #474747;
+                       font-size:12px;
+                       ">Signup</a>
+                    <a style="
+                       height: 30px;letter-spacing: 1px;
+                       padding: 4px 6px; font-weight:700; border: 2px solid #474747;
+                       width: 100px;min-width: 80px;line-height: 18px;font-size:12px;
+                       " class="btn" href="/account/login/?returnUrl=%2fsubscribe">Login</a>
+                </div>
+
+                <div id='menuItemMyAccount' style='display:none;border-width: 0;' class="module widget-handle uppercase left">
+                    <ul id="menu-my-account-menu" class="menu">
+                        <li id="menu-item-14877" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14877 has-dropdown">
+                            <a>Account</a>
+                            <ul role="menu" class=" subnav">
+                                <li id="menu-item-14987" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14987"><a href="/subscription/my-account/">Subscriptions</a></li>
+                                <li id="menu-item-14970" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14970"><a href="/support/">Support</a></li>
+                                <li id="menu-item-14988" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14988"><a href="javscript:void(0)" onclick="logout()">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                
+
+
+                <script>
+                    function logout() {
+                        jQuery.post("/api/account/logout/", function (data) {
+                            document.location.href = '/account/login/';
+                        });
+                        return false;
+                    }
+
+                    function show(id) {
+                        document.getElementById(id).style.display = 'block';
+
+                    }
+
+                    function hide(id) {
+                        document.getElementById(id).style.display = 'none';
+
+                    }
+
+
+                    window.isStripeUser = false;
+
+                    if (document.cookie.indexOf("flid") >= 0) {
+                        show("menuItemMyAccount");
+                        show("menu-item-14970");
+
+                    } else {
+                        show("menuItemLogin");
+                        show("menu-item-15797");
+                    }
+                </script>
+            </div>
+
+        </div>
+    </nav>
+</div>
+
+    <iframe ng-cloak id="stripeSubscribeIFrame" style="width:100%;" src="about:blank"></iframe>
+
+<!-- BEGIN PRE-FOOTER -->
+<!-- END PRE-FOOTER -->
+<!-- BEGIN FOOTER -->
+
+
+<!-- END FOOTER -->
+<!-- Load javascripts at bottom, this will reduce page load time -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script defer type="module" src="https://bam-static.actionnetwork.com/0.0.2/bam-scripts/bam-scripts.esm.js"></script>
+<link rel="stylesheet" href="https://bam-static.actionnetwork.com/0.0.2/bam-scripts/bam-scripts.css" />
+
+<script src="/bundles/core/footerjs?v=RvvqGSUl7FYtTrUOevujIu9XDJcrlb8eGloKmxknjDU1"></script>
+
+
+
+<script src="//fast.wistia.com/assets/external/popover-v1.js" charset="ISO-8859-1"></script>
+
+<script>
+    (function (b, c, u, s) {
+        var f = c.getElementsByTagName(s)[0];
+        var j = c.createElement(s);
+
+        j.async = true;
+        j.src = 'https://bctn-sao.s3.amazonaws.com/js/xchassis.js?t=' + (new Date().getTime() / 1000);
+
+        f.parentNode.insertBefore(j, f);
+    })(window, document, '_xchassis', 'script');
+</script>
+
+
+<!-- END PAGE LEVEL SCRIPTS -->
+    <script type="text/javascript">
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-63119625-1', 'auto', { 'allowLinker': true });
+        ga('require', 'linker');
+        ga('linker:autoLink', ['fantasylabs.chargifypay.com']);
+        ga('send', 'pageview');
+
+    </script>
+    <script>
+        !function (e, t, n, s, u, a) {
+            e.twq || (s = e.twq = function () {
+                s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+                a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+        }(window, document, 'script');
+        // Insert Twitter Pixel ID and Standard Event data below
+        twq('init', 'o403j');
+        twq('track', 'PageView');
+    </script>
+    <script>
+         
+    </script>
+
+    <script src="//media.fantasylabs.com/assets/global/plugins/bootstrap-toastr/toastr.min.js"></script>
+    <script src="/app/common/js/common.js"></script>
+    <script src="/app/common/js/angular-core.js?version=0.7.0145"></script>
+    <script src="/account/js/membership.js"></script>
+    <script src="/Stripe/js/stripe-subscribe.js"></script>
+    <script>
+        var browser = 'Other';
+        var sportId =1;
+        var reactAppsUrl = 'https://terminal.fantasylabs.com/';
+        var viewProduct = '';
+        var viewPromo = '';
+        var viewTerm = '';
+    </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nevua Markets - Winding down</title>
+<meta name="description" content="Nevua Markets is winding down. Thank you for using Nevua.">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B1017;
+    --surface:#131A25;
+    --line:rgba(236,231,221,0.10);
+    --text:#ECE7DD;
+    --muted:#889;
+    --muted-2:#8A93A3;
+    --amber:#F2B45C;
+    --amber-soft:rgba(242,180,92,0.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--ink);
+    color:var(--text);
+    font-family:'Inter',system-ui,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    padding:0 24px;
+    overflow-x:hidden;
+  }
+  /* faint vertical grid, like a chart ground */
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+                     linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+    background-size:64px 64px;
+    pointer-events:none;
+    z-index:0;
+  }
+  .wrap{
+    position:relative;
+    z-index:1;
+    max-width:640px;
+    margin:0 auto;
+    padding:88px 0 64px;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12.5px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--muted-2);
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .eyebrow::after{
+    content:"";
+    height:1px;
+    flex:1;
+    background:var(--line);
+  }
+
+  h1{
+    font-family:'Inter',system-ui,sans-serif;
+    font-weight:600;
+    font-size:clamp(40px,10vw,72px);
+    line-height:1.05;
+    letter-spacing:-0.02em;
+    margin:26px 0 0;
+  }
+  h1 em{font-style:normal;color:var(--amber)}
+
+  /* signature: the settled line */
+  .signal{
+    margin:34px 0 40px;
+  }
+  .signal svg{width:100%;height:auto;display:block;overflow:visible}
+  .signal path{
+    fill:none;
+    stroke:var(--amber);
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-dasharray:1;
+    stroke-dashoffset:1;
+    animation:draw 2.6s cubic-bezier(.55,.1,.2,1) forwards;
+  }
+  .signal .beacon{
+    fill:var(--amber);
+    opacity:0;
+    animation:appear .01s linear 2.4s forwards;
+    transform-origin:center;
+  }
+  .signal .beacon-ring{
+    fill:none;
+    stroke:var(--amber);
+    stroke-width:1.5;
+    opacity:0;
+    transform-origin:center;
+    animation:ping 2.6s ease-out 2.7s infinite;
+  }
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes appear{to{opacity:1}}
+  @keyframes ping{
+    0%{opacity:.55;transform:scale(1)}
+    70%,100%{opacity:0;transform:scale(3.4)}
+  }
+
+  .lede{
+    font-size:19px;
+    color:var(--text);
+    max-width:52ch;
+  }
+
+  section{margin-top:56px}
+  .label{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:var(--amber);
+    margin-bottom:16px;
+  }
+  p + p{margin-top:16px}
+  p{color:#D7D2C8}
+  a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--amber);padding-bottom:1px}
+  a:hover{color:var(--amber)}
+
+  .notice{
+    margin-top:56px;
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-left:2px solid var(--amber);
+    border-radius:3px;
+    padding:28px 30px;
+  }
+  .notice .label{margin-bottom:14px}
+  .notice p{color:#C9C4BB;font-size:15.5px;line-height:1.6}
+  .notice strong{color:var(--text);font-weight:500}
+
+  /* Deletion form */
+  .form-wrap{
+    margin-top:28px;
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:3px;
+    padding:28px 30px;
+  }
+  .form-wrap .label{margin-bottom:18px}
+  .input-row{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  input[type="email"]{
+    flex:1;
+    min-width:200px;
+    background:var(--ink);
+    border:1px solid rgba(236,231,221,0.18);
+    border-radius:3px;
+    color:var(--text);
+    font-family:'Inter',system-ui,sans-serif;
+    font-size:15px;
+    padding:12px 16px;
+    outline:none;
+    transition:border-color .15s;
+  }
+  input[type="email"]::placeholder{color:var(--muted-2)}
+  input[type="email"]:focus{border-color:var(--amber)}
+  button[type="submit"]{
+    background:var(--amber);
+    color:#1A1206;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:14px;
+    font-weight:500;
+    letter-spacing:0.02em;
+    padding:12px 22px;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+    white-space:nowrap;
+    transition:transform .15s ease, box-shadow .15s ease, opacity .15s;
+  }
+  button[type="submit"]:hover{transform:translateY(-1px);box-shadow:0 8px 30px -12px var(--amber)}
+  button[type="submit"]:disabled{opacity:0.5;cursor:not-allowed;transform:none;box-shadow:none}
+  .form-note{
+    margin-top:12px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:0.02em;
+    color:var(--muted-2);
+    line-height:1.6;
+  }
+  .feedback{
+    margin-top:14px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    letter-spacing:0.02em;
+    line-height:1.6;
+    display:none;
+  }
+  .feedback.success{color:#6fcf97;display:block}
+  .feedback.error{color:#eb5757;display:block}
+
+  .signoff{
+    margin-top:56px;
+    padding-top:34px;
+    border-top:1px solid var(--line);
+  }
+  .signoff .name{
+    font-family:'Inter',system-ui,sans-serif;
+    font-style:normal;
+    font-weight:500;
+    font-size:22px;
+    color:var(--text);
+    margin-top:14px;
+    letter-spacing:-0.01em;
+  }
+
+  footer{
+    margin-top:56px;
+    padding-top:26px;
+    border-top:1px solid var(--line);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    line-height:1.7;
+    letter-spacing:0.03em;
+    color:var(--muted-2);
+  }
+  footer a{border-bottom:none;color:var(--muted-2)}
+  footer a:hover{color:var(--text)}
+  .foot-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+
+  @media (max-width:520px){
+    body{font-size:16px;padding:0 20px}
+    .wrap{padding:64px 0 48px}
+    .notice,.form-wrap{padding:24px 22px}
+    .input-row{flex-direction:column}
+    button[type="submit"]{width:100%}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .signal path{animation:none;stroke-dashoffset:0}
+    .signal .beacon{animation:none;opacity:1}
+    .signal .beacon-ring{animation:none;opacity:0}
+  }
+</style>
+  <script async type="module" crossorigin src="/assets/index-RzEEBJ3a.js"></script>
+</head>
+<body>
+  <main class="wrap">
+
+    <div class="eyebrow">Nevua Markets &nbsp;·&nbsp; 2026</div>
+
+    <h1>One last<br><em>notification.</em></h1>
+
+    <div class="signal" aria-hidden="true">
+      <svg viewBox="0 0 600 150" preserveAspectRatio="none" role="presentation">
+        <path pathLength="1" d="M0,118 L38,112 L66,126 L96,98 L126,108 L158,74 L190,92 L222,62 L252,80 L292,54 L330,66 L368,50 L406,58 L446,52 L490,52 L560,52"/>
+        <circle class="beacon-ring" cx="560" cy="52" r="5"/>
+        <circle class="beacon" cx="560" cy="52" r="4.5"/>
+      </svg>
+    </div>
+
+    <p class="lede">Nevua is being phased out as we move our focus to <a href="https://v1.polysights.xyz/?utm_source=nevua" target="_blank" rel="noopener">Polysights</a>, and the existing Telegram alert setup will not continue as a separate Nevua service.</p>
+
+    <section>
+      <div class="label">What's next</div>
+      <p>We're planning alerts and related features for <a href="https://v1.polysights.xyz/?utm_source=nevua" target="_blank" rel="noopener">Polysights</a>, including workflows around watchlists and notifications. Telegram, webhooks, and higher-volume alert options are all areas we're exploring as the product develops.</p>
+      <p>The best next step is to <a href="https://v1.polysights.xyz/?utm_source=nevua" target="_blank" rel="noopener">sign up at Polysights</a> and follow the upcoming product updates there.</p>
+    </section>
+
+    <div class="notice">
+      <div class="label">Your data</div>
+      <p>Nevua stops operating on <strong>August 1, 2026</strong>. Your account, watchlists, and alerts were <strong>not transferred</strong> to Polysights or anyone else.</p>
+      <p>All personal data held by Nevua will be <strong>permanently deleted on August 31, 2026</strong>. Any remaining copy in encrypted backups is purged on its normal cycle by mid-September.</p>
+      <p>If you'd like your data deleted sooner, use the form below or email <a href="/cdn-cgi/l/email-protection#3b484e4b4b54494f7b555e4d4e5a15565a49505e4f48"><span class="__cf_email__" data-cfemail="0675737676697472466863707367286b67746d637275">[email&#160;protected]</span></a>.</p>
+    </div>
+
+    <div class="form-wrap">
+      <div class="label">Request early deletion</div>
+      <form id="deletionForm">
+        <div class="input-row">
+          <input
+            type="email"
+            id="emailInput"
+            name="email"
+            placeholder="your@email.com"
+            autocomplete="email"
+            required
+          >
+          <button type="submit" id="submitBtn">Delete my data</button>
+        </div>
+        <p class="form-note">Enter the email address associated with your Nevua account. We'll process the request within a few business days.</p>
+        <div class="feedback" id="successMsg">
+          ✓ Request received. We'll process your deletion and confirm by email.
+        </div>
+        <div class="feedback error" id="errorMsg"></div>
+      </form>
+    </div>
+
+    <section class="signoff">
+      <p>Thank you for using Nevua, and for sharing how you built it into your workflow. It's genuinely useful context for us as we shape the alerts experience in Polysights.</p>
+      <div class="name">The Nevua Markets Team</div>
+    </section>
+
+    <footer>
+      <div class="foot-top">
+        <span>© 2026 Nevua Markets</span>
+        <span><a href="/cdn-cgi/l/email-protection#a9dadcd9d9c6dbdde9c7ccdfdcc887c4c8dbc2ccddda"><span class="__cf_email__" data-cfemail="13606663637c6167537d766566723d7e726178766760">[email&#160;protected]</span></a></span>
+      </div>
+      <div>Access to any third-party platform or related functionality remains subject to its own terms and any applicable local restrictions.</div>
+    </footer>
+
+  </main>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    const form = document.getElementById('deletionForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const emailInput = document.getElementById('emailInput');
+    const successMsg = document.getElementById('successMsg');
+    const errorMsg = document.getElementById('errorMsg');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = emailInput.value.trim();
+      if (!email) { return; }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting…';
+      successMsg.className = 'feedback';
+      errorMsg.className = 'feedback';
+
+      try {
+        const res = await fetch('https://api.nevua.markets/users/request-deletion-public', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email }),
+        });
+
+        if (res.ok) {
+          successMsg.className = 'feedback success';
+          form.reset();
+          submitBtn.textContent = 'Submitted';
+        } else if (res.status === 429) {
+          errorMsg.textContent = '⚠ Too many requests. Please try again in a few minutes.';
+          errorMsg.className = 'feedback error';
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Delete my data';
+        } else {
+          throw new Error(`status ${res.status}`);
+        }
+      } catch (err) {
+        errorMsg.textContent = '⚠ Something went wrong. Please email support@nevua.markets directly.';
+        errorMsg.className = 'feedback error';
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Delete my data';
+      }
+    });
+  </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"b5efc1c7c7a64d3c837cd1701ef6bb70","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!--
+                                                                    ..;===+.
+                                                                .:=iiiiii=+=
+                                                             .=i))=;::+)i=+,
+                                                          ,=i);)I)))I):=i=;
+                                                       .=i==))))ii)))I:i++
+                                                     +)+))iiiiiiii))I=i+:'
+                                .,:;;++++++;:,.       )iii+:::;iii))+i='
+                             .:;++=iiiiiiiiii=++;.    =::,,,:::=i));=+'
+                           ,;+==ii)))))))))))ii==+;,      ,,,:=i))+=:
+                         ,;+=ii))))))IIIIII))))ii===;.    ,,:=i)=i+
+                        ;+=ii)))IIIIITIIIIII))))iiii=+,   ,:=));=,
+                      ,+=i))IIIIIITTTTTITIIIIII)))I)i=+,,:+i)=i+
+                     ,+i))IIIIIITTTTTTTTTTTTI))IIII))i=::i))i='
+                    ,=i))IIIIITLLTTTTTTTTTTIITTTTIII)+;+i)+i`
+                    =i))IIITTLTLTTTTTTTTTIITTLLTTTII+:i)ii:'
+                   +i))IITTTLLLTTTTTTTTTTTTLLLTTTT+:i)))=,
+                   =))ITTTTTTTTTTTLTTTTTTLLLLLLTi:=)IIiii;
+                  .i)IIITTTTTTTTLTTTITLLLLLLLT);=)I)))))i;
+                  :))IIITTTTTLTTTTTTLLHLLLLL);=)II)IIIIi=:
+                  :i)IIITTTTTTTTTLLLHLLHLL)+=)II)ITTTI)i=
+                  .i)IIITTTTITTLLLHHLLLL);=)II)ITTTTII)i+
+                  =i)IIIIIITTLLLLLLHLL=:i)II)TTTTTTIII)i'
+                +i)i)))IITTLLLLLLLLT=:i)II)TTTTLTTIII)i;
+              +ii)i:)IITTLLTLLLLT=;+i)I)ITTTTLTTTII))i;
+             =;)i=:,=)ITTTTLTTI=:i))I)TTTLLLTTTTTII)i;
+           +i)ii::,  +)IIITI+:+i)I))TTTTLLTTTTTII))=,
+         :=;)i=:,,    ,i++::i))I)ITTTTTTTTTTIIII)=+'
+       .+ii)i=::,,   ,,::=i)))iIITTTTTTTTIIIII)=+
+      ,==)ii=;:,,,,:::=ii)i)iIIIITIIITIIII))i+:'
+     +=:))i==;:::;=iii)+)=  `:i)))IIIII)ii+'
+   .+=:))iiiiiiii)))+ii;
+  .+=;))iiiiii)));ii+
+ .+=i:))))))))=+ii+
+.;==i+::::=)i=;
+,+==iiiiii+,
+`+=+++;`
+-->

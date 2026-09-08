@@ -1,0 +1,59 @@
+{
+  "domain": "betfame.com",
+  "disposition": "live",
+  "notes": "Parent re-verification 2026-09-08: homepage HTTP 200 (83KB raw captured). Content confirms B2C soccer tipster marketplace (picks of the day, tipster login/register, Google Analytics UA-85402409-1) — NOT a developer data-API vendor. Child classification correct; child also left no disposition key (fixed). No developer API surface found.",
+  "tech_stack": {
+    "frontend": "Server-rendered PHP-style multi-page site (English/Chinese/Indonesian locales)",
+    "backend": "NOT CONFIRMED",
+    "database": "NOT CONFIRMED",
+    "cloud": "NOT CONFIRMED",
+    "cdn": "NOT CONFIRMED",
+    "citations": [
+      "raw/fx_betfame_com_home.raw",
+      "raw/fx_betfame_com_robots.raw"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": []
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [],
+    "citations": []
+  },
+  "product_limits": {
+    "limits": "N/A (B2C marketplace, not an API product)",
+    "upgrade_triggers": "N/A",
+    "citation": "raw/fx_betfame_com_home.raw"
+  },
+  "pricing": {
+    "web": "Paid per tip / tipster subscriptions (marketplace); exact tiers NOT CONFIRMED",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "raw/fx_betfame_com_home.raw"
+    ]
+  },
+  "customer_pain": [],
+  "discovered_paths": [],
+  "discovered_targets": [],
+  "discovery_metadata": {
+    "method": "parent re-verification fetch (curl) after delegation batch; composed from raw/ evidence",
+    "timestamp": "2026-09-08T16:35:00-05:00"
+  }
+}

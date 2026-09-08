@@ -1,0 +1,48 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /monitoring
+Disallow: /home
+Disallow: /profile
+Disallow: /api-keys
+Disallow: /create
+Disallow: /feature-requests
+Disallow: /cancel
+Disallow: /completed
+Disallow: /success
+Disallow: /unsubscribe
+Disallow: /join-referral
+Disallow: /login/verify
+Disallow: /signup/verify
+Disallow: /traders/compare
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+Disallow: /*?*tab=
+Disallow: /*?*page=
+
+User-Agent: Googlebot
+Allow: /
+
+User-Agent: Bingbot
+Allow: /
+
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: OAI-SearchBot
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: Claude-Web
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+Host: https://polyalerthub.com
+Sitemap: https://polyalerthub.com/sitemap.xml

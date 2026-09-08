@@ -1,0 +1,89 @@
+URL: https://therundown.io/robots.txt\nSTATUS: 200\n\nUser-agent: *
+Disallow: /game/
+Disallow: /team/
+
+# AI / LLM crawlers — explicitly allowed everywhere we allow the default
+# crawler. Keeps TheRundown discoverable to ChatGPT, Claude, Perplexity,
+# Gemini, and the open-data crawlers that feed training corpora. See
+# llms.txt for the curated entry-point list.
+User-agent: GPTBot
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: CCBot
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: Diffbot
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /game/
+Disallow: /team/
+
+Sitemap: https://therundown.io/sitemap.xml

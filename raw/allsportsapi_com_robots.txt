@@ -1,0 +1,4 @@
+URL: https://allsportsapi.com/robots.txt\nSTATUS: 200\n\nSitemap: https://allsportsapi.com/sitemap.xml
+
+User-agent: *
+Disallow:

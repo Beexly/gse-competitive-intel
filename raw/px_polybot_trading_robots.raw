@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Allow: /llms.txt
+Disallow: /api/
+Disallow: /preview/
+
+Host: https://polybot.trading
+Sitemap: https://polybot.trading/sitemap.xml

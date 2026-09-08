@@ -1,0 +1,64 @@
+{
+  "domain": "trade360.com",
+  "disposition": "walled",
+  "notes": "Parent re-verification 2026-09-08: DNS resolves (trade360.com -> 91.238.237.11; api.trade360.com CNAME -> 91.238.237.18) but HTTP to /, www., docs., and api. all time out (curl exit 28). Batch-3 child found docs at trade360.github.io (404 on root). Site is up but unreachable from this network (geo/IP wall). Related discovered targets already in queue.json: api.trade360.com.",
+  "tech_stack": {
+    "frontend": "NOT CONFIRMED",
+    "backend": "NOT CONFIRMED",
+    "database": "NOT CONFIRMED",
+    "cloud": "NOT CONFIRMED",
+    "cdn": "NOT CONFIRMED",
+    "citations": [
+      "raw/fx_trade360_com_home.raw",
+      "raw/fx_trade360_docs_trade360_com_.raw",
+      "raw/fx_trade360_www_trade360_com_.raw"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": []
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [],
+    "citations": []
+  },
+  "product_limits": {
+    "limits": "NOT CONFIRMED",
+    "upgrade_triggers": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "pricing": {
+    "web": "NOT CONFIRMED",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": []
+  },
+  "customer_pain": [],
+  "discovered_paths": [
+    "api.trade360.com",
+    "docs.trade360.com",
+    "trade360.github.io"
+  ],
+  "discovered_targets": [
+    "api.trade360.com"
+  ],
+  "discovery_metadata": {
+    "method": "parent re-verification fetch (curl) after delegation batch; composed from raw/ evidence",
+    "timestamp": "2026-09-08T16:35:00-05:00"
+  }
+}

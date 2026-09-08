@@ -1,0 +1,67 @@
+{
+ "domain": "betstamp.com",
+ "type": "live-site",
+ "disposition": "live",
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "customer_pain": [],
+ "discovered_targets": [],
+ "tech_stack": {
+  "frontend": "Next.js",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "DigitalOcean (assets on betstamp-public.sfo2.cdn.digitaloceanspaces.com)",
+  "cdn": "DigitalOcean Spaces CDN",
+  "citations": [
+   "raw/betstamp-home.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/betstamp-home.html"
+  ]
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "B2B odds-feed positioning: 'Powering the PRO Odds Screen and sportsbook pricing feed'; 'Market makers hang lines, exchanges seed markets, and prediction markets price contracts - all off the same True Line'; widget-ready odds for affiliate placements; 200+ books claimed on PRO Odds Screen"
+  ],
+  "citations": [
+   "raw/betstamp-home.html"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "PRO Odds Screen product for 'sharp bettors and syndicates' (volume/multi-account positioning)",
+  "citation": "raw/betstamp-home.html"
+ },
+ "pricing": {
+  "web": "Price strings $14/$16/$19-$22 present (tier map NOT CONFIRMED from homepage; betstamp.com known freemium + PRO tier)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/betstamp-home.html"
+  ]
+ },
+ "discovered_paths": [
+  "/education/what-is-betstamp-guide-to-smarter-betting",
+  "/robots.txt"
+ ],
+ "discovery_metadata": {
+  "method": "batch-saved homepage + robots; probes for extra pages skipped to stay in budget",
+  "timestamp": "2026-09-08T14:25:08.325185"
+ }
+}

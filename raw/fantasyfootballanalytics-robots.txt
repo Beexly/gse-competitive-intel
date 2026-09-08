@@ -1,0 +1,10 @@
+URL: https://fantasyfootballanalytics.net/robots.txt\nSTATUS: 200\n\nSitemap: https://fantasyfootballanalytics.net/sitemap.xml
+Sitemap: https://fantasyfootballanalytics.net/news-sitemap.xml
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow:
+
+Sitemap: https://fantasyfootballanalytics.net/sitemap_index.xml
+# ---------------------------
+# END YOAST BLOCK

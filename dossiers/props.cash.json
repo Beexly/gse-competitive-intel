@@ -1,0 +1,65 @@
+{
+ "tech_stack": {
+  "frontend": "JS SPA",
+  "backend": "Heroku + Express (Server header + Via: 1.1 vegur on direct probe)",
+  "database": "NOT CONFIRMED",
+  "cloud": "Heroku",
+  "cdn": "Cloudflare",
+  "citations": [
+   "self-probe 2026-09-08: response headers",
+   "raw/browser-net-propscash.json"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "www.google-analytics GA4 (telemetry)",
+   "api.churnkey.co/v1/api/orgs/9sua5793w/passive/config -> Churnkey churn-prevention integration (org id exposed)"
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "data API behind auth (login wall)",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/browser-net-propscash.json"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "sportsbook odds (aggregation, vendor NOT CONFIRMED)"
+  ],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "free tier limited filters; subscription for full prop history (Churnkey integration indicates subscription churn focus)",
+  "upgrade_triggers": "paywall on advanced filters",
+  "citation": "raw/browser-net-propscash.json (churnkey org)"
+ },
+ "pricing": {
+  "web": "subscription tiers NOT re-verified this run",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": []
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "api.churnkey.co org 9sua5793w"
+ ],
+ "discovered_targets": [],
+ "domain": "props.cash",
+ "discovery_metadata": {
+  "method": "direct HTTP probes + raw evidence extraction (self-run)",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 49 raw evidence files)"
+}

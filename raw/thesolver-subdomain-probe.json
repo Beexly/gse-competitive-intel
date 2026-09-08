@@ -1,0 +1,22 @@
+{
+ "https://api.thesolver.com/": {
+  "status": 200,
+  "headers": {},
+  "body_head": "Welcome to running ASP.NET Core on AWS Lambda"
+ },
+ "https://api-sim.thesolver.com/": {
+  "status": 200,
+  "headers": {},
+  "body_head": "Welcome to running ASP.NET Core on AWS Lambda"
+ },
+ "https://staging.thesolver.com/": {
+  "status": null,
+  "headers": {},
+  "body_head": "<urlopen error [Errno 11001] getaddrinfo failed>"
+ },
+ "https://app.thesolver.com/": {
+  "status": null,
+  "headers": {},
+  "body_head": "<urlopen error [Errno 11001] getaddrinfo failed>"
+ }
+}

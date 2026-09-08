@@ -1,0 +1,9 @@
+targets to fetch: 150
+  20/150 (ok=16 err=4)
+  40/150 (ok=34 err=6)
+  60/150 (ok=50 err=10)
+  80/150 (ok=68 err=12)
+  100/150 (ok=85 err=15)
+  120/150 (ok=104 err=16)
+  140/150 (ok=121 err=19)
+FETCH-ALL COMPLETE: 150 targets, 131 ok, 19 hard errors

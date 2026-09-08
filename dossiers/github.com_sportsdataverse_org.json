@@ -1,0 +1,88 @@
+{
+ "domain": "github.com/sportsdataverse (org)",
+ "type": "open-source-ecosystem",
+ "tech_stack": {
+  "frontend": "n/a (data packages)",
+  "backend": "R (hoopR, cfbfastR, fastRhockey, sportyR) + Python (sportsdataverse-py) + JS (sportsdataverse-js)",
+  "database": "n/a",
+  "cloud": "n/a",
+  "cdn": "n/a",
+  "citations": [
+   "api.github.com/orgs/sportsdataverse"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "packages wrap public feeds: ESPN game APIs, NFL Shield API, MLB Stats API, Baseball Savant"
+  ],
+  "graphql_schema": "none",
+  "websocket_endpoints": [],
+  "rate_limits": "upstream API limits apply",
+  "citations": [
+   "raw/sportsdataverse-org.json"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "nfl-raw: raw + enriched NFL game JSON pipeline from NFL Shield API",
+   "where": "sportsdataverse/nfl-raw",
+   "evidence": "repo description: 'Raw + enriched NFL game JSON scraped from the NFL Shield API'"
+  },
+  {
+   "name": "nfl-data: compiled PBP datasets + EP/WP/CP models",
+   "where": "sportsdataverse/nfl-data",
+   "evidence": "repo description"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "EP/WP/CP (expected points / win probability / clutch) models shipped as datasets",
+  "training_data": "play-by-play from public feeds",
+  "update_frequency": "per game",
+  "citation": "repo descriptions"
+ },
+ "simulation_engine": {
+  "num_simulations": "n/a",
+  "correlation_method": "n/a",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "NFL Shield API",
+   "ESPN APIs",
+   "MLB Stats API",
+   "Baseball Savant",
+   "CFBD"
+  ],
+  "citations": [
+   "raw/sportsdataverse-org.json"
+  ]
+ },
+ "product_limits": {
+  "limits": "free OSS (mixed MIT/NOASSERTION licenses)",
+  "upgrade_triggers": "n/a",
+  "citation": "org repos"
+ },
+ "pricing": {
+  "web": "free",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "org repos"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "sportsdataverse/nfl-raw",
+  "sportsdataverse/nfl-data",
+  "sportsdataverse/hoopR",
+  "sportsdataverse/cfbfastR",
+  "sportsdataverse/sportsdataverse-py",
+  "sportsdataverse/sportsdataverse-js"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "GitHub org API enumeration",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

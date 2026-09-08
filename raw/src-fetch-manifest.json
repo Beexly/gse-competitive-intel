@@ -1,0 +1,131 @@
+{
+  "floodlight-sports/floodlight": [
+    {
+      "path": "floodlight/models/space.py",
+      "status": 200,
+      "chars": 33159
+    },
+    {
+      "path": "floodlight/models/kinematics.py",
+      "status": 200,
+      "chars": 12787
+    },
+    {
+      "path": "floodlight/models/geometry.py",
+      "status": 200,
+      "chars": 28830
+    },
+    {
+      "path": "floodlight/metrics/entropy.py",
+      "status": 200,
+      "chars": 3056
+    },
+    {
+      "path": "floodlight/metrics/zone_aggregation.py",
+      "status": 200,
+      "chars": 8563
+    },
+    {
+      "path": "floodlight/io/opta.py",
+      "status": 200,
+      "chars": 8348
+    }
+  ],
+  "eddwebster/football_analytics": [
+    {
+      "path": "scripts/LaurieOnTracking/Metrica_PitchControl.py",
+      "status": 200,
+      "chars": 19843
+    },
+    {
+      "path": "scripts/LaurieOnTracking/Metrica_EPV.py",
+      "status": 200,
+      "chars": 9590
+    },
+    {
+      "path": "scripts/LaurieOnTracking/Metrica_Velocities.py",
+      "status": 200,
+      "chars": 4487
+    }
+  ],
+  "n-roth12/DFSLineupOptimizer": [
+    {
+      "path": "lineup_optimizer/lineup_builder.py",
+      "status": 200,
+      "chars": 9586
+    },
+    {
+      "path": "lineup_optimizer/multi_lineup_builder.py",
+      "status": 200,
+      "chars": 3157
+    },
+    {
+      "path": "lineup_optimizer/settings/draftkings_settings.py",
+      "status": 200,
+      "chars": 3061
+    }
+  ],
+  "chanzer0/MLB-DFS-Tools": [
+    {
+      "path": "src/mlb_optimizer.py",
+      "status": 200,
+      "chars": 41709
+    },
+    {
+      "path": "src/mlb_gpp_simulator.py",
+      "status": 200,
+      "chars": 85999
+    }
+  ],
+  "jscanga/Sports-Arbitrage-Finder": [
+    {
+      "path": "src/app/api/odds/route.ts",
+      "status": 200,
+      "chars": 3414
+    }
+  ],
+  "tonyntran/fantasy-auction-assistant": [
+    {
+      "path": "backend/engine.py",
+      "status": 200,
+      "chars": 12148
+    },
+    {
+      "path": "backend/roster_optimizer.py",
+      "status": 200,
+      "chars": 6072
+    },
+    {
+      "path": "backend/opponent_model.py",
+      "status": 200,
+      "chars": 5576
+    },
+    {
+      "path": "backend/draft_plan.py",
+      "status": 200,
+      "chars": 16641
+    }
+  ],
+  "J-A-Stone-LLC/fantasy-football-gm-plugin": [
+    {
+      "path": "server/src/values.ts",
+      "status": 200,
+      "chars": 4307
+    },
+    {
+      "path": "server/src/tradeFinder.ts",
+      "status": 200,
+      "chars": 23244
+    },
+    {
+      "path": "server/src/auction.ts",
+      "status": 200,
+      "chars": 9013
+    },
+    {
+      "path": "server/src/startSit.ts",
+      "status": 200,
+      "chars": 11250
+    }
+  ]
+}

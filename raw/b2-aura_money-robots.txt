@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://aura.money
+Sitemap: https://aura.money/sitemap.xml

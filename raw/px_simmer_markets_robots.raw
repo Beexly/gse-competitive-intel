@@ -1,0 +1,14 @@
+# The v2 shell is unlaunched. Disallowing the base covers every page under it,
+# including mounts that do not exist yet — per-page <meta name="robots"> was
+# already inconsistent (HomeMarketDetailPage had none), and every new mount is
+# a fresh chance to forget one.
+#
+# Shell pages duplicate public content (/dashboard-v2/skills vs /skills,
+# /dashboard-v2/markets/:id vs /:id). Those public URLs are prerendered and
+# carry the ClawHub inbound links; a crawlable duplicate can only compete with
+# them.
+#
+# DELETE THIS RULE AT THE ROUTING FLIP, when the shell takes over /dashboard
+# and stops being a duplicate.
+User-agent: *
+Disallow: /dashboard-v2

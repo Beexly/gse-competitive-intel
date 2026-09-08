@@ -1,0 +1,83 @@
+{
+ "domain": "github.com/martineastwood/penaltyblog",
+ "type": "open-source-repo",
+ "tech_stack": {
+  "frontend": "none (Python lib)",
+  "backend": "Python (scipy, numpy, pandas)",
+  "database": "n/a",
+  "cloud": "n/a",
+  "cdn": "n/a",
+  "citations": [
+   "github.com/martineastwood/penaltyblog"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "FBref/Understat scrapers (match data pipelines)"
+  ],
+  "graphql_schema": "none",
+  "websocket_endpoints": [],
+  "rate_limits": "respectful scraper",
+  "citations": [
+   "clone: penaltyblog/"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "arbitrage stake allocation via LP",
+   "where": "penaltyblog/betting/arbitrage.py:127",
+   "evidence": "scipy.optimize.linprog(c,A_ub,bounds,method='highs') — maximize guaranteed profit G; arbitrage_hedge() hedges existing positions (line 303)"
+  },
+  {
+   "name": "Kelly criterion (incl. simultaneous bets)",
+   "where": "penaltyblog/betting/kelly.py:315",
+   "evidence": "def kelly_criterion(...)"
+  },
+  {
+   "name": "Dixon-Coles / Poisson football models",
+   "where": "penaltyblog/models/",
+   "evidence": "Poisson + Dixon-Coles adjustment, pi_rating (regex-confirmed presence)"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "Poisson/Dixon-Coles goal models, pi ratings",
+  "training_data": "FBref/Understat scrapes",
+  "update_frequency": "per match batch",
+  "citation": "clone scan"
+ },
+ "simulation_engine": {
+  "num_simulations": "Monte Carlo helpers in models module",
+  "correlation_method": "Dixon-Coles low-score adjustment",
+  "citation": "clone scan"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "FBref",
+   "Understat"
+  ],
+  "citations": [
+   "penaltyblog/scrapers/"
+  ]
+ },
+ "product_limits": {
+  "limits": "OSS",
+  "upgrade_triggers": "n/a",
+  "citation": "repo"
+ },
+ "pricing": {
+  "web": "free OSS (MIT)",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "github meta: license MIT"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "shallow clone + algorithm scan",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

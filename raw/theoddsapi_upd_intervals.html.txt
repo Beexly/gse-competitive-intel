@@ -1,0 +1,74 @@
+URL: https://the-odds-api.com/sports-odds-data/update-intervals.html\nSTATUS: 200\n\n<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Odds API Update Interval | The Odds API</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/assets/img/fav.ico">
+    <script src="https://www.google.com/recaptcha/api.js" async="true"></script>
+    <script src="https://js.stripe.com/v3/" async="true"></script>
+    <meta name="description" content="Update intervals for sports odds in The Odds API">
+    <meta name="og:title" content="Odds API Update Interval">
+    <meta name="twitter:title" content="Odds API Update Interval">
+    <meta name="og:description" content="Update intervals for sports odds in The Odds API">
+    <meta name="twitter:description" content="Update intervals for sports odds in The Odds API">
+    <meta name="og:type" content="article">
+    <meta name="og:image" content="/assets/img/interval.svg">
+    <meta name="twitter:image" content="/assets/img/interval.svg">
+    <meta name="og:site_name" content="The Odds API">
+    <meta name="twitter:site" content="@The_Odds_API">
+    <meta name="twitter:creator" content="@The_Odds_API">
+    
+    <link rel="preload" href="/assets/css/0.styles.698483c2.css" as="style"><link rel="preload" href="/assets/js/app.77b96ff3.js" as="script"><link rel="preload" href="/assets/js/3.70172c86.js" as="script"><link rel="preload" href="/assets/js/94.7117dff0.js" as="script"><link rel="preload" href="/assets/js/24.57f02abd.js" as="script"><link rel="preload" href="/assets/js/9.c232ee4e.js" as="script"><link rel="prefetch" href="/assets/js/1.11d4d171.js"><link rel="prefetch" href="/assets/js/10.678a30d1.js"><link rel="prefetch" href="/assets/js/100.51a322f9.js"><link rel="prefetch" href="/assets/js/101.2156c9b6.js"><link rel="prefetch" href="/assets/js/102.9200b745.js"><link rel="prefetch" href="/assets/js/103.76e3f4f3.js"><link rel="prefetch" href="/assets/js/104.9834c9c2.js"><link rel="prefetch" href="/assets/js/105.c727c5db.js"><link rel="prefetch" href="/assets/js/106.7fb7e458.js"><link rel="prefetch" href="/assets/js/107.6ac9517b.js"><link rel="prefetch" href="/assets/js/108.e3dfcf77.js"><link rel="prefetch" href="/assets/js/109.306debaf.js"><link rel="prefetch" href="/assets/js/11.cf94173a.js"><link rel="prefetch" href="/assets/js/110.f1b64274.js"><link rel="prefetch" href="/assets/js/111.4e67eedb.js"><link rel="prefetch" href="/assets/js/112.299d4a31.js"><link rel="prefetch" href="/assets/js/113.1e821e91.js"><link rel="prefetch" href="/assets/js/114.7785418c.js"><link rel="prefetch" href="/assets/js/115.4700c2aa.js"><link rel="prefetch" href="/assets/js/116.e4751b95.js"><link rel="prefetch" href="/assets/js/117.b6269eab.js"><link rel="prefetch" href="/assets/js/118.825bb74a.js"><link rel="prefetch" href="/assets/js/12.dae5dabe.js"><link rel="prefetch" href="/assets/js/13.191aa550.js"><link rel="prefetch" href="/assets/js/14.945d0403.js"><link rel="prefetch" href="/assets/js/15.7d410324.js"><link rel="prefetch" href="/assets/js/16.06954c99.js"><link rel="prefetch" href="/assets/js/17.01842709.js"><link rel="prefetch" href="/assets/js/18.a3b62b8b.js"><link rel="prefetch" href="/assets/js/19.6cc716b3.js"><link rel="prefetch" href="/assets/js/20.31dcd20e.js"><link rel="prefetch" href="/assets/js/21.701e9b4d.js"><link rel="prefetch" href="/assets/js/22.4e05ce36.js"><link rel="prefetch" href="/assets/js/23.7224f44e.js"><link rel="prefetch" href="/assets/js/25.da793f7c.js"><link rel="prefetch" href="/assets/js/26.ce1ba3af.js"><link rel="prefetch" href="/assets/js/27.804579ea.js"><link rel="prefetch" href="/assets/js/28.13c296be.js"><link rel="prefetch" href="/assets/js/29.3361a67b.js"><link rel="prefetch" href="/assets/js/30.e4f1a3cd.js"><link rel="prefetch" href="/assets/js/31.624ff22c.js"><link rel="prefetch" href="/assets/js/32.e162d9e9.js"><link rel="prefetch" href="/assets/js/33.bd95bea6.js"><link rel="prefetch" href="/assets/js/34.85ff8b5a.js"><link rel="prefetch" href="/assets/js/35.8a2d3f93.js"><link rel="prefetch" href="/assets/js/36.0b45155e.js"><link rel="prefetch" href="/assets/js/37.3f02160d.js"><link rel="prefetch" href="/assets/js/38.d0548fbd.js"><link rel="prefetch" href="/assets/js/39.58583dab.js"><link rel="prefetch" href="/assets/js/4.b5fcb02e.js"><link rel="prefetch" href="/assets/js/40.5b41ae55.js"><link rel="prefetch" href="/assets/js/41.c8516aca.js"><link rel="prefetch" href="/assets/js/42.3f85622d.js"><link rel="prefetch" href="/assets/js/43.a02beaee.js"><link rel="prefetch" href="/assets/js/44.ecdafa71.js"><link rel="prefetch" href="/assets/js/45.b7897354.js"><link rel="prefetch" href="/assets/js/46.7ca48d17.js"><link rel="prefetch" href="/assets/js/47.c12ec3e2.js"><link rel="prefetch" href="/assets/js/48.e1be476d.js"><link rel="prefetch" href="/assets/js/49.4418a503.js"><link rel="prefetch" href="/assets/js/5.2c781b7a.js"><link rel="prefetch" href="/assets/js/50.c6978378.js"><link rel="prefetch" href="/assets/js/51.ca61cb2b.js"><link rel="prefetch" href="/assets/js/52.8fe0a7f0.js"><link rel="prefetch" href="/assets/js/53.bad04d24.js"><link rel="prefetch" href="/assets/js/54.caa74707.js"><link rel="prefetch" href="/assets/js/55.f2130b05.js"><link rel="prefetch" href="/assets/js/56.aafa4fdf.js"><link rel="prefetch" href="/assets/js/57.56b4ec58.js"><link rel="prefetch" href="/assets/js/58.fb79a11c.js"><link rel="prefetch" href="/assets/js/59.6a774cb2.js"><link rel="prefetch" href="/assets/js/6.8487fcd4.js"><link rel="prefetch" href="/assets/js/60.adce4c68.js"><link rel="prefetch" href="/assets/js/61.0f422c18.js"><link rel="prefetch" href="/assets/js/62.43951676.js"><link rel="prefetch" href="/assets/js/63.cc0c10a6.js"><link rel="prefetch" href="/assets/js/64.46810f16.js"><link rel="prefetch" href="/assets/js/65.86c648f8.js"><link rel="prefetch" href="/assets/js/66.fbe508be.js"><link rel="prefetch" href="/assets/js/67.b17e51f0.js"><link rel="prefetch" href="/assets/js/68.76c6e246.js"><link rel="prefetch" href="/assets/js/69.d05262cd.js"><link rel="prefetch" href="/assets/js/7.b328ed97.js"><link rel="prefetch" href="/assets/js/70.9b0139a0.js"><link rel="prefetch" href="/assets/js/71.022bb65d.js"><link rel="prefetch" href="/assets/js/72.ab9d3cac.js"><link rel="prefetch" href="/assets/js/73.878373b1.js"><link rel="prefetch" href="/assets/js/74.cc2426b7.js"><link rel="prefetch" href="/assets/js/75.4f71fbbf.js"><link rel="prefetch" href="/assets/js/76.1b14d607.js"><link rel="prefetch" href="/assets/js/77.d867ac30.js"><link rel="prefetch" href="/assets/js/78.71727177.js"><link rel="prefetch" href="/assets/js/79.bcc79c83.js"><link rel="prefetch" href="/assets/js/8.108e1f51.js"><link rel="prefetch" href="/assets/js/80.8cbd08ba.js"><link rel="prefetch" href="/assets/js/81.1ee47625.js"><link rel="prefetch" href="/assets/js/82.1c8df387.js"><link rel="prefetch" href="/assets/js/83.4064b73a.js"><link rel="prefetch" href="/assets/js/84.a5c492e9.js"><link rel="prefetch" href="/assets/js/85.b6f01d18.js"><link rel="prefetch" href="/assets/js/86.53d9c149.js"><link rel="prefetch" href="/assets/js/87.cfa14ec2.js"><link rel="prefetch" href="/assets/js/88.5de02741.js"><link rel="prefetch" href="/assets/js/89.cf1c4615.js"><link rel="prefetch" href="/assets/js/90.19059a28.js"><link rel="prefetch" href="/assets/js/91.f5648405.js"><link rel="prefetch" href="/assets/js/92.fc7d7353.js"><link rel="prefetch" href="/assets/js/93.00b180ce.js"><link rel="prefetch" href="/assets/js/95.c28c8417.js"><link rel="prefetch" href="/assets/js/96.ffb0f895.js"><link rel="prefetch" href="/assets/js/97.206449a6.js"><link rel="prefetch" href="/assets/js/98.f31638ba.js"><link rel="prefetch" href="/assets/js/99.11541a5e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.698483c2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.svg" alt="The Odds API" class="logo"> <span class="site-name can-hide">The Odds API</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/liveapi/guides/v4/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/features/spreadsheets.html" class="nav-link">
+  Sheets
+</a></div><div class="nav-item"><a href="/account/" class="nav-link">
+  Account
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/liveapi/guides/v4/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/features/spreadsheets.html" class="nav-link">
+  Sheets
+</a></div><div class="nav-item"><a href="/account/" class="nav-link">
+  Account
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="odds-api-update-intervals"><a href="#odds-api-update-intervals" class="header-anchor">#</a> Odds API Update Intervals</h1> <p>Odds update at intervals which depend on the market type and the proximity to an event's start time.</p> <table><thead><tr><th>Market Type</th> <th>Pre-Match Update Interval</th> <th>In-Play Update Interval</th></tr></thead> <tbody><tr><td><a href="/sports-odds-data/betting-markets.html#featured-betting-markets">Featured Markets</a> <br><label class="text-sm">head to head / moneyline / 1x2, spreads / handicaps, totals / over &amp; under</label></td> <td>60 seconds</td> <td>40 seconds</td></tr> <tr><td><a href="/sports-odds-data/betting-markets.html#additional-markets">Additional markets</a> <br><label class="text-sm">player props, alternates, period markets</label></td> <td>60 seconds</td> <td>60 seconds</td></tr> <tr><td>Outrights / futures</td> <td>5 minutes</td> <td>60 seconds</td></tr> <tr><td>Betting exchanges (all markets)</td> <td>20 seconds</td> <td>10 seconds</td></tr></tbody></table> <br> <p>Six hours before an event's start time, the update interval begins decreasing from the pre-match interval, eventually reaching the in-play interval once the event goes live.</p> <p><img src="/assets/img/interval.svg" alt="Odds Update Interval"></p> <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfxW8riJU92gSxT3-pEaYCTx4yvB7J3hHmV6w5ZzqYLd9R11w/viewform?embedded=true&amp;usp=pp_url&amp;entry.454625652=Update+Intervals" target="_blank" rel="noopener noreferrer">Your suggestions<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> can help inform future changes to the update intervals.</p> <br> <h2 id="get-started"><a href="#get-started" class="header-anchor">#</a> Get Started</h2> <div data-v-0a492178><br data-v-0a492178> <p data-v-0a492178>
+        To discover the sports, bookmakers and markets that we cover, the first thing you will need is an API key
+    </p> <div onclick="window.location='/#get-access'" class="button full" data-v-065ab652 data-v-0a492178>
+    Get a Free API Key →
+</div> <br data-v-0a492178> <p data-v-0a492178>
+        To get started with the <b data-v-0a492178>JSON API</b>, see
+    </p> <ul data-v-0a492178><li data-v-0a492178><a href="/liveapi/guides/v4/" data-v-0a492178>Odds API docs</a></li> <li data-v-0a492178><a href="/liveapi/guides/v4/samples.html" data-v-0a492178>Python and NodeJS code samples</a></li></ul> <p data-v-0a492178>
+        To bring bookmaker odds into your website with a simple HTML tag, and to monetize with bookmaker affiliate links, 
+        checkout the <a href="/widget/" data-v-0a492178>Odds Widget</a></p> <p data-v-0a492178>
+        To get sports odds in <b data-v-0a492178>Excel</b> or <b data-v-0a492178>Google Sheets</b> at the click of a button (no coding needed), see
+    </p> <ul data-v-0a492178><li data-v-0a492178><a href="/features/excel.html" data-v-0a492178>Odds in Excel</a></li> <li data-v-0a492178><a href="/features/spreadsheets.html" data-v-0a492178>Odds in Google Sheets</a></li></ul></div> <div class="footer" data-v-f4546cee><div class="links" data-v-f4546cee><a href="https://twitter.com/The_Odds_API" data-v-f4546cee>
+            X.com
+        </a> <span data-v-f4546cee>•</span> <a href="https://bsky.app/profile/oddsapi.bsky.social" data-v-f4546cee>
+            Bluesky
+        </a> <span data-v-f4546cee>•</span> <a href="https://github.com/the-odds-api" data-v-f4546cee>
+            Github
+        </a></div> <div class="links" data-v-f4546cee><a href="https://status.the-odds-api.com/" data-v-f4546cee>
+            Status
+        </a> <span data-v-f4546cee>•</span> <a href="/terms-and-conditions.html" data-v-f4546cee>
+            Terms
+        </a> <span data-v-f4546cee>•</span> <a href="/privacy.html" data-v-f4546cee>
+            Privacy Policy
+        </a> <span data-v-f4546cee>•</span> <a href="mailto:team@the-odds-api.com" data-v-f4546cee>
+            Contact
+        </a></div> <div class="links" data-v-f4546cee><a href="/impersonation-warning.html" data-v-f4546cee>
+            ⚠️ Impersonator Warning
+        </a></div> <div class="copywrite" data-v-f4546cee>
+        © 2026 The Odds API
+    </div> <div data-v-f4546cee></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.77b96ff3.js" defer></script><script src="/assets/js/3.70172c86.js" defer></script><script src="/assets/js/94.7117dff0.js" defer></script><script src="/assets/js/24.57f02abd.js" defer></script><script src="/assets/js/9.c232ee4e.js" defer></script>
+  </body>
+</html>

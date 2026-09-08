@@ -1,0 +1,117 @@
+{
+ "domain": "lineupdrafter.com",
+ "tech_stack": {
+  "frontend": "Nuxt/Vue 3 + Vuetify (x-powered-by: Nuxt; _nuxt chunks; Vuetify CSS layers in homepage)",
+  "backend": "NOT CONFIRMED (app logic in lazy-loaded per-route Nuxt chunks, e.g. nfl-lineup-optimizer -> C0YX7PDX.js)",
+  "database": "NOT CONFIRMED (no exposure)",
+  "cloud": "NOT CONFIRMED (Cloudflare-fronted)",
+  "cdn": "Cloudflare (cf-ray -BOS/-ATL)",
+  "citations": [
+   "https://lineupdrafter.com",
+   "https://lineupdrafter.com/_nuxt/BAyOezEp.js"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED (not probed - no JS evidence)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "https://lineupdrafter.com/_nuxt/BAyOezEp.js"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "Exhaustive valid-lineup combinatorics under DK salary cap",
+   "raw_snippet": "Homepage: 'Select players from a contest's player pool and Lineup Drafter generates every valid lineup combination under the $50K salary cap. Sort and optimize by any stat, fine-tune your selections, and export straight to DraftKings.' Routes: /nfl-lineup-optimizer /nba-lineup-optimizer /mlb-lineup-optimizer /pga-lineup-optimizer /draftkings-lineup-upload",
+   "reconstruction": "Brute-force/enumeration of all valid lineup combinations under the $50,000 DraftKings salary cap (not a simulation engine); sort/filter by any stat; PGA golfers enriched with course history + recent form from 'years of PGA Tour data', salary-based value ratings; CSV export to DraftKings.",
+   "citation": "https://lineupdrafter.com"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED (stat enrichment for golf described; no model claims)",
+  "training_data": "PGA Tour historical data (course history, recent form)",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "https://lineupdrafter.com"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED (product enumerates combinations rather than simulating)",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "https://lineupdrafter.com"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "NOT CONFIRMED (no vendor strings in fetched HTML/JS)",
+   "DraftKings as export/integration target"
+  ],
+  "citations": [
+   "https://lineupdrafter.com",
+   "https://lineupdrafter.com/_nuxt/BAyOezEp.js"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED (no pricing page, no visible caps; DraftKings-only export found in main bundle; FanDuel NOT CONFIRMED)",
+  "upgrade_triggers": "NOT CONFIRMED (no paywall surface found anonymously)",
+  "citation": "https://lineupdrafter.com"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED (no /pricing or plan page discovered; homepage shows no prices besides the $50K salary cap reference)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://lineupdrafter.com"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "We Built a Free DFS Lineup Optimizer with AI Explanations · AI explains WHY each lineup was generated (not just spitting out numbers).",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1h7lp6l/we_built_a_free_dfs_lineup_optimizer_with_ai/",
+   "title": "We Built a Free DFS Lineup Optimizer with AI Explanations : r/fantasyfootball"
+  }
+ ],
+ "discovered_paths": [
+  "/about",
+  "/draftkings-lineup-upload",
+  "/golf/contests/:id",
+  "/mlb-lineup-optimizer",
+  "/mlb/contests/:id",
+  "/nba-lineup-optimizer",
+  "/nba/contests/:id",
+  "/nfl-lineup-optimizer",
+  "/nfl/contests/:id",
+  "/pga-lineup-optimizer"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "urllib GET (fetcher.py pattern) + bundle mining",
+  "timestamp": "2026-09-08T14:17:47-0500",
+  "http_requests_used": 4,
+  "request_log": [
+   {
+    "url": "https://lineupdrafter.com",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\lineupdrafter-home.html",
+    "err": null
+   },
+   {
+    "url": "https://lineupdrafter.com/robots.txt",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\lineupdrafter-robots.txt",
+    "err": null
+   },
+   {
+    "url": "https://lineupdrafter.com/sitemap.xml",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\lineupdrafter-sitemap.xml",
+    "err": null
+   },
+   {
+    "url": "https://lineupdrafter.com/_nuxt/BAyOezEp.js",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\lineupdrafter-js0.js",
+    "err": null
+   }
+  ]
+ },
+ "disposition": "live (derived from 5 raw evidence files)"
+}

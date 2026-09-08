@@ -1,0 +1,146 @@
+{
+  "domain": "prophetx.com",
+  "disposition": "live",
+  "status": "CONFIRMED (domain redirect case: prophetx.com = DTN energy trading; sports product lives at prophetx.co)",
+  "key_findings": "DOMAIN-SPLIT FINDING: prophetx.com serves \"DTN ProphetX Energy Edition\" - an energy/commodities trading platform (WordPress on WP Engine + Cloudflare + NitroPack CDN, via google) - NOT the sports product. The sports prediction market/betting exchange ProphetX lives at prophetx.co (\"America's #1 Sports Prediction Market\", iOS app id 6504584166). prophetx.co stack: Nuxt SPA behind CloudFront, Zendesk help center (prophethelp.zendesk.com), Webflow-style blog (blog.prophetx.co), sweepstakes + sports prediction rules published, payment rails include Trustly, WorldPay, PayNearMe (robots-disallowed webviews). Peer-to-peer exchange where users trade positions; Reddit notes it does not limit winners like sportsbooks but suffers thin liquidity on props.",
+  "tech_stack": {
+    "frontend": "prophetx.com: WordPress (WP Engine); prophetx.co: Nuxt/Vue SPA",
+    "backend": "NOT CONFIRMED (SPA; API not exposed in small _nuxt chunks)",
+    "database": "NOT CONFIRMED",
+    "cloud": "prophetx.co: CloudFront (via header); prophetx.com: WP Engine + Cloudflare + NitroPack",
+    "cdn": "Cloudflare (prophetx.com, cf-ray IAH) / CloudFront (prophetx.co)",
+    "citations": [
+      "raw/prophetx.com_home.html",
+      "raw/prophetx.com_prophetx.co_home.html",
+      "raw/prophetx.co_robots.txt"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED (exchange order flow likely WS but NOT CONFIRMED)",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": [
+      "raw/prophetx.co_js_558351b.js.js (no api endpoints in 3 chunks)"
+    ]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [],
+    "citations": [
+      "raw/prophetx.co_js_5239e49.js.js etc - no vendor strings in fetched chunks"
+    ]
+  },
+  "product_limits": {
+    "limits": "P2P exchange - positions matched against other users, not a book (no house limits per Reddit); sweepstakes rules + house rules published via Zendesk",
+    "upgrade_triggers": "NOT CONFIRMED",
+    "citation": "https://www.prophetx.co/prophethelp.zendesk.com/hc/en-us/articles/4675703326481-ProphetX-Sports-Prediction-Rules (via raw/prophetx.co_sitemap.xml)"
+  },
+  "pricing": {
+    "web": "NOT CONFIRMED (exchange model: no subscription page found; monetization via trading mechanics)",
+    "ios": "App Store: ProphetX Prediction Market, id6504584166",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "https://apps.apple.com/us/app/prophetx-prediction-market/id6504584166"
+    ]
+  },
+  "customer_pain": [
+    {
+      "quote": "ProphetX is a scam ... This is a complaint regarding the repeated refusal to process my withdrawal request",
+      "source": "https://www.reddit.com/r/arbitragebetting/comments/1r6qeno/prophetx_is_a_scam/",
+      "date": "2026"
+    },
+    {
+      "quote": "They need way more liquidity on ProphetX when it comes to props... bad bad for player props",
+      "source": "https://www.reddit.com/r/EVbetting/comments/1isuvab/prophetx_and_oddsjam/",
+      "date": "2025"
+    },
+    {
+      "quote": "ProphetX is an exchange. Exchanges often offer better odds than a traditional sportsbook, do not limit player[s]",
+      "source": "https://www.reddit.com/r/arbitragebetting/comments/1h02rx6/not_getting_limited_yet_thoughts/",
+      "date": "2025"
+    }
+  ],
+  "discovered_paths": [
+    "/register",
+    "/board/**",
+    "/api-status",
+    "/internal/changelog",
+    "/trustly-webview",
+    "/worldpay-webview",
+    "/pay-near-me/payment-result"
+  ],
+  "discovered_targets": [
+    "prophetx.co",
+    "blog.prophetx.co",
+    "prophethelp.zendesk.com"
+  ],
+  "discovery_metadata": {
+    "method": "urllib GET via fetcher.py pattern; 8-HTTP-req budget (2 domains)",
+    "timestamp": "2026-09-08"
+  },
+  "requests_log": [
+    {
+      "url": "https://prophetx.com/",
+      "status": 200,
+      "note": "DTN ProphetX Energy Edition (WordPress)"
+    },
+    {
+      "url": "https://prophetx.com/robots.txt",
+      "status": 200,
+      "note": "WordPress HTML, not real robots"
+    },
+    {
+      "url": "https://prophetx.com/sitemap.xml",
+      "status": 200,
+      "note": "non-XML"
+    },
+    {
+      "url": "https://www.prophetx.co/",
+      "status": 200,
+      "note": "sports prediction market lives here"
+    },
+    {
+      "url": "https://www.prophetx.co/robots.txt",
+      "status": 200
+    },
+    {
+      "url": "https://www.prophetx.co/sitemap.xml",
+      "status": 200
+    },
+    {
+      "url": "https://prophetx.co/_nuxt/5239e49.js",
+      "status": 200
+    },
+    {
+      "url": "https://prophetx.co/_nuxt/90ac6e9.js",
+      "status": 200
+    }
+  ],
+  "raw_files": [
+    "prophetx.com_home.html",
+    "prophetx.com_robots.txt",
+    "prophetx.com_sitemap.xml",
+    "prophetx.com_prophetx.co_home.html",
+    "prophetx.co_robots.txt",
+    "prophetx.co_sitemap.xml",
+    "prophetx.co_js_5239e49.js.js",
+    "prophetx.co_js_90ac6e9.js.js"
+  ],
+  "notes": [
+    "8 HTTP requests total across prophetx.com + prophetx.co - budget honored",
+    "robots.txt of prophetx.co exposes /api-status page and /internal/changelog - app-internal surface, not probed further (budget)",
+    "queue.json discovery: prophetx.co should be treated as its own target going forward"
+  ]
+}

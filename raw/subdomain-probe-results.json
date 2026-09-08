@@ -1,0 +1,32 @@
+{
+ "api.stokastic.com": {
+  "ip": null
+ },
+ "app.stokastic.com": {
+  "ip": null
+ },
+ "staging.stokastic.com": {
+  "ip": null
+ },
+ "admin.stokastic.com": {
+  "ip": null
+ },
+ "api.sabersim.com": {
+  "ip": null
+ },
+ "staging.sabersim.com": {
+  "ip": null
+ },
+ "dev.sabersim.com": {
+  "ip": null
+ },
+ "api.fantasycruncher.com": {
+  "ip": null
+ },
+ "app.fantasycruncher.com": {
+  "ip": null
+ },
+ "dev.fantasycruncher.com": {
+  "ip": null
+ }
+}

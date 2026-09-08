@@ -1,0 +1,114 @@
+{
+ "domain": "polycool.live",
+ "tech_stack": {
+  "frontend": {
+   "value": "live site, framework unclear",
+   "citation": "raw/px_polycool_live_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_polycool_live_home.raw",
+   "raw\\px_polycool_live_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apis.com",
+    "apis.com/css2"
+   ],
+   "citation": "raw/px_polycool_live_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polycool_live_home.raw"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polycool_live_home.raw"
+  },
+  "citations": [
+   "raw\\px_polycool_live_home.raw",
+   "raw\\px_polycool_live_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Polycool is the analytics and discovery app for prediction markets. Track top wa' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "Polymarket",
+    "polymarket"
+   ],
+   "citation": "raw/px_polycool_live_home.raw"
+  },
+  "citations": [
+   "raw\\px_polycool_live_home.raw",
+   "raw\\px_polycool_live_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polycool_live_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_polycool_live_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "Free"
+   ],
+   "citation": "raw/px_polycool_live_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_polycool_live_home.raw",
+   "raw\\px_polycool_live_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Disallow: /assets/",
+  "Sitemap: https://polycoolapp.com/sitemap.xml",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /"
+ ],
+ "discovered_targets": [
+  "apis.com",
+  "apis.com/css2"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:18.035036"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Polycool — Discover Top Wallets Across Prediction Markets",
+  "description": "Polycool is the analytics and discovery app for prediction markets. Track top wallets, explore real-time activity, and uncover trends across thousands of markets."
+ }
+}

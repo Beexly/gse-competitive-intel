@@ -1,0 +1,44 @@
+URL: https://www.pff.com/sitemap.xml\nSTATUS: 200\n\n<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    <sitemap>
+      <loc>https://www.pff.com/sitemaps/latest.xml</loc>
+      
+    </sitemap>
+  
+    <sitemap>
+      <loc>https://www.pff.com/sitemaps/static.xml</loc>
+      
+    </sitemap>
+  
+    <sitemap>
+      <loc>https://www.pff.com/sitemaps/teams.xml</loc>
+      
+    </sitemap>
+  
+    <sitemap>
+      <loc>https://www.pff.com/sitemaps/pages.xml</loc>
+      
+    </sitemap>
+  
+    <sitemap>
+      <loc>https://www.pff.com/sitemaps/players.xml</loc>
+      
+    </sitemap>
+  
+    <sitemap>
+      <loc>https://www.pff.com/sitemaps/authors.xml</loc>
+      
+    </sitemap>
+  
+    <sitemap>
+      <loc>https://www.pff.com/sitemaps/history.xml</loc>
+      
+    </sitemap>
+  
+    <sitemap>
+      <loc>https://www.pff.com/sitemaps/news.xml</loc>
+      
+    </sitemap>
+  
+</sitemapindex>

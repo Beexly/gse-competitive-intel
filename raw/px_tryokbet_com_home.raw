@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>okbet — Trade smarter across every prediction market</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style>
+        /* ── Reset & Base ── */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: #ffffff;
+            background: linear-gradient(135deg, #222222 0%, #333333 100%);
+            background-attachment: fixed;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('overall-1.png') center/cover no-repeat;
+            opacity: 0.15;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        a { color: inherit; text-decoration: none; }
+
+        .accent-font {
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        /* ── Design Tokens ── */
+        :root {
+            --orange: #FFA500;
+            --orange-hover: #FFBF40;
+            --card-bg: rgba(30, 30, 30, 0.85);
+            --card-border: rgba(255, 165, 0, 0.2);
+            --glass-bg: rgba(34, 34, 34, 0.8);
+            --max-width: 1200px;
+        }
+
+        /* ── Sticky Navigation ── */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 0 40px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-logo img {
+            height: 28px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            opacity: 0.7;
+            transition: opacity 0.3s, color 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 1;
+            color: var(--orange);
+        }
+
+        .nav .launch-btn {
+            background: var(--orange);
+            color: #000;
+            border: none;
+            border-radius: 9999px;
+            padding: 10px 24px;
+            font-weight: 600;
+            font-size: 14px;
+            font-family: 'DM Sans', sans-serif;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .nav .launch-btn:hover {
+            transform: translateY(-2px);
+            background: var(--orange-hover);
+        }
+
+        /* ── Hero Section ── */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 100px 40px 60px;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: var(--max-width);
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .hero-logo {
+            width: min(320px, 50vw);
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: clamp(28px, 4vw, 48px);
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 16px;
+        }
+
+        .hero .sub {
+            font-size: clamp(16px, 2vw, 20px);
+            line-height: 1.6;
+            max-width: 560px;
+            opacity: 0.8;
+            margin-bottom: 36px;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--orange);
+            color: #000;
+            border: none;
+            border-radius: 9999px;
+            padding: 14px 32px;
+            font-weight: 600;
+            font-size: 16px;
+            font-family: 'DM Sans', sans-serif;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: var(--orange-hover);
+        }
+
+        .btn-ghost {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 9999px;
+            padding: 14px 32px;
+            font-weight: 500;
+            font-size: 16px;
+            font-family: 'DM Sans', sans-serif;
+            cursor: pointer;
+            transition: transform 0.2s, border-color 0.3s;
+        }
+
+        .btn-ghost:hover {
+            transform: translateY(-2px);
+            border-color: var(--orange);
+            color: var(--orange);
+        }
+
+        .btn-telegram {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #2AABEE;
+            color: #fff;
+            border: none;
+            border-radius: 9999px;
+            padding: 14px 32px;
+            font-weight: 600;
+            font-size: 16px;
+            font-family: 'DM Sans', sans-serif;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn-telegram:hover {
+            transform: translateY(-2px);
+            background: #1D95D2;
+        }
+
+        /* Particle container — hero only */
+        .particle-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 55%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* ── Platform Bar ── */
+        .platform-bar {
+            padding: 48px 40px;
+            text-align: center;
+        }
+
+        .platform-bar .label {
+            font-family: 'Source Code Pro', monospace;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.5;
+            margin-bottom: 20px;
+        }
+
+        .platform-pills {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .platform-pill {
+            font-family: 'Source Code Pro', monospace;
+            font-size: 14px;
+            padding: 8px 20px;
+            border: 1px solid var(--card-border);
+            border-radius: 9999px;
+            color: var(--orange);
+            background: var(--card-bg);
+            transition: border-color 0.3s;
+        }
+
+        .platform-pill:hover {
+            border-color: var(--orange);
+        }
+
+        /* ── Feature Showcase ── */
+        .features {
+            padding: 80px 40px;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+            /* scroll animation */
+            opacity: 0;
+            transform: translateY(32px);
+        }
+
+        .feature-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out, border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--orange);
+            box-shadow: 0 8px 32px rgba(255, 165, 0, 0.12);
+        }
+
+        .feature-card.visible:hover {
+            transform: translateY(-6px);
+        }
+
+        .feature-placeholder {
+            height: 220px;
+            background: rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-text {
+            padding: 20px 24px 24px;
+        }
+
+        .feature-label {
+            font-family: 'Source Code Pro', monospace;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--orange);
+            margin-bottom: 8px;
+        }
+
+        .feature-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .feature-desc {
+            font-size: 14px;
+            line-height: 1.6;
+            opacity: 0.65;
+        }
+
+        /* ── Placeholder Animations ── */
+
+        /* 1. DISCOVER — animated GIF of actual okbet.trade UI */
+        .ph-discover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left top;
+        }
+
+        /* 2. INTEL — animated GIF of actual okbet.trade Intel page */
+        .ph-intel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left top;
+        }
+
+        /* 3. LEADERBOARDS — animated GIF of actual okbet.trade Leaderboards */
+        .ph-leaderboard img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left top;
+        }
+
+        /* 4. AGENT MODE — animated GIF of actual okbet.trade Agents */
+        .ph-agent img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left top;
+        }
+
+        /* 5. LIVE DEBRIEF — animated GIF of actual okbet.trade Debrief panel */
+        .ph-debrief img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: right top;
+        }
+
+        /* 6. COPY TRADING — animated GIF of actual okbet.trade Track page */
+        .ph-copy img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left top;
+        }
+
+        /* ── CTA Section ── */
+        .cta-section {
+            padding: 100px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 165, 0, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(28px, 4vw, 42px);
+            font-weight: 700;
+            margin-bottom: 16px;
+            position: relative;
+        }
+
+        .cta-section .cta-sub {
+            font-size: 18px;
+            opacity: 0.6;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        /* ── Footer ── */
+        .footer {
+            padding: 60px 40px 32px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+        }
+
+        .footer-brand img {
+            height: 28px;
+            margin-bottom: 12px;
+        }
+
+        .footer-brand p {
+            font-size: 13px;
+            opacity: 0.4;
+            max-width: 200px;
+            line-height: 1.5;
+        }
+
+        .footer-columns {
+            display: flex;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .footer-col h4 {
+            font-size: 12px;
+            font-family: 'Source Code Pro', monospace;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--orange);
+            margin-bottom: 16px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-col li a {
+            font-size: 14px;
+            opacity: 0.5;
+            transition: opacity 0.3s, color 0.3s;
+        }
+
+        .footer-col li a:hover {
+            opacity: 1;
+            color: var(--orange);
+        }
+
+        .footer-bottom {
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .footer-bottom p {
+            font-size: 12px;
+            opacity: 0.3;
+        }
+
+        .footer-bottom a {
+            font-size: 12px;
+            font-family: 'Source Code Pro', monospace;
+            opacity: 0.3;
+            transition: opacity 0.3s;
+        }
+
+        .footer-bottom a:hover {
+            opacity: 0.7;
+            color: var(--orange);
+        }
+
+
+        /* ── Responsive ── */
+        @media (max-width: 1024px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                padding: 0 20px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 90px 20px 40px;
+            }
+
+            .hero-logo {
+                width: min(240px, 70vw);
+            }
+
+            .particle-container {
+                width: 100%;
+                opacity: 0.2;
+            }
+
+            .features {
+                padding: 60px 20px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .platform-bar {
+                padding: 32px 20px;
+            }
+
+            .cta-section {
+                padding: 60px 20px;
+            }
+
+            .footer {
+                padding: 40px 20px 24px;
+            }
+
+            .footer-columns {
+                gap: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ── Sticky Nav ── -->
+    <nav class="nav">
+        <div class="nav-left">
+            <a href="#" class="nav-logo"><img src="okbet_logo.png" alt="okbet"></a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="https://docs.tryokbet.com">Docs</a>
+                <a href="https://discord.com/invite/bssQBNYwzN">Discord</a>
+            </div>
+        </div>
+        <a href="https://okbet.trade" class="launch-btn">Launch Web Terminal</a>
+    </nav>
+
+    <!-- ── Hero ── -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <img src="okbet_logo.png" alt="okbet" class="hero-logo">
+            <h1>Trade smarter across every<br>prediction market</h1>
+            <p class="sub">Aggregate Polymarket, Kalshi, Limitless, and Opinion in one place. Get AI-powered intel, follow top traders, and let agents execute the best strategies for you.</p>
+            <div class="hero-ctas">
+                <a href="https://okbet.trade" class="btn-primary">Launch Web Terminal &rarr;</a>
+                <a href="https://docs.tryokbet.com" class="btn-ghost">Read the Docs</a>
+            </div>
+            <div style="margin-top:12px">
+                <a href="https://telegram.me/okdotbet_bot" class="btn-telegram">Launch Telegram Bot &rarr;</a>
+            </div>
+        </div>
+        <div class="particle-container" id="particles"></div>
+    </section>
+
+    <!-- ── Platform Bar ── -->
+    <section class="platform-bar">
+        <p class="label">Aggregating markets from</p>
+        <div class="platform-pills">
+            <span class="platform-pill">Polymarket</span>
+            <span class="platform-pill">Kalshi</span>
+            <span class="platform-pill">Limitless</span>
+            <span class="platform-pill">Opinion</span>
+        </div>
+    </section>
+
+    <!-- ── Feature Showcase ── -->
+    <section class="features" id="features">
+        <div class="features-grid">
+
+            <!-- 1. DISCOVER -->
+            <div class="feature-card">
+                <div class="feature-placeholder ph-discover">
+                    <img src="discover-preview.gif" alt="okbet.trade discovery screen" loading="lazy">
+                </div>
+                <div class="feature-text">
+                    <p class="feature-label">Discover</p>
+                    <h3 class="feature-title">Every market. One screen.</h3>
+                    <p class="feature-desc">Browse and filter thousands of prediction markets across every major platform — all in a single unified feed.</p>
+                </div>
+            </div>
+
+            <!-- 2. INTEL -->
+            <div class="feature-card">
+                <div class="feature-placeholder ph-intel">
+                    <img src="intel-preview.gif" alt="okbet.trade Intel dashboard" loading="lazy">
+                </div>
+                <div class="feature-text">
+                    <p class="feature-label">Intel</p>
+                    <h3 class="feature-title">See what the whales see.</h3>
+                    <p class="feature-desc">Real-time whale alerts, smart money flow, and AI-curated signals — so you're never trading blind.</p>
+                </div>
+            </div>
+
+            <!-- 3. LEADERBOARDS -->
+            <div class="feature-card">
+                <div class="feature-placeholder ph-leaderboard">
+                    <img src="leaderboard-preview.gif" alt="okbet.trade Leaderboards" loading="lazy">
+                </div>
+                <div class="feature-text">
+                    <p class="feature-label">Leaderboards</p>
+                    <h3 class="feature-title">Know who's winning.</h3>
+                    <p class="feature-desc">Track the top traders by profit, win rate, and ROI. Know exactly who to follow before you copy.</p>
+                </div>
+            </div>
+
+            <!-- 4. AGENT MODE -->
+            <div class="feature-card">
+                <div class="feature-placeholder ph-agent">
+                    <img src="agent-preview.gif" alt="okbet.trade AI Agents" loading="lazy">
+                </div>
+                <div class="feature-text">
+                    <p class="feature-label">Agent Mode</p>
+                    <h3 class="feature-title">Agentic execution of the best strategies.</h3>
+                    <p class="feature-desc">Tell the AI agent what you want. It finds the best price, executes, and manages your positions autonomously.</p>
+                </div>
+            </div>
+
+            <!-- 5. LIVE DEBRIEF -->
+            <div class="feature-card">
+                <div class="feature-placeholder ph-debrief">
+                    <img src="debrief-preview.gif" alt="okbet.trade Live Debrief" loading="lazy">
+                </div>
+                <div class="feature-text">
+                    <p class="feature-label">Live Debrief</p>
+                    <h3 class="feature-title">Breaking news, priced in real-time.</h3>
+                    <p class="feature-desc">A live terminal feed that connects breaking events to market movements — timestamps, whale moves, and AI analysis in one stream.</p>
+                </div>
+            </div>
+
+            <!-- 6. COPY TRADING -->
+            <div class="feature-card">
+                <div class="feature-placeholder ph-copy">
+                    <img src="copy.png" alt="okbet.trade Copy Trading" loading="lazy">
+                </div>
+                <div class="feature-text">
+                    <p class="feature-label">Copy Trading</p>
+                    <h3 class="feature-title">Mirror the best wallets.</h3>
+                    <p class="feature-desc">One click to copy the top-performing traders. Their trades become your trades, automatically and in real time.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── CTA Section ── -->
+    <section class="cta-section">
+        <h2>Ready to trade smarter?</h2>
+        <p class="cta-sub">Join thousands of traders who never miss a market move.</p>
+        <div class="cta-buttons">
+            <a href="https://okbet.trade" class="btn-primary">Launch Web Terminal &rarr;</a>
+            <a href="https://discord.com/invite/bssQBNYwzN" class="btn-ghost">Join Discord</a>
+        </div>
+        <div style="margin-top:12px">
+            <a href="https://telegram.me/okdotbet_bot" class="btn-telegram">Launch Telegram Bot &rarr;</a>
+        </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="okbet_logo.png" alt="okbet">
+                <p>The smartest way to trade prediction markets.</p>
+            </div>
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="https://okbet.trade">Web App</a></li>
+                        <li><a href="https://telegram.me/okdotbet_bot">Telegram Bot</a></li>
+                        <li><a href="https://dexscreener.com/solana/hxyiu433tdncmmgugffgg95awtdwmbmnapaoq9sdw4cb">$OK Token</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://docs.tryokbet.com">Documentation</a></li>
+                        <li><a href="#features">Features</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="https://discord.com/invite/bssQBNYwzN">Discord</a></li>
+                        <li><a href="https://x.com/tryokbet">X / Twitter</a></li>
+                        <li><a href="https://t.me/theokbetvoid">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 okbet. All rights reserved.</p>
+            <a href="https://dexscreener.com/solana/hxyiu433tdncmmgugffgg95awtdwmbmnapaoq9sdw4cb">8biqsLDi...tzy99n on Dexscreener</a>
+        </div>
+    </footer>
+
+
+    <script>
+        // ── Particle System (hero only) ──
+        const particleContainer = document.getElementById('particles');
+        (function createParticles() {
+            const count = 200;
+            const colors = ['#FFDB58', '#FFD700', '#FFA500', '#FFBF40', '#FFE87C'];
+            for (let i = 0; i < count; i++) {
+                const p = document.createElement('div');
+                const size = Math.random() * 3;
+                p.style.cssText = `
+                    position:absolute;
+                    left:${Math.random()*100}%;
+                    top:${Math.random()*100}%;
+                    width:${size}px;
+                    height:${size}px;
+                    background:${colors[Math.floor(Math.random()*colors.length)]};
+                    border-radius:50%;
+                    opacity:${Math.random()*0.5};
+                `;
+                particleContainer.appendChild(p);
+            }
+        })();
+
+        // ── IntersectionObserver Scroll Animations ──
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.feature-card').forEach(card => observer.observe(card));
+    </script>
+</body>
+</html>

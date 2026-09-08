@@ -1,0 +1,35 @@
+URL: https://www.awesemo.com/sitemap.xml\nSTATUS: 200\n\n<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://www.stokastic.com/cfb/cfb-dfs-projections</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
+<url><loc>https://www.stokastic.com/mlb/mlb-dfs-ownership</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/mlb/mlb-dfs-projections</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
+<url><loc>https://www.stokastic.com/mma/mma-dfs-ownership</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/mma/mma-dfs-projections</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
+<url><loc>https://www.stokastic.com/nascar/nascar-dfs-ownership</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/nascar/nascar-dfs-projections</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
+<url><loc>https://www.stokastic.com/nba/nba-dfs-ownership</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/nba/nba-dfs-projections</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
+<url><loc>https://www.stokastic.com/nfl/nfl-dfs-ownership</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/nfl/nfl-dfs-projections</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
+<url><loc>https://www.stokastic.com/nhl/nhl-dfs-ownership</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/nhl/nhl-dfs-projections</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
+<url><loc>https://www.stokastic.com/pga/pga-dfs-ownership</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/pga/pga-dfs-projections</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
+<url><loc>https://www.stokastic.com/cfb</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/mlb</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/mma</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/nascar</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/nba</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/nfl</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/nhl</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/pga</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/auth/account-deleted</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.stokastic.com/contact-us</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+<url><loc>https://www.stokastic.com/dfs-sims-for-free</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+<url><loc>https://www.stokastic.com/hall-of-fame</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+<url><loc>https://www.stokastic.com</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://www.stokastic.com/pricing</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://www.stokastic.com/privacy-policy</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+<url><loc>https://www.stokastic.com/props</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.stokastic.com/terms-of-service</loc><lastmod>2026-09-03T19:26:34.092Z</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+</urlset>

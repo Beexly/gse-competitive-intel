@@ -1,0 +1,124 @@
+{
+ "domain": "polyscalping.org",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/px_polyscalping_org_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_polyscalping_org_home.raw",
+   "raw\\px_polyscalping_org_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "ws.com/champions-league-pic-QIUFsL8vaDdq.png",
+    "ws.com/country-flags/usa.png",
+    "ws.com/uefa-champions-league-2025-26-which-teams-qualify-StbSIjaEx2St.png",
+    "ws.com/jerome",
+    "ws.com/country-flags/bra.png",
+    "ws.com/country-flags/un.png"
+   ],
+   "citation": "raw/px_polyscalping_org_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyscalping_org_home.raw"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyscalping_org_home.raw"
+  },
+  "citations": [
+   "raw\\px_polyscalping_org_home.raw",
+   "raw\\px_polyscalping_org_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Real-time Polymarket scanner + full-wallet analytics across LP, maker, referral ' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "polymarket",
+    "Polymarket"
+   ],
+   "citation": "raw/px_polyscalping_org_home.raw"
+  },
+  "citations": [
+   "raw\\px_polyscalping_org_home.raw",
+   "raw\\px_polyscalping_org_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyscalping_org_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_polyscalping_org_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "Free"
+   ],
+   "citation": "raw/px_polyscalping_org_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_polyscalping_org_home.raw",
+   "raw\\px_polyscalping_org_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Allow: /",
+  "Disallow: /api/"
+ ],
+ "discovered_targets": [
+  "ws.com/champions-league-pic-QIUFsL8vaDdq.png",
+  "ws.com/country-flags/bra.png",
+  "ws.com/country-flags/un.png",
+  "ws.com/country-flags/usa.png",
+  "ws.com/jerome",
+  "ws.com/team_logos/soccer/ucl/ucl_int_90000668.png",
+  "ws.com/team_logos/soccer/ucl/ucl_rma_90000605.png",
+  "ws.com/uefa-champions-league-2025-26-which-teams-qualify-StbSIjaEx2St.png"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:07.164083"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "PolyScalping — Polymarket Scanner, Wallet Analytics &amp; LP Rewards",
+  "description": "Real-time Polymarket scanner + full-wallet analytics across LP, maker, referral &amp; yield rewards. On-chain since 2023. Free, no signup."
+ }
+}

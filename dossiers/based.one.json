@@ -1,0 +1,107 @@
+{
+ "domain": "based.one",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/b2-based_one-home.html"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b2-based_one-home.html",
+   "raw\\b2-based_one-robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apital.com/"
+   ],
+   "citation": "raw/b2-based_one-home.html"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-based_one-home.html"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-based_one-home.html"
+  },
+  "citations": [
+   "raw\\b2-based_one-home.html",
+   "raw\\b2-based_one-robots.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Trade US and Asian stock perps plus BTC, ETH, SOL and HYPE 24/7 on Hyperliquid f' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-based_one-home.html"
+  },
+  "citations": [
+   "raw\\b2-based_one-home.html",
+   "raw\\b2-based_one-robots.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-based_one-home.html"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\b2-based_one-home.html"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free"
+   ],
+   "citation": "raw/b2-based_one-home.html"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b2-based_one-home.html",
+   "raw\\b2-based_one-robots.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Sitemap: https://based.one/sitemap.xml"
+ ],
+ "discovered_targets": [
+  "apital.com/"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:44.188547"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Based - Trade Crypto, US and Asian stocks 24/7 from a self-custodial wallet",
+  "description": "Trade US and Asian stock perps plus BTC, ETH, SOL and HYPE 24/7 on Hyperliquid from a self-custody wallet. Not a broker, no bank account. $44B+ traded."
+ }
+}

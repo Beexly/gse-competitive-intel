@@ -1,0 +1,226 @@
+{
+ "sportmonks review blog pros cons": [
+  {
+   "title": "Free vs Paid Football APIs: Choosing the right option for your project",
+   "url": "https://www.sportmonks.com/blogs/free-vs-paid-football-apis-choosing-the-right-option-for-your-project/",
+   "desc": "# Free vs Paid Football APIs: Choosing the right option for your project\n## **A closer look at Sportmonks\u2019 plans**\n- **Pro (from \u20ac249/month)**: pick any 120 leagues worldwide, 3,000 calls per entity per hour. Aimed at developers building a global product rathe"
+  },
+  {
+   "title": "5 Best Sportmonks Alternatives for Developers in 2026 (Compared)",
+   "url": "https://www.thestatsapi.com/blog/sportmonks-alternative",
+   "desc": "## The 5 Best Sportmonks Alternatives\n### 1. TheStatsAPI \u2014 Best Sportmonks Alternative for Most Developers\n**Pros:** Flat-rate pricing with no add-ons.\n\n### 2. API-Football \u2014 Best for Maximum League Breadth on a Budget\n**Pros:** Widest free-tier league coverag"
+  },
+  {
+   "title": "Looking for the best bootball (soccer) data API (my experience ... - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/1i6t8e6/looking_for_the_best_bootball_soccer_data_api_my/",
+   "desc": "I use a combination of APIs, primarily Sportmonks. They're generally good for match stuff but a lot of the add-ons can become expensive quickly ..."
+  },
+  {
+   "title": "SportMonks - Pricing, Reviews, Data & APIs - Datarade",
+   "url": "https://datarade.ai/data-providers/sportmonks/profile",
+   "desc": "Rating 5.0(1)\u201cFast reliable high-quality data that is easy to implement. Good and fast service at an affordable price. Definitely highly recommended!\u201d"
+  },
+  {
+   "title": "SportsAPIPro vs SportMonks 2026: Feature-by-Feature Comparison",
+   "url": "https://sportsapipro.com/compare/sportsapipro-vs-sportmonks",
+   "desc": "## Feature-by-Feature Comparison\n| Feature | SportsAPIPro | SportMonks |\n|-|-|-|\n| Free Tier | 100 calls/day | Limited |\n| Pro Price | $49/mo | \u20ac49/mo |\n\n## Pricing Comparison\n| Plan | SportsAPIPro | SportMonks |\n|-|-|-|\n| pro | $49/mo | \u20ac49/mo |\n\n## The Verdi"
+  },
+  {
+   "title": "Sportmonks Reviews in 2026 - SourceForge",
+   "url": "https://sourceforge.net/software/product/Sportmonks/",
+   "desc": "Read Sportmonks reviews from real users, Pro starts at $5 per month and covers 130+ competitions."
+  }
+ ],
+ "\"api-football\" api-sports review pros cons blog": [
+  {
+   "title": "HOW TO GET STARTED WITH API-FOOTBALL: THE COMPLETE ...",
+   "url": "https://www.api-football.com/news/post/how-to-get-started-with-api-football-the-complete-beginners-guide",
+   "desc": "# Making your first API call\n## JavaScript (Fetch API)\n```\nconst response = await fetch('https://v3.football.api-sports.io/countries', {\n  method: 'GET',\n  headers: {\n    'x-apisports-key': 'YOUR_API_KEY_HERE',\n  },\n});\n\nconst data = await response.json();\ncon"
+  },
+  {
+   "title": "API-Football Free Key: Live Scores, Fixtures & Stats - FreeAPIHub",
+   "url": "https://freeapihub.com/apis/api-football",
+   "desc": "# API-FOOTBALL\n## Common errors & troubleshooting\n### Pros & Cons\nPros\n\n- Broad coverage of fixtures, scores, standings, teams and players worldwide\n- Live match data with events, lineups and statistics\n- Free tier to learn the API and build small projects\n- W"
+  },
+  {
+   "title": "Which are The Fastest Soccer API Providers - Goalserve",
+   "url": "https://www.goalserve.com/en/blog/which-are-the-fastest-soccer-api-providers",
+   "desc": "# Which are The Fastest Soccer API Providers\n## Top Fastest Soccer API Providers\n### 1. [GoalServe](https://www.goalserve.com/en)\n#### Cons\n- Website UI and dashboard feel outdated.\n\n### 2. [SportRadar](https://sportradar.com/)\n#### Cons\n- Expensive for small "
+  },
+  {
+   "title": "Looking for the best bootball (soccer) data API (my experience ... - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/1i6t8e6/looking_for_the_best_bootball_soccer_data_api_my/",
+   "desc": "I've been using api-football, but I don't really like it either. I built my whole database with their data and that's fine, but I've read that ..."
+  },
+  {
+   "title": "Top 10 Live Data APIs for Fantasy Sports Apps (Compared & Ranked)",
+   "url": "https://www.sonictechpro.com/blog/best-sports-data-apis-for-fantasy-sports-apps/",
+   "desc": "# Top 10 Live Data APIs for Fantasy Sports Apps (Compared & Ranked)\n## **Top 11 Sports Data APIs for Fantasy Sports Apps**\n### **3. API-Sports (API-Football)**\n- **Live scores updating ~every 15 seconds** [sufficient for casual fantasy formats](https://sportsd"
+  },
+  {
+   "title": "Sports Data Providers Compared: Which API Is Right for Your Project?",
+   "url": "https://weareexquisite.co.uk/sports-data-providers-compared-which-api-is-right-for-your-project/",
+   "desc": "API-Football. Overview: One of the most popular football APIs, offering comprehensive global coverage. Coverage: 900+ leagues and cups; 80+ ..."
+  }
+ ],
+ "thesportsdb review api free tier blog": [
+  {
+   "title": "Free Sports API - TheSportsDB.com",
+   "url": "https://www.thesportsdb.com/free_sports_api",
+   "desc": "TheSportsDB offers a free JSON sports API that allows you to access data and artwork. You may wish to upgrade to premium for more features and larger limits."
+  },
+  {
+   "title": "TheSportsDB | Open Sports Database & Free Sports API",
+   "url": "https://www.thesportsdb.com/",
+   "desc": "TheSportsDB is an open, crowd-sourced sports database with teams, events, players, artwork, scores, TV listings, highlights, and a free Sports API in JSON."
+  },
+  {
+   "title": "api-evangelist/thesportsdb: TheSportsDB ... - GitHub",
+   "url": "https://github.com/api-evangelist/thesportsdb",
+   "desc": "An open, crowd-sourced sports database of artwork and metadata with a free sports API in JSON format. Provides data on leagues, teams, players, events, venues, ..."
+  },
+  {
+   "title": "TheSportsDB Free Sports API Documentation",
+   "url": "https://www.thesportsdb.com/docs_api_guide",
+   "desc": "# Base URL\n```html\nv1 Base URL = https://www.thesportsdb.com/api/v1/json\nv2 Base URL = https://www.thesportsdb.com/api/v2/json\n```\n\n# V1 API Documentation\n```html\nhttps://www.thesportsdb.com/api/v1/json/123/lookuptable.php?l=4328\nhttps://www.thesportsdb.com/ap"
+  },
+  {
+   "title": "10 Best Sports APIs in 2026: Features, Pricing, and Real Use ...",
+   "url": "https://api.market/blog/recodex/allsportsapi/best-sports-api",
+   "desc": "## **Top 10 Sports APIs of 2026**\n### **7.** [**TheSportsDB**](https://www.thesportsdb.com/)\n- A generous free tier for personal use\n\nFree at the basic level with rate limits."
+  },
+  {
+   "title": "TheSportsDB API \u2014 Free Sports Data, Teams & Logos | FreeAPIHub",
+   "url": "https://freeapihub.com/apis/thesportsdb-api",
+   "desc": "TheSportsDB API is a free, community-run sports database covering teams, players, leagues, events and results across many sports, with logos, ..."
+  }
+ ],
+ "fantasydata.com review api developers": [
+  {
+   "title": "Build Your Own DFS & Sports Betting Model With Our New API",
+   "url": "https://fantasydata.com/build-your-own-dfs-sports-betting-model",
+   "desc": "Last season will always be free: FantasyData was built by developers, for developers, and we know how important it is to test our stuff before ..."
+  },
+  {
+   "title": "Yahoo Fantasy Sports API - Yahoo Sports Developer Portal",
+   "url": "https://sports.yahoo.com/developer/",
+   "desc": "Developers"
+  },
+  {
+   "title": "Need recommendations on the best NFL Stats API for a Fantasy Website",
+   "url": "https://www.reddit.com/r/NFLstatheads/comments/14884lz/need_recommendations_on_the_best_nfl_stats_api/",
+   "desc": "I've used FantasyData.com for non-live updates also which was a solid option but only updates once per day. fantasydata also abruptly stopped ...Has anyone been approved by yahoo for api access? - Redditr/fantasyfootball - 2016-2019 Fantasy data from fantasyda"
+  },
+  {
+   "title": "FantasyData.com API Pricing, Review and Data - SportsAPI.com",
+   "url": "https://sportsapi.com/api-directory/fantasydata/",
+   "desc": "Pricing, details and review of FantasyData.com Sports API. The data provider specializes in Affordable Fantasy Sports Data."
+  },
+  {
+   "title": "FantasyData API Integration Services in USA | SportsFirst",
+   "url": "https://www.sportsfirst.net/sportsapi/fantasydataapi",
+   "desc": "Build secure FantasyData API integration for US sports, fitness, or fan products. SportsFirst connects approved data, workflows, apps, and backend systems."
+  },
+  {
+   "title": "GitHub - n8io/fantasydata-api: A clean and complete nodejs wrapper for ...",
+   "url": "https://github.com/n8io/fantasydata-api",
+   "desc": "This wrapper provides a simple way of interacting with the exposed methods of FantasyData's various sports apis. Includes methods for MLB, NBA, NFL, and NHL."
+  }
+ ],
+ "goalserve review feed quality": [
+  {
+   "title": "Goalserve: Live Sports Data Feeds API | Live Score API Provider",
+   "url": "https://www.goalserve.com/en",
+   "desc": "Goalserve sports data feed coverage include all major leagues and sports worldwide. Detailed data coverage available. Feed include live score data, live ..."
+  },
+  {
+   "title": "Goalserve Reviews - 2026 - Slashdot",
+   "url": "https://slashdot.org/software/p/Goalserve/",
+   "desc": "The feed encompasses live score information, real-time fantasy statistics, maintains a remarkable 99% uptime guarantee."
+  },
+  {
+   "title": "About Us - Goalserve",
+   "url": "https://www.goalserve.com/en/about-us",
+   "desc": "Goalserve was established in 2005 with the promise to deliver high quality live sports data feeds at affordable prices."
+  },
+  {
+   "title": "API-SPORTS vs. Goalserve Comparison - SourceForge",
+   "url": "https://sourceforge.net/software/compare/API-SPORTS-vs-Goalserve/",
+   "desc": "Goalserve sports data feed coverage includes all major leagues and sports worldwide. Detailed data coverage is available for many popular leagues and sports ..."
+  },
+  {
+   "title": "Goalserve partners",
+   "url": "https://www.goalserve.com/en/partners",
+   "desc": "It also has a selected team of experts to guarantee the quality of its contents. customer support assistance and guarantee 99% uptime. more than 200 active ..."
+  },
+  {
+   "title": "GoalServe \u2014 independent third-party profile of a public API ... - GitHub",
+   "url": "https://github.com/api-evangelist/goalserve",
+   "desc": "GoalServe is a live sports data feeds provider delivering live scores, fixtures, standings, odds, commentaries, and team/player data"
+  }
+ ],
+ "allsportsapi review": [
+  {
+   "title": "All Sports API - GitHub",
+   "url": "https://github.com/api-evangelist/all-sports-api",
+   "desc": "All Sports API is a fast, reliable, and comprehensive sports data API providing livescore feeds, fixtures, standings, and historical data for major sports ..."
+  },
+  {
+   "title": "All Sports API - LiveScore API - Sports Feeds - Sports Data - Sports Widgets",
+   "url": "https://allsportsapi.com/",
+   "desc": "The place of fast, reliable, easy to implement, awesome documented and comprehensive sports API. Join the service and take advantages of livescore feeds ..."
+  },
+  {
+   "title": "AllSports API Pricing, Review and Data - SportsAPI.com",
+   "url": "https://sportsapi.com/api-directory/allsportsapi/",
+   "desc": "The place of fast, reliable, easy to implement, awesome documented and comprehensive sports API. Join the service and take advantages of livescore feeds from ..."
+  },
+  {
+   "title": "AllSportsApi - RapidAPI",
+   "url": "https://rapidapi.com/fluis.lacasse/api/allsportsapi2",
+   "desc": "AllSportsApi provides all our sports APIs in one. updated results, statistics, league tables, video highlights and fixtures."
+  },
+  {
+   "title": "All Sports API Reviews in 2026 - SourceForge",
+   "url": "https://sourceforge.net/software/product/All-Sports-API/",
+   "desc": "# All Sports API\n[Write a Review](https://sourceforge.net/software/product/All-Sports-API/reviews/new)\n\n(1 Rating)\n\n(41 Ratings)\n\n## About All Sports API\nOur support system is vast and works around the clock to supply your needs.\n\n### Ratings/Reviews\nOverall\n\n"
+  },
+  {
+   "title": "10 Best Sports APIs in 2026: Features, Pricing, and Real Use ...",
+   "url": "https://api.market/blog/recodex/allsportsapi/best-sports-api",
+   "desc": "## **Top 10 Sports APIs of 2026**\n### **1.** [**AllSportsAPI (via API Market)**](https://api.market/store/recodex/allsportsapi)\n- No per-sport add-on fees, everything is included in each plan"
+  }
+ ],
+ "football-data.org review free tier": [
+  {
+   "title": "Pricing - Football-Data.org",
+   "url": "https://www.football-data.org/pricing",
+   "desc": "Free Plan is Free Forever. Football Coverage to find out what competitions and data-points are included in each tier. Free w/ Livescores \u20ac12,-"
+  },
+  {
+   "title": "Registration - football-data.org",
+   "url": "https://www.football-data.org/client/register",
+   "desc": "The Football-Data API provides a free and several paid subscription tiers. Features include number of competitions, data access levels and API call limitations ..."
+  },
+  {
+   "title": "TheStatsAPI vs football-data.org: Free Tier, Pricing & Limits Compared",
+   "url": "https://www.thestatsapi.com/blog/thestatsapi-vs-football-data-org",
+   "desc": "## TL;DR\n- **Stay on football-data.org if** a permanent free tier is a hard requirement and 12 major leagues + delayed scores + no player stats is enough for your project (tutorials, hobby dashboards, learning).\n\n## football-data.org Free Tier Limits (2026)\nfo"
+  },
+  {
+   "title": "Football (Soccer) data API : r/sportsanalytics - Reddit",
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1sp8fxw/football_soccer_data_api/",
+   "desc": "For basic player/club info, football-data.org has a free tier that's decent enough for prototyping. API-Football (on RapidAPI) covers like 900+ ...Looking for the best bootball (soccer) data API (my experience ...Looking for a free (or very cheap) football dat"
+  },
+  {
+   "title": "football-data.org - ur src for machine readable football data",
+   "url": "https://www.football-data.org/",
+   "desc": "a RESTful, reliable and free football data -data.org provides football data and statistics (live scores, fixtures, tables, squads, lineups/subs, etc.) in a ..."
+  },
+  {
+   "title": "Football-Data.org Alternative: Sportmonks Compared",
+   "url": "https://www.sportmonks.com/football-api/alternatives/football-data-org/",
+   "desc": "Football-Data.org is the best free football API for learning and student projects, with a permanent free tier covering 12 major competitions and paid plans up ..."
+  }
+ ]
+}

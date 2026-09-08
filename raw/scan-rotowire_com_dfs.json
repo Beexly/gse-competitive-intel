@@ -1,0 +1,99 @@
+{
+ "home_status": 403,
+ "home_url": "https://www.rotowire.com/dfs/",
+ "robots_status": 200,
+ "robots_body": "# Sitemaps\nSitemap: https://www.rotowire.com/sitemap.xml\nSitemap: https://www.rotowire.com/news-sitemap.php\nSitemap: https://www.rotowire.com/start-sit.xml\n\nLLM-policy: https://www.rotowire.com/llms.txt\n\nUser-agent: UbiCrawler\nDisallow: /\n\nUser-agent: DOC\nDisallow: /\n\nUser-agent: Zao\nDisallow: /\n\nUser-agent: sitecheck.internetseer.com\nDisallow: /\n\nUser-agent: Zealbot\nDisallow: /\n\nUser-agent: MSIECrawler\nDisallow: /\n\nUser-agent: SiteSnagger\nDisallow: /\n\nUser-agent: WebStripper\nDisallow: /\n\nUser-agent: WebCopier\nDisallow: /\n\nUser-agent: Fetch\nDisallow: /\n\nUser-agent: Offline Explorer\nDisallow: /\n\nUser-agent: Teleport\nDisallow: /\n\nUser-agent: TeleportPro\nDisallow: /\n\nUser-agent: WebZIP\nDisallow: /\n\nUser-agent: linko\nDisallow: /\n\nUser-agent: HTTrack\nDisallow: /\n\nUser-agent: Microsoft.URL.Control\nDisallow: /\n\nUser-agent: Microsoft URL Control\nDisallow: /\n\nUser-agent: Xenu\nDisallow: /\n\nUser-agent: larbin\nDisallow: /\n\nUser-agent: libwww\nDisallow: /\n\nUser-agent: ZyBORG\nDisallow: /\n\nUser-agent: Download Ninja\nDisallow: /\n\nUser-agent: 008\nDisallow: /\n\nUser-agent: wget\nDisallow: /\n\nUser-agent: grub-client\nDisallow: /\n\nUser-agent: k2spider\nDisallow: /\n\nUser-agent: NPBot\nDisallow: /\n\nUser-agent: WebReaper\nDisallow: /\n\nUser-agent: MarketDefenderBot\nDisallow: /\n\nUser-agent: spbot\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: *\nDisallow:\nDisallow: /users/login.php?\nDisallow: /account/\nDisallow: /forum/\nDisallow: /mlbcommish02/\nDisallow: /MLBCommish02/\nDisallow: /mlbCommish02/\nDisallow: /MLBcommish02/\nDisallow: /mlbcommish03/\nDisallow: /MLBCommish03/\nDisallow: /mlbCommish03/\nDisallow: /MLBcommish03/\nDisallow: /mlbcommish04/\nDisallow: /MLBCommish04/\nDisallow: /mlbCommish04/\nDisallow: /MLBcommish04/\nDisallow: /mlbcommish05/\nDisallow: /MLBCommish05/\nDisallow: /mlbCommish05/\nDisallow: /MLBcommish05/\nDisallow: /mlbcommish06/\nDisallow: /MLBCommish06/\nDisallow: /mlbCommish06/\nDisallow: /MLBcommish06/\nDisallow: /mlbcommish07/\nDisallow: /MLBCommish07/\nDisallow: /mlbCommish07/\nDisallow: /MLBcommish07/\nDisallow: /mlbcommish08/\nDisallow: /MLBCommish08/\nDisallow: /mlbCommish08/\nDisallow: /MLBcommish08/\nDisallow: /mlbcommish09/\nDisallow: /MLBCommish09/\nDisallow: /mlbCommish09/\nDisallow: /MLBcommish09/\nDisallow: /mlbcommish10/\nDisallow: /MLBCommish10/\nDisallow: /mlbCommish10/\nDisallow: /MLBcommish10/\nDisallow: /mlbcommish11/\nDisallow: /MLBCommish11/\nDisallow: /mlbCommish11/\nDisallow: /MLBcommish11/\nDisallow: /mlbcommish12/\nDisallow: /MLBCommish12/\nDisallow: /mlbCommish12/\nDisallow: /MLBcommish12/\nDisallow: /mlbcommish13/\nDisallow: /MLBCommish13/\nDisallow: /mlbCommish13/\nDisallow: /MLBcommish13/\nDisallow: /mlbcommish14/\nDisallow: /MLBCommish14/\nDisallow: /mlbCommish14/\nDisallow: /MLBcommish14/\nDisallow: /mlbcommish15/\nDisallow: /MLBCommish15/\nDisallow: /mlbCommish15/\nDisallow: /MLBcommish15/\nDisallow: /mlbcommish16/\nDisallow: /MLBCommish16/\nDisallow: /mlbCommish16/\nDisallow: /MLBcommish16/\nDisallow: /mlbcommish17/\nDisallow: /MLBCommish17/\nDisallow: /mlbCommish17/\n",
+ "robots_sitemaps": [
+  "https://www.rotowire.com/sitemap.xml",
+  "https://www.rotowire.com/news-sitemap.php",
+  "https://www.rotowire.com/start-sit.xml"
+ ],
+ "sitemap_status": 200,
+ "sitemap_url": "https://www.rotowire.com/sitemap.xml",
+ "sitemap_loc_count": 63,
+ "sitemap_sample": [
+  "https://www.rotowire.com/aff_evergreen.xml",
+  "https://www.rotowire.com/baseball_articles.xml",
+  "https://www.rotowire.com/baseball_players.xml",
+  "https://www.rotowire.com/basketball_articles.xml",
+  "https://www.rotowire.com/basketball_players.xml",
+  "https://www.rotowire.com/betting.xml",
+  "https://www.rotowire.com/big3_articles.xml",
+  "https://www.rotowire.com/big3_players.xml",
+  "https://www.rotowire.com/cbasketball_articles.xml",
+  "https://www.rotowire.com/cbasketball_players.xml",
+  "https://www.rotowire.com/cfl_articles.xml",
+  "https://www.rotowire.com/cfl_betting_games.xml"
+ ],
+ "js_candidates_total": 0,
+ "js_fetched": [],
+ "greps": {},
+ "pricing_links": [],
+ "request_log": [
+  {
+   "url": "https://www.rotowire.com/dfs/",
+   "status": 403,
+   "error": null,
+   "ms": 130,
+   "bytes": 633,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38048374ac12c8f-DFW",
+    "content-type": "text/html"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\rotowire_com_dfs_home.html"
+  },
+  {
+   "url": "https://www.rotowire.com/robots.txt",
+   "status": 200,
+   "error": null,
+   "ms": 73,
+   "bytes": 4809,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a380483e1da42cbd-DFW",
+    "content-type": "text/plain"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\rotowire_com_dfs_robots.txt"
+  },
+  {
+   "url": "https://www.rotowire.com/sitemap.xml",
+   "status": 200,
+   "error": null,
+   "ms": 97,
+   "bytes": 7630,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a3804844cfa469bf-DFW",
+    "content-type": "text/xml"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\rotowire_com_dfs_sitemap.xml"
+  },
+  {
+   "url": "https://www.rotowire.com/openapi.json",
+   "status": 404,
+   "error": null,
+   "ms": 480,
+   "bytes": 55115,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a380484bca7b4867-DFW",
+    "content-type": "text/html; charset=UTF-8"
+   },
+   "saved": null
+  },
+  {
+   "url": "https://www.rotowire.com/swagger.json",
+   "status": 404,
+   "error": null,
+   "ms": 497,
+   "bytes": 54990,
+   "hdrs": {
+    "server": "cloudflare",
+    "cf-ray": "a38048553bd36bba-DFW",
+    "content-type": "text/html; charset=UTF-8"
+   },
+   "saved": null
+  }
+ ]
+}

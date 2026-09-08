@@ -1,0 +1,117 @@
+{
+ "domain": "fantasyfootballcalculator.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "live site, framework unclear",
+   "citation": "raw/px_fantasyfootballcalculator_com_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_fantasyfootballcalculator_com_home.raw",
+   "raw\\px_fantasyfootballcalculator_com_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apis.com",
+    "apis.com/css",
+    "ws.com/img/ffc-hero-v2.jpg",
+    "ws.com/img/ffc-hero-v2-2xl.jpg",
+    "api.com/app/js/api.min.js"
+   ],
+   "citation": "raw/px_fantasyfootballcalculator_com_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_fantasyfootballcalculator_com_home.raw"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_fantasyfootballcalculator_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_fantasyfootballcalculator_com_home.raw",
+   "raw\\px_fantasyfootballcalculator_com_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "sportsdata.io"
+   ],
+   "citation": "raw/px_fantasyfootballcalculator_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_fantasyfootballcalculator_com_home.raw",
+   "raw\\px_fantasyfootballcalculator_com_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_fantasyfootballcalculator_com_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_fantasyfootballcalculator_com_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "Free",
+    "free"
+   ],
+   "citation": "raw/px_fantasyfootballcalculator_com_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_fantasyfootballcalculator_com_home.raw",
+   "raw\\px_fantasyfootballcalculator_com_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Disallow: /api/",
+  "Disallow: /ajax/",
+  "Disallow: /ajax-v2/",
+  "Disallow: /import/",
+  "Disallow: /adp/csv/",
+  "Disallow: /draft/",
+  "Disallow: /rate-my-team/results/",
+  "Disallow: /rankings/custom/",
+  "Sitemap: https://fantasyfootballcalculator.com/sitemap.xml"
+ ],
+ "discovered_targets": [
+  "api.com/app/js/api.min.js",
+  "apis.com",
+  "apis.com/css",
+  "ws.com/img/ffc-hero-v2-2xl.jpg",
+  "ws.com/img/ffc-hero-v2.jpg"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:33.297935"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Fantasy Football Calculator - Rankings, Drafts and ADP 2026",
+  "description": "NOT CONFIRMED"
+ }
+}

@@ -1,0 +1,13 @@
+User-Agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /api
+Disallow: /api/
+Disallow: /dashboard
+Disallow: /dashboard/
+Disallow: /success
+Disallow: /trial-expired
+
+Host: https://polytrack.cash
+Sitemap: https://polytrack.cash/sitemap.xml

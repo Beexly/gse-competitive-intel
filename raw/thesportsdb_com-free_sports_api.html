@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head> <!--######## Header ########-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Free Sports API JSON NFL Soccer Premier League MLB NHL NBA Rugby Golf">
+	<meta name="author" content="TheSportsDB">
+	<title>Free Sports API - TheSportsDB.com</title>
+	<link rel="canonical" href="https://www.thesportsdb.com/free_sports_api" />
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/main2.css" rel="stylesheet">
+<meta name="insight-app-sec-validation" content="b724337f-e21c-4197-a250-1172b24ad088">
+<link rel="apple-touch-icon" sizes="57x57" href="/images/ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/ico/favicon-16x16.png">
+<link rel="manifest" href="/images/ico/manifest.json">
+
+<!-- Stats Script 
+<script
+    src="https://app.rybbit.io/api/script.js"
+    data-site-id="a4e06f799a48"
+    defer></script>
+--></head> <!--######## Header ########-->
+
+<style>
+	h1 {
+		font-family: Arial, Helvetica, sans-serif;
+		background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(14, 174, 87, 1) 0%, rgba(12, 116, 117, 1) 90%);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+</style>
+
+<body class="homepage">
+
+	<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-inverse navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/"><img src="/images/svg/site_logo_dark.svg" alt="website logo" width="245" height="75"></a>
+        <!-- Burger Menu -->
+        <button class="navbar-toggler collapsed navbar-inverse" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-expanded="false">
+            <span class="navbar-toggler-icon white"></span>
+        </button>
+        <!-- Large Menu -->
+        <div class="navbar-collapse collapse" id="mynavbar">
+            <ul class="navbar-nav ms-auto">
+                <!-- Browse Dropdown -->
+                <li class=" nav-item dropdown dropdown-menu-dark nav-item">
+                    <a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Data</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li class='py-2'><a href="/activity">Site Activity</a></li>
+                        <li class='py-2'><a href="/sport/leagues">Browse Leagues</a></li>
+                        <!-- <li class='py-2'><a href="/browse_teams">Teams</a></li> -->
+                        <li class='py-2'><a href="/browse_venues">Browse Venues</a></li>
+                        <!-- <li class='py-2'><a href="/browse_players">Players</a></li> -->
+                        <!-- <li class='py-2'><a href="/browse_seasons">Seasons</a></li> -->
+                        <li class='py-2'><a href="/browse_collections">Browse Collections</a></li>
+                        <li class='py-2'><a href="/browse_honours">Browse Honours</a></li>
+                        <li class='py-2'><a href="/browse_milestones">Browse Milestones</a></li>
+                        <!-- <li class='py-2'><a href="/browse_events">Events</a></li> -->
+                        <li class='py-2'><a href="/browse_tv">TV Sport Listings</a></li>
+                        <li class='py-2'><a href="/browse_calendar">Sport Calendar</a></li>
+                        <li class='py-2'><a href="/browse_highlights">Event Highlights</a></li>
+                    </ul>
+                </li>
+
+                <!-- Contribute Dropdown -->
+                <li class="nav-item dropdown nav-item">
+                    <a href='#' class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Edit</a>
+                    <ul class="dropdown-menu dropdown-menu-dark px-1">
+                        <li class='py-2'><a href="/contribute_guide">Contribute Guide</a></li>
+                        <li class='py-2'><a href="https://www.thesportsdb.com/forum_topic.php?t=5726">Apply Editor</a></li>
+                        <li class='py-2'><a href="/player_birthday">Player Birthdays</a></li>
+                        <li class='py-2'><a href="/missing_scores">Missing Scores</a></li>
+                        <li class='py-2'><a href="/missing_highlights">Missing Highlights</a></li>
+                        <!-- <li class='py-2'><a href="/missing_artwork">Missing Artwork</a></li> -->
+                        <li class='py-2'><a href="/missing_seasons">Missing Seasons</a></li>
+                        <li class='py-2'><a href="/latest_transfers">Latest Transfers</a></li>
+                        <li class='py-2'><a href="/latest_honours">Latest Honours</a></li>
+                        <li class='py-2'><a href="/latest_stats">Latest Stats</a></li>
+                    </ul>
+                </li>
+
+                <!-- Developers Dropdown-->
+                <li class="dropdown nav-item">
+                    <a href='#' class="dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">Develop</a>
+                    <ul class="dropdown-menu dropdown-menu-dark px-1">
+                        <li class='py-2'><a href="/pricing">Pricing</a></li>
+                        <li class='py-2'><a href="/free_sports_api">Free Sports API</a></li>
+                        <li class='py-2'><a href="/documentation">API Documentation</a></li>
+                        <li class='py-2'><a href="/docs_api_examples">API Code Examples</a></li>
+                        <li class='py-2'><a href="/docs_api_testing">API Testing Guide</a></li>
+                        <li class='py-2'><a href="/docs_api_data">API Data Guide</a></li>
+                        <li class='py-2'><a href="/docs_artwork">Artwork Types</a></li>
+                        <li class='py-2'><a href="https://trello.com/b/PMumZYQg/thesportsdb">Roadmap</a></li>
+                        <li class='py-2'><a href="/docs_libraries">3rd Party Libraries</a></li>
+                        <li class='py-2'><a href="/docs_kodi_scraper">Kodi Scraper</a></li>
+                        <li class='py-2'><a href="/forum_topic.php?t=1807">Plex Scraper</a></li>
+                    </ul>
+                </li>
+
+                <!-- Tools -->
+                <li class="dropdown nav-item">
+                    <a href='#' class="dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
+                    <ul class="dropdown-menu dropdown-menu-dark px-1">
+                        <li class='py-2'><a href="/forum">Forum</a></li>
+                        <li class='py-2'><a href="https://discord.gg/pFvgaXV">Discord Chat</a></li>
+                        <li class='py-2'><a href="/top100">Top 100 Events</a></li>
+                        <li class='py-2'><a href="/hall_of_fame_player">Charts Player</a></li>
+                        <li class='py-2'><a href="/hall_of_fame_team">Charts Team</a></li>
+                        <li class='py-2'><a href="https://pixelite-photo-editor.thedatadb.chatgpt.site/">Quick Image (Beta)</a></li>
+                    </ul>
+                </li>
+
+                <!-- Username -->
+                <li class='dropdown nav-item px-1'><a href='/user_login.php'>Login</a> <a href='/user_register.php'>Signup</a></li>
+                <!-- Search Box -->
+                <li class="dropdown nav-item">
+                    <div class="search">
+                        <form role="form" action="/browse">
+                            <input type="text" name="s" class="search-form" autocomplete="off" placeholder=" Search" />
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+	<section id="feature">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12"> <!--/#Padder-->
+					<a href='/' />Home </a> / <a href='/free_sports_api' />Free Sports API</a>				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 center">
+
+					<br>
+					<h1>Free Sports API</h1><br><br>
+					<h2><img src='images/icons/thumb_up.gif' alt='Thumbs Up icon' width='16' height='16'> About</h2>
+					TheSportsDB offers a free JSON sports API that allows you to access data and artwork.
+					<br><br>You may wish to <a href='/pricing'>upgrade to premium</a> for more features and larger limits.
+					<br>However we endevor to always remain free at point of access.<br>
+					<br><br>
+
+					<a href='/documentation'> <button type='button' class='btn btn-success'>API Documentation</button></a>
+
+					<a href='/docs_api_examples'> <button type='button' class='btn btn-secondary'>API Code Tutorials</button></a><br><br><br>
+
+
+					<h2><img src='images/icons/up_arrow.png' loading='lazy' alt='Up Arrow'> Premium API</h2>
+					<a href='/pricing'>$9 monthly supporters</a> get a dedicated production API key as well as access to the V2 API <br>
+					including 2min Livescores, Video highlights and all other upgraded features.<br>
+
+					<br>Once signed up you can find your API key on your user profile page</a>.<br><br><br>
+
+					<a href='/pricing'> <button type='button' class='btn btn-warning'>Go Premium</button></a><br><br>
+					<br>
+
+					<h2><img src='images/icons/email.png' alt='Email icon' loading='lazy' width='16' height='16'> Contact</h2>
+					Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="25514d40414451444147654248444c490b464a48">[email&#160;protected]</a><br>
+					Please state if you are a Premium member<br><br>
+
+
+				</div><!--/#close main area-->
+			</div>
+		</div> <!--/#end container-->
+	</section><!--/#bottom-->
+
+	<!--######## Footer ########-->
+<footer id="footer" class="midnight-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                2016 - 2026 TheSportsDB.com
+                <br>
+                <a href='/free_sports_api'>Free Sports API</a>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-center">
+                    Socials:
+                    <a href="https://www.facebook.com/profile/61588263891636"><img src="/images/icons/svg/socials/social-f.svg" width='32' height="32" alt='facebook icon'></a>
+                    <a href="https://x.com/TheAudioDB"><img src="/images/icons/svg/socials/social-x.svg" width='32' height="32" alt='twitter icon'></a>
+                    <a href="https://discord.gg/pFvgaXV"><img src="/images/icons/svg/socials/social-d.svg" width='32' height="32" alt='discord icon'></a><br>
+                    <div style="margin: 4px 0 10px 0; line-height: 1;">
+                        <i class="fa fa-clock-o" style="font-size:0.85em; margin-right:2px;" aria-hidden="true"></i>
+                        <span style="font-size:0.9em; margin-right:4px;">Timezone:</span>
+                        <span style="font-size:0.95em; text-transform:uppercase;">utc</span>
+                    </div>
+                    <a href="https://www.thecocktaildb.com" rel="noopener" target="_blank"><img src="/images/logo-tcdb.png" height="30" width="190" alt="thecocktaildb logo"></a>
+                    <a href="https://www.theaudiodb.com" rel="noopener" target="_blank"><img src="/images/logo-tadb.png" height="40" alt="theaudiodb logo"></a>
+                    <a href="https://www.themealdb.com" rel="noopener" target="_blank"><img src="/images/logo-tmdb.png" height="30" width="159" alt="themealdb logo"></a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <ul class="pull-right">
+                    <li><a href="/docs_about.php">About</a></li>
+                    <li><a href="/docs_terms_of_use.php">Terms</a></li>
+                    <li><a href="/docs_privacy_policy.php">Privacy</a></li>
+                    <li><a href="/docs_refunds.php">Refunds</a></li>
+                    <li><a href="/docs_contact.php">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--######## Footer ########-->
+	<!--######## Scripts ########-->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/webmcp.js"></script>
+<!--######## Scripts ########-->
+
+</body>
+
+</html>

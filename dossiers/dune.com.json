@@ -1,0 +1,104 @@
+{
+ "domain": "dune.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw/dune.api-root.json"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\dune.api-root.json",
+   "raw\\dune.com.html",
+   "raw\\dune.com.robots.txt",
+   "raw\\dune.com.robots2.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "ws.com/sitemaps/sitemap-index.xml"
+   ],
+   "citation": "raw/dune.api-root.json"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\dune.api-root.json"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\dune.api-root.json"
+  },
+  "citations": [
+   "raw\\dune.api-root.json",
+   "raw\\dune.com.html",
+   "raw\\dune.com.robots.txt",
+   "raw\\dune.com.robots2.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\dune.api-root.json"
+  },
+  "citations": [
+   "raw\\dune.api-root.json",
+   "raw\\dune.com.html",
+   "raw\\dune.com.robots.txt",
+   "raw\\dune.com.robots2.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\dune.api-root.json"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\dune.api-root.json"
+ },
+ "pricing": {
+  "web": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\dune.api-root.json"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\dune.api-root.json",
+   "raw\\dune.com.html",
+   "raw\\dune.com.robots.txt",
+   "raw\\dune.com.robots2.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "ws.com/sitemaps/sitemap-index.xml"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:45.804918"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "NOT CONFIRMED",
+  "description": "NOT CONFIRMED"
+ }
+}
