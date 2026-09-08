@@ -1,0 +1,77 @@
+{
+ "home_status": 404,
+ "home_url": "https://www.draftkings.com/predictions",
+ "robots_status": 200,
+ "robots_body": "User-agent: *\nDisallow: /video/\nDisallow: /_assets/\nDisallow: /_landing/\nDisallow: /_raptor/\nDisallow: /lobby-classic/\nDisallow: /account/\nDisallow: /mycontests/\nDisallow: /contests/gamecenter/\nDisallow: /lineup/\nDisallow: /missions/\nDisallow: /contest/\nDisallow: /draft/\nSitemap: https://www.draftkings.com/sitemap.xml\nDisallow:*wpsrc=*\nDisallow:*referrer*",
+ "robots_sitemaps": [
+  "https://www.draftkings.com/sitemap.xml"
+ ],
+ "sitemap_status": 200,
+ "sitemap_url": "https://www.draftkings.com/sitemap.xml",
+ "sitemap_loc_count": 2,
+ "sitemap_sample": [
+  "https://www.draftkings.com/sitemaps/DFSCrawlerUriProvider_0.xml",
+  "https://www.draftkings.com/sitemaps/GatsbyDFSContentstackUriProvider_0.xml"
+ ],
+ "js_candidates_total": 0,
+ "js_fetched": [],
+ "greps": {},
+ "pricing_links": [],
+ "request_log": [
+  {
+   "url": "https://www.draftkings.com/predictions",
+   "status": 404,
+   "error": null,
+   "ms": 428,
+   "bytes": 90754,
+   "hdrs": {
+    "content-type": "text/html; charset=utf-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\draftkings_com_predictions_home.html"
+  },
+  {
+   "url": "https://www.draftkings.com/robots.txt",
+   "status": 200,
+   "error": null,
+   "ms": 235,
+   "bytes": 357,
+   "hdrs": {
+    "content-type": "text/plain"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\draftkings_com_predictions_robots.txt"
+  },
+  {
+   "url": "https://www.draftkings.com/sitemap.xml",
+   "status": 200,
+   "error": null,
+   "ms": 58,
+   "bytes": 462,
+   "hdrs": {
+    "content-type": "text/xml"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\draftkings_com_predictions_sitemap.xml"
+  },
+  {
+   "url": "https://www.draftkings.com/openapi.json",
+   "status": 404,
+   "error": null,
+   "ms": 290,
+   "bytes": 90813,
+   "hdrs": {
+    "content-type": "text/html; charset=utf-8"
+   },
+   "saved": null
+  },
+  {
+   "url": "https://www.draftkings.com/swagger.json",
+   "status": 404,
+   "error": null,
+   "ms": 423,
+   "bytes": 90710,
+   "hdrs": {
+    "content-type": "text/html; charset=utf-8"
+   },
+   "saved": null
+  }
+ ]
+}

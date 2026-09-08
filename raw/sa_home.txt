@@ -1,0 +1,1066 @@
+URL: https://sportsapi.com/\nSTATUS: 200\n\n
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SportsAPI.com - Best Sports API Pricing and Reviews</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SportsAPI.com" />
+    
+    <meta name="description" content="SportsAPI.com is an API directory and pricing tool to compare the best sports data providers by pricing, coverage and reviews.">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="https://sportsapi.com" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+    <link rel="manifest" href="/static/images/site.webmanifest">
+    <!-- Stylesheets & Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    
+        <link type="text/css" href="/static/css/base_critical.min.css" rel="stylesheet">
+    
+    
+    
+
+
+    <script>
+        /* prevent Firefox FOUC */
+        let FF_FOUC_FIX;
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context" : "http://schema.org",
+            "@type" : "Organization",  
+            "name" : "SportsAPI.com",
+            "url" : "https://sportsapi.com", 
+            "logo": "https://sportsapi.com/static/images/custom/scores-app-with-code-sm.jpg"
+        }
+    </script>
+
+
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TFGX2N4');</script>
+    <!-- End Google Tag Manager -->
+
+
+
+<script>
+    const TURNSTILE_SITE_KEY = "0x4AAAAAADWMPx2Dntl3AeSL";
+
+    function onTurnstileLoad() {
+        if (document.querySelector('#turnstile-sidebar')) {
+            turnstile.render('#turnstile-sidebar', {
+                sitekey: TURNSTILE_SITE_KEY,
+                'refresh-expired': 'auto',  // ← auto refresh when expired
+                callback: function(token) {
+                    window.turnstile_sidebar_token = token;
+                },
+                'expired-callback': function() {
+                    window.turnstile_sidebar_token = '';
+                    turnstile.reset('#turnstile-sidebar');  // ← get fresh token
+                },
+                'error-callback': function() {
+                    window.turnstile_sidebar_token = '';
+                    setTimeout(function() {
+                        turnstile.reset('#turnstile-sidebar');
+                    }, 2000);
+                }
+            });
+        }
+        if (document.querySelector('#turnstile-modal')) {
+            turnstile.render('#turnstile-modal', {
+                sitekey: TURNSTILE_SITE_KEY,
+                'refresh-expired': 'auto',  // ← auto refresh when expired
+                callback: function(token) {
+                    window.turnstile_modal_token = token;
+                },
+                'expired-callback': function() {
+                    window.turnstile_modal_token = '';
+                    turnstile.reset('#turnstile-modal');  // ← get fresh token
+                },
+                'error-callback': function() {
+                    window.turnstile_modal_token = '';
+                    setTimeout(function() {
+                        turnstile.reset('#turnstile-modal');
+                    }, 2000);
+                }
+            });
+        }
+    }
+</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>
+
+
+
+<body>
+    
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFGX2N4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <!-- Body Inner -->
+    <div class="body-inner">
+        
+        
+        <!-- Header -->
+        <header id="header" >
+            <div class="header-inner">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo"> <a href="/"><span class="logo-default">SPORTSAPI</span><span class="logo-dark">SPORTSAPI</span></a> </div>
+                    <!--End: Logo-->
+                    <!-- Search -->
+                    <div id="search"><a id="btn-search-close" class="btn-search-close" aria-label="Close search form"><img loading="lazy" src="/static/images/custom/icons/icon-close.png" alt="close" /></a>
+                        <form id="search_form" class="search-form" action="" method="get">
+                            <input id="search_term" class="form-control" name="search_term" type="text" placeholder="Search APIs and Articles..." />
+                            <span class="text-muted">Start typing & press "Enter" or "ESC" to close</span>
+                        </form>
+                    </div>
+                    <!-- end: search -->
+                    <!--Header Extras-->
+                    <div class="header-extras" data-animate="fadeIn" data-animate-delay="100">
+                        <ul>
+                            <li class="menu-twitter">
+                                <a href="https://twitter.com/sportsapicom" target="_blank"><img id="menu-twitter-icon" src="/static/images/custom/icons/icon-twitter-thick.png" alt="twitter" /></a>
+                            </li>
+                            <li class="menu-search">
+                                <a id="btn-search" href="#"><img id="search-icon" src="/static/images/custom/icons/icon-search-thick.png" alt="search" /></a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <!--end: Header Extras-->
+                    <!--Navigation Resposnive Trigger-->
+                    <div id="mainMenu-trigger"> <a class="lines-button x"><span class="lines"></span></a> </div>
+                    <!--end: Navigation Resposnive Trigger-->
+                    <!--Navigation-->
+                    <div id="mainMenu">
+                        <div class="container">
+                            <nav>
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li class="dropdown mega-menu-item"><a href="/api-directory/">API Directory</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="mega-menu-content">
+                                                <div class="row">
+
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title"><a style="font-weight:600;" href="/sports-api-pricing-tool/">Get API Recommendations ></a></li>
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">FANTASY SPORTS APIS</li>
+                                                            
+                                                                <li>
+                                                                    <a href="/api-directory/fantasynerds/">Fantasy Nerds <span class="badge bg-info">HOT</span>
+                                                                    </a>
+                                                                </li>
+                                                            
+                                                                <li>
+                                                                    <a href="/api-directory/fantasydata/">FantasyData.com 
+                                                                    </a>
+                                                                </li>
+                                                            
+                                                                <li>
+                                                                    <a href="/api-directory/cricketapi/">CricketAPI.com 
+                                                                    </a>
+                                                                </li>
+                                                            
+                                                                <li>
+                                                                    <a href="/api-directory/footballapi/">FootballAPI.com 
+                                                                    </a>
+                                                                </li>
+                                                            
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">AFFORDABLE APIS</li>
+                                                            
+                                                                <li>
+                                                                    <a href="/api-directory/statpal/">StatPal API <span class="badge bg-danger">25% OFF</span>
+                                                                    </a>
+                                                                </li>
+                                                            
+                                                                <li>
+                                                                    <a href="/api-directory/goalserve/">GoalServe <span class="badge bg-info">HOT</span>
+                                                                    </a>
+                                                                </li>
+                                                            
+                                                                <li>
+                                                                    <a href="/api-directory/api-sports/">API-Sports.io 
+                                                                    </a>
+                                                                </li>
+                                                            
+                                                                <li>
+                                                                    <a href="/api-directory/sportmonks/">SportMonks 
+                                                                    </a>
+                                                                </li>
+                                                            
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">ODDS</li>
+                                                            
+                                                                <li>
+                                                                    <a href="/api-directory/the-odds-api/">The Odds API 
+                                                                    </a>
+                                                                </li>
+                                                            
+                                                                <li>
+                                                                    <a href="/api-directory/jsonodds/">JsonOdds 
+                                                                    </a>
+                                                                </li>
+                                                            
+                                                                <li>
+                                                                    <a href="/api-directory/horseapi/">HorseAPI.com <span class="badge bg-info">NEW</span>
+                                                                    </a>
+                                                                </li>
+                                                            
+                                                                <li>
+                                                                    <a href="/api-directory/brokersports/">Broker Sports 
+                                                                    </a>
+                                                                </li>
+                                                            
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title"><a style="font-weight:600;" href="/api-directory/">View All APIS ></a></li>
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/sports-api-pricing-tool/">Pricing Tool</a></li>
+                                    <li><a href="https://statpal.io?ref=d06d843c-762b-48b5-b775-f3605210dcda" target="_blank">Unlock 25% Off Plans</a></li>
+                                    
+                                    <!--<li class="dropdown"><a href="/sports-apps/">Optimized Sports Widgets</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/sports-apps/">Performance Optimized Sports Widgets</a></li>
+                                            
+                                                <li><a href="/sports-apps/auth/login/">Login</a></li>
+                                            
+                                        </ul>
+                                    </li>-->
+                                    <li class="dropdown"><a href="#">Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/articles/">Articles</a></li>
+                                            <li><a href="/faq/">FAQ</a></li>
+                                            <li><a href="/blog/">Blog</a></li>
+                                        </ul>
+                                    </li>
+                                    
+
+                                    
+                                    
+                                    <li class="menu-twitter-mobile">
+                                        <a href="https://twitter.com/sportsapicom" target="_blank"><img id="menu-twitter-mobile-icon" src="/static/images/custom/icons/icon-twitter-thick.png" alt="twitter" /></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--end: Navigation-->
+                </div>
+            </div>
+        </header>
+        <!-- end: Header -->
+        
+
+        
+    
+
+<section id="home-header" loading="eager" class="halfscreen background-image" style="background-image:url(/static/images/custom/sports-arena-2-sm.webp);">
+    <div class="bg-overlay"></div>
+    <div class="container container-fullscreen text-light">
+        <div class="text-middle text-center">
+            <h6 class="text-light">COMPARE THE BEST</h6>
+                <h3 id="home-lead-primary" class="text-uppercase text-medium text-light">SPORTS DATA PROVIDERS</h3>
+                <h1 id="home-lead-secondary" class="lead text-light"><strong>Best Sports API Pricing, Reviews and Data</strong>
+                </h1>
+                <p id="home-lead-tertiary" class="lead text-light">
+                    <strong>Find The Best API For Your Sports App Development</strong>
+                </p>
+            <a class="btn btn-danger" style="font-size:14px;" href="https://statpal.io?ref=d06d843c-762b-48b5-b775-f3605210dcda" target="_blank"><img class="icon-bolt" src="/static/images/custom/icons/icon-bolt.png" alt="code" /> Limited Offer: 25% Off</a>
+            <a class="btn btn-outline btn-light" style="font-size:14px;" href="/sports-api-pricing-tool/"><img class="icon-bolt" src="/static/images/custom/icons/icon-monitor-white.png" alt="computer monitor" /> Get The Best Priced Sports APIs</a>
+            
+            
+
+
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- WELCOME -->
+<section class="p-b-0">
+    <div class="container">
+        <div id="home-welcome" class="heading-text heading-section text-center m-b-40" data-animate="fadeInUp">
+            <h4>FIND THE BEST STATS COMPANY FOR YOUR SPORTS APP</h4>
+            <span id="home-welcome-lead-lg" class="lead">Easily compare <strong>live sport scores APIs</strong> side by side.
+                <br />
+                Filter by vendor pricing, data category, sports coverage, statistics and more. 
+                <br />
+                <a href="/article/how-to-choose-a-sports-data-provider/">Learn how to choose a Sports Data Provider</a>
+            </span>
+            <span id="home-welcome-lead-sm" class="lead">
+                Easily compare <strong>sports data companies</strong> side by side. Filter by vendor pricing, data category, sports coverage, statistics and more.
+                <br />
+                <a href="/article/how-to-choose-a-sports-data-provider/">Learn how to choose a Sports Data Provider</a>
+            </span>
+        </div>
+        <div class="row" data-animate="fadeInUp">
+            <div class="col"></div>
+            <div class="col"> <img loading="lazy" class="img-fluid" src="/static/images/custom/scores-app-with-live-stats.webp" alt="Scores app with live stats."> </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</section>
+<!-- end: WELCOME -->
+
+<!-- api directory 1 -->
+<section class="p-b-0">
+    <div class="container">
+        <div class="heading-text heading-section">
+            <h4 class="text-uppercase">Affordable Sports APIs</h4>
+            <span class="lead api-directory-description">Companies with affordable pricing for developers and small businesses. Detailed info on popular data vendors.<br /><br /> <a class="btn btn-blue" href="/api-directory/">View All</a></span>
+        </div>
+    </div>
+    <div class="portfolio" data-nosnippet>
+        <!-- Portfolio Items -->
+        <div id="portfolio" class="portfolio-4-columns">
+            
+            
+            
+            <!-- portfolio item -->
+            <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-Media">
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-image" onClick="openAPIDetail('sportmonks')">
+                        <a href="/api-directory/sportmonks"><img loading="lazy" src="/static/images/custom/sportmonks-text-lite.webp" alt="SportMonks"></a>
+                    </div>
+                    <div class="portfolio-description">
+                        <a href="/api-directory/sportmonks">
+                            <h3>SPORTMONKS</h3>
+                            <span>Stats, Widgets, Affordable Pricing</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end: portfolio item -->
+            
+            
+            
+            <!-- portfolio item -->
+            <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-Media">
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-image" onClick="openAPIDetail('goalserve')">
+                        <a href="/api-directory/goalserve"><img loading="lazy" src="/static/images/custom/goalserve-text-lite.webp" alt="GoalServe"></a>
+                    </div>
+                    <div class="portfolio-description">
+                        <a href="/api-directory/goalserve">
+                            <h3>GOALSERVE</h3>
+                            <span>Affordable Pricing, Stats</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end: portfolio item -->
+            
+            
+            
+            <div class="portfolio-items-sm">
+            
+            <!-- portfolio item -->
+            <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-Media">
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-image" onClick="openAPIDetail('api-sports')">
+                        <a href="/api-directory/api-sports"><img loading="lazy" src="/static/images/custom/apisportsio-text-lite.webp" alt="API-Sports.io"></a>
+                    </div>
+                    <div class="portfolio-description">
+                        <a href="/api-directory/api-sports">
+                            <h3>API-SPORTS.IO</h3>
+                            <span>Affordable Data and Widgets</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end: portfolio item -->
+            
+            
+            
+            <!-- portfolio item -->
+            <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-Media">
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-image" onClick="openAPIDetail('the-odds-api')">
+                        <a href="/api-directory/the-odds-api"><img loading="lazy" src="/static/images/custom/theoddsapi-text-lite.webp" alt="The Odds API"></a>
+                    </div>
+                    <div class="portfolio-description">
+                        <a href="/api-directory/the-odds-api">
+                            <h3>THE ODDS API</h3>
+                            <span>Affordable Scores &amp; Odds API</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end: portfolio item -->
+            
+            </div>
+            
+            
+
+        </div>
+        <!-- end: Portfolio Items -->
+
+    </div>
+</section>
+<!-- end: api directory 1  -->
+
+<!-- WHAT WE DO -->
+<section class="what-we-do background-grey">
+    <div class="container">
+        <div class="heading-text heading-section">
+            <h4>WHAT WE DO</h4>
+            <span class="lead what-we-do-description">New Stats companies open every year, this guide is designed to help <strong>sports app developers</strong> make an informed choice.</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div data-animate="fadeInUp" data-animate-delay="0">
+                    <h4>Sports API Pricing</h4>
+                    <p>Sort data vendors by pricing and cost levels. Conveniently find optimal pricing, for individual developers to enterprise solutions.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div data-animate="fadeInUp" data-animate-delay="100">
+                    <h4>Data Provider Info</h4>
+                    <p>Info on coverage, languages, data categories and reliability. Get the latest updates on price changes, discounts and new features.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div data-animate="fadeInUp" data-animate-delay="200">
+                    <h4>Company Reviews</h4>
+                    <p>Accurate info from a developer perspective on company support, data quality and features.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div data-animate="fadeInUp" data-animate-delay="300">
+                    <h4>Sports Widgets</h4>
+                    <p>Review soccer, NBA, MLB, NFL widgets and more. Quickly add professional sports widgets to any web or mobile app.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div data-animate="fadeInUp" data-animate-delay="400">
+                    <h4>White Label Solutions</h4>
+                    <p>Browse hosted options, including white label betting platforms, for fast-to-market branded websites and apps.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div data-animate="fadeInUp" data-animate-delay="500">
+                    <h4>Social Data</h4>
+                    <p>Keep up with companies' social and news releases, with Twitter, Facebook, LinkedIn and more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END WHAT WE DO -->
+
+
+<!-- COUNTERS -->
+<section id="home-counter" class="text-light halfscreen background-image lazy" style="background-image:url(/static/images/custom/sports-arena-2-sm.webp);">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 counter-item">
+
+                <div class="text-center">
+                    <div class="icon icon-counter"><img loading="lazy" src="/static/images/custom/icons/icon-flag.png" alt="flag" /></div>
+                    <div class="counter"> <span data-speed="100" data-refresh-interval="50" data-to="57" data-from="0" data-seperator="true"></span> </div>
+                    <div class="seperator seperator-small"></div>
+                    <a href="/api-directory/">DATA PROVIDERS</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 counter-item">
+
+                <div class="text-center">
+                    <div class="icon icon-counter"><img loading="lazy" src="/static/images/custom/icons/icon-price.png" alt="price" /></div>
+                    <div class="counter"> <span data-speed="200" data-refresh-interval="23" data-to="415" data-from="0" data-seperator="true"></span> </div>
+                    <div class="seperator seperator-small"></div>
+                    <a href="/api-directory/">PRICE LISTINGS</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 counter-item">
+
+                <div class="text-center">
+                    <div class="icon icon-counter"><img loading="lazy" src="/static/images/custom/icons/icon-rocket.png" alt="rocket" /></div>
+                    <div class="counter"> <span data-speed="300" data-refresh-interval="12" data-to="90" data-from="0" data-seperator="true"></span> </div>
+                    <div class="seperator seperator-small"></div>
+                    <a href="/api-directory/#sports-widgets" class="counter-text">SPORTS WIDGETS</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 counter-item">
+
+                <div class="text-center">
+                    <div class="icon icon-counter"><img loading="lazy" src="/static/images/custom/icons/icon-monitor.png" alt="monitor" /></div>
+                    <div class="counter"> <span data-speed="400" data-refresh-interval="50" data-to="22" data-from="0" data-seperator="true"></span> </div>
+                    <div class="seperator seperator-small"></div>
+                    <a href="/api-directory/#white-label-solutions">SPORTS WEBSITE TEMPLATES</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: COUNTERS -->
+
+<!-- api directory 2 -->
+<section class="p-b-0">
+    <div class="container">
+        <div class="heading-text heading-section">
+            <h4 class="text-uppercase">Sports Widget Companies</h4>
+            <span class="lead api-directory-description">Providers with Widgets for NFL, NBA, Soccer and more. Find unique designs for live play-by-play, stats and live odds widgets.<br /><br /> <a class="btn btn-blue" href="/api-directory/">Full List</a></span>
+        </div>
+    </div>
+    <div class="portfolio" data-nosnippet>
+        <!-- Portfolio Items -->
+        <div id="portfolio" class="grid-layout portfolio-4-columns" data-margin="0">
+            
+            
+            
+            <!-- portfolio item -->
+            <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-Media">
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-image">
+                        <a href="/api-directory/enetpulse"><img loading="lazy" src="/static/images/custom/enetpulse-text-lite.webp" alt="EnetPulse"></a>
+                    </div>
+                    <div class="portfolio-description">
+                        <a href="/api-directory/enetpulse">
+                            <h3>ENETPULSE</h3>
+                            <span>Professional Sports Data Solutions</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end: portfolio item -->
+            
+            
+            
+            <!-- portfolio item -->
+            <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-Media">
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-image">
+                        <a href="/api-directory/api-football"><img loading="lazy" src="/static/images/custom/api-football-text-lite.webp" alt="API-Football.com"></a>
+                    </div>
+                    <div class="portfolio-description">
+                        <a href="/api-directory/api-football">
+                            <h3>API-FOOTBALL.COM</h3>
+                            <span>Affordable Data, Free Widgets</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end: portfolio item -->
+            
+            
+            
+            <div class="portfolio-items-sm">
+            
+            <!-- portfolio item -->
+            <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-Media">
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-image">
+                        <a href="/api-directory/sportmonks"><img loading="lazy" src="/static/images/custom/sportmonks-text-lite.webp" alt="SportMonks"></a>
+                    </div>
+                    <div class="portfolio-description">
+                        <a href="/api-directory/sportmonks">
+                            <h3>SPORTMONKS</h3>
+                            <span>Stats, Widgets, Affordable Pricing</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end: portfolio item -->
+            
+            
+            
+            <!-- portfolio item -->
+            <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-Media">
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-image">
+                        <a href="/api-directory/allsportsapi"><img loading="lazy" src="/static/images/custom/allsportsapi-text-lite.webp" alt="AllSports API"></a>
+                    </div>
+                    <div class="portfolio-description">
+                        <a href="/api-directory/allsportsapi">
+                            <h3>ALLSPORTS API</h3>
+                            <span>Affordable Data and Widgets</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end: portfolio item -->
+            
+            </div>
+            
+            
+
+        </div>
+        <!-- end: Portfolio Items -->
+
+    </div>
+</section>
+<!-- end: api directory 2 -->
+
+<!-- BLOG -->
+<section class="content">
+    <div class="container">
+        <div class="heading-text heading-section">
+            <h4>BLOG</h4>
+            <span class="lead home-blog-description">
+                Company reviews, recommended use cases, new features and <strong>price specials</strong> from the blog.
+            </span>
+        </div>
+
+        <div id="blog" class="grid-layout post-3-columns m-b-30" data-item="post-item">
+            
+            <!-- Post item-->
+            <div class="post-item border">
+                <div class="post-item-wrap">
+                    <div class="post-image">
+                        <a href="/blog/posts/affordable-sports-apis-for-developers">
+                            <img loading="lazy" alt="Developer coding app on laptop" src="/static/images/custom/developer-coding-app-on-laptop-sm.webp">
+                        </a>
+                        <span class="post-meta-category"><a href="/blog/category/list/">LIST</a></span>
+                    </div>
+                    <div class="post-item-description">
+                        <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 08, 2023</span>
+                        <span class="post-meta-category"><a href="/blog/category/list/"><i class="fa fa-tag"></i>List</a></span>
+                        <h2><a href="/blog/posts/affordable-sports-apis-for-developers">Affordable Sports APIs for Developers
+                            </a></h2>
+                        <p>A list of recommended sports apis for developers, chosen for affordability and service quality.</p>
+
+                        <a href="/blog/posts/affordable-sports-apis-for-developers" class="item-link">Read More ></a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end: Post item-->
+            
+
+        </div>
+    </div>
+</section>
+<!-- end: BLOG -->
+
+
+
+
+        
+        <!--Modal Strip
+        <div id="cta-modal-strip" class="modal-strip modal-bottom background-info">
+            <div class="container">
+                <div class="text-center">
+
+                    ⏰ <b>Building A Sports App?</b>
+                    <br class="br-small">
+                    <small>Build & Host A Live Sports App Today From <span>$199 / mo.</span></small>
+                    <br class="br-med">
+
+                    <a href="#modalAppDevSubscriptionForm" data-lightbox="inline" class="m-l-10 btn btn-light btn-sm">Get Started</a>
+
+                    <button id="close-cta-modal-strip" class="m-l-10 btn btn-primary btn-sm">x</button>
+                </div>
+            </div>
+        </div>
+        End: Modal Strip-->
+
+        
+        <!--call-to-action background image
+        <div class="call-to-action cta-center p-t-100 p-b-100 mb-0" style="background: transparent url(/static/images/custom/1.jpg);">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h3 class="text-light">
+                            SPORTSNEWSAPI<br>Power Your Sports App With Expert A.I. Soccer Previews and Predictions
+                        </h3>
+                        <p class="text-light mb-3 p-1" style="font-weight:500;">
+                            Add Up To 3,000 Engaging Match Previews to your Sports App Every Month
+                            <br>
+                            FROM $14 / MONTH
+                            <br><span style="font-size:12px;">100+ SOCCER LEAGUES - 3,000+ EXPERT A.I. PREVIEWS / PREDICTIONS EVERY MONTH</span>
+                        </p>
+                        <p class="text-light m-0 p-0">
+                            <ul style="list-style:none;" class="text-light m-0 p-0">
+                                
+                                <li>Compatible with any sports stats API</li>
+                                <li class="d-block d-sm-none">-</li>
+                                <li>500-word Previews and Predictions for every match from 100+ soccer leagues</li>
+                                <li class="d-block d-sm-none">-</li>
+                                <li>Match Excitement Rating and Featured Headlines</li>
+                                <li class="d-block d-sm-none">-</li>
+                                <li>Player Spotlight Headlines</li>
+                                <li class="d-block d-sm-none">-</li>
+                                <li>Match winner and Over/Under game predictions</li>
+                                <li class="d-block d-sm-none">-</li>
+                                <li>Projected Lineups</li>
+                                <li class="d-block d-sm-none">-</li>
+                                <li>Includes Free Plan For Testing*</li>
+                                
+                            </ul>
+                        </p>
+
+                        <p id="modal-subscription-btn-sm">
+                            <a href="https://sportsnewsapi.com" class="btn btn-light">Try For Free</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-2" id="modal-subscription-btn-lg">
+                        <a href="https://sportsnewsapi.com" class="btn btn-light">Try For Free</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        call-to-action right aligned-->
+        
+        
+        <!-- Modal -->
+        <div id="modalSubscriptionForm" class="modal" style="background-image:url(/static/images/custom/sports-app-newsletter.webp) no-repeat;">
+            <div id="modal-subscription-inner-wrap" class="text-light p-t-30">
+                <h2 id="newsletter-modal-header" class="m-b-0">API Pricing News</h2>
+                <h5>Get the latest API pricing news straight to your inbox and save time and costs.</h5>
+                <div class="widget widget-newsletter m-b-10">
+                    <form id="newsletter_signup_form_modal" role="form" method="">
+                        <div class="input-group">
+                            <input id="newsletter_email_modal" aria-required="true" 
+                                   name="widget-subscribe-form-email-modal" required 
+                                   class="form-control required email m-b-10" 
+                                   placeholder="Enter your Email" 
+                                   type="email">
+                            <button type="submit" id="widget-subscribe-submit-button-modal"
+                                    class="btn btn-danger m-b-10">Subscribe</button>
+                        </div>
+
+                        <!-- Turnstile widget -->
+                        <div class="cf-turnstile" 
+                             data-sitekey="0x4AAAAAADWMPx2Dntl3AeSL"
+                             id="turnstile-modal"
+                             style="margin-top:8px;"></div>
+                    </form>
+                </div>
+                <small><em><a href="#" class="modal-close">No thanks, I want to close this window.</a></em></small>
+            </div>
+        </div>
+        <!--end: Modal -->
+        
+        
+        <!-- Modal -->
+        <div id="modalAppDevSubscriptionForm" class="modal" style="background-image:url(/static/images/custom/sports-app-newsletter-lg.webp) no-repeat;">
+            <div id="modal-subscription-inner-wrap" class="p-t-30">
+                <h4 id="appdev-modal-header" class="m-b-0 modal-blue-text-header"><img class="modal-cta-icon" src="/static/images/custom/icons/icon-signal-red.png" alt="signal icon" /> Free Quote On Your Sports App</h4>
+                <h6 class="modal-blue-text-desc">Hire us to build your Sports App from scratch at competitive rates. With 10 years of app development experience, we can build a professional solution for any requirement.</h6>
+                <div class="widget widget-newsletter m-b-10">
+                    <form id="appdev_signup_form_modal" role="form" method="">
+                        <div class="form-group row">
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" placeholder="First Name" id="appdev-modal-name" aria-required="true" name="appdev-modal-name" required name="appdev-modal-name" required class="form-control required text"></input>
+                    
+                                <input class="form-control" type="email" placeholder="Email" id="appdev-modal-email" aria-required="true" name="appdev-modal-email" required name="appdev-modal-email" required class="form-control required email"></input>
+
+                                <select class="form-select modal-blue-text-select required" id="appdev-modal-details" aria-required="true" name="appdev-modal-details" required>
+                                    <option value="">App Type</option>
+                                    <option value="Live Scores and Stats">Live Scores and Stats</option>
+                                    <option value="Sports News and Analysis">Sports News and Analysis</option>
+                                    <option value="Fantasy Sports">Fantasy Sports</option>
+                                    <option value="Predictions and Tips">Predictions and Tips</option>
+                                    <option value="Sports Betting">Sports Betting</option>
+                                    <option value="Sports Community">Sports Community</option>
+                                    <option value="Sports Live Streaming">Sports Live Streaming</option>
+                                    <option value="Other">Other</option>
+                                </select>
+
+                                <button id="appdev-modal-submit-btn" type="submit" class="btn btn-danger">Get Started Today</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--end: Modal -->
+        
+        
+        <!-- Modal -->
+        <div id="modalTemplateSubscriptionForm" class="modal" style="background-image:url(/static/images/custom/sports-app-newsletter.webp) no-repeat;">
+            <div id="modal-subscription-inner-wrap" class="p-t-30">
+                <h4 id="template-modal-header" class="m-b-0 modal-blue-text-header">
+                    <img class="modal-cta-icon" src="/static/images/custom/icons/icon-template-blue.png" alt="monetize" /> Premium Sports App Templates
+                </h4>
+                <h6 class="modal-blue-text-desc">Get premium design & code templates compatible with All Sports APIs. <span class="modal-blue-text-desc-feature">Limited time offer up to 25% off.</span></h6>
+                <div class="widget widget-newsletter m-b-10">
+                    <form id="template_signup_form_modal" role="form" method="">
+                        <div class="form-group row">
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" placeholder="First Name" id="template-modal-name" aria-required="true" name="template-modal-name" required name="template-modal-name" required class="form-control required text"></input>
+                    
+                                <input class="form-control modal-blue-text-email" type="email" placeholder="Email" id="template-modal-email" aria-required="true" name="template-modal-email" required name="template-modal-email" required class="form-control required email"></input>
+
+                                <select class="form-select modal-blue-text-select required" id="template-modal-details" aria-required="true" name="template-modal-details" required>
+                                    <option value="">App Type</option>
+                                    <option value="Live Scores and Stats">Live Scores and Stats</option>
+                                    <option value="Sports News and Analysis">Sports News and Analysis</option>
+                                    <option value="Fantasy Sports">Fantasy Sports</option>
+                                    <option value="Predictions and Tips">Predictions and Tips</option>
+                                    <option value="Sports Betting">Sports Betting</option>
+                                    <option value="Sports Community">Sports Community</option>
+                                    <option value="Sports Live Streaming">Sports Live Streaming</option>
+                                    <option value="Other">Other</option>
+                                </select>
+
+                                <button id="template-modal-submit-btn" type="submit" class="btn btn-primary modal-blue-text-submit-btn">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--end: Modal -->
+        
+        
+        <!-- Modal -->
+        <div id="modalMonetizeSportsAppSubscriptionForm" class="modal" style="background-image:url(/static/images/custom/sports-app-newsletter-lg.webp) no-repeat;">
+            <div id="modal-subscription-inner-wrap" class="p-t-30">
+                <h4 id="appdev-modal-header" class="m-b-0 modal-blue-text-header"><img class="modal-cta-icon" src="/static/images/custom/icons/icon-signal-red.png" alt="signal icon" /> Pre-Built Sports Apps</h4>
+                <h6 class="modal-blue-text-desc">Discover our <b>Professional White Label Sports Apps</b> with Simple, Managed Hosting <b>From $99 / mo.</b> <br>Start your free trial with no strings attached.</h6>
+                <div class="widget widget-newsletter m-b-10">
+                    <form id="monetize_sportsapp_signup_form_modal" role="form" method="">
+                        <div class="form-group row">
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" placeholder="First Name" id="monetize-sportsapp-modal-name" aria-required="true" name="monetize-sportsapp-modal-name" required name="monetize-sportsapp-modal-name" required class="form-control required text"></input>
+                    
+                                <input class="form-control" type="email" placeholder="Email" id="monetize-sportsapp-modal-email" aria-required="true" name="monetize-sportsapp-modal-email" required name="monetize-sportsapp-modal-email" required class="form-control required email modal-blue-text-email"></input>
+
+                                <button id="monetize-sportsapp-modal-submit-btn" type="submit" class="btn btn-primary modal-blue-text-submit-btn">Get The Guide</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--end: Modal -->
+        
+        
+        
+            <!-- Footer -->
+            <footer id="footer">
+                <div class="footer-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="widget">
+
+                                    <div class="widget-title">
+                                        SportsAPI.com
+                                    </div>
+                                    <p id="footer-blurb" class="mb-5">
+                                        Making your data search easier.
+                                        <br>
+                                        All rights reserved. Copyright © 2026.
+                                    </p>
+                                    <a href="/contact/" class="btn btn-inverted">Contact Us</a>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row">
+
+                                    <div class="col-lg-4">
+                                        <div class="widget">
+                                            <div class="widget-title">Pages</div>
+                                            <ul class="list">
+                                                <li>
+                                                    <a href="/article/how-to-choose-a-sports-data-provider/">Choosing a Provider
+                                                    </a>
+                                                </li>
+                                                <!--<li><a href="/sports-apps/">Optimized Sports Widgets</a></li>-->
+                                                <li><a href="/api-directory/">API Directory</a></li>
+                                                <li><a href="/sports-website-templates/">Sports Website Templates</a></li>
+                                                <li><a href="/faq/">FAQ</a></li>
+                                                <li><a href="/blog/">Blog</a></li>
+                                                <li><a href="/about/">About</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="widget">
+                                            <div class="widget-title">Discover</div>
+                                            <ul class="list">
+                                                <li><a href="/sports-api-pricing-tool/">API Pricing Tool</a></li>
+
+                                                <li style="display:none;"><a id="open-appdev-modal" href="#modalAppDevSubscriptionForm" data-lightbox="inline">Hosted Live Sports Apps</a></li>
+
+                                                <li style="display:none;"><a id="open-template-modal" href="#modalTemplateSubscriptionForm" data-lightbox="inline">Sports App Templates</a></li>
+
+                                                <li style="display:none;"><a id="open-monetize-sportsapps-modal" href="#modalMonetizeSportsAppSubscriptionForm" data-lightbox="inline">Monetize Sports Apps</a></li>
+                                                
+                                                <li><a href="/api-directory/">Popular APIs</a></li>
+                                                
+                                                <li><a class="api-filter-link" href="/api-directory/#affordable-apis" class="api-filter-link">Affordable APIs</a></li>
+                                                <li><a class="api-filter-link" href="/api-directory/#fantasy-apis" class="api-filter-link">Fantasy Sports</a></li>
+                                                <li><a class="api-filter-link" href="/api-directory/#sports-widgets" class="api-filter-link">Sports Widgets</a></li>
+                                                <li><a class="api-filter-link" href="/api-directory/#white-label-solutions" class="api-filter-link">White Label Solutions</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="widget">
+                                            <div class="widget-title">Support</div>
+                                            <ul class="list">
+                                                <li><a href="#modalSubscriptionForm" data-lightbox="inline">Newsletter</a></li>
+                                                <li><a href="https://twitter.com/sportsapicom" target="_blank">Twitter</a></li>
+                                                <li><a href="/contact/">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-content">
+                    <div class="container">
+                        <div class="copyright-text text-center">
+                            &copy; 2026 SportsAPI.com. All Rights Reserved.
+                            <br />
+                            <a href="/terms-of-service/">Terms of Service</a> | <a href="/privacy-policy/">Privacy Policy</a> 
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end: Footer -->
+        
+
+        <!--Modal Cookie-->
+        <div id="cookieNotify" class="modal-strip cookie-notify background-dark" data-delay="3000" data-expire="1" data-cookie-name="cookie_notify_sportsapi_2023_1" data-cookie-enabled="true" data-animate="fadeIn" data-animate-delay="1000">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 text-sm-center sm-center sm-m-b-10 m-t-5">This website uses cookies for statistics and to ensure you get the best experience. <a href="/privacy-policy/" class="text-light"><span> More info</span></a></div>
+                    <div class="col-lg-4 text-end sm-text-center sm-center">
+                        <button type="button" class="btn btn-roundeded btn-light btn-sm modal-confirm">Got
+                            it!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End: Modal Cookie-->
+
+    </div>
+    <!-- end: Body Inner -->
+
+    
+    <!-- Scroll top -->
+    <a id="scrollTop"><span>^</span></a>
+    
+    
+
+    
+        
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap"></noscript>
+
+        <link rel="preload" href="/static/css/base_initial.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/static/css/base_initial.min.css"></noscript>
+
+        <link rel="preload" href="/static/css/base.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/static/css/base.min.css"></noscript>
+        
+        
+        <script>
+            //var cta_modal_strip = document.getElementById('cta-modal-strip');
+            //var close_cta_modal_strip = document.getElementById('close-cta-modal-strip');
+            
+            const cookie_settings = 'SameSite=None;secure;'
+            
+        </script>
+        <script src="/static/js/jquery.min.js"></script>
+        <script src="/static/js/validate.min.js"></script>
+        <script src="/static/js/base_async.min.js"></script>
+
+        <script src="/static/js/base_sync.min.js"></script>
+        <script>
+            updateIcons();
+        </script>
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+
+    <script>
+        // Reset Turnstile when newsletter modal opens
+        // Hooks into whatever lightbox/modal library triggers the open event
+        $(document).on('click', 'a[href="#modalSubscriptionForm"]', function() {
+            if (typeof turnstile !== 'undefined') {
+                turnstile.reset();
+            }
+        });
+    </script>
+
+
+    <script type="text/javascript">
+      window._mfq = window._mfq || [];
+      (function() {
+        var mf = document.createElement("script");
+        mf.type = "text/javascript"; mf.defer = true;
+        mf.src = "//cdn.mouseflow.com/projects/88c33b39-f1af-4fdc-8267-27264bded900.js";
+        document.getElementsByTagName("head")[0].appendChild(mf);
+      })();
+    </script>
+
+
+
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37fe16fa8cf765b',t:'MTc4ODg5MDcxOA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>

@@ -1,0 +1,69 @@
+{
+ "domain": "draftsharks.com",
+ "tech_stack": {
+  "frontend": "Vue 3.2.47 (vue.global.prod.js) + custom 'dsvue' apps (LandingDominate.js, Subscription.js, etc. under /assets/65e6afb3/dsvue/apps/); custom modal/tabs/tooltip JS",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED (self-hosted /js/ and /assets/ with versioned querystrings)",
+  "citations": [
+   "https://www.draftsharks.com/ (saved: raw/draftsharks_com_home.html)"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED (no traces in homepage)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED (robots.txt: 'User-agent: * Disallow:' — fully open, multiple sitemaps listed)",
+  "citations": [
+   "https://www.draftsharks.com/robots.txt (saved: raw/draftsharks_com_robots.txt.txt)"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "MFL/ESPN/NFL strings present (league-import links, not confirmed data vendors)"
+  ],
+  "citations": [
+   "https://www.draftsharks.com/ (saved: raw/draftsharks_com_home.html)"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "Subscription app (Subscription.js) gates tools; Stripe price IDs embedded per tier",
+  "citation": "https://www.draftsharks.com/ (saved: raw/draftsharks_com_home.html)"
+ },
+ "pricing": {
+  "web": "Stripe Checkout, embedded price matrix in homepage HTML: monthly $16 (price_1P8RkmCytGI5zLxkT635m8WQ, semiannual $96/annual $192), monthly $22 (price_1P8RnvCytGI5zLxk50FTqaVb, semiannual $132/annual $264), monthly $44 (price_1P8Rs8CytGI5zLxkIQALqvgs, semiannual $264/annual $528), annual $72 (price_1RtwoACytGI5zLxkKGB3NNTo), annual $192 (price_1Rtwq5CytGI5zLxk4FcG1uKk), annual $96 (price_1RtwpSCytGI5zLxkaPTYUMWs), semiannual $36 grandfathered (price_1P9WzBCytGI5zLxk4wpRwTLK), one-time $39 (price_1P8Rm4CytGI5zLxkbCC6sSDj), one-time $49 (price_1P8RpFCytGI5zLxk4rU3D2pC); dynasty icon product tier at $22/mo; min_amount:1600 on semiannual (prorated upgrade floor)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://www.draftsharks.com/ (inline Stripe price JSON) (saved: raw/draftsharks_com_home.html)"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/news.xml",
+  "/kb-sitemap.xml",
+  "/article-sitemap.xml",
+  "/sharkbite-sitemap.xml",
+  "/assets/65e6afb3/dsvue/apps/Subscription.js"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "fetched homepage+robots; pricing matrix extracted from inline subscription JSON",
+  "timestamp": "2026-09-08T13:52:22.131113"
+ },
+ "disposition": "live (derived from 2 raw evidence files)"
+}

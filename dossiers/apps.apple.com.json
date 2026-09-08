@@ -1,0 +1,138 @@
+{
+ "domain": "apps.apple.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "svelte",
+   "citation": "raw/dycers-appstore.html"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\dycers-appstore.html",
+   "raw\\i_picktheodds_app_sitemap_xml.txt",
+   "raw\\i_propfinder_app_sitemap_xml.txt",
+   "raw\\outlier_bet_ext_appstore_page.html",
+   "raw\\playerprops_ai_apple-app-site-association.txt",
+   "raw\\propfinder-appstore.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "api-edge.apps.apple.com/v1/catalog/us/apps/6773751232",
+    "api-edge.apps.apple.com/v1/catalog/us/apps/6773949831",
+    "ws.HF"
+   ],
+   "citation": "raw/dycers-appstore.html"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\dycers-appstore.html"
+  },
+  "rate_limits": {
+   "value": "per day",
+   "citation": "raw/dycers-appstore.html"
+  },
+  "citations": [
+   "raw\\dycers-appstore.html",
+   "raw\\i_picktheodds_app_sitemap_xml.txt",
+   "raw\\i_propfinder_app_sitemap_xml.txt",
+   "raw\\outlier_bet_ext_appstore_page.html",
+   "raw\\playerprops_ai_apple-app-site-association.txt",
+   "raw\\propfinder-appstore.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Find apps and games for iPhone, iPad, Mac, and more on the App Store.' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "Kalshi",
+    "Polymarket"
+   ],
+   "citation": "raw/dycers-appstore.html"
+  },
+  "citations": [
+   "raw\\dycers-appstore.html",
+   "raw\\i_picktheodds_app_sitemap_xml.txt",
+   "raw\\i_propfinder_app_sitemap_xml.txt",
+   "raw\\outlier_bet_ext_appstore_page.html",
+   "raw\\playerprops_ai_apple-app-site-association.txt",
+   "raw\\propfinder-appstore.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "per day",
+    "credit",
+    "Credit"
+   ],
+   "citation": "raw/dycers-appstore.html"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\dycers-appstore.html"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "Free",
+    "free",
+    "FREE",
+    "Pro plan"
+   ],
+   "citation": "raw/dycers-appstore.html"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\dycers-appstore.html",
+   "raw\\i_picktheodds_app_sitemap_xml.txt",
+   "raw\\i_propfinder_app_sitemap_xml.txt",
+   "raw\\outlier_bet_ext_appstore_page.html",
+   "raw\\playerprops_ai_apple-app-site-association.txt",
+   "raw\\propfinder-appstore.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Disallow: /WebObjects/*",
+  "Disallow: /api/*",
+  "Disallow: /includes/*",
+  "Disallow: /v1/*",
+  "Disallow: */search?*",
+  "Sitemap: https://apps.apple.com/sitemaps_apps_index_chart_1.xml",
+  "Sitemap: https://apps.apple.com/sitemaps_apps_index_app_1.xml",
+  "Sitemap: https://apps.apple.com/sitemaps_apps_index_new-app_1.xml",
+  "Sitemap: https://apps.apple.com/sitemaps_apps_index_story_1.xml",
+  "Sitemap: https://apps.apple.com/sitemaps_apps_index_grouping_1.xml",
+  "Sitemap: https://apps.apple.com/sitemaps_apps_index_static-url_1.xml"
+ ],
+ "discovered_targets": [
+  "api-edge.apps.apple.com/v1/catalog/us/apps/6773751232",
+  "api-edge.apps.apple.com/v1/catalog/us/apps/6773949831",
+  "ws.HF"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:36.010698"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "‎Today for iPhone - App Store",
+  "description": "Find apps and games for iPhone, iPad, Mac, and more on the App Store."
+ }
+}

@@ -1,0 +1,1 @@
+URL: https://pandascore.co/robots.txt\nSTATUS: 200\n\nSitemap: https://www.pandascore.co/sitemap.xml

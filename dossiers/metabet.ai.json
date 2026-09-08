@@ -1,0 +1,108 @@
+{
+ "domain": "metabet.ai",
+ "tech_stack": {
+  "frontend": {
+   "value": "react",
+   "citation": "raw/batch2_metabet_ai_home.html"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\batch2_metabet_ai_home.html",
+   "raw\\batch2_metabet_ai_js1.js",
+   "raw\\batch2_metabet_ai_robots.txt",
+   "raw\\px_metabet_ai_home.raw",
+   "raw\\px_metabet_ai_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\batch2_metabet_ai_home.html"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\batch2_metabet_ai_home.html"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\batch2_metabet_ai_home.html"
+  },
+  "citations": [
+   "raw\\batch2_metabet_ai_home.html",
+   "raw\\batch2_metabet_ai_js1.js",
+   "raw\\batch2_metabet_ai_robots.txt",
+   "raw\\px_metabet_ai_home.raw",
+   "raw\\px_metabet_ai_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'MetaBet.ai is for sale on Spaceship. Secure checkout and quick transfer. See all' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\batch2_metabet_ai_home.html"
+  },
+  "citations": [
+   "raw\\batch2_metabet_ai_home.html",
+   "raw\\batch2_metabet_ai_js1.js",
+   "raw\\batch2_metabet_ai_robots.txt",
+   "raw\\px_metabet_ai_home.raw",
+   "raw\\px_metabet_ai_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\batch2_metabet_ai_home.html"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\batch2_metabet_ai_home.html"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "Free"
+   ],
+   "citation": "raw/batch2_metabet_ai_home.html"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\batch2_metabet_ai_home.html",
+   "raw\\batch2_metabet_ai_js1.js",
+   "raw\\batch2_metabet_ai_robots.txt",
+   "raw\\px_metabet_ai_home.raw",
+   "raw\\px_metabet_ai_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /"
+ ],
+ "discovered_targets": [
+  "NOT CONFIRMED"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:24.425427"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "MetaBet.ai for sale | Spaceship.com",
+  "description": "MetaBet.ai is for sale on Spaceship. Secure checkout and quick transfer. See all purchase options. No hidden fees."
+ }
+}

@@ -1,0 +1,22 @@
+URL: https://leans.ai/robots.txt\nSTATUS: 200\n\nUser-agent: *
+Disallow: /nfl-game-preview-template/
+Disallow: /mlb-game-preview-template/
+Disallow: /cbb-game-preview-template/
+Disallow: /nba-game-preview-template/
+Disallow: /week-preview-template/
+Disallow: /week-preview-template-1/
+Disallow: /nhl-game-preview-template/
+Disallow: /cfb-game-preview-template/
+
+Sitemap: https://leans.ai/sitemap_index.xml
+
+Disallow: /cfb-game-preview-template-2/
+Disallow: /nba-game-preview-template-2/
+Disallow: /mlb-game-preview-template-2/
+Sitemap: https://leans.ai/live_nfl.xml
+Sitemap: https://leans.ai/live_weekly_nfl.xml
+Sitemap: https://leans.ai/live_weekly_cfb.xml
+Sitemap: https://leans.ai/live_nba.xml
+Sitemap: https://leans.ai/live_cfb.xml
+Sitemap: https://leans.ai/live_mlb.xml
+Sitemap: https://leans.ai/live_nhl.xml

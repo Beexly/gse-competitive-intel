@@ -1,0 +1,114 @@
+{
+ "domain": "lsports.eu",
+ "tech_stack": {
+  "frontend": "WordPress + Elementor 4.0.2 + WPML multilingual, jQuery 3.7.1, WP Rocket-style /wp-content/cache/min/1/* bundles, dotlottie player, Termly consent",
+  "backend": "WordPress (wp-json/oembed seen in saved /api page); marketing site only - product delivery is B2B feeds, not self-serve",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare (server: cloudflare, cf-ray ...-DFW); assets on sec-cdn.lsports.eu",
+  "cdn": "Cloudflare + sec-cdn.lsports.eu",
+  "citations": [
+   "https://www.lsports.eu/",
+   "https://www.lsports.eu/sports-api/"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/api (marketing landing page, not an API root)",
+    "auth_required": "no",
+    "tier": "n/a",
+    "sample_response": "517KB HTML product landing (saved raw/ls_lsports_eu_api.txt)",
+    "citation": "https://www.lsports.eu/api"
+   },
+   {
+    "method": "PUSH",
+    "path": "OddService/Odds Feed - real-time odds delivery (pre-match + in-play, claimed 0-1s latency), fixtures/live scores/statistics/market settlement; SDK + code samples offered",
+    "auth_required": "B2B contract",
+    "tier": "enterprise, customizable packages",
+    "sample_response": "NOT CONFIRMED (gated behind demo/contact)",
+    "citation": "https://www.lsports.eu/odds-feed/"
+   },
+   {
+    "method": "PUSH",
+    "path": "Sports API - statistics feed: ~40,000 events/month across 30+ sports, unified structure across sports, live scores/fixtures/standings/player stats",
+    "auth_required": "B2B contract",
+    "tier": "enterprise, tailored packages",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "https://www.lsports.eu/sports-api/"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (none)",
+  "websocket_endpoints": "NOT CONFIRMED publicly; feeds described as real-time push with 0-1s latency; delivery protocol (WebSocket/TCP/HTTP) not exposed pre-contract",
+  "rate_limits": "NOT CONFIRMED (no public limits; packages are negotiated)",
+  "citations": [
+   "https://www.lsports.eu/odds-feed/",
+   "https://www.lsports.eu/sports-api/"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "Marketing claims 'AI-driven insights' for player engagement products; no model infra exposed",
+  "training_data": "Own collected feed data (100+ live sources, 1,000+ scouts)",
+  "update_frequency": "In-play odds 0-1s; scouts play-by-play as low as 1s",
+  "citation": "https://www.lsports.eu/odds-feed/"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "data_supply_chain": {
+  "vendors": "LSports is itself an upstream vendor: data from 'over 100 live sources' covering 100+ sports; Scouts Feed powered by 1,000+ trained on-site scouts + low-latency TV sources with per-event quality controllers; sister/related product Trade360 (margin customization vs 'industry benchmarks and leading bookies odds') is positioned as the odds-provider tool alongside OddService. No reliance on Sportradar/StatsPerform/Opta admitted (0 mentions) - they market as a Sportradar alternative.",
+  "citations": [
+   "https://www.lsports.eu/odds-feed/",
+   "https://www.lsports.eu/scouts-feed/",
+   "https://www.lsports.eu/sports-api/"
+  ]
+ },
+ "product_limits": {
+  "limits": "'You don't need to purchase all available data - you can choose only what's right for you' - packages are a la carte by sport/competition/event; 24/7 support bundled; historical pre-match + in-play feeds available",
+  "upgrade_triggers": "Coverage expansion and latency SLAs are sales levers; no self-serve caps",
+  "citation": "https://www.lsports.eu/odds-feed/"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED - no public pricing anywhere (homepage, /api, sports-api, odds-feed, scouts-feed); 'talk to us / Free Trial / Get a Demo' contact-gated enterprise sales",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "https://www.lsports.eu/",
+   "https://www.lsports.eu/odds-feed/"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Have you used lsports for play by play data? how do you find the latency if so? was interested in their scouting data.",
+   "source": "https://www.reddit.com/r/algobetting/comments/1ri4von/lowlatency_websocket_providers_for_live_sports/",
+   "date": "thread ~6 months old (2026)"
+  },
+  {
+   "quote": "Lsports.eu is rated as a low-trust casino. This usually indicates limited operating history, weak reputation evidence, or licensing claims... (automated trust-scanner misclassification of the marketing domain - noteworthy reputation noise, not a verified user complaint)",
+   "source": "https://gridinsoft.com/online-virus-scanner/url/lsports-eu",
+   "date": "current"
+  }
+ ],
+ "discovered_paths": [
+  "/sports-api/",
+  "/odds-feed/",
+  "/scouts-feed/",
+  "/hyper-feed/",
+  "/oddservice/",
+  "/sports-data-feed-coverage/",
+  "/market-coverage-operational-efficiency/",
+  "/get-a-demo/"
+ ],
+ "discovered_targets": [
+  "trade360.com (LSports-affiliated odds/margin tool)",
+  "adi-预测/ADI PredictStreet (client quoted)"
+ ],
+ "discovery_metadata": {
+  "method": "fetcher.py GETs: home, sports-api, odds-feed, scouts-feed (4 reqs) + saved ls_lsports_eu_api.txt (518KB) + robots/sitemap probes + 2 web_search",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 21 raw evidence files)"
+}

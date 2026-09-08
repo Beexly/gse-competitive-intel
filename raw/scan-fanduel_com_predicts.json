@@ -1,0 +1,149 @@
+{
+ "home_status": 200,
+ "home_url": "https://www.fanduel.com/predicts",
+ "robots_status": 200,
+ "robots_body": "Sitemap: https://www.fanduel.com/sitemap.xml\nSitemap: https://www.fanduel.com/cms-sitemap.xml\nSitemap: https://www.fanduel.com/research/sitemap.xml\nSitemap: https://www.fanduel.com/about/sitemap.xml\n\nUser-agent: *\nDisallow: /api\nDisallow: /research/api\nDisallow: /about/api\nDisallow: /weather/\nDisallow: /p/Interstitial\nDisallow: /games/\nDisallow: /e\nDisallow: /lineups/\nDisallow: /*?invitedby\nDisallow: /users/\nDisallow: /theduel/users\nDisallow: /users/*\nDisallow: /posts/\nAllow: /knowledge/\nAllow: /llms.txt\n",
+ "robots_sitemaps": [
+  "https://www.fanduel.com/sitemap.xml",
+  "https://www.fanduel.com/cms-sitemap.xml",
+  "https://www.fanduel.com/research/sitemap.xml",
+  "https://www.fanduel.com/about/sitemap.xml"
+ ],
+ "sitemap_status": 200,
+ "sitemap_url": "https://www.fanduel.com/sitemap.xml",
+ "sitemap_loc_count": 5,
+ "sitemap_sample": [
+  "https://www.fanduel.com/sitemap-main.xml",
+  "https://www.fanduel.com/research/server-sitemap-index.xml",
+  "https://www.fanduel.com/fantasy/nfl/sitemap.xml",
+  "https://www.fanduel.com/cms-sitemap.xml",
+  "https://www.fanduel.com/about/sitemap.xml"
+ ],
+ "js_candidates_total": 15,
+ "js_fetched": [
+  {
+   "url": "https://www.fanduel.com/_next/static/chunks/polyfills-42372ed130431b0a.js",
+   "status": 200,
+   "bytes": 112541
+  },
+  {
+   "url": "https://www.fanduel.com/_next/static/chunks/webpack-8d1528a7e7f53e3b.js",
+   "status": 200,
+   "bytes": 9511
+  }
+ ],
+ "greps": {
+  "baseURL": [
+   {
+    "file": "fanduel_com_predicts_js0.js",
+    "ctx": "st=null,s.port=null,s.path=[],s.query=null,s.fragment=null,s.cannotBeABaseURL=!1,t=Pd(t,Hd,\"\"),t=Pd(t,$d,\"$1\")),t=Pd(t,Kd,\"\"),n=Wn(t);f<=n.length;){switch(o=n[f],c){ca"
+   },
+   {
+    "file": "fanduel_com_predicts_js0.js",
+    "ctx": "=s.scheme?c=ag:s.isSpecial()?c=fg:\"/\"===n[f+1]?(c=ug,f++):(s.cannotBeABaseURL=!0,Rd(s.path,\"\"),c=Sg)}break;case ig:if(!r||r.cannotBeABaseURL&&\"#\"!==o)return Md;if(r.ca"
+   },
+   {
+    "file": "fanduel_com_predicts_js0.js",
+    "ctx": "nnotBeABaseURL=!0,Rd(s.path,\"\"),c=Sg)}break;case ig:if(!r||r.cannotBeABaseURL&&\"#\"!==o)return Md;if(r.cannotBeABaseURL&&\"#\"===o){s.scheme=r.scheme,s.path=vo(r.path),s."
+   },
+   {
+    "file": "fanduel_com_predicts_js0.js",
+    "ctx": "ak;case ig:if(!r||r.cannotBeABaseURL&&\"#\"!==o)return Md;if(r.cannotBeABaseURL&&\"#\"===o){s.scheme=r.scheme,s.path=vo(r.path),s.query=r.query,s.fragment=\"\",s.cannotBeABa"
+   }
+  ]
+ },
+ "pricing_links": [],
+ "request_log": [
+  {
+   "url": "https://www.fanduel.com/predicts",
+   "status": 200,
+   "error": null,
+   "ms": 707,
+   "bytes": 107263,
+   "hdrs": {
+    "server": "openresty",
+    "via": "1.1 4a91a321d4c2ab7334c6f285093956ae.cloudfront.net (CloudFront), 1.1 aa607ef1463ae664cd2325eb41bbec6c.cloudfront.net (CloudFront)",
+    "content-type": "text/html; charset=utf-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fanduel_com_predicts_home.html"
+  },
+  {
+   "url": "https://www.fanduel.com/robots.txt",
+   "status": 200,
+   "error": null,
+   "ms": 218,
+   "bytes": 510,
+   "hdrs": {
+    "server": "AmazonS3",
+    "via": "1.1 461853d52f271678cc474a50cbd2f2a6.cloudfront.net (CloudFront)",
+    "content-type": "text/plain"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fanduel_com_predicts_robots.txt"
+  },
+  {
+   "url": "https://www.fanduel.com/sitemap.xml",
+   "status": 200,
+   "error": null,
+   "ms": 161,
+   "bytes": 796,
+   "hdrs": {
+    "server": "AmazonS3",
+    "via": "1.1 aa607ef1463ae664cd2325eb41bbec6c.cloudfront.net (CloudFront)",
+    "content-type": "text/xml"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fanduel_com_predicts_sitemap.xml"
+  },
+  {
+   "url": "https://www.fanduel.com/_next/static/chunks/polyfills-42372ed130431b0a.js",
+   "status": 200,
+   "error": null,
+   "ms": 94,
+   "bytes": 112541,
+   "hdrs": {
+    "server": "openresty",
+    "via": "1.1 a01680a1fee7e35f1738191420d98822.cloudfront.net (CloudFront), 1.1 f4e7dd74614a7a14732fa41580de8c7a.cloudfront.net (CloudFront)",
+    "content-type": "application/javascript; charset=UTF-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fanduel_com_predicts_js0.js"
+  },
+  {
+   "url": "https://www.fanduel.com/_next/static/chunks/webpack-8d1528a7e7f53e3b.js",
+   "status": 200,
+   "error": null,
+   "ms": 88,
+   "bytes": 9511,
+   "hdrs": {
+    "server": "openresty",
+    "via": "1.1 a01680a1fee7e35f1738191420d98822.cloudfront.net (CloudFront), 1.1 82c221e4fa31257708be9cd2433fa904.cloudfront.net (CloudFront)",
+    "content-type": "application/javascript; charset=UTF-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fanduel_com_predicts_js1.js"
+  },
+  {
+   "url": "https://www.fanduel.com/openapi.json",
+   "status": 404,
+   "error": null,
+   "ms": 255,
+   "bytes": 7113,
+   "hdrs": {
+    "server": "openresty",
+    "via": "1.1 76f3fedc86826a7b266250e33ee41082.cloudfront.net (CloudFront), 1.1 5e5f832779ed8b45bd4fac5854073f14.cloudfront.net (CloudFront)",
+    "content-type": "text/html; charset=utf-8"
+   },
+   "saved": null
+  },
+  {
+   "url": "https://www.fanduel.com/swagger.json",
+   "status": 404,
+   "error": null,
+   "ms": 277,
+   "bytes": 7113,
+   "hdrs": {
+    "server": "openresty",
+    "via": "1.1 45893c5ff2aa24fa7dce9573a0274642.cloudfront.net (CloudFront), 1.1 e1496f86e99bdba0a12fe556d1aa76ba.cloudfront.net (CloudFront)",
+    "content-type": "text/html; charset=utf-8"
+   },
+   "saved": null
+  }
+ ]
+}

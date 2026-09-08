@@ -1,0 +1,113 @@
+{
+ "domain": "isportsapi.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "nuxt",
+   "citation": "raw/px_isportsapi_com_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_isportsapi_com_home.raw",
+   "raw\\px_isportsapi_com_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "api.com/",
+    "http://api.thscore.vip",
+    "api.comhttps",
+    "api.com",
+    "http://api.isportsapi.com/league.aspx",
+    "api.com/sitemap.xml"
+   ],
+   "citation": "raw/px_isportsapi_com_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_isportsapi_com_home.raw"
+  },
+  "rate_limits": {
+   "value": "Credit",
+   "citation": "raw/px_isportsapi_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_isportsapi_com_home.raw",
+   "raw\\px_isportsapi_com_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'iSports API, fast and reliable sports data provider, offers football &amp; baske' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_isportsapi_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_isportsapi_com_home.raw",
+   "raw\\px_isportsapi_com_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "Credit",
+    "calls per"
+   ],
+   "citation": "raw/px_isportsapi_com_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_isportsapi_com_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "Free"
+   ],
+   "citation": "raw/px_isportsapi_com_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_isportsapi_com_home.raw",
+   "raw\\px_isportsapi_com_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Sitemap:https://www.isportsapi.com/sitemap.xml"
+ ],
+ "discovered_targets": [
+  "api.com",
+  "api.com/",
+  "api.com/sitemap.xml",
+  "api.comhttps",
+  "http://api.isportsapi.com/league.aspx",
+  "http://api.thscore.vip"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:40.657102"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "iSports API - Reliable Sports Data API &amp; Odds Feed for Developers",
+  "description": "iSports API, fast and reliable sports data provider, offers football &amp; basketball API, live data, odds feed, stats, large database and widgets to develop your website and application."
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "clubelo-ssl": {
+  "status": "000",
+  "bytes": "0",
+  "head": "",
+  "err": "curl: (28) Connection timed out after 16002 milliseconds\n"
+ },
+ "oddspapi-pricing": {
+  "status": "200",
+  "bytes": "127304",
+  "head": "<!DOCTYPE html><html lang=\"en-US\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/46f5a1890e9233c2.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/5353aa6f6037445f.js\"/><script src=\"/_next/static/chunks/847a196b8687dc8c.js\" async=\"\"></script><script src=\"/_next/static/chunks/c2a2b53940da9750.js\" async=\"\"></script><script src=\"/_next/static/chunks/1c057f8a6c6246d1.js\" async=\"\"></script><script src=\"/_next/static/chunks/turbopack-24f8ada5",
+  "err": ""
+ },
+ "thestatsapi-pricing-alt": {
+  "status": "200",
+  "bytes": "165054",
+  "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"/logo.webp\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/08pheo8fz-u4r.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/0pkrupb1wwj2z.js\"/><script src=\"/_next/static/chunks/07kz-sck15uin.js\" async=\"\"></script><script src=\"/_next/static/chunks/0jk~ybzba1y03.js\" async=\"\"></script><script src=\"/_next/static/chunks/0gyhlsobr-.-~.js\" async=\"\"></script><script src=\"/_next/",
+  "err": ""
+ },
+ "pipeworx-pricing": {
+  "status": "200",
+  "bytes": "31707",
+  "head": "<!DOCTYPE html><html lang=\"en\" data-astro-cid-5hce7sga> <head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"description\" content=\"Pipeworx pricing: a free account is 200 tool calls/day \u2014 $1.00 of data, renewed every day \u2014 and 50 tool calls/day with no signup at all. In production, credits: volume-tiered requests from $0.005 down to $0.001, premium sources at cost with a bracket markup. One currency, no per-pack fees.\"><meta name=\"robots\" content=\"index, follow\"><link rel=\"canonical\" href=\"https://pipeworx.io/pricing/\"><!-- Warm up TLS to ",
+  "err": ""
+ },
+ "sportsgeek-docs": {
+  "status": "000",
+  "bytes": "0",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: sportsgeek.dev\n"
+ },
+ "atp-list": {
+  "status": "403",
+  "bytes": "280",
+  "head": "{\"message\":\"API rate limit exceeded for 139.94.213.210. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+  "err": ""
+ },
+ "tennis_raw1": {
+  "status": "404",
+  "bytes": "14",
+  "head": "404: Not Found",
+  "err": ""
+ },
+ "nhl-data-list": {
+  "status": "200",
+  "bytes": "19387",
+  "head": "{\n  \"total_count\": 5,\n  \"incomplete_results\": false,\n  \"items\": [\n    {\n      \"id\": 1154981786,\n      \"node_id\": \"R_kgDORNefmg\",\n      \"name\": \"nhl_metrics\",\n      \"full_name\": \"jmc316/nhl_metrics\",\n      \"private\": false,\n      \"owner\": {\n        \"login\": \"jmc316\",\n        \"id\": 44181800,\n        \"node_id\": \"MDQ6VXNlcjQ0MTgxODAw\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/44181800?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/jmc316\",\n        \"html_url\": \"https://github.com/jmc316\",\n        \"followers_url\": \"https://api.github.com/users/jmc",
+  "err": ""
+ },
+ "cfbd-swagger": {
+  "status": "404",
+  "bytes": "1089",
+  "head": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /swagger.json</pre>\n<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a3814482cc1be032',t:'MTc4ODkwNTI2Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElem",
+  "err": ""
+ },
+ "espn-core-swift-list": {
+  "status": "200",
+  "bytes": "6794",
+  "head": "{\"count\":1,\"pageIndex\":1,\"pageSize\":25,\"pageCount\":1,\"items\":[{\"$ref\":\"http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/401872656/competitions/401872656?lang=en&region=us\",\"id\":\"401872656\",\"guid\":\"8a0c5fb8-ab04-3ef5-9661-0be7c1875885\",\"uid\":\"s:20~l:28~e:401872656~c:401872656\",\"date\":\"2026-09-10T00:20Z\",\"attendance\":0,\"type\":{\"id\":\"1\",\"text\":\"Standard\",\"abbreviation\":\"STD\",\"slug\":\"standard\",\"type\":\"standard\"},\"timeValid\":true,\"dateValid\":true,\"neutralSite\":false,\"divisionCompetition\":false,\"conferenceCompetition\":false,\"previewAvailable\":true,\"recapAvailable\":false,\"boxscor",
+  "err": ""
+ },
+ "ncaa-sports-api": {
+  "status": "000",
+  "bytes": "0",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: data.ncaa.org\n"
+ },
+ "fotmob-llms-full": {
+  "status": "200",
+  "bytes": "5833",
+  "head": "# FotMob\n\n> The world's leading football live scores & news app, delivering real-time match data, statistics, and analysis for over 250 leagues worldwide.\n\n## Core Resources\n- [Live Matches](https://www.fotmob.com): Real-time scores and match details\n- [All Leagues](https://www.fotmob.com/all-leagues): Competition tables, fixtures, and standings\n- [News](https://www.fotmob.com/news?tab=latest): Latest football news and analysis\n\n## URL Structure\nFotMob uses structured URLs with locale codes, IDs, and slugs:\n\n### Leagues\n- Format: `https://www.fotmob.com/{locale}/leagues/{id}/overview/{slug}`\n-",
+  "err": ""
+ },
+ "openligadb-swagger": {
+  "status": "200",
+  "bytes": "735",
+  "head": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Swagger UI</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"./swagger-ui.css\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"./index.css\">\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-32x32.png\" sizes=\"32x32\" />\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-16x16.png\" sizes=\"16x16\" />\n       \n</head>\n\n<body>\n    <div id=\"swagger-ui\"></div>\n\n    <script src=\"./swagger-ui-bundle.js\" charset=\"utf-8\"></script>\n    <script src=\"./swagger-ui-sta",
+  "err": ""
+ }
+}

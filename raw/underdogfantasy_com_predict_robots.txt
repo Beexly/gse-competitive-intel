@@ -1,0 +1,1 @@
+URL: https://underdogfantasy.com/robots.txt\nSTATUS: 200\n\nSitemap: https://www.underdogsports.com/sitemap.xml

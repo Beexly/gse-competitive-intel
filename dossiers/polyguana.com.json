@@ -1,0 +1,99 @@
+{
+ "domain": "polyguana.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "react",
+   "citation": "raw/px_polyguana_com_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_polyguana_com_home.raw",
+   "raw\\px_polyguana_com_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "https://api.x.com"
+   ],
+   "citation": "raw/px_polyguana_com_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyguana_com_home.raw"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyguana_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_polyguana_com_home.raw",
+   "raw\\px_polyguana_com_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'the prediction market super app' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "Kalshi",
+    "Polymarket"
+   ],
+   "citation": "raw/px_polyguana_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_polyguana_com_home.raw",
+   "raw\\px_polyguana_com_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyguana_com_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_polyguana_com_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyguana_com_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_polyguana_com_home.raw",
+   "raw\\px_polyguana_com_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "https://api.x.com"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:03.590542"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Polyguana (@polyguana) / X",
+  "description": "the prediction market super app"
+ }
+}

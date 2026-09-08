@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+Allow: /api/og
+Allow: /api/profile
+Allow: /api/kalshi-profile
+Allow: /api/proxy-image
+
+Disallow: /api/
+Disallow: /auth/
+
+User-agent: Twitterbot
+Allow: /
+Allow: /api/og
+Allow: /api/profile
+Allow: /api/kalshi-profile
+Allow: /api/proxy-image
+
+Sitemap: https://synthesis.trade/sitemap.xml
+Host: https://synthesis.trade

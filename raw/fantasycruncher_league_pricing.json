@@ -1,0 +1,563 @@
+{
+ "ALL": {
+  "league": "ALL",
+  "tab_display": "All Sports",
+  "display_order": 0,
+  "active": true,
+  "bullet_points": [],
+  "pricing": {
+   "lite": {
+    "weekly": 995,
+    "monthly": 2995
+   },
+   "premium": {
+    "weekly": 2495,
+    "monthly": 7995
+   },
+   "pro": {
+    "weekly": 4995,
+    "monthly": 15995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "ALL_lite_weekly_995",
+    "monthly": "ALL_lite_monthly_2995"
+   },
+   "premium": {
+    "weekly": "ALL_premium_weekly_2495",
+    "monthly": "ALL_premium_monthly_7995"
+   },
+   "pro": {
+    "weekly": "ALL_pro_weekly_4995",
+    "monthly": "ALL_pro_monthly_15995"
+   }
+  },
+  "sport_nav_html": "<li class='ALL active' data-league='ALL'><a>All Sports</a></li>"
+ },
+ "NFL": {
+  "league": "NFL",
+  "tab_display": "NFL",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 695,
+    "monthly": 1995
+   },
+   "premium": {
+    "weekly": 1495,
+    "monthly": 4495
+   },
+   "pro": {
+    "weekly": 2995,
+    "monthly": 8995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "NFL_lite_weekly_695",
+    "monthly": "NFL_lite_monthly_1995"
+   },
+   "premium": {
+    "weekly": "NFL_premium_weekly_1495",
+    "monthly": "NFL_premium_monthly_4495"
+   },
+   "pro": {
+    "weekly": "NFL_pro_weekly_2995",
+    "monthly": "NFL_pro_monthly_8995"
+   }
+  },
+  "sport_nav_html": "<li class='NFL ' data-league='NFL'><a>NFL</a></li>"
+ },
+ "NBA": {
+  "league": "NBA",
+  "tab_display": "NBA",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 695,
+    "monthly": 1995
+   },
+   "premium": {
+    "weekly": 1495,
+    "monthly": 4495
+   },
+   "pro": {
+    "weekly": 2995,
+    "monthly": 8995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "NBA_lite_weekly_695",
+    "monthly": "NBA_lite_monthly_1995"
+   },
+   "premium": {
+    "weekly": "NBA_premium_weekly_1495",
+    "monthly": "NBA_premium_monthly_4495"
+   },
+   "pro": {
+    "weekly": "NBA_pro_weekly_2995",
+    "monthly": "NBA_pro_monthly_8995"
+   }
+  },
+  "sport_nav_html": "<li class='NBA ' data-league='NBA'><a>NBA</a></li>"
+ },
+ "MLB": {
+  "league": "MLB",
+  "tab_display": "MLB",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 595,
+    "monthly": 1495
+   },
+   "premium": {
+    "weekly": 1195,
+    "monthly": 2995
+   },
+   "pro": {
+    "weekly": 2495,
+    "monthly": 5995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "MLB_lite_weekly_595",
+    "monthly": "MLB_lite_monthly_1495"
+   },
+   "premium": {
+    "weekly": "MLB_premium_weekly_1195",
+    "monthly": "MLB_premium_monthly_2995"
+   },
+   "pro": {
+    "weekly": "MLB_pro_weekly_2495",
+    "monthly": "MLB_pro_monthly_5995"
+   }
+  },
+  "sport_nav_html": "<li class='MLB ' data-league='MLB'><a>MLB</a></li>"
+ },
+ "NHL": {
+  "league": "NHL",
+  "tab_display": "NHL",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 495,
+    "monthly": 1295
+   },
+   "premium": {
+    "weekly": 795,
+    "monthly": 2495
+   },
+   "pro": {
+    "weekly": 1595,
+    "monthly": 4995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "NHL_lite_weekly_495",
+    "monthly": "NHL_lite_monthly_1295"
+   },
+   "premium": {
+    "weekly": "NHL_premium_weekly_795",
+    "monthly": "NHL_premium_monthly_2495"
+   },
+   "pro": {
+    "weekly": "NHL_pro_weekly_1595",
+    "monthly": "NHL_pro_monthly_4995"
+   }
+  },
+  "sport_nav_html": "<li class='NHL ' data-league='NHL'><a>NHL</a></li>"
+ },
+ "CFB": {
+  "league": "CFB",
+  "tab_display": "CFB",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 595,
+    "monthly": 1495
+   },
+   "premium": {
+    "weekly": 1195,
+    "monthly": 2995
+   },
+   "pro": {
+    "weekly": 2495,
+    "monthly": 5995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "CFB_lite_weekly_595",
+    "monthly": "CFB_lite_monthly_1495"
+   },
+   "premium": {
+    "weekly": "CFB_premium_weekly_1195",
+    "monthly": "CFB_premium_monthly_2995"
+   },
+   "pro": {
+    "weekly": "CFB_pro_weekly_2495",
+    "monthly": "CFB_pro_monthly_5995"
+   }
+  },
+  "sport_nav_html": "<li class='CFB ' data-league='CFB'><a>CFB</a></li>"
+ },
+ "GOLF": {
+  "league": "GOLF",
+  "tab_display": "GOLF",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 495,
+    "monthly": 1495
+   },
+   "premium": {
+    "weekly": 795,
+    "monthly": 2495
+   },
+   "pro": {
+    "weekly": 1995,
+    "monthly": 4995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "GOLF_lite_weekly_495",
+    "monthly": "GOLF_lite_monthly_1495"
+   },
+   "premium": {
+    "weekly": "GOLF_premium_weekly_795",
+    "monthly": "GOLF_premium_monthly_2495"
+   },
+   "pro": {
+    "weekly": "GOLF_pro_weekly_1995",
+    "monthly": "GOLF_pro_monthly_4995"
+   }
+  },
+  "sport_nav_html": "<li class='GOLF ' data-league='GOLF'><a>GOLF</a></li>"
+ },
+ "MMA": {
+  "league": "MMA",
+  "tab_display": "MMA",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 495,
+    "monthly": 1495
+   },
+   "premium": {
+    "weekly": 795,
+    "monthly": 2495
+   },
+   "pro": {
+    "weekly": 1995,
+    "monthly": 4995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "MMA_lite_weekly_495",
+    "monthly": "MMA_lite_monthly_1495"
+   },
+   "premium": {
+    "weekly": "MMA_premium_weekly_795",
+    "monthly": "MMA_premium_monthly_2495"
+   },
+   "pro": {
+    "weekly": "MMA_pro_weekly_1995",
+    "monthly": "MMA_pro_monthly_4995"
+   }
+  },
+  "sport_nav_html": "<li class='MMA ' data-league='MMA'><a>MMA</a></li>"
+ },
+ "NAS": {
+  "league": "NAS",
+  "tab_display": "NAS",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 495,
+    "monthly": 1495
+   },
+   "premium": {
+    "weekly": 795,
+    "monthly": 2495
+   },
+   "pro": {
+    "weekly": 1995,
+    "monthly": 4995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "NAS_lite_weekly_495",
+    "monthly": "NAS_lite_monthly_1495"
+   },
+   "premium": {
+    "weekly": "NAS_premium_weekly_795",
+    "monthly": "NAS_premium_monthly_2495"
+   },
+   "pro": {
+    "weekly": "NAS_pro_weekly_1995",
+    "monthly": "NAS_pro_monthly_4995"
+   }
+  },
+  "sport_nav_html": "<li class='NAS ' data-league='NAS'><a>NAS</a></li>"
+ },
+ "eSPORTS": {
+  "league": "eSPORTS",
+  "tab_display": "eSPORTS",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 495,
+    "monthly": 1495
+   },
+   "premium": {
+    "weekly": 795,
+    "monthly": 2495
+   },
+   "pro": {
+    "weekly": 1995,
+    "monthly": 4995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "eSPORTS_lite_weekly_495",
+    "monthly": "eSPORTS_lite_monthly_1495"
+   },
+   "premium": {
+    "weekly": "eSPORTS_premium_weekly_795",
+    "monthly": "eSPORTS_premium_monthly_2495"
+   },
+   "pro": {
+    "weekly": "eSPORTS_pro_weekly_1995",
+    "monthly": "eSPORTS_pro_monthly_4995"
+   }
+  },
+  "sport_nav_html": "<li class='eSPORTS ' data-league='eSPORTS'><a>eSPORTS</a></li>"
+ },
+ "CFL": {
+  "league": "CFL",
+  "tab_display": "CFL",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 495,
+    "monthly": 1495
+   },
+   "premium": {
+    "weekly": 795,
+    "monthly": 2495
+   },
+   "pro": {
+    "weekly": 1495,
+    "monthly": 3995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "CFL_lite_weekly_495",
+    "monthly": "CFL_lite_monthly_1495"
+   },
+   "premium": {
+    "weekly": "CFL_premium_weekly_795",
+    "monthly": "CFL_premium_monthly_2495"
+   },
+   "pro": {
+    "weekly": "CFL_pro_weekly_1495",
+    "monthly": "CFL_pro_monthly_3995"
+   }
+  },
+  "sport_nav_html": "<li class='CFL ' data-league='CFL'><a>CFL</a></li>"
+ },
+ "F1": {
+  "league": "F1",
+  "tab_display": "F1",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 495,
+    "monthly": 1495
+   },
+   "premium": {
+    "weekly": 795,
+    "monthly": 2495
+   },
+   "pro": {
+    "weekly": 1495,
+    "monthly": 3995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "F1_lite_weekly_495",
+    "monthly": "F1_lite_monthly_1495"
+   },
+   "premium": {
+    "weekly": "F1_premium_weekly_795",
+    "monthly": "F1_premium_monthly_2495"
+   },
+   "pro": {
+    "weekly": "F1_pro_weekly_1495",
+    "monthly": "F1_pro_monthly_3995"
+   }
+  },
+  "sport_nav_html": "<li class='F1 ' data-league='F1'><a>F1</a></li>"
+ },
+ "WNBA": {
+  "league": "WNBA",
+  "tab_display": "WNBA",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 495,
+    "monthly": 1495
+   },
+   "premium": {
+    "weekly": 795,
+    "monthly": 2495
+   },
+   "pro": {
+    "weekly": 1495,
+    "monthly": 3995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "WNBA_lite_weekly_495",
+    "monthly": "WNBA_lite_monthly_1495"
+   },
+   "premium": {
+    "weekly": "WNBA_premium_weekly_795",
+    "monthly": "WNBA_premium_monthly_2495"
+   },
+   "pro": {
+    "weekly": "WNBA_pro_weekly_1495",
+    "monthly": "WNBA_pro_monthly_3995"
+   }
+  },
+  "sport_nav_html": "<li class='WNBA ' data-league='WNBA'><a>WNBA</a></li>"
+ },
+ "SOC": {
+  "league": "SOC",
+  "tab_display": "SOC",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 495,
+    "monthly": 1495
+   },
+   "premium": {
+    "weekly": 795,
+    "monthly": 2495
+   },
+   "pro": {
+    "weekly": 1495,
+    "monthly": 3995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "SOC_lite_weekly_495",
+    "monthly": "SOC_lite_monthly_1495"
+   },
+   "premium": {
+    "weekly": "SOC_premium_weekly_795",
+    "monthly": "SOC_premium_monthly_2495"
+   },
+   "pro": {
+    "weekly": "SOC_pro_weekly_1495",
+    "monthly": "SOC_pro_monthly_3995"
+   }
+  },
+  "sport_nav_html": "<li class='SOC ' data-league='SOC'><a>SOC</a></li>"
+ },
+ "TEN": {
+  "league": "TEN",
+  "tab_display": "TEN",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 495,
+    "monthly": 1495
+   },
+   "premium": {
+    "weekly": 795,
+    "monthly": 2495
+   },
+   "pro": {
+    "weekly": 1495,
+    "monthly": 3995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "TEN_lite_weekly_495",
+    "monthly": "TEN_lite_monthly_1495"
+   },
+   "premium": {
+    "weekly": "TEN_premium_weekly_795",
+    "monthly": "TEN_premium_monthly_2495"
+   },
+   "pro": {
+    "weekly": "TEN_pro_weekly_1495",
+    "monthly": "TEN_pro_monthly_3995"
+   }
+  },
+  "sport_nav_html": "<li class='TEN ' data-league='TEN'><a>TEN</a></li>"
+ },
+ "USFL": {
+  "league": "USFL",
+  "tab_display": "UFL",
+  "display_order": 10,
+  "active": true,
+  "pricing": {
+   "lite": {
+    "weekly": 495,
+    "monthly": 1495
+   },
+   "premium": {
+    "weekly": 795,
+    "monthly": 2495
+   },
+   "pro": {
+    "weekly": 1495,
+    "monthly": 3995
+   }
+  },
+  "plan_ids": {
+   "lite": {
+    "weekly": "USFL_lite_weekly_495",
+    "monthly": "USFL_lite_monthly_1495"
+   },
+   "premium": {
+    "weekly": "USFL_premium_weekly_795",
+    "monthly": "USFL_premium_monthly_2495"
+   },
+   "pro": {
+    "weekly": "USFL_pro_weekly_1495",
+    "monthly": "USFL_pro_monthly_3995"
+   }
+  },
+  "sport_nav_html": "<li class='USFL ' data-league='USFL'><a>UFL</a></li>"
+ }
+}

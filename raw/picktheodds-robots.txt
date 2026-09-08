@@ -1,0 +1,37 @@
+URL: https://picktheodds.app/robots.txt\nSTATUS: 200\n\nUser-Agent: *
+Disallow: /cdn-cgi/
+
+User-Agent: Discordbot
+Disallow:  
+
+User-Agent: facebookexternalhit
+Disallow:  
+
+User-Agent: Linespider
+Disallow:  
+
+User-Agent: LinkedInBot
+Disallow:  
+
+User-Agent: Pinterestbot
+Disallow:  
+
+User-Agent: redditbot
+Disallow:  
+
+User-Agent: Slackbot-LinkExpanding
+Disallow:  
+
+User-Agent: TelegramBot
+Disallow:  
+
+User-Agent: Twitterbot
+Disallow:  
+
+User-Agent: vkShare
+Disallow:  
+
+User-Agent: WhatsApp
+Disallow:  
+
+Sitemap: https://picktheodds.app/sitemap.xml

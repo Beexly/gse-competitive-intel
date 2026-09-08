@@ -1,0 +1,41 @@
+{
+  "domain": "oddpool.com",
+  "disposition": "live",
+  "disposition_reason": "Homepage, docs (/llms.txt), /pricing, and multiple API endpoints reachable. Public search endpoint 401s without X-API-Key; pricing clearly posted.",
+  "tech_stack": {
+    "frontend": "Next.js React SSR (/_next/static/chunks 1749,3994,5250,8069,9660); Vercel edge cle1/f64rh. Homepage 49KB.",
+    "backend": "API at https://api.oddpool.com + WS at wss://feeds.oddpool.com/ws; aggregates Kalshi + Polymarket prediction markets; 'paper trading, arbitrage scanner, whale tracking' features.",
+    "database": "NOT CONFIRMED",
+    "cloud_cdn": "Vercel (Next.js), Cloudflare edge",
+    "citations": ["https://oddpool.com","https://oddpool.com/pricing","https://docs.oddpool.com","https://oddpool.com/llms.txt"]
+  },
+  "api_architecture": {
+    "rest_endpoints": [
+      {"method":"GET","path":"/arbitrage/current","auth_required":"X-API-Key","tier":"Pro/Premium+","sample_response":"current cross-venue arbitrage; min_net_cents=0.5","citation":"https://docs.oddpool.com"},
+      {"method":"GET","path":"/arbitrage/current/difference","auth_required":"X-API-Key","tier":"Pro/Premium+","sample_response":"NOT CONFIRMED","citation":"https://docs.oddpool.com/llms.txt"},
+      {"method":"GET","path":"/search/events","auth_required":"X-API-Key","tier":"all paid tiers","sample_response":"401 without key (confirmed)","citation":"https://docs.oddpool.com"},
+      {"method":"GET","path":"/search/markets","auth_required":"X-API-Key","tier":"all paid tiers","sample_response":"NOT CONFIRMED","citation":"https://docs.oddpool.com/llms.txt"},
+      {"method":"GET","path":"/search/series","auth_required":"X-API-Key","tier":"all paid tiers","sample_response":"NOT CONFIRMED","citation":"https://docs.oddpool.com/llms.txt"},
+      {"method":"GET","path":"/search/recent/markets","auth_required":"X-API-Key","tier":"all paid tiers","sample_response":"NOT CONFIRMED","citation":"https://docs.oddpool.com/llms.txt"},
+      {"method":"GET","path":"/markets/ohlcv","auth_required":"X-API-Key","tier":"Premium+","sample_response":"NOT CONFIRMED","citation":"https://docs.oddpool.com/llms.txt"},
+      {"method":"GET","path":"/whales/user/feed","auth_required":"X-API-Key","tier":"Premium+","sample_response":"whale trade stream","citation":"https://docs.oddpool.com/llms.txt"},
+      {"method":"GET","path":"/historical/kalshi/{orderbook,top-of-book,trades}","auth_required":"X-API-Key","tier":"Premium","sample_response":"NOT CONFIRMED","citation":"https://docs.oddpool.com/llms.txt"},
+      {"method":"GET","path":"/historical/polymarket/{orderbook,top-of-book,trades}","auth_required":"X-API-Key","tier":"Premium","sample_response":"NOT CONFIRMED","citation":"https://docs.oddpool.com/llms.txt"},
+      {"method":"GET","path":"/reference/v2/entities","auth_required":"X-API-Key","tier":"Premium","sample_response":"NOT CONFIRMED","citation":"https://docs.oddpool.com/llms.txt"}
+    ],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": [{"url":"wss://feeds.oddpool.com/ws","auth_required":"X-API-Key","tier":"Pro/Premium","citation":"https://docs.oddpool.com/llms.txt"}],
+    "rate_limits": {"Free":"1 req/sec, 1000 monthly quota, 1 WS conn, 2 WS events","Pro":"10 req/sec, 1M monthly quota, 3 WS conns, 10 WS events","Premium":"25 req/sec, 5M monthly quota, 10 WS conns, unlimited WS events","Enterprise":"500 req/sec, unlimited quota, unlimited conns","citation":"https://oddpool.com/pricing"},
+    "citations": ["https://docs.oddpool.com/llms.txt","https://docs.oddpool.com","https://oddpool.com/pricing","https://api.oddpool.com/search/events"]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {"model_types":"NOT CONFIRMED","training_data":"NOT CONFIRMED","update_frequency":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "simulation_engine": {"num_simulations":"NOT CONFIRMED","correlation_method":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "data_supply_chain": {"vendors":"Aggregates Kalshi + Polymarket APIs (peer venues); oddpool positions itself as the data provider layering whales/arbitrage on top","citations":["https://oddpool.com","https://docs.oddpool.com/llms.txt"]},
+  "product_limits": {"limits":"API key count & rate per tier (Free 1 key / 1000 mo quota -> Pro forces upgrade at 1000 calls)","upgrade_triggers":"quota exhaustion, WS connection/channel cap, arbitrage API access gated to Pro+","citation":"https://oddpool.com/pricing"},
+  "pricing": {"web":"Free $0 (1 req/s,1000 quota) | Pro $30/mo (10 req/s,1M quota) | Premium $100/mo (25 req/s,5M quota) | Enterprise custom (500 req/s,unlimited) — NOTE: 'Oddpool is no longer accepting new subscriptions; existing/free continue'","ios":"NOT CONFIRMED","android":"NOT CONFIRMED","citations":["https://oddpool.com/pricing"]},
+  "customer_pain": [],
+  "discovered_paths": ["/pricing","/docs","/llms.txt","/arbitrage/current","/search/events","/whales/user/feed"],
+  "discovered_targets": ["api.oddpool.com","docs.oddpool.com","feeds.oddpool.com","docs.oddpool.com/llms.txt"],
+  "discovery_metadata": {"method":"read-only HTTP GET (urllib) + docs.llms.txt extraction + API 401 probe","timestamp":"2026-09-08T21:18:00Z"}
+}

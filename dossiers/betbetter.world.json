@@ -1,0 +1,66 @@
+{
+ "domain": "betbetter.world",
+ "type": "live-site",
+ "disposition": "live",
+ "tech_stack": {
+  "frontend": "Vue app with inlined Google Fonts (LCP optimization) + GTM",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "Microsoft-IIS/10.0 (unusual for consumer sports betting sites)",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/probe_www_betbetter_world.txt (server header Microsoft-IIS/10.0)"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/probe_www_betbetter_world.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "Proprietary game-win-probability model: 'We run 20,000 simulations on every game to work out each side's real chance of winning, then compare that to the bookmaker's price'",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "daily ('today's bet')",
+  "citation": "raw/probe_www_betbetter_world.txt"
+ },
+ "simulation_engine": {
+  "num_simulations": "20,000 per game (marketing claim on homepage)",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "raw/probe_www_betbetter_world.txt"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "bookmaker prices displayed per-outcome ('Tap any price to add it to your slip'); sportsbook names NOT CONFIRMED"
+  ],
+  "citations": [
+   "raw/probe_www_betbetter_world.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": "Free 'today's bet' + premium full board ('Unlock the full board'); 'Free - no card, no charge - leave anytime'",
+  "upgrade_triggers": "full board + premium tier",
+  "citation": "raw/probe_www_betbetter_world.txt"
+ },
+ "pricing": {
+  "web": "Price strings: $2.97, $89, $399 (tier map NOT CONFIRMED); example returns math '$100 returns $370' at odds 3.70",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/probe_www_betbetter_world.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/ (today's bet, results page, pricing)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "direct homepage probe 200 (230KB); claims 56,646+ members",
+  "timestamp": "2026-09-08T14:17:16.628994"
+ }
+}

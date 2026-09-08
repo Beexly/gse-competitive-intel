@@ -1,0 +1,16 @@
+URL: https://propsiq.app/robots.txt\nSTATUS: 200\n\nUser-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /account
+Disallow: /subscribe
+Disallow: /my-bets
+Disallow: /models
+Disallow: /arbs
+Disallow: /sign-in
+Disallow: /sign-up
+Disallow: /forgot-password
+Disallow: /reset-password
+
+Host: https://propsiq.app
+Sitemap: https://propsiq.app/sitemap.xml

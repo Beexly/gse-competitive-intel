@@ -1,0 +1,136 @@
+{
+ "domain": "prophetx.co",
+ "tech_stack": {
+  "frontend": {
+   "value": "nuxt",
+   "citation": "raw/prophetx.co_home.html"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\prophetx.co_home.html",
+   "raw\\prophetx.co_js_5239e49.js.js",
+   "raw\\prophetx.co_js_558351b.js.js",
+   "raw\\prophetx.co_js_90ac6e9.js.js",
+   "raw\\prophetx.co_robots.txt",
+   "raw\\prophetx.co_sitemap.xml"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "api.smartystreets.com",
+    "api.postgrid.com",
+    "https://api.w.org/",
+    "ws-resources-en-trading.jpg",
+    "ws-feature-dtn-background.png"
+   ],
+   "citation": "raw/prophetx.co_home.html"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\prophetx.co_home.html"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\prophetx.co_home.html"
+  },
+  "citations": [
+   "raw\\prophetx.co_home.html",
+   "raw\\prophetx.co_js_5239e49.js.js",
+   "raw\\prophetx.co_js_558351b.js.js",
+   "raw\\prophetx.co_js_90ac6e9.js.js",
+   "raw\\prophetx.co_robots.txt",
+   "raw\\prophetx.co_sitemap.xml"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'The First Sports Prediction Exchange in the US. ProphetX offers the best odds in' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "sportradar"
+   ],
+   "citation": "raw/prophetx.co_home.html"
+  },
+  "citations": [
+   "raw\\prophetx.co_home.html",
+   "raw\\prophetx.co_js_5239e49.js.js",
+   "raw\\prophetx.co_js_558351b.js.js",
+   "raw\\prophetx.co_js_90ac6e9.js.js",
+   "raw\\prophetx.co_robots.txt",
+   "raw\\prophetx.co_sitemap.xml"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\prophetx.co_home.html"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\prophetx.co_home.html"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "Free"
+   ],
+   "citation": "raw/prophetx.co_home.html"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\prophetx.co_home.html",
+   "raw\\prophetx.co_js_5239e49.js.js",
+   "raw\\prophetx.co_js_558351b.js.js",
+   "raw\\prophetx.co_js_90ac6e9.js.js",
+   "raw\\prophetx.co_robots.txt",
+   "raw\\prophetx.co_sitemap.xml"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Disallow: /demo",
+  "Disallow: /toolkit",
+  "Disallow: /trustly-webview",
+  "Disallow: /board/**",
+  "Disallow: /aff_lsr",
+  "Disallow: /api-status",
+  "Disallow: /worldpay-webview",
+  "Disallow: /pay-near-me/payment-result",
+  "Disallow: /worldpay-webview/WorldPayWrapper",
+  "Allow: /",
+  "Sitemap: https://www.prophetx.co/sitemap-index.xml",
+  "Sitemap: https://www.prophetx.co/sitemap.xml"
+ ],
+ "discovered_targets": [
+  "api.postgrid.com",
+  "api.smartystreets.com",
+  "https://api.w.org/",
+  "ws-feature-dtn-background.png",
+  "ws-resources-en-trading.jpg"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:26.270209"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "America&#x27;s #1 Sports Prediction Market",
+  "description": "The First Sports Prediction Exchange in the US. ProphetX offers the best odds in the US and is completely free to play, register and make your first play today!"
+ }
+}

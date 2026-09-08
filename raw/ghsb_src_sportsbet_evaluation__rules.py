@@ -1,0 +1,124 @@
+URL: https://raw.githubusercontent.com/georgedouzas/sports-betting/main/src/sportsbet/evaluation/_rules.py\nSTATUS: 200\n\n"""Create a bettor based on betting rules."""
+
+# Author: Georgios Douzas <gdouzas@icloud.com>
+# License: MIT
+
+
+from typing import ClassVar, Self
+
+import numpy as np
+import pandas as pd
+from sklearn.utils import check_scalar
+
+from ..core import Data
+from ._base import BaseBettor, _is_odds_column, derive_market_base, find_latest_odds_column
+
+
+class OddsComparisonBettor(BaseBettor):
+    """Bettor based on comparison of odds.
+
+    It compares each market's odds to a consensus probability. The consensus probability is the average of the
+    selected odds types, adjusted by `alpha`. The method follows
+    [Beating the bookies with their own numbers](https://arxiv.org/pdf/1710.02824.pdf).
+
+    Read more in the [user guide][user-guide].
+
+    Args:
+        odds_types:
+            The odds types to use for the calculation of consensus probabilities. The
+            default value corresponds to `'market_average'` if this odds type exists or the
+            average of all the other odds columns if `'market_average'` is missing.
+
+        alpha:
+            An adjustment term that corresponds to the difference between the consensus
+            and real probabilities.
+
+        betting_markets:
+            Select the betting markets from the ones included in the data.
+
+        init_cash:
+            The initial cash to use when betting.
+
+        stake:
+            The stake of each bet.
+
+    Attributes:
+        odds_types_ (list[str]):
+            The checked value of the odds types.
+
+        alpha_ (float):
+            The checked value of the alpha parameter.
+
+        output_keys_ (list[str]):
+            The market base names of the output columns.
+
+    Examples:
+        >>> from sportsbet.evaluation import OddsComparisonBettor, backtest
+        >>> from sportsbet.dataloaders import DataLoader
+        >>> from sportsbet.sources import SampleSoccerOdds, SampleSoccerStats
+        >>> dataloader = DataLoader(
+        ...     param_grid={'league': ['England']}, stats=SampleSoccerStats(), odds=SampleSoccerOdds()
+        ... )
+        >>> X, Y, O = dataloader.extract_train_data(odds_type='market_average')
+        >>> bettor = OddsComparisonBettor(alpha=0.03)
+        >>> results = backtest(bettor, X, Y, O)
+        >>> 'Number of bets' in results.columns
+        True
+    """
+
+    _APPEND_ODDS: ClassVar[bool] = True
+
+    def __init__(
+        self: Self,
+        odds_types: list[str] | None = None,
+        alpha: float = 0.05,
+        betting_markets: list[str] | None = None,
+        init_cash: float | None = None,
+        stake: float | None = None,
+    ) -> None:
+        super().__init__(betting_markets, init_cash, stake)
+        self.odds_types = odds_types
+        self.alpha = alpha
+
+    def _check_odds_types(self: Self, X: pd.DataFrame) -> Self:
+        available_odds_types = {col.split('__', maxsplit=1)[0] for col in X.columns if _is_odds_column(col)}
+        if not available_odds_types:
+            error_msg = 'Input data do not include any odds columns.'
+            raise ValueError(error_msg)
+        error_msg = (
+            'Parameter `odds_types` should be either `None` or a list of any of the odds types: '
+            f'{", ".join(sorted(available_odds_types))}. Got {self.odds_types} instead.'
+        )
+        if self.odds_types is not None:
+            if not isinstance(self.odds_types, list) or any(
+                not isinstance(odds_type, str) for odds_type in self.odds_types
+            ):
+                raise TypeError(error_msg)
+            elif not available_odds_types.issuperset(self.odds_types):
+                raise ValueError(error_msg)
+        self.odds_types_ = (
+            sorted(self.odds_types)
+            if self.odds_types is not None
+            else (['market_average'] if 'market_average' in available_odds_types else sorted(available_odds_types))
+        )
+        return self
+
+    def _fit(self: Self, X: pd.DataFrame, Y: pd.DataFrame, O: pd.DataFrame) -> Self:
+        self._check_odds_types(X)
+        self.alpha_ = check_scalar(self.alpha, 'alpha', target_type=float, min_val=0.0, max_val=1.0)
+        self.output_keys_ = [derive_market_base(col) for col in Y.columns]
+        return self
+
+    def _predict_proba(self: Self, X: pd.DataFrame) -> Data:
+        """Return the consensus probability of each market, one column per market."""
+        proba_cont = []
+        columns = list(X.columns)
+        for key in self.output_keys_:
+            odds_cols = [
+                col
+                for odds_type in self.odds_types_
+                if (col := find_latest_odds_column(columns, key, provider=odds_type)) is not None
+            ]
+            proba_cont.append(1 / X[odds_cols].mean(axis=1))
+        proba = (pd.concat(proba_cont, axis=1) - self.alpha_).fillna(0.0).to_numpy()
+        return np.clip(proba, 0.0, None)

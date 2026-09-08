@@ -1,0 +1,14 @@
+[
+ {
+  "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js",
+  "status": 200,
+  "size": 86341,
+  "hits": []
+ },
+ {
+  "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js",
+  "status": 200,
+  "size": 4953,
+  "hits": []
+ }
+]

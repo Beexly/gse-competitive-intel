@@ -1,0 +1,61 @@
+{
+ "domain": "api-sports.io",
+ "type": "live-site/odds-data-api (blocked-fetch)",
+ "tech_stack": {
+  "frontend": "NOT CONFIRMED (plain GET 403 on both www.api-football.com and api-sports.io)",
+  "backend": "REST (public knowledge; not verifiable from saved evidence)",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare bot wall",
+  "cdn": "Cloudflare",
+  "citations": [
+   "raw/fetchlog-apisports.json (403, cf-ray a37fde126f80677a-DFW)"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/fetchlog-apisports.json"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED",
+  "citations": "NOT CONFIRMED"
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": "NOT CONFIRMED"
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "www.api-football.com -> 403",
+  "api-sports.io -> 403"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "root GETs bot-walled; browser-based fetch required for any progress",
+  "timestamp": "2026-09-08T14:06:18.766004"
+ },
+ "disposition": "live (derived from 10 raw evidence files)"
+}

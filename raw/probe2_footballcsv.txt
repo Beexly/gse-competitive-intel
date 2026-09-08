@@ -1,0 +1,110 @@
+URL: https://footballcsv.github.io/
+STATUS: 200
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>football.csv - Open Public Domain Football Data | football.csv website &amp; documentation - Add your tools &amp; scripts here! Add your project here!</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="football.csv - Open Public Domain Football Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="football.csv website &amp; documentation - Add your tools &amp; scripts here! Add your project here!" />
+<meta property="og:description" content="football.csv website &amp; documentation - Add your tools &amp; scripts here! Add your project here!" />
+<link rel="canonical" href="https://footballcsv.github.io/" />
+<meta property="og:url" content="https://footballcsv.github.io/" />
+<meta property="og:site_name" content="football.csv - Open Public Domain Football Data" />
+<script type="application/ld+json">
+{"headline":"football.csv - Open Public Domain Football Data","@type":"WebSite","url":"https://footballcsv.github.io/","description":"football.csv website &amp; documentation - Add your tools &amp; scripts here! Add your project here!","name":"football.csv - Open Public Domain Football Data","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=e7d385a47e905dc4e42e4f45c2724c3c2c0b2023">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+
+      
+<h1 id="footballcsv---open-public-domain-football-data">football.csv - Open Public Domain Football Data</h1>
+
+<p>What’s the comma-separated values (.csv) format?</p>
+
+<p>It’s the world’s most popular tabular data interchange format in text.
+Values are separated - surprise, surprise - by commas (that is, <code class="language-plaintext highlighter-rouge">,</code>).
+One line is one record. Example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Team1,                FT,  HT,  Team2
+Arsenal,              1-3, 1-1, Aston Villa
+Liverpool,            1-0, 1-0, Stoke City
+Norwich City,         2-2, 0-0, Everton
+Sunderland,           0-1, 0-0, Fulham
+Swansea City,         1-4, 0-2, Manchester United
+West Bromwich Albion, 0-1, 0-0, Southampton
+West Ham United,      2-0, 1-0, Cardiff City
+Chelsea,              2-0, 2-0, Hull City
+Crystal Palace,       0-1, 0-0, Tottenham Hotspur
+Manchester City,      4-0, 2-0, Newcastle United 
+...
+</code></pre></div></div>
+
+<h2 id="major-datasets">Major Datasets</h2>
+
+<ul>
+  <li><a href="https://github.com/footballcsv/england"><strong>England Football</strong></a>     - Premiership &amp; Divs 1, 2, 3 &amp; Conference - <a href="https://github.com/footballcsv/england/archive/master.zip">[Download .zip Archive]</a></li>
+  <li><a href="https://github.com/footballcsv/espana"><strong>Spain (España) Football</strong></a>  	   - La Liga (Primera &amp; Segunda)  - <a href="https://github.com/footballcsv/espana/archive/master.zip">[Download .zip Archive]</a></li>
+  <li><a href="https://github.com/footballcsv/deutschland"><strong>Germany (Deutschland) Football</strong></a>      - Bundesligas 1 &amp; 2  - <a href="https://github.com/footballcsv/deutschland/archive/master.zip">[Download .zip Archive]</a></li>
+  <li><a href="https://github.com/footballcsv/europe-champions-league"><strong>Europe Champions League</strong></a>     -  incl. European Cup / European Champion Clubs’ Cup  - <a href="https://github.com/footballcsv/europe-champions-league/archive/master.zip">[Download .zip Archive]</a></li>
+</ul>
+
+<h2 id="more-datasets">More Datasets</h2>
+
+<ul>
+  <li><a href="https://github.com/footballcsv/austria"><strong>Austria (Österreich) Football</strong></a>    - Bundesliga - <a href="https://github.com/footballcsv/austria/archive/master.zip">[Download .zip Archive]</a></li>
+  <li><a href="https://github.com/footballcsv/belgium"><strong>Belgium (Belgique / België / Belgien) Football</strong></a>     - Pro League  - <a href="https://github.com/footballcsv/belgium/archive/master.zip">[Download .zip Archive]</a></li>
+  <li><a href="https://github.com/footballcsv/mexico"><strong>Mexico (México) Football</strong></a>  -  Liga MX - <a href="https://github.com/footballcsv/mexico/archive/master.zip">[Download .zip Archive]</a></li>
+  <li><a href="https://github.com/footballcsv/major-league-soccer"><strong>Major League Soccer (MLS)</strong></a> -  Major League Soccer (MLS) for the United States ‘n’ Canada   - <a href="https://github.com/footballcsv/major-league-soccer/archive/master.zip">[Download .zip Archive]</a></li>
+  <li><a href="https://github.com/footballcsv/world"><strong>World Football</strong></a>  - <a href="https://github.com/footballcsv/world/archive/master.zip">[Download .zip Archive]</a></li>
+</ul>
+
+<p>See all <a href="https://github.com/footballcsv">football.csv dataset repos »</a></p>
+
+<h2 id="bonus-cached-datasets">Bonus: Cached Datasets</h2>
+
+<ul>
+  <li><a href="https://github.com/footballcsv/cache.footballdata"><strong>Joseph Buchdahl’s Football Data</strong></a>  - <a href="https://github.com/footballcsv/cache.footballdata/archive/master.zip">[Download .zip Archive]</a></li>
+  <li><a href="https://github.com/footballcsv/cache.soccerdata"><strong>James P. Curley’s Soccer Data R Statistics Package</strong></a>  - <a href="https://github.com/footballcsv/cache.soccerdata/archive/master.zip">[Download .zip Archive]</a></li>
+  <li><a href="https://github.com/footballcsv/cache.soccerverse"><strong>David Schoch’s Soccerverse</strong></a>  - <a href="https://github.com/footballcsv/cache.soccerverse/archive/master.zip">[Download .zip Archive]</a></li>
+  <li><a href="https://github.com/footballcsv/cache.internationals"><strong>Mart Jürisoo’s International Football Results from 1872 to 2020</strong></a> - <a href="https://github.com/footballcsv/cache.internationals/archive/master.zip">[Download .zip Archive]</a></li>
+</ul>
+
+<h2 id="import--export---tools--scripts">Import &amp; Export - Tools &amp; Scripts</h2>
+
+<p>Use the sport.db command line tools &amp; scripts
+to read in the football.csv datasets into any SQL database (SQLite, PostgreSQL, …)
+and much more.
+See the <a href="http://sportdb.github.io">sport.db project</a> for more.</p>
+
+<p>Add your tools &amp; scripts here!</p>
+
+<h2 id="projects-using-footballcsv-datasets">Projects Using football.csv Datasets</h2>
+
+<p>Add your project here!</p>
+
+<h2 id="questions-comments">Questions? Comments?</h2>
+
+<p>Send them along to the
+<a href="http://groups.google.com/group/opensport">Open Sports &amp; Friends Forum/Mailing List</a>.
+Thanks!</p>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+  </body>
+</html>

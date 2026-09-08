@@ -1,0 +1,502 @@
+{
+ "domain": "fantasypoints.com",
+ "tech_stack": {
+  "frontend": "Nuxt 3 (x-powered-by: Nuxt, Vite chunks /_nuxt/*), Firebase Auth client (isFirebaseInitializing), Vue refs",
+  "backend": "Nuxt/Nitro server routes under /api/* (auth/log, auth/login, auth/logout, fn, fphq/*, mock, proxy) per https://fantasypoints.com/_nuxt/CPuyVrKP.js",
+  "database": "NOT CONFIRMED (no exposure)",
+  "cloud": "Cloudflare (server: cloudflare, cf-ray a38030b14b566c58-DFW)",
+  "cdn": "Cloudflare",
+  "citations": [
+   "https://fantasypoints.com",
+   "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/auth/log",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/auth/login",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/auth/logout",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fn",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/generator/draft/autopick",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/generator/draft/pick",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/generator/draft/recommend",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/generator/draft/reset",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/generator/draft/simulate",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/generator/draft/start",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/generator/draft/trade",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/generator/draft/undo",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/generator/league/create",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/generator/league/delete",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/generator/league/get",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/generator/league/list",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/generator/league/upsert",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/leagues",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/leagues/delete",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/leagues/format",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/leagues/refresh-live-scores",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/leagues/roster-positions",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/leagues/scoring",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/leagues/scoring-coefficients",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/leagues/sync",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/leagues/user-franchise",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/fphq/user/active-league",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/mock",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   },
+   {
+    "method": "POST/GET (not confirmed per-path)",
+    "path": "/api/proxy",
+    "auth_required": "NOT CONFIRMED (fphq/* likely requires session; /api/auth/* handles Firebase session)",
+    "tier": "NOT CONFIRMED (roles role_anonymous/role_authenticated embedded in bundle; premium gating behind /api/proxy)",
+    "sample_response": "path string extracted from Nuxt bundle",
+    "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (no GraphQL markers in bundle)",
+  "websocket_endpoints": "NOT CONFIRMED (no ws:// markers in bundle)",
+  "rate_limits": "NOT CONFIRMED (no public rate-limit doc)",
+  "citations": [
+   "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "League scoring system sync (FPHQ league import + scoring-coefficients API)",
+   "raw_snippet": "/api/fphq/leagues/scoring, /api/fphq/leagues/scoring-coefficients, /api/fphq/leagues/format, /api/fphq/leagues/roster-positions; import providers: espn, cbs, nfl (code: soe=new Set([\\\"espn\\\",\\\"cbs\\\",\\\"nfl\\\"]))",
+   "reconstruction": "User leagues are imported from ESPN/CBS/NFL (and manual entry) via /api/fphq/leagues/sync; per-league scoring settings + coefficients are fetched/normalized through dedicated endpoints, then consumed by the draft generator endpoints (/api/fphq/generator/draft/start|pick|recommend|simulate|trade|autopick). Exact coefficient math not exposed client-side.",
+   "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+  },
+  {
+   "name": "Subscription gate structure",
+   "raw_snippet": "\\\"roles\\\":[{\\\"roleId\\\":\\\"role_anonymous\\\",\\\"title\\\":\\\"Anonymous\\\"},{\\\"roleId\\\":\\\"role_authenticated\\\",\\\"title\\\":\\\"Authenticated\\\"... \\\"planInstanceId\\\":\\\"plan_vbeo1emv3rygvjhuyum7_2026\\\" ... category validator: [\\\"season\\\",\\\"dfs\\\",\\\"betting\\\",\\\"dynasty\\\",\\\"redraft\\\",\\\"bestball\\\",\\\"playoff\\\",\\\"keeper\\\"]",
+   "reconstruction": "Access model = roles (anonymous/authenticated) + purchased plan instances per product category (season/dfs/betting/dynasty/redraft/bestball/playoff/keeper); plan comparison rendered server-side from a plans API; actual dollar prices not present in /plans HTML (client-fetched).",
+   "citation": "https://fantasypoints.com/plans"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED (no model artifacts in bundle; /fphq/news-agent and /fphq/sleeper-pilot suggest LLM-assisted features but not confirmable)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED (value not in bundle; endpoint /api/fphq/generator/draft/simulate confirms server-side draft simulation)",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "fantasydata (string present in homepage HTML)"
+  ],
+  "citations": [
+   "https://fantasypoints.com"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED (numeric caps not in fetched pages)",
+  "upgrade_triggers": "Role/plan gating (role_anonymous vs role_authenticated + plan instances per category) forces signup/upgrade; specific caps not exposed",
+  "citation": "https://fantasypoints.com/plans"
+ },
+ "pricing": {
+  "web": {
+   "url": "https://fantasypoints.com/plans",
+   "status": 200,
+   "detail": "Plan categories confirmed: season (incl. In-Season Betting 2026 plan instance), dfs, betting, dynasty, redraft, bestball, playoff, keeper; /plans/:slug detail pages (e.g. /plans/in-season-betting). Dollar amounts NOT rendered in server HTML (client-fetched) - prices NOT CONFIRMED.",
+   "tokens": [
+    "$1,000,000 (DK Milly Maker contest reference in testimonial)",
+    "$500,000 (FFPC Main Event reference in testimonial) - contest prizes, NOT prices"
+   ]
+  },
+  "ios": "NOT CONFIRMED (not checked - no app link found)",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://fantasypoints.com/plans",
+   "https://fantasypoints.com/_nuxt/CPuyVrKP.js"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "I was pretty disappointed to see PFF doesn't have data for that. I know that fantasypoints.com does track that, but that one stat alone isn't ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1f7930q/opinions_on_fantasypointscom/",
+   "title": "Opinions on fantasypoints.com? : r/fantasyfootball - Reddit"
+  },
+  {
+   "quote": "Hey everyone! I'm Ryan Heath, a new addition this year to the incredible team at FantasyPoints.com. You can find me on Twitter here.",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/17ybyz6/hi_im_ryan_heath_of_fantasypointscom_ama/",
+   "title": "Hi, I'm Ryan Heath of FantasyPoints.com — AMA - Reddit"
+  },
+  {
+   "quote": "Hey guys,. For those of you who don't know, I'm Scott Barrett (@ScottBarrettDFB), the CEO of FantasyPoints.com. I dropped an article in here ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/16jiui3/im_scott_barrett_of_fantasypointscom_ama/",
+   "title": "I'm Scott Barrett of FantasyPoints.com... AMA - Reddit"
+  },
+  {
+   "quote": "Overall, I give their platform 7/10. Their articles are repetitive, rankings aren't tier based which isn't as helpful imo and I question their “ ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/15vjfc9/review_of_several_subscriptions_sites/",
+   "title": "Review of several subscriptions sites : r/fantasyfootball - Reddit"
+  },
+  {
+   "quote": "I've been a subscriber for almost 20 years. Absolutely worth it. Not great for importing your fantasy leagues (too many technical issues there), ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1urfs9a/thoughts_on_fantasy_points_subscriptions/",
+   "title": "Thoughts on Fantasy points subscriptions? : r/fantasyfootball"
+  },
+  {
+   "quote": "Hello everyone, I am Graham Barfield from Fantasy Points. I have dedicated the last 10 years of my life to football.",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/15h9kj0/im_graham_barfield_from_fantasypointscom_ama/",
+   "title": "I'm Graham Barfield from FantasyPoints.com – AMA! - Reddit"
+  },
+  {
+   "quote": "As title states, trying to gauge if the Fantasy Points Data Suite is worth the $200 (currently $180) for the data access?",
+   "source": "https://www.reddit.com/r/DynastyFF/comments/1fom911/is_fantasy_points_data_suite_worth_it/",
+   "title": "Is Fantasy Points Data Suite Worth It? : r/DynastyFF - Reddit"
+  },
+  {
+   "quote": "User Experiences: Some users have reported difficulty canceling directly on the site, noting that \"canceling\" often just generates an email ...",
+   "source": "https://www.reddit.com/r/DynastyFF/comments/1qxqp4f/psa_avoid_paying_for_fantasy_alarm_scam/",
+   "title": "PSA - avoid paying for fantasy alarm scam : r/DynastyFF - Reddit"
+  }
+ ],
+ "discovered_paths": [
+  "/:pathMatch(.*)*",
+  "/:sport(cfb)",
+  "/:sport(nfl)",
+  "/:sport(ufl)",
+  "/about/team",
+  "/about/team/:slug",
+  "/account",
+  "/articles",
+  "/articles/2020/**",
+  "/articles/2021/**",
+  "/articles/2022/**",
+  "/articles/2023/**",
+  "/articles/:season(\\\\d+)/:slug",
+  "/articles/:slug",
+  "/articles/archive",
+  "/articles/current/:slug",
+  "/auth/action",
+  "/blog",
+  "/cfb/articles/2020/**",
+  "/cfb/articles/2021/**",
+  "/cfb/articles/2022/**",
+  "/cfb/articles/2023/**",
+  "/chat",
+  "/discord",
+  "/downloads",
+  "/downloads/:path+",
+  "/fphq",
+  "/fphq/adp",
+  "/fphq/auction-values",
+  "/fphq/changelog",
+  "/fphq/cheat-sheet",
+  "/fphq/compare",
+  "/fphq/dashboard",
+  "/fphq/draft-assist",
+  "/fphq/draft-boards",
+  "/fphq/embed",
+  "/fphq/feed",
+  "/fphq/generator",
+  "/fphq/generator-guide",
+  "/fphq/generator/leagues/:lid",
+  "/fphq/generator/live-draft-assist",
+  "/fphq/generator/live-draft/:lid",
+  "/fphq/generator/new",
+  "/fphq/generator/sleeper-pilot",
+  "/fphq/glossary",
+  "/fphq/guide",
+  "/fphq/import",
+  "/fphq/import/connect",
+  "/fphq/import/connect/:provider",
+  "/fphq/import/manual",
+  "/fphq/league-overview",
+  "/fphq/leagues/:lid",
+  "/fphq/market-values",
+  "/fphq/my-leagues",
+  "/fphq/news-agent",
+  "/fphq/player-search",
+  "/fphq/provider-status",
+  "/fphq/rankings/redraft",
+  "/fphq/start-sit",
+  "/fphq/startup-calculator",
+  "/fphq/strength-of-schedule",
+  "/fphq/targets-fades",
+  "/fphq/team-values",
+  "/fphq/tiered-rankings",
+  "/fphq/trade-builder",
+  "/fphq/trade-calculator",
+  "/fphq/trade-database",
+  "/fphq/trade-finder",
+  "/fphq/value-histories",
+  "/fphq/waiver-assist",
+  "/fphq/welcome",
+  "/fphq/widgets",
+  "/jobs",
+  "/jobs/:slug",
+  "/login",
+  "/logout",
+  "/media",
+  "/media/livestreams",
+  "/media/livestreams/:showSlug/:episodeSlug",
+  "/media/livestreams/:slug",
+  "/media/podcasts",
+  "/media/podcasts/:showSlug/:episodeSlug",
+  "/media/podcasts/:slug",
+  "/media/schedule",
+  "/media/shorts",
+  "/media/shorts/:slug",
+  "/media/videos",
+  "/media/videos/:slug",
+  "/news",
+  "/nfl/articles/2020/**",
+  "/nfl/articles/2021/**",
+  "/nfl/articles/2022/**",
+  "/nfl/articles/2023/**",
+  "/plans",
+  "/plans/:slug",
+  "/plans/in-season-betting",
+  "/series",
+  "/series/:season(\\\\d+)/:slug",
+  "/series/:slug",
+  "/tools",
+  "/tools/betting/hedge-calculator",
+  "/tools/betting/odds-calculator",
+  "/tools/betting/parlay-calculator",
+  "/tools/betting/teaser-calculator",
+  "/ufl/articles/2020/**",
+  "/ufl/articles/2021/**",
+  "/ufl/articles/2022/**",
+  "/ufl/articles/2023/**"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "urllib GET (fetcher.py pattern) + offline JS grep of saved bundle",
+  "timestamp": "2026-09-08T13:59:37-0500",
+  "http_requests_used": 5,
+  "request_log": [
+   {
+    "url": "https://fantasypoints.com",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasypoints-home.html",
+    "err": null
+   },
+   {
+    "url": "https://fantasypoints.com/robots.txt",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasypoints-robots.txt",
+    "err": null
+   },
+   {
+    "url": "https://fantasypoints.com/sitemap.xml",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasypoints-sitemap.xml",
+    "err": null
+   },
+   {
+    "url": "https://fantasypoints.com/_nuxt/CPuyVrKP.js",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasypoints-js0.js",
+    "err": null
+   },
+   {
+    "url": "https://fantasypoints.com/plans",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasypoints-pricing.html",
+    "err": null
+   }
+  ]
+ },
+ "disposition": "live (derived from 6 raw evidence files)"
+}

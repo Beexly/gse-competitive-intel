@@ -1,0 +1,94 @@
+{
+  "domain": "propsmadness.com",
+  "tech_stack": {
+    "frontend": "Next.js (React), Chakra-style fonts (chakrapetch), data-dpl deployment ids",
+    "backend": "NOT CONFIRMED (server-rendered Next.js; no client API routes exposed)",
+    "database": "NOT CONFIRMED",
+    "cloud": "Vercel-style dpl ids behind Cloudflare (data-dpl-id, ?dpl= build params)",
+    "cdn": "Cloudflare (cf-ray a3804dbc9e243aaf-DFW)",
+    "citations": [
+      "raw/propsmadness.com_home.html",
+      "raw/propsmadness.com_js_37k2mx6z205rx.js"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": []
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [],
+    "citations": [
+      "raw/propsmadness.com_js_00sk93v5i74vc.js",
+      "raw/propsmadness.com_js_2frpcb8--mo8o.js",
+      "raw/propsmadness.com_js_37k2mx6z205rx.js - zero vendor strings"
+    ]
+  },
+  "product_limits": {
+    "limits": "Free tier = \"check my prop\" single prop analysis; full access = paid subscription (help article 11105073 \"How to get full access to PropsMadness\")",
+    "upgrade_triggers": "full access gating (help article 11105073); Blue Line advanced filters paywalled (help article 11100017)",
+    "citation": "https://propsmadness.com/help/sitemap.xml (raw/propsmadness.com_help_sitemap.xml)"
+  },
+  "pricing": {
+    "web": "subscription exists; /premium + /billing-portal pages present (robots.txt); pricing tiers NOT CONFIRMED (no /pricing page, bot-hidden SPA)",
+    "ios": "none found",
+    "android": "none found",
+    "citations": [
+      "raw/propsmadness.com_robots.txt",
+      "https://propsmadness.com/help/en/articles/11105172-how-do-i-cancel-my-subscription"
+    ]
+  },
+  "customer_pain": [
+    {
+      "quote": "Community for daily picks, prop betting discussion, and research. Share insights, trends, and strategies while finding value using...",
+      "source": "https://www.reddit.com/r/PropsMadness/",
+      "date": "2026 (subreddit active)"
+    }
+  ],
+  "discovered_paths": [
+    "/premium",
+    "/billing-portal",
+    "/help",
+    "/help/sitemap.xml",
+    "/glossary",
+    "/blog"
+  ],
+  "discovered_targets": [],
+  "discovery_metadata": {
+    "method": "urllib GET via fetcher.py pattern; 8-HTTP-req budget",
+    "timestamp": "2026-09-08T19:23:24.983994+00:00"
+  },
+  "disposition": "live",
+  "status": "CONFIRMED (partial: pricing tiers hidden behind SPA/bot-wall)",
+  "key_findings": "Next.js SPA on Cloudflare (x-powered-by: Next.js; server: cloudflare; DFW edge) with assets on assets.propsmadness.com. Free prop-analysis tool (NBA/WNBA/NFL/MLB/FIFA-WC player props) with a paid tier gated behind /premium + /billing-portal (Stripe-style billing portal, robots-disallowed). Customer support runs on Intercom (help center at propsmadness.com/help). Help-center articles confirm: subscription product with renewals, refund policy, \"full access\" gating, odds-comparison feature, injury-report with/without tooling, custom stat metrics DPT/DSZ/DAZ, similar-players feature, advanced \"Blue Line\" filters, Discord community, no mobile app. No public API (no openapi/swagger/api routes in 3 JS bundles or homepage). 3 fetched JS bundles (369KB total) contain no vendor strings (no sportradar/statsperform/opta/genius/the-odds-api) and no axios/baseURL - data likely server-side fetched. Dossier assembled from raw evidence in prior runs (7 HTTP requests total to domain across session).",
+  "requests_log": [],
+  "raw_files": [
+    "propsmadness.com_home.html",
+    "propsmadness.com_js_00sk93v5i74vc.js.js",
+    "propsmadness.com_js_2frpcb8--mo8o.js.js",
+    "propsmadness.com_js_37k2mx6z205rx.js.js",
+    "propsmadness.com_pricing.html",
+    "propsmadness.com_robots.txt",
+    "propsmadness.com_sitemap.xml"
+  ],
+  "notes": [
+    "8-req budget honored per run; 7 requests total across session: home, robots, sitemap, 3 JS bundles, help/sitemap, 1 help article",
+    "pricing $ amounts NOT CONFIRMED: no /pricing route (404); /premium is client-rendered; further fetches would exceed budget",
+    "JS bundles show zero vendor strings -> data supply chain opaque (server-side)"
+  ],
+  "infra_headers": {}
+}

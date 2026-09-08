@@ -1,0 +1,158 @@
+{
+ "domain": "the-odds-api.com",
+ "tech_stack": {
+  "frontend": "VuePress static site (hashed webpack bundles /assets/js/app.77b96ff3.js + ~100 numbered chunks); Stripe.js for checkout; Google reCAPTCHA on signup",
+  "backend": "REST API on api.the-odds-api.com behind AWS CloudFront (via: '1.1 ...cloudfront.net'); IPv6 variant host ipv6-api.the-odds-api.com; status page status.the-odds-api.com; dashboard dash.the-odds-api.com",
+  "database": "NOT CONFIRMED (no exposure)",
+  "cloud": "AWS (CloudFront edge, x-amz-cf-id response header)",
+  "cdn": "CloudFront",
+  "citations": [
+   "https://the-odds-api.com/liveapi/guides/v4/",
+   "https://the-odds-api.com/"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/v4/sports/?apiKey={apiKey}",
+    "auth_required": true,
+    "tier": "free: does not count against usage quota",
+    "sample_response": "{\"key\":\"americanfootball_nfl\",\"group\":\"American Football\",\"title\":\"NFL\",\"description\":\"US Football\",\"active\":true,\"has_outrights\":false}",
+    "citation": "https://the-odds-api.com/liveapi/guides/v4/"
+   },
+   {
+    "method": "GET",
+    "path": "/v4/sports/{sport}/odds/?apiKey={apiKey}&regions={regions}&markets={markets}",
+    "auth_required": true,
+    "tier": "paid credits: each specified market costs 1 credit per region; odds Format=american|decimal",
+    "sample_response": "{\"id\":\"bda33adca828c...\",\"sport_key\":\"americanfootball_nfl\",\"bookmakers\":[{\"key\":\"draftkings\",\"markets\":[{\"key\":\"h2h\",\"outcomes\":[{\"name\":\"Dallas Cowboys\",\"price\":240},{\"name\":\"Tampa Bay Buccaneers\",\"price\":-303}]}]}]}",
+    "citation": "https://the-odds-api.com/liveapi/guides/v4/"
+   },
+   {
+    "method": "GET",
+    "path": "/v4/sports/{sport}/scores/?daysFrom={n}&apiKey={apiKey}",
+    "auth_required": true,
+    "tier": "paid",
+    "sample_response": "scores with completed status per docs",
+    "citation": "https://the-odds-api.com/liveapi/guides/v4/"
+   },
+   {
+    "method": "GET",
+    "path": "/v4/sports/{sport}/events?apiKey={apiKey}",
+    "auth_required": true,
+    "tier": "paid",
+    "sample_response": "event id list (ids usable with event-odds)",
+    "citation": "https://the-odds-api.com/liveapi/guides/v4/"
+   },
+   {
+    "method": "GET",
+    "path": "/v4/sports/{sport}/events/{eventId}/odds?apiKey={apiKey}&markets=...",
+    "auth_required": true,
+    "tier": "paid",
+    "sample_response": "per-event odds (same schema as odds)",
+    "citation": "https://the-odds-api.com/liveapi/guides/v4/"
+   },
+   {
+    "method": "GET",
+    "path": "/v4/historical/sports/{sport}/odds?...&date=2021-10-18T12:00:00Z",
+    "auth_required": true,
+    "tier": "paid; historical snapshots at 5-minute intervals since Sep 2022",
+    "sample_response": "snapshot incl. events + bookmaker odds at point in time",
+    "citation": "https://the-odds-api.com/historical-odds-data/"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED — none exposed",
+  "websocket_endpoints": "NOT CONFIRMED — docs are REST-only; community threads discuss wanting WS/low-latency providers (pain point)",
+  "rate_limits": "30 API calls/second on paid plans (429 beyond); usage quota headers x-requests-remaining / x-requests-used / x-requests-last; /v4/sports is free (no quota)",
+  "citations": [
+   "https://the-odds-api.com/liveapi/guides/v4/",
+   "https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html",
+   "https://the-odds-api.com/guide/rate-limit.html"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "none — pure odds aggregation, no predictions",
+  "training_data": "n/a",
+  "update_frequency": "pre-match featured markets 60s, in-play 40s; additional markets 60s; outrights 5min",
+  "citation": "https://the-odds-api.com/sports-odds-data/update-intervals.html"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT APPLICABLE",
+  "correlation_method": "NOT APPLICABLE",
+  "citation": "https://the-odds-api.com/"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "direct bookmaker feed aggregation — covered bookmakers incl. DraftKings, FanDuel, BetMGM, Caesars, Bovada, MyBookie.ag, Unibet, William Hill, Ladbrokes, Betfair, Bet Victor, Paddy Power, 1xBet, Pinnacle, Sportsbet, TAB, Neds"
+  ],
+  "citations": [
+   "https://the-odds-api.com/"
+  ]
+ },
+ "product_limits": {
+  "limits": "Free Starter: 500 credits/month; paid: 20K ($30/mo), 100K ($59/mo), 5M ($119/mo), 15M ($249/mo); each market x region costs 1 credit; /v4/sports free",
+  "upgrade_triggers": "500 free credits exhausted; multi-market multi-region queries multiply credit burn",
+  "citation": "https://the-odds-api.com/"
+ },
+ "pricing": {
+  "web": "Starter FREE 500 credits/mo; 20K $30/mo; 100K $59/mo; 5M $119/mo; 15M $249/mo (USD)",
+  "ios": "none",
+  "android": "none",
+  "citations": [
+   "https://the-odds-api.com/"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "So far I've been using the-odds-api, however they update their odds every 30-45 seconds, which is too slow for...",
+   "source": "https://www.reddit.com/r/algobetting/comments/1pz8ipl/odds_api_recommendations/",
+   "date": "2025"
+  },
+  {
+   "quote": "the-odds-api charges $30/mo for 20K credits. Fine for a funded company, annoying when you're just running back... [context: built a drop-in replacement with prediction markets]",
+   "source": "https://www.reddit.com/r/algobetting/comments/1scvcii/built_a_dropin_replacement_for_theoddsapi_with/",
+   "date": "2025"
+  },
+  {
+   "quote": "The Odds API has a free tier at 500 requests per month. Enough to play with the data shape, not enough to run...",
+   "source": "https://www.reddit.com/r/ParlayAPI/",
+   "date": "2025"
+  },
+  {
+   "quote": "This is actually super awesome and my biggest complaint about odds api. [re: bookmaker coverage/scraping alternatives]",
+   "source": "https://www.reddit.com/r/algobetting/comments/1ekzysf/looking_for_a_good_bookie_for_scraping_football/",
+   "date": "2024"
+  },
+  {
+   "quote": "I would suggest The Odds API. You get 500 free credits per month which should be plenty if you don't need to c...",
+   "source": "https://www.reddit.com/r/algobetting/comments/1gfu1hx/free_odds_api/",
+   "date": "2024"
+  }
+ ],
+ "discovered_paths": [
+  "/v4/sports/",
+  "/v4/sports/{sport}/odds/",
+  "/v4/sports/{sport}/scores/",
+  "/v4/sports/{sport}/events",
+  "/v4/sports/{sport}/events/{eventId}/odds",
+  "/v4/sports/{sport}/events/{eventId}/markets",
+  "/v4/participants",
+  "/v4/historical/sports/{sport}/odds",
+  "/v4/historical/sports/{sport}/events",
+  "/v4/historical/sports/{sport}/events/{eventId}/odds",
+  "/widget/v1/builder.html",
+  "/features/excel.html",
+  "/features/spreadsheets.html",
+  "dash.the-odds-api.com",
+  "status.the-odds-api.com",
+  "ipv6-api.the-odds-api.com"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "urllib GET crawl of homepage+sitemap+docs; live probe api.the-odds-api.com/v4/sports/?apiKey=demo (401 INVALID_KEY — no demo key published); reddit web_search",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 18 raw evidence files)"
+}

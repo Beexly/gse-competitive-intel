@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5Q308QSHGV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5Q308QSHGV');
+    </script>
+
+    <!-- <meta charset="utf-8"> -->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>MoonshotsMLB</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/191/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/27/main.js"></script>
+
+  </head>
+  <body class="login-body">
+
+      <div class="container login">
+            <img src='assets/banner_laptop_mlb.png' height=110px; style='margin-left:-10px;margin-top:-3px;'>
+          <p>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@moonshotsmlb">
+    <meta name="twitter:title" content="Lineups | Stats | Trends | Graphs | Projections">
+    <!-- <meta name="twitter:image" content="https://moonshotsmlb.com/assets/Banner_Laptop_mlb.png"> -->
+    <meta name="twitter:image" content="https://moonshotsmlb.com/assets/twitterbanner_ball_mlb.png">
+
+    <div id="error">    </div>
+    <p>
+
+    <form class="form-signin" method="post" id="logInForm">
+        <fieldset class="form-group">
+            <input class="form-control" type="email" name="email" placeholder="Email">
+        </fieldset>
+        <fieldset class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="Password" id="password1" oninput="setPasswordConfirmValidity();">
+        </fieldset>
+        <fieldset class="form-group">
+            <input class="form-control" type="password" name="password2" placeholder="Re-enter Password" id="password2" oninput="setPasswordConfirmValidity();">
+        </fieldset>
+        <fieldset class="form-group">
+            <p style="font-size:12px; text-align: justify;">Creating an account is acknowledgement of, and agreement to the <a href="https://www.termsfeed.com/live/ae75e041-740e-4eb9-abd5-3a4e6e57c562" target="_blank" style="font-size: 12px;">Privacy Policy</a>
+                and the <a href="https://www.termsfeed.com/live/81f8efc9-8082-4c79-a45e-ab6c0ca650a1" target="_blank" style="font-size: 12px;">Terms & Conditions</a>.
+                This site uses cookies.</p>
+
+            <input type="hidden" name="signUp" value=1>
+            <input class="btn btn-success" type="submit" name="submit" value="Create Account">
+            <br>
+
+        </fieldset>
+
+        <hr>
+        <div><a href='subscribe.php' style="font-size: 12px;color:turquoise;">See Available Plans</a></div>
+
+        <p><a class="btn" style="font-size:12px">Already have an account?</a></p>
+        <p><a class="toggleForms" id="login-create">Log In</a></p>
+
+    </form>
+
+    <form class="form-signin" method="post" id="signUpForm">
+        <fieldset class="form-group">
+            <input class="form-control my-2 my-lg-0" type="email" name="email" placeholder="Email">
+        </fieldset>
+        <fieldset class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="Password">
+        </fieldset>
+        <div class="checkbox">
+              <label class="btn btn-font">
+                  <input type="hidden" name="stayLoggedIn" value="1" style="font-family:'Montserrat'"; checked>
+              </label>
+        </div>
+        <fieldset class="form-group">
+            <input type="hidden" name="signUp" value=0>
+            <input class="btn btn-success" type="submit" name="submit" value="Log In">
+        </fieldset>
+        <p><a href="reset-password.php" style="font-size:13px">Reset Password</a>
+
+        <hr>
+        <p><a class="btn" style="font-size:12px">Not yet a member?</a></p>
+        <p><a class="toggleForms" id="login-create">Create Account</a></p>
+        <div><a href='subscribe.php' style="font-size: 12px;color:turquoise;">See Available Plans</a></div>
+
+        <hr>
+        <p style="font-size:12px">Questions, Problems, or Comments?</p>
+        <p><a href="mailto:support@moonshotsmlb.com" style="font-size:12px">support@moonshotsmlb.com</a></p>
+        <a href='https://twitter.com/moonshotsmlb' target='_blank'><img src='assets/Twitter_Social_Icon_Rounded_Square_Color.png' height=16px;>MOONSHOTS</a>
+
+        <hr>
+        <div id="about">
+            <div style="padding-right:46px;"><p><a href="about.php" class="btn" style="color:#ded1ba;font-size:11px; float: left;" target="_blank">About</a></p></div>
+            <div style="padding-right:14px;"><p><a href="tou_public.php" class="btn" style="color:#ded1ba;font-size:11px; float: left;" target="_blank">Terms & Conditions</a></p></div>
+            <div><p><a href="privacy_public.php" class="btn" style="color:#ded1ba;font-size:11px; float: left;" target="_blank">Privacy Policy</a></p></div>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        $(".toggleForms").click(function() {
+
+            $("#signUpForm").toggle();
+            $("#logInForm").toggle();
+
+        });
+    </script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+</body>
+
+</html>

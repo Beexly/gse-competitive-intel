@@ -1,0 +1,34 @@
+# Content Signals Policy: https://contentsignals.org
+# search=yes: content may be collected to build a search index and show results
+# ai-input=yes: content may be used as input to AI models (grounding, RAG, answers)
+# ai-train=yes: content may be used to train or fine-tune AI models
+
+User-Agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: OAI-SearchBot
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: anthropic-ai
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: Bingbot
+Allow: /
+
+Sitemap: https://based.one/sitemap.xml

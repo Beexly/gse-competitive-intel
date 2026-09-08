@@ -1,0 +1,102 @@
+{
+  "domain": "oddsview.com",
+  "disposition": "dead",
+  "status": "CONFIRMED DEAD (Vercel DEPLOYMENT_DISABLED; Reddit confirms permanent shutdown)",
+  "key_findings": "Domain resolves and Vercel responds, but every path returns HTTP 402 with body \"Payment required / DEPLOYMENT_DISABLED\" - the owner's Vercel deployment is disabled (billing/deactivation). No homepage, robots.txt or sitemap.xml served (all 402). Site effectively dead as of 2026-09-08. Reddit r/arbitragebetting independently confirms permanent shutdown (\"Oddsview was shutdown\"); was an arbitrage-betting scanner (US-state focused) that went pay-to-view in 2024 and shut down later; historical complaints of incorrect arb bets.",
+  "tech_stack": {
+    "frontend": "NOT CONFIRMED (Vercel hosting only evidence)",
+    "backend": "NOT CONFIRMED",
+    "database": "NOT CONFIRMED",
+    "cloud": "Vercel",
+    "cdn": "Vercel edge (cle1)",
+    "citations": [
+      "raw/oddsview.com_home.html (402 body: DEPLOYMENT_DISABLED)"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": []
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [],
+    "citations": []
+  },
+  "product_limits": {
+    "limits": "NOT CONFIRMED",
+    "upgrade_triggers": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "pricing": {
+    "web": "HISTORICAL: was free, then pay-to-view (2024, per Reddit) before shutdown; current pricing N/A - site dead",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "https://www.reddit.com/r/arbitragebetting/comments/1dyfwsy/oddsview_no_longer_free/"
+    ]
+  },
+  "customer_pain": [
+    {
+      "quote": "Oddsview is permanently closed. This is a community for discussing and sharing arbitrage betting (thread: \"Oddsview was shutdown\")",
+      "source": "https://www.reddit.com/r/arbitragebetting/comments/1pfbnx4/oddsview_was_shutdown/",
+      "date": "2026 (thread; corroborates live-check 402 DEPLOYMENT_DISABLED)"
+    },
+    {
+      "quote": "OddsView has incorrect Arbitrage Bets. They've cost me hundreds of dollars on multiple occ[asions]",
+      "source": "https://www.reddit.com/r/arbitragebetting/comments/1b9it9a/looking_for_sites_like_oddsjam/",
+      "date": "2024"
+    },
+    {
+      "quote": "OddsView no longer free. Recommendations on best arb sites now that oddsview is pay to view",
+      "source": "https://www.reddit.com/r/arbitragebetting/comments/1dyfwsy/oddsview_no_longer_free/",
+      "date": "2024"
+    },
+    {
+      "quote": "oddsview seems to be the other big one it only lets you choose from american states",
+      "source": "https://www.reddit.com/r/arbitragebetting/comments/1nq3cwu/are_the_sides_like_oddsjam_or_oddsview_any_good/",
+      "date": "2025"
+    }
+  ],
+  "discovered_paths": [],
+  "discovered_targets": [],
+  "discovery_metadata": {
+    "method": "urllib GET via fetcher.py pattern; 8-HTTP-req budget",
+    "timestamp": "2026-09-08"
+  },
+  "requests_log": [
+    {
+      "url": "https://oddsview.com/",
+      "status": 402,
+      "note": "Payment required / DEPLOYMENT_DISABLED"
+    },
+    {
+      "url": "https://oddsview.com/robots.txt",
+      "status": 402
+    },
+    {
+      "url": "https://oddsview.com/sitemap.xml",
+      "status": 402
+    }
+  ],
+  "raw_files": [
+    "oddsview.com_home.html"
+  ],
+  "notes": [
+    "3 HTTP requests used; DNS resolves; Vercel x-vercel-id cle1::cw9nw-1788895910919; 402 on all paths = deployment disabled, not a bot wall",
+    "web_search result quality: check customer_pain quotes for relevance; site is dead so pain data is historical"
+  ]
+}

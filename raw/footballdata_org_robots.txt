@@ -1,0 +1,2 @@
+URL: https://www.football-data.org/robots.txt\nSTATUS: 200\n\nUser-agent: dotbot
+Disallow: /

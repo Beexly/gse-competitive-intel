@@ -1,0 +1,1 @@
+URL: https://www.oddsportal.com/.well-known/security.txt\nSTATUS: 404\n\n

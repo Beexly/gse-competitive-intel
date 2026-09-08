@@ -1,0 +1,173 @@
+{
+ "home_status": 200,
+ "home_url": "https://www.goalserve.com/",
+ "robots_status": 200,
+ "robots_body": "User-agent: *\r\nDisallow: /getfeed/\r\n\r\nUser-agent: ChatGPT-User\r\nAllow: /\r\n\r\nUser-agent: Claude-Web\r\nAllow: /\r\n\r\nUser-agent: PerplexityBot\r\nAllow: /",
+ "robots_sitemaps": [],
+ "sitemap_status": 200,
+ "sitemap_url": "https://www.goalserve.com/sitemap.xml",
+ "sitemap_loc_count": 183,
+ "sitemap_sample": [
+  "https://www.goalserve.com/en/sport-data-feeds",
+  "https://www.goalserve.com/en/sport-data-feeds/soccer-api/prices",
+  "https://www.goalserve.com/en/sport-data-feeds/nfl-api/prices",
+  "https://www.goalserve.com/en/sport-data-feeds/odds-comparison-api/prices",
+  "https://www.goalserve.com/en/sport-data-feeds/cricket-api/prices",
+  "https://www.goalserve.com/en/sport-data-feeds/mlb-api/prices",
+  "https://www.goalserve.com/en/sport-data-feeds/nba-api/prices",
+  "https://www.goalserve.com/en/sport-data-feeds/ice-hockey-api/prices",
+  "https://www.goalserve.com/en/sport-data-feeds/tennis-api/prices",
+  "https://www.goalserve.com/en/video-feed",
+  "https://www.goalserve.com/en/contact-us",
+  "https://www.goalserve.com/en/account/login"
+ ],
+ "js_candidates_total": 6,
+ "js_fetched": [
+  {
+   "url": "https://static.goalserve.com/dist/main/js/owl.carousel.min.js",
+   "status": 200,
+   "bytes": 40434
+  },
+  {
+   "url": "https://static.goalserve.com/dist/main/js/jquery.formstyler.min.js",
+   "status": 200,
+   "bytes": 18585
+  }
+ ],
+ "greps": {
+  "fetch\\(": [
+   {
+    "file": "goalserve_com_js0.js",
+    "ctx": "e.content).find(\".owl-video\");i.length&&(i.css(\"display\",\"none\"),this.fetch(i,t(e.content)))}),this)},this._core.options=t.extend({},n.Defaults,this._core.options),th"
+   }
+  ],
+  "endpoint_home": [
+   {
+    "file": "home.html",
+    "ctx": "            even enterprise systems. Thanks to the flexible endpoints, you can also reduce the\r             development time and speed up the produc"
+   }
+  ],
+  "subscription_home": [
+   {
+    "file": "home.html",
+    "ctx": "ss=\"a\">A:</span> We provide monthly, half yearly and yearly subscription plans. You can check pricing <a target=\"_blank\" rel=\"noopener noreferrer\"\r   "
+   }
+  ],
+  "subscri_home": [
+   {
+    "file": "home.html",
+    "ctx": "                  With more than 200 active sport data feed subscribers worldwide Goalserve offer a wide range of sport data services, including da"
+   },
+   {
+    "file": "home.html",
+    "ctx": "ss=\"a\">A:</span> We provide monthly, half yearly and yearly subscription plans. You can check pricing <a target=\"_blank\" rel=\"noopener noreferrer\"\r"
+   }
+  ]
+ },
+ "pricing_links": [],
+ "api_probe_hits": [
+  {
+   "path": "/openapi.json",
+   "status": 200,
+   "bytes": 90171
+  },
+  {
+   "path": "/swagger.json",
+   "status": 200,
+   "bytes": 90171
+  }
+ ],
+ "request_log": [
+  {
+   "url": "https://www.goalserve.com/",
+   "status": 200,
+   "error": null,
+   "ms": 590,
+   "bytes": 90171,
+   "hdrs": {
+    "server": "Kestrel",
+    "x-powered-by": "ASP.NET",
+    "content-type": "text/html; charset=utf-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\goalserve_com_home.html"
+  },
+  {
+   "url": "https://www.goalserve.com/robots.txt",
+   "status": 200,
+   "error": null,
+   "ms": 406,
+   "bytes": 147,
+   "hdrs": {
+    "server": "Kestrel",
+    "x-powered-by": "ASP.NET",
+    "content-type": "text/plain"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\goalserve_com_robots.txt"
+  },
+  {
+   "url": "https://www.goalserve.com/sitemap.xml",
+   "status": 200,
+   "error": null,
+   "ms": 258,
+   "bytes": 159624,
+   "hdrs": {
+    "server": "Kestrel",
+    "x-powered-by": "ASP.NET",
+    "content-type": "text/xml"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\goalserve_com_sitemap.xml"
+  },
+  {
+   "url": "https://static.goalserve.com/dist/main/js/owl.carousel.min.js",
+   "status": 200,
+   "error": null,
+   "ms": 283,
+   "bytes": 40434,
+   "hdrs": {
+    "server": "Microsoft-IIS/10.0",
+    "x-powered-by": "ASP.NET",
+    "content-type": "application/javascript"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\goalserve_com_js0.js"
+  },
+  {
+   "url": "https://static.goalserve.com/dist/main/js/jquery.formstyler.min.js",
+   "status": 200,
+   "error": null,
+   "ms": 182,
+   "bytes": 18585,
+   "hdrs": {
+    "server": "Microsoft-IIS/10.0",
+    "x-powered-by": "ASP.NET",
+    "content-type": "application/javascript"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\goalserve_com_js1.js"
+  },
+  {
+   "url": "https://www.goalserve.com/openapi.json",
+   "status": 200,
+   "error": null,
+   "ms": 432,
+   "bytes": 90171,
+   "hdrs": {
+    "server": "Kestrel",
+    "x-powered-by": "ASP.NET",
+    "content-type": "text/html; charset=utf-8"
+   },
+   "saved": null
+  },
+  {
+   "url": "https://www.goalserve.com/swagger.json",
+   "status": 200,
+   "error": null,
+   "ms": 373,
+   "bytes": 90171,
+   "hdrs": {
+    "server": "Kestrel",
+    "x-powered-by": "ASP.NET",
+    "content-type": "text/html; charset=utf-8"
+   },
+   "saved": null
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "domain": "covers.com",
+ "tech_stack": {
+  "frontend": "Server-rendered ASP.NET (Kestrel server header) with jQuery 3.5.1 + modular minified bundles (www.covers.com/headers/build/js/covers/*, /sport/js/odds-page.js, /sport/js/sport-bundle.js, /assets/js/betslip/dist/betslip.js bet-card SPA widget); CookieBot consent; Adobe Analytics (headers.covers.com/scripts/AdobeConnector.min.js, data.covers.com Launch DTM container); CloudFront edge",
+  "backend": "ASP.NET Core on Kestrel (Server: Kestrel header); odds grids fully server-rendered into 3MB HTML; API endpoint pattern /sport/api/gamecenter/... referenced from homepage ('/sport/api/gamecenter/expert-picks/featured/'); account at /account, auth at /login; contests subdomain contests.covers.com (consensus picks)",
+  "database": "NOT CONFIRMED — no exposure",
+  "cloud": "AWS CloudFront CDN (x-amz-cf-pop IAH50-P5, 'Miss from cloudfront'); origin Kestrel behind CloudFront",
+  "cdn": "CloudFront + img.covers.com + headers.covers.com + data.covers.com (Adobe Launch)",
+  "citations": [
+   "https://www.covers.com/ (response headers + script tags)",
+   "https://www.covers.com/sport/football/nfl/odds"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/sport/api/gamecenter/expert-picks/featured/",
+    "auth_required": "unknown",
+    "tier": "unknown",
+    "sample_response": null,
+    "citation": "https://www.covers.com/ homepage script reference; direct GET returned 404 (requires game context path)",
+    "note": "404 on unparameterized probe"
+   },
+   {
+    "method": "GET",
+    "path": "contests.covers.com/consensus/topconse... (Consensus picks service)",
+    "auth_required": "unknown",
+    "tier": "free contests",
+    "sample_response": null,
+    "citation": "https://www.covers.com/sport/football/nfl/odds nav links"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED — no GraphQL references",
+  "websocket_endpoints": "NOT CONFIRMED — no wss:// endpoints found in fetched assets",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "https://www.covers.com/",
+   "https://www.covers.com/sport/football/nfl/odds"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "Betslip odds formatting / best-payout comparison (client widget)",
+   "raw_snippet": "static formatAmericanOdds(e){return e==null?null:`${e>0?\"+\":\"\"}${e}`} ... overallParlayOdds:!c&&(m==null?void 0:m.hasPayout)&&(S=m.odds)!=null?S:null ... .wager-card-body.best-payout:not(.user-wager-card){border:1px solid #23bf57}",
+   "reconstruction": "Betslip widget compares sportsbook prices for the same selection, highlights best payout (green border) vs the user's current wager card; parlay odds aggregated from leg odds (hasPayout). Standard American odds sign formatting. No proprietary edge/ev formula exposed.",
+   "citation": "https://www.covers.com/assets/js/betslip/dist/betslip.js"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED — Covers exposes consensus picks (crowd contest data at contests.covers.com) and expert picks; no ML model claims in fetched assets",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "https://www.covers.com/"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": null
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Adobe (Analytics/Launch)",
+   "CookieBot (consent)",
+   "jQuery/floatThead/swiper (UI libs)",
+   "Affiliate scripts (AffScript.js)"
+  ],
+  "citations": [
+   "https://www.covers.com/ script tags"
+  ],
+  "note": "No sportradar/statsperform/opta/genius/donbest strings found in homepage, NFL odds page, or fetched bundles — odds feed vendor NOT CONFIRMED"
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED — no consumer subscription product found on site (Covers is free, affiliate-revenue model: 'Sign up Offer'/'Sign up Promos' sportsbook affiliate CTAs throughout); /contenders and /plus both 404",
+  "upgrade_triggers": "NONE FOUND — no paywall/upgrade funnel detected in fetched pages",
+  "citation": "https://www.covers.com/, https://www.covers.com/contenders (404), https://www.covers.com/plus (404)"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED — no pricing page; free ad/affiliate model",
+  "ios": "App exists ('Download on the App Store' badge on odds page); IAP tiers NOT CONFIRMED",
+  "android": "App exists ('Download on the Google Play Store' badge); IAP tiers NOT CONFIRMED",
+  "citations": [
+   "https://www.covers.com/sport/football/nfl/odds"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Covers.com is dying. Been using the site since 2005 ...",
+   "source": "https://www.reddit.com/r/sportsbook/comments/6z4qrw/coverscom_is_dying/",
+   "date": "2017-09 thread"
+  },
+  {
+   "quote": "man were they wrong most of the time, I don't even use it to compare my picks anymore. (thread: 'Covers.com?')",
+   "source": "https://www.reddit.com/r/sportsbook/comments/1zon3r/coverscom/",
+   "date": "old r/sportsbook thread"
+  },
+  {
+   "quote": "(sites like) covers.com, scoresandodds.com, etc) track the number of tickets on each side, not the actual money. Just something to keep in mind ...",
+   "source": "https://www.reddit.com/r/sportsbook/comments/48ekn8/my_strategy_is_simply_bet_against_the_public_on/",
+   "date": "2016-02 thread (consensus = tickets not money caveat)"
+  }
+ ],
+ "discovered_paths": [
+  "/sport/football/nfl/odds (server-rendered odds grid)",
+  "/sport/api/gamecenter/expert-picks/featured/",
+  "/assets/js/betslip/dist/betslip.js",
+  "/login",
+  "/account",
+  "contests.covers.com/consensus/topconsensus (via nav)",
+  "img.covers.com",
+  "headers.covers.com"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "urllib fetcher (_fetcher.py): homepage, betslip.js, expert-picks API probe (404), /contenders (404), /plus (404), NFL odds page, odds-page.js, sport-bundle.js — 8 requests",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 16 raw evidence files)"
+}

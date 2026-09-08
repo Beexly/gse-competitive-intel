@@ -1,0 +1,67 @@
+{
+  "domain": "fantasylife.com",
+  "type": "live-site",
+  "disposition": "live",
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "customer_pain": [],
+  "discovered_targets": [],
+  "tech_stack": {
+    "frontend": "Next.js",
+    "backend": "NOT CONFIRMED",
+    "database": "NOT CONFIRMED",
+    "cloud": "NOT CONFIRMED",
+    "cdn": "NOT CONFIRMED",
+    "citations": [
+      "raw/probe2_fantasylife.txt"
+    ]
+  },
+  "pricing": {
+    "web": "FantasyLife+ two tiers, published: Tier 1 $3.33/mo billed annually $39.99; Tier 2 $8.33/mo billed annually $99.99 ('best value'); other strings $0-$15",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "raw/probe2_fantasylife.txt"
+    ]
+  },
+  "product_limits": {
+    "limits": "tier split essentials vs advanced",
+    "upgrade_triggers": "Tier 2 unlock",
+    "citation": "raw/probe2_fantasylife.txt"
+  },
+  "data_supply_chain": {
+    "vendors": [
+      "league sync ('My Teams' synced leagues)",
+      "tools: Strength of Schedule, Player Stats, Rookie Super Model"
+    ],
+    "citations": [
+      "raw/probe2_fantasylife.txt"
+    ]
+  },
+  "discovered_paths": [
+    "/pricing"
+  ],
+  "discovery_metadata": {
+    "method": "fresh probe of /pricing (183KB) — exact tier prices captured",
+    "timestamp": "2026-09-08T14:30:45.047151"
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed.",
+    "websocket_endpoints": [],
+    "rate_limits": "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed.",
+    "citations": [
+      "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed."
+    ]
+  }
+}

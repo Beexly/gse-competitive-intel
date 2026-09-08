@@ -1,0 +1,76 @@
+{
+ "domain": "juicereel.com",
+ "type": "live-site",
+ "disposition": "live",
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "customer_pain": [],
+ "discovered_targets": [],
+ "tech_stack": {
+  "frontend": "Next.js",
+  "backend": "/api-docs route exists (developer-facing API surface)",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "images.juiceintegration.com asset host",
+  "citations": [
+   "raw/probe_juicereel_com.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/api-docs",
+    "auth_required": "NOT CONFIRMED",
+    "tier": "NOT CONFIRMED",
+    "sample_response": "NOT CONFIRMED (page exists per homepage link; body not fetched)",
+    "citation": "raw/probe_juicereel_com.txt"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/probe_juicereel_com.txt"
+  ]
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Sportsbook-sync verification: 'every bet is synced straight from the sportsbook' \u2014 verified handicapper records; specific books NOT CONFIRMED"
+  ],
+  "citations": [
+   "raw/probe_juicereel_com.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": "marketplace model: sellers connect actual sportsbook; 'Public, permanent records: Profit, ROI, units, win rate and full bet history visible to everyone'",
+  "upgrade_triggers": "buyer/seller marketplace tiers",
+  "citation": "raw/probe_juicereel_com.txt"
+ },
+ "pricing": {
+  "web": "Pick/membership price strings observed: $4.99, $11, $12.50, $20, $28, $29, $55 (seller/buyer tier map NOT CONFIRMED)",
+  "ios": "App Store app",
+  "android": "Google Play app",
+  "citations": [
+   "raw/probe_juicereel_com.txt"
+  ]
+ },
+ "discovered_paths": [
+  "/api-docs",
+  "images.juiceintegration.com"
+ ],
+ "discovery_metadata": {
+  "method": "fresh homepage probe 200 (137KB)",
+  "timestamp": "2026-09-08T14:25:08.325185"
+ }
+}

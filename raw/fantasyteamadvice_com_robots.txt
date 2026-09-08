@@ -1,0 +1,133 @@
+URL: https://fantasyteamadvice.com/robots.txt\nSTATUS: 200\n\n# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+
+# Allow all crawlers by default (Googlebot, Bingbot, DuckDuckBot, social-preview
+# bots, etc.) so search engines can still index our public pages.
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /users/
+Disallow: /letter_opener/
+Disallow: /mission-control/
+Disallow: /jobs/
+Disallow: /test/
+
+# Keep the in-page search and pagination URLs out of the index; the pages
+# themselves also emit `<meta name="robots" content="noindex, follow">`.
+Disallow: /funny-fantasy-football-team-names*?q=
+Disallow: /funny-fantasy-football-team-names*&q=
+
+# Block optimizer URLs with search params from being indexed. Bingbot was
+# crawling stale URLs like /optimizer?search=spam+keywords from its index,
+# generating junk traffic. The optimizer requires auth so there is nothing
+# useful to index here.
+Disallow: /optimizer?*search=
+Disallow: /more-stats
+
+# Sortable-table and split-filter query params (MLB splits, stat leaders,
+# pitcher matchup explorer, defensive rankings) are re-sorted/re-filtered
+# views of the same underlying rows, not distinct content — indexing every
+# sort/split combination wastes crawl budget for no ranking benefit.
+Disallow: /*?sort_column=
+Disallow: /*&sort_column=
+Disallow: /*?sort_direction=
+Disallow: /*&sort_direction=
+Disallow: /*?sort=
+Disallow: /*&sort=
+Disallow: /*?dir=
+Disallow: /*&dir=
+Disallow: /*?split=
+Disallow: /*&split=
+
+# Bingbot is the noisiest crawler (~12% of request volume). Crawl-delay asks
+# it to wait N seconds between requests. Google ignores Crawl-delay (use
+# Google Search Console instead), so this targets Bing specifically.
+# Per RFC 9309, a specific User-agent group overrides the wildcard group, so
+# we must duplicate all Disallow rules here or bingbot would ignore them.
+User-agent: bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /users/
+Disallow: /letter_opener/
+Disallow: /mission-control/
+Disallow: /jobs/
+Disallow: /test/
+Disallow: /funny-fantasy-football-team-names*?q=
+Disallow: /funny-fantasy-football-team-names*&q=
+Disallow: /optimizer?*search=
+Disallow: /more-stats
+Disallow: /*?sort_column=
+Disallow: /*&sort_column=
+Disallow: /*?sort_direction=
+Disallow: /*&sort_direction=
+Disallow: /*?sort=
+Disallow: /*&sort=
+Disallow: /*?dir=
+Disallow: /*&dir=
+Disallow: /*?split=
+Disallow: /*&split=
+Crawl-delay: 5
+
+# Block AI-TRAINING crawlers from the entire site. These bots fetch pages only
+# to train models without sending users back to us. They respect robots.txt and
+# rotate IPs heavily, which makes IP-level bans ineffective — robots.txt is the
+# authoritative opt-out mechanism. Keep this list in sync with BotDetector's
+# `ai_scraper: true` signatures in app/services/bot_detector.rb.
+
+# GEO split (2026-07): answer-engine bots that cite and link back to us are
+# ALLOWED (they inherit the wildcard Allow group): OAI-SearchBot (ChatGPT
+# Search index), ChatGPT-User (user-initiated fetch), PerplexityBot,
+# Perplexity-User, Claude-Web (user-initiated fetch). These drive referral
+# traffic and brand citations at stats-research intent. Training-only
+# crawlers below remain blocked — no referral upside.
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+# Block DotBot (Moz's OpenSiteExplorer crawler). We've been seeing it fan out
+# across hundreds of distinct IPs per hour on /admin/bot-activity, which looks
+# like a residential-proxy botnet impersonating the UA rather than Moz itself.
+# Either way we don't need the backlink data, so the simplest fix is to tell
+# well-behaved DotBot clients to stay out and rely on edge blocks for the rest.
+User-agent: DotBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://fantasyteamadvice.com/sitemap.xml

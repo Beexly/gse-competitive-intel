@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SY423BMX35"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SY423BMX35');
+    </script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>API Tennis - Documentation</title>
+    <meta name="description" content="API Tennis documentation page, including tennis news API">
+    <meta name="author" content="API Tennis">
+    <meta name="keywords" content="api, tennis, api tennis, tennis api, tennis json, tennis xml, tennis odds, tennis statistics, tennis rest-api, restful api, tennisresults, api tennis json, api tennis xml, api tennis livescore, tennis feed, tennis livescore, tennis news, ai tennis news">
+	<link rel="shortcut icon" type="image/ico" href="/images/favicon.ico"/>
+	<link rel="shortcut icon" type="image/ico" href="https://api-tennis.com/favicon.ico"/>
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh3PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="css/styles.css" rel="stylesheet">
+
+
+  </head>
+  <body class="documentation-body" data-spy="scroll" data-target="#sidemenu" data-offset="15">
+    <!-- Start Header =======================================================-->
+
+    <header>
+      <nav class="bg-light nav-transition navbar navbar-expand-lg navbar-dark fixed-top extra-background py-sm-0 px-sm-0 extra-title-color" style="margin-bottom: 20px; box-shadow: 0 10px 25px -15px #999; background-color: white;">
+        <div class="container">
+          <a class="navbar-brand" href="/" style="padding-top: 7px; padding-bottom: 7px;"><img height="56px" class="" src="images/logo.png" alt=""></a>
+          <button id="navs-mobile-btn" class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" style="color: #88C724;" aria-hidden="true"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item my-sm-2 my-md-0 btn" href="/">
+                <span class="nav-link-color">API Tennis</span>
+              </a>
+              <a class="nav-item my-sm-2 my-md-0 btn active" href="/documentation">
+                <span class="nav-link-color" style="color: #9c532f!important;">Documentation</span>
+              </a>
+              <a class="nav-item my-sm-2 my-md-0 btn" href="/mcp">
+                  <span class="nav-link-color">MCP for AI</span>
+              </a>
+              <a class="nav-item my-sm-2 my-md-0 btn active" href="/documentation_websocket">
+                <span class="nav-link-color"><strong>WebSocket</strong></span>
+              </a>
+              <a class="nav-item my-sm-2 my-md-0 btn" href="/blog">
+                <span class="nav-link-color">Blog</span>
+              </a>
+              <a class="nav-item my-sm-2 my-md-0 btn" href="/#contact">
+                <span class="nav-link-color">Contact Us</span>
+              </a>
+                  <a class="nav-item my-sm-2 my-md-0 btn" href="../login">
+        <span class="nav-link-color">Login</span>
+      </a>
+      <a class="btn a-btn" href="../register" style="height: 42px;">
+        <span class="nav-link-register">Register</span>
+      </a>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- End Header =========================================================-->
+    <!-- Start Section =========================================================-->
+
+
+<div class="container h-10" id="content">
+    <div class="row h-100 contentForCoverage">
+        <aside class="col-lg-3 f16" id="left" style="z-index: 0;">
+            <div class="p-2 mt-0 mb-3 p-lg-2 mt-lg-5 mb-lg-3 bg-light" id="sidemenu">
+                <ul class="nav flex-md-column flex-row justify-content-between">
+                    <li class="nav-item"><a href="#events" class="nav-link pl-0">Events Types</a></li>
+                    <li class="nav-item"><a href="#tournaments" class="nav-link pl-0">Tournaments</a></li>
+                    <li class="nav-item"><a href="#fixtures" class="nav-link pl-0">Fixtures</a></li>
+                    <li class="nav-item"><a href="#livescore" class="nav-link pl-0">Livescore</a></li>
+                    <li class="nav-item"><a href="#h2h" class="nav-link pl-0">H2H (Head to Head)
+</a></li>
+                    <li class="nav-item"><a href="#standings" class="nav-link pl-0">Standings</a></li>
+                    <li class="nav-item"><a href="#players" class="nav-link pl-0">Players</a></li>
+                    <li class="nav-item"><a href="#odds" class="nav-link pl-0">Odds</a></li>
+                    <li class="nav-item"><a href="#live_odds" class="nav-link pl-0">Live Odds</a></li>
+                    <li class="nav-item"><a href="#news" class="nav-link pl-0">News</a></li>
+                    <li class="nav-item"><a href="#draw" class="nav-link pl-0">Draw</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="col-lg-9 f16" id="widthForMobileTabs">
+            <div class="row">
+                <div class="col">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1" role="tabpanel">
+                            <h1 class="mb-4 font-weight-bold">Tennis API Version - <span class="text-browns font-italic">2.9.5</span></h1>
+                            <p class="mb-5">Welcome to the Tennis API service documentation page. Please see the whole list of techniques listed below for real-time tennis data that will help you create fantastic applications.</p>
+
+                                  <span class="anchor" id="events"></span>
+                            <h2 class="mb-3">Events Types</h2>
+                            <h3 class="mb-4"><u class="text-browns">Method</u></h3>
+                            <h3><span style="color:red; font-weight: bolder;">GET/POST</span> api.api-tennis.com/tennis/?method=get_events</h3>
+                            <p>Returns list of supported tournaments types included in your current subscription plan.</p>
+                            <h3 class="mb-4"><u class="text-browns">Parameters</u></h3>
+                            <table class="table table-striped table-bordered table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Parameter</th>
+                                  <th scope="col">Description</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>method</td>
+                                  <td>API method name</td>
+                                </tr>
+                                <tr>
+                                  <td>APIkey</td>
+                                  <td>Authorization code generated from your api tennis account</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <h3 class="mb-4"><u class="text-browns">Request URL</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                                  https://api.api-tennis.com/tennis/?method=get_events&APIkey=!_your_account_APIkey_!
+                                </div>
+                            </div>
+                            <h3 class="mb-4"><u class="text-browns">JSON Response</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">{
+	"success": 1,
+	"result": [
+		{
+			"event_type_key": "267",
+			"event_type_type": "Atp Doubles"
+		},
+		{
+			"event_type_key": "265",
+			"event_type_type": "Atp Singles"
+		},
+		{
+			"event_type_key": "279",
+			"event_type_type": "Boys Doubles"
+		},
+		{
+			"event_type_key": "277",
+			"event_type_type": "Boys Singles"
+		},
+		{
+			"event_type_key": "282",
+			"event_type_type": "Challenger Men Doubles"
+		},
+		{
+			"event_type_key": "281",
+			"event_type_type": "Challenger Men Singles"
+		},
+		{
+			"event_type_key": "275",
+			"event_type_type": "Challenger Women Doubles"
+		},
+        ............
+   ]
+}</pre>
+                          </div>
+                          </div>
+                            <h3 class="mb-4"><u class="text-browns">PHP call example</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">$APIkey=!_your_account_APIkey_!;
+
+   $curl_options = array(
+     CURLOPT_URL =&gt; "https://api.api-tennis.com/tennis/?method=get_events&amp;APIkey=$APIkey",
+     CURLOPT_RETURNTRANSFER =&gt; true,
+     CURLOPT_HEADER =&gt; false,
+     CURLOPT_TIMEOUT =&gt; 30,
+     CURLOPT_CONNECTTIMEOUT =&gt; 5
+   );
+
+   $curl = curl_init();
+   curl_setopt_array( $curl, $curl_options );
+   $result = curl_exec( $curl );
+
+   $result = (array) json_decode($result);
+
+   var_dump($result);</pre>
+                             </div>
+                          </div>
+
+
+                                  <span class="anchor" id="tournaments"></span>
+                            <h2 class="mb-3">Tournaments</h2>
+                            <h3 class="mb-4"><u class="text-browns">Method</u></h3>
+                            <h3><span style="color:red; font-weight: bolder;">GET/POST</span> api.api-tennis.com/tennis/?method=get_tournaments</h3>
+                            <p>Returns list of supported tournaments included in your current subscription plan.</p>
+                            <h3 class="mb-4"><u class="text-browns">Parameters</u></h3>
+                            <table class="table table-striped table-bordered table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Parameter</th>
+                                  <th scope="col">Description</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>method</td>
+                                  <td>API method name</td>
+                                </tr>
+                                <tr>
+                                  <td>APIkey</td>
+                                  <td>Authorization code generated from your api tennis account</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <h3 class="mb-4"><u class="text-browns">Request URL</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                                  https://api.api-tennis.com/tennis/?method=get_tournaments&APIkey=!_your_account_APIkey_!
+                                </div>
+                            </div>
+                            <h3 class="mb-4"><u class="text-browns">JSON Response</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">{
+	"success": 1,
+	"result": [
+		{
+			"tournament_key": "2833",
+			"tournament_name": "Aachen",
+			"event_type_key": "281",
+			"event_type_type": "Challenger Men Singles"
+		},
+		{
+			"tournament_key": "3872",
+			"tournament_name": "Abu Dhabi",
+			"event_type_key": "266",
+			"event_type_type": "Wta Singles"
+		},
+		{
+			"tournament_key": "2801",
+			"tournament_name": "Abu Dhabi",
+			"event_type_key": "276",
+			"event_type_type": "Exhibition Women"
+		},
+		{
+			"tournament_key": "2655",
+			"tournament_name": "Abu Dhabi",
+			"event_type_key": "283",
+			"event_type_type": "Exhibition Men"
+		},
+		{
+			"tournament_key": "2130",
+			"tournament_name": "Acapulco",
+			"event_type_key": "266",
+			"event_type_type": "Wta Singles"
+		},
+		{
+			"tournament_key": "2131",
+			"tournament_name": "Acapulco",
+			"event_type_key": "265",
+			"event_type_type": "Atp Singles"
+		},
+        ............
+   ]
+}</pre>
+                          </div>
+                          </div>
+                            <h3 class="mb-4"><u class="text-browns">PHP call example</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">$APIkey=!_your_account_APIkey_!;
+
+   $curl_options = array(
+     CURLOPT_URL =&gt; "https://api.api-tennis.com/tennis/?method=get_tournaments&amp;APIkey=$APIkey",
+     CURLOPT_RETURNTRANSFER =&gt; true,
+     CURLOPT_HEADER =&gt; false,
+     CURLOPT_TIMEOUT =&gt; 30,
+     CURLOPT_CONNECTTIMEOUT =&gt; 5
+   );
+
+   $curl = curl_init();
+   curl_setopt_array( $curl, $curl_options );
+   $result = curl_exec( $curl );
+
+   $result = (array) json_decode($result);
+
+   var_dump($result);</pre>
+                             </div>
+                          </div>
+
+
+                           <span class="anchor" id="fixtures"></span>
+                            <h2 class="mb-3">Fixtures</h2>
+                            <h3 class="mb-4"><u class="text-browns">Method</u></h3>
+                            <h3><span style="color:red; font-weight: bolder;">GET/POST</span> api.api-tennis.com/tennis/?method=get_fixtures</h3>
+                            <p>Returns tennis fixtures included in your current subscription plan. Each match also includes <code>pointbypoint</code>, <code>scores</code> and <code>statistics</code> inline (empty arrays when not yet available) — no separate call is needed for a match's set scores or per-player statistics (aces, serve percentages, break points, etc.).</p>
+                            <h3 class="mb-4"><u class="text-browns">Parameters</u></h3>
+                            <table class="table table-striped table-bordered table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Parameter</th>
+                                  <th scope="col">Description</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>method</td>
+                                  <td>API method name</td>
+                                </tr>
+                                <tr>
+                                  <td>APIkey</td>
+                                  <td>Authorization code generated from your api tennis account</td>
+                                </tr>
+                                 <tr>
+                                  <td>date_start</td>
+                                  <td>Start date (yyyy-mm-dd)</td>
+                                </tr>
+                                 <tr>
+                                  <td>date_stop</td>
+                                  <td>Stop date (yyyy-mm-dd)</td>
+                                </tr>
+                                 <tr>
+                                  <td>event_type_key</td>
+                                  <td>Event Type Key - if set only matches from specific tennis event type will be returned (Optional)</td>
+                                </tr>
+                                 <tr>
+                                  <td>tournament_key</td>
+                                  <td>Tournament Key - if set only matches from specific tennis tournament will be returned (Optional)</td>
+                                </tr>
+                                <tr>
+                                  <td>tournament_season</td>
+                                  <td>Tournament Season - if set only matches from specific tennis tournament season will be returned (Optional)</td>
+                                </tr>
+								<tr>
+									<td>
+									   match_key</td>
+									<td>
+									Match Key - if set only details from specific tennis match will be returned (Optional)
+								</tr>
+								<tr>
+									<td>
+									   player_key</td>
+									<td>
+									Player Key - if set only details from specific tennis player will be returned (Optional)
+								</tr>
+								<tr>
+									<td>
+									   timezone</td>
+									<td>
+										The timezone where you want to receive the data in tz format (exemple: America/New_York). Default timezone: Europe/Berlin (Optional)</td>
+								</tr>
+                              </tbody>
+                            </table>
+                            <h3 class="mb-4"><u class="text-browns">Request URL</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                                  https://api.api-tennis.com/tennis/?method=get_fixtures&APIkey=!_your_account_APIkey_!&date_start=2019-07-24&date_stop=2019-07-24
+                                </div>
+                            </div>
+                            <h3 class="mb-4"><u class="text-browns">JSON Response</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">
+       {
+    "success": 1,
+    "result": [
+        {
+            "event_key": "143104",
+            "event_date": "2022-06-17",
+            "event_time": "18:00",
+            "event_first_player": "M. Navone",
+            "first_player_key": "949",
+            "event_second_player": "C. Gomez-Herrera",
+            "second_player_key": "3474",
+            "event_final_result": "-",
+            "event_game_result": "-",
+            "event_serve": null,
+            "event_winner": null,
+            "event_status": "",
+            "event_type_type": "Challenger Men Singles",
+            "tournament_name": "Corrientes Challenger Men",
+            "tournament_key": "2646",
+            "tournament_round": "",
+            "tournament_season": "2022",
+            "event_live": "0",
+            "event_qualification": "False",
+            "event_first_player_logo": null,
+            "event_second_player_logo": "https://api.api-tennis.com/logo-tennis/3474_c-gomez-herrera.jpg",
+            "pointbypoint": [],
+            "scores": [],
+            "statistics": []
+        },
+        {
+            "event_key": "143113",
+            "event_date": "2022-06-17",
+            "event_time": "01:05",
+            "event_first_player": "C. Chidekh",
+            "first_player_key": "7102",
+            "event_second_player": "M. Cassone",
+            "second_player_key": "12744",
+            "event_final_result": "2 - 0",
+            "event_game_result": "-",
+            "event_serve": null,
+            "event_winner": "First Player",
+            "event_status": "Finished",
+            "event_type_type": "Itf Men Singles",
+            "tournament_name": "ITF M25 Wichita, KS Men",
+            "tournament_key": "4195",
+            "tournament_round": "",
+            "tournament_season": "2022",
+            "event_live": "0",
+            "event_first_player_logo": null,
+            "event_second_player_logo": null,
+            "pointbypoint": [
+                {
+                    "set_number": "Set 1",
+                    "number_game": "1",
+                    "player_served": "First Player",
+                    "serve_winner": "First Player",
+                    "serve_lost": null,
+                    "score": "1 - 0",
+                    "points": [
+                        {
+                            "number_point": "1",
+                            "score": "15 - 0",
+                            "break_point": null,
+                            "set_point": null,
+                            "match_point": null
+                        },
+                      .........
+                    ],
+                },
+                ...........
+              ],
+              "scores": [
+                {
+                    "score_first": "6",
+                    "score_second": "4",
+                    "score_set": "1"
+                },
+                {
+                    "score_first": "6",
+                    "score_second": "2",
+                    "score_set": "2"
+                }
+              ],
+              "statistics": [
+                {
+                    "player_key": "7102",
+                    "stat_period": "match",
+                    "stat_type": "Service",
+                    "stat_name": "Aces",
+                    "stat_value": "4",
+                    "stat_won": null,
+                    "stat_total": null
+                },
+                {
+                    "player_key": "7102",
+                    "stat_period": "match",
+                    "stat_type": "Service",
+                    "stat_name": "1st serve points won",
+                    "stat_value": "64%",
+                    "stat_won": 31,
+                    "stat_total": 48
+                },
+                ...........
+              ]
+          }
+      }
+  ]
+}</pre>
+                          </div>
+                          </div>
+                            <h3 class="mb-4"><u class="text-browns">PHP call example</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">$APIkey=!_your_account_APIkey_!;
+    $date_start = '2022-03-15';
+    $date_stop = '2022-03-15';
+
+    $curl_options = array(
+      CURLOPT_URL =&gt; "https://api.api-tennis.com/tennis/?method=get_fixtures&amp;APIkey=$APIkey&amp;date_start=$date_start&amp;date_stop=$date_stop",
+      CURLOPT_RETURNTRANSFER =&gt; true,
+      CURLOPT_HEADER =&gt; false,
+      CURLOPT_TIMEOUT =&gt; 30,
+      CURLOPT_CONNECTTIMEOUT =&gt; 5
+    );
+
+    $curl = curl_init();
+    curl_setopt_array( $curl, $curl_options );
+    $result = curl_exec( $curl );
+
+    $result = (array) json_decode($result);
+
+    var_dump($result);</pre>
+                             </div>
+                          </div>
+
+            <span class="anchor" id="livescore"></span>
+            <h2 class="mb-3">Livescore</h2>
+            <h3 class="mb-4"><u class="text-browns">Method</u></h3>
+            <h3><span style="color:red; font-weight: bolder;">GET/POST</span> api.api-tennis.com/tennis/?method=get_livescore</h3>
+            <p>Returns tennis now playing events included in your current subscription plan. Like <a href="#fixtures">Fixtures</a>, each match includes <code>pointbypoint</code>, <code>scores</code> and <code>statistics</code> inline.</p>
+            <h3 class="mb-4"><u class="text-browns">Parameters</u></h3>
+            <table class="table table-striped table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>method</td>
+                  <td>API method name</td>
+                </tr>
+                <tr>
+                  <td>APIkey</td>
+                  <td>Authorization code generated from your api tennis account</td>
+                </tr>
+                 <tr>
+                  <td>event_type_key</td>
+                  <td>Event Type Key - if set only matches from specific tennis event type will be returned (Optional)</td>
+                </tr>
+                 <tr>
+                  <td>tournament_key</td>
+                  <td>Tournament Key - if set only matches from specific tennis tournament will be returned (Optional)</td>
+                </tr>
+								<tr>
+									<td>
+									   match_key</td>
+									<td>
+									Match Key - if set only details from specific tennis match will be returned (Optional)
+								</tr>
+								<tr>
+									<td>
+									   player_key</td>
+									<td>
+									Player Key - if set only details from specific tennis player will be returned (Optional)
+								</tr>
+								<tr>
+									<td>
+									   timezone</td>
+									<td>
+										The timezone where you want to receive the data in tz format (exemple: America/New_York). Default timezone: Europe/Berlin (Optional)</td>
+								</tr>
+                              </tbody>
+                            </table>
+                            <h3 class="mb-4"><u class="text-browns">Request URL</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                                  https://api.api-tennis.com/tennis/?method=get_livescore&APIkey=!_your_account_APIkey_!
+                                </div>
+                            </div>
+                            <h3 class="mb-4"><u class="text-browns">JSON Response</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">{
+    "success": 1,
+    "result": [
+        {
+            "event_key": "143192",
+            "event_date": "2022-06-17",
+            "event_time": "10:10",
+            "event_first_player": "S. Bejlek",
+            "first_player_key": "9393",
+            "event_second_player": "R. Zarazua",
+            "second_player_key": "1805",
+            "event_final_result": "0 - 0",
+            "event_game_result": "0 - 0",
+            "event_serve": "First Player",
+            "event_winner": null,
+            "event_status": "Set 1",
+            "event_type_type": "Itf Women Singles",
+            "tournament_name": "ITF W60 Ceska Lipa Women",
+            "tournament_key": "4210",
+            "tournament_round": "",
+            "tournament_season": "2022",
+            "event_live": "1",
+            "event_first_player_logo": null,
+            "event_second_player_logo": "https://api.tennis.com/logo-tennis/1805_r-zarazua.jpg",
+            "event_qualification": "False",
+            "pointbypoint": [
+                {
+                    "set_number": "Set 1",
+                    "number_game": "1",
+                    "player_served": "First Player",
+                    "serve_winner": "First Player",
+                    "serve_lost": null,
+                    "score": "1 - 0",
+                    "points": [
+                        {
+                            "number_point": "1",
+                            "score": "15 - 0",
+                            "break_point": null,
+                            "set_point": null,
+                            "match_point": null
+                        },
+                        .............
+                    ],
+                },
+                .............
+            ],
+            "scores": [
+                {
+                    "score_first": "5",
+                    "score_second": "5",
+                    "score_set": "1"
+                }
+            ],
+            "statistics": [
+                {
+                    "player_key": "9393",
+                    "stat_period": "match",
+                    "stat_type": "Service",
+                    "stat_name": "Double Faults",
+                    "stat_value": "2",
+                    "stat_won": null,
+                    "stat_total": null
+                },
+                ...........
+            ]
+        }
+    ]
+    .......
+}</pre>
+                          </div>
+                          </div>
+                            <h3 class="mb-4"><u class="text-browns">PHP call example</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">$APIkey=!_your_account_APIkey_!;
+
+ $curl_options = array(
+   CURLOPT_URL =&gt; "https://api.api-tennis.com/tennis/?method=get_livescore&amp;APIkey=$APIkey",
+   CURLOPT_RETURNTRANSFER =&gt; true,
+   CURLOPT_HEADER =&gt; false,
+   CURLOPT_TIMEOUT =&gt; 30,
+   CURLOPT_CONNECTTIMEOUT =&gt; 5
+ );
+
+ $curl = curl_init();
+ curl_setopt_array( $curl, $curl_options );
+ $result = curl_exec( $curl );
+
+ $result = (array) json_decode($result);
+
+ var_dump($result);</pre>
+                             </div>
+                          </div>
+
+                           <span class="anchor" id="h2h"></span>
+                            <h2 class="mb-3">H2H (Head to Head)</h2>
+                            <h3 class="mb-4"><u class="text-browns">Method</u></h3>
+                            <h3><span style="color:red; font-weight: bolder;">GET/POST</span> api.api-tennis.com/tennis/?method=get_H2H</h3>
+                            <p>Returns the last games between submiteted players and the last games of each player</p>
+                            <h3 class="mb-4"><u class="text-browns">Parameters</u></h3>
+                            <table class="table table-striped table-bordered table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Parameter</th>
+                                  <th scope="col">Description</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>method</td>
+                                  <td>API method name</td>
+                                </tr>
+                                <tr>
+                                  <td>APIkey</td>
+                                  <td>Authorization code generated from your api tennis account</td>
+                                </tr>
+                                <tr>
+                                  <td>first_player_key</td>
+                                  <td>First player Key</td>
+                                </tr>
+                                <tr>
+                                  <td>second_player_key</td>
+                                  <td>Second player Key</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <h3 class="mb-4"><u class="text-browns">Request URL</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                                  https://api.api-tennis.com/tennis/?method=get_H2H&APIkey=!_your_account_APIkey_!&first_player_key=30&second_player_key=5
+                                </div>
+                            </div>
+                            <h3 class="mb-4"><u class="text-browns">JSON Response</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">{
+	"success": 1,
+	"result": {
+		"H2H": [],
+		"firstPlayerResults": [
+			{
+				"event_key": "112163",
+				"event_date": "2022-05-11",
+				"event_time": "15:00",
+				"event_first_player": "Cervantes Tomas/ Ferrer Adria",
+				"first_player_key": "2616",
+				"event_second_player": "Kravchenko/ Reymond",
+				"second_player_key": "2316",
+				"event_final_result": "0 - 2",
+				"event_game_result": "-",
+				"event_serve": null,
+				"event_winner": "Second Player",
+				"event_status": "Finished",
+				"event_type_type": "Itf Men Doubles",
+				"tournament_name": "ITF M15 Ulcinj Men",
+				"tournament_key": "4561",
+				"tournament_round": "ITF M15 Ulcinj Men - 1/8-finals",
+				"tournament_season": "2022",
+				"event_live": "0",
+				"event_first_player_logo": null,
+				"event_second_player_logo": null
+			},
+			....
+			secondPlayerResults": [
+			{
+				"event_key": "94804",
+				"event_date": "2022-05-11",
+				"event_time": "15:10",
+				"event_first_player": "Lopez San Martin/ Rincon",
+				"first_player_key": "2139",
+				"event_second_player": "Regas/ Vasershtein",
+				"second_player_key": "2617",
+				"event_final_result": "2 - 0",
+				"event_game_result": "-",
+				"event_serve": null,
+				"event_winner": "First Player",
+				"event_status": "Finished",
+				"event_type_type": "Itf Men Doubles",
+				"tournament_name": "ITF M15 Valldoreix Men",
+				"tournament_key": "3855",
+				"tournament_round": "ITF M15 Valldoreix Men - Quarter-finals",
+				"tournament_season": "2022",
+				"event_live": "0",
+				"event_first_player_logo": null,
+				"event_second_player_logo": null
+			},
+			....
+  }</pre>
+                          </div>
+                          </div>
+                            <h3 class="mb-4"><u class="text-browns">PHP call example</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">$APIkey=!_your_account_APIkey_!;
+    $first_player_key=23;
+    $second_player_key=28;
+
+    $curl_options = array(
+      CURLOPT_URL =&gt; "https://api.api-tennis.com/tennis/?method=get_H2H&amp;APIkey=$APIkey&amp;first_player_key=$firstPlayerKey&amp;second_player_key=$secondPlayerKey",
+      CURLOPT_RETURNTRANSFER =&gt; true,
+      CURLOPT_HEADER =&gt; false,
+      CURLOPT_TIMEOUT =&gt; 30,
+      CURLOPT_CONNECTTIMEOUT =&gt; 5
+    );
+
+    $curl = curl_init();
+    curl_setopt_array( $curl, $curl_options );
+    $result = curl_exec( $curl );
+
+    $result = (array) json_decode($result);
+
+    var_dump($result);</pre>
+                             </div>
+                          </div>
+
+                                  <span class="anchor" id="standings"></span>
+                            <h2 class="mb-3">Standings</h2>
+                            <h3 class="mb-4"><u class="text-browns">Method</u></h3>
+                            <h3><span style="color:red; font-weight: bolder;">GET/POST</span> api.api-tennis.com/tennis/?method=get_standings</h3>
+                            <p>Returns standings for tennis tournaments included in your current subscription plan.</p>
+                            <h3 class="mb-4"><u class="text-browns">Parameters</u></h3>
+                            <table class="table table-striped table-bordered table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Parameter</th>
+                                  <th scope="col">Description</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>method</td>
+                                  <td>API method name</td>
+                                </tr>
+                                <tr>
+                                  <td>APIkey</td>
+                                  <td>Authorization code generated from your api tennis account</td>
+                                </tr>
+                                <tr>
+                                  <td>event_type</td>
+                                  <td>'ATP' or 'WTA'</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <h3 class="mb-4"><u class="text-browns">Request URL</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                                  https://api.api-tennis.com/tennis/?method=get_standings&event_type=WTA&APIkey=!_your_account_APIkey_!
+                                </div>
+                            </div>
+                            <h3 class="mb-4"><u class="text-browns">JSON Response</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">{
+	"success": 1,
+	"result": [
+		{
+			"place": "1",
+			"player": "Iga Swiatek",
+			"player_key": "1910",
+			"league": "WTA",
+			"movement": "same",
+			"country": "Poland",
+			"points": "8501"
+		},
+		{
+			"place": "2",
+			"player": "Anett Kontaveit",
+			"player_key": "2388",
+			"league": "WTA",
+			"movement": "same",
+			"country": "Estonia",
+			"points": "4476"
+		},
+		{
+			"place": "3",
+			"player": "Maria Sakkari",
+			"player_key": "2076",
+			"league": "WTA",
+			"movement": "down",
+			"country": "Greece",
+			"points": "4190"
+		},
+		.....
+}</pre>
+                        </div>
+                          </div>
+                            <h3 class="mb-4"><u class="text-browns">PHP call example</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">$APIkey=!_your_account_APIkey_!;
+     $event_type = 'ATP';
+
+     $curl_options = array(
+       CURLOPT_URL =&gt; "https://api.api-tennis.com/tennis/?method=get_standings&amp;APIkey=$APIkey&amp;event_type=$league_key",
+       CURLOPT_RETURNTRANSFER =&gt; true,
+       CURLOPT_HEADER =&gt; false,
+       CURLOPT_TIMEOUT =&gt; 30,
+       CURLOPT_CONNECTTIMEOUT =&gt; 5
+     );
+
+     $curl = curl_init();
+     curl_setopt_array( $curl, $curl_options );
+     $result = curl_exec( $curl );
+
+     $result = (array) json_decode($result);
+
+     var_dump($result);</pre>
+                             </div>
+                          </div>
+
+                           <span class="anchor" id="players"></span>
+                            <h2 class="mb-3">Players</h2>
+                            <h3 class="mb-4"><u class="text-browns">Method</u></h3>
+                            <h3><span style="color:red; font-weight: bolder;">GET/POST</span> api.api-tennis.com/tennis/?method=get_players</h3>
+                            <p>Returns tennis players profile.</p>
+                            <h3 class="mb-4"><u class="text-browns">Parameters</u></h3>
+                            <table class="table table-striped table-bordered table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Parameter</th>
+                                  <th scope="col">Description</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>method</td>
+                                  <td>API method name</td>
+                                </tr>
+                                <tr>
+                                  <td>APIkey</td>
+                                  <td>Authorization code generated from your api tennis account</td>
+                                </tr>
+                                <tr>
+                                  <td>player_key</td>
+                                  <td>Player internal code</td>
+                                </tr>
+                                <tr>
+                                  <td>tournament_key</td>
+                                  <td>Tournament internal code</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <h3 class="mb-4"><u class="text-browns">Request URL</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                                  https://api.api-tennis.com/tennis/?method=get_players&player_key=137&APIkey=!_your_account_APIkey_!
+                                </div>
+                            </div>
+                            <h3 class="mb-4"><u class="text-browns">JSON Response</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">{
+	"success": 1,
+	"result": [
+		{
+			"player_key": "1905",
+			"player_name": "N. Djokovic",
+			"player_country": "Serbia",
+			"player_bday": "22.05.1987",
+			"player_logo": "https://api.api-tennis.com/logo-tennis/1905_n-djokovic.jpg",
+			"stats": [
+				{
+					"season": "2021",
+					"type": "doubles",
+					"rank": "255",
+					"titles": "0",
+					"matches_won": "6",
+					"matches_lost": "4",
+					"hard_won": "2",
+					"hard_lost": "2",
+					"clay_won": "",
+					"clay_lost": "",
+					"grass_won": "3",
+					"grass_lost": "0"
+				},
+				{
+					"season": "2020",
+					"type": "doubles",
+					"rank": "158",
+					"titles": "0",
+					"matches_won": "2",
+					"matches_lost": "1",
+					"hard_won": "2",
+					"hard_lost": "1",
+					"clay_won": "",
+					"clay_lost": "",
+					"grass_won": "",
+					"grass_lost": ""
+				},
+        ........
+     ]
+ }</pre>
+                          </div>
+                          </div>
+                            <h3 class="mb-4"><u class="text-browns">PHP call example</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">$APIkey=!_your_account_APIkey_!;
+    $player_key = 728;
+
+    $curl_options = array(
+     CURLOPT_URL =&gt; "https://api.api-tennis.com/tennis?method=get_players&amp;APIkey=$APIkey&amp;player_key=$player_key",
+     CURLOPT_RETURNTRANSFER =&gt; true,
+     CURLOPT_HEADER =&gt; false,
+     CURLOPT_TIMEOUT =&gt; 30,
+     CURLOPT_CONNECTTIMEOUT =&gt; 5
+    );
+
+    $curl = curl_init();
+    curl_setopt_array( $curl, $curl_options );
+    $result = curl_exec( $curl );
+
+    $result = (array) json_decode($result);
+
+    var_dump($result);</pre>
+                             </div>
+                          </div>
+
+                                  <span class="anchor" id="odds"></span>
+                            <h2 class="mb-3">Odds</h2>
+                            <h3 class="mb-4"><u class="text-browns">Method</u></h3>
+                            <h3><span style="color:red; font-weight: bolder;">GET/POST</span> api.api-tennis.com/tennis?method=get_odds</h3>
+                            <p>Returns odds for tennis matches included in your current subscription plan.</p>
+                            <h3 class="mb-4"><u class="text-browns">Parameters</u></h3>
+                            <table class="table table-striped table-bordered table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Parameter</th>
+                                  <th scope="col">Description</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>method</td>
+                                  <td>API method name</td>
+                                </tr>
+                                <tr>
+                                  <td>APIkey</td>
+                                  <td>Authorization code generated from your api tennis account</td>
+                                </tr>
+                                 <tr>
+                                  <td>date_start</td>
+                                  <td>Start date (yyyy-mm-dd)</td>
+                                </tr>
+                                 <tr>
+                                  <td>date_stop</td>
+                                  <td>Stop date (yyyy-mm-dd)</td>
+                                </tr>
+                                 <tr>
+                                  <td>event_type_key</td>
+                                  <td>Event Type Key - if set only matches from specific tennis event type will be returned (Optional)</td>
+                                </tr>
+                                 <tr>
+                                  <td>tournament_key</td>
+                                  <td>Tournament Key - if set only matches from specific tennis tournament will be returned (Optional)</td>
+                                </tr>
+								<tr>
+									<td>
+									   match_key</td>
+									<td>
+									Match Key - if set only details from specific tennis match will be returned (Optional)
+								</tr>
+                              </tbody>
+                            </table>
+                            <h3 class="mb-4"><u class="text-browns">Request URL</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                                  https://api.api-tennis.com/tennis/?method=get_odds&match_key=159923&APIkey=!_your_account_APIkey_!
+                                </div>
+                            </div>
+                            <h3 class="mb-4"><u class="text-browns">JSON Response</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">{
+	"success": 1,
+	"result": {
+		"159923": {
+			"Home/Away": {
+				"Home": {
+					"bwin": "2.40",
+					"bet365": "2.50",
+					"Betsson": "2.45",
+					"1xbet": "2.50",
+					"Sportingbet": "2.40",
+					"Betcris": "2.43"
+				},
+				"Away": {
+					"bwin": "1.48",
+					"bet365": "1.50",
+					"Betsson": "1.48",
+					"1xbet": "1.51",
+					"Sportingbet": "1.48",
+					"Betcris": "1.48"
+				}
+			},
+			"Correct Score 1st Half": {
+				"6:0": {
+					"bet365": "51.00",
+					"1xbet": "51.00"
+				},
+				"6:1": {
+					"bet365": "19.00",
+					"1xbet": "19.00"
+				},
+				"6:2": {
+					"bet365": "15.00",
+					"1xbet": "15.00"
+				},
+				"0:6": {
+					"bet365": "26.00",
+					"1xbet": "26.00"
+				},
+				"1:6": {
+					"bet365": "12.00",
+					"1xbet": "12.00"
+				},
+				"2:6": {
+					"bet365": "7.00",
+					"1xbet": "7.00"
+				},
+				"4:6": {
+					"bet365": "5.50",
+					"1xbet": "5.50"
+				},
+				"3:6": {
+					"bet365": "7.00",
+					"1xbet": "7.00"
+				},
+				"6:3": {
+					"bet365": "8.00",
+					"1xbet": "8.00"
+				},
+				"6:4": {
+					"bet365": "9.50",
+					"1xbet": "9.50"
+				},
+				"7:5": {
+					"bet365": "19.00",
+					"1xbet": "19.00"
+				},
+				"7:6": {
+					"bet365": "12.00",
+					"1xbet": "12.00"
+				},
+				"5:7": {
+					"bet365": "15.00",
+					"1xbet": "15.00"
+				},
+				"6:7": {
+					"bet365": "10.00",
+					"1xbet": "10.00"
+				}
+			},
+			"Home/Away (1st Set)": {
+				"Home": {
+					"bet365": "2.37",
+					"1xbet": "2.36"
+				},
+				"Away": {
+					"bet365": "1.53",
+					"1xbet": "1.55"
+				}
+			},
+			"Set Betting": {
+				"2:0": {
+					"bwin": "3.90",
+					"bet365": "3.75",
+					"1xbet": "3.74",
+					"Sportingbet": "3.90",
+					"Betcris": "3.80"
+				},
+				"2:1": {
+					"bwin": "5.50",
+					"bet365": "6.00",
+					"1xbet": "6.00",
+					"Sportingbet": "5.50",
+					"Betcris": "5.20"
+				},
+				"0:2": {
+					"bwin": "2.10",
+					"bet365": "2.10",
+					"1xbet": "2.10",
+					"Sportingbet": "2.10",
+					"Betcris": "2.00"
+				},
+				"1:2": {
+					"bwin": "4.20",
+					"bet365": "4.75",
+					"1xbet": "4.74",
+					"Sportingbet": "4.20",
+					"Betcris": "4.10"
+				}
+			},
+			"Win In Straigh Sets (Player 1)": {
+				"Yes": {
+					"bet365": "3.75"
+				},
+				"No": {
+					"bet365": "1.25"
+				}
+			},
+			"Win In Straigh Sets (Player 2)": {
+				"Yes": {
+					"bet365": "2.10"
+				},
+				"No": {
+					"bet365": "1.66"
+				}
+			}
+		}
+	}</pre>
+                          </div>
+                          </div>
+                            <h3 class="mb-4"><u class="text-browns">PHP call example</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">$APIkey=!_your_account_APIkey_!;
+ $match_key = 159923;
+
+ $curl_options = array(
+   CURLOPT_URL =&gt; "https://api.api-tennis.com/tennis/?method=get_odds&&amp;APIkey=$APIkey&amp;match_key=$match_key",
+   CURLOPT_RETURNTRANSFER =&gt; true,
+   CURLOPT_HEADER =&gt; false,
+   CURLOPT_TIMEOUT =&gt; 30,
+   CURLOPT_CONNECTTIMEOUT =&gt; 5
+ );
+
+ $curl = curl_init();
+ curl_setopt_array( $curl, $curl_options );
+ $result = curl_exec( $curl );
+
+ $result = (array) json_decode($result);
+
+ var_dump($result);</pre>
+                             </div>
+                          </div>
+
+                          <span class="anchor" id="live_odds"></span>
+            <h2 class="mb-3">Live Odds</h2>
+            <h3 class="mb-4"><u class="text-browns">Method</u></h3>
+            <h3><span style="color:red; font-weight: bolder;">GET/POST</span> api.api-tennis.com/tennis/?method=get_live_odds</h3>
+            <p>Returns tennis live odds for live matches.</p>
+            <h3 class="mb-4"><u class="text-browns">Parameters</u></h3>
+            <table class="table table-striped table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>method</td>
+                  <td>API method name</td>
+                </tr>
+                <tr>
+                  <td>APIkey</td>
+                  <td>Authorization code generated from your api tennis account</td>
+                </tr>
+                 <tr>
+                  <td>event_type_key</td>
+                  <td>Event Type Key - if set only matches from specific tennis event type will be returned (Optional)</td>
+                </tr>
+                 <tr>
+                  <td>tournament_key</td>
+                  <td>Tournament Key - if set only matches from specific tennis tournament will be returned (Optional)</td>
+                </tr>
+                <tr>
+                  <td>
+                     match_key</td>
+                  <td>
+                  Match Key - if set only details from specific tennis match will be returned (Optional)
+                </tr>
+                <tr>
+                  <td>
+                     player_key</td>
+                  <td>
+                  Player Key - if set only details from specific tennis player will be returned (Optional)
+                </tr>
+                <tr>
+                  <td>
+                     timezone</td>
+                  <td>
+                    The timezone where you want to receive the data in tz format (exemple: America/New_York). Default timezone: Europe/Berlin (Optional)</td>
+                </tr>
+                              </tbody>
+                            </table>
+                            <h3 class="mb-4"><u class="text-browns">Request URL</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                                  https://api.api-tennis.com/tennis/?method=get_live_odds&APIkey=!_your_account_APIkey_!
+                                </div>
+                            </div>
+                            <h3 class="mb-4"><u class="text-browns">JSON Response</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">{
+    "success": 1,
+    "result": {
+        "11976653": {
+            "event_key": 11976653,
+            "event_date": "2024-08-22",
+            "event_time": "08:45",
+            "first_player_key": 69252,
+            "second_player_key": 73380,
+            "event_game_result": "30 - 30",
+            "event_serve": "First Player",
+            "event_winner": null,
+            "event_status": "Set 2",
+            "event_type_type": "Itf Women Doubles",
+            "tournament_name": "ITF W35 Kunshan Women",
+            "tournament_key": 11556,
+            "tournament_round": "ITF W35 Kunshan Women - Quarter-finals",
+            "tournament_season": "2024",
+            "event_live": "08:45",
+            "event_first_player_logo": null,
+            "event_second_player_logo": null,
+            "event_qualification": "False",
+            "live_odds": [
+                {
+                    "odd_name": "Set 1 to Break Serve",
+                    "suspended": "Yes",
+                    "type": "1/Yes",
+                    "value": "1.125",
+                    "handicap": null,
+                    "upd": "2024-08-22 09:15:10"
+                },
+                {
+                    "odd_name": "Set 1 to Break Serve",
+                    "suspended": "Yes",
+                    "type": "2/Yes",
+                    "value": "1.111",
+                    "handicap": null,
+                    "upd": "2024-08-22 09:15:10"
+                },
+                ...........
+              ]
+          },
+          .........
+      }
+}</pre>
+                          </div>
+                          </div>
+                            <h3 class="mb-4"><u class="text-browns">PHP call example</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">$APIkey=!_your_account_APIkey_!;
+
+ $curl_options = array(
+   CURLOPT_URL =&gt; "https://api.api-tennis.com/tennis/?method=get_live_odds&amp;APIkey=$APIkey",
+   CURLOPT_RETURNTRANSFER =&gt; true,
+   CURLOPT_HEADER =&gt; false,
+   CURLOPT_TIMEOUT =&gt; 30,
+   CURLOPT_CONNECTTIMEOUT =&gt; 5
+ );
+
+ $curl = curl_init();
+ curl_setopt_array( $curl, $curl_options );
+ $result = curl_exec( $curl );
+
+ $result = (array) json_decode($result);
+
+ var_dump($result);</pre>
+                             </div>
+                          </div>
+
+                           <span class="anchor" id="news"></span>
+                            <h2 class="mb-3">News</h2>
+                            <h3 class="mb-4"><u class="text-browns">Method</u></h3>
+                            <h3><span style="color:red; font-weight: bolder;">GET/POST</span> api.api-tennis.com/tennis/?method=get_news</h3>
+                            <p>Returns AI-synthesized tennis news articles about players, tournaments and matches. Available on the Ultra plan only.</p>
+                            <p>An article is linked to <strong>every</strong> entity it's actually about — a single article can carry a <code>player_key</code>, a <code>tournament_key</code> and an <code>event_key</code> all at once (e.g. a match report is tied to the match itself, the tournament it's part of, and the featured player). Any of these three can independently be <code>null</code> if that dimension wasn't identified for the article. <code>entity_type</code> / <code>entity_key</code> are kept for backwards compatibility and just mirror the single most specific match reflected (priority: match &gt; tournament &gt; player).</p>
+                            <h3 class="mb-4"><u class="text-browns">Parameters</u></h3>
+                            <table class="table table-striped table-bordered table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Parameter</th>
+                                  <th scope="col">Description</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>method</td>
+                                  <td>API method name</td>
+                                </tr>
+                                <tr>
+                                  <td>APIkey</td>
+                                  <td>Authorization code generated from your api tennis account</td>
+                                </tr>
+                                <tr>
+                                  <td>player_key</td>
+                                  <td>Player Key - returns news about this player, including match reports the player is involved in (Optional)</td>
+                                </tr>
+                                <tr>
+                                  <td>tournament_key</td>
+                                  <td>Tournament Key - returns news about this tournament, including match reports from it (Optional)</td>
+                                </tr>
+                                <tr>
+                                  <td>match_key</td>
+                                  <td>Match Key - returns the news article about this specific match, if one exists (Optional)</td>
+                                </tr>
+                                <tr>
+                                  <td>date_start</td>
+                                  <td>Only return articles published on or after this date, format YYYY-MM-DD (Required)</td>
+                                </tr>
+                                <tr>
+                                  <td>date_stop</td>
+                                  <td>Only return articles published on or before this date, format YYYY-MM-DD (Required)</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <h3 class="mb-4"><u class="text-browns">Request URL</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                                  https://api.api-tennis.com/tennis/?method=get_news&player_key=1905&date_start=2026-07-01&date_stop=2026-07-14&APIkey=!_your_account_APIkey_!
+                                </div>
+                            </div>
+                            <h3 class="mb-4"><u class="text-browns">JSON Response</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">{
+	"success": 1,
+	"result": [
+		{
+			"news_key": "142",
+			"title": "Sinner Defends Wimbledon Crown in Five-Set Thriller",
+			"content": "Jannik Sinner successfully defended his Wimbledon title...",
+			"published_at": "2026-07-13 09:41:12.000",
+			"entity_type": "match",
+			"entity_key": "12145144",
+			"player_key": "1905",
+			"player_name": "J. Sinner",
+			"tournament_key": "1234",
+			"tournament_name": "Wimbledon",
+			"event_key": "12145144",
+			"event_result": "3 - 1",
+			"event_round": "ATP Wimbledon - Final",
+			"sources": ["tennis-majors", "bbc-sport-tennis"]
+		},
+		.....
+	]
+}</pre>
+                        </div>
+                          </div>
+                            <h3 class="mb-4"><u class="text-browns">PHP call example</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">$APIkey=!_your_account_APIkey_!;
+     $player_key = 1905;
+     $date_start = '2026-07-01';
+     $date_stop = '2026-07-14';
+
+     $curl_options = array(
+       CURLOPT_URL =&gt; "https://api.api-tennis.com/tennis/?method=get_news&amp;APIkey=$APIkey&amp;player_key=$player_key&amp;date_start=$date_start&amp;date_stop=$date_stop",
+       CURLOPT_RETURNTRANSFER =&gt; true,
+       CURLOPT_HEADER =&gt; false,
+       CURLOPT_TIMEOUT =&gt; 30,
+       CURLOPT_CONNECTTIMEOUT =&gt; 5
+     );
+
+     $curl = curl_init();
+     curl_setopt_array( $curl, $curl_options );
+     $result = curl_exec( $curl );
+
+     $result = (array) json_decode($result);
+
+     var_dump($result);</pre>
+                             </div>
+                          </div>
+
+                           <span class="anchor" id="draw"></span>
+                            <h2 class="mb-3">Draw</h2>
+                            <h3 class="mb-4"><u class="text-browns">Method</u></h3>
+                            <h3><span style="color:red; font-weight: bolder;">GET/POST</span> api.api-tennis.com/tennis/?method=get_draw</h3>
+                            <p>Returns the tournament draw (bracket) for a given tournament and season - rounds, matchups, seeds and byes, plus each match's live result/status where already available. When the tournament's official draw has been published by our data provider, the response reflects that draw exactly (<code>"source": "draw_feed"</code>), including still-undecided future rounds as empty "TBD" slots that fill in automatically as each round is played. For tournaments where the official draw isn't available yet, the bracket is instead reconstructed from played/scheduled matches (<code>"source": "reconstructed_from_results"</code>).</p>
+                            <h3 class="mb-4"><u class="text-browns">Parameters</u></h3>
+                            <table class="table table-striped table-bordered table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Parameter</th>
+                                  <th scope="col">Description</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>method</td>
+                                  <td>API method name</td>
+                                </tr>
+                                <tr>
+                                  <td>APIkey</td>
+                                  <td>Authorization code generated from your api tennis account</td>
+                                </tr>
+                                <tr>
+                                  <td>tournament_key</td>
+                                  <td>Tournament Key - the tournament to return the draw for (Required)</td>
+                                </tr>
+                                <tr>
+                                  <td>tournament_season</td>
+                                  <td>Tournament Season - defaults to the current year if not set (Optional)</td>
+                                </tr>
+                                <tr>
+                                  <td>include_qualification</td>
+                                  <td>Set to 1 to also include qualification/wild-card brackets alongside the main draw (Optional)</td>
+                                </tr>
+                                <tr>
+                                  <td>timezone</td>
+                                  <td>The timezone where you want to receive the data in tz format (exemple: America/New_York). Default timezone: Europe/Berlin (Optional)</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <h3 class="mb-4"><u class="text-browns">Request URL</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                                  https://api.api-tennis.com/tennis/?method=get_draw&APIkey=!_your_account_APIkey_!&tournament_key=1214&tournament_season=2026&include_qualification=1
+                                </div>
+                            </div>
+                            <h3 class="mb-4"><u class="text-browns">JSON Response</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">{
+    "success": 1,
+    "result": {
+        "tournament": {
+            "tournament_key": "1214",
+            "tournament_name": "Winston-Salem",
+            "tournament_surface": "Hard",
+            "tournament_country": "Atp Singles",
+            "tournament_season": "2026"
+        },
+        "source": "draw_feed",
+        "brackets": [
+            {
+                "stage": "Singles - Main",
+                "qualification": false,
+                "draw_size": 64,
+                "rounds": [
+                    {
+                        "round_name": "1/32-finals",
+                        "matches": [
+                            {
+                                "draw_key": 401,
+                                "match_number": 1,
+                                "match_key": null,
+                                "status": "BYE",
+                                "live": false,
+                                "first_player": {
+                                    "player_key": 1980,
+                                    "name": "D. Medvedev",
+                                    "seed": "1",
+                                    "logo": "https://api.api-tennis.com/logo-tennis/1980_d-medvedev.jpg"
+                                },
+                                "second_player": null,
+                                "result": null,
+                                "game_score": null,
+                                "winner_player_key": null,
+                                "next_slot_key": 433
+                            },
+                            {
+                                "draw_key": 402,
+                                "match_number": 2,
+                                "match_key": 12156809,
+                                "status": "Finished",
+                                "live": false,
+                                "first_player": {
+                                    "player_key": 1317,
+                                    "name": "M. Damm",
+                                    "seed": "WC",
+                                    "logo": "https://api.api-tennis.com/logo-tennis/1317_m-damm.jpg"
+                                },
+                                "second_player": {
+                                    "player_key": 9219,
+                                    "name": "A. Shelbayh",
+                                    "seed": "Q",
+                                    "logo": "https://api.api-tennis.com/logo-tennis/9219_a-shelbayh.jpg"
+                                },
+                                "result": "2 - 0",
+                                "game_score": "-",
+                                "winner_player_key": 1317,
+                                "next_slot_key": 433
+                            },
+        ............
+                        ]
+                    },
+        ............
+                    {
+                        "round_name": "Final",
+                        "matches": [
+                            {
+                                "draw_key": 463,
+                                "match_number": 63,
+                                "match_key": null,
+                                "status": "TBA",
+                                "live": false,
+                                "first_player": null,
+                                "second_player": null,
+                                "result": null,
+                                "game_score": null,
+                                "winner_player_key": null,
+                                "next_slot_key": null
+                            }
+                        ]
+                    }
+                ]
+            },
+        ............
+        ]
+    }
+}</pre>
+                          </div>
+                          </div>
+                            <h3 class="mb-4"><u class="text-browns">PHP call example</u></h3>
+                             <div class="card mb-4">
+                                <div class="card-body bg-light mb-0">
+                            <pre class="mb-0">$APIkey=!_your_account_APIkey_!;
+    $tournament_key = 1214;
+    $tournament_season = 2026;
+
+    $curl_options = array(
+      CURLOPT_URL =&gt; "https://api.api-tennis.com/tennis/?method=get_draw&amp;APIkey=$APIkey&amp;tournament_key=$tournament_key&amp;tournament_season=$tournament_season&amp;include_qualification=1",
+      CURLOPT_RETURNTRANSFER =&gt; true,
+      CURLOPT_HEADER =&gt; false,
+      CURLOPT_TIMEOUT =&gt; 30,
+      CURLOPT_CONNECTTIMEOUT =&gt; 5
+    );
+
+    $curl = curl_init();
+    curl_setopt_array( $curl, $curl_options );
+    $result = curl_exec( $curl );
+
+    $result = (array) json_decode($result);
+
+    var_dump($result);</pre>
+                             </div>
+                          </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<footer>
+   <!-- Start Footer -->
+  <section id='footer' class="py-6 pb-5">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-12 mt-5 mt-sm-0 col-sm-12 col-lg-6 order-2 order-lg-1">
+          <hr class="my-4">
+          <div class="row">
+            <div class="col-6 col-sm-6 footer-align-left-mob">
+              <ul class="list-unstyled">
+                <li class="mb-2">NEED HELP?</li>
+                <li><a href='/contact'>Support</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-6">
+              <ul class="list-unstyled">
+                <li class="mb-2">EXPLORE</li>
+                <li><a href='/documentation'>Documentation</a></li>
+                <li><a href='/blog'>Blog</a></li>
+                <li><a href='/terms-of-use'>Terms Of Use</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-5 order-1 order-lg-3">
+          <ul class="list-unstyled">
+            <li>
+              <h4 class="text-light mb-2"><b>Subscribe to our newsletter</b></h4>
+              <p class="mb-4">Stay connected with our updates</p>
+              <form method="post" class="form-inline" id="subscribe">
+                <div class="d-flex mb-2">
+                  <input type="text" required name="email" class="form-control email" placeholder="Your email" style="border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;">
+                  <button type="submit" class="btn subscribe mb-2 m-0" style="border-radius: 50px;    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px; box-shadow: none;">Subscribe</button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 text-center order-5 text-sm-left text mt-5">
+          <small class="d-block mb-1">&copy; <span id="setFooterYear">2026</span> - All Rights Reserved, by API Tennis.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Footer --></footer>
+
+    <!-- End Section ========================================================-->
+<!-- Start Section ======================================================-->
+
+    <div class="scroll-top d-none">
+          <i class="fa fa-angle-up"></i>
+      </div>
+
+    <!-- End Section ========================================================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Navigation Menu Bar Changer Script ==========================================-->
+
+<script src="https://rawgit.com/bassjobsen/affix/master/assets/js/affix.js"></script>
+
+ <!-- Main Script ============================================================-->
+  <script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,104 @@
+{
+ "domain": "thefantasyfootballers.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "react",
+   "citation": "raw/px_thefantasyfootballers_com_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_thefantasyfootballers_com_home.raw",
+   "raw\\px_thefantasyfootballers_com_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "https://api.btloader.com/",
+    "api.api"
+   ],
+   "citation": "raw/px_thefantasyfootballers_com_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_thefantasyfootballers_com_home.raw"
+  },
+  "rate_limits": {
+   "value": "Credit",
+   "citation": "raw/px_thefantasyfootballers_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_thefantasyfootballers_com_home.raw",
+   "raw\\px_thefantasyfootballers_com_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Fantasy Football at its very best. The award-winning Fantasy Footballers bring y' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_thefantasyfootballers_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_thefantasyfootballers_com_home.raw",
+   "raw\\px_thefantasyfootballers_com_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "Credit"
+   ],
+   "citation": "raw/px_thefantasyfootballers_com_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_thefantasyfootballers_com_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "Free",
+    "free"
+   ],
+   "citation": "raw/px_thefantasyfootballers_com_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_thefantasyfootballers_com_home.raw",
+   "raw\\px_thefantasyfootballers_com_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Disallow:",
+  "Sitemap: https://www.thefantasyfootballers.com/sitemap_index.xml"
+ ],
+ "discovered_targets": [
+  "api.api",
+  "https://api.btloader.com/"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:34.438506"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "#1 Fantasy Football Podcast - Fantasy Footballers Podcast",
+  "description": "Fantasy Football at its very best. The award-winning Fantasy Footballers bring you the most accurate fantasy football podcast, rankings, analysis and advice."
+ }
+}

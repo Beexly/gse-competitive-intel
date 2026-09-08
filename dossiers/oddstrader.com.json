@@ -1,0 +1,146 @@
+{
+ "domain": "oddstrader.com",
+ "tech_stack": {
+  "frontend": "React SPA (webpack chunks on otcdn.virginia.us-east-1.oddstrader.com) + server-rendered SEO pages; ConfigCat for feature flags (configcat:e.get('configcat')); Sentry error logging (enableSentryPageNotFoundLogs); GTM GTM-KHJCH7L; Mixpanel token 22f330d918d9db921fc64781ccd81f54",
+  "backend": "Microservice gateway at ms.virginia.us-east-1.oddstrader.com with two services: odds-v2 ('https://ms.virginia.us-east-1.oddstrader.com/odds-v2/odds-v2-service') and oddstrader ('https://www.oddstrader.com/oddstrader/oddstrader-service'); Firebase auth (auth.oddstrader.com, projectId oddstrader-production, databaseURL oddstrader-production.firebaseio.com); serverless functions at us-central1-oddstrader-production.cloudfunctions.net; AI chat at assistant-chat-api.oddstrader.com/api/chat/stream_chat/; payments hinted via squarePayConfig (Square) and app-store subscription management",
+  "database": "Firebase Realtime DB (oddstrader-production.firebaseio.com); S3 menu-service bucket menu-service-uat-409396115112.s3.amazonaws.com/sportsbookCategories/",
+  "cloud": "Google Cloud (Cloud Functions us-central1, Firebase project oddstrader-production, GCS menu bucket), Cloudflare edge (cf-ray present), AWS S3 for menu config; naming 'virginia.us-east-1' across all service hosts",
+  "cdn": "otcdn.virginia.us-east-1.oddstrader.com (JS), assets.oddstrader.com (bet-card images), logos.oddstrader.com",
+  "citations": [
+   "https://oddstrader.com/ (window.__config inline JSON)",
+   "https://otcdn.virginia.us-east-1.oddstrader.com/js/main.18295daeca9e6d7f.js"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET/POST",
+    "path": "https://ms.virginia.us-east-1.oddstrader.com/odds-v2/odds-v2-service",
+    "auth_required": "JWT Authorization + X-Access-Policy headers embedded in page config",
+    "tier": "unknown",
+    "sample_response": null,
+    "citation": "window.__config endpoints.dataProvider.oddsV2 in https://oddstrader.com/ HTML"
+   },
+   {
+    "method": "GET/POST",
+    "path": "https://www.oddstrader.com/oddstrader/oddstrader-service",
+    "auth_required": "JWT + X-Access-Policy",
+    "tier": "unknown",
+    "sample_response": null,
+    "citation": "window.__config endpoints.dataProvider.oddstrader in https://oddstrader.com/ HTML"
+   },
+   {
+    "method": "POST",
+    "path": "https://assistant-chat-api.oddstrader.com/api/chat/stream_chat/",
+    "auth_required": "unknown",
+    "tier": "AI assistant (Turbo)",
+    "sample_response": null,
+    "citation": "https://oddstrader.com/ HTML script"
+   },
+   {
+    "method": "POST",
+    "path": "https://us-central1-oddstrader-production.cloudfunctions.net (functionsUrl)",
+    "auth_required": "unknown",
+    "tier": "unknown",
+    "sample_response": null,
+    "citation": "window.__config dataProvider.functionsUrl in https://oddstrader.com/ HTML"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED — no GraphQL references in fetched bundles",
+  "websocket_endpoints": [
+   {
+    "path": "wss://liveodds.virginia.us-east-1.oddstrader.com:443 (service 'live-odds', type ws)",
+    "topic_pattern": "not extracted",
+    "citation": "window.__config endpoints.liveOddsService in https://oddstrader.com/ HTML"
+   }
+  ],
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "https://oddstrader.com/"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "Bet record win-rate calculation (client-side analytics)",
+   "raw_snippet": "Q=function(e){return e.some(function(e){return\"LOSS\"===e.grade})?\"LOSS\":e.every(function(e){return\"PUSH\"===e.grade})?\"PUSH\":\"WIN\"} ... Z=function(e){var t=o()(Object.values(e)),r=a()(t,function(e){return Q(e.betItems)}),n=r.LOSS,i=r.WIN,c=void 0===i?0:i,l=c+(void 0===n?0:n);return(l?c/l*100:0).toFixed(2)}",
+   "reconstruction": "A bet is LOSS if any leg graded LOSS, PUSH if all legs PUSH, else WIN; win rate % = wins / (wins + losses) * 100, shown to 2 decimals. Pushes excluded from denominator.",
+   "citation": "https://otcdn.virginia.us-east-1.oddstrader.com/js/main.18295daeca9e6d7f.js"
+  },
+  {
+   "name": "OddsTrader Picks signal set (marketing-defined, no formula in client)",
+   "raw_snippet": "AI prediction: Projected score or outcome generated from OddsTrader's data model. Expected value: A signal that compares the market price to the model's view of the outcome. Cover probability: The model's estimated chance that a side, spread or total reaches the required result. Bet rating: A quick ranking signal ...",
+   "reconstruction": "NOT CONFIRMED at code level — model runs server-side; client exposes only signal names: AI prediction, EV, cover probability, bet rating, best line.",
+   "citation": "https://oddstrader.com/betting/oddstrader-turbo/"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "AI predictions/EV/cover-probability/bet-rating generated server-side ('OddsTrader's data model'); AI chat assistant (Turbo) with AI_GENERATION_REQUESTED analytics event",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "https://oddstrader.com/betting/oddstrader-turbo/"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED — no simulation counts in client bundles",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": null
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Advision Feeds (advisionfeeds.com — httpproxy host http.virginia.us-east-1.advisionfeeds.com and 'advisiondevelopment-data-provider' webpack chunk names; advisionId field on events)",
+   "Firebase/Google Cloud",
+   "Square (payments, squarePayConfig)",
+   "ConfigCat (feature flags)",
+   "Mixpanel + GTM (analytics)",
+   "Sentry"
+  ],
+  "citations": [
+   "https://oddstrader.com/ (window.__config)",
+   "https://otcdn.virginia.us-east-1.oddstrader.com/js/main.18295daeca9e6d7f.js"
+  ]
+ },
+ "product_limits": {
+  "limits": [
+   "Turbo-gated features: TURBO_ONLY_RATING_FILTER analytics event and LOCKED_CONTENT_CLICKED event show bet-rating filter and some content are Turbo-subscriber only; BOOK_CONNECTION events indicate sportsbook-account connect flow gated behind subscription settings"
+  ],
+  "upgrade_triggers": "LOCKED_CONTENT_CLICKED + TURBO_ONLY_RATING_FILTER events — locked content and Turbo-only rating filter are the upsell points (precise caps not exposed client-side)",
+  "citation": "https://otcdn.virginia.us-east-1.oddstrader.com/js/main.18295daeca9e6d7f.js"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED — /pricing/ returns 404; pricing lives in app subscription flow (apps.apple.com/account/subscriptions + play.google.com/store/account/subscriptions linked from site; Square squarePayConfig present). No public price page found within budget.",
+  "ios": "Subscription managed through App Store (apps.apple.com/account/subscriptions link in site config); app id not extracted (budget)",
+  "android": "Subscription managed through Play Store (play.google.com/store/account/subscriptions link in site config)",
+  "citations": [
+   "https://oddstrader.com/ (storesUrls + subscriptionSettings in page config)"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "I recently started using OddsTrader for their AI based EV and then Pikkit for tracking of all my sportsbooks. I'm up 7 out of 10 days.",
+   "source": "https://www.reddit.com/r/EVbetting/comments/1h3uq3g/trying_out_new_ev_tools/",
+   "date": "2024-12 thread"
+  },
+  {
+   "quote": "I went 6 for 6 with zero wrong. Costs like $99/year but has already paid for itself. Oddstrader.com.",
+   "source": "https://www.reddit.com/r/sportsbetting/comments/16tpzsp/help_me_win_bets_please_urgent/",
+   "date": "2023-10 thread"
+  }
+ ],
+ "discovered_paths": [
+  "/betting/oddstrader-turbo/ (Turbo marketing page)",
+  "/today/prop-bets/",
+  "/today/picks/",
+  "ms.virginia.us-east-1.oddstrader.com/odds-v2/odds-v2-service",
+  "assistant-chat-api.oddstrader.com/api/chat/stream_chat/",
+  "us-central1-oddstrader-production.cloudfunctions.net",
+  "wss://liveodds.virginia.us-east-1.oddstrader.com",
+  "http.virginia.us-east-1.advisionfeeds.com (httpproxy)"
+ ],
+ "discovered_targets": [
+  "advisionfeeds.com (odds data vendor behind Oddstrader)"
+ ],
+ "discovery_metadata": {
+  "method": "urllib fetcher (_fetcher.py): homepage + 3 JS bundles + /pricing/ (404) + /betting/oddstrader-turbo/; grep of window.__config and webpack chunks",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 15 raw evidence files)"
+}

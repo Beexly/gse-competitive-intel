@@ -1,0 +1,72 @@
+{
+ "awesemo_chunk_03656d1ebaf9a948.js": {
+  "urls": [
+   "https://www.awesemo.com/_next/static/chunks/03656d1ebaf9a948.js"
+  ],
+  "api": []
+ },
+ "awesemo_chunk_41b520bf2e2e1c8b.js": {
+  "urls": [
+   "https://react.dev/errors/",
+   "https://www.awesemo.com/_next/static/chunks/41b520bf2e2e1c8b.js"
+  ],
+  "api": []
+ },
+ "awesemo_chunk_4c77e6e3a398b847.js": {
+  "urls": [
+   "https://www.awesemo.com/_next/static/chunks/4c77e6e3a398b847.js"
+  ],
+  "api": []
+ },
+ "awesemo_chunk_80388da543d3413a.js": {
+  "urls": [
+   "https://mui.com/x/react-date-pickers/quickstart/",
+   "https://www.awesemo.com/_next/static/chunks/80388da543d3413a.js"
+  ],
+  "api": [
+   "/api/admin",
+   "/api/admin/coupons",
+   "/api/admin/subscriptions",
+   "/api/admin/users",
+   "/api/banners",
+   "/api/checkout",
+   "/api/popups",
+   "/api/products",
+   "/api/sport-notifications"
+  ]
+ },
+ "awesemo_chunk_cb3a1217fc7cec06.js": {
+  "urls": [
+   "https://www.awesemo.com/_next/static/chunks/cb3a1217fc7cec06.js"
+  ],
+  "api": []
+ },
+ "awesemo_chunk_e49035715a3b468c.js": {
+  "urls": [
+   "https://nextjs.org/docs/app/api-reference/functions/use-search-params",
+   "https://nextjs.org/docs/app/building-your-application/rendering/static-and-dynamic",
+   "https://nextjs.org/docs/messages/blocking-route",
+   "https://nextjs.org/docs/messages/dynamic-server-error",
+   "https://nextjs.org/docs/messages/next-dynamic-api-wrong-context",
+   "https://nextjs.org/docs/messages/next-prerender-dynamic-metadata",
+   "https://nextjs.org/docs/messages/next-prerender-dynamic-viewport",
+   "https://nextjs.org/docs/messages/ppr-caught-error",
+   "https://www.awesemo.com/_next/static/chunks/e49035715a3b468c.js"
+  ],
+  "api": []
+ },
+ "awesemo_chunk_f4655fd61044dcbb.js": {
+  "urls": [
+   "https://nextjs.org/docs/messages/failed-to-find-server-action",
+   "https://www.awesemo.com/_next/static/chunks/f4655fd61044dcbb.js"
+  ],
+  "api": []
+ },
+ "awesemo_chunk_turbopack-c7503c6da589d5a0.js": {
+  "urls": [
+   "https://vercel.live/_next-live/feedback/feedback.js",
+   "https://www.awesemo.com/_next/static/chunks/turbopack-c7503c6da589d5a0.js"
+  ],
+  "api": []
+ }
+}

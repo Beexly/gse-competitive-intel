@@ -1,0 +1,107 @@
+{
+ "domain": "deepnewz.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/deepnewz.com.html"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\deepnewz.com.html",
+   "raw\\deepnewz.com.robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "wser.js"
+   ],
+   "citation": "raw/deepnewz.com.html"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\deepnewz.com.html"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\deepnewz.com.html"
+  },
+  "citations": [
+   "raw\\deepnewz.com.html",
+   "raw\\deepnewz.com.robots.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Find the latest top stories spanning all industries, from technology giants like' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\deepnewz.com.html"
+  },
+  "citations": [
+   "raw\\deepnewz.com.html",
+   "raw\\deepnewz.com.robots.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\deepnewz.com.html"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\deepnewz.com.html"
+ },
+ "pricing": {
+  "web": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\deepnewz.com.html"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\deepnewz.com.html",
+   "raw\\deepnewz.com.robots.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Allow: /api/og/",
+  "Disallow: /api/auth/",
+  "Disallow: /api/chat/",
+  "Disallow: /_next/",
+  "Disallow: /static/",
+  "Disallow: /*.json$",
+  "Disallow: /me/",
+  "Disallow: /search",
+  "Disallow: /smart-search",
+  "Disallow: /api/search",
+  "Allow: /"
+ ],
+ "discovered_targets": [
+  "wser.js"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:45.311129"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Top News - DeepNewz",
+  "description": "Find the latest top stories spanning all industries, from technology giants like OpenAI and Nvidia to pop culture updates featuring Taylor Swift and Ice Spice, alongside coverage of political figures like Joe Biden and Donald Trump and economic insights on major companies such as Facebook, Apple, an"
+ }
+}

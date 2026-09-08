@@ -1,0 +1,12 @@
+[
+ {"domain": "draftedge.com", "url": "https://draftedge.com/", "prefix": "draftedge_com", "js_max": 3},
+ {"domain": "fantasyteamadvice.com", "url": "https://fantasyteamadvice.com/", "prefix": "fantasyteamadvice_com", "js_max": 3},
+ {"domain": "optimaldfs.com", "url": "https://optimaldfs.com/", "prefix": "optimaldfs_com", "js_max": 3},
+ {"domain": "rotowire.com", "url": "https://www.rotowire.com/dfs/", "prefix": "rotowire_com_dfs", "js_max": 3},
+ {"domain": "goalserve.com", "url": "https://www.goalserve.com/", "prefix": "goalserve_com", "js_max": 2},
+ {"domain": "allsportsapi.com", "url": "https://allsportsapi.com/", "prefix": "allsportsapi_com", "js_max": 2},
+ {"domain": "football-data.org", "url": "https://www.football-data.org/", "prefix": "footballdata_org", "js_max": 2},
+ {"domain": "fanduel.com", "url": "https://www.fanduel.com/predicts", "prefix": "fanduel_com_predicts", "js_max": 2},
+ {"domain": "draftkings.com", "url": "https://www.draftkings.com/predictions", "prefix": "draftkings_com_predictions", "js_max": 2},
+ {"domain": "underdogfantasy.com", "url": "https://underdogfantasy.com/predict", "prefix": "underdogfantasy_com_predict", "js_max": 2}
+]

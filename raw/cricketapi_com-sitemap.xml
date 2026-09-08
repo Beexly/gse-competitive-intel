@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://www.cricketapi.com/</loc>
+    <lastmod>2018-12-27T12:49:39+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+  </url>
+  
+    <url>
+      <loc>https://www.cricketapi.com/get-started/</loc>
+      <lastmod>2018-12-27T12:49:39+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.90</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.cricketapi.com/live-score-stats-api/</loc>
+      <lastmod>2018-12-27T12:49:39+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.90</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.cricketapi.com/chatbot-api/</loc>
+      <lastmod>2018-12-27T12:49:39+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.90</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.cricketapi.com/performance-api/</loc>
+      <lastmod>2018-12-27T12:49:39+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.90</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.cricketapi.com/fantasy-api/</loc>
+      <lastmod>2018-12-27T12:49:39+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.90</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.cricketapi.com/support-and-usage-plans/</loc>
+      <lastmod>2018-12-27T12:49:39+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.90</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.cricketapi.com/about-us/</loc>
+      <lastmod>2018-12-27T12:49:39+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.90</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.cricketapi.com/contact-us/</loc>
+      <lastmod>2018-12-27T12:49:39+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.90</priority>
+    </url>
+  
+
+</urlset>

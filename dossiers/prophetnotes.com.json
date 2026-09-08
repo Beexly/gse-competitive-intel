@@ -1,0 +1,123 @@
+{
+ "domain": "prophetnotes.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "vite",
+   "citation": "raw/px_prophetnotes_com_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_prophetnotes_com_home.raw",
+   "raw\\px_prophetnotes_com_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "ws.com",
+    "ws.com/public/images/458e31e6-46a6-4fca-9f12-1e739c2c8e9e_1100x220.png",
+    "ws.com/public/images/56eabb7f-0ca3-4e77-950e-d4aecf6600e8_1024x1024.png",
+    "ws.com/custom-disconnect-slate-tall.png",
+    "wser-agent.com/us1/v5/datadog-rum.js"
+   ],
+   "citation": "raw/px_prophetnotes_com_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_prophetnotes_com_home.raw"
+  },
+  "rate_limits": {
+   "value": "credit",
+   "citation": "raw/px_prophetnotes_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_prophetnotes_com_home.raw",
+   "raw\\px_prophetnotes_com_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Join PROPHET NOTES to get reliable and straight to the point commentary on globa' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "Polymarket",
+    "polymarket"
+   ],
+   "citation": "raw/px_prophetnotes_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_prophetnotes_com_home.raw",
+   "raw\\px_prophetnotes_com_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "credit"
+   ],
+   "citation": "raw/px_prophetnotes_com_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_prophetnotes_com_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "Free"
+   ],
+   "citation": "raw/px_prophetnotes_com_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_prophetnotes_com_home.raw",
+   "raw\\px_prophetnotes_com_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Disallow: /",
+  "Disallow:",
+  "Disallow: /action/",
+  "Disallow: /publish",
+  "Disallow: /sign-in",
+  "Disallow: /channel-frame",
+  "Disallow: /session-attribution-frame",
+  "Disallow: /visited-surface-frame",
+  "Disallow: /feed/private",
+  "Disallow: /feed/podcast/*/private/*.rss",
+  "Disallow: /subscribe",
+  "Disallow: /lovestack/*"
+ ],
+ "discovered_targets": [
+  "ws.com",
+  "ws.com/custom-disconnect-slate-tall.png",
+  "ws.com/public/images/458e31e6-46a6-4fca-9f12-1e739c2c8e9e_1100x220.png",
+  "ws.com/public/images/56eabb7f-0ca3-4e77-950e-d4aecf6600e8_1024x1024.png",
+  "wser-agent.com/us1/v5/datadog-rum.js"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:13.980752"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "PROPHET NOTES | Mike S. | Substack",
+  "description": "Join PROPHET NOTES to get reliable and straight to the point commentary on global events with skin in the game. Click to read PROPHET NOTES, by Mike S., a Substack publication with hundreds of subscribers."
+ }
+}

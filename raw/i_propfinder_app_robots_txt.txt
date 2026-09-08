@@ -1,0 +1,24 @@
+User-Agent: *
+Allow: /
+Disallow: /status
+Disallow: /subscribed
+Disallow: /announcements
+Disallow: /popups
+Disallow: /health
+Disallow: /promotions
+Disallow: /admin
+Disallow: /reset
+Disallow: /c/
+Disallow: /h
+Disallow: /auth/
+Disallow: /odds/nba
+Disallow: /odds/nhl
+Disallow: /odds/mlb
+Disallow: /odds/nfl
+Disallow: /nba/projections
+Disallow: /projections/
+
+User-Agent: SiteAuditBot
+Allow: /
+
+Sitemap: https://propfinder.app/sitemap.xml

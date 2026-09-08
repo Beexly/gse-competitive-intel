@@ -1,0 +1,908 @@
+URL: https://www.pff.com/subscribe\nSTATUS: 200\n\n<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="application/ld+json">
+     {
+       "@context": "https://schema.org",
+       "@type": "WebSite",
+       "url": "https://www.pff.com",
+       "name": "PFF",
+       "alternateName": "Pro Football Focus",
+       "potentialAction": {
+         "@type": "SearchAction",
+         "target": "https://www.pff.com/search?q={search_term_string}",
+         "query-input": "required name=search_term_string"
+       }
+     }
+    </script>
+
+
+    <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://www.pff.com","name":"Home","position":1},{"@type":"ListItem","item":"https://www.pff.com/subscribe","name":"Subscribe","position":2}]}
+    </script>
+
+    <script>
+      window.KYBER_ICON_EXTERNAL_PATHS = {
+        ICON: 'https://www.pff.com/images/icon-symbols-274378916883635cf796c725c4daa9c6.svg?vsn=d',
+        NCAA: 'https://www.pff.com/images/ncaa-symbols-5e558888ff1e7a5c027324c00dd98485.svg?vsn=d',
+        NFL: 'https://www.pff.com/images/nfl-symbols-78ea48dedb1c0ff77e2f2b7ed33bb54a.svg?vsn=d'
+      }
+      window.MERLIN_MEDIA_DOMAIN = 'https://media.pff.com'
+      window.SUBSCRIBE_DOMAIN = 'https://subscribe.pff.com'
+    </script>
+
+
+      <script>
+        window.__clerkSignInUrl = "/login";
+        window.__clerkSignUpUrl = "/create-account";
+        window.__clerkSignOutUrl = "/login";
+        window.__merlinLoggedIn = false;
+      </script>
+
+      <script defer crossorigin="anonymous"
+        data-clerk-js-script
+        data-clerk-publishable-key="pk_live_Y2xlcmsucGZmLmNvbSQ"
+        src="https://clerk.pff.com/npm/@clerk/clerk-js@6/dist/clerk.browser.js"></script>
+      <script>
+        window.addEventListener('load', async function () {
+          const loadOpts = {};
+          if (window.__clerkSignInUrl) loadOpts.signInUrl = window.__clerkSignInUrl;
+          if (window.__clerkSignUpUrl) loadOpts.signUpUrl = window.__clerkSignUpUrl;
+          await Clerk.load(loadOpts);
+
+          // Cross-tab / cross-subdomain sign-out sync. clerk-js flips
+          // Clerk.session to null when the user signs out elsewhere
+          // (BroadcastChannel for same-origin tabs; focus/poll session-touch ->
+          // 401 for other subdomains), but our nav is server-rendered and not
+          // bound to Clerk's React state, so nothing repaints. Reload so the
+          // server re-renders the signed-out nav.
+          //
+          // Loop guards: (1) only reload pages the server rendered as signed in
+          // (window.__merlinLoggedIn) -- a signed-out page would otherwise reload
+          // straight back into a signed-out page forever; (2) skipInitialEmit so
+          // the post-reload null-at-load state is not treated as a transition;
+          // (3) a one-shot sessionStorage marker (re-armed when a live session
+          // reappears) as belt-and-suspenders if the session cookie lags the reload.
+          var SIGNED_OUT_RELOAD_KEY = 'merlinClerkSignedOutReload';
+          Clerk.addListener(function (resources) {
+            if (resources && resources.session) {
+              try { window.sessionStorage.removeItem(SIGNED_OUT_RELOAD_KEY); } catch (e) {}
+              return;
+            }
+            // This tab initiated the sign-out: signOut()'s own redirect handles
+            // navigation. Reloading here races (and aborts) its cookie-clearing.
+            if (window.__merlinSigningOut === true) return;
+            if (window.__merlinLoggedIn !== true) return;
+            try {
+              if (window.sessionStorage.getItem(SIGNED_OUT_RELOAD_KEY)) return;
+              window.sessionStorage.setItem(SIGNED_OUT_RELOAD_KEY, '1');
+            } catch (e) {}
+            window.location.reload();
+          }, { skipInitialEmit: true });
+        });
+      </script>
+
+
+
+
+<title>PFF+ Plans &amp; Pricing | Premium Stats, Tools &amp; Analysis</title><meta name="description" content="Compare PFF+ plans and pricing. Every tier unlocks premium NFL stats, player grades, betting tools and fantasy analysis — pick monthly, annual or PFF Pro."/><meta property="og:url" content="https://www.pff.com/subscribe"/><meta property="og:type" content="website"/><meta property="og:title" content="PFF+ Plans &amp; Pricing | Premium Stats, Tools &amp; Analysis"/><meta property="og:description" content="Compare PFF+ plans and pricing. Every tier unlocks premium NFL stats, player grades, betting tools and fantasy analysis — pick monthly, annual or PFF Pro."/><meta property="og:image" content="https://www.pff.com/consumer-web-proxy/assets/pricing/share-image.jpg"/><meta name="twitter:card" content="summary_large_image"/><meta name="apple-itunes-app" content="app-id=1582525285"/><link rel="canonical" href="https://www.pff.com/subscribe"/><meta name="next-head-count" content="10"/>
+
+<meta name="robots" content="max-image-preview:large">
+<link rel="alternate" type="application/rss+xml" href="https://www.pff.com/feed" />
+
+
+<meta property="og:site_name" content="PFF">
+
+
+<meta name="twitter:site" content="@pff">
+
+
+
+
+
+
+<meta name="csrf-token" content="DBh7OiwcGw0BIhkAFHdKcgRJHTMFBDsGx-5KyJL4MOnDd90FTxKDLTK_">
+<meta name="google-site-verification" content="m2N80aEy8ONIhYvVOHT-XogcBBskiZd84_MBObKLOqo" />
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="preconnect" href="https://media.pff.com">
+<link rel="preconnect" href="https://js.recurly.com">
+<link rel="preconnect" href="https://cdn.heapanalytics.com">
+<link rel="shortcut icon" href="/favicon-179f79a208da353df13eb2e221fdb8fb.ico?vsn=d">
+<link rel="icon" type="image/png" href="/images/favicons/favicon-16x16-9d30f011a99436ffb232d75c5d744d2f.png?vsn=d" sizes="16x16">
+<link rel="icon" type="image/png" href="/images/favicons/favicon-32x32-d75fc7b2095d785488b3f97e2492b025.png?vsn=d" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicons/favicon-96x96-c4e7d1c69506c5b3c0376beee179daa9.png?vsn=d" sizes="96x96">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon-precomposed" href="/images/favicons/apple-icon-precomposed-e5a7e94513d2552f8223106e8d388ce6.png?vsn=d">
+<link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57-f5b14d83e8ec7db5f94dd30197ae9594.png?vsn=d">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114-981a0103fb7b778682008a9faad8328b.png?vsn=d">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72-90d7b8a5d670555d23338c2bfec43e09.png?vsn=d">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144-b45bd95c8ddf89b117625bf39a66fed6.png?vsn=d">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60-edddd4ee591a35613745af7695ec8841.png?vsn=d">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120-5483d31cd97c5bf3c9ce86618e44722c.png?vsn=d">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76-157cc501f82125a69b3398c91f278eff.png?vsn=d">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152-81ed006897fbe335cff9b51ed50f5eab.png?vsn=d">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180-baf469ce293c42e9892c1ec3ab91e334.png?vsn=d">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144-4085f264f443377b0e2cd666ee7cb68d.png?vsn=d">
+
+<meta name="merlin-version" content="3.20.208">
+
+
+
+<script data-cookieconsent="ignore">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'functionality_storage': 'denied',
+    'personalization_storage': 'denied',
+    'security_storage': 'granted',
+    'wait_for_update': 500
+  });
+  gtag('set', 'ads_data_redaction', true);
+  gtag('set', 'url_passthrough', false);
+</script>
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="21fde5b3-da22-4139-8c72-22527f8c80ae" data-blockingmode="manual" data-culture="EN" type="text/javascript" data-georegions="{&quot;region&quot;:&quot;AT,BE,BG,CY,CZ,DE,DK,EE,ES,FI,FR,GR,HR,HU,IE,IT,LT,LU,LV,MT,NL,PL,PT,RO,SE,SI,SK,IS,LI,NOR,GB&quot;,&quot;cbid&quot;:&quot;fff6d358-bd79-4a41-ae88-c5e35a6700eb&quot;}" async></script>
+
+
+
+
+<script>
+ window.dataLayer = window.dataLayer || [];
+ window.dataLayer.unshift({
+   'userId': '',
+   'loggedInStatus': 'false',
+   'subscriptionType': '',
+   'internalTraffic': 'No',
+   'pageType': '',
+   'category': '',
+   'section': '',
+   'datePublished': '',
+   'author': '',
+   'contentType': '',
+   'newsVertical': '',
+   'isPremiumArticle':'false'
+ });
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+ (function(w,d,s,l,i){
+   w[l]=w[l]||[];
+   w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+   var f=d.getElementsByTagName(s)[0],
+       j=d.createElement(s),
+       dl=l!='dataLayer'?'&l='+l:'';
+   j.async=true;
+   j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;
+   f.parentNode.insertBefore(j,f);
+ })(window,document,'script','dataLayer','GTM-MWLLR6');
+</script>
+<!-- End Google Tag Manager -->
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel='stylesheet' crossorigin='anonymous' href='https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..900&display=swap' />
+    <link rel='stylesheet' crossorigin='anonymous' href='https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400..700&display=swap' />
+
+
+    <link rel="stylesheet" href="/css/shared_nav-1e5901e8d5cfd9c2739c8644deda7f33.css?vsn=d">
+    <link rel="stylesheet" href="/css/site_nav_next_styles-ed33a781401b1aa41b050c4ea924de9b.css?vsn=d">
+
+    <link rel="preload" href="/api/nav/featured" as="fetch" crossorigin>
+
+
+<script type="text/javascript">
+  const heapConfig = {
+    heapAppId: '2100373990',
+    userId: '',
+    isLoggedIn: false,
+    subscriptionType: '',
+    isInternal: 'No',
+  };
+
+  function hasAnalyticsConsent() {
+    return typeof window !== 'undefined' && window.Cookiebot?.consent?.statistics === true;
+  }
+
+  window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+
+  heap.load(heapConfig.heapAppId, {
+    secureCookie: true
+  });
+
+  // Only identify user with PFF User ID if they have consented to analytics tracking
+  if (heapConfig.userId.length > 0 && hasAnalyticsConsent()) {
+    heap.identify(heapConfig.userId);
+  }
+
+  if (heap.identity && !heapConfig.isLoggedIn) {
+    heap.resetIdentity();
+  }
+
+  heap.addUserProperties({
+    subscription_type: heapConfig.subscriptionType,
+    is_internal: heapConfig.isInternal,
+  });
+</script>
+
+
+  </head>
+  <body class="ds-next">
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-MWLLR6"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+    <a class="fp-player-link"></a>
+
+
+<div
+  id="posthog-context"
+  data-posthog-api-key="phc_vRjHiCFEmLy4uLmkxRnisjHq3BWSdkDsHPmD753QSVBH"
+  data-posthog-api-host="https://us.i.posthog.com"
+  data-posthog-distinct-id="7244664e-ca10-462a-beca-e903c3f3a744"
+  data-posthog-feature-flags="{&quot;mds-daily-draft-limit-reached-modal&quot;:&quot;Variant-A&quot;,&quot;create-account-subtitle&quot;:&quot;Create-an-account-for-FREE-today&quot;,&quot;yahoo-nfl-game-key&quot;:&quot;470&quot;,&quot;player-grades-paywall-experience&quot;:true,&quot;survey-targeting-b655a661bb&quot;:false,&quot;subscribe-2026-plans-enabled&quot;:true,&quot;fmds-show-draft-state-banner&quot;:true,&quot;draft-bracket-private-leagues&quot;:true,&quot;mds-subscribe-app-hero-image&quot;:&quot;OptionB&quot;,&quot;native-upgrade-link&quot;:&quot;PFF-in-Apple-App-Store&quot;,&quot;draft-bracket-team-leaderboard&quot;:true,&quot;fantasy-default-rankings-tab&quot;:&quot;Variant-1&quot;,&quot;enable-espn-draft-flow&quot;:true,&quot;show-manual-league-settings&quot;:true,&quot;fmds-show-player-comparison-button&quot;:true,&quot;premium-stats-changelog&quot;:true,&quot;player-profiles-waiver-wire&quot;:true,&quot;fantasy-show-paywall-for-matchups&quot;:true,&quot;enable-yahoo-draft-flow&quot;:true,&quot;draft-bracket-similarity-stats&quot;:true,&quot;consumer-expo-clerk-auth-enabled&quot;:true,&quot;fantasy-show-paywall-for-waiver-targets&quot;:true,&quot;merlin-custom-big-board-auth-wall&quot;:true,&quot;merlin-mds-leaderboard-all-rounds&quot;:true,&quot;enable-feed-categories&quot;:true,&quot;merlin-nfl-mds-set-default-favorite-teams&quot;:true,&quot;mds-undo-pick&quot;:true,&quot;ps-team-profile-schedule-show-sos-summary&quot;:true,&quot;account-subscription-discount-copy&quot;:&quot;Variant-B&quot;,&quot;merlin-custom-big-board-filter-position&quot;:true,&quot;draft-bracket-board-actions&quot;:true,&quot;fantasy-lda-enable-live-espn&quot;:true,&quot;merlin-account-api-keys-enabled&quot;:true,&quot;betting-enable-first-touchdown&quot;:true,&quot;merlin-custom-big-board-staff-picks&quot;:&quot;Disabled&quot;,&quot;merlin-custom-big-board-college-team-filter&quot;:true,&quot;survey-targeting-cd51c53ff0-custom&quot;:true,&quot;merlin-premium-cta-in-nav&quot;:true,&quot;mds-prominent-new-draft-cta&quot;:&quot;Option-A&quot;,&quot;enable-bottom-tab-feeds&quot;:true,&quot;mds-new-share-button-design-experiment&quot;:&quot;Option-A&quot;,&quot;premium-tier-gating&quot;:true,&quot;merlin-custom-big-board-edit&quot;:true,&quot;player-props-show-table-glossary&quot;:true,&quot;merlin-show-mds-multiplayer&quot;:true,&quot;fantasy-show-start-sit&quot;:true,&quot;subscribe-left-panel-variant&quot;:&quot;control&quot;,&quot;mds-upsell-modal-variation&quot;:&quot;Option-B---SrcSet&quot;,&quot;cancel-flow-retention-variant&quot;:&quot;variant-1&quot;,&quot;merlin-custom-big-board-draft-with-board&quot;:true,&quot;fmds-show-opponents-draft-strategy&quot;:true,&quot;draft-bracket-score-finalization-banner&quot;:&quot;FF-off&quot;,&quot;fmds-paywall-next-round-availability&quot;:true,&quot;betting-player-prop-dev-mode&quot;:false,&quot;fantasy-lda-show-clock&quot;:true,&quot;premium-guru-beta&quot;:false,&quot;fmds-show-draft-strategy&quot;:true,&quot;content-paywall-type&quot;:&quot;light&quot;,&quot;fantasy-show-new-draft-rankings-paywall&quot;:&quot;control&quot;,&quot;fmds-show-undo-pick-button&quot;:true,&quot;enable-bottom-tab-draft&quot;:true,&quot;premium-stats-show&quot;:false,&quot;native-suggested-upgrade-prompt&quot;:false,&quot;merlin-custom-big-board-trending&quot;:true,&quot;merlin-show-rank-on-match-center&quot;:true,&quot;betting-enable-new-player-props-experience&quot;:true,&quot;merlin-article-paywall-ab-test&quot;:&quot;paywall_with_short_copy&quot;,&quot;player-profiles-activate-offseason-nfl&quot;:true,&quot;enable-manual-league-sync&quot;:true,&quot;fantasy-show-lda-platform-keeper-info-modal&quot;:&quot;HIDE&quot;,&quot;player-profiles-hide-grades-for-current-season&quot;:true,&quot;use-google-login&quot;:true,&quot;player-profiles-early-bird-banner-text&quot;:&quot;Off&quot;,&quot;merlin-custom-big-board-clear-board&quot;:true,&quot;mds-enable-disable-draft-tabs&quot;:true,&quot;enable-bookmarks-reading-list&quot;:true,&quot;merlin-two-page-checkout&quot;:true,&quot;premium-stats-team-reports&quot;:true,&quot;merlin-clerk-auth-enabled&quot;:true,&quot;survey-targeting-6f4b901e4e-custom&quot;:true,&quot;fmds-contextual-sync-banner&quot;:&quot;dont-show-banner-string&quot;,&quot;show-proj-in-fantasy-draft-rank-card&quot;:true,&quot;big-board-show-waa&quot;:true,&quot;native-article-hyperlinks&quot;:true,&quot;merlin-show-rank-on-ticker&quot;:true,&quot;draft-bracket-force-lock&quot;:true,&quot;fantasy-show-my-team&quot;:true,&quot;merlin-mds-custom-board&quot;:true,&quot;fantasy-show-paywall-for-rankings&quot;:true,&quot;lda-show-draft-state-banner&quot;:true,&quot;fantasy-show-paywall-for-start-sit&quot;:true,&quot;nfl-power-rankings-paywall-experience&quot;:true,&quot;player-profiles-show-sticky-hero&quot;:true,&quot;mds-page-ads-enabled&quot;:true,&quot;survey-targeting-0091f49209-custom&quot;:true,&quot;fantasy-analyst-ranking-banner&quot;:true,&quot;mds-draft-grade-rank&quot;:true,&quot;merlin-custom-big-board-my-boards&quot;:true,&quot;mds-show-grade-explainer&quot;:true,&quot;common-link-to-new-player-profiles&quot;:true,&quot;smart-bets-key-insights-tab&quot;:true,&quot;use-facebook-login&quot;:true,&quot;fantasy-lda-enable-live-manual&quot;:true,&quot;fantasy-matchup-row-expansion&quot;:true,&quot;fmds-homepage-widget-image&quot;:&quot;Control&quot;,&quot;enable-bottom-tab-smart-bets&quot;:false,&quot;fmds-homepage-widget-enabled&quot;:true,&quot;show-betting-paywall&quot;:false,&quot;is-draft-season&quot;:true,&quot;merlin-enable-mds-paywalls&quot;:true,&quot;mds-grade-upsell-modal-delay&quot;:&quot;Control&quot;,&quot;enable-mock-draft-card-draft-widget&quot;:true,&quot;ppt_weekly_free_game_enabled&quot;:false,&quot;fmds-show-league-type-settings&quot;:true,&quot;mds-awards-enabled&quot;:true,&quot;merlin-custom-big-board-team-needs&quot;:true,&quot;draft-bracket-show-projected-points&quot;:true,&quot;show-id-me-verify-button&quot;:true,&quot;merlin-enable-mds-limited-drafts&quot;:true,&quot;league-sync-enable-espn-sync&quot;:true,&quot;common-link-to-new-ncaa-player-profiles&quot;:true,&quot;mds-trade-screen-non-paid-user&quot;:&quot;Variant&quot;,&quot;ppt_weekly_free_game_ids&quot;:&quot;variant-1&quot;,&quot;fmds-homepage-widget-copy&quot;:&quot;Variant&quot;,&quot;merlin-show-mds-multiplayer-nav&quot;:true,&quot;player-props-show-subscribe-paywall-modal&quot;:true,&quot;merlin-show-new-nav-dropdown&quot;:true,&quot;draft-bracket-enabled&quot;:true,&quot;fmds-show-next-round-suggestions&quot;:true,&quot;fantasy-lda-manual-drafting&quot;:true,&quot;draft-bracket-draft-card&quot;:true,&quot;merlin-mds-save-cpu-picks&quot;:true,&quot;mds-ab-test-previous-picks&quot;:&quot;FULL_DRAFT&quot;,&quot;draft-bracket-expert-brackets&quot;:true,&quot;account-subscription-copy-update&quot;:true,&quot;mds-homepage-widget-image&quot;:&quot;Control&quot;,&quot;fmds-lda-end-screen-cta-experiment&quot;:&quot;Option-B&quot;,&quot;mds-enable-mock-draft-assistant&quot;:true,&quot;mds-awards-streak-launch-date&quot;:&quot;explicit&quot;,&quot;enable-bottom-tab-fantasy&quot;:true,&quot;account-favorites-enabled&quot;:true,&quot;show-last-season-as-default&quot;:true,&quot;mds-trade-screen-paid-user&quot;:&quot;Variant&quot;,&quot;player-profiles-natural-language-summary&quot;:true,&quot;fantasy-lda-use-espn-chrome-store-extension&quot;:true,&quot;onboarding-variations&quot;:&quot;A&quot;,&quot;premium-stats-guru-help-hub&quot;:true,&quot;subscribe-insights-image&quot;:&quot;Control&quot;,&quot;merlin-show-author-headshots&quot;:true,&quot;fantasy-show-mds-platform-keeper-info-modal&quot;:&quot;HIDE&quot;,&quot;mds-grade-suggestions-experiment&quot;:&quot;Variant-A&quot;,&quot;fantasy-lda-enable-new-flda-be&quot;:true,&quot;merlin-custom-big-board-add-players&quot;:true,&quot;merlin-enable-gtag&quot;:true,&quot;merlin-mds-show-history&quot;:true,&quot;subscribe-monthly-variant&quot;:&quot;premium-monthly-access&quot;,&quot;common-active-cta-promo-code&quot;:&quot;empty&quot;,&quot;subscribe-enable-apple-pay&quot;:true,&quot;show-adp-in-fantasy-draft-rank-card&quot;:true,&quot;native-forced-upgrade-prompt&quot;:false,&quot;merlin-show-big-board-customizer&quot;:true,&quot;draft-bracket-force-state-rounds&quot;:&quot;All-rounds-post&quot;,&quot;store-subscription-data-in-session-storage-for-gtm&quot;:true,&quot;fmds-enable-hide-suggestions&quot;:false,&quot;draft-bracket-multiple-entries&quot;:true,&quot;mds-prominent-start-draft-cta&quot;:&quot;Option-A&quot;,&quot;premium-stats-onboarding&quot;:true,&quot;mds-homepage-widget-copy&quot;:&quot;Control&quot;,&quot;merlin-game-view-best-bets-navigation-experiment&quot;:&quot;Control&quot;,&quot;betting-enable-new-key-insights&quot;:true}"
+  data-posthog-feature-flag-payloads="{&quot;mds-daily-draft-limit-reached-modal&quot;:{&quot;copy&quot;:&quot;Get unlimited mock drafts and access the complete draft system&quot;,&quot;newModal&quot;:true,&quot;variant&quot;:&quot;Variant A&quot;},&quot;create-account-subtitle&quot;:&quot;Create an account for FREE today.&quot;,&quot;yahoo-nfl-game-key&quot;:&quot;470&quot;,&quot;mds-subscribe-app-hero-image&quot;:&quot;/assets/images/subscribe-image-july-2025.webp&quot;,&quot;native-upgrade-link&quot;:&quot;https://apps.apple.com/us/app/pff-fantasy-betting-news/id1582525285&quot;,&quot;fantasy-default-rankings-tab&quot;:&quot;Draft Rankings&quot;,&quot;account-subscription-discount-copy&quot;:&quot;EXCLUSIVE APP OFFER&quot;,&quot;merlin-custom-big-board-staff-picks&quot;:{},&quot;mds-prominent-new-draft-cta&quot;:{&quot;prominentCta&quot;:true,&quot;variant&quot;:&quot;Option A&quot;},&quot;mds-new-share-button-design-experiment&quot;:&quot;Option A&quot;,&quot;subscribe-left-panel-variant&quot;:&quot;control&quot;,&quot;mds-upsell-modal-variation&quot;:{&quot;images&quot;:[{&quot;lg&quot;:&quot;https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-1-lg.webp, https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-1-lg-2x.webp 2x&quot;,&quot;sm&quot;:&quot;https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-1-sm.webp, https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-1-sm-2x.webp 2x&quot;},{&quot;lg&quot;:&quot;https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-2-lg.webp, https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-2-lg-2x.webp 2x&quot;,&quot;sm&quot;:&quot;https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-2-sm.webp, https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-2-sm-2x.webp 2x&quot;},{&quot;lg&quot;:&quot;https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-3-lg.webp, https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-3-lg-2x.webp 2x&quot;,&quot;sm&quot;:&quot;https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-3-sm.webp, https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-3-sm-2x.webp 2x&quot;}],&quot;variant&quot;:&quot;Option B&quot;},&quot;cancel-flow-retention-variant&quot;:&quot;variant-1&quot;,&quot;draft-bracket-score-finalization-banner&quot;:&quot;&quot;,&quot;content-paywall-type&quot;:&quot;light&quot;,&quot;fantasy-show-new-draft-rankings-paywall&quot;:&quot;control&quot;,&quot;merlin-article-paywall-ab-test&quot;:&quot;paywall_with_short_copy&quot;,&quot;fantasy-show-lda-platform-keeper-info-modal&quot;:[],&quot;player-profiles-early-bird-banner-text&quot;:&quot;&quot;,&quot;fmds-contextual-sync-banner&quot;:{&quot;bannerText&quot;:&quot;ESPN league sync is now supported! Click here to get started.&quot;,&quot;showBanner&quot;:false},&quot;fmds-homepage-widget-image&quot;:&quot;/images/fmds-kickoff-widget-1.webp&quot;,&quot;mds-grade-upsell-modal-delay&quot;:5,&quot;mds-trade-screen-non-paid-user&quot;:{&quot;variant&quot;:&quot;Variant&quot;},&quot;ppt_weekly_free_game_ids&quot;:&quot;&quot;,&quot;fmds-homepage-widget-copy&quot;:&quot;Prep like a pro with PFF’s Fantasy Mock Draft Simulator&quot;,&quot;mds-ab-test-previous-picks&quot;:&quot;FULL_DRAFT&quot;,&quot;mds-homepage-widget-image&quot;:&quot;/images/mds-kickoff-widget-3.webp&quot;,&quot;fmds-lda-end-screen-cta-experiment&quot;:&quot;Option B&quot;,&quot;mds-awards-streak-launch-date&quot;:&quot;2024-04-14 00:00:00&quot;,&quot;mds-trade-screen-paid-user&quot;:{&quot;variant&quot;:&quot;Variant&quot;},&quot;onboarding-variations&quot;:{&quot;order&quot;:[&quot;profile&quot;,&quot;nflTeam&quot;,&quot;topic&quot;],&quot;variant&quot;:&quot;A&quot;},&quot;subscribe-insights-image&quot;:&quot;&quot;,&quot;fantasy-show-mds-platform-keeper-info-modal&quot;:[],&quot;mds-grade-suggestions-experiment&quot;:{&quot;variant&quot;:&quot;Variant A&quot;},&quot;subscribe-monthly-variant&quot;:&quot;premium-monthly-access&quot;,&quot;common-active-cta-promo-code&quot;:&quot;&quot;,&quot;draft-bracket-force-state-rounds&quot;:{&quot;1&quot;:&quot;post&quot;,&quot;2&quot;:&quot;post&quot;,&quot;3&quot;:&quot;post&quot;},&quot;mds-prominent-start-draft-cta&quot;:{&quot;prominentCta&quot;:true,&quot;variant&quot;:&quot;Option A&quot;},&quot;mds-homepage-widget-copy&quot;:&quot;The #1 Mock Draft Sim in the Game&quot;,&quot;merlin-game-view-best-bets-navigation-experiment&quot;:&quot;Best Bets&quot;}"
+  style="display: none;visibility: hidden"
+></div>
+
+<div data-react-component="pff.PrivacyModal" data-react-props="{&quot;showPrivacyModal&quot;:false}"></div>
+    <div id="app">
+
+
+
+
+      <main id="main" class="m-main">
+
+
+
+
+
+<script>
+window.sessionData = {
+  grootUid: '',
+  isPremiumSubscriber: false,
+}
+</script>
+
+<script type="text/javascript">
+            window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+          </script><script defer="" nomodule="" src="/consumer-web-proxy/_next/static/chunks/polyfills-42372ed130431b0a.js"></script><script src="/consumer-web-proxy/_next/static/chunks/webpack-d1359527ee6c812c.js" defer=""></script><script src="/consumer-web-proxy/_next/static/chunks/framework-28bb5bf4b4e6cb86.js" defer=""></script><script src="/consumer-web-proxy/_next/static/chunks/main-02715e1a21be7720.js" defer=""></script><script src="/consumer-web-proxy/_next/static/chunks/pages/_app-c346459cf351c1bd.js" defer=""></script><script src="/consumer-web-proxy/_next/static/chunks/52d74a0d-2a917b49f7670af7.js" defer=""></script><script src="/consumer-web-proxy/_next/static/chunks/2073-fe58538581837d78.js" defer=""></script><script src="/consumer-web-proxy/_next/static/chunks/9553-d40a90da0ed5251e.js" defer=""></script><script src="/consumer-web-proxy/_next/static/chunks/1812-dd52aaf6bbd89b03.js" defer=""></script><script src="/consumer-web-proxy/_next/static/chunks/6577-b62e1c893cb8b922.js" defer=""></script><script src="/consumer-web-proxy/_next/static/chunks/pages/landing-pages/pricing-3ec996ab1cdce443.js" defer=""></script><script src="/consumer-web-proxy/_next/static/0.13.63/_buildManifest.js" defer=""></script><script src="/consumer-web-proxy/_next/static/0.13.63/_ssgManifest.js" defer=""></script><link rel="stylesheet" href="/consumer-web-proxy/_next/static/css/714273af7ec7a29e.css" data-n-g=""/><link rel="stylesheet" href="/consumer-web-proxy/_next/static/css/ac272e0b1d3b6de3.css" data-n-p=""/><style id="react-native-stylesheet">[stylesheet-group="0"]{}
+body{margin:0;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-search-results-button,input::-webkit-search-results-decoration{display:none;}
+[stylesheet-group="1"]{}
+.css-11aywtz{-moz-appearance:textfield;-webkit-appearance:none;background-color:rgba(0,0,0,0.00);border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-left-radius:0px;border-top-right-radius:0px;border:0 solid black;box-sizing:border-box;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0px;padding:0px;resize:none;}
+.css-146c3p1{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:rgba(0,0,0,1.00);display:inline;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;list-style:none;margin:0px;padding:0px;position:relative;text-align:start;text-decoration:none;white-space:pre-wrap;word-wrap:break-word;}
+.css-1jxf684{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:inherit;display:inline;font:inherit;list-style:none;margin:0px;padding:0px;position:relative;text-align:inherit;text-decoration:none;white-space:inherit;word-wrap:break-word;}
+.css-9pa8cd{bottom:0px;height:100%;left:0px;opacity:0;position:absolute;right:0px;top:0px;width:100%;z-index:-1;}
+.css-g5y9jx{align-content:flex-start;align-items:stretch;background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;display:flex;flex-basis:auto;flex-direction:column;flex-shrink:0;list-style:none;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;text-decoration:none;z-index:0;}
+[stylesheet-group="2"]{}
+.r-112tyf7{padding:0.25rem;}
+.r-116a1gj{border-bottom-color:rgba(120,124,140,1.00);border-left-color:rgba(120,124,140,1.00);border-right-color:rgba(120,124,140,1.00);border-top-color:rgba(120,124,140,1.00);}
+.r-11mg6pl{border-bottom-color:rgba(255,255,255,1.00);border-left-color:rgba(255,255,255,1.00);border-right-color:rgba(255,255,255,1.00);border-top-color:rgba(255,255,255,1.00);}
+.r-13awgt0{flex:1;}
+.r-14qbo4x{border-bottom-width:0.125rem;border-left-width:0.125rem;border-right-width:0.125rem;border-top-width:0.125rem;}
+.r-1519n7e{border-bottom-color:rgba(0,106,255,1.00);border-left-color:rgba(0,106,255,1.00);border-right-color:rgba(0,106,255,1.00);border-top-color:rgba(0,106,255,1.00);}
+.r-152x5y5{flex:0.4;}
+.r-17gur6a{border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-left-radius:0px;border-top-right-radius:0px;}
+.r-191c7x1{border-bottom-left-radius:1rem;border-bottom-right-radius:1rem;border-top-left-radius:1rem;border-top-right-radius:1rem;}
+.r-1afo2hi{border-bottom-left-radius:0.125rem;border-bottom-right-radius:0.125rem;border-top-left-radius:0.125rem;border-top-right-radius:0.125rem;}
+.r-1awa8pu{border-bottom-color:rgba(101,119,134,1.00);border-left-color:rgba(101,119,134,1.00);border-right-color:rgba(101,119,134,1.00);border-top-color:rgba(101,119,134,1.00);}
+.r-1btevyt{border-bottom-left-radius:0.75rem;border-bottom-right-radius:0.75rem;border-top-left-radius:0.75rem;border-top-right-radius:0.75rem;}
+.r-1d4xg89{border-bottom-color:rgba(170,184,194,1.00);border-left-color:rgba(170,184,194,1.00);border-right-color:rgba(170,184,194,1.00);border-top-color:rgba(170,184,194,1.00);}
+.r-1d9yedq{flex:0;}
+.r-1dm0rpb{border-bottom-left-radius:0.5rem;border-bottom-right-radius:0.5rem;border-top-left-radius:0.5rem;border-top-right-radius:0.5rem;}
+.r-1elpcrz{margin:0.25rem;}
+.r-1fq1o0l{border-bottom-color:rgba(47,49,63,1.00);border-left-color:rgba(47,49,63,1.00);border-right-color:rgba(47,49,63,1.00);border-top-color:rgba(47,49,63,1.00);}
+.r-1j16mh1{border-bottom-left-radius:100%;border-bottom-right-radius:100%;border-top-left-radius:100%;border-top-right-radius:100%;}
+.r-1jkafct{border-bottom-left-radius:2px;border-bottom-right-radius:2px;border-top-left-radius:2px;border-top-right-radius:2px;}
+.r-1jyn79y{border-bottom-color:rgba(0,150,136,1.00);border-left-color:rgba(0,150,136,1.00);border-right-color:rgba(0,150,136,1.00);border-top-color:rgba(0,150,136,1.00);}
+.r-1lp2z2z{padding:0.125rem;}
+.r-1mndk5m{flex:0.3;}
+.r-1op95ch{border-bottom-color:rgba(147,150,164,1.00);border-left-color:rgba(147,150,164,1.00);border-right-color:rgba(147,150,164,1.00);border-top-color:rgba(147,150,164,1.00);}
+.r-1ouef0i{border-bottom-width:0.4375rem;border-left-width:0.4375rem;border-right-width:0.4375rem;border-top-width:0.4375rem;}
+.r-1pc48i1{flex:0.45;}
+.r-1phboty{border-bottom-style:solid;border-left-style:solid;border-right-style:solid;border-top-style:solid;}
+.r-1qsk4np{overflow-x:clip;overflow-y:clip;}
+.r-1rqu53g{padding:1rem;}
+.r-1udh08x{overflow-x:hidden;overflow-y:hidden;}
+.r-1xfd6ze{border-bottom-left-radius:8px;border-bottom-right-radius:8px;border-top-left-radius:8px;border-top-right-radius:8px;}
+.r-1yadl64{border-bottom-width:0px;border-left-width:0px;border-right-width:0px;border-top-width:0px;}
+.r-41uqdh{flex:0.6;}
+.r-42olwf{border-bottom-color:rgba(0,0,0,0.00);border-left-color:rgba(0,0,0,0.00);border-right-color:rgba(0,0,0,0.00);border-top-color:rgba(0,0,0,0.00);}
+.r-4a18lf{border-bottom-color:rgba(255,0,0,1.00);border-left-color:rgba(255,0,0,1.00);border-right-color:rgba(255,0,0,1.00);border-top-color:rgba(255,0,0,1.00);}
+.r-5xyzl9{border-bottom-width:0.0375rem;border-left-width:0.0375rem;border-right-width:0.0375rem;border-top-width:0.0375rem;}
+.r-60ke3l{border-bottom-color:rgba(0,128,0,1.00);border-left-color:rgba(0,128,0,1.00);border-right-color:rgba(0,128,0,1.00);border-top-color:rgba(0,128,0,1.00);}
+.r-68udtm{padding:0.75rem;}
+.r-6koalj{display:flex;}
+.r-9x6qib{border-bottom-color:rgba(204,214,221,1.00);border-left-color:rgba(204,214,221,1.00);border-right-color:rgba(204,214,221,1.00);border-top-color:rgba(204,214,221,1.00);}
+.r-brkpy4{padding:1.25rem;}
+.r-cd8hdz{border-bottom-left-radius:0.0625rem;border-bottom-right-radius:0.0625rem;border-top-left-radius:0.0625rem;border-top-right-radius:0.0625rem;}
+.r-crgep1{margin:0px;}
+.r-d045u9{border-bottom-width:2px;border-left-width:2px;border-right-width:2px;border-top-width:2px;}
+.r-dp771v{border-bottom-color:rgba(228,229,234,1.00);border-left-color:rgba(228,229,234,1.00);border-right-color:rgba(228,229,234,1.00);border-top-color:rgba(228,229,234,1.00);}
+.r-edyy15{padding:8px;}
+.r-eg6o18{border-bottom-style:dashed;border-left-style:dashed;border-right-style:dashed;border-top-style:dashed;}
+.r-ei6b7v{border-bottom-color:rgba(201,202,213,1.00);border-left-color:rgba(201,202,213,1.00);border-right-color:rgba(201,202,213,1.00);border-top-color:rgba(201,202,213,1.00);}
+.r-es3u2l{padding:0.5rem;}
+.r-ffbrte{border-bottom-color:rgba(10,14,27,1.00);border-left-color:rgba(10,14,27,1.00);border-right-color:rgba(10,14,27,1.00);border-top-color:rgba(10,14,27,1.00);}
+.r-fpxyfw{border-bottom-left-radius:624.9375rem;border-bottom-right-radius:624.9375rem;border-top-left-radius:624.9375rem;border-top-right-radius:624.9375rem;}
+.r-fx7oqy{border-bottom-color:rgba(0,0,255,1.00);border-left-color:rgba(0,0,255,1.00);border-right-color:rgba(0,0,255,1.00);border-top-color:rgba(0,0,255,1.00);}
+.r-gfgtsu{border-bottom-left-radius:1.5rem;border-bottom-right-radius:1.5rem;border-top-left-radius:1.5rem;border-top-right-radius:1.5rem;}
+.r-hvic4v{display:none;}
+.r-jv24x9{border-bottom-color:rgba(240,241,243,1.00);border-left-color:rgba(240,241,243,1.00);border-right-color:rgba(240,241,243,1.00);border-top-color:rgba(240,241,243,1.00);}
+.r-krxsd3{display:-webkit-box;}
+.r-me2pih{border-bottom-color:rgba(11,21,51,1.00);border-left-color:rgba(11,21,51,1.00);border-right-color:rgba(11,21,51,1.00);border-top-color:rgba(11,21,51,1.00);}
+.r-mev6er{border-bottom-left-radius:0.25rem;border-bottom-right-radius:0.25rem;border-top-left-radius:0.25rem;border-top-right-radius:0.25rem;}
+.r-rs99b7{border-bottom-width:1px;border-left-width:1px;border-right-width:1px;border-top-width:1px;}
+.r-sdzlij{border-bottom-left-radius:9999px;border-bottom-right-radius:9999px;border-top-left-radius:9999px;border-top-right-radius:9999px;}
+.r-t60dpp{padding:0px;}
+.r-ublq6k{flex:0.25;}
+.r-wbez0u{border-bottom-width:0rem;border-left-width:0rem;border-right-width:0rem;border-top-width:0rem;}
+.r-wkghh4{border-bottom-width:0.0625rem;border-left-width:0.0625rem;border-right-width:0.0625rem;border-top-width:0.0625rem;}
+.r-xoduu5{display:inline-flex;}
+.r-y47klf{border-bottom-left-radius:20px;border-bottom-right-radius:20px;border-top-left-radius:20px;border-top-right-radius:20px;}
+.r-ywje51{margin:auto;}
+.r-z2wwpe{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;}
+.r-zdx2cw{padding:0.4375rem;}
+[stylesheet-group="2.1"]{}
+.r-11gswi8{padding-left:3px;padding-right:3px;}
+.r-14zqwlb{padding-left:0.5rem;padding-right:0.5rem;}
+.r-1h2wzq8{padding-bottom:0rem;padding-top:0rem;}
+.r-1kj5d61{padding-bottom:0.4375rem;padding-top:0.4375rem;}
+.r-1nlb1iw{padding-left:1.5rem;padding-right:1.5rem;}
+.r-1ntr0p{padding-left:5px;padding-right:5px;}
+.r-1u95431{padding-bottom:0.125rem;padding-top:0.125rem;}
+.r-3s07tu{padding-bottom:0.5rem;padding-top:0.5rem;}
+.r-8j7dnc{margin-left:0.125rem;margin-right:0.125rem;}
+.r-a18kqi{padding-bottom:0.25rem;padding-top:0.25rem;}
+.r-ddtstp{margin-bottom:0px;margin-top:0px;}
+.r-dmb0iu{padding-bottom:0.75rem;padding-top:0.75rem;}
+.r-eap04x{padding-left:1rem;padding-right:1rem;}
+.r-ggmti8{padding-left:0.75rem;padding-right:0.75rem;}
+.r-l0i8dg{padding-left:0.25rem;padding-right:0.25rem;}
+.r-l1jfo{margin-left:NaNpx;margin-right:NaNpx;}
+.r-rpdmmq{margin-left:0rem;margin-right:0rem;}
+.r-s4lrl3{padding-bottom:1.25rem;padding-top:1.25rem;}
+.r-thqskk{padding-bottom:1rem;padding-top:1rem;}
+[stylesheet-group="2.2"]{}
+.r-10s2tm5{left:0%;}
+.r-16o8guy{right:100%;}
+.r-dqe1q{right:0%;}
+.r-rci37q{left:100%;}
+[stylesheet-group="3"]{}
+.r-104ivgm{width:1rem;}
+.r-105ug2t{pointer-events:auto!important;}
+.r-10bj6qw{-webkit-backdrop-filter:blur(6);}
+.r-10f6rvt{top:-0.5rem;}
+.r-10ghgam{bottom:0.21874999999999997rem;}
+.r-10jjcze{line-height:0.875rem;}
+.r-10ptun7{height:16px;}
+.r-10v3vxq{transform:scaleX(-1);}
+.r-10x7va3{padding-top:0.25rem;}
+.r-10xqauy{padding-top:env(safe-area-inset-top);}
+.r-113qch9{cursor:auto;}
+.r-113ur86{height:4.25rem;}
+.r-117lhr1{margin-bottom:2rem;}
+.r-11huz1e{bottom:0rem;}
+.r-11j9u27{visibility:hidden;}
+.r-11mgvli{margin-left:NaNpx;}
+.r-11mpjr4{background-color:rgba(223,223,223,1.00);}
+.r-11qbdv7{margin-right:0rem;}
+.r-11udlyb{background-color:rgba(0,150,136,1.00);}
+.r-11yh6sk{overflow-x:hidden;}
+.r-120vegl{height:0.0625rem;}
+.r-12c3ph5{opacity:0.4;}
+.r-12ijkx4{right:auto;}
+.r-12pogon{bottom:-0.375rem;}
+.r-12vffkv>* {pointer-events:auto;}
+.r-12vffkv{pointer-events:none!important;}
+.r-135wba7{line-height:24px;}
+.r-136ojw6{z-index:2;}
+.r-13aq9py{animation-name:r-1iq689l;}
+.r-13qz1uu{width:100%;}
+.r-13t5eql{-moz-transition:opacity 0.3s ease;-webkit-transition:opacity 0.3s ease;transition:opacity 0.3s ease;}
+.r-13tjlyg{transition-duration:0.1s;}
+.r-13uqrnb{font-style:normal;}
+.r-145dblm{z-index:100000;}
+.r-14hosfx{max-width:20.625rem;}
+.r-14izmat{line-height:2.25rem;}
+.r-14klbr9{background-color:rgba(214,50,29,1.00);}
+.r-14lw9ot{background-color:rgba(255,255,255,1.00);}
+.r-14sbq61{background-color:rgba(33,150,243,1.00);}
+.r-150rngu{-webkit-overflow-scrolling:touch;}
+.r-1529c6b{min-width:7.8125rem;}
+.r-15c921o{min-width:1rem;}
+.r-15mn8gu{width:1.5625rem;}
+.r-15n029k{margin-bottom:0.375rem;}
+.r-15sfz5d{margin-left:-0.5rem;}
+.r-15v8b9a{transform:translateX(50%);}
+.r-162dple{background-color:rgba(214,50,29,0.20);}
+.r-163t4dp{border:1px solid #006AFF;}
+.r-1645ze5{background-color:rgba(230,28,8,1.00);}
+.r-16dba41{font-weight:400;}
+.r-16g93kw{border-bottom-width:0.0625rem;}
+.r-16ize9g{background-color:rgba(254,182,0,1.00);}
+.r-16l9doz{height:auto;}
+.r-16y2uox{flex-grow:1;}
+.r-173mzie{transform:scaleY(-1);}
+.r-1777fci{justify-content:center;}
+.r-17bb2tj{animation-duration:0.75s;}
+.r-17leim2{background-repeat:repeat;}
+.r-17s6mgv{justify-content:flex-end;}
+.r-184en5c{z-index:1;}
+.r-189z94n{line-height:1.75rem;}
+.r-18e5ka9{border-top-left-radius:0.125rem;}
+.r-18ry08z{margin-left:0.5rem;}
+.r-18skzpm{padding-left:1.5rem;}
+.r-18u37iz{flex-direction:row;}
+.r-18xhisw{margin-top:-2rem;}
+.r-19g75zp{margin-top:0.25rem;}
+.r-19om4ov{flex-basis:48%;}
+.r-19uokag{height:1rem;}
+.r-19wmn03{width:20px;}
+.r-19z077z{touch-action:none;}
+.r-1abnn5w{animation-play-state:paused;}
+.r-1acpoxo{width:36px;}
+.r-1aiqnjv{font-family:monospace,monospace;}
+.r-1allk26{color:rgba(0,106,255,1.00);}
+.r-1amxzb3{font-size:2.875rem;}
+.r-1atpuzl{gap:1rem;}
+.r-1avs0bo{height:18.125rem;}
+.r-1awozwy{align-items:center;}
+.r-1ay1djp{animation-duration:1s;}
+.r-1b3fm86{background-color:undefined;}
+.r-1b43r93{font-size:14px;}
+.r-1b9787r{transform-origin:bottom;}
+.r-1bqot48{margin-bottom:0.125rem;}
+.r-1bzj12m{scrollbar-gutter:stable;}
+.r-1c6unfx{forced-color-adjust:none;}
+.r-1chaf2z{height:0.625rem;}
+.r-1clcaoc{border-top-left-radius:0.25rem;}
+.r-1cwl3u0{line-height:16px;}
+.r-1d09ksm{align-items:baseline;}
+.r-1d2f490{left:0px;}
+.r-1d5kdc7{flex-direction:column-reverse;}
+.r-1dernwh{height:70%;}
+.r-1dklgf1{left:0.25rem;}
+.r-1dojifw{color:rgba(147,150,164,1.00);}
+.r-1dpjlyv{height:3.4375rem;}
+.r-1dz2d0x{width:4.125rem;}
+.r-1e3boxo{width:20.9375rem;}
+.r-1e3kca3{padding-bottom:0.75rem;}
+.r-1e90xnn{background-color:rgba(0,147,110,1.00);}
+.r-1eam9lr{margin-right:-0.5rem;}
+.r-1ei5mc7{cursor:inherit;}
+.r-1ell2k3{background-color:rgba(24,163,58,1.00);}
+.r-1enofrn{font-size:12px;}
+.r-1eohxtd{padding-right:0.25rem;}
+.r-1eshfrj{margin-left:0.75rem;}
+.r-1euycsn{flex-direction:row-reverse;}
+.r-1ewcgjf{box-shadow:0px 1px 3px rgba(0,0,0,0.5);}
+.r-1f4o0o6{margin-bottom:-0.75rem;}
+.r-1f720gc{width:50%;}
+.r-1fas2ou{order:0;}
+.r-1ff274t{text-align:right;}
+.r-1ffj0ar{background-color:rgba(0,0,0,0.40);}
+.r-1fpi9eo{background-color:rgba(255,255,255,0.12);}
+.r-1fpuki8{background-color:rgba(2,135,165,1.00);}
+.r-1fxdypn{background-color:rgba(241,207,0,1.00);}
+.r-1g40b8q{z-index:3;}
+.r-1g80hic{opacity:0.8;}
+.r-1g8p52q{font-size:0.625rem;}
+.r-1gb76qt{padding-top:1.25rem;}
+.r-1ggixdh{min-width:8.125rem;}
+.r-1ghxqbu{font-variant:tabular-nums;}
+.r-1gl1497{top:-1.875rem;}
+.r-1gug681{margin-left:0.25rem;}
+.r-1gz32c2{top:-0.25rem;}
+.r-1h0tpcw{text-wrap:wrap;}
+.r-1h0z5md{justify-content:flex-start;}
+.r-1h2t8mc{width:0px;}
+.r-1habvwh{align-items:flex-start;}
+.r-1hbftb0{padding-top:0rem;}
+.r-1hqnf9m{left:0rem;}
+.r-1i6wzkk{-moz-transition-property:opacity;-webkit-transition-property:opacity;transition-property:opacity;}
+.r-1i9x1lf{width:1.875rem;}
+.r-1iln25a{word-wrap:normal;}
+.r-1iq2vpp{bottom:0.53125rem;}
+.r-1iukymi{line-height:1.5rem;}
+.r-1janqcz{width:16px;}
+.r-1jaylin{width:-webkit-max-content;width:-moz-max-content;width:max-content;}
+.r-1jk0phx{background-color:rgba(251,102,22,1.00);}
+.r-1jkufdy{font-size:2rem;}
+.r-1jsd1on{margin-right:0.25rem;}
+.r-1jt5u8o{background-color:rgba(253,151,0,1.00);}
+.r-1jxefd1{margin-right:3.125rem;}
+.r-1k3wbuw{padding-top:1rem;}
+.r-1k4bsrw{color:rgba(10,14,27,1.00);}
+.r-1k98ly3{margin-bottom:0.5rem;}
+.r-1kfrs79{font-weight:600;}
+.r-1kihuf0{align-self:center;}
+.r-1kju8w1{height:0.75rem;}
+.r-1kpn9ve{height:0.8125rem;}
+.r-1l7w0ti{border-top-color:rgba(23,25,36,1.00);}
+.r-1ldzwu0{animation-timing-function:linear;}
+.r-1loqt21{cursor:pointer;}
+.r-1lxaxcs{margin-top:-0.5rem;}
+.r-1m9l54r{font-size:1.5rem;}
+.r-1mlwlqe{flex-basis:auto;}
+.r-1mm01xx{border-bottom-right-radius:1rem;}
+.r-1mnahxq{margin-top:0px;}
+.r-1momuzl{letter-spacing:0.0125rem;}
+.r-1mrlafo{background-position:0;}
+.r-1mszfch{background-color:rgba(2,135,165,0.20);}
+.r-1muvv40{animation-iteration-count:infinite;}
+.r-1ng3z5y{background-color:rgba(72,74,89,1.00);}
+.r-1nhitzw{background-color:rgba(201,202,213,1.00);}
+.r-1niwhzg{background-color:rgba(0,0,0,0.00);}
+.r-1nk4hlk{max-width:25rem;}
+.r-1nt5xw6{background-color:rgba(12,94,160,1.00);}
+.r-1nteefp{background-color:rgba(240,241,243,1.00);}
+.r-1ny4l3l{outline-style:none;}
+.r-1o4mh9l{font-size:0.875rem;}
+.r-1ocf4r9{scroll-snap-type:y mandatory;}
+.r-1oi2net{order:1;}
+.r-1oqfev0{padding-top:0.3125rem;}
+.r-1otgn73{touch-action:manipulation;}
+.r-1ozqkpa{text-transform:capitalize;}
+.r-1p0dtai{bottom:0px;}
+.r-1p3bu5e{-moz-transition:max-height 300ms ease-in-out;-webkit-transition:max-height 300ms ease-in-out;transition:max-height 300ms ease-in-out;}
+.r-1paik5b{padding-bottom:0.1875rem;}
+.r-1pcuk75{margin-left:2.625rem;}
+.r-1pi2tsx{height:100%;}
+.r-1plmjo{background-color:rgba(10,14,27,1.00);}
+.r-1pqcdwo{transform:translateX(5px);}
+.r-1pwj8iy{color:rgba(201,202,213,1.00);}
+.r-1pwx3x0{z-index:99999;}
+.r-1pzp21b{padding-left:0.5rem;}
+.r-1qcmdr2{border-bottom-color:rgba(0,106,255,1.00);}
+.r-1qd0xha{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+.r-1qpd8da{top:2rem;}
+.r-1qulhi1{animation-name:r-1pzkwqh;}
+.r-1r11ck1{font-size:0.75rem;}
+.r-1r4njbp{border-top-right-radius:0.125rem;}
+.r-1r8g8re{height:36px;}
+.r-1rmm8h1{line-height:3.25rem;}
+.r-1rnoaur{overflow-y:auto;}
+.r-1rqp49e{color:rgba(255,255,255,0.50);}
+.r-1rsjblm{include-font-padding:false;}
+.r-1ru83je{right:0rem;}
+.r-1rw8lsn{color:rgba(47,49,63,1.00);}
+.r-1rxz98w{margin-bottom:0.25rem;}
+.r-1s2bzr4{margin-top:12px;}
+.r-1s6ho2h{border-bottom-width:0rem;}
+.r-1sffzi{transform:translateX(-50%);}
+.r-1sg8ghl{z-index:1000;}
+.r-1sqselh{min-height:18.75rem;}
+.r-1sxrcry{background-size:auto;}
+.r-1t7uo4s{object-fit:cover;}
+.r-1taz0d7{background-color:rgba(241,207,0,0.20);}
+.r-1tfa2h4{margin-top:1rem;}
+.r-1uaruiq{background-color:rgba(94,185,15,0.20);}
+.r-1udbk01{text-overflow:ellipsis;}
+.r-1uirtdp{font-size:1.25rem;}
+.r-1v8x5hl{bottom:-0.25rem;}
+.r-1vb61a0{bottom:4rem;}
+.r-1vh16mv{order:2;}
+.r-1vkhbp8{max-width:10.9375rem;}
+.r-1vpq4w0{overflow-wrap:anywhere;}
+.r-1vr29t4{font-weight:800;}
+.r-1w2pmg{height:0px;}
+.r-1w482oh{color:rgba(153,119,25,1.00);}
+.r-1w6e6rj{flex-wrap:wrap;}
+.r-1w8vsj1{top:0rem;}
+.r-1wbh5a2{flex-shrink:1;}
+.r-1wkhzzn{padding-right:0.5rem;}
+.r-1wnz8md{line-height:2.75rem;}
+.r-1wtbcs0{width:3rem;}
+.r-1wtj0ep{justify-content:space-between;}
+.r-1wu0d0q{text-wrap:noWrap;}
+.r-1wv73ep{align-self:baseline;}
+.r-1wyvozj{left:50%;}
+.r-1wyyakw{z-index:-1;}
+.r-1wz9wpy{top:12.5rem;}
+.r-1xaa6x2{border-left-width:0.0625rem;}
+.r-1xc7hkf{height:9rem;}
+.r-1xcajam{position:fixed;}
+.r-1xe84w4{width:0.625rem;}
+.r-1xnzce8{-moz-user-select:text;-webkit-user-select:text;user-select:text;}
+.r-1xpe3eb{transform:rotate(90deg);}
+.r-1xq2hnv{padding-right:1rem;}
+.r-1xqeolq{line-height:2.375rem;}
+.r-1xsikpa{border-top-right-radius:0.5rem;}
+.r-1xuiyg0{right:-0.5rem;}
+.r-1xx2234{top:3.5rem;}
+.r-1y13671{margin-top:2rem;}
+.r-1y30w0g{gap:0.25rem;}
+.r-1y8qiwj{color:rgba(4,107,63,1.00);}
+.r-1yef0xd{animation-name:r-11cv4x;}
+.r-1ykx8fy{padding-bottom:0rem;}
+.r-1ylux2w{letter-spacing:0.0625rem;}
+.r-1yrvz1o{-moz-transition:opacity 0.3s ease-in-out;-webkit-transition:opacity 0.3s ease-in-out;transition:opacity 0.3s ease-in-out;}
+.r-1yt6iw2{align-content:flex-end;}
+.r-1ytsbp8{font-size:2.25rem;}
+.r-1yunn03{margin-right:-0.75rem;}
+.r-1yx1c3f{width:calc(50% - 0.375rem);}
+.r-1z0uu69{padding-bottom:3rem;}
+.r-1zc27i{margin-top:0.5rem;}
+.r-2000is{background-color:rgba(94,185,15,1.00);}
+.r-22lvpy{width:7.1875rem;}
+.r-2eszeu::-webkit-scrollbar{display:none}
+.r-2eszeu{scrollbar-width:none;}
+.r-2ivvcu{-moz-transition:transform .3s ease;-webkit-transition:transform .3s ease;transition:transform .3s ease;}
+.r-2llsf{min-height:100%;}
+.r-2o3tw4{gap:0.375rem;}
+.r-2q8rws{border-top-width:0.25rem;}
+.r-2qh1jr{background-color:rgba(24,163,58,0.20);}
+.r-30o5oe{-moz-appearance:none;-ms-appearance:none;-webkit-appearance:none;appearance:none;}
+.r-34mhj1{height:2.5rem;}
+.r-36ujnk{font-style:italic;}
+.r-3d1qg6{color:rgba(72,74,89,1.00);}
+.r-3s2u2q{white-space:nowrap;}
+.r-3ucsff{letter-spacing:0.2px;}
+.r-417010{z-index:0;}
+.r-46g5hj{max-height:0px;}
+.r-4gszlv{background-size:cover;}
+.r-4ikxba{color:rgba(120,124,140,1.00);}
+.r-4k9ar7{scrollbar-width:thin;}
+.r-4v7adb{height:5px;}
+.r-5kkj8d{border-top-width:1px;}
+.r-5n1fjj{background-color:rgba(0,147,110,0.20);}
+.r-619ltt{left:-0.5rem;}
+.r-61z16t{margin-right:0px;}
+.r-633pao>* {pointer-events:none;}
+.r-633pao{pointer-events:none!important;}
+.r-634ibu{bottom:0.296875rem;}
+.r-6dt33c{opacity:1;}
+.r-6oa8fk{gap:0.5rem;}
+.r-6taxm2:-ms-input-placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-6taxm2::-moz-placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-6taxm2::-webkit-input-placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-6taxm2::placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-6tdshn{background-color:rgba(254,182,0,0.20);}
+.r-701jt9{transform-origin:left;}
+.r-789lf4{padding-bottom:2.25rem;}
+.r-7cikom{font-size:inherit;}
+.r-7kkksn{width:3.3125rem;}
+.r-7p2f91{background-color:rgba(255,211,204,1.00);}
+.r-7q8q6z{cursor:default;}
+.r-7u7bl9{background-color:rgba(230,240,255,1.00);}
+.r-7xmw5f{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;}
+.r-85ck6{bottom:0.25rem;}
+.r-8a5ta2{height:0.25rem;}
+.r-8akbws{-webkit-box-orient:vertical;}
+.r-8b9bfe{min-width:3rem;}
+.r-8fae6t{background-color:rgba(6,167,95,1.00);}
+.r-8fdsdq{z-index:4;}
+.r-8kz0gk{height:2rem;}
+.r-8oygtn{grid-area:1 / 1 / 1 / 1;}
+.r-8saga3{line-height:1.25rem;}
+.r-97e31f{padding-bottom:env(safe-area-inset-bottom);}
+.r-9daxd3{animation-duration:250ms;}
+.r-9nkwvx{margin-top:0.75rem;}
+.r-9zyavt{padding-bottom:0.25rem;}
+.r-a0n0ff{background-color:rgba(198,27,42,0.20);}
+.r-a2tzq0{justify-content:space-around;}
+.r-a3k72m{width:3.25rem;}
+.r-a7t18p{letter-spacing:-0.125rem;}
+.r-adyw6z{font-size:20px;}
+.r-agouwx{transform:translateZ(0);}
+.r-ah5dr5>* {pointer-events:none;}
+.r-ah5dr5{pointer-events:auto!important;}
+.r-axqih4{background-color:rgba(230,74,17,0.20);}
+.r-b3gwa7{width:2.5rem;}
+.r-b4jjlx{left:2.6875rem;}
+.r-b88u0q{font-weight:700;}
+.r-bcqeeo{min-width:0px;}
+.r-beqtwt{color:rgba(240,241,243,1.00);}
+.r-bgufmx{width:3.5rem;}
+.r-bi4vy9{transform:translateY(100%);}
+.r-bjpe5n{padding-left:0.25rem;}
+.r-bnwqim{position:relative;}
+.r-buy8e9{overflow-y:hidden;}
+.r-bv2aro{padding-left:env(safe-area-inset-left);}
+.r-c68hjy{color:rgba(161,161,161,1.00);}
+.r-cfi6bo{width:0.8125rem;}
+.r-cfs6u2{background-color:rgba(198,27,42,1.00);}
+.r-clpiya{width:4.25rem;}
+.r-cn28q9{width:2rem;}
+.r-cn9mhj{background-color:rgba(23,25,36,1.00);}
+.r-co0qro{bottom:-0.5rem;}
+.r-cpa5s6{scroll-snap-align:start;}
+.r-csuw5z{background-color:rgba(247,97,4,1.00);}
+.r-cygvgh{font-size:1rem;}
+.r-dg3m2g{font-family:Archivo;}
+.r-dhf3jd{right:-0.25rem;}
+.r-dkge59{background-color:rgba(170,184,194,1.00);}
+.r-dks8fr{margin-top:0.125rem;}
+.r-dnmrzs{max-width:100%;}
+.r-doghzh{font-size:1.75rem;}
+.r-dpl5gu{margin-right:1.25rem;}
+.r-duj3jm{width:7.5625rem;}
+.r-e08utu{color:rgba(147,15,6,1.00);}
+.r-eafdt9{transition-duration:0.15s;}
+.r-ebwn4k{animation-name:r-q67da2;}
+.r-ehq7j7{background-size:contain;}
+.r-em0esp{font-family:Archivo Narrow;}
+.r-eqz5dr{flex-direction:column;}
+.r-f07zfc{min-width:5rem;}
+.r-f0eezp{line-height:1rem;}
+.r-f5r70l{background-color:rgba(240,241,243,0.60);}
+.r-f88bcq{order:3;}
+.r-fdjqy7{text-align:left;}
+.r-fdukfo{margin-right:1rem;}
+.r-fk7psr{background-color:rgba(253,151,0,0.20);}
+.r-g2leni{top:0.25rem;}
+.r-g3mlsw{animation-name:r-t2lo5v;}
+.r-ghxds0{transform:translateY(0%);}
+.r-gihkq4{min-width:9.375rem;}
+.r-gtdqiz{position:-webkit-sticky;position:sticky;}
+.r-gx5yqu{background-color:rgba(22,61,156,0.20);}
+.r-gzqks2{min-height:20rem;}
+.r-h3iu27{width:0.0625rem;}
+.r-h7x83i{background-color:rgba(255,244,204,1.00);}
+.r-hfgobv{max-width:15rem;}
+.r-hxflta{padding-right:env(safe-area-inset-right);}
+.r-i0soe8{height:14.5rem;}
+.r-icoktb{opacity:0.5;}
+.r-ipm5af{top:0px;}
+.r-iyfy8q{width:auto;}
+.r-j88i8x{background-color:rgba(247,97,4,0.20);}
+.r-jwli3a{color:rgba(255,255,255,1.00);}
+.r-k200y{align-self:flex-start;}
+.r-k3e479{bottom:0.2482311320754717rem;}
+.r-kgfmgl{height:0.125rem;}
+.r-kkjnvc{padding-right:0.75rem;}
+.r-ku5ja5{margin-top:-1rem;}
+.r-l36zd7{bottom:0.64375rem;}
+.r-l4ido4{padding-bottom:1rem;}
+.r-lakoq7{max-width:9.375rem;}
+.r-leqjx2{animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1);}
+.r-lltvgl{overflow-x:auto;}
+.r-lrvibr{-moz-user-select:none;-webkit-user-select:none;user-select:none;}
+.r-m0w1rq{min-width:2rem;}
+.r-m5sa8x{right:3.125rem;}
+.r-m9c74{margin-bottom:0.75rem;}
+.r-m9n7ob{border-right-width:0.0625rem;}
+.r-majxgm{font-weight:500;}
+.r-mevtsp{gap:0.125rem;}
+.r-mfh4gg{scroll-snap-type:x mandatory;}
+.r-mhe3cw{z-index:10;}
+.r-mk975j{height:0.9375rem;}
+.r-mslnow{background-color:rgba(0,64,128,1.00);}
+.r-n6v787{font-size:13px;}
+.r-ndvcnb{border-bottom-width:0px;}
+.r-niax9q{padding-left:0.75rem;}
+.r-nzoivv{opacity:0.65;}
+.r-o3dq5f{gap:0.75rem;}
+.r-o9f6fc{background-color:rgba(22,61,156,1.00);}
+.r-obd0qt{align-items:flex-end;}
+.r-ocr39g{-webkit-column-gap:0.25rem;column-gap:0.25rem;}
+.r-oek6f6{width:1.25rem;}
+.r-orgf3d{opacity:0;}
+.r-osmfnn{color:rgba(23,25,36,1.00);}
+.r-ovpsd6{top:-0.125rem;}
+.r-ovu0ai{font-weight:900;}
+.r-oyykgd{color:rgba(96,99,116,1.00);}
+.r-p1pxzi{margin-bottom:0px;}
+.r-pf14pi{border-bottom-left-radius:0.5rem;}
+.r-pgm215{bottom:-0.75rem;}
+.r-pgmfgi{top:3.0625rem;}
+.r-q4m81j{text-align:center;}
+.r-qcmwe5{background-color:rgba(255,201,0,1.00);}
+.r-qhfpwz{-webkit-backdrop-filter:blur(6);backdrop-filter:blur(6);}
+.r-qxkqvy{background-color:rgba(0,106,255,1.00);}
+.r-r2y082{max-width:50%;}
+.r-r5vmyo{z-index:1002;}
+.r-rcgm79{gap:2rem;}
+.r-rddldy{background-color:rgba(47,49,63,0.60);}
+.r-rjixqe{line-height:20px;}
+.r-rk41dh{background-color:rgba(199,242,208,1.00);}
+.r-rs94m5{background-image:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmVyc2lvbj0iMS4xIgogICB2aWV3Qm94PSIwIDAgMSAxIgogICBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWluWU1pbiBtZWV0Ij4KICA8cGF0aAogICAgIGQ9Ik0gMC4wNDAzODA1OSwwLjYyNjc3NjcgMC4xNDY0NDY2MSwwLjUyMDcxMDY4IDAuNDI5Mjg5MzIsMC44MDM1NTMzOSAwLjMyMzIyMzMsMC45MDk2MTk0MSB6IE0gMC4yMTcxNTcyOSwwLjgwMzU1MzM5IDAuODUzNTUzMzksMC4xNjcxNTcyOSAwLjk1OTYxOTQxLDAuMjczMjIzMyAwLjMyMzIyMzMsMC45MDk2MTk0MSB6IgogICAgIGlkPSJyZWN0Mzc4MCIKICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lIiAvPgo8L3N2Zz4K");}
+.r-s62m2j{animation-timing-function:cubic-bezier(0.47, 0, 0.745, 0.715);}
+.r-s8fiae{padding-left:0rem;}
+.r-sfbmgh{z-index:9999;}
+.r-svr7o1{left:-0.25rem;}
+.r-t5to09{margin-bottom:1rem;}
+.r-todpsx{opacity:0.3;}
+.r-tsynxw{text-transform:uppercase;}
+.r-tux3g4{padding-top:0.75rem;}
+.r-tv6buo{min-height:auto;}
+.r-tvgfcf{white-space:wrap;}
+.r-u44kw2{transform:translateX(-1.875rem) translateY(-90%);}
+.r-u6sd8q{background-repeat:no-repeat;}
+.r-u8s1d{position:absolute;}
+.r-u92y06{background-color:rgba(255,165,0,1.00);}
+.r-ubezar{font-size:16px;}
+.r-ugg786{min-height:25rem;}
+.r-uia4a0{align-content:center;}
+.r-ulz7af{background-color:rgba(230,74,17,1.00);}
+.r-unjnli{border-right-color:rgba(201,202,213,1.00);}
+.r-urjcpp{height:23.125rem;}
+.r-uyseuv{margin-right:0.5rem;}
+.r-uzxld0{line-height:2rem;}
+.r-v31qbu{border-bottom-left-radius:1rem;}
+.r-van48c{caret-color:transparent;}
+.r-vrz42v{line-height:28px;}
+.r-vvn4in{background-position:center;}
+.r-w448el{border-bottom-right-radius:0.5rem;}
+.r-w7c3ku{max-width:90rem;}
+.r-wac1k3{border-top-left-radius:0.5rem;}
+.r-x22zwo{border-top-right-radius:0.25rem;}
+.r-x3cy2q{background-size:100% 100%;}
+.r-x5wg6o{background-color:rgba(11,21,51,1.00);}
+.r-xo66j3{background-color:rgba(12,94,160,0.20);}
+.r-xx3c9p{animation-name:r-imtty0;}
+.r-xy6wi4{-moz-transition:top 0.15s ease;-webkit-transition:top 0.15s ease;transition:top 0.15s ease;}
+.r-yie26v{z-index:1001;}
+.r-yomafo{-moz-transition:opacity 0.5s ease-out-in;-webkit-transition:opacity 0.5s ease-out-in;transition:opacity 0.5s ease-out-in;}
+.r-z80fyv{height:20px;}
+.r-zchlnj{right:0px;}
+.r-ztyd71{background-color:rgba(0,0,0,0.20);}
+@-webkit-keyframes r-11cv4x{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+@-webkit-keyframes r-1iq689l{0%{transform:translateY(0%);}100%{transform:translateY(100%);}}
+@-webkit-keyframes r-1pzkwqh{0%{transform:translateY(100%);}100%{transform:translateY(0%);}}
+@-webkit-keyframes r-imtty0{0%{opacity:0;}100%{opacity:1;}}
+@-webkit-keyframes r-q67da2{0%{transform:translateX(-100%);}100%{transform:translateX(400%);}}
+@-webkit-keyframes r-t2lo5v{0%{opacity:1;}100%{opacity:0;}}
+@keyframes r-11cv4x{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+@keyframes r-1iq689l{0%{transform:translateY(0%);}100%{transform:translateY(100%);}}
+@keyframes r-1pzkwqh{0%{transform:translateY(100%);}100%{transform:translateY(0%);}}
+@keyframes r-imtty0{0%{opacity:0;}100%{opacity:1;}}
+@keyframes r-q67da2{0%{transform:translateX(-100%);}100%{transform:translateX(400%);}}
+@keyframes r-t2lo5v{0%{opacity:1;}100%{opacity:0;}}</style><style id="jss-server-side-styles">html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}body{margin:0;}article, aside, footer, header, nav, section, figcaption, figure, main{display:block;}h1{margin:0.67em 0;font-size:2em;}hr{height:0;overflow:visible;box-sizing:content-box;}pre{font-size:1em;font-family:monospace, monospace;}a{background:transparent;text-decoration-skip:objects;}a:active, a:hover{outline-width:0;}abbr[title]{border-bottom:none;text-decoration:underline;}b, strong{font-weight:bolder;}code, kbp, samp{font-size:1em;font-family:monospace, monospace;}dfn{font-style:italic;}mark{color:#000;background-color:#ff0;}small{font-size:80%;}sub, sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}audio, video{display:inline-block;}audio:not([controls]){height:0;display:none;}img{border-style:none;vertical-align:middle;}svg:not(:root){overflow:hidden;}button, input, optgroup, select, textarea{margin:0;font-size:100%;font-family:sans-serif;line-height:1.15;}button, input{overflow:visible;}button, select{text-transform:none;}button, [type=reset], [type=submit]{-webkit-appearance:button;}button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner{padding:0;border-style:none;}button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring{outline:1px dotted ButtonText;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{color:inherit;display:table;padding:0;max-width:100%;box-sizing:border-box;white-space:normal;}progress{display:inline-block;vertical-align:baseline;}textarea{overflow:auto;}[type=checkbox], [type=radio]{padding:0;box-sizing:border-box;}[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button{height:auto;}[type=search]{appearance:textfield;outline-offset:-2px;}[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration{appearance:none;}::-webkit-file-upload-button{font:inherit;appearance:button;}details, menu{display:block;}summary{display:list-item;}canvas{display:inline-block;}template{display:none;}[hidden]{display:none;}</style><link rel="preload" as="image" href="/consumer-web-proxy/assets/landing-pages/pricing-lp/site-header-logo.svg" fetchpriority="high"/><link rel="preload" as="image" href="/consumer-web-proxy/assets/landing-pages/pricing-lp/grid-band-fade.svg" fetchpriority="high"/><link rel="preload" as="image" href="/consumer-web-proxy/assets/landing-pages/pricing-lp/grid-band.svg" fetchpriority="high"/><div id="__next"><main class="app"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"PFF+","description":"Compare PFF+ plans and pricing. Every tier unlocks premium NFL stats, player grades, betting tools and fantasy analysis — pick monthly, annual or PFF Pro.","url":"https://www.pff.com/subscribe","offers":[{"@type":"Offer","name":"MONTHLY","price":"9.99","priceCurrency":"USD","url":"https://www.pff.com/checkout?plan=monthly"},{"@type":"Offer","name":"ANNUAL","price":"99.99","priceCurrency":"USD","url":"https://www.pff.com/checkout?plan=annual"},{"@type":"Offer","name":"PFF PRO","price":"199.99","priceCurrency":"USD","url":"https://www.pff.com/checkout?plan=pro"}]}</script><div class="pricing-lp_page__DD0Hf"><header class="site-header_header__jDs4W" data-testid="pricingLp.siteHeader"><a href="https://www.pff.com" class="site-header_logoLink__L1b9z" data-testid="pricingLp.siteHeader.logoLink"><img alt="Pro Football Focus" fetchpriority="high" width="175" height="76" decoding="async" data-nimg="1" class="site-header_logo__iljG5" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/site-header-logo.svg"/></a><div class="site-header_cta__fkHLe"><a href="#pricing-plans" role="button" class="button-module__root___n01ZU button-module__variant-primary___jIBYt button-module__emphasis-high___dmcBg button-module__size-lg___FtR18" data-testid="pricingLp.siteHeader.subscribeCta"><span class="button-module__content___gO1Lt"><span class="text-module__variant-text-md-semibold___bYK7J">Subscribe Now</span></span></a></div></header><section class="hero_hero___A9rw" data-testid="pricingLp.hero"><div class="hero_band__GADtK hero_fadeBand__bS3Kl" aria-hidden="true"><img alt="" fetchpriority="high" width="1440" height="498" decoding="async" data-nimg="1" class="hero_bandImage__Zs1Gq" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/grid-band-fade.svg"/></div><div class="hero_band__GADtK hero_gridBand__FjFSc" aria-hidden="true"><img alt="" fetchpriority="high" width="1791" height="597" decoding="async" data-nimg="1" class="hero_bandImage__Zs1Gq" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/grid-band.svg"/></div><div class="hero_content__uIy9v"><div class="hero_title__6vzxC"><h1 class="text-module__variant-text-xl-black___GRgGp text-module__color-text___RJEOx hero_headline__EOF4J">See the game the way the analysts do.</h1><p class="text-module__variant-text-base-regular___mo4O6 hero_subcopy__huaKV">Go beyond the box score with PFF Premium Stats. Explore player grades, pro-level metrics and detailed performance data for every player and every play. Get the same deeper level of analysis that has made PFF a trusted resource across the NFL.</p></div><ul class="stats-band_stats__Z6_Hb" data-testid="pricingLp.hero.statsBand"><li class="stats-band_stat__u7En7"><p class="text-module__variant-text-md-black___RgMdH text-module__color-text___RJEOx stats-band_value__pID0f">1.6M</p><p class="text-module__variant-text-base-regular___mo4O6 stats-band_label__h_5Gu">Snaps graded/yr</p></li><li class="stats-band_stat__u7En7"><p class="text-module__variant-text-md-black___RgMdH text-module__color-text___RJEOx stats-band_value__pID0f">20</p><p class="text-module__variant-text-base-regular___mo4O6 stats-band_label__h_5Gu">Seasons of grades</p></li><li class="stats-band_stat__u7En7"><p class="text-module__variant-text-md-black___RgMdH text-module__color-text___RJEOx stats-band_value__pID0f">32 Pro Teams</p><p class="text-module__variant-text-base-regular___mo4O6 stats-band_label__h_5Gu">Use our data</p></li></ul><div class="hero_pricingSlot__AYE5t" data-testid="pricingLp.hero.pricingSlot"><section id="pricing-plans-hero" class="pricing-tiers_section__jABO5" data-testid="pricingLp.pricingTiers.hero"><div class="pricing-tiers_inner__HhFmk"><div class="pricing-tiers_grid__zMbjj"><article class="plan-card-module__root___8iFRv plan-card-module__variant-monthly___5vpzJ" aria-label="MONTHLY" data-testid="pricingLp.pricingTiers.hero.monthly"><header class="plan-band-module__band___Korf- plan-band-module__variant-monthly___WMgGb plan-band-module__radius-top___touxY plan-band-module__size-md___ihmFy"><span class="plan-band-module__start___juI8D"><span class="text-module__variant-text-small-bold___gEooC plan-card-module__tier___vYX4Y">MONTHLY</span></span><span class="plan-band-module__end___79eQl"><img alt="PFF+" loading="lazy" width="49.17" height="10" decoding="async" data-nimg="1" class="plan-tier-card_logo__xImDO" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/pff-plus-wordmark.svg"/></span></header><div class="plan-card-module__pricing___Gfhin"><div class="plan-card-module__flags___-ynRo"><span class="text-module__variant-text-xs-narrow-bold___2iQEd plan-card-module__eyebrow___iZS6B">NEW - PRICE DROP!</span><span class="text-module__variant-text-2xs-narrow-bold___qDdaZ plan-card-module__badge___89Qyq">MOST FLEXIBLE</span></div><p class="plan-card-module__price___U2X-J"><span class="text-module__variant-text-4xl-black___6V7R9 plan-card-module__priceAmount___6H3Bm">$9.99</span></p><p class="text-module__variant-text-base-regular___mo4O6 plan-card-module__billingNote___dBlxh">per month, billed monthly</p></div><ul class="plan-card-module__features___5L8WQ"><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">PFF+ content and tools</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Articles, Fantasy tools, NFL and College tools, Betting</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Access to mock draft simulator</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Guru AI football chatbot insights with limited tokens</span></li></ul><div class="plan-card-module__cta___Lk5HA"><a href="/checkout?plan=monthly" role="button" class="button-module__root___n01ZU button-module__variant-neutral___chdZS button-module__emphasis-medium___W6anr button-module__size-lg___FtR18 button-module__full-width___pX4LK" data-testid="pricingLp.pricingTiers.hero.monthly.cta"><span class="button-module__content___gO1Lt"><span class="text-module__variant-text-md-semibold___bYK7J">Choose Monthly</span></span></a></div></article><article class="plan-card-module__root___8iFRv plan-card-module__variant-annual___Jw6nA" aria-label="ANNUAL" data-testid="pricingLp.pricingTiers.hero.annual"><header class="plan-band-module__band___Korf- plan-band-module__variant-annual___4BSL- plan-band-module__radius-top___touxY plan-band-module__size-md___ihmFy"><span class="plan-band-module__start___juI8D"><span class="text-module__variant-text-small-bold___gEooC plan-card-module__tier___vYX4Y">ANNUAL</span></span><span class="plan-band-module__end___79eQl"><img alt="PFF+" loading="lazy" width="49.17" height="10" decoding="async" data-nimg="1" class="plan-tier-card_logo__xImDO" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/pff-plus-wordmark.svg"/></span></header><div class="plan-card-module__pricing___Gfhin"><div class="plan-card-module__flags___-ynRo"><span class="text-module__variant-text-xs-narrow-bold___2iQEd plan-card-module__eyebrow___iZS6B">NEW - PRICE DROP!</span><span class="text-module__variant-text-2xs-narrow-bold___qDdaZ plan-card-module__badge___89Qyq">BEST VALUE</span></div><p class="plan-card-module__price___U2X-J"><span class="text-module__variant-text-4xl-black___6V7R9 plan-card-module__priceAmount___6H3Bm">$99.99</span><span class="text-module__variant-text-base-narrow-bold___AEonE plan-card-module__subPrice___df9qE">$8.33 /mo</span></p><p class="text-module__variant-text-base-regular___mo4O6 plan-card-module__billingNote___dBlxh">per year, billed annually</p></div><ul class="plan-card-module__features___5L8WQ"><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">PFF+ content and tools</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Articles, Fantasy tools, NFL and College tools, Betting</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Access to mock draft simulator</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Guru AI football chatbot insights with limited tokens</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Premium Stats</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Micro transactions available for additional tokens</span></li></ul><div class="plan-card-module__cta___Lk5HA"><a href="/checkout?plan=annual" role="button" class="button-module__root___n01ZU button-module__variant-primary___jIBYt button-module__emphasis-high___dmcBg button-module__size-lg___FtR18 button-module__full-width___pX4LK" data-testid="pricingLp.pricingTiers.hero.annual.cta"><span class="button-module__content___gO1Lt"><span class="text-module__variant-text-md-semibold___bYK7J">Go Annual</span></span></a></div></article><article class="plan-card-module__root___8iFRv plan-card-module__variant-pro___Fo4fc" aria-label="PFF PRO" data-testid="pricingLp.pricingTiers.hero.pro"><header class="plan-band-module__band___Korf- plan-band-module__variant-pro___r7Alx plan-band-module__radius-top___touxY plan-band-module__size-md___ihmFy"><span class="plan-band-module__start___juI8D"><span class="text-module__variant-text-small-bold___gEooC plan-card-module__tier___vYX4Y">PFF PRO</span></span><span class="plan-band-module__end___79eQl"><img alt="PFF PRO" loading="lazy" width="55.5" height="12" decoding="async" data-nimg="1" class="plan-tier-card_logo__xImDO" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/pff-pro-wordmark.svg"/></span></header><div class="plan-card-module__pricing___Gfhin"><div class="plan-card-module__flags___-ynRo"><span class="text-module__variant-text-2xs-narrow-bold___qDdaZ plan-card-module__badge___89Qyq">ELITE</span></div><p class="plan-card-module__price___U2X-J"><span class="text-module__variant-text-4xl-black___6V7R9 plan-card-module__priceAmount___6H3Bm">$199.99</span><span class="text-module__variant-text-base-narrow-bold___AEonE plan-card-module__subPrice___df9qE">$16.67 /mo</span></p><p class="text-module__variant-text-base-regular___mo4O6 plan-card-module__billingNote___dBlxh">per year, billed annually</p></div><ul class="plan-card-module__features___5L8WQ"><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">PFF+ content and tools</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Articles, Fantasy tools, NFL and College tools, Betting</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Access to mock draft simulator</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Guru AI with higher base token level</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Upgraded Premium Stats Pro</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Micro transactions available for additional tokens</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Revamped player and team pages</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Enhanced data and visualizations</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Improved Interface</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Programmatic data access for modeling (API/scrape)</span></li></ul><div class="plan-card-module__cta___Lk5HA"><a href="/checkout?plan=pro" role="button" class="button-module__root___n01ZU button-module__variant-premium___UOwXw button-module__emphasis-high___dmcBg button-module__size-lg___FtR18 button-module__full-width___pX4LK" data-testid="pricingLp.pricingTiers.hero.pro.cta"><span class="button-module__content___gO1Lt"><span class="text-module__variant-text-md-semibold___bYK7J">Go Pro</span></span></a></div></article></div></div></section></div></div></section><section class="social-proof_socialProof__ht_hE" data-testid="pricingLp.socialProof"><div class="social-proof_content__HV69q"><h2 class="text-module__variant-text-lg-black___NYmR2 text-module__color-text___RJEOx social-proof_heading__K_2dc" data-testid="pricingLp.socialProof.heading">Trusted by <br class="social-proof_tabletBreak__XbEF_"/>all 32 NFL Teams</h2><div data-testid="pricingLp.socialProof.marquee" aria-hidden="true" class="logo-marquee-module__root___EN4sn social-proof_marquee__h9Fki"><div class="logo-marquee-module__track___rRp4p"><div class="logo-marquee-module__group___0Kk-E"><span class="social-proof_logo__JI0oy" data-team="arizona-cardinals" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/arizona-cardinals.svg"/></span><span class="social-proof_logo__JI0oy" data-team="atlanta-falcons" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/atlanta-falcons.svg"/></span><span class="social-proof_logo__JI0oy" data-team="baltimore-ravens" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/baltimore-ravens.svg"/></span><span class="social-proof_logo__JI0oy" data-team="buffalo-bills" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/buffalo-bills.svg"/></span><span class="social-proof_logo__JI0oy" data-team="carolina-panthers" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/carolina-panthers.svg"/></span><span class="social-proof_logo__JI0oy" data-team="chicago-bears" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/chicago-bears.svg"/></span><span class="social-proof_logo__JI0oy" data-team="cincinnati-bengals" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/cincinnati-bengals.svg"/></span><span class="social-proof_logo__JI0oy" data-team="cleveland-browns" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/cleveland-browns.svg"/></span><span class="social-proof_logo__JI0oy" data-team="dallas-cowboys" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/dallas-cowboys.svg"/></span><span class="social-proof_logo__JI0oy" data-team="denver-broncos" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/denver-broncos.svg"/></span><span class="social-proof_logo__JI0oy" data-team="detroit-lions" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/detroit-lions.svg"/></span><span class="social-proof_logo__JI0oy" data-team="green-bay-packers" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/green-bay-packers.svg"/></span><span class="social-proof_logo__JI0oy" data-team="houston-texans" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/houston-texans.svg"/></span><span class="social-proof_logo__JI0oy" data-team="indianapolis-colts" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/indianapolis-colts.svg"/></span><span class="social-proof_logo__JI0oy" data-team="jacksonville-jaguars" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/jacksonville-jaguars.svg"/></span><span class="social-proof_logo__JI0oy" data-team="kansas-city-chiefs" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/kansas-city-chiefs.svg"/></span><span class="social-proof_logo__JI0oy" data-team="las-vegas-raiders" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/las-vegas-raiders.svg"/></span><span class="social-proof_logo__JI0oy" data-team="los-angeles-chargers" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/los-angeles-chargers.svg"/></span><span class="social-proof_logo__JI0oy" data-team="los-angeles-rams" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/los-angeles-rams.svg"/></span><span class="social-proof_logo__JI0oy" data-team="miami-dolphins" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/miami-dolphins.svg"/></span><span class="social-proof_logo__JI0oy" data-team="minnesota-vikings" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/minnesota-vikings.svg"/></span><span class="social-proof_logo__JI0oy" data-team="new-england-patriots" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/new-england-patriots.svg"/></span><span class="social-proof_logo__JI0oy" data-team="new-orleans-saints" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/new-orleans-saints.svg"/></span><span class="social-proof_logo__JI0oy" data-team="new-york-giants" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/new-york-giants.svg"/></span><span class="social-proof_logo__JI0oy" data-team="new-york-jets" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/new-york-jets.svg"/></span><span class="social-proof_logo__JI0oy" data-team="philadelphia-eagles" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/philadelphia-eagles.svg"/></span><span class="social-proof_logo__JI0oy" data-team="pittsburgh-steelers" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/pittsburgh-steelers.svg"/></span><span class="social-proof_logo__JI0oy" data-team="san-francisco-49ers" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/san-francisco-49ers.svg"/></span><span class="social-proof_logo__JI0oy" data-team="seattle-seahawks" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/seattle-seahawks.svg"/></span><span class="social-proof_logo__JI0oy" data-team="tampa-bay-buccaneers" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/tampa-bay-buccaneers.svg"/></span><span class="social-proof_logo__JI0oy" data-team="tennessee-titans" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/tennessee-titans.svg"/></span><span class="social-proof_logo__JI0oy" data-team="washington-commanders" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/washington-commanders.svg"/></span></div><div class="logo-marquee-module__group___0Kk-E" aria-hidden="true"><span class="social-proof_logo__JI0oy" data-team="arizona-cardinals" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/arizona-cardinals.svg"/></span><span class="social-proof_logo__JI0oy" data-team="atlanta-falcons" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/atlanta-falcons.svg"/></span><span class="social-proof_logo__JI0oy" data-team="baltimore-ravens" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/baltimore-ravens.svg"/></span><span class="social-proof_logo__JI0oy" data-team="buffalo-bills" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/buffalo-bills.svg"/></span><span class="social-proof_logo__JI0oy" data-team="carolina-panthers" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/carolina-panthers.svg"/></span><span class="social-proof_logo__JI0oy" data-team="chicago-bears" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/chicago-bears.svg"/></span><span class="social-proof_logo__JI0oy" data-team="cincinnati-bengals" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/cincinnati-bengals.svg"/></span><span class="social-proof_logo__JI0oy" data-team="cleveland-browns" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/cleveland-browns.svg"/></span><span class="social-proof_logo__JI0oy" data-team="dallas-cowboys" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/dallas-cowboys.svg"/></span><span class="social-proof_logo__JI0oy" data-team="denver-broncos" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/denver-broncos.svg"/></span><span class="social-proof_logo__JI0oy" data-team="detroit-lions" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/detroit-lions.svg"/></span><span class="social-proof_logo__JI0oy" data-team="green-bay-packers" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/green-bay-packers.svg"/></span><span class="social-proof_logo__JI0oy" data-team="houston-texans" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/houston-texans.svg"/></span><span class="social-proof_logo__JI0oy" data-team="indianapolis-colts" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/indianapolis-colts.svg"/></span><span class="social-proof_logo__JI0oy" data-team="jacksonville-jaguars" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/jacksonville-jaguars.svg"/></span><span class="social-proof_logo__JI0oy" data-team="kansas-city-chiefs" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/kansas-city-chiefs.svg"/></span><span class="social-proof_logo__JI0oy" data-team="las-vegas-raiders" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/las-vegas-raiders.svg"/></span><span class="social-proof_logo__JI0oy" data-team="los-angeles-chargers" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/los-angeles-chargers.svg"/></span><span class="social-proof_logo__JI0oy" data-team="los-angeles-rams" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/los-angeles-rams.svg"/></span><span class="social-proof_logo__JI0oy" data-team="miami-dolphins" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/miami-dolphins.svg"/></span><span class="social-proof_logo__JI0oy" data-team="minnesota-vikings" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/minnesota-vikings.svg"/></span><span class="social-proof_logo__JI0oy" data-team="new-england-patriots" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/new-england-patriots.svg"/></span><span class="social-proof_logo__JI0oy" data-team="new-orleans-saints" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/new-orleans-saints.svg"/></span><span class="social-proof_logo__JI0oy" data-team="new-york-giants" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/new-york-giants.svg"/></span><span class="social-proof_logo__JI0oy" data-team="new-york-jets" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/new-york-jets.svg"/></span><span class="social-proof_logo__JI0oy" data-team="philadelphia-eagles" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/philadelphia-eagles.svg"/></span><span class="social-proof_logo__JI0oy" data-team="pittsburgh-steelers" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/pittsburgh-steelers.svg"/></span><span class="social-proof_logo__JI0oy" data-team="san-francisco-49ers" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/san-francisco-49ers.svg"/></span><span class="social-proof_logo__JI0oy" data-team="seattle-seahawks" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/seattle-seahawks.svg"/></span><span class="social-proof_logo__JI0oy" data-team="tampa-bay-buccaneers" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/tampa-bay-buccaneers.svg"/></span><span class="social-proof_logo__JI0oy" data-team="tennessee-titans" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/tennessee-titans.svg"/></span><span class="social-proof_logo__JI0oy" data-team="washington-commanders" data-testid="pricingLp.socialProof.teamLogo"><img alt="" aria-hidden="true" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/team-logos/washington-commanders.svg"/></span></div></div><div class="logo-marquee-module__fade___DlQ0R logo-marquee-module__fadeLeft___nwMBk"></div><div class="logo-marquee-module__fade___DlQ0R logo-marquee-module__fadeRight___b1YKK"></div></div></div></section><section class="full-toolkit_fullToolkit__6WDEf" data-testid="pricingLp.fullToolkit"><div class="full-toolkit_content__n3wcM"><div class="section-heading-module__root___UcXaI full-toolkit_sectionHeading__sQWK0"><div class="section-heading-module__eyebrow___eJDbP"><span class="section-heading-module__glyph___UC1V7" aria-hidden="true"></span><p class="text-module__variant-text-small-bold___gEooC section-heading-module__eyebrowLabel___FkOXe">WHAT YOU UNLOCK</p></div><div class="section-heading-module__headingRow___EeQ8y"><h2 class="text-module__variant-text-2xl-black___kMKSy section-heading-module__heading___vTfSl">The Full Toolkit</h2><div class="section-heading-module__trailing___GzgbT"><div aria-label="League" data-testid="pricingLp.fullToolkit.leagueToggle" role="radiogroup" class="segmented-control-module__root___Fg-EI full-toolkit_leagueToggle__e7aHW"><label class="segmented-control-module__item___PgJjc"><input type="radio" class="segmented-control-module__input___Ydcx2" name="«R199a6»" checked="" value="nfl"/><span class="segmented-control-module__content___z94VW"><span class="text-module__variant-text-small-semibold___3oFO8">NFL</span></span></label><label class="segmented-control-module__item___PgJjc"><input type="radio" class="segmented-control-module__input___Ydcx2" name="«R199a6»" value="college"/><span class="segmented-control-module__content___z94VW"><span class="text-module__variant-text-small-semibold___3oFO8">College</span></span></label></div></div></div></div><div class="tabs-module__root___KEBDL full-toolkit_tabs__yJzzh" data-testid="pricingLp.fullToolkit.tabs"><button type="button" data-testid="pricingLp.fullToolkit.tab.fantasy" value="fantasy" class="tab-module__root___yWilz tab-module__active___ESkMN full-toolkit_tab__Vev97"><span class="text-module__variant-text-base-bold___H-l-0">Fantasy</span></button><button type="button" data-testid="pricingLp.fullToolkit.tab.betting" value="betting" class="tab-module__root___yWilz full-toolkit_tab__Vev97"><span class="text-module__variant-text-base-bold___H-l-0">Betting</span></button><button type="button" data-testid="pricingLp.fullToolkit.tab.premiumStatsPro" value="premiumStatsPro" class="tab-module__root___yWilz full-toolkit_tab__Vev97"><span class="text-module__variant-text-base-bold___H-l-0">Premium Stats Pro</span></button><button type="button" data-testid="pricingLp.fullToolkit.tab.premiumStats" value="premiumStats" class="tab-module__root___yWilz full-toolkit_tab__Vev97"><span class="text-module__variant-text-base-bold___H-l-0">Premium Stats</span></button><button type="button" data-testid="pricingLp.fullToolkit.tab.draft" value="draft" class="tab-module__root___yWilz full-toolkit_tab__Vev97"><span class="text-module__variant-text-base-bold___H-l-0">Draft</span></button><button type="button" data-testid="pricingLp.fullToolkit.tab.premiumContent" value="premiumContent" class="tab-module__root___yWilz full-toolkit_tab__Vev97"><span class="text-module__variant-text-base-bold___H-l-0">Premium Content</span></button></div><ul class="tool-card-list-module__root___00qgh" tabindex="0" data-testid="pricingLp.fullToolkit.cardList"><li class="tool-card-list-item-module__root___VtRyH"><article class="tool-card-module__root___5GOMZ" data-testid="pricingLp.fullToolkit.card"><span class="tool-card-media-module__root___AqlYh" data-testid="tool-card-media"><span class="lazy-load-image-module__root___cP7ir tool-card-media-module__slot___iOQr5" data-testid="lazy-load-image"><img src="/consumer-web-proxy/assets/landing-pages/pricing-lp/toolkit/fantasy/fantasy-draft-kit.webp" alt="PFF Fantasy Draft Kit screenshot" loading="lazy" class="lazy-load-image-module__image___QLNGS" style="object-fit:cover;width:100%;height:100%"/></span></span><span class="tool-card-module__body___r24dr"><span class="text-module__variant-text-base-semibold___6g2C0 text-module__color-text___RJEOx tool-card-module__title___OjwL9">Fantasy Draft Kit</span><span class="text-module__variant-text-small-regular___Jq3HP text-module__color-text-secondary___xt12u tool-card-module__description___IVsP3">Every article and tool from our fantasy team, it&#39;s never been easier to get expert advice exactly when you need it.</span></span></article></li><li class="tool-card-list-item-module__root___VtRyH"><article class="tool-card-module__root___5GOMZ" data-testid="pricingLp.fullToolkit.card"><span class="tool-card-media-module__root___AqlYh" data-testid="tool-card-media"><span class="lazy-load-image-module__root___cP7ir tool-card-media-module__slot___iOQr5" data-testid="lazy-load-image"><img src="/consumer-web-proxy/assets/landing-pages/pricing-lp/toolkit/fantasy/mock-draft-simulator.webp" alt="PFF Fantasy Mock Draft Simulator screenshot" loading="lazy" class="lazy-load-image-module__image___QLNGS" style="object-fit:cover;width:100%;height:100%"/></span></span><span class="tool-card-module__body___r24dr"><span class="text-module__variant-text-base-semibold___6g2C0 text-module__color-text___RJEOx tool-card-module__title___OjwL9">Mock Draft Simulator</span><span class="text-module__variant-text-small-regular___Jq3HP text-module__color-text-secondary___xt12u tool-card-module__description___IVsP3">Run real draft scenarios and set personal strategies for opponents.</span></span></article></li><li class="tool-card-list-item-module__root___VtRyH"><article class="tool-card-module__root___5GOMZ" data-testid="pricingLp.fullToolkit.card"><span class="tool-card-media-module__root___AqlYh" data-testid="tool-card-media"><span class="lazy-load-image-module__root___cP7ir tool-card-media-module__slot___iOQr5" data-testid="lazy-load-image"><img src="/consumer-web-proxy/assets/landing-pages/pricing-lp/toolkit/fantasy/live-draft-assistant.webp" alt="PFF Live Draft Assistant screenshot" loading="lazy" class="lazy-load-image-module__image___QLNGS" style="object-fit:cover;width:100%;height:100%"/></span></span><span class="tool-card-module__body___r24dr"><span class="text-module__variant-text-base-semibold___6g2C0 text-module__color-text___RJEOx tool-card-module__title___OjwL9">Live Draft Assistant</span><span class="text-module__variant-text-small-regular___Jq3HP text-module__color-text-secondary___xt12u tool-card-module__description___IVsP3">Use the PFF draft-live model to help you pick the best fantasy team.</span></span></article></li><li class="tool-card-list-item-module__root___VtRyH"><article class="tool-card-module__root___5GOMZ" data-testid="pricingLp.fullToolkit.card"><span class="tool-card-media-module__root___AqlYh" data-testid="tool-card-media"><span class="lazy-load-image-module__root___cP7ir tool-card-media-module__slot___iOQr5" data-testid="lazy-load-image"><img src="/consumer-web-proxy/assets/landing-pages/pricing-lp/toolkit/fantasy/cheat-sheets.webp" alt="PFF fantasy cheat sheet screenshot" loading="lazy" class="lazy-load-image-module__image___QLNGS" style="object-fit:cover;width:100%;height:100%"/></span></span><span class="tool-card-module__body___r24dr"><span class="text-module__variant-text-base-semibold___6g2C0 text-module__color-text___RJEOx tool-card-module__title___OjwL9">Cheat Sheets</span><span class="text-module__variant-text-small-regular___Jq3HP text-module__color-text-secondary___xt12u tool-card-module__description___IVsP3">Quick, ranked list of the best draft options, organized by value.</span></span></article></li><li class="tool-card-list-item-module__root___VtRyH"><article class="tool-card-module__root___5GOMZ" data-testid="pricingLp.fullToolkit.card"><span class="tool-card-media-module__root___AqlYh" data-testid="tool-card-media"><span class="lazy-load-image-module__root___cP7ir tool-card-media-module__slot___iOQr5" data-testid="lazy-load-image"><img src="/consumer-web-proxy/assets/landing-pages/pricing-lp/toolkit/fantasy/redraft-dynasty-rankings.webp" alt="PFF redraft and dynasty rankings screenshot" loading="lazy" class="lazy-load-image-module__image___QLNGS" style="object-fit:cover;width:100%;height:100%"/></span></span><span class="tool-card-module__body___r24dr"><span class="text-module__variant-text-base-semibold___6g2C0 text-module__color-text___RJEOx tool-card-module__title___OjwL9">Redraft &amp; Dynasty Rankings</span><span class="text-module__variant-text-small-regular___Jq3HP text-module__color-text-secondary___xt12u tool-card-module__description___IVsP3">Draft and weekly rankings set by PFF experts to help you set your lineups.</span></span></article></li></ul></div></section><section class="pff-pro-feature_section__Octex" data-testid="pricingLp.pffProFeature"><div class="pff-pro-feature_inner__aSekE"><div class="pff-pro-feature_copy__sNDuk"><div class="pff-pro-feature_title__iP3om"><div data-testid="pricingLp.pffProFeature.heading" class="section-heading-module__root___UcXaI pff-pro-feature_heading__IoJ4r"><div class="section-heading-module__eyebrow___eJDbP"><span class="section-heading-module__glyph___UC1V7" aria-hidden="true"></span><p class="text-module__variant-text-small-bold___gEooC section-heading-module__eyebrowLabel___FkOXe">PFF PRO</p></div><div class="section-heading-module__headingRow___EeQ8y"><h2 class="text-module__variant-text-2xl-black___kMKSy section-heading-module__heading___vTfSl">Learn about PFF Pro</h2></div></div><p class="text-module__variant-text-md-regular___LHGd- text-module__color-text___RJEOx pff-pro-feature_body__ytAfi" data-testid="pricingLp.pffProFeature.body">Redesigned team and player pages with premium-only stats, built-in AI chat, custom data viz, and cleaner exports.</p></div><a href="#compare-plans" role="button" class="button-module__root___n01ZU button-module__variant-primary___jIBYt button-module__emphasis-high___dmcBg" data-testid="pricingLp.pffProFeature.comparePlansCta"><span class="button-module__content___gO1Lt"><span class="text-module__variant-text-base-semibold___6g2C0">Compare Plans</span></span></a></div><div class="pff-pro-feature_media__5zys7" data-testid="pricingLp.pffProFeature.media"><div class="pff-pro-feature_mediaPlaceholder__aM2ae" role="img" aria-label="PFF Pro product preview" data-testid="pricingLp.pffProFeature.mediaPlaceholder"><img alt="" loading="lazy" width="167" height="36" decoding="async" data-nimg="1" class="pff-pro-feature_placeholderMark__juPSy" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/pff-pro-wordmark.svg"/></div></div></div></section><section class="testimonials_testimonials__JYko_" data-testid="pricingLp.testimonials"><div class="testimonials_content__c9Pr2"><div data-testid="pricingLp.testimonials.heading" class="section-heading-module__root___UcXaI testimonials_heading__32QcS"><div class="section-heading-module__eyebrow___eJDbP"><span class="section-heading-module__glyph___UC1V7" aria-hidden="true"></span><p class="text-module__variant-text-small-bold___gEooC section-heading-module__eyebrowLabel___FkOXe">WHAT OUR USERS SAY</p></div><div class="section-heading-module__headingRow___EeQ8y"><h2 class="text-module__variant-text-2xl-black___kMKSy section-heading-module__heading___vTfSl">Backed by elite performers</h2></div></div><div class="testimonials_quotes__heI6x" data-testid="pricingLp.testimonials.quotes"><figure class="quote-card-module__root___REOEV" data-testid="pricingLp.testimonials.quote.kayAdams"><blockquote class="quote-card-module__quote___wuY4R"><p class="text-module__variant-text-base-regular___mo4O6 text-module__color-text___RJEOx quote-card-module__quote-text___bMe-W">“<!-- -->I never want to give surface level analysis, and PFF premium stats are a jackpot when it comes to diving deeper for meaningful research. Getting insight into receiver matchups, coverage matchups, and tendencies is the gift that PFF keeps on giving.<!-- -->”</p></blockquote><hr aria-hidden="true" data-testid="border-separator" class="border-separator-module__root___U2KXD border-separator-module__horizontal___R7bnd border-separator-module__no-margin___C5HD8 quote-card-module__divider___sWLRI"/><figcaption class="quote-card-module__attribution___qbc2Q"><span aria-hidden="true" class="quote-card-avatar-module__root___8ThBQ" data-testid="quote-card-avatar"><img class="testimonials_avatarImage__ezVyE" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/testimonials/kay-adams.webp" alt="Kay Adams" loading="lazy"/></span><span class="quote-card-module__person___nEYg8"><span class="text-module__variant-text-small-regular___Jq3HP text-module__color-text___RJEOx">Kay Adams</span><span class="text-module__variant-text-small-regular___Jq3HP text-module__color-text-secondary___xt12u">Sports broadcaster</span></span></figcaption></figure><figure class="quote-card-module__root___REOEV" data-testid="pricingLp.testimonials.quote.daneBrugler"><blockquote class="quote-card-module__quote___wuY4R"><p class="text-module__variant-text-base-regular___mo4O6 text-module__color-text___RJEOx quote-card-module__quote-text___bMe-W">“<!-- -->With my scouting process, the PFF Premium Stats help provide important context that complements the tape study. The data is a key piece to the puzzle.<!-- -->”</p></blockquote><hr aria-hidden="true" data-testid="border-separator" class="border-separator-module__root___U2KXD border-separator-module__horizontal___R7bnd border-separator-module__no-margin___C5HD8 quote-card-module__divider___sWLRI"/><figcaption class="quote-card-module__attribution___qbc2Q"><span aria-hidden="true" class="quote-card-avatar-module__root___8ThBQ" data-testid="quote-card-avatar"><img class="testimonials_avatarImage__ezVyE" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/testimonials/dane-brugler.webp" alt="Dane Brugler" loading="lazy"/></span><span class="quote-card-module__person___nEYg8"><span class="text-module__variant-text-small-regular___Jq3HP text-module__color-text___RJEOx">Dane Brugler</span><span class="text-module__variant-text-small-regular___Jq3HP text-module__color-text-secondary___xt12u">NFL draft expert</span></span></figcaption></figure><figure class="quote-card-module__root___REOEV" data-testid="pricingLp.testimonials.quote.andrewSiciliano"><blockquote class="quote-card-module__quote___wuY4R"><p class="text-module__variant-text-base-regular___mo4O6 text-module__color-text___RJEOx quote-card-module__quote-text___bMe-W">“<!-- -->PFF stats is an invaluable resource for game prep. We can give the fans context and deeper analysis that goes well beyond the traditional statistics.<!-- -->”</p></blockquote><hr aria-hidden="true" data-testid="border-separator" class="border-separator-module__root___U2KXD border-separator-module__horizontal___R7bnd border-separator-module__no-margin___C5HD8 quote-card-module__divider___sWLRI"/><figcaption class="quote-card-module__attribution___qbc2Q"><span aria-hidden="true" class="quote-card-avatar-module__root___8ThBQ" data-testid="quote-card-avatar"><img class="testimonials_avatarImage__ezVyE" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/testimonials/andrew-siciliano.webp" alt="Andrew Siciliano" loading="lazy"/></span><span class="quote-card-module__person___nEYg8"><span class="text-module__variant-text-small-regular___Jq3HP text-module__color-text___RJEOx">Andrew Siciliano</span><span class="text-module__variant-text-small-regular___Jq3HP text-module__color-text-secondary___xt12u">American sports television anchor</span></span></figcaption></figure></div></div></section><section id="compare-plans" class="compare-plans_section__rEMYP" data-testid="pricingLp.comparePlans"><div class="compare-plans_content__Iua1f"><div class="plan-comparison-table-module__scroller___ntBHT" style="--tw-plan-comparison-min-width:880px" role="region" aria-label="PFF plan comparison" tabindex="0" data-testid="pricingLp.comparePlans.table"><table class="plan-comparison-table-module__table___7bno6"><caption class="plan-comparison-table-module__srOnly___O-2d-">PFF plan comparison</caption><colgroup><col class="plan-comparison-table-module__labelColumn___9dZDB"/><col class="plan-comparison-table-module__planColumn___Dtfn0"/><col class="plan-comparison-table-module__planColumn___Dtfn0"/><col class="plan-comparison-table-module__planColumn___Dtfn0 plan-comparison-table-module__columnBlue___DmN8p"/><col class="plan-comparison-table-module__planColumn___Dtfn0 plan-comparison-table-module__columnYellow___n0D-8"/></colgroup><thead><tr><td class="plan-comparison-table-module__chipCell___NzXaR"></td><td class="plan-comparison-table-module__chipCell___NzXaR"></td><th scope="col" class="plan-comparison-table-module__chipCell___NzXaR"><span class="plan-comparison-table-module__chip___DsWu8 plan-comparison-table-module__chipNeutral___58-Q-"><span class="text-module__variant-text-2xs-narrow-bold___qDdaZ plan-comparison-table-module__chipLabel___IKJ2A">MONTHLY</span></span></th><th scope="col" class="plan-comparison-table-module__chipCell___NzXaR"><span class="plan-comparison-table-module__chip___DsWu8 plan-comparison-table-module__chipBlue___yqsLR"><span class="text-module__variant-text-2xs-narrow-bold___qDdaZ plan-comparison-table-module__chipLabel___IKJ2A">ANNUAL</span></span></th><th scope="col" class="plan-comparison-table-module__chipCell___NzXaR"><span class="plan-comparison-table-module__chip___DsWu8 plan-comparison-table-module__chipYellow___qFGmn"><span class="text-module__variant-text-2xs-narrow-bold___qDdaZ plan-comparison-table-module__chipLabel___IKJ2A">PFF PRO</span></span></th></tr><tr><th scope="col" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__titleCell___pC6zP"><div class="section-heading-module__root___UcXaI"><div class="section-heading-module__eyebrow___eJDbP"><span class="section-heading-module__glyph___UC1V7" aria-hidden="true"></span><p class="text-module__variant-text-small-bold___gEooC section-heading-module__eyebrowLabel___FkOXe">THE LINEUP</p></div><div class="section-heading-module__headingRow___EeQ8y"><h2 class="text-module__variant-text-2xl-black___kMKSy section-heading-module__heading___vTfSl">Compare Plans</h2></div></div></th><th scope="col" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__headerCell___bCOes"><span class="text-module__variant-text-md-semibold___bYK7J plan-comparison-table-module__price___f6GsE">$0</span><span class="text-module__variant-text-base-regular___mo4O6 plan-comparison-table-module__note___KgLOV">Free for all users</span></th><th scope="col" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__headerCell___bCOes"><span class="text-module__variant-text-md-semibold___bYK7J plan-comparison-table-module__price___f6GsE">$9.99/mo</span><span class="plan-comparison-table-module__cta___OWU5k"><a href="/checkout?plan=monthly" role="button" class="button-module__root___n01ZU button-module__variant-neutral___chdZS button-module__emphasis-medium___W6anr button-module__size-lg___FtR18 button-module__full-width___pX4LK" data-testid="pricingLp.comparePlans.monthlyCta"><span class="button-module__content___gO1Lt"><span class="text-module__variant-text-md-semibold___bYK7J">Upgrade</span></span></a></span></th><th scope="col" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__headerCell___bCOes"><span class="text-module__variant-text-md-semibold___bYK7J plan-comparison-table-module__price___f6GsE">$99.99/yr</span><span class="plan-comparison-table-module__cta___OWU5k"><a href="/checkout?plan=annual" role="button" class="button-module__root___n01ZU button-module__variant-primary___jIBYt button-module__emphasis-high___dmcBg button-module__size-lg___FtR18 button-module__full-width___pX4LK" data-testid="pricingLp.comparePlans.annualCta"><span class="button-module__content___gO1Lt"><span class="text-module__variant-text-md-semibold___bYK7J">Go Annual</span></span></a></span></th><th scope="col" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__headerCell___bCOes"><span class="text-module__variant-text-md-semibold___bYK7J plan-comparison-table-module__price___f6GsE">$199.99/yr</span><span class="plan-comparison-table-module__cta___OWU5k"><a href="/checkout?plan=pro" role="button" class="button-module__root___n01ZU button-module__variant-premium___UOwXw button-module__emphasis-high___dmcBg button-module__size-lg___FtR18 button-module__full-width___pX4LK" data-testid="pricingLp.comparePlans.proCta"><span class="button-module__content___gO1Lt"><span class="text-module__variant-text-md-semibold___bYK7J">Go Pro</span></span></a></span></th></tr></thead><tbody><tr><th scope="rowgroup" colspan="5" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__groupCell___IBloh"><span class="text-module__variant-text-base-black___r5FfA">Advanced Stats</span></th></tr><tr><th scope="row" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__labelCell___Oyr2F"><span class="text-module__variant-text-base-regular___mo4O6">Premium Stats</span></th><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__dash___1Loi6" aria-hidden="true"></span><span class="plan-comparison-table-module__srOnly___O-2d-">Not included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__dash___1Loi6" aria-hidden="true"></span><span class="plan-comparison-table-module__srOnly___O-2d-">Not included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td></tr><tr><th scope="row" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__labelCell___Oyr2F"><span class="text-module__variant-text-base-regular___mo4O6">Premium Stats Pro</span></th><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__dash___1Loi6" aria-hidden="true"></span><span class="plan-comparison-table-module__srOnly___O-2d-">Not included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__dash___1Loi6" aria-hidden="true"></span><span class="plan-comparison-table-module__srOnly___O-2d-">Not included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__dash___1Loi6" aria-hidden="true"></span><span class="plan-comparison-table-module__srOnly___O-2d-">Not included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td></tr></tbody><tbody><tr><th scope="rowgroup" colspan="5" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__groupCell___IBloh"><span class="text-module__variant-text-base-black___r5FfA">Data Access</span></th></tr><tr><th scope="row" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__labelCell___Oyr2F"><span class="text-module__variant-text-base-regular___mo4O6">API and programmatic data access</span></th><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__dash___1Loi6" aria-hidden="true"></span><span class="plan-comparison-table-module__srOnly___O-2d-">Not included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__dash___1Loi6" aria-hidden="true"></span><span class="plan-comparison-table-module__srOnly___O-2d-">Not included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__dash___1Loi6" aria-hidden="true"></span><span class="plan-comparison-table-module__srOnly___O-2d-">Not included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td></tr></tbody><tbody><tr><th scope="rowgroup" colspan="5" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__groupCell___IBloh"><span class="text-module__variant-text-base-black___r5FfA">PFF+ Content and Tools</span></th></tr><tr><th scope="row" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__labelCell___Oyr2F"><span class="text-module__variant-text-base-regular___mo4O6">PFF+ exclusive articles and analysis</span></th><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__dash___1Loi6" aria-hidden="true"></span><span class="plan-comparison-table-module__srOnly___O-2d-">Not included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td></tr><tr><th scope="row" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__labelCell___Oyr2F"><span class="text-module__variant-text-base-regular___mo4O6">Fantasy Football Tools</span></th><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="text-module__variant-text-small-regular___Jq3HP">Limited</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td></tr><tr><th scope="row" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__labelCell___Oyr2F"><span class="text-module__variant-text-base-regular___mo4O6">NFL Mock Draft Simulator and Draft Tools</span></th><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="text-module__variant-text-small-regular___Jq3HP">Limited</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td></tr><tr><th scope="row" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__labelCell___Oyr2F"><span class="text-module__variant-text-base-regular___mo4O6">NFL and College Grades</span></th><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__dash___1Loi6" aria-hidden="true"></span><span class="plan-comparison-table-module__srOnly___O-2d-">Not included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td></tr><tr><th scope="row" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__labelCell___Oyr2F"><span class="text-module__variant-text-base-regular___mo4O6">Betting Tools</span></th><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__dash___1Loi6" aria-hidden="true"></span><span class="plan-comparison-table-module__srOnly___O-2d-">Not included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td></tr><tr><th scope="row" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__labelCell___Oyr2F"><span class="text-module__variant-text-base-regular___mo4O6">GURU AI chatbot</span></th><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="text-module__variant-text-small-regular___Jq3HP">Standard Tokens</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="text-module__variant-text-small-regular___Jq3HP">Standard Tokens</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="text-module__variant-text-small-regular___Jq3HP">Standard Tokens</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="text-module__variant-text-small-regular___Jq3HP">Highest Allowance</span></td></tr><tr><th scope="row" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__labelCell___Oyr2F"><span class="text-module__variant-text-base-regular___mo4O6">Buy Additional AI tokens</span></th><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__dash___1Loi6" aria-hidden="true"></span><span class="plan-comparison-table-module__srOnly___O-2d-">Not included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td></tr></tbody><tbody><tr><th scope="rowgroup" colspan="5" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__groupCell___IBloh"><span class="text-module__variant-text-base-black___r5FfA">Free Content</span></th></tr><tr><th scope="row" class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__labelCell___Oyr2F"><span class="text-module__variant-text-base-regular___mo4O6">Articles and newsletters</span></th><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td><td class="plan-comparison-table-module__cell___e-UOC plan-comparison-table-module__valueCell___nrI4n"><span class="plan-comparison-table-module__icon___ExIit" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="plan-comparison-table-module__srOnly___O-2d-">Included</span></td></tr></tbody></table></div></div></section><section id="pricing-plans" class="pricing-tiers_section__jABO5 pricing-tiers_standalone__po6E8" data-testid="pricingLp.pricingTiers.footer"><div class="pricing-tiers_inner__HhFmk"><div data-testid="pricingLp.pricingTiers.footer.heading" class="section-heading-module__root___UcXaI"><div class="section-heading-module__eyebrow___eJDbP"><span class="section-heading-module__glyph___UC1V7" aria-hidden="true"></span><p class="text-module__variant-text-small-bold___gEooC section-heading-module__eyebrowLabel___FkOXe">CHOOSE YOUR ACCESS</p></div><div class="section-heading-module__headingRow___EeQ8y"><h2 class="text-module__variant-text-2xl-black___kMKSy section-heading-module__heading___vTfSl">Three Tiers. One Source</h2></div></div><div class="pricing-tiers_grid__zMbjj"><article class="plan-card-module__root___8iFRv plan-card-module__variant-monthly___5vpzJ" aria-label="MONTHLY" data-testid="pricingLp.pricingTiers.footer.monthly"><header class="plan-band-module__band___Korf- plan-band-module__variant-monthly___WMgGb plan-band-module__radius-top___touxY plan-band-module__size-md___ihmFy"><span class="plan-band-module__start___juI8D"><span class="text-module__variant-text-small-bold___gEooC plan-card-module__tier___vYX4Y">MONTHLY</span></span><span class="plan-band-module__end___79eQl"><img alt="PFF+" loading="lazy" width="49.17" height="10" decoding="async" data-nimg="1" class="plan-tier-card_logo__xImDO" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/pff-plus-wordmark.svg"/></span></header><div class="plan-card-module__pricing___Gfhin"><div class="plan-card-module__flags___-ynRo"><span class="text-module__variant-text-xs-narrow-bold___2iQEd plan-card-module__eyebrow___iZS6B">NEW - PRICE DROP!</span><span class="text-module__variant-text-2xs-narrow-bold___qDdaZ plan-card-module__badge___89Qyq">MOST FLEXIBLE</span></div><p class="plan-card-module__price___U2X-J"><span class="text-module__variant-text-4xl-black___6V7R9 plan-card-module__priceAmount___6H3Bm">$9.99</span></p><p class="text-module__variant-text-base-regular___mo4O6 plan-card-module__billingNote___dBlxh">per month, billed monthly</p></div><ul class="plan-card-module__features___5L8WQ"><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">PFF+ content and tools</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Articles, Fantasy tools, NFL and College tools, Betting</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Access to mock draft simulator</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Guru AI football chatbot insights with limited tokens</span></li></ul><div class="plan-card-module__cta___Lk5HA"><a href="/checkout?plan=monthly" role="button" class="button-module__root___n01ZU button-module__variant-neutral___chdZS button-module__emphasis-medium___W6anr button-module__size-lg___FtR18 button-module__full-width___pX4LK" data-testid="pricingLp.pricingTiers.footer.monthly.cta"><span class="button-module__content___gO1Lt"><span class="text-module__variant-text-md-semibold___bYK7J">Choose Monthly</span></span></a></div></article><article class="plan-card-module__root___8iFRv plan-card-module__variant-annual___Jw6nA" aria-label="ANNUAL" data-testid="pricingLp.pricingTiers.footer.annual"><header class="plan-band-module__band___Korf- plan-band-module__variant-annual___4BSL- plan-band-module__radius-top___touxY plan-band-module__size-md___ihmFy"><span class="plan-band-module__start___juI8D"><span class="text-module__variant-text-small-bold___gEooC plan-card-module__tier___vYX4Y">ANNUAL</span></span><span class="plan-band-module__end___79eQl"><img alt="PFF+" loading="lazy" width="49.17" height="10" decoding="async" data-nimg="1" class="plan-tier-card_logo__xImDO" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/pff-plus-wordmark.svg"/></span></header><div class="plan-card-module__pricing___Gfhin"><div class="plan-card-module__flags___-ynRo"><span class="text-module__variant-text-xs-narrow-bold___2iQEd plan-card-module__eyebrow___iZS6B">NEW - PRICE DROP!</span><span class="text-module__variant-text-2xs-narrow-bold___qDdaZ plan-card-module__badge___89Qyq">BEST VALUE</span></div><p class="plan-card-module__price___U2X-J"><span class="text-module__variant-text-4xl-black___6V7R9 plan-card-module__priceAmount___6H3Bm">$99.99</span><span class="text-module__variant-text-base-narrow-bold___AEonE plan-card-module__subPrice___df9qE">$8.33 /mo</span></p><p class="text-module__variant-text-base-regular___mo4O6 plan-card-module__billingNote___dBlxh">per year, billed annually</p></div><ul class="plan-card-module__features___5L8WQ"><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">PFF+ content and tools</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Articles, Fantasy tools, NFL and College tools, Betting</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Access to mock draft simulator</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Guru AI football chatbot insights with limited tokens</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Premium Stats</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Micro transactions available for additional tokens</span></li></ul><div class="plan-card-module__cta___Lk5HA"><a href="/checkout?plan=annual" role="button" class="button-module__root___n01ZU button-module__variant-primary___jIBYt button-module__emphasis-high___dmcBg button-module__size-lg___FtR18 button-module__full-width___pX4LK" data-testid="pricingLp.pricingTiers.footer.annual.cta"><span class="button-module__content___gO1Lt"><span class="text-module__variant-text-md-semibold___bYK7J">Go Annual</span></span></a></div></article><article class="plan-card-module__root___8iFRv plan-card-module__variant-pro___Fo4fc" aria-label="PFF PRO" data-testid="pricingLp.pricingTiers.footer.pro"><header class="plan-band-module__band___Korf- plan-band-module__variant-pro___r7Alx plan-band-module__radius-top___touxY plan-band-module__size-md___ihmFy"><span class="plan-band-module__start___juI8D"><span class="text-module__variant-text-small-bold___gEooC plan-card-module__tier___vYX4Y">PFF PRO</span></span><span class="plan-band-module__end___79eQl"><img alt="PFF PRO" loading="lazy" width="55.5" height="12" decoding="async" data-nimg="1" class="plan-tier-card_logo__xImDO" style="color:transparent" src="/consumer-web-proxy/assets/landing-pages/pricing-lp/pff-pro-wordmark.svg"/></span></header><div class="plan-card-module__pricing___Gfhin"><div class="plan-card-module__flags___-ynRo"><span class="text-module__variant-text-2xs-narrow-bold___qDdaZ plan-card-module__badge___89Qyq">ELITE</span></div><p class="plan-card-module__price___U2X-J"><span class="text-module__variant-text-4xl-black___6V7R9 plan-card-module__priceAmount___6H3Bm">$199.99</span><span class="text-module__variant-text-base-narrow-bold___AEonE plan-card-module__subPrice___df9qE">$16.67 /mo</span></p><p class="text-module__variant-text-base-regular___mo4O6 plan-card-module__billingNote___dBlxh">per year, billed annually</p></div><ul class="plan-card-module__features___5L8WQ"><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">PFF+ content and tools</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Articles, Fantasy tools, NFL and College tools, Betting</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Access to mock draft simulator</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Guru AI with higher base token level</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Upgraded Premium Stats Pro</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Micro transactions available for additional tokens</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Revamped player and team pages</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Enhanced data and visualizations</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Improved Interface</span></li><li class="plan-card-feature-module__root___InH-U"><span class="plan-card-feature-module__icon___s-e6j" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#checkmark"></use></svg></span><span class="text-module__variant-text-base-regular___mo4O6 plan-card-feature-module__label___n88xF">Programmatic data access for modeling (API/scrape)</span></li></ul><div class="plan-card-module__cta___Lk5HA"><a href="/checkout?plan=pro" role="button" class="button-module__root___n01ZU button-module__variant-premium___UOwXw button-module__emphasis-high___dmcBg button-module__size-lg___FtR18 button-module__full-width___pX4LK" data-testid="pricingLp.pricingTiers.footer.pro.cta"><span class="button-module__content___gO1Lt"><span class="text-module__variant-text-md-semibold___bYK7J">Go Pro</span></span></a></div></article></div></div></section><section class="faq-module__root___zOm2f" data-testid="pricingLp.faq"><div class="faq-module__content___ZkFUV"><div class="section-heading-module__root___UcXaI faq-module__heading___4WMrP"><div class="section-heading-module__eyebrow___eJDbP"><span class="section-heading-module__glyph___UC1V7" aria-hidden="true"></span><p class="text-module__variant-text-small-bold___gEooC section-heading-module__eyebrowLabel___FkOXe">Support</p></div><div class="section-heading-module__headingRow___EeQ8y"><h2 class="text-module__variant-text-2xl-black___kMKSy section-heading-module__heading___vTfSl">Frequently Asked Questions</h2></div></div><div class="faq-accordion-module__root___-dj8N faq-module__accordion___vQ6az"><div class="faq-accordion-item-module__root___Z-9WB faq-accordion-item-module__open___MWhKD" data-state="open"><h3 class="text-module__variant-text-md-regular___LHGd- faq-accordion-item-module__heading___uB0lE"><button type="button" id="tw-faq-accordion-question-«R6ja6»" class="faq-accordion-item-module__question___vv9fI" aria-expanded="true" aria-controls="tw-faq-accordion-answer-«R6ja6»"><span class="faq-accordion-item-module__label___EASSj">What types of subscriptions does PFF offer?</span><span class="faq-accordion-item-module__chevron___cWhXL" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#arrow-down"></use></svg></span></button></h3><div class="faq-accordion-item-module__collapse___d6d-O"><div><div id="tw-faq-accordion-answer-«R6ja6»" role="region" aria-labelledby="tw-faq-accordion-question-«R6ja6»" class="faq-accordion-item-module__answer___9Vx-i"><div class="text-module__variant-text-base-regular___mo4O6 faq-accordion-item-module__answer-text___IVbxr">PFF offers three subscriptions. Our monthly subscription costs just $9.99/month and covers all of our premium articles covering fantasy, NFL draft, betting and a lot more NFL and NCAA coverage alongside our fantasy and betting tools. Our PFF+ annual subscription at $119.99 covers all of that plus access to Premium Stats that gives you insights into the same data all of the NFL teams and hundreds of NCAA teams use to prepare for their games. Our tier, designed at experts and power users, is PFF Pro that costs $199.99 and gives you additional stats, data as well as a ready to use API and CLI to work against.</div></div></div></div></div><div class="faq-accordion-item-module__root___Z-9WB" data-state="closed"><h3 class="text-module__variant-text-md-regular___LHGd- faq-accordion-item-module__heading___uB0lE"><button type="button" id="tw-faq-accordion-question-«Raja6»" class="faq-accordion-item-module__question___vv9fI" aria-expanded="false" aria-controls="tw-faq-accordion-answer-«Raja6»"><span class="faq-accordion-item-module__label___EASSj">How often will I be billed for PFF+?</span><span class="faq-accordion-item-module__chevron___cWhXL" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#arrow-down"></use></svg></span></button></h3><div class="faq-accordion-item-module__collapse___d6d-O"><div><div id="tw-faq-accordion-answer-«Raja6»" role="region" aria-labelledby="tw-faq-accordion-question-«Raja6»" class="faq-accordion-item-module__answer___9Vx-i" aria-hidden="true"><div class="text-module__variant-text-base-regular___mo4O6 faq-accordion-item-module__answer-text___IVbxr">Monthly subscriptions are billed on the same day each month, while annual subscriptions are billed on the same day each year.</div></div></div></div></div><div class="faq-accordion-item-module__root___Z-9WB" data-state="closed"><h3 class="text-module__variant-text-md-regular___LHGd- faq-accordion-item-module__heading___uB0lE"><button type="button" id="tw-faq-accordion-question-«Reja6»" class="faq-accordion-item-module__question___vv9fI" aria-expanded="false" aria-controls="tw-faq-accordion-answer-«Reja6»"><span class="faq-accordion-item-module__label___EASSj">What happened to PFF Edge and PFF Elite?</span><span class="faq-accordion-item-module__chevron___cWhXL" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#arrow-down"></use></svg></span></button></h3><div class="faq-accordion-item-module__collapse___d6d-O"><div><div id="tw-faq-accordion-answer-«Reja6»" role="region" aria-labelledby="tw-faq-accordion-question-«Reja6»" class="faq-accordion-item-module__answer___9Vx-i" aria-hidden="true"><div class="text-module__variant-text-base-regular___mo4O6 faq-accordion-item-module__answer-text___IVbxr">Former subscription types, including PFF Edge and PFF Elite, have been folded into PFF+.</div></div></div></div></div><div class="faq-accordion-item-module__root___Z-9WB" data-state="closed"><h3 class="text-module__variant-text-md-regular___LHGd- faq-accordion-item-module__heading___uB0lE"><button type="button" id="tw-faq-accordion-question-«Rija6»" class="faq-accordion-item-module__question___vv9fI" aria-expanded="false" aria-controls="tw-faq-accordion-answer-«Rija6»"><span class="faq-accordion-item-module__label___EASSj">Does PFF offer API access to its data?</span><span class="faq-accordion-item-module__chevron___cWhXL" aria-hidden="true"><svg focusable="false" height="16" width="16"><use xlink:href="/consumer-web-proxy/assets/svg/icons-symbols.svg#arrow-down"></use></svg></span></button></h3><div class="faq-accordion-item-module__collapse___d6d-O"><div><div id="tw-faq-accordion-answer-«Rija6»" role="region" aria-labelledby="tw-faq-accordion-question-«Rija6»" class="faq-accordion-item-module__answer___9Vx-i" aria-hidden="true"><div class="text-module__variant-text-base-regular___mo4O6 faq-accordion-item-module__answer-text___IVbxr">Yes, with the PFF Pro subscription users can access our wealth of NCAA and NFL data via an API or CLI. Visit https://developer.pff.com for more information.</div></div></div></div></div></div></div></section><footer class="site-footer_footer__GnNEx" data-testid="pricingLp.siteFooter"><nav class="site-footer_links__Muldm" aria-label="PFF site links"><a class="site-footer_link__Q1Yhe" href="https://www.pff.com" data-testid="pricingLp.siteFooter.home">PFF Home</a><a class="site-footer_link__Q1Yhe" href="https://www.pff.com/privacy" data-testid="pricingLp.siteFooter.privacy">Privacy Policy</a><a class="site-footer_link__Q1Yhe" href="https://www.pff.com/terms" data-testid="pricingLp.siteFooter.terms">Terms of Service</a></nav><p class="site-footer_copyright__lxLlC">© <!-- -->2026<!-- --> Pro Football Focus. All rights reserved.</p></footer></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"posthogBootstrap":{"distinctID":"ba288eb0-7c6d-47f2-81f2-f670bbf6c7c0","featureFlags":{"account-enable-accessibility-statement":false,"account-is-dob-editable":false,"account-is-profile-email-editable":false,"app-account-is-dob-editable":false,"betting-games-list-upsell-test":false,"betting-screen-default":false,"draft-bracket-engagement-stats":false,"draft-bracket-player-props":false,"enable-apple-social-sign-in":false,"enable-app-onboarding-flow":false,"enable-facebook-sign-in":false,"enable-fantasy-mock-draft-card-feed-widget":false,"enable-google-social-sign-in":false,"enable-mock-draft-card-feed-widget":false,"enable-network-error-message":false,"enable-new-heap-flow-conditionally":false,"enable-terms-and-privacy-flow":false,"fantasy-hide-matchups-quick-guide":false,"fantasy-my-leagues-direct-users-to-in-season-experience":false,"fantasy-ros-rankings-tab":false,"fantasy-show-in-season-idp-scoring-types-and-positions":false,"fantasy-show-inseason-superflex-position-filter":false,"fantasy-show-matchups-csv-export-button":false,"fantasy-show-quick-guide-for-matchups":false,"fantasy-show-waiver-targets":false,"first-td-homepage-widget":false,"fmds-experimental-league-settings":false,"fmds-subscribe-banner":false,"grades-feed-filter":false,"is-profile-email-editable":false,"mds-draft-simple-subscribe-modal":false,"mds-homepage-widget-enabled":false,"mds-locked-feature-direct-link":false,"mds-multiplayer-podium-image":false,"mds-page-header-ads":false,"merlin-accounts-maintenance-mode":false,"merlin-custom-big-board-save-author":false,"merlin-custom-big-board-visibility-toggle":false,"merlin-enable-mds-sponsor-ads":false,"merlin-mds-leaderboard-by-team-fans":false,"merlin-mds-leaderboard-grades":false,"merlin-mds-leaderboard-percentage":false,"merlin-mds-leaderboard-player-popularity":false,"merlin-show-expected-points-in-navigation-bar":false,"merlin-show-new-sitenav":false,"onboarding-flow-enabled":false,"pickem-show-feed-card":false,"player-profiles-activate-offseason-ncaa":false,"player-profiles-grades-explainer-text":false,"player-profile-show-last-updated":false,"player-profile-show-latest-news-widget":false,"player-profiles-show-fantasy-insights":false,"player-profiles-waiver-wire-grades-tab":false,"player-profiles-widget-titles-seo":false,"player-props-homepage-widget-enabled":false,"premium-stats-team-management":false,"privacy-check-enabled":false,"show-favourite-players":false,"show-injury-carousel-in-feed":false,"show-mds-draft-bracket-banner":false,"show-native-change-password":false,"show-new-mock-draft-card-feed-widget-design":false,"show-sync-league-upsell-modal":false,"smart-bets-best-bets-tab":false,"smart-bets-sportsbook-filter":false,"subscribe-annual-headline":false,"use-apple-login":false,"use-face-id":false,"use-yahoo-lda-extension":false,"betting-player-prop-dev-mode":false,"fmds-enable-hide-suggestions":false,"merlin-nfl-mds-set-default-favorite-teams":false,"player-props-show-subscribe-paywall-modal":false,"premium-api-token-mode":"off","premium-edge-secret-mode":"off","premium-rate-limit-mode":"off","account-favorites-enabled":true,"account-subscription-discount-copy":"Variant-B","betting-enable-first-touchdown":true,"betting-enable-new-key-insights":true,"betting-enable-new-player-props-experience":true,"account-subscription-copy-update":true,"big-board-show-waa":true,"cancel-flow-retention-variant":"variant-1","common-active-cta-promo-code":"empty","common-link-to-new-ncaa-player-profiles":true,"common-link-to-new-player-profiles":true,"consumer-expo-clerk-auth-enabled":true,"content-paywall-type":"light","create-account-subtitle":"Create-an-account-for-FREE-today","draft-bracket-board-actions":true,"draft-bracket-draft-card":true,"draft-bracket-enabled":true,"draft-bracket-expert-brackets":true,"draft-bracket-force-lock":true,"draft-bracket-force-state-rounds":"All-rounds-post","draft-bracket-multiple-entries":true,"draft-bracket-private-leagues":true,"draft-bracket-score-finalization-banner":"FF-off","draft-bracket-show-projected-points":true,"draft-bracket-similarity-stats":true,"draft-bracket-team-leaderboard":true,"enable-bookmarks-reading-list":true,"enable-bottom-tab-draft":true,"enable-bottom-tab-fantasy":true,"enable-bottom-tab-feeds":true,"enable-espn-draft-flow":true,"enable-manual-league-sync":true,"enable-feed-categories":true,"enable-mock-draft-card-draft-widget":true,"enable-yahoo-draft-flow":true,"fantasy-analyst-ranking-banner":true,"fantasy-default-rankings-tab":"Variant-1","fantasy-lda-enable-live-espn":true,"fantasy-lda-enable-live-manual":true,"fantasy-lda-enable-new-flda-be":true,"fantasy-lda-manual-drafting":true,"fantasy-lda-show-clock":true,"fantasy-lda-use-espn-chrome-store-extension":true,"fantasy-matchup-row-expansion":true,"fantasy-show-lda-platform-keeper-info-modal":"HIDE","fantasy-show-mds-platform-keeper-info-modal":"HIDE","fantasy-show-my-team":true,"fantasy-show-new-draft-rankings-paywall":"control","fantasy-show-paywall-for-matchups":true,"fantasy-show-paywall-for-rankings":true,"fantasy-show-paywall-for-start-sit":true,"fantasy-show-paywall-for-waiver-targets":true,"fantasy-show-start-sit":true,"fmds-contextual-sync-banner":"dont-show-banner-string","fmds-homepage-widget-copy":"Variant","fmds-homepage-widget-enabled":true,"fmds-homepage-widget-image":"Control","fmds-lda-end-screen-cta-experiment":"Option-B","fmds-paywall-next-round-availability":true,"fmds-show-draft-state-banner":true,"fmds-show-draft-strategy":true,"fmds-show-league-type-settings":true,"fmds-show-next-round-suggestions":true,"fmds-show-opponents-draft-strategy":true,"fmds-show-player-comparison-button":true,"fmds-show-undo-pick-button":true,"is-draft-season":true,"lda-show-draft-state-banner":true,"league-sync-enable-espn-sync":true,"mds-ab-test-previous-picks":"FULL_DRAFT","mds-awards-enabled":true,"mds-awards-streak-launch-date":"explicit","mds-daily-draft-limit-reached-modal":"Variant-A","mds-draft-grade-rank":true,"mds-enable-disable-draft-tabs":true,"mds-enable-mock-draft-assistant":true,"mds-grade-suggestions-experiment":"Variant-A","mds-grade-upsell-modal-delay":"Control","mds-homepage-widget-copy":"Control","mds-homepage-widget-image":"Control","mds-new-share-button-design-experiment":"Option-A","mds-page-ads-enabled":true,"mds-prominent-new-draft-cta":"Option-A","mds-show-grade-explainer":true,"mds-prominent-start-draft-cta":"Option-A","mds-subscribe-app-hero-image":"OptionB","mds-trade-screen-paid-user":"Variant","mds-trade-screen-non-paid-user":"Variant","mds-undo-pick":true,"mds-upsell-modal-variation":"Option-B---SrcSet","merlin-account-api-keys-enabled":true,"merlin-article-paywall-ab-test":"paywall_with_short_copy","merlin-clerk-auth-enabled":true,"merlin-custom-big-board-add-players":true,"merlin-custom-big-board-auth-wall":true,"merlin-custom-big-board-clear-board":true,"merlin-custom-big-board-college-team-filter":true,"merlin-custom-big-board-draft-with-board":true,"merlin-custom-big-board-edit":true,"merlin-custom-big-board-filter-position":true,"merlin-custom-big-board-my-boards":true,"merlin-custom-big-board-staff-picks":"Disabled","merlin-custom-big-board-team-needs":true,"merlin-custom-big-board-trending":true,"merlin-enable-gtag":true,"merlin-enable-mds-limited-drafts":true,"merlin-enable-mds-paywalls":true,"merlin-game-view-best-bets-navigation-experiment":"Control","merlin-mds-custom-board":true,"merlin-mds-leaderboard-all-rounds":true,"merlin-mds-save-cpu-picks":true,"merlin-mds-show-history":true,"merlin-premium-cta-in-nav":true,"merlin-show-author-headshots":true,"merlin-show-big-board-customizer":true,"merlin-show-mds-multiplayer":true,"merlin-show-mds-multiplayer-nav":true,"merlin-show-new-nav-dropdown":true,"merlin-show-rank-on-ticker":true,"merlin-show-rank-on-match-center":true,"merlin-two-page-checkout":true,"native-article-hyperlinks":true,"nfl-power-rankings-paywall-experience":true,"player-grades-paywall-experience":true,"player-profiles-activate-offseason-nfl":true,"player-profiles-early-bird-banner-text":"Off","player-profiles-hide-grades-for-current-season":true,"player-profiles-natural-language-summary":true,"player-profiles-show-sticky-hero":true,"player-profiles-waiver-wire":true,"player-props-show-table-glossary":true,"premium-stats-changelog":true,"premium-stats-guru-help-hub":true,"premium-stats-onboarding":true,"premium-stats-team-reports":true,"premium-tier-gating":true,"show-adp-in-fantasy-draft-rank-card":true,"ps-team-profile-schedule-show-sos-summary":true,"show-id-me-verify-button":true,"show-last-season-as-default":true,"show-manual-league-settings":true,"show-proj-in-fantasy-draft-rank-card":true,"smart-bets-key-insights-tab":true,"store-subscription-data-in-session-storage-for-gtm":true,"subscribe-2026-plans-enabled":true,"subscribe-enable-apple-pay":true,"subscribe-insights-image":"Control","subscribe-left-panel-variant":"control","use-facebook-login":true,"subscribe-monthly-variant":"premium-monthly-access","use-google-login":true,"yahoo-nfl-game-key":"470","native-upgrade-link":"PFF-in-Apple-App-Store","onboarding-variations":"A","ppt_weekly_free_game_ids":"variant-1"},"featureFlagPayloads":{"account-subscription-discount-copy":"EXCLUSIVE APP OFFER","cancel-flow-retention-variant":"variant-1","content-paywall-type":"light","create-account-subtitle":"Create an account for FREE today.","draft-bracket-force-state-rounds":{"1":"post","2":"post","3":"post"},"fantasy-default-rankings-tab":"Draft Rankings","fantasy-show-lda-platform-keeper-info-modal":[],"fantasy-show-mds-platform-keeper-info-modal":[],"fantasy-show-new-draft-rankings-paywall":"control","fmds-contextual-sync-banner":{"bannerText":"ESPN league sync is now supported! Click here to get started.","showBanner":false},"fmds-homepage-widget-copy":"Prep like a pro with PFF’s Fantasy Mock Draft Simulator","fmds-homepage-widget-image":"/images/fmds-kickoff-widget-1.webp","fmds-lda-end-screen-cta-experiment":"Option B","mds-ab-test-previous-picks":"FULL_DRAFT","mds-awards-streak-launch-date":"2024-04-14 00:00:00","mds-daily-draft-limit-reached-modal":{"copy":"Get unlimited mock drafts and access the complete draft system","newModal":true,"variant":"Variant A"},"mds-grade-suggestions-experiment":{"variant":"Variant A"},"mds-grade-upsell-modal-delay":5,"mds-homepage-widget-copy":"The #1 Mock Draft Sim in the Game","mds-homepage-widget-image":"/images/mds-kickoff-widget-3.webp","mds-new-share-button-design-experiment":"Option A","mds-prominent-new-draft-cta":{"prominentCta":true,"variant":"Option A"},"mds-prominent-start-draft-cta":{"prominentCta":true,"variant":"Option A"},"mds-subscribe-app-hero-image":"/assets/images/subscribe-image-july-2025.webp","mds-trade-screen-paid-user":{"variant":"Variant"},"mds-trade-screen-non-paid-user":{"variant":"Variant"},"mds-upsell-modal-variation":{"images":[{"lg":"https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-1-lg.webp, https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-1-lg-2x.webp 2x","sm":"https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-1-sm.webp, https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-1-sm-2x.webp 2x"},{"lg":"https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-2-lg.webp, https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-2-lg-2x.webp 2x","sm":"https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-2-sm.webp, https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-2-sm-2x.webp 2x"},{"lg":"https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-3-lg.webp, https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-3-lg-2x.webp 2x","sm":"https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-3-sm.webp, https://beta.pff-qa.com/assets/subscribe/mds-upsell-modal/experiment-1b-3-sm-2x.webp 2x"}],"variant":"Option B"},"merlin-article-paywall-ab-test":"paywall_with_short_copy","merlin-custom-big-board-staff-picks":{},"merlin-game-view-best-bets-navigation-experiment":"Best Bets","subscribe-left-panel-variant":"control","subscribe-monthly-variant":"premium-monthly-access","yahoo-nfl-game-key":"470","native-upgrade-link":"https://apps.apple.com/us/app/pff-fantasy-betting-news/id1582525285","onboarding-variations":{"order":["profile","nflTeam","topic"],"variant":"A"},"common-active-cta-promo-code":"","draft-bracket-score-finalization-banner":"","player-profiles-early-bird-banner-text":"","subscribe-insights-image":"","ppt_weekly_free_game_ids":""}},"_sentryTraceData":"79f8916fae8148b78121a2e813530bac-8675006ed43108a2-0","_sentryBaggage":"sentry-environment=prod,sentry-release=0.13.63,sentry-public_key=a921e2cb9b5f7af3391c177202f9eae4,sentry-trace_id=79f8916fae8148b78121a2e813530bac,sentry-transaction=%2Flanding-pages%2Fpricing,sentry-sampled=false"},"__N_SSP":true},"page":"/landing-pages/pricing","query":{},"buildId":"0.13.63","assetPrefix":"/consumer-web-proxy","runtimeConfig":{"version":"0.13.63"},"isFallback":false,"isExperimentalCompile":false,"gssp":true,"scriptLoader":[]}</script>
+      </main>
+<div class="m-footer d-print-none" data-gtm-id="footer">
+
+
+</div>
+
+    </div>
+
+    <script defer src="/js/shared_nav-15d001e12ec5cd07a974f24ff4e6e5a4.js?vsn=d"></script>
+    <script defer src="/js/site_nav_next-1bbb495af58076cc4994c520e6893b39.js?vsn=d"></script>
+
+      <script defer src="/js/default_entry-29ace54c6195de26dc50e042989857b5.js?vsn=d"></script>
+
+      <script defer src="/js/lite_yt_embed_entry-654393aae9a055c826328ec1eb7f400f.js?vsn=d"></script>
+
+    <!--
+      Klaviyo Site Tracking Setup:
+      1. Initialize _klOnsite queue unconditionally (no cookies, just an array) - enables event queueing
+      2. Track page views and identify users unconditionally (queues in _klOnsite)
+      3. Load actual Klaviyo library only after marketing consent (sets cookies, requires consent)
+    -->
+    <script type="text/javascript">
+      !function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();
+      (!'') ||
+        klaviyo.push(['identify', {
+          'email' : ''
+        }]
+      );
+      klaviyo.track("Viewed Page", {
+        url: window.location.href
+      })
+    </script>
+    <script type="text/plain" data-cookieconsent="marketing" src="https://static.klaviyo.com/onsite/js/U7MhhG/klaviyo.js"></script>
+  </body>
+</html>

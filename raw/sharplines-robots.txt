@@ -1,0 +1,50 @@
+URL: https://sharplines.ai/robots.txt\nSTATUS: 200\n\nUser-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sharplines.ai/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+
+# Disallow authenticated-only pages
+Disallow: /dashboard
+Disallow: /account
+Disallow: /settings
+Disallow: /history
+Disallow: /game/
+Disallow: /ai-chat
+Disallow: /team-stats
+Disallow: /analysis
+Disallow: /billing/
+Disallow: /payment/
+Disallow: /subscription/success
+Disallow: /main
+Disallow: /enhanced
+Disallow: /referrals
+Disallow: /delete-account
+
+# Public pages — explicitly allowed
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /subscription
+Allow: /login
+Allow: /signup
+Allow: /terms
+Allow: /privacy
+Allow: /disclaimer
+Allow: /creators
+Allow: /creators/apply
+Allow: /march-madness
+Allow: /world-cup-2026-predictions
+Allow: /nba-predictions
+Allow: /nfl-predictions
+Allow: /mlb-predictions
+Allow: /nhl-predictions
+Allow: /soccer-predictions
+Allow: /ncaa-basketball-predictions
+Allow: /premier-league-predictions
+Allow: /la-liga-predictions
+Allow: /champions-league-predictions

@@ -1,0 +1,101 @@
+{
+ "domain": "github.com/chanzer0/MLB-DFS-Tools",
+ "type": "open-source-repo",
+ "tech_stack": {
+  "frontend": "none (library/notebooks)",
+  "backend": "Python",
+  "database": "n/a",
+  "cloud": "n/a",
+  "cdn": "n/a",
+  "citations": [
+   "raw/gh-meta-chanzer0__MLB-DFS-Tools.json",
+   "raw/gh-tree-chanzer0__MLB-DFS-Tools.json"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "none",
+  "websocket_endpoints": [],
+  "rate_limits": "n/a (client-side lib)",
+  "citations": [
+   "raw/gh-tree-chanzer0__MLB-DFS-Tools.json"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "MLB DFS optimizer + GPP contest simulation",
+   "where": "src/mlb_optimizer.py, src/mlb_gpp_simulator.py",
+   "evidence": "files in tree; README description 'optimizer and gpp contest simulator'"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "n/a (research repo)",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "GPP contest simulator (src/mlb_gpp_simulator.py)",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "raw/gh-tree-chanzer0__MLB-DFS-Tools.json"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "NOT CONFIRMED"
+  ],
+  "citations": [
+   "raw/gh-tree-chanzer0__MLB-DFS-Tools.json"
+  ]
+ },
+ "product_limits": {
+  "limits": "open source, no caps",
+  "upgrade_triggers": "n/a",
+  "citation": "raw/gh-meta-chanzer0__MLB-DFS-Tools.json"
+ },
+ "pricing": {
+  "web": "free/open source",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "raw/gh-meta-chanzer0__MLB-DFS-Tools.json"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  ".DS_Store",
+  ".gitignore",
+  "README.md",
+  "dk_data",
+  "dk_data/.gitignore",
+  "fd_data",
+  "fd_data/.gitignore",
+  "ikb_data",
+  "ikb_data/.gitignore",
+  "output",
+  "output/.gitignore",
+  "readme_images",
+  "readme_images/contest_structure_input.png",
+  "readme_images/directory.png",
+  "readme_images/dk_import.png",
+  "readme_images/download.png",
+  "readme_images/eth_qr_code.png",
+  "readme_images/fd_import.png",
+  "readme_images/opto_output.png",
+  "readme_images/shell.png",
+  "readme_images/sim_output.png",
+  "readme_images/team_stacks.png",
+  "readme_images/tournament_lineups.png",
+  "readme_images/usage.png",
+  "sample.config.json"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "stars": 6,
+  "license": null,
+  "archived": false,
+  "pushed_at": "2024-07-22T22:37:58Z",
+  "description": "A great set of free-to-use MLB dfs tools, such as an optimizer and gpp contest simulator",
+  "timestamp": "2026-09-08T14:07:11.916123"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

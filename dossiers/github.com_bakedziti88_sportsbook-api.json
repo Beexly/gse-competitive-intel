@@ -1,0 +1,69 @@
+{
+ "domain": "github.com/bakedziti88/sportsbook-api",
+ "type": "open-source-repo",
+ "disposition": "live (repo)",
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "customer_pain": [],
+ "discovered_targets": [],
+ "tech_stack": {
+  "frontend": "none",
+  "backend": "JavaScript scraper/aggregator API",
+  "database": "NOT CONFIRMED",
+  "cloud": "n/a",
+  "cdn": "n/a",
+  "citations": [
+   "raw/probe2_gh-bakedziti88.txt (GitHub API metadata)"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "returns odds & spreads scraped from FanDuel/DraftKings apps (per repo description)"
+  ],
+  "graphql_schema": "none",
+  "websocket_endpoints": [],
+  "rate_limits": "n/a",
+  "citations": [
+   "raw/probe2_gh-bakedziti88.txt"
+  ]
+ },
+ "pricing": {
+  "web": "free/open source",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "raw/probe2_gh-bakedziti88.txt"
+  ]
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "FanDuel, DraftKings (scraped)"
+  ],
+  "citations": [
+   "raw/probe2_gh-bakedziti88.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": "open source; last pushed 2022-12-13 (stale); no license file (default all-rights-reserved)",
+  "upgrade_triggers": "n/a",
+  "citation": "raw/probe2_gh-bakedziti88.txt"
+ },
+ "discovered_paths": [],
+ "discovery_metadata": {
+  "stars": 16,
+  "license": "none",
+  "pushed_at": "2022-12-13",
+  "description": "Takes data from different betting apps like Fanduel, Draftkings, and returns their odds & spreads",
+  "timestamp": "2026-09-08T14:30:45.047151"
+ }
+}

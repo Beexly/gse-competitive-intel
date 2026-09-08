@@ -1,0 +1,502 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>THE SOLVER - Solve Your Fantasy Sports Decisions</title><meta name="robots" content="index,follow"/><meta name="description" content="Tools That Simplify Fantasy Sports"/><meta name="twitter:site" content="TheSolverSports"/><meta name="twitter:creator" content="TheSolverSports"/><meta property="og:title" content="THE SOLVER - Solve Your Fantasy Sports Decisions"/><meta property="og:description" content="Tools That Simplify Fantasy Sports"/><meta property="og:url" content="https://thesolver.com/pricing"/><meta property="og:image" content="https://thesolver.com/logos/thesolver.png"/><link rel="canonical" href="https://thesolver.com/pricing"/><meta name="next-head-count" content="12"/><link rel="icon" href="/images/favicon.ico"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-JTLWPV0VTP"></script><script>
+                                    window.dataLayer = window.dataLayer || [];
+                                    function gtag(){dataLayer.push(arguments);}
+                                    gtag('js', new Date());
+                                    gtag('config', 'G-JTLWPV0VTP');
+                                    </script><script src="https://script.tapfiliate.com/tapfiliate.js" type="text/javascript" async=""></script><script>
+                            (function(t,a,p){t.TapfiliateObject=a;t[a]=t[a]||function(){ (t[a].q=t[a].q||[]).push(arguments)}})(window,'tap');
+
+                            tap('create', '35068-425a87', { integration: "javascript" });
+                            tap('detect');
+                            </script><link rel="preload" href="/_next/static/css/3f08b67969924901.css" as="style"/><link rel="stylesheet" href="/_next/static/css/3f08b67969924901.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-0b68b0ff135b8d9a.js" defer=""></script><script src="/_next/static/chunks/framework-430363ab07c76237.js" defer=""></script><script src="/_next/static/chunks/main-547e49e261be57b0.js" defer=""></script><script src="/_next/static/chunks/pages/_app-0ab2fdd17670fda7.js" defer=""></script><script src="/_next/static/chunks/8710b798-30bab0e8781efe80.js" defer=""></script><script src="/_next/static/chunks/cb1608f2-48c275ac9b777342.js" defer=""></script><script src="/_next/static/chunks/3029-b9c2c56227b8f36a.js" defer=""></script><script src="/_next/static/chunks/4927-7dcbffb64b5c2e15.js" defer=""></script><script src="/_next/static/chunks/2555-58cc8b2e9d5686d4.js" defer=""></script><script src="/_next/static/chunks/2814-7b1cc3b1d22d356e.js" defer=""></script><script src="/_next/static/chunks/8538-8457eb4429ab70fa.js" defer=""></script><script src="/_next/static/chunks/9478-922a6378e75627a9.js" defer=""></script><script src="/_next/static/chunks/9694-77fd8a3b90f12759.js" defer=""></script><script src="/_next/static/chunks/2913-c097b036b5bbe92c.js" defer=""></script><script src="/_next/static/chunks/6314-9cd01d1c4616a76f.js" defer=""></script><script src="/_next/static/chunks/2824-359f308f614ddfb4.js" defer=""></script><script src="/_next/static/chunks/6329-0fe8eeaa5e8ccee8.js" defer=""></script><script src="/_next/static/chunks/6085-636c8dd924675a5a.js" defer=""></script><script src="/_next/static/chunks/pages/pricing-639dc54c020ab397.js" defer=""></script><script src="/_next/static/096z0UrgRoCwQSqEz-NZ7/_buildManifest.js" defer=""></script><script src="/_next/static/096z0UrgRoCwQSqEz-NZ7/_ssgManifest.js" defer=""></script><style id="server-side-styles">.footerLink-0-2-52 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.footerLink-0-2-51 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.buttonAction-0-2-32 {
+  margin: 8px;
+  display: flex;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-style: normal;
+  align-items: center;
+  line-height: 22px;
+  border-radius: 12px;
+  flex-direction: row;
+  justify-content: center;
+}
+.buttonAction-0-2-32 svg {
+  margin-right: 4px;
+}
+.buttonAction-0-2-32 img {
+  margin-right: 4px;
+}
+.buttonPrimary-0-2-33 {
+  color: #ffffff;
+  border: 1px solid #00854D;
+  background-color: #00854D;
+}
+.buttonPrimary-0-2-33:hover {
+  color: #ffffff;
+  border: 1px solid #fff;
+  text-decoration: none;
+}
+.buttonSecondary-0-2-34 {
+  color: #00854D;
+  border: 1px solid #00854D;
+}
+.buttonSecondary-0-2-34:hover {
+  color: #030303;
+  border: 1px solid #030303;
+  text-decoration: none;
+}
+.buttonDark-0-2-35 {
+  color: #ffffff;
+  border: 1px solid #003789;
+  background-color: #161324;
+}
+.buttonDark-0-2-35:hover {
+  color: #ffffff;
+  border: 1px solid #2C7BE5;
+  box-shadow: 0 0 1px 1px #2C7BE5;
+  text-decoration: none;
+}
+.partnerList-0-2-42 {
+  margin: 0 0 0.5rem 0;
+  padding: 0 0 0 1.5rem;
+  list-style: none;
+}
+.partnerItem-0-2-43 {
+  gap: 6px;
+  margin: 0 0 0.25rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.partnerNameGroup-0-2-44 {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.subscriptionIcon-0-2-45 {
+  flex: 0 0 16px;
+  color: #00d27a;
+  width: 16px;
+  border: 1px solid #00d27a;
+  height: 16px;
+  display: flex;
+  padding: 2px;
+  font-size: 9px;
+  align-items: center;
+  margin-right: 6px;
+  border-radius: 50%;
+  justify-content: center;
+}
+.partnerContent-0-2-46 {
+  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.partnerText-0-2-47 {
+  color: #9da9bb;
+}
+.syncButton-0-2-48 {
+  color: #00d27a;
+  border: 1px solid #00d27a;
+  margin: 0 0 0 4px;
+  display: inline-flex;
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 16px;
+  border-radius: 14px;
+  background-color: transparent;
+}
+.syncButton-0-2-48:hover {
+  color: #00d27a;
+  border: 1px solid #00d27a;
+  text-decoration: none;
+  background-color: rgba(0, 210, 122, 0.12);
+}
+.partnerLegend-0-2-49 {
+  gap: 8px;
+  color: #9da9bb;
+  display: flex;
+  font-size: 13px;
+  margin-top: 0.5rem;
+  align-items: center;
+  line-height: 18px;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.partnerSyncNote-0-2-50 {
+  color: #9da9bb;
+  margin: -0.5rem 0 1rem 0;
+  font-size: 13px;
+  line-height: 18px;
+  padding-left: 1.5rem;
+}
+.section-0-2-1 {
+  color: #9da9bb;
+  background-color: #00020B;
+}
+.panel-0-2-2 {
+  width: min(920px, calc(100% - 32px));
+  border: 1px solid rgba(214, 232, 255, 0.08);
+  margin: 0 auto;
+  padding: 40px 48px;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.32);
+  border-radius: 16px;
+  background-color: #061325;
+}
+@media (max-width: 600px) {
+  .panel-0-2-2 {
+    padding: 24px 16px;
+  }
+}
+  .eyebrow-0-2-3 {
+    color: #00d27a;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .title-0-2-4 {
+    color: #ffffff;
+    margin: 0 0 32px;
+    text-align: center;
+    font-weight: 800;
+    line-height: 1.15;
+  }
+  .questionLabel-0-2-5 {
+    color: #ffffff;
+    margin: 0 0 12px;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 700;
+  }
+  .pillGrid-0-2-6 {
+    gap: 12px;
+    display: grid;
+    margin-bottom: 28px;
+  }
+  .resultGrid-0-2-7 {
+    gap: 20px;
+    display: grid;
+  }
+  .cols1-0-2-8 {
+    grid-template-columns: 1fr;
+  }
+  .cols2-0-2-9 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+@media (max-width: 769px) {
+  .cols2-0-2-9 {
+    grid-template-columns: 1fr;
+  }
+}
+  .cols3-0-2-10 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+@media (max-width: 769px) {
+  .cols3-0-2-10 {
+    grid-template-columns: 1fr;
+  }
+}
+  .pill-0-2-11 {
+    color: #ffffff;
+    border: 1px solid rgba(214, 232, 255, 0.2);
+    cursor: pointer;
+    padding: 14px 20px;
+    text-align: center;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+    border-radius: 8px;
+    background-color: #132238;
+  }
+  .pill-0-2-11:hover {
+    border-color: #00d27a;
+  }
+  .pillSelected-0-2-12 {
+    border-color: #00d27a;
+    background-color: rgba(0, 210, 122, 0.12);
+  }
+  .pillLabel-0-2-13 {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .pillSublabel-0-2-14 {
+    color: #9da9bb;
+    display: block;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  .resultNote-0-2-15 {
+    color: #d8e2ef;
+    border: 1px solid rgba(0, 210, 122, 0.3);
+    margin: 0 0 16px;
+    padding: 12px 16px;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 8px;
+    background-color: rgba(0, 210, 122, 0.08);
+  }
+  .comparisonLink-0-2-16 {
+    color: #2C7BE5;
+    display: block;
+    font-size: 14px;
+    margin-top: 24px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .comparisonLink-0-2-16:hover {
+    color: #2C7BE5;
+    text-decoration: underline;
+  }
+  .section-d1-0-2-17 {
+    padding: 32px 0;
+  }
+  .title-d2-0-2-18 {
+    font-size: 24px;
+  }
+  .heroDesktop-0-2-23 {
+    color: #ffffff;
+    padding: 8px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 68px;
+    background-color: transparent;
+  }
+  .heroDesktop-0-2-23 i {
+    color: #00d27a;
+    font-style: normal;
+    white-space: nowrap;
+  }
+@media (max-width: 600px) {
+  .heroDesktop-0-2-23 {
+    font-size: 40px;
+    line-height: 43px;
+  }
+}
+  .largeParagraph-0-2-24 {
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    background-color: transparent;
+  }
+@media (max-width: 600px) {
+  .largeParagraph-0-2-24 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+  .card-0-2-30 {
+    top: -200px;
+    width: 100%;
+    display: flex;
+    padding: 24px;
+    positon: absolute;
+    max-width: 400px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    align-items: start;
+    margin-right: 20px;
+    border-radius: 19px;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  .container-0-2-37 {
+    display: flex;
+    overflow: hidden;
+    min-height: 250px;
+    align-items: center;
+    padding-top: 200px;
+    flex-direction: column;
+    padding-bottom: 24px;
+    justify-content: center;
+    background-color: #ffffff !important;
+  }
+  .content-0-2-38 {
+    gap: 10px;
+    flex: none;
+    display: flex;
+    padding: 40px 105px;
+    flex-grow: 0;
+    background: #e2e2e2;
+    box-shadow: 0px 4px 36px #F3F6FB;
+    margin-top: 48px;
+    align-items: flex-start;
+    border-radius: 19px;
+    flex-direction: column;
+  }
+@media (max-width: 600px) {
+  .content-0-2-38 {
+    padding: 8px 24px;
+  }
+}
+  .features-0-2-39 {
+    gap: 24px;
+    width: 100%;
+    display: grid;
+    max-width: 1240px;
+    justify-items: start;
+    grid-template-columns: auto 160px 160px;
+  }
+@media (max-width: 600px) {
+  .features-0-2-39 {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+  .productType-0-2-40 {
+    width: 100%;
+    text-align: center;
+  }
+@media (max-width: 600px) {
+  .productType-0-2-40 {
+    display: none;
+  }
+}
+  .testimonial-0-2-41 {
+    gap: 0;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    padding-bottom: 4px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .testimonial-0-2-41 img {
+    width: 100%;
+    cursor: pointer;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+    object-position: left top;
+  }
+@media (max-width: 1300px) {
+  .testimonial-0-2-41 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .testimonial-0-2-41 {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .testimonial-0-2-41 img {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    object-fit: contain;
+    object-position: center top;
+  }
+}
+  .testimonial-0-2-41 img:hover {
+    opacity: 0.85;
+  }
+  .content-0-2-25 {
+    top: 280px;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    z-index: 999;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tabs-0-2-26 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+@media (max-width: 600px) {
+  .tabs-0-2-26 {
+    font-size: 1rem;
+  }
+}
+  .options-0-2-27 {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .pricingCardSmall-0-2-28 {
+    display: flex;
+  }
+@media (max-width: 600px) {
+  .pricingCardSmall-0-2-28 {
+    display: none;
+  }
+}
+  .pricingCardLarge-0-2-29 {
+    display: flex;
+  }
+  .mainContainer-0-2-19 {
+    position: relative;
+    background-color: #ffffff;
+  }
+  .topContainer-0-2-20 {
+    display: flex;
+    position: relative;
+    min-height: 200px;
+    overflow-x: hidden;
+    align-items: center;
+    padding-top: 30px;
+    flex-direction: column;
+    background-color: #0B1727 !important;
+  }
+  .content-0-2-21 {
+    display: flex;
+    z-index: 999;
+    max-width: 1000px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wave-0-2-22 {
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 900px;
+    line-height: 0;
+    background-color: #0B1727 !important;
+  }
+@media (max-width: 600px) {
+  .wave-0-2-22 {
+    margin-top: 950px;
+  }
+}
+  .smallParagraph-0-2-31 {
+    color: #030303;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 0;
+    background-color: transparent;
+  }
+  .smallParagraph-0-2-36 {
+    color: #030303;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 0;
+    background-color: transparent;
+  }</style></head><body style="background-color:#061325!important"><div id="__next"><div style="width:100%;display:flex;flex-direction:column;justify-content:space-between;line-height:22px !important" class="main" id="top"><div style="margin-top:45px"><nav style="height:50px" class="navbar-glass font-weight-semi-bold px-4 navbar navbar-expand-xxl navbar-light fixed-top"><div class="container-fluid"><div class="toggle-icon-wrapper mr-md-3 mr-2 d-xxl-none"><button type="button" class="navbar-toggler-humburger-icon btn btn-link d-flex flex-center" id="burgerMenu"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button></div><a href="/" class="navbar-brand"><div class="d-flex"><img class="d-none d-md-inline" src="/logos/thesolver.png" height="30" alt="Logo"/><img class="d-md-none" src="/logos/thesolver.png" height="18" alt="Logo"/></div></a></div></nav><div style="flex:1" class="container-fluid p-0" data-layout="container"><div class="section-0-2-1 section-d1-0-2-17"><div class="panel-0-2-2"><h2 class="title-0-2-4 title-d2-0-2-18">Not sure which product you need?</h2><p class="questionLabel-0-2-5">1. What style of game do you play?</p><div class="pillGrid-0-2-6 cols2-0-2-9"><button type="button" aria-pressed="false" class="pill-0-2-11 "><span class="pillLabel-0-2-13">Salary-cap DFS</span><span class="pillSublabel-0-2-14">DraftKings · FanDuel · Yahoo · DraftStars</span></button><button type="button" aria-pressed="false" class="pill-0-2-11 "><span class="pillLabel-0-2-13">Draft-style Best Ball</span><span class="pillSublabel-0-2-14">Underdog · DraftKings</span></button></div><a class="comparisonLink-0-2-16" href="/which-product">See the full product comparison →</a></div></div><div><div class="mainContainer-0-2-19"><div class="topContainer-0-2-20"><div class="content-0-2-21"><div style="text-align:center;color:#00d27a" class="heroDesktop-0-2-23"></div><p style="color:#ffffff;text-align:center" class="largeParagraph-0-2-24"></p></div><div class="wave-0-2-22"></div></div><div class="content-0-2-25"><ul style="border-bottom:none" class="tabs-0-2-26 nav nav-tabs"><li class="pointer nav-item"><a style="background-color:#00854D;color:#fff" class="p-4 nav-link">DFS OPTIMIZER</a></li><li class="pointer nav-item"><a style="color:gray" class="p-4 nav-link">DFS SIMULATOR</a></li></ul><div class="border p-4 rounded "><div class="m-auto" style="width:261px;border:1px solid rgba(255, 255, 255, 0.65);border-radius:30px;margin-bottom:24px;display:flex;flex-direction:row;background:#0B1727"><button type="button" style="padding:8px 31px;color:#ffffff;border:0;background-color:transparent;border-radius:21px">Single Sport</button><button type="button" style="background-color:#2C7BE5;padding:8px 31px;border:0;color:#ffffff;border-radius:21px">All Sports</button></div><div class="options-0-2-27"><div class="pricingCardSmall-0-2-28"><div class="card-0-2-30"><div style="display:flex;flex-direction:row;width:100%"><div style="display:flex;flex:1;justify-content:end;flex-direction:row"><p class="smallParagraph-0-2-31"></p></div></div><h3 class="mb-0 text-secondary">$<small></small></h3><a style="width:100%" class="buttonAction-0-2-32 buttonSecondary-0-2-34 " type="button"></a></div></div><div class="pricingCardSmall-0-2-28"><div class="card-0-2-30"><div style="display:flex;flex-direction:row;width:100%"><div style="display:flex;flex:1;justify-content:end;flex-direction:row"><p class="smallParagraph-0-2-36"></p></div></div><h3 class="mb-0 text-secondary">$<small></small></h3><a style="width:100%" class="buttonAction-0-2-32 buttonSecondary-0-2-34 " type="button"></a></div></div></div></div><div class="border p-4 rounded d-none"><div class="m-auto" style="width:413px;border:1px solid rgba(255, 255, 255, 0.65);border-radius:30px;margin-bottom:24px;display:flex;flex-direction:row;background:#0B1727"><button type="button" style="padding:8px 31px;color:#ffffff;border:0;background-color:transparent;border-radius:21px">Single Lineup Simulator</button><button type="button" style="background-color:transparent;padding:8px 31px;border:0;color:#ffffff;border-radius:21px">Multi Lineup Simulator</button></div><div class="options-0-2-27"><div class="pricingCardSmall-0-2-28"><div class="card-0-2-30"><h3 class="mb-0 text-secondary">$<small></small></h3><a style="width:100%" class="buttonAction-0-2-32 buttonSecondary-0-2-34 " type="button"></a></div></div><div class="pricingCardSmall-0-2-28"><div class="card-0-2-30"><h3 class="mb-0 text-secondary">$<small></small></h3><a style="width:100%" class="buttonAction-0-2-32 buttonSecondary-0-2-34 " type="button"></a></div></div></div></div></div><div class="container-0-2-37"></div></div><div style="background-color:#0B1727"><div class="pb-5 pt-3"><div class="text-dark text-center" style="font-size:55px;font-weight:900;font-style:normal;line-height:68px">Don’t Take Our Word for It</div></div><div class="testimonial-0-2-41"><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-brian.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-million.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-jordan.jpg" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-jordan2.jpg" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-taylor.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-rick.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-drewby.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-alex.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-jb.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-jake.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-john.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-joshua.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-adam.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-chad.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-b.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-drew.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-eli.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div><div class="card shadow-sm" style="break-inside:avoid"><div class="card-body"><div class="mx-auto d-block mb-3"><img src="/images/marketing/testimonials/testimonial-tom.png" width="100%" style="cursor:pointer;border-radius:8px;transition:0.2s ease-in-out"/></div></div></div></div></div><div class="accordion pt-5" style="background-color:#0B1727" id="faqAccordion"><div class="accordion-item" style="width:75%;margin:auto;background-color:#0B1727;padding-bottom:60px"><div class="accordion-collapse rounded text-center text-dark" id="faqHeader"><button class="accordion-button rounded px-4 text-white  collapsed" style="background-color:#00854D;font-style:normal;font-weight:700;font-size:25px;line-height:50px;border:none;border-bottom:none" type="button">Frequently Asked Questions <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="svg-inline--fa fa-caret-down " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16"><path fill="currentColor" d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path></svg></button></div><div class="accordion-collapse collapse mt-4 "><div class="accordion-body"><h5>Where can I get help?</h5><p>For any support issues, please contact us at support@thesolver.com</p><h5>What products do you offer?</h5><p>Currently, we offer a daily fantasy sports optimizer and a daily fantasy sports bankroll tracker.  We are building more tools and would love to hear ideas on what you want to see from us.  Let us know at <a href="mailto:support@thesolver.com">support@thesolver.com</a>.</p><h5>Who is behind this?</h5><p>A group of longtime fantasy sports players including the founders at Establish The Run and an experienced group of software developers created these products. The goal is to create software tools that make it easy for fantasy sports players to compete at a high level. To be clear, this is a separate product and company from Establish The Run. THE SOLVER plans to work with as many fantasy sports content sites as possible.</p><h5>What Daily Fantasy Sports sites can I optimize lineups for?</h5><p>We support DraftKings, FanDuel, SuperDraft, Yahoo and Draftstars</p><h5>Do you have any partners whose projections I can sync to THE SOLVER automatically?</h5><ul class="partnerList-0-2-42"><li class="partnerItem-0-2-43"><span class="partnerNameGroup-0-2-44"><span class="subscriptionIcon-0-2-45"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="8" height="8"><path fill="currentColor" d="M160 0C177.7 0 192 14.33 192 32V67.68C193.6 67.89 195.1 68.12 196.7 68.35C207.3 69.93 238.9 75.02 251.9 78.31C268.1 82.65 279.4 100.1 275 117.2C270.7 134.3 253.3 144.7 236.1 140.4C226.8 137.1 198.5 133.3 187.3 131.7C155.2 126.9 127.7 129.3 108.8 136.5C90.52 143.5 82.93 153.4 80.92 164.5C78.98 175.2 80.45 181.3 82.21 185.1C84.1 189.1 87.79 193.6 95.14 198.5C111.4 209.2 136.2 216.4 168.4 225.1L171.2 225.9C199.6 233.6 234.4 243.1 260.2 260.2C274.3 269.6 287.6 282.3 295.8 299.9C304.1 317.7 305.9 337.7 302.1 358.1C295.1 397 268.1 422.4 236.4 435.6C222.8 441.2 207.8 444.8 192 446.6V480C192 497.7 177.7 512 160 512C142.3 512 128 497.7 128 480V445.1C127.6 445.1 127.1 444.1 126.7 444.9L126.5 444.9C102.2 441.1 62.07 430.6 35 418.6C18.85 411.4 11.58 392.5 18.76 376.3C25.94 360.2 44.85 352.9 60.1 360.1C81.9 369.4 116.3 378.5 136.2 381.6C168.2 386.4 194.5 383.6 212.3 376.4C229.2 369.5 236.9 359.5 239.1 347.5C241 336.8 239.6 330.7 237.8 326.9C235.9 322.9 232.2 318.4 224.9 313.5C208.6 302.8 183.8 295.6 151.6 286.9L148.8 286.1C120.4 278.4 85.58 268.9 59.76 251.8C45.65 242.4 32.43 229.7 24.22 212.1C15.89 194.3 14.08 174.3 17.95 153C25.03 114.1 53.05 89.29 85.96 76.73C98.98 71.76 113.1 68.49 128 66.73V32C128 14.33 142.3 0 160 0V0z"></path></svg></span><a href="https://establishtherun.com/" target="_blank" rel="noreferrer">Establish The Run</a></span><span class="partnerContent-0-2-46"><span class="partnerText-0-2-47">(<!-- -->NFL, NBA, CFB, GOLF, MMA, UFL, NFL-preseason<!-- -->)</span></span></li><li class="partnerItem-0-2-43"><span class="partnerNameGroup-0-2-44"><span class="subscriptionIcon-0-2-45"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="8" height="8"><path fill="currentColor" d="M160 0C177.7 0 192 14.33 192 32V67.68C193.6 67.89 195.1 68.12 196.7 68.35C207.3 69.93 238.9 75.02 251.9 78.31C268.1 82.65 279.4 100.1 275 117.2C270.7 134.3 253.3 144.7 236.1 140.4C226.8 137.1 198.5 133.3 187.3 131.7C155.2 126.9 127.7 129.3 108.8 136.5C90.52 143.5 82.93 153.4 80.92 164.5C78.98 175.2 80.45 181.3 82.21 185.1C84.1 189.1 87.79 193.6 95.14 198.5C111.4 209.2 136.2 216.4 168.4 225.1L171.2 225.9C199.6 233.6 234.4 243.1 260.2 260.2C274.3 269.6 287.6 282.3 295.8 299.9C304.1 317.7 305.9 337.7 302.1 358.1C295.1 397 268.1 422.4 236.4 435.6C222.8 441.2 207.8 444.8 192 446.6V480C192 497.7 177.7 512 160 512C142.3 512 128 497.7 128 480V445.1C127.6 445.1 127.1 444.1 126.7 444.9L126.5 444.9C102.2 441.1 62.07 430.6 35 418.6C18.85 411.4 11.58 392.5 18.76 376.3C25.94 360.2 44.85 352.9 60.1 360.1C81.9 369.4 116.3 378.5 136.2 381.6C168.2 386.4 194.5 383.6 212.3 376.4C229.2 369.5 236.9 359.5 239.1 347.5C241 336.8 239.6 330.7 237.8 326.9C235.9 322.9 232.2 318.4 224.9 313.5C208.6 302.8 183.8 295.6 151.6 286.9L148.8 286.1C120.4 278.4 85.58 268.9 59.76 251.8C45.65 242.4 32.43 229.7 24.22 212.1C15.89 194.3 14.08 174.3 17.95 153C25.03 114.1 53.05 89.29 85.96 76.73C98.98 71.76 113.1 68.49 128 66.73V32C128 14.33 142.3 0 160 0V0z"></path></svg></span><a href="https://www.4for4.com/" target="_blank" rel="noreferrer">4for4</a></span><span class="partnerContent-0-2-46"><span class="partnerText-0-2-47">(<!-- -->NFL<!-- -->)</span></span></li><li class="partnerItem-0-2-43"><span class="partnerNameGroup-0-2-44"><span class="subscriptionIcon-0-2-45"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="8" height="8"><path fill="currentColor" d="M160 0C177.7 0 192 14.33 192 32V67.68C193.6 67.89 195.1 68.12 196.7 68.35C207.3 69.93 238.9 75.02 251.9 78.31C268.1 82.65 279.4 100.1 275 117.2C270.7 134.3 253.3 144.7 236.1 140.4C226.8 137.1 198.5 133.3 187.3 131.7C155.2 126.9 127.7 129.3 108.8 136.5C90.52 143.5 82.93 153.4 80.92 164.5C78.98 175.2 80.45 181.3 82.21 185.1C84.1 189.1 87.79 193.6 95.14 198.5C111.4 209.2 136.2 216.4 168.4 225.1L171.2 225.9C199.6 233.6 234.4 243.1 260.2 260.2C274.3 269.6 287.6 282.3 295.8 299.9C304.1 317.7 305.9 337.7 302.1 358.1C295.1 397 268.1 422.4 236.4 435.6C222.8 441.2 207.8 444.8 192 446.6V480C192 497.7 177.7 512 160 512C142.3 512 128 497.7 128 480V445.1C127.6 445.1 127.1 444.1 126.7 444.9L126.5 444.9C102.2 441.1 62.07 430.6 35 418.6C18.85 411.4 11.58 392.5 18.76 376.3C25.94 360.2 44.85 352.9 60.1 360.1C81.9 369.4 116.3 378.5 136.2 381.6C168.2 386.4 194.5 383.6 212.3 376.4C229.2 369.5 236.9 359.5 239.1 347.5C241 336.8 239.6 330.7 237.8 326.9C235.9 322.9 232.2 318.4 224.9 313.5C208.6 302.8 183.8 295.6 151.6 286.9L148.8 286.1C120.4 278.4 85.58 268.9 59.76 251.8C45.65 242.4 32.43 229.7 24.22 212.1C15.89 194.3 14.08 174.3 17.95 153C25.03 114.1 53.05 89.29 85.96 76.73C98.98 71.76 113.1 68.49 128 66.73V32C128 14.33 142.3 0 160 0V0z"></path></svg></span><a href="https://paydirtdfs.com/" target="_blank" rel="noreferrer">PayDirt DFS</a></span><span class="partnerContent-0-2-46"><span class="partnerText-0-2-47">(<!-- -->NFL, NBA, NHL, MLB, eSports<!-- -->)</span></span></li><li class="partnerItem-0-2-43"><span class="partnerNameGroup-0-2-44"><span class="subscriptionIcon-0-2-45"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="8" height="8"><path fill="currentColor" d="M160 0C177.7 0 192 14.33 192 32V67.68C193.6 67.89 195.1 68.12 196.7 68.35C207.3 69.93 238.9 75.02 251.9 78.31C268.1 82.65 279.4 100.1 275 117.2C270.7 134.3 253.3 144.7 236.1 140.4C226.8 137.1 198.5 133.3 187.3 131.7C155.2 126.9 127.7 129.3 108.8 136.5C90.52 143.5 82.93 153.4 80.92 164.5C78.98 175.2 80.45 181.3 82.21 185.1C84.1 189.1 87.79 193.6 95.14 198.5C111.4 209.2 136.2 216.4 168.4 225.1L171.2 225.9C199.6 233.6 234.4 243.1 260.2 260.2C274.3 269.6 287.6 282.3 295.8 299.9C304.1 317.7 305.9 337.7 302.1 358.1C295.1 397 268.1 422.4 236.4 435.6C222.8 441.2 207.8 444.8 192 446.6V480C192 497.7 177.7 512 160 512C142.3 512 128 497.7 128 480V445.1C127.6 445.1 127.1 444.1 126.7 444.9L126.5 444.9C102.2 441.1 62.07 430.6 35 418.6C18.85 411.4 11.58 392.5 18.76 376.3C25.94 360.2 44.85 352.9 60.1 360.1C81.9 369.4 116.3 378.5 136.2 381.6C168.2 386.4 194.5 383.6 212.3 376.4C229.2 369.5 236.9 359.5 239.1 347.5C241 336.8 239.6 330.7 237.8 326.9C235.9 322.9 232.2 318.4 224.9 313.5C208.6 302.8 183.8 295.6 151.6 286.9L148.8 286.1C120.4 278.4 85.58 268.9 59.76 251.8C45.65 242.4 32.43 229.7 24.22 212.1C15.89 194.3 14.08 174.3 17.95 153C25.03 114.1 53.05 89.29 85.96 76.73C98.98 71.76 113.1 68.49 128 66.73V32C128 14.33 142.3 0 160 0V0z"></path></svg></span><a href="https://dailyfanmma.com/racing-hub/" target="_blank" rel="noreferrer">DailyFanRacing</a></span><span class="partnerContent-0-2-46"><span class="partnerText-0-2-47">(<!-- -->NAS, F1<!-- -->)</span></span></li><li class="partnerItem-0-2-43"><span class="partnerNameGroup-0-2-44"><span class="subscriptionIcon-0-2-45"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="8" height="8"><path fill="currentColor" d="M160 0C177.7 0 192 14.33 192 32V67.68C193.6 67.89 195.1 68.12 196.7 68.35C207.3 69.93 238.9 75.02 251.9 78.31C268.1 82.65 279.4 100.1 275 117.2C270.7 134.3 253.3 144.7 236.1 140.4C226.8 137.1 198.5 133.3 187.3 131.7C155.2 126.9 127.7 129.3 108.8 136.5C90.52 143.5 82.93 153.4 80.92 164.5C78.98 175.2 80.45 181.3 82.21 185.1C84.1 189.1 87.79 193.6 95.14 198.5C111.4 209.2 136.2 216.4 168.4 225.1L171.2 225.9C199.6 233.6 234.4 243.1 260.2 260.2C274.3 269.6 287.6 282.3 295.8 299.9C304.1 317.7 305.9 337.7 302.1 358.1C295.1 397 268.1 422.4 236.4 435.6C222.8 441.2 207.8 444.8 192 446.6V480C192 497.7 177.7 512 160 512C142.3 512 128 497.7 128 480V445.1C127.6 445.1 127.1 444.1 126.7 444.9L126.5 444.9C102.2 441.1 62.07 430.6 35 418.6C18.85 411.4 11.58 392.5 18.76 376.3C25.94 360.2 44.85 352.9 60.1 360.1C81.9 369.4 116.3 378.5 136.2 381.6C168.2 386.4 194.5 383.6 212.3 376.4C229.2 369.5 236.9 359.5 239.1 347.5C241 336.8 239.6 330.7 237.8 326.9C235.9 322.9 232.2 318.4 224.9 313.5C208.6 302.8 183.8 295.6 151.6 286.9L148.8 286.1C120.4 278.4 85.58 268.9 59.76 251.8C45.65 242.4 32.43 229.7 24.22 212.1C15.89 194.3 14.08 174.3 17.95 153C25.03 114.1 53.05 89.29 85.96 76.73C98.98 71.76 113.1 68.49 128 66.73V32C128 14.33 142.3 0 160 0V0z"></path></svg></span><a href="https://moonshotsmlb.com/about.php/" target="_blank" rel="noreferrer">Moonshots MLB</a></span><span class="partnerContent-0-2-46"><span class="partnerText-0-2-47">(<!-- -->MLB<!-- -->)</span></span></li><li class="partnerItem-0-2-43"><span class="partnerNameGroup-0-2-44"><span class="subscriptionIcon-0-2-45"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="8" height="8"><path fill="currentColor" d="M160 0C177.7 0 192 14.33 192 32V67.68C193.6 67.89 195.1 68.12 196.7 68.35C207.3 69.93 238.9 75.02 251.9 78.31C268.1 82.65 279.4 100.1 275 117.2C270.7 134.3 253.3 144.7 236.1 140.4C226.8 137.1 198.5 133.3 187.3 131.7C155.2 126.9 127.7 129.3 108.8 136.5C90.52 143.5 82.93 153.4 80.92 164.5C78.98 175.2 80.45 181.3 82.21 185.1C84.1 189.1 87.79 193.6 95.14 198.5C111.4 209.2 136.2 216.4 168.4 225.1L171.2 225.9C199.6 233.6 234.4 243.1 260.2 260.2C274.3 269.6 287.6 282.3 295.8 299.9C304.1 317.7 305.9 337.7 302.1 358.1C295.1 397 268.1 422.4 236.4 435.6C222.8 441.2 207.8 444.8 192 446.6V480C192 497.7 177.7 512 160 512C142.3 512 128 497.7 128 480V445.1C127.6 445.1 127.1 444.1 126.7 444.9L126.5 444.9C102.2 441.1 62.07 430.6 35 418.6C18.85 411.4 11.58 392.5 18.76 376.3C25.94 360.2 44.85 352.9 60.1 360.1C81.9 369.4 116.3 378.5 136.2 381.6C168.2 386.4 194.5 383.6 212.3 376.4C229.2 369.5 236.9 359.5 239.1 347.5C241 336.8 239.6 330.7 237.8 326.9C235.9 322.9 232.2 318.4 224.9 313.5C208.6 302.8 183.8 295.6 151.6 286.9L148.8 286.1C120.4 278.4 85.58 268.9 59.76 251.8C45.65 242.4 32.43 229.7 24.22 212.1C15.89 194.3 14.08 174.3 17.95 153C25.03 114.1 53.05 89.29 85.96 76.73C98.98 71.76 113.1 68.49 128 66.73V32C128 14.33 142.3 0 160 0V0z"></path></svg></span><a href="https://www.ballparkpal.com/" target="_blank" rel="noreferrer">Ballpark Pal</a></span><span class="partnerContent-0-2-46"><span class="partnerText-0-2-47">(<!-- -->MLB<!-- -->)</span><button type="button" class="buttonAction-0-2-32 buttonSecondary-0-2-34 syncButton-0-2-48">Sync My Subscription</button></span></li></ul><div class="partnerLegend-0-2-49"><span class="subscriptionIcon-0-2-45"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="8" height="8"><path fill="currentColor" d="M160 0C177.7 0 192 14.33 192 32V67.68C193.6 67.89 195.1 68.12 196.7 68.35C207.3 69.93 238.9 75.02 251.9 78.31C268.1 82.65 279.4 100.1 275 117.2C270.7 134.3 253.3 144.7 236.1 140.4C226.8 137.1 198.5 133.3 187.3 131.7C155.2 126.9 127.7 129.3 108.8 136.5C90.52 143.5 82.93 153.4 80.92 164.5C78.98 175.2 80.45 181.3 82.21 185.1C84.1 189.1 87.79 193.6 95.14 198.5C111.4 209.2 136.2 216.4 168.4 225.1L171.2 225.9C199.6 233.6 234.4 243.1 260.2 260.2C274.3 269.6 287.6 282.3 295.8 299.9C304.1 317.7 305.9 337.7 302.1 358.1C295.1 397 268.1 422.4 236.4 435.6C222.8 441.2 207.8 444.8 192 446.6V480C192 497.7 177.7 512 160 512C142.3 512 128 497.7 128 480V445.1C127.6 445.1 127.1 444.1 126.7 444.9L126.5 444.9C102.2 441.1 62.07 430.6 35 418.6C18.85 411.4 11.58 392.5 18.76 376.3C25.94 360.2 44.85 352.9 60.1 360.1C81.9 369.4 116.3 378.5 136.2 381.6C168.2 386.4 194.5 383.6 212.3 376.4C229.2 369.5 236.9 359.5 239.1 347.5C241 336.8 239.6 330.7 237.8 326.9C235.9 322.9 232.2 318.4 224.9 313.5C208.6 302.8 183.8 295.6 151.6 286.9L148.8 286.1C120.4 278.4 85.58 268.9 59.76 251.8C45.65 242.4 32.43 229.7 24.22 212.1C15.89 194.3 14.08 174.3 17.95 153C25.03 114.1 53.05 89.29 85.96 76.73C98.98 71.76 113.1 68.49 128 66.73V32C128 14.33 142.3 0 160 0V0z"></path></svg></span><span>Partner subscriptions required. Partner subscriptions are purchased on each partners&#x27; website.</span></div><p class="partnerSyncNote-0-2-50">Most partners&#x27; subscription sync automatically if you use the same email on both THE SOLVER and the partner site. For MoonshotsMLB, you will need to input your SOLVER email<!-- --> <a href="https://moonshotsmlb.com/account" target="_blank" rel="noreferrer">here</a>. For BallPark Pal, you can use the sync button provided to sync your subscription status.</p><h5>Can I upload projections from another content site?</h5><p>Yes! Projections from most content sites can be uploaded directly to THE SOLVER in the form in which they are downloaded. If you come across projections which you can’t upload or if you are a projection site that would like your subscribers to be able to access projections automatically within our software, please let us know at <a href="mailto:support@thesolver.com">support@thesolver.com</a>.</p><h5>Can I upload my own projections?</h5><p>Yes! Just make sure the columns are named:  “Player”, “Projection”, “Projected Ownership”, “Ceiling”, and “Max Exposure”. For Showdown, "Projected Ownership" maps to the FLEX ownership of a player, whereas "Projected Ownership CPT" maps to the captain ownership. For uploading NHL “lines”, you can use “line” for the regular line and “PP” for powerplay lines.</p><h5>What are &quot;Default&quot; projections?</h5><p>Default projections are our projections which come with THE SOLVER optimizer. These are meant as a baseline projection to start with and should not be treated as "premium" projections. For premium projections, we recommend getting projections from one of our partners.</p><h5>How much does this cost?</h5><p>The optimizer & simulator pricing can be found on our <a href="https://thesolver.com/pricing">Pricing</a> page. The Bankroll Tracker is currently FREE (for now).</p><h5>For the bankroll tracker, can I automatically sync my results from daily fantasy sports sites?</h5><p>You can automatically sync your results with the Chrome Extension found <a href="https://chrome.google.com/webstore/detail/the-solver-extension/djjnmfmadfimhkkekdhgjggojncfdhca?hl=en-US">HERE</a></p><h5>I have an adblocker. Will this be an issue?</h5><p>We have seen some adblockers present issues on both the optimizer side and the bankroll tracker side. At this time, we don’t have a great solution for this on our end, so we recommend customers disable their adblocker while using www.thesolver.com or add www.thesolver.com to the adblocker whitelist/allowlist.</p><h5>What does Thumbs UP/Thumbs DOWN do?</h5><p>Each Thumbs UP/Thumbs DOWN boosts or docks a player by 4% in NBA and 8% in all other sports respectively.</p><h5>Will the players with the latest start time be put into FLEX?</h5><p>Yes, the players with the latest game start time will be automatically put into the FLEX position.</p><h5>What are your game integrity policies?</h5><p>Anyone who has the ability to access any lineup or custom projection data from THE SOLVER (ie, what lineups a user is building for upcoming tournaments) is not allowed by the company to play real-money public DFS contests.</p><h5>What is the “Unable to find optimal lineup” Error and how do I fix it?</h5><p>This is an error that generally happens when there are conflicting or impossible rules to satisfy in the optimizer. A few common issues to look out for when getting this: <ul><li>Under Restrictions —> Stats - By Team → Are you accidentally forcing at least X players per lineup per TEAM instead of per LINEUP?</li><li>Are your “maximum exposures” for each position large enough? For example, the maximum exposures on all your QBs combined should be >100%.</li><li>Are any player groups contradicting each other?</li><li>These are the types of questions to ask yourself if getting this error. If you can’t find the issue, please email us at support@thesolver.com with a screenshot of your rules and we would be happy to help.</li></ul></p><h5>How correct are the injury tags?</h5><p>We strive to have correct injury tags but during periods of heavy news, some tags may be updated with a delay and/or be incorrect. The tags are meant to be a guide for users to look into more specifics on a certain player and should not be relied upon as final statuses.</p><h5>How often is the NHL “lines” data updated?</h5><p>NHL lines are updated throughout the day and we will do our best to keep these accurate, but it's sometimes a fluid situation that's tough to get concrete info on, so we have made it possible for users to overwrite those lines manually where needed.  We definitely cannot guarantee that these will always be correct and urge users to double check these when they use them.</p><h5>How does the bankroll tracker handle tickets or entries submitted with DraftKings Crowns?</h5><p>The bankroll tracker handles entries submitted with tickets or crowns as dollar entries as that’s the only info that’s available in the DraftKings .csv.  With the current info provided by the daily fantasy websites, we cannot differentiate between a contest entered with dollars or with a ticket/crowns.</p><h5>How is “Value” calculated?</h5><p>We don’t share our methodology for how “Value” is calculated.  The purpose of “Value” is to allow users to sort players by an approximation of how “relevant” they are to a slate, but value should not be used for decision making purposes.</p></div></div></div></div></div><div class="bg-dark"><div class="container"><div class="content"><section class="bg-dark pt-4 fs-1 pb-0 border-top"><div class="container-fluid"><div class="row"><div class="col ps-lg-6 ps-xl-8"><div class="row"><div class="col-3 col-md-3 mt-2"><h5 class="text-uppercase text-white opacity-85 mb-3">DFS Optimizer</h5><ul class="list-unstyled"><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/nfl">NFL Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/nba">NBA Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/golf">GOLF Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/mlb">MLB Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/ufl">UFL Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/cfl">CFL Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/mma">MMA Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/nas">NAS Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/wnba">WNBA Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/f1">F1 Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/soc">SOC Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/nhl">NHL Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/cbb">CBB Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/cfb">CFB Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/ten">TEN Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/csgo">Counter Strike (CS:GO) Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/lol">League of Legends Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/cod">Call of Duty Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/val">Valorant Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/afl">AFL Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/nrl">NRL Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/nbl">NBL Optimizer</a></li><li class="mb-1"><a class="footerLink-0-2-51" href="/optimizer/cricket">Cricket Optimizer</a></li></ul></div><div class="col-3 col-md-3 mt-2"><h5 class="text-uppercase text-white opacity-85 mb-3">DFS Simulator</h5><ul class="list-unstyled"><li class="mb-1"><a role="link" tabindex="0" class="null footerLink-0-2-52" style="font-size:.9em;text-decoration:none;color:#fff" href="/simulator/nfl">NFL Simulator</a></li><li class="mb-1"><a role="link" tabindex="0" class="null footerLink-0-2-52" style="font-size:.9em;text-decoration:none;color:#fff" href="/simulator/golf">GOLF Simulator</a></li></ul><h5 class="text-uppercase text-white opacity-85 mt-5">Best Ball</h5><ul class="list-unstyled"><li class="mb-1"><a role="link" tabindex="0" class="null footerLink-0-2-52" style="font-size:.9em;text-decoration:none;color:#fff" href="/best-ball-explorer">Best Ball Explorer</a></li><li class="mb-1"><a role="link" tabindex="0" class="null footerLink-0-2-52" style="font-size:.9em;text-decoration:none;color:#fff" href="/draft-assistant">Underdog/DraftKings Draft Assistant</a></li></ul></div><div class="col-3 col-md-3 mt-2"><h5 class="text-uppercase text-white opacity-85 mb-3">DFS Bankroll Tracker</h5><ul class="list-unstyled"><li class="mb-1"><a role="link" tabindex="0" class="null footerLink-0-2-52" style="font-size:.9em;text-decoration:none;color:#fff" href="/tracker">DraftKings Bankroll Tracker</a></li><li class="mb-1"><a role="link" tabindex="0" class="null footerLink-0-2-52" style="font-size:.9em;text-decoration:none;color:#fff" href="/tracker">FanDuel Bankroll Tracker</a></li><li class="mb-1"><a role="link" tabindex="0" class="null footerLink-0-2-52" style="font-size:.9em;text-decoration:none;color:#fff" href="/tracker">SuperDraft Bankroll Tracker</a></li><li class="mb-1"><a role="link" tabindex="0" class="null footerLink-0-2-52" style="font-size:.9em;text-decoration:none;color:#fff" href="/tracker">Yahoo Bankroll Tracker</a></li><li class="mb-1"><a role="link" tabindex="0" class="null footerLink-0-2-52" style="font-size:.9em;text-decoration:none;color:#fff" href="/tracker">Draftstars Bankroll Tracker</a></li></ul></div><div class="col-3 col-md-3 mt-2"><h5 class="text-uppercase text-white opacity-85 mb-3">THE SOLVER</h5><ul class="list-unstyled"><li><a role="link" tabindex="0" class="null footerLink-0-2-52" style="font-size:.9em;text-decoration:none;color:#fff" href="/faq">FAQ</a></li><li><a role="link" tabindex="0" class="null footerLink-0-2-52" style="font-size:.9em;text-decoration:none;color:#fff" href="/tutorials">Tutorials</a></li><li><a role="link" tabindex="0" class="null footerLink-0-2-52" style="font-size:.9em;text-decoration:none;color:#fff" href="/about">About</a></li><li><a role="link" tabindex="0" class="null footerLink-0-2-52" style="font-size:.9em;text-decoration:none;color:#fff" href="/terms">Terms Of Use</a></li></ul></div><div class="col-6 col-md-4 mt-2"><ul class="list-unstyled"><li><a role="link" tabindex="0" class="text-white footerLink-0-2-52" target="_blank" style="text-decoration:none" href="https://www.twitter.com/TheSolverSports"><i class="fab fa-twitter pr-2"></i>Follow Us on Twitter</a></li><li><a role="link" tabindex="0" class="text-white footerLink-0-2-52" target="_blank" style="text-decoration:none" href="mailto:support@thesolver.com"><i class="fa fa-envelope pr-2"></i>Email support@thesolver.com</a></li></ul></div></div></div></div></div></section><section class="bg-dark pb-3 pt-0 text-center fs--1 mt-4"><div class="container-fluid pt-2"><div class="justify-content-between row"><div class="col-12 col-sm-auto"><p class="mb-0 text-600">Copyright <!-- -->2026<!-- --> © Sports Solver, LLC. All Rights Reserved.</p></div></div></div></section></div></div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/pricing","query":{},"buildId":"096z0UrgRoCwQSqEz-NZ7","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>

@@ -1,0 +1,4304 @@
+
+
+<!doctype html>
+<html>
+	<head>
+		<title>Fantasy Cruncher Daily Fantasy Sports Tools</title>
+		<!-- meta tags -->
+			<meta name="description" content="Fantasy Cruncher is the source for the tools you need to compete and win playing Daily Fantasy Sports on Draftkings, Fanduel, SuperDraft and Yahoo!" />
+			<meta charset="UTF-8">
+			<meta name="google" content="notranslate" />
+			<meta http-equiv="Content-Language" content="en" />
+			<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+			
+			<meta name="mobile-web-app-capable" content="yes" />
+			<meta name="apple-mobile-web-app-capable" content="yes" />
+			<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+			<!-- generics -->
+			<link rel="icon" href="/img-share/favicon/favicon-32.png" sizes="32x32">
+			<link rel="icon" href="/img-share/favicon/favicon-64.png" sizes="64x64">
+			<link rel="icon" href="/img-share/favicon/favicon-96.png" sizes="96x96">
+			<link rel="icon" href="/img-share/favicon/favicon-128.png" sizes="128x128">
+			<link rel="icon" href="/img-share/favicon/favicon-192.png" sizes="192x192">
+			<link rel="icon" href="/img-share/favicon/favicon-228.png" sizes="228x228">
+			<!-- Android -->
+			<link rel="shortcut icon" sizes="196x196" href="/img-share/favicon/favicon-196.png">
+			<!-- iOS -->
+			<link rel="apple-touch-icon" href="/img-share/favicon/favicon-120.png" sizes="120x120">
+			<!-- legacy -->
+			<link rel="shortcut icon" href="/favicon.ico"/>
+		<!-- meta tags -->
+
+		<link rel="preload"    href="/css/fonts/nunito-sans-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload"    href="/css/fonts/nunito-sans-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload"    href="/css/fonts/nunito-sans-v12-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload"    href="/css/fonts/roboto-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload"    href="/css/fonts/roboto-v30-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload"    href="/css/fonts/roboto-v30-latin-500italic.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="stylesheet" href="/css/font-styles.css?v=1656669228">
+
+		<link rel="preload"    href="/css/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload"    href="/css/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload"    href="/css/webfonts/fa-light-300.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload"    href="/css/webfonts/fa-duotone-900.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload"    href="/css/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+
+		<link rel="stylesheet" href="/css/fontawesome_pro/all.min.css" />
+		<link rel="stylesheet" href="/css/fontawesome_pro/v4-shims.min.css" />
+		<link rel="stylesheet" href="/css/vendor-combined.css?v=1702328035" />
+		<link rel="stylesheet" href="/style.php?p=style.scss&v=">
+
+		<link rel="stylesheet" href="/css/style.css?v=1724782326">
+		<link rel="stylesheet" href="/css/dark_style.css?v=1724209003">
+		
+		<link rel="stylesheet" href="/css/sweetalert2.css" />
+		<link rel="stylesheet" href="/js/chosen_v1.6.2/chosen.css" />
+
+		
+		
+		<script src="/js/vendor-combined.js?v=1759763119"></script>
+
+					
+			<script type="text/javascript">
+				const page_loaded_time = new Date().valueOf();
+
+				window.addEventListener('error', function (evt) {
+					evt.preventDefault();
+
+					let err_stack = null;
+
+					if(typeof evt.error != 'undefined' && evt.error != null){
+						err_stack = evt.error.stack.split("\n").map(function(err){ return err.trim() })
+					} else {
+						err_stack = ['evt.error was undefined or null', evt];
+					}
+
+					let page_loaded_secs = (new Date().valueOf() - page_loaded_time) / 1000;
+
+					let error_log_info = {
+						page: window.location.href,
+						msg: evt.message,
+						file: evt.filename,
+						line: evt.lineno,
+						col: evt.colno,
+						err_stack: err_stack,
+						user_info: user_info,
+						browser: window.navigator.userAgent,
+						timestamp: Date.now(),
+					}
+
+					var formData = new FormData();
+					formData.append("error_info", JSON.stringify(error_log_info));
+					var req = new XMLHttpRequest();
+					req.open("POST", "/ajax/log-error.php");
+					req.send(formData);
+
+					console.log(evt); 
+				});
+
+			</script>
+
+		
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0H3NNC2ND"></script> -->
+		<!-- <script async src="https://www.gstatic.com/charts/loader.js"></script> -->
+
+		<script type="text/javascript">
+
+			(function($){
+
+				$(document).ready(function() {
+					$(document).foundation();
+				});
+
+			})( jQuery );
+
+
+			// window.dataLayer = window.dataLayer || [];
+			// function gtag(){ dataLayer.push(arguments); }
+			// gtag('js', new Date());
+			// gtag('config', 'G-K0H3NNC2ND');
+
+			
+			var site = "";
+			var league = "";
+			var period = "";
+			var period2 = "";
+			var userid = "";
+			var min_Proj = "0";
+
+			var user_settings = {};
+
+			var user_info = {
+				'id': userid,
+				'email': '',
+				'un': '',
+				'ip': '139.94.213.210',
+			}
+
+		</script>
+		
+
+				
+	</head>
+	
+		  
+	<body class=" med-teamIcons">
+	
+
+<div class="small-screen-nav-container">
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+			<nav class="tab-bar">
+				<section class="left tab-bar-section">
+					<a class="left-off-canvas-toggle menu-icon"><span>menu</span></a>
+				</section>
+				<a class="logo logo-header mobile-header-logo-link"><img src="/img-share/FC_logos/FC_logo_2020_1.png" alt="FantasyCruncher Logo" /></a>
+			</nav>
+			<!-- Off Canvas Menu -->
+			<nav class="left-off-canvas-menu">
+				<ul class="off-canvas-list">
+					<li><label class="first">Active Sports</label></li>
+										
+					<li><a class="off-canvas-submenu-call">NFL</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/NFL/2026-week-1"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title="2 Upcoming Slates">2</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_pickem/NFL/2025-week-21"><div class="site-icon draftkings_pickem"></div>DK Tiers<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/NFL/2026-week-1"><div class="site-icon draftkings_showdown"></div>DK Showdown<span class="slate-count" title="1 Upcoming Slates">1</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/NFL/2026-week-1"><div class="site-icon fanduel"></div>FanDuel<span class="slate-count" title="8 Upcoming Slates">8</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/NFL/2026-week-1"><div class="site-icon fanduel_single"></div>FD Single Game<span class="slate-count" title="2 Upcoming Slates">2</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_super/NFL/2023-week-21"><div class="site-icon fanduel_super"></div>FD Super Flex<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/yahoo/NFL/2026-week-1"><div class="site-icon yahoo"></div>Yahoo<span class="slate-count" title="4 Upcoming Slates">4</span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/NFL/2025-week-21"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_pickem/NFL/2025-week-21"><div class="site-icon draftkings_pickem"></div>DK Tiers								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/NFL/2025-week-23"><div class="site-icon draftkings_showdown"></div>DK Showdown								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/NFL/2025-week-21"><div class="site-icon fanduel"></div>FanDuel								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/NFL/2025-week-23"><div class="site-icon fanduel_single"></div>FD Single Game								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_super/NFL/2023-week-21"><div class="site-icon fanduel_super"></div>FD Super Flex								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/yahoo/NFL/2025-week-21"><div class="site-icon yahoo"></div>Yahoo								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/NFL/2025-week-21"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/fanduel/NFL/2025-week-21"><div class="site-icon fanduel"></div>FanDuel																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> NFL Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/NFL/2026-week-1">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">NFL</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/team-stats/NFL">
+	 								<i class="fal fa-table"></i> Team Stats
+	 							</a>
+	 						</li>
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/nfl"><i class="far fa-atom"></i> All NFL Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">MLB</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/MLB/2026-09-08"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title="4 Upcoming Slates">4</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_pickem/MLB/2026-09-08"><div class="site-icon draftkings_pickem"></div>DK Tiers<span class="slate-count" title="1 Upcoming Slates">1</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/MLB/2026-09-08"><div class="site-icon draftkings_showdown"></div>DK Showdown<span class="slate-count" title="2 Upcoming Slates">2</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/MLB/2026-09-08"><div class="site-icon fanduel"></div>FanDuel<span class="slate-count" title="5 Upcoming Slates">5</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/MLB/2026-09-08"><div class="site-icon fanduel_single"></div>FD Single Game<span class="slate-count" title="3 Upcoming Slates">3</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/yahoo/MLB/2026-09-08"><div class="site-icon yahoo"></div>Yahoo<span class="slate-count" title="3 Upcoming Slates">3</span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/MLB/2026-09-07"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_pickem/MLB/2026-09-07"><div class="site-icon draftkings_pickem"></div>DK Tiers								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/MLB/2026-09-07"><div class="site-icon draftkings_showdown"></div>DK Showdown								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/MLB/2026-09-07"><div class="site-icon fanduel"></div>FanDuel								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/MLB/2026-09-07"><div class="site-icon fanduel_single"></div>FD Single Game								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/yahoo/MLB/2026-09-07"><div class="site-icon yahoo"></div>Yahoo								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/MLB/2026-09-07"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/fanduel/MLB/2026-09-07"><div class="site-icon fanduel"></div>FanDuel																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> MLB Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/MLB/2026-09-08">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">MLB</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/mlb"><i class="far fa-atom"></i> All MLB Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">GOLF</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/PGA/2026-09-10"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>PGA</span><span class="slate-count" title="1 Upcoming Slates">1</span>
+								</a>
+							</li>
+
+																								<li>
+										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/EURO/2022-02-09"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>EURO</span><span class="slate-count" title=" Upcoming Slates"></span>
+										</a>										
+									</li>
+															
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/PGA/2026-09-10"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>PGA</span><span class="slate-count" title="1 Upcoming Slates">1</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_pickem/PGA/2026-08-27"><div class="site-icon draftkings_pickem"></div>DK Tiers <span class='league-distinction'>PGA</span><span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/PGA/2026-08-27"><div class="site-icon fanduel"></div>FanDuel <span class='league-distinction'>PGA</span><span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/yahoo/PGA/2026-08-27"><div class="site-icon yahoo"></div>Yahoo <span class='league-distinction'>PGA</span><span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/PGA/2026-09-05"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>PGA</span>								</a>
+							</li>
+
+																								<li>
+										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/EURO/2022-02-09"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>EURO</span>										</a>										
+									</li>
+															
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/PGA/2026-09-03"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>PGA</span>								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_pickem/PGA/2026-08-27"><div class="site-icon draftkings_pickem"></div>DK Tiers <span class='league-distinction'>PGA</span>								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/PGA/2026-08-27"><div class="site-icon fanduel"></div>FanDuel <span class='league-distinction'>PGA</span>								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/yahoo/PGA/2026-08-27"><div class="site-icon yahoo"></div>Yahoo <span class='league-distinction'>PGA</span>								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/PGA/2026-09-05"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>PGA</span>																	</a>
+							</li>
+
+							
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/fanduel/PGA/2026-08-27"><div class="site-icon fanduel"></div>FanDuel <span class='league-distinction'>PGA</span>																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> GOLF Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/PGA/2026-09-10">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">PGA</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/golf"><i class="far fa-atom"></i> All GOLF Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">MMA</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/MMA/2026-09-12"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title="1 Upcoming Slates">1</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/MMA/2026-09-05"><div class="site-icon draftkings_showdown"></div>DK Showdown<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/MMA/2026-09-05"><div class="site-icon fanduel"></div>FanDuel<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/MMA/2026-09-05"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/MMA/2026-09-05"><div class="site-icon draftkings_showdown"></div>DK Showdown								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/MMA/2026-09-05"><div class="site-icon fanduel"></div>FanDuel								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/MMA/2026-09-05"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/fanduel/MMA/2026-09-05"><div class="site-icon fanduel"></div>FanDuel																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> MMA Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/MMA/2026-09-12">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">MMA</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/mma"><i class="far fa-atom"></i> All MMA Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">NASCAR</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/NAS/2026-09-06"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/NAS/2026-09-06"><div class="site-icon fanduel"></div>FanDuel<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/NAS/2026-09-06"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/NAS/2026-09-06"><div class="site-icon fanduel"></div>FanDuel								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/NAS/2026-09-06"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/fanduel/NAS/2026-09-06"><div class="site-icon fanduel"></div>FanDuel																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> NASCAR Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/NAS/2026-09-06">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">NAS</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/nas"><i class="far fa-atom"></i> All NASCAR Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">SOC</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/SOC/2026-09-08"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title="1 Upcoming Slates">1</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/SOC/2026-09-08"><div class="site-icon draftkings_showdown"></div>DK Showdown<span class="slate-count" title="1 Upcoming Slates">1</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/SOC/2026-09-08"><div class="site-icon fanduel"></div>FanDuel<span class="slate-count" title="1 Upcoming Slates">1</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/SOC/2026-09-08"><div class="site-icon fanduel_single"></div>FD Single Game<span class="slate-count" title="1 Upcoming Slates">1</span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/yahoo/SOC/2026-09-08"><div class="site-icon yahoo"></div>Yahoo<span class="slate-count" title="1 Upcoming Slates">1</span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/SOC/2026-09-08"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/SOC/2026-09-08"><div class="site-icon draftkings_showdown"></div>DK Showdown								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/SOC/2026-09-08"><div class="site-icon fanduel"></div>FanDuel								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/SOC/2026-09-06"><div class="site-icon fanduel_single"></div>FD Single Game								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/yahoo/SOC/2026-09-06"><div class="site-icon yahoo"></div>Yahoo								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/SOC/2026-09-08"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/fanduel/SOC/2026-09-08"><div class="site-icon fanduel"></div>FanDuel																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> SOC Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/SOC/2026-09-08">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">SOC</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/soc"><i class="far fa-atom"></i> All SOC Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">eSPORTS</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/LOL/2026-09-06"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>LeagueOfLegends</span><span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+																								<li>
+										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/CSGO/2026-09-07"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>CounterStrike</span><span class="slate-count" title=" Upcoming Slates"></span>
+										</a>										
+									</li>
+																	<li>
+										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/COD/2026-07-18"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>CallOfDuty</span><span class="slate-count" title=" Upcoming Slates"></span>
+										</a>										
+									</li>
+																	<li>
+										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/VAL/2026-09-04"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>Valorant</span><span class="slate-count" title=" Upcoming Slates"></span>
+										</a>										
+									</li>
+															
+																								<li>
+										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/LOL/2026-09-11"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>LeagueOfLegends</span><span class="slate-count" title="1 Upcoming Slates">1</span>
+										</a>										
+									</li>
+																	<li>
+										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/CSGO/2026-09-05"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>CounterStrike</span><span class="slate-count" title=" Upcoming Slates"></span>
+										</a>										
+									</li>
+																	<li>
+										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/VAL/2026-09-06"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>Valorant</span><span class="slate-count" title=" Upcoming Slates"></span>
+										</a>										
+									</li>
+															
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/LOL/2026-09-06"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>LeagueOfLegends</span>								</a>
+							</li>
+
+																								<li>
+										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/CSGO/2026-09-07"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>CounterStrike</span>										</a>										
+									</li>
+																	<li>
+										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/COD/2026-07-18"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>CallOfDuty</span>										</a>										
+									</li>
+																	<li>
+										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/VAL/2026-09-04"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>Valorant</span>										</a>										
+									</li>
+															
+																								<li>
+										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/LOL/2026-09-08"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>LeagueOfLegends</span>										</a>										
+									</li>
+																	<li>
+										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/CSGO/2026-09-05"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>CounterStrike</span>										</a>										
+									</li>
+																	<li>
+										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/VAL/2026-09-06"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>Valorant</span>										</a>										
+									</li>
+															
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/LOL/2026-09-06"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>LeagueOfLegends</span>																	</a>
+							</li>
+
+																								<li>
+										<a href="//www.fantasycruncher.com/lineup-study/draftkings/CSGO/2026-09-07"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>CounterStrike</span>										</a>										
+									</li>
+																	<li>
+										<a href="//www.fantasycruncher.com/lineup-study/draftkings/COD/2026-07-18"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>CallOfDuty</span>										</a>										
+									</li>
+																	<li>
+										<a href="//www.fantasycruncher.com/lineup-study/draftkings/VAL/2026-09-04"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>Valorant</span>										</a>										
+									</li>
+															
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> eSPORTS Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/LOL/2026-09-06">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">LOL</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 							 						<li>
+		 						<a href="//www.fantasycruncher.com/contest-links/CSGO/2026-09-07">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">CS:GO</span> Contest Links
+		 						</a>	 							
+	 						</li>
+
+	 						<li>
+		 						<a href="//www.fantasycruncher.com/contest-links/RL/2021-02-27">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">RocketLeague</span> Contest Links
+		 						</a>	 							
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/esports"><i class="far fa-atom"></i> All eSPORTS Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">TENNIS</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/TEN/2026-09-08"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/TEN/2026-09-08"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/TEN/2026-09-08"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> TENNIS Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/TEN/2026-09-08">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">TEN</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/ten"><i class="far fa-atom"></i> All TENNIS Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">F1</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/F1/2026-09-06"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/F1/2026-09-06"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/F1/2026-09-06"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> F1 Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/F1/2026-09-06">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">F1</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/f1"><i class="far fa-atom"></i> All F1 Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										 <li><label class="first">Off Season Sports</label></li> 
+					<li><a class="off-canvas-submenu-call">NBA</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/NBA/2026-05-25"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_pickem/NBA/2026-05-15"><div class="site-icon draftkings_pickem"></div>DK Tiers<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/NBA/2026-06-13"><div class="site-icon draftkings_showdown"></div>DK Showdown<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/NBA/2026-05-25"><div class="site-icon fanduel"></div>FanDuel<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/NBA/2026-06-13"><div class="site-icon fanduel_single"></div>FD Single Game<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/yahoo/NBA/2026-05-15"><div class="site-icon yahoo"></div>Yahoo<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/NBA/2026-05-25"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_pickem/NBA/2026-05-15"><div class="site-icon draftkings_pickem"></div>DK Tiers								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/NBA/2026-06-13"><div class="site-icon draftkings_showdown"></div>DK Showdown								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/NBA/2026-05-25"><div class="site-icon fanduel"></div>FanDuel								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/NBA/2026-06-13"><div class="site-icon fanduel_single"></div>FD Single Game								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/yahoo/NBA/2026-05-15"><div class="site-icon yahoo"></div>Yahoo								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/NBA/2026-05-25"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/fanduel/NBA/2026-05-25"><div class="site-icon fanduel"></div>FanDuel																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> NBA Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/NBA/2026-05-25">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">NBA</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/nba"><i class="far fa-atom"></i> All NBA Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">NHL</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/NHL/2026-05-22"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_pickem/NHL/2026-04-16"><div class="site-icon draftkings_pickem"></div>DK Tiers<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/NHL/2026-06-14"><div class="site-icon draftkings_showdown"></div>DK Showdown<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/NHL/2026-05-25"><div class="site-icon fanduel"></div>FanDuel<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/NHL/2026-06-14"><div class="site-icon fanduel_single"></div>FD Single Game<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/yahoo/NHL/2026-05-14"><div class="site-icon yahoo"></div>Yahoo<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/NHL/2026-05-22"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_pickem/NHL/2026-04-16"><div class="site-icon draftkings_pickem"></div>DK Tiers								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/NHL/2026-06-14"><div class="site-icon draftkings_showdown"></div>DK Showdown								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/NHL/2026-05-25"><div class="site-icon fanduel"></div>FanDuel								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/NHL/2026-06-14"><div class="site-icon fanduel_single"></div>FD Single Game								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/yahoo/NHL/2026-05-14"><div class="site-icon yahoo"></div>Yahoo								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/NHL/2026-05-22"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/fanduel/NHL/2026-05-25"><div class="site-icon fanduel"></div>FanDuel																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> NHL Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/NHL/2026-05-22">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">NHL</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/nhl"><i class="far fa-atom"></i> All NHL Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">CFB</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/CFB/2025-week-19"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/CFB/2025-week-19"><div class="site-icon draftkings_showdown"></div>DK Showdown<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/CFB/2025-week-19"><div class="site-icon fanduel"></div>FanDuel<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/CFB/2025-week-19"><div class="site-icon fanduel_single"></div>FD Single Game<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/CFB/2025-week-19"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/CFB/2025-week-19"><div class="site-icon draftkings_showdown"></div>DK Showdown								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/CFB/2025-week-19"><div class="site-icon fanduel"></div>FanDuel								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/CFB/2025-week-19"><div class="site-icon fanduel_single"></div>FD Single Game								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/CFB/2025-week-19"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/fanduel/CFB/2025-week-19"><div class="site-icon fanduel"></div>FanDuel																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> CFB Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/CFB/2025-week-19">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">CFB</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/cfb"><i class="far fa-atom"></i> All CFB Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">XFL</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/XFL/2023-week-11"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/XFL/2023-week-12"><div class="site-icon draftkings_showdown"></div>DK Showdown<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/XFL/2023-week-11"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/XFL/2023-week-12"><div class="site-icon draftkings_showdown"></div>DK Showdown								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/XFL/2023-week-11"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> XFL Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/XFL/2023-week-11">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">XFL</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/xfl"><i class="far fa-atom"></i> All XFL Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">CBB</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/CBB/2026-02-04"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/CBB/2026-02-03"><div class="site-icon draftkings_showdown"></div>DK Showdown<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/CBB/2025-04-05"><div class="site-icon fanduel"></div>FanDuel<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/CBB/2025-04-07"><div class="site-icon fanduel_single"></div>FD Single Game<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/CBB/2026-02-04"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/CBB/2026-02-03"><div class="site-icon draftkings_showdown"></div>DK Showdown								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/CBB/2025-04-05"><div class="site-icon fanduel"></div>FanDuel								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/CBB/2025-04-07"><div class="site-icon fanduel_single"></div>FD Single Game								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/CBB/2026-02-04"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/fanduel/CBB/2025-04-05"><div class="site-icon fanduel"></div>FanDuel																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> CBB Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/CBB/2026-02-04">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">CBB</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/cbb"><i class="far fa-atom"></i> All CBB Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">CFL</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/CFL/2025-week-23"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/CFL/2025-week-19"><div class="site-icon draftkings_showdown"></div>DK Showdown<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/CFL/2025-week-23"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/CFL/2025-week-19"><div class="site-icon draftkings_showdown"></div>DK Showdown								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/CFL/2025-week-23"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> CFL Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/CFL/2025-week-23">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">CFL</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/cfl"><i class="far fa-atom"></i> All CFL Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">WNBA</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/WNBA/2026-08-30"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/WNBA/2026-08-30"><div class="site-icon draftkings_showdown"></div>DK Showdown<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/WNBA/2026-08-30"><div class="site-icon fanduel"></div>FanDuel<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/WNBA/2026-08-30"><div class="site-icon fanduel_single"></div>FD Single Game<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/WNBA/2026-08-30"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/WNBA/2026-08-30"><div class="site-icon draftkings_showdown"></div>DK Showdown								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/WNBA/2026-08-30"><div class="site-icon fanduel"></div>FanDuel								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/WNBA/2026-08-30"><div class="site-icon fanduel_single"></div>FD Single Game								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/WNBA/2026-08-30"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/fanduel/WNBA/2026-08-30"><div class="site-icon fanduel"></div>FanDuel																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> WNBA Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/WNBA/2026-08-30">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">WNBA</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/wnba"><i class="far fa-atom"></i> All WNBA Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><a class="off-canvas-submenu-call">UFL</a></li>
+					<ul class="off-canvas-submenu">
+
+						<li><a class="off-canvas-submenu-call">Lineup Cruncher Optimizer</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/USFL/2026-week-10"><div class="site-icon draftkings"></div>Draftkings<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/USFL/2026-week-10"><div class="site-icon draftkings_showdown"></div>DK Showdown<span class="slate-count" title=" Upcoming Slates"></span>
+								</a>
+							</li>
+
+							
+							
+
+													</ul>
+
+						<li><a class="off-canvas-submenu-call">Lineup Rewind</a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/USFL/2026-week-10"><div class="site-icon draftkings"></div>Draftkings								</a>
+							</li>
+
+							
+							
+
+
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/USFL/2026-week-10"><div class="site-icon draftkings_showdown"></div>DK Showdown								</a>
+							</li>
+
+							
+							
+
+
+														
+						</ul>
+
+						
+						<li><a class="off-canvas-submenu-call">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+						<ul class="off-canvas-submenu">
+														<li>
+								<a href="//www.fantasycruncher.com/lineup-study/draftkings/USFL/2026-week-10"><div class="site-icon draftkings"></div>Draftkings																	</a>
+							</li>
+
+							
+							
+						</ul>
+
+
+	 					<li><a class="off-canvas-submenu-call">Additional Tools & Links</a></li>
+	 					<ul class="off-canvas-submenu">
+
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> UFL Chat
+	 							</a>
+	 						</li>
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/contest-links/USFL/2026-week-10">
+	 								<i class="fas fa-compass"></i> <span class="league-distinction">USFL</span> Contest Links
+	 							</a>
+	 						</li>
+
+	 						
+	 						<li>
+	 							<a href="//www.fantasycruncher.com/videos">
+	 								<i class="fab fa-youtube"></i> All Videos
+	 							</a>
+	 						</li>
+
+	 						
+	 							 						<li>
+	 							<a href="//www.fantasycruncher.com/ufl"><i class="far fa-atom"></i> All UFL Content</a>
+	 						</li>
+	 						
+	 						
+	 					</ul>
+	 					
+						
+
+
+					</ul>
+										
+					<li><label class="first">Other Links</label></li>
+
+					<li>
+						<a href="https://shop.fantasycruncher.com/">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+							<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+							<line x1="3" y1="6" x2="21" y2="6"></line>
+							<path d="M16 10a4 4 0 0 1-8 0"></path>
+						</svg>
+						Shop
+						</a>						
+					</li>
+											<li><a href="//www.fantasycruncher.com/my-profile" style="padding: 6px"><img src="//www.fantasycruncher.com/img-share/discord/full_white.svg" style="width:100px"> Chat</a></li>
+					
+					<li><a href="//www.fantasycruncher.com"><i class="fal fa-atom"></i> FC Insights Home</a></li>
+					<li><a href="//www.fantasycruncher.com/forum/"><i class="fad fa-comments-alt forum-icon"></i> Forums</a></li>
+					<li><a href="//www.fantasycruncher.com/premium-signup"><i class="fa fa-trophy" aria-hidden="true"></i> Premium Access</a></li>
+					<li><a href="//www.fantasycruncher.com/fc-pro"><i class="fad fa-analytics fc-pro-link-icon"></i> FC Pro Info <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a></li>
+
+							
+
+					<li><label class="first">Account</label></li>
+										<li><a href="//www.fantasycruncher.com/login?referer=/help/faqs"><i class="fa fa-sign-in" aria-hidden="true"></i> Log In / Register</a></li>
+					
+					<li><label class="first">Help</label></li>
+					<li><a href="//www.fantasycruncher.com/help/faqs">FAQs</a></li>
+					<li><a href="//www.fantasycruncher.com/help/tutorials">Tutorials</a></li>
+					<li><a href="//www.fantasycruncher.com/help/contact">Contact Us</a></li>
+
+	 				<div class="dark-mode-switch-container mobile">
+	 					<span class="dark-mode-title"></span>
+		 				<label class="dark-mode-switch">
+			 				<input type="checkbox" >
+		 					<span class="dark-mode-slider"></span>
+		 				</label>		 							
+	 				</div>
+
+
+
+				</ul> <!-- class="off-canvas-list" -->
+			</nav>
+			<a class="exit-off-canvas"></a>
+		</div> <!-- class="inner-wrap" -->
+	</div> <!-- class="off-canvas-wrap" data-offcanvas -->
+</div>
+
+<div class="navigation-container">
+	<header class="main-header unselectable">
+		<a href="/" class="logo logo-header"><img src="/img-share/FC_logos/FC_logo_2020_1.png" alt="FantasyCruncher Logo" /></a>
+ 		<ul class="main-nav-links">
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					NFL 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/NFL/2026-week-1"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title="2 Upcoming Slates">2</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_pickem/NFL/2025-week-21"><div class="site-icon draftkings_pickem"></div>DK Tiers	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/NFL/2026-week-1"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 								<span class="slate-count" title="1 Upcoming Slates">1</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/NFL/2026-week-1"><div class="site-icon fanduel"></div>FanDuel	 									 								<span class="slate-count" title="8 Upcoming Slates">8</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/NFL/2026-week-1"><div class="site-icon fanduel_single"></div>FD Single Game	 									 								<span class="slate-count" title="2 Upcoming Slates">2</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_super/NFL/2023-week-21"><div class="site-icon fanduel_super"></div>FD Super Flex	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/yahoo/NFL/2026-week-1"><div class="site-icon yahoo"></div>Yahoo	 									 								<span class="slate-count" title="4 Upcoming Slates">4</span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/NFL/2025-week-21"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_pickem/NFL/2025-week-21"><div class="site-icon draftkings_pickem"></div>DK Tiers	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/NFL/2025-week-23"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/NFL/2025-week-21"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/NFL/2025-week-23"><div class="site-icon fanduel_single"></div>FD Single Game	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_super/NFL/2023-week-21"><div class="site-icon fanduel_super"></div>FD Super Flex	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/yahoo/NFL/2025-week-21"><div class="site-icon yahoo"></div>Yahoo	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/NFL/2025-week-21"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/fanduel/NFL/2025-week-21"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> NFL Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/NFL/2026-week-1">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">NFL</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/nfl" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All NFL Content</span>
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/team-stats/NFL" class="stats-link">
+		 							<i class="fal fa-table"></i><span>Team Stats</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					MLB 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/MLB/2026-09-08"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title="4 Upcoming Slates">4</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_pickem/MLB/2026-09-08"><div class="site-icon draftkings_pickem"></div>DK Tiers	 									 								<span class="slate-count" title="1 Upcoming Slates">1</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/MLB/2026-09-08"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 								<span class="slate-count" title="2 Upcoming Slates">2</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/MLB/2026-09-08"><div class="site-icon fanduel"></div>FanDuel	 									 								<span class="slate-count" title="5 Upcoming Slates">5</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/MLB/2026-09-08"><div class="site-icon fanduel_single"></div>FD Single Game	 									 								<span class="slate-count" title="3 Upcoming Slates">3</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/yahoo/MLB/2026-09-08"><div class="site-icon yahoo"></div>Yahoo	 									 								<span class="slate-count" title="3 Upcoming Slates">3</span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/MLB/2026-09-07"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_pickem/MLB/2026-09-07"><div class="site-icon draftkings_pickem"></div>DK Tiers	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/MLB/2026-09-07"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/MLB/2026-09-07"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/MLB/2026-09-07"><div class="site-icon fanduel_single"></div>FD Single Game	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/yahoo/MLB/2026-09-07"><div class="site-icon yahoo"></div>Yahoo	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/MLB/2026-09-07"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/fanduel/MLB/2026-09-07"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> MLB Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/MLB/2026-09-08">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">MLB</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/mlb" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All MLB Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					GOLF 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/PGA/2026-09-10"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>PGA</span>	 									 								<span class="slate-count" title="1 Upcoming Slates">1</span>
+	 							</a>
+	 								 										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/EURO/2022-02-09"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>EURO</span>	 												 											<span class="slate-count" title=" Upcoming Slates"></span>
+	 										</a>
+	 									
+	 								
+	 									 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/PGA/2026-09-10"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>PGA</span>	 									 								<span class="slate-count" title="1 Upcoming Slates">1</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_pickem/PGA/2026-08-27"><div class="site-icon draftkings_pickem"></div>DK Tiers <span class='league-distinction'>PGA</span>	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/PGA/2026-08-27"><div class="site-icon fanduel"></div>FanDuel <span class='league-distinction'>PGA</span>	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/yahoo/PGA/2026-08-27"><div class="site-icon yahoo"></div>Yahoo <span class='league-distinction'>PGA</span>	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/PGA/2026-09-05"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>PGA</span>	 									 							</a>
+	 								 										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/EURO/2022-02-09"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>EURO</span>	 												 										</a>
+	 									
+	 								
+	 								
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/PGA/2026-09-03"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>PGA</span>	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_pickem/PGA/2026-08-27"><div class="site-icon draftkings_pickem"></div>DK Tiers <span class='league-distinction'>PGA</span>	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/PGA/2026-08-27"><div class="site-icon fanduel"></div>FanDuel <span class='league-distinction'>PGA</span>	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/yahoo/PGA/2026-08-27"><div class="site-icon yahoo"></div>Yahoo <span class='league-distinction'>PGA</span>	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/PGA/2026-09-05"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>PGA</span>	 									 							</a>		
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/fanduel/PGA/2026-08-27"><div class="site-icon fanduel"></div>FanDuel <span class='league-distinction'>PGA</span>	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> GOLF Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/PGA/2026-09-10">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">PGA</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/golf" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All GOLF Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					MMA 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/MMA/2026-09-12"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title="1 Upcoming Slates">1</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/MMA/2026-09-05"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/MMA/2026-09-05"><div class="site-icon fanduel"></div>FanDuel	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/MMA/2026-09-05"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/MMA/2026-09-05"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/MMA/2026-09-05"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/MMA/2026-09-05"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/fanduel/MMA/2026-09-05"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> MMA Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/MMA/2026-09-12">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">MMA</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/mma" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All MMA Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					NASCAR 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/NAS/2026-09-06"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/NAS/2026-09-06"><div class="site-icon fanduel"></div>FanDuel	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/NAS/2026-09-06"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/NAS/2026-09-06"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/NAS/2026-09-06"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/fanduel/NAS/2026-09-06"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> NASCAR Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/NAS/2026-09-06">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">NAS</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/nas" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All NASCAR Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					SOC 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/SOC/2026-09-08"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title="1 Upcoming Slates">1</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/SOC/2026-09-08"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 								<span class="slate-count" title="1 Upcoming Slates">1</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/SOC/2026-09-08"><div class="site-icon fanduel"></div>FanDuel	 									 								<span class="slate-count" title="1 Upcoming Slates">1</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/SOC/2026-09-08"><div class="site-icon fanduel_single"></div>FD Single Game	 									 								<span class="slate-count" title="1 Upcoming Slates">1</span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/yahoo/SOC/2026-09-08"><div class="site-icon yahoo"></div>Yahoo	 									 								<span class="slate-count" title="1 Upcoming Slates">1</span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/SOC/2026-09-08"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/SOC/2026-09-08"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/SOC/2026-09-08"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/SOC/2026-09-06"><div class="site-icon fanduel_single"></div>FD Single Game	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/yahoo/SOC/2026-09-06"><div class="site-icon yahoo"></div>Yahoo	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/SOC/2026-09-08"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/fanduel/SOC/2026-09-08"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> SOC Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/SOC/2026-09-08">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">SOC</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/soc" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All SOC Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					eSPORTS 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/LOL/2026-09-06"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>LeagueOfLegends</span>	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/CSGO/2026-09-07"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>CounterStrike</span>	 												 											<span class="slate-count" title=" Upcoming Slates"></span>
+	 										</a>
+	 										 										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/COD/2026-07-18"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>CallOfDuty</span>	 												 											<span class="slate-count" title=" Upcoming Slates"></span>
+	 										</a>
+	 										 										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/VAL/2026-09-04"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>Valorant</span>	 												 											<span class="slate-count" title=" Upcoming Slates"></span>
+	 										</a>
+	 									
+	 								
+	 									 		
+
+	 								 										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/LOL/2026-09-11"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>LeagueOfLegends</span>	 												 											<span class="slate-count" title="1 Upcoming Slates">1</span>
+	 										</a>
+	 										 										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/CSGO/2026-09-05"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>CounterStrike</span>	 												 											<span class="slate-count" title=" Upcoming Slates"></span>
+	 										</a>
+	 										 										<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/VAL/2026-09-06"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>Valorant</span>	 												 											<span class="slate-count" title=" Upcoming Slates"></span>
+	 										</a>
+	 									
+	 								
+	 									 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/LOL/2026-09-06"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>LeagueOfLegends</span>	 									 							</a>
+	 								 										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/CSGO/2026-09-07"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>CounterStrike</span>	 												 										</a>
+	 										 										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/COD/2026-07-18"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>CallOfDuty</span>	 												 										</a>
+	 										 										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/VAL/2026-09-04"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>Valorant</span>	 												 										</a>
+	 									
+	 								
+	 								
+	 								 										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/LOL/2026-09-08"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>LeagueOfLegends</span>	 												 										</a>
+	 										 										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/CSGO/2026-09-05"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>CounterStrike</span>	 												 										</a>
+	 										 										<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/VAL/2026-09-06"><div class="site-icon draftkings_showdown"></div>DK Showdown <span class='league-distinction'>Valorant</span>	 												 										</a>
+	 									
+	 								
+	 									 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/LOL/2026-09-06"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>LeagueOfLegends</span>	 									 							</a>		
+
+	 								 										<a href="//www.fantasycruncher.com/lineup-study/draftkings/CSGO/2026-09-07"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>CounterStrike</span>	 												 										</a>
+	 										 										<a href="//www.fantasycruncher.com/lineup-study/draftkings/COD/2026-07-18"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>CallOfDuty</span>	 												 										</a>
+	 										 										<a href="//www.fantasycruncher.com/lineup-study/draftkings/VAL/2026-09-04"><div class="site-icon draftkings"></div>Draftkings <span class='league-distinction'>Valorant</span>	 												 										</a>
+	 									
+	 								
+	 									  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> eSPORTS Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/LOL/2026-09-06">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">LOL</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/CSGO/2026-09-07">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">CS:GO</span> Contest Links
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/contest-links/RL/2021-02-27">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">RocketLeague</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/esports" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All eSPORTS Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					TENNIS 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/TEN/2026-09-08"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/TEN/2026-09-08"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/TEN/2026-09-08"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> TENNIS Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/TEN/2026-09-08">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">TEN</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/ten" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All TENNIS Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					F1 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/F1/2026-09-06"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/F1/2026-09-06"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/F1/2026-09-06"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> F1 Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/F1/2026-09-06">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">F1</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/f1" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All F1 Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+		
+			<div class="offseason-sports-container"><span class="offseason-sports-handle" title="Show Off Season Sports"></span>
+
+						
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					NBA 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/NBA/2026-05-25"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_pickem/NBA/2026-05-15"><div class="site-icon draftkings_pickem"></div>DK Tiers	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/NBA/2026-06-13"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/NBA/2026-05-25"><div class="site-icon fanduel"></div>FanDuel	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/NBA/2026-06-13"><div class="site-icon fanduel_single"></div>FD Single Game	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/yahoo/NBA/2026-05-15"><div class="site-icon yahoo"></div>Yahoo	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/NBA/2026-05-25"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_pickem/NBA/2026-05-15"><div class="site-icon draftkings_pickem"></div>DK Tiers	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/NBA/2026-06-13"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/NBA/2026-05-25"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/NBA/2026-06-13"><div class="site-icon fanduel_single"></div>FD Single Game	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/yahoo/NBA/2026-05-15"><div class="site-icon yahoo"></div>Yahoo	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/NBA/2026-05-25"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/fanduel/NBA/2026-05-25"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> NBA Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/NBA/2026-05-25">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">NBA</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/nba" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All NBA Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					NHL 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/NHL/2026-05-22"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_pickem/NHL/2026-04-16"><div class="site-icon draftkings_pickem"></div>DK Tiers	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/NHL/2026-06-14"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/NHL/2026-05-25"><div class="site-icon fanduel"></div>FanDuel	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/NHL/2026-06-14"><div class="site-icon fanduel_single"></div>FD Single Game	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/yahoo/NHL/2026-05-14"><div class="site-icon yahoo"></div>Yahoo	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/NHL/2026-05-22"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_pickem/NHL/2026-04-16"><div class="site-icon draftkings_pickem"></div>DK Tiers	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/NHL/2026-06-14"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/NHL/2026-05-25"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/NHL/2026-06-14"><div class="site-icon fanduel_single"></div>FD Single Game	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/yahoo/NHL/2026-05-14"><div class="site-icon yahoo"></div>Yahoo	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/NHL/2026-05-22"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/fanduel/NHL/2026-05-25"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> NHL Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/NHL/2026-05-22">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">NHL</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/nhl" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All NHL Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					CFB 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/CFB/2025-week-19"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/CFB/2025-week-19"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/CFB/2025-week-19"><div class="site-icon fanduel"></div>FanDuel	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/CFB/2025-week-19"><div class="site-icon fanduel_single"></div>FD Single Game	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/CFB/2025-week-19"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/CFB/2025-week-19"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/CFB/2025-week-19"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/CFB/2025-week-19"><div class="site-icon fanduel_single"></div>FD Single Game	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/CFB/2025-week-19"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/fanduel/CFB/2025-week-19"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> CFB Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/CFB/2025-week-19">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">CFB</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/cfb" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All CFB Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					XFL 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/XFL/2023-week-11"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/XFL/2023-week-12"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/XFL/2023-week-11"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/XFL/2023-week-12"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/XFL/2023-week-11"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> XFL Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/XFL/2023-week-11">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">XFL</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/xfl" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All XFL Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					CBB 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/CBB/2026-02-04"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/CBB/2026-02-03"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/CBB/2025-04-05"><div class="site-icon fanduel"></div>FanDuel	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/CBB/2025-04-07"><div class="site-icon fanduel_single"></div>FD Single Game	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/CBB/2026-02-04"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/CBB/2026-02-03"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/CBB/2025-04-05"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/CBB/2025-04-07"><div class="site-icon fanduel_single"></div>FD Single Game	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/CBB/2026-02-04"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/fanduel/CBB/2025-04-05"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> CBB Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/CBB/2026-02-04">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">CBB</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/cbb" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All CBB Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					CFL 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/CFL/2025-week-23"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/CFL/2025-week-19"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/CFL/2025-week-23"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/CFL/2025-week-19"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/CFL/2025-week-23"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> CFL Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/CFL/2025-week-23">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">CFL</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/cfl" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All CFL Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					WNBA 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/WNBA/2026-08-30"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/WNBA/2026-08-30"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel/WNBA/2026-08-30"><div class="site-icon fanduel"></div>FanDuel	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/fanduel_single/WNBA/2026-08-30"><div class="site-icon fanduel_single"></div>FD Single Game	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/WNBA/2026-08-30"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/WNBA/2026-08-30"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel/WNBA/2026-08-30"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/fanduel_single/WNBA/2026-08-30"><div class="site-icon fanduel_single"></div>FD Single Game	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/WNBA/2026-08-30"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/fanduel/WNBA/2026-08-30"><div class="site-icon fanduel"></div>FanDuel	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> WNBA Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/WNBA/2026-08-30">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">WNBA</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/wnba" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All WNBA Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+					
+ 			<li class="main-nav-list-item">
+ 				<a class="top-nav-link">
+ 					UFL 					 				</a>
+ 				<div class="nav-mega-menu">
+
+ 					<div class="mega-menu-col">
+
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Cruncher Optimizer</span>
+	 						<div class="mega-menu-section-list">
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings/USFL/2026-week-10"><div class="site-icon draftkings"></div>Draftkings	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-cruncher/draftkings_showdown/USFL/2026-week-10"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 								<span class="slate-count" title=" Upcoming Slates"></span>
+	 							</a>
+	 								 		
+
+	 								 		
+
+	 						</div>
+	 					</div>
+	 					<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Rewind</span>
+	 						<div class="mega-menu-section-list">
+
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings/USFL/2026-week-10"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>
+	 							
+	 								 							<a href="//www.fantasycruncher.com/lineup-rewind/draftkings_showdown/USFL/2026-week-10"><div class="site-icon draftkings_showdown"></div>DK Showdown	 									 							</a>
+	 							
+	 								 							
+	 						</div>
+	 					</div>
+
+ 					</div>
+
+ 					 					<div class="mega-menu-col">
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Lineup Study <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></span>
+	 						<div class="mega-menu-section-list">
+
+	 							
+	 							<a href="//www.fantasycruncher.com/lineup-study/draftkings/USFL/2026-week-10"><div class="site-icon draftkings"></div>Draftkings	 									 							</a>		
+
+	 								  						
+
+	 						</div>
+ 						</div>
+
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Additional Tools & Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="//www.fantasycruncher.com/my-profile"  >
+	 								<img src="//www.fantasycruncher.com/img-share/discord/full_purple.svg" style="width:80px"> UFL Chat Room
+	 							</a>
+		 						
+		 						<a href="//www.fantasycruncher.com/contest-links/USFL/2026-week-10">
+		 							<i class="fas fa-compass"></i> <span class="league-distinction">USFL</span> Contest Links
+		 						</a>
+
+		 						
+		 						<a href="//www.fantasycruncher.com/videos" class="videos-link">
+		 							<i class="fab fa-youtube"></i><span>All Videos</span>
+		 						</a>
+
+		 						<a href="//www.fantasycruncher.com/ufl" class="">
+		 							<img src="https://www.fantasycruncher.com/img-share/favicon/favicon-32.png" style="width:24px; margin:0 2px;"><span>All UFL Content</span>
+		 						</a>
+
+		 						
+	 						</div>
+ 						</div>
+ 					</div>
+ 					
+
+ 					
+ 				</div>
+ 			</li>
+
+		
+			</div> <!-- <div class="offseason-sports-container"> -->
+
+			<li class="main-nav-list-item">
+				<a class="top-nav-link"><i class="fa fa-bars" aria-hidden="true"></i></a>
+				<div class="nav-mega-menu">
+
+
+					<div class="mega-menu-col">
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Other Links</span>
+	 						<div class="mega-menu-section-list">
+
+	 							<a href="https://shop.fantasycruncher.com/">
+	 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+	 								<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+	 								<line x1="3" y1="6" x2="21" y2="6"></line>
+	 								<path d="M16 10a4 4 0 0 1-8 0"></path>
+	 							</svg>
+	 							Shop
+	 							</a>
+
+	 								 								<a style="padding-left: 17px" href="//www.fantasycruncher.com/my-profile"><img style="width:80px" src="//www.fantasycruncher.com/img-share/discord/full_purple.svg"> Chat</a>
+	 							
+		 						<a href="//www.fantasycruncher.com"><i class="fal fa-atom"></i> FC Insights Home</a>
+		 						<a href="//www.fantasycruncher.com/forum/"><i class="fad fa-comments-alt forum-icon"></i> Forums</a>
+		 						<a href="//www.fantasycruncher.com/premium-signup"><i class="fa fa-trophy" aria-hidden="true"></i> Premium Access</a>
+		 						<a href="//www.fantasycruncher.com/fc-pro"><i class="fad fa-analytics fc-pro-link-icon"></i> FC Pro Info <img class="pro-badge" style="height:20px" src="//www.fantasycruncher.com/img-share/fcpro_badge.png"></a>
+	 						</div>
+ 						</div>
+
+ 						<!-- If an admin display admin link -->
+ 								
+
+ 					</div>
+
+					<div class="mega-menu-col">
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Account</span>
+	 						<div class="mega-menu-section-list">
+		 								 						<a href="//www.fantasycruncher.com/login?referer=/help/faqs"><i class="fa fa-sign-in" aria-hidden="true"></i> Log In / Register</a>
+		 							 						</div>
+ 						</div>
+ 						<div class="mega-menu-section">
+	 						<span class="mega-menu-section-title">Help</span>
+	 						<div class="mega-menu-section-list">
+		 						<a href="//www.fantasycruncher.com/help/faqs">FAQs</a>
+		 						<a href="//www.fantasycruncher.com/help/tutorials">Tutorials</a>
+		 						<a href="//www.fantasycruncher.com/help/contact">Contact Us</a>
+
+		 						<div class="dark-mode-switch-container">
+		 							<span class="dark-mode-title"></span>
+			 						<label class="dark-mode-switch">
+			 						  <input type="checkbox" >
+			 						  <span class="dark-mode-slider"></span>
+			 						</label>		 							
+		 						</div>
+
+	 						</div>
+ 						</div>
+ 					</div> 					
+
+				</div>
+			</li>
+
+ 		</ul>
+	</header>
+</div>
+
+<div class="clearfix wrapper">
+
+<script type="text/javascript">
+
+
+	(function($) {
+
+		$(function () { //jquery ready function
+
+			$(".off-canvas-submenu").hide();
+			$(document).on('click', '.off-canvas-submenu-call', function(){
+				$(this).parent().next(".off-canvas-submenu").slideToggle('fast');
+			})
+			
+		    $(document).on('click', '.dark-mode-switch', function(){
+		        let is_darkmode = $('input', $(this)).is(":checked")
+		        document.cookie = "dark_mode="+is_darkmode+"; domain=fantasycruncher.com; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/"
+		        if(is_darkmode){
+		            $('body').addClass('dark')
+		        } else {
+		            $('body').removeClass('dark')
+		        }
+		    })
+		    .on('mouseover', '.main-nav-links li', function(){
+				var mm = $(this).find('.nav-mega-menu');
+				var maxLeft = $(this).offset().left;
+				var ww = $(window).width();
+
+				mm.css({'left':'0'});			
+				var mmWidth = mm.width();
+				left = (ww-mmWidth < maxLeft) ? ww-mm.width() : maxLeft;
+				mm.css({'left':'calc('+left+'px - 2vw)'});	
+			})
+			.on('click', '.mobile-header-logo-link', function(e){
+				//this slows down the accidental clicking on the logo on mobile
+			    var unix_timestamp = Math.floor(Date.now() / 1000)
+			    if(typeof $(this).attr('last-clicked') != 'undefined'){
+			       if( (unix_timestamp - $(this).attr('last-clicked')) < 3 ) window.location.assign("/")
+			    }
+
+			    $(this).attr('last-clicked', unix_timestamp)		            
+			})
+			.on('click', '.offseason-sports-handle', function(e){
+				if($('.offseason-sports-container').hasClass('open')){
+					$('.offseason-sports-container').removeClass('open')
+					$(this).attr('title', 'Show Off Season Sports')
+				} else {
+					$('.offseason-sports-container').addClass('open')
+					$(this).attr('title', 'Hide Off Season Sports')
+				}
+				
+			})
+
+		})
+
+		
+	})( jQuery );
+
+	//this will load all the images once the DOMContent is loaded
+	// window.addEventListener('DOMContentLoaded', (event) => {
+	//     document.querySelectorAll('.main-nav-links a.mega-menu-insights-article-link img[data-src]').forEach(img => {
+	// 	    img.src = img.dataset.src
+	// 	    delete img.dataset.src
+	// 	})
+	// });
+
+	//this loads all the images the 1st time the mouseenters the main nav
+	document.querySelector('.main-nav-links').addEventListener('mouseenter', (e) => {
+		e.target.querySelectorAll('a.mega-menu-insights-article-link img[data-src]').forEach(img => {
+		    img.src = img.dataset.src
+		    delete img.dataset.src
+		})
+	}, { once: true })
+
+	//this loads each sport individually when the mouse enters that sport
+	// document.querySelector('.main-nav-links').addEventListener('mouseover', (e) => {
+	// 	const targetElem = e.target
+	// 	const mainNavListItem = targetElem.closest('li.main-nav-list-item')
+	// 	if(mainNavListItem != null){
+	// 		mainNavListItem.querySelectorAll('a.mega-menu-insights-article-link img[data-src]').forEach(img => {
+	// 		    img.src = img.dataset.src
+	// 		    delete img.dataset.src
+	// 		})
+	// 	}	
+	// })
+
+</script>
+	<link href='//fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+<!--
+<div class="row narrow page-header">
+	<div class="medium-9 columns medium-offset-3 heading">
+		<h1>Tutorials</h1>
+	</div>
+</div>
+-->
+<div class="row narrow content-area">
+	<div class="large-3 columns">
+		<div class="sidebar">
+			<ul id="sidebar-menu">
+				<li class="active"><a href="/help/faqs"><i class="help-icon fa fa-question"></i>FAQ's</a></li>
+				<li class=""><a href="/help/tutorials"><i class="help-icon fa fa-book"></i>Tutorials</a></li>
+				<li class=""><a href="/help/contact"><i class="help-icon fa fa-comment-o"></i>Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="large-9 columns">
+		<div class="page-header">
+			<h1>Faqs</h1>
+		</div>
+		<div class="help-main-content">
+				
+		<p><a href="/help/faqs/Should-I-use-default-optimized-lineup">1. Should I use the default optimized lineup?</a></p>
+
+		
+		<p><a href="/help/faqs/What-sites-sports-do-you-support">2. What DFS Sites and Sports do you support?</a></p>
+
+		
+		<p><a href="/help/faqs/How-often-are-your-projections-updated">3. How often are your projections updated?</a></p>
+
+		
+		<p><a href="/help/faqs/Do-you-account-for-injury-news-and-lineup-changes">4. Do you account for injury news and lineup changes?</a></p>
+
+		
+		<p><a href="/help/faqs/What-is-Fantasy-Cruncher">5. What is Fantasy Cruncher?</a></p>
+
+		
+		<p><a href="/help/faqs/How-are-your-projections-generated">6. How are your projections generated? Are they match-up dependent?</a></p>
+
+		
+		<p><a href="/help/faqs/why-do-your-projections-change-throughout-the-day">7. Why do your projections change throughout the day?</a></p>
+
+		
+		<p><a href="/help/faqs/Can-I-use-my-own-projections">8. Can I use my own projections?</a></p>
+
+		
+		<p><a href="/help/faqs/Any-way-I-can-try-this-out-before-I-subscribe">9. Any way I can try this out before I subscribe?</a></p>
+
+		
+		<p><a href="/help/faqs/what-is-lineup-rewind">10. What is Lineup Rewind?</a></p>
+
+		
+		<p><a href="/help/faqs/Do-you-have-any-tips">11. Do you have any tips?</a></p>
+
+		
+		<p><a href="/help/faqs/Are-the-projections-editable">12. Are the projections editable?</a></p>
+
+		
+		<p><a href="/help/faqs/Is-there-anyway-to-force-a-player-I-like-into-my-lineups">13. Is there anyway to force a player I like into my lineups?</a></p>
+
+		
+		<p><a href="/help/faqs/How-to-remove-players">14. A certain player keeps showing up, how can I remove him?</a></p>
+
+		
+		<p><a href="/help/faqs/why-use-an-optimizer">15. Why should I use Fantasy Cruncher?</a></p>
+
+		
+		<p><a href="/help/faqs/sliders-players-in-lineups">16. I change the sliders and filters, why are players still showing up in my lineups?</a></p>
+
+		
+		<p><a href="/help/faqs/what-is-fc-pro">17. What is FC PRO?</a></p>
+
+			</div>
+	</div>
+</div>
+
+
+<style type="text/css">
+
+.wrapper{
+	background: #FCFCFC;
+	background: -moz-radial-gradient(center, ellipse cover, rgb(252,252,252) 0%, rgb(201,201,201) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgb(252,252,252)), color-stop(100%,rgb(201,201,201)));
+	background: -webkit-radial-gradient(center, ellipse cover, #FCFCFC 0%,#C9C9C9 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgb(252,252,252) 0%,rgb(201,201,201) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgb(252,252,252) 0%,rgb(201,201,201) 100%);
+	background: radial-gradient(ellipse at center, #FCFCFC 0%,#C9C9C9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#c9c9c9',GradientType=1 );
+}
+
+.help-main-content{
+	background-color: white;
+	padding: 1em 2em;
+	margin-bottom: 1em; 
+}
+
+.page-header h1{
+	font-family: 'Maven Pro', sans-serif;
+}
+
+.mavenPro{
+	font-family: 'Maven Pro', sans-serif;
+}
+
+</style>
+
+<script>
+$(function(){
+
+	 $(window).scroll(function() {
+	 	if($(window).scrollTop() >= 67){
+
+	 		$('#sidebar-menu').css({'position': 'fixed', 'top': '77px', 'width': $('.sidebar').width()+'px' }); 
+	 	} else {
+	 		$('#sidebar-menu').css({'position': 'relative', 'top': 'auto'});
+	 	}
+
+	 });
+})
+</script>	</div>
+
+<footer id="footer-container" role="contentinfo" itemscope>
+      <div class="footer-content">
+            <div class="row narrow">
+                  <div class="medium-10 medium-offset-1 columns">
+
+                        <div style="margin-bottom:50px">
+                              <h4>ABOUT</h4>
+                              <p>
+                                FantasyCruncher is a set of tools that were developed for DFS players by DFS players. If you are serious about playing Daily Fantasy, this is the place to be, and you will be in the company of today's top DFS players.
+                              </p>
+                              <p>
+                                Development of the software started in 2014 and since then has gone on to change the DFS world forever. While others have attempted to replicate, no other software service can come close to offering the multitude of features, the sports & DFS sites supported, the ease of use, the consistent updates, or the customer service we offer.
+                              </p>
+                              <p>
+                                We are driven by our customers and listen when new features or additions are requested. We have a constant development cycle and will continue to improve and update the software we offer making sure you always have the biggest edge possible playing DFS.
+                              </p>
+                              <p>
+                                Whether you play on <a href="https://www.fanduel.com/" target="blank">FanDuel</a>, <a href="https://www.draftkings.com/" target="blank">DraftKings</a>, <a href="https://sports.yahoo.com/dailyfantasy" target="blank">Yahoo</a> or <a href="https://ownersbox.com/" target="blank">OwnersBox</a> we have you covered and support all the sports including; NFL, NBA, MLB, NHL, College Football, College Basketball, GOLF, MMA, NASCAR, SOCCER, WNBA, eSPORTS (League of Legends, Call of Duty, Counter Strike, and Valorant), UFL, CFL, Tennis, F1 and the list keeps growing.
+                              </p>
+                        </div>
+                        
+
+                  </div>
+                  <div style="text-align: center" class="medium-12 columns">
+                        <a href="https://twitter.com/fantasycruncher" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://www.facebook.com/fantasycruncher" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                        <a href="https://www.youtube.com/channel/UCkLshlynPgwGU6bOdjG6Ccw" target="_blank"><i class="fa fa-youtube"></i></a>
+                        <a href="mailto:support@fantasycruncher.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                        <p style="margin-top:30px">&copy; 2014 - 2026 Fantasy Cruncher Inc | <a href="https://www.fantasycruncher.com/tos">Terms of Service</a> | <a href="https://www.fantasycruncher.com/privacy-policy">Privacy Policy</a></p>
+                       
+                  </div>     
+            </div>
+      </div>
+</footer>
+	
+			
+
+		
+	
+
+	
+		<script src="/js/general.min.js?v=1724957045"></script>
+		<script src="/js/main.min.js?v=1765979678"></script>
+
+	               
+
+
+				
+		<script defer src="/js/fuse.js"></script>
+		<script defer src="/js/chosen_v1.6.2/chosen.jquery.min.js?v=20231025"></script>
+		<!-- <script src="https://apis.google.com/js/api.js" async defer></script> -->
+
+
+					<link rel="stylesheet" href="/css/logos.php">
+		
+		<div class="overlays-container" style="z-index: 25000"></div>
+		
+	</body>
+
+</html>

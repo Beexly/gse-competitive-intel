@@ -1,0 +1,266 @@
+{
+ "JetQiao/football-prediction-skill": {
+  "stars": 20,
+  "lic": "MIT",
+  "pushed": "2026-07-27",
+  "desc": "\u7ade\u5f69\u8db3\u7403\u667a\u80fd\u9884\u6d4b Skill\uff1aDixon-Coles\u3001\u8d54\u7387\u4ef7\u503c\u3001\u8d5b\u524d\u60c5\u62a5\u3001\u56de\u6d4b\u4e0e\u79bb\u7ebf HTML \u62a5\u544a",
+  "url": "https://github.com/JetQiao/football-prediction-skill",
+  "tag": "dixon-coles"
+ },
+ "jslater89/shooting-sports-analyst": {
+  "stars": 22,
+  "lic": "NOASSERTION",
+  "pushed": "2026-09-08",
+  "desc": "A cross-platform desktop analysis tool for practical shooting sports. Now with 80% more Elo rating!",
+  "url": "https://github.com/jslater89/shooting-sports-analyst",
+  "tag": "elo-sports"
+ },
+ "scikit-learn-contrib/MAPIE": {
+  "stars": 1587,
+  "lic": "BSD-3-Clause",
+  "pushed": "2026-09-08",
+  "desc": "A scikit-learn-compatible library for estimating prediction intervals and controlling risks, based on conformal predictions.",
+  "url": "https://github.com/scikit-learn-contrib/MAPIE",
+  "tag": "conformal"
+ },
+ "valeman/awesome-conformal-prediction": {
+  "stars": 1298,
+  "lic": "NOASSERTION",
+  "pushed": "2026-08-25",
+  "desc": "A professionally curated list of awesome Conformal Prediction videos, tutorials, books, papers, PhD and MSc theses, articles and open-source libraries.",
+  "url": "https://github.com/valeman/awesome-conformal-prediction",
+  "tag": "conformal"
+ },
+ "aangelopoulos/conformal-prediction": {
+  "stars": 1083,
+  "lic": "MIT",
+  "pushed": "2025-11-14",
+  "desc": "Lightweight, useful implementation of conformal prediction on real data.",
+  "url": "https://github.com/aangelopoulos/conformal-prediction",
+  "tag": "conformal"
+ },
+ "henrikbostrom/crepes": {
+  "stars": 582,
+  "lic": "BSD-3-Clause",
+  "pushed": "2026-07-08",
+  "desc": "Python package for conformal prediction",
+  "url": "https://github.com/henrikbostrom/crepes",
+  "tag": "conformal"
+ },
+ "ml-stat-Sustech/TorchCP": {
+  "stars": 477,
+  "lic": "LGPL-3.0",
+  "pushed": "2026-08-05",
+  "desc": "A Python toolbox for conformal prediction research on deep learning models, using PyTorch.",
+  "url": "https://github.com/ml-stat-Sustech/TorchCP",
+  "tag": "conformal"
+ },
+ "deel-ai/puncc": {
+  "stars": 404,
+  "lic": "-",
+  "pushed": "2026-09-07",
+  "desc": "\ud83d\udc4b Puncc is a python library for predictive uncertainty quantification using conformal prediction.",
+  "url": "https://github.com/deel-ai/puncc",
+  "tag": "conformal"
+ },
+ "PacktPublishing/Practical-Guide-to-Applied-Conformal-Prediction": {
+  "stars": 201,
+  "lic": "MIT",
+  "pushed": "2026-03-02",
+  "desc": "Practical Guide to Applied Conformal Prediction, published by Packt",
+  "url": "https://github.com/PacktPublishing/Practical-Guide-to-Applied-Conformal-Prediction",
+  "tag": "conformal"
+ },
+ "JuliaTrustworthyAI/ConformalPrediction.jl": {
+  "stars": 148,
+  "lic": "MIT",
+  "pushed": "2026-02-17",
+  "desc": "Predictive Uncertainty Quantification through Conformal Prediction for Machine Learning models trained in MLJ.",
+  "url": "https://github.com/JuliaTrustworthyAI/ConformalPrediction.jl",
+  "tag": "conformal"
+ },
+ "superlinear-ai/conformal-tights": {
+  "stars": 118,
+  "lic": "MIT",
+  "pushed": "2026-05-01",
+  "desc": "\ud83d\udc56 Conformal Tights adds conformal prediction of coherent quantiles and intervals to any scikit-learn regressor or Darts forecaster",
+  "url": "https://github.com/superlinear-ai/conformal-tights",
+  "tag": "conformal"
+ },
+ "salesforce/online_conformal": {
+  "stars": 117,
+  "lic": "Apache-2.0",
+  "pushed": "2025-05-01",
+  "desc": "Methods for online conformal prediction.",
+  "url": "https://github.com/salesforce/online_conformal",
+  "tag": "conformal"
+ },
+ "ftsboy1/credibility-gated-underwriting-xai": {
+  "stars": 107,
+  "lic": "MIT",
+  "pushed": "2026-07-28",
+  "desc": "An auditable XAI framework for commercial auto underwriting risk assessment and loss forecasting with credibility-gated modeling, conformal prediction, subgroup validation, and model monitoring.",
+  "url": "https://github.com/ftsboy1/credibility-gated-underwriting-xai",
+  "tag": "conformal"
+ },
+ "FilippoMB/Ensemble-Conformalized-Quantile-Regression": {
+  "stars": 104,
+  "lic": "MIT",
+  "pushed": "2025-03-15",
+  "desc": "Valid and adaptive prediction intervals for probabilistic time series forecasting.",
+  "url": "https://github.com/FilippoMB/Ensemble-Conformalized-Quantile-Regression",
+  "tag": "conformal"
+ },
+ "ml-jku/HopCPT": {
+  "stars": 85,
+  "lic": "MIT",
+  "pushed": "2025-05-28",
+  "desc": "Conformal Prediction for Time Series with Modern Hopfield Networks",
+  "url": "https://github.com/ml-jku/HopCPT",
+  "tag": "conformal"
+ },
+ "TIML-Group/Conformal-Prediction-Unlearning": {
+  "stars": 76,
+  "lic": "MIT",
+  "pushed": "2026-05-01",
+  "desc": null,
+  "url": "https://github.com/TIML-Group/Conformal-Prediction-Unlearning",
+  "tag": "conformal"
+ },
+ "jjcherian/conditional-conformal": {
+  "stars": 71,
+  "lic": "MIT",
+  "pushed": "2025-10-07",
+  "desc": "A package for conformal prediction with conditional guarantees.",
+  "url": "https://github.com/jjcherian/conditional-conformal",
+  "tag": "conformal"
+ },
+ "Meesho/spark_calibration": {
+  "stars": 17,
+  "lic": "Apache-2.0",
+  "pushed": "2026-05-26",
+  "desc": "Spark Calibration - A python package for calibrating probabilities predicted by ML model involving large training & test datasets as spark dataframes",
+  "url": "https://github.com/Meesho/spark_calibration",
+  "tag": "calibration"
+ },
+ "AmirhosseinHonardoust/Underwriting-Decision-Safety-Lab": {
+  "stars": 12,
+  "lic": "MIT",
+  "pushed": "2026-08-17",
+  "desc": "A decision-safety lab for loan approval: trains a baseline classifier, calibrates probabilities (ECE/Brier), sweeps confidence thresholds to build a coverage, quality frontier and outputs a defensible abstention policy (auto-decide vs review). Includes a Streamlit dashboard for report cards, triage UI, and data quality checks.",
+  "url": "https://github.com/AmirhosseinHonardoust/Underwriting-Decision-Safety-Lab",
+  "tag": "calibration"
+ },
+ "ArnauFabregat/probability-estimation": {
+  "stars": 1,
+  "lic": "-",
+  "pushed": "2026-03-20",
+  "desc": "Monotonic Classification for Probability Estimation with Calibration and Sensitivity Diagnostics",
+  "url": "https://github.com/ArnauFabregat/probability-estimation",
+  "tag": "calibration"
+ },
+ "Expyrix/Credit-Default-Risk-Prediction": {
+  "stars": 1,
+  "lic": "-",
+  "pushed": "2026-06-09",
+  "desc": "Machine learning project for credit card default prediction using CatBoost, probability calibration, SHAP explainability and cost-sensitive decision thresholds.",
+  "url": "https://github.com/Expyrix/Credit-Default-Risk-Prediction",
+  "tag": "calibration"
+ },
+ "thylinao1/BCGX-Data-Scientist": {
+  "stars": 1,
+  "lic": "MIT",
+  "pushed": "2026-05-25",
+  "desc": "Data science project: PowerCo SME churn classification with a validation-fold cost-optimal operating threshold, leak-safe SMOTE-inside-pipeline resampling, isotonic probability calibration, and a Cox proportional-hazards survival complement.",
+  "url": "https://github.com/thylinao1/BCGX-Data-Scientist",
+  "tag": "calibration"
+ },
+ "meherabmehu/Customer-Churn-Prediction-using-Survival-Analysis-": {
+  "stars": 1,
+  "lic": "-",
+  "pushed": "2026-07-21",
+  "desc": "Developed a customer churn prediction solution using Survival Analysis to estimate when customers are likely to churn. Engineered 152 behavioral features from millions of transaction records and built an ensemble of LightGBM, XGBoost, and CatBoost with probability calibration and validation. First Runner-Up, bKash \u00d7 NSUCEC Cybernauts 2026 Datathon.",
+  "url": "https://github.com/meherabmehu/Customer-Churn-Prediction-using-Survival-Analysis-",
+  "tag": "calibration"
+ },
+ "BINTANNG99/adult-income-probability-calibration": {
+  "stars": 0,
+  "lic": "MIT",
+  "pushed": "2026-04-12",
+  "desc": "Probability calibration of XGBoost for Adult Income classification using Isotonic Regression",
+  "url": "https://github.com/BINTANNG99/adult-income-probability-calibration",
+  "tag": "calibration"
+ },
+ "HajipuriaHacker/ChestMNIST-Probability-Calibration": {
+  "stars": 0,
+  "lic": "-",
+  "pushed": "2026-07-29",
+  "desc": "Dynamic Quantile Slicing for Probability Calibration in Multi-Label Chest X-Ray Classification (IDEAS ISI Kolkata Internship Project).",
+  "url": "https://github.com/HajipuriaHacker/ChestMNIST-Probability-Calibration",
+  "tag": "calibration"
+ },
+ "fmegahed/conformal_clip": {
+  "stars": 0,
+  "lic": "MIT",
+  "pushed": "2026-05-19",
+  "desc": "Few-shot CLIP classification with conformal prediction, probability calibration, and reliability metrics.",
+  "url": "https://github.com/fmegahed/conformal_clip",
+  "tag": "calibration"
+ },
+ "Ash2002-a/ecg-arrhythmia-calibration": {
+  "stars": 0,
+  "lic": "-",
+  "pushed": "2026-03-06",
+  "desc": "Machine learning pipeline for ECG arrhythmia classification using the MIT-BIH dataset with leakage-safe splitting, probability calibration, and robustness testing.",
+  "url": "https://github.com/Ash2002-a/ecg-arrhythmia-calibration",
+  "tag": "calibration"
+ },
+ "SasiKumar-12/task12-binary-classification": {
+  "stars": 0,
+  "lic": "-",
+  "pushed": "2026-07-02",
+  "desc": "Production-ready binary classification pipeline: hyperparameter tuning, probability calibration, cost-based threshold selection, and per-segment fairness checks.",
+  "url": "https://github.com/SasiKumar-12/task12-binary-classification",
+  "tag": "calibration"
+ },
+ "haminhthong/Parkinsons-Voice-Classification": {
+  "stars": 0,
+  "lic": "MIT",
+  "pushed": "2026-09-07",
+  "desc": "Leakage-aware Parkinson's voice classification with patient-level validation, probability calibration, OOF threshold tuning, uncertainty estimation, and FastAPI.",
+  "url": "https://github.com/haminhthong/Parkinsons-Voice-Classification",
+  "tag": "calibration"
+ },
+ "garvitchandel1/Multi-Class-Industrial-Defect-Classification": {
+  "stars": 0,
+  "lic": "-",
+  "pushed": "2026-03-10",
+  "desc": "Cost-sensitive deep learning system for industrial defect classification with probability calibration, economic optimization, and real-time deployment analysis.",
+  "url": "https://github.com/garvitchandel1/Multi-Class-Industrial-Defect-Classification",
+  "tag": "calibration"
+ },
+ "andreiyopt/adv_CTR_project": {
+  "stars": 0,
+  "lic": "-",
+  "pushed": "2026-09-03",
+  "desc": "CTR prediction project using binary classification and probability calibration to estimate ad click-through rates.",
+  "url": "https://github.com/andreiyopt/adv_CTR_project",
+  "tag": "calibration"
+ },
+ "AnnyDanny/smart-airport-assistant": {
+  "stars": 0,
+  "lic": "MIT",
+  "pushed": "2026-09-06",
+  "desc": "Supervised binary classification, random forest classifier, feature engineering, feature scaling, probability calibration, tabular data inference",
+  "url": "https://github.com/AnnyDanny/smart-airport-assistant",
+  "tag": "calibration"
+ },
+ "chrisgillam/polymarket_gambot": {
+  "stars": 25,
+  "lic": "MIT",
+  "pushed": "2025-04-20",
+  "desc": "Gambot is an open-source trading bot that identifies profitable sports betting opportunities and executes them on Polymarket. By pulling market data from sharp sportsbooks (like Pinnacle) and comparing against Polymarket, Gambot leverages a probabilistic modeling approach and Kelly Criterion bet sizing to pursue long-term capital growth.",
+  "url": "https://github.com/chrisgillam/polymarket_gambot",
+  "tag": "kelly"
+ }
+}

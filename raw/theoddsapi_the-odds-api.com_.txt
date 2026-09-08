@@ -1,0 +1,211 @@
+URL: https://the-odds-api.com/\nSTATUS: 200\n\n<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sports Odds API | The Odds API</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/assets/img/fav.ico">
+    <script src="https://www.google.com/recaptcha/api.js" async="true"></script>
+    <script src="https://js.stripe.com/v3/" async="true"></script>
+    <meta name="description" content="Get sports odds data for loads of sports from bookmakers around the world">
+    <meta name="og:title" content="The Odds API">
+    <meta name="twitter:title" content="The Odds API">
+    <meta name="og:description" content="Get sports odds data for loads of sports from bookmakers around the world">
+    <meta name="twitter:description" content="Get sports odds data for loads of sports from bookmakers around the world">
+    <meta name="robots" content="index, follow">
+    <meta name="og:type" content="article">
+    <meta name="og:image" content="/assets/img/sports-odds-in-excel.jpg">
+    <meta name="twitter:image" content="/assets/img/sports-odds-in-excel.jpg">
+    <meta name="og:site_name" content="The Odds API">
+    <meta name="twitter:site" content="@The_Odds_API">
+    <meta name="twitter:creator" content="@The_Odds_API">
+    
+    <link rel="preload" href="/assets/css/0.styles.698483c2.css" as="style"><link rel="preload" href="/assets/js/app.77b96ff3.js" as="script"><link rel="preload" href="/assets/js/3.70172c86.js" as="script"><link rel="preload" href="/assets/js/31.624ff22c.js" as="script"><link rel="preload" href="/assets/js/18.a3b62b8b.js" as="script"><link rel="preload" href="/assets/js/4.b5fcb02e.js" as="script"><link rel="preload" href="/assets/js/22.4e05ce36.js" as="script"><link rel="preload" href="/assets/js/30.e4f1a3cd.js" as="script"><link rel="preload" href="/assets/js/21.701e9b4d.js" as="script"><link rel="preload" href="/assets/js/27.804579ea.js" as="script"><link rel="preload" href="/assets/js/9.c232ee4e.js" as="script"><link rel="prefetch" href="/assets/js/1.11d4d171.js"><link rel="prefetch" href="/assets/js/10.678a30d1.js"><link rel="prefetch" href="/assets/js/100.51a322f9.js"><link rel="prefetch" href="/assets/js/101.2156c9b6.js"><link rel="prefetch" href="/assets/js/102.9200b745.js"><link rel="prefetch" href="/assets/js/103.76e3f4f3.js"><link rel="prefetch" href="/assets/js/104.9834c9c2.js"><link rel="prefetch" href="/assets/js/105.c727c5db.js"><link rel="prefetch" href="/assets/js/106.7fb7e458.js"><link rel="prefetch" href="/assets/js/107.6ac9517b.js"><link rel="prefetch" href="/assets/js/108.e3dfcf77.js"><link rel="prefetch" href="/assets/js/109.306debaf.js"><link rel="prefetch" href="/assets/js/11.cf94173a.js"><link rel="prefetch" href="/assets/js/110.f1b64274.js"><link rel="prefetch" href="/assets/js/111.4e67eedb.js"><link rel="prefetch" href="/assets/js/112.299d4a31.js"><link rel="prefetch" href="/assets/js/113.1e821e91.js"><link rel="prefetch" href="/assets/js/114.7785418c.js"><link rel="prefetch" href="/assets/js/115.4700c2aa.js"><link rel="prefetch" href="/assets/js/116.e4751b95.js"><link rel="prefetch" href="/assets/js/117.b6269eab.js"><link rel="prefetch" href="/assets/js/118.825bb74a.js"><link rel="prefetch" href="/assets/js/12.dae5dabe.js"><link rel="prefetch" href="/assets/js/13.191aa550.js"><link rel="prefetch" href="/assets/js/14.945d0403.js"><link rel="prefetch" href="/assets/js/15.7d410324.js"><link rel="prefetch" href="/assets/js/16.06954c99.js"><link rel="prefetch" href="/assets/js/17.01842709.js"><link rel="prefetch" href="/assets/js/19.6cc716b3.js"><link rel="prefetch" href="/assets/js/20.31dcd20e.js"><link rel="prefetch" href="/assets/js/23.7224f44e.js"><link rel="prefetch" href="/assets/js/24.57f02abd.js"><link rel="prefetch" href="/assets/js/25.da793f7c.js"><link rel="prefetch" href="/assets/js/26.ce1ba3af.js"><link rel="prefetch" href="/assets/js/28.13c296be.js"><link rel="prefetch" href="/assets/js/29.3361a67b.js"><link rel="prefetch" href="/assets/js/32.e162d9e9.js"><link rel="prefetch" href="/assets/js/33.bd95bea6.js"><link rel="prefetch" href="/assets/js/34.85ff8b5a.js"><link rel="prefetch" href="/assets/js/35.8a2d3f93.js"><link rel="prefetch" href="/assets/js/36.0b45155e.js"><link rel="prefetch" href="/assets/js/37.3f02160d.js"><link rel="prefetch" href="/assets/js/38.d0548fbd.js"><link rel="prefetch" href="/assets/js/39.58583dab.js"><link rel="prefetch" href="/assets/js/40.5b41ae55.js"><link rel="prefetch" href="/assets/js/41.c8516aca.js"><link rel="prefetch" href="/assets/js/42.3f85622d.js"><link rel="prefetch" href="/assets/js/43.a02beaee.js"><link rel="prefetch" href="/assets/js/44.ecdafa71.js"><link rel="prefetch" href="/assets/js/45.b7897354.js"><link rel="prefetch" href="/assets/js/46.7ca48d17.js"><link rel="prefetch" href="/assets/js/47.c12ec3e2.js"><link rel="prefetch" href="/assets/js/48.e1be476d.js"><link rel="prefetch" href="/assets/js/49.4418a503.js"><link rel="prefetch" href="/assets/js/5.2c781b7a.js"><link rel="prefetch" href="/assets/js/50.c6978378.js"><link rel="prefetch" href="/assets/js/51.ca61cb2b.js"><link rel="prefetch" href="/assets/js/52.8fe0a7f0.js"><link rel="prefetch" href="/assets/js/53.bad04d24.js"><link rel="prefetch" href="/assets/js/54.caa74707.js"><link rel="prefetch" href="/assets/js/55.f2130b05.js"><link rel="prefetch" href="/assets/js/56.aafa4fdf.js"><link rel="prefetch" href="/assets/js/57.56b4ec58.js"><link rel="prefetch" href="/assets/js/58.fb79a11c.js"><link rel="prefetch" href="/assets/js/59.6a774cb2.js"><link rel="prefetch" href="/assets/js/6.8487fcd4.js"><link rel="prefetch" href="/assets/js/60.adce4c68.js"><link rel="prefetch" href="/assets/js/61.0f422c18.js"><link rel="prefetch" href="/assets/js/62.43951676.js"><link rel="prefetch" href="/assets/js/63.cc0c10a6.js"><link rel="prefetch" href="/assets/js/64.46810f16.js"><link rel="prefetch" href="/assets/js/65.86c648f8.js"><link rel="prefetch" href="/assets/js/66.fbe508be.js"><link rel="prefetch" href="/assets/js/67.b17e51f0.js"><link rel="prefetch" href="/assets/js/68.76c6e246.js"><link rel="prefetch" href="/assets/js/69.d05262cd.js"><link rel="prefetch" href="/assets/js/7.b328ed97.js"><link rel="prefetch" href="/assets/js/70.9b0139a0.js"><link rel="prefetch" href="/assets/js/71.022bb65d.js"><link rel="prefetch" href="/assets/js/72.ab9d3cac.js"><link rel="prefetch" href="/assets/js/73.878373b1.js"><link rel="prefetch" href="/assets/js/74.cc2426b7.js"><link rel="prefetch" href="/assets/js/75.4f71fbbf.js"><link rel="prefetch" href="/assets/js/76.1b14d607.js"><link rel="prefetch" href="/assets/js/77.d867ac30.js"><link rel="prefetch" href="/assets/js/78.71727177.js"><link rel="prefetch" href="/assets/js/79.bcc79c83.js"><link rel="prefetch" href="/assets/js/8.108e1f51.js"><link rel="prefetch" href="/assets/js/80.8cbd08ba.js"><link rel="prefetch" href="/assets/js/81.1ee47625.js"><link rel="prefetch" href="/assets/js/82.1c8df387.js"><link rel="prefetch" href="/assets/js/83.4064b73a.js"><link rel="prefetch" href="/assets/js/84.a5c492e9.js"><link rel="prefetch" href="/assets/js/85.b6f01d18.js"><link rel="prefetch" href="/assets/js/86.53d9c149.js"><link rel="prefetch" href="/assets/js/87.cfa14ec2.js"><link rel="prefetch" href="/assets/js/88.5de02741.js"><link rel="prefetch" href="/assets/js/89.cf1c4615.js"><link rel="prefetch" href="/assets/js/90.19059a28.js"><link rel="prefetch" href="/assets/js/91.f5648405.js"><link rel="prefetch" href="/assets/js/92.fc7d7353.js"><link rel="prefetch" href="/assets/js/93.00b180ce.js"><link rel="prefetch" href="/assets/js/94.7117dff0.js"><link rel="prefetch" href="/assets/js/95.c28c8417.js"><link rel="prefetch" href="/assets/js/96.ffb0f895.js"><link rel="prefetch" href="/assets/js/97.206449a6.js"><link rel="prefetch" href="/assets/js/98.f31638ba.js"><link rel="prefetch" href="/assets/js/99.11541a5e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.698483c2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar custom-home"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" aria-current="page" class="home-link router-link-exact-active router-link-active"><img src="/assets/img/logo.svg" alt="The Odds API" class="logo"> <span class="site-name can-hide">The Odds API</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Home
+</a></div><div class="nav-item"><a href="/liveapi/guides/v4/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/features/spreadsheets.html" class="nav-link">
+  Sheets
+</a></div><div class="nav-item"><a href="/account/" class="nav-link">
+  Account
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Home
+</a></div><div class="nav-item"><a href="/liveapi/guides/v4/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/features/spreadsheets.html" class="nav-link">
+  Sheets
+</a></div><div class="nav-item"><a href="/account/" class="nav-link">
+  Account
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default" data-v-9d1d527c data-v-9d1d527c><section class="intro" data-v-9d1d527c><div data-v-9d1d527c><div class="custom-home-description" data-v-9d1d527c>
+        Sports betting API
+        <br data-v-9d1d527c>covering odds from bookmakers
+        <br data-v-9d1d527c>around the world
+    </div> <div class="description" data-v-9d1d527c><a href="/liveapi/guides/v4/" data-v-9d1d527c>API Docs</a>      •     <a href="/liveapi/guides/v4/samples.html" data-v-9d1d527c>Code Samples</a></div> <br data-v-9d1d527c> <div onclick="window.location='/#get-access'" class="button full" data-v-065ab652 data-v-9d1d527c>
+    Get API Key →
+</div> <div class="add-on-description" data-v-9d1d527c>
+      Not a developer?
+      <br data-v-9d1d527c>See the add-ons for <a href="/features/excel.html" data-v-9d1d527c>Excel</a> and <a href="/features/spreadsheets.html" data-v-9d1d527c>Google Sheets</a></div></div> <div data-v-9d1d527c><div class="browser container browser" data-v-2bf71f8f data-v-9d1d527c><div class="row" data-v-2bf71f8f><div class="column left" data-v-2bf71f8f><span class="dot" style="background:#ED594A;" data-v-2bf71f8f></span> <span class="dot" style="background:#FDD800;" data-v-2bf71f8f></span> <span class="dot" style="background:#5AC05A;" data-v-2bf71f8f></span></div> <div class="column middle" data-v-2bf71f8f><input type="text" disabled="disabled" value="api.the-odds-api.com/v4/sports/americanfootball_nfl/odds?regions=us&amp;apiKey=..." data-v-2bf71f8f></div></div> <div class="content" data-v-2bf71f8f><div class="language-json extra-class" data-v-2bf71f8f data-v-9d1d527c><pre class="language-json" data-v-2bf71f8f data-v-9d1d527c><code data-v-2bf71f8f data-v-9d1d527c><span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>{</span>
+    <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;id&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token string" data-v-2bf71f8f data-v-9d1d527c>&quot;bda33adca828c09dc3cac3a856aef176&quot;</span><span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>,</span>
+    <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;sport_key&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token string" data-v-2bf71f8f data-v-9d1d527c>&quot;americanfootball_nfl&quot;</span><span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>,</span>
+    <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;commence_time&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token string" data-v-2bf71f8f data-v-9d1d527c>&quot;2021-09-10T00:20:00Z&quot;</span><span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>,</span>
+    <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;home_team&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token string" data-v-2bf71f8f data-v-9d1d527c>&quot;Tampa Bay Buccaneers&quot;</span><span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>,</span>
+    <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;away_team&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token string" data-v-2bf71f8f data-v-9d1d527c>&quot;Dallas Cowboys&quot;</span><span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>,</span>
+    <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;bookmakers&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>[</span>
+    <span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>{</span>
+        <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;key&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token string" data-v-2bf71f8f data-v-9d1d527c>&quot;fanduel&quot;</span><span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>,</span>
+        <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;title&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token string" data-v-2bf71f8f data-v-9d1d527c>&quot;FanDuel&quot;</span><span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>,</span>
+        <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;last_update&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token string" data-v-2bf71f8f data-v-9d1d527c>&quot;2021-06-10T10:46:09Z&quot;</span><span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>,</span>
+        <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;markets&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>[</span>
+        <span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>{</span>
+            <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;key&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token string" data-v-2bf71f8f data-v-9d1d527c>&quot;h2h&quot;</span><span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>,</span>
+            <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;outcomes&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>[</span>
+                <span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>{</span> <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;name&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token string" data-v-2bf71f8f data-v-9d1d527c>&quot;Dallas Cowboys&quot;</span><span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>,</span> <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;price&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token number" data-v-2bf71f8f data-v-9d1d527c>240</span> <span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>}</span><span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>,</span>
+                <span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>{</span> <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;name&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token string" data-v-2bf71f8f data-v-9d1d527c>&quot;Tampa Bay Buccaneers&quot;</span><span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>,</span> <span class="token property" data-v-2bf71f8f data-v-9d1d527c>&quot;price&quot;</span><span class="token operator" data-v-2bf71f8f data-v-9d1d527c>:</span> <span class="token number" data-v-2bf71f8f data-v-9d1d527c>-303</span> <span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>}</span>
+            <span class="token punctuation" data-v-2bf71f8f data-v-9d1d527c>]</span>
+    ...</code></pre></div></div></div></div></section> <section data-v-9d1d527c><h2 id="get-access" data-v-9d1d527c><a href="#get-access" class="header-anchor" data-v-9d1d527c>#</a> Get Access <span data-v-9d1d527c></span></h2> <p style="text-align:center;" data-v-9d1d527c>
+    Subscribe to receive your API key via email
+</p> <div class="plans" data-v-21269e02 data-v-9d1d527c><div class="plan" data-v-21269e02><div class="root" data-v-2908d5f0 data-v-21269e02><div class="oa-plan-title" data-v-2908d5f0>
+        Starter
+    </div> <div class="oa-price" data-v-2908d5f0><div data-v-2908d5f0>
+            FREE
+        </div> <label data-v-2908d5f0>
+             
+        </label></div> <div class="oa-feature" data-v-2908d5f0>
+        500 credits
+        <br data-v-2908d5f0>
+        per month
+    </div> <div class="oa-feature" data-v-2908d5f0>
+        All sports
+    </div><div class="oa-feature" data-v-2908d5f0>
+        Most bookmakers
+    </div><div class="oa-feature" data-v-2908d5f0>
+        All betting markets
+    </div> <div class="oa-feature" data-v-2908d5f0><s data-v-2908d5f0>Historical Odds</s></div> <div class="button oa-button full" data-v-065ab652 data-v-2908d5f0>
+    START
+</div></div></div><div class="plan" data-v-21269e02><div class="root" data-v-2908d5f0 data-v-21269e02><div class="oa-plan-title" data-v-2908d5f0>
+        20K
+    </div> <div class="oa-price" data-v-2908d5f0><div data-v-2908d5f0><span data-v-2908d5f0>$</span>30
+        </div> <label data-v-2908d5f0>
+            per month, USD
+        </label></div> <div class="oa-feature" data-v-2908d5f0>
+        20,000 credits
+        <br data-v-2908d5f0>
+        per month
+    </div> <div class="oa-feature" data-v-2908d5f0>
+        All sports
+    </div><div class="oa-feature" data-v-2908d5f0>
+        All bookmakers
+    </div><div class="oa-feature" data-v-2908d5f0>
+        All betting markets
+    </div><div class="oa-feature" data-v-2908d5f0>
+        Historical Odds
+    </div>  <div class="button oa-button full" data-v-065ab652 data-v-2908d5f0>
+    START
+</div></div></div><div class="plan" data-v-21269e02><div class="root" data-v-2908d5f0 data-v-21269e02><div class="oa-plan-title" data-v-2908d5f0>
+        100K
+    </div> <div class="oa-price" data-v-2908d5f0><div data-v-2908d5f0><span data-v-2908d5f0>$</span>59
+        </div> <label data-v-2908d5f0>
+            per month, USD
+        </label></div> <div class="oa-feature" data-v-2908d5f0>
+        100,000 credits
+        <br data-v-2908d5f0>
+        per month
+    </div> <div class="oa-feature" data-v-2908d5f0>
+        All sports
+    </div><div class="oa-feature" data-v-2908d5f0>
+        All bookmakers
+    </div><div class="oa-feature" data-v-2908d5f0>
+        All betting markets
+    </div><div class="oa-feature" data-v-2908d5f0>
+        Historical Odds
+    </div>  <div class="button oa-button full" data-v-065ab652 data-v-2908d5f0>
+    START
+</div></div></div><div class="plan" data-v-21269e02><div class="root" data-v-2908d5f0 data-v-21269e02><div class="oa-plan-title" data-v-2908d5f0>
+        5M
+    </div> <div class="oa-price" data-v-2908d5f0><div data-v-2908d5f0><span data-v-2908d5f0>$</span>119
+        </div> <label data-v-2908d5f0>
+            per month, USD
+        </label></div> <div class="oa-feature" data-v-2908d5f0>
+        5M credits
+        <br data-v-2908d5f0>
+        per month
+    </div> <div class="oa-feature" data-v-2908d5f0>
+        All sports
+    </div><div class="oa-feature" data-v-2908d5f0>
+        All bookmakers
+    </div><div class="oa-feature" data-v-2908d5f0>
+        All betting markets
+    </div><div class="oa-feature" data-v-2908d5f0>
+        Historical Odds
+    </div>  <div class="button oa-button full" data-v-065ab652 data-v-2908d5f0>
+    START
+</div></div></div><div class="plan" data-v-21269e02><div class="root" data-v-2908d5f0 data-v-21269e02><div class="oa-plan-title" data-v-2908d5f0>
+        15M
+    </div> <div class="oa-price" data-v-2908d5f0><div data-v-2908d5f0><span data-v-2908d5f0>$</span>249
+        </div> <label data-v-2908d5f0>
+            per month, USD
+        </label></div> <div class="oa-feature" data-v-2908d5f0>
+        15M credits
+        <br data-v-2908d5f0>
+        per month
+    </div> <div class="oa-feature" data-v-2908d5f0>
+        All sports
+    </div><div class="oa-feature" data-v-2908d5f0>
+        All bookmakers
+    </div><div class="oa-feature" data-v-2908d5f0>
+        All betting markets
+    </div><div class="oa-feature" data-v-2908d5f0>
+        Historical Odds
+    </div>  <div class="button oa-button full" data-v-065ab652 data-v-2908d5f0>
+    START
+</div></div></div> <!----></div> <div class="more" data-v-9d1d527c><span data-v-9d1d527c><a href="/account/" data-v-9d1d527c>Create an account</a> to discover higher usage plans
+  </span></div></section> <section data-v-9d1d527c><h2 data-v-9d1d527c>Features <span data-v-9d1d527c></span></h2> <div data-v-f02078fe data-v-9d1d527c><div class="feature-box" data-v-f02078fe><div class="feature-title" data-v-f02078fe>Bookmakers</div> <p data-v-f02078fe>
+            The Odds API covers odds from several global bookmakers including
+        </p> <div class="feature-details" data-v-f02078fe><div data-v-f02078fe><ul data-v-f02078fe><li data-v-f02078fe><b data-v-f02078fe>US Bookmakers</b><br data-v-f02078fe>DraftKings, FanDuel, BetMGM, Caesars, Bovada, MyBookie.ag and more
+                    </li> <li data-v-f02078fe><b data-v-f02078fe>UK Bookmakers</b><br data-v-f02078fe>Unibet, William Hill, Ladbrokes, Betfair, Bet Victor, Paddy Power and more
+                    </li> <li data-v-f02078fe><b data-v-f02078fe>EU Bookmakers</b><br data-v-f02078fe>1xBet, Pinnacle, Betfair, Unibet and more
+                    </li> <li data-v-f02078fe><b data-v-f02078fe>Aussie Bookmakers</b><br data-v-f02078fe>Sportsbet, TAB, Neds, Ladbrokes, Betfair, Unibet and more
+                    </li></ul></div></div>
+        See the <a href="/sports-odds-data/bookmaker-apis.html" data-v-f02078fe>full list of bookmakers →</a></div> <div class="feature-box" data-v-f02078fe><div class="feature-title" data-v-f02078fe>Sports</div> <p data-v-f02078fe>The Odds API provides odds data for several in-season sports</p> <div class="feature-details" data-v-f02078fe><div data-v-f02078fe><ul data-v-f02078fe><li data-v-f02078fe><b data-v-f02078fe>Football odds data</b>   NFL, College Football (NCAA), CFL, Aussie Rules (AFL) and more</li> <li data-v-f02078fe><b data-v-f02078fe>Soccer odds data</b>   EPL, EFL Championship, German Bundesliga, UEFA Europa &amp; Champions Leagues, Italian Serie A, Spanish La Liga, Campeonato Brasileiro Série A, French Ligue 1 and much more</li> <li data-v-f02078fe><b data-v-f02078fe>Basketball odds data</b>   NBA, US College Basketball (NCAA), WNBA, Euroleague and more</li> <li data-v-f02078fe><b data-v-f02078fe>Baseball odds data</b>   MLB, MiLB, KBO, NPB</li> <li data-v-f02078fe><b data-v-f02078fe>Ice hockey odds data</b>   NHL, AHL, SHL, HockeyAllsvenskan, Liiga, Mestis</li> <li data-v-f02078fe><b data-v-f02078fe>Cricket odds data</b>   Test matches, IPL, Big Bash and more</li> <li data-v-f02078fe><b data-v-f02078fe>Rugby league odds data</b>   Aussie NRL</li> <li data-v-f02078fe><b data-v-f02078fe>Golf odds data</b>   Masters Tournament, PGA Championship, US Open, The Open Championship</li> <li data-v-f02078fe><b data-v-f02078fe>Tennis odds data</b>   Grand Slams, ATP 1000, WTA 1000 and more</li> <li data-v-f02078fe><b data-v-f02078fe>Politics odds data</b>   Next US President odds</li> <li data-v-f02078fe><b data-v-f02078fe>And more</b></li></ul></div></div>
+        See the <a href="/sports-odds-data/sports-apis.html" data-v-f02078fe>full list of sports →</a></div> <div class="feature-box" data-v-f02078fe><div class="feature-title" data-v-f02078fe>Betting Markets</div> <p data-v-f02078fe>
+            The Odds API offers odds data for the following betting markets
+        </p> <div class="feature-details" data-v-f02078fe><div data-v-f02078fe><ul data-v-f02078fe><li data-v-f02078fe><strong data-v-f02078fe>head-to-head (moneyline) odds</strong></li> <li data-v-f02078fe><strong data-v-f02078fe>point spreads (handicap) odds</strong></li> <li data-v-f02078fe><strong data-v-f02078fe>totals (over/under) odds</strong></li> <li data-v-f02078fe><strong data-v-f02078fe>outrights (futures) odds</strong> for selected competitions</li> <li data-v-f02078fe><strong data-v-f02078fe>And more</strong> Player props, alternate spreads and totals, and other markets are now available for selected sports and bookmakers, with more on the way</li></ul></div></div> <p data-v-f02078fe><a href="/sports-odds-data/betting-markets.html" data-v-f02078fe>More info on betting markets →</a></p></div> <div class="feature-box" data-v-f02078fe><div class="feature-title" data-v-f02078fe>Update Intervals</div> <p data-v-f02078fe>The Odds API delivers recent odds for in-play and upcoming sports events from several bookmakers.</p> <p data-v-f02078fe><a href="/sports-odds-data/update-intervals.html" data-v-f02078fe>More info on update intervals →</a></p></div> <div class="feature-box" data-v-f02078fe><div class="feature-title" data-v-f02078fe>Format</div> <p data-v-f02078fe>
+            The Odds API feed is in JSON format, and is also available as add-ons for <a href="features/spreadsheets.html" data-v-f02078fe>Google Sheets</a> and <a href="features/excel.html" data-v-f02078fe>Excel</a></p> <p data-v-f02078fe>
+            The Odds API feed supports decimal and American odds formats.
+        </p></div></div></section> <section data-v-9d1d527c><h2 data-v-9d1d527c>Why The Odds API <span data-v-9d1d527c></span></h2> <div class="why-blocks" data-v-70069830 data-v-9d1d527c><div data-v-70069830><p data-v-70069830>Easy Integration</p> <div data-v-70069830>
+            The Odds API is simple &amp; well-documented, allowing for fast, low-cost integration
+        </div></div> <div data-v-70069830><p data-v-70069830>Coverage &amp; Features</p> <div data-v-70069830>We cover over 100 sports and over 100 bookmakers, continually expanding coverage</div></div> <div data-v-70069830><p data-v-70069830>Here for the long run</p> <div data-v-70069830>We've been operating since 2017, founded in Melbourne and now headquartered in Sydney</div></div></div></section> <section data-v-9d1d527c><h2 data-v-9d1d527c>FAQs <span data-v-9d1d527c></span></h2> <div data-v-9baab39c data-v-9d1d527c><div class="faq" data-v-9baab39c><div class="q" data-v-9baab39c><label data-v-9baab39c>Q</label> What happens when I subscribe? <div class="arrowhead down" data-v-9baab39c></div></div> <div class="a" style="display:none;" data-v-9baab39c>You will receive an email containing your API key and links to help you get started.</div></div><div class="faq" data-v-9baab39c><div class="q" data-v-9baab39c><label data-v-9baab39c>Q</label> When am I billed? <div class="arrowhead down" data-v-9baab39c></div></div> <div class="a" style="display:none;" data-v-9baab39c>For paid plans, billing happens straight away.
+            Payment then happens automatically each month thereafter, on the same day of the month that the subscription started.
+            <br /><br />For example if the first payment happens on the 1st of the month, you will be charged on the 1st for subsequent months.</div></div><div class="faq" data-v-9baab39c><div class="q" data-v-9baab39c><label data-v-9baab39c>Q</label> How can I cancel? <div class="arrowhead down" data-v-9baab39c></div></div> <div class="a" style="display:none;" data-v-9baab39c>You can cancel your subscription at any time using <a href="/manage/cancel.html">this form</a> or in the <a href="https://dash.the-odds-api.com/">accounts portal</a>.
+            <br /><br />Your subscription will automatically cancel before the next billing cycle.</div></div><div class="faq" data-v-9baab39c><div class="q" data-v-9baab39c><label data-v-9baab39c>Q</label> What is a request? <div class="arrowhead down" data-v-9baab39c></div></div> <div class="a" style="display:none;" data-v-9baab39c>A single request returns live and upcoming games for a given <b>sport</b>, betting <b>market</b>, and bookmaker <b>region</b>. Each game includes a start time, participants, and bookmaker odds for the specified region.
+            <br /><br />
+            <b>Example</b>: if you request odds for basketball NBA, from US-region bookmakers, and moneyline betting markets, the API will return live and upcoming NBA games, showing moneyline odds from US bookmakers. This will count as 1 request from your plan's usage quota.
+        </div></div><div class="faq" data-v-9baab39c><div class="q" data-v-9baab39c><label data-v-9baab39c>Q</label> How frequently are odds updated? <div class="arrowhead down" data-v-9baab39c></div></div> <div class="a" style="display:none;" data-v-9baab39c>More info on odds update intervals can be <a href="/sports-odds-data/update-intervals.html">found here</a>.</div></div><div class="faq" data-v-9baab39c><div class="q" data-v-9baab39c><label data-v-9baab39c>Q</label> How do I upgrade or downgrade a subscription? <div class="arrowhead down" data-v-9baab39c></div></div> <div class="a" style="display:none;" data-v-9baab39c>More info on upgrading or downgrading your subscription can be <a href="/manage/upgrade-downgrade-cancel-a-subscription.html">found here</a>.</div></div> <a href="/manage/faqs.html" class="more" data-v-9baab39c>More FAQs →</a> <!----></div></section> <section data-v-9d1d527c><h2 data-v-9d1d527c>More from The Odds API <span data-v-9d1d527c></span></h2> <div class="more-feature-box" data-v-61c35210 data-v-9d1d527c><ul data-v-61c35210><li data-v-61c35210><a href="/historical-odds-data/" data-v-61c35210><b data-v-61c35210>Historical Sports Odds API</b></a> <label data-v-61c35210>Historical snapshots of sports odds data back to 2020.</label></li> <li data-v-61c35210><a href="/liveapi/guides/v4/#get-scores" data-v-61c35210><b data-v-61c35210>Scores &amp; Results API</b></a> <label data-v-61c35210>Game scores and results in a simple API.</label></li> <li data-v-61c35210><a href="/widget/" data-v-61c35210><b data-v-61c35210>Odds Widget for Websites</b></a> <label data-v-61c35210>Bring bookmaker odds into your website with a simple HTML tag. Monetize with your own affiliate links.</label></li> <li data-v-61c35210><b data-v-61c35210><a href="/features/excel.html" data-v-61c35210>Excel</a> and <a href="/features/spreadsheets.html" data-v-61c35210>Google Sheets</a> Add-ons</b> <label data-v-61c35210>Get odds data in spreadsheets at the click of a button.</label></li> <li data-v-61c35210><b data-v-61c35210><a href="/sports-odds-data/betting-markets.html#player-props-api-markets" data-v-61c35210>Player Props Odds</a></b> <label data-v-61c35210>Player props odds are now available in the API for selected US sports and bookmakers, with more on the way.</label></li></ul></div></section> <section data-v-9d1d527c><h2 data-v-9d1d527c>Stay Updated <span data-v-9d1d527c></span></h2> <p style="text-align:center;" data-v-9d1d527c>
+  Follow us on <a target="_blank" href="https://twitter.com/The_Odds_API" data-v-9d1d527c>X.com</a> or <a target="_blank" href="https://bsky.app/profile/oddsapi.bsky.social" data-v-9d1d527c>Bluesky</a> <br data-v-9d1d527c>to stay updated on new sports, bookmakers and features
+</p></section> <!----> <div class="footer" data-v-f4546cee data-v-9d1d527c><div class="links" data-v-f4546cee><a href="https://twitter.com/The_Odds_API" data-v-f4546cee>
+            X.com
+        </a> <span data-v-f4546cee>•</span> <a href="https://bsky.app/profile/oddsapi.bsky.social" data-v-f4546cee>
+            Bluesky
+        </a> <span data-v-f4546cee>•</span> <a href="https://github.com/the-odds-api" data-v-f4546cee>
+            Github
+        </a></div> <div class="links" data-v-f4546cee><a href="https://status.the-odds-api.com/" data-v-f4546cee>
+            Status
+        </a> <span data-v-f4546cee>•</span> <a href="/terms-and-conditions.html" data-v-f4546cee>
+            Terms
+        </a> <span data-v-f4546cee>•</span> <a href="/privacy.html" data-v-f4546cee>
+            Privacy Policy
+        </a> <span data-v-f4546cee>•</span> <a href="mailto:team@the-odds-api.com" data-v-f4546cee>
+            Contact
+        </a></div> <div class="links" data-v-f4546cee><a href="/impersonation-warning.html" data-v-f4546cee>
+            ⚠️ Impersonator Warning
+        </a></div> <div class="copywrite" data-v-f4546cee>
+        © 2026 The Odds API
+    </div> <div data-v-f4546cee></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.77b96ff3.js" defer></script><script src="/assets/js/3.70172c86.js" defer></script><script src="/assets/js/31.624ff22c.js" defer></script><script src="/assets/js/18.a3b62b8b.js" defer></script><script src="/assets/js/4.b5fcb02e.js" defer></script><script src="/assets/js/22.4e05ce36.js" defer></script><script src="/assets/js/30.e4f1a3cd.js" defer></script><script src="/assets/js/21.701e9b4d.js" defer></script><script src="/assets/js/27.804579ea.js" defer></script><script src="/assets/js/9.c232ee4e.js" defer></script>
+  </body>
+</html>

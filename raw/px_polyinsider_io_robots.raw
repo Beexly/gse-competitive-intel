@@ -1,0 +1,26 @@
+User-Agent: GPTBot
+Disallow: /
+
+User-Agent: CCBot
+Disallow: /
+
+User-Agent: Bytespider
+Disallow: /
+
+User-Agent: Amazonbot
+Disallow: /
+
+User-Agent: meta-externalagent
+Disallow: /
+
+User-Agent: Applebot-Extended
+Disallow: /
+
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /api-proxy/
+Disallow: /_next/
+
+Host: https://polyinsider.io
+Sitemap: https://polyinsider.io/sitemap.xml

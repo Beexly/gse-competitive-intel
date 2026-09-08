@@ -1,0 +1,70 @@
+# Prediction News — see /llms.txt for an AI-agent overview of the site.
+
+User-agent: *
+Disallow: /admin/
+Disallow: /admin-gate
+Disallow: /dev/
+Disallow: /__gate
+Disallow: /api/admin/
+Disallow: /api/dev/
+# Legacy MSN / slideshow junk imported from the old WP site (~540 listicle
+# URLs with nothing to do with prediction markets). Also noindex'd in-page
+# (see pages/[...path].astro). Blocked here to stop wasting crawl budget.
+# NOTE: pages already in Google's index may persist as "indexed, though
+# blocked" until a Search Console removal — see the de-index follow-up.
+Disallow: /z-msn/
+Disallow: /z-slideshows/
+Allow: /
+Crawl-delay: 1
+
+# AI / LLM crawlers we want citing us
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Training-only / zero-referral crawlers blocked. robots.txt alone is advisory
+# (the worst offenders — Bytespider, PetalBot — ignore it), so these are ALSO
+# enforced via Cloudflare AI Crawl Control per-crawler block. Keep this list in
+# sync with the CF block list in docs/bot-protection.md §5b.
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+Sitemap: https://predictionnews.com/sitemap_index.xml

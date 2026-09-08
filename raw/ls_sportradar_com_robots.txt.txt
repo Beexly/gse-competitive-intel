@@ -1,0 +1,4 @@
+URL: https://sportradar.com/robots.txt\nSTATUS: 200\n\nUser-agent: *
+Disallow: /wp-login.php
+Disallow: /wp-admin/
+Sitemap: https://sportradar.com/sitemap_index.xml

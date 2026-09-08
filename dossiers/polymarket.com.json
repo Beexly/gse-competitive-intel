@@ -1,0 +1,39 @@
+{
+  "domain": "polymarket.com",
+  "disposition": "live",
+  "disposition_reason": "Homepage, docs, and public API hosts all reachable (200). Auth tiers and rate limits documented publicly.",
+  "tech_stack": {
+    "frontend": "Next.js React SSR (/_next/static/chunks). Homepage HTML 299KB; bundles 1749-..., 3994-..., 5250-..., 8069-..., 9660-...; Cloudflare a380d1b1 (IAH/CLE edge).",
+    "backend": "Multi-service: Gamma API (markets metadata), CLOB API (trading), Strapi-matic (content/blog, DNS-failed at probe). Poly deployed on Cloudflare.",
+    "database": "NOT CONFIRMED",
+    "cloud_cdn": "Cloudflare (a380d1b18e4c753d-IAH / cle1 edges) + Vercel-style Next hosting",
+    "citations": ["https://polymarket.com","https://docs.polymarket.com","https://polymarket.com/sitemap.xml"]
+  },
+  "api_architecture": {
+    "rest_endpoints": [
+      {"method":"GET","path":"https://gamma-api.polymarket.com/markets/keyset","auth_required":"None (public metadata)","tier":"public","sample_response":"NOT CONFIRMED (200 observed)","citation":"https://gamma-api.polymarket.com/markets/keyset"},
+      {"method":"GET","path":"/markets","auth_required":"None","tier":"public","sample_response":"market series with id/ticker/slug/title/volume24hr etc.","citation":"https://docs.polymarket.com"},
+      {"method":"GET","path":"/markets-by-token/{token_id}","auth_required":"None","tier":"public","sample_response":"NOT CONFIRMED","citation":"https://docs.polymarket.com"},
+      {"method":"GET","path":"/events","auth_required":"None","tier":"public","sample_response":"event series","citation":"https://docs.polymarket.com"},
+      {"method":"GET","path":"/prices-history","auth_required":"None","tier":"public","sample_response":"price history","citation":"https://docs.polymarket.com"},
+      {"method":"GET","path":"/books","auth_required":"L2/L3","tier":"authenticated premium","sample_response":"orderbook L2/L3","citation":"https://docs.polymarket.com"},
+      {"method":"GET","path":"/markets-events","auth_required":"None","tier":"public","sample_response":"NOT CONFIRMED","citation":"https://docs.polymarket.com"}
+    ],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": [
+      {"url":"wss://ws-subscriptions.polymarket.com","auth_required":"API-key signed","tier":"L2/L3","citation":"https://docs.polymarket.com"}
+    ],
+    "rate_limits": {"L1":"readonly public key — basic","L2":"level 2 API key","L3":"level 3 API key — higher rate","note":"4 auth levels L1/L2/L3 + enterprise; rate limits tier-specific per docs","citation":"https://docs.polymarket.com"},
+    "citations": ["https://docs.polymarket.com","https://gamma-api.polymarket.com/markets/keyset","https://polymarket.com/sitemap.xml","https://api.elections.kalshi.com (cross-ref oddpool)"]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {"model_types":"NOT CONFIRMED","training_data":"NOT CONFIRMED","update_frequency":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "simulation_engine": {"num_simulations":"NOT CONFIRMED","correlation_method":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "data_supply_chain": {"vendors":"NOT CONFIRMED (self-hosted markets; no third-party sports vendor strings observed in homepage HTML)","citations":["https://polymarket.com"]},
+  "product_limits": {"limits":"NOT CONFIRMED","upgrade_triggers":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "pricing": {"web":"NOT CONFIRMED — no public pricing page; token-gated trading fees implied","ios":"NOT CONFIRMED","android":"NOT CONFIRMED","citations":["https://polymarket.com"]},
+  "customer_pain": [],
+  "discovered_paths": ["/markets","/markets-by-token/{token_id}","/markets-events","/prices-history","/books","/events","/docs","/wallets-auth"],
+  "discovered_targets": ["gamma-api.polymarket.com","clob.polymarket.com","data-api.polymarket.com","ws-subscriptions.polymarket.com","strapi-matic.poly.market"],
+  "discovery_metadata": {"method":"read-only HTTP GET + docs.polymarket.com markdown extraction + public API probe","timestamp":"2026-09-08T21:15:00Z"}
+}

@@ -1,0 +1,298 @@
+{
+ "ssb-csv": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "final": "https://www.ssbdata.com/csvfiles/nflspreads/nflspreadsgames.csv",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: www.ssbdata.com\n"
+ },
+ "ssb-root": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "final": "https://www.ssbdata.com/",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: www.ssbdata.com\n"
+ },
+ "proxy-sports-root": {
+  "status": "404",
+  "bytes": "85",
+  "ctype": "application/json",
+  "final": "https://proxy.sportsdataverse.org/",
+  "head": "{\"error\": {\"code\": \"404\", \"message\": \"The deployment could not be found on Vercel.\"}}",
+  "err": ""
+ },
+ "proxy-sports-cbb": {
+  "status": "404",
+  "bytes": "85",
+  "ctype": "application/json",
+  "final": "https://proxy.sportsdataverse.org/cbb/scoreboard?season=2025",
+  "head": "{\"error\": {\"code\": \"404\", \"message\": \"The deployment could not be found on Vercel.\"}}",
+  "err": ""
+ },
+ "smarkets-hub": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "final": "https://hub.smarkets.com/datafeed/websocket_configuration.json",
+  "head": "{\"error\": {\"code\": \"404\", \"message\": \"The deployment could not be found on Vercel.\"}}",
+  "err": "curl: (6) Could not resolve host: hub.smarkets.com\n"
+ },
+ "smarkets-tradingapi": {
+  "status": "200",
+  "bytes": "205133",
+  "ctype": "text/html; charset=utf-8",
+  "final": "https://docs.kalshi.com/welcome?redirect=%2Freference%2Fgetting-started",
+  "head": "<!DOCTYPE html><html lang=\"en\" class=\"inter_1d81deff-module__CYM0aG__variable papermono_89c757f2-module__6aS5zq__variable dark\" data-banner-state=\"visible\" data-assistant-state=\"closed\" data-page-mode=\"none\" data-current-path=\"/\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"/><link rel=\"preload\" href=\"/mintlify-assets/_next/sta",
+  "err": ""
+ },
+ "nhl-club-shell": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "final": "https://statsapi.web.nhl.com/api/v1/teams",
+  "head": "<!DOCTYPE html><html lang=\"en\" class=\"inter_1d81deff-module__CYM0aG__variable papermono_89c757f2-module__6aS5zq__variable dark\" data-banner-state=\"visible\" data-assistant-state=\"closed\" data-page-mode=\"none\" data-current-path=\"/\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"/><link rel=\"preload\" href=\"/mintlify-assets/_next/sta",
+  "err": "curl: (6) Could not resolve host: statsapi.web.nhl.com\n"
+ },
+ "nba-stats-retry": {
+  "status": "000",
+  "bytes": "0",
+  "ctype": "",
+  "final": "https://stats.nba.com/stats/scoreboardv2?GameDate=09/07/2026&LeagueID=00&DayOffset=0",
+  "head": "<!DOCTYPE html><html lang=\"en\" class=\"inter_1d81deff-module__CYM0aG__variable papermono_89c757f2-module__6aS5zq__variable dark\" data-banner-state=\"visible\" data-assistant-state=\"closed\" data-page-mode=\"none\" data-current-path=\"/\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"/><link rel=\"preload\" href=\"/mintlify-assets/_next/sta",
+  "err": "curl: (28) Operation timed out after 15000 milliseconds with 0 bytes received\n"
+ },
+ "espn-scoreboard-retry": {
+  "status": "403",
+  "bytes": "442",
+  "ctype": "text/html",
+  "final": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
+  "head": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;site&#46;api&#46;espn&#46;com&#47;apis&#47;site&#47;v2&#47;sports&#47;football&#47;nfl&#47;scoreboard\" on this server.<P>\nReference&#32;&#35;18&#46;99cadc17&#46;1788904523&#46;11a49929\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;99cadc17&#46;17",
+  "err": ""
+ },
+ "oddspapi": {
+  "status": "200",
+  "bytes": "178756",
+  "ctype": "text/html; charset=utf-8",
+  "final": "https://oddspapi.io/us",
+  "head": "<!DOCTYPE html><html lang=\"en-US\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" imageSrcSet=\"/_next/image?url=%2Fassets%2Fimages%2Fbackground.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fassets%2Fimages%2Fbackground.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fassets%2Fimages%2Fbackground.webp&amp;w=828&am",
+  "err": ""
+ },
+ "pipeworx": {
+  "status": "200",
+  "bytes": "96434",
+  "ctype": "text/html; charset=utf-8",
+  "final": "https://pipeworx.io/",
+  "head": "<!DOCTYPE html><html lang=\"en\" data-astro-cid-5hce7sga> <head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"description\" content=\"Correct, cited, current \u2014 Pipeworx grounds AI agents in 1540 primary sources. In a blind-graded benchmark, frontier models answered 100% of 20 live-data questions grounded through Pipeworx and 63% with web search, ",
+  "err": ""
+ },
+ "pipeworx-github": {
+  "status": "200",
+  "bytes": "7220",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/pipeworx-io/mcp-odds-api",
+  "head": "{\n  \"id\": 1237299272,\n  \"node_id\": \"R_kgDOSb-wSA\",\n  \"name\": \"mcp-odds-api\",\n  \"full_name\": \"pipeworx-io/mcp-odds-api\",\n  \"private\": false,\n  \"owner\": {\n    \"login\": \"pipeworx-io\",\n    \"id\": 270792911,\n    \"node_id\": \"O_kgDOECP4zw\",\n    \"avatar_url\": \"https://avatars.githubusercontent.com/u/270792911?v=4\",\n    \"gravatar_id\": \"\",\n    \"url\": \"https://api.github.com/users/pipeworx-io\",\n    \"html_url\"",
+  "err": ""
+ },
+ "gh_nba_api": {
+  "status": "200",
+  "bytes": "5661",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/swar/nba_api",
+  "head": "{\n  \"id\": 149062453,\n  \"node_id\": \"MDEwOlJlcG9zaXRvcnkxNDkwNjI0NTM=\",\n  \"name\": \"nba_api\",\n  \"full_name\": \"swar/nba_api\",\n  \"private\": false,\n  \"owner\": {\n    \"login\": \"swar\",\n    \"id\": 14857247,\n    \"node_id\": \"MDQ6VXNlcjE0ODU3MjQ3\",\n    \"avatar_url\": \"https://avatars.githubusercontent.com/u/14857247?v=4\",\n    \"gravatar_id\": \"\",\n    \"url\": \"https://api.github.com/users/swar\",\n    \"html_url\": \"htt",
+  "err": ""
+ },
+ "gh_nhldata": {
+  "status": "404",
+  "bytes": "132",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/colehaigler/nhldata",
+  "head": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/repos#get-a-repository\",\n  \"status\": \"404\"\n}\n",
+  "err": ""
+ },
+ "gh_nhlescraper": {
+  "status": "404",
+  "bytes": "132",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/sinhrks/nhlscraper",
+  "head": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/repos#get-a-repository\",\n  \"status\": \"404\"\n}\n",
+  "err": ""
+ },
+ "gh_kyleskom_nfl": {
+  "status": "404",
+  "bytes": "132",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/kyleskom/NFL-Medical",
+  "head": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/repos#get-a-repository\",\n  \"status\": \"404\"\n}\n",
+  "err": ""
+ },
+ "gh_espn_infrastructure": {
+  "status": "200",
+  "bytes": "5470",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/nntrn/espn-wiki",
+  "head": "{\n  \"id\": 646032256,\n  \"node_id\": \"R_kgDOJoGrgA\",\n  \"name\": \"espn-wiki\",\n  \"full_name\": \"nntrn/espn-wiki\",\n  \"private\": false,\n  \"owner\": {\n    \"login\": \"nntrn\",\n    \"id\": 17685332,\n    \"node_id\": \"MDQ6VXNlcjE3Njg1MzMy\",\n    \"avatar_url\": \"https://avatars.githubusercontent.com/u/17685332?v=4\",\n    \"gravatar_id\": \"\",\n    \"url\": \"https://api.github.com/users/nntrn\",\n    \"html_url\": \"https://github.c",
+  "err": ""
+ },
+ "gh_espn_api_py": {
+  "status": "404",
+  "bytes": "132",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/warreneasterday/espn-api",
+  "head": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/repos#get-a-repository\",\n  \"status\": \"404\"\n}\n",
+  "err": ""
+ },
+ "gh_mlb_statsapi_py": {
+  "status": "404",
+  "bytes": "132",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/buanpham/mlb-statsapi",
+  "head": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/repos#get-a-repository\",\n  \"status\": \"404\"\n}\n",
+  "err": ""
+ },
+ "gh_cfbpy": {
+  "status": "200",
+  "bytes": "6621",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/CFBD/cfbd-python",
+  "head": "{\n  \"id\": 275435251,\n  \"node_id\": \"MDEwOlJlcG9zaXRvcnkyNzU0MzUyNTE=\",\n  \"name\": \"cfbd-python\",\n  \"full_name\": \"CFBD/cfbd-python\",\n  \"private\": false,\n  \"owner\": {\n    \"login\": \"CFBD\",\n    \"id\": 63668548,\n    \"node_id\": \"MDEyOk9yZ2FuaXphdGlvbjYzNjY4NTQ4\",\n    \"avatar_url\": \"https://avatars.githubusercontent.com/u/63668548?v=4\",\n    \"gravatar_id\": \"\",\n    \"url\": \"https://api.github.com/users/CFBD\",\n",
+  "err": ""
+ },
+ "gh_openligadb": {
+  "status": "404",
+  "bytes": "132",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/openligadb/openligadb-python",
+  "head": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/repos#get-a-repository\",\n  \"status\": \"404\"\n}\n",
+  "err": ""
+ },
+ "gh_kloppy": {
+  "status": "404",
+  "bytes": "132",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/klue0/kloppy",
+  "head": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/repos#get-a-repository\",\n  \"status\": \"404\"\n}\n",
+  "err": ""
+ },
+ "gh_kloppy2": {
+  "status": "404",
+  "bytes": "132",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/PROBAI-Lab/Kloppy",
+  "head": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/repos#get-a-repository\",\n  \"status\": \"404\"\n}\n",
+  "err": ""
+ },
+ "gh_socceraction": {
+  "status": "404",
+  "bytes": "132",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/kreavi-lab/socceraction",
+  "head": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/repos#get-a-repository\",\n  \"status\": \"404\"\n}\n",
+  "err": ""
+ },
+ "gh_statsbombpy": {
+  "status": "200",
+  "bytes": "6501",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repositories/232541194",
+  "head": "{\n  \"id\": 232541194,\n  \"node_id\": \"MDEwOlJlcG9zaXRvcnkyMzI1NDExOTQ=\",\n  \"name\": \"statsbombpy\",\n  \"full_name\": \"hudl/statsbombpy\",\n  \"private\": false,\n  \"owner\": {\n    \"login\": \"hudl\",\n    \"id\": 123340,\n    \"node_id\": \"MDEyOk9yZ2FuaXphdGlvbjEyMzM0MA==\",\n    \"avatar_url\": \"https://avatars.githubusercontent.com/u/123340?v=4\",\n    \"gravatar_id\": \"\",\n    \"url\": \"https://api.github.com/users/hudl\",\n    ",
+  "err": ""
+ },
+ "gh_ffsimulator": {
+  "status": "200",
+  "bytes": "6897",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/ffverse/ffsimulator",
+  "head": "{\n  \"id\": 374247534,\n  \"node_id\": \"MDEwOlJlcG9zaXRvcnkzNzQyNDc1MzQ=\",\n  \"name\": \"ffsimulator\",\n  \"full_name\": \"ffverse/ffsimulator\",\n  \"private\": false,\n  \"owner\": {\n    \"login\": \"ffverse\",\n    \"id\": 80065011,\n    \"node_id\": \"MDEyOk9yZ2FuaXphdGlvbjgwMDY1MDEx\",\n    \"avatar_url\": \"https://avatars.githubusercontent.com/u/80065011?v=4\",\n    \"gravatar_id\": \"\",\n    \"url\": \"https://api.github.com/users/f",
+  "err": ""
+ },
+ "gh_tenatatp": {
+  "status": "404",
+  "bytes": "132",
+  "ctype": "application/json; charset=utf-8",
+  "final": "https://api.github.com/repos/JeffSackmann/tennis_atp",
+  "head": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/repos#get-a-repository\",\n  \"status\": \"404\"\n}\n",
+  "err": ""
+ },
+ "gh_footballdatacouk": {
+  "status": "404",
+  "bytes": "266752",
+  "ctype": "text/html; charset=utf-8",
+  "final": "https://github.com/football-data/website",
+  "head": "\n\n\n\n\n\n\n\n<!DOCTYPE html>\n<html\n  lang=\"en\"\n  \n  data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"\n  data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"\n  \n  >\n\n\n\n\n  <head>\n    <meta charset=\"utf-8\">\n  <link rel=\"dns-prefetch\" href=\"https://github.githubassets.com\">\n  <link rel=\"dns-prefetch\" href=\"https://avatars.githubusercontent.com\">\n  <link rel=\"dns-prefetch",
+  "err": ""
+ },
+ "pypi_mapie": {
+  "status": "200",
+  "bytes": "75980",
+  "ctype": "application/json",
+  "final": "https://pypi.org/pypi/MAPIE/json",
+  "head": "{\"info\":{\"author\":null,\"author_email\":null,\"bugtrack_url\":null,\"classifiers\":[\"Intended Audience :: Developers\",\"Intended Audience :: Science/Research\",\"Operating System :: MacOS\",\"Operating System :: Microsoft :: Windows\",\"Operating System :: POSIX\",\"Operating System :: Unix\",\"Programming Language :: Python :: 3.10\",\"Programming Language :: Python :: 3.11\",\"Programming Language :: Python :: 3.12\"",
+  "err": ""
+ },
+ "pypi_crepes": {
+  "status": "200",
+  "bytes": "48857",
+  "ctype": "application/json",
+  "final": "https://pypi.org/pypi/crepes/json",
+  "head": "{\"info\":{\"author\":\"Henrik Bostr\u00f6m\",\"author_email\":\"bostromh@kth.se\",\"bugtrack_url\":null,\"classifiers\":[\"License :: OSI Approved :: BSD License\",\"Operating System :: OS Independent\",\"Programming Language :: Python :: 3\"],\"description\":\"<p align=\\\"center\\\"><a href=\\\"https://crepes.readthedocs.io\\\"><img alt=\\\"crepes\\\" src=\\\"https://github.com/henrikbostrom/crepes/blob/main/docs/crepes_logo.png\\\"></a>",
+  "err": ""
+ },
+ "pypi_netcal": {
+  "status": "200",
+  "bytes": "73364",
+  "ctype": "application/json",
+  "final": "https://pypi.org/pypi/netcal/json",
+  "head": "{\"info\":{\"author\":\"Fabian K\u00fcppers\",\"author_email\":\"github@fa-kueppers.de\",\"bugtrack_url\":null,\"classifiers\":[\"Development Status :: 5 - Production/Stable\",\"License :: OSI Approved :: Apache Software License\",\"Operating System :: OS Independent\",\"Programming Language :: Python :: 3\",\"Topic :: Scientific/Engineering :: Artificial Intelligence\"],\"description\":\"# netcal - Uncertainty Calibration\\n\\n<d",
+  "err": ""
+ },
+ "pypi_properscoring": {
+  "status": "200",
+  "bytes": "10125",
+  "ctype": "application/json",
+  "final": "https://pypi.org/pypi/properscoring/json",
+  "head": "{\"info\":{\"author\":\"The Climate Corporation\",\"author_email\":\"eng@climate.com\",\"bugtrack_url\":null,\"classifiers\":[\"Development Status :: 3 - Alpha\",\"Intended Audience :: Science/Research\",\"License :: OSI Approved :: Apache Software License\",\"Operating System :: OS Independent\",\"Programming Language :: Python\",\"Programming Language :: Python :: 2\",\"Programming Language :: Python :: 2.7\",\"Programming ",
+  "err": ""
+ },
+ "pypi_scoringrules": {
+  "status": "200",
+  "bytes": "50891",
+  "ctype": "application/json",
+  "final": "https://pypi.org/pypi/scoringrules/json",
+  "head": "{\"info\":{\"author\":null,\"author_email\":\"Francesco Zanetta <zanetta.francesco@gmail.com>, Sam Allen <sam.allen@stat.math.ethz.ch>\",\"bugtrack_url\":null,\"classifiers\":[\"Development Status :: 4 - Beta\",\"Intended Audience :: Developers\",\"Intended Audience :: Science/Research\",\"License :: OSI Approved :: Apache Software License\",\"Programming Language :: Python :: 3.12\",\"Programming Language :: Python :: ",
+  "err": ""
+ },
+ "pypi_jaxpinball": {
+  "status": "200",
+  "bytes": "73281",
+  "ctype": "application/json",
+  "final": "https://pypi.org/pypi/nba_api/json",
+  "head": "{\"info\":{\"author\":\"Swar Patel\",\"author_email\":\"<swar.m.patel@gmail.com>\",\"bugtrack_url\":null,\"classifiers\":[\"Intended Audience :: Developers\",\"Intended Audience :: Science/Research\",\"License :: OSI Approved :: MIT License\",\"Operating System :: OS Independent\",\"Programming Language :: Python\",\"Programming Language :: Python :: 3\",\"Programming Language :: Python :: 3 :: Only\",\"Programming Language :",
+  "err": ""
+ },
+ "pypi_megapred": {
+  "status": "404",
+  "bytes": "24",
+  "ctype": "application/json",
+  "final": "https://pypi.org/pypi/megapred/json",
+  "head": "{\"message\": \"Not Found\"}",
+  "err": ""
+ },
+ "pypi_uncertainty": {
+  "status": "200",
+  "bytes": "147715",
+  "ctype": "application/json",
+  "final": "https://pypi.org/pypi/reliability/json",
+  "head": "{\"info\":{\"author\":\"Matthew Reid\",\"author_email\":\"alpha.reliability@gmail.com\",\"bugtrack_url\":null,\"classifiers\":[\"Development Status :: 5 - Production/Stable\",\"Intended Audience :: Science/Research\",\"License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)\",\"Programming Language :: Python :: 3\",\"Topic :: Scientific/Engineering\"],\"description\":\"![Logo](https://raw.githubusercontent.",
+  "err": ""
+ },
+ "pypi_conformalpred": {
+  "status": "404",
+  "bytes": "24",
+  "ctype": "application/json",
+  "final": "https://pypi.org/pypi/conformal-prediction/json",
+  "head": "{\"message\": \"Not Found\"}",
+  "err": ""
+ }
+}

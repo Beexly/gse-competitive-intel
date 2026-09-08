@@ -1,0 +1,44 @@
+# OpticOdds robots.txt
+# Last updated: 2026-04-22
+
+User-agent: *
+Allow: /
+Disallow: /cdn-cgi/
+
+# AI training + search bots — explicitly allowed (redundant with wildcard,
+# but makes intent auditable and future-proof if the wildcard ever tightens)
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Claude-Web
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: cohere-ai
+User-agent: meta-externalagent
+User-agent: Meta-ExternalFetcher
+User-agent: Amazonbot
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: DuckAssistBot
+User-agent: YouBot
+User-agent: Diffbot
+Allow: /
+Disallow: /cdn-cgi/
+
+# Social previews (needed for link unfurls on LinkedIn, X, FB)
+User-agent: facebookexternalhit
+User-agent: Twitterbot
+User-agent: LinkedInBot
+User-agent: Slackbot
+Allow: /
+
+Sitemap: https://opticodds.com/sitemap.xml
+
+# LLMs.txt: https://opticodds.com/llms.txt
+
+Sitemap: https://opticodds.com/sitemap.xml

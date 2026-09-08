@@ -1,0 +1,106 @@
+User-agent: *
+
+# Inactive directories
+Disallow: /Stage/
+Disallow: /Archive/
+Disallow: /New/
+Disallow: /DailyFantasy/
+Disallow: /Parks/
+Disallow: /MatchupMachine/
+Disallow: /Tools/
+Disallow: /partials/
+Disallow: /lib/
+
+# Test, preview, archive, and legacy pages
+Disallow: /*Test.php
+Disallow: /*Preview.php
+Disallow: /*Archive.php
+Disallow: /*Legacy.php
+Disallow: /PositiveEVArchive.php
+Disallow: /indexNew.php
+Disallow: /indexTest.php
+Disallow: /FAQnew.php
+Disallow: /PlayersNew.php
+Disallow: /Parlay-Calculator2.php
+Disallow: /OutlierOdds.php
+Disallow: /Accuracy2.php
+Disallow: /Leaders.php
+Disallow: /Batter-Trends-Legacy.php
+Disallow: /SignUp2.php
+Disallow: /SignUpTrial.php
+Disallow: /ResearchFeed.html
+Disallow: /Terms.html
+
+# "Version 2" pages now self-protect with in-page noindex + canonical
+# (or, for whopcheckout2.php, an inline <meta name="robots"> noindex
+# tag). They MUST remain crawlable so Google can see those signals
+# and properly deindex -- URLs blocked by robots.txt stay in the
+# index indefinitely as "Indexed, though blocked by robots.txt"
+# zombies because the crawler never sees the deindex directive.
+#
+# Re-evaluate adding these Disallow lines back in ~3-6 months once
+# GSC confirms the URLs have fully deindexed.
+#
+# RelieversRender2.php is intentionally kept blocked: it's a
+# server-side include used by Game-Relievers2.php, not a
+# directly-indexable page.
+Disallow: /RelieversRender2.php
+
+# Internal fetch/utility endpoints
+Disallow: /fetch*.php
+Disallow: /matchup_play_log_api.php
+Disallow: /pitcher_play_log_api.php
+Disallow: /batter_play_log_api.php
+Disallow: /player_ratings_api.php
+Disallow: /batter_trends_api.php
+Disallow: /pitcher_trends_api.php
+Disallow: /BlockBots.php
+Disallow: /DatabaseConnect.php
+Disallow: /DatabaseConnectWork.php
+Disallow: /SubscriberStatusGet.php
+Disallow: /UrlLoginSubscribeGet.php
+Disallow: /ConfigValuesGet.php
+Disallow: /SessionInfoInsert.php
+Disallow: /DateGet.php
+Disallow: /PreferenceRouteHelper.php
+Disallow: /PreferencesSave.php
+Disallow: /SendEmail.php
+Disallow: /CustomerUpdate.php
+Disallow: /SubscriptionUpdate.php
+Disallow: /whop-webhook.php
+Disallow: /MediaTool.php
+Disallow: /GTMHead.php
+Disallow: /UserBar.php
+Disallow: /SeoHead.php
+Disallow: /SeoFooter.php
+Disallow: /404.php
+Disallow: /generate-sitemap.php
+Disallow: /generate-favicons.php
+Disallow: /generate-og-image.php
+Disallow: /generate-og-image-api.php
+Disallow: /SetBooksModal.php
+Disallow: /CheckoutModalBootstrap.php
+Disallow: /Paywall.php
+Disallow: /AccuracyQualifiersShowLink.php
+Disallow: /PartnerAdmin.php
+Disallow: /Aaron-Judge-vs-Gerrit-Cole.php
+
+# Auth pages
+Disallow: /Login.php
+Disallow: /ClaimInvite.php
+Disallow: /ClaimInviteRedeem.php
+Disallow: /MyPreferences.php
+Disallow: /LoginWithCode.php
+Disallow: /RequestPasswordReset.php
+Disallow: /PasswordReset.php
+Disallow: /SetPassword.php
+Disallow: /Checkout.php
+Disallow: /LogOut.php
+
+# Embed
+Disallow: /embed/
+
+# API endpoints (not human-facing content)
+Disallow: /api/v1/
+
+Sitemap: https://www.ballparkpal.com/sitemap.xml

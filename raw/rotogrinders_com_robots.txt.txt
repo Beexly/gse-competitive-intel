@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /app
+Disallow: ?
+Disallow: */edit
+Disallow: /grind-downs/
+Disallow: /api/
+Disallow: .csv
+
+Sitemap: https://rotogrinders.com/sitemaps.xml

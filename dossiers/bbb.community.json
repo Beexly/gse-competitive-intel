@@ -1,0 +1,112 @@
+{
+ "domain": "bbb.community",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/b2-bbb_community-home.html"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b2-bbb_community-home.html",
+   "raw\\picktheodds-c15bf2b0-9c93242b729ebbbd.js",
+   "raw\\propfinder-js-006c2bbbdba3a009.js"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apis.com/css",
+    "wser.isOpera",
+    "wser.isFirefox",
+    "wser.isChrome",
+    "wser.isMac",
+    "wser.isIE"
+   ],
+   "citation": "raw/b2-bbb_community-home.html"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-bbb_community-home.html"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-bbb_community-home.html"
+  },
+  "citations": [
+   "raw\\b2-bbb_community-home.html",
+   "raw\\picktheodds-c15bf2b0-9c93242b729ebbbd.js",
+   "raw\\propfinder-js-006c2bbbdba3a009.js"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-bbb_community-home.html"
+  },
+  "citations": [
+   "raw\\b2-bbb_community-home.html",
+   "raw\\picktheodds-c15bf2b0-9c93242b729ebbbd.js",
+   "raw\\propfinder-js-006c2bbbdba3a009.js"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-bbb_community-home.html"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\b2-bbb_community-home.html"
+ },
+ "pricing": {
+  "web": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-bbb_community-home.html"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b2-bbb_community-home.html",
+   "raw\\picktheodds-c15bf2b0-9c93242b729ebbbd.js",
+   "raw\\propfinder-js-006c2bbbdba3a009.js"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "apis.com/css",
+  "wser.isChrome",
+  "wser.isEdge",
+  "wser.isFirefox",
+  "wser.isIE",
+  "wser.isMac",
+  "wser.isOpera",
+  "wser.isSafari"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:44.232066"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Домен не прилинкован ни к одной из директорий на сервере!",
+  "description": "NOT CONFIRMED"
+ }
+}

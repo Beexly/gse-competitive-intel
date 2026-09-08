@@ -1,0 +1,31 @@
+{
+  "domain": "geniussports.com",
+  "disposition": "walled",
+  "disposition_reason": "Homepage, robots, and sitemap index all reachable (200), but it is a pure B2B marketing site: no exposed API hosts, no pricing, no developer portal on this domain. Client JS chunks are generic UI (framework/webpack); zero vendor/API strings. Data feeds gated behind league partnerships (NFL, FIBA official-data deals) — no self-serve API.",
+  "tech_stack": {
+    "frontend": "Next.js React (Vercel cle1:iad1 edge) on top of WordPress content (/wp-content/uploads assets; WordPress-style sitemap_index). 22 JS chunks; framework-945b357d4a851f4b.js + webpack-e0c93c3c7207fad2.js fetched (generic).",
+    "backend": "NOT CONFIRMED — no API endpoints visible; site is marketing shell for B2B products (Genius Sports LiveOdds, official data feeds to sportsbooks)",
+    "database": "NOT CONFIRMED",
+    "cloud_cdn": "Vercel (Next.js), sitemap on same host; images under /wp-content/uploads",
+    "citations": ["https://geniussports.com","https://geniussports.com/robots.txt","https://www.geniussports.com/sitemap_index.xml","https://geniussports.com/_next/static/chunks/framework-945b357d4a851f4b.js"]
+  },
+  "api_architecture": {
+    "rest_endpoints": [
+      {"method":"GET","path":"NOT CONFIRMED","auth_required":"NOT CONFIRMED","tier":"NOT CONFIRMED","sample_response":"NOT CONFIRMED","citation":"NOT CONFIRMED"}
+    ],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": ["https://geniussports.com"]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {"model_types":"NOT CONFIRMED","training_data":"NOT CONFIRMED","update_frequency":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "simulation_engine": {"num_simulations":"NOT CONFIRMED","correlation_method":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "data_supply_chain": {"vendors":"Genius Sports is itself a primary official-data vendor: 25 homepage refs to NFL (official league data partner) and 13 refs to FIBA; 'official data' positioning. No upstream vendor strings (sportradar/statsperform/opta) found in fetched assets.","citations":["https://geniussports.com"]},
+  "product_limits": {"limits":"NOT CONFIRMED","upgrade_triggers":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "pricing": {"web":"NOT CONFIRMED — no /pricing page; all products contact-sales gated","ios":"NOT CONFIRMED","android":"NOT CONFIRMED","citations":["https://geniussports.com"]},
+  "customer_pain": [],
+  "discovered_paths": ["/robots.txt","/sitemap_index.xml","/sitemaps/post-sitemap.xml","/sitemaps/page-sitemap.xml","/sitemaps/customer-stories-sitemap.xml","/sitemaps/newsroom-sitemap.xml"],
+  "discovered_targets": ["www.geniussports.com"],
+  "discovery_metadata": {"method":"read-only HTTP GET + Next.js chunk grep + sitemap index probe","timestamp":"2026-09-08T21:28:00Z"}
+}

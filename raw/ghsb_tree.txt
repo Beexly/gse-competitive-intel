@@ -1,0 +1,2856 @@
+URL: https://api.github.com/repos/georgedouzas/sports-betting/git/trees/main?recursive=1\nSTATUS: 200\n\n{
+  "sha": "eb4cedf376663fac68f508e50b83fd832e74dfd4",
+  "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/eb4cedf376663fac68f508e50b83fd832e74dfd4",
+  "tree": [
+    {
+      "path": ".claude",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "485abd611c7d2209bcb1adbc7a051116a048539b",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/485abd611c7d2209bcb1adbc7a051116a048539b"
+    },
+    {
+      "path": ".claude/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad4c1cf08af33dbb907909afad71a3fb4c9e1b67",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/ad4c1cf08af33dbb907909afad71a3fb4c9e1b67"
+    },
+    {
+      "path": ".claude/skills/speckit-analyze",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5be02009d8e362c24714555069a78a6e787b6fde",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/5be02009d8e362c24714555069a78a6e787b6fde"
+    },
+    {
+      "path": ".claude/skills/speckit-analyze/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83cd91be441c5df1ad71358283cddb2f0163258e",
+      "size": 11744,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/83cd91be441c5df1ad71358283cddb2f0163258e"
+    },
+    {
+      "path": ".claude/skills/speckit-checklist",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "acee5ce52ae26693e4a952d196b615448c5112ec",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/acee5ce52ae26693e4a952d196b615448c5112ec"
+    },
+    {
+      "path": ".claude/skills/speckit-checklist/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "927ef4aa81e2a75a582177ed1b1c6f119ae9299c",
+      "size": 21299,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/927ef4aa81e2a75a582177ed1b1c6f119ae9299c"
+    },
+    {
+      "path": ".claude/skills/speckit-clarify",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "72d51482b54ecaad5a968c65b8c1894807f72889",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/72d51482b54ecaad5a968c65b8c1894807f72889"
+    },
+    {
+      "path": ".claude/skills/speckit-clarify/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1715752e7e847adadc46a2ba2d13d1ff370f1f5b",
+      "size": 18190,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/1715752e7e847adadc46a2ba2d13d1ff370f1f5b"
+    },
+    {
+      "path": ".claude/skills/speckit-constitution",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "56ad8db871ee66c9f1c7299484a00c4ef440914f",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/56ad8db871ee66c9f1c7299484a00c4ef440914f"
+    },
+    {
+      "path": ".claude/skills/speckit-constitution/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea8e9d97e7ff14947d9924c200fcddd3f25051a8",
+      "size": 9471,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/ea8e9d97e7ff14947d9924c200fcddd3f25051a8"
+    },
+    {
+      "path": ".claude/skills/speckit-converge",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc5c53f11db64b731de2756629baf57a7b523e76",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/fc5c53f11db64b731de2756629baf57a7b523e76"
+    },
+    {
+      "path": ".claude/skills/speckit-converge/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61c82417a832a6e5b0c694d608be23bd4749c426",
+      "size": 12690,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/61c82417a832a6e5b0c694d608be23bd4749c426"
+    },
+    {
+      "path": ".claude/skills/speckit-implement",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "38737ec057fc0bae7e4ac52f07d34019bded2f7f",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/38737ec057fc0bae7e4ac52f07d34019bded2f7f"
+    },
+    {
+      "path": ".claude/skills/speckit-implement/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94ea0176c36930ae8d27c0443018b17eb9e0cff2",
+      "size": 12268,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/94ea0176c36930ae8d27c0443018b17eb9e0cff2"
+    },
+    {
+      "path": ".claude/skills/speckit-plan",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d4faf31a4fe6b9fdaacb3e8327f01fa5a1c2a2ab",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/d4faf31a4fe6b9fdaacb3e8327f01fa5a1c2a2ab"
+    },
+    {
+      "path": ".claude/skills/speckit-plan/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b400b3579c0a03115189d25882967b9e6b305d23",
+      "size": 8027,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/b400b3579c0a03115189d25882967b9e6b305d23"
+    },
+    {
+      "path": ".claude/skills/speckit-specify",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "170e4e2063aff785da4fe5e948e0dd0ed49cda6d",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/170e4e2063aff785da4fe5e948e0dd0ed49cda6d"
+    },
+    {
+      "path": ".claude/skills/speckit-specify/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64bbde008bac9d07d323dbc25bbd4bfbfcd4bff3",
+      "size": 18478,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/64bbde008bac9d07d323dbc25bbd4bfbfcd4bff3"
+    },
+    {
+      "path": ".claude/skills/speckit-tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5084e5205c7ba50c18124235815764ae87cad942",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/5084e5205c7ba50c18124235815764ae87cad942"
+    },
+    {
+      "path": ".claude/skills/speckit-tasks/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "719f03797f8411bd9d03be709b78bb30a259a231",
+      "size": 11060,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/719f03797f8411bd9d03be709b78bb30a259a231"
+    },
+    {
+      "path": ".claude/skills/speckit-taskstoissues",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d0111c0f1fe24bbf672aa52d9e4b2442581f340b",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/d0111c0f1fe24bbf672aa52d9e4b2442581f340b"
+    },
+    {
+      "path": ".claude/skills/speckit-taskstoissues/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce9e1a25ee4c47c7a2174813e66a48b120fb5a0e",
+      "size": 7307,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/ce9e1a25ee4c47c7a2174813e66a48b120fb5a0e"
+    },
+    {
+      "path": ".copier-answers.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6889c84e377277ddba5796c4cd15e2661ee5f2d0",
+      "size": 591,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/6889c84e377277ddba5796c4cd15e2661ee5f2d0"
+    },
+    {
+      "path": ".editorconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd7eb69d06384dd634a998439dd67bc461b08277",
+      "size": 261,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/cd7eb69d06384dd634a998439dd67bc461b08277"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dc2c55b9b358fb96c864d5b532b29d86112e6e79",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/dc2c55b9b358fb96c864d5b532b29d86112e6e79"
+    },
+    {
+      "path": ".github/FUNDING.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cc17f1c46d376e8ebd6f8f9caad2ab2fea47ee0",
+      "size": 23,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/5cc17f1c46d376e8ebd6f8f9caad2ab2fea47ee0"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e10845e2789372e3aa909be278aecda965760d21",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/e10845e2789372e3aa909be278aecda965760d21"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c725d58bbfa5ade7fab5eca0c32aafbae0650a24",
+      "size": 1845,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/c725d58bbfa5ade7fab5eca0c32aafbae0650a24"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b10363c75c6ed8755e6ce12b643110826918789",
+      "size": 371,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/8b10363c75c6ed8755e6ce12b643110826918789"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf43161435aace2f6660e7b860eaef23015e5dba",
+      "size": 524,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/bf43161435aace2f6660e7b860eaef23015e5dba"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de5a3fb254e08edb43a08cd43f7c35f16602b3cd",
+      "size": 933,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/de5a3fb254e08edb43a08cd43f7c35f16602b3cd"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abd2e5876f0a80b7354e564b69ce6b34a4dc024e",
+      "size": 193,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/abd2e5876f0a80b7354e564b69ce6b34a4dc024e"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0f3dfb0e747a09fd8ad86a4919f3717b783ef49e",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/0f3dfb0e747a09fd8ad86a4919f3717b783ef49e"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57dbc66a3e4181ebd0ceacfee12ec2f84b09cc6b",
+      "size": 2656,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/57dbc66a3e4181ebd0ceacfee12ec2f84b09cc6b"
+    },
+    {
+      "path": ".github/workflows/doc.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4d433898b11659422b0567e15a56431b2a84115",
+      "size": 929,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/f4d433898b11659422b0567e15a56431b2a84115"
+    },
+    {
+      "path": ".github/workflows/equivalence.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13630f2fbac8355c658817eb1645231f2c939754",
+      "size": 702,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/13630f2fbac8355c658817eb1645231f2c939754"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ed70e5ed525a87b2f11c04b4ac0d22f0a6b8c48",
+      "size": 1427,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/6ed70e5ed525a87b2f11c04b4ac0d22f0a6b8c48"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fd2ff096b4ad85562426e9a59aa8aa5cb7c99b3",
+      "size": 674,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/9fd2ff096b4ad85562426e9a59aa8aa5cb7c99b3"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d26763e4bb011e5a78f86cdac5ed35fe5656cff1",
+      "size": 1055,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/d26763e4bb011e5a78f86cdac5ed35fe5656cff1"
+    },
+    {
+      "path": ".specify",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d927099a6de1a3bf778e6e0837bd40b23c1cdf35",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/d927099a6de1a3bf778e6e0837bd40b23c1cdf35"
+    },
+    {
+      "path": ".specify/feature.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "179be88660884091f9bbc7b1f45543a61c162387",
+      "size": 59,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/179be88660884091f9bbc7b1f45543a61c162387"
+    },
+    {
+      "path": ".specify/init-options.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94f469e0188705bf788c0126af18753e5fa674b0",
+      "size": 170,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/94f469e0188705bf788c0126af18753e5fa674b0"
+    },
+    {
+      "path": ".specify/integration.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d62a7de32fdc4339af6c1b2da6c4c9e6aba8cf02",
+      "size": 276,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/d62a7de32fdc4339af6c1b2da6c4c9e6aba8cf02"
+    },
+    {
+      "path": ".specify/integrations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a912cf42ab88d12e1eeb98afcf069f363507382b",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/a912cf42ab88d12e1eeb98afcf069f363507382b"
+    },
+    {
+      "path": ".specify/integrations/claude.manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48035b958943e456f3c4775c7d593f5881f3ffab",
+      "size": 1285,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/48035b958943e456f3c4775c7d593f5881f3ffab"
+    },
+    {
+      "path": ".specify/integrations/speckit.manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b22fb833fcf73559db32b498b5fde0fd65a4f69e",
+      "size": 1263,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/b22fb833fcf73559db32b498b5fde0fd65a4f69e"
+    },
+    {
+      "path": ".specify/memory",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "06449abaf8dc1f2aad52d38bc8772fde5ad8c411",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/06449abaf8dc1f2aad52d38bc8772fde5ad8c411"
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0141542e620ea509a92c8c7b8010f0e3807a13c6",
+      "size": 28209,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/0141542e620ea509a92c8c7b8010f0e3807a13c6"
+    },
+    {
+      "path": ".specify/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22950088bff634c8edbca490e13819b46a748583",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/22950088bff634c8edbca490e13819b46a748583"
+    },
+    {
+      "path": ".specify/scripts/bash",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "418c7800acdc2d0ef7069089a864d0de6856ee50",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/418c7800acdc2d0ef7069089a864d0de6856ee50"
+    },
+    {
+      "path": ".specify/scripts/bash/check-prerequisites.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "df753a35dacab25e37d6096d8cad4463a276f6f0",
+      "size": 6344,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/df753a35dacab25e37d6096d8cad4463a276f6f0"
+    },
+    {
+      "path": ".specify/scripts/bash/common.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "609729cbfa6d9752aedae58379e36305c8c829ba",
+      "size": 26167,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/609729cbfa6d9752aedae58379e36305c8c829ba"
+    },
+    {
+      "path": ".specify/scripts/bash/create-new-feature.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "3cffce860252ac757eea3e1489a82cd6b6d08c16",
+      "size": 11629,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/3cffce860252ac757eea3e1489a82cd6b6d08c16"
+    },
+    {
+      "path": ".specify/scripts/bash/setup-plan.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "cb679437a901d38a77d048ee822caecb04048150",
+      "size": 2501,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/cb679437a901d38a77d048ee822caecb04048150"
+    },
+    {
+      "path": ".specify/scripts/bash/setup-tasks.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ae0d7bdd5b01d06c0a2cce0fdba4eb6bf15e22c7",
+      "size": 3239,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/ae0d7bdd5b01d06c0a2cce0fdba4eb6bf15e22c7"
+    },
+    {
+      "path": ".specify/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "63fc833505aa00558e7bf8845f2e3aadc9e5a07d",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/63fc833505aa00558e7bf8845f2e3aadc9e5a07d"
+    },
+    {
+      "path": ".specify/templates/checklist-template.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4aa1666eaa973bf249d1683fcab49b4717898e0",
+      "size": 1312,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/c4aa1666eaa973bf249d1683fcab49b4717898e0"
+    },
+    {
+      "path": ".specify/templates/constitution-template.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4670ff46919b276a4c9663b4ca51830108fcfc0",
+      "size": 2346,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/a4670ff46919b276a4c9663b4ca51830108fcfc0"
+    },
+    {
+      "path": ".specify/templates/plan-template.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92b96c716d4f01a83d82d298bfa72d3bb3521bd9",
+      "size": 3703,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/92b96c716d4f01a83d82d298bfa72d3bb3521bd9"
+    },
+    {
+      "path": ".specify/templates/spec-template.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ceb28776215a098e977650ac090c785dcbf53651",
+      "size": 4556,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/ceb28776215a098e977650ac090c785dcbf53651"
+    },
+    {
+      "path": ".specify/templates/tasks-template.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d46a1f1fb0a027e08fd758be547ac2ab198b445d",
+      "size": 9171,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/d46a1f1fb0a027e08fd758be547ac2ab198b445d"
+    },
+    {
+      "path": ".specify/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c1d1f1d06cd45fdcb0be5d97e207eecc0af32e47",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/c1d1f1d06cd45fdcb0be5d97e207eecc0af32e47"
+    },
+    {
+      "path": ".specify/workflows/speckit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d5f38441227797eb317a3cb7c5129335a92c22e",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/4d5f38441227797eb317a3cb7c5129335a92c22e"
+    },
+    {
+      "path": ".specify/workflows/speckit/workflow.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f69efeaf46cff25f57487ab3f311716a069fb826",
+      "size": 2197,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/f69efeaf46cff25f57487ab3f311716a069fb826"
+    },
+    {
+      "path": ".specify/workflows/workflow-registry.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54598265fca36b6a4a5ec3e631d692f0511611bf",
+      "size": 369,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/54598265fca36b6a4a5ec3e631d692f0511611bf"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06fb0d8ea06a4a5d4d49ac701fa26f195cd3c282",
+      "size": 53642,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/06fb0d8ea06a4a5d4d49ac701fa26f195cd3c282"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cffb49ea36c3d520971a3d98a30935396aab26f3",
+      "size": 5484,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/cffb49ea36c3d520971a3d98a30935396aab26f3"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3df7d6f8852e9be5be3a8f86cd3415b869a4b42a",
+      "size": 3136,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/3df7d6f8852e9be5be3a8f86cd3415b869a4b42a"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b354685ef2996605644d471741f8af482f24bfb6",
+      "size": 1072,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/b354685ef2996605644d471741f8af482f24bfb6"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "239b146578eaed4c74cf2407bc3a0be402e4c588",
+      "size": 11647,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/239b146578eaed4c74cf2407bc3a0be402e4c588"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e6413fc1dbef43367d07f7b693ff24c13cf3a932",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/e6413fc1dbef43367d07f7b693ff24c13cf3a932"
+    },
+    {
+      "path": "docs/css",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "030068eea22a9741f1f0d2b81a047470ab7114a2",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/030068eea22a9741f1f0d2b81a047470ab7114a2"
+    },
+    {
+      "path": "docs/css/material.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3983b988ac697ccce40b70fa9298705c7937409",
+      "size": 91,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/f3983b988ac697ccce40b70fa9298705c7937409"
+    },
+    {
+      "path": "docs/css/mkdocstrings.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42c774163f18c022cc78534469e8bd0a14cb6f22",
+      "size": 143,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/42c774163f18c022cc78534469e8bd0a14cb6f22"
+    },
+    {
+      "path": "docs/css/style.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "305286ddd0d46b1bf9a8852de38a10d71602523f",
+      "size": 1050,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/305286ddd0d46b1bf9a8852de38a10d71602523f"
+    },
+    {
+      "path": "docs/development",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "83aeb387f625d1f2a66e1d004543adbcd5c2ec21",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/83aeb387f625d1f2a66e1d004543adbcd5c2ec21"
+    },
+    {
+      "path": "docs/development/code_of_conduct.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01f2ea20d3ba978bdd06403ba1a155607f28a55b",
+      "size": 28,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/01f2ea20d3ba978bdd06403ba1a155607f28a55b"
+    },
+    {
+      "path": "docs/development/contributing.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea38c9bff4bfe38a798e001e890b9b8f6ac8a146",
+      "size": 25,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/ea38c9bff4bfe38a798e001e890b9b8f6ac8a146"
+    },
+    {
+      "path": "docs/development/index.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c80f90bd08da5c708bd821d75fc19c500bcc92a",
+      "size": 385,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/9c80f90bd08da5c708bd821d75fc19c500bcc92a"
+    },
+    {
+      "path": "docs/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "463ddca8a0b8a86d2b404b659c04609f58aae4bd",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/463ddca8a0b8a86d2b404b659c04609f58aae4bd"
+    },
+    {
+      "path": "docs/examples/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "843416622e9428b9410925ce036d070bba50bed8",
+      "size": 232,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/843416622e9428b9410925ce036d070bba50bed8"
+    },
+    {
+      "path": "docs/examples/dataloaders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad05f7629a153c5ce4b26bfde3f95455f49d2427",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/ad05f7629a153c5ce4b26bfde3f95455f49d2427"
+    },
+    {
+      "path": "docs/examples/dataloaders/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac36cbce3c6f4bdbccc82946d411419247a60182",
+      "size": 116,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/ac36cbce3c6f4bdbccc82946d411419247a60182"
+    },
+    {
+      "path": "docs/examples/dataloaders/plot_custom_dataloader.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17f71181618c01308bb3ae80cf255b7491680a7b",
+      "size": 3054,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/17f71181618c01308bb3ae80cf255b7491680a7b"
+    },
+    {
+      "path": "docs/examples/dataloaders/plot_dataloader.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dac5a286ae22e6441a1aa4d4323f8a6b3503994",
+      "size": 2690,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/6dac5a286ae22e6441a1aa4d4323f8a6b3503994"
+    },
+    {
+      "path": "docs/examples/dataloaders/plot_save_load.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b65a9f646b8fcb0bc1fedfef58fcba881492c346",
+      "size": 1786,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/b65a9f646b8fcb0bc1fedfef58fcba881492c346"
+    },
+    {
+      "path": "docs/examples/execution",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d1e30845fff0684a12dd083a38009ecf87d3895",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/4d1e30845fff0684a12dd083a38009ecf87d3895"
+    },
+    {
+      "path": "docs/examples/execution/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "166324c2827bf52a9579b14f4be2fc23b91155f7",
+      "size": 131,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/166324c2827bf52a9579b14f4be2fc23b91155f7"
+    },
+    {
+      "path": "docs/examples/execution/plot_single_event.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60b192a53b82ed5e74badc72a0bd388d4145430d",
+      "size": 11896,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/60b192a53b82ed5e74badc72a0bd388d4145430d"
+    },
+    {
+      "path": "docs/examples/modelling",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b4360f3c8c0240c205e301d5bf5d7d473200841c",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/b4360f3c8c0240c205e301d5bf5d7d473200841c"
+    },
+    {
+      "path": "docs/examples/modelling/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2868c6eea95f1e3b8e94db19cc786735395c3e0d",
+      "size": 72,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/2868c6eea95f1e3b8e94db19cc786735395c3e0d"
+    },
+    {
+      "path": "docs/examples/modelling/plot_classifier_bettor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ed720bf20d61c021ab9c9e6c879463925efeaf4",
+      "size": 3376,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/3ed720bf20d61c021ab9c9e6c879463925efeaf4"
+    },
+    {
+      "path": "docs/examples/modelling/plot_custom_bettor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5c642205c93a6d7146d3526ee82260db8ae44ba",
+      "size": 2502,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/f5c642205c93a6d7146d3526ee82260db8ae44ba"
+    },
+    {
+      "path": "docs/examples/modelling/plot_grid_search_bettor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6323e052e12bb0f9977c8aed01786e528aec2e2e",
+      "size": 3526,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/6323e052e12bb0f9977c8aed01786e528aec2e2e"
+    },
+    {
+      "path": "docs/examples/modelling/plot_odds_comparison_bettor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf49062fa676bf50a408af5fdb283c399f254be0",
+      "size": 2438,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/bf49062fa676bf50a408af5fdb283c399f254be0"
+    },
+    {
+      "path": "docs/examples/modelling/plot_save_load_bettor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ee2d99f7d3b94c34b9a10af1b7d0f43781742aa",
+      "size": 1624,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/8ee2d99f7d3b94c34b9a10af1b7d0f43781742aa"
+    },
+    {
+      "path": "docs/examples/sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7d9d25be8f7a2aa1a7f8ff09932e899f137370b2",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/7d9d25be8f7a2aa1a7f8ff09932e899f137370b2"
+    },
+    {
+      "path": "docs/examples/sources/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85880ec0235d5e4d473b9f0fd141f94c7eb40e82",
+      "size": 123,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/85880ec0235d5e4d473b9f0fd141f94c7eb40e82"
+    },
+    {
+      "path": "docs/examples/sources/plot_custom_source.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c77f5322623305b22162a558946724f3a5a6212e",
+      "size": 5062,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/c77f5322623305b22162a558946724f3a5a6212e"
+    },
+    {
+      "path": "docs/examples/sources/plot_euroleague.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2dd1625d05ae4f8c21d4517791a79906017aac97",
+      "size": 2239,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/2dd1625d05ae4f8c21d4517791a79906017aac97"
+    },
+    {
+      "path": "docs/examples/sources/plot_football_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "959e1e112873684511f72162b19015f3e4859f5a",
+      "size": 1825,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/959e1e112873684511f72162b19015f3e4859f5a"
+    },
+    {
+      "path": "docs/examples/sources/plot_nba.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6066b044b52f7b250edaebb72e535f6718ebd247",
+      "size": 1950,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/6066b044b52f7b250edaebb72e535f6718ebd247"
+    },
+    {
+      "path": "docs/examples/sources/plot_odds_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49dfbcabc8475727f803ba5c2eea993d253e889a",
+      "size": 2775,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/49dfbcabc8475727f803ba5c2eea993d253e889a"
+    },
+    {
+      "path": "docs/examples/sources/plot_reconciliation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "365aaf0cc95e2e9f5f02507d48301b3269174e0b",
+      "size": 3345,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/365aaf0cc95e2e9f5f02507d48301b3269174e0b"
+    },
+    {
+      "path": "docs/examples/sources/plot_sample_soccer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dd18212f5a99af965b7461ace563468554d9493",
+      "size": 2278,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/4dd18212f5a99af965b7461ace563468554d9493"
+    },
+    {
+      "path": "docs/gallery_conf.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fca956e1d7ef5bdc0e4a9bd5afd25f71531b7e86",
+      "size": 173,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/fca956e1d7ef5bdc0e4a9bd5afd25f71531b7e86"
+    },
+    {
+      "path": "docs/generate_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4eaf1b3c7eb42910d2e26eaf67966ef7aea62ca7",
+      "size": 1037,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/4eaf1b3c7eb42910d2e26eaf67966ef7aea62ca7"
+    },
+    {
+      "path": "docs/index.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "612c7a5e0d17657e51018285d9850b8fa8e76174",
+      "size": 19,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/612c7a5e0d17657e51018285d9850b8fa8e76174"
+    },
+    {
+      "path": "docs/interfaces",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d1ca4619d2016a0700f031baac530998d5308ba",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/4d1ca4619d2016a0700f031baac530998d5308ba"
+    },
+    {
+      "path": "docs/interfaces/agents.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "435978783fff1946a8de9628241ecda93de26eba",
+      "size": 3458,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/435978783fff1946a8de9628241ecda93de26eba"
+    },
+    {
+      "path": "docs/interfaces/cli.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bc4807cbf7f706fbbc70b81cdd0f56ca9833379",
+      "size": 1728,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/3bc4807cbf7f706fbbc70b81cdd0f56ca9833379"
+    },
+    {
+      "path": "docs/interfaces/index.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4c01a01c42ba1e240faa1fa2f5c14c1a80a18ba",
+      "size": 583,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/c4c01a01c42ba1e240faa1fa2f5c14c1a80a18ba"
+    },
+    {
+      "path": "docs/javascripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "712eb5e45ce3cc557149431a89fd02c09350ebd3",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/712eb5e45ce3cc557149431a89fd02c09350ebd3"
+    },
+    {
+      "path": "docs/javascripts/mathjax.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d365913c11ff5f91268fb9f44018688b20561fd9",
+      "size": 392,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/d365913c11ff5f91268fb9f44018688b20561fd9"
+    },
+    {
+      "path": "docs/overview",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "94b419a36d1918401adc12bebb4b3fb12c09f284",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/94b419a36d1918401adc12bebb4b3fb12c09f284"
+    },
+    {
+      "path": "docs/overview/changelog.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "786b75d5a3f6e67decc00ace643d640ba1afe675",
+      "size": 22,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/786b75d5a3f6e67decc00ace643d640ba1afe675"
+    },
+    {
+      "path": "docs/overview/license.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdacdfef2858f7866e37e724614a4a5213fbbd3c",
+      "size": 25,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/cdacdfef2858f7866e37e724614a4a5213fbbd3c"
+    },
+    {
+      "path": "docs/overview/user_guide",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2d658342548c58dd55221785cfeaa735dad57133",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/2d658342548c58dd55221785cfeaa735dad57133"
+    },
+    {
+      "path": "docs/overview/user_guide/bettor.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd0a6b33ca8b3effcbeff6e0831038418c633945",
+      "size": 13274,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/cd0a6b33ca8b3effcbeff6e0831038418c633945"
+    },
+    {
+      "path": "docs/overview/user_guide/dataloader.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "145e35852ae6763fb7a845ad8c9f504909dbab1c",
+      "size": 27165,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/145e35852ae6763fb7a845ad8c9f504909dbab1c"
+    },
+    {
+      "path": "docs/overview/user_guide/execution.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ca53f91bce8a7628d79141d005a465a9f3a2664",
+      "size": 10800,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/0ca53f91bce8a7628d79141d005a465a9f3a2664"
+    },
+    {
+      "path": "docs/overview/user_guide/index.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b2a0238d951cbab7b35011fcbae722a17551d2c",
+      "size": 1945,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/5b2a0238d951cbab7b35011fcbae722a17551d2c"
+    },
+    {
+      "path": "docs/overview/user_guide/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c11260ac951ded820af7690649638398e0b8061",
+      "size": 13960,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/0c11260ac951ded820af7690649638398e0b8061"
+    },
+    {
+      "path": "docs/practice",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "399088e743badb62cba23e1c53855e1b6054e97c",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/399088e743badb62cba23e1c53855e1b6054e97c"
+    },
+    {
+      "path": "docs/practice/betting_moment.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93466c5b9917c7895be7dcff1c959942eb60e1e9",
+      "size": 9305,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/93466c5b9917c7895be7dcff1c959942eb60e1e9"
+    },
+    {
+      "path": "docs/practice/index.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dd5217d1f6a18ab2cc28c5dcb66d37a1c459cc7",
+      "size": 857,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/8dd5217d1f6a18ab2cc28c5dcb66d37a1c459cc7"
+    },
+    {
+      "path": "docs/practice/value_betting.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e783c7ff25a033ce3d4956c0c0a5ec6c5345b3a5",
+      "size": 2480,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/e783c7ff25a033ce3d4956c0c0a5ec6c5345b3a5"
+    },
+    {
+      "path": "noxfile.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b34af3fb21045dcc3f58af0cd777569f8b99354d",
+      "size": 7286,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/b34af3fb21045dcc3f58af0cd777569f8b99354d"
+    },
+    {
+      "path": "properdocs.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7b38d8cdf9368710c571bf92700425f99878c05",
+      "size": 2600,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/e7b38d8cdf9368710c571bf92700425f99878c05"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fa32f37d50ce5a8966ff15385a0a2ee69c3ddcb",
+      "size": 5289,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/5fa32f37d50ce5a8966ff15385a0a2ee69c3ddcb"
+    },
+    {
+      "path": "specs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4a3cedcf0a132f0326ec7f3de52fc490646c9e1e",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/4a3cedcf0a132f0326ec7f3de52fc490646c9e1e"
+    },
+    {
+      "path": "specs/001-in-play-betting",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8b8b874ca74bca644f0cfc17a4ea974adde6d3e9",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/8b8b874ca74bca644f0cfc17a4ea974adde6d3e9"
+    },
+    {
+      "path": "specs/001-in-play-betting/checklists",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8526180d214476425da554d2853fa6247db5560a",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/8526180d214476425da554d2853fa6247db5560a"
+    },
+    {
+      "path": "specs/001-in-play-betting/checklists/requirements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50ae9d7aaeb1ab2422a173266b3848e5e9b66e6c",
+      "size": 1568,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/50ae9d7aaeb1ab2422a173266b3848e5e9b66e6c"
+    },
+    {
+      "path": "specs/001-in-play-betting/contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b2b27d11a65e8783ac5274dd55a7341e9397622",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/9b2b27d11a65e8783ac5274dd55a7341e9397622"
+    },
+    {
+      "path": "specs/001-in-play-betting/contracts/cli.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82ad8f7494dc9863e4cb0cc46cad34e70afad617",
+      "size": 1880,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/82ad8f7494dc9863e4cb0cc46cad34e70afad617"
+    },
+    {
+      "path": "specs/001-in-play-betting/contracts/datasets-api.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "534591690a0d8b2643038d22ba1a0e6b448b60cc",
+      "size": 4060,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/534591690a0d8b2643038d22ba1a0e6b448b60cc"
+    },
+    {
+      "path": "specs/001-in-play-betting/contracts/evaluation-api.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c96a9b42ccfba8b74dff637325b26e2c8f201a68",
+      "size": 2526,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/c96a9b42ccfba8b74dff637325b26e2c8f201a68"
+    },
+    {
+      "path": "specs/001-in-play-betting/data-model.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8ac59707520acd0be13aa1a0172da66edf16f68",
+      "size": 7217,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/f8ac59707520acd0be13aa1a0172da66edf16f68"
+    },
+    {
+      "path": "specs/001-in-play-betting/plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7caa873adfff06411293df7fc859ef7eb6a871f3",
+      "size": 8426,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/7caa873adfff06411293df7fc859ef7eb6a871f3"
+    },
+    {
+      "path": "specs/001-in-play-betting/quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94d847098903ae3a7ed9f4e00cecbf46fb4ba0eb",
+      "size": 4983,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/94d847098903ae3a7ed9f4e00cecbf46fb4ba0eb"
+    },
+    {
+      "path": "specs/001-in-play-betting/research.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33af5d15d08d27b0b9a1a9dc51ea3f4a2611eebf",
+      "size": 9909,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/33af5d15d08d27b0b9a1a9dc51ea3f4a2611eebf"
+    },
+    {
+      "path": "specs/001-in-play-betting/spec.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02a9bb049c397113ebdd606cb4bd4ab2d2558a9a",
+      "size": 17747,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/02a9bb049c397113ebdd606cb4bd4ab2d2558a9a"
+    },
+    {
+      "path": "specs/001-in-play-betting/tasks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cc2999295f3028b159a8442898336f783484802",
+      "size": 16608,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/8cc2999295f3028b159a8442898336f783484802"
+    },
+    {
+      "path": "specs/002-data-source-providers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86fcb9360b93413802d9ea1d1328b2be21c2d9ef",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/86fcb9360b93413802d9ea1d1328b2be21c2d9ef"
+    },
+    {
+      "path": "specs/002-data-source-providers/checklists",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "376c5771b93d74f9de212f969be9579c2ceec71a",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/376c5771b93d74f9de212f969be9579c2ceec71a"
+    },
+    {
+      "path": "specs/002-data-source-providers/checklists/requirements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "764d15ba4631ed3068ebf459be5addc0bdb3cf4f",
+      "size": 1671,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/764d15ba4631ed3068ebf459be5addc0bdb3cf4f"
+    },
+    {
+      "path": "specs/002-data-source-providers/contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fa2707877403a876b23eb722f589fe2c536f4ed8",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/fa2707877403a876b23eb722f589fe2c536f4ed8"
+    },
+    {
+      "path": "specs/002-data-source-providers/contracts/dataloader.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5568c5e15254419537bb54d4ac0f53bc659245c",
+      "size": 4738,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/b5568c5e15254419537bb54d4ac0f53bc659245c"
+    },
+    {
+      "path": "specs/002-data-source-providers/contracts/source.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ba98a176e8eb3aa01ca95be4a7dbee57f40383b",
+      "size": 5222,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/1ba98a176e8eb3aa01ca95be4a7dbee57f40383b"
+    },
+    {
+      "path": "specs/002-data-source-providers/contracts/store.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6636cfa84836b2590072c30235f866071632bf2",
+      "size": 3237,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/c6636cfa84836b2590072c30235f866071632bf2"
+    },
+    {
+      "path": "specs/002-data-source-providers/data-model.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e754c54b8ff096b68eb171b642e72ebe00e5f8c3",
+      "size": 4915,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/e754c54b8ff096b68eb171b642e72ebe00e5f8c3"
+    },
+    {
+      "path": "specs/002-data-source-providers/plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fa114b6f214d535570026c707d3ffda90017a3e",
+      "size": 15616,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/5fa114b6f214d535570026c707d3ffda90017a3e"
+    },
+    {
+      "path": "specs/002-data-source-providers/quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4bfacfbe9f1a4ac3c3ef5d3b6d05b846b298193",
+      "size": 4482,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/a4bfacfbe9f1a4ac3c3ef5d3b6d05b846b298193"
+    },
+    {
+      "path": "specs/002-data-source-providers/research.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26489c2851910f74d045fa3e3adc037fc6e224ec",
+      "size": 27007,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/26489c2851910f74d045fa3e3adc037fc6e224ec"
+    },
+    {
+      "path": "specs/002-data-source-providers/spec.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa66d6d6f30ad6556f7c7055cf186d2131a46da9",
+      "size": 23407,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/fa66d6d6f30ad6556f7c7055cf186d2131a46da9"
+    },
+    {
+      "path": "specs/002-data-source-providers/tasks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40f86f1f7cfb5ee583b78cae8a7b81a5c50f10f4",
+      "size": 21909,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/40f86f1f7cfb5ee583b78cae8a7b81a5c50f10f4"
+    },
+    {
+      "path": "specs/003-basketball-euroleague",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce04d070dd8909cde9c4b8493fc453168172a887",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/ce04d070dd8909cde9c4b8493fc453168172a887"
+    },
+    {
+      "path": "specs/003-basketball-euroleague/checklists",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "57925c9f52812ee12431956b192d0e12e98e7322",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/57925c9f52812ee12431956b192d0e12e98e7322"
+    },
+    {
+      "path": "specs/003-basketball-euroleague/checklists/requirements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11de8705b5c16f8052abf4a2ef1e4fc045cc8701",
+      "size": 1760,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/11de8705b5c16f8052abf4a2ef1e4fc045cc8701"
+    },
+    {
+      "path": "specs/003-basketball-euroleague/contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "972de44cbd089a72194c25afd29a401fb5aa3b9a",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/972de44cbd089a72194c25afd29a401fb5aa3b9a"
+    },
+    {
+      "path": "specs/003-basketball-euroleague/contracts/euroleague.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "018c827312d642bde8796b9388d4395b4d77712e",
+      "size": 4707,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/018c827312d642bde8796b9388d4395b4d77712e"
+    },
+    {
+      "path": "specs/003-basketball-euroleague/data-model.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77d86add1c41f3946aea0eaf447f7d229fada68c",
+      "size": 4321,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/77d86add1c41f3946aea0eaf447f7d229fada68c"
+    },
+    {
+      "path": "specs/003-basketball-euroleague/plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cea2ddf9bdba52c52501aab2f6a3db3fae0fbf10",
+      "size": 9633,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/cea2ddf9bdba52c52501aab2f6a3db3fae0fbf10"
+    },
+    {
+      "path": "specs/003-basketball-euroleague/quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0db2999101a6fc420b45c3ab5b2337773ec3adb",
+      "size": 4532,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/b0db2999101a6fc420b45c3ab5b2337773ec3adb"
+    },
+    {
+      "path": "specs/003-basketball-euroleague/research.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "552943f5c075036afd1ff6fbbc6d81b8e62f1a21",
+      "size": 12161,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/552943f5c075036afd1ff6fbbc6d81b8e62f1a21"
+    },
+    {
+      "path": "specs/003-basketball-euroleague/spec.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01ace43cbb2b27d5d050e0bde435e7b4027d165a",
+      "size": 13249,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/01ace43cbb2b27d5d050e0bde435e7b4027d165a"
+    },
+    {
+      "path": "specs/003-basketball-euroleague/tasks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62def300b6efd52dd30a16ca6048254f49e64e43",
+      "size": 8045,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/62def300b6efd52dd30a16ca6048254f49e64e43"
+    },
+    {
+      "path": "specs/004-nba-espn-source",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9afbbaa5c8be5c463ed54358e86b662df339f34b",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/9afbbaa5c8be5c463ed54358e86b662df339f34b"
+    },
+    {
+      "path": "specs/004-nba-espn-source/checklists",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f0807f95bda04799785de32cc268b47a87f5c3ae",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/f0807f95bda04799785de32cc268b47a87f5c3ae"
+    },
+    {
+      "path": "specs/004-nba-espn-source/checklists/requirements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0cf47ea3f44077331263701087f7cf3d9aadfba",
+      "size": 2460,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/b0cf47ea3f44077331263701087f7cf3d9aadfba"
+    },
+    {
+      "path": "specs/004-nba-espn-source/contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "79c0f323c57a2d34ba15aa2b2ab949a06fc6a68e",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/79c0f323c57a2d34ba15aa2b2ab949a06fc6a68e"
+    },
+    {
+      "path": "specs/004-nba-espn-source/contracts/nba.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae156712953642e779dda7cd7ac2143f8eefc5a3",
+      "size": 4120,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/ae156712953642e779dda7cd7ac2143f8eefc5a3"
+    },
+    {
+      "path": "specs/004-nba-espn-source/data-model.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bfc468f2c68fd607351136acc39152d5145aeca",
+      "size": 4301,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/8bfc468f2c68fd607351136acc39152d5145aeca"
+    },
+    {
+      "path": "specs/004-nba-espn-source/plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f607e64ffd841dc5ffa79c577ea53c49fbbb5703",
+      "size": 11179,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/f607e64ffd841dc5ffa79c577ea53c49fbbb5703"
+    },
+    {
+      "path": "specs/004-nba-espn-source/quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2fa8771f089ede36dd5238ad831b20e73b4a63e",
+      "size": 3346,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/a2fa8771f089ede36dd5238ad831b20e73b4a63e"
+    },
+    {
+      "path": "specs/004-nba-espn-source/research.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a30dbe9da37903d55fbd6fcbb2532cb5143b7b9",
+      "size": 13152,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/9a30dbe9da37903d55fbd6fcbb2532cb5143b7b9"
+    },
+    {
+      "path": "specs/004-nba-espn-source/spec.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "772368a2485eea3f87a7e2b51e2a46d9d9cdf4b9",
+      "size": 14304,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/772368a2485eea3f87a7e2b51e2a46d9d9cdf4b9"
+    },
+    {
+      "path": "specs/004-nba-espn-source/tasks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f338a9e5b49aad46b211adbc3184419a1a0a3678",
+      "size": 10553,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/f338a9e5b49aad46b211adbc3184419a1a0a3678"
+    },
+    {
+      "path": "specs/005-agent-facing-surfaces",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "72173b8efde139773623fc7a0d1bd19e3739421c",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/72173b8efde139773623fc7a0d1bd19e3739421c"
+    },
+    {
+      "path": "specs/005-agent-facing-surfaces/checklists",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0534278f542e123dce45f68eccbd1ce90e6cade0",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/0534278f542e123dce45f68eccbd1ce90e6cade0"
+    },
+    {
+      "path": "specs/005-agent-facing-surfaces/checklists/requirements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22bb5cc6d2fcd8c8920dbe314e6edaf43d6dacb4",
+      "size": 2939,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/22bb5cc6d2fcd8c8920dbe314e6edaf43d6dacb4"
+    },
+    {
+      "path": "specs/005-agent-facing-surfaces/contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "69f1ce2b32d0c2406a69c76178bb47efc79475a0",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/69f1ce2b32d0c2406a69c76178bb47efc79475a0"
+    },
+    {
+      "path": "specs/005-agent-facing-surfaces/contracts/cli.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91d53ab23ae3b9c1e08f5faf41541745fb48f109",
+      "size": 2797,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/91d53ab23ae3b9c1e08f5faf41541745fb48f109"
+    },
+    {
+      "path": "specs/005-agent-facing-surfaces/contracts/mcp.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adb94d8a871fa0afa582bc57329142794395b906",
+      "size": 2802,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/adb94d8a871fa0afa582bc57329142794395b906"
+    },
+    {
+      "path": "specs/005-agent-facing-surfaces/data-model.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79ff937aafc470f481a24da0a58083f1a6f118d8",
+      "size": 1923,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/79ff937aafc470f481a24da0a58083f1a6f118d8"
+    },
+    {
+      "path": "specs/005-agent-facing-surfaces/plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "799923d21cd883b87e0fd239cb5f27f04c5abcd3",
+      "size": 10527,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/799923d21cd883b87e0fd239cb5f27f04c5abcd3"
+    },
+    {
+      "path": "specs/005-agent-facing-surfaces/quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "598f16bddd953f0f3470fb8d0ae0db73dc2810de",
+      "size": 2381,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/598f16bddd953f0f3470fb8d0ae0db73dc2810de"
+    },
+    {
+      "path": "specs/005-agent-facing-surfaces/research.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7aa5241576589a3eacbed8823cc224a322b5a5f3",
+      "size": 10137,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/7aa5241576589a3eacbed8823cc224a322b5a5f3"
+    },
+    {
+      "path": "specs/005-agent-facing-surfaces/spec.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e53cc93372b6775b0b8f64f016b9aebca5d1f223",
+      "size": 11929,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/e53cc93372b6775b0b8f64f016b9aebca5d1f223"
+    },
+    {
+      "path": "specs/005-agent-facing-surfaces/tasks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "293be201fce733654865a957f302cec644490a73",
+      "size": 10173,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/293be201fce733654865a957f302cec644490a73"
+    },
+    {
+      "path": "specs/006-bet-execution",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "321aa33cfdc54b94c5032e462689c395deb355f0",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/321aa33cfdc54b94c5032e462689c395deb355f0"
+    },
+    {
+      "path": "specs/006-bet-execution/checklists",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5e56eb917311020ee28c2411f9c6e5da6cae2f8d",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/5e56eb917311020ee28c2411f9c6e5da6cae2f8d"
+    },
+    {
+      "path": "specs/006-bet-execution/checklists/requirements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f3d46e917f67e3210a704432ffc464b768cd76c",
+      "size": 5263,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/6f3d46e917f67e3210a704432ffc464b768cd76c"
+    },
+    {
+      "path": "specs/006-bet-execution/contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e5021cbbac12adcace261b797a76398593866c6",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/4e5021cbbac12adcace261b797a76398593866c6"
+    },
+    {
+      "path": "specs/006-bet-execution/contracts/surfaces.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f1db002f52d232238a726c004cdca6f92d2a96f",
+      "size": 6344,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/4f1db002f52d232238a726c004cdca6f92d2a96f"
+    },
+    {
+      "path": "specs/006-bet-execution/contracts/venue.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bfc8889dec831353be652f299cd44bfe3b02ca6",
+      "size": 13952,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/2bfc8889dec831353be652f299cd44bfe3b02ca6"
+    },
+    {
+      "path": "specs/006-bet-execution/data-model.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8010d779eb0d07f1db82804b561b44cbf70a0e7",
+      "size": 10644,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/b8010d779eb0d07f1db82804b561b44cbf70a0e7"
+    },
+    {
+      "path": "specs/006-bet-execution/plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73a0580472726673e6e13dc52c66c897f1657f42",
+      "size": 12049,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/73a0580472726673e6e13dc52c66c897f1657f42"
+    },
+    {
+      "path": "specs/006-bet-execution/quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "659d9acdc000b4c2a406c1722b78d3e0adf7e103",
+      "size": 6346,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/659d9acdc000b4c2a406c1722b78d3e0adf7e103"
+    },
+    {
+      "path": "specs/006-bet-execution/research.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dcb12a3ba1ca60f3bc0a261a0419d4e639a020e",
+      "size": 16678,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/8dcb12a3ba1ca60f3bc0a261a0419d4e639a020e"
+    },
+    {
+      "path": "specs/006-bet-execution/spec.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a59126ec3033441f411886de2dc739dcedc2344e",
+      "size": 20886,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/a59126ec3033441f411886de2dc739dcedc2344e"
+    },
+    {
+      "path": "specs/006-bet-execution/tasks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0d1778f33bd7119fb8a159193338596ed99c8d7",
+      "size": 26151,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/a0d1778f33bd7119fb8a159193338596ed99c8d7"
+    },
+    {
+      "path": "specs/007-conventions-conformance",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "132e00b74a742c2ab37eaeed9810677057cf8dce",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/132e00b74a742c2ab37eaeed9810677057cf8dce"
+    },
+    {
+      "path": "specs/007-conventions-conformance/checklists",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fbd00c366cd0b3b65b6d485e7443dd62c0007ede",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/fbd00c366cd0b3b65b6d485e7443dd62c0007ede"
+    },
+    {
+      "path": "specs/007-conventions-conformance/checklists/requirements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a287e88d527aac28f8cd14d7585741adde4f547d",
+      "size": 1793,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/a287e88d527aac28f8cd14d7585741adde4f547d"
+    },
+    {
+      "path": "specs/007-conventions-conformance/contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b695ceb7dfa16491851aa6fdd4ae3c6f8789c103",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/b695ceb7dfa16491851aa6fdd4ae3c6f8789c103"
+    },
+    {
+      "path": "specs/007-conventions-conformance/contracts/rename-ledger.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80033e4f3ad166c8750295c119c713659c619422",
+      "size": 3567,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/80033e4f3ad166c8750295c119c713659c619422"
+    },
+    {
+      "path": "specs/007-conventions-conformance/data-model.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ea1dd65ed14fafa60b6cdf1047463f647f5fde0",
+      "size": 5010,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/0ea1dd65ed14fafa60b6cdf1047463f647f5fde0"
+    },
+    {
+      "path": "specs/007-conventions-conformance/plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f80a61020a17a852e9c904b5fa4e8b84c60af66",
+      "size": 7075,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/1f80a61020a17a852e9c904b5fa4e8b84c60af66"
+    },
+    {
+      "path": "specs/007-conventions-conformance/quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e93a07144abeae139977d266e471ba55dcaa4dd5",
+      "size": 2594,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/e93a07144abeae139977d266e471ba55dcaa4dd5"
+    },
+    {
+      "path": "specs/007-conventions-conformance/research.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d8b04e2201fa6f769f3b2f71ff9391768593550",
+      "size": 4935,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/1d8b04e2201fa6f769f3b2f71ff9391768593550"
+    },
+    {
+      "path": "specs/007-conventions-conformance/spec.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bea1662f74fbf2ddac694d2e37734fb2930ec91f",
+      "size": 13310,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/bea1662f74fbf2ddac694d2e37734fb2930ec91f"
+    },
+    {
+      "path": "specs/007-conventions-conformance/tasks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b74f4d4ce70e0bf888054dcc33f3e7bb894986cc",
+      "size": 14655,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/b74f4d4ce70e0bf888054dcc33f3e7bb894986cc"
+    },
+    {
+      "path": "specs/008-single-event-execution",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b8b728ec7bb696e8212f829923587a5d53ef5afa",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/b8b728ec7bb696e8212f829923587a5d53ef5afa"
+    },
+    {
+      "path": "specs/008-single-event-execution/checklists",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d473b52605fff6927afb1e3129ee6f4f92d5c110",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/d473b52605fff6927afb1e3129ee6f4f92d5c110"
+    },
+    {
+      "path": "specs/008-single-event-execution/checklists/requirements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41272f973b374489d12d37487fb15ed0be8bdd61",
+      "size": 1294,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/41272f973b374489d12d37487fb15ed0be8bdd61"
+    },
+    {
+      "path": "specs/008-single-event-execution/contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "efd786e2fbf2cce9f6a0fa2c271f03d514254ab1",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/efd786e2fbf2cce9f6a0fa2c271f03d514254ab1"
+    },
+    {
+      "path": "specs/008-single-event-execution/contracts/python-api.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ddd4e57a63deace5109af819b2ee3b0bef4492e",
+      "size": 3713,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/9ddd4e57a63deace5109af819b2ee3b0bef4492e"
+    },
+    {
+      "path": "specs/008-single-event-execution/contracts/retirement.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54b783547bf7ffad5bc03315009d4ec263d88550",
+      "size": 2285,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/54b783547bf7ffad5bc03315009d4ec263d88550"
+    },
+    {
+      "path": "specs/008-single-event-execution/contracts/surfaces.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfbbb2161f75cb247f9419f255b2c27411b5f6a5",
+      "size": 2585,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/bfbbb2161f75cb247f9419f255b2c27411b5f6a5"
+    },
+    {
+      "path": "specs/008-single-event-execution/data-model.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a2fa8813669416b3e9606f5567d0d66189888d0",
+      "size": 3461,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/8a2fa8813669416b3e9606f5567d0d66189888d0"
+    },
+    {
+      "path": "specs/008-single-event-execution/plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "647aaef9635712ee9ac4cf0bd14289c4b939148c",
+      "size": 6897,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/647aaef9635712ee9ac4cf0bd14289c4b939148c"
+    },
+    {
+      "path": "specs/008-single-event-execution/quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdaf8bbb897bbce92ee838854f51b7f8e0738ac0",
+      "size": 3108,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/bdaf8bbb897bbce92ee838854f51b7f8e0738ac0"
+    },
+    {
+      "path": "specs/008-single-event-execution/research.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f09bef19870a45f6dc44d3846fd413520391f3b4",
+      "size": 7151,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/f09bef19870a45f6dc44d3846fd413520391f3b4"
+    },
+    {
+      "path": "specs/008-single-event-execution/spec.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc982b166064568810f173bed634b2cb034981c6",
+      "size": 16343,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/dc982b166064568810f173bed634b2cb034981c6"
+    },
+    {
+      "path": "specs/008-single-event-execution/tasks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eed2a6449aed94a705ea11ffa6a8fc9ede9c73fe",
+      "size": 12357,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/eed2a6449aed94a705ea11ffa6a8fc9ede9c73fe"
+    },
+    {
+      "path": "specs/009-plain-documentation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7016eba5beb573d926104cc6a561bd469eb25dfb",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/7016eba5beb573d926104cc6a561bd469eb25dfb"
+    },
+    {
+      "path": "specs/009-plain-documentation/checklists",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a2f488e657a2a05c26ddb367724d4aa1a111f2d",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/7a2f488e657a2a05c26ddb367724d4aa1a111f2d"
+    },
+    {
+      "path": "specs/009-plain-documentation/checklists/requirements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97175a7683bc0007afb117c41747549f065a422a",
+      "size": 1375,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/97175a7683bc0007afb117c41747549f065a422a"
+    },
+    {
+      "path": "specs/009-plain-documentation/contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bdffae88fff3b24770e11f8e641518548dd854f2",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/bdffae88fff3b24770e11f8e641518548dd854f2"
+    },
+    {
+      "path": "specs/009-plain-documentation/contracts/style-rules.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c57ae760610800c13ebaea6fae3be3f7e695796",
+      "size": 2299,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/4c57ae760610800c13ebaea6fae3be3f7e695796"
+    },
+    {
+      "path": "specs/009-plain-documentation/plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad77797a7eeeffb5cf70c2d368e4512db8c56170",
+      "size": 3231,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/ad77797a7eeeffb5cf70c2d368e4512db8c56170"
+    },
+    {
+      "path": "specs/009-plain-documentation/quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "844361824450978893942002716d7ed7364947d1",
+      "size": 1095,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/844361824450978893942002716d7ed7364947d1"
+    },
+    {
+      "path": "specs/009-plain-documentation/research.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b08949924a160cebd6bceeed1831e324d47f32b",
+      "size": 1945,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/8b08949924a160cebd6bceeed1831e324d47f32b"
+    },
+    {
+      "path": "specs/009-plain-documentation/spec.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5cd00fa8fd3b637b5c8d22bbd89b51dccc427f9",
+      "size": 9338,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/d5cd00fa8fd3b637b5c8d22bbd89b51dccc427f9"
+    },
+    {
+      "path": "specs/009-plain-documentation/tasks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8f2458542b41fd7969cbcee5be7d7986b00fc82",
+      "size": 3005,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/c8f2458542b41fd7969cbcee5be7d7986b00fc82"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad615fac1593240b8b0279f4d5fcf44f6e2bc833",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/ad615fac1593240b8b0279f4d5fcf44f6e2bc833"
+    },
+    {
+      "path": "src/sportsbet",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cc2d84c50e89b74e31d55491933225e4007e7b8f",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/cc2d84c50e89b74e31d55491933225e4007e7b8f"
+    },
+    {
+      "path": "src/sportsbet/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84715f33c242abce26b58522b55c15e41f0fae2e",
+      "size": 342,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/84715f33c242abce26b58522b55c15e41f0fae2e"
+    },
+    {
+      "path": "src/sportsbet/__main__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a77e602347cf98bba970d8bae72b29ce75b708a",
+      "size": 131,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/9a77e602347cf98bba970d8bae72b29ce75b708a"
+    },
+    {
+      "path": "src/sportsbet/cli",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e8628dfec2d220f499ca3d98efc1b50f107462dd",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/e8628dfec2d220f499ca3d98efc1b50f107462dd"
+    },
+    {
+      "path": "src/sportsbet/cli/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f29f5d1b1bac0cb6018e7f148e4c937858460cd",
+      "size": 102,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/3f29f5d1b1bac0cb6018e7f148e4c937858460cd"
+    },
+    {
+      "path": "src/sportsbet/cli/_betting.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c415eabe2fb9876ad36989bd678ea394b2167696",
+      "size": 4112,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/c415eabe2fb9876ad36989bd678ea394b2167696"
+    },
+    {
+      "path": "src/sportsbet/cli/_building.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "261e0c7de1e7a2a8b77c92f6491344f0c112c97f",
+      "size": 2479,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/261e0c7de1e7a2a8b77c92f6491344f0c112c97f"
+    },
+    {
+      "path": "src/sportsbet/cli/_cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "750520f8bd3cd7aee3be141bb099376693f1ec10",
+      "size": 595,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/750520f8bd3cd7aee3be141bb099376693f1ec10"
+    },
+    {
+      "path": "src/sportsbet/cli/_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74d9df8d8cbb01d186af85114b60267369601ec7",
+      "size": 4809,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/74d9df8d8cbb01d186af85114b60267369601ec7"
+    },
+    {
+      "path": "src/sportsbet/cli/_execution.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69c7a52c7db08953664e5d4b66ae5851841273c3",
+      "size": 12373,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/69c7a52c7db08953664e5d4b66ae5851841273c3"
+    },
+    {
+      "path": "src/sportsbet/cli/_options.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97cce7ce34231d1a642e0f1a5c0f1663afc1bc47",
+      "size": 4110,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/97cce7ce34231d1a642e0f1a5c0f1663afc1bc47"
+    },
+    {
+      "path": "src/sportsbet/cli/_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef4911b86d2998b66554b12250c136c54a7b1fc9",
+      "size": 3929,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/ef4911b86d2998b66554b12250c136c54a7b1fc9"
+    },
+    {
+      "path": "src/sportsbet/core",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "03b941d8f8c900ac6bffc3e934996d3becb942ba",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/03b941d8f8c900ac6bffc3e934996d3becb942ba"
+    },
+    {
+      "path": "src/sportsbet/core/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7364040140c8a7061d3664329f78ddc59e3230a9",
+      "size": 1065,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/7364040140c8a7061d3664329f78ddc59e3230a9"
+    },
+    {
+      "path": "src/sportsbet/core/_errors.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7e12f87e9f362abd39ca4966baa19574219a5d9",
+      "size": 271,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/e7e12f87e9f362abd39ca4966baa19574219a5d9"
+    },
+    {
+      "path": "src/sportsbet/core/_params.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cf3e9d42769819c8b9d8ecd7d899ada1e6fe496",
+      "size": 861,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/0cf3e9d42769819c8b9d8ecd7d899ada1e6fe496"
+    },
+    {
+      "path": "src/sportsbet/core/_types.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "970a7755c65d9116f15a1655ce1fd2313ea71011",
+      "size": 740,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/970a7755c65d9116f15a1655ce1fd2313ea71011"
+    },
+    {
+      "path": "src/sportsbet/core/_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "864a5ff7b9792e46602ee0da3a17bc97603ca4ee",
+      "size": 2024,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/864a5ff7b9792e46602ee0da3a17bc97603ca4ee"
+    },
+    {
+      "path": "src/sportsbet/dataloaders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "033ba8ab6781aa5b209cc526e7cbb80fc6393576",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/033ba8ab6781aa5b209cc526e7cbb80fc6393576"
+    },
+    {
+      "path": "src/sportsbet/dataloaders/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "826c9c421bd3a15d075b13ece9f474054ea2aaec",
+      "size": 474,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/826c9c421bd3a15d075b13ece9f474054ea2aaec"
+    },
+    {
+      "path": "src/sportsbet/dataloaders/_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dd79bef659d79096e2ab521026f1fd0949017af",
+      "size": 36321,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/8dd79bef659d79096e2ab521026f1fd0949017af"
+    },
+    {
+      "path": "src/sportsbet/dataloaders/_extraction.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89eab6f7e5b946a41b2894f74864755937039ec3",
+      "size": 2181,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/89eab6f7e5b946a41b2894f74864755937039ec3"
+    },
+    {
+      "path": "src/sportsbet/dataloaders/_factory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73d56322ffbaeb8b6d845b583010d0991b9451e5",
+      "size": 5022,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/73d56322ffbaeb8b6d845b583010d0991b9451e5"
+    },
+    {
+      "path": "src/sportsbet/dataloaders/_sourced.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79945f489a32fc534181381efa29053052c5e455",
+      "size": 7384,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/79945f489a32fc534181381efa29053052c5e455"
+    },
+    {
+      "path": "src/sportsbet/evaluation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4548d1da95544d51898be05b8a0da9ffa1c59d77",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/4548d1da95544d51898be05b8a0da9ffa1c59d77"
+    },
+    {
+      "path": "src/sportsbet/evaluation/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f89088e06e1ff85faf7664135686e5993a9427f",
+      "size": 678,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/7f89088e06e1ff85faf7664135686e5993a9427f"
+    },
+    {
+      "path": "src/sportsbet/evaluation/_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24a4f4798183cf1704917813bcb4e0967acff4c6",
+      "size": 20771,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/24a4f4798183cf1704917813bcb4e0967acff4c6"
+    },
+    {
+      "path": "src/sportsbet/evaluation/_classifier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "646b7a2b10ca08bf68ed462f17c708b98ebe752a",
+      "size": 3723,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/646b7a2b10ca08bf68ed462f17c708b98ebe752a"
+    },
+    {
+      "path": "src/sportsbet/evaluation/_factory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3973e19793b77b59615e28ce6063aeadee9b863e",
+      "size": 2292,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/3973e19793b77b59615e28ce6063aeadee9b863e"
+    },
+    {
+      "path": "src/sportsbet/evaluation/_model_selection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d1977ecb94d60907f596857ef6e1ed40092155c",
+      "size": 20274,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/1d1977ecb94d60907f596857ef6e1ed40092155c"
+    },
+    {
+      "path": "src/sportsbet/evaluation/_rules.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ddb570cda7eb7175e8df1fb46c86d95935611be",
+      "size": 4817,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/3ddb570cda7eb7175e8df1fb46c86d95935611be"
+    },
+    {
+      "path": "src/sportsbet/execution",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "25caab8980db06e01c92e196eb651326d064128a",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/25caab8980db06e01c92e196eb651326d064128a"
+    },
+    {
+      "path": "src/sportsbet/execution/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee84f289d0cab46f1899c387cfa9a6dfd5307b08",
+      "size": 1114,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/ee84f289d0cab46f1899c387cfa9a6dfd5307b08"
+    },
+    {
+      "path": "src/sportsbet/execution/_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aa58267680386e0818532550e034e644c74ccd2",
+      "size": 7147,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/2aa58267680386e0818532550e034e644c74ccd2"
+    },
+    {
+      "path": "src/sportsbet/execution/_browser.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4088478afbc740f9b15bae08cc03ab2fc97167c0",
+      "size": 10488,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/4088478afbc740f9b15bae08cc03ab2fc97167c0"
+    },
+    {
+      "path": "src/sportsbet/execution/_credentials.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4a0ad3dc55ab70e0d495ea4ac9c33170ce01619",
+      "size": 1295,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/e4a0ad3dc55ab70e0d495ea4ac9c33170ce01619"
+    },
+    {
+      "path": "src/sportsbet/execution/_event.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c786c2a4f4df5efa9d3eb4e3e502b3098c4469c",
+      "size": 9009,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/6c786c2a4f4df5efa9d3eb4e3e502b3098c4469c"
+    },
+    {
+      "path": "src/sportsbet/execution/_factory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ad23abfe3c8e2b8dc8ed584f173c80d5e285319",
+      "size": 1545,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/6ad23abfe3c8e2b8dc8ed584f173c80d5e285319"
+    },
+    {
+      "path": "src/sportsbet/execution/_schedule.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5bedfdb0d8e0b628b8dc6519f1dfb973eb4124e",
+      "size": 884,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/f5bedfdb0d8e0b628b8dc6519f1dfb973eb4124e"
+    },
+    {
+      "path": "src/sportsbet/mcp",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "104d33deeb0e692c9d747a24b1b1fd87e40bb13a",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/104d33deeb0e692c9d747a24b1b1fd87e40bb13a"
+    },
+    {
+      "path": "src/sportsbet/mcp/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd0f01c61b8495ef3df54dd1bdbdb65ad623871b",
+      "size": 118,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/dd0f01c61b8495ef3df54dd1bdbdb65ad623871b"
+    },
+    {
+      "path": "src/sportsbet/mcp/_server.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3061f5807a0dc483bc7c55bbaa51c5d8bb3eab7c",
+      "size": 18215,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/3061f5807a0dc483bc7c55bbaa51c5d8bb3eab7c"
+    },
+    {
+      "path": "src/sportsbet/py.typed",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/sportsbet/sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3fd2e1a05bfcf5e831b4b59c81d2987aed773f3e",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/3fd2e1a05bfcf5e831b4b59c81d2987aed773f3e"
+    },
+    {
+      "path": "src/sportsbet/sources/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03d02067d225566dcf527800ac1eecabae691510",
+      "size": 1473,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/03d02067d225566dcf527800ac1eecabae691510"
+    },
+    {
+      "path": "src/sportsbet/sources/_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eceb4d9febbfdb46d78a91498a5def671a1bee89",
+      "size": 14180,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/eceb4d9febbfdb46d78a91498a5def671a1bee89"
+    },
+    {
+      "path": "src/sportsbet/sources/_common",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fba167ea94c4dc214bdff9f1a28a9a8236aa2bf8",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/fba167ea94c4dc214bdff9f1a28a9a8236aa2bf8"
+    },
+    {
+      "path": "src/sportsbet/sources/_common/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d818370df92e0dfaa0f6f82993a1572c3bff765f",
+      "size": 70,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/d818370df92e0dfaa0f6f82993a1572c3bff765f"
+    },
+    {
+      "path": "src/sportsbet/sources/_common/_basketball.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01241ac9d38fa1b52b076a7233e929bf3ea6267a",
+      "size": 3208,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/01241ac9d38fa1b52b076a7233e929bf3ea6267a"
+    },
+    {
+      "path": "src/sportsbet/sources/_common/_football_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db0525ff34c80c25bb7cc3f757d442c439fc83b7",
+      "size": 46445,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/db0525ff34c80c25bb7cc3f757d442c439fc83b7"
+    },
+    {
+      "path": "src/sportsbet/sources/_common/_sample.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db7f90a8e542ae346887404e9297eba69e27cbb5",
+      "size": 2078,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/db7f90a8e542ae346887404e9297eba69e27cbb5"
+    },
+    {
+      "path": "src/sportsbet/sources/_odds",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "23d09312d71927e7ac435898e23e47b7df6cd419",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/23d09312d71927e7ac435898e23e47b7df6cd419"
+    },
+    {
+      "path": "src/sportsbet/sources/_odds/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "770b3b3fece2e6cff22db6fbe8edb2462e456b29",
+      "size": 31,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/770b3b3fece2e6cff22db6fbe8edb2462e456b29"
+    },
+    {
+      "path": "src/sportsbet/sources/_odds/_football_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef9341810de96e3009b272782a9a8b09073c83d2",
+      "size": 935,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/ef9341810de96e3009b272782a9a8b09073c83d2"
+    },
+    {
+      "path": "src/sportsbet/sources/_odds/_odds_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcacb523640257e90f1840f4777790765324ad58",
+      "size": 14658,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/dcacb523640257e90f1840f4777790765324ad58"
+    },
+    {
+      "path": "src/sportsbet/sources/_odds/_sample.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a61ead15bf5fd4d8798a0e520438db75f07cbb8f",
+      "size": 1201,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/a61ead15bf5fd4d8798a0e520438db75f07cbb8f"
+    },
+    {
+      "path": "src/sportsbet/sources/_resolver.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6929c5d0aba393b798896394de782a98a89aa73a",
+      "size": 8751,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/6929c5d0aba393b798896394de782a98a89aa73a"
+    },
+    {
+      "path": "src/sportsbet/sources/_schema.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e319d8b6288c1390d42a2c6a3491b906f597847",
+      "size": 6393,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/7e319d8b6288c1390d42a2c6a3491b906f597847"
+    },
+    {
+      "path": "src/sportsbet/sources/_stats",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8779592b25b8a027ab36718a6be0604306c52a5d",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/8779592b25b8a027ab36718a6be0604306c52a5d"
+    },
+    {
+      "path": "src/sportsbet/sources/_stats/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e7ef5cec2e8030f0194d318672355355b792f63",
+      "size": 37,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/4e7ef5cec2e8030f0194d318672355355b792f63"
+    },
+    {
+      "path": "src/sportsbet/sources/_stats/_euroleague.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "807d9dd8ea644a4be9b2059dc4552f9bb5a8ae14",
+      "size": 4538,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/807d9dd8ea644a4be9b2059dc4552f9bb5a8ae14"
+    },
+    {
+      "path": "src/sportsbet/sources/_stats/_football_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25c8a21885f1894b5535cc936affb68d087b35f5",
+      "size": 1237,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/25c8a21885f1894b5535cc936affb68d087b35f5"
+    },
+    {
+      "path": "src/sportsbet/sources/_stats/_nba.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40ae48cd1855fe6a3d83aa7288a528769d6f3086",
+      "size": 6072,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/40ae48cd1855fe6a3d83aa7288a528769d6f3086"
+    },
+    {
+      "path": "src/sportsbet/sources/_stats/_sample.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "311a19460c03712bf9c815b117fbee00ec207d49",
+      "size": 1414,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/311a19460c03712bf9c815b117fbee00ec207d49"
+    },
+    {
+      "path": "src/sportsbet/sources/_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5d0993a2b9e6422780128de4752a775b18b9441",
+      "size": 2164,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/b5d0993a2b9e6422780128de4752a775b18b9441"
+    },
+    {
+      "path": "src/sportsbet/sources/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4abf5b8985f483d20fda0431d493fe14a254e095",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/4abf5b8985f483d20fda0431d493fe14a254e095"
+    },
+    {
+      "path": "src/sportsbet/sources/data/England_1_2024_odds.csv.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70da8a7eedb0fa020c7dd9f368bfec24cf13bc39",
+      "size": 13281,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/70da8a7eedb0fa020c7dd9f368bfec24cf13bc39"
+    },
+    {
+      "path": "src/sportsbet/sources/data/England_1_2024_stats.csv.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "626231cbb4b791f8b853a0216e00d2154154fee4",
+      "size": 12231,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/626231cbb4b791f8b853a0216e00d2154154fee4"
+    },
+    {
+      "path": "src/sportsbet/sources/data/Spain_1_2024_odds.csv.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0698ec28b5cb023686e3b5a05469dcfa3488a5c7",
+      "size": 13147,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/0698ec28b5cb023686e3b5a05469dcfa3488a5c7"
+    },
+    {
+      "path": "src/sportsbet/sources/data/Spain_1_2024_stats.csv.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa64736a99a8c8039b5014595bac8f297de44203",
+      "size": 12113,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/fa64736a99a8c8039b5014595bac8f297de44203"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "38db09bbd4221f1b192e26dd43a17edb89b1e095",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/38db09bbd4221f1b192e26dd43a17edb89b1e095"
+    },
+    {
+      "path": "tests/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b6fc7c00d8e404ea961ce72ca23ec3e717f7b14",
+      "size": 162,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/8b6fc7c00d8e404ea961ce72ca23ec3e717f7b14"
+    },
+    {
+      "path": "tests/cli",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff4e115000c6f6d918bef6ea59feba7793e74aef",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/ff4e115000c6f6d918bef6ea59feba7793e74aef"
+    },
+    {
+      "path": "tests/cli/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "674d6e880b3e3cee82e4a95f6fde9688b3bdfb3b",
+      "size": 20,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/674d6e880b3e3cee82e4a95f6fde9688b3bdfb3b"
+    },
+    {
+      "path": "tests/cli/test_betting.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31cb5aea9c4ac35e44285b20601a712b5bfa1430",
+      "size": 4649,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/31cb5aea9c4ac35e44285b20601a712b5bfa1430"
+    },
+    {
+      "path": "tests/cli/test_cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87414b7b84d404f4411721e1b06ad69c52504c2b",
+      "size": 5355,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/87414b7b84d404f4411721e1b06ad69c52504c2b"
+    },
+    {
+      "path": "tests/cli/test_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "572804928eedd9fa0b9f07ff7ad333d44c844bf2",
+      "size": 5006,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/572804928eedd9fa0b9f07ff7ad333d44c844bf2"
+    },
+    {
+      "path": "tests/cli/test_execution.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9e0a919149d9ff9c8fe8afa181bc9c132610fb0",
+      "size": 3188,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/d9e0a919149d9ff9c8fe8afa181bc9c132610fb0"
+    },
+    {
+      "path": "tests/cli/test_main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6707c00b13d66dde8a142bfe31a26e3f99d5d21e",
+      "size": 727,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/6707c00b13d66dde8a142bfe31a26e3f99d5d21e"
+    },
+    {
+      "path": "tests/cli/test_parity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de4f5d3675a09b686c02cb79c949de217381530b",
+      "size": 3861,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/de4f5d3675a09b686c02cb79c949de217381530b"
+    },
+    {
+      "path": "tests/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f08bd339f3b6b54f5373ac85b66873920586938d",
+      "size": 19044,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/f08bd339f3b6b54f5373ac85b66873920586938d"
+    },
+    {
+      "path": "tests/dataloaders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62cb1b20dad0137ad02bfdf737109a67b5158187",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/62cb1b20dad0137ad02bfdf737109a67b5158187"
+    },
+    {
+      "path": "tests/dataloaders/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2cb3cf5c34d4e66daee2b5c528c56995e297a5b",
+      "size": 31,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/e2cb3cf5c34d4e66daee2b5c528c56995e297a5b"
+    },
+    {
+      "path": "tests/dataloaders/test_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b44aa31aa9db9b224f5456d63024725f7b184c0a",
+      "size": 9011,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/b44aa31aa9db9b224f5456d63024725f7b184c0a"
+    },
+    {
+      "path": "tests/dataloaders/test_basketball.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bb310caebc517b392f03ed88a6fcb3ec399b601",
+      "size": 5353,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/1bb310caebc517b392f03ed88a6fcb3ec399b601"
+    },
+    {
+      "path": "tests/dataloaders/test_extraction.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c6dc129c6fd9b139fa28cee9c4bed13921ceb79",
+      "size": 4273,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/1c6dc129c6fd9b139fa28cee9c4bed13921ceb79"
+    },
+    {
+      "path": "tests/dataloaders/test_leakage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a66f119c73c4c098b5b6b5e382b7be578000a303",
+      "size": 4927,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/a66f119c73c4c098b5b6b5e382b7be578000a303"
+    },
+    {
+      "path": "tests/dataloaders/test_soccer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86be7de3915539d7c8c71936fd222c2069da1041",
+      "size": 7338,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/86be7de3915539d7c8c71936fd222c2069da1041"
+    },
+    {
+      "path": "tests/dataloaders/test_sources_choice.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24c5bb596d1ab392cb3cad658d8fa8dcfa3235ba",
+      "size": 1882,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/24c5bb596d1ab392cb3cad658d8fa8dcfa3235ba"
+    },
+    {
+      "path": "tests/evaluation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2d76e1e977c9d2524a8a99bf281ad84be78f3966",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/2d76e1e977c9d2524a8a99bf281ad84be78f3966"
+    },
+    {
+      "path": "tests/evaluation/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56425c4931adfb9988984a50006abe1ccb0fbbdd",
+      "size": 905,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/56425c4931adfb9988984a50006abe1ccb0fbbdd"
+    },
+    {
+      "path": "tests/evaluation/test_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3927daf117f8f035b9dcfde940d8192ef8c53c7",
+      "size": 10776,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/c3927daf117f8f035b9dcfde940d8192ef8c53c7"
+    },
+    {
+      "path": "tests/evaluation/test_classifier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c23fe189446b3834ed0f379393b52e1f55b10d65",
+      "size": 2067,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/c23fe189446b3834ed0f379393b52e1f55b10d65"
+    },
+    {
+      "path": "tests/evaluation/test_model_selection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10ce69819f7e633273a9bd15f0e30d296b833635",
+      "size": 4257,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/10ce69819f7e633273a9bd15f0e30d296b833635"
+    },
+    {
+      "path": "tests/evaluation/test_rules.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8dd32b78a3a9fefce8e8308418df53fec1c464d",
+      "size": 4198,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/e8dd32b78a3a9fefce8e8308418df53fec1c464d"
+    },
+    {
+      "path": "tests/execution",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1faf19e06053a25c44085f5f42c8b7caba48cd68",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/1faf19e06053a25c44085f5f42c8b7caba48cd68"
+    },
+    {
+      "path": "tests/execution/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b3e0750e064fa6ea4ac83693c54d87774947b8e",
+      "size": 29,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/0b3e0750e064fa6ea4ac83693c54d87774947b8e"
+    },
+    {
+      "path": "tests/execution/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfb3250f0326296bceefc8a7762438f406c57378",
+      "size": 4860,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/dfb3250f0326296bceefc8a7762438f406c57378"
+    },
+    {
+      "path": "tests/execution/test_browser.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21947a44fdf1f8ed4fb5d940ba4adadf4bbba276",
+      "size": 10521,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/21947a44fdf1f8ed4fb5d940ba4adadf4bbba276"
+    },
+    {
+      "path": "tests/execution/test_event.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d7a53f80199e4ecfa7f73cff16a9dc9b59e7820",
+      "size": 5894,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/9d7a53f80199e4ecfa7f73cff16a9dc9b59e7820"
+    },
+    {
+      "path": "tests/execution/test_execution.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99cc4e34fdf24c68be8d9af8676335af3fc30b6a",
+      "size": 4170,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/99cc4e34fdf24c68be8d9af8676335af3fc30b6a"
+    },
+    {
+      "path": "tests/execution/test_schedule.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54af12e00d02ebf4bd20a91bb5d0fc51f4733f42",
+      "size": 1084,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/54af12e00d02ebf4bd20a91bb5d0fc51f4733f42"
+    },
+    {
+      "path": "tests/mcp",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b01d694eda6c9841497eb03f7a90028d035696bd",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/b01d694eda6c9841497eb03f7a90028d035696bd"
+    },
+    {
+      "path": "tests/mcp/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd11c0c158f496c04f9a8b33bc3028d01c5bef27",
+      "size": 23,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/bd11c0c158f496c04f9a8b33bc3028d01c5bef27"
+    },
+    {
+      "path": "tests/mcp/test_mcp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f7126ff441d343b4a4fc3d34136199471626d81",
+      "size": 9969,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/4f7126ff441d343b4a4fc3d34136199471626d81"
+    },
+    {
+      "path": "tests/mcp/test_parity_surfaces.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "414a5d2b9c629a12e5b5900db530e9a3b8d04a9b",
+      "size": 4270,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/414a5d2b9c629a12e5b5900db530e9a3b8d04a9b"
+    },
+    {
+      "path": "tests/sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "97cdc82c25a18857debc9eec94af6a3459790916",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/97cdc82c25a18857debc9eec94af6a3459790916"
+    },
+    {
+      "path": "tests/sources/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f74dd0086fcad3e19e02b3090eb5563ec859cb41",
+      "size": 34,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/f74dd0086fcad3e19e02b3090eb5563ec859cb41"
+    },
+    {
+      "path": "tests/sources/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e934005fa395b01021767601a9497701900098e",
+      "size": 2404,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/1e934005fa395b01021767601a9497701900098e"
+    },
+    {
+      "path": "tests/sources/odds",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce6d1e5ac59a9097bfb17360f6efed625f2d8806",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/ce6d1e5ac59a9097bfb17360f6efed625f2d8806"
+    },
+    {
+      "path": "tests/sources/odds/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c7178f0497f6ac3c1be665359f2ebfcf3c96c18",
+      "size": 34,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/2c7178f0497f6ac3c1be665359f2ebfcf3c96c18"
+    },
+    {
+      "path": "tests/sources/odds/test_football_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50dd364f03bebcb3a6123147015c85f9f52f9854",
+      "size": 8952,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/50dd364f03bebcb3a6123147015c85f9f52f9854"
+    },
+    {
+      "path": "tests/sources/odds/test_odds_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a25dea52a40f0d034ef6ea69fed3d271d1ac7dd1",
+      "size": 8614,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/a25dea52a40f0d034ef6ea69fed3d271d1ac7dd1"
+    },
+    {
+      "path": "tests/sources/odds/test_sample.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9efbeed868a1de8a283ea8ad7f844c0b5f2e7dc",
+      "size": 40,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/c9efbeed868a1de8a283ea8ad7f844c0b5f2e7dc"
+    },
+    {
+      "path": "tests/sources/samples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a5fe2c03df305eb24b1f38d463e8c7667792378b",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/a5fe2c03df305eb24b1f38d463e8c7667792378b"
+    },
+    {
+      "path": "tests/sources/samples/E0_2425.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6beb421e836fc351e304e659db850fb329829b17",
+      "size": 197110,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/6beb421e836fc351e304e659db850fb329829b17"
+    },
+    {
+      "path": "tests/sources/samples/fixtures.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f462e3ae618ae8d53e294dbe2374dcc921ccfa9a",
+      "size": 4401,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/f462e3ae618ae8d53e294dbe2374dcc921ccfa9a"
+    },
+    {
+      "path": "tests/sources/samples/odds.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ed4942724ed7f8c2a0154f1e2ac6f4080b18841",
+      "size": 1137,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/9ed4942724ed7f8c2a0154f1e2ac6f4080b18841"
+    },
+    {
+      "path": "tests/sources/samples/stats.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50429d16298170ae8f6de0099503a95d3871413b",
+      "size": 1229,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/50429d16298170ae8f6de0099503a95d3871413b"
+    },
+    {
+      "path": "tests/sources/stats",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8efde5891274b332484ea52fde29ae2681dddeb8",
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/trees/8efde5891274b332484ea52fde29ae2681dddeb8"
+    },
+    {
+      "path": "tests/sources/stats/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef16545ebcfba58a9d7531d761cd1badcbbcb186",
+      "size": 40,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/ef16545ebcfba58a9d7531d761cd1badcbbcb186"
+    },
+    {
+      "path": "tests/sources/stats/test_euroleague.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41b114e14f643b3fad462c5b06b4b13013520825",
+      "size": 5882,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/41b114e14f643b3fad462c5b06b4b13013520825"
+    },
+    {
+      "path": "tests/sources/stats/test_football_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50dd364f03bebcb3a6123147015c85f9f52f9854",
+      "size": 8952,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/50dd364f03bebcb3a6123147015c85f9f52f9854"
+    },
+    {
+      "path": "tests/sources/stats/test_nba.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "757fbb3b9df49ebbd8b61ac0ace57f09028f003d",
+      "size": 10480,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/757fbb3b9df49ebbd8b61ac0ace57f09028f003d"
+    },
+    {
+      "path": "tests/sources/stats/test_sample.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd02e2983d79b3ceabb83edc37fe41e8bc46a523",
+      "size": 46,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/fd02e2983d79b3ceabb83edc37fe41e8bc46a523"
+    },
+    {
+      "path": "tests/sources/test_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09269638d138c1f9405b15ff7d6a8c414a47d3fb",
+      "size": 4815,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/09269638d138c1f9405b15ff7d6a8c414a47d3fb"
+    },
+    {
+      "path": "tests/sources/test_resolver.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2cd66018c31498889c57c83219031e76a98096c",
+      "size": 4196,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/d2cd66018c31498889c57c83219031e76a98096c"
+    },
+    {
+      "path": "tests/sources/test_schema.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa2e4176b936cced6d20ee6a7883eebe684abfc9",
+      "size": 5618,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/fa2e4176b936cced6d20ee6a7883eebe684abfc9"
+    },
+    {
+      "path": "tests/sources/test_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84836e928ea01ffee18efcc1d1f517dae9d1ad1c",
+      "size": 2086,
+      "url": "https://api.github.com/repos/georgedouzas/sports-betting/git/blobs/84836e928ea01ffee18efcc1d1f517dae9d1ad1c"
+    }
+  ],
+  "truncated": false
+}

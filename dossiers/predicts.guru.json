@@ -1,0 +1,141 @@
+{
+ "domain": "predicts.guru",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/fanduel_com_predicts_home.html"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\fanduel_com_predicts_home.html",
+   "raw\\fanduel_com_predicts_js0.js",
+   "raw\\fanduel_com_predicts_js1.js",
+   "raw\\fanduel_com_predicts_robots.txt",
+   "raw\\fanduel_com_predicts_sitemap.xml",
+   "raw\\px_predicts_guru_home.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "ws.com/cdn.fanduel.com/images/marketing-frontend/2026/predicts/homepage/august/css/app.css",
+    "ws.com/cdn.fanduel.com/images/2025/predicts/main/fanduel-predicts-logo-horizontal.png",
+    "ws.com/cdn.fanduel.com/images/marketing-frontend/2026/predicts/homepage/august/pred-icts-header-bg.jpg",
+    "ws.com/cdn.fanduel.com/images/marketing-frontend/2026/predicts/homepage/august/player.png",
+    "ws.com/cdn.fanduel.com/images/marketing-frontend/2026/predicts/homepage/august/Fanduel",
+    "ws.com/cdn.fanduel.com/images/marketing-frontend/2026/predicts/homepage/august/get100-offer.png"
+   ],
+   "citation": "raw/fanduel_com_predicts_home.html"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\fanduel_com_predicts_home.html"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\fanduel_com_predicts_home.html"
+  },
+  "citations": [
+   "raw\\fanduel_com_predicts_home.html",
+   "raw\\fanduel_com_predicts_js0.js",
+   "raw\\fanduel_com_predicts_js1.js",
+   "raw\\fanduel_com_predicts_robots.txt",
+   "raw\\fanduel_com_predicts_sitemap.xml",
+   "raw\\px_predicts_guru_home.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "Polymarket",
+    "sportradar"
+   ],
+   "citation": "raw/fanduel_com_predicts_home.html"
+  },
+  "citations": [
+   "raw\\fanduel_com_predicts_home.html",
+   "raw\\fanduel_com_predicts_js0.js",
+   "raw\\fanduel_com_predicts_js1.js",
+   "raw\\fanduel_com_predicts_robots.txt",
+   "raw\\fanduel_com_predicts_sitemap.xml",
+   "raw\\px_predicts_guru_home.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\fanduel_com_predicts_home.html"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\fanduel_com_predicts_home.html"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "Free"
+   ],
+   "citation": "raw/fanduel_com_predicts_home.html"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\fanduel_com_predicts_home.html",
+   "raw\\fanduel_com_predicts_js0.js",
+   "raw\\fanduel_com_predicts_js1.js",
+   "raw\\fanduel_com_predicts_robots.txt",
+   "raw\\fanduel_com_predicts_sitemap.xml",
+   "raw\\px_predicts_guru_home.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Sitemap: https://www.fanduel.com/cms-sitemap.xml",
+  "Sitemap: https://www.fanduel.com/research/sitemap.xml",
+  "Sitemap: https://www.fanduel.com/about/sitemap.xml",
+  "Disallow: /api",
+  "Disallow: /research/api",
+  "Disallow: /about/api",
+  "Disallow: /weather/",
+  "Disallow: /p/Interstitial",
+  "Disallow: /games/",
+  "Disallow: /e",
+  "Disallow: /lineups/",
+  "Disallow: /*?invitedby"
+ ],
+ "discovered_targets": [
+  "ws.com/cdn.fanduel.com/images/2025/predicts/main/fanduel-predicts-logo-horizontal.png",
+  "ws.com/cdn.fanduel.com/images/marketing-frontend/2026/predicts/homepage/august/Fanduel",
+  "ws.com/cdn.fanduel.com/images/marketing-frontend/2026/predicts/homepage/august/css/app.css",
+  "ws.com/cdn.fanduel.com/images/marketing-frontend/2026/predicts/homepage/august/downloadnow-headere.png",
+  "ws.com/cdn.fanduel.com/images/marketing-frontend/2026/predicts/homepage/august/get100-offer.png",
+  "ws.com/cdn.fanduel.com/images/marketing-frontend/2026/predicts/homepage/august/player.png",
+  "ws.com/cdn.fanduel.com/images/marketing-frontend/2026/predicts/homepage/august/pred-icts-header-bg.jpg",
+  "ws.com/cdn.fanduel.com/images/marketing-frontend/2026/predicts/homepage/august/qr.png"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:00.114557"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "FanDuel Predicts | Best New Prediction Market App of 2026 | FanDuel",
+  "description": "NOT CONFIRMED"
+ }
+}

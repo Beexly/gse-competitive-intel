@@ -1,0 +1,226 @@
+{
+ "sportmonks.com": [
+  {
+   "title": "Looking for the best bootball (soccer) data API (my experience ... - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/1i6t8e6/looking_for_the_best_bootball_soccer_data_api_my/",
+   "desc": "I use a combination of APIs, primarily Sportmonks. They're generally good for match stuff but a lot of the add-ons can become expensive quickly ..."
+  },
+  {
+   "title": "How do you balance cost vs features in choosing a sports API? - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/19dn80f/how_do_you_balance_cost_vs_features_in_choosing_a/",
+   "desc": "Sportmonks is ridiculously expensive, in my opinion, and I have heard very bad reviews from other developers, so I would not recommend it."
+  },
+  {
+   "title": "Football api for analytic dashboard : r/sportsanalytics - Reddit",
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1tibvri/football_api_for_analytic_dashboard/",
+   "desc": "Is SportMonks reliable enough for a structured database/dashboard? ... SportMonks is honestly one of the better middle-ground options from ..."
+  },
+  {
+   "title": "Let's compile a list of API vendors : r/algobetting - Reddit",
+   "url": "https://www.reddit.com/r/algobetting/comments/gholql/lets_compile_a_list_of_api_vendors/",
+   "desc": "Can you recommend some? I am personally using sportmonks.com which is a paid provider. For an individual, it costs between 40 and 100 \u20ac (+ Tax) ..."
+  },
+  {
+   "title": "I built a sports app with 500k+ active users. AMA. : r/AppBusiness - Reddit",
+   "url": "https://www.reddit.com/r/AppBusiness/comments/1rnlvq2/i_built_a_sports_app_with_500k_active_users_ama/",
+   "desc": "It depends on sport. For soccer I also used sportmonks, but can't recommend them, too many errors."
+  },
+  {
+   "title": "A package for Sportmonks Football Api(V3) : r/laravel - Reddit",
+   "url": "https://www.reddit.com/r/laravel/comments/15cwubj/a_package_for_sportmonks_football_apiv3/",
+   "desc": "Hello Everyone, I wanted to share my new Laravel package called sportmonks-football-api. It provides all Sportmonks' football endpoints."
+  }
+ ],
+ "api-sports.io": [
+  {
+   "title": "How do you balance cost vs features in choosing a sports API? - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/19dn80f/how_do_you_balance_cost_vs_features_in_choosing_a/",
+   "desc": "Sportmonks is ridiculously expensive, in my opinion, and I have heard very bad reviews from other developers, so I would not recommend it."
+  },
+  {
+   "title": "Anyone using API-FOOTBALL for live World Cup 2026 scores? - Reddit",
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1tl932x/anyone_using_apifootball_for_live_world_cup_2026/",
+   "desc": "Its a solid api for early access to football data Delays are normally like 30 seconds If I recall correctly. for live events it's great for the ..."
+  },
+  {
+   "title": "Free sports Api? : r/webdev - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/xqemro/free_sports_api/",
+   "desc": "Are there any free sports apis available for use? I've seen some lists but they seem unreliable and many make false claims of costs and ..."
+  },
+  {
+   "title": "Sportsdata.io Pricing : r/sportsanalytics - Reddit",
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/14pw8fg/sportsdataio_pricing/",
+   "desc": "low as $50/month. it's free to use and will let you download the DataSpaces (datasets) to .csv. It's not real-time like the API, but the stats ..."
+  },
+  {
+   "title": "What's the best API for sports? : r/arbitragebetting - Reddit",
+   "url": "https://www.reddit.com/r/arbitragebetting/comments/1sfg550/whats_the_best_api_for_sports/",
+   "desc": "What's the best API for sports? It does exactly what you want, Pregame and Live-Odds, subsecond updates. we can definitely beat oddspapi ..."
+  },
+  {
+   "title": "Special Deal for those looking for a quality free sports API - Reddit",
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1nb0cth/special_deal_for_those_looking_for_a_quality_free/",
+   "desc": ".io, a suite of sports data API's currently covering the NFL, NHL, NBA, and professional boxing. I'm giving free API access to anyone who makes ..."
+  }
+ ],
+ "thesportsdb.com": [
+  {
+   "title": "Looking for the best bootball (soccer) data API (my experience ... - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/1i6t8e6/looking_for_the_best_bootball_soccer_data_api_my/",
+   "desc": "For TV listings, TheSportsDB tends to be better since it's manually curated. For availability data, this is always going to be problem. The API ..."
+  },
+  {
+   "title": "Sports APIs? : r/webdev - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/a98vi6/sports_apis/",
+   "desc": "Sportradar is top tier. FantasyData is solid too. You're not going to find much in the way of free sports data. https://www.thesportsdb.com/api ..."
+  },
+  {
+   "title": "Free sports API? : r/sportsanalytics - Reddit",
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1oggair/free_sports_api/",
+   "desc": "I was looking on that site and my question where is the profit of that site because they are totally free and everything is available for free."
+  },
+  {
+   "title": "Free sports Api? : r/webdev - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/xqemro/free_sports_api/",
+   "desc": "https://www.thesportsdb.com/ is fantastic and very quick. Lots of custom artwork that is not available anywhere else."
+  },
+  {
+   "title": "Is there an equivalent of Sonarr/Radarr for sport events (e.g. ...",
+   "url": "https://www.reddit.com/r/sonarr/comments/1nwhyyq/is_there_an_equivalent_of_sonarrradarr_for_sport/",
+   "desc": "Sonarr works reasonably well for sports like F1 where races are included in the TVDB. But since this is relatively new the naming format for ..."
+  },
+  {
+   "title": "Sports meta data? : r/PleX - Reddit",
+   "url": "https://www.reddit.com/r/PleX/comments/1ui1qyh/sports_meta_data/",
+   "desc": "Is anyone doing sports collections well? I have Sportarr which works well, mostly. However it misses some games."
+  }
+ ],
+ "fantasydata.com": [
+  {
+   "title": "Fantasy data/analysis resources : r/fantasyfootball - Reddit",
+   "url": "https://www.reddit.com/r/fantasyfootball/comments/1hlmrbm/fantasy_dataanalysis_resources/",
+   "desc": "I'm looking into doing a side gig sort of passion project which would be centered around some dashboarding/reporting of fantasy football data. I ..."
+  },
+  {
+   "title": "Fantasy Data Pros vs Fantasy Coding : r/fantasyfootballcoding - Reddit",
+   "url": "https://www.reddit.com/r/fantasyfootballcoding/comments/wr53oo/fantasy_data_pros_vs_fantasy_coding/",
+   "desc": "Fantasy Data Pros is a scam. ... Yeah, the videos are all private and they are radio silence when I ask about their videos/refund. ... What course ..."
+  },
+  {
+   "title": "Fantasy Football Research/Data Facts : r/fantasyfootball - Reddit",
+   "url": "https://www.reddit.com/r/fantasyfootball/comments/1db6zyk/fantasy_football_researchdata_facts/",
+   "desc": "I just started r/FantasyData for anyone interested in the technical side of NFL fantasy football related projects. Hopefully this helps reduce ..."
+  },
+  {
+   "title": "Need recommendations on the best NFL Stats API for a Fantasy Website",
+   "url": "https://www.reddit.com/r/NFLstatheads/comments/14884lz/need_recommendations_on_the_best_nfl_stats_api/",
+   "desc": "I've used FantasyData.com for non-live updates also which was a solid option but only updates once per day. fantasydata also abruptly stopped ..."
+  },
+  {
+   "title": "Daily Fantasy Data Set/Project : r/fantasyfootball - Reddit",
+   "url": "https://www.reddit.com/r/fantasyfootball/comments/a0lwn5/daily_fantasy_data_setproject/",
+   "desc": "I was wondering if anyone knew of a data set that can be exported to like Excel that had at least a players position, salary, and points earned?"
+  },
+  {
+   "title": "Best resource for Superflex ADP? : r/fantasyfootball - Reddit",
+   "url": "https://www.reddit.com/r/fantasyfootball/comments/ozsgxn/best_resource_for_superflex_adp/",
+   "desc": "The only two I could find were fantasyfootballcalculator.com and fantasydata.com, which look to be pulling from the same sources because the ..."
+  }
+ ],
+ "goalserve.com": [
+  {
+   "title": "sportbook provider : r/algobetting - Reddit",
+   "url": "https://www.reddit.com/r/algobetting/comments/1t856ed/sportbook_provider/",
+   "desc": "im testing with goalserve and honestly it seems pretty good, only issue for me is the pricing is a bit high for startup stage from my testing ..."
+  },
+  {
+   "title": "Sports APIs? : r/webdev - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/a98vi6/sports_apis/",
+   "desc": "Sportradar is top tier. FantasyData is solid too. You're not going to find much in the way of free sports data. check - https://www.goalserve. ..."
+  },
+  {
+   "title": "Any reliable Bet365 odds API out there? : r/algobetting - Reddit",
+   "url": "https://www.reddit.com/r/algobetting/comments/1nxprwy/any_reliable_bet365_odds_api_out_there/",
+   "desc": "Cheapest reliable route I've found is Goalserve for Bet365; prematch is solid and they cover most in-play cards/props without 4-figure pricing."
+  },
+  {
+   "title": "Odds API with settlement : r/algobetting - Reddit",
+   "url": "https://www.reddit.com/r/algobetting/comments/1j5jxuv/odds_api_with_settlement/",
+   "desc": "I also found BetsAPI and GoalServe, but they don't offer live bet settlement. Is there a way to handle real-time bet settlement when using ..."
+  },
+  {
+   "title": "Soccer livescore api! : r/Scorebug - Reddit",
+   "url": "https://www.reddit.com/r/Scorebug/comments/1uouk42/soccer_livescore_api/",
+   "desc": "Has anyone here used Goalserve's API? I've been trying to reach out to them for a free trial to test the latency, but they haven't replied ..."
+  },
+  {
+   "title": "Struggling getting bet365 odds : r/algobetting - Reddit",
+   "url": "https://www.reddit.com/r/algobetting/comments/1h2ehbb/struggling_getting_bet365_odds/",
+   "desc": "I use this provider for pretty much any other sports: https://www.goalserve.com/en/sport-data-feeds Pricing is very reasonable as well. Maybe ..."
+  }
+ ],
+ "allsportsapi.com": [
+  {
+   "title": "Free sports Api? : r/webdev - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/xqemro/free_sports_api/",
+   "desc": "Are there any free sports apis available for use? I've seen some lists but they seem unreliable and many make false claims of costs and ..."
+  },
+  {
+   "title": "Sports API : r/react - Reddit",
+   "url": "https://www.reddit.com/r/react/comments/xtvorb/sports_api/",
+   "desc": "Does anyone know of a reliable API for sports. Specifically for statistics for individual players? I've tried using the NFL API, ..."
+  },
+  {
+   "title": "Free sports API? : r/sportsanalytics - Reddit",
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1oggair/free_sports_api/",
+   "desc": "I was looking on that site and my question where is the profit of that site because they are totally free and everything is available for free."
+  },
+  {
+   "title": "Looking for the best bootball (soccer) data API (my experience ... - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/1i6t8e6/looking_for_the_best_bootball_soccer_data_api_my/",
+   "desc": "EDIT: I recently tested api-football their API only costs 19USD, after 2 weeks testing their data I found that it is also trash and inaccurate ..."
+  },
+  {
+   "title": "Looking for a Sports API : r/webdev - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/1cklew0/looking_for_a_sports_api/",
+   "desc": "Hey everyone! I'm looking for a sports api, ideally free, that offers the title of the game and the time it happens, for various disciplines ..."
+  },
+  {
+   "title": "After years of frustration I finally built the sports API I wish existed - Reddit",
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1ryuf24/after_years_of_frustration_i_finally_built_the/",
+   "desc": "I'm honestly frustrated, and I'm pretty sure a lot of you are too. For years I've been trying to find a solid sports API."
+  }
+ ],
+ "football-data.org": [
+  {
+   "title": "Looking for a free (or very cheap) football data API - Reddit",
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1q970y2/looking_for_a_free_or_very_cheap_football_data/",
+   "desc": "I've also looked at SportMonks and Football-Data.org, but I'd really appreciate real-world feedback. Are there any genuinely usable free ..."
+  },
+  {
+   "title": "Looking for the best bootball (soccer) data API (my experience ... - Reddit",
+   "url": "https://www.reddit.com/r/webdev/comments/1i6t8e6/looking_for_the_best_bootball_soccer_data_api_my/",
+   "desc": "It's hard to find a cheap and reliable football data api. I suggest you give https://footballdata.io a try, it's cheap and has extensive ..."
+  },
+  {
+   "title": "Football (Soccer) data API : r/sportsanalytics - Reddit",
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1sp8fxw/football_soccer_data_api/",
+   "desc": "For basic player/club info, football-data.org has a free tier that's decent enough for prototyping. API-Football (on RapidAPI) covers like ..."
+  },
+  {
+   "title": "End-to-End Data Project About Collecting And Summarizing ...",
+   "url": "https://www.reddit.com/r/dataengineering/comments/1iziyyr/endtoend_data_project_about_collecting_and/",
+   "desc": "It's an end-to-end data engineering pipeline that collects, processes, and summarizes football match data from the top 5 European leagues."
+  },
+  {
+   "title": "Does anyone uses API-Football? : r/sportsanalytics - Reddit",
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1tnipj4/does_anyone_uses_apifootball/",
+   "desc": "I've heard it's a pretty solid cheap option but data is scraped so you get a lot of duplicate players. We have up to 10 years stats and odds if ..."
+  },
+  {
+   "title": "I built a free football data + ML prediction API as a side project",
+   "url": "https://www.reddit.com/r/sportsanalytics/comments/1qz4mku/i_built_a_free_football_data_ml_prediction_api_as/",
+   "desc": "It's a free football (soccer) data + prediction API, Most football data APIs are: \u2022 expensive \u2022 overkill \u2022 or annoying clean \u2022 predictable \u2022 ..."
+  }
+ ]
+}

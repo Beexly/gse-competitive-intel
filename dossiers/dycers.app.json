@@ -1,0 +1,56 @@
+{
+ "domain": "dycers.app",
+ "tech_stack": {
+  "frontend": "NOT CONFIRMED (domain dead)",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": []
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": [],
+  "rate_limits": "NOT CONFIRMED",
+  "citations": []
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "none",
+  "citation": "none"
+ },
+ "pricing": {
+  "web": "domain dycers.app does not resolve (NXDOMAIN, https+http) — site dead",
+  "ios": "App Store id6773751232 'Dycers' by LF Digital Ventures; free with IAP (Play store shows $1.99 / $4.99 per item in-app purchases)",
+  "android": "Play com.dycers.app; In-app purchases ($1.99–$4.99 per item); listing states real-time arb scanning across bookmakers with stake/profit breakdown",
+  "citations": [
+   "https://apps.apple.com/us/app/dycers/id6773751232",
+   "https://play.google.com/store/apps/details?id=com.dycers.app&hl=en"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "DNS probe (https+http NXDOMAIN) + App Store/Play listing fetch",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 2 raw evidence files)"
+}

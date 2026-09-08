@@ -1,0 +1,26 @@
+# *
+User-agent: *
+Allow: /
+
+# Private / auth pages
+Disallow: /profile
+Disallow: /referral
+Disallow: /discord
+
+# Internal / utility / test pages
+Disallow: /verify
+Disallow: /onboarding
+Disallow: /choose-location
+Disallow: /sentry-example-page
+
+# Query-parameter filters that generate duplicate content
+Disallow: /*?*afmc=
+Disallow: /*?*e-filter-
+Disallow: /*?*hzet=
+Disallow: /*?*utm_source=
+
+# Host
+Host: https://playerprops.ai/
+
+# Sitemaps
+Sitemap: https://playerprops.ai/sitemap.xml

@@ -1,0 +1,60 @@
+{
+  "domain": "pydfs-lineup-optimizer.readthedocs.io",
+  "disposition": "live",
+  "notes": "Parent verification 2026-09-08: docs HTTP 200 (13KB captured). Open-source DFS lineup optimizer Python library (Solu/Pyomo solver-based); developer tool, not a commercial competitor. Relevant as rebuildable optimizer code (see codes/ ledger for the GitHub mirror).",
+  "tech_stack": {
+    "frontend": "Sphinx docs site",
+    "backend": "Python library (pip-installable)",
+    "database": "N/A",
+    "cloud": "readthedocs.io hosting",
+    "cdn": "readthedocs",
+    "citations": [
+      "raw/fx_pydfs_readthedocs_home.raw"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": [
+      "raw/fx_pydfs_readthedocs_home.raw"
+    ]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [],
+    "citations": []
+  },
+  "product_limits": {
+    "limits": "NOT CONFIRMED",
+    "upgrade_triggers": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "pricing": {
+    "web": "Free open source (MIT-class); no paid tiers",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "raw/fx_pydfs_readthedocs_home.raw"
+    ]
+  },
+  "customer_pain": [],
+  "discovered_paths": [],
+  "discovered_targets": [],
+  "discovery_metadata": {
+    "method": "parent re-verification fetch (curl) \u2014 previously unset",
+    "timestamp": "2026-09-08T16:40:00-05:00"
+  }
+}

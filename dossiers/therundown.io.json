@@ -1,0 +1,66 @@
+{
+ "domain": "therundown.io",
+ "tech_stack": {
+  "frontend": "NOT CONFIRMED",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": []
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/api/v2/sports/{id}/events/{date}",
+    "auth_required": true,
+    "tier": "All",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "https://therundown.io"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "Real-time WebSocket updates on Ultra and higher plans",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "https://therundown.io"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED",
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "Free: 20K data points/day, 200K/month. Prematch odds 5-minute delay.",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "https://therundown.io"
+ },
+ "pricing": {
+  "web": "Free ($0), Starter ($49/mo), Pro ($149/mo), Ultra ($399/mo)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://therundown.io"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "automated-probe",
+  "timestamp": "2026-09-08T20:50:30.514280"
+ },
+ "disposition": "live"
+}

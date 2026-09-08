@@ -1,0 +1,79 @@
+{
+ "domain": "github.com/georgedouzas/sports-betting",
+ "type": "open-source-repo",
+ "tech_stack": {
+  "frontend": "n/a (Python lib)",
+  "backend": "Python (sklearn, pandas, numpy)",
+  "database": "n/a",
+  "cloud": "n/a",
+  "cdn": "n/a",
+  "citations": [
+   "raw/ghsb_src_sportsbet_evaluation__rules.py"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "data ingestion from football-data.co.uk etc (library)"
+  ],
+  "graphql_schema": "none",
+  "websocket_endpoints": [],
+  "rate_limits": "n/a",
+  "citations": [
+   "repo"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "OddsComparisonBettor — consensus-probability bettor",
+   "where": "src/sportsbet/evaluation/_rules.py",
+   "evidence": "compares each market's odds to consensus probability = average of selected odds types adjusted by alpha; method follows 'Beating the bookies with their own numbers' (arxiv.org/pdf/1710.02824) — MIT license confirmed in file header"
+  },
+  {
+   "name": "model_selection + classifier + base bettor framework",
+   "where": "src/sportsbet/evaluation/",
+   "evidence": "_model_selection.py, _classifier.py, _base.py captured raw"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "sklearn classifier pipeline for match outcomes",
+  "training_data": "football-data.co.uk historical odds/results",
+  "update_frequency": "per batch",
+  "citation": "raw files"
+ },
+ "simulation_engine": {
+  "num_simulations": "n/a",
+  "correlation_method": "n/a",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "football-data.co.uk"
+  ],
+  "citations": [
+   "repo docs"
+  ]
+ },
+ "product_limits": {
+  "limits": "OSS",
+  "upgrade_triggers": "n/a",
+  "citation": "repo"
+ },
+ "pricing": {
+  "web": "free (MIT)",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "file header"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "src/sportsbet/evaluation/_rules.py"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "raw.githubusercontent fetch (by wave-4 child) + self parse",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

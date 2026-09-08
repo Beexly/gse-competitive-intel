@@ -1,0 +1,5 @@
+URL: https://sportsdata.io/robots.txt\nSTATUS: 200\n\n﻿User-agent: *
+Disallow: /ajax/
+Disallow: /admin/
+Disallow: /members/
+Disallow: /user/

@@ -1,0 +1,14 @@
+URL: https://prophetx.co/robots.txt\nSTATUS: 200\n\nUser-agent: *
+Disallow: /demo
+Disallow: /toolkit
+Disallow: /trustly-webview
+Disallow: /board/**
+Disallow: /aff_lsr
+Disallow: /api-status
+Disallow: /worldpay-webview
+Disallow: /pay-near-me/payment-result
+Disallow: /worldpay-webview/WorldPayWrapper
+Allow: /
+Sitemap: https://www.prophetx.co/sitemap-index.xml
+Sitemap: https://www.prophetx.co/sitemap.xml
+Sitemap: https://www.prophetx.co/sitemap-event.xml

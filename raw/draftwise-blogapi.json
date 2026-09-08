@@ -1,0 +1,26 @@
+URL: https://draftwise.app/functions/v1/blog-api?published=true\nSTATUS: 200\n\n<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DraftWise - AI-Powered LinkedIn Post Enhancement</title>
+    <meta name="description" content="Enhance your LinkedIn posts with AI-powered research, hooks, and optimization tips." />
+    <meta name="author" content="DraftWise" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+
+    <meta property="og:title" content="DraftWise - AI-Powered LinkedIn Post Enhancement" />
+    <meta property="og:description" content="Enhance your LinkedIn posts with AI-powered research, hooks, and optimization tips." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@DraftWise" />
+    
+    <script type="module" crossorigin src="/assets/index-CGVAth7Q.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C1exR547.css">
+  <script defer src="/~flock.js" data-proxy-url="/~api/analytics"></script><meta name="twitter:title" content="DraftWise - AI-Powered LinkedIn Post Enhancement"><meta name="twitter:description" content="Enhance your LinkedIn posts with AI-powered research, hooks, and optimization tips."><meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png"></head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

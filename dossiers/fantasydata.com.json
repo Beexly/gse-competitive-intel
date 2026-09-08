@@ -1,0 +1,80 @@
+{
+ "domain": "fantasydata.com",
+ "type": "live-site/odds-data-api",
+ "tech_stack": {
+  "frontend": "Server-rendered marketing UI + main-202606191903.js bundle",
+  "backend": "REST API behind /nfl/api/* (docs gated)",
+  "database": "NOT CONFIRMED",
+  "cloud": "nginx + CloudFront",
+  "cdn": "CloudFront; static on fantasydata-static.s3.amazonaws.com",
+  "citations": [
+   "raw/fetchlog-fantasydata.json",
+   "raw/fantasydata.com_.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/nfl/api/*",
+    "auth_required": true,
+    "tier": "plans",
+    "sample_response": "NOT CONFIRMED (doc subroutes return site 404 template pre-auth)",
+    "citation": "raw/fantasydata.com_nfl_api_get-started.txt"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/fantasydata.com_api.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "positions as data vendor: 'Fantasy Rankings, DFS Tools, Player Stats' homepage; sportsdata.io + espn strings present"
+  ],
+  "citations": [
+   "raw/fantasydata.com_.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED (only price hit on homepage was a news headline, not plans)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/fantasydata.com_.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/",
+  "/nfl/api",
+  "/nfl/api/documentation",
+  "/nfl/api/get-started",
+  "/api (404 template)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "homepage 200 + doc-route probes (gated 404 template)",
+  "timestamp": "2026-09-08T14:06:18.766004"
+ },
+ "disposition": "live (derived from 10 raw evidence files)"
+}

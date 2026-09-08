@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BillyBets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BakBak+One&family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden}
+body{background:#15503a;font-family:'Inter',sans-serif;color:#5cfd86}
+
+.scene{position:relative;width:100vw;height:100vh;overflow:hidden;background:#185a3e}
+
+/* ═══ EXCHANGE BOARD (top 38%) ═══ */
+.board{
+  position:absolute;top:0;left:0;right:0;height:40%;z-index:1;
+  overflow:hidden;
+  background:linear-gradient(180deg,rgba(22,75,48,.95) 0%,rgba(16,60,38,.9) 100%);
+  /* Bokeh/blur effect like the reference */
+  filter:blur(1.5px);
+  mask-image:linear-gradient(to bottom,black 60%,transparent 100%);
+  -webkit-mask-image:linear-gradient(to bottom,black 60%,transparent 100%);
+}
+.board-row{
+  display:flex;height:20%;white-space:nowrap;
+  animation:boardScroll linear infinite;
+}
+.board-row:nth-child(odd){animation-direction:reverse}
+.board-row:nth-child(1){animation-duration:22s}
+.board-row:nth-child(2){animation-duration:28s}
+.board-row:nth-child(3){animation-duration:20s}
+.board-row:nth-child(4){animation-duration:26s}
+.board-row:nth-child(5){animation-duration:24s}
+@keyframes boardScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+.bc{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:0 18px;font-family:'SF Mono',ui-monospace,monospace;font-size:13px;
+  white-space:nowrap;flex-shrink:0;
+}
+.bc .s{font-weight:700;letter-spacing:.04em}
+/* Alternate green and amber for exchange board feel */
+.bc.g .s{color:rgba(92,253,134,.8)}.bc.g .p{color:rgba(92,253,134,.65)}
+.bc.a .s{color:rgba(255,200,80,.7)}.bc.a .p{color:rgba(255,200,80,.55)}
+.bc .p{font-weight:600}.bc .c{font-size:10px;opacity:.5}
+
+/* ═══ MONITORS (middle, wrapping around Billy) ═══ */
+.monitors{
+  position:absolute;top:32%;left:0;right:0;height:52%;z-index:2;
+  display:flex;gap:3px;padding:0 2px;
+}
+.mon{
+  flex:1;min-width:0;
+  background:rgba(8,42,24,.92);
+  border:1px solid rgba(92,253,134,.1);
+  border-radius:2px;
+  overflow:hidden;display:flex;flex-direction:column;
+  position:relative;
+  box-shadow:0 0 20px rgba(92,253,134,.02),inset 0 0 15px rgba(0,0,0,.3);
+}
+/* Monitor glow — green ambient light on the monitor bezels */
+.mon::before{content:'';position:absolute;inset:-1px;border-radius:2px;box-shadow:0 0 8px rgba(92,253,134,.04);pointer-events:none;z-index:0}
+/* Scanlines */
+.mon::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.015) 2px,rgba(0,0,0,.015) 4px);pointer-events:none;z-index:5;border-radius:2px}
+
+.mh{display:flex;align-items:center;justify-content:space-between;padding:3px 6px;background:rgba(92,253,134,.025);border-bottom:1px solid rgba(92,253,134,.05);font-family:'SF Mono',monospace;font-size:7px;letter-spacing:.08em;text-transform:uppercase;color:rgba(92,253,134,.35);flex-shrink:0}
+.mh .dot{width:3px;height:3px;border-radius:50%;background:#5cfd86;box-shadow:0 0 4px #5cfd86;animation:bl 2s infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.2}}
+.mb{padding:3px 5px;overflow:hidden;flex:1;font-family:'SF Mono',ui-monospace,monospace;font-size:8px;position:relative}
+
+/* Monitor content styles */
+.ob-r{display:flex;justify-content:space-between;padding:0.5px 0}
+.bid{color:rgba(92,253,134,.65)}.ask{color:rgba(255,107,107,.55)}.sz{color:rgba(255,255,255,.25);font-size:7px}
+.ob-mid{text-align:center;padding:1px 0;color:rgba(255,255,255,.2);font-size:7px;border-top:1px solid rgba(92,253,134,.03);border-bottom:1px solid rgba(92,253,134,.03);margin:1px 0}
+.fl{display:flex;gap:4px;font-size:7px;line-height:1.5}.fl .t{color:rgba(92,253,134,.2);flex-shrink:0}.fl .m{color:rgba(255,255,255,.4)}.fl .h{color:rgba(92,253,134,.6);font-weight:600}.fl .w{color:rgba(255,189,46,.5)}
+.tg{display:grid;grid-template-columns:1fr 1fr;gap:2px;height:100%}
+.tg-c{background:rgba(92,253,134,.015);border:1px solid rgba(92,253,134,.03);border-radius:1px;padding:2px 4px;display:flex;flex-direction:column;justify-content:center;font-size:8px}
+.tg-s{color:rgba(255,255,255,.4);font-size:6px;font-weight:600;letter-spacing:.04em}
+.tg-p{color:rgba(92,253,134,.7);font-weight:700;font-size:10px}
+.tg-ch{font-size:7px}.tg-u{color:rgba(92,253,134,.5)}.tg-d{color:rgba(255,107,107,.45)}
+.st-r{display:flex;justify-content:space-between;padding:1.5px 2px;border-bottom:1px solid rgba(92,253,134,.025);font-size:8px}
+.st-l{color:rgba(255,255,255,.25);font-size:6.5px;letter-spacing:.04em;text-transform:uppercase}
+.st-v{font-weight:700;font-size:9px}.sg{color:rgba(92,253,134,.65)}.sr{color:rgba(255,107,107,.55)}.sw{color:rgba(255,255,255,.5)}
+.casc{overflow:hidden;height:100%}
+.casc-in{animation:cascS 16s linear infinite}
+@keyframes cascS{0%{transform:translateY(0)}100%{transform:translateY(-50%)}}
+
+/* ═══ DESK ═══ */
+.desk{
+  position:absolute;bottom:0;left:0;right:0;height:14%;z-index:3;
+  background:linear-gradient(180deg,rgba(18,60,40,0) 0%,rgba(18,60,40,.9) 35%,rgba(15,50,35,1) 100%);
+}
+/* Desk LEDs */
+.desk::after{
+  content:'';position:absolute;bottom:8px;left:50%;transform:translateX(-50%);
+  width:120px;height:2px;
+  background:linear-gradient(90deg,transparent,rgba(92,253,134,.08),rgba(92,253,134,.15),rgba(92,253,134,.08),transparent);
+  border-radius:1px;
+}
+
+/* ═══ BILLY ═══ */
+.billy{
+  position:absolute;bottom:-12%;left:50%;transform:translateX(-50%);
+  z-index:4;width:clamp(400px,55vw,750px);pointer-events:none;
+}
+/* Layer 1: The glow (behind) */
+.billy .glow-layer{
+  position:absolute;inset:0;
+  width:100%;height:auto;display:block;
+  filter:brightness(.5) saturate(.5) contrast(.8);
+  opacity:.5;
+  mask-image:radial-gradient(ellipse 50% 80% at 50% 55%,black 20%,rgba(0,0,0,.4) 40%,rgba(0,0,0,.05) 58%,transparent 72%);
+  -webkit-mask-image:radial-gradient(ellipse 50% 80% at 50% 55%,black 20%,rgba(0,0,0,.4) 40%,rgba(0,0,0,.05) 58%,transparent 72%);
+}
+/* Layer 2: The silhouette (on top — transparent PNG, pure black + green glow) */
+.billy .silhouette-layer{
+  position:relative;z-index:1;
+  width:100%;height:auto;display:block;
+  filter:brightness(0) drop-shadow(0 0 35px rgba(92,253,134,.35)) drop-shadow(0 0 80px rgba(92,253,134,.15));
+  margin-top:-100%;
+}
+
+/* ═══ AMBIENT GREEN GLOW ═══ */
+.amb{position:absolute;inset:0;z-index:0;pointer-events:none}
+.amb-1{position:absolute;width:100%;height:60%;bottom:15%;left:0;background:radial-gradient(ellipse 60% 50% at 50% 60%,rgba(92,253,134,.035) 0%,transparent 70%)}
+/* Monitor glow reflecting on Billy */
+.amb-2{position:absolute;width:40%;height:30%;top:35%;left:30%;background:radial-gradient(ellipse at 50% 0%,rgba(92,253,134,.04) 0%,transparent 70%)}
+
+/* ═══ UI ═══ */
+.logo{position:absolute;top:8px;left:10px;z-index:20}
+.logo img{height:18px;opacity:1;display:block;filter:brightness(1.3) saturate(1.2)}
+
+/* Tagline — brand native, clean */
+.tagline-field{
+  position:absolute;bottom:clamp(8px,2vh,24px);left:0;right:0;z-index:25;
+  text-align:center;padding:0 20px;
+}
+.tagline-field .tagline-text{
+  font-family:'BakBak One','Inter',sans-serif;font-weight:400;
+  font-size:clamp(14px,2vw,26px);
+  letter-spacing:.22em;text-transform:uppercase;line-height:1.4;
+  color:#ffffff;
+  text-shadow:0 0 30px rgba(92,253,134,.15),0 2px 4px rgba(0,0,0,.9);
+}
+
+/* Scanline global */
+.scan{position:absolute;left:0;right:0;height:1px;z-index:30;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(92,253,134,.03),transparent);animation:scn 8s linear infinite}
+@keyframes scn{0%{top:-1px}100%{top:100vh}}
+
+@media(max-width:768px){
+  .monitors{flex-wrap:wrap;gap:2px}
+  .mon{flex:1 1 30%;min-height:0;font-size:6px!important}
+  .mon pre{font-size:5px!important}
+  /* Show all 6 monitors on mobile for more data density */
+  .mon:nth-child(n+4){display:flex!important;flex:1 1 30%}
+  .board{height:16%}
+  /* Taller monitor section for more visible data */
+  .monitors{top:12%;height:48%}
+  /* Billy: shoulders visible like desktop - positioned higher */
+  .billy{width:clamp(340px,95vw,450px)!important;bottom:-5%}
+  /* Tagline: compact, safe from browser chrome */
+  .tagline-field{
+    padding:0 8px!important;
+    bottom:18px!important;
+  }
+  .tagline-field .tagline-text{
+    font-size:10px!important;
+    letter-spacing:.04em!important;
+    line-height:1.2!important;
+  }
+}
+</style>
+</head>
+<body>
+<div class="scene">
+<div class="amb"><div class="amb-1"></div><div class="amb-2"></div></div>
+<div class="scan"></div>
+
+<!-- Exchange board (far wall, blurred) -->
+<div class="board" id="board"></div>
+
+<!-- 6 monitors wrapping around Billy -->
+<div class="monitors">
+  <div class="mon"><div class="mh"><span>LAL/BOS · 1M</span><div class="dot"></div></div><div class="mb"><div class="casc" id="c1"></div></div></div>
+  <div class="mon"><div class="mh"><span>ORDER BOOK · KC/PHI</span><div class="dot"></div></div><div class="mb" id="ob"></div></div>
+  <div class="mon"><div class="mh"><span>MARKETS · LIVE</span><div class="dot"></div></div><div class="mb"><div class="tg" id="tg"></div></div></div>
+  <div class="mon"><div class="mh"><span>ALERTS</span><div class="dot"></div></div><div class="mb" id="feed"></div></div>
+  <div class="mon"><div class="mh"><span>ARS/MCI · VOL</span><div class="dot"></div></div><div class="mb"><div class="casc" id="c2"></div></div></div>
+  <div class="mon"><div class="mh"><span>P&L</span><div class="dot"></div></div><div class="mb" id="stats"></div></div>
+</div>
+
+<!-- Desk -->
+<div class="desk"></div>
+
+<!-- Billy -->
+<div class="billy" id="billy"><img class="glow-layer" src="billy-pfp.png" alt=""><img class="silhouette-layer" src="billy-pfp-transparent.png" alt="Billy"></div>
+
+<!-- UI -->
+<div class="logo"><img src="billy-logo-green.png" alt="BillyBets"></div>
+<div class="tagline-field">
+  <div class="tagline-text">AI-native market making for sports prediction markets.</div>
+<a href="mailto:billy@megalabs.xyz" style="display:inline-block;margin-top:20px;padding:10px 28px;color:#5cfd86;border:1.5px solid #5cfd86;border-radius:6px;font-family:'Inter',sans-serif;font-size:14px;font-weight:500;letter-spacing:0.06em;text-decoration:none;">billy@megalabs.xyz</a>
+<p style="margin-top:14px;font-size:12px;color:rgba(92,253,134,0.6);font-family:'Inter',sans-serif;letter-spacing:0.04em;">&copy; 2026 Billy Bets, Inc. All rights reserved.</p>
+</div>
+</div>
+
+<script>
+const R=(a,b)=>Math.random()*(b-a)+a;
+const FALLBACK_PAIRS=['LAL/BOS','KC/PHI','ARS/MCI','NYY/LAD','EDM/FLA','SIN/DJO','OKC/MIL','RMA/BAY','BUF/BAL','GSW/DEN','MIA/BKN','LIV/CHE','DAL/SF','PHX/MIN','DOR/LEV','NAD/ALC'];
+
+let P=[...FALLBACK_PAIRS]; // will be replaced with real data
+let gamesData=[]; // raw game objects for richer panel content
+
+/* ═══ ESPN Live Data ═══ */
+const ESPN_URLS=[
+  'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard',
+  'https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard',
+  'https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard',
+  'https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard'
+];
+
+function parseESPN(data){
+  const games=[];
+  if(!data||!data.events)return games;
+  for(const ev of data.events){
+    try{
+      const c=ev.competitions&&ev.competitions[0];if(!c)continue;
+      const away=c.competitors.find(t=>t.homeAway==='away');
+      const home=c.competitors.find(t=>t.homeAway==='home');
+      if(!away||!home)continue;
+      const aAbbr=away.team.abbreviation||away.team.shortDisplayName||'???';
+      const hAbbr=home.team.abbreviation||home.team.shortDisplayName||'???';
+      let spread=null,overUnder=null;
+      if(c.odds&&c.odds[0]){
+        spread=parseFloat(c.odds[0].spread)||null;
+        overUnder=parseFloat(c.odds[0].overUnder)||null;
+      }
+      games.push({pair:`${aAbbr}/${hAbbr}`,away:aAbbr,home:hAbbr,spread,overUnder,status:ev.status&&ev.status.type&&ev.status.type.shortDetail||''});
+    }catch(e){}
+  }
+  return games;
+}
+
+function spreadToPrice(spread,ou){
+  // Convert spread to a 0.20-0.80 "price" that feels like a prediction market
+  if(spread!==null){
+    // Larger negative spread = higher price (favorite more likely)
+    const p=0.5 - (spread/40); // spread of -10 → 0.75, +10 → 0.25
+    return Math.max(0.20,Math.min(0.80,p));
+  }
+  if(ou!==null) return Math.max(0.20,Math.min(0.80, 0.3+(ou/500)));
+  return R(0.30,0.70);
+}
+
+async function fetchLiveData(){
+  const allGames=[];
+  const results=await Promise.allSettled(ESPN_URLS.map(u=>fetch(u).then(r=>r.json())));
+  for(const r of results){
+    if(r.status==='fulfilled') allGames.push(...parseESPN(r.value));
+  }
+  if(allGames.length>=4){
+    gamesData=allGames;
+    P=allGames.map(g=>g.pair);
+    // Pad to at least 16 for visual variety
+    while(P.length<16) P=P.concat(P);
+    P=P.slice(0,Math.max(16,P.length));
+  }
+  // Rebuild all panels with new data
+  buildBoard();buildOrderBook();buildTickerGrid();buildAlerts();buildStats();buildCascade('c1','bar');buildCascade('c2','vol');
+  // Update monitor headers with real matchups
+  updateHeaders();
+}
+
+function updateHeaders(){
+  const mons=document.querySelectorAll('.mon .mh span:first-child');
+  if(gamesData.length>=2){
+    if(mons[0]) mons[0].textContent=`${gamesData[0].pair} · 1M`;
+    if(mons[1]) mons[1].textContent=`ORDER BOOK · ${gamesData.length>1?gamesData[1].pair:gamesData[0].pair}`;
+  }
+  if(gamesData.length>=3&&mons[4]) mons[4].textContent=`${gamesData[2].pair} · VOL`;
+}
+
+/* ═══ Board ═══ */
+function buildBoard(){
+  const b=document.getElementById('board');b.innerHTML='';
+  for(let r=0;r<5;r++){
+    const row=document.createElement('div');row.className='board-row';let h='';
+    for(let j=0;j<2;j++) P.forEach((s,i)=>{
+      const green=(i+r)%3!==0;const cls=green?'g':'a';
+      const g=gamesData[i%gamesData.length];
+      const basePrice=g?spreadToPrice(g.spread,g.overUnder):R(.2,.85);
+      const p=(basePrice+R(-.03,.03)).toFixed(2);
+      const c=R(-5,6).toFixed(1);
+      h+=`<div class="bc ${cls}"><span class="s">${s}</span><span class="p">${p}</span><span class="c">${parseFloat(c)>=0?'+':''}${c}%</span></div>`;
+    });
+    row.innerHTML=h;b.appendChild(row);
+  }
+}
+
+/* ═══ Order Book ═══ */
+let obMid=.61,obInterval;
+function buildOrderBook(){
+  const g=gamesData[1]||gamesData[0];
+  if(g) obMid=spreadToPrice(g.spread,g.overUnder);
+  const el=document.getElementById('ob');
+  if(obInterval) clearInterval(obInterval);
+  function render(){
+    obMid+=R(-.002,.002);let h='';
+    for(let i=5;i>=1;i--){const p=(obMid+i*.005).toFixed(3),s=Math.floor(R(200,9000));h+=`<div class="ob-r"><span class="ask">${p}</span><span class="sz">${s.toLocaleString()}</span></div>`}
+    h+=`<div class="ob-mid">Spread 0.005 · ${obMid.toFixed(3)}</div>`;
+    for(let i=1;i<=5;i++){const p=(obMid-i*.005).toFixed(3),s=Math.floor(R(200,9000));h+=`<div class="ob-r"><span class="bid">${p}</span><span class="sz">${s.toLocaleString()}</span></div>`}
+    el.innerHTML=h;
+  }
+  render();obInterval=setInterval(render,800);
+}
+
+/* ═══ Ticker Grid ═══ */
+let tgInterval;
+function buildTickerGrid(){
+  const el=document.getElementById('tg');
+  if(tgInterval) clearInterval(tgInterval);
+  const src=gamesData.length>=4?gamesData.slice(0,8):null;
+  const mk=(src||P.slice(0,8).map(s=>({pair:s}))).map(g=>({
+    s:g.pair,
+    p:g.spread!==undefined?spreadToPrice(g.spread,g.overUnder):R(.3,.72),
+    c:R(-4,5)
+  }));
+  // Pad to 8
+  while(mk.length<8) mk.push({s:P[mk.length%P.length],p:R(.3,.72),c:R(-4,5)});
+  function render(){
+    el.innerHTML=mk.map(m=>{
+      m.p+=R(-.008,.008);m.p=Math.max(.1,Math.min(.95,m.p));m.c+=R(-.3,.3);const u=m.c>=0;
+      return`<div class="tg-c"><div class="tg-s">${m.s}</div><div class="tg-p">${m.p.toFixed(2)}</div><div class="tg-ch ${u?'tg-u':'tg-d'}">${u?'▲':'▼'}${Math.abs(m.c).toFixed(1)}%</div></div>`;
+    }).join('');
+  }
+  render();tgInterval=setInterval(render,1200);
+}
+
+/* ═══ Alerts Feed ═══ */
+let alertInterval;
+function buildAlerts(){
+  const el=document.getElementById('feed');el.innerHTML='';
+  if(alertInterval) clearInterval(alertInterval);
+  // Build alert templates from real games
+  function makeAlerts(){
+    const g=gamesData.length?gamesData:FALLBACK_PAIRS.map(p=>({pair:p}));
+    const templates=[];
+    templates.push({t:'',m:'Connected to ',h:`${Math.floor(R(280,420))} markets`});
+    for(const gm of g.slice(0,6)){
+      templates.push(
+        {t:'',m:`${gm.pair} mispriced `,h:`+${R(1.5,4.5).toFixed(1)}σ`},
+        {t:'',m:`${gm.pair} vol spike `,h:`+${Math.floor(R(200,1200))}%`},
+        {t:'',m:`${gm.pair} bid wall `,h:`$${Math.floor(R(40,200))}K`},
+        {t:'',m:`${gm.pair} signal `,h:R(0,1)>.5?'▲ BUY':'▼ SELL'},
+        {t:'',m:`${gm.pair} `,h:`$${R(1,8).toFixed(1)}K @ ${R(.4,.7).toFixed(2)}`}
+      );
+    }
+    templates.push({t:'',m:'Confidence: ',h:`${R(88,97).toFixed(1)}%`});
+    templates.push({t:'',m:'PnL: ',h:`+$${Math.floor(R(2000,8000)).toLocaleString()}`});
+    templates.push({t:'',m:'Flagged: ',h:`${Math.floor(R(2,8))} opps`});
+    return templates;
+  }
+  const A=makeAlerts();
+  let idx=0;const max=18;
+  function now(){const d=new Date();return[d.getHours(),d.getMinutes(),d.getSeconds()].map(v=>String(v).padStart(2,'0')).join(':')}
+  function add(){
+    const a=A[idx++%A.length];const d=document.createElement('div');d.className='fl';
+    d.innerHTML=`<span class="t">${now()}</span><span class="m">${a.m}<span class="h">${a.h}</span>${a.w?`<span class="w">${a.w}</span>`:''}</span>`;
+    el.appendChild(d);while(el.children.length>max)el.removeChild(el.firstChild);
+  }
+  for(let i=0;i<12;i++)add();alertInterval=setInterval(add,1400);
+}
+
+/* ═══ Stats ═══ */
+let statsInterval;
+function buildStats(){
+  const el=document.getElementById('stats');let pnl=R(3000,6000),wr=R(68,82);
+  if(statsInterval) clearInterval(statsInterval);
+  const openCount=gamesData.length||14;
+  function render(){
+    pnl+=R(-50,80);wr+=R(-.3,.3);wr=Math.max(60,Math.min(90,wr));
+    el.innerHTML=`
+      <div class="st-r"><span class="st-l">Day P&L</span><span class="st-v sg">+$${Math.abs(Math.floor(pnl)).toLocaleString()}</span></div>
+      <div class="st-r"><span class="st-l">Win Rate</span><span class="st-v sg">${wr.toFixed(1)}%</span></div>
+      <div class="st-r"><span class="st-l">Open</span><span class="st-v sw">${openCount}</span></div>
+      <div class="st-r"><span class="st-l">Capital</span><span class="st-v sw">$47.2K</span></div>
+      <div class="st-r"><span class="st-l">Sharpe</span><span class="st-v sg">${R(2.2,3.4).toFixed(2)}</span></div>
+      <div class="st-r"><span class="st-l">Max DD</span><span class="st-v sr">-${R(1.5,4.5).toFixed(1)}%</span></div>
+      <div class="st-r"><span class="st-l">Trades</span><span class="st-v sw">${Math.floor(R(80,200))}</span></div>
+      <div class="st-r"><span class="st-l">Avg Hold</span><span class="st-v sw">${R(2,8).toFixed(1)}m</span></div>`;
+  }
+  render();statsInterval=setInterval(render,2000);
+}
+
+/* ═══ Cascades ═══ */
+function buildCascade(id,type){
+  const el=document.getElementById(id);if(!el)return;let l=[];
+  for(let i=0;i<40;i++){
+    const s=P[Math.floor(R(0,P.length))];
+    const g=gamesData[i%Math.max(1,gamesData.length)];
+    const baseP=g?spreadToPrice(g.spread,g.overUnder):R(.3,.75);
+    const p=(baseP+R(-.05,.05)).toFixed(3),ch=R(-5,5).toFixed(1),u=parseFloat(ch)>=0;
+    if(type==='vol'){
+      const v=Math.floor(R(1,200))+'K';
+      l.push(`<div style="color:rgba(92,253,134,${R(.2,.4)})">${s} ${p} <span style="color:rgba(255,255,255,.2)">vol ${v}</span> <span style="color:${u?'rgba(92,253,134,.45)':'rgba(255,107,107,.4)'}">${u?'+':''}${ch}%</span></div>`);
+    } else {
+      const bar='█'.repeat(Math.floor(R(3,20)));
+      l.push(`<div><span style="color:rgba(92,253,134,${R(.12,.3)})">${bar}</span> <span style="color:rgba(255,255,255,.25)">${p}</span> <span style="color:rgba(92,253,134,${R(.15,.3)})">${u?'▲':'▼'}${Math.abs(parseFloat(ch)).toFixed(1)}%</span></div>`);
+    }
+  }
+  const h=l.join('');el.innerHTML=`<div class="casc-in">${h}${h}</div>`;
+}
+
+/* ═══ Init ═══ */
+// Build with fallback data immediately, then fetch real data
+buildBoard();buildOrderBook();buildTickerGrid();buildAlerts();buildStats();buildCascade('c1','bar');buildCascade('c2','vol');
+// Fetch real ESPN data
+fetchLiveData().catch(()=>{});
+// Refresh every 5 minutes
+setInterval(()=>fetchLiveData().catch(()=>{}),5*60*1000);
+
+/* ═══ Parallax ═══ */
+(function(){
+  if(!window.matchMedia('(min-width:768px)').matches)return;
+  const b=document.getElementById('billy');
+  document.addEventListener('mousemove',e=>{
+    const x=(e.clientX/innerWidth-.5),y=(e.clientY/innerHeight-.5);
+    b.style.transform=`translateX(calc(-50% + ${x*6}px)) translateY(${y*4}px)`;
+  });
+})();
+</script>
+</body>
+</html>

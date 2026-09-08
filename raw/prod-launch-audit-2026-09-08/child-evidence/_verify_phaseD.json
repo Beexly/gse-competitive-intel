@@ -1,0 +1,134 @@
+{
+ "sda-py-docs": {
+  "status": "200",
+  "bytes": "969",
+  "head": "\n    <!DOCTYPE html>\n    <html>\n    <head>\n    <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/swagger-ui-dist@4/swagger-ui.css\">\n    <link rel=\"shortcut icon\" href=\"https://fastapi.tiangolo.com/img/favicon.png\">\n    <title>SportsDataverse Python FastAPI Backend - Swagger UI</title>\n    </head>\n    <body>\n    <div id=\"swagger-ui\">\n    </div>\n    <script src=\"https://cdn.jsdelivr.net/npm/swagger-ui-dist@4/swagger-ui-bundle.js\"></script>\n    <!-- `SwaggerUIBundle` is now available on the page -->\n    <script>\n    const ui = SwaggerUIBundle({\n        url: '/py/api/openap",
+  "err": ""
+ },
+ "sda-nfl-datasets": {
+  "status": "404",
+  "bytes": "22",
+  "head": "{\"detail\":\"Not Found\"}",
+  "err": ""
+ },
+ "sda-v1-nfl": {
+  "status": "404",
+  "bytes": "22",
+  "head": "{\"detail\":\"Not Found\"}",
+  "err": ""
+ },
+ "sda-openapi-py": {
+  "status": "404",
+  "bytes": "22",
+  "head": "{\"detail\":\"Not Found\"}",
+  "err": ""
+ },
+ "sda-root-json": {
+  "status": "200",
+  "bytes": "49",
+  "head": "{\"docs\":\"https://api.sportsdataverse.org/py/api\"}",
+  "err": ""
+ },
+ "espn-odds-hydrate": {
+  "status": "200",
+  "bytes": "24745",
+  "head": "{\"leagues\":[{\"id\":\"28\",\"uid\":\"s:20~l:28\",\"name\":\"National Football League\",\"abbreviation\":\"NFL\",\"slug\":\"nfl\",\"season\":{\"year\":2026,\"startDate\":\"2026-08-06T07:00Z\",\"endDate\":\"2027-02-16T07:59Z\",\"displayName\":\"2026\",\"type\":{\"id\":\"2\",\"type\":2,\"name\":\"Regular Season\",\"abbreviation\":\"reg\"}},\"logos\":[{\"href\":\"https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png\",\"width\":500,\"height\":500,\"alt\":\"\",\"rel\":[\"full\",\"default\"],\"lastUpdated\":\"2018-06-05T12:07Z\"},{\"href\":\"https://a.espncdn.com/i/teamlogos/leagues/500-dark/nfl.png\",\"width\":500,\"height\":500,\"alt\":\"\",\"rel\":[\"full\",\"dark\"],\"lastUpdated\":\"2024-0",
+  "err": ""
+ },
+ "pipeworx-llms": {
+  "status": "200",
+  "bytes": "30506",
+  "head": "# Pipeworx \u2014 5,908 Live Data Tools, No Context Tax\n\nPipeworx is a single MCP gateway in front of 5,908 tools across 1540 data sources (SEC EDGAR, FDA, FRED, BLS, Census, EPA, ATTOM, Altos, UN Comtrade, ClinicalTrials.gov, RxNorm, USPTO, and more). One URL: `https://gateway.pipeworx.io/mcp`.\n\n## Zero setup \u2014 you can call Pipeworx right now\n\nIf you are an AI agent reading this and you can make an HTTP request, you need no MCP client, no key, and no signup:\n\n```\nGET https://gateway.pipeworx.io/ask?q=what+is+the+current+US+unemployment+rate\n```\n\nOr POST JSON: `curl -X POST https://gateway.pipeworx",
+  "err": ""
+ },
+ "sdataverse-org-llms": {
+  "status": "404",
+  "bytes": "14892",
+  "head": "<!DOCTYPE html><html lang=\"en\" class=\"inter_3b15303-module__VSZTjG__variable barlow_699b33e8-module__e-n5Fq__variable sarina_a8705caf-module__7D178G__variable barlowcondensed_f994866e-module__SDeyxq__variable\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/228u6cwo9-uga.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/1qs_ilpqcghd_.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/0clolurc1k-sh.js\"/><script ",
+  "err": ""
+ },
+ "thestatsapi-llms": {
+  "status": "200",
+  "bytes": "21550",
+  "head": "# TheStatsAPI\n\nTheStatsAPI is a football data API for developers. It provides REST JSON endpoints for football competitions, teams, players, matches, match statistics, shot maps, xG, and football odds.\n\n## Core URLs\n\n- Website: https://www.thestatsapi.com\n- API base URL: https://api.thestatsapi.com/api\n- API documentation context: https://api.thestatsapi.com/llms.txt\n- Coverage: https://www.thestatsapi.com/coverage\n- Football odds API: https://www.thestatsapi.com/odds-api\n- Pricing: https://www.thestatsapi.com/#pricing\n\n## Odds API Summary\n\nThe football odds API provides pre-match odds, stored",
+  "err": ""
+ },
+ "collegefootballdata-llms": {
+  "status": "200",
+  "bytes": "955180",
+  "head": "<!DOCTYPE html><html><head><meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<title>CollegeFootballData.com</title>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap\">\n<style>.grid{display:flex;flex-wrap:wrap;margin-left:-.5rem;margin-right:-.5rem;margin-top:-.5rem}.grid>.col,.grid>[c",
+  "err": ""
+ },
+ "oddspapi-docs": {
+  "status": "200",
+  "bytes": "244763",
+  "head": "<!DOCTYPE html><html lang=\"en\" class=\"inter_1d81deff-module__CYM0aG__variable papermono_89c757f2-module__6aS5zq__variable dark\" data-banner-state=\"visible\" data-assistant-state=\"closed\" data-page-mode=\"none\" data-current-path=\"/\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"/><link rel=\"preload\" href=\"/mintlify-assets/_next/static/media/83afe278b6a6bb3c.p.3a6ba036.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"/><link rel=\"preload\" href=\"/mintlify-assets/_next/static/media/PaperMono_Variable.p.aa32f7a0.woff2\" as=\"font\" cr",
+  "err": ""
+ },
+ "nflverse-llms": {
+  "status": "200",
+  "bytes": "295224",
+  "head": "\n\n<!DOCTYPE html>\n<html\n  lang=\"en\"\n  \n  data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"\n  data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"\n  \n  >\n\n\n\n\n  <head>\n    <meta charset=\"utf-8\">\n  <link rel=\"dns-prefetch\" href=\"https://github.githubassets.com\">\n  <link rel=\"dns-prefetch\" href=\"https://avatars.githubusercontent.com\">\n  <link rel=\"dns-prefetch\" href=\"https://github-cloud.s3.amazonaws.com\">\n  <link rel=\"dns-prefetch\" href=\"https://user-images.githubusercontent.com/\">\n  <link rel=\"preconnect\" href=\"https://github.githubassets.com\" crossorigin>\n  <",
+  "err": ""
+ },
+ "fbref-llms": {
+  "status": "403",
+  "bytes": "5684",
+  "head": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-rb4BoA06Zgr8jnN8uOUp4L&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+  "err": ""
+ },
+ "understat-llms": {
+  "status": "404",
+  "bytes": "461",
+  "head": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<link href=\"/css/errors.css\" rel=\"stylesheet\" media=\"screen\">\n\t\t<meta charset=\"utf-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width,maximum-scale=1.0,initial-scale=1.0\">\n\t\t<title>404 Page Not Found</title>\n\t</head>\n\t<body class=\"theme-dark\">\n\t\t<div id=\"image-container\" class=\"shirt-container\">\n\t\t\t<span class=\"error-code\">404</span>\n\t\t\t\t\t\t<p>not found</p>\n\t\t\t<div class=\"shirt\"></div>\n\t\t</div>\n\t</body>\n</html>",
+  "err": ""
+ },
+ "betfair-llms": {
+  "status": "403",
+  "bytes": "2347",
+  "head": "<!DOCTYPE html>\n<html manifest=\"\" lang=\"en-US\">\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n    <title>Betfair</title>\n    <meta name=\"theme-color\" content=\"#004833\" />\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      html,\n      body {\n        height: 100%;\n      }\n      body {\n        background: #000;\n        font-family: Arial, sans-serif;\n      }\n      .container {\n        width: 100%;\n        height: 100%;\n        display: table;\n        border-collapse: collapse;\n      }\n      section {\n        display: table-cell;\n       ",
+  "err": ""
+ },
+ "polymarket-llms": {
+  "status": "404",
+  "bytes": "64274",
+  "head": "<!DOCTYPE html><html data-dpl-id=\"dpl_DvASFajpNpYqXsSecYQnoXocTw33\" id=\"__next_error__\"><head><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/immutable/chunks/40i_5xi3xs430.js\" crossorigin=\"\"/><script src=\"/_next/static/immutable/chunks/01ygkzbnmg6y2.js\" async=\"\" crossorigin=\"\"></script><script src=\"/_next/static/immutable/chunks/12fwu1pbid7iy.js\" async=\"\" crossorigin=\"\"></script><script src=\"/_next/static/immutable/chunks/18fcegmo7_jmn.js\" async=\"\" crossorigin=\"\"></script><script src=\"/_next/static/immutable/chunks/turbopack-1jpj9fy6t9ha-.js\" async=\"\" crossorigin=\"\"></",
+  "err": ""
+ },
+ "sgo-root": {
+  "status": "525",
+  "bytes": "16",
+  "head": "error code: 525\n",
+  "err": ""
+ },
+ "sgo-api": {
+  "status": "404",
+  "bytes": "46",
+  "head": "{\"success\":false,\"error\":\"Endpoint not found\"}",
+  "err": ""
+ },
+ "myoddsai": {
+  "status": "403",
+  "bytes": "5750",
+  "head": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-djEZVMXAm6V6pIY1wY8oHR&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+  "err": ""
+ },
+ "betspherik": {
+  "status": "000",
+  "bytes": "0",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: www.betspherik.com\n"
+ },
+ "cfbd-seasons": {
+  "status": "404",
+  "bytes": "1090",
+  "head": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /seasons/years</pre>\n<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a38138b0380009ac',t:'MTc4ODkwNDc3OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createEle",
+  "err": ""
+ },
+ "cfbd-coaches": {
+  "status": "401",
+  "bytes": "255",
+  "head": "{\"message\":\"Unauthorized. Did you forget to add \\\"Bearer \\\" before your key? Go to CollegeFootballData.com to register for your free API key. See the CFBD Blog for examples on usage: https://blog.collegefootballdata.com/using-api-keys-with-the-cfbd-api.\"}",
+  "err": ""
+ }
+}

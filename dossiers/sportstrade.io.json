@@ -1,0 +1,115 @@
+{
+ "domain": "sportstrade.io",
+ "tech_stack": {
+  "frontend": "Plain PHP-served HTML + jQuery 3.4.1/jquery-ui, Swiper 11, firebasejs 4.9.1 (client messaging), elfsight widgets, gtag/GA UA-132957163-1 + G-NPV1YS3PVB + Google Ads AW-759942138",
+  "backend": "PHP (server: Apache; AJAX endpoints are *.php scripts: a_api.php, a_token.php, a_buyer_manager_v2.php form action)",
+  "database": "Firebase project 'sportstrade-web' (databaseURL https://sportstrade-web.firebaseio.com, projectId sportstrade-web, messagingSenderId 263400649028) used for push messaging; main datastore not exposed",
+  "cloud": "Apache on unnamed host; no Cloudflare/Vercel/AWS headers seen",
+  "cdn": "No commercial CDN detected (self-hosted /js/*)",
+  "citations": [
+   "https://www.sportstrade.io/",
+   "https://www.sportstrade.io/js/main-java.js",
+   "https://www.sportstrade.io/senior-soccer-tipster.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "POST",
+    "path": "/a_api.php",
+    "auth_required": "session/cookie (member actions; also used for newsletter subscribe POST with sub-email)",
+    "tier": "member",
+    "sample_response": "NOT CONFIRMED (didn't POST - read-only policy)",
+    "citation": "https://www.sportstrade.io/senior-soccer-tipster.html inline JS: var url=\"https://www.sportstrade.io/a_api.php\"; $.ajax({ url: url, type : \"POST\""
+   },
+   {
+    "method": "GET/POST",
+    "path": "/a_token.php",
+    "auth_required": "unknown (CSRF-style token issuer implied by name)",
+    "tier": "public",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "https://www.sportstrade.io/ inline JS ajax url a_token.php"
+   },
+   {
+    "method": "POST",
+    "path": "/a_buyer_manager_v2.php",
+    "auth_required": "yes (buyer/cart manager form action)",
+    "tier": "member",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "https://www.sportstrade.io/ form action=a_buyer_manager_v2.php"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (none found)",
+  "websocket_endpoints": "NOT CONFIRMED (none found; live updates via Firebase messaging 4.9.1 legacy SDK)",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "https://www.sportstrade.io/",
+   "https://www.sportstrade.io/senior-soccer-tipster.html"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED - product is a human-tipster marketplace with 'auditor' role, not model-driven",
+  "training_data": "n/a",
+  "update_frequency": "Tips verified after match; 'During the verification after the match, if found the tips are different from the results published' records locked",
+  "citation": "https://www.sportstrade.io/faq.html"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "data_supply_chain": {
+  "vendors": "No commercial data vendor found (sportradar/statsperform/opta/genius: 0 hits). Footer link-exchange to Nowgoal Livescore (free livescore site) and 'White Label Tipping Apps' partner links (monitoredtips.com, soccertipsters.com, betfame.com, feedinco.com) - suggests a tipster-network/white-label operator family.",
+  "citations": [
+   "https://www.sportstrade.io/",
+   "https://www.sportstrade.io/senior-soccer-tipster.html"
+  ]
+ },
+ "product_limits": {
+  "limits": "Per-tip credit purchase model: buy individual tips in cart, checkout via PayPal/Skrill (+$2 handling fee for direct PayPal/Moneybooker, cards 'coming soon'). Losing/drawn/cancelled/postponed tips auto-refund credits next day ('Credit Back Guarantee', effective 01 July 2015). No tip sharing (they cite 'excessively dropping odds' and oversight attention as reasons). No free trial (anti-abuse stance; free tips section instead).",
+  "upgrade_triggers": "Credit exhaustion, not tier upgrades; no recurring subscription found on public pages (FAQ mocks competitors' 'monthly subscription plans which costs a few hundred dollars a month').",
+  "citation": "https://www.sportstrade.io/faq.html"
+ },
+ "pricing": {
+  "web": "No public per-tip price list captured; credits purchased then spent per tip; PayPal/Skrill accepted with $2 handling fee for direct payment; 100% credit refund on losing tips",
+  "ios": "NOT CONFIRMED (no app found)",
+  "android": "NOT CONFIRMED (no app found)",
+  "citations": [
+   "https://www.sportstrade.io/faq.html",
+   "https://www.sportstrade.io/signup.html"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "No sportstrade.io-specific complaint threads surfaced in searches; adjacent context: 'Most are a scam and a waste of time. They try to hook you in by offering fools gold...' (pay-for-tips services generally)",
+   "source": "https://www.reddit.com/r/sportsbetting/comments/zstr3i/anyone_ever_pay_for_sports_betting_servicegroup/",
+   "date": "2022"
+  },
+  {
+   "quote": "Their own FAQ preempts scam concerns ('How do I identify fraud and scam soccer websites?'), and its blog is heavily promoted via Facebook ads - signals reputation pressure rather than documented user pain",
+   "source": "https://www.sportstrade.io/faq.html",
+   "date": "current"
+  }
+ ],
+ "discovered_paths": [
+  "/a_api.php",
+  "/a_token.php",
+  "/a_buyer_manager_v2.php",
+  "/faq.html",
+  "/signup.html",
+  "/senior-soccer-tipster.html",
+  "/premium-recent-tips-result.html"
+ ],
+ "discovered_targets": [
+  "monitoredtips.com",
+  "soccertipsters.com",
+  "betfame.com",
+  "feedinco.com"
+ ],
+ "discovery_metadata": {
+  "method": "fetcher.py GETs: home, main-java.js, senior-tipster, faq, signup (5 reqs) + saved sitemap + 2 web_search",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 14 raw evidence files)"
+}

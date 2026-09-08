@@ -1,0 +1,213 @@
+{
+ "generated": "2026-09-08T13:22:36.225178",
+ "count": 23,
+ "rows": [
+  {
+   "domain": "dfsace.com",
+   "frontend": "NOT CONFIRMED",
+   "backend": "NOT CONFIRMED",
+   "rest": 0,
+   "formulas": 0,
+   "vendors": 0,
+   "pain": 0
+  },
+  {
+   "domain": "draftwise.app",
+   "frontend": "React SPA (Vite build, /assets/index-C",
+   "backend": "Supabase (project ngjjwkxg",
+   "rest": 4,
+   "formulas": 0,
+   "vendors": 0,
+   "pain": 0
+  },
+  {
+   "domain": "dycers.app",
+   "frontend": "NOT CONFIRMED (domain dead)",
+   "backend": "NOT CONFIRMED",
+   "rest": 0,
+   "formulas": 0,
+   "vendors": 0,
+   "pain": 0
+  },
+  {
+   "domain": "fantasycruncher.com",
+   "frontend": "server-rendered PHP-era UI",
+   "backend": "NOT CONFIRMED",
+   "rest": 0,
+   "formulas": 0,
+   "vendors": 1,
+   "pain": 9
+  },
+  {
+   "domain": "fantasylabs.com",
+   "frontend": "legacy app (Cloudflare fronted; sitema",
+   "backend": "PHP 7.4.9 (X-Powered-By le",
+   "rest": 1,
+   "formulas": 0,
+   "vendors": 1,
+   "pain": 0
+  },
+  {
+   "domain": "github.com/BenBrostoff/draftfast",
+   "frontend": "none (CLI lib)",
+   "backend": "Python",
+   "rest": 1,
+   "formulas": 1,
+   "vendors": 2,
+   "pain": 0
+  },
+  {
+   "domain": "github.com/martineastwood/penaltyblog",
+   "frontend": "none (Python lib)",
+   "backend": "Python (scipy, numpy, pand",
+   "rest": 1,
+   "formulas": 3,
+   "vendors": 2,
+   "pain": 0
+  },
+  {
+   "domain": "github.com/pretrehr/Sports-betting",
+   "frontend": "Python lib (+UI)",
+   "backend": "Python",
+   "rest": 1,
+   "formulas": 1,
+   "vendors": 1,
+   "pain": 0
+  },
+  {
+   "domain": "github.com/sedemmler/WagerBrain",
+   "frontend": "Python lib",
+   "backend": "Python",
+   "rest": 1,
+   "formulas": 1,
+   "vendors": 1,
+   "pain": 0
+  },
+  {
+   "domain": "oddsjam.com",
+   "frontend": "Next.js-style app behind Cloudflare (r",
+   "backend": "Express-style /api/backend",
+   "rest": 3,
+   "formulas": 0,
+   "vendors": 1,
+   "pain": 0
+  },
+  {
+   "domain": "outlier.bet",
+   "frontend": "Next/React SPA",
+   "backend": "NOT CONFIRMED",
+   "rest": 2,
+   "formulas": 0,
+   "vendors": 1,
+   "pain": 0
+  },
+  {
+   "domain": "playerprops.ai",
+   "frontend": "Next.js (__className_578517 pattern; V",
+   "backend": "Next.js API routes",
+   "rest": 2,
+   "formulas": 0,
+   "vendors": 1,
+   "pain": 0
+  },
+  {
+   "domain": "predictiondata.io",
+   "frontend": "Next.js App Router on Vercel (RSC payl",
+   "backend": "Not exposed; docs describe",
+   "rest": 4,
+   "formulas": 0,
+   "vendors": 272,
+   "pain": 0
+  },
+  {
+   "domain": "props.cash",
+   "frontend": "JS SPA",
+   "backend": "Heroku + Express (Server h",
+   "rest": 2,
+   "formulas": 0,
+   "vendors": 1,
+   "pain": 0
+  },
+  {
+   "domain": "propsbot.ai",
+   "frontend": "WordPress (wp-json exposed)",
+   "backend": "PHP/WordPress",
+   "rest": 1,
+   "formulas": 0,
+   "vendors": 1,
+   "pain": 0
+  },
+  {
+   "domain": "pydfs-lineup-optimizer.readthedocs.io",
+   "frontend": "Sphinx 1.8.5 + Alabaster 0.7.12 static",
+   "backend": "Python 3.6+ library (pip i",
+   "rest": 0,
+   "formulas": 2,
+   "vendors": 127,
+   "pain": 0
+  },
+  {
+   "domain": "rotogrinders.com",
+   "frontend": "content platform + tools",
+   "backend": "NOT CONFIRMED",
+   "rest": 0,
+   "formulas": 0,
+   "vendors": 1,
+   "pain": 0
+  },
+  {
+   "domain": "sabersim.com",
+   "frontend": "Angular-style SPA (polyfills/main chun",
+   "backend": "NOT CONFIRMED",
+   "rest": 1,
+   "formulas": 0,
+   "vendors": 1,
+   "pain": 9
+  },
+  {
+   "domain": "sportsapi.com",
+   "frontend": "Custom ASP.NET-style server-rendered s",
+   "backend": "Not exposed \u2014 informationa",
+   "rest": 0,
+   "formulas": 0,
+   "vendors": 256,
+   "pain": 0
+  },
+  {
+   "domain": "sportsdata.io",
+   "frontend": "ASP.NET MVC + AngularJS 1.x templates ",
+   "backend": "Microsoft IIS/10.0 + ASP.N",
+   "rest": 6,
+   "formulas": 0,
+   "vendors": 1,
+   "pain": 4
+  },
+  {
+   "domain": "stokastic.com",
+   "frontend": "Next.js (Vercel; dpl build ids in HTML",
+   "backend": "Next API routes + /api/che",
+   "rest": 5,
+   "formulas": 0,
+   "vendors": 1,
+   "pain": 0
+  },
+  {
+   "domain": "the-odds-api.com",
+   "frontend": "VuePress static site (hashed webpack b",
+   "backend": "REST API on api.the-odds-a",
+   "rest": 6,
+   "formulas": 0,
+   "vendors": 1,
+   "pain": 5
+  },
+  {
+   "domain": "yesorno.ai",
+   "frontend": "Vike (vite-plugin-ssr successor) + Rea",
+   "backend": "NOT CONFIRMED (site now NX",
+   "rest": 0,
+   "formulas": 0,
+   "vendors": 0,
+   "pain": 0
+  }
+ ]
+}

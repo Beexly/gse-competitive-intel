@@ -1,0 +1,76 @@
+{
+ "tech_stack": {
+  "frontend": "Next.js-style app behind Cloudflare (robots.txt confirms /api/backend/* paths)",
+  "backend": "Express-style /api/backend/* (live response captured)",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare (bot wall on unauthenticated API fetch)",
+  "cdn": "cdn.oddsjam.com + storage.googleapis.com assets",
+  "citations": [
+   "raw/oddsjam_com_ext_robots.txt.body.txt",
+   "raw/oddsjam_com_ext_api_backend_sportsbooks_state-NJ.body.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "GET /api/backend/sportsbooks?state=NJ -> live 200 JSON: full book catalog with flags is_onshore/is_exchange/is_dfs/dfs_screen_type/show_on_dgf/betting_tools_allowed/is_prediction_market",
+   "GET /api/backend/openapi.json + /api/backend/swagger.json -> captured (spec files saved)",
+   "app build-time endpoint captured"
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED (odds streaming suspected, walled)",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/oddsjam_com_ext_api_backend_sportsbooks_state-NJ.body.txt",
+   "raw/oddsjam_com_ext_openapi.json.body.txt",
+   "raw/oddsjam_com_ext_swagger.json.body.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "sportsbook odds via own scraping layer (book logos on GCS; book flags incl. exchanges + prediction markets)"
+  ],
+  "citations": [
+   "raw/oddsjam_com_ext_api_backend_sportsbooks_state-NJ.body.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": "free tier exists; API access is paid product",
+  "upgrade_triggers": "paywalled API keys",
+  "citation": "oddsjam.com pricing (public knowledge) NOT re-verified"
+ },
+ "pricing": {
+  "web": "subscription (tiers NOT re-verified this run)",
+  "ios": "iTunes lookup captured: raw/oddsjam_com_ext_itunes_lookup.json",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/oddsjam_com_ext_itunes_lookup.json"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/api/backend/sportsbooks",
+  "/api/backend/openapi.json",
+  "/api/backend/swagger.json",
+  "/betting-tools/positive-ev",
+  "/subscribe/positive-ev-global"
+ ],
+ "discovered_targets": [],
+ "domain": "oddsjam.com",
+ "discovery_metadata": {
+  "method": "direct HTTP probes + raw evidence extraction (self-run)",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 11 raw evidence files)"
+}

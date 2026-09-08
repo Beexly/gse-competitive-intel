@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      if (location.host === 'alpha.betstack.app') {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.getRegistrations().then(rs => rs.forEach(r => r.unregister()));
+        }
+        location.replace(location.href.replace('alpha.betstack.app', 'betstack.app'));
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/fav.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // Reloads on update are driven by the worker itself (see sw.js activate),
+      // so the page only registers the worker and polls for new deployments.
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          // Defer registration so it doesn't compete with initial page load.
+          setTimeout(() => {
+            navigator.serviceWorker
+              .register('/sw.js', { updateViaCache: 'none' })
+              .then(registration => {
+                console.log('Service Worker registered with scope:', registration.scope);
+                // Catch new deployments on long-lived tabs.
+                setInterval(() => registration.update(), 60 * 60 * 1000);
+                document.addEventListener('visibilitychange', () => {
+                  if (document.visibilityState === 'visible') registration.update();
+                });
+              })
+              .catch(error => {
+                console.error('Service Worker registration failed:', error);
+              });
+          }, 100);
+        });
+      }
+    </script>
+
+    <script
+      defer
+      data-website-id="dfid_K9qfOvNyJtWZ72x02ZrRT"
+      data-domain="betstack.app"
+      src="https://datafa.st/js/script.js"
+    ></script>
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#1a1b1e" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Betstack" />
+    <link rel="apple-touch-icon" href="/pwa-192x192.png" />
+
+    <!-- Default Meta Tags (Fallback) -->
+    <title>Betstack - Build parlays on Football, Basketball, and more</title>
+    <meta
+      name="description"
+      content="Place bets on football and basketball matches with live odds. Build parlays, track your portfolio, and win on your predictions."
+    />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Betstack - Build parlays on Football, Basketball, and more"
+    />
+    <meta
+      property="og:description"
+      content="Place bets on football and basketball matches with live odds. Build parlays, track your portfolio, and win on your predictions."
+    />
+    <meta property="og:image" content="/social-card-default.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="betstack.app" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Betstack - Build parlays on Football, Basketball, and more"
+    />
+    <meta
+      name="twitter:description"
+      content="Place bets on football and basketball matches with live odds. Build parlays, track your portfolio, and win on your predictions."
+    />
+    <meta name="twitter:image" content="/social-card-default.png" />
+    <meta name="twitter:site" content="@BetStackapp" />
+    <script type="module" crossorigin src="/assets/index-DL-1Gvfj.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-DD67OWW-.js">
+    <link rel="modulepreload" crossorigin href="/assets/web3-wagmi-DhTbocGo.js">
+    <link rel="modulepreload" crossorigin href="/assets/web3-rainbowkit-DdpHP3Zp.js">
+    <link rel="modulepreload" crossorigin href="/assets/data-vendor-BObNtPsR.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-CYxFZRIN.js">
+    <link rel="modulepreload" crossorigin href="/assets/trpc-BL6fvGo0.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-_UhgS8bq.css">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+User-agent: *
+
+Disallow: /nimda/
+Disallow: /rest/
+Disallow: /apps/
+Disallow: /orders/
+Disallow: /app/
+Disallow: /texus/get-coupon/
+Disallow: /login/twitter/
+Disallow: /series/
+Disallow: /notify/
+Disallow: /schedule/
+
+Sitemap: https://www.cricketapi.com/sitemap_index.xml

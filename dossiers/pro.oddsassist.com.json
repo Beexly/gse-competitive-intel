@@ -1,0 +1,67 @@
+{
+ "domain": "pro.oddsassist.com",
+ "type": "live-site",
+ "disposition": "live",
+ "tech_stack": {
+  "frontend": "NOT CONFIRMED (no framework marker in saved homepage)",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/i_pro_oddsassist_com_home.html",
+   "raw/i_pro_oddsassist_com_sitemap_xml.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/i_pro_oddsassist_com_home.html"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Pinnacle, DraftKings, FanDuel odds references"
+  ],
+  "citations": [
+   "raw/i_pro_oddsassist_com_home.html"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "$5-$500 price points on homepage suggest tiered Pro subscription",
+  "citation": "raw/i_pro_oddsassist_com_home.html"
+ },
+ "pricing": {
+  "web": "Price points observed: $5, $10, $20, $25, $50, $100, $250, $350, $500 (tier names NOT CONFIRMED \u2014 pricing structure not serialized in saved HTML)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/i_pro_oddsassist_com_home.html"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/sitemap.xml (141KB index)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "homepage + sitemap",
+  "timestamp": "2026-09-08T14:13:58.404821"
+ }
+}

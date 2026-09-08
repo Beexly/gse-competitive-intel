@@ -1,0 +1,70 @@
+{
+ "domain": "unabated.com",
+ "type": "live-site",
+ "disposition": "live",
+ "tech_stack": {
+  "frontend": "Modern SPA/SSR app with full commerce state inline ('gssp' markers, isproduction flag) \u2014 framework marker NOT CONFIRMED",
+  "backend": "Stripe Checkout commerce (price_ IDs embedded); package/price objects serialized into page",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/i_unabated_com_home.html",
+   "raw/i_unabated_com_page_pricing.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/i_unabated_com_page_pricing.html"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "In-house player prop projections productized ('Get our own in-house WNBA player prop projections, released daily through the 2026 playoffs')",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "daily (projections claim)",
+  "citation": "raw/i_unabated_com_page_pricing.html"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "DraftKings, FanDuel referenced on homepage",
+   "first-party projections for props"
+  ],
+  "citations": [
+   "raw/i_unabated_com_home.html",
+   "raw/i_unabated_com_page_pricing.html"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "'requires-subscription':true on packages; a-la-carte packages on top of Premium",
+  "citation": "raw/i_unabated_com_page_pricing.html"
+ },
+ "pricing": {
+  "web": "Full price matrix in page JSON (Stripe-backed): Premium through Super Bowl $799 (price_1NkpapAwKYQuCjQ8XWEW5hOj, 'Football Early Bird Special'); WNBA Projections Monthly $129 (price_1ROi9OAwKYQuCjQ8is2I1mGf) / Seasonal $499 (price_1ROiASAwKYQuCjQ87EIVoBbC); further package prices observed: $55, $69, $83, $99, $167, $199, $249, $550, $667, $699",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/i_unabated_com_page_pricing.html"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/page/pricing",
+  "/sitemap.xml (46KB)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "homepage + pricing page with serialized commerce JSON",
+  "timestamp": "2026-09-08T14:13:58.404821"
+ }
+}

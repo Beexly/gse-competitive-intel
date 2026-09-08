@@ -1,0 +1,72 @@
+{
+ "domain": "github.com/sedemmler/WagerBrain",
+ "type": "open-source-repo",
+ "tech_stack": {
+  "frontend": "Python lib",
+  "backend": "Python",
+  "database": "n/a",
+  "cloud": "n/a",
+  "cdn": "n/a",
+  "citations": [
+   "github.com/sedemmler/WagerBrain"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "bookmaker odds ingestion"
+  ],
+  "graphql_schema": "none",
+  "websocket_endpoints": [],
+  "rate_limits": "n/a",
+  "citations": [
+   "github.com/sedemmler/WagerBrain"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "essential betting math package (odds conversion, EV, vig)",
+   "where": "package source (clone at raw/clones/)",
+   "evidence": "cloned for parse; regex scan patterns to be extended"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED (clone on disk)",
+  "training_data": "n/a",
+  "update_frequency": "n/a",
+  "citation": "github meta"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "bookmaker odds feeds"
+  ],
+  "citations": [
+   "github.com/sedemmler/WagerBrain"
+  ]
+ },
+ "product_limits": {
+  "limits": "OSS",
+  "upgrade_triggers": "n/a",
+  "citation": "repo"
+ },
+ "pricing": {
+  "web": "free OSS (MIT)",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "github.com/sedemmler/WagerBrain"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "GitHub API + clone",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

@@ -1,0 +1,138 @@
+{
+ "domain": "pm.wiki",
+ "tech_stack": {
+  "frontend": {
+   "value": "React",
+   "citation": "raw/brosonpm.trade__home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\brosonpm.trade__home.raw",
+   "raw\\brosonpm.trade__robots.raw",
+   "raw\\outlier_bet_ext_app_main.js",
+   "raw\\px_pm_wiki_home.raw",
+   "raw\\px_pm_wiki_robots.raw",
+   "raw\\sabersim_app_main-XWGYF5MS.js"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "Ws.Fo",
+    "Ws.To",
+    "Ws.lo",
+    "Ws.mh",
+    "ApiState.match",
+    "api.endpoints"
+   ],
+   "citation": "raw/brosonpm.trade__home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\brosonpm.trade__home.raw"
+  },
+  "rate_limits": {
+   "value": "Rate limit",
+   "citation": "raw/brosonpm.trade__home.raw"
+  },
+  "citations": [
+   "raw\\brosonpm.trade__home.raw",
+   "raw\\brosonpm.trade__robots.raw",
+   "raw\\outlier_bet_ext_app_main.js",
+   "raw\\px_pm_wiki_home.raw",
+   "raw\\px_pm_wiki_robots.raw",
+   "raw\\sabersim_app_main-XWGYF5MS.js"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "sportradar",
+    "KALSHI",
+    "POLYMARKET",
+    "Sportradar",
+    "Kalshi",
+    "Polymarket"
+   ],
+   "citation": "raw/brosonpm.trade__home.raw"
+  },
+  "citations": [
+   "raw\\brosonpm.trade__home.raw",
+   "raw\\brosonpm.trade__robots.raw",
+   "raw\\outlier_bet_ext_app_main.js",
+   "raw\\px_pm_wiki_home.raw",
+   "raw\\px_pm_wiki_robots.raw",
+   "raw\\sabersim_app_main-XWGYF5MS.js"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "Rate limit"
+   ],
+   "citation": "raw/brosonpm.trade__home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\brosonpm.trade__home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "Free",
+    "FREE",
+    "enterprise"
+   ],
+   "citation": "raw/brosonpm.trade__home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\brosonpm.trade__home.raw",
+   "raw\\brosonpm.trade__robots.raw",
+   "raw\\outlier_bet_ext_app_main.js",
+   "raw\\px_pm_wiki_home.raw",
+   "raw\\px_pm_wiki_robots.raw",
+   "raw\\sabersim_app_main-XWGYF5MS.js"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "ApiState.match",
+  "Ws.Fo",
+  "Ws.To",
+  "Ws.lo",
+  "Ws.mh",
+  "api.endpoints",
+  "wser.cls",
+  "wser.metrics"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:03.155428"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "NOT CONFIRMED",
+  "description": "NOT CONFIRMED"
+ }
+}

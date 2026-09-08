@@ -1,0 +1,106 @@
+{
+ "domain": "github.com/eddwebster/football_analytics",
+ "type": "open-source-repo",
+ "tech_stack": {
+  "frontend": "none (library/notebooks)",
+  "backend": "Jupyter Notebook",
+  "database": "n/a",
+  "cloud": "n/a",
+  "cdn": "n/a",
+  "citations": [
+   "raw/gh-meta-eddwebster__football_analytics.json",
+   "raw/gh-tree-eddwebster__football_analytics.json"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "none",
+  "websocket_endpoints": [],
+  "rate_limits": "n/a (client-side lib)",
+  "citations": [
+   "raw/gh-tree-eddwebster__football_analytics.json"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "expected goals (logistic regression)",
+   "where": "notebooks/5_data_analysis_and_projects/xg_modeling/shots_dataset/chance_quality_modelling/1) Logistic Regression Expected Goals Model.ipynb",
+   "evidence": "file in tree"
+  },
+  {
+   "name": "xG via XGBoost on shots data",
+   "where": "img/fig/shots/metrica_shots_race_chart_xg_xgboost.png + Opta xG notebook",
+   "evidence": "file in tree"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "xG modeling notebooks: logistic regression xG, XGBoost shots models on Opta/Metrica data",
+  "training_data": "Opta event data + Metrica Sports tracking (notebooks)",
+  "update_frequency": "n/a (research repo)",
+  "citation": "raw/gh-tree-eddwebster__football_analytics.json"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Opta, Metrica Sports (notebook datasets)"
+  ],
+  "citations": [
+   "raw/gh-tree-eddwebster__football_analytics.json"
+  ]
+ },
+ "product_limits": {
+  "limits": "open source, no caps",
+  "upgrade_triggers": "n/a",
+  "citation": "raw/gh-meta-eddwebster__football_analytics.json"
+ },
+ "pricing": {
+  "web": "free/open source",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "raw/gh-meta-eddwebster__football_analytics.json"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "README.md",
+  "dashboards",
+  "dashboards/Edd Webster 'Big 5' European League Analysis and Dashboards.twbx",
+  "dashboards/Edd Webster - World Cup 2018 Analysis and Dashboard.twbx",
+  "dashboards/Edd Webster Opta MCFC Analytics PL 11_12 Analysis and Dashboards.twbx",
+  "data",
+  "data/capology",
+  "data/capology/engineered",
+  "data/capology/engineered/archive",
+  "data/capology/engineered/archive/capology_all_1617_2122_last_updated_05092021.csv",
+  "data/capology/engineered/archive/capology_big5_mls_1617_2122_last_updated_05092021.csv",
+  "data/capology/engineered/capology_all_latest.csv",
+  "data/capology/engineered/capology_big5_latest.csv",
+  "data/capology/engineered/capology_big5_mls_latest.csv",
+  "data/capology/raw",
+  "data/capology/raw/bundesliga",
+  "data/capology/raw/bundesliga/2016-2017",
+  "data/capology/raw/bundesliga/2016-2017/all_bundesliga_2016-2017.csv",
+  "data/capology/raw/bundesliga/2016-2017/augsburg_bundesliga_2016-2017.csv",
+  "data/capology/raw/bundesliga/2016-2017/bayer-leverkusen_bundesliga_2016-2017.csv",
+  "data/capology/raw/bundesliga/2016-2017/bayern-munich_bundesliga_2016-2017.csv",
+  "data/capology/raw/bundesliga/2016-2017/borussia-dortmund_bundesliga_2016-2017.csv",
+  "data/capology/raw/bundesliga/2016-2017/darmstadt_bundesliga_2016-2017.csv",
+  "data/capology/raw/bundesliga/2016-2017/eintracht-frankfurt_bundesliga_2016-2017.csv",
+  "data/capology/raw/bundesliga/2016-2017/freiburg_bundesliga_2016-2017.csv"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "stars": 2775,
+  "license": null,
+  "archived": false,
+  "pushed_at": "2025-10-09T10:51:47Z",
+  "description": "📊⚽  A collection of football analytics projects, data, and analysis by Edd Webster (@eddwebster), including a curated list of publicly available resources published by the football analytics community.",
+  "timestamp": "2026-09-08T14:07:11.916123"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

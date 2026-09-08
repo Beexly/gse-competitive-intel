@@ -1,0 +1,67 @@
+{
+  "domain": "theover.ai",
+  "type": "live-site",
+  "disposition": "live",
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "'13+ models crunch player stats, line movement, historical data, weather, rest days' per game; Q-Score pick rating; Purple Star picks = sharp-money confirmed",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "pre-game",
+    "citation": "raw/theover-home.html"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "customer_pain": [],
+  "discovered_targets": [],
+  "tech_stack": {
+    "frontend": "Laravel Livewire (livewire.min.js saved) behind Cloudflare + GTM — PHP backend",
+    "backend": "PHP/Laravel Livewire app",
+    "database": "NOT CONFIRMED",
+    "cloud": "Cloudflare",
+    "cdn": "Cloudflare",
+    "citations": [
+      "raw/theover-home.html",
+      "raw/theover-livewire.min.js.js"
+    ]
+  },
+  "pricing": {
+    "web": "strings $19/$31/$42/$57/$64 (tier map NOT CONFIRMED)",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "raw/theover-home.html"
+    ]
+  },
+  "product_limits": {
+    "limits": "'Every model's win rate, units, and history are public' (verified-transparency positioning)",
+    "upgrade_triggers": "NOT CONFIRMED",
+    "citation": "raw/theover-home.html"
+  },
+  "data_supply_chain": {
+    "vendors": [
+      "DraftKings/FanDuel strings; arbitrage explainer content on page"
+    ],
+    "citations": [
+      "raw/theover-home.html"
+    ]
+  },
+  "discovered_paths": [
+    "/ (13+ models, Q-Score, Purple Star)"
+  ],
+  "discovery_metadata": {
+    "method": "batch-saved homepage (169KB) + Livewire bundle",
+    "timestamp": "2026-09-08T14:31:22.220713"
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed.",
+    "websocket_endpoints": [],
+    "rate_limits": "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed.",
+    "citations": [
+      "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed."
+    ]
+  }
+}

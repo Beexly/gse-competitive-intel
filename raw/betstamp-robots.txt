@@ -1,0 +1,46 @@
+User-Agent: SemrushBot
+Disallow: /
+
+User-Agent: SiteAuditBot
+Disallow: /
+
+User-Agent: SemrushBot-BA
+Disallow: /
+
+User-Agent: SemrushBot-SI
+Disallow: /
+
+User-Agent: SemrushBot-SWA
+Disallow: /
+
+User-Agent: SemrushBot-CT
+Disallow: /
+
+User-Agent: SplitSignalBot
+Disallow: /
+
+User-Agent: SemrushBot-COUB
+Disallow: /
+
+User-Agent: Amazonbot
+Disallow: /
+
+User-Agent: DataForSeoBot
+Disallow: /
+
+User-Agent: DotBot
+Disallow: /
+
+User-Agent: MJ12bot
+Disallow: /
+
+User-Agent: Wordpress
+Disallow: /
+
+User-Agent: Scrapy
+Disallow: /
+
+User-Agent: *
+Allow: /
+
+Sitemap: https://www.betstamp.com/sitemap.xml

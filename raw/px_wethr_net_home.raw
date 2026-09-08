@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Google Tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HPRQCQ0C40"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HPRQCQ0C40');
+    </script>
+	
+<script>
+            window.wethrUser = {
+            isLoggedIn: false,
+            buttons: [
+                { name: 'Sign In', url: '/login', type: 'default', icon: 'right-to-bracket' },
+                { name: 'Register', url: '/register', type: 'primary', icon: 'user-plus' }
+            ]
+        };
+    </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPRQCQ0C40"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HPRQCQ0C40');
+
+  // Google Ads conversion tracking
+  gtag('config', 'AW-720803606');
+</script>
+
+<!-- X conversion tracking base code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','rbsob');
+</script>
+<!-- End X conversion tracking base code -->
+
+<!-- Ad attribution capture: UTMs + platform click IDs (gclid/gbraid/wbraid,
+     rdt_cid, twclid, fbclid) into the wethr_attr first-party cookie (90 days).
+     Landing page / referrer / timestamp are first-touch; UTM + click-ID fields
+     are last-non-direct-touch. registration.php reads this cookie server-side
+     at signup, no hidden fields needed. -->
+<script>
+(function() {
+    var params = new URLSearchParams(window.location.search);
+    var KEYS = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content',
+                'gclid','gbraid','wbraid','rdt_cid','twclid','fbclid'];
+    var attr = {};
+    try {
+        var m = document.cookie.match('(?:^|; )wethr_attr=([^;]*)');
+        if (m) attr = JSON.parse(decodeURIComponent(m[1])) || {};
+    } catch (e) { attr = {}; }
+
+    var touched = false;
+    KEYS.forEach(function(k) {
+        var v = params.get(k);
+        if (v) { attr[k] = v.slice(0, 250); touched = true; }
+    });
+    // First touch only: landing page, external referrer, timestamp
+    if (!attr.lp) {
+        attr.lp = (location.pathname + location.search).slice(0, 500);
+        attr.ts = Date.now();
+        if (document.referrer && document.referrer.indexOf(location.hostname) === -1) {
+            attr.ref = document.referrer.slice(0, 500);
+        }
+        touched = true;
+    }
+    if (touched) {
+        var d = new Date();
+        d.setTime(d.getTime() + 90 * 24 * 60 * 60 * 1000);
+        document.cookie = 'wethr_attr=' + encodeURIComponent(JSON.stringify(attr)) +
+            ';expires=' + d.toUTCString() + ';path=/;SameSite=Lax';
+    }
+})();
+</script>
+
+<!-- gclid capture (legacy path, kept for existing forms): reads gclid from URL,
+     stores in first-party cookie for 90 days, then auto-injects a hidden gclid
+     field into any form posting to /register -->
+<script>
+(function() {
+    // Capture gclid from URL into cookie
+    var params = new URLSearchParams(window.location.search);
+    var gclid = params.get('gclid');
+    if (gclid) {
+        var d = new Date();
+        d.setTime(d.getTime() + 90 * 24 * 60 * 60 * 1000);
+        document.cookie = 'gclid=' + encodeURIComponent(gclid) + ';expires=' + d.toUTCString() + ';path=/;SameSite=Lax';
+    }
+
+    // Read gclid from cookie
+    var stored = (function() {
+        var m = document.cookie.match('(?:^|; )gclid=([^;]*)');
+        return m ? decodeURIComponent(m[1]) : '';
+    })();
+
+    // Auto-inject hidden gclid field into any form that posts to /register
+    if (stored) {
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('form[action="/register"], form[action*="/register"]').forEach(function(form) {
+                if (!form.querySelector('input[name="gclid"]')) {
+                    var input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.name = 'gclid';
+                    input.value = stored;
+                    form.appendChild(input);
+                }
+            });
+        });
+    }
+})();
+</script>
+
+<!-- Referral code capture: reads ref from URL, stores in first-party cookie for 30 days -->
+<script>
+(function() {
+    var params = new URLSearchParams(window.location.search);
+    var ref = params.get('ref');
+    // First touch: only set if no existing referral cookie
+    if (ref && !document.cookie.match('(?:^|; )referral_code=')) {
+        var d = new Date();
+        d.setTime(d.getTime() + 30 * 24 * 60 * 60 * 1000);
+        document.cookie = 'referral_code=' + encodeURIComponent(ref) + ';expires=' + d.toUTCString() + ';path=/;SameSite=Lax';
+    }
+})();
+</script>
+
+<!-- Raptive: display ads for free users only, blocked on non-content pages -->
+
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#FC5B3F">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Wethr">
+    <link rel="icon" type="image/png" href="/assets/images/favicon-32.png">
+    <link rel="apple-touch-icon" href="/assets/images/ios/Icon-iPhone-180.png">
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Wethr.net is the industry leader in weather market charting and analytics.">
+	<meta name="keywords" content="wethr.net, high temperature markets, kalshi, robinhood, ibkr, interactive brokers, prediction markets, wethr, kmdw, kaus, kden, khou, klax, kmia, knyc, kphl">
+	<meta name="theme-color" content="#FC5B3F">
+	<!-- preload assets -->
+	<link rel="preload" href="/assets/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/inter-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/inter-v12-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/inter-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/css/style.css" as="style">
+	<link rel="preload" href="/scripts/vendors/uikit.min.js" as="script">
+	<link rel="preload" href="/scripts/utilities.min.js" as="script">
+	<link rel="preload" href="/scripts/config-theme.js" as="script">
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<!-- uikit -->
+	<script src="/scripts/vendors/uikit.min.js"></script>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+	<!-- touch icon -->
+	<link rel="stylesheet" href="/assets/css/nav-overrides.css">
+	<title>Wethr.net - Weather Market Analytics</title>
+</head>
+
+<body>
+	<!-- page loader begin -->
+	<div class="page-loader">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<!-- page loader end -->
+	<!-- header begin -->
+	<header style="padding-top: 0px;">
+		<!-- header begin -->
+	<header id="wethr-header">
+		<div class="uk-section uk-padding-remove-vertical">
+			<nav class="uk-navbar-container" data-uk-sticky="animation: uk-animation-slide-top;">
+				<div class="uk-container" data-uk-navbar>
+					<div class="uk-navbar-left">
+						<a class="uk-navbar-item uk-logo" href="https://wethr.net">
+							<img src="/assets/images/wethr-logo.png" alt="logo" width="182" height="54">
+						</a>
+						<ul class="uk-navbar-nav uk-visible@m">
+							<!-- Temperature Markets Mega Menu -->
+							<li>
+								<a href="">Temperature<span data-uk-navbar-parent-icon></span></a>
+								<div class="uk-navbar-dropdown wethr-mega-dropdown">
+									<button type="button" class="wethr-mega-close" id="wethr-mega-close" aria-label="Close menu">
+										<i class="fa-solid fa-xmark" aria-hidden="true"></i>
+									</button>
+									<div class="wethr-markets-inner">
+										<!-- Market search -->
+										<div class="wethr-market-search-wrap">
+											<i class="fa-solid fa-magnifying-glass wethr-market-search-icon"></i>
+											<input type="text" class="wethr-market-search" id="wethr-market-search" placeholder="Search markets…" autocomplete="off" spellcheck="false">
+											<kbd class="wethr-market-search-kbd">ESC</kbd>
+										</div>
+																					<p class="wethr-no-results" id="wethr-no-results">No markets match your search.</p>
+																						<div class="wethr-hourly-strip" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; padding:8px 12px; margin-bottom:12px; background:rgba(252,91,63,0.08); border:1px solid rgba(252,91,63,0.35); border-radius:6px;">
+												<span style="font-weight:700; font-size:0.85rem; color:#FC5B3F;"><i class="fa-solid fa-clock" style="margin-right:6px;"></i>Hourly Markets</span>
+																								<a href="/hourly/kaus" style="font-size:0.85rem; color:#ddd; text-decoration:none; padding:2px 8px; border:1px solid #444; border-radius:12px;">Austin</a>
+																								<a href="/hourly/kdca" style="font-size:0.85rem; color:#ddd; text-decoration:none; padding:2px 8px; border:1px solid #444; border-radius:12px;">Washington</a>
+																								<a href="/hourly/klax" style="font-size:0.85rem; color:#ddd; text-decoration:none; padding:2px 8px; border:1px solid #444; border-radius:12px;">Los Angeles</a>
+																								<a href="/hourly/knyc" style="font-size:0.85rem; color:#ddd; text-decoration:none; padding:2px 8px; border:1px solid #444; border-radius:12px;">New York</a>
+																								<a href="/hourly/kord" style="font-size:0.85rem; color:#ddd; text-decoration:none; padding:2px 8px; border:1px solid #444; border-radius:12px;">Chicago (O&#039;Hare)</a>
+																								<a href="/hourly" style="font-size:0.85rem; color:#FC5B3F; text-decoration:none; margin-left:auto; font-weight:600;">Open Hourly Dashboard <i class="fa-solid fa-arrow-right" style="font-size:0.7rem;"></i></a>
+											</div>
+											<h6 class="wethr-group-heading" style="margin-bottom:8px;">Daily Markets</h6>
+																						<div class="wethr-markets-grid">
+																								<div class="wethr-market-group" style="--col-count: 2;">
+													<h6 class="wethr-group-heading">American Markets</h6>
+													<div class="wethr-market-columns" style="--cols: 2;">
+																												<ul class="uk-nav uk-navbar-dropdown-nav wethr-market-list">
+															<li data-market="atlanta" data-search="Georgia"><a href="/market/atlanta"><span class="wethr-station-code">KATL</span> Atlanta, GA</a></li><li data-market="aurora" data-search="Colorado"><a href="/market/aurora"><span class="wethr-station-code">KBKF</span> Aurora, CO</a></li><li data-market="austin" data-search="Texas"><a href="/market/austin"><span class="wethr-station-code">KAUS</span> Austin, TX</a></li><li data-market="boston" data-search="Massachusetts"><a href="/market/boston"><span class="wethr-station-code">KBOS</span> Boston, MA</a></li><li data-market="charlotte" data-search="North Carolina"><a href="/market/charlotte"><span class="wethr-station-code">KCLT</span> Charlotte, NC</a></li><li data-market="chicago" data-search="Illinois"><a href="/market/chicago"><span class="wethr-station-code">KMDW</span> Chicago, IL</a></li><li data-market="chicagoohare" data-search="Illinois"><a href="/market/chicagoohare"><span class="wethr-station-code">KORD</span> Chicago (O&#039;Hare), IL</a></li><li data-market="dallas" data-search="Texas"><a href="/market/dallas"><span class="wethr-station-code">KDFW</span> Dallas, TX</a></li><li data-market="dallaslove" data-search="Texas"><a href="/market/dallaslove"><span class="wethr-station-code">KDAL</span> Dallas (Love Field), TX</a></li><li data-market="dc" data-search="District of Columbia"><a href="/market/dc"><span class="wethr-station-code">KDCA</span> Washington, DC</a></li><li data-market="denver" data-search="Colorado"><a href="/market/denver"><span class="wethr-station-code">KDEN</span> Denver, CO</a></li><li data-market="detroit" data-search="Michigan"><a href="/market/detroit"><span class="wethr-station-code">KDTW</span> Detroit, MI</a></li><li data-market="houston" data-search="Texas"><a href="/market/houston"><span class="wethr-station-code">KHOU</span> Houston, TX</a></li><li data-market="houstoniah" data-search="Texas"><a href="/market/houstoniah"><span class="wethr-station-code">KIAH</span> Houston (Intercontinental), TX</a></li><li data-market="jacksonville" data-search="Florida"><a href="/market/jacksonville"><span class="wethr-station-code">KJAX</span> Jacksonville, FL</a></li><li data-market="laguardia" data-search="New York"><a href="/market/laguardia"><span class="wethr-station-code">KLGA</span> LaGuardia, NY</a></li><li data-market="lasvegas" data-search="Nevada"><a href="/market/lasvegas"><span class="wethr-station-code">KLAS</span> Las Vegas, NV</a></li>														</ul>
+																												<ul class="uk-nav uk-navbar-dropdown-nav wethr-market-list">
+															<li data-market="losangeles" data-search="California"><a href="/market/losangeles"><span class="wethr-station-code">KLAX</span> Los Angeles, CA</a></li><li data-market="louisville" data-search="Kentucky"><a href="/market/louisville"><span class="wethr-station-code">KSDF</span> Louisville, KY</a></li><li data-market="miami" data-search="Florida"><a href="/market/miami"><span class="wethr-station-code">KMIA</span> Miami, FL</a></li><li data-market="minneapolis" data-search="Minnesota"><a href="/market/minneapolis"><span class="wethr-station-code">KMSP</span> Minneapolis, MN</a></li><li data-market="nashville" data-search="Tennessee"><a href="/market/nashville"><span class="wethr-station-code">KBNA</span> Nashville, TN</a></li><li data-market="newark" data-search="New Jersey"><a href="/market/newark"><span class="wethr-station-code">KEWR</span> Newark, NJ</a></li><li data-market="neworleans" data-search="Louisiana"><a href="/market/neworleans"><span class="wethr-station-code">KMSY</span> New Orleans, LA</a></li><li data-market="newyork" data-search="New York"><a href="/market/newyork"><span class="wethr-station-code">KNYC</span> Central Park, NY</a></li><li data-market="oklahomacity" data-search="Oklahoma"><a href="/market/oklahomacity"><span class="wethr-station-code">KOKC</span> Oklahoma City, OK</a></li><li data-market="philadelphia" data-search="Pennsylvania"><a href="/market/philadelphia"><span class="wethr-station-code">KPHL</span> Philadelphia, PA</a></li><li data-market="phoenix" data-search="Arizona"><a href="/market/phoenix"><span class="wethr-station-code">KPHX</span> Phoenix, AZ</a></li><li data-market="sanantonio" data-search="Texas"><a href="/market/sanantonio"><span class="wethr-station-code">KSAT</span> San Antonio, TX</a></li><li data-market="sandiego" data-search="California"><a href="/market/sandiego"><span class="wethr-station-code">KSAN</span> San Diego, CA</a></li><li data-market="sanfrancisco" data-search="California"><a href="/market/sanfrancisco"><span class="wethr-station-code">KSFO</span> San Francisco, CA</a></li><li data-market="seattle" data-search="Washington"><a href="/market/seattle"><span class="wethr-station-code">KSEA</span> Seattle, WA</a></li><li data-market="tampa" data-search="Florida"><a href="/market/tampa"><span class="wethr-station-code">KTPA</span> Tampa, FL</a></li><li data-market="trenton" data-search="New Jersey"><a href="/market/trenton"><span class="wethr-station-code">KTTN</span> Trenton, NJ</a></li>														</ul>
+																											</div>
+												</div>
+																																				<div class="wethr-market-group wethr-intl-group" style="--col-count: 3;">
+													<h6 class="wethr-group-heading">International</h6>
+													<div class="wethr-market-columns wethr-intl-columns" style="--cols: 3;">
+																												<ul class="uk-nav uk-navbar-dropdown-nav wethr-market-list">
+															<li data-market="amsterdam" data-search="Netherlands"><a href="/market/amsterdam"><span class="wethr-station-code">EHAM</span> Amsterdam, NLD</a></li><li data-market="ankara" data-search="Turkey"><a href="/market/ankara"><span class="wethr-station-code">LTAC</span> Ankara, TUR</a></li><li data-market="beijing" data-search="China"><a href="/market/beijing"><span class="wethr-station-code">ZBAA</span> Beijing, CHN</a></li><li data-market="berlin" data-search="Germany"><a href="/market/berlin"><span class="wethr-station-code">EDDB</span> Berlin, DEU</a></li><li data-market="brussels" data-search=""><a href="/market/brussels"><span class="wethr-station-code">EBBR</span> Brussels, BEL</a></li><li data-market="buenosaires" data-search="Argentina"><a href="/market/buenosaires"><span class="wethr-station-code">SAEZ</span> Buenos Aires, ARG</a></li><li data-market="busan" data-search="South Korea"><a href="/market/busan"><span class="wethr-station-code">RKPK</span> Busan, KOR</a></li><li data-market="capetown" data-search=""><a href="/market/capetown"><span class="wethr-station-code">FACT</span> Cape Town, ZAF</a></li><li data-market="chengdu" data-search="China"><a href="/market/chengdu"><span class="wethr-station-code">ZUUU</span> Chengdu, CHN</a></li><li data-market="chongqing" data-search="China"><a href="/market/chongqing"><span class="wethr-station-code">ZUCK</span> Chongqing, CHN</a></li><li data-market="dubai" data-search=""><a href="/market/dubai"><span class="wethr-station-code">OMDB</span> Dubai, ARE</a></li><li data-market="frankfurt" data-search="Germany"><a href="/market/frankfurt"><span class="wethr-station-code">EDDF</span> Frankfurt, DEU</a></li><li data-market="geneva" data-search=""><a href="/market/geneva"><span class="wethr-station-code">LSGG</span> Geneva, CHE</a></li><li data-market="guangzhou" data-search="China"><a href="/market/guangzhou"><span class="wethr-station-code">ZGGG</span> Guangzhou, CHN</a></li><li data-market="heathrow" data-search="United Kingdom"><a href="/market/heathrow"><span class="wethr-station-code">EGLL</span> Heathrow, UK</a></li><li data-market="helsinki" data-search="Finland"><a href="/market/helsinki"><span class="wethr-station-code">EFHK</span> Helsinki, FIN</a></li><li data-market="hongkong" data-search="Hong Kong"><a href="/market/hongkong"><span class="wethr-station-code">VHHH</span> Hong Kong Intl, HKG</a></li><li data-market="hongkongobs" data-search="Hong Kong"><a href="/market/hongkongobs"><span class="wethr-station-code">VHKO</span> Hong Kong, HKG</a></li>														</ul>
+																												<ul class="uk-nav uk-navbar-dropdown-nav wethr-market-list">
+															<li data-market="istanbul" data-search="Turkey"><a href="/market/istanbul"><span class="wethr-station-code">LTFM</span> Istanbul, TUR</a></li><li data-market="jeddah" data-search=""><a href="/market/jeddah"><span class="wethr-station-code">OEJN</span> Jeddah, SAU</a></li><li data-market="jinan" data-search="China"><a href="/market/jinan"><span class="wethr-station-code">ZSJN</span> Jinan, CHN</a></li><li data-market="karachi" data-search=""><a href="/market/karachi"><span class="wethr-station-code">OPKC</span> Karachi, PAK</a></li><li data-market="kualalumpur" data-search="Malaysia"><a href="/market/kualalumpur"><span class="wethr-station-code">WMKK</span> Kuala Lumpur, MYS</a></li><li data-market="london" data-search="United Kingdom"><a href="/market/london"><span class="wethr-station-code">EGLC</span> London, UK</a></li><li data-market="lucknow" data-search="India"><a href="/market/lucknow"><span class="wethr-station-code">VILK</span> Lucknow, IND</a></li><li data-market="madrid" data-search="Spain"><a href="/market/madrid"><span class="wethr-station-code">LEMD</span> Madrid, ESP</a></li><li data-market="manila" data-search=""><a href="/market/manila"><span class="wethr-station-code">RPLL</span> Manila, PHL</a></li><li data-market="mexicocity" data-search="Mexico"><a href="/market/mexicocity"><span class="wethr-station-code">MMMX</span> Mexico City, MEX</a></li><li data-market="milan" data-search="Italy"><a href="/market/milan"><span class="wethr-station-code">LIMC</span> Milan, ITA</a></li><li data-market="montreal" data-search="Canada"><a href="/market/montreal"><span class="wethr-station-code">CYUL</span> Montreal, CAN</a></li><li data-market="moscow" data-search="Russia"><a href="/market/moscow"><span class="wethr-station-code">UUWW</span> Moscow, RUS</a></li><li data-market="mumbai" data-search="India"><a href="/market/mumbai"><span class="wethr-station-code">VABB</span> Mumbai, IND</a></li><li data-market="munich" data-search="Germany"><a href="/market/munich"><span class="wethr-station-code">EDDM</span> Munich, DEU</a></li><li data-market="panamacity" data-search=""><a href="/market/panamacity"><span class="wethr-station-code">MPMG</span> Panama City, PAN</a></li><li data-market="paris" data-search="France"><a href="/market/paris"><span class="wethr-station-code">LFPG</span> Paris, FRA</a></li><li data-market="parislb" data-search="France"><a href="/market/parislb"><span class="wethr-station-code">LFPB</span> Paris (LB), FRA</a></li>														</ul>
+																												<ul class="uk-nav uk-navbar-dropdown-nav wethr-market-list">
+															<li data-market="parisorly" data-search="France"><a href="/market/parisorly"><span class="wethr-station-code">LFPO</span> Paris (Orly), FRA</a></li><li data-market="qingdao" data-search="China"><a href="/market/qingdao"><span class="wethr-station-code">ZSQD</span> Qingdao, CHN</a></li><li data-market="saopaulo" data-search="Brazil"><a href="/market/saopaulo"><span class="wethr-station-code">SBGR</span> São Paulo, BRA</a></li><li data-market="seoul" data-search="South Korea"><a href="/market/seoul"><span class="wethr-station-code">RKSI</span> Seoul, KOR</a></li><li data-market="shanghai" data-search="China"><a href="/market/shanghai"><span class="wethr-station-code">ZSPD</span> Shanghai, CHN</a></li><li data-market="shenzhen" data-search="China"><a href="/market/shenzhen"><span class="wethr-station-code">ZGSZ</span> Shenzhen, CHN</a></li><li data-market="singapore" data-search="Singapore"><a href="/market/singapore"><span class="wethr-station-code">WSSS</span> Singapore, SGP</a></li><li data-market="sydney" data-search="Australia"><a href="/market/sydney"><span class="wethr-station-code">YSSY</span> Sydney, AUS</a></li><li data-market="taipei" data-search="Taiwan"><a href="/market/taipei"><span class="wethr-station-code">RCSS</span> Taipei, TWN</a></li><li data-market="telaviv" data-search="Israel"><a href="/market/telaviv"><span class="wethr-station-code">LLBG</span> Tel Aviv, ISR</a></li><li data-market="tokyo" data-search="Japan"><a href="/market/tokyo"><span class="wethr-station-code">RJTT</span> Tokyo, JPN</a></li><li data-market="toronto" data-search="Canada"><a href="/market/toronto"><span class="wethr-station-code">CYYZ</span> Toronto, CAN</a></li><li data-market="vancouver" data-search="Canada"><a href="/market/vancouver"><span class="wethr-station-code">CYHC</span> Vancouver, CAN</a></li><li data-market="warsaw" data-search="Poland"><a href="/market/warsaw"><span class="wethr-station-code">EPWA</span> Warsaw, POL</a></li><li data-market="wellington" data-search="New Zealand"><a href="/market/wellington"><span class="wethr-station-code">NZWN</span> Wellington, NZL</a></li><li data-market="wuhan" data-search="China"><a href="/market/wuhan"><span class="wethr-station-code">ZHHH</span> Wuhan, CHN</a></li><li data-market="zhengzhou" data-search="China"><a href="/market/zhengzhou"><span class="wethr-station-code">ZHCC</span> Zhengzhou, CHN</a></li>														</ul>
+																											</div>
+												</div>
+																							</div>
+																			</div>
+								</div>
+							</li>
+							<!-- Precipitation Dropdown -->
+							<li>
+								<a href="">Precipitation<span data-uk-navbar-parent-icon></span></a>
+								<div class="uk-navbar-dropdown wethr-sub-dropdown">
+									<ul class="uk-nav uk-navbar-dropdown-nav">
+										<li><a href="/rain"><i class="fa-solid fa-cloud-rain" style="margin-right:6px;"></i>Monthly Markets</a></li>
+										<li><a href="/daily-rain"><i class="fa-solid fa-droplet" style="margin-right:6px;"></i>Daily Markets</a></li>
+									</ul>
+								</div>
+							</li>
+							<!-- Other Climate Dropdown -->
+							<li>
+								<a href="">Other Climate<span data-uk-navbar-parent-icon></span></a>
+								<div class="uk-navbar-dropdown wethr-sub-dropdown">
+									<ul class="uk-nav uk-navbar-dropdown-nav">
+										<li><a href="https://wethr.net/tornadoes"><i class="fa-solid fa-tornado" style="margin-right:6px;"></i>Tornadoes</a></li>
+									</ul>
+								</div>
+							</li>
+							<!-- Tools Dropdown -->
+							<li>
+								<a href="">Tools<span data-uk-navbar-parent-icon></span></a>
+								<div class="uk-navbar-dropdown wethr-sub-dropdown">
+									<ul class="uk-nav uk-navbar-dropdown-nav">
+										<li><a href="/metars/"><i class="fa-solid fa-tower-observation" style="margin-right:6px;"></i>METAR Search</a></li>
+										<li><a href="/converter"><i class="fa-solid fa-temperature-half" style="margin-right:6px;"></i>ASOS C° to F° Converter</a></li>
+										<li><a href="/time-series-converter"><i class="fa-solid fa-arrow-right-arrow-left" style="margin-right:6px;"></i>Time Series Converter</a></li>
+										<li><a href="/multi"><i class="fa-solid fa-table-cells" style="margin-right:6px;"></i>Temp Market Multi-View</a></li>
+										<li><a href="/map" target="_blank"><i class="fa-solid fa-map-location-dot" style="margin-right:6px;"></i>Temperature Map</a></li>
+										<li><a href="/model-explorer"><i class="fa-solid fa-magnifying-glass-chart" style="margin-right:6px;"></i>Weather Model Analyzer</a></li>
+										<li><a href="/models"><i class="fa-solid fa-chart-area" style="margin-right:6px;"></i>Weather Model Viewer</a></li>
+										<li><a href="/accuracy"><i class="fa-solid fa-bullseye" style="margin-right:6px;"></i>Model Accuracy</a></li>
+										<li><a href="/analogs"><i class="fa-solid fa-clone" style="margin-right:6px;"></i>Similar Days Tool</a></li>
+										<li><a href="/notifier" onclick="return wethrOpenNotifierPopup(event);"><i class="fa-solid fa-bell" style="margin-right:6px;"></i>High/Low Notifier</a></li>
+									</ul>
+								</div>
+							</li>
+							<!-- Education Dropdown -->
+							<li>
+								<a href="">Education<span data-uk-navbar-parent-icon></span></a>
+								<div class="uk-navbar-dropdown wethr-sub-dropdown">
+									<ul class="uk-nav uk-navbar-dropdown-nav">
+										<li><a href="/edu/markets">Weather Market Directory</a></li>
+										<li><a href="/edu/wethr-chart">Wethr.net Chart Guide</a></li>
+										<li><a href="/edu/weather-market-basics">Weather Market Basics</a></li>
+										<li><a href="/edu/the-temperature">"The Temperature"</a></li>
+										<li><a href="/edu/market-bots">Beware of Bots</a></li>
+										<li><a href="/edu/nws-data-guide">NWS Data Guide</a></li>
+										<li><a href="/edu/city-resources">City Specific Resources</a></li>
+										<li><a href="/edu/trading-guide">Basic Trading Guide</a></li>
+										<li><a href="/market-resolution">Market Resolution</a></li>
+										<li><a href="/edu/weather-prediction-markets">Weather Prediction Markets</a></li>
+										<li><a href="/model-schedule">Model Schedule</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="https://wethr.net/edu/markets">Market Directory</a></li>
+						</ul>
+					</div>
+					<div class="uk-navbar-right">
+						<div class="uk-navbar-item uk-visible@m in-optional-nav">
+															<a href="/login?redirect=%2F" class="wethr-signin-btn">Sign In</a>
+								<a href="/register" class="wethr-register-btn">Register</a>
+													</div>
+						<!-- Mobile hamburger toggle -->
+						<a class="uk-navbar-toggle uk-hidden@m wethr-hamburger" data-uk-toggle="target: #wethr-mobile-nav" aria-label="Open menu">
+							<span data-uk-navbar-toggle-icon></span>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- header end -->
+
+	<!-- Mobile Off-Canvas Navigation -->
+	<div id="wethr-mobile-nav" data-uk-offcanvas="overlay: true; flip: true" class="uk-offcanvas">
+		<div class="uk-offcanvas-bar wethr-offcanvas-bar">
+			<button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+			<div class="wethr-mobile-logo">
+				<a href="https://wethr.net">
+					<img src="/assets/images/wethr-logo.png" alt="logo" width="140" height="42">
+				</a>
+			</div>
+
+			<ul class="uk-nav-default uk-nav-parent-icon wethr-mobile-nav-list" data-uk-nav>
+				<!-- Temperature Markets -->
+				<li class="uk-parent">
+					<a href="#">Temperature <i class="fa-solid fa-chevron-down wethr-expand-hint"></i></a>
+					<ul class="uk-nav-sub wethr-mobile-markets">
+												<li class="wethr-mobile-group-label">Hourly Markets</li>
+						<li class="wethr-mobile-market-grid">
+							<div class="wethr-mobile-2col">
+																<a href="/hourly/kaus"><span class="wethr-station-code">KAUS</span> Austin</a>
+																<a href="/hourly/kdca"><span class="wethr-station-code">KDCA</span> Washington</a>
+																<a href="/hourly/klax"><span class="wethr-station-code">KLAX</span> Los Angeles</a>
+																<a href="/hourly/knyc"><span class="wethr-station-code">KNYC</span> New York</a>
+																<a href="/hourly/kord"><span class="wethr-station-code">KORD</span> Chicago (O&#039;Hare)</a>
+																<a href="/hourly" style="color:#FC5B3F; font-weight:600;"><i class="fa-solid fa-clock" style="margin-right:4px;"></i>Full Dashboard</a>
+							</div>
+						</li>
+												<li class="wethr-mobile-group-label">Daily Markets</li>
+																				<li class="wethr-mobile-group-label">American</li>
+							<li class="wethr-mobile-market-grid">
+								<div class="wethr-mobile-2col">
+									<div class="wethr-mobile-col">
+										<a href="/market/atlanta" data-market="atlanta"><span class="wethr-station-code">KATL</span> Atlanta, GA</a><a href="/market/aurora" data-market="aurora"><span class="wethr-station-code">KBKF</span> Aurora, CO</a><a href="/market/austin" data-market="austin"><span class="wethr-station-code">KAUS</span> Austin, TX</a><a href="/market/boston" data-market="boston"><span class="wethr-station-code">KBOS</span> Boston, MA</a><a href="/market/charlotte" data-market="charlotte"><span class="wethr-station-code">KCLT</span> Charlotte, NC</a><a href="/market/chicago" data-market="chicago"><span class="wethr-station-code">KMDW</span> Chicago, IL</a><a href="/market/chicagoohare" data-market="chicagoohare"><span class="wethr-station-code">KORD</span> Chicago (ORD)</a><a href="/market/dallas" data-market="dallas"><span class="wethr-station-code">KDFW</span> Dallas, TX</a><a href="/market/dallaslove" data-market="dallaslove"><span class="wethr-station-code">KDAL</span> Dallas (DAL)</a><a href="/market/dc" data-market="dc"><span class="wethr-station-code">KDCA</span> Washington, DC</a><a href="/market/denver" data-market="denver"><span class="wethr-station-code">KDEN</span> Denver, CO</a><a href="/market/detroit" data-market="detroit"><span class="wethr-station-code">KDTW</span> Detroit, MI</a><a href="/market/houston" data-market="houston"><span class="wethr-station-code">KHOU</span> Houston, TX</a><a href="/market/houstoniah" data-market="houstoniah"><span class="wethr-station-code">KIAH</span> Houston (IAH)</a><a href="/market/jacksonville" data-market="jacksonville"><span class="wethr-station-code">KJAX</span> Jacksonville, FL</a><a href="/market/laguardia" data-market="laguardia"><span class="wethr-station-code">KLGA</span> New York (LGA)</a><a href="/market/lasvegas" data-market="lasvegas"><span class="wethr-station-code">KLAS</span> Las Vegas, NV</a>									</div>
+									<div class="wethr-mobile-col">
+										<a href="/market/losangeles" data-market="losangeles"><span class="wethr-station-code">KLAX</span> Los Angeles, CA</a><a href="/market/louisville" data-market="louisville"><span class="wethr-station-code">KSDF</span> Louisville, KY</a><a href="/market/miami" data-market="miami"><span class="wethr-station-code">KMIA</span> Miami, FL</a><a href="/market/minneapolis" data-market="minneapolis"><span class="wethr-station-code">KMSP</span> Minneapolis, MN</a><a href="/market/nashville" data-market="nashville"><span class="wethr-station-code">KBNA</span> Nashville, TN</a><a href="/market/newark" data-market="newark"><span class="wethr-station-code">KEWR</span> Newark, NJ</a><a href="/market/neworleans" data-market="neworleans"><span class="wethr-station-code">KMSY</span> New Orleans, LA</a><a href="/market/newyork" data-market="newyork"><span class="wethr-station-code">KNYC</span> New York (CP)</a><a href="/market/oklahomacity" data-market="oklahomacity"><span class="wethr-station-code">KOKC</span> Oklahoma City</a><a href="/market/philadelphia" data-market="philadelphia"><span class="wethr-station-code">KPHL</span> Philadelphia, PA</a><a href="/market/phoenix" data-market="phoenix"><span class="wethr-station-code">KPHX</span> Phoenix, AZ</a><a href="/market/sanantonio" data-market="sanantonio"><span class="wethr-station-code">KSAT</span> San Antonio, TX</a><a href="/market/sandiego" data-market="sandiego"><span class="wethr-station-code">KSAN</span> San Diego, CA</a><a href="/market/sanfrancisco" data-market="sanfrancisco"><span class="wethr-station-code">KSFO</span> San Francisco, CA</a><a href="/market/seattle" data-market="seattle"><span class="wethr-station-code">KSEA</span> Seattle, WA</a><a href="/market/tampa" data-market="tampa"><span class="wethr-station-code">KTPA</span> Tampa, FL</a><a href="/market/trenton" data-market="trenton"><span class="wethr-station-code">KTTN</span> Trenton, NJ</a>									</div>
+								</div>
+							</li>
+																					<li class="wethr-mobile-group-label">International</li>
+							<li class="wethr-mobile-market-grid">
+								<div class="wethr-mobile-2col">
+									<div class="wethr-mobile-col">
+										<a href="/market/amsterdam" data-market="amsterdam"><span class="wethr-station-code">EHAM</span> Amsterdam, NLD</a><a href="/market/ankara" data-market="ankara"><span class="wethr-station-code">LTAC</span> Ankara, TUR</a><a href="/market/beijing" data-market="beijing"><span class="wethr-station-code">ZBAA</span> Beijing, CHN</a><a href="/market/berlin" data-market="berlin"><span class="wethr-station-code">EDDB</span> Berlin, DEU</a><a href="/market/brussels" data-market="brussels"><span class="wethr-station-code">EBBR</span> Brussels, BEL</a><a href="/market/buenosaires" data-market="buenosaires"><span class="wethr-station-code">SAEZ</span> Buenos Aires, ARG</a><a href="/market/busan" data-market="busan"><span class="wethr-station-code">RKPK</span> Busan, KOR</a><a href="/market/capetown" data-market="capetown"><span class="wethr-station-code">FACT</span> Cape Town, ZAF</a><a href="/market/chengdu" data-market="chengdu"><span class="wethr-station-code">ZUUU</span> Chengdu, CHN</a><a href="/market/chongqing" data-market="chongqing"><span class="wethr-station-code">ZUCK</span> Chongqing, CHN</a><a href="/market/dubai" data-market="dubai"><span class="wethr-station-code">OMDB</span> Dubai, ARE</a><a href="/market/frankfurt" data-market="frankfurt"><span class="wethr-station-code">EDDF</span> Frankfurt, DEU</a><a href="/market/geneva" data-market="geneva"><span class="wethr-station-code">LSGG</span> Geneva, CHE</a><a href="/market/guangzhou" data-market="guangzhou"><span class="wethr-station-code">ZGGG</span> Guangzhou, CHN</a><a href="/market/heathrow" data-market="heathrow"><span class="wethr-station-code">EGLL</span> Heathrow, UK</a><a href="/market/helsinki" data-market="helsinki"><span class="wethr-station-code">EFHK</span> Helsinki, FIN</a><a href="/market/hongkong" data-market="hongkong"><span class="wethr-station-code">VHHH</span> Hong Kong Intl, HKG</a><a href="/market/hongkongobs" data-market="hongkongobs"><span class="wethr-station-code">VHKO</span> Hong Kong, HKG</a><a href="/market/istanbul" data-market="istanbul"><span class="wethr-station-code">LTFM</span> Istanbul, TUR</a><a href="/market/jeddah" data-market="jeddah"><span class="wethr-station-code">OEJN</span> Jeddah, SAU</a><a href="/market/jinan" data-market="jinan"><span class="wethr-station-code">ZSJN</span> Jinan, CHN</a><a href="/market/karachi" data-market="karachi"><span class="wethr-station-code">OPKC</span> Karachi, PAK</a><a href="/market/kualalumpur" data-market="kualalumpur"><span class="wethr-station-code">WMKK</span> Kuala Lumpur, MYS</a><a href="/market/london" data-market="london"><span class="wethr-station-code">EGLC</span> London, UK</a><a href="/market/lucknow" data-market="lucknow"><span class="wethr-station-code">VILK</span> Lucknow, IND</a><a href="/market/madrid" data-market="madrid"><span class="wethr-station-code">LEMD</span> Madrid, ESP</a><a href="/market/manila" data-market="manila"><span class="wethr-station-code">RPLL</span> Manila, PHL</a>									</div>
+									<div class="wethr-mobile-col">
+										<a href="/market/mexicocity" data-market="mexicocity"><span class="wethr-station-code">MMMX</span> Mexico City, MEX</a><a href="/market/milan" data-market="milan"><span class="wethr-station-code">LIMC</span> Milan, ITA</a><a href="/market/montreal" data-market="montreal"><span class="wethr-station-code">CYUL</span> Montreal, CAN</a><a href="/market/moscow" data-market="moscow"><span class="wethr-station-code">UUWW</span> Moscow, RUS</a><a href="/market/mumbai" data-market="mumbai"><span class="wethr-station-code">VABB</span> Mumbai, IND</a><a href="/market/munich" data-market="munich"><span class="wethr-station-code">EDDM</span> Munich, DEU</a><a href="/market/panamacity" data-market="panamacity"><span class="wethr-station-code">MPMG</span> Panama City, PAN</a><a href="/market/paris" data-market="paris"><span class="wethr-station-code">LFPG</span> Paris, FRA</a><a href="/market/parislb" data-market="parislb"><span class="wethr-station-code">LFPB</span> Paris (LB), FRA</a><a href="/market/parisorly" data-market="parisorly"><span class="wethr-station-code">LFPO</span> Paris (Orly), FRA</a><a href="/market/qingdao" data-market="qingdao"><span class="wethr-station-code">ZSQD</span> Qingdao, CHN</a><a href="/market/saopaulo" data-market="saopaulo"><span class="wethr-station-code">SBGR</span> São Paulo, BRA</a><a href="/market/seoul" data-market="seoul"><span class="wethr-station-code">RKSI</span> Seoul, KOR</a><a href="/market/shanghai" data-market="shanghai"><span class="wethr-station-code">ZSPD</span> Shanghai, CHN</a><a href="/market/shenzhen" data-market="shenzhen"><span class="wethr-station-code">ZGSZ</span> Shenzhen, CHN</a><a href="/market/singapore" data-market="singapore"><span class="wethr-station-code">WSSS</span> Singapore, SGP</a><a href="/market/sydney" data-market="sydney"><span class="wethr-station-code">YSSY</span> Sydney, AUS</a><a href="/market/taipei" data-market="taipei"><span class="wethr-station-code">RCSS</span> Taipei, TWN</a><a href="/market/telaviv" data-market="telaviv"><span class="wethr-station-code">LLBG</span> Tel Aviv, ISR</a><a href="/market/tokyo" data-market="tokyo"><span class="wethr-station-code">RJTT</span> Tokyo, JPN</a><a href="/market/toronto" data-market="toronto"><span class="wethr-station-code">CYYZ</span> Toronto, CAN</a><a href="/market/vancouver" data-market="vancouver"><span class="wethr-station-code">CYHC</span> Vancouver, CAN</a><a href="/market/warsaw" data-market="warsaw"><span class="wethr-station-code">EPWA</span> Warsaw, POL</a><a href="/market/wellington" data-market="wellington"><span class="wethr-station-code">NZWN</span> Wellington, NZL</a><a href="/market/wuhan" data-market="wuhan"><span class="wethr-station-code">ZHHH</span> Wuhan, CHN</a><a href="/market/zhengzhou" data-market="zhengzhou"><span class="wethr-station-code">ZHCC</span> Zhengzhou, CHN</a>									</div>
+								</div>
+							</li>
+																		</ul>
+				</li>
+				<!-- Precipitation -->
+				<li class="uk-parent">
+					<a href="#">Precipitation <i class="fa-solid fa-chevron-down wethr-expand-hint"></i></a>
+					<ul class="uk-nav-sub">
+						<li><a href="/rain"><i class="fa-solid fa-cloud-rain" style="margin-right:6px;"></i>Monthly Markets</a></li>
+						<li><a href="/daily-rain"><i class="fa-solid fa-droplet" style="margin-right:6px;"></i>Daily Markets</a></li>
+					</ul>
+				</li>
+				<!-- Other Climate -->
+				<li class="uk-parent">
+					<a href="#">Other Climate <i class="fa-solid fa-chevron-down wethr-expand-hint"></i></a>
+					<ul class="uk-nav-sub">
+						<li><a href="https://wethr.net/tornadoes"><i class="fa-solid fa-tornado" style="margin-right:6px;"></i>Tornadoes</a></li>
+					</ul>
+				</li>
+				<!-- Tools -->
+				<li class="uk-parent">
+					<a href="#">Tools <i class="fa-solid fa-chevron-down wethr-expand-hint"></i></a>
+					<ul class="uk-nav-sub">
+						<li><a href="/metars/"><i class="fa-solid fa-tower-observation" style="margin-right:6px;"></i>METAR Search</a></li>
+						<li><a href="/converter"><i class="fa-solid fa-temperature-half" style="margin-right:6px;"></i>ASOS C° to F° Converter</a></li>
+						<li><a href="/time-series-converter"><i class="fa-solid fa-arrow-right-arrow-left" style="margin-right:6px;"></i>Time Series Converter</a></li>
+						<li><a href="/multi"><i class="fa-solid fa-table-cells" style="margin-right:6px;"></i>Temp Market Multi-View</a></li>
+						<li><a href="/map"><i class="fa-solid fa-map-location-dot" style="margin-right:6px;"></i>Temperature Map</a></li>
+						<li><a href="/model-explorer"><i class="fa-solid fa-magnifying-glass-chart" style="margin-right:6px;"></i>Weather Model Analyzer</a></li>
+						<li><a href="/models"><i class="fa-solid fa-chart-area" style="margin-right:6px;"></i>Weather Model Viewer</a></li>
+						<li><a href="/accuracy"><i class="fa-solid fa-bullseye" style="margin-right:6px;"></i>Model Accuracy</a></li>
+						<li><a href="/analogs"><i class="fa-solid fa-clone" style="margin-right:6px;"></i>Similar Days Tool</a></li>
+						<li><a href="/notifier" onclick="return wethrOpenNotifierPopup(event);"><i class="fa-solid fa-bell" style="margin-right:6px;"></i>High/Low Notifier</a></li>
+					</ul>
+				</li>
+				<!-- Education -->
+				<li class="uk-parent">
+					<a href="#">Education <i class="fa-solid fa-chevron-down wethr-expand-hint"></i></a>
+					<ul class="uk-nav-sub">
+						<li><a href="/edu/markets">Weather Market Directory</a></li>
+						<li><a href="/edu/wethr-chart">Wethr.net Chart Guide</a></li>
+						<li><a href="/edu/weather-market-basics">Weather Market Basics</a></li>
+						<li><a href="/edu/the-temperature">"The Temperature"</a></li>
+						<li><a href="/edu/market-bots">Beware of Bots</a></li>
+						<li><a href="/edu/nws-data-guide">NWS Data Guide</a></li>
+						<li><a href="/edu/city-resources">City Specific Resources</a></li>
+						<li><a href="/edu/trading-guide">Basic Trading Guide</a></li>
+						<li><a href="/market-resolution">Market Resolution</a></li>
+						<li><a href="/edu/weather-prediction-markets">Weather Prediction Markets Guide</a></li>
+						<li><a href="/model-schedule">Model Schedule</a></li>
+					</ul>
+				</li>
+				<li><a href="https://wethr.net/edu/markets">Market Directory</a></li>
+				<li class="uk-nav-divider"></li>
+									<li><a href="/login?redirect=%2F"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a></li>
+					<li><a href="/register"><i class="fa-solid fa-user-plus"></i> Register</a></li>
+							</ul>
+		</div>
+	</div>
+
+	<!-- Hide legacy mobile nav -->
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		document.querySelectorAll('.uk-navbar-toggle.uk-hidden\\@m').forEach(function(el) {
+			if (!el.classList.contains('wethr-hamburger')) {
+				el.style.display = 'none';
+			}
+		});
+		var legacyNav = document.querySelector('.in-mobile-nav');
+		if (legacyNav) legacyNav.style.display = 'none';
+		var legacyModal = document.getElementById('modal-full');
+		if (legacyModal) legacyModal.style.display = 'none';
+	});
+	</script>
+
+<!-- Temperature Markets search filter -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+	var searchInput = document.getElementById('wethr-market-search');
+	var noResults   = document.getElementById('wethr-no-results');
+	var dropdown    = document.querySelector('.wethr-mega-dropdown');
+	if (!searchInput || !dropdown) return;
+
+	// Gather all market <li> elements with their searchable text
+	var items = [];
+	dropdown.querySelectorAll('li[data-market]').forEach(function(li) {
+		var a = li.querySelector('a');
+		if (!a) return;
+		var extra = li.getAttribute('data-search') || '';
+		items.push({
+			el: li,
+			href: a.getAttribute('href'),
+			text: ((a.textContent || '') + ' ' + extra).toLowerCase()
+		});
+	});
+
+	// Group headings & columns to hide when empty
+	var groups = dropdown.querySelectorAll('.wethr-market-group, .wethr-intl-group');
+	var visibleItems = [];
+
+	function filterMarkets() {
+		var query = searchInput.value.toLowerCase().trim();
+		visibleItems = [];
+
+		items.forEach(function(item) {
+			var match = !query || item.text.indexOf(query) !== -1;
+			item.el.style.display = match ? '' : 'none';
+			if (match) visibleItems.push(item);
+		});
+
+		// Toggle reflow mode — display:contents on lists so items fill the grid
+		dropdown.classList.toggle('wethr-searching', !!query);
+
+		// Hide group headings if all their children are hidden
+		groups.forEach(function(group) {
+			var hasVisible = false;
+			group.querySelectorAll('li[data-market]').forEach(function(li) {
+				if (li.style.display !== 'none') hasVisible = true;
+			});
+			group.style.display = hasVisible ? '' : 'none';
+		});
+
+		// Show "no results" message
+		if (noResults) {
+			noResults.style.display = (!visibleItems.length && query) ? '' : 'none';
+		}
+	}
+
+	searchInput.addEventListener('input', filterMarkets);
+
+	// Enter key navigates to the sole visible result
+	searchInput.addEventListener('keydown', function(e) {
+		if (e.key === 'Enter' && visibleItems.length === 1) {
+			e.preventDefault();
+			window.location.href = visibleItems[0].href;
+		}
+	});
+
+	// Auto-focus search when dropdown opens
+	if (typeof UIkit !== 'undefined') {
+		// Helper: hide a dropdown that's been locked open by makeClickOnly().
+		// makeClickOnly() blocks ALL hide attempts unless the _wethrAllowHide
+		// flag is set first — so any code that needs to close one of these
+		// dropdowns programmatically must go through this helper.
+		function safeHideDropdown(dropdownEl) {
+			if (!dropdownEl) return;
+			var drop = UIkit.drop(dropdownEl);
+			if (!drop) return;
+			dropdownEl._wethrAllowHide = true;
+			drop.hide(false);
+		}
+
+		// Convert ALL navbar dropdowns from hover-driven to fully click-driven:
+		//   • Hover does NOT open them (blocked in beforeshow).
+		//   • Hover/mouse-leave does NOT close them (blocked in beforehide).
+		//   • Only an explicit click on the toggle, an outside click, the X
+		//     button, or the ESC key (in the search field) can close them.
+		function makeClickOnly(dropdownEl) {
+			var toggle = dropdownEl.parentElement.querySelector(':scope > a');
+			if (!toggle) return;
+			var clicked = false;
+			dropdownEl._wethrAllowHide = false;
+
+			// Block hover-triggered opens
+			UIkit.util.on(dropdownEl, 'beforeshow', function(e) {
+				if (!clicked) { e.preventDefault(); return; }
+				clicked = false;
+			});
+
+			// Block hover-triggered hides — keep menu open until an
+			// explicit close path sets _wethrAllowHide = true.
+			UIkit.util.on(dropdownEl, 'beforehide', function(e) {
+				if (!dropdownEl._wethrAllowHide) { e.preventDefault(); return; }
+				dropdownEl._wethrAllowHide = false;
+			});
+
+			// Toggle on click
+			toggle.addEventListener('click', function(e) {
+				e.preventDefault();
+				var drop = UIkit.drop(dropdownEl);
+				if (!drop) return;
+				if (dropdownEl.classList.contains('uk-open')) {
+					safeHideDropdown(dropdownEl);
+				} else {
+					clicked = true;
+					drop.show();
+				}
+			});
+
+			// Close when clicking outside
+			document.addEventListener('click', function(e) {
+				if (!dropdownEl.contains(e.target) && !toggle.contains(e.target) && dropdownEl.classList.contains('uk-open')) {
+					safeHideDropdown(dropdownEl);
+				}
+			});
+		}
+
+		// Apply to mega dropdown + all sub-dropdowns
+		document.querySelectorAll('.wethr-mega-dropdown, .wethr-sub-dropdown').forEach(function(el) {
+			// Skip account dropdown — already uses uk-dropdown="mode: click"
+			if (el.closest('.uk-navbar-right')) return;
+			makeClickOnly(el);
+		});
+
+		// X close button inside the mega dropdown
+		var megaCloseBtn = document.getElementById('wethr-mega-close');
+		if (megaCloseBtn) {
+			megaCloseBtn.addEventListener('click', function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				safeHideDropdown(dropdown);
+			});
+		}
+
+		// Search-specific: auto-focus and ESC key (mega dropdown only)
+		UIkit.util.on(dropdown, 'shown', function() {
+			searchInput.value = '';
+			filterMarkets();
+			setTimeout(function() { searchInput.focus(); }, 50);
+		});
+
+		searchInput.addEventListener('keydown', function(e) {
+			if (e.key === 'Escape') {
+				e.preventDefault();
+				e.stopPropagation();
+				safeHideDropdown(dropdown);
+			}
+		});
+	}
+});
+</script>
+
+<!-- High/Low Notifier popup launcher (used by the menu items above) -->
+<script>
+function wethrOpenNotifierPopup(e) {
+	// Respect modifier-clicks: cmd/ctrl/shift/middle-click should follow href
+	// (open in new tab) instead of opening a popup window. Matches expected
+	// link behavior elsewhere on the site.
+	if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return true;
+
+	// Named target 'wethr-notifier-main' means clicking the menu item again
+	// while a notifier window is already open just FOCUSES that window
+	// instead of spawning a duplicate. Additional windows opened from the
+	// "+" button inside the notifier itself use unique names.
+	var w = window.open(
+		'/notifier',
+		'wethr-notifier-main',
+		'popup=yes,width=440,height=760,resizable=yes,scrollbars=yes'
+	);
+	if (w) {
+		try { w.focus(); } catch (err) {}
+		e.preventDefault();
+		return false;
+	}
+	// Popup blocked → fall through to the href so the user still gets the page
+	return true;
+}
+</script>
+	</header>
+	<!-- header end -->
+	<main>
+		<!-- slideshow content begin -->
+		<div class="uk-section uk-padding-remove-vertical">
+			<div class="uk-light in-slideshow uk-background-cover uk-background-top-center" style="background-image: url(/assets/images/in-liquid-slide-bg.png);" data-uk-slideshow>
+				<ul class="uk-slideshow-items">
+					<li>
+						<div class="uk-container">
+							<div class="uk-grid-medium uk-grid" data-uk-grid="">
+								<div class="uk-width-1-2@s uk-first-column">
+									<div class="uk-overlay">
+										<h1>The standard for<br>weather markets.</h1>
+										<p class="uk-text-lead uk-visible@m">Real-time weather analytics put you in the game like never before.</p>
+										<a href="https://wethr.net/edu/markets" class="uk-button uk-button-default uk-border-rounded uk-visible@s">Browse Markets</a>
+									</div>
+								</div>
+								<div class="uk-width-1-2@s">
+									<img class="in-slide-img" src="/assets/images/in-lazy.gif" data-src="/assets/images/wethr-spill-1.svg" alt="image-slide" width="500" height="400"
+										data-uk-img="">
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
+				<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next data-uk-slideshow-item="next"></a>
+				<div class="uk-section uk-padding-remove-vertical in-slideshow-features uk-visible@m">
+
+<div class="uk-container">
+    <ul class="uk-grid uk-child-width-1-5@m uk-text-center" data-uk-grid>
+        
+            <li>
+                <span>Chicago</span>
+                <span class='uk-label uk-label-success uk-margin-left'>
+                    <i class='fas fa-caret-up'></i> 7°
+                </span>
+            </li>
+            <li>
+                <span>Philadelphia</span>
+                <span class='uk-label uk-label-success uk-margin-left'>
+                    <i class='fas fa-caret-up'></i> 7°
+                </span>
+            </li>
+            <li>
+                <span>Miami</span>
+                <span class='uk-label uk-label-success uk-margin-left'>
+                    <i class='fas fa-caret-up'></i> 4°
+                </span>
+            </li>
+            <li>
+                <span>Austin</span>
+                <span class='uk-label uk-label-success uk-margin-left'>
+                    <i class='fas fa-caret-up'></i> 8°
+                </span>
+            </li>
+            <li>
+                <span>Denver</span>
+                <span class='uk-label uk-label-success uk-margin-left'>
+                    <i class='fas fa-caret-up'></i> 8.3°
+                </span>
+            </li>    </ul>
+</div>
+
+
+				</div>
+			</div>
+		</div>
+		<!-- slideshow content end -->
+		<!-- section content begin -->
+		<div class="uk-section uk-section-secondary in-liquid-1">
+			<div class="uk-container uk-light">
+				<div class="uk-grid uk-flex uk-flex-middle">
+					<div class="uk-width-1-2@m">
+						<h2>Advanced charts. <span class="in-highlight">Faster data.</span> Trade smarter.</h2>
+					</div>
+					<div class="uk-width-1-2@m">
+						<a class="uk-button uk-button-default uk-border-rounded uk-align-right@m" href="/edu/markets">Explore Markets<i class="fas fa-angle-right uk-margin-small-left"></i></a>
+					</div>
+				</div>
+				<div class="uk-child-width-1-3@m" data-uk-grid>
+					<div>
+						<div class="uk-card uk-card-secondary uk-border-rounded uk-cover-container">
+							<div class="uk-card-media-top">
+								<img src="/assets/images/in-lazy.gif" data-src="/assets/images/speed.svg" alt="precise ranges" width="350" height="296" data-uk-img>
+							</div>
+							<div class="uk-card-body">
+								<h3>High speed data</h3>
+								<p>Make informed decisions with rapidly updated, near real-time weather data.</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-secondary uk-border-rounded uk-cover-container">
+							<div class="uk-card-media-top">
+								<img src="/assets/images/in-lazy.gif" data-src="/assets/images/ranges.svg" alt="sample-image" width="350" height="296" data-uk-img>
+							</div>
+							<div class="uk-card-body">
+								<h3>Critical insights</h3>
+								<p>Detailed charts provide customizable insights to keep you ahead of the curve.</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-secondary uk-border-rounded uk-cover-container">
+							<div class="uk-card-media-top">
+								<img src="/assets/images/in-lazy.gif" data-src="/assets/images/models.svg" alt="sample-image" width="350" height="296" data-uk-img>
+							</div>
+							<div class="uk-card-body">
+								<h3>Model Forecasts</h3>
+								<p>View detailed model forecasts for a wide array of short to mid-range models.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section content end -->
+		<!-- section content begin -->
+		<div class="uk-section in-liquid-2">
+			<div class="uk-container">
+				<header class="uk-text-center uk-margin-large-bottom">
+					<h2 class="uk-heading-line"><span>Understanding Our Charts</span></h2>
+					<p>We encourage you to read our <a href="https://wethr.net/data-disclaimer">Data Disclaimer</a>.<br />Learning the basics of our charts is quick and easy. Below is a high level breakdown.<br />For a more in-depth overview, read the <a href="/edu/wethr-chart">Wethr.net Chart Overview</a></p>
+				</header>
+				<div class="uk-grid-large uk-child-width-1-2@m" data-uk-grid>
+					<div class="uk-flex uk-flex-left">
+						<div class="uk-margin-right">
+							<div class="chart-circle" style="background-color: #ff9800;"></div>
+						</div>
+						<div>
+							<h3>Wethr.net High</h3>
+							<p>The orange line represents the highest temperature Wethr.net can confirm.</p>
+						</div>
+					</div>
+					<div class="uk-flex uk-flex-left">
+						<div class="uk-margin-right">
+							<div class="chart-circle" style="background-color: #c1121f;"></div>
+						</div>
+						<div>
+							<h3>Max</h3>
+							<p>The red line represents the highest probable temperature at a given time based on the data available to Wethr.net</p>
+						</div>
+					</div>
+					<div class="uk-flex uk-flex-left">
+						<div class="uk-margin-right">
+							<div class="chart-circle" style="background-color: #ffffff; border: 2px solid #000;"></div>
+						</div>
+						<div>
+							<h3>Public</h3>
+							<p>The white line is the temperature most often used in public data. It is often inaccurate.</p>
+						</div>
+					</div>
+					<div class="uk-flex uk-flex-left">
+						<div class="uk-margin-right">
+							<div class="chart-circle" style="background-color: #669bbc;"></div>
+						</div>
+						<div>
+							<h3>Min</h3>
+							<p>The blue line represents the lowest probable temperature at a given time based on the data available to Wethr.net</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section content end -->
+	</main>
+	<!-- footer begin -->
+	<footer>
+    <div class="uk-section uk-background-secondary uk-light">
+        <div class="uk-container uk-text-small">
+            <div class="uk-child-width-1-2@m" data-uk-grid="">
+                <div class="in-footer-logo">
+                    <img src="/assets/images/in-lazy.gif" data-src="/assets/images/wethr-logo.png" alt="logo" width="182" height="54" data-uk-img="">
+                </div>
+                <div class="uk-flex uk-flex-right@m">
+                    <div class="uk-flex social-media-list">
+                        <div><a href="https://x.com/Wethrnet" class="color-twitter text-decoration-none" target="new"><i class="fab fa-twitter"></i>X</a></div>
+                        <div><a href="https://discord.gg/ft3Gh4D68d" class="color-discord text-decoration-none" target="new" rel="noopener" alt="Join our Discord"><i class="fab fa-discord"></i> Discord</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="uk-margin-large-top" data-uk-grid="">
+                <div class="uk-width-1-1@s uk-width-3-5@m wethr-footer-markets-col">
+                    <h5>Temperature Markets</h5>
+                    <ul class="uk-list uk-link-text uk-column-1-2 uk-column-1-3@m">
+<li><a href="/market/amsterdam"><span class="wethr-footer-code">EHAM</span> Amsterdam<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/ankara"><span class="wethr-footer-code">LTAC</span> Ankara<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/atlanta"><span class="wethr-footer-code">KATL</span> Atlanta<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/aurora"><span class="wethr-footer-code">KBKF</span> Aurora<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"></span></a></li>
+                        <li><a href="/market/austin"><span class="wethr-footer-code">KAUS</span> Austin<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/beijing"><span class="wethr-footer-code">ZBAA</span> Beijing<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/berlin"><span class="wethr-footer-code">EDDB</span> Berlin<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/boston"><span class="wethr-footer-code">KBOS</span> Boston<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/brussels"><span class="wethr-footer-code">EBBR</span> Brussels<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/buenosaires"><span class="wethr-footer-code">SAEZ</span> Buenos Aires<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/busan"><span class="wethr-footer-code">RKPK</span> Busan<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/capetown"><span class="wethr-footer-code">FACT</span> Cape Town<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/newyork"><span class="wethr-footer-code">KNYC</span> Central Park<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/charlotte"><span class="wethr-footer-code">KCLT</span> Charlotte<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"></span></a></li>
+                        <li><a href="/market/chengdu"><span class="wethr-footer-code">ZUUU</span> Chengdu<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/chicagoohare"><span class="wethr-footer-code">KORD</span> Chicago (O'Hare)<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/chicago"><span class="wethr-footer-code">KMDW</span> Chicago<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/chongqing"><span class="wethr-footer-code">ZUCK</span> Chongqing<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/dallaslove"><span class="wethr-footer-code">KDAL</span> Dallas (Love Field)<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/dallas"><span class="wethr-footer-code">KDFW</span> Dallas<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/denver"><span class="wethr-footer-code">KDEN</span> Denver<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/detroit"><span class="wethr-footer-code">KDTW</span> Detroit<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"></span></a></li>
+                        <li><a href="/market/dubai"><span class="wethr-footer-code">OMDB</span> Dubai<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/frankfurt"><span class="wethr-footer-code">EDDF</span> Frankfurt<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/geneva"><span class="wethr-footer-code">LSGG</span> Geneva<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/guangzhou"><span class="wethr-footer-code">ZGGG</span> Guangzhou<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/heathrow"><span class="wethr-footer-code">EGLL</span> Heathrow<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/helsinki"><span class="wethr-footer-code">EFHK</span> Helsinki<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/hongkong"><span class="wethr-footer-code">VHHH</span> Hong Kong Intl<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/hongkongobs"><span class="wethr-footer-code">VHKO</span> Hong Kong<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/houstoniah"><span class="wethr-footer-code">KIAH</span> Houston (Intercontinental)<span class="wethr-footer-exchange-icons"><span class="wethr-footer-demo-badge">SOON</span></span></a></li>
+                        <li><a href="/market/houston"><span class="wethr-footer-code">KHOU</span> Houston<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/istanbul"><span class="wethr-footer-code">LTFM</span> Istanbul<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/jacksonville"><span class="wethr-footer-code">KJAX</span> Jacksonville<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"></span></a></li>
+                        <li><a href="/market/jeddah"><span class="wethr-footer-code">OEJN</span> Jeddah<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/jinan"><span class="wethr-footer-code">ZSJN</span> Jinan<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/karachi"><span class="wethr-footer-code">OPKC</span> Karachi<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/kualalumpur"><span class="wethr-footer-code">WMKK</span> Kuala Lumpur<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/laguardia"><span class="wethr-footer-code">KLGA</span> LaGuardia<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"></span></a></li>
+                        <li><a href="/market/lasvegas"><span class="wethr-footer-code">KLAS</span> Las Vegas<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/london"><span class="wethr-footer-code">EGLC</span> London<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/losangeles"><span class="wethr-footer-code">KLAX</span> Los Angeles<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/louisville"><span class="wethr-footer-code">KSDF</span> Louisville<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/lucknow"><span class="wethr-footer-code">VILK</span> Lucknow<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/madrid"><span class="wethr-footer-code">LEMD</span> Madrid<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"></span></a></li>
+                        <li><a href="/market/manila"><span class="wethr-footer-code">RPLL</span> Manila<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/mexicocity"><span class="wethr-footer-code">MMMX</span> Mexico City<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/miami"><span class="wethr-footer-code">KMIA</span> Miami<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/milan"><span class="wethr-footer-code">LIMC</span> Milan<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/minneapolis"><span class="wethr-footer-code">KMSP</span> Minneapolis<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/montreal"><span class="wethr-footer-code">CYUL</span> Montreal<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"></span></a></li>
+                        <li><a href="/market/moscow"><span class="wethr-footer-code">UUWW</span> Moscow<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/mumbai"><span class="wethr-footer-code">VABB</span> Mumbai<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/munich"><span class="wethr-footer-code">EDDM</span> Munich<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/nashville"><span class="wethr-footer-code">KBNA</span> Nashville<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"></span></a></li>
+                        <li><a href="/market/neworleans"><span class="wethr-footer-code">KMSY</span> New Orleans<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/newark"><span class="wethr-footer-code">KEWR</span> Newark<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/oklahomacity"><span class="wethr-footer-code">KOKC</span> Oklahoma City<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/panamacity"><span class="wethr-footer-code">MPMG</span> Panama City<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/parislb"><span class="wethr-footer-code">LFPB</span> Paris (LB)<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/parisorly"><span class="wethr-footer-code">LFPO</span> Paris (Orly)<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"></span></a></li>
+                        <li><a href="/market/paris"><span class="wethr-footer-code">LFPG</span> Paris<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/philadelphia"><span class="wethr-footer-code">KPHL</span> Philadelphia<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/phoenix"><span class="wethr-footer-code">KPHX</span> Phoenix<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/qingdao"><span class="wethr-footer-code">ZSQD</span> Qingdao<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/sanantonio"><span class="wethr-footer-code">KSAT</span> San Antonio<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/sandiego"><span class="wethr-footer-code">KSAN</span> San Diego<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/sanfrancisco"><span class="wethr-footer-code">KSFO</span> San Francisco<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/saopaulo"><span class="wethr-footer-code">SBGR</span> São Paulo<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/seattle"><span class="wethr-footer-code">KSEA</span> Seattle<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/seoul"><span class="wethr-footer-code">RKSI</span> Seoul<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/shanghai"><span class="wethr-footer-code">ZSPD</span> Shanghai<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/shenzhen"><span class="wethr-footer-code">ZGSZ</span> Shenzhen<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/singapore"><span class="wethr-footer-code">WSSS</span> Singapore<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/sydney"><span class="wethr-footer-code">YSSY</span> Sydney<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/taipei"><span class="wethr-footer-code">RCSS</span> Taipei<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/tampa"><span class="wethr-footer-code">KTPA</span> Tampa<span class="wethr-footer-exchange-icons"><span class="wethr-footer-demo-badge">DEMO</span></span></a></li>
+                        <li><a href="/market/telaviv"><span class="wethr-footer-code">LLBG</span> Tel Aviv<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/tokyo"><span class="wethr-footer-code">RJTT</span> Tokyo<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/toronto"><span class="wethr-footer-code">CYYZ</span> Toronto<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/trenton"><span class="wethr-footer-code">KTTN</span> Trenton<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/vancouver"><span class="wethr-footer-code">CYHC</span> Vancouver<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"></span></a></li>
+                        <li><a href="/market/warsaw"><span class="wethr-footer-code">EPWA</span> Warsaw<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/dc"><span class="wethr-footer-code">KDCA</span> Washington<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/ibkr_logo.jpeg" alt="IBKR" title="IBKR"><img src="/assets/images/logos/robinhood_logo.jpeg" alt="Robinhood" title="Robinhood"><img src="/assets/images/logos/kalshi_logo.jpeg" alt="Kalshi" title="Kalshi"></span></a></li>
+                        <li><a href="/market/wellington"><span class="wethr-footer-code">NZWN</span> Wellington<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/wuhan"><span class="wethr-footer-code">ZHHH</span> Wuhan<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                        <li><a href="/market/zhengzhou"><span class="wethr-footer-code">ZHCC</span> Zhengzhou<span class="wethr-footer-exchange-icons"><img src="/assets/images/logos/polymarket_logo.jpeg" alt="Polymarket" title="Polymarket"></span></a></li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-2@s uk-width-1-5@m">
+                    <h5>Other Climate</h5>
+                    <ul class="uk-list uk-link-text">
+                        <li><a href="/rain">Rain Dashboard</a></li>
+                        <li><a href="https://wethr.net/tornadoes">Tornado Dashboard</a></li>
+                    </ul>
+                    <h5>Tools / Widgets</h5>
+                    <ul class="uk-list uk-link-text">
+                        <li><a href="/metars/">METAR Search</a></li>
+                        <li><a href="https://wethr.net/converter">ASOS Cº to Fº Converter</a></li>
+                        <li><a href="https://wethr.net/time-series-converter">Time Series Converter</a></li>
+                        <li><a href="/multi">Temp Market Multi-View</a></li>
+                        <li><a href="/map" target="_blank">Temperature Map</a></li>
+                        <li><a href="/model-explorer">Weather Model Analyzer</a></li>
+                        <li><a href="/models">Weather Model Viewer</a></li>
+                        <li><a href="/accuracy">Model Accuracy</a></li>
+                        <li><a href="/analogs">Similar Days Tool</a></li>
+                    </ul>
+                    <h5>API Docs</h5>
+                    <ul class="uk-list uk-link-text">
+                        <li><a href="/edu/api-docs">API Documentation</a></li>
+                        <li><a href="https://wethr.net/status">Status Page</a></li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-2@s uk-width-1-5@m">
+                    <h5>Company Info</h5>
+                    <ul class="uk-list uk-link-text">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/subscribe">Pricing</a></li>
+                        <li><a href="/terms">Refund Policy</a></li>
+                        <li><a href="/updates">Updates</a></li>
+                    </ul>
+                    <h5>Legal</h5>
+                    <ul class="uk-list uk-link-text">
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Use</a></li>
+                        <li><a href="/data-disclaimer">Data Disclaimer</a></li>
+                        <li><a href="#" onclick="if(typeof googlefc !== 'undefined'){googlefc.callbackQueue.push(googlefc.showRevocationMessage)}return false;">Privacy Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-grid uk-margin-large-top">
+                <div class="uk-width-1-1">
+                    <p class="copyright-text uk-heading-line"><span>Copyright ©2024-2026 Wethr.net</span></p>
+                    <p class="in-trading-risk">The data and insights presented on this website are provided for informational purposes only and are not guaranteed to be accurate, complete, or up-to-date. Wethr.net assumes no responsibility for any errors, omissions, or delays in the information provided. This site is not affiliated with or endorsed by any government agency, meteorological organization, or financial institution. Use of this website and reliance on the data is at your own risk.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>	<!-- footer end -->
+	<!-- to top begin -->
+	<a href="#" class="to-top uk-visible@m" data-uk-scroll>
+		Top<i class="fas fa-chevron-up" ></i>
+	</a>
+	<!-- to top end -->
+	<!-- javascript -->
+	<script src="scripts/utilities.min.js"></script>
+	<script src="scripts/config-theme.js"></script>
+</body>
+
+</html>

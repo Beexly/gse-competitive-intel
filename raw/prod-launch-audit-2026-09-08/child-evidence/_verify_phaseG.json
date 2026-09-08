@@ -1,0 +1,164 @@
+{
+ "clubelo-txt": {
+  "status": "000",
+  "bytes": "0",
+  "head": "",
+  "err": "curl: (28) Connection timed out after 16002 milliseconds\n"
+ },
+ "clubelo-team": {
+  "status": "000",
+  "bytes": "0",
+  "head": "",
+  "err": "curl: (28) Connection timed out after 16001 milliseconds\n"
+ },
+ "eloratings": {
+  "status": "200",
+  "bytes": "1815",
+  "head": "<!DOCTYPE html>\n<html lang=\"en\"><head><title>World Football Elo Ratings</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n<meta name=\"description\" content=\"Ratings for national football teams based on the Elo rating system.\">\n<meta name=\"keywords\" content=\"football, ratings, Elo, rankings, national, international, soccer, teams\">\n<meta name=\"viewport\" content=\"width=devi",
+  "err": ""
+ },
+ "fdcouk-2025": {
+  "status": "503",
+  "bytes": "489",
+  "head": "<html>\n<head>\n<title>The page is temporarily unavailable</title>\n<style>\nbody { font-family: Tahoma, Verdana, Arial, sans-serif; }\n</style>\n</head>\n<body bgcolor=\"white\" text=\"black\">\n<table width=\"100%\" height=\"100%\">\n<tr>\n<td align=\"center\" valign=\"middle\">\nThe page you are looking for is temporarily unavailable.<br/>\nPlease try again later.\n<br />\n53f23b1766909a21635befbe64c8734e\n6355db835d9df0",
+  "err": ""
+ },
+ "fdcouk-main": {
+  "status": "503",
+  "bytes": "489",
+  "head": "<html>\n<head>\n<title>The page is temporarily unavailable</title>\n<style>\nbody { font-family: Tahoma, Verdana, Arial, sans-serif; }\n</style>\n</head>\n<body bgcolor=\"white\" text=\"black\">\n<table width=\"100%\" height=\"100%\">\n<tr>\n<td align=\"center\" valign=\"middle\">\nThe page you are looking for is temporarily unavailable.<br/>\nPlease try again later.\n<br />\n53f23b1766909a21635befbe64c8734e\n6355db835d9df0",
+  "err": ""
+ },
+ "ssb-www": {
+  "status": "000",
+  "bytes": "0",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: ssbdata.com\n"
+ },
+ "nba-ledger": {
+  "status": "000",
+  "bytes": "0",
+  "head": "",
+  "err": "curl: (28) Operation timed out after 16001 milliseconds with 0 bytes received\n"
+ },
+ "ncaa-slashroot": {
+  "status": "000",
+  "bytes": "0",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: data.ncaa.org\n"
+ },
+ "ncaa-root": {
+  "status": "200",
+  "bytes": "242695",
+  "head": "<!DOCTYPE html>\n<html lang=\"en-US\" class=\"no-js\">\n\n<head>\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<title>Home - NCAA.org - The Official Website of the NCAA</title>\n<link data-rocket-prefetch href=\"https://analytics.tiktok.com\" rel=\"dns-prefetch\">\n<link data-rocket-prefetch href=\"https://ww",
+  "err": ""
+ },
+ "atp-rank": {
+  "status": "404",
+  "bytes": "14",
+  "head": "404: Not Found",
+  "err": ""
+ },
+ "wta-rank": {
+  "status": "404",
+  "bytes": "14",
+  "head": "404: Not Found",
+  "err": ""
+ },
+ "espn-core-events": {
+  "status": "200",
+  "bytes": "357",
+  "head": "{\"$meta\":{\"parameters\":{\"week\":[\"1\"],\"season\":[\"2026\"],\"seasontypes\":[\"2\"]}},\"count\":16,\"pageIndex\":1,\"pageSize\":2,\"pageCount\":8,\"items\":[{\"$ref\":\"http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/401872656?lang=en&region=us\"},{\"$ref\":\"http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/401872657?lang=en&region=us\"}]}",
+  "err": ""
+ },
+ "sda-cfbfastr": {
+  "status": "404",
+  "bytes": "22",
+  "head": "{\"detail\":\"Not Found\"}",
+  "err": ""
+ },
+ "sda-nflfastpy": {
+  "status": "404",
+  "bytes": "22",
+  "head": "{\"detail\":\"Not Found\"}",
+  "err": ""
+ },
+ "fotmob-matches": {
+  "status": "200",
+  "bytes": "382626",
+  "head": "<!DOCTYPE html><html lang=\"matches.json\" dir=\"ltr\"><head><meta name=\"apple-itunes-app\" content=\"app-id=488575683\"/><link rel=\"alternate\" href=\"android-app://com.mobilefootie.wc2010/http\"/><link rel=\"apple-touch-icon\" href=\"/img/android-icon-192x192.png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\"/><link rel=\"icon\" type=\"image/png\" href=\"/fa",
+  "err": ""
+ },
+ "sofascore-root": {
+  "status": "403",
+  "bytes": "48",
+  "head": "{\"error\": {\"code\": 403, \"reason\": \"Forbidden\" }}",
+  "err": ""
+ },
+ "statmuse-llms": {
+  "status": "404",
+  "bytes": "111877",
+  "head": "<!DOCTYPE html><html lang=\"en\"> <head><meta charset=\"UTF-8\"><link rel=\"sitemap\" href=\"/sitemap.txt\"><meta name=\"color-scheme\" content=\"dark light\"><script>\n      function setTheme(document) {\n        const metaColorScheme = document.querySelector(\n          'meta[name=\"color-scheme\"]',\n        )\n\n        if (window.colorScheme) {\n          if (window.colorScheme === 'dark') {\n            document.",
+  "err": ""
+ },
+ "fotmob-llms": {
+  "status": "200",
+  "bytes": "5833",
+  "head": "# FotMob\n\n> The world's leading football live scores & news app, delivering real-time match data, statistics, and analysis for over 250 leagues worldwide.\n\n## Core Resources\n- [Live Matches](https://www.fotmob.com): Real-time scores and match details\n- [All Leagues](https://www.fotmob.com/all-leagues): Competition tables, fixtures, and standings\n- [News](https://www.fotmob.com/news?tab=latest): La",
+  "err": ""
+ },
+ "sofascore-llms": {
+  "status": "403",
+  "bytes": "48",
+  "head": "{\"error\": {\"code\": 403, \"reason\": \"Forbidden\" }}",
+  "err": ""
+ },
+ "api-sports-llms": {
+  "status": "404",
+  "bytes": "14054",
+  "head": "\n<!doctype html>\n<html lang=\"en\">\n  <head>\n    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-H6HV76ZB3J\"></script>\n    <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag(\"js\",new Date),gtag(\"config\",\"G-H6HV76ZB3J\");</script>\n    <meta charset=\"utf-8\">\n    <!--[if IE]>\n      <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <![e",
+  "err": ""
+ },
+ "sportsdataio-llms": {
+  "status": "404",
+  "bytes": "155547",
+  "head": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0\" name=\"viewport\" />\n\n\n    \n    <title>Page Not Found | SportsDataIO</title>\n    <meta name=\"title\" content=\"Page Not Found | SportsDataIO\" />\n    <meta property=\"og:title\" content=\"P",
+  "err": ""
+ },
+ "vegas-llms": {
+  "status": "404",
+  "bytes": "1879",
+  "head": "<!DOCTYPE html> <html> <head> <title>VegasInsider - Page Not Found</title> <meta name=\"viewport\" content=\"initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no\" /> <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" /> <link rel=\"stylesheet\" media=\"none\" onload=\"if (media !== 'all') media = 'all';\" type=\"text/css\" href=\"https://bctn-vi.s3.amazonaws.com/css/error.css?v=f418",
+  "err": ""
+ },
+ "pipeworx-tools": {
+  "status": "404",
+  "bytes": "15096",
+  "head": "<!DOCTYPE html><html lang=\"en\" data-astro-cid-5hce7sga> <head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"description\" content=\"The page you're looking for doesn't exist. Browse packs, verticals, docs, or head back to the homepage.\"><meta name=\"robots\" content=\"index, follow\"><link rel=\"canonical\" href=\"https://pipeworx.io/404/\"><!-- Warm u",
+  "err": ""
+ },
+ "scoremeridian-com": {
+  "status": "000",
+  "bytes": "0",
+  "head": "",
+  "err": "curl: (6) Could not resolve host: scoremeridian.com\n"
+ },
+ "sportsgeek-io": {
+  "status": "200",
+  "bytes": "15082",
+  "head": "\n\n<!DOCTYPE html>\n<html lang=\"en-US\">\n\n<head>\n   <meta charset=\"UTF-8\">\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n\n   <meta name=\"csrf-param\" content=\"_csrf\">\n<meta name=\"csrf-token\" content=\"DAFvEbCMEpWasT3UGHhm0xK3e7vR1sYzQqwJD7WmTBVqTgFah99N0KvGC-Z6Hl-1V94W3Jaa82slynFX7cIkcg==\">\n   <title>SportsGeek - HOME</title>\n\n   <style>\n         </style>\n\n  ",
+  "err": ""
+ },
+ "sportsgeek-app": {
+  "status": "000",
+  "bytes": "0",
+  "head": "",
+  "err": "curl: (28) Connection timed out after 16001 milliseconds\n"
+ },
+ "thestatsapi-docs": {
+  "status": "404",
+  "bytes": "14790",
+  "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/08pheo8fz-u4r.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/0pkrupb1wwj2z.js\"/><script src=\"/_next/static/chunks/07kz-sck15uin.js\" async=\"\"></script><script sr",
+  "err": ""
+ }
+}

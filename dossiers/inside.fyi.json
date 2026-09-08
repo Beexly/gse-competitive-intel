@@ -1,0 +1,123 @@
+{
+ "domain": "inside.fyi",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/px_inside_fyi_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_inside_fyi_home.raw",
+   "raw\\px_inside_fyi_robots.raw",
+   "raw\\px_polyinsider_io_home.raw",
+   "raw\\px_polyinsider_io_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "https://api.fontshare.com",
+    "https://api.polyinsider.io",
+    "https://api.fontshare.com/v2/css",
+    "ws.com/clarity-act-signed-into-law-in-2025-nKCKPZK92UBU.jpg",
+    "ws.com/jerome",
+    "ws.com/champions-league-pic-QIUFsL8vaDdq.png"
+   ],
+   "citation": "raw/px_inside_fyi_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": [
+    "WebSocket"
+   ],
+   "citation": "raw/px_inside_fyi_home.raw"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_inside_fyi_home.raw"
+  },
+  "citations": [
+   "raw\\px_inside_fyi_home.raw",
+   "raw\\px_inside_fyi_robots.raw",
+   "raw\\px_polyinsider_io_home.raw",
+   "raw\\px_polyinsider_io_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "Polymarket",
+    "polymarket"
+   ],
+   "citation": "raw/px_inside_fyi_home.raw"
+  },
+  "citations": [
+   "raw\\px_inside_fyi_home.raw",
+   "raw\\px_inside_fyi_robots.raw",
+   "raw\\px_polyinsider_io_home.raw",
+   "raw\\px_polyinsider_io_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_inside_fyi_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_inside_fyi_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free"
+   ],
+   "citation": "raw/px_inside_fyi_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_inside_fyi_home.raw",
+   "raw\\px_inside_fyi_robots.raw",
+   "raw\\px_polyinsider_io_home.raw",
+   "raw\\px_polyinsider_io_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "https://api.fontshare.com",
+  "https://api.fontshare.com/v2/css",
+  "https://api.polyinsider.io",
+  "ws.com/atp-tour-b4390c4fb8.jpg",
+  "ws.com/champions-league-pic-QIUFsL8vaDdq.png",
+  "ws.com/clarity-act-signed-into-law-in-2025-nKCKPZK92UBU.jpg",
+  "ws.com/counter-strike-image-16c415c538.png",
+  "ws.com/jerome"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:05:43.193847"
+ },
+ "disposition": "walled",
+ "_site_identity": {
+  "title": "NOT CONFIRMED",
+  "description": "NOT CONFIRMED"
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "domain": "fantasyfootballanalytics.net",
+ "tech_stack": {
+  "frontend": "WordPress",
+  "backend": "NOT CONFIRMED (no exposure)",
+  "database": "NOT CONFIRMED (no exposure)",
+  "cloud": "Apache/2.4.58 (Ubuntu)",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "https://fantasyfootballanalytics.net",
+   "https://fantasyfootballanalytics.net/robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "NOT CONFIRMED (kw 'fetch(' found in bundle)",
+    "auth_required": "NOT CONFIRMED",
+    "tier": "NOT CONFIRMED",
+    "sample_response": "c+=`&${e}=${encodeURIComponent(String(d))}`});ye(c)}function ye(a){var b=window;b.fetch?b.fetch(a,{keepalive:!0,credentials:\"include\",redirect:\"follow\",method:\"get\",mode:\"no-cors\"}):ve(b,a,void 0,!1,!",
+    "citation": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+   },
+   {
+    "method": "GET",
+    "path": "NOT CONFIRMED (kw 'endpoint' found in bundle)",
+    "auth_required": "NOT CONFIRMED",
+    "tier": "NOT CONFIRMED",
+    "sample_response": "Fetch failed with status: ${c.status}`);let d=await c.text();if(!d)throw Error(\"AbgConfig endpoint returned empty response.\");try{return xo(d)}catch(e){throw Error(`Error deserializing config: ${e ins",
+    "citation": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (not probed - no JS evidence)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED (no public rate-limit doc)",
+  "citations": [
+   "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "https://fantasyfootballanalytics.net"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "https://fantasyfootballanalytics.net"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "NOT CONFIRMED (none found in fetched JS/HTML)"
+  ],
+  "citations": [
+   "https://fantasyfootballanalytics.net"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "https://fantasyfootballanalytics.net/wp-content/plugins/email-subscribers/lite/public/css/email-subscribers-public.css?ver=5.3.12"
+ },
+ "pricing": {
+  "web": {
+   "url": "https://fantasyfootballanalytics.net/wp-content/plugins/email-subscribers/lite/public/css/email-subscribers-public.css?ver=5.3.12",
+   "status": 200,
+   "tokens": []
+  },
+  "ios": "NOT CONFIRMED (not checked - no app link found)",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://fantasyfootballanalytics.net/wp-content/plugins/email-subscribers/lite/public/css/email-subscribers-public.css?ver=5.3.12"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Fantasy Football Analytics Platform - Need Your Feedback on Tools That Actually Matter · Advanced player comparisons across multiple metrics.",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1le09p5/fantasy_football_analytics_platform_need_your/",
+   "title": "Fantasy Football Analytics Platform - Need Your Feedback on Tools That ..."
+  },
+  {
+   "quote": "Generate an end-of-year report for your Sleeper league using a series of unique charts to illustrate how your league's season went. League ...",
+   "source": "https://www.reddit.com/r/DynastyFF/comments/11ea38z/visualizing_fantasy_football_analytics_generate/",
+   "title": "Visualizing fantasy football analytics! Generate an end-of-year report for ..."
+  },
+  {
+   "quote": "Can anyone point me to a website or app that takes into account player past performance, trades, team changes, and other metrics to provide ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/jgygef/fantasy_football_analytics_site_or_app/",
+   "title": "Fantasy football analytics site or app? : r/fantasyfootball - Reddit"
+  },
+  {
+   "quote": "Overall I really like the site, but there is definitely something a little fishy with the algorithms. I guess nobody likes a website",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/3jingx/how_good_is_your_fantasy_team_get_a_free_analysis/",
+   "title": "How good is your fantasy team? Get a free analysis (projected standings)"
+  },
+  {
+   "quote": "I'm curious what everyone here uses for fantasy research, both during draft season and throughout the year. Do you have certain sites or ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1m9czrc/whats_your_goto_website_or_app_for_fantasy/",
+   "title": "What's your go-to website or app for fantasy football research? - Reddit"
+  },
+  {
+   "quote": "TL;DR- The boom or bust experience kinda sucks. I'm looking for consistency and am wondering if there are cool stats or free resources ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1eskhpr/faults_in_the_fantasy_football_ranking_system/",
+   "title": "Faults in the Fantasy Football Ranking System: Davante Adams, 2023 ..."
+  },
+  {
+   "quote": "The product is paid now, but there's a free trial and you can cancel anytime with no strings attached. general models often miss the mark on ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1m99gzs/we_built_a_fantasy_football_ai_and_its_getting/",
+   "title": "We built a fantasy football AI and it's getting sharper thanks to your ..."
+  },
+  {
+   "quote": "Scoring updates are usually at half time and game end. No complaints. they are charging $20 this year, The biggest and best place on the ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1hz4q4c/second_season_fantasy_football/",
+   "title": "Second season fantasy football : r/fantasyfootball - Reddit"
+  }
+ ],
+ "discovered_paths": [
+  "https://fantasyfootballanalytics.net/sitemap.xml",
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+  {
+   "robots_txt_excerpt": "Sitemap: https://fantasyfootballanalytics.net/sitemap.xml\nSitemap: https://fantasyfootballanalytics.net/news-sitemap.xml\n# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://fantasyfootballanalytics.net/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK",
+   "citation": "https://fantasyfootballanalytics.net/robots.txt"
+  }
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "urllib GET (fetcher.py pattern), UA-spoof Chrome/126, gzip, 1s same-host sleep",
+  "timestamp": "2026-09-08T13:59:46-0500",
+  "http_requests_used": 7,
+  "request_log": [
+   {
+    "url": "https://fantasyfootballanalytics.net",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-home.html",
+    "err": null
+   },
+   {
+    "url": "https://fantasyfootballanalytics.net/robots.txt",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-robots.txt",
+    "err": null
+   },
+   {
+    "url": "https://fantasyfootballanalytics.net/sitemap.xml",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-sitemap.xml",
+    "err": null
+   },
+   {
+    "url": "https://html5shiv.googlecode.com/svn/trunk/html5.js",
+    "status": 404,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-js0.js",
+    "err": null
+   },
+   {
+    "url": "https://www.google.com/recaptcha/api.js?ver=200b08fb808dbb63a111aa49627da524",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-js1.js",
+    "err": null
+   },
+   {
+    "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-js2.js",
+    "err": null
+   },
+   {
+    "url": "https://fantasyfootballanalytics.net/wp-content/plugins/email-subscribers/lite/public/css/email-subscribers-public.css?ver=5.3.12",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\fantasyfootballanalytics-pricing.html",
+    "err": null
+   }
+  ]
+ },
+ "disposition": "live (derived from 8 raw evidence files)"
+}

@@ -1,0 +1,1 @@
+[{"relation":["delegate_permission/common.handle_all_urls"],"target":{"namespace":"android_app","package_name":"com.cipherstg.dimers","sha256_cert_fingerprints":["B5:11:FD:9D:CF:40:4E:03:58:9F:C5:54:99:8C:50:24:96:D4:A3:C1:C0:25:57:62:7B:D1:19:DE:38:8E:26:3C"]}}]

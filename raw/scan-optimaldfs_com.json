@@ -1,0 +1,167 @@
+{
+ "home_status": 200,
+ "home_url": "https://optimaldfs.com/",
+ "robots_status": 404,
+ "robots_body": "\n<!doctype html>\n<html class=\"error-page\" lang=\"en-gb\" dir=\"ltr\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n\t\t<title>Error: 404 Article not found</title>\n\n\t\t\t\t\t<link rel=\"icon\" href=\"/images/favicon-16x16.png\" />\n\t\t\n\t\t\t\t\t<link href=\"/templates/shaper_helixultimate/css/bootstrap.min.css\" rel=\"stylesheet\">\n\t\t\n\t\t<link href=\"/templates/shaper_helixultimate/css/font-awesome.min.css\" rel=\"stylesheet\">\n\t\t<link href=\"/templates/shaper_helixultimate/css/template.css\" rel=\"stylesheet\">\n\t\t<link href=\"/templates/shaper_helixultimate/css/presets/{\"footer_link_hover_color\":\"#FFFFFF\",\"footer_link_color\":\"#A2A2A2\",\"footer_text_color\":\"#FFFFFF\",\"footer_bg_color\":\"#171717\",\"menu_dropdown_text_active_color\":\"#0345BF\",\"menu_dropdown_text_hover_color\":\"#0345BF\",\"menu_dropdown_text_color\":\"#252525\",\"menu_dropdown_bg_color\":\"#FFFFFF\",\"menu_text_active_color\":\"#0345BF\",\"menu_text_hover_color\":\"#0345BF\",\"menu_text_color\":\"#252525\",\"logo_text_color\":\"#0345BF\",\"topbar_text_color\":\"#AAAAAA\",\"topbar_bg_color\":\"#333333\",\"header_bg_color\":\"#FFFFFF\",\"link_hover_color\":\"#044CD0\",\"link_color\":\"#0345BF\",\"bg_color\":\"#FFFFFF\",\"text_color\":\"#252525\",\"preset\":\"preset1\"}.css\" rel=\"stylesheet\">\n\t</head>\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t\n\t\t\t<h1 class=\"error-code\">404</h1>\n\t\t\t<h2 class=\"error-message\">Article not found</h2>\n\n\t\t\t<a href=\"/index.php\" class=\"btn btn-secondary\"><span class=\"fa fa-home\" aria-hidden=\"true\"></span> Home Page</a>\n\n\t\t\t\t\t</div>\n\n\t\t\t</body>\n\n</html>\n",
+ "robots_sitemaps": [],
+ "sitemap_status": 200,
+ "sitemap_url": "https://optimaldfs.com/sitemap.xml",
+ "sitemap_loc_count": 26,
+ "sitemap_sample": [
+  "https://www.optimaldfs.com/golf/product/34-pga-subscription-optimal",
+  "https://www.optimaldfs.com/nba/product/36-nba-subscription-optimal",
+  "https://www.optimaldfs.com/nba/product/37-nba-subscription-premium",
+  "https://www.optimaldfs.com/nfl/product/38-nfl-subscription-optimal",
+  "https://www.optimaldfs.com/get-started",
+  "https://www.optimaldfs.com/terms-conditions",
+  "https://www.optimaldfs.com/privacy-policy",
+  "https://www.optimaldfs.com/blogs/7-week-2-thursday-night-football",
+  "https://www.optimaldfs.com/blogs/6-top-25-quarterbacks-to-target",
+  "https://www.optimaldfs.com/blogs/4-dell-golf-championship-results",
+  "https://www.optimaldfs.com/nfl",
+  "https://www.optimaldfs.com/nba"
+ ],
+ "js_candidates_total": 6,
+ "js_fetched": [
+  {
+   "url": "https://optimaldfs.com/templates/shaper_helixultimate/js/main.js",
+   "status": 200,
+   "bytes": 3791
+  },
+  {
+   "url": "https://optimaldfs.com/templates/shaper_helixultimate/js/popper.min.js",
+   "status": 200,
+   "bytes": 19236
+  },
+  {
+   "url": "https://optimaldfs.com/templates/shaper_helixultimate/js/bootstrap.min.js",
+   "status": 200,
+   "bytes": 50676
+  }
+ ],
+ "greps": {
+  "subscription_home": [
+   {
+    "file": "home.html",
+    "ctx": "tps://www.optimaldfs.com/component/mijoshop/category/36-nba-subscriptions\">\r \t\t\t\t\t\t\t\t\t<img src=\"https://www.optimaldfs.com/components/com_mijoshop/ope"
+   }
+  ],
+  "subscri_home": [
+   {
+    "file": "home.html",
+    "ctx": "['NO_LIST_SELECTED'] = 'Please select the lists you want to subscribe to';\r \t\t \t</script> <script>\r   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsOb"
+   },
+   {
+    "file": "home.html",
+    "ctx": "tps://www.optimaldfs.com/component/mijoshop/category/36-nba-subscriptions\">\r \t\t\t\t\t\t\t\t\t<img src=\"https://www.optimaldfs.com/components/com_mijoshop/"
+   },
+   {
+    "file": "home.html",
+    "ctx": "ss=\"work_process\">\r <div class=\"working_procees_step step1\">Subscribe</div>\r <div class=\"working_procees_step step2\">We deliver our Optimal lineup "
+   }
+  ]
+ },
+ "pricing_links": [],
+ "request_log": [
+  {
+   "url": "https://optimaldfs.com/",
+   "status": 200,
+   "error": null,
+   "ms": 613,
+   "bytes": 19484,
+   "hdrs": {
+    "server": "Apache",
+    "x-powered-by": "PHP/7.1.33",
+    "content-type": "text/html; charset=utf-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\optimaldfs_com_home.html"
+  },
+  {
+   "url": "https://optimaldfs.com/robots.txt",
+   "status": 404,
+   "error": null,
+   "ms": 414,
+   "bytes": 1538,
+   "hdrs": {
+    "server": "Apache",
+    "x-powered-by": "PHP/7.1.33",
+    "content-type": "text/html; charset=UTF-8"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\optimaldfs_com_robots.txt"
+  },
+  {
+   "url": "https://optimaldfs.com/sitemap.xml",
+   "status": 200,
+   "error": null,
+   "ms": 332,
+   "bytes": 3919,
+   "hdrs": {
+    "server": "Apache",
+    "content-type": "application/xml"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\optimaldfs_com_sitemap.xml"
+  },
+  {
+   "url": "https://optimaldfs.com/templates/shaper_helixultimate/js/main.js",
+   "status": 200,
+   "error": null,
+   "ms": 318,
+   "bytes": 3791,
+   "hdrs": {
+    "server": "Apache",
+    "content-type": "text/javascript"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\optimaldfs_com_js0.js"
+  },
+  {
+   "url": "https://optimaldfs.com/templates/shaper_helixultimate/js/popper.min.js",
+   "status": 200,
+   "error": null,
+   "ms": 330,
+   "bytes": 19236,
+   "hdrs": {
+    "server": "Apache",
+    "content-type": "text/javascript"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\optimaldfs_com_js1.js"
+  },
+  {
+   "url": "https://optimaldfs.com/templates/shaper_helixultimate/js/bootstrap.min.js",
+   "status": 200,
+   "error": null,
+   "ms": 338,
+   "bytes": 50676,
+   "hdrs": {
+    "server": "Apache",
+    "content-type": "text/javascript"
+   },
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\optimaldfs_com_js2.js"
+  },
+  {
+   "url": "https://optimaldfs.com/openapi.json",
+   "status": 404,
+   "error": null,
+   "ms": 384,
+   "bytes": 1538,
+   "hdrs": {
+    "server": "Apache",
+    "x-powered-by": "PHP/7.1.33",
+    "content-type": "text/html; charset=UTF-8"
+   },
+   "saved": null
+  },
+  {
+   "url": "https://optimaldfs.com/swagger.json",
+   "status": 404,
+   "error": null,
+   "ms": 382,
+   "bytes": 1538,
+   "hdrs": {
+    "server": "Apache",
+    "x-powered-by": "PHP/7.1.33",
+    "content-type": "text/html; charset=UTF-8"
+   },
+   "saved": null
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "domain": "rotowire.com/dfs",
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED (no model evidence in raw files)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "simulation_engine": {
+  "num_simulations": null,
+  "correlation_method": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "data_supply_chain": {
+  "vendors": [],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": [],
+  "upgrade_triggers": [],
+  "citation": "NOT CONFIRMED (DFS product pages 403-blocked)"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": []
+ },
+ "customer_pain": [
+  {
+   "quote": "Rotowire.com is owned by a gambling site called gambling.com (thread title)",
+   "source": "https://www.reddit.com/r/fantasybaseball/comments/1vv3uit/rotowirecom_is_owned_by_a_gambling_site_called/",
+   "date": "2026 (thread id 1vv3uit)"
+  },
+  {
+   "quote": "Is rotowire app down? (thread title — reliability complaints)",
+   "source": "https://www.reddit.com/r/fantasybaseball/comments/1v7xooe/is_rotowire_app_down/",
+   "date": "2026 (thread id 1v7xooe)"
+  },
+  {
+   "quote": "Rotowire lineups (thread title — lineup-product discussion)",
+   "source": "https://www.reddit.com/r/fantasybaseball/comments/1vrqru5/rotowire_lineups/",
+   "date": "2026 (thread id 1vrqru5)"
+  }
+ ],
+ "discovered_paths": [
+  "https://www.rotowire.com/llms.txt (explicit LLM-licensing policy in robots: 'LLM-policy: https://www.rotowire.com/llms.txt')",
+  "betting.xml, start-sit.xml, per-sport articles+players sitemaps (63 locs, raw/rotowire_com_dfs_sitemap.xml)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "fetcher.py scan: home 403 Cloudflare, robots+sitemap 200; 0 JS candidates fetchable",
+  "timestamp": "2026-09-08T15:20:00-05:00"
+ },
+ "tech_stack": {
+  "frontend": "NOT CONFIRMED (home 403; no JS bundles fetched)",
+  "backend": "NOT CONFIRMED (origin behind Cloudflare, cf-ray a38048374ac12c8f-DFW)",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare edge (server: cloudflare on all requests, raw/scan-rotowire_com_dfs.json request_log)",
+  "cdn": "Cloudflare",
+  "citations": [
+   "raw/scan-rotowire_com_dfs.json",
+   "raw/rotowire_com_dfs_robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/scan-rotowire_com_dfs.json"
+  ]
+ },
+ "disposition": "walled",
+ "notes": "Robots.txt names an LLM-policy file — RotoWire licenses content to AI products. GSE-relevant: content licensing via llms.txt is an emerging channel; also their crawler blocklist is extensive (UbiCrawler/DOC/Zao/offline tools) showing aggressive content protection."
+}

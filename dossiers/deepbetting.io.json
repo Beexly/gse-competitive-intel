@@ -1,0 +1,62 @@
+{
+ "domain": "deepbetting.io",
+ "type": "live-site",
+ "disposition": "live",
+ "tech_stack": {
+  "frontend": "Server-rendered marketing page (nginx 1.24.0 Ubuntu direct)",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "nginx on Ubuntu; contact via api.web3forms.com",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/probe_deepbetting_io.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/probe_deepbetting_io.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "'AI-powered predictions platform' (marketing claim) for football + NBA/NFL/MLB/NHL",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "raw/probe_deepbetting_io.txt"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED",
+  "citations": "NOT CONFIRMED"
+ },
+ "product_limits": {
+  "limits": "Free plan vs Premium subscription split ('Start with our free plan or unlock full access with Premium')",
+  "upgrade_triggers": "full access gated to Premium",
+  "citation": "raw/probe_deepbetting_io.txt"
+ },
+ "pricing": {
+  "web": "Free + Premium tiers confirmed; premium price number NOT CONFIRMED on homepage (Stripe integrated)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/probe_deepbetting_io.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/ (pricing section, FAQ, signup flow)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "direct homepage probe 200 (46KB) after batch returned zero evidence for this domain",
+  "timestamp": "2026-09-08T14:17:16.628994"
+ }
+}

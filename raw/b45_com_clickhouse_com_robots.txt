@@ -1,0 +1,7 @@
+User-Agent: *
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+Allow: /
+Disallow: /admin/
+Disallow: /marketo-forms/
+
+Sitemap: https://clickhouse.com/sitemap.xml

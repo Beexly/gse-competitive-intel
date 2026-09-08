@@ -1,0 +1,2768 @@
+URL: https://sportsdata.io/pricing\nSTATUS: 404\n\n<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+
+    
+    <title>Page Not Found | SportsDataIO</title>
+    <meta name="title" content="Page Not Found | SportsDataIO" />
+    <meta property="og:title" content="Page Not Found | SportsDataIO" />
+
+    
+    <meta name="description" content="Live sports data provider with scores, odds, projections, stats, news, and images for NFL football, MLB Baseball, NBA Basketball, NHL Hockey, PGA Golf, NASCAR, Tennis Data, Soccer, and ESports. SportsDataIO provides sports API feeds and database downloads to power your website and mobile applications" />
+    <meta property="og:description" content="Live sports data provider with scores, odds, projections, stats, news, and images for NFL football, MLB Baseball, NBA Basketball, NHL Hockey, PGA Golf, NASCAR, Tennis Data, Soccer, and ESports. SportsDataIO provides sports API feeds and database downloads to power your website and mobile applications" />
+
+    
+    <link rel="canonical" href="https://sportsdata.io/pricing" />
+    <meta property="og:url" content="https://sportsdata.io/pricing" />
+
+    
+    <meta name="image" content="https://sportsdata.io/assets/images/og_image.png" />
+    <meta property="og:image" content="https://sportsdata.io/assets/images/og_image.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+
+    
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SportsDataIO" />
+    <meta name="verify-v1" content="Ov22X2aXuurLzpgBRQUviPED0rxryoPh9Z74ewkUL6g=" />
+    <meta name="google-site-verification" content="n9cUNDtGbHao_9uTzSPxa7pudulmuaV554n2WQLnhpE" />
+    <meta name="ahrefs-site-verification" content="4c4bc1ecb500623969b6e17c6ba5e290af66502ac143ec90daec395e54eea7f6">
+
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@SportsDataIO" />
+    <meta name="twitter:title" content="Page Not Found | SportsDataIO" />
+    <meta name="twitter:description" content="Live sports data provider with scores, odds, projections, stats, news, and images for NFL football, MLB Baseball, NBA Basketball, NHL Hockey, PGA Golf, NASCAR, Tennis Data, Soccer, and ESports. SportsDataIO provides sports API feeds and database downloads to power your website and mobile applications" />
+    <meta name="twitter:image" content="https://sportsdata.io/assets/images/og_image.png">
+
+    <!-- Default link -->
+    <link href="/assets/css/bootstrap.css?v=2" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/bootstrap-xxs.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/fonts/figtree/figtree-variable.less" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- custom link -->
+    <link href="/assets/css/reset.less" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/shared.less" rel="stylesheet" />
+    <link href="/assets/css/custom.less" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/safari-fix.less" rel="stylesheet" type="text/css" />
+
+    <link href="https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.common-material.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.rtl.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.material.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.material.mobile.min.css" rel="stylesheet" />
+    <link href="/assets/css/kendo-fantasydata.less" rel="stylesheet" />
+
+    <link href="/assets/css/components.less" rel="stylesheet" />
+    <link href="/assets/css/site-layout.less" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/daaa0c9864.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <script src="/assets/js/bootstrap.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.placeholder.1.3.min.js" type="text/javascript"></script>
+
+    <!-- custom js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.4.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2019.2.514/js/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.17/angular-filter.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2019.2.514/js/kendo.all.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2019.2.514/js/kendo.aspnetmvc.min.js"></script>
+    <script src="/assets/js/custom.js?fdv=639135944612430916" type="text/javascript"></script>
+    <script src="/assets/js/slide-tabs.js"></script>
+    <script src="/assets/js/jquery.sticky-kit.min.js" type="text/javascript"></script>
+
+    <script src="/assets/js/angular-ellipsis.js"></script>
+    <script src="/assets/js/match-media.js"></script>
+    <script src="/assets/js/kendo-fantasydata.js?fdv=639135944632884706"></script>
+    <script src="/assets/js/app/app.js?fdv=639135944606070675"></script>
+
+    <script src="/assets/js/pdf-viewer.js" type="module"></script>
+
+    <script>
+        moment.tz.add([
+            'America/Los_Angeles|PST PDT|80 70|0101|1Lzm0 1zb0 Op0',
+            'America/New_York|EST EDT|50 40|0101|1Lz50 1zb0 Op0'
+        ]);
+
+        format_date = function (date, change_tz, show_sec) {
+            var result = '';
+            var date = moment(date);
+            var tz = date.isDST() ? 'EDT' : 'EST';
+
+            if (show_sec) {
+                result = date.format('ddd MM/DD/YYYY hh:mm:ss A');
+                if (change_tz) {
+                    if (date.isDST()) {
+                        result = date.utcOffset('-04:00').format('ddd MM/DD/YYYY hh:mm:ss A');
+                    }
+                    else {
+                        result = date.utcOffset('-05:00').format('ddd MM/DD/YYYY hh:mm:ss A');
+                    }
+                }
+
+            }
+            else {
+                result = date.format('ddd MM/DD/YYYY hh:mm A');
+                if (change_tz) {
+                    if (change_tz) {
+                        if (date.isDST()) {
+                            result = date.utcOffset('-04:00').format('ddd MM/DD/YYYY hh:mm A');
+                        }
+                        else {
+                            result = date.utcOffset('-05:00').format('ddd MM/DD/YYYY hh:mm A');
+                        }
+                    }
+                }
+
+            }
+
+            return `${result} EST`;
+        }
+
+        //function fd_recaptcha_submit(token) {
+        //    $("#fd-form").submit();
+        //    $("#fd-form").find(":submit").attr("disabled", "disabled");
+        //}
+
+        $(document).ready(function () {
+            $("#fd-form").on("submit", function () {
+                $(this).find(":submit").prop("disabled", true);
+            });
+        });
+
+        $.fn.is_in_viewport = function () {
+            var element_top = $(this).offset().top;
+            var element_bottom = element_top + $(this).outerHeight();
+
+            var viewport_top = $(window).scrollTop();
+            var viewport_bottom = viewport_top + $(window).height();
+
+            return element_bottom > viewport_top && element_top < viewport_bottom;
+        };
+    </script>
+
+    
+
+<!-- Google tag (gtag.js) GA V4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-METWHQGTC7"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-METWHQGTC7');
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2243375445913926');
+    fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=2243375445913926&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Facebook Pixel Code -->
+<!-- LinkedIn Code -->
+<script type="text/javascript">
+    _linkedin_partner_id = "4854514";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+    (function (l) {
+        if (!l) {
+            window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+            window.lintrk.q = []
+        }
+        var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript"; b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);
+    })(window.lintrk);
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=4854514&fmt=gif" />
+</noscript>
+<!-- End LinkedIn Code -->
+<!-- Hotjar Tracking Code for https://sportsdata.io -->
+<script>
+    (function (h, o, t, j, a, r) {
+        h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+        h._hjSettings = { hjid: 4958174, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script'); r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+</script>
+
+
+</head>
+<body class="active-transition sdio" ng-app="fantasydata">
+    <style>
+    .k-window-titlebar {
+        background-color: var(--theme-color);
+        text-align: center;
+        font-size: 14px;
+        font-family: var(--font-medium);
+        text-shadow: 1px 1px 2px #2d2d2d;
+    }
+
+    .lightbox-window .window-content {
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .lightbox-window a {
+        color: var(--theme-color);
+    }
+</style>
+
+<div id="unsupported_browser" class="lightbox-window" style="display: none;">
+    <div class="window-content" style="text-align: center;">
+        <p>
+            Your web browser appears to be outdated. Our website may not look quite right in it.
+        </p>
+        <p>
+            Please consider using one of our preferred browsers to enjoy an optimal experience.
+        </p>
+        <p>
+            <img style="display: block; margin: 20px auto;" src="/assets/images/supported-browsers.png" />
+        </p>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function isIE() {
+        var ua = window.navigator.userAgent; //Check the userAgent property of the window.navigator object
+        var msie = ua.indexOf('MSIE '); // IE 10 or older
+        var trident = ua.indexOf('Trident/'); //IE 11
+        return (msie > 0 || trident > 0);
+    }
+
+    if (isIE()) {
+        $(document).ready(function () {
+            try {
+                var window = $("#unsupported_browser").kendoWindow({
+                    width: "90%",
+                    maxWidth: "650px",
+                    title: "Unsupported Browser",
+                    visible: false,
+                    modal: true,
+                    actions: [
+                        "Close"
+                    ]
+                });
+
+                $(window)
+                    .data("kendoWindow")
+                    .center()
+                    .open();
+            }
+            catch (err) {
+                alert("Your web browser appears to be outdated.\n\nOur website may not look quite right in it.\n\nPlease consider using Google Chrome, Mozilla Firefox, Microsoft Edge or Apple Safari.")
+            }
+        })
+    }
+</script>
+    <div class="overlay"></div>
+    <div class="fd-body">
+        <div ng-controller="MainLayoutController as mainvm">
+            <div class="fd-body-overlay"></div>
+            <div id="fd-header" class="fd-header">
+                <link href="/assets/css/sitewide-message-sdio.less?v=072419" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    function DismissSitewideMessage(cookie) {
+        $.cookie(cookie, true, { expires: 9999 });
+        $("#" + cookie).slideUp(200, "linear");
+    }
+</script>
+
+
+
+                <nav class="site-nav site-nav-desktop">
+                    
+<link href="/assets/css/site-nav-desktop.less" rel="stylesheet" type="text/css" />
+
+
+<div class="header-nav">
+    <div class="nav-wrapper mx-lr-auto" id="desktop-nav">
+        <a href="/" class="nav-section nav-logo mx-h-auto">
+            <img src="/assets/images/logos-tm/sportsdataio-light-270.png" />
+        </a>
+        <ul class="nav-section nav-items">
+            <li class="nav-item">
+                <div class="nav-link-container">
+                    <button class="nav-link"><span>Solutions</span><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+                <div class="sub-nav-container">
+                    <div class="sub-nav">
+                        <div class="sub-nav-section sub-nav-industries">
+                            <h4 class="sub-nav-section-header">Industries</h4>
+                            <div class="sub-nav-cols">
+                                <div class="sub-nav-col">
+                                    <a class="sub-nav-item with-icon" href="/traders-operators">
+                                        <div class="fa-icon">
+                                            <i class="fa-duotone fa-solid fa-money-bill-transfer"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Traders &amp; Operators</div>
+                                            <div class="regular">
+                                                <div class="sub-nav-text-desc">
+                                                    Pricing, models, and settlement support.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item with-icon" href="/betting-brands-affiliates">
+                                        <div class="fa-icon">
+                                            <i class="fa-duotone fa-solid fa-network-wired"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Betting Brands &amp; Affiliates</div>
+                                            <div class="regular">
+                                                <div class="sub-nav-text-desc">
+                                                    Engage users, grow affiliate revenue.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item with-icon" href="/fantasy-brands-tools">
+                                        <div class="fa-icon">
+                                            <i class="fa-duotone fa-solid fa-screwdriver-wrench"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Fantasy Brands &amp; Tools</div>
+                                            <div class="regular">
+                                                <div class="sub-nav-text-desc">
+                                                    Award-winning data for fantasy tools.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item with-icon" href="/publishers">
+                                        <div class="fa-icon">
+                                            <i class="fa-duotone fa-solid fa-tv-retro"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Media &amp; Broadcast</div>
+                                            <div class="regular">
+                                                <div class="sub-nav-text-desc">
+                                                    Real-time data for broadcasts.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item with-icon" href="/leagues-and-teams">
+                                        <div class="fa-icon">
+                                            <i class="fa-duotone fa-solid fa-users"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Leagues &amp; Teams</div>
+                                            <div class="regular">
+                                                <div class="sub-nav-text-desc">
+                                                    Drive in-venue sponsorship value.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item with-icon" href="/prediction-markets">
+                                        <div class="fa-icon">
+                                            <i style="font-size: 18px" class="fa-duotone fa-solid fa-chart-mixed-up-circle-dollar"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Prediction Markets</div>
+                                            <div class="regular">
+                                                <div class="sub-nav-text-desc">
+                                                    Tools for prediction-market platforms.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-nav-section sub-nav-products">
+                            <h4 class="sub-nav-section-header">Products</h4>
+                            <div class="sub-nav-cols">
+                                <div class="sub-nav-col">
+                                    <a class="sub-nav-item with-icon hover-gray" href="/scores-and-stats">
+                                        <div class="fa-icon">
+                                            <i class="fa-duotone fa-light fa-football"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Sports Data</div>
+                                            <div class="regular indent">
+                                                <div class="sub-nav-text-desc"><span>Scores, Stats &amp; Plays</span></div>
+                                                <div class="sub-nav-text-desc"><span>Injuries, Lineups &amp; Depth Charts</span></div>
+                                                <div class="sub-nav-text-desc"><span>Teams, Stadiums &amp; Standings</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item with-icon hover-gray" href="/live-odds-api">
+                                        <div class="fa-icon">
+                                            <i class="fa-duotone fa-light fa-sack-dollar"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Betting Data</div>
+                                            <div class="regular indent">
+                                                <div class="sub-nav-text-desc"><span>Live Odds Feeds</span></div>
+                                                <div class="sub-nav-text-desc"><span>Pricing, Trading &amp; Settlement</span></div>
+                                                <div class="sub-nav-text-desc"><span>Matchups, Trends &amp; Insights</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item with-icon hover-gray" href="/fantasy-sports-api">
+                                        <div class="fa-icon">
+                                            <i class="fa-sharp-duotone fa-light fa-chart-simple"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Fantasy Data</div>
+                                            <div class="regular indent">
+                                                <div class="sub-nav-text-desc"><span>Projections &amp; Points</span></div>
+                                                <div class="sub-nav-text-desc"><span>Salaries &amp; Slates</span></div>
+                                                <div class="sub-nav-text-desc"><span>Fantasy Stats &amp; Info</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item with-icon hover-gray" href="/news-and-images">
+                                        <div class="fa-icon">
+                                            <i class="fa-duotone fa-light fa-newspaper"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">News &amp; Images</div>
+                                            <div class="regular indent">
+                                                <div class="sub-nav-text-desc"><span>Player News &amp; Notes</span></div>
+                                                <div class="sub-nav-text-desc"><span>Previews, Recaps & Breaking</span></div>
+                                                <div class="sub-nav-text-desc"><span>Custom &amp; Generated News</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sub-nav-col">
+                                    <a class="sub-nav-item with-icon hover-gray" href="/widgets">
+                                        <div class="fa-icon">
+                                            <i class="fa-sharp-duotone fa-light fa-chart-mixed"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Widgets, Graphics &amp; Data Viz</div>
+                                            <div class="regular indent">
+                                                <div class="sub-nav-text-desc"><span>Publisher Content Tiles</span></div>
+                                                <div class="sub-nav-text-desc"><span>Interactive Research Tools</span></div>
+                                                <div class="sub-nav-text-desc"><span>Matchup Pages &amp; Score Tickers</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item with-icon hover-gray" href="/sdx-id-mapping">
+                                        <div class="fa-icon">
+                                            <i class="fa-duotone fa-light fa-chart-diagram"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">SDX &amp; ID Mapping</div>
+                                            <div class="regular indent">
+                                                <div class="sub-nav-text-desc"><span>Universal Sports IDs</span></div>
+                                                <div class="sub-nav-text-desc"><span>Local-First Matching CLI</span></div>
+                                                <div class="sub-nav-text-desc"><span>Partner Mapping Marketplace</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item with-icon hover-gray" href="/vault">
+                                        <div class="fa-icon">
+                                            <i class="fa-duotone fa-light fa-database"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Historical Data</div>
+                                            <div class="regular indent">
+                                                <div class="sub-nav-text-desc"><span>Historical Sports Data</span></div>
+                                                <div class="sub-nav-text-desc"><span>Historical Odds &amp; Betting Lines</span></div>
+                                                <div class="sub-nav-text-desc"><span>News &amp; Images Archive</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item with-icon hover-gray" href="/ai-sports-content-automation">
+                                        <div class="fa-icon">
+                                            <i class="fa-duotone fa-light fa-microchip-ai"></i>
+                                        </div>
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Coded Content</div>
+                                            <div class="regular indent">
+                                                <div class="sub-nav-text-desc"><span>AI Content Automation</span></div>
+                                                <div class="sub-nav-text-desc"><span>Customizable Article Templates</span></div>
+                                                <div class="sub-nav-text-desc"><span>Real-Time Data Integration</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-nav-section sub-nav-by-league">
+                            <h4 class="sub-nav-section-header">APIs</h4>
+                            <a class="sub-nav-item with-icon sub-nav-league-api-link" href="/league-api">
+                                <div class="fa-icon">
+                                    <i class="fa-duotone fa-solid fa-trophy"></i>
+                                </div>
+                                <div class="sub-nav-text-container">
+                                    <div class="medium fs-lg">League API</div>
+                                    <div class="sub-nav-league-api-desc">
+                                        Deep, league-specific feeds with stats, play-by-play, betting, and fantasy.
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="sub-nav-cols">
+                                    <div class="sub-nav-col">
+                                        <a class="sub-nav-item hover-gray" href="/nfl-api">
+                                            <div class="sub-nav-text-container">
+                                                <div class="medium fs-lg">NFL</div>
+                                            </div>
+                                        </a>
+                                    <a class="sub-nav-item hover-gray" href="/mlb-api">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">MLB</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/nba-api">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">NBA</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/nhl-api">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">NHL</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/ncaa-college-football-api">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">College Football</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/ncaa-college-basketball-api">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">College Basketball</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sub-nav-col">
+                                    <a class="sub-nav-item hover-gray" href="/pga-golf-api">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">PGA / Golf</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/nascar-motorsports-api">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">NASCAR</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/soccer-api">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Soccer</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/mma-ufc-api">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">UFC / MMA</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/tennis-api">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Tennis</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/olympics-api">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Olympics</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <a class="sub-nav-item with-icon sub-nav-global-api" href="/global-api">
+                                <div class="fa-icon">
+                                    <i class="fa-duotone fa-solid fa-globe"></i>
+                                </div>
+                                <div class="sub-nav-text-container">
+                                    <div class="sub-nav-global-api-title">
+                                        Global API <span class="nav-new">NEW</span>
+                                    </div>
+                                    <div class="sub-nav-global-api-desc">
+                                        SportsDataIO&rsquo;s new Global API provides access to thousands of leagues across an ever-growing collection of sports.
+                                    </div>
+                                    <div class="sub-nav-global-api-cta">
+                                        Explore Global API &rarr;
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link-container">
+                    <button class="nav-link"><span>Developers</span><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+                <div class="sub-nav-container">
+                    <div class="sub-nav">
+                        <div class="sub-nav-section" style="grid-column-start: 1; grid-column-end: 3;">
+                            <h4 class="sub-nav-section-header">API Resources</h4>
+                            <div class="sub-nav-cols">
+                                <div class="sub-nav-col">
+                                    <a class="sub-nav-item hover-gray" href="/developers">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Getting Started</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/developers/apis">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Introduction &amp; Testing</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/developers/competition-coverage?view=popular">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Competition Coverage</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/developers/available-data-feeds">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Available Data Feeds</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/help" target="_blank">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Help Center</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="https://status.sportsdata.io">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">API Status</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sub-nav-col">
+                                     <a class="sub-nav-item hover-gray" href="/developers/workflow-guide">
+                                         <div class="sub-nav-text-container">
+                                             <div class="medium fs-lg">Workflow Guides</div>
+                                         </div>
+                                     </a>
+
+                                    <a class="sub-nav-item hover-gray" href="/developers/api-documentation/nfl">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">API Documentation</div>
+                                        </div>
+                                    </a>
+                                    <a class="sub-nav-item hover-gray" href="/developers/data-dictionary/nfl">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Data Dictionary</div>
+                                        </div>
+                                    </a>
+
+                                    <a class="sub-nav-item hover-gray" href="/developers/integration-tools">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">Integration Tools</div>
+                                        </div>
+                                    </a>
+
+                                    <a class="sub-nav-item hover-gray" href="/developers/replay">
+                                        <div class="sub-nav-text-container">
+                                            <div class="medium fs-lg">SportsDataIO REPLAY<span class="nav-new">NEW</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-nav-section">
+                            <h4 class="sub-nav-section-header">Widget Resources</h4>
+                            <a class="sub-nav-item hover-gray" href="/developers/widgets">
+                                <div class="sub-nav-text-container">
+                                    <div class="medium fs-lg">Introduction &amp; Testing</div>
+                                </div>
+                            </a>
+                            <a class="sub-nav-item hover-gray" href="/widget-catalog">
+                                <div class="sub-nav-text-container">
+                                    <div class="medium fs-lg">Widget Catalog</div>
+                                </div>
+                            </a>
+                            <a class="sub-nav-item hover-gray" href="/developers/widgets-guide">
+                                <div class="sub-nav-text-container">
+                                    <div class="medium fs-lg">Widget Integration Guide</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="nav-section nav-items mx-l-auto">
+
+                <li class="nav-item" ng-if="bootstrap_gte('lg')">
+                    <div class="nav-link-container">
+                        <a class="nav-link" href="/user/login?redirecturi=%2fpricing">
+                            Sign In
+                        </a>
+                    </div>
+                </li>
+            <li class="nav-item" style="height: unset;">
+                <div class="nav-link-container">
+                    <a class="nav-link contact-us" href="/contact-us">
+                        Contact Us
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+                </nav>
+
+                <nav class="site-nav site-nav-mobile">
+                    
+
+<link href="/assets/css/site-nav-mobile.less" rel="stylesheet" type="text/css" />
+
+<div ng-controller="MobileNavController as vm">
+    <div class="header-nav">
+        <div class="nav-wrapper mx-lr-auto" id="mobile-nav">
+            <a href="/" class="nav-logo mx-h-auto">
+                <img src="/assets/images/logos-tm/sportsdataio-light-270.png" />
+            </a>
+
+            <button ng-click="vm.toggle_nav()" class="mx-l-auto pd-lr-2" data-icon-change="true">
+                <i class="fa-sharp fa-solid fa-xl mx-h-auto"
+                   ng-class="{
+                    'fa-bars': !vm.nav_open,
+                    'fa-times': vm.nav_open
+               }"></i>
+            </button>
+        </div>
+    </div>
+    <div class="nav-container" 
+         ng-cloak
+         ng-show="vm.nav_open" 
+         ng-style="{ 
+           'height': vm.root_scope.height_minus_header()
+        }">
+        <div class="nav-content">
+            <div class="nav-breadcrumbs">
+                
+                {{current = vm.breadcrumbs.last();""}}
+                {{back = vm.breadcrumbs.second_to_last();""}}
+
+                <a class="nav-breadcrumb"
+                   ng-click="vm.go_to_breadcrumb(current)">
+                    <span >{{vm.get_nav_item(current).Text}}</span>
+                    
+                </a>
+
+                
+
+                
+            </div>
+
+            <div class="nav-links">
+                {{back = vm.breadcrumbs.second_to_last();""}}
+                <a class="nav-link back"
+                   ng-if="back"
+                   ng-click="vm.go_to_breadcrumb(back)">
+                    <div class="nav-link-item">
+                        <span class="nav-link-title">
+                            <i class="fa-solid fa-angle-left"></i>
+                            {{vm.get_nav_item(back).Text}}
+                        </span>
+                    </div>
+                </a>
+
+                            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'c6979c16-3f1e-490c-b27e-84812c9a01da'"
+                ng-click="vm.nav_link_clicked($event, '1c73b6ea-145a-4677-85f3-4ade642106f3')"
+                href="">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Industries</span>
+
+                        <i class="fa-solid fa-bars nav-link-sub"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        Industry-specific solutions tailored to your needs.
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '1c73b6ea-145a-4677-85f3-4ade642106f3'"
+                ng-click="vm.nav_link_clicked($event, 'b77d5f80-fdbb-4eca-bcb3-6070509fe2f7')"
+                href="https://sportsdata.io/traders-operators">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Traders &amp; Operators</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        From pricing models to settlement verification, we have you covered.
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '1c73b6ea-145a-4677-85f3-4ade642106f3'"
+                ng-click="vm.nav_link_clicked($event, '3a253c14-6e23-4fdd-aa6a-b93dd2a0e95e')"
+                href="https://sportsdata.io/betting-brands-affiliates">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Betting Brands &amp; Affiliates</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        Engage your users and maximize affiliate revenue.
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '1c73b6ea-145a-4677-85f3-4ade642106f3'"
+                ng-click="vm.nav_link_clicked($event, 'bdf4fbc3-604f-4ec2-960c-3295fe3872dc')"
+                href="https://sportsdata.io/fantasy-brands-tools">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Fantasy Brands &amp; Tools</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        Utilize our award winning data feeds to power your fantasy sports pages.
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '1c73b6ea-145a-4677-85f3-4ade642106f3'"
+                ng-click="vm.nav_link_clicked($event, 'b1e3757f-9ad7-434c-b9aa-ef3cb77fc581')"
+                href="https://sportsdata.io/publishers">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Media &amp; Broadcast</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        Get up to the second game data to power your broadcasts.
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '1c73b6ea-145a-4677-85f3-4ade642106f3'"
+                ng-click="vm.nav_link_clicked($event, '9942e4e7-efcc-402d-be6e-c884e1dfa4ec')"
+                href="https://sportsdata.io/leagues-and-teams">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Teams &amp; Leagues</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        Drive in-venue sponsorship opportunity.
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '1c73b6ea-145a-4677-85f3-4ade642106f3'"
+                ng-click="vm.nav_link_clicked($event, '6555ab85-7e36-480e-b5f1-38eda1ee2db0')"
+                href="https://sportsdata.io/prediction-markets">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Prediction Markets</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        Power platforms and tools for prediction markets.
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'c6979c16-3f1e-490c-b27e-84812c9a01da'"
+                ng-click="vm.nav_link_clicked($event, '9372719c-37fd-4016-b562-75c3a29a21b8')"
+                href="">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Products</span>
+
+                        <i class="fa-solid fa-bars nav-link-sub"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        Award-winning API products with unparalleled accuracy and reliability.
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '9372719c-37fd-4016-b562-75c3a29a21b8'"
+                ng-click="vm.nav_link_clicked($event, '44fd7fef-c82a-4e8a-845c-acd614b9b8db')"
+                href="https://sportsdata.io/scores-and-stats">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Sports Data</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        
+                        <div class="nav-item-html-list">
+                            <div class="nav-item-html-listitem"><span>Scores, Stats &amp; Plays</span></div>
+                            <div class="nav-item-html-listitem"><span>Injuries, Lineups &amp; Depth Charts</span></div>
+                            <div class="nav-item-html-listitem"><span>Teams, Stadiums &amp; Standings</span></div>
+                        </div>
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '9372719c-37fd-4016-b562-75c3a29a21b8'"
+                ng-click="vm.nav_link_clicked($event, 'add3ff5f-6ccb-427c-bfcd-2767017cf3c6')"
+                href="https://sportsdata.io/live-odds-api">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Betting Data</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        
+                        <div class="nav-item-html-list">
+                            <div class="nav-item-html-listitem"><span>Live Odds Feeds</span></div>
+                            <div class="nav-item-html-listitem"><span>Pricing, Trading &amp; Settlement</span></div>
+                            <div class="nav-item-html-listitem"><span>Matchups, Trends &amp; Insights</span></div>
+                        </div>
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '9372719c-37fd-4016-b562-75c3a29a21b8'"
+                ng-click="vm.nav_link_clicked($event, 'b442b4ba-914f-4d00-a391-866359dfac08')"
+                href="https://sportsdata.io/fantasy-sports-api">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Fantasy Data</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        
+                        <div class="nav-item-html-list">
+                            <div class="nav-item-html-listitem"><span>Projections &amp; Points</span></div>
+                            <div class="nav-item-html-listitem"><span>Salaries &amp; Slates</span></div>
+                            <div class="nav-item-html-listitem"><span>Fantasy Stats &amp; Info</span></div>
+                        </div>
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '9372719c-37fd-4016-b562-75c3a29a21b8'"
+                ng-click="vm.nav_link_clicked($event, '6f21a9f0-b7d9-4a31-a778-fe68ceddc7bc')"
+                href="https://sportsdata.io/news-and-images">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">News &amp; Images</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        
+                        <div class="nav-item-html-list">
+                            <div class="nav-item-html-listitem"><span>Player News &amp; Notes</span></div>
+                            <div class="nav-item-html-listitem"><span>Previews, Recaps & Breaking</span></div>
+                            <div class="nav-item-html-listitem"><span>Custom &amp; Generated News</span></div>
+                        </div>
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '9372719c-37fd-4016-b562-75c3a29a21b8'"
+                ng-click="vm.nav_link_clicked($event, 'c7e40d08-3e5d-4669-92b7-ce31f214a348')"
+                href="https://sportsdata.io/widgets">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Widgets, Graphics &amp; Data Viz</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        
+                        <div class="nav-item-html-list">
+                            <div class="nav-item-html-listitem"><span>Publisher Content Tiles</span></div>
+                            <div class="nav-item-html-listitem"><span>Interactive Research Tools</span></div>
+                            <div class="nav-item-html-listitem"><span>Matchup Pages &amp; Score Tickers</span></div>
+                        </div>
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '9372719c-37fd-4016-b562-75c3a29a21b8'"
+                ng-click="vm.nav_link_clicked($event, '9dd02d8f-afbf-40a0-b36e-5cea9e8aa54d')"
+                href="https://sportsdata.io/sdx-id-mapping">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">SDX &amp; ID Mapping</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        
+                        <div class="nav-item-html-list">
+                            <div class="nav-item-html-listitem"><span>Standardized unique IDs for mapping data across the sports tech ecosystem, free and open.</span></div>
+                        </div>
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '9372719c-37fd-4016-b562-75c3a29a21b8'"
+                ng-click="vm.nav_link_clicked($event, '66449a1a-7b9e-4b89-ad84-53405da743f3')"
+                href="https://sportsdata.io/vault">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Historical Data</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        
+                        <div class="nav-item-html-list">
+                            <div class="nav-item-html-listitem"><span>Historical Sports Data</span></div>
+                            <div class="nav-item-html-listitem"><span>Historical Odds &amp; Betting Lines</span></div>
+                            <div class="nav-item-html-listitem"><span>News &amp; Images Archive</span></div>
+                        </div>
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '9372719c-37fd-4016-b562-75c3a29a21b8'"
+                ng-click="vm.nav_link_clicked($event, '17aed254-dd55-4288-a3ec-c6e6b96154a2')"
+                href="https://sportsdata.io/ai-sports-content-automation">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Coded Content</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        
+                        <div class="nav-item-html-list">
+                            <div class="nav-item-html-listitem"><span>AI Content Automation</span></div>
+                            <div class="nav-item-html-listitem"><span>Customizable Article Templates</span></div>
+                            <div class="nav-item-html-listitem"><span>Real-Time Data Integration</span></div>
+                        </div>
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'c6979c16-3f1e-490c-b27e-84812c9a01da'"
+                ng-click="vm.nav_link_clicked($event, '6b6a5ac4-1643-42e3-8538-bce0efa3f535')"
+                href="">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Developers</span>
+
+                        <i class="fa-solid fa-bars nav-link-sub"></i>
+
+
+                </div>
+
+                    <div class="nav-link-html">
+                        Robust documentation and integration tools so you can hit the ground running.
+                    </div>
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '6b6a5ac4-1643-42e3-8538-bce0efa3f535'"
+                ng-click="vm.nav_link_clicked($event, 'afeb8b64-59c0-40e1-a04b-fe1f2f2944a1')"
+                href="https://sportsdata.io/developers">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Getting Started</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '6b6a5ac4-1643-42e3-8538-bce0efa3f535'"
+                ng-click="vm.nav_link_clicked($event, '41452547-36ce-4d5a-bdc4-34d8b999b5b8')"
+                href="https://sportsdata.io/developers/competition-coverage?view=popular">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Competition Coverage</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '6b6a5ac4-1643-42e3-8538-bce0efa3f535'"
+                ng-click="vm.nav_link_clicked($event, 'd636d276-0b34-43b7-8588-61b7a86d2dd4')"
+                href="https://sportsdata.io/developers/available-data-feeds">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Available Data Feeds</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '6b6a5ac4-1643-42e3-8538-bce0efa3f535'"
+                ng-click="vm.nav_link_clicked($event, '381db61d-a2a3-45dd-81ba-b0643bad9f5c')"
+                href="">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">API Resources</span>
+
+                        <i class="fa-solid fa-bars nav-link-sub"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '381db61d-a2a3-45dd-81ba-b0643bad9f5c'"
+                ng-click="vm.nav_link_clicked($event, '5c012a0f-1b00-42e4-9410-d5c0bdbce611')"
+                href="https://sportsdata.io/developers/apis">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Introduction &amp; Testing</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '381db61d-a2a3-45dd-81ba-b0643bad9f5c'"
+                ng-click="vm.nav_link_clicked($event, '6fbe04fe-4510-43f8-b630-eef816b41442')"
+                href="">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">League API</span>
+
+                        <i class="fa-solid fa-bars nav-link-sub"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '6fbe04fe-4510-43f8-b630-eef816b41442'"
+                ng-click="vm.nav_link_clicked($event, '41e7e511-4105-4b54-a854-e303b276e2df')"
+                href="">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Coverage</span>
+
+                        <i class="fa-solid fa-bars nav-link-sub"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '41e7e511-4105-4b54-a854-e303b276e2df'"
+                ng-click="vm.nav_link_clicked($event, '265465b7-f8fa-4ef0-96b2-54a937cb859d')"
+                href="https://sportsdata.io/developers/coverages/nfl">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NFL</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '41e7e511-4105-4b54-a854-e303b276e2df'"
+                ng-click="vm.nav_link_clicked($event, '423643ea-ae4a-4361-8e2e-749a68488ef9')"
+                href="https://sportsdata.io/developers/coverages/mlb">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">MLB</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '41e7e511-4105-4b54-a854-e303b276e2df'"
+                ng-click="vm.nav_link_clicked($event, 'aa0980e3-7e7d-49ab-80f9-b97aae108889')"
+                href="https://sportsdata.io/developers/coverages/nba">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NBA</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '41e7e511-4105-4b54-a854-e303b276e2df'"
+                ng-click="vm.nav_link_clicked($event, '462a96be-1167-4236-88cb-ef976dda4de6')"
+                href="https://sportsdata.io/developers/coverages/nhl">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NHL</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '41e7e511-4105-4b54-a854-e303b276e2df'"
+                ng-click="vm.nav_link_clicked($event, '9493b250-3520-4159-899f-89d9aa759eb3')"
+                href="https://sportsdata.io/developers/coverages/ncaa-football">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">College Football</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '41e7e511-4105-4b54-a854-e303b276e2df'"
+                ng-click="vm.nav_link_clicked($event, '36e99c3b-0965-4e55-83be-a61237440c9a')"
+                href="https://sportsdata.io/developers/coverages/ncaa-basketball">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">College Basketball</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '41e7e511-4105-4b54-a854-e303b276e2df'"
+                ng-click="vm.nav_link_clicked($event, 'e66397f0-1f35-4c54-b368-04af8cf12c46')"
+                href="https://sportsdata.io/developers/coverages/golf">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Golf</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '41e7e511-4105-4b54-a854-e303b276e2df'"
+                ng-click="vm.nav_link_clicked($event, '26e2101e-d1a4-4003-9561-6f942379cebf')"
+                href="https://sportsdata.io/developers/coverages/nascar">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NASCAR</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '41e7e511-4105-4b54-a854-e303b276e2df'"
+                ng-click="vm.nav_link_clicked($event, '07680b04-bed4-45ac-b68b-b16328f67c28')"
+                href="https://sportsdata.io/developers/coverages/soccer">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Soccer</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '41e7e511-4105-4b54-a854-e303b276e2df'"
+                ng-click="vm.nav_link_clicked($event, 'cc37a844-3ead-4bc7-9dd9-1e8d851e38b0')"
+                href="https://sportsdata.io/developers/coverages/mma">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">MMA</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '41e7e511-4105-4b54-a854-e303b276e2df'"
+                ng-click="vm.nav_link_clicked($event, '7de4d4d4-dba6-44c0-9453-0e60b33c93f5')"
+                href="https://sportsdata.io/developers/coverages/wnba">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">WNBA</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '41e7e511-4105-4b54-a854-e303b276e2df'"
+                ng-click="vm.nav_link_clicked($event, '12c6beed-c6d5-48ee-bd12-2b6140425e16')"
+                href="https://sportsdata.io/developers/coverages/ncaa-womens-basketball">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">College Women&#39;s Basketball</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '41e7e511-4105-4b54-a854-e303b276e2df'"
+                ng-click="vm.nav_link_clicked($event, 'fe9d546b-5ba0-4a11-b15e-0689f5c9d1fb')"
+                href="https://sportsdata.io/developers/coverages/f1">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">F1</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '6fbe04fe-4510-43f8-b630-eef816b41442'"
+                ng-click="vm.nav_link_clicked($event, 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5')"
+                href="">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">API Documentation</span>
+
+                        <i class="fa-solid fa-bars nav-link-sub"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5'"
+                ng-click="vm.nav_link_clicked($event, 'f4b9acf2-b8de-4b97-ae34-180915fffa25')"
+                href="https://sportsdata.io/developers/api-documentation/nfl">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NFL</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5'"
+                ng-click="vm.nav_link_clicked($event, '81288fe7-76ca-43f4-a219-f2f3a6e2e24b')"
+                href="https://sportsdata.io/developers/api-documentation/mlb">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">MLB</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5'"
+                ng-click="vm.nav_link_clicked($event, '6a98e8a1-c9eb-4293-a7ad-983cf1fb0d3e')"
+                href="https://sportsdata.io/developers/api-documentation/nba">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NBA</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5'"
+                ng-click="vm.nav_link_clicked($event, '98fae07b-a7c5-4bc4-b8ce-b4576827aa3a')"
+                href="https://sportsdata.io/developers/api-documentation/nhl">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NHL</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5'"
+                ng-click="vm.nav_link_clicked($event, '9bbb57ce-644a-4be2-8354-25a3319640b4')"
+                href="https://sportsdata.io/developers/api-documentation/ncaa-football">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">College Football</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5'"
+                ng-click="vm.nav_link_clicked($event, 'a9ec4217-e300-4fc5-9e1b-fab238f001cf')"
+                href="https://sportsdata.io/developers/api-documentation/ncaa-basketball">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">College Basketball</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5'"
+                ng-click="vm.nav_link_clicked($event, '581ebbe5-d78d-4f46-800e-74a973cc6324')"
+                href="https://sportsdata.io/developers/api-documentation/golf">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Golf</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5'"
+                ng-click="vm.nav_link_clicked($event, '338918e7-fa45-42f3-b0a9-8912f02dfe6b')"
+                href="https://sportsdata.io/developers/api-documentation/nascar">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NASCAR</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5'"
+                ng-click="vm.nav_link_clicked($event, '718362c7-462c-4ada-90b3-7a558f8465d6')"
+                href="https://sportsdata.io/developers/api-documentation/soccer">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Soccer</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5'"
+                ng-click="vm.nav_link_clicked($event, 'ca65640a-3404-4e2d-b170-f4a0f2d1a91b')"
+                href="https://sportsdata.io/developers/api-documentation/mma">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">MMA</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5'"
+                ng-click="vm.nav_link_clicked($event, 'f4250edc-8b8d-4476-b7e2-39caea81208a')"
+                href="https://sportsdata.io/developers/api-documentation/wnba">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">WNBA</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5'"
+                ng-click="vm.nav_link_clicked($event, '44438dcb-0c1a-49a9-b701-f1baada3bd72')"
+                href="https://sportsdata.io/developers/api-documentation/ncaa-womens-basketball">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">College Women&#39;s Basketball</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd7c20c96-8f6c-4e30-abc9-f21de6b35da5'"
+                ng-click="vm.nav_link_clicked($event, '9ac1ed1e-64b8-4cc1-ab05-f45fd1604cfe')"
+                href="https://sportsdata.io/developers/api-documentation/f1">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">F1</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '6fbe04fe-4510-43f8-b630-eef816b41442'"
+                ng-click="vm.nav_link_clicked($event, 'd27960b4-eceb-44be-ae9e-561bd87e6a87')"
+                href="">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Data Dictionary</span>
+
+                        <i class="fa-solid fa-bars nav-link-sub"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd27960b4-eceb-44be-ae9e-561bd87e6a87'"
+                ng-click="vm.nav_link_clicked($event, 'f708f626-dd4a-4d75-9797-aeb61d740c0a')"
+                href="https://sportsdata.io/developers/data-dictionary/nfl">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NFL</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd27960b4-eceb-44be-ae9e-561bd87e6a87'"
+                ng-click="vm.nav_link_clicked($event, 'ecd2ad5a-51de-4999-8a5b-dd1b0007c977')"
+                href="https://sportsdata.io/developers/data-dictionary/mlb">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">MLB</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd27960b4-eceb-44be-ae9e-561bd87e6a87'"
+                ng-click="vm.nav_link_clicked($event, '8dfca34d-a719-4513-9236-fdccea800150')"
+                href="https://sportsdata.io/developers/data-dictionary/nba">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NBA</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd27960b4-eceb-44be-ae9e-561bd87e6a87'"
+                ng-click="vm.nav_link_clicked($event, '584e44a4-f19d-4a8c-941c-33a0ec53f8bd')"
+                href="https://sportsdata.io/developers/data-dictionary/nhl">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NHL</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd27960b4-eceb-44be-ae9e-561bd87e6a87'"
+                ng-click="vm.nav_link_clicked($event, '5be02079-1187-4113-9e6c-c0450c030b77')"
+                href="https://sportsdata.io/developers/data-dictionary/ncaa-football">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">College Football</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd27960b4-eceb-44be-ae9e-561bd87e6a87'"
+                ng-click="vm.nav_link_clicked($event, '22da4556-e108-46d3-be4b-cd96f2fb1111')"
+                href="https://sportsdata.io/developers/data-dictionary/ncaa-basketball">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">College Basketball</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd27960b4-eceb-44be-ae9e-561bd87e6a87'"
+                ng-click="vm.nav_link_clicked($event, '80822ea7-c8d6-463e-bcef-c0323d46734e')"
+                href="https://sportsdata.io/developers/data-dictionary/golf">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Golf</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd27960b4-eceb-44be-ae9e-561bd87e6a87'"
+                ng-click="vm.nav_link_clicked($event, '13ad8cb0-3967-41e3-b162-eef96a2ec418')"
+                href="https://sportsdata.io/developers/data-dictionary/nascar">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NASCAR</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd27960b4-eceb-44be-ae9e-561bd87e6a87'"
+                ng-click="vm.nav_link_clicked($event, 'a5c0300d-8cb1-4f72-8bfd-05e98d5d4f71')"
+                href="https://sportsdata.io/developers/data-dictionary/soccer">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Soccer</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd27960b4-eceb-44be-ae9e-561bd87e6a87'"
+                ng-click="vm.nav_link_clicked($event, '1edaf334-235b-4d72-b088-ce51ffc51d39')"
+                href="https://sportsdata.io/developers/data-dictionary/mma">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">MMA</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd27960b4-eceb-44be-ae9e-561bd87e6a87'"
+                ng-click="vm.nav_link_clicked($event, '61482d13-9432-48da-9b40-bdb5bc7a7512')"
+                href="https://sportsdata.io/developers/data-dictionary/wnba">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">WNBA</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd27960b4-eceb-44be-ae9e-561bd87e6a87'"
+                ng-click="vm.nav_link_clicked($event, '68983fa4-655d-4410-91b8-000c85cd3a9e')"
+                href="https://sportsdata.io/developers/data-dictionary/ncaa-womens-basketball">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">College Women&#39;s Basketball</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == 'd27960b4-eceb-44be-ae9e-561bd87e6a87'"
+                ng-click="vm.nav_link_clicked($event, '27020ee7-dcb0-4b01-8a2f-aba3e0b63501')"
+                href="https://sportsdata.io/developers/data-dictionary/f1">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">F1</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '6fbe04fe-4510-43f8-b630-eef816b41442'"
+                ng-click="vm.nav_link_clicked($event, '47016bed-5e12-4850-8fa8-a4735cc9572c')"
+                href="">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Workflow Guides</span>
+
+                        <i class="fa-solid fa-bars nav-link-sub"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '47016bed-5e12-4850-8fa8-a4735cc9572c'"
+                ng-click="vm.nav_link_clicked($event, '3968023e-5f89-46f8-ba5f-8c7d36ad8cc2')"
+                href="https://sportsdata.io/developers/workflow-guide/nfl">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NFL</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '47016bed-5e12-4850-8fa8-a4735cc9572c'"
+                ng-click="vm.nav_link_clicked($event, 'eb573277-e3be-47a1-9f54-aa663b1929a5')"
+                href="https://sportsdata.io/developers/workflow-guide/mlb">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">MLB</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '47016bed-5e12-4850-8fa8-a4735cc9572c'"
+                ng-click="vm.nav_link_clicked($event, '887e6684-493b-4909-8fc8-4e7ba2dc7d3a')"
+                href="https://sportsdata.io/developers/workflow-guide/nba">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NBA</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '47016bed-5e12-4850-8fa8-a4735cc9572c'"
+                ng-click="vm.nav_link_clicked($event, '3e52afb7-9391-41ac-b5a8-f9e4050934c6')"
+                href="https://sportsdata.io/developers/workflow-guide/nhl">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NHL</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '47016bed-5e12-4850-8fa8-a4735cc9572c'"
+                ng-click="vm.nav_link_clicked($event, '8f1eb6f0-2428-4e04-9509-6e8545b8b15a')"
+                href="https://sportsdata.io/developers/workflow-guide/ncaa-football">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">College Football</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '47016bed-5e12-4850-8fa8-a4735cc9572c'"
+                ng-click="vm.nav_link_clicked($event, '2774d574-f5c7-4dcb-a18e-fd43e77ae1dd')"
+                href="https://sportsdata.io/developers/workflow-guide/ncaa-basketball">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">College Basketball</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '47016bed-5e12-4850-8fa8-a4735cc9572c'"
+                ng-click="vm.nav_link_clicked($event, '1eaaff20-16ff-4945-a3bf-8143d813d718')"
+                href="https://sportsdata.io/developers/workflow-guide/golf">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Golf</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '47016bed-5e12-4850-8fa8-a4735cc9572c'"
+                ng-click="vm.nav_link_clicked($event, 'b102e58b-6e07-4f1e-8251-6d3fa70113f7')"
+                href="https://sportsdata.io/developers/workflow-guide/nascar">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">NASCAR</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '47016bed-5e12-4850-8fa8-a4735cc9572c'"
+                ng-click="vm.nav_link_clicked($event, '2a1ec795-14c2-41da-95b9-11dbe9134494')"
+                href="https://sportsdata.io/developers/workflow-guide/soccer">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Soccer</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '47016bed-5e12-4850-8fa8-a4735cc9572c'"
+                ng-click="vm.nav_link_clicked($event, 'd97f76cf-36c7-4f8f-af8b-dce9a6dc80c7')"
+                href="https://sportsdata.io/developers/workflow-guide/mma">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">MMA</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '47016bed-5e12-4850-8fa8-a4735cc9572c'"
+                ng-click="vm.nav_link_clicked($event, '1bbae182-14ab-46ef-80d9-ee8eca39e84d')"
+                href="https://sportsdata.io/developers/workflow-guide/wnba">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">WNBA</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '47016bed-5e12-4850-8fa8-a4735cc9572c'"
+                ng-click="vm.nav_link_clicked($event, '224983ca-a143-4a00-a468-ec231d20aef9')"
+                href="https://sportsdata.io/developers/workflow-guide/ncaa-womens-basketball">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">College Women&#39;s Basketball</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '47016bed-5e12-4850-8fa8-a4735cc9572c'"
+                ng-click="vm.nav_link_clicked($event, 'e44688e4-81be-4105-b734-cd2c3d142f29')"
+                href="https://sportsdata.io/developers/workflow-guide/f1">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">F1</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '381db61d-a2a3-45dd-81ba-b0643bad9f5c'"
+                ng-click="vm.nav_link_clicked($event, '244b0521-b278-4290-aeb8-b9922ddde22b')"
+                href="">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Global API</span>
+
+                        <i class="fa-solid fa-bars nav-link-sub"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '244b0521-b278-4290-aeb8-b9922ddde22b'"
+                ng-click="vm.nav_link_clicked($event, '5e0fc61f-dca4-46b5-bf4c-66707a2a7e41')"
+                href="https://sportsdata.io/developers/api-documentation/global">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">API Documentation</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '244b0521-b278-4290-aeb8-b9922ddde22b'"
+                ng-click="vm.nav_link_clicked($event, '881956f3-733b-42f2-b635-936b3cdc356b')"
+                href="https://sportsdata.io/developers/data-dictionary/global">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Data Dictionary</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '244b0521-b278-4290-aeb8-b9922ddde22b'"
+                ng-click="vm.nav_link_clicked($event, 'c33dae17-125b-4232-bb75-c7e2c6b368a7')"
+                href="https://sportsdata.io/developers/workflow-guide/global">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Workflow Guide</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '381db61d-a2a3-45dd-81ba-b0643bad9f5c'"
+                ng-click="vm.nav_link_clicked($event, '2119d293-d2e2-456c-a289-2da8a575223c')"
+                href="https://sportsdata.io/developers/integration-tools">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Integration Tools</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '381db61d-a2a3-45dd-81ba-b0643bad9f5c'"
+                ng-click="vm.nav_link_clicked($event, '2283a5d5-1b0e-4e57-b6f5-d449de65c851')"
+                href="https://sportsdata.io/developers/sports-player-headshots-api">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Player Headshots</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '381db61d-a2a3-45dd-81ba-b0643bad9f5c'"
+                ng-click="vm.nav_link_clicked($event, '84e94b71-08c4-4e57-9901-a7a8dd75e764')"
+                href="https://sportsdata.io/developers/fantasy-scoring-system/nfl">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Fantasy Scoring</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '6b6a5ac4-1643-42e3-8538-bce0efa3f535'"
+                ng-click="vm.nav_link_clicked($event, '5ee0bce4-2d5f-45ec-ad84-21a1dd455648')"
+                href="">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Widget Resources</span>
+
+                        <i class="fa-solid fa-bars nav-link-sub"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '5ee0bce4-2d5f-45ec-ad84-21a1dd455648'"
+                ng-click="vm.nav_link_clicked($event, 'bba00480-32dd-42f8-84c7-a8a840b71e95')"
+                href="https://sportsdata.io/developers/widgets">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Introduction &amp; Testing</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '5ee0bce4-2d5f-45ec-ad84-21a1dd455648'"
+                ng-click="vm.nav_link_clicked($event, '8e52272c-5bb8-410b-b8b1-3917e5294c7b')"
+                href="https://sportsdata.io/developers/widgets-guide">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Widget Integration Guide</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+            <a class="nav-link" 
+                ng-show="vm.breadcrumbs.last() == '6b6a5ac4-1643-42e3-8538-bce0efa3f535'"
+                ng-click="vm.nav_link_clicked($event, '2251f275-6279-479a-9123-6075c02d39be')"
+                href="https://sportsdata.io/help">
+
+                <div class="nav-link-item">
+                    <span class="nav-link-title">Help Center</span>
+
+                        <i class="fa-solid fa-arrow-right nav-link-arrow"></i>
+
+
+                </div>
+
+
+            </a>
+
+            </div>
+
+            <div class="nav-footer">
+                
+                <div class="action-btns">
+                    <a class="action-btn action-btn-primary" href="/contact-us">
+                        Get in Touch
+                    </a>
+                </div>
+                <div class="bottom-bar">
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.facebook.com/sportsdataio/"><i class="fab fa-facebook-square"></i></a>
+                        <a target="_blank" href="https://twitter.com/SportsDataIO"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="account-actions">
+                            <a class="login-logout" href="/user/login?redirecturi=%2fpricing">
+                                <span>Sign In</span>
+                                <i class="fa-sharp fa-solid fa-right-to-bracket"></i>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var app = angular.module("fantasydata");
+
+    Array.prototype.last = function () { return this[this.length - 1]; }
+    Array.prototype.second_to_last = function () { return this[this.length - 2]; }
+
+    var MobileNavController = function ($scope, $window, $rootScope, $http, $timeout, $sce) {
+        var vm = this;
+        vm.location = window.location;
+        vm.nav_open = false;
+        vm.root_scope = $rootScope;
+
+        vm.get_breadcrumbs =  function (menu, url) {
+            function search(menu, url, path) {
+                if (menu.Url === url) {
+                    return path;
+                }
+                if (menu.items && menu.items.length > 0) {
+                    for (let item of menu.items) {
+                        const result = search(item, url, path.concat(menu));
+                        if (result) {
+                            return result;
+                        }
+                    }
+                }
+                return null;
+            }
+            return search(menu, url, []);
+        }
+
+        vm.toggle_nav = function (value) {
+            vm.nav_open = value != null ? value : !vm.nav_open;
+
+            if (vm.nav_open) {
+                var url = window.location.href;
+                if (url.indexOf('#') > 0)
+                    url = url.substring(0, url.indexOf('#'));
+
+                var current_breadcrumbs = vm.get_breadcrumbs(vm.mobile_nav, url);
+                if (current_breadcrumbs && current_breadcrumbs.length) {
+                    var ids = current_breadcrumbs.map(b => { return b.id; });
+                    vm.current_item = ids.last();
+                    vm.breadcrumbs = ids;
+                }
+                else {
+                    vm.current_item = vm.mobile_nav.id;
+                    vm.breadcrumbs = [vm.mobile_nav.id];
+                }
+
+            }
+        }
+
+        vm.mobile_nav = {"Text":"Main Menu","Url":"","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"c6979c16-3f1e-490c-b27e-84812c9a01da","items":[{"Text":"Industries","Url":"","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"Industry-specific solutions tailored to your needs.","NavGroupHtml":null,"Parent":null,"id":"1c73b6ea-145a-4677-85f3-4ade642106f3","items":[{"Text":"Traders \u0026 Operators","Url":"https://sportsdata.io/traders-operators","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"From pricing models to settlement verification, we have you covered.","NavGroupHtml":null,"Parent":null,"id":"b77d5f80-fdbb-4eca-bcb3-6070509fe2f7","items":[]},{"Text":"Betting Brands \u0026 Affiliates","Url":"https://sportsdata.io/betting-brands-affiliates","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"Engage your users and maximize affiliate revenue.","NavGroupHtml":null,"Parent":null,"id":"3a253c14-6e23-4fdd-aa6a-b93dd2a0e95e","items":[]},{"Text":"Fantasy Brands \u0026 Tools","Url":"https://sportsdata.io/fantasy-brands-tools","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"Utilize our award winning data feeds to power your fantasy sports pages.","NavGroupHtml":null,"Parent":null,"id":"bdf4fbc3-604f-4ec2-960c-3295fe3872dc","items":[]},{"Text":"Media \u0026 Broadcast","Url":"https://sportsdata.io/publishers","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"Get up to the second game data to power your broadcasts.","NavGroupHtml":null,"Parent":null,"id":"b1e3757f-9ad7-434c-b9aa-ef3cb77fc581","items":[]},{"Text":"Teams \u0026 Leagues","Url":"https://sportsdata.io/leagues-and-teams","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"Drive in-venue sponsorship opportunity.","NavGroupHtml":null,"Parent":null,"id":"9942e4e7-efcc-402d-be6e-c884e1dfa4ec","items":[]},{"Text":"Prediction Markets","Url":"https://sportsdata.io/prediction-markets","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"Power platforms and tools for prediction markets.","NavGroupHtml":null,"Parent":null,"id":"6555ab85-7e36-480e-b5f1-38eda1ee2db0","items":[]}]},{"Text":"Products","Url":"","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"Award-winning API products with unparalleled accuracy and reliability.","NavGroupHtml":null,"Parent":null,"id":"9372719c-37fd-4016-b562-75c3a29a21b8","items":[{"Text":"Sports Data","Url":"https://sportsdata.io/scores-and-stats","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"\r\n                        \u003cdiv class=\u0022nav-item-html-list\u0022\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eScores, Stats \u0026amp; Plays\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eInjuries, Lineups \u0026amp; Depth Charts\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eTeams, Stadiums \u0026amp; Standings\u003c/span\u003e\u003c/div\u003e\r\n                        \u003c/div\u003e","NavGroupHtml":null,"Parent":null,"id":"44fd7fef-c82a-4e8a-845c-acd614b9b8db","items":[]},{"Text":"Betting Data","Url":"https://sportsdata.io/live-odds-api","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"\r\n                        \u003cdiv class=\u0022nav-item-html-list\u0022\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eLive Odds Feeds\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003ePricing, Trading \u0026amp; Settlement\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eMatchups, Trends \u0026amp; Insights\u003c/span\u003e\u003c/div\u003e\r\n                        \u003c/div\u003e","NavGroupHtml":null,"Parent":null,"id":"add3ff5f-6ccb-427c-bfcd-2767017cf3c6","items":[]},{"Text":"Fantasy Data","Url":"https://sportsdata.io/fantasy-sports-api","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"\r\n                        \u003cdiv class=\u0022nav-item-html-list\u0022\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eProjections \u0026amp; Points\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eSalaries \u0026amp; Slates\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eFantasy Stats \u0026amp; Info\u003c/span\u003e\u003c/div\u003e\r\n                        \u003c/div\u003e","NavGroupHtml":null,"Parent":null,"id":"b442b4ba-914f-4d00-a391-866359dfac08","items":[]},{"Text":"News \u0026 Images","Url":"https://sportsdata.io/news-and-images","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"\r\n                        \u003cdiv class=\u0022nav-item-html-list\u0022\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003ePlayer News \u0026amp; Notes\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003ePreviews, Recaps \u0026 Breaking\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eCustom \u0026amp; Generated News\u003c/span\u003e\u003c/div\u003e\r\n                        \u003c/div\u003e","NavGroupHtml":null,"Parent":null,"id":"6f21a9f0-b7d9-4a31-a778-fe68ceddc7bc","items":[]},{"Text":"Widgets, Graphics \u0026 Data Viz","Url":"https://sportsdata.io/widgets","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"\r\n                        \u003cdiv class=\u0022nav-item-html-list\u0022\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003ePublisher Content Tiles\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eInteractive Research Tools\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eMatchup Pages \u0026amp; Score Tickers\u003c/span\u003e\u003c/div\u003e\r\n                        \u003c/div\u003e","NavGroupHtml":null,"Parent":null,"id":"c7e40d08-3e5d-4669-92b7-ce31f214a348","items":[]},{"Text":"SDX \u0026 ID Mapping","Url":"https://sportsdata.io/sdx-id-mapping","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"\r\n                        \u003cdiv class=\u0022nav-item-html-list\u0022\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eStandardized unique IDs for mapping data across the sports tech ecosystem, free and open.\u003c/span\u003e\u003c/div\u003e\r\n                        \u003c/div\u003e","NavGroupHtml":null,"Parent":null,"id":"9dd02d8f-afbf-40a0-b36e-5cea9e8aa54d","items":[]},{"Text":"Historical Data","Url":"https://sportsdata.io/vault","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"\r\n                        \u003cdiv class=\u0022nav-item-html-list\u0022\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eHistorical Sports Data\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eHistorical Odds \u0026amp; Betting Lines\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eNews \u0026amp; Images Archive\u003c/span\u003e\u003c/div\u003e\r\n                        \u003c/div\u003e","NavGroupHtml":null,"Parent":null,"id":"66449a1a-7b9e-4b89-ad84-53405da743f3","items":[]},{"Text":"Coded Content","Url":"https://sportsdata.io/ai-sports-content-automation","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"\r\n                        \u003cdiv class=\u0022nav-item-html-list\u0022\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eAI Content Automation\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eCustomizable Article Templates\u003c/span\u003e\u003c/div\u003e\r\n                            \u003cdiv class=\u0022nav-item-html-listitem\u0022\u003e\u003cspan\u003eReal-Time Data Integration\u003c/span\u003e\u003c/div\u003e\r\n                        \u003c/div\u003e","NavGroupHtml":null,"Parent":null,"id":"17aed254-dd55-4288-a3ec-c6e6b96154a2","items":[]}]},{"Text":"Developers","Url":"","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":"Robust documentation and integration tools so you can hit the ground running.","NavGroupHtml":null,"Parent":null,"id":"6b6a5ac4-1643-42e3-8538-bce0efa3f535","items":[{"Text":"Getting Started","Url":"https://sportsdata.io/developers","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"afeb8b64-59c0-40e1-a04b-fe1f2f2944a1","items":[]},{"Text":"Competition Coverage","Url":"https://sportsdata.io/developers/competition-coverage?view=popular","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"41452547-36ce-4d5a-bdc4-34d8b999b5b8","items":[]},{"Text":"Available Data Feeds","Url":"https://sportsdata.io/developers/available-data-feeds","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"d636d276-0b34-43b7-8588-61b7a86d2dd4","items":[]},{"Text":"API Resources","Url":"","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"381db61d-a2a3-45dd-81ba-b0643bad9f5c","items":[{"Text":"Introduction \u0026 Testing","Url":"https://sportsdata.io/developers/apis","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"5c012a0f-1b00-42e4-9410-d5c0bdbce611","items":[]},{"Text":"League API","Url":"","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"6fbe04fe-4510-43f8-b630-eef816b41442","items":[{"Text":"Coverage","Url":"https://sportsdata.io/developers/coverages/nfl","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"41e7e511-4105-4b54-a854-e303b276e2df","items":[{"Text":"NFL","Url":"https://sportsdata.io/developers/coverages/nfl","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"265465b7-f8fa-4ef0-96b2-54a937cb859d","items":[]},{"Text":"MLB","Url":"https://sportsdata.io/developers/coverages/mlb","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"423643ea-ae4a-4361-8e2e-749a68488ef9","items":[]},{"Text":"NBA","Url":"https://sportsdata.io/developers/coverages/nba","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"aa0980e3-7e7d-49ab-80f9-b97aae108889","items":[]},{"Text":"NHL","Url":"https://sportsdata.io/developers/coverages/nhl","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"462a96be-1167-4236-88cb-ef976dda4de6","items":[]},{"Text":"College Football","Url":"https://sportsdata.io/developers/coverages/ncaa-football","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"9493b250-3520-4159-899f-89d9aa759eb3","items":[]},{"Text":"College Basketball","Url":"https://sportsdata.io/developers/coverages/ncaa-basketball","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"36e99c3b-0965-4e55-83be-a61237440c9a","items":[]},{"Text":"Golf","Url":"https://sportsdata.io/developers/coverages/golf","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"e66397f0-1f35-4c54-b368-04af8cf12c46","items":[]},{"Text":"NASCAR","Url":"https://sportsdata.io/developers/coverages/nascar","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"26e2101e-d1a4-4003-9561-6f942379cebf","items":[]},{"Text":"Soccer","Url":"https://sportsdata.io/developers/coverages/soccer","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"07680b04-bed4-45ac-b68b-b16328f67c28","items":[]},{"Text":"MMA","Url":"https://sportsdata.io/developers/coverages/mma","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"cc37a844-3ead-4bc7-9dd9-1e8d851e38b0","items":[]},{"Text":"WNBA","Url":"https://sportsdata.io/developers/coverages/wnba","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"7de4d4d4-dba6-44c0-9453-0e60b33c93f5","items":[]},{"Text":"College Women\u0027s Basketball","Url":"https://sportsdata.io/developers/coverages/ncaa-womens-basketball","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"12c6beed-c6d5-48ee-bd12-2b6140425e16","items":[]},{"Text":"F1","Url":"https://sportsdata.io/developers/coverages/f1","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"fe9d546b-5ba0-4a11-b15e-0689f5c9d1fb","items":[]}]},{"Text":"API Documentation","Url":"","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"d7c20c96-8f6c-4e30-abc9-f21de6b35da5","items":[{"Text":"NFL","Url":"https://sportsdata.io/developers/api-documentation/nfl","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"f4b9acf2-b8de-4b97-ae34-180915fffa25","items":[]},{"Text":"MLB","Url":"https://sportsdata.io/developers/api-documentation/mlb","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"81288fe7-76ca-43f4-a219-f2f3a6e2e24b","items":[]},{"Text":"NBA","Url":"https://sportsdata.io/developers/api-documentation/nba","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"6a98e8a1-c9eb-4293-a7ad-983cf1fb0d3e","items":[]},{"Text":"NHL","Url":"https://sportsdata.io/developers/api-documentation/nhl","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"98fae07b-a7c5-4bc4-b8ce-b4576827aa3a","items":[]},{"Text":"College Football","Url":"https://sportsdata.io/developers/api-documentation/ncaa-football","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"9bbb57ce-644a-4be2-8354-25a3319640b4","items":[]},{"Text":"College Basketball","Url":"https://sportsdata.io/developers/api-documentation/ncaa-basketball","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"a9ec4217-e300-4fc5-9e1b-fab238f001cf","items":[]},{"Text":"Golf","Url":"https://sportsdata.io/developers/api-documentation/golf","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"581ebbe5-d78d-4f46-800e-74a973cc6324","items":[]},{"Text":"NASCAR","Url":"https://sportsdata.io/developers/api-documentation/nascar","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"338918e7-fa45-42f3-b0a9-8912f02dfe6b","items":[]},{"Text":"Soccer","Url":"https://sportsdata.io/developers/api-documentation/soccer","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"718362c7-462c-4ada-90b3-7a558f8465d6","items":[]},{"Text":"MMA","Url":"https://sportsdata.io/developers/api-documentation/mma","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"ca65640a-3404-4e2d-b170-f4a0f2d1a91b","items":[]},{"Text":"WNBA","Url":"https://sportsdata.io/developers/api-documentation/wnba","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"f4250edc-8b8d-4476-b7e2-39caea81208a","items":[]},{"Text":"College Women\u0027s Basketball","Url":"https://sportsdata.io/developers/api-documentation/ncaa-womens-basketball","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"44438dcb-0c1a-49a9-b701-f1baada3bd72","items":[]},{"Text":"F1","Url":"https://sportsdata.io/developers/api-documentation/f1","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"9ac1ed1e-64b8-4cc1-ab05-f45fd1604cfe","items":[]}]},{"Text":"Data Dictionary","Url":"","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"d27960b4-eceb-44be-ae9e-561bd87e6a87","items":[{"Text":"NFL","Url":"https://sportsdata.io/developers/data-dictionary/nfl","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"f708f626-dd4a-4d75-9797-aeb61d740c0a","items":[]},{"Text":"MLB","Url":"https://sportsdata.io/developers/data-dictionary/mlb","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"ecd2ad5a-51de-4999-8a5b-dd1b0007c977","items":[]},{"Text":"NBA","Url":"https://sportsdata.io/developers/data-dictionary/nba","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"8dfca34d-a719-4513-9236-fdccea800150","items":[]},{"Text":"NHL","Url":"https://sportsdata.io/developers/data-dictionary/nhl","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"584e44a4-f19d-4a8c-941c-33a0ec53f8bd","items":[]},{"Text":"College Football","Url":"https://sportsdata.io/developers/data-dictionary/ncaa-football","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"5be02079-1187-4113-9e6c-c0450c030b77","items":[]},{"Text":"College Basketball","Url":"https://sportsdata.io/developers/data-dictionary/ncaa-basketball","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"22da4556-e108-46d3-be4b-cd96f2fb1111","items":[]},{"Text":"Golf","Url":"https://sportsdata.io/developers/data-dictionary/golf","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"80822ea7-c8d6-463e-bcef-c0323d46734e","items":[]},{"Text":"NASCAR","Url":"https://sportsdata.io/developers/data-dictionary/nascar","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"13ad8cb0-3967-41e3-b162-eef96a2ec418","items":[]},{"Text":"Soccer","Url":"https://sportsdata.io/developers/data-dictionary/soccer","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"a5c0300d-8cb1-4f72-8bfd-05e98d5d4f71","items":[]},{"Text":"MMA","Url":"https://sportsdata.io/developers/data-dictionary/mma","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"1edaf334-235b-4d72-b088-ce51ffc51d39","items":[]},{"Text":"WNBA","Url":"https://sportsdata.io/developers/data-dictionary/wnba","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"61482d13-9432-48da-9b40-bdb5bc7a7512","items":[]},{"Text":"College Women\u0027s Basketball","Url":"https://sportsdata.io/developers/data-dictionary/ncaa-womens-basketball","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"68983fa4-655d-4410-91b8-000c85cd3a9e","items":[]},{"Text":"F1","Url":"https://sportsdata.io/developers/data-dictionary/f1","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"27020ee7-dcb0-4b01-8a2f-aba3e0b63501","items":[]}]},{"Text":"Workflow Guides","Url":"https://sportsdata.io/developers/workflow-guide","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"47016bed-5e12-4850-8fa8-a4735cc9572c","items":[{"Text":"NFL","Url":"https://sportsdata.io/developers/workflow-guide/nfl","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"3968023e-5f89-46f8-ba5f-8c7d36ad8cc2","items":[]},{"Text":"MLB","Url":"https://sportsdata.io/developers/workflow-guide/mlb","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"eb573277-e3be-47a1-9f54-aa663b1929a5","items":[]},{"Text":"NBA","Url":"https://sportsdata.io/developers/workflow-guide/nba","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"887e6684-493b-4909-8fc8-4e7ba2dc7d3a","items":[]},{"Text":"NHL","Url":"https://sportsdata.io/developers/workflow-guide/nhl","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"3e52afb7-9391-41ac-b5a8-f9e4050934c6","items":[]},{"Text":"College Football","Url":"https://sportsdata.io/developers/workflow-guide/ncaa-football","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"8f1eb6f0-2428-4e04-9509-6e8545b8b15a","items":[]},{"Text":"College Basketball","Url":"https://sportsdata.io/developers/workflow-guide/ncaa-basketball","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"2774d574-f5c7-4dcb-a18e-fd43e77ae1dd","items":[]},{"Text":"Golf","Url":"https://sportsdata.io/developers/workflow-guide/golf","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"1eaaff20-16ff-4945-a3bf-8143d813d718","items":[]},{"Text":"NASCAR","Url":"https://sportsdata.io/developers/workflow-guide/nascar","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"b102e58b-6e07-4f1e-8251-6d3fa70113f7","items":[]},{"Text":"Soccer","Url":"https://sportsdata.io/developers/workflow-guide/soccer","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"2a1ec795-14c2-41da-95b9-11dbe9134494","items":[]},{"Text":"MMA","Url":"https://sportsdata.io/developers/workflow-guide/mma","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"d97f76cf-36c7-4f8f-af8b-dce9a6dc80c7","items":[]},{"Text":"WNBA","Url":"https://sportsdata.io/developers/workflow-guide/wnba","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"1bbae182-14ab-46ef-80d9-ee8eca39e84d","items":[]},{"Text":"College Women\u0027s Basketball","Url":"https://sportsdata.io/developers/workflow-guide/ncaa-womens-basketball","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"224983ca-a143-4a00-a468-ec231d20aef9","items":[]},{"Text":"F1","Url":"https://sportsdata.io/developers/workflow-guide/f1","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"e44688e4-81be-4105-b734-cd2c3d142f29","items":[]}]}]},{"Text":"Global API","Url":"","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"244b0521-b278-4290-aeb8-b9922ddde22b","items":[{"Text":"API Documentation","Url":"https://sportsdata.io/developers/api-documentation/global","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"5e0fc61f-dca4-46b5-bf4c-66707a2a7e41","items":[]},{"Text":"Data Dictionary","Url":"https://sportsdata.io/developers/data-dictionary/global","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"881956f3-733b-42f2-b635-936b3cdc356b","items":[]},{"Text":"Workflow Guide","Url":"https://sportsdata.io/developers/workflow-guide/global","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"c33dae17-125b-4232-bb75-c7e2c6b368a7","items":[]}]},{"Text":"Integration Tools","Url":"https://sportsdata.io/developers/integration-tools","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"2119d293-d2e2-456c-a289-2da8a575223c","items":[]},{"Text":"Player Headshots","Url":"https://sportsdata.io/developers/sports-player-headshots-api","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"2283a5d5-1b0e-4e57-b6f5-d449de65c851","items":[]},{"Text":"Fantasy Scoring","Url":"https://sportsdata.io/developers/fantasy-scoring-system/nfl","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"84e94b71-08c4-4e57-9901-a7a8dd75e764","items":[]}]},{"Text":"Widget Resources","Url":"","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"5ee0bce4-2d5f-45ec-ad84-21a1dd455648","items":[{"Text":"Introduction \u0026 Testing","Url":"https://sportsdata.io/developers/widgets","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"bba00480-32dd-42f8-84c7-a8a840b71e95","items":[]},{"Text":"Widget Integration Guide","Url":"https://sportsdata.io/developers/widgets-guide","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"8e52272c-5bb8-410b-b8b1-3917e5294c7b","items":[]}]},{"Text":"Help Center","Url":"https://sportsdata.io/help","Slug":null,"is_collapsible":true,"is_section":false,"is_selected":false,"has_selected":false,"expanded":false,"NewTab":false,"NavLinkHtml":null,"NavGroupHtml":null,"Parent":null,"id":"2251f275-6279-479a-9123-6075c02d39be","items":[]}]}]};
+
+        vm.nav_link_clicked = function (e, id) {
+            var item = vm.get_nav_item(id);
+            if (item.items.length) {
+                e.preventDefault();
+                vm.breadcrumbs.push(id);
+            }
+        }
+
+        vm.flatten_nav = function (tree) {
+            return tree.flatMap(item => item.items ? [item, ...vm.flatten_nav(item.items)] : item);
+        }
+
+        vm.get_nav_item = function (id) {
+            var flattened = [vm.mobile_nav, ...vm.flatten_nav(vm.mobile_nav.items)];
+            var nav_item = _.find(flattened, i => i.id == id);
+            return nav_item;
+        }
+
+        vm.go_to_breadcrumb = function (id) {
+            var index = vm.breadcrumbs.indexOf(id);
+            vm.breadcrumbs = vm.breadcrumbs.slice(0, index + 1);
+        }
+
+        vm.current_item = vm.mobile_nav.id;
+        vm.breadcrumbs = [vm.mobile_nav.id];
+
+        angular.element($window).on('resize', function () {
+            vm.toggle_nav(false);
+        });
+
+        $scope.$watch('vm.nav_open', function (new_val, old_val) {
+            if (new_val) {
+                $("body").addClass("mobile-nav-open");
+            }
+            else {
+                $("body").removeClass("mobile-nav-open");
+            }
+        });
+    }
+
+    app.controller("MobileNavController", MobileNavController);
+</script>
+
+
+
+                </nav>
+
+
+
+            </div>
+            <div class="fd-content">
+                
+
+<link href="/assets/css/content-page.less" rel="stylesheet" />
+<link href="/assets/css/components.less" rel="stylesheet" />
+
+<main class="content-page">
+    <div class="container" style="padding: 0px;">
+        <div class="content-container">
+            
+
+<style>
+    .content-page .content-container {
+        max-width: 800px;
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    @media (max-width: 767px) {
+        .content-page .content-container {
+            margin: 20px auto 100px auto;
+            box-shadow: none;
+        }
+    }
+</style>
+
+
+
+<div>
+    <h1>Oops!</h1>
+    <br />
+    <p><strong>We can't seem to find the page you're looking for.</strong></p>
+    <p>
+        If you're having difficulty, please let <a href="mailto:support@sportsdata.io">customer support</a> know what you were trying to do and we'll get everything taken care of.
+    </p>
+    <p>
+        Thank you for using SportsDataIO!
+    </p>
+</div>
+        </div>
+    </div>
+</main>
+            </div>
+        </div>
+    </div>
+    <link href="/assets/css/footer.less" rel="stylesheet" />
+<section class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="top">
+                    <div class="logo">
+                        <img src="/assets/images/logos-tm/sportsdataio-white-270.png" />
+
+                        <div class="fsga">
+                            SBC Best Data Provider
+
+                            <div style="margin-top: 20px;">
+                                <img src="/assets/images/sbc_logo.png" style="display: inline-block; height: 125px;" />
+                            </div>
+                        </div>
+
+                        <div class="address">
+                            <span style="font-family: var(--font-medium);">Corporate Headquarters</span><br />
+                            <span>SportsDataIO</span><br />
+                            <span>1100 E. Hector St, Ste 393</span><br />
+                            <span>Conshohocken, PA 19428</span><br />
+                        </div>
+
+                        <div class="address">
+                            <span style="font-family: var(--font-medium);">Data Operations Office</span><br />
+                            <span>SportsDataIO</span><br />
+                            <span>7224 E. McDowell Rd, Ste 200A</span><br />
+                            <span>Scottsdale, AZ 85257</span><br />
+                        </div>
+
+                        <div class="telephone-link" style="margin: 15px auto">
+                            <a href="tel:6102331333"><i class="fa-sharp fa-solid fa-phone"></i> (610) 233-1333</a>
+                        </div>
+                    </div>
+                    <div class="link-col">
+                        <div>
+                            <h4>Solutions</h4>
+                            <ul>
+                                <li><a href="/traders-operators">Traders & Operators</a></li>
+                                <li><a href="/betting-brands-affiliates">Betting Brands &amp; Affiliates</a></li>
+                                <li><a href="/fantasy-brands-tools">Fantasy Brands &amp; Tools</a></li>
+                                <li><a href="/publishers">Media &amp; Broadcast</a></li>
+                                <li><a href="/leagues-and-teams">Teams &amp; Leagues</a></li>
+                                <li><a href="/prediction-markets">Prediction Markets</a></li>
+
+                            </ul>
+                            <h4>Products</h4>
+                            <ul>
+                                <li><a href="/scores-and-stats">Sports Data</a></li>
+                                <li><a href="/live-odds-api">Betting Data</a></li>
+                                <li><a href="/fantasy-sports-api">Fantasy Data</a></li>
+                                <li><a href="/news-and-images">News &amp; Images</a></li>
+                                <li><a href="/widgets">Widgets, Graphics &amp; Data Viz</a></li>
+                                <li><a href="/sdx-id-mapping">SDX &amp; ID Mapping</a></li>
+                                <li><a href="/vault">Historical Data</a></li>
+                                <li><a href="/ai-sports-content-automation">Coded Content</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="link-col">
+                        <div>
+                            <h4>Sports Data APIs</h4>
+                            <ul>
+                                <li><a href="/nfl-api">NFL API</a></li>
+                                <li><a href="/mlb-api">MLB API</a></li>
+                                <li><a href="/nba-api">NBA API</a></li>
+                                <li><a href="/nhl-api">NHL API</a></li>
+                                <li><a href="/ncaa-college-football-api">College Football API</a></li>
+                                <li><a href="/ncaa-college-basketball-api">College Basketball API</a></li>
+                                <li><a href="/pga-golf-api">PGA GOLF API</a></li>
+                                <li><a href="/nascar-motorsports-api">NASCAR API</a></li>
+                                <li><a href="/soccer-api">Soccer API</a></li>
+                                <li><a href="/mma-ufc-api">UFC / MMA API</a></li>
+                                <li><a href="/tennis-api">Tennis API</a></li>
+                                <li><a href="/olympics-api">Olympics API</a></li>
+                                <li><a href="/global-soccer-tournaments">Global Soccer Tournaments</a></li>
+                                <li><a href="/apis">General Info</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="link-col">
+                        <div>
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="/company">About Us</a></li>
+                                <li><a href="/contact-us">Contact Us</a></li>
+                                <li><a href="/articles">Blog</a></li>
+                            </ul>
+                            <h4>Comparisons</h4>
+                            <ul>
+                                <li><a href="/sportradar-alternative">Sportradar</a></li>
+                                <li><a href="/genius-sports-alternative">Genius Sports</a></li>
+                                <li><a href="/opticodds-alternative">OpticOdds</a></li>
+                                <li><a href="/oddsjam-alternative">OddsJam</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <hr />
+                <div class="bottom">
+                    <div class="important">
+                        <div>Copyright © 2026 SportsDataIO<span style="vertical-align: super; font-size: 6px">TM</span></div> 
+                        <div><a href="/terms-of-service">Terms of Service</a></div>  
+                        <div><a href="/privacy-policy">Privacy Policy</a></div>
+                    </div>
+                    <div class="social-wrap">
+                        <div class="social-media">
+                            <a target="_blank" href="https://www.linkedin.com/company/sportsdatadotio"><i class="fab fa-linkedin"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/sportsdataio/"><i class="fab fa-facebook-square"></i></a>
+                            <a target="_blank" href="https://twitter.com/SportsDataIO"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 1048717135;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    var google_conversion_format = 3;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1048717135/?value=0&amp;guid=ON&amp;script=0" />
+    </div>
+</noscript>
+
+
+<script type="text/javascript">
+    adroll_adv_id = "FTRQKGG3PZHZ7NYBJ2LVRD";
+    adroll_pix_id = "MU7DKTAYO5B2NNVNVCD5CS";
+
+    (function () {
+        var _onload = function () {
+            if (document.readyState && !/loaded|complete/.test(document.readyState)) { setTimeout(_onload, 10); return }
+            if (!window.__adroll_loaded) { __adroll_loaded = true; setTimeout(_onload, 50); return }
+            var scr = document.createElement("script");
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+            scr.setAttribute('async', 'true');
+            scr.type = "text/javascript";
+            scr.src = host + "/j/roundtrip.js";
+            ((document.getElementsByTagName('head') || [null])[0] ||
+                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+        };
+        if (window.addEventListener) { window.addEventListener('load', _onload, false); }
+        else { window.attachEvent('onload', _onload) }
+    }());
+</script>
+
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com -->
+<script>(function (d, u, ac) { var s = d.createElement('script'); s.type = 'text/javascript'; s.src = 'https://a.omappapi.com/app/js/api.min.js'; s.async = true; s.dataset.user = u; s.dataset.account = ac; d.getElementsByTagName('head')[0].appendChild(s); })(document, 220947, 237369);</script>
+<!-- / OptinMonster -->
+
+
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"663131c0d601fd03006b9d77"})},
+document.head.appendChild(o)}initApollo();</script>
+    <style>
+    .cookieinfo {
+        font-size: 12px !important;
+    }
+
+    .cookieinfo span {
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    .cookieinfo-close {
+        background: var(--theme-color) !important;
+        color: #FFF !important;
+        font-family: var(--font-medium);
+        text-transform: uppercase;
+        border-radius: 25px !important;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+    }
+
+    .cookieinfo-close:hover {
+        background-color: #FFF !important;
+        color: var(--theme-color) !important;
+    }
+</style>
+
+<script type="text/javascript" id="cookieinfo"
+        src="//cookieinfoscript.com/js/cookieinfo.min.js"
+        data-bg="#1b2b37e8"
+        data-fg="#FFFFFF"
+        data-link="#1493ff"
+        data-cookie="SportsDataIO_CookiesAccepted"
+        data-text-align="left"
+        data-close-text="Accept">
+</script>
+    
+<link href="/assets/css/inquiry-modal.less" rel="stylesheet" type="text/css" />
+
+<div class="inq-modal-wrap"
+     ng-controller="InquiryController as inquiry_vm">
+    <div id="inq-modal-btn">
+        <a class="inq-modal-btn-content" href="/contact-us">
+            <i class="fa-duotone fa-solid fa-messages inq-icon "></i>
+            <span>Contact Us</span>
+        </a>
+    </div>
+</div>
+
+<script>
+    var app = angular.module("fantasydata")
+    var InquiryController = function ($scope, $http, $timeout, $rootScope, $window) {
+        var inquiry_vm = this;
+    }
+    app.controller("InquiryController", InquiryController);
+</script>
+
+    <script>
+        var app = angular.module("fantasydata");
+
+        var MainLayoutController = function ($scope, $http, $timeout, $rootScope, $window, screenSize) {
+            delete screenSize.rules.xs;
+            angular.extend(screenSize.rules, { xs: '(max-width: 767px) and (min-width: 641px)' });
+            angular.extend(screenSize.rules, { xxs: '(max-width: 640px)' });
+
+            $rootScope.is_mobile = screenSize.is('xxs, xs');
+            $rootScope.bootstrap_size = screenSize.get();
+
+            $rootScope.bootstrap_gte = function (size) {
+                switch (size) {
+                    case "xxs": return screenSize.is('xxs, xs, sm, md, lg, xl');
+                    case "xs": return screenSize.is('xs, sm, md, lg, xl');
+                    case "sm": return screenSize.is('sm, md, lg, xl');
+                    case "md": return screenSize.is('md, lg, xl');
+                    case "lg": return screenSize.is('lg, xl');
+                    case "xl": return screenSize.is('xl');
+                    default: return false;
+                }
+            }
+
+            $rootScope.bootstrap_lte = function (size) {
+                switch (size) {
+                    case "xxs": return screenSize.is('xxs');
+                    case "xs": return screenSize.is('xxs, xs');
+                    case "sm": return screenSize.is('xxs, xs, sm');
+                    case "md": return screenSize.is('xxs, xs, sm, md');
+                    case "lg": return screenSize.is('xxs, xs, sm, md, lg');
+                    case "xl": return screenSize.is('xxs, xs, sm, md, lg, xl');
+                    default: return false;
+                }
+            }
+
+            $rootScope.FormatDecimal = function (value, places) {
+                value = Number(value).toFixed(places);
+                if (value < 1 && value >= 0) {
+                    value = ('' + value).replace(/^[0.]/, "");
+                    value = (value + '000').slice(0, places + 1);
+                }
+                return value;
+            }
+
+            angular.element($window).on('resize', function () {
+                $rootScope.bootstrap_size = screenSize.get();
+                $rootScope.is_mobile = screenSize.is('xxs, xs');
+                $rootScope.$apply();
+            });
+
+            function locationHashChanged() {
+                var scope = angular.element($("div[ng-controller*='MainLayoutController']")).scope();
+
+
+                scope.hash = window.location.hash;
+                const targetElement = $(scope.hash);
+
+                if (targetElement.length) {
+                    const headerHeight = $("#fd-header").outerHeight();
+                    var targetPosition = targetElement.offset().top - headerHeight;
+
+                    if (!$(targetElement).hasClass("is-hidden"))
+                        targetPosition -= 15;
+
+                    $('html, body').animate({
+                        scrollTop: targetPosition
+                    }, 0);
+                }
+            }
+
+            angular.element($window).on('load', locationHashChanged);
+            angular.element($window).on('hashchange', locationHashChanged);
+            angular.element(document).ready(function () {
+                angular.element(document).on('click', 'a[href^="#"]', function (event) {
+                    event.preventDefault();
+                    const hashValue = angular.element(this).attr('href');
+                    window.location.hash = hashValue;
+                    locationHashChanged();
+                });
+            });
+
+
+            $(document).ready(function () {
+                var fd_header = document.getElementById("fd-header");
+                var fd_header_height = fd_header.getBoundingClientRect().height - 1 + 'px';
+                $rootScope.offset_header_height = fd_header_height;
+                //alert(fd_header_height);
+                var fd_header_observer = new MutationObserver(function (mutations) {
+
+                    mutations.forEach(function () {
+                        var fd_header_height_current = fd_header.getBoundingClientRect().height - 1 + 'px';
+                        if (fd_header_height_current !== fd_header_height) {
+                            fd_header_height = fd_header_height_current;
+                            $rootScope.offset_header_height = fd_header_height;
+                            $scope.$apply();
+                        }
+                    });
+                });
+
+                fd_header_observer
+                    .observe(fd_header, {
+                        attributes: true,
+                        childList: true,
+                        subtree: true
+                    });
+
+                $rootScope.height_minus_header = function () {
+                    var view_height = window.innerHeight;
+                    var header_height = $rootScope.offset_header_height.replace('px', '');
+                    return (view_height - header_height) + 'px';
+                }
+            })
+
+
+        }
+
+        app.controller("MainLayoutController", MainLayoutController);
+
+        const debounce = (fn) => {
+            let frame;
+            return (...params) => {
+                if (frame) cancelAnimationFrame(frame);
+                frame = requestAnimationFrame(() => fn(...params));
+            };
+        };
+        const storeScroll = () => document.documentElement.dataset.scroll = window.scrollY;
+        document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+        storeScroll();
+    </script>
+
+        <input type="hidden" id="override_meta" />
+</body>
+</html>

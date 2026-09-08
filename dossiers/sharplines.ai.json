@@ -1,0 +1,64 @@
+{
+ "domain": "sharplines.ai",
+ "type": "live-site",
+ "tech_stack": {
+  "frontend": "SPA marketing site; GTM-K2S59D92, Google Ads AW-752478570, GA4 G-61GEZE0DPV",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/sharplines-home.html",
+   "raw/sharplines-sitemap.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/sharplines-home.html"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "Marketing claim: '10 AI models, 1000+ data points per game, real-time predictions for NBA/NFL/MLB/NHL/NCAAB/NCAAF/Soccer' — internals not public",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "real-time (claim)",
+  "citation": "raw/sharplines-home.html meta description"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED",
+  "citations": "NOT CONFIRMED"
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": "NOT CONFIRMED"
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/",
+  "/about",
+  "/contact",
+  "/sitemap.xml"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "homepage + sitemap (both 200)",
+  "timestamp": "2026-09-08T14:05:36.761690"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

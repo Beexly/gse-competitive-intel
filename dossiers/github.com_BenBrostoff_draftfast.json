@@ -1,0 +1,73 @@
+{
+ "domain": "github.com/BenBrostoff/draftfast",
+ "type": "open-source-repo",
+ "tech_stack": {
+  "frontend": "none (CLI lib)",
+  "backend": "Python",
+  "database": "CSV inputs",
+  "cloud": "n/a",
+  "cdn": "n/a",
+  "citations": [
+   "github.com/BenBrostoff/draftfast"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "DraftKings/FanDuel salary CSV ingestion (draftkings_salaries.py, fanduel_salaries.py)"
+  ],
+  "graphql_schema": "none",
+  "websocket_endpoints": [],
+  "rate_limits": "n/a",
+  "citations": [
+   "clone: draftfast/"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "lineup construction as constraint problem",
+   "where": "draftfast/lineup_constraints.py + optimizer.py",
+   "evidence": "_set_player_constraints / _set_player_group_constraints / _set_position_team_constraints; group-constraint flags (has_group_constraints)"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "none — projection ingestion (user-supplied projections)",
+  "training_data": "n/a",
+  "update_frequency": "per-slate CSV",
+  "citation": "clone scan"
+ },
+ "simulation_engine": {
+  "num_simulations": "none (deterministic optimizer)",
+  "correlation_method": "none",
+  "citation": "clone scan"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "DraftKings salaries CSV",
+   "FanDuel salaries CSV"
+  ],
+  "citations": [
+   "draftfast/draftfast/draftkings_salaries.py"
+  ]
+ },
+ "product_limits": {
+  "limits": "open source, no caps",
+  "upgrade_triggers": "n/a",
+  "citation": "repo"
+ },
+ "pricing": {
+  "web": "free OSS",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "github.com/BenBrostoff/draftfast"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "GitHub API + shallow clone + regex algorithm scan",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

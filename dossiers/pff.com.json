@@ -1,0 +1,153 @@
+{
+ "domain": "pff.com",
+ "tech_stack": {
+  "frontend": "Custom JS SPA-ish site (hashed /js/*-<sha>.js bundles; shared_nav bundle 2.1MB), Clerk JS v6 for auth, Cookiebot consent, Klaviyo marketing, lite-youtube embeds",
+  "backend": "Same-origin REST under www.pff.com/api/* (fantasy leagues POST, /api/scoreboard/{matchup,schedule,ticker}); new Developer API on api.pff.com (OpenAPI 'PFF Premium Stats Pro CLI API' v2.1.0, 70 GET paths under /v1/)",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare (server: cloudflare, cf-ray ...-IAH); auth via clerk.pff.com (Clerk SaaS); docs on developer.pff.com (Astro-built static site)",
+  "cdn": "Cloudflare",
+  "citations": [
+   "https://www.pff.com/",
+   "https://www.pff.com/js/shared_nav-15d001e12ec5cd07a974f24ff4e6e5a4.js?vsn=d",
+   "https://developer.pff.com/openapi.json"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "https://api.pff.com/v1/leagues",
+    "auth_required": "yes (PFF Pro)",
+    "tier": "PFF Pro",
+    "sample_response": "spec-only; data gated",
+    "citation": "https://developer.pff.com/openapi.json"
+   },
+   {
+    "method": "GET",
+    "path": "https://api.pff.com/v1/games, /v1/players, /v1/teams, /v1/teams/overview, /v1/teams/summary",
+    "auth_required": "yes (PFF Pro)",
+    "tier": "PFF Pro",
+    "sample_response": "spec-only",
+    "citation": "https://developer.pff.com/openapi.json"
+   },
+   {
+    "method": "GET",
+    "path": "https://api.pff.com/v1/player/{seasons,snaps/summary,position/pivot,offense/summary,offense/blocking,passing/summary,passing/concept,passing/depth,passing/pressure,rushing/*,receiving/*,defense/summary,field_goal,kickoff,punting,return,special}",
+    "auth_required": "yes (PFF Pro)",
+    "tier": "PFF Pro",
+    "sample_response": "docs example: {\"grades_pass\": 91.7, \"player\": \"Matthew Stafford\", \"team\": \"LA\", \"touchdowns\": 52, \"yards\": 5643}",
+    "citation": "https://developer.pff.com/"
+   },
+   {
+    "method": "GET",
+    "path": "https://api.pff.com/v1/facet/{offense/*,passing/*,receiving/*} (filter facets)",
+    "auth_required": "yes (PFF Pro)",
+    "tier": "PFF Pro",
+    "sample_response": "spec-only",
+    "citation": "https://developer.pff.com/openapi.json"
+   },
+   {
+    "method": "POST",
+    "path": "https://www.pff.com/api/fantasy_leagues/{leagueId}/{action} (player_id body)",
+    "auth_required": "yes (session)",
+    "tier": "consumer app",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "https://www.pff.com/js/shared_nav-15d001e12ec5cd07a974f24ff4e6e5a4.js?vsn=d"
+   },
+   {
+    "method": "GET",
+    "path": "https://www.pff.com/api/scoreboard/{matchup,schedule,ticker}",
+    "auth_required": "unknown",
+    "tier": "consumer app",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "https://www.pff.com/js/shared_nav-15d001e12ec5cd07a974f24ff4e6e5a4.js?vsn=d"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (no GraphQL client code found in fetched bundles)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED (no limits published in spec/docs fetched)",
+  "citations": [
+   "https://developer.pff.com/openapi.json",
+   "https://developer.pff.com/",
+   "https://www.pff.com/js/shared_nav-15d001e12ec5cd07a974f24ff4e6e5a4.js?vsn=d"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "'Guru AI' football chatbot product (token-metered, higher token tier on PFF Pro); mock draft simulator; no training details exposed",
+  "training_data": "Own PFF grades + Premium Stats (NCAA + NFL)",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "https://www.pff.com/subscribe"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "data_supply_chain": {
+  "vendors": "First-party: PFF grades/Premium Stats are their own charted data (32 pro teams, seasons of grades). No Sportradar/StatsPerform/Opta/Genius strings in fetched bundles (all 0 hits). Clerk = auth vendor; status.pff.com exists; restish (rest.sh) CLI is the supported client.",
+  "citations": [
+   "https://www.pff.com/",
+   "https://developer.pff.com/",
+   "https://www.pff.com/js/shared_nav-15d001e12ec5cd07a974f24ff4e6e5a4.js?vsn=d"
+  ]
+ },
+ "product_limits": {
+  "limits": "Free (The Lineup, $0): limited mock draft sim (2-round, no trades), standard content. PFF+ Monthly $9.99 or Annual $99.99 ($8.33/mo): full tools, Guru AI 'limited tokens'. PFF Pro Annual $199.99 ($16.67/mo): Upgraded Premium Stats Pro, Guru AI 'higher base token level', API/CLI access to NCAA+NFL data via developer.pff.com; API keys (ak_...) issued at www.pff.com/account/api-keys; 'docs are public, but every data endpoint needs a PFF Pro subscription'. Micro-transactions for extra AI tokens.",
+  "upgrade_triggers": "Data access itself is the forcing cap: every api.pff.com/v1 endpoint 401s without Pro; AI chatbot token quota and mock-draft features gate the $9.99 tier, Pro-tier AI token allowance upsells micro-transactions.",
+  "citation": "https://www.pff.com/subscribe"
+ },
+ "pricing": {
+  "web": "Free tier $0; PFF+ Monthly $9.99/mo; PFF+ Annual $99.99/yr ($8.33/mo effective, 'NEW - PRICE DROP!'); PFF Pro (Elite) $199.99/yr ($16.67/mo); former PFF Edge/PFF Elite plans folded into PFF+; 'Use our data' (32 Pro Teams, seasons of grades) is a listed plan benefit",
+  "ios": "PFF: Betting & Fantasy Tools, App Store id 1582525285, seller PFFA Acquisition LLC, Free with IAP, 4.2 stars / 365 ratings",
+  "android": "NOT CONFIRMED (Play listing not fetched, budget)",
+  "citations": [
+   "https://www.pff.com/subscribe",
+   "https://itunes.apple.com/lookup?id=1582525285"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "PFF just put their mock draft simulator behind a paywall. You can still do 2 round mocks, but no more trades, and you can't change the speed to...",
+   "source": "https://www.reddit.com/r/nfl/comments/123ouz0/pff_just_put_their_mock_draft_simulator_behind_a/",
+   "date": "2023"
+  },
+  {
+   "quote": "So, this sucks... I pretty much only use PFF for my pre draft mocks, and apparently they have to monetize every click.",
+   "source": "https://www.reddit.com/r/Browns/comments/1246b4p/so_this_sucks_i_pretty_much_only_use_pff_for_my/",
+   "date": "2023"
+  },
+  {
+   "quote": "pff is controversial bc their analysts then use good/useful data to come to some weird/extreme conclusions (probably bc hot takes drive clicks...)",
+   "source": "https://www.reddit.com/r/NFLv2/comments/1m5ftpg/what_are_your_thoughts_on_pro_football_focus/",
+   "date": "2025"
+  },
+  {
+   "quote": "PFF is paywalled... There are 257 picks in the draft, this simulator only goes up to 224 / PFF is insanely out of date (draft sim complaints)",
+   "source": "https://www.reddit.com/r/NFL_Draft/comments/1j9rpfs/what_are_your_favorite_draft_sims_pff_is_insanely/",
+   "date": "2025"
+  }
+ ],
+ "discovered_paths": [
+  "/subscribe",
+  "/join?product=plus",
+  "/checkout?plan=pro",
+  "/api/scoreboard/ticker",
+  "/api/fantasy_leagues/",
+  "developer.pff.com/guide/",
+  "developer.pff.com/reference/",
+  "developer.pff.com/openapi.json",
+  "status.pff.com",
+  "www.pff.com/account/api-keys",
+  "https://api.pff.com/v1/* (70 paths)"
+ ],
+ "discovered_targets": [
+  "clerk.pff.com (Clerk auth tenant)",
+  "status.pff.com"
+ ],
+ "discovery_metadata": {
+  "method": "fetcher.py GETs: home, shared_nav.js, default_entry.js, /subscribe, developer.pff.com home + /reference/ + /openapi.json, itunes lookup x3 (8 domain requests) + 2 web_search",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 19 raw evidence files)"
+}

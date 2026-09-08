@@ -1,0 +1,77 @@
+# robots.txt for sportmonks.com
+# Last updated: 2026-05-18
+
+# ===== AI crawlers: explicit allow =====
+
+# OpenAI - training corpus
+User-agent: GPTBot
+Allow: /
+
+# OpenAI - live search / ChatGPT browsing
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI - user-initiated browsing in ChatGPT
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic - training + Claude product
+User-agent: ClaudeBot
+Allow: /
+
+# Anthropic - older agent (still in use)
+User-agent: Claude-Web
+Allow: /
+
+# Anthropic - user-initiated browsing
+User-agent: Claude-User
+Allow: /
+
+# Perplexity - search index
+User-agent: PerplexityBot
+Allow: /
+
+# Perplexity - user-initiated
+User-agent: Perplexity-User
+Allow: /
+
+# Google - Gemini and AI Overviews training
+User-agent: Google-Extended
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl - feeds many open-source LLMs
+User-agent: CCBot
+Allow: /
+
+# Meta - Llama training and AI features
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Bytedance - Doubao
+User-agent: Bytespider
+Allow: /
+
+
+# ===== Default rules (everyone else) =====
+
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://www.sportmonks.com/sitemap_index.xml
+
+
+# ===== Content-Signal directive =====
+# Emerging Cloudflare-led standard. Signals our consent for AI use.
+# search=yes    -> may surface us in AI search results
+# ai-input=yes  -> may use our content as RAG input at inference time
+# ai-train=yes  -> may use our content in training corpora
+
+Content-Signal: search=yes, ai-input=yes, ai-train=yes

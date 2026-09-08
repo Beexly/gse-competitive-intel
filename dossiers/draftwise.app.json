@@ -1,0 +1,106 @@
+{
+ "domain": "draftwise.app",
+ "tech_stack": {
+  "frontend": "React SPA (Vite build, /assets/index-CGVAth7Q.js), TailwindCSS",
+  "backend": "Supabase (project ngjjwkxgyvfjhtzaooqy.supabase.co) — PostgREST tables + Edge Functions + Auth",
+  "database": "PostgreSQL via Supabase (tables: user_subscriptions, feature_suggestion_votes, feature_suggestions, usage_logs, drafts)",
+  "cloud": "Supabase + Cloudflare (server: cloudflare, cf-ray IAH)",
+  "cdn": "Cloudflare",
+  "citations": [
+   "https://draftwise.app/assets/index-CGVAth7Q.js",
+   "https://draftwise.app/llms.txt",
+   "https://draftwise.app/robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/functions/v1/blog-api?published=true",
+    "auth_required": true,
+    "tier": "public doc",
+    "sample_response": "fetch saved (draftwise-blogapi.json)",
+    "citation": "https://draftwise.app/llms.txt"
+   },
+   {
+    "method": "POST/PUT/DELETE",
+    "path": "/functions/v1/blog-api",
+    "auth_required": true,
+    "tier": "admin",
+    "sample_response": "NOT CONFIRMED (write ops need auth)",
+    "citation": "https://draftwise.app/llms.txt"
+   },
+   {
+    "method": "POST",
+    "path": "/functions/v1/create-checkout, /functions/v1/customer-portal, /functions/v1/check-subscription, /functions/v1/get-subscription-details",
+    "auth_required": true,
+    "tier": "user",
+    "sample_response": "NOT CONFIRMED (login wall)",
+    "citation": "https://draftwise.app/assets/index-CGVAth7Q.js"
+   },
+   {
+    "method": "POST",
+    "path": "/functions/v1/generate-hooks|generate-hashtags|rewrite-post|research-topic|generate-post-image|generate-title",
+    "auth_required": true,
+    "tier": "premium AI features",
+    "sample_response": "NOT CONFIRMED (login wall)",
+    "citation": "https://draftwise.app/assets/index-CGVAth7Q.js"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": [
+   "Supabase Realtime (wss, REALTIME_POSTGRES_CHANGES_LISTEN_EVENT present in bundle)"
+  ],
+  "rate_limits": "usage_logs table suggests per-user usage tracking; exact caps NOT CONFIRMED",
+  "citations": [
+   "https://draftwise.app/assets/index-CGVAth7Q.js"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "LLM-backed post hooks/hashtags/rewrite/research (edge functions wrapping an LLM; provider not exposed)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "https://draftwise.app/llms.txt"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "Free tier 'limited daily usage', Premium 'higher usage limits' (llms.txt); exact numbers NOT CONFIRMED",
+  "upgrade_triggers": "daily usage cap on free tier",
+  "citation": "https://draftwise.app/llms.txt"
+ },
+ "pricing": {
+  "web": "Free + Premium tiers exist; prices NOT CONFIRMED (pricing page is client-rendered, no server text)",
+  "ios": "none found",
+  "android": "none found",
+  "citations": [
+   "https://draftwise.app/pricing",
+   "https://draftwise.app/llms.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/llms.txt",
+  "/.well-known/llms.txt",
+  "/functions/v1/blog-api",
+  "/functions/v1/sitemap",
+  "/auth",
+  "/app",
+  "/pricing",
+  "/blog"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "Homepage+robots+sitemap+JS bundle grep+llms.txt. NOTE: draftwise.app is an AI LinkedIn-post tool, NOT a sports-betting product — likely queued by name collision with 'DraftWise' DFS tools.",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 6 raw evidence files)"
+}

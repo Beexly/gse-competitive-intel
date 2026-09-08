@@ -1,0 +1,85 @@
+# Oddpool API
+
+> Prediction market data across Kalshi and Polymarket. Real-time WebSocket feeds, whale tracking, arbitrage detection, search, and historical data.
+
+Base URL: https://api.oddpool.com
+WebSocket: wss://feeds.oddpool.com/ws
+Docs: https://docs.oddpool.com
+
+## Documentation index
+
+### Getting started
+- [Oddpool API](https://docs.oddpool.com/index.md): Prediction market data across Kalshi and Polymarket.
+- [Authentication](https://docs.oddpool.com/authentication.md): How to authenticate requests (`X-API-Key` header) and which endpoint groups (search, historical, WebSocket tiers, whale tracking, arbitrage) require which paid plan, with pricing.
+- [Rate limits](https://docs.oddpool.com/rate-limits.md): Per-tier rate limits, monthly quotas, and API key allowances.
+- [Error handling](https://docs.oddpool.com/errors.md): HTTP status codes and error response format.
+
+### WebSocket feeds
+- [WebSocket overview](https://docs.oddpool.com/websocket/overview.md): Stream real-time prediction market data over a single WebSocket connection. Auth, subscribe/unsubscribe, channel format.
+- [Macro feed](https://docs.oddpool.com/websocket/macro-feed.md): Cross-venue matched macro economic events from Kalshi and Polymarket. FOMC, CPI, NFP, GDP, unemployment, equities, commodities.
+- [Crypto feed](https://docs.oddpool.com/websocket/crypto-feed.md): Bitcoin and Ethereum prediction markets enriched with real-time Binance spot and futures data. Auto-discovered and cross-venue matched events across 5m, 15m, and hourly timeframes. Every message includes spot bid/ask, futures mark price, funding rate, and 24h volume.
+- [Message reference](https://docs.oddpool.com/websocket/messages.md): Schema reference for dist, book, trade, and snapshot channel messages. Includes reference data fields for enriched feeds.
+- [Feed catalog](https://docs.oddpool.com/websocket/catalog.md): REST endpoints for discovering every streamable event (macro and crypto) with its release timestamp, venues, outcomes, and pre-built channel names. Also includes a separate endpoint that decodes event_type tokens (cpi, fomc, nfp, ...) to label, agency, typical release time, and plain-English description.
+- [Limits and errors](https://docs.oddpool.com/websocket/limits.md): WebSocket connection limits by tier (Free/Pro/Premium/Enterprise) and error codes.
+
+### Whale tracking
+- [Whale tracking overview](https://docs.oddpool.com/whales/overview.md): Monitor large trades across prediction markets.
+- [List events](https://docs.oddpool.com/whales/list-events.md): GET /whales/user/events — list all events you are currently tracking.
+- [Get feed](https://docs.oddpool.com/whales/get-feed.md): GET /whales/user/feed — get whale trades for all your tracked events.
+- [Get stats](https://docs.oddpool.com/whales/get-stats.md): GET /whales/user/stats — aggregated statistics for all tracked events.
+- [Event trades](https://docs.oddpool.com/whales/event-trades.md): GET /whales/user/event/{event_id} — whale trades for a specific event.
+- [Event stats](https://docs.oddpool.com/whales/event-stats.md): GET /whales/user/event/{event_id}/stats — statistics for a specific event.
+- [List markets](https://docs.oddpool.com/whales/list-markets.md): GET /whales/user/markets — all markets for your tracked events.
+- [Market stats](https://docs.oddpool.com/whales/market-stats.md): GET /whales/user/market/{market_id}/stats — statistics for a specific market.
+- [Market trades](https://docs.oddpool.com/whales/market-trades.md): GET /whales/user/market/{market_id}/trades — whale trades for a specific market.
+
+### Arbitrage
+- [Arbitrage overview](https://docs.oddpool.com/arbitrage/overview.md): Cross-venue arbitrage opportunities and price spreads.
+- [Cross-venue arbitrage](https://docs.oddpool.com/arbitrage/current.md): GET /arbitrage/current — find risk-free cross-venue arbitrage opportunities.
+- [Price spreads](https://docs.oddpool.com/arbitrage/differences.md): GET /arbitrage/current/difference — find where venues disagree on the same outcome's price.
+
+### Search
+- [Search overview](https://docs.oddpool.com/search/overview.md): Query, filter, and discover prediction markets across Kalshi and Polymarket.
+- [Search series](https://docs.oddpool.com/search/series.md): GET /search/series — list Kalshi and Polymarket series (e.g. `KXBTC15M`, `btc-up-or-down-15m`). Matches title or `series_id` substring.
+- [Search markets](https://docs.oddpool.com/search/search-markets.md): GET /search/markets — find markets by full-text query, by `series_id`, or both. Supports `settled_after`/`settled_before` time filters.
+- [Search events](https://docs.oddpool.com/search/search-events.md): GET /search/events — find events by full-text query, by `series_id`, or both.
+- [Recent markets](https://docs.oddpool.com/search/recent-markets.md): GET /search/recent/markets — latest market listings without a search query.
+- [Recent events](https://docs.oddpool.com/search/recent-events.md): GET /search/recent/events — latest event listings without a search query.
+- [Event markets](https://docs.oddpool.com/search/event-markets.md): GET /search/events/{event_id}/markets — list all markets under one event.
+
+### Historical bars
+- [Market OHLCV](https://docs.oddpool.com/markets/ohlcv.md): GET /markets/ohlcv?market_ids=… — OHLCV bars for one to 50 markets on Kalshi or Polymarket, in 6h, 1d, 1w, or 1m intervals. Returns price (probability), volume, and per-market window aggregates.
+- [Event OHLCV](https://docs.oddpool.com/events/ohlcv.md): GET /events/{event_id}/ohlcv — OHLCV bars for every outcome under one event in a single request. Works on Kalshi and Polymarket events; same bar shape as Market OHLCV with one series per outcome.
+
+### Kalshi historical data
+- [Kalshi overview](https://docs.oddpool.com/kalshi/overview.md): Historical orderbook snapshots, top-of-book timeseries, and trade data for Kalshi markets.
+- [Historical orderbook](https://docs.oddpool.com/kalshi/orderbook.md): GET /historical/kalshi/orderbook — full orderbook snapshots with YES bids, NO bids, and derived best bid/ask.
+- [Historical top of book](https://docs.oddpool.com/kalshi/top-of-book.md): GET /historical/kalshi/top-of-book — lightweight timeseries of best bid, best ask, mid, and spread.
+- [Historical trades](https://docs.oddpool.com/kalshi/trades.md): GET /historical/kalshi/trades — every trade execution on a Kalshi market.
+
+### Polymarket historical data
+- [Polymarket overview](https://docs.oddpool.com/polymarket/overview.md): Historical orderbook snapshots, top-of-book timeseries, and trade data for Polymarket markets.
+- [Historical orderbook](https://docs.oddpool.com/polymarket/orderbook.md): GET /historical/polymarket/orderbook — full orderbook snapshots with bids, asks, and derived best bid/ask per token.
+- [Historical top of book](https://docs.oddpool.com/polymarket/top-of-book.md): GET /historical/polymarket/top-of-book — lightweight timeseries of best bid, best ask, mid, and spread per token.
+- [Historical trades](https://docs.oddpool.com/polymarket/trades.md): GET /historical/polymarket/trades — trade executions on a Polymarket market.
+
+## Institutions (enterprise only)
+
+IMPORTANT: The Reference Data API is a separate enterprise product. It is NOT part of the standard Oddpool API documented above, and it is NOT available on retail or consumer plans. It requires an institutional agreement and a reference-data-enabled API key; without one, every endpoint below returns 403. If you are a retail consumer or a consumer-facing agent, disregard this section and do not call these endpoints. For institutional access, contact avi@oddpool.com.
+
+Canonical cross-venue reference data for institutions: one ID per event, outcome, and real-world entity across Kalshi, Polymarket, and Polymarket US, with the venue-side identifiers to trade each side, per-venue-pair fungibility classification, and a Wikidata cross-walk. Base path: `/reference/v2`.
+
+### Reference Data API concepts (enterprise)
+- [Reference Data API](https://docs.oddpool.com/institutions/reference-data/overview.md): What the API does, base URL, authentication, quickstart, and the four-layer response shape (event, outcome, venue listing, entity).
+- [Supported venues](https://docs.oddpool.com/institutions/reference-data/venues.md): The venue tags (`kalshi`, `polymarket`, `polymarket_us`) accepted by `venue` and `venue_pair`, how they combine into pairs, and each venue's `venue_market_id` format and CLOB-token model.
+- [Oddpool IDs](https://docs.oddpool.com/institutions/reference-data/oddpool-ids.md): The four identifier families (OPI event, OPO outcome, OPL venue listing, OPE entity), how they nest, and why they are cache-safe.
+- [Response fields](https://docs.oddpool.com/institutions/reference-data/response-fields.md): The full field dictionary for the event and entity responses, including basis_class, outcome_universe, outcome_kind, divergence_axes, and outcome_params.
+- [Using Wikidata IDs](https://docs.oddpool.com/institutions/reference-data/using-wikidata-ids.md): Worked examples that use each entity's wikidata_qid to join to campaign finance, stock tickers, LEIs, and other external identifier systems.
+
+### Reference Data API endpoints (enterprise)
+- [Get Oddpool ID by ticker](https://docs.oddpool.com/institutions/reference-data/events/lookup.md): GET /reference/v2/events/lookup. Resolve a Kalshi, Polymarket, or Polymarket US id to the matched event, with every outcome, linked entity, and venue side.
+- [List matched events](https://docs.oddpool.com/institutions/reference-data/events/list.md): GET /reference/v2/events. Page live or historical matched events, filtered by venue pair and fungibility (`fungible`, `allow`, `basis_class`, `outcome_universe`), subject domain, and `classified_since` for incremental sync.
+- [Get a matched event](https://docs.oddpool.com/institutions/reference-data/events/get.md): GET /reference/v2/events/{opi}. Fetch one matched event by its Oddpool ID.
+- [Look up an entity](https://docs.oddpool.com/institutions/reference-data/entities/lookup.md): GET /reference/v2/entities/lookup. Resolve a Wikidata Q-ID, Oddpool ID, or (kind, name) pair to a canonical entity.
+- [Search entities](https://docs.oddpool.com/institutions/reference-data/entities/list.md): GET /reference/v2/entities. Search and page entities by substring, kind, Wikidata Q-ID, or provenance.
+- [Get an entity](https://docs.oddpool.com/institutions/reference-data/entities/get.md): GET /reference/v2/entities/{ope}. Fetch one entity by its Oddpool ID.

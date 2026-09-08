@@ -1,0 +1,7 @@
+URL: https://novig.com/robots.txt\nSTATUS: 200\n\nUser-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+Host: https://novig.com
+Sitemap: https://novig.com/sitemap.xml

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://api-tennis.com/</loc>
+  <lastmod>2022-07-27T16:05:15+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/documentation</loc>
+  <lastmod>2022-07-27T16:05:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/documentation_websocket</loc>
+  <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/mcp</loc>
+  <lastmod>2026-07-24T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/mcp-documentation</loc>
+  <lastmod>2026-07-24T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/blog/</loc>
+  <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/blog/what-can-you-build-with-a-tennis-api</loc>
+  <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/blog/tennis-api-performance-and-reliability</loc>
+  <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/blog/rest-vs-websocket-for-live-tennis-data</loc>
+  <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/blog/getting-started-tennis-api-in-5-minutes</loc>
+  <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/blog/tennis-api-data-coverage-explained</loc>
+  <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/blog/mcp-server-for-ai-agents</loc>
+  <lastmod>2026-07-24T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/login</loc>
+  <lastmod>2022-07-27T16:05:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/register</loc>
+  <lastmod>2022-07-27T16:05:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/contact</loc>
+  <lastmod>2022-07-27T16:05:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/terms-of-use</loc>
+  <lastmod>2022-07-27T16:05:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://api-tennis.com/forgot-password</loc>
+  <lastmod>2022-07-27T16:05:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+
+</urlset>

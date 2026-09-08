@@ -1,0 +1,86 @@
+{
+ "domain": "sportmonks.com",
+ "type": "live-site/odds-data-api",
+ "tech_stack": {
+  "frontend": "WordPress marketing site (WP Engine header, Stimmt.digital build)",
+  "backend": "Proprietary REST API v2/v3 (my.sportmonks.com portal + data API)",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare + WP Engine",
+  "cdn": "Cloudflare",
+  "citations": [
+   "raw/fetchlog-sportmonks.json",
+   "raw/sportmonks.com_.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "my.sportmonks.com/api/v2.0/livescores",
+    "auth_required": true,
+    "tier": "token",
+    "sample_response": "HTML portal app shell (route renders SPA), not raw JSON",
+    "citation": "raw/my.sportmonks.com_api_v2.0_livescores.txt"
+   },
+   {
+    "method": "GET",
+    "path": "my.sportmonks.com/api/v2.0/leagues?api_token=demo",
+    "auth_required": "demo token shape accepted in URL",
+    "tier": "free/demo",
+    "sample_response": "HTML shell, not JSON (portal route, not direct data API)",
+    "citation": "raw/my.sportmonks.com_api_v2.0_leagues_api_token=demo.txt"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/sportmonks.com_robots.txt.txt",
+   "raw/sportmonks.com_.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "xG + predictions productized: 'Live scores, stats, lineups, xG, predictions and odds for 2,200+ leagues'",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "raw/sportmonks.com_.txt"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "First-party data collector; 99.99% uptime / 6.4B API requests per month claim; Football + Cricket + F1 API products"
+  ],
+  "citations": [
+   "raw/sportmonks.com_.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": "Free plan with real data: 'Instant token, no credit card, no expiry'; paid tiers beyond",
+  "upgrade_triggers": "volume/sports scope",
+  "citation": "raw/sportmonks.com_.txt"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED (this /pricing fetch returned Dutch 404 template)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/sportmonks.com_api.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/robots.txt (AI crawlers GPTBot/OAI-SearchBot explicitly allowed)",
+  "my.sportmonks.com/api/v2.0/* portal routes"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "homepage + pricing + robots + v2 probes; all docs.sportmonks.com pages are Next.js 404 shells (junk evidence excluded)",
+  "timestamp": "2026-09-08T14:06:18.766004"
+ },
+ "disposition": "live (derived from 30 raw evidence files)"
+}

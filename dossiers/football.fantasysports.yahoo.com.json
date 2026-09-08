@@ -1,0 +1,64 @@
+{
+  "domain": "football.fantasysports.yahoo.com",
+  "type": "platform",
+  "disposition": "live",
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "NOT CONFIRMED",
+    "training_data": "NOT CONFIRMED",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "customer_pain": [],
+  "discovered_targets": [],
+  "tech_stack": {
+    "frontend": "Yahoo server-rendered portal (912KB HTML)",
+    "backend": "Yahoo Fantasy public API (documented, OAuth) — NOT CONFIRMED probes in this pass",
+    "database": "NOT CONFIRMED",
+    "cloud": "NOT CONFIRMED",
+    "cdn": "NOT CONFIRMED",
+    "citations": [
+      "raw/probe2_yahoo-fantasy.txt"
+    ]
+  },
+  "pricing": {
+    "web": "free core; price strings $0-$81 (likely DFS/promo context)",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "raw/probe2_yahoo-fantasy.txt"
+    ]
+  },
+  "data_supply_chain": {
+    "vendors": [
+      "first-party Yahoo data; public fantasy API with OAuth (positioning)"
+    ],
+    "citations": "NOT CONFIRMED"
+  },
+  "discovered_paths": [
+    "/"
+  ],
+  "discovery_metadata": {
+    "method": "fresh homepage probe (912KB)",
+    "timestamp": "2026-09-08T14:30:45.047151"
+  },
+  "product_limits": {
+    "limits": [],
+    "upgrade_triggers": [],
+    "citation": "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed."
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed.",
+    "websocket_endpoints": [],
+    "rate_limits": "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed.",
+    "citations": [
+      "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed."
+    ]
+  }
+}

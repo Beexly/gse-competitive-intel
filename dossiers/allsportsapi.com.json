@@ -1,0 +1,87 @@
+{
+ "domain": "allsportsapi.com",
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED (no model evidence in raw files)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "simulation_engine": {
+  "num_simulations": null,
+  "correlation_method": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "data_supply_chain": {
+  "vendors": [],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": [
+   "per-sport plan separation (soccer vs basketball plans pages)"
+  ],
+  "upgrade_triggers": [
+   "plan tiers gated on the #plans anchor per sport"
+  ],
+  "citation": "raw/scan-allsportsapi_com.json pricing_links"
+ },
+ "pricing": {
+  "web": "$99 / $149 / $199 tiers with 'Discount' anchoring on soccer plans page (raw/allsportsapi_com_soccer_plans.html)",
+  "ios": "N/A",
+  "android": "N/A",
+  "citations": [
+   "raw/allsportsapi_com_soccer_plans.html"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Free sports Api? (r/webdev — category pain: cheap/free multi-sport data)",
+   "source": "https://www.reddit.com/r/webdev/comments/xqemro/free_sports_api/",
+   "date": "2022 (thread id xqemro)"
+  },
+  {
+   "quote": "Looking for the best bootball (soccer) data API (my experience...) (r/webdev)",
+   "source": "https://www.reddit.com/r/webdev/comments/1i6t8e6/looking_for_the_best_bootball_soccer_data_api_my/",
+   "date": "2025 (thread id 1i6t8e6)"
+  }
+ ],
+ "discovered_paths": [
+  "coverage pages: /soccer-football-api-coverage, /basketball-api-coverage, /cricket-api; docs pages per sport (sitemap, raw/scan-allsportsapi_com.json)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "fetcher.py scan: all 200 incl. pricing+soccer plans; jQuery-era bundles",
+  "timestamp": "2026-09-08T15:20:00-05:00"
+ },
+ "tech_stack": {
+  "frontend": "Server-rendered pages + jQuery 3.3.1 + Popper 1.14.7 (cdnjs)",
+  "backend": "NOT CONFIRMED (behind Cloudflare)",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare edge (server: cloudflare, cf-ray -ATL/-BOS)",
+  "cdn": "Cloudflare + cdnjs for libs",
+  "citations": [
+   "raw/scan-allsportsapi_com.json",
+   "raw/allsportsapi_com_home.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/soccer-football-api-documentation (public docs pages per sport)",
+    "auth_required": "null",
+    "tier": "free tier advertised",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "raw/scan-allsportsapi_com.json sitemap_sample"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/scan-allsportsapi_com.json"
+  ]
+ },
+ "disposition": "live",
+ "notes": "GSE-relevant: budget tier ($99-199) between goalserve and api-football; jQuery-era site signals minimal eng investment; competes on price anchoring with 'Discount' framing."
+}

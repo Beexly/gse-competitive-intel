@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Block sensitive and authenticated areas
+Disallow: /api/
+Disallow: /auth/
+Disallow: /dashboard/
+Disallow: /login
+Disallow: /register
+
+# AI Search Engine Crawlers - Explicitly Allow
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://getarbitragebets.com/sitemap.xml

@@ -1,0 +1,182 @@
+{
+ "domain": "dgfantasy.com",
+ "tech_stack": {
+  "frontend": "Next.js (x-powered-by: Next.js; buildId YjMV8iAWbmWbqcejgf3T-; _next/static chunks) with Tailwind-style utility classes",
+  "backend": "Express (x-powered-by: Express on /robots.txt, behind same host); /api/build-time endpoint referenced in chunk",
+  "database": "NOT CONFIRMED (no exposure)",
+  "cloud": "Google Cloud Run or GCP LB (via: 1.1 google) + Cloudflare",
+  "cdn": "Cloudflare (cf-ray ...-ATL/-BOS)",
+  "citations": [
+   "https://dgfantasy.com",
+   "https://dgfantasy.com/robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/api/build-time",
+    "auth_required": "no",
+    "tier": "N/A",
+    "sample_response": "fetch('/api/build-time',{cache:'no-store'}) in chunk 0_l_3gjh2.uxr.js",
+    "citation": "https://dgfantasy.com/_next/static/chunks/0_l_3gjh2.uxr.js"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (not probed - no JS evidence)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED (no public rate-limit doc)",
+  "citations": [
+   "https://dgfantasy.com/_next/static/chunks/0exc-x.lkothf.js",
+   "https://dgfantasy.com/_next/static/chunks/0_l_3gjh2.uxr.js"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "Odds/white-label platform reuse (OddsJam codebase)",
+   "raw_snippet": "sitemap.xml <loc> entries: https://oddsjam.com/sitemap-0.xml, /server-sitemap.xml, /news-sitemap.xml, /teams-sitemap.xml, /oai-sitemap.xml, /games-sitemap.xml; bundle exports sportsNavigationItems=[{href:'/futures'},{href:'/odds'}]; getCorrelationSportOrLeague=(e,t)=>'soccer'===e?e:t",
+   "reconstruction": "dgfantasy.com serves the OddsJam platform (Next.js/Express, identical sitemap topology pointing at oddsjam.com, /odds + /futures routes, correlation helper getCorrelationSportOrLeague for same-market bet correlation). AI SLIP GENERATOR plan wraps OddsJam-style odds data; sport/league correlation helper is odds-bet-level, not lineup-level.",
+   "citation": "https://dgfantasy.com/sitemap.xml"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "https://dgfantasy.com/_next/static/chunks/0exc-x.lkothf.js"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED (no simulation product; correlation helper for odds markets found in bundle)",
+  "correlation_method": "NOT CONFIRMED (getCorrelationSportOrLeague suggests same-market bet correlation, method not exposed)",
+  "citation": "https://dgfantasy.com/_next/static/chunks/0exc-x.lkothf.js"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "NOT CONFIRMED in dgfantasy JS (white-label OddsJam stack implies OddsJam's data supply chain; not verifiable from dgfantasy.com itself)"
+  ],
+  "citations": [
+   "https://dgfantasy.com",
+   "https://dgfantasy.com/sitemap.xml"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED (no numeric caps on membership page)",
+  "upgrade_triggers": "Free anon access to odds pages; 'All-Access Membership Gives You All-Access to Every Premium Option on our Website' (meta description); AI Slip Generator is the premium product",
+  "citation": "https://dgfantasy.com/dgf/membership-signup"
+ },
+ "pricing": {
+  "web": {
+   "detail": "AI SLIP GENERATOR PLAN: Monthly $59.99/mo; Quarterly $54/mo (Save $18, $159.99 billed quarterly, 16% off); Yearly $50/mo (Save $108, $590.99 billed yearly); 'Cancel anytime'",
+   "url": "https://dgfantasy.com/dgf/membership-signup",
+   "status": 200,
+   "most_restrictive_cap": "NOT CONFIRMED (no caps listed; upgrade trigger is premium AI slip generation itself)"
+  },
+  "ios": "NOT CONFIRMED (not checked - no app link found)",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://dgfantasy.com/dgf/membership-signup"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Be warned if you buy a subscription for a longer period of time, you will get limited by these sites especially prize picks. For example, I got ...",
+   "source": "https://www.reddit.com/r/dgfantasy/comments/1f30tiy/actual_reviews/",
+   "title": "Actual reviews : r/dgfantasy - Reddit"
+  },
+  {
+   "quote": "Currently deciding between DG Fantasy's DFS Optimizer and Oddsjam's optimizer, idk which one is better or how they are different, pls lmk!",
+   "source": "https://www.reddit.com/r/dgfantasy/comments/18maz03/dfs_optimizer_worth_it/",
+   "title": "DFS Optimizer Worth It? : r/dgfantasy - Reddit"
+  },
+  {
+   "quote": "This is a dgf community-run subreddit. Actual reviews 90% of the posts on this sub are from one person. Anyone have a review for the AI slip generator",
+   "source": "https://www.reddit.com/r/dgfantasy/",
+   "title": "r/dgfantasy - Reddit"
+  },
+  {
+   "quote": "Email doesn't work half the time . Needs way more customization options Doesn't seem to include every play and regularly misses some plays lots ...",
+   "source": "https://www.reddit.com/r/dgfantasy/comments/1ccd9ru/ai_slip_generator/",
+   "title": "AI slip generator : r/dgfantasy - Reddit"
+  },
+  {
+   "quote": "pros and cons of multiple softwares. I used both oddsjam and dgfantasy, recommend both.",
+   "source": "https://www.reddit.com/r/EVbetting/comments/1hmmmn6/what_software_do_you_guys_use/",
+   "title": "What software do you guys use? : r/EVbetting - Reddit"
+  },
+  {
+   "quote": "If you're looking to get into EV betting don't get Daily Grind Fantasy. Double Double props don't show up on the optimizer.",
+   "source": "https://www.reddit.com/r/EVbetting/comments/1on5w6q/wouldnt_recommend_dgf_fantasy/",
+   "title": "Wouldn't recommend DGF fantasy : r/EVbetting - Reddit"
+  },
+  {
+   "quote": "I was trying out HOF and outlier but can't justify $80+ a month for outlier and HOF trends just don't work I've noticed. it ends up being crazy ...",
+   "source": "https://www.reddit.com/r/EVbetting/comments/1fat9xr/ev_betting_1_year_progress/",
+   "title": "+EV Betting 1 Year Progress : r/EVbetting - Reddit"
+  },
+  {
+   "quote": "For platforms, DraftKings and FanDuel are the two you need to be on, period. Biggest player pools, most contest variety, best liquidity.",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1mzbbz6/what_is_the_best_app_for_dfs/",
+   "title": "What is the best app for DFS? : r/fantasyfootball - Reddit"
+  }
+ ],
+ "discovered_paths": [
+  "/api/build-time",
+  "/basketball",
+  "/dgf/membership-signup",
+  "/futures",
+  "/odds",
+  "https://oddsjam.com/sitemap-0.xml"
+ ],
+ "discovered_targets": [
+  "oddsjam.com"
+ ],
+ "discovery_metadata": {
+  "method": "urllib GET (fetcher.py pattern) + offline HTML/JS mining",
+  "timestamp": "2026-09-08T14:11:47-0500",
+  "http_requests_used": 7,
+  "request_log": [
+   {
+    "url": "https://dgfantasy.com",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-home.html",
+    "err": null
+   },
+   {
+    "url": "https://dgfantasy.com/robots.txt",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-robots.txt",
+    "err": null
+   },
+   {
+    "url": "https://dgfantasy.com/sitemap.xml",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-sitemap.xml",
+    "err": null
+   },
+   {
+    "url": "https://dgfantasy.com/_next/static/chunks/0_l_3gjh2.uxr.js",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-js0.js",
+    "err": null
+   },
+   {
+    "url": "https://dgfantasy.com/_next/static/chunks/0o341koett55p.js",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-js1.js",
+    "err": null
+   },
+   {
+    "url": "https://dgfantasy.com/_next/static/chunks/0exc-x.lkothf.js",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-js2.js",
+    "err": null
+   },
+   {
+    "url": "https://dgfantasy.com/dgf/membership-signup",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dgfantasy-pricing.html",
+    "err": null
+   }
+  ]
+ },
+ "disposition": "live (derived from 8 raw evidence files)"
+}

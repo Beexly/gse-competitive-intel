@@ -1,0 +1,114 @@
+{
+ "domain": "notboring.co",
+ "tech_stack": {
+  "frontend": {
+   "value": "vite",
+   "citation": "raw/px_notboring_co_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_notboring_co_home.raw",
+   "raw\\px_notboring_co_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "ws.com",
+    "ws.com/public/images/71af4923-a4e0-4d18-9a20-0a2b123cdf89_3000x3000.png",
+    "ws.com/public/images/3c6a6231-021b-4b82-9c92-6f16691b6652_400x400.jpeg",
+    "ws.com/public/images/5a9e5051-9ba4-417d-b5d8-a62d859710f0_144x144.png",
+    "ws.com/public/images/cd90e2be-249b-426a-b6c6-65ec957b6d3f_201x201.png",
+    "ws.com/custom-disconnect-slate-tall.png"
+   ],
+   "citation": "raw/px_notboring_co_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_notboring_co_home.raw"
+  },
+  "rate_limits": {
+   "value": "credit",
+   "citation": "raw/px_notboring_co_home.raw"
+  },
+  "citations": [
+   "raw\\px_notboring_co_home.raw",
+   "raw\\px_notboring_co_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Tech strategy, analysis, and philosophy, but not boring. Click to read Not Borin' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "polymarket"
+   ],
+   "citation": "raw/px_notboring_co_home.raw"
+  },
+  "citations": [
+   "raw\\px_notboring_co_home.raw",
+   "raw\\px_notboring_co_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "credit"
+   ],
+   "citation": "raw/px_notboring_co_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_notboring_co_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "Free"
+   ],
+   "citation": "raw/px_notboring_co_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_notboring_co_home.raw",
+   "raw\\px_notboring_co_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "ws.com",
+  "ws.com/custom-disconnect-slate-tall.png",
+  "ws.com/public/images/3c6a6231-021b-4b82-9c92-6f16691b6652_400x400.jpeg",
+  "ws.com/public/images/5a9e5051-9ba4-417d-b5d8-a62d859710f0_144x144.png",
+  "ws.com/public/images/71af4923-a4e0-4d18-9a20-0a2b123cdf89_3000x3000.png",
+  "ws.com/public/images/cd90e2be-249b-426a-b6c6-65ec957b6d3f_201x201.png",
+  "wser-agent.com/us1/v5/datadog-rum.js"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:14.952124"
+ },
+ "disposition": "walled",
+ "_site_identity": {
+  "title": "Not Boring by Packy McCormick | Substack",
+  "description": "Tech strategy, analysis, and philosophy, but not boring. Click to read Not Boring by Packy McCormick, a Substack publication with hundreds of thousands of subscribers."
+ }
+}

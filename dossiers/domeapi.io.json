@@ -1,0 +1,120 @@
+{
+ "domain": "domeapi.io",
+ "tech_stack": {
+  "frontend": {
+   "value": "React",
+   "citation": "raw/domeapi.io.assets.js"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\domeapi.io.assets.js",
+   "raw\\domeapi.io.html",
+   "raw\\domeapi.io.robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "ws.filter",
+    "api.io",
+    "https://api.domeapi.io/v1/polymarket/market-price/1970125632175958395458119205389452165493598747820934300096475658796461",
+    "api.com"
+   ],
+   "citation": "raw/domeapi.io.assets.js"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": [
+    "websocket"
+   ],
+   "citation": "raw/domeapi.io.assets.js"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\domeapi.io.assets.js"
+  },
+  "citations": [
+   "raw\\domeapi.io.assets.js",
+   "raw\\domeapi.io.html",
+   "raw\\domeapi.io.robots.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "Polymarket",
+    "polymarket",
+    "kalshi",
+    "Kalshi"
+   ],
+   "citation": "raw/domeapi.io.assets.js"
+  },
+  "citations": [
+   "raw\\domeapi.io.assets.js",
+   "raw\\domeapi.io.html",
+   "raw\\domeapi.io.robots.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\domeapi.io.assets.js"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\domeapi.io.assets.js"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "Free"
+   ],
+   "citation": "raw/domeapi.io.assets.js"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\domeapi.io.assets.js",
+   "raw\\domeapi.io.html",
+   "raw\\domeapi.io.robots.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /"
+ ],
+ "discovered_targets": [
+  "api.com",
+  "api.io",
+  "https://api.domeapi.io/v1/polymarket/market-price/1970125632175958395458119205389452165493598747820934300096475658796461",
+  "ws.filter"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:45.796918"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "NOT CONFIRMED",
+  "description": "NOT CONFIRMED"
+ }
+}

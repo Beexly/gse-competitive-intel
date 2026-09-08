@@ -1,0 +1,110 @@
+{
+ "domain": "oddsportal.com",
+ "tech_stack": {
+  "frontend": "Next.js (App Router, Turbopack chunks, RSC/React Server Components, Redux) — confirmed via x-nextjs-* response headers and /_next/static/chunks/* bundles",
+  "backend": "NOT CONFIRMED — no server framework exposed in headers (nginx front only)",
+  "database": "NOT CONFIRMED — no exposure",
+  "cloud": "Custom edge cache (headers x-dc: TT2, x-cache: cached, x-hash: true) behind nginx",
+  "cdn": "Own infra (cci2.oddsportal.com asset host); no Cloudflare/Vercel/AWS markers in headers",
+  "citations": [
+   "https://www.oddsportal.com/ (headers: x-powered-by Next.js, x-nextjs-prerender, x-dc)",
+   "https://www.oddsportal.com/_next/static/chunks/336375_d-ridk.js (Redux thunk middleware code)",
+   "https://www.oddsportal.com/docs"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED — grep of homepage + 5 fetched JS chunks found no graphql string, no baseURL/apiRoot/axios.create, no NEXT_PUBLIC_* config (bundled app code likely loads API config lazily or server-side only)",
+  "websocket_endpoints": "NOT CONFIRMED — no wss:// strings in homepage or fetched chunks; odds appear server-rendered via RSC payload",
+  "rate_limits": "NOT CONFIRMED — no ratelimit headers on any response",
+  "citations": [
+   "https://www.oddsportal.com/ (RSC inline payload, no api paths)",
+   "raw/oddsportal_chunk_*.js.txt greps (baseURL/axios/fetch/ws all empty)"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "Value bets calculation basis (i18n string)",
+   "raw_snippet": "calculated_from_1x2_odds: \"Calculated from 1X2 odds processed over last 30 days.\" / calculated_from_ha_odds: \"Calculated from Home/Away odds processed over last 30 days.\"",
+   "reconstruction": "Value-bet tool computes expected value vs market baseline built from the site's own collected 1X2 (and Home/Away) odds history over a trailing 30-day window; exact coefficient code is server-side, not exposed in client bundles.",
+   "citation": "https://www.oddsportal.com/docs (RSC i18n payload)"
+  },
+  {
+   "name": "Arbitrage (sure bets) stake calculator",
+   "raw_snippet": "total_amount_you_wish_to_risk / calculate / your_profit / all_stakes_to_be_rounded_up: \"All stakes to be rounded up\"; sure-bet strings: check_the_bookmaker_for_current_odds, last_sure_bet_update, no_sure_bet_at_the_moment",
+   "reconstruction": "Standard arb stake distribution: user supplies total risk, tool splits stakes across outcomes inversely proportional to odds and reports guaranteed profit (stakes rounded up); client-side i18n only — math not in fetched bundles.",
+   "citation": "https://www.oddsportal.com/docs (RSC i18n payload); tool at https://www.oddsportal.com/sure-bets/"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED — no ML/model strings in client payloads; site is odds-aggregation focused",
+  "training_data": "Own historical odds archive (opening/closing odds, 30-day rolling processing per value-bet strings)",
+  "update_frequency": "Homepage cache-control: public, max-age=60, s-maxage=60, stale-while-revalidate=60 (odds page data refresh ~60s)",
+  "citation": "https://www.oddsportal.com/ (cache-control header)"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED — no simulation strings in client code",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "raw/oddsportal_chunk_*.js.txt greps"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Opta (asset opta_logo.3kpl4yp9m91ot.svg loaded on homepage — likely data attribution partner; 'Data by' footer string present)"
+  ],
+  "citations": [
+   "https://www.oddsportal.com/ (/_next/static/media/opta_logo.3kpl4yp9m91ot.svg)",
+   "https://www.oddsportal.com/docs ('Data by' + copyright footer)"
+  ]
+ },
+ "product_limits": {
+  "limits": [
+   "Odds alerts not supported for limited users: i18n 'odds_alert_tooltip_is_limited_user': \"Not supported for your country\"",
+   "Premium bookmakers gating: 'only_premium_bookmakers_displayed': \"Only premium bookmakers displayed. Click to show\" and 'premium_bookmakers': \"Premium Bookmakers\" vs 'popular_bookmakers'",
+   "Login walls on some data: 'log_in_to_display_average_payout', 'login_or_register_for_free ... to display the odds'"
+  ],
+  "upgrade_triggers": "Premium bookmaker tier upsell inside odds tables; no pricing page linked from homepage nav",
+  "citation": "https://www.oddsportal.com/docs (RSC i18n payload)"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED — no /pricing or /subscribe page linked from homepage; probe of /pricing not in budget. Free registration model with 'Premium' bookmaker segments.",
+  "ios": "NOT CONFIRMED — no app links on homepage",
+  "android": "NOT CONFIRMED — no app links on homepage",
+  "citations": [
+   "https://www.oddsportal.com/ (nav contains no pricing link)"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "I've been trying to scrape oddsportal but it's being an absolute nightmare. Recently it removed betfair section from its site and 70% of the ...",
+   "source": "https://www.reddit.com/r/algobetting/comments/1sz5ycy/oddsportal_recent_changes/",
+   "date": "r/algobetting thread 'Oddsportal Recent Changes'"
+  },
+  {
+   "quote": "It seems that Oddsportal has removed a fair number of bookmakers from its offerings. For example, Bwin and Unibet are no longer options.",
+   "source": "https://www.reddit.com/r/algobetting/comments/1mub2r6/oddsportal_alternatives/",
+   "date": "r/algobetting thread 'Oddsportal & alternatives'"
+  },
+  {
+   "quote": "There is been an update of the odds portal website. I now see only 4 bookmakers for soccer that seems bind to my region (France) ...",
+   "source": "https://www.reddit.com/r/algobetting/comments/1i7y9bj/odds_portal_update/",
+   "date": "r/algobetting thread 'Odds portal update' (region-gating complaints)"
+  },
+  {
+   "quote": "Since yesterday oddsportal has not worked for me is anyone else having the same problem? I used OddsPortal for several years but got tired of ...",
+   "source": "https://www.reddit.com/r/algobetting/comments/1vjxc9y/oddsportal_not_working/",
+   "date": "r/algobetting thread 'Oddsportal not working'"
+  }
+ ],
+ "discovered_paths": [
+  "/sure-bets/",
+  "/docs (200, 450KB, full app i18n RSC payload)",
+  "/value-bets, /dropping-odds, /betting-tools, /blocked-odds, /archived-results (nav tools)",
+  "cci2.oddsportal.com (asset CDN host)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "urllib GET (fetcher.py): homepage + 4 _next chunks; prior probe data ls_all_probes.json (skipped /api/v1 404, /robots 200 already on disk, /sitemap 503); grep for api/premium/vendor/ws",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 14 raw evidence files)"
+}

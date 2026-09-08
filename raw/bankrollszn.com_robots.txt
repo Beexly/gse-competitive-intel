@@ -1,0 +1,19 @@
+URL: https://bankrollszn.com/robots.txt\nSTATUS: 200\n\nUser-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /Admin
+Disallow: /AdminSlates
+Disallow: /AdminPlayerAnalysis
+Disallow: /LineupBuilder
+Disallow: /MyHRPicks
+Disallow: /creator-studio
+
+# Telemetry endpoints only. These carry no page content and are not needed
+# for rendering. Do NOT add a blanket /api/ rule: /api/apps/*/entities/Article
+# and /api/apps/*/functions/* are what render page content for Googlebot.
+Disallow: /api/app-logs/
+Disallow: /api/apps/*/analytics/
+Disallow: /api/apps/*/entities/SiteEvent
+
+Sitemap: https://bankrollszn.com/sitemap.xml
+Sitemap: https://bankrollszn.com/functions/articleSitemap

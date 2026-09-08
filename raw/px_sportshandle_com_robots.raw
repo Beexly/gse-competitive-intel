@@ -1,0 +1,26 @@
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow: /*.rss$
+Disallow: /*feed/
+Disallow: /goto/
+Disallow: */?
+Disallow: *@*
+Allow: /wp-content/*.css
+Allow: /wp-content/uploads/*
+Allow: /wp-content/plugins/*.css
+Allow: /wp-content/plugins/*.js
+Allow: /wp-content/plugins/**/*.css
+Allow: /wp-content/plugins/**/*.js
+Allow: /wp-content/cache/*
+Allow: /wp-content/themes/jnews/*.css
+Allow: /wp-content/themes/jnews/*.js
+Allow: /wp-content/themes/jnews-child/*.css
+Allow: /wp-content/themes/jnews-child/*.js
+Allow: /wp-content/themes/jnews-child/**/*.css
+Allow: /wp-content/themes/jnews-child/**/*.js\
+Disallow: /wp-content/
+
+Sitemap: https://sportshandle.com/sitemap_index.xml
+# ---------------------------
+# END YOAST BLOCK

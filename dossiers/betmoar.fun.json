@@ -1,0 +1,133 @@
+{
+ "domain": "betmoar.fun",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/betmoar.fun__chunk-big.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\betmoar.fun__chunk-big.raw",
+   "raw\\betmoar.fun__chunk2.raw",
+   "raw\\betmoar.fun__home.raw",
+   "raw\\betmoar.fun__robots-plain.raw",
+   "raw\\betmoar.fun__robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "api.polymarket.com/markets/information",
+    "api.polymarket.com/markets/keyset",
+    "api.polymarket.com/market-clarifications",
+    "api.polymarket.com",
+    "api.polymarket.com/events/keyset",
+    "api.polymarket.com/oi"
+   ],
+   "citation": "raw/betmoar.fun__chunk-big.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": [
+    "wss://",
+    "WebSocket"
+   ],
+   "citation": "raw/betmoar.fun__chunk-big.raw"
+  },
+  "rate_limits": {
+   "value": "credit",
+   "citation": "raw/betmoar.fun__chunk-big.raw"
+  },
+  "citations": [
+   "raw\\betmoar.fun__chunk-big.raw",
+   "raw\\betmoar.fun__chunk2.raw",
+   "raw\\betmoar.fun__home.raw",
+   "raw\\betmoar.fun__robots-plain.raw",
+   "raw\\betmoar.fun__robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'The fastest way to bet on your beliefs. Over $1B+ in volume across the leading p' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "polymarket",
+    "Polymarket"
+   ],
+   "citation": "raw/betmoar.fun__chunk-big.raw"
+  },
+  "citations": [
+   "raw\\betmoar.fun__chunk-big.raw",
+   "raw\\betmoar.fun__chunk2.raw",
+   "raw\\betmoar.fun__home.raw",
+   "raw\\betmoar.fun__robots-plain.raw",
+   "raw\\betmoar.fun__robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "credit",
+    "Per minute",
+    "Per day"
+   ],
+   "citation": "raw/betmoar.fun__chunk-big.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\betmoar.fun__chunk-big.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "Free"
+   ],
+   "citation": "raw/betmoar.fun__chunk-big.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\betmoar.fun__chunk-big.raw",
+   "raw\\betmoar.fun__chunk2.raw",
+   "raw\\betmoar.fun__home.raw",
+   "raw\\betmoar.fun__robots-plain.raw",
+   "raw\\betmoar.fun__robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "api.polymarket.com",
+  "api.polymarket.com/events/keyset",
+  "api.polymarket.com/market-clarifications",
+  "api.polymarket.com/markets/information",
+  "api.polymarket.com/markets/keyset",
+  "api.polymarket.com/oi",
+  "api.polymarket.com/series/",
+  "wsItems.length"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:44.577292"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Betmoar",
+  "description": "The fastest way to bet on your beliefs. Over $1B+ in volume across the leading prediction market trading interface."
+ }
+}

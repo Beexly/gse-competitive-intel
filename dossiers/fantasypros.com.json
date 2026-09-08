@@ -1,0 +1,88 @@
+{
+ "domain": "fantasypros.com",
+ "tech_stack": {
+  "frontend": "Custom JS SPA-ish site on own CDN (cdn.fantasypros.com); Akamai edge (middycdn-a.akamaihd.net bootstrap); OneTrust cookie consent; no framework marker in HTML",
+  "backend": "NOT CONFIRMED (server-side; /api/c1/*.php endpoints imply PHP backend)",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "Akamai (middycdn-a.akamaihd.net) + cdn.fantasypros.com; OneTrust + pubfig ad script",
+  "citations": [
+   "https://www.fantasypros.com/ (saved: raw/fantasypros_com_home.html)",
+   "https://www.fantasypros.com/robots.txt (saved: raw/fantasypros_com_robots.txt.txt)"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "POST/GET",
+    "path": "/api/c1/user-get-favorite-links.php",
+    "auth_required": true,
+    "tier": "user session",
+    "sample_response": "NOT CONFIRMED (robots disallows /api/; not probed)",
+    "citation": "https://www.fantasypros.com/ (saved: raw/fantasypros_com_home.html)"
+   },
+   {
+    "method": "POST/GET",
+    "path": "/api/c1/user-update-favorite-links.php",
+    "auth_required": true,
+    "tier": "user session",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "https://www.fantasypros.com/ (saved: raw/fantasypros_com_home.html)"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (no traces)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "robots.txt sets Crawl-delay: 5 and disallows /api/, /json/, /xml/, /ajax/ — indicates private JSON/XML data endpoints exist behind those paths",
+  "citations": [
+   "https://www.fantasypros.com/robots.txt (saved: raw/fantasypros_com_robots.txt.txt)"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "'Opta' and 'ESPN' strings present in homepage (exact role unconfirmed)"
+  ],
+  "citations": [
+   "https://www.fantasypros.com/ (saved: raw/fantasypros_com_home.html)"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED (no price data in homepage; Pro upsell exists on site)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "https://www.fantasypros.com/ (saved: raw/fantasypros_com_home.html)"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/sitemaps/sitemap_index.xml (real index per robots; /sitemap.xml itself 404s)",
+  "/api/c1/user-get-favorite-links.php",
+  "/api/c1/user-update-favorite-links.php",
+  "/ajax/",
+  "/json/",
+  "/xml/"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "fetched homepage+robots+probes (/openapi.json,/swagger.json,/docs,/sitemaps.xml all 404 HTML, saved); robots.txt real 200",
+  "timestamp": "2026-09-08T13:52:22.131113"
+ },
+ "disposition": "live (derived from 7 raw evidence files)"
+}

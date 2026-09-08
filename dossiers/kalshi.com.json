@@ -1,0 +1,32 @@
+{
+  "domain": "kalshi.com",
+  "disposition": "walled",
+  "disposition_reason": "Homepage reachable but rate-limited / Vercel Security Checkpoint (429) on /pricing, /robots.txt /sitemap.xml. Public API host exposed in client JS and docs; pricing gated behind checkpoint (NOT CONFIRMED).",
+  "tech_stack": {
+    "frontend": "Next.js (React SSR, /_next/static), client bundles 01ztipe50ml3b.js, 02qn0o379pb4l.js; CSS modules 'kalshisans'; Vercel hosting",
+    "backend": "NOT CONFIRMED — Vercel Serverless; origin stack not exposed in fetched artifacts",
+    "database": "NOT CONFIRMED",
+    "cloud_cdn": "Vercel (sfo1 edge), Cloudflare; assets on assets.kalshi.com",
+    "citations": ["https://kalshi.com","https://docs.kalshi.com","https://kalshi.com/_next/static/immutable/chunks/02qn0o379pb4l.js"]
+  },
+  "api_architecture": {
+    "rest_endpoints": [
+      {"method":"GET","path":"https://api.elections.kalshi.com/v1/exchange/status","auth_required":"Unknown (public demo endpoint returns 200)","tier":"NOT CONFIRMED","sample_response":"NOT CONFIRMED","citation":"https://api.elections.kalshi.com/v1/exchange/status"},
+      {"method":"GET","path":"https://trading-api.kalshi.com/v1/series","auth_required":"Required (returns 401 without credentials)","tier":"NOT CONFIRMED","sample_response":"NOT CONFIRMED","citation":"https://trading-api.kalshi.com/v1/series"}
+    ],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED — wss host not seen in fetched JS fragments",
+    "rate_limits": "NOT CONFIRMED — no rate-limit headers visible in sampled fetch",
+    "citations": ["https://api.elections.kalshi.com/v1/exchange/status","https://trading-api.kalshi.com/v1/series","https://docs.kalshi.com","https://kalshi.com"]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {"model_types":"NOT CONFIRMED","training_data":"NOT CONFIRMED","update_frequency":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "simulation_engine": {"num_simulations":"NOT CONFIRMED","correlation_method":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "data_supply_chain": {"vendors":"NOT CONFIRMED","citations":["https://docs.kalshi.com"]},
+  "product_limits": {"limits":"NOT CONFIRMED","upgrade_triggers":"NOT CONFIRMED","citation":"NOT CONFIRMED"},
+  "pricing": {"web":"NOT CONFIRMED — Vercel Security Checkpoint (429) on https://kalshi.com/pricing","ios":"NOT CONFIRMED","android":"NOT CONFIRMED","citations":["https://kalshi.com/pricing"]},
+  "customer_pain": [],
+  "discovered_paths": ["/pricing","/docs","/getting_started/making_your_first_request","/api-reference/exchange/get-exchange-status"],
+  "discovered_targets": ["api.elections.kalshi.com","trading-api.kalshi.com","docs.kalshi.com","assets.kalshi.com"],
+  "discovery_metadata": {"method":"read-only HTTP GET (urllib) + client JS grep; r.jina.ai fallback for 429 hosts","timestamp":"2026-09-08T21:11:00Z"}
+}

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Polyteller | Smart Tools for Polymarket Traders</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4A4FE4;
+            --primary-dark: #3A3FD4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        .background-blobs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            overflow: hidden;
+            opacity: 0.6;
+        }
+
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+        }
+
+        .blob-1 {
+            width: 600px;
+            height: 600px;
+            background: linear-gradient(135deg, rgba(74, 79, 228, 0.15) 0%, rgba(108, 99, 255, 0.15) 100%);
+            top: -200px;
+            right: -100px;
+            animation: float-slow 8s ease-in-out infinite;
+        }
+
+        .blob-2 {
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, rgba(147, 51, 234, 0.1) 0%, rgba(79, 70, 229, 0.1) 100%);
+            bottom: -150px;
+            left: -100px;
+            animation: float-slow 10s ease-in-out infinite alternate;
+        }
+
+        .blob-3 {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%);
+            top: 40%;
+            right: 15%;
+            animation: float-slow 12s ease-in-out infinite;
+        }
+
+        @keyframes float-slow {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(20px, 20px) rotate(5deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(238, 242, 255, 0.9));
+            color: #1A1B25;
+            line-height: 1.6;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-top: 40px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .logo-container {
+            animation: float 3s ease-in-out infinite;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            color: var(--primary);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #1A1B25;
+            font-weight: 700;
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: initial;
+            background: none;
+        }
+
+        .subtitle {
+            color: #4B5563;
+            font-size: 1.4rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary) 0%, #6C63FF 100%);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(74, 79, 228, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(74, 79, 228, 0.3);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin: 60px 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            animation: fadeIn 0.6s ease-out forwards;
+            opacity: 0;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card:nth-child(1) { animation-delay: 0.1s; }
+        .feature-card:nth-child(2) { animation-delay: 0.2s; }
+        .feature-card:nth-child(3) { animation-delay: 0.3s; }
+        .feature-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .feature-icon {
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(74, 79, 228, 0.1);
+            display: inline-flex;
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-icon svg {
+            color: var(--primary);
+            width: 28px;
+            height: 28px;
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1A1B25;
+            margin-bottom: 8px;
+        }
+
+        .feature-description {
+            color: #6B7280;
+            font-size: 0.875rem;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .feature-highlight {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--primary);
+            background: #EEF2FF;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            display: inline-block;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            margin-bottom: 8px;
+            color: #6B7280;
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+
+        .feature-list li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 1200px) {
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-card {
+                padding: 24px;
+            }
+        }
+
+        .reviews {
+            margin: 80px 0;
+            text-align: center;
+        }
+
+        .reviews-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #1A1B25;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .review-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .review-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .reviewer {
+            font-weight: 600;
+            color: #1A1B25;
+        }
+
+        .stars {
+            color: #FFB800;
+            letter-spacing: 2px;
+        }
+
+        .review-text {
+            color: #4B5563;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .faq-section {
+            margin: 80px 0;
+            text-align: center;
+        }
+
+        .faq-items {
+            max-width: 800px;
+            margin: 40px auto 0;
+            text-align: left;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 16px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .question {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 8px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            padding: 6px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        .question:hover {
+            background: rgba(74, 79, 228, 0.05);
+        }
+
+        .question::after {
+            content: '+';
+            font-size: 1.5em;
+            line-height: 1;
+            transition: transform 0.3s ease;
+            color: var(--primary);
+        }
+
+        .faq-item.active .question::after {
+            transform: rotate(45deg);
+        }
+
+        .answer {
+            color: var(--text-light);
+            font-size: 1.05em;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out, margin 0.3s ease-out;
+            opacity: 0;
+            margin-top: 0;
+        }
+
+        .faq-item.active .answer {
+            max-height: 500px;
+            opacity: 1;
+            margin-top: 12px;
+            transition: max-height 0.5s ease-in, opacity 0.3s ease-in, margin 0.3s ease-in;
+        }
+
+        .email-link {
+            color: var(--primary);
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="logo.svg" alt="Polyteller Logo" class="logo">
+            </div>
+            <h1>Polyteller</h1>
+            <p class="subtitle">
+                Enhance your Polymarket trading with smart tools for timing, privacy, and safety
+            </p>
+            <a href="https://chrome.google.com/webstore/detail/polyteller/dellhbjknongjplfapahjibjcpoboapb" class="cta-button">
+                Add to Chrome - It's Free
+            </a>
+        </div>
+
+        <div class="features">
+            <div class="feature-card group">
+                <div class="flex flex-col items-center text-center">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">No more confusions</h3>
+                    <p class="feature-description">See precisely event end time in your timezone with a live countdown</p>
+                </div>
+            </div>
+
+            <div class="feature-card group">
+                <div class="flex flex-col items-center text-center">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Set Notifications</h3>
+                    <p class="feature-description">Customise your notifications to be notified before the event ends</p>
+                </div>
+            </div>
+
+            <div class="feature-card group">
+                <div class="flex flex-col items-center text-center">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Privacy First</h3>
+                    <p class="feature-description">One-click privacy mode to protect your portfolio values</p>
+                </div>
+            </div>
+
+            <div class="feature-card group">
+                <div class="flex flex-col items-center text-center">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 11 12 14 22 4"/>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Trade Safety</h3>
+                    <p class="feature-description">Prevent accidents with an optional trade confirmation popup</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <h2 class="reviews-title" style="margin-bottom: 24px;">What traders are saying</h2>
+            <p style="margin-bottom: 64px; color: #6B7280; font-size: 1.1rem;">
+                Read our reviews on the <a href="https://chromewebstore.google.com/detail/polyteller-essential-tool/dellhbjknongjplfapahjibjcpoboapb" style="color: var(--primary); text-decoration: none; border-bottom: 1px solid var(--primary);" target="_blank">Chrome Web Store</a>
+            </p>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">Fuzz Lumpkins</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Bravo"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">Noob VN Maker</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Very useful tool"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">Neo Klix</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Nice!! )))"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">Sushi Bean</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Awesome awesome plugin. Must have for polymarket traders."</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq" class="faq-section">
+            <h2 class="reviews-title">Frequently Asked Questions</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="question">How do I install Polyteller?</div>
+                    <div class="answer">
+                        Installing Polyteller is simple. Visit the Chrome Web Store, click "Add to Chrome", and confirm the installation. 
+                        The extension works with Chrome and Chromium-based browsers (version 110+) like Edge and Brave. 
+                        Once installed, you'll see the Polyteller icon in your browser's extension toolbar.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question">How accurate are the countdown timers?</div>
+                    <div class="answer">
+                        Our countdown timers are highly accurate with built-in timezone handling. They automatically:
+                        - Convert all times to your local timezone
+                        - Handle Daylight Saving Time (DST) changes
+                        - Update in real-time without page refresh
+                        - Show warnings during DST transition periods
+                        - Sync with Polymarket's servers for precision
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question">How does Privacy Mode work?</div>
+                    <div class="answer">
+                        Privacy Mode instantly masks your portfolio values and balances across all Polymarket tabs. To use it:
+                        - Click the Polyteller icon
+                        - Toggle Privacy Mode on/off
+                        - Changes apply immediately to all open tabs
+                        - Settings persist between browser sessions
+                        This is perfect for trading while sharing your screen or in public spaces.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question">Can I customize notification timing?</div>
+                    <div class="answer">
+                        Yes! You can set multiple custom notifications for each event:
+                        - Click the Polyteller icon
+                        - Set your preferred notification times
+                        - Choose multiple time points (e.g., 1 hour, 30 mins, 5 mins before event end)
+                        - Notifications work even when browser is closed
+                        - All notifications show in your local timezone
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question">How does Trade Safety work?</div>
+                    <div class="answer">
+                        Trade Safety helps prevent accidental trades with:
+                        - Optional confirmation dialog for all trades
+                        - Keyboard shortcuts (Enter to confirm, Esc to cancel)
+                        - 3-second countdown timer on cancellation
+                        - Works across all Polymarket markets
+                        - Can be toggled on/off in settings
+                        Note: Confirmation dialogs are automatically disabled on small screens for better mobile experience.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question">What happens when I switch between markets?</div>
+                    <div class="answer">
+                        Polyteller intelligently handles market navigation:
+                        - Auto-detects market changes
+                        - Updates countdown timers automatically when possible
+                        - Shows refresh hint when manual refresh is needed
+                        - Maintains privacy settings across all markets
+                        - Syncs notifications across browser sessions
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question">Can't find what you're looking for?</div>
+                    <div class="answer">
+                        If you couldn't find the answer to your question, our support team is here to help! Send us an email at 
+                        <a href="mailto:hi@polyteller.com" class="email-link">hi@polyteller.com</a>, and we'll get back to you 
+                        as soon as possible. Please include as much detail as possible about your issue to help us assist you better.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <polyteller-footer></polyteller-footer>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics-compat.js"></script>
+    <script type="text/javascript" src="components/footer.js"></script>
+    
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBaQE0nN9n3nugNFhg-aVzhk0pJTpJef-E",
+            authDomain: "polyteller.firebaseapp.com",
+            projectId: "polyteller",
+            storageBucket: "polyteller.firebasestorage.app",
+            messagingSenderId: "17104758944",
+            appId: "1:17104758944:web:54ee379a2603b8aa8341c5",
+            measurementId: "G-Z5HFG00PCE"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        firebase.analytics().logEvent('page_view');
+
+        const VERSION = '1.0.3';
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update images version
+            document.querySelectorAll('img').forEach(img => {
+                if (img.src.includes('assets.coingecko.com')) return;
+                img.src = `${img.src}?v=${VERSION}`;
+            });
+
+            // Add FAQ functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            let autoCloseTimers = new Map();
+
+            function closeAllExcept(exceptItem) {
+                faqItems.forEach(item => {
+                    if (item !== exceptItem && item.classList.contains('active')) {
+                        item.classList.remove('active');
+                        if (autoCloseTimers.has(item)) {
+                            clearTimeout(autoCloseTimers.get(item));
+                            autoCloseTimers.delete(item);
+                        }
+                    }
+                });
+            }
+
+            function startAutoCloseTimer(item) {
+                if (autoCloseTimers.has(item)) {
+                    clearTimeout(autoCloseTimers.get(item));
+                }
+                
+                const timer = setTimeout(() => {
+                    item.classList.remove('active');
+                    autoCloseTimers.delete(item);
+                }, 30000);
+
+                autoCloseTimers.set(item, timer);
+            }
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.question');
+                
+                question.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const isActive = item.classList.contains('active');
+                    
+                    closeAllExcept(item);
+                    
+                    if (!isActive) {
+                        item.classList.add('active');
+                        startAutoCloseTimer(item);
+                    } else {
+                        item.classList.remove('active');
+                        if (autoCloseTimers.has(item)) {
+                            clearTimeout(autoCloseTimers.get(item));
+                            autoCloseTimers.delete(item);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

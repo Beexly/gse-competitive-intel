@@ -1,0 +1,35 @@
+User-agent: *
+
+# block main application
+Disallow: /*calculate-adp.aspx$
+Disallow: /*.exclude$
+Disallow: /usercontrols/*
+Disallow: /access/*
+Disallow: /*.cs$
+Disallow: /*.config$
+Disallow: /fantasy-football/nfl/create/editsheet.aspx*
+Disallow: /access/login.aspx
+Disallow: /access/register.aspx
+
+# block SessionID Problems
+Disallow: /(A(
+
+# block blog
+Disallow: /blog/?tag=*
+Disallow: /blog/category/*
+Disallow: /blog/author/*
+Disallow: /blog/*page=*
+
+# block affiliate redirects
+Disallow: /blog/go/
+
+# block RSS
+Disallow: /blog/*/feed 
+
+# for now block all community pages
+
+
+Disallow: /community/*.ashx*
+Disallow: /community/App_Templates/*
+
+Sitemap: https://www.cheatsheetwarroom.com/sitemap.xml  

@@ -1,40 +1,48 @@
-# GSE Competitive Intel + NFL EV Build Knowledge
+# GSE Competitive Intel — Corpus + Launch Kit
 
-Private research + build package for the **Galaxy Sports Edge** NFL/MLB expected-value ("Glass
-Ledger + Edge Engine") work. Everything here is **PII-scrubbed** — a competitor's owner's national
-ID / DOB were stripped before anything left the source machine; do not reintroduce personal data.
+One-stop intel repo for Galaxy Sports Edge (GSE): 310 competitor dossiers, raw evidence for
+every claim, 550+ OSS code catalogs, and the complete 2026-09-08 launch kit incl. a
+production audit of https://www.galaxysportsedge.com.
 
-## Read order (for the coding agent)
+**START HERE → [`LAUNCH/12-NEXT-AGENT-HANDOFF.md`](LAUNCH/12-NEXT-AGENT-HANDOFF.md)**
 
-1. **`_HANDOFF-to-coding-agent.md`** — the self-contained build spec. Mission, non-negotiable
-   guardrails, the strict Phase 0→4 sequence, math specs, data contracts, acceptance tests. Start here.
-   *(It's multi-sport: NFL + MLB from day one, sport-agnostic engine — §6.)*
-2. **`codex-work/README.md`** — **what Codex already built.** Read this before writing engine code so
-   you extend the existing `prediction-engine` (de-vig/edge, quarter-Kelly, Poisson, and the
-   `evidence-readiness-matrix` True-EV gate) instead of rebuilding it.
-3. **Depth, on demand:**
-   - `_gse-edge-lab-final.md` — the quant core (calibration, conformal edge-gate, fractional-Kelly,
-     walk-forward, placebo leak test).
-   - `_MASTER-gse-strategic-dossier.md` / `_gse-domination-capstone.md` — strategy / positioning.
-   - `_scores24-teardown-final.md`, `_fantasypros-teardown-final.md` + the `*-verified-playbook.md`
-     files — competitor teardowns and the exploits to design around.
-   - `gse-competitive-intel/` — runnable FantasyGuru/FantasyPros engines (`nfl_engine.py`,
-     `nfl_scheme_defense.py`, `gse_engine.py`), precomputed NFL feature CSVs, and exact
-     SMASH/BURR/Solds methodology.
-   - `codex-work/` — curated, secret-free Codex EV code + design docs + Sports-OS doctrine.
+> **PII compliance (inherited, 2026-08):** everything here is PII-scrubbed — a competitor owner's
+> national ID / DOB were stripped before anything left the source machine. Do not reintroduce
+> personal data into this repo.
 
-## First move
-Per the handoff, Phase 0 is the **leak-free data foundation**, and **nothing gets a public number
-until the shuffled-time placebo test drives CLV to ~0.** Explore the existing substrate (the Codex
-`prediction-engine`, the calibration runtime, the NFL world-model) and report before building.
+## Entry points by intent
 
-## Guardrails (from the handoff — do not violate)
-Fire/rank on calibrated **edge `e = p − q`**, never confidence · no fabricated performance numbers
-(realized, out-of-sample, Wilson-bounded + CLV only) · no leakage of closing-line/post-decision data
-into features · no affiliate / no real-money / free-skill only · licensed/free-legal data only · ship
-inert/founder-gated (don't flip live switches or bump MODEL_VERSION).
+| You want to... | Read |
+|---|---|
+| Continue the launch (tonight's blockers, runbook) | `LAUNCH/12-NEXT-AGENT-HANDOFF.md` → `LAUNCH/11-LAUNCH-NIGHT-RUNBOOK.md` |
+| Understand what's true about production right now | `LAUNCH/10-RECORD-AUDIT.md` |
+| Copy-paste marketing/methodology/SEO strings | `LAUNCH/01` (copy deck), `LAUNCH/02` (methodology), `LAUNCH/08` (SEO) |
+| Know the engine's real thresholds & math | `LAUNCH/03` (constants), `LAUNCH/04` (metrics canon), `ENGINES-MATH-CALIBRATIONS-RESEARCH.md` |
+| Find a data source (keyless / free tier) | `LAUNCH/05-DATA-SOURCES-STACK.md`, `LAUNCH/NEW-DATA-SOURCES-2026-09-08.md` |
+| Research a competitor | `dossiers/<domain>.json` (310), index in `MASTER_MATRIX.md` / `queue.json` |
+| Reuse OSS code patterns (license-checked) | `codes/` (550+ catalogs), license noted per catalog |
+| Audit any claim to primary evidence | `raw/` (1,600+ files; launch audit under `raw/prod-launch-audit-2026-09-08/`) |
 
-## Provenance & PII
-`_INDEX-for-nfl-session.md` and `_MANIFEST.txt` are source-only navigation aids (not in this export).
-Personal data on a competitor's owner was excluded/redacted throughout; the only person-name that
-appears is a company owner's public business-registry name, in the teardown analysis.
+## Layout
+
+- `LAUNCH/` — 15 launch-kit docs (00–12) + research files + evidence JSONs. Self-contained; has its own read-order.
+- `dossiers/` — one JSON per competitor domain, protocol-defined schema, `NOT CONFIRMED` where evidence lacking.
+- `raw/` — immutable primary evidence: HTTP captures, sitemaps, JS bundles, API samples, audit dumps, child-agent transcripts.
+- `codex-work/` — curated, secret-free Codex EV code + design docs + Sports-OS doctrine (extend, don't rebuild: devig/edge, quarter-Kelly, Poisson, `evidence-readiness-matrix` True-EV gate).
+- `gse-competitive-intel/` — runnable FantasyGuru/FantasyPros engines (`nfl_engine.py`, `nfl_scheme_defense.py`, `gse_engine.py`), precomputed NFL feature CSVs, SMASH/BURR/Solds methodology.
+- `.firecrawl/` — crawler config for August-era sitemap captures.
+- Root `_*.md` files — earlier (August) wave intel: `_HANDOFF-to-coding-agent.md` is the original NFL/MLB EV build spec (Phase 0→4; nothing gets a public number until the shuffled-time placebo test drives CLV to ~0); `_gse-edge-lab-final.md` is the quant core; `_MASTER-gse-strategic-dossier.md` / `_gse-domination-capstone.md` strategy; `*-teardown-final.md` + `*-verified-playbook.md` competitor exploits.
+- `codes/` — harvested OSS repo catalogs (algorithm, license, reusable logic, file citations).
+- `MASTER_MATRIX.md` (+ `.json`) — cross-competitor aggregate. `GSE_BLUEPRINT.md` — strategy v3. `PHASE4_GAPS.md` — gap analysis. `queue.json` — 765-target ledger, fully accounted.
+
+## Rules (non-negotiable, inherited from the protocol)
+
+1. **Never fabricate.** Every claim cites a file in `raw/` or a URL; missing evidence = `NOT CONFIRMED`.
+2. **`raw/` is append-only.** Audit artifacts and transcripts are frozen evidence; correct forward, never rewrite.
+3. **Child-agent outputs are claims, not facts.** Verify against `raw/` citations before relying on them (twice in 2026-09, research subagents died at iteration caps before writing deliverables; salvage procedure is documented in `LAUNCH/12`).
+4. Product repo is `Beexly/Sports` — this repo is intel only; never wire to production code.
+
+## State
+
+- Corpus: 310/310 dossiers (247 live / 8 dead / 55 walled), queue 765 fully accounted, 0 unset.
+- Launch audit (2026-09-08): Proof API verified (1,111 receipts, sha256 recompute MATCH), 3 P0 blockers on record, publication correctly OFF. Details + reproduce-steps in `LAUNCH/10`.

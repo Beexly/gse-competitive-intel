@@ -1,0 +1,62 @@
+{
+ "tech_stack": {
+  "frontend": "content platform + tools",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/rotogrinders_com_robots.txt.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": []
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "THE BAT projections (proprietary, internal)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "daily",
+  "citation": "public product copy"
+ },
+ "simulation_engine": {
+  "num_simulations": "SimLabs product",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "public product copy"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "DK/FD contest feeds (inferred)"
+  ],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "premium tiered subscriptions",
+  "upgrade_triggers": "content + tools gated",
+  "citation": "raw/seed-pricing-pages.json"
+ },
+ "pricing": {
+  "web": "$39.99/mo to $129.99/mo tiers ($9.99-$29.99 3-day trials; 6/12-month discounts)",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "raw/seed-pricing-pages.json (rotogrinders /premium capture)"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/lineuphq",
+  "/premium"
+ ],
+ "discovered_targets": [],
+ "domain": "rotogrinders.com",
+ "discovery_metadata": {
+  "method": "direct HTTP probes + raw evidence extraction (self-run)",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 2 raw evidence files)"
+}

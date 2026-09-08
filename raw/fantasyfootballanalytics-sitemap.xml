@@ -1,0 +1,14 @@
+URL: https://fantasyfootballanalytics.net/sitemap.xml\nSTATUS: 200\n\n<?xml version="1.0" encoding="UTF-8"?>
+<!--generator='jetpack-16.1.3'-->
+<!--Jetpack_Sitemap_Buffer_Master_XMLWriter-->
+<?xml-stylesheet type="text/xsl" href="//fantasyfootballanalytics.net/sitemap-index.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <sitemap>
+  <loc>https://fantasyfootballanalytics.net/sitemap-1.xml</loc>
+  <lastmod>2026-09-07T15:36:05Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://fantasyfootballanalytics.net/image-sitemap-1.xml</loc>
+  <lastmod>2026-09-02T18:30:44Z</lastmod>
+ </sitemap>
+</sitemapindex>

@@ -1,0 +1,182 @@
+{
+ "domain": "dataforceff.com",
+ "tech_stack": {
+  "frontend": "jQuery + server-rendered PHP site (PHPSESSID-style hidden inputs, ajax_admin.php, jQuery UI dialogs); native iOS + Android apps",
+  "backend": "PHP (commented POST to common/ajax_admin.php visible in homepage source)",
+  "database": "NOT CONFIRMED (no exposure)",
+  "cloud": "Cloudflare (server: cloudflare)",
+  "cdn": "Cloudflare",
+  "citations": [
+   "https://dataforceff.com"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "POST (commented-out sample)",
+    "path": "common/ajax_admin.php",
+    "auth_required": "session (PHP)",
+    "tier": "N/A",
+    "sample_response": "action: 'Javascript loaded'",
+    "citation": "https://dataforceff.com"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED (not probed - no JS evidence)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED (no public rate-limit doc)",
+  "citations": []
+ },
+ "extracted_formulas": [
+  {
+   "name": "The Wonk - league analysis via integrated projection vendors",
+   "raw_snippet": "alt='4for4 projections integrate with The Wonk for custom league analysis' / alt='Fantasy Nerds projections integrate with The Wonk for customer league analysis'; ReCAPTCHA_API_KEY_CLIENT present",
+   "reconstruction": "Custom league analysis ('The Wonk') computed client/server-side from user league settings + third-party projections (4for4, Fantasy Nerds); live stats from SportsData.io. Exact formula not exposed.",
+   "citation": "https://dataforceff.com"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "https://dataforceff.com"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED - no simulation product",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "https://dataforceff.com"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "SportsData.io (live stats feed - homepage logo row: 'Our live stats feed comes from SportsData.io')",
+   "4for4 (projections integrate with 'The Wonk')",
+   "Fantasy Nerds (projections)",
+   "FantasyPros (accuracy logo)",
+   "FantasyCalc (linked)"
+  ],
+  "citations": [
+   "https://dataforceff.com"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED (per-league entry costs not on homepage; behind login)",
+  "upgrade_triggers": "NOT CONFIRMED - it is a paid-entry season-long game, not a subscription SaaS",
+  "citation": "https://dataforceff.com"
+ },
+ "pricing": {
+  "web": {
+   "detail": "NOT CONFIRMED from homepage - entry/league fees not published on landing page; hidden inputs 'priceDeadline'/'renewalDeadline' + 'update-keeper-price' flow indicate dynamic keeper pricing per league",
+   "url": "https://dataforceff.com",
+   "status": 200
+  },
+  "ios": {
+   "app": "DataForce Fantasy Football - App Store id1561081620",
+   "citation": "https://apps.apple.com/us/app/dataforce-fantasy-football/id1561081620"
+  },
+  "android": {
+   "app": "DataForce Fantasy Football - Play package com.app.dataforcefantasyfootball",
+   "citation": "https://play.google.com/store/apps/details?id=com.app.dataforcefantasyfootball"
+  },
+  "citations": [
+   "https://dataforceff.com"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "The app has so many bugs. Plus trades that get vetoed and trades that are allowed to happen are fishy as fuck.",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/ob2tut/has_anyone_done_a_league_with_dataforce/",
+   "title": "Has anyone done a league with DataForce? : r/fantasyfootball - Reddit"
+  },
+  {
+   "quote": "https://www.dataforceff.com/prize-payouts. The other ffpc and ffwc have huge consolidated tournaments where the winner gets a huge sum, but ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1ljrd40/best_place_for_highstakes_fantasy_football/",
+   "title": "Best place for high-stakes Fantasy football? : r/fantasyfootball - Reddit"
+  },
+  {
+   "quote": "DataforceFF.com is another option. They take a cut of the pot ... My only real complaint is there is only a chat and not a message board.",
+   "source": "https://www.reddit.com/r/DynastyFF/comments/1gsjs51/how_did_u_guys_find_a_good_dynasty_league_to_go_to/",
+   "title": "How did u guys find a good dynasty league to go to. : r/DynastyFF - Reddit"
+  },
+  {
+   "quote": "DataForce (DataForceFF.com) does a slightly different Guillotine format. each week get $50 in. A review of Guillotine Leagues (platform)",
+   "source": "https://www.reddit.com/r/DynastyFF/comments/13srm8o/anybody_do_a_guillotine_league/",
+   "title": "Anybody do a Guillotine League? : r/DynastyFF - Reddit"
+  },
+  {
+   "quote": "I play on DataForceff.com, so they do all the work of filling spots when teams drop out. My oldest league just finished year six or seven ...",
+   "source": "https://www.reddit.com/r/DynastyFF/comments/1hy3wo9/those_of_you_who_have_been_in_a_dynasty_league/",
+   "title": "Those of you who have been in a dynasty league for 5+ years... - Reddit"
+  },
+  {
+   "quote": "I've been getting my projections finalized for the 2026 season. I do this for fantasy purposes, but find it interesting to discuss with all ...",
+   "source": "https://www.reddit.com/r/DenverBroncos/comments/1vxrk5x/2026_season_projections_team_nix/",
+   "title": "2026 Season Projections - Team / Nix : r/DenverBroncos - Reddit"
+  },
+  {
+   "quote": "Def hit us with a review of the Geneva property when you go. I've ... dataforceff. 2 comments. 8 Week Comparison · r/MenOnThePen. • 1y ago. 8 ...",
+   "source": "https://www.reddit.com/r/chubbytravel/comments/1kmeeuc/four_seasons_hotel_ranking/",
+   "title": "Four Seasons Hotel Ranking : r/chubbytravel - Reddit"
+  },
+  {
+   "quote": "NFC East Draft & Roster Review 2026. 9 upvotes · 8 comments. WDIS this ... dataforceff. 3 upvotes · 11 comments. Don't Draft These 5 ...",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1tn8kcz/new_top24_dynasty_fantasy_football_qb_rankings/",
+   "title": "NEW Top-24 Dynasty Fantasy Football QB Rankings & Tiers 2026"
+  }
+ ],
+ "discovered_paths": [
+  "/blog",
+  "/dataforce-competitors",
+  "/fantasy-football-lobby",
+  "/fantasy-football-rules",
+  "/fantasy-football-scoring-rules",
+  "/help-faq",
+  "/mobile-splash",
+  "/mobileadmin.php"
+ ],
+ "discovered_targets": [
+  "fantasycalc.com"
+ ],
+ "discovery_metadata": {
+  "method": "urllib GET (fetcher.py pattern), UA-spoof Chrome/126, gzip, 1s same-host sleep",
+  "timestamp": "2026-09-08T14:05:57-0500",
+  "http_requests_used": 6,
+  "request_log": [
+   {
+    "url": "https://dataforceff.com",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dataforceff-home.html",
+    "err": null
+   },
+   {
+    "url": "https://dataforceff.com/robots.txt",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dataforceff-robots.txt",
+    "err": null
+   },
+   {
+    "url": "https://dataforceff.com/sitemap.xml",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dataforceff-sitemap.xml",
+    "err": null
+   },
+   {
+    "url": "https://dataforceff.com/js/appskin.js?v=1788558901",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dataforceff-js0.js",
+    "err": null
+   },
+   {
+    "url": "https://dataforceff.com/js/skinfx.js?v=1788558928",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dataforceff-js1.js",
+    "err": null
+   },
+   {
+    "url": "https://dataforceff.com/js/lockerroom.js?v=1788558921",
+    "status": 200,
+    "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dataforceff-js2.js",
+    "err": null
+   }
+  ]
+ },
+ "disposition": "live (derived from 7 raw evidence files)"
+}

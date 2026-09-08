@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>API for Tennis</title>
+    <meta name="description" content="Premium Tennis API for your projects. Websocket Tennis for fast live events. Fast to implement API for Tennis feeds like statistics, standings, fixtures, player profile, odds, from tournaments of tennis world.">
+    <meta name="author" content="API Tennis">
+    <meta name="keywords" content="api, tennis, api tennis, tennis api, websocket, tennis webscoket, tennis json, tennis xml, tennis odds, tennis statistics, tennis rest-api, restful api, tennisresults, api tennis json, api tennis xml, api tennis livescore, tennis feed, tennis livescore, tennis news, ai tennis news, tennis draw, tennis bracket">
+	<link rel="shortcut icon" type="image/ico" href="/images/favicon.ico"/>
+	<link rel="shortcut icon" type="image/ico" href="https://api-tennis.com/favicon.ico"/>
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+		<link href="css/styles.css?v=6" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SY423BMX35"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SY423BMX35');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> -->
+
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Organization",
+	  "name": "API Tennis",
+	  "url": "https://api-tennis.com/",
+	  "logo": "https://api-tennis.com/images/logo.png",
+	  "description": "Premium Tennis API providing real-time and historical tennis data: fixtures, live scores, statistics, standings, player profiles and odds via REST and WebSocket."
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "WebSite",
+	  "name": "API Tennis",
+	  "url": "https://api-tennis.com/"
+	}
+	</script>
+
+	</head>
+
+	<body class="index-body">
+		<!-- Start Header =======================================================-->
+
+		<header>
+			<nav class="nav-transition navbar navbar-expand-lg navbar-dark fixed-top extra-background py-sm-0 px-sm-0">
+				<div class="container">
+					<a class="navbar-brand" href="/" style="padding-top: 7px; padding-bottom: 7px;">
+						<img height="56px" class="logo-alb-display-switch" src="images/logo-alb.png" alt="">
+            			<img height="56px" class="logo-display-switch d-none" src="images/logo.png" alt="">
+					</a>
+					<button id="navs-mobile-btn" class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fa fa-bars" style="color: #9c532f;" aria-hidden="true"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item my-sm-2 my-md-0 btn active" href="/">
+                <span class="nav-link-color">API Tennis</span>
+              </a>
+              <a class="nav-item my-sm-2 my-md-0 btn" href="/documentation">
+                <span class="nav-link-color">Documentation</span>
+              </a>
+              <a class="nav-item my-sm-2 my-md-0 btn" href="/mcp">
+                  <span class="nav-link-color">MCP for AI</span>
+              </a>
+               <a class="nav-item my-sm-2 my-md-0 btn" href="/documentation_websocket">
+                <span class="nav-link-color"><strong>WebSocket</strong></span>
+              </a>
+              <a class="nav-item my-sm-2 my-md-0 btn" href="/blog">
+                <span class="nav-link-color">Blog</span>
+              </a>
+              <a class="nav-item my-sm-2 my-md-0 btn" href="/#contact">
+                <span class="nav-link-color">Contact Us</span>
+              </a>
+	              <a class="nav-item my-sm-2 my-md-0 btn" href="../login">
+        <span class="nav-link-color">Login</span>
+      </a>
+      <a class="btn a-btn" href="../register" style="height: 42px;">
+        <span class="nav-link-register">Register</span>
+      </a>
+
+            </div>
+          </div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- End Header =========================================================-->
+
+		<!-- Start Section ======================================================-->
+
+		<section id="home" class="bg-img-1 h-100">
+			<section class="shadow h-100">
+				<div class="container h-100">
+					<div class="row text-white justify-content-center align-items-center h-100 mx-sm-0">
+						<div class="col-sm-10 text-center">
+							<p>The starting point of all your Tennis API implementations</p>
+							<h1>Premium <span style="color:#9c532f; font-weight: bold;">Tennis API</span> for your projects</h1>
+							<p>Restful<span style="color:#9c532f; font-weight: bold;"> API</span> for <span style="color:#9c532f; font-weight: bold;">Tennis</span> applications made with passion</p>
+							<div class="asdf">
+							<a href="/register" class="a-btn btn-on-mob-hero">1st Service free trial</a>
+							<a href="#plans" class="a-btn-t btn-on-mob-hero">Playing Plans</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+<style>
+	@media (max-width: 767px) {
+  .btn-on-mob-hero {
+    display: block!important;
+    margin-top: 30px;
+  }
+}
+</style>
+		<!-- End Section ========================================================-->
+
+		<!-- Start Section ======================================================-->
+
+		<section id="news-promo" style="background-color:#9c532f; padding: 35px 0;">
+			<div class="container">
+				<div class="row align-items-center mx-sm-0">
+					<div class="col-md-1 text-center d-none d-md-block">
+						<i class="fa fa-newspaper-o" style="font-size:56px; color:#fff;"></i>
+					</div>
+					<div class="col-md-8 text-center text-md-left">
+						<span style="background:#fff; color:#9c532f; font-weight:700; font-size:11px; padding:3px 10px; border-radius:12px; letter-spacing:1px;">NEW</span>
+						<h3 style="color:#fff; font-weight:700; margin-top:10px; margin-bottom:8px;">AI-Generated Tennis News — tied to the exact player, tournament &amp; match</h3>
+						<p style="color:#fff; margin-bottom:0;">Fresh, AI-written articles automatically linked to the tournament, player and match they cover. Available exclusively on the <strong>Ultra</strong> plan.</p>
+					</div>
+					<div class="col-md-3 text-center mt-3 mt-md-0">
+						<a href="/documentation#news" class="a-btn" style="background-color:#fff; color:#9c532f;">View News API</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- End Section ========================================================-->
+
+		<!-- Start Section ======================================================-->
+
+	    <section class="about" id="about">
+	        <div class="container">
+	            <h2 class="heading">The Point</h2>
+	            <hr class="about-line">
+	            <div class="row align-items-center h-100 mx-sm-0">
+	                <div class="col-sm-12 col-md-6">
+	                    <img class="img-fluid" src="images/about.jpg">
+	                </div>
+	                <div class="col-sm-12 col-md-6">
+	                    <div class="box">
+	                        <h3 class="mt-4 mb-3">API Tennis stands for one reliable and accurate tennis data service</h3>
+	                        <p>Since API Tennis is a dependable partner to many world wide tennis content providers, we have all the resources necessary to provide your business with accurate and real-time tennis feeds as well as additional tennis data including statistics, historical information, records, and much more. For your tennis-related digital services, API Tennis is dedicated to giving you the most comprehensive, accurate, and reliable tennis data, whether it be for a live match or a recorded event, local or international.</p>
+	                        <div class="row mx-sm-0">
+		                        <div class="col-4 col-sm-4 col-md-4 text-center p-0">
+		                            <div class="item">
+		                                <i class="fa fa-cogs"></i>
+		                                <h4 class="mt-3">Game</h4>
+		                            </div>
+		                        </div>
+		                        <div class="col-4 col-sm-4 col-md-4 text-center p-0">
+		                            <div class="item">
+		                                <i class="fa fa-handshake-o"></i>
+		                                <h4 class="mt-3">Set</h4>
+		                            </div>
+		                        </div>
+		                        <div class="col-4 col-sm-4 col-md-4 text-center p-0">
+		                            <div class="item">
+		                                <i class="fa fa-fire"></i>
+		                                <h4 class="mt-3">Match</h4>
+		                            </div>
+		                        </div>
+		                    </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+
+    	<!-- End Section ========================================================-->
+
+    	<!-- Start Section ======================================================-->
+
+		<section class="help">
+			<div class="container">
+				<div class="row mx-sm-0 align-items-center h-100 help-background">
+					<div class="col-md-6 box">
+						<img class="img-fluid m-0 m-md-3" src="images/help-one.jpg">
+					</div>
+					<div class="col-md-6 box colored">
+						<div class="help-items">
+							<h2>Easy to implement API service. Real time tennis data. Comprehensive and well written documentation. Up to date around the clock tennis API. </h2>
+							<p>Tennis is not just a game for athletes. When you are in love with something, you breathe it. Tennis today cannot be careless because fans are so well-informed. It must be extremely fast, accurate in statistics, updated frequently, and filled with data. We provide a solution that is incredibly simple to use and can be applied to any tennis projects with ease. Furthermore, on the off chance that you are wanting to develop a fantasy game, an application, a site or anything in any way connected with tennis, you want the best tennis data API Service.</p>
+							<a href="/register" class="a-btn ">Let's Go</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- End Section ========================================================-->
+
+    	<!-- Start Section ======================================================-->
+
+		<section id="services" class="services">
+			<div class="container">
+				<h2>Win the tennis API game</h2>
+				<hr class="about-line">
+				<div class="row mx-sm-0">
+					<div class="col-sm-6 col-md-4">
+						<div class="service-items">
+							<i class="mt-3 fa fa-users"></i>
+							<h3 class="mt-4">Register for API Tennis tournaments</h3>
+							<p style="min-height: 125px;">Because we despise registration forms as well, we made ours as quick as possible. You only need a few details to get going. Surprise! We even have a gift for you as a welcome. Your 14-day free trial period during which you can examine our operations. Let's start your inning now!</p>
+							<a class="a-btn " href="/register">Join us</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="service-items">
+							<i class="mt-3 fa fa-random"></i>
+							<h3 class="mt-4">Choose a playing plan</h3>
+							<p style="min-height: 125px;">Following registration, you can go through the range of tennis Plans we have created for your convenience. Choose the one that works best for your needs and reach out your goal.</p>
+							<a class="a-btn " href="#plans">Playing packages</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="service-items">
+							<i class="mt-3 fa fa-globe fa-top-price"></i>
+							<h3 class="mt-4">Serve your apps with fast and accurate tennis data</h3>
+							<p style="min-height: 125px;">With your preferred arrangement, look at the complete documentation and you're prepared to begin constructing your application.</p>
+							<a class="a-btn " href="/documentation">API Tennis Documentation</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- End Section ========================================================-->
+
+		<!-- Start Section ======================================================-->
+
+	    <section class="why">
+	        <div class="col-sm-6 hidden-xs left">
+	        </div>
+	        <div class="container">
+	            <div class="row mx-sm-0">
+	                <div class="col-sm-12 col-md-6 ml-auto right">
+	                    <h2 style="    padding-right: 15px;     padding-left: 15px;">Why Choose Us</h2>
+	                    <p style="    padding-right: 15px;     padding-left: 15px;">The breadth of coverage and the variety of delivery options are just the beginning.</p>
+	                    <div class="row mx-sm-0">
+		                    <div class="col-sm-12 col-md-12 col-lg-6">
+		                        <div class="item">
+		                            <i class="fa fa-rocket"></i>
+		                            <h5 class="mt-3">Fast Response</h5>
+		                            <p>The response time is the best thing of contacting a web-based service. Because we understand that time is money, we can get you started right away with our quick response staff.</p>
+		                        </div>
+		                    </div>
+		                    <div class="col-sm-12 col-md-12 col-lg-6">
+		                        <div class="item">
+		                            <i class="fa fa-check"></i>
+		                            <h5 class="mt-3">Responsive and helpful support</h5>
+		                            <p>We enjoy assisting others. You can contact our support staff at any time and get assistance with anything you need.</p>
+		                        </div>
+		                    </div>
+	                    </div>
+	                    <div class="row mx-sm-0">
+		                    <div class="col-sm-12 col-md-12 col-lg-6">
+		                        <div class="item">
+		                            <i class="fa fa-cogs"></i>
+		                            <h5 class="mt-3">Well documented</h5>
+		                            <p>Tennis API is without a doubt one of the most well-documented API services. You may find documentation difficult to follow, but we will assist you and make the process easier for you.</p>
+		                        </div>
+		                    </div>
+		                    <div class="col-sm-12 col-md-12 col-lg-6">
+		                        <div class="item">
+		                        <i class="fa fa-code"></i>
+		                            <h5 class="mt-3">Clean code</h5>
+		                            <p>The clean code that we employ distinguishes us from similar services. The API tennis answer is simple to use and adapt to your specific requirements.</p>
+		                        </div>
+		                    </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+
+	    <!-- End Section ========================================================-->
+
+	     <!-- Start Section ========================================================-->
+
+        <section class="price" id="plans">
+        	<div class="container">
+        		<h2>API Tennis Plans</h2>
+        		<hr class="about-line">
+        		<div class="row">
+                    <div class="col-12 mb-5" style="text-align: center;">
+                        <div class="button-wrap-price">
+                        	<input class="hidden-price-tag radio-label-button" type="radio" name="accept-price" id="onemonth" checked="checked" />
+                            <label class="button-label-price" for="onemonth">
+                                <p>1 Month<span class="bold-price">&nbsp;</span></p>
+                            </label>
+                             <input class="hidden-price-tag radio-label-button" type="radio" name="accept-price" id="threemonths" />
+                            <label class="button-label-price" for="threemonths">
+                                <p>3 Months<span class="bold-price"> -5%</span> discount!</p>
+                            </label>
+                             <input class="hidden-price-tag radio-label-button" type="radio" name="accept-price" id="sixmonths" />
+                            <label class="button-label-price" for="sixmonths">
+                                <p>6 Months<span class="bold-price"> -10%</span> discount!</p>
+                            </label>
+                            <input class="hidden-price-tag radio-label-button" type="radio" name="accept-price" id="oneyear" />
+                            <label class="button-label-price" for="oneyear">
+                                <p>1 Year<span class="bold-price"> -15%</span> discount!</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+        		<div class="row mx-sm-0">
+        			<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        				<div class="price-items">
+        					<i class="fa fa-user fa-top-price"></i>
+        					<h4>Starter</h4>
+        					<p><span id="starter-plan">$40</span> <span>/Month</span></p>
+        					<p><i class="fa fa-check"></i> 14 day trial</p>
+        					<p><i class="fa fa-check"></i> <strong>8 000 Requests / Day</strong></p>
+        					<p><i class="fa fa-check"></i> Tournaments</p>
+        					<p><i class="fa fa-check"></i> Fixtures</p>
+        					<p><i class="fa fa-check"></i> Livescore</p>
+        					<p><i class="fa fa-check"></i> Standings</p>
+        					<p><i class="fa fa-check"></i> Players</p>
+        					<p><i class="fa fa-check"></i> H2H (Head to Head)</p>
+        					<p><i class="fa fa-check"></i> Odds</p>
+        					<p><i class="fa fa-check"></i> Draw</p>
+        					<a class="a-btn " href="/register">Give it a try!</a>
+        				</div>
+        			</div>
+        			<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        				<div class="price-items">
+        					<i class="fa fa-trophy fa-top-price"></i>
+        					<h4>Premium</h4>
+        					<p><span id="premium-plan">$60</span> <span>/Month</span></p>
+        					<p><i class="fa fa-check"></i> 14 day trial</p>
+        					<p><i class="fa fa-check"></i> <strong>80 000 Requests / Day</strong></p>
+        					<p><i class="fa fa-check"></i> Tournaments</p>
+        					<p><i class="fa fa-check"></i> Fixtures</p>
+        					<p><i class="fa fa-check"></i> Livescore</p>
+        					<p><i class="fa fa-check"></i> Standings</p>
+        					<p><i class="fa fa-check"></i> Players</p>
+        					<p><i class="fa fa-check"></i> H2H (Head to Head)</p>
+        					<p><i class="fa fa-check"></i> Odds</p>
+        					<p><i class="fa fa-check"></i> Draw</p>
+        					<a class="a-btn " href="/register">Give it a try!</a>
+        				</div>
+        			</div>
+        			<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        				<div class="price-items">
+        					<i class="fa fa-globe fa-top-price"></i>
+        					<h4>Business</h4>
+        					<p><span id="business-plan">$80</span> <span>/Month</span></p>
+        					<p><i class="fa fa-check"></i> 14 day trial</p>
+        					<p><i class="fa fa-check"></i> <strong>200 000 Requests / Day</strong></p>
+        					<p><i class="fa fa-check"></i> Tournaments</p>
+        					<p><i class="fa fa-check"></i> Fixtures</p>
+        					<p><i class="fa fa-check"></i> Livescore</p>
+        					<p><i class="fa fa-check"></i> Standings</p>
+        					<p><i class="fa fa-check"></i> Players</p>
+        					<p><i class="fa fa-check"></i> H2H (Head to Head)</p>
+        					<p><i class="fa fa-check"></i> Odds</p>
+        					<p><i class="fa fa-check"></i> Draw</p>
+        					<p><i class="fa fa-check"></i> <strong>InPlay Odds</strong></p>
+        					<p><i class="fa fa-check"></i> <strong>Web Sockets</strong></p>
+        					<a class="a-btn " href="/register">Give it a try!</a>
+        				</div>
+        			</div>
+        			<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        				<div class="price-items">
+        					<i class="fa fa-rocket fa-top-price"></i>
+        					<h4>Ultra</h4>
+        					<p><span id="ultra-plan">$120</span> <span>/Month</span></p>
+        					<p><i class="fa fa-check"></i> 14 day trial</p>
+        					<p><i class="fa fa-check"></i> <strong>2 000 000 Requests / Day</strong></p>
+        					<p><i class="fa fa-check"></i> Tournaments</p>
+        					<p><i class="fa fa-check"></i> Fixtures</p>
+        					<p><i class="fa fa-check"></i> Livescore</p>
+        					<p><i class="fa fa-check"></i> Standings</p>
+        					<p><i class="fa fa-check"></i> Players</p>
+        					<p><i class="fa fa-check"></i> H2H (Head to Head)</p>
+        					<p><i class="fa fa-check"></i> Odds</p>
+        					<p><i class="fa fa-check"></i> Draw</p>
+        					<p><i class="fa fa-check"></i> <strong>InPlay Odds</strong></p>
+        					<p><i class="fa fa-check"></i> <strong>Web Sockets</strong></p>
+        					<p><i class="fa fa-check"></i> <strong>AI Tennis News</strong></p>
+        					<a class="a-btn " href="/register">Give it a try!</a>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+
+        <!-- End Section ======================================================-->
+
+        <!-- Start Section ======================================================-->
+
+	    <section class="owl">
+	    	<section class="shadow">
+		    	<div class="container">
+		    		<h2>Happy Customers</h2>
+		    		<hr class="about-line">
+		    		<div class="row justify-content-center mx-0">
+				    	<div class="owl-carousel owl-theme col-sm-12">
+		                    <div class="owl-item" style="min-width: 100%;">
+		                       	<div class="item">
+		                            <p>
+		                            	<i class="fa fa-quote-left"></i>
+		                            	I have used this tennis API and what I liked the most is their support service, whenever I face difficulty in app they help me immediately.
+		                            	<i class="fa fa-quote-right"></i>
+		                            </p>
+		                            <h4>- Oscar Buhler -</h4>
+		                            <p>Germany</p>
+		                        </div>
+		                	</div>
+		                	<div class="owl-item" style="min-width: 100%;">
+		                       	<div class="item">
+		                            <p>
+		                            	<i class="fa fa-quote-left"></i>
+		                            	I have been using this tennis data service and it is amazing. I can rely on it for my tennis passion in data analysis wherever I travel. Thanks API tennis.
+		                            	<i class="fa fa-quote-right"></i>
+		                            </p>
+		                            <h4>- Gérard Bourcier -</h4>
+		                            <p>France</p>
+		                        </div>
+		                	</div>
+		                	<div class="owl-item" style="min-width: 100%;">
+		                       	<div class="item">
+		                            <p>
+		                            	<i class="fa fa-quote-left"></i>
+		                            	If you are looking for tennis feed and you don’t know where to go, I must recommend API tennis. Its what you can reply upon. They have very nominal plans.
+		                            	<i class="fa fa-quote-right"></i>
+		                            </p>
+		                            <h4>- Gustav Lötvall -</h4>
+		                            <p>Sweden</p>
+		                        </div>
+		                	</div>
+		                	<div class="owl-item" style="min-width: 100%;">
+		                       	<div class="item">
+		                            <p>
+		                            	<i class="fa fa-quote-left"></i>
+		                            	One word for them “The Best”. This is the easy to use and fast tennis feed and they provide you with uninterrupted tennis updates.
+		                            	<i class="fa fa-quote-right"></i>
+		                            </p>
+		                            <h4>- Luis West -</h4>
+		                            <p>UK</p>
+		                        </div>
+		                	</div>
+		                </div>
+		            </div>
+				</div>
+			</section>
+	    </section>
+
+		<!-- End Section ========================================================-->
+
+		<!-- Start Section ======================================================-->
+
+     <div style="display: none" class="loading">Loading&#8230;</div>
+		<section id="contact" class="contact">
+			<div class="container">
+				<h2>Get in touch</h2>
+				<hr class="about-line">
+				<div class="row mx-sm-0 text-center">
+					<div class="col-sm-12">
+						<div class="contact-items">
+							<i class="fa fa-envelope"></i>
+							<p>contact@api-tennis.com</p>
+						</div>
+					</div>
+				</div>
+				<div class="row mx-sm-0 justify-content-center">
+					<div class="col-sm-12 col-md-8">
+						<div class="contact-form">
+							  <form id="contact-form">
+								<input type="hidden" name="form_time" id="form_time" value="1788900481">
+								<div style="position:absolute; left:-9999px; top:-9999px;" aria-hidden="true">
+									<label for="website">Leave this field empty</label>
+									<input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
+								</div>
+								<div class="row mx-sm-0">
+									<div class="col-12">
+										 <p style="display: none" class="error text-white"></p>
+									</div>
+									<div class="col-12">
+										<div class="form-group col-md-12">
+											<input id="name" type="text" name="name" class="form-control" placeholder="Name" required>
+										</div>
+									</div>
+								</div>
+
+								<div class="row mx-sm-0">
+									<div class="col-12">
+										 <p style="display: none" class="error text-white"></p>
+									</div>
+									<div class="col-12">
+										<div class="form-group col-md-12">
+											<input id="email" type="email" name="email" class="form-control" placeholder="Email" required>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="row mx-sm-0">
+									<div class="col-12">
+										 <p style="display: none" class="error text-white"></p>
+									</div>
+									<div class="col-12">
+										<div class="form-group col-md-12">
+											<textarea id="message" rows="6" name="message" class="form-control" placeholder="Your Message" required></textarea>
+										</div>
+									</div>
+								</div>
+
+								<div class="row mx-sm-0">
+
+									<div class="col-md-12 text-center">
+										<div>
+											<input type="submit" value="submit now" name="submit" title="Submit Your Message!">
+										</div>
+									</div>
+								</div>
+	                        </form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- End Section ========================================================-->
+
+  <!-- Start Footer -->
+  <section id='footer' class="py-6 pb-5">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-12 mt-5 mt-sm-0 col-sm-12 col-lg-6 order-2 order-lg-1">
+          <hr class="my-4">
+          <div class="row">
+            <div class="col-6 col-sm-6 footer-align-left-mob">
+              <ul class="list-unstyled">
+                <li class="mb-2">NEED HELP?</li>
+                <li><a href='/contact'>Support</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-6">
+              <ul class="list-unstyled">
+                <li class="mb-2">EXPLORE</li>
+                <li><a href='/documentation'>Documentation</a></li>
+                <li><a href='/blog'>Blog</a></li>
+                <li><a href='/terms-of-use'>Terms Of Use</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-5 order-1 order-lg-3">
+          <ul class="list-unstyled">
+            <li>
+              <h4 class="text-light mb-2"><b>Subscribe to our newsletter</b></h4>
+              <p class="mb-4">Stay connected with our updates</p>
+              <form method="post" class="form-inline" id="subscribe">
+                <div class="d-flex mb-2">
+                  <input type="text" required name="email" class="form-control email" placeholder="Your email" style="border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;">
+                  <button type="submit" class="btn subscribe mb-2 m-0" style="border-radius: 50px;    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px; box-shadow: none;">Subscribe</button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 text-center order-5 text-sm-left text mt-5">
+          <small class="d-block mb-1">&copy; <span id="setFooterYear">2026</span> - All Rights Reserved, by API Tennis.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Footer -->
+
+
+		<!-- Start Section ======================================================-->
+
+		<div class="scroll-top d-none">
+       		<i class="fa fa-angle-up"></i>
+    	</div>
+
+		<!-- End Section ========================================================-->
+
+		<!-- Scripts ============================================================-->
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+ -->
+		<!-- Owl Script ============================================================-->
+
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+        	<!-- Main Script ============================================================-->
+  <script type="text/javascript" src="js/main.js?v=1"></script>
+
+<script type="text/javascript" src="script/register-login.js"></script>
+<!-- <script>
+	var cookie = localStorage.getItem('modal_show');
+	if (!cookie) {
+		$("#myModal").modal('show');
+	}
+	$("#myModal").on('hide.bs.modal', function(){
+	    localStorage.setItem('modal_show', 'true');
+	  });
+</script> -->
+	</body>
+</html>

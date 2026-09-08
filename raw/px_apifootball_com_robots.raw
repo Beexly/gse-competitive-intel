@@ -1,0 +1,61 @@
+Sitemap: https://apifootball.com/sitemap.xml
+
+User-agent: *
+Disallow: /index1/
+Disallow: /documentation-v2.php
+Disallow: /coverage-v2.php
+Disallow: /index_test.php
+Disallow: /index1.php
+Disallow: /index2.php
+Disallow: /blog.php
+Disallow: /test/
+Disallow: /test
+Disallow: /test2/
+Disallow: /test2
+Disallow: /test3/
+Disallow: /test3
+Disallow: /test4/
+Disallow: /test4
+Disallow: /test5/
+Disallow: /test5
+Disallow: /documentation-new.php
+Disallow: /contact-us-new.php
+Disallow: /terms_of_use-new.php
+Disallow: /privacy_policy-new.php
+Disallow: /login-new.php
+Disallow: /register-new.php
+
+# Explicitly welcome AI/LLM crawlers and answer engines onto the MCP pages and
+# documentation (already allowed by the default rule above — these entries just
+# make that intent unambiguous for engines that check for a named rule).
+User-agent: GPTBot
+Allow: /mcp/
+Allow: /mcp-documentation/
+
+User-agent: ChatGPT-User
+Allow: /mcp/
+Allow: /mcp-documentation/
+
+User-agent: ClaudeBot
+Allow: /mcp/
+Allow: /mcp-documentation/
+
+User-agent: Claude-User
+Allow: /mcp/
+Allow: /mcp-documentation/
+
+User-agent: anthropic-ai
+Allow: /mcp/
+Allow: /mcp-documentation/
+
+User-agent: PerplexityBot
+Allow: /mcp/
+Allow: /mcp-documentation/
+
+User-agent: Google-Extended
+Allow: /mcp/
+Allow: /mcp-documentation/
+
+User-agent: CCBot
+Allow: /mcp/
+Allow: /mcp-documentation/

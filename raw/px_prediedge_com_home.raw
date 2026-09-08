@@ -1,0 +1,64 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/PrediEdge.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="PrediEdge - Professional Polymarket intelligence. Track whale trades, unusual activity, and market movements before they happen."/><link rel="apple-touch-icon" href="/PrediEdge.png"/><title>PrediEdge - Professional Polymarket Intelligence</title><link rel="canonical" href="https://prediedge.com/"/><script type="application/ld+json">{
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "PrediEdge",
+      "url": "https://prediedge.com",
+      "logo": "https://prediedge.com/PrediEdge.png",
+      "sameAs": [
+        "https://twitter.com/prediedge",
+        "https://linkedin.com/company/prediedge"
+      ]
+    }</script><script type="application/ld+json">{
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "PrediEdge",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "url": "https://prediedge.com",
+      "description": "PrediEdge is a prediction market analytics platform providing dashboards, whale tracking, and flow trading insights for Polymarket and event-driven markets.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      }
+    }</script><script type="application/ld+json">{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://prediedge.com",
+      "name": "PrediEdge",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://prediedge.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }</script><script type="application/ld+json">{
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Home",
+          "url": "https://prediedge.com/"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Features",
+          "url": "https://prediedge.com/#features"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Pricing",
+          "url": "https://prediedge.com/#pricing"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Blog",
+          "url": "https://prediedge.com/blog"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Get Started",
+          "url": "https://app.prediedge.com"
+        }
+      ]
+    }</script><script defer="defer" src="/static/js/main.0026ca36.js"></script><link href="/static/css/main.669b532b.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>

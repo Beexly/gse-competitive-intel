@@ -1,0 +1,37 @@
+{
+ "rithmm.com": {
+  "openapi.json": "ERR HTTP Error 404: Not Found",
+  "swagger.json": "ERR HTTP Error 404: Not Found",
+  "api": "ERR HTTP Error 404: Not Found",
+  "api/v1": "ERR HTTP Error 404: Not Found",
+  "docs": "ERR HTTP Error 404: Not Found",
+  ".well-known/security.txt": "ERR HTTP Error 404: Not Found",
+  ".well-known/assetlinks.json": "ERR HTTP Error 404: Not Found",
+  "apple-app-site-association": "ERR HTTP Error 404: Not Found"
+ },
+ "dimers.com": {
+  "openapi.json": "ERR HTTP Error 404: Not Found",
+  "api": "ERR HTTP Error 404: Not Found",
+  "api/v1": "ERR HTTP Error 404: Not Found",
+  "docs": "ERR HTTP Error 404: Not Found",
+  ".well-known/assetlinks.json": "200 263B ct=application/json; charset=utf-",
+  "apple-app-site-association": "ERR HTTP Error 404: Not Found",
+  ".well-known/security.txt": "ERR HTTP Error 404: Not Found"
+ },
+ "playerprops.ai": {
+  "openapi.json": "200 22238B ct=text/html; charset=utf-8",
+  "api": "200 22238B ct=text/html; charset=utf-8",
+  "api/v1": "ERR HTTP Error 404: Not Found",
+  "docs": "200 22238B ct=text/html; charset=utf-8",
+  ".well-known/assetlinks.json": "200 454B ct=application/json",
+  "apple-app-site-association": "200 151B ct=application/json; charset=utf-",
+  ".well-known/security.txt": "ERR HTTP Error 404: Not Found"
+ },
+ "propsbot.ai": {
+  "openapi.json": "ERR HTTP Error 404: Not Found",
+  "wp-json": "200 725113B ct=application/json; charset=UTF-",
+  "wp-json/wp/v2/posts?per_page=2": "200 25323B ct=application/json; charset=UTF-",
+  ".well-known/assetlinks.json": "ERR HTTP Error 404: Not Found",
+  "apple-app-site-association": "ERR HTTP Error 404: Not Found"
+ }
+}

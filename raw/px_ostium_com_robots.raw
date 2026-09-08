@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /studio
+Disallow: /api
+
+Sitemap: https://ostium.com/sitemap.xml

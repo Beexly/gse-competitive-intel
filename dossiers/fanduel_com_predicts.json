@@ -1,0 +1,84 @@
+{
+ "domain": "fanduel.com/predicts",
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED (no model evidence in raw files)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "simulation_engine": {
+  "num_simulations": null,
+  "correlation_method": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "data_supply_chain": {
+  "vendors": [],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": [],
+  "upgrade_triggers": [],
+  "citation": ""
+ },
+ "pricing": {
+  "web": "N/A — free sportsbook-owned predictions/content product (acquisition surface for the book)",
+  "ios": "N/A",
+  "android": "N/A",
+  "citations": [
+   "raw/fanduel_com_predicts_home.html"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "BEWARE, FANDUEL IS A SCAM AND THEY WILL STEAL YOUR MONEY (r/fanduel)",
+   "source": "https://www.reddit.com/r/fanduel/comments/1atmnin/beware_fanduel_is_a_scam_and_they_will_steal_your/",
+   "date": "2024 (thread id 1atmnin)"
+  },
+  {
+   "quote": "Best way to pull odds and lines from sportsbooks like fanduel.com (r/rprogramming — data-access pain)",
+   "source": "https://www.reddit.com/r/rprogramming/comments/vmaadj/best_way_to_pull_odds_and_lines_from_sportsbooks/",
+   "date": "2022 (thread id vmaadj)"
+  }
+ ],
+ "discovered_paths": [
+  "robots.txt allows /llms.txt (FanDuel publishes an LLM policy file) and /knowledge/",
+  "sitemaps: sitemap-main.xml, research/server-sitemap-index.xml, fantasy/nfl/sitemap.xml, cms-sitemap.xml (content-SEO machine, raw/scan-fanduel_com_predicts.json)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "fetcher.py scan: home 200; Next.js chunks fetched; robots+sitemap parsed",
+  "timestamp": "2026-09-08T15:20:00-05:00"
+ },
+ "tech_stack": {
+  "frontend": "Next.js (/_next/static/chunks/polyfills-42372ed130431b0a.js, webpack-8d1528a7e7f53e3b.js)",
+  "backend": "openresty (server header)",
+  "database": "NOT CONFIRMED",
+  "cloud": "AWS CloudFront — double-hop via header 'via: 1.1 ...cloudfront.net (CloudFront), 1.1 ...cloudfront.net (CloudFront)'",
+  "cdn": "CloudFront (two distributions chained)",
+  "citations": [
+   "raw/scan-fanduel_com_predicts.json",
+   "raw/fanduel_com_predicts_home.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/api, /research/api, /about/api (paths exist and are explicitly Disallowed in robots.txt — internal API surface)",
+    "auth_required": "yes (assumed; disallowed to crawlers)",
+    "tier": "internal (not a public product)",
+    "sample_response": "NOT CONFIRMED (not fetched — robots-respecting)",
+    "citation": "raw/fanduel_com_predicts_robots.txt"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/fanduel_com_predicts_robots.txt"
+  ]
+ },
+ "disposition": "live",
+ "notes": "GSE-relevant: books now publish free AI-adjacent predictions content (FanDuel Predicts) to own search intent; robots reveals internal /research/api naming + llms.txt; double-CloudFront hop shows perf-conscious CDN topology."
+}

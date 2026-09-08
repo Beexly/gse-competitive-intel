@@ -1,0 +1,184 @@
+URL: https://picktheodds.app/_next/static/chunks/2762-263e4aefc4a40d60.js\nSTATUS: 200\n\n!function(){try{var e="u">typeof window?window:"u">typeof global?global:"u">typeof globalThis?globalThis:"u">typeof self?self:{},t=(new e.Error).stack;t&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[t]="f0206bbb-0cce-41a4-a885-70a992d98d8b",e._sentryDebugIdIdentifier="sentry-dbid-f0206bbb-0cce-41a4-a885-70a992d98d8b")}catch(e){}}();"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2762],{1598:(e,t,a)=>{a.d(t,{A:()=>o});var i=a(695155),r=a(48022);a(212115);let o=function({children:e,...t}){return(0,i.jsx)(r.A,{variant:"body2",dangerouslySetInnerHTML:{__html:e},...t})}},10044:(e,t,a)=>{a.d(t,{B:()=>B,A:()=>v});var i=a(695155),r=a(212115),o=a(84249),l=a(37721),n=a(48022),p=a(579847),s=a(299129),d=a(904071),c=a(770982),m=a(3043);let u=(0,s.Ay)(d.A)(({theme:e})=>`
+    justify-content: center;
+    flex-direction: column;
+    background-color: ${e.palette.modal.background};
+    border: 1px solid ${e.palette.modal.border};
+    backdrop-filter: blur(4px);
+    border-radius: 30px;
+    padding: ${e.spacing(2)};
+    margin: auto;
+    max-width: 60%;
+    position: relative;
+    overflow: auto;
+    max-height: 90vh;
+    display: block;
+    overflow-y: auto;
+    
+    ${e.breakpoints.down("md")} {
+      margin-top: 12px;
+      max-width: 90%;
+    }
+
+    hr {
+      border-color: ${e.palette.border.secondary};
+      border-style: solid;
+      border-width: 0;
+      border-bottom-width: thin;
+    }
+  `),h=(0,s.Ay)(o.A)(({theme:e})=>`
+    position: absolute;
+    background-color: ${e.palette.alpha.sixpercent};
+    top: ${e.spacing(1.5)};
+    right: ${e.spacing(1.5)};
+  `),x=function({open:e,onClose:t,children:a,hideCloseBtn:r,...o}){return(0,i.jsx)(c.A,{open:e,onClose:t,sx:{display:"flex",backgroundColor:"rgba(0, 0, 0, 0.2)"},children:(0,i.jsxs)(u,{alignSelf:"center",height:"max-content",width:"max-content",margin:"auto",...o,children:[r&&(0,i.jsx)(h,{onClick:t,disableRipple:!0,disableTouchRipple:!0,children:(0,i.jsx)(m.A,{color:"secondary",sx:{fontSize:9}})}),a]})})};var b=a(560875);let g=(0,s.Ay)(d.A)(({theme:e})=>`
+    justify-content: center;
+    flex-direction: column;
+    background-color: ${e.palette.customBackground.modal};
+    border: 1px solid ${e.palette.alpha.twentyfourpercent};
+    border-radius: 30px;
+    padding: 0;
+    margin: auto;
+    max-width: 60%;
+    width:903px;
+    position: relative;
+    overflow: auto;
+    max-height: 1000px;
+    display: block;
+    overflow-y: auto;
+    
+    ${e.breakpoints.down("md")} {
+      max-width: 90%;
+    }
+
+    hr {
+      border-color: ${e.palette.border.secondary};
+      border-style: solid;
+      border-width: 0;
+      border-bottom-width: thin;
+    }
+  `),y=function({open:e,onClose:t,children:a,hideCloseBtn:r,...o}){return(0,i.jsx)(c.A,{open:e,onClose:t,sx:{display:"flex",backgroundColor:"rgba(0, 0, 0, 0.2)"},children:(0,i.jsx)(g,{alignSelf:"center",height:"max-content",width:"max-content",margin:"auto",...o,children:a})})},v=function(e){let{children:t,size:a=16,showCloseButton:s=!1,open:d,onClose:c,islearMoreText:m,isVideo:u}=e,h=(0,p.DP)(),[g,v]=(0,r.useState)(!1),f=()=>{v(!1)},_={};return _="number"==typeof a?{sx:{width:a,height:a}}:{fontSize:a},(0,i.jsxs)(i.Fragment,{children:[!m&&(0,i.jsx)(o.A,{color:"secondary",onClick:()=>{v(!0)},"aria-label":"Open information modal",sx:{background:h.palette.alpha.sixpercent,p:1,ml:1,borderRadius:"8px"},children:(0,i.jsx)(b.A,{..._})}),u?(0,i.jsx)(y,{open:!!d||!!g,onClose:c||f,hideCloseBtn:!0,children:t}):(0,i.jsxs)(x,{open:!!d||!!g,onClose:c||f,children:[t,s&&(0,i.jsx)("div",{style:{display:"flex",justifyContent:"flex-end",margin:"20px"},children:(0,i.jsx)(l.A,{variant:"contained",onClick:c||f,sx:{background:h.palette.modal.activeButton,"&:hover":{background:h.palette.modal.activeButton},width:"180px",height:"44px"},children:(0,i.jsx)(n.A,{variant:"body2",sx:{color:h.palette.secondary.contrastText},children:"Close"})})})]})]})};var f=a(247970),_=a(962811),A=a(915987),w=a(356459),C=a(573321),j=a(770504),k=a(1598),S=a(436839),U=a(198079);let $=(0,s.Ay)(o.A)(({theme:e})=>`
+    background-color: ${e.palette.alpha.sixpercent};
+  `),B=function({title:e,description:t,videoUrl:a,isFilter:l,videoIconColor:p,typographyProps:s,triggerVariant:c="button",inlineText:u="video",renderOnlyTrigger:h=!1,...x}){let b=(0,f.A)(),g=(0,_.A)(b.breakpoints.down("md")),[y,B]=(0,r.useState)(!1),[E,F]=(0,r.useState)(0),L=(0,C.useRouter)(),O=e=>{e.stopPropagation(),B(!0)},R=()=>{B(!1)},T=()=>a?"inline-link"===c?(0,i.jsx)(n.A,{variant:"body2",fontWeight:700,component:"span",role:"button",tabIndex:0,onClick:O,onKeyDown:e=>{("Enter"===e.key||" "===e.key)&&(e.preventDefault(),O(e))},sx:{color:"text.primary",textDecoration:"underline",cursor:"pointer"},children:u}):(0,i.jsx)(o.A,{onClick:O,"aria-label":"Play instructional video",sx:{background:l?b.palette.alpha.eightpercent:b.palette.alpha.fourpercent,borderRadius:"8px",ml:+!!l,padding:g?.7:.5,height:g&&!l?30:void 0,"&:hover":{background:l?b.palette.alpha.eightpercent:b.palette.alpha.fourpercent}},children:l?(0,i.jsxs)(A.A,{alignItems:"center",direction:"row",gap:.2,p:0,children:[!g&&(0,i.jsx)(n.A,{fontSize:12,sx:{color:b.palette.secondary.main,fontWeight:600,pl:.2,margin:0},children:"Learn"}),(0,i.jsx)(j.A,{sx:{fontSize:g?14:18,padding:0,margin:0,color:b.palette.secondary.main}})]}):(0,i.jsxs)(A.A,{alignItems:"center",direction:"row",gap:.2,px:.5,children:[!g&&(0,i.jsx)(n.A,{fontSize:14,sx:{color:b.palette.secondary.main,fontWeight:600,pl:.5},children:"Learn"}),(0,i.jsx)(j.A,{sx:{fontSize:g?20:24,color:b.palette.secondary.main}})]})}):t?(0,i.jsx)(d.A,{onClick:O,sx:{cursor:"pointer",display:"inline",ml:.2,fontWeight:700},children:"Learn more..."}):null,P=()=>{if(a){let e=Array.isArray(a),t=e?a[E]:a;return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsxs)(d.A,{sx:{backgroundColor:b.palette.customBackground.cardHeader,borderBottom:`1px solid ${b.palette.alpha.tenpercent}`,padding:2.5,borderRadius:"12px 12px 0 0",display:"flex",justifyContent:"space-between",alignItems:"center"},children:[e&&(0,i.jsx)(w.A,{exclusive:!0,value:E,onChange:(e,t)=>{null!==t&&F(t)},sx:{background:"none",display:"flex",justifyContent:"center",padding:.5,textWrap:"nowrap"},children:a.map((e,t)=>(0,i.jsx)(U.IC,{value:t,sx:{px:2,py:.5,fontSize:g?10:12},children:e.title},t))}),(0,i.jsx)(d.A,{sx:{display:"flex",alignItems:"center",gap:1},children:(0,i.jsx)($,{onClick:R,disableRipple:!0,disableTouchRipple:!0,"aria-label":"Close modal",children:(0,i.jsx)(m.A,{color:"secondary",sx:{fontSize:12}})})})]}),(0,i.jsxs)(d.A,{sx:{position:"relative",paddingBottom:"56.25%",height:0,width:"100%"},children:[(0,i.jsx)("iframe",{title:t.title,src:t.url,frameBorder:"0",allow:"autoplay; fullscreen; picture-in-picture",allowFullScreen:!0,style:{position:"absolute",top:0,left:0,width:"100%",height:"100%"}}),(0,i.jsx)(S.A,{src:t.url})]}),(0,i.jsx)(d.A,{sx:{backgroundColor:b.palette.customBackground.cardHeader,px:2.5,py:1.5,borderRadius:"0 0 12px 12px",display:"flex",justifyContent:"flex-start",alignItems:"center",borderTop:`1px solid ${b.palette.alpha.tenpercent}`,mr:"auto"},children:(0,i.jsxs)($,{onClick:()=>L.push(`/en/resources?key=${t.learnUrl}`),disableRipple:!0,disableTouchRipple:!0,"aria-label":"Go to learn area for more information",children:[(0,i.jsx)(n.A,{variant:"label",color:"secondary",children:"See More In the Learn Area"}),(0,i.jsx)(j.A,{sx:{fontSize:18}})]})})]})}return t?(0,i.jsx)(A.A,{direction:"column",alignItems:"center",px:g?2:4,children:(0,i.jsx)(k.A,{children:t})}):null};return h?(0,i.jsxs)(i.Fragment,{children:[T(),t&&(0,i.jsx)(v,{showCloseButton:!0,islearMoreText:!0,open:y,onClose:R,children:P()}),a&&(0,i.jsx)(v,{islearMoreText:!0,isVideo:!0,open:y,onClose:R,children:P()})]}):(0,i.jsxs)(i.Fragment,{children:[(0,i.jsxs)(n.A,{variant:"body2",color:"text.secondary",display:"inline",...s,children:[e,T()]}),t&&(0,i.jsx)(v,{showCloseButton:!0,islearMoreText:!0,open:y,onClose:R,children:P()}),a&&(0,i.jsx)(v,{islearMoreText:!0,isVideo:!0,open:y,onClose:R,children:P()})]})}},37134:(e,t,a)=>{a.d(t,{z0:()=>s,Ay:()=>m});var i=a(695155),r=a(299129),o=a(904071),l=a(212115),n=a(128630);let p=(e,t)=>{if(e.current){let{scrollHeight:a,clientHeight:i}=e.current;t(a>i)}},s=6,d=(0,r.Ay)(o.A,{shouldForwardProp:e=>!["scrollBarMargin","isSafari","hasScrollbar","scrollbarWidth"].includes(e)})(({scrollBarMargin:e})=>({overflowY:"auto","&::-webkit-scrollbar-track":{marginTop:e?`${e}px`:"2px",marginBottom:e?`${e}px`:"2px",borderRadius:"8px"},"&::-webkit-scrollbar-thumb":{marginTop:e?`${e}px`:"2px",marginBottom:e?`${e}px`:"2px",borderRadius:"8px"}})),c=(0,l.forwardRef)(({children:e,scrollBarMargin:t,...a},r)=>{let o,s=(0,l.useRef)(null),[c,m]=(0,l.useState)(!1),[u,h]=(0,l.useState)(0),x=(o=navigator.userAgent.toLowerCase(),/safari/.test(o)&&!/chrome/.test(o));return(0,l.useImperativeHandle)(r,()=>s.current),(0,l.useEffect)(()=>{Promise.resolve().then(()=>{let e,t;p(s,m),h(((e=document.createElement("div")).style.visibility="hidden",e.style.overflow="scroll",e.style.width="100px",e.style.height="100px",document.body.appendChild(e),t=e.offsetWidth-e.clientWidth,document.body.removeChild(e),t))});let e=(0,n.A)(()=>p(s,m),200);return window.addEventListener("resize",e),()=>{window.removeEventListener("resize",e),e.clear()}},[]),(0,l.useEffect)(()=>{let e=e=>{if(!r)return;let t=r.current;if(!t)return;let a=t.offsetLeft+t.offsetWidth-e.pageX,i=t.offsetTop+t.offsetHeight-e.pageY;a<15&&a>-15||i<15&&i>-15?t.classList.add("expanded"):t.classList.remove("expanded")};return window.addEventListener("mousemove",e),()=>{window.removeEventListener("mousemove",e)}},[r]),(0,l.useEffect)(()=>{p(s,m)},[e]),(0,i.jsx)(d,{ref:s,hasScrollbar:c,scrollbarWidth:u,scrollBarMargin:t,isSafari:x,...a,children:e})});c.displayName="Scrollable";let m=c},54186:(e,t,a)=>{a.d(t,{A:()=>i.Ay});var i=a(37134)},262931:(e,t,a)=>{a.d(t,{u:()=>i});let i={BetTypes:{url:"https://player.vimeo.com/video/1062202518?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Bet Types",learnUrl:"bettypes_filters"},Leagues:{url:"https://player.vimeo.com/video/1062203104?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Leagues",learnUrl:"leagues_filters"},SportsBook:{url:"https://player.vimeo.com/video/1062203987?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Sportsbook",learnUrl:"sportsbooks_filters"},BlockExclude:{url:"https://player.vimeo.com/video/1062202544?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Block Exclude",learnUrl:"blockExclude_filters"},DateTime:{url:"https://player.vimeo.com/video/1062202660?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Date Time",learnUrl:"date_time_filters"},CreateAdvanceFilter:{url:"https://player.vimeo.com/video/1062818018?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Create Advance Filter",learnUrl:"advanced_filters_pt1"},AddBetTypeLeaguesAdvFilter:{url:"https://player.vimeo.com/video/1062202027?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Add Bet Types And Leagues To Advanced Filter",learnUrl:"advanced_filters_pt2"},AddMultipleAdvancesFilters:{url:"https://player.vimeo.com/video/1062202107?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Add Multiple Advanced Filters",learnUrl:"advanced_filters_pt3"},EvFormulaCreator:{url:"https://player.vimeo.com/video/1062202913?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"EV Formula Creator",learnUrl:"ev_screen_pt2"},OddScreenAvgFormula:{url:"https://player.vimeo.com/video/1062203366?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Odd Screen Avg Formula",learnUrl:"odd_screen_formula"},Assistant:{url:"https://player.vimeo.com/video/1062202336?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Assistant",learnUrl:"assistant"},ShareFilter:{url:"https://player.vimeo.com/video/1062203826?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Share Filter",learnUrl:"filter_carousel"},OddsScreenControls:{url:"https://player.vimeo.com/video/1062836263?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Odds Screen Controls",learnUrl:"odd_screen_controls"},PositiveEv_1:{url:"https://player.vimeo.com/video/1062203426?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Pt:1 Positive EV",learnUrl:"ev_screen_pt1"},PositiveEv_2:{url:"https://player.vimeo.com/video/1062203528?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Pt:2 Positive EV",learnUrl:"ev_screen_pt2"},ArbitrageBasics:{url:"https://player.vimeo.com/video/1062202215?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Pt:1 Arbitrage Basics",learnUrl:"arbitrage_screen_pt1"},ArbitrageFunctions:{url:"https://player.vimeo.com/video/1064416518?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Pt:2 Arbitrage Functions",learnUrl:"arbitrage_screen_pt2"},LowHold:{url:"https://player.vimeo.com/video/1062203194?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Low Hold",learnUrl:"low_holds_page"},FreeBetConverter:{url:"https://player.vimeo.com/video/1062829145?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Free Bet Converter",learnUrl:"free_bet"},RoiDropdown:{url:"https://player.vimeo.com/video/1062203698?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"ROI Dropdown",learnUrl:"roi_dropdown"},SiteWideSportsbookSelection:{url:"https://player.vimeo.com/video/1062461247?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Site Wide Sportsbook",learnUrl:"setting"},Location:{url:"https://player.vimeo.com/video/1062203159?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Location",learnUrl:"setting"},Authenticator:{url:"https://player.vimeo.com/video/1062202430?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Authenticator",learnUrl:"setting"},Display:{url:"https://player.vimeo.com/video/1062202757?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Display",learnUrl:"setting"},Enable_DisableAdvFilter:{url:"https://player.vimeo.com/video/1062202818?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Enable/Disable Advanced Filter",learnUrl:"setting"},KellyCriterion:{url:"https://player.vimeo.com/video/1062203068?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Kelly Criterion",learnUrl:"ev_controls"},Bankroll:{url:"https://player.vimeo.com/video/1062202495?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Bankroll",learnUrl:"ev_controls"},ActiveDevigging:{url:"https://player.vimeo.com/video/1062201996?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Active Devigging",learnUrl:"ev_controls"},FormulaCase:{url:"https://player.vimeo.com/video/1062203028?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Formula Case",learnUrl:"ev_controls"},WidthWeight:{url:"https://player.vimeo.com/video/1062204237?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Width Weight",learnUrl:"ev_controls"},SortEv:{url:"https://player.vimeo.com/video/1062203938?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Sort EV",learnUrl:"ev_controls"},OddsScreenBasics:{url:"https://player.vimeo.com/video/1062826843?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Odds Screen Basics",learnUrl:"odd_screen_pt1"},OddsScreenFunctions:{url:"https://player.vimeo.com/video/1062860972?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Odds Screen Functions",learnUrl:"odd_screen_pt2"},Middles:{url:"https://player.vimeo.com/video/1064716373?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Middles",learnUrl:"middles_page"},FilterCarousel:{url:"https://player.vimeo.com/video/1062829145?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Filter Carousel",learnUrl:"filter_carousel"},UpcomingGames:{url:"https://player.vimeo.com/video/1062202660?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479#t=0m5s",title:"Upcoming Games",learnUrl:"date_time_filters"},LiveGames:{url:"https://player.vimeo.com/video/1062202660?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479#t=0m19s",title:"Live Games",learnUrl:"date_time_filters"},FoundSecondsAgo:{url:"https://player.vimeo.com/video/1062202660?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479#t=0m40s",title:"Found Seconds Ago",learnUrl:"date_time_filters"},withinHours:{url:"https://player.vimeo.com/video/1062202660?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479#t=1m10s",title:"Within Hours",learnUrl:"date_time_filters"},afterHours:{url:"https://player.vimeo.com/video/1062202660?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479#t=1m17s",title:"After Hours",learnUrl:"date_time_filters"},timeFrame:{url:"https://player.vimeo.com/video/1062202660?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479#t=1m31s",title:"Time Frame",learnUrl:"date_time_filters"},roiFilter:{url:"https://player.vimeo.com/video/1065237031?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"ROI Filter",learnUrl:"roi_filter"},mainNotifications:{url:"https://player.vimeo.com/video/1084743106?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Notifications setup desktop",learnUrl:"notification_setup"},mainNotifications2:{url:"https://player.vimeo.com/video/1084742684?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Notifications Setup mobile",learnUrl:"notification_setup"},allNotifications:{url:"https://player.vimeo.com/video/1086054689?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",title:"Notifications Overview",learnUrl:"notification_using"},filterNotifications:{url:"https://player.vimeo.com/video/1086054689?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479#t=0m08s",title:"Filter Notifications",learnUrl:"notification_using"},betTrackerNotifications:{url:"https://player.vimeo.com/video/1086054689?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479#t=0m45s",title:"Bet Tracker Notifications",learnUrl:"notification_using"},lineNotifications:{url:"https://player.vimeo.com/video/1086054689?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479#t=1m11s",title:"Line Notifications",learnUrl:"notification_using"},timeNotifications:{url:"https://player.vimeo.com/video/1086054689?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479#t=2m00s",title:"Time Notifications",learnUrl:"notification_using"},leagueSpecificNotifications:{url:"https://player.vimeo.com/video/1086054689?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479#t=3m00s",title:"League Specific Notifications",learnUrl:"notification_using"},limitNotifications:{url:"https://player.vimeo.com/video/1086054689?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479#t=3m20s",title:"Limit Notifications",learnUrl:"notification_using"},paidUnpaidSportsbooks:{url:"https://player.vimeo.com/video/1115902569?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479",title:"Using Paid/Unpaid Sportsbooks on Starter and Intermediate Plans",learnUrl:"using_paid_unpaid_sportsbooks"},paidUnpaidLeagues:{url:"https://player.vimeo.com/video/1115902569?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479#t=2m22s",title:"Using Paid/Unpaid Sportsbooks on Starter and Intermediate Plans",learnUrl:"using_paid_unpaid_sportsbooks"},BeeBettorFAQ_EV:{url:"https://player.vimeo.com/video/1126232781?badge=0&autopause=0&player_id=0&app_id=58479",title:"+EV Screen at Pick the Odds",learnUrl:"ev_controls"},BeeBettorFAQ_Oddscreen:{url:"https://player.vimeo.com/video/1126284604?badge=0&autopause=0&player_id=0&app_id=58479",title:"Odds Screen at Pick the Odds",learnUrl:"odd_screen_pt1"},BeeBettorFAQ_EVweight:{url:"https://player.vimeo.com/video/1126597183?badge=0&autopause=0&player_id=0&app_id=58479",title:"EV Weighting at Pick the Odds",learnUrl:"ev_formula_creator"},BeeBettorFAQ_Notifications:{url:"https://player.vimeo.com/video/1126873583?badge=0&autopause=0&player_id=0&app_id=58479",title:"Notifications at Pick the Odds",learnUrl:"notification_setup"},BeeBettorFAQ_PlanTiers:{url:"https://player.vimeo.com/video/1127553232?badge=0&autopause=0&player_id=0&app_id=58479",title:"Plan Tiers at Pick the Odds",learnUrl:"using_paid_unpaid_sportsbooks"}}},388984:(e,t,a)=>{a.d(t,{A:()=>x,O:()=>h});var i=a(695155),r=a(212115),o=a(37721),l=a(299129),n=a(962811),p=a(200568),s=a(48022),d=a(189452),c=a(317389),m=a(579847),u=a(690594);let h=(0,l.Ay)(o.A,{shouldForwardProp:e=>"isWarning"!==e&&"height"!==e})(({isWarning:e,theme:t,height:a})=>`
+  padding: 0;
+  height: ${a||"32"}px;
+  color: ${t.palette.text.primary};
+  border: none;
+  background-color: ${t.palette.alpha.fourpercent};
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    border: none;
+  background-color: ${t.palette.alpha.fourpercent};
+   color: ${t.palette.text.secondary};
+  }
+
+  &.MuiButton-outlined {
+    border-color: ${e?t.palette.warningLight:"none"};
+     opacity: 1;
+  }
+    &.MuiButton-outlined.Mui-disabled {
+    border:none;
+    opacity: 0.4;
+  `);function x(e){let{children:t,dropDownIcon:a,image:o,variant:l="outlined",isWarning:x,...b}=e,g=(0,m.DP)(),y=(0,n.A)(g.breakpoints.down("md")),{menuState:v,titleInfo:f}=(0,r.useContext)(u.A);return(0,i.jsxs)(h,{variant:x?"outlined":l,onClick:e=>{v.anchorEl?v.onClose():v.onOpen(e)},isWarning:x,fullWidth:!0,...b,children:[o&&(0,i.jsx)(p.A,{sx:{pl:1,minWidth:"fit-content"},children:o}),(0,i.jsx)(s.A,{variant:"body3",display:"flex",component:"span",px:1.5,pr:+!a,color:"inherit",mr:"auto",noWrap:!0,children:t}),y&&f,a&&(v.anchorEl?(0,i.jsx)(c.A,{sx:{fill:g.palette.text.primary,mr:.5}}):(0,i.jsx)(d.A,{sx:{fill:g.palette.text.primary,mr:.5}}))]})}},560875:(e,t,a)=>{a.d(t,{A:()=>o});var i=a(695155);a(212115);var r=a(642772);let o=function(e){return(0,i.jsx)(r.A,{width:21,height:29,viewBox:"0 0 21 29",fill:"none",xmlns:"http://www.w3.org/2000/svg",...e,children:(0,i.jsx)("path",{d:"M0 4V25C0 25.9283 0.368749 26.8185 1.02513 27.4749C1.6815 28.1313 2.57174 28.5 3.5 28.5H20.125C20.3571 28.5 20.5796 28.4078 20.7437 28.2437C20.9078 28.0796 21 27.8571 21 27.625C21 27.3929 20.9078 27.1704 20.7437 27.0063C20.5796 26.8422 20.3571 26.75 20.125 26.75H3.5C3.03587 26.75 2.59075 26.5656 2.26256 26.2374C1.93437 25.9093 1.75 25.4641 1.75 25H19.25C19.7141 25 20.1592 24.8156 20.4874 24.4874C20.8156 24.1592 21 23.7141 21 23.25V4C21 3.07174 20.6313 2.1815 19.9749 1.52513C19.3185 0.868749 18.4283 0.5 17.5 0.5H3.5C2.57174 0.5 1.6815 0.868749 1.02513 1.52513C0.368749 2.1815 0 3.07174 0 4ZM17.5 2.25C17.9641 2.25 18.4092 2.43437 18.7374 2.76256C19.0656 3.09075 19.25 3.53587 19.25 4V23.25H1.75V4C1.75 3.53587 1.93437 3.09075 2.26256 2.76256C2.59075 2.43437 3.03587 2.25 3.5 2.25H17.5ZM11.8125 7.0625C11.8125 6.7144 11.6742 6.38056 11.4281 6.13442C11.1819 5.88828 10.8481 5.75 10.5 5.75C10.1519 5.75 9.81806 5.88828 9.57192 6.13442C9.32578 6.38056 9.1875 6.7144 9.1875 7.0625C9.1875 7.4106 9.32578 7.74444 9.57192 7.99058C9.81806 8.23672 10.1519 8.375 10.5 8.375C10.8481 8.375 11.1819 8.23672 11.4281 7.99058C11.6742 7.74444 11.8125 7.4106 11.8125 7.0625ZM11.375 18.875C11.375 19.1071 11.2828 19.3296 11.1187 19.4937C10.9546 19.6578 10.7321 19.75 10.5 19.75C10.2679 19.75 10.0454 19.6578 9.88128 19.4937C9.71719 19.3296 9.625 19.1071 9.625 18.875V11.875C9.625 11.6429 9.71719 11.4204 9.88128 11.2563C10.0454 11.0922 10.2679 11 10.5 11C10.7321 11 10.9546 11.0922 11.1187 11.2563C11.2828 11.4204 11.375 11.6429 11.375 11.875V18.875Z"})})}},691374:(e,t,a)=>{a.d(t,{A:()=>n});var i=a(695155);a(212115);var r=a(299129),o=a(388574);let l=(0,r.Ay)(o.A)`
+  border-radius: 6px;
+`,n=function({...e}){return(0,i.jsx)(l,{...e})}},994816:(e,t,a)=>{a.d(t,{A:()=>ei});var i=a(695155),r=a(212115),o=a(690594),l=a(388984),n=a(299129),p=a(339977),s=a(904071),d=a(19045),c=a(770982),m=a(548018),u=a(53714),h=a(48022),x=a(317389),b=a(450104);let g=(0,n.Ay)(p.A)(({theme:e})=>`
+    z-index: ${e.zIndex.modal};
+    border-radius: 8px;
+    background-color: ${e.palette.customBackground.modalOverlay};
+    backdrop-filter: blur(16px);
+    box-shadow: 0px 8px 12px -2px ${e.palette.boxShadow};
+    border: 1px solid ${e.palette.alpha.tenpercent};
+    
+    &.overlay-variant {
+      margin-top: 0 !important;
+      min-width: max-content;
+    }
+    
+    &.default-variant {
+      margin-top: ${e.spacing(.5)} !important;
+    }
+  `),y=(0,n.Ay)(s.A)(({theme:e})=>`
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: ${e.spacing(1)};
+    box-shadow: 0px 8px 12px -2px ${e.palette.boxShadow};
+  `),v=(0,n.Ay)(s.A)(({theme:e})=>`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ border-radius: 8px;
+    background-color: ${e.palette.primary.main};
+    border: 1px solid ${e.palette.border.primary};
+    padding-top: ${e.spacing(2)};
+    box-shadow: 0px 8px 12px -2px ${e.palette.boxShadow};
+  `),f=(0,n.Ay)(s.A)(({theme:e})=>`
+    background-color: ${e.palette.customBackground.modalOverlay};
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: max-content;
+    box-shadow: 0px 8px 12px -2px ${e.palette.boxShadow};
+  `),_=(0,n.Ay)(s.A)(({theme:e})=>`
+    padding: ${e.spacing(.5,1)};
+    background-color: ${e.palette.alpha.twelevepercent};
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+    background-color: ${e.palette.alpha.twelevepercent};
+    }
+  `);var A=a(59419),w=a(841161),C=a(54186);function j(e){let{children:t,getHeight:a=()=>Math.min(240,.6*window.innerHeight),listRef:o,scrollBarMargin:l}=e,n=(0,A.A)(a),[p,s]=(0,r.useState)(0);return(0,r.useEffect)(()=>{let e=()=>s(n);return e(),window.addEventListener("resize",e),()=>{window.removeEventListener("resize",e)}},[n]),(0,i.jsx)(C.A,{maxHeight:p,sx:{borderRadius:"8px"},scrollBarMargin:l,children:(0,i.jsx)(w.A,{role:"menu",ref:o,sx:{pt:0,pb:0},children:t})})}var k=a(580322);let S=(0,n.Ay)(k.A,{shouldForwardProp:e=>"inActive"!==e})(({inActive:e})=>`
+  opacity: ${e?.38:1};
+  min-height: 30px;
+  padding-left: 12px;
+  padding-right: 0px;
+  
+`);var U=a(315568),$=a(858124),B=a(3185),E=a(196496);let F=(0,n.Ay)(U.A)(({theme:e})=>`
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+  }
+  background: transparent;
+  border-radius: 0;
+  width: 100%;
+  input {
+    height: 20px;
+    font-size: 14px;
+  }
+  & .MuiOutlinedInput-root {
+
+    border: none;
+    border-bottom: 1px solid ${e.palette.alpha.twelevepercent};
+    border-radius: 0;
+    &:hover {
+    border-bottom: 1px solid ${e.palette.alpha.twelevepercent};
+    }
+    &.Mui-focused {
+    border-bottom: 1px solid ${e.palette.alpha.twelevepercent};
+    }
+  }
+  & .MuiOutlinedInput-notchedOutline {
+    border: none;
+  }
+`),L=(0,n.Ay)($.A)(({theme:e})=>`
+  padding-left: ${e.spacing(1)};
+  padding-right: ${e.spacing(1)};
+  &:last-child {
+    margin-bottom: 0;
+  }
+`);var O=a(37721),R=a(450910);let T=(0,n.Ay)(h.A)(({theme:e})=>`
+  color: ${e.palette.button.activeText};
+  cursor: pointer;
+  padding-left: ${e.spacing(2)};
+  padding-right: ${e.spacing(2)};
+`);var P=a(329029),I=a(247970),V=a(962811),W=a(27374),M=a(71834),z=a(680141),N=a(385340),D=a(418750),H=a(579847),Y=a(147290),G=a(200568),Q=a(162768),X=a(456314),Z=a(915987);let K=(0,n.Ay)(Z.A)(({theme:e,selected:t})=>`
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  background-color: ${t?e.palette.alpha.sixpercent:"transparent"};
+  border-radius: ${e.borderRadius(1.5)};
+   padding: ${t?" 4px 12px 4px 6px;":"0px 12px 0px 6px;"};
+  margin-left: -6px;
+`);var q=a(84249),J=a(672394),ee=a(310617),et=a(86241),ea=a(36860);let ei=Object.assign(function(e){let{children:t,variant:a,titleInfo:l,disabled:n}=e,[p,s]=(0,r.useState)(null),[d,c]=(0,r.useState)(!1),m=(0,r.useCallback)(e=>{let{currentTarget:t}=e;s(e=>e||t),c(!0)},[]),u=(0,r.useCallback)(()=>{s(null),c(!1)},[]),h=(0,r.useMemo)(()=>({menuState:{anchorEl:p,isOpen:d,onOpen:m,onClose:u},variant:a||b.V.POPPER,titleInfo:l,disabled:n}),[p,d,m,u,a,l,n]);return(0,i.jsx)(o.A.Provider,{value:h,children:t})},{Context:o.A,Modal:function(e){let{width:t,height:a,children:l,clickAwayOpen:n,title:p,...A}=e,{menuState:w,variant:C}=(0,r.useContext)(o.A),j=!!w.anchorEl,[k,S]=(0,r.useState)({width:0,height:0});(0,r.useLayoutEffect)(()=>{if(!w.anchorEl)return;let e=w.anchorEl,t=()=>{let t={width:e.offsetWidth,height:e.offsetHeight};S(e=>e.width!==t.width||e.height!==t.height?t:e)};Promise.resolve().then(t);let a=new ResizeObserver(t);return a.observe(e),()=>a.disconnect()},[w.anchorEl]);let U=(0,r.useMemo)(()=>C===b.V.OVERLAY?[{name:"offset",options:{offset:[0,-k.height]}}]:void 0,[C,k.height]),$=(0,r.useCallback)(()=>{n||w.onClose()},[n,w]);return C===b.V.BOX?(0,i.jsx)(y,{as:d.A,in:j,...A,children:j&&l}):C===b.V.MODAL?(0,i.jsx)(c.A,{onClose:w.onClose,open:j,sx:{display:"flex"},children:(0,i.jsx)(v,{height:a||"100%",width:t||"100vw",...A,children:l})}):(0,i.jsx)(g,{className:C===b.V.OVERLAY?"overlay-variant":"default-variant",anchorEl:w.anchorEl,open:j,placement:C===b.V.OVERLAY?"bottom":"bottom-start",modifiers:U,sx:{width:t||"auto",minWidth:C===b.V.OVERLAY?`${k.width}px`:"auto"},transition:!0,children:({TransitionProps:e})=>(0,i.jsx)(m.x,{onClickAway:$,children:(0,i.jsx)(u.A,{...e,style:{transformOrigin:C===b.V.OVERLAY?"center top":"0 0 0"},in:j,timeout:j?200:150,children:C===b.V.OVERLAY?(0,i.jsxs)(f,{...A,children:[p&&(0,i.jsxs)(_,{onClick:w.onClose,children:[(0,i.jsx)(h.A,{variant:"body3",color:"text.primary",sx:{fontSize:12,fontWeight:700},children:p}),(0,i.jsx)(x.A,{sx:{color:"text.primary",ml:1,fontSize:14}})]}),l]}):(0,i.jsx)(s.A,{...A,children:l})})})})},Disclosure:l.A,List:j,ScrollToSelectedList:function({children:e,selectedValue:t}){let a=(0,r.useRef)(null),{menuState:l}=(0,r.useContext)(o.A),n=!!l.anchorEl;return(0,r.useEffect)(()=>{n&&a.current&&null!=t&&requestAnimationFrame(()=>{let e=a.current?.querySelector(`[data-value="${t}"]`);if(e&&a.current){let t=a.current.parentElement;if(t){let a=t.getBoundingClientRect(),i=e.getBoundingClientRect();t.scrollTop=Math.max(0,e.offsetTop-a.height/2+i.height/2)}}})},[n,t]),(0,i.jsx)(j,{listRef:a,children:e})},Item:function(e){let{onClick:t,inActive:a,children:l,...n}=e,{menuState:p,disabled:s}=(0,r.useContext)(o.A);return(0,i.jsx)(S,{onClick:e=>{t&&t(e);let a=e.target;e.defaultPrevented||a.closest(".nested-select-menu")||p.onClose()},disabled:s,inActive:a,...n,children:l})},Filter:function(e){let t=(0,r.useRef)(null),a=!!(0,r.useContext)(o.A).menuState.anchorEl;return(0,r.useEffect)(()=>{let e=t.current;if(e&&!a){let t=Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype,"value")?.set;t&&(t.call(e,""),e.dispatchEvent(new Event("input",{bubbles:!0})))}},[a]),(0,i.jsx)(L,{sx:{width:e.fullWidth?"100%":"auto"},children:(0,i.jsx)(F,{inputRef:t,size:"small",variant:"outlined",fullWidth:!0,InputProps:{startAdornment:(0,i.jsx)(B.A,{position:"start",sx:{marginRight:1},children:(0,i.jsx)(E.A,{sx:{color:"text.primary",fontSize:16}})})},...e})})},SelectAll:function(e){let{allSelected:t,...a}=e,{disabled:l}=(0,r.useContext)(o.A),n=(0,R.c)("filters");return(0,i.jsx)(O.A,{disabled:l,variant:"text",sx:{display:"flex",marginLeft:"auto",p:0,textTransform:"none"},"aria-label":t?"Deselect all items":"Select all items",...a,children:(0,i.jsx)(T,{variant:"label",fontWeight:"bold",children:n(t?"deselect_all":"select_all")})})},Apply:P.Ay,Title:function(e){let{children:t}=e,a=(0,I.A)(),l=(0,V.A)(a.breakpoints.down("md")),{menuState:n,variant:p,titleInfo:d}=(0,r.useContext)(o.A);return p===b.V.BOX?null:(0,i.jsxs)(s.A,{px:2,pb:2,children:[(0,i.jsxs)(h.A,{variant:"h2",fontWeight:"bold",mb:2,display:"flex",alignItems:"center",children:[(0,i.jsx)(O.A,{variant:"contained",size:"small",sx:{mr:3,minWidth:"fit-content"},onClick:()=>{n.anchorEl&&n.onClose()},"aria-label":"Go back",children:(0,i.jsx)(M.A,{})}),t,!l&&d]}),(0,i.jsx)(W.A,{})]})},Warning:function(e){let{children:t,showWarning:a}=e,r=(0,D.Jd)(),o=(0,H.DP)(),l=(0,Y.y6)(e=>e.openLoginPopup);return a?(0,i.jsx)(z.A,{icon:!1,severity:"warning",variant:"outlined",sx:{px:1,py:0,mb:1,mx:2},children:(0,i.jsx)(h.A,{color:o.palette.warning.light,display:"inline",variant:"body2",children:t||(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(N.A,{onClick:()=>l(),sx:{":hover":{textDecoration:"underline"},mx:"4px"},"aria-label":r.isLoggedIn?"Upgrade to remove restrictions":"Login to remove restrictions",children:(0,i.jsx)(h.A,{fontWeight:"bold",color:o.palette.warning.light,sx:{textDecoration:"underline"},children:r.isLoggedIn?"Upgrade Now":"Login Now"})}),"to remove the restrictions."]})})}):null},CheckBox:function(e){let{disabled:t}=(0,r.useContext)(o.A);return(0,i.jsx)(G.A,{sx:{height:28},children:(0,i.jsx)(Q.A,{disabled:t,edge:"start",sx:{color:"text.primary",[`&.${X.A.checked}`]:{color:"text.primary"}},tabIndex:-1,...e})})},Text:function(e){let{primary:t,secondary:a,primaryStyle:r,secondaryStyle:o,selected:l,endAdornment:n}=e,{sx:p,...d}=r??{},{sx:c,...m}=o??{};return(0,i.jsxs)(K,{direction:"column",selected:l,children:[(0,i.jsxs)(Z.A,{direction:"row",alignItems:"center",justifyContent:"space-between",width:"100%",children:[(0,i.jsx)(h.A,{variant:"body3",pr:2,color:"inherit",sx:{fontSize:12,fontWeight:l?700:400,fontVariantNumeric:"tabular-nums",...p},...d,children:t}),n&&(0,i.jsx)(s.A,{pl:1,display:"flex",alignItems:"center",children:n})]}),a&&(0,i.jsx)(h.A,{variant:"body3",color:"text.secondary",sx:{fontSize:11,fontVariantNumeric:"tabular-nums",...c},...m,children:a})]})},TextField:function(e){let{onSearchChange:t,onClose:a,id:l,placeholder:n="Find games and players",...p}=e,d=(0,I.A)(),{menuState:c}=r.useContext(o.A),[m,u]=(0,r.useState)(""),[h,x]=(0,r.useState)(""),b=(0,et.A)();return(0,r.useEffect)(()=>{let e=setTimeout(()=>{m.length>0?(t(m),c.onOpen({currentTarget:document.getElementById(l)})):(t(""),c.onClose(),a())},500);return()=>{clearTimeout(e)}},[m,t,c,a,l]),(0,r.useEffect)(()=>{c.isOpen||Promise.resolve().then(()=>{u(e=>(e&&x(e),""))})},[c.isOpen]),(0,i.jsx)(s.A,{id:l,children:(0,i.jsx)(U.A,{size:"small",variant:"standard",placeholder:h||n,value:m,onChange:e=>{let t=e.target.value;u(t),t&&x(t)},onFocus:()=>u(h),InputProps:{startAdornment:(0,i.jsx)(B.A,{position:"start",sx:{color:"text.secondary",pl:1},children:(0,i.jsx)(ea.A,{sx:{width:"18px"}})}),endAdornment:(0,i.jsx)(B.A,{position:"end",children:(0,i.jsx)(s.A,{sx:{width:20},children:m.length>0&&(0,i.jsx)(q.A,{onClick:()=>{x(""),u(""),a()},sx:{width:14,borderRadius:"8px",py:1,px:1.4,mr:.5},"aria-label":"Clear search",children:(0,i.jsx)(ee.vu,{sx:{fontSize:"14px",display:m?"block":"none"}})})})}),disableUnderline:!0},sx:{flexGrow:1,transition:"width 0.3s ease-in-out",backgroundColor:d.palette.customBackground.cardHeader,borderRadius:d.borderRadius(2),"& .MuiInputBase-input":{fontSize:14,width:242,height:8,py:1,padding:.5},border:`1px solid ${(0,J.X4)(d.palette.basic,.5)}`,backgroundImage:b?`linear-gradient(${d.palette.customBackground.cardHeader}, ${d.palette.customBackground.cardHeader}), linear-gradient(135deg, ${b.primary} 0%, ${b.secondary} 100%), linear-gradient(${d.palette.basic}, ${d.palette.basic})`:"none",backgroundOrigin:"border-box",backgroundClip:"padding-box, border-box",borderColor:b?"transparent":void 0,"& .MuiInputBase-root":{padding:.5,background:d.palette.customBackground.cards,borderRadius:d.borderRadius(2)}},...p})})}})}}]);

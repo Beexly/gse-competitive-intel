@@ -1,0 +1,71 @@
+{
+ "tech_stack": {
+  "frontend": "Next.js (__className_578517 pattern; Vercel-style HTML)",
+  "backend": "Next.js API routes",
+  "database": "NOT CONFIRMED",
+  "cloud": "Vercel (likely)",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/playerprops_ai_openapi.json.txt (actually home HTML)",
+   "raw/playerprops_ai_home.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "/api/docs + openapi.json path referenced (fetch returned HTML shell — docs app-gated)",
+   "/.well-known/assetlinks.json + apple-app-site-association captured (mobile app deep links)"
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/playerprops_ai_docs.txt",
+   "raw/playerprops_ai_api.txt",
+   "raw/playerprops_ai_.well-known_assetlinks.json.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "AI player-prop predictions (marketing; internals NOT CONFIRMED)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "NOT CONFIRMED"
+  ],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED",
+  "ios": "deep-link app confirmed via AASA/assetlinks",
+  "android": "assetlinks captured",
+  "citations": [
+   "raw/playerprops_ai_.well-known_assetlinks.json.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/api/docs",
+  "/.well-known/assetlinks.json",
+  "/.well-known/apple-app-site-association"
+ ],
+ "discovered_targets": [],
+ "domain": "playerprops.ai",
+ "discovery_metadata": {
+  "method": "direct HTTP probes + raw evidence extraction (self-run)",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 8 raw evidence files)"
+}

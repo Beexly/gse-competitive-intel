@@ -1,0 +1,104 @@
+{
+ "tech_stack": {
+  "frontend": "Angular-style SPA (polyfills/main chunks captured)",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/sabersim_app_main-XWGYF5MS.js",
+   "raw/sabersim_app_home.html.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "app-internal endpoints referenced in performance-filter.js bundle"
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/sabersim_app_assets_performance-filter.js"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "upside-aware projections (product copy; internals NOT CONFIRMED)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "per slate",
+  "citation": "product copy"
+ },
+ "simulation_engine": {
+  "num_simulations": "simulations power lineup sims (product copy)",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "product copy"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "DK/FD contest feeds (inferred)"
+  ],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "tiered plans Starter/Pro/etc",
+  "upgrade_triggers": "$7 trial -> $97+",
+  "citation": "raw/seed-pricing-pages.json"
+ },
+ "pricing": {
+  "web": "$7 for 7 days trial; $97 / $197 / $297 per month tiers",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "raw/seed-pricing-pages.json (sabersim /pricing capture)"
+  ]
+ },
+ "customer_pain": [
+  {
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1fgk5t2/best_dfs_subscription_site/",
+   "quote": "Based on the logos I see at the top of most tournaments I play (NFL and NBA), I would have to say Saber Sim. I've used it for years and the ..."
+  },
+  {
+   "source": "https://www.sabersim.com/testimonials",
+   "quote": "the tools are great.” “SaberSim is really awesome. $15,000 won on DraftKings ・ allowed me to feel more comfortable about my lineups ・ $5,743 won on DraftKings"
+  },
+  {
+   "source": "https://www.reddit.com/r/fanduel/comments/1ilw2g6/i_always_question_these_saber_sim_pfp/",
+   "quote": "I've been seeing these types of accounts way too much and they always seem to place high. As it stands right now bro is winning a cool $1M."
+  },
+  {
+   "source": "https://www.reddit.com/r/BestBall/comments/1ovltiw/if_you_use_stokastic_rotogrinders_dfs_army_or_any/",
+   "quote": "Stokastic offers a full sim suite so you can try to get a feel for how a lineup May actually turn out. I'd never pay that much, but some do, and ..."
+  },
+  {
+   "source": "https://www.reddit.com/r/BeatTheStreak/comments/3gjmh8/mod_post_fangraphs_now_has_sabersim_daily/",
+   "quote": "I created SaberSim, and can attest that it is fantastic for BTS. I played for the first time this year, and almost immediately got a streak of ..."
+  },
+  {
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/1fgk5t2/best_dfs_subscription_site/",
+   "quote": "It covers the core stuff you actually need for building lineups optimizer across DK, FanDuel, and Yahoo, projections, ownership estimates, ..."
+  },
+  {
+   "source": "https://support.sabersim.com/en/articles/12079141-building-lineups",
+   "quote": "Common Mistakes Not building enough lineups: Limiting yourself to a small pool reduces flexibility. Too many restrictive group rules"
+  },
+  {
+   "source": "https://www.reddit.com/r/BeatTheStreak/comments/3gjmh8/mod_post_fangraphs_now_has_sabersim_daily/",
+   "quote": "A quick note on these projections: the simulator currently only runs games with a single starting lineup for each team – for lineups that aren't ..."
+  },
+  {
+   "source": "https://www.youtube.com/watch?v=RJBaA97Md70",
+   "quote": "On this episode, Andrew discusses best practices for building for multiple contest types ... SaberSim Free Trial Now: https://www.sabersim.com/ ..."
+  }
+ ],
+ "discovered_paths": [
+  "/pricing",
+  "/dfs/draftkings"
+ ],
+ "discovered_targets": [],
+ "domain": "sabersim.com",
+ "discovery_metadata": {
+  "method": "direct HTTP probes + raw evidence extraction (self-run)",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 18 raw evidence files)"
+}

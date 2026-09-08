@@ -1,0 +1,27 @@
+User-agent: *
+sitemap: https://datarade.ai/sitemap.xml.gz
+
+Disallow: /*?
+Disallow: */requests/new*
+Disallow: */requests/steps*
+Disallow: */reviews/new*
+Disallow: /search*
+Disallow: /link/*
+Disallow: /my/*
+
+Disallow: /data-categories/*/providers/*
+Allow: /data-categories/*/providers/1$
+Allow: /data-categories/*/providers/2$
+Allow: /data-categories/*/providers/3$
+Allow: /data-categories/*/providers/4$
+Allow: /data-categories/*/providers/5$
+
+Disallow: /es/data-categories/*/providers/*
+Allow: /es/data-categories/*/providers/1$
+Allow: /es/data-categories/*/providers/2$
+Allow: /es/data-categories/*/providers/3$
+Allow: /es/data-categories/*/providers/4$
+Allow: /es/data-categories/*/providers/5$
+
+Allow: /search/products/*
+Allow: /search/providers/*

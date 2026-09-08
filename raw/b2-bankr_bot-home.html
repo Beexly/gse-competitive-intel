@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Set the global color scheme before first paint to avoid a light flash.
+         Mirrors getInitialTheme() in @bankr/design-system: a stored choice
+         wins, otherwise default to dark. -->
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("bankr-color-scheme") !== "light") {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#a78bfa" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Bankr" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <link rel="apple-touch-icon" sizes="192x192" href="/pwa-icon-192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/pwa-icon-512.png" />
+
+    <!-- iOS Splash Screens - iPhone 11/XR and newer (portrait only) -->
+    <!-- iPhone 17 Pro, 16 Pro Max, 15 Pro Max, 14 Pro Max -->
+    <link
+      rel="apple-touch-startup-image"
+      href="/splash/apple-splash-1290-2796.png"
+      media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <!-- iPhone 15 Plus, 15 Pro Max -->
+    <link
+      rel="apple-touch-startup-image"
+      href="/splash/apple-splash-1260-2736.png"
+      media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <!-- iPhone 16, 15, 15 Pro, 14 Pro -->
+    <link
+      rel="apple-touch-startup-image"
+      href="/splash/apple-splash-1179-2556.png"
+      media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <!-- iPhone 17, 17 Pro, 16 Pro, 14 Plus -->
+    <link
+      rel="apple-touch-startup-image"
+      href="/splash/apple-splash-1206-2622.png"
+      media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <!-- iPhone 14 Pro Max -->
+    <link
+      rel="apple-touch-startup-image"
+      href="/splash/apple-splash-1284-2778.png"
+      media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <!-- iPhone 14 Pro -->
+    <link
+      rel="apple-touch-startup-image"
+      href="/splash/apple-splash-1320-2868.png"
+      media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <!-- iPhone 13, 13 Pro, 12, 12 Pro -->
+    <link
+      rel="apple-touch-startup-image"
+      href="/splash/apple-splash-1170-2532.png"
+      media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <!-- iPhone 13 mini, 12 mini, 11 Pro, XS, X -->
+    <link
+      rel="apple-touch-startup-image"
+      href="/splash/apple-splash-1125-2436.png"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <!-- iPhone 11 Pro Max, XS Max -->
+    <link
+      rel="apple-touch-startup-image"
+      href="/splash/apple-splash-1242-2688.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <!-- iPhone 11, XR -->
+    <link
+      rel="apple-touch-startup-image"
+      href="/splash/apple-splash-828-1792.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Geist Mono is the code/monospace font (--font-mono). Regular (400) is
+         also self-hosted via @font-face in index.css; load 500/600 here for
+         weighted mono text (e.g. text["mono-*-bold"]). -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta
+      name="description"
+      content="Bankr is an AI agent that can buy, sell, swap coins and place limit orders."
+    />
+    <meta
+      name="keywords"
+      content="Banking, Finance, Money, Swap Crypto, Limit Orders, Crypto, AI Agents"
+    />
+    <meta name="author" content="Bankr Team" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.bankr.bot/" />
+    <meta
+      property="og:title"
+      content="Bankr - Your Friendly AI-Powered Crypto Banker"
+    />
+    <meta
+      property="og:description"
+      content="Bankr is an AI agent that can buy, sell, swap coins and place limit orders."
+    />
+    <meta
+      property="og:image"
+      content="https://www.bankr.bot/crypto-ai-agent-banker.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.bankr.bot/" />
+    <meta
+      property="twitter:title"
+      content="Bankr - Your Friendly AI-Powered Crypto Banker"
+    />
+    <meta
+      property="twitter:description"
+      content="Bankr is an AI agent that can buy, sell, swap coins and place limit orders."
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.bankr.bot/crypto-ai-agent-banker.png"
+    />
+
+    <title>Bankr</title>
+    <script type="module" crossorigin src="/assets/index-CWXkn4PB.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-DAtXkLxJ.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-libs-D64a9kO6.js">
+    <link rel="modulepreload" crossorigin href="/assets/solana-CJMWGhb-.js">
+    <link rel="modulepreload" crossorigin href="/assets/farcaster-BndGRJXL.js">
+    <link rel="stylesheet" crossorigin href="/assets/react-libs-xsTVg1XE.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-e9eNuOH7.css">
+  <meta property="fc:miniapp" content='{"version":"1","imageUrl":"https://bankr.bot/miniapp/frame-embed.png","button":{"title":"Try Bankr Now","action":{"type":"launch_frame","name":"Bankr","url":"https://bankr.bot/terminal","splashImageUrl":"https://bankr.bot/miniapp/bankr-spin-200px-30fps.gif","splashBackgroundColor":"#a78bfa"}}}' />
+<link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

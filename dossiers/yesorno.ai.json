@@ -1,0 +1,56 @@
+{
+ "domain": "yesorno.ai",
+ "tech_stack": {
+  "frontend": "Vike (vite-plugin-ssr successor) + React + NutUI component lib, Vite build (from wayback JS chunk: '__vite__mapDeps', 'vike-react' css, nutui css)",
+  "backend": "NOT CONFIRMED (site now NXDOMAIN)",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare (static.cloudflareinsights.com beacon in archived page; April 2026)",
+  "cdn": "Cloudflare",
+  "citations": [
+   "http://web.archive.org/web/20260419013143/https://yesorno.ai/",
+   "https://yesorno.ai/assets/entries/entry-client-routing.Bu0z1fdd.js (via web.archive.org)"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": [],
+  "rate_limits": "NOT CONFIRMED",
+  "citations": []
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "none",
+  "citation": "none"
+ },
+ "pricing": {
+  "web": "dead domain (NXDOMAIN on https+http as of 2026-09-08)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": []
+ },
+ "customer_pain": [],
+ "discovered_paths": [],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "DNS NXDOMAIN confirmed; characterized via Wayback Machine snapshot 2026-04-19 + PRWire press release (DeFi+SocialFi decentralized prediction market, public beta ~Apr 2026, Netherlands-based per PR)",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 4 raw evidence files)"
+}

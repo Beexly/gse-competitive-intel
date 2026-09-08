@@ -1,0 +1,138 @@
+{
+ "domain": "fantasynerds.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "React",
+   "citation": "raw/batch2_fantasynerds_com_apiprobe.txt"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\batch2_fantasynerds_com_apiprobe.txt",
+   "raw\\batch2_fantasynerds_com_home.html",
+   "raw\\batch2_fantasynerds_com_js1.js",
+   "raw\\batch2_fantasynerds_com_js2.js",
+   "raw\\batch2_fantasynerds_com_probe.txt",
+   "raw\\batch2_fantasynerds_com_robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apis.com",
+    "apis.com/css2",
+    "https://api.fantasynerds.com",
+    "ws.hu",
+    "apids.museum",
+    "wspaper.museum"
+   ],
+   "citation": "raw/batch2_fantasynerds_com_apiprobe.txt"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\batch2_fantasynerds_com_apiprobe.txt"
+  },
+  "rate_limits": {
+   "value": "credit",
+   "citation": "raw/batch2_fantasynerds_com_apiprobe.txt"
+  },
+  "citations": [
+   "raw\\batch2_fantasynerds_com_apiprobe.txt",
+   "raw\\batch2_fantasynerds_com_home.html",
+   "raw\\batch2_fantasynerds_com_js1.js",
+   "raw\\batch2_fantasynerds_com_js2.js",
+   "raw\\batch2_fantasynerds_com_probe.txt",
+   "raw\\batch2_fantasynerds_com_robots.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Fantasy Nerds is your home for fantasy football, fantasy basketball, and fantasy' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\batch2_fantasynerds_com_apiprobe.txt"
+  },
+  "citations": [
+   "raw\\batch2_fantasynerds_com_apiprobe.txt",
+   "raw\\batch2_fantasynerds_com_home.html",
+   "raw\\batch2_fantasynerds_com_js1.js",
+   "raw\\batch2_fantasynerds_com_js2.js",
+   "raw\\batch2_fantasynerds_com_probe.txt",
+   "raw\\batch2_fantasynerds_com_robots.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "credit"
+   ],
+   "citation": "raw/batch2_fantasynerds_com_apiprobe.txt"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\batch2_fantasynerds_com_apiprobe.txt"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "Free"
+   ],
+   "citation": "raw/batch2_fantasynerds_com_apiprobe.txt"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\batch2_fantasynerds_com_apiprobe.txt",
+   "raw\\batch2_fantasynerds_com_home.html",
+   "raw\\batch2_fantasynerds_com_js1.js",
+   "raw\\batch2_fantasynerds_com_js2.js",
+   "raw\\batch2_fantasynerds_com_probe.txt",
+   "raw\\batch2_fantasynerds_com_robots.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /"
+ ],
+ "discovered_targets": [
+  "apids.museum",
+  "apis.com",
+  "apis.com/css2",
+  "https://api.fantasynerds.com",
+  "ws.hu",
+  "ws.na",
+  "wskr.gov.pl",
+  "wspaper.museum"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:29.833344"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Fantasy Nerds - Fantasy Sports Rankings and Projections",
+  "description": "Fantasy Nerds is your home for fantasy football, fantasy basketball, and fantasy baseball rankings and projections"
+ }
+}

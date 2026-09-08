@@ -1,0 +1,9 @@
+URL: https://fantasypoints.com/robots.txt\nSTATUS: 200\n\nUser-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+Allow: /
+
+# Sitemap Location
+Sitemap: https://www.fantasypoints.com/sitemap.xml

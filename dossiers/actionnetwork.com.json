@@ -1,0 +1,153 @@
+{
+ "domain": "actionnetwork.com",
+ "tech_stack": {
+  "frontend": "Next.js pages-router SPA (static-web-prod.actionnetwork.com/_next/static/chunks), window.TAN_APP_DATA runtime config, Rudderstack analytics (bettercollkagp.dataplane.rudderstack.com), VWO + MS Clarity (p4murcux9k) + Google Tag G-P6ZYBPW4VV + Facebook pixel + Rollbar + OneTrust consent",
+  "backend": "REST API root api.actionnetwork.com/web (API_ROOT:'api.actionnetwork.com/web', session token AN_SESSION_TOKEN_V1); BAM API bam.actionnetwork.com (betting-app-market?); CASINO_API_ROOT casino.actionnetwork.com; labs.actionnetwork.com (Sports Insights dashboard /markets); switchboard.actionnetwork.com (link-out/consent gateway); auth via Apple/Google OAuth + reCAPTCHA",
+  "database": "NOT CONFIRMED — no exposure",
+  "cloud": "NOT CONFIRMED at infra level (no server/Vercel/AWS headers captured); Stripe payments live key pk_live_51RZBKHIWI95CY1Uq90rPccCikdFVCaAQXTCUYI00XIy1EKgvBvhH7flkcREIzlA69stAClRQMWCDmMevNukbSoP1000QYXMJhF",
+  "cdn": "static-web-prod.actionnetwork.com (JS chunks), static.actionnetwork.com + assets.actionnetwork.com (images), bam-static.actionnetwork.com (scripts)",
+  "citations": [
+   "https://www.actionnetwork.com/ (window.TAN_APP_DATA inline JSON)",
+   "https://www.actionnetwork.com/pricing (redirects to /upgrade)"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "https://api.actionnetwork.com/web/v1/me",
+    "auth_required": "yes (AN_SESSION_TOKEN_V1)",
+    "tier": "user-scoped",
+    "sample_response": null,
+    "citation": "https://static-web-prod.actionnetwork.com/_next/static/chunks/pages/_app-78215df47f47e977.js"
+   },
+   {
+    "method": "PUT",
+    "path": "/web/v1/me/migrate_subscription and /web/v1/me/migrate_subscription/preview",
+    "auth_required": "yes",
+    "tier": "subscription management",
+    "sample_response": null,
+    "citation": "_app-78215df47f47e977.js"
+   },
+   {
+    "method": "PUT",
+    "path": "/web/v1/me/cancel_subscription and /web/v1/me/cancel_subscription/undo",
+    "auth_required": "yes",
+    "tier": "subscription management",
+    "sample_response": null,
+    "citation": "_app-78215df47f47e977.js"
+   },
+   {
+    "method": "GET",
+    "path": "/web/v1/me/picks (+ /web/v1/me/picks/reset), /web/v1/picks/reactions, /web/v1/share/qr, /web/v1/user/loginnew, /web/v1/config/external, /web/v1/config/location",
+    "auth_required": "mixed",
+    "tier": "unknown",
+    "sample_response": null,
+    "citation": "_app-78215df47f47e977.js"
+   },
+   {
+    "method": "GET",
+    "path": "https://api.actionnetwork.com/web/v1/user/login/social/apple?requireRedirect=true&redirect=...oauth?isAppleLogin=true",
+    "auth_required": "no (OAuth entry)",
+    "tier": "auth",
+    "sample_response": null,
+    "citation": "window.TAN_APP_DATA APPLE_SIGN_IN_REDIRECT_URI in homepage HTML"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED — no GraphQL/Apollo references in fetched bundles",
+  "websocket_endpoints": [
+   {
+    "path": "NOT CONFIRMED — WebSocket object used in _app bundle but no public wss:// URL exposed; odds streaming likely via api.actionnetwork.com behind auth",
+    "citation": "https://static-web-prod.actionnetwork.com/_next/static/chunks/pages/_app-78215df47f47e977.js"
+   }
+  ],
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "https://www.actionnetwork.com/",
+   "https://static-web-prod.actionnetwork.com/_next/static/chunks/pages/_app-78215df47f47e977.js"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "PRO tier state machine (client)",
+   "raw_snippet": "g={user:{},pickHistory:null,isLoggedIn:!1,sportsbookId:u.WM,isPro:!1,wasPro:!1,subscriptionTier:0,isTrialing:!1,lastSubProductId:null,lastSubPaymentSource:null,familyTier: ... isPro:!!t.subscription_tier,subscriptionTier:t.subscription_tier||0,proTier:t.pro_tier||!1,wasPro:!!t.",
+   "reconstruction": "User PRO state derives from API field subscription_tier (int, 0=free); separate pro_tier boolean and isTrialing flag; product SKUs like com.actionnetwork.si.year.pro (Sports Insights PRO yearly) and com.sportsactioninc.1year.proplus2base (PRO+ yearly) select plan. No betting/edge formula exposed client-side.",
+   "citation": "https://static-web-prod.actionnetwork.com/_next/static/chunks/pages/_app-78215df47f47e977.js + https://www.actionnetwork.com/upgrade (wayback 20260830021921)"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "Model Projections + PRO Systems + Betting Signals marketed on /upgrade; actual model internals server-side and NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "https://www.actionnetwork.com/upgrade"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED — no simulation counts in client bundles",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": null
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Stripe (payments, pk_live key in page config)",
+   "Rudderstack (analytics)",
+   "Microsoft Clarity + VWO + Google Analytics + Facebook Pixel (analytics)",
+   "Rollbar (errors)",
+   "OneTrust (consent)",
+   "Butter CMS (BUTTER key) + LeadDyno (affiliate)",
+   "Apple/Google/Spotify OAuth clients",
+   "reCAPTCHA"
+  ],
+  "citations": [
+   "https://www.actionnetwork.com/ (window.TAN_APP_DATA)"
+  ]
+ },
+ "product_limits": {
+  "limits": [
+   "Free tier: betting calculators, limited picks; PRO gates Betting Signals, exclusive bet/money percentages, PRO Systems, Model Projections, PRO Report",
+   "Four-day PRO trial offered for $49 via Action Labs (no free trial for Labs products); all sales final, cancel via Account Management before renewal"
+  ],
+  "upgrade_triggers": "Paywalled PRO Signals/projections (bet & money percentages marked 'exclusive data'); compare-products funnel at /upgrade",
+  "citation": "https://www.actionnetwork.com/upgrade (live + wayback 20260830021921)"
+ },
+ "pricing": {
+  "web": "PRO subscription sold via Stripe; exact monthly price not rendered client-side (product SKU com.sportsactioninc.1year.proplus2base implies yearly plan); Action Labs four-day trial $49 with 50% off promo on com.actionnetwork.si.year.pro",
+  "ios": "IAP product IDs visible: com.actionnetwork.si.year.pro, com.sportsactioninc.1year.proplus2base (Apple IAP naming); prices NOT CONFIRMED",
+  "android": "NOT CONFIRMED (no Play product IDs in fetched assets)",
+  "citations": [
+   "https://www.actionnetwork.com/upgrade (wayback 20260830021921)",
+   "https://www.actionnetwork.com/ (STRIPE_CLIENT key)"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "I used to pay for that site and they would send out opposing bets on the same game and they would have some really awful analysis. I cancelled ...",
+   "source": "https://www.reddit.com/r/sportsbetting/comments/175uzds/does_anyone_use_action_network_for_bets/",
+   "date": "2023-10 thread"
+  },
+  {
+   "quote": "What are your thoughts? Do you think action network is worth the $20 a month? (thread: 'Is action network worth it?')",
+   "source": "https://www.reddit.com/r/sportsbook/comments/zs1x85/is_action_network_worth_it/",
+   "date": "2022-12 thread"
+  },
+  {
+   "quote": "Rankings seem unable to be accessed in week 2. Week 1 they hid the tiering and showed the rankings. Is this expected going forward? (paywall gating complaints)",
+   "source": "https://www.reddit.com/r/fantasyfootball/comments/9eynu9/are_the_action_networks_rankings_sean_koerners/",
+   "date": "2018-10 thread"
+  }
+ ],
+ "discovered_paths": [
+  "/upgrade (real pricing page; /pricing redirects here)",
+  "api.actionnetwork.com/web/v1/*",
+  "bam.actionnetwork.com",
+  "casino.actionnetwork.com",
+  "labs.actionnetwork.com/markets (Sports Insights dashboard)",
+  "switchboard.actionnetwork.com",
+  "bam-static.actionnetwork.com/0.0.2/bam-scripts/bam-scripts.esm.js"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "urllib fetcher (_fetcher.py): homepage, 3 Next.js chunks (_app/main/8198), /pricing→/upgrade, /upgrade via wayback; grep of TAN_APP_DATA + chunk JS",
+  "timestamp": "2026-09-08"
+ },
+ "disposition": "live (derived from 18 raw evidence files)"
+}

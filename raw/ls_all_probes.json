@@ -1,0 +1,618 @@
+{
+ "oddsportal.com": [
+  {
+   "path": "/robots.txt",
+   "status": 200,
+   "ct": "text/plain; charset=utf-8",
+   "bytes": 1541
+  },
+  {
+   "path": "/sitemap.xml",
+   "status": 503,
+   "ct": "",
+   "bytes": 0
+  },
+  {
+   "path": "/sitemaps.xml",
+   "status": null,
+   "ct": "",
+   "bytes": 0
+  },
+  {
+   "path": "/openapi.json",
+   "status": null,
+   "ct": "",
+   "bytes": 0
+  },
+  {
+   "path": "/swagger.json",
+   "status": 503,
+   "ct": "",
+   "bytes": 0
+  },
+  {
+   "path": "/docs",
+   "status": null,
+   "ct": "",
+   "bytes": 0
+  },
+  {
+   "path": "/api",
+   "status": 503,
+   "ct": "",
+   "bytes": 0
+  },
+  {
+   "path": "/api/v1",
+   "status": 404,
+   "ct": "",
+   "bytes": 0
+  },
+  {
+   "path": "/.well-known/security.txt",
+   "status": 404,
+   "ct": "",
+   "bytes": 0
+  }
+ ],
+ "oddschecker.com": [
+  {
+   "path": "/robots.txt",
+   "status": 200,
+   "ct": "text/plain;charset=UTF-8",
+   "bytes": 1629
+  },
+  {
+   "path": "/sitemap.xml",
+   "status": 403,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 3177
+  },
+  {
+   "path": "/sitemaps.xml",
+   "status": 403,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 3147
+  },
+  {
+   "path": "/openapi.json",
+   "status": 403,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 3143
+  },
+  {
+   "path": "/swagger.json",
+   "status": 403,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 3189
+  },
+  {
+   "path": "/docs",
+   "status": 403,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 3127
+  },
+  {
+   "path": "/api",
+   "status": 403,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 3168
+  },
+  {
+   "path": "/api/v1",
+   "status": 403,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 3161
+  },
+  {
+   "path": "/.well-known/security.txt",
+   "status": 403,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 3152
+  }
+ ],
+ "oddstrader.com": [
+  {
+   "path": "/robots.txt",
+   "status": 200,
+   "ct": "text/plain; charset=utf-8",
+   "bytes": 4571
+  },
+  {
+   "path": "/sitemap.xml",
+   "status": 200,
+   "ct": "text/xml; charset=UTF-8",
+   "bytes": 1908
+  },
+  {
+   "path": "/sitemaps.xml",
+   "status": 403,
+   "ct": "application/xml",
+   "bytes": 207
+  },
+  {
+   "path": "/openapi.json",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 27092
+  },
+  {
+   "path": "/swagger.json",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 27090
+  },
+  {
+   "path": "/docs",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 27092
+  },
+  {
+   "path": "/api",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 27090
+  },
+  {
+   "path": "/api/v1",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 27132
+  },
+  {
+   "path": "/.well-known/security.txt",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 26997
+  }
+ ],
+ "actionnetwork.com": [
+  {
+   "path": "/robots.txt",
+   "status": 200,
+   "ct": "text/plain",
+   "bytes": 475
+  },
+  {
+   "path": "/sitemap.xml",
+   "status": 200,
+   "ct": "text/xml",
+   "bytes": 5092
+  },
+  {
+   "path": "/sitemaps.xml",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 47909
+  },
+  {
+   "path": "/openapi.json",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 47909
+  },
+  {
+   "path": "/swagger.json",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 47909
+  },
+  {
+   "path": "/docs",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 47909
+  },
+  {
+   "path": "/api",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 47909
+  },
+  {
+   "path": "/api/v1",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 47909
+  },
+  {
+   "path": "/.well-known/security.txt",
+   "status": 403,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 4575
+  }
+ ],
+ "covers.com": [
+  {
+   "path": "/robots.txt",
+   "status": 200,
+   "ct": "text/plain",
+   "bytes": 1448
+  },
+  {
+   "path": "/sitemap.xml",
+   "status": 200,
+   "ct": "application/xml",
+   "bytes": 768
+  },
+  {
+   "path": "/sitemaps.xml",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 57206
+  },
+  {
+   "path": "/openapi.json",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 200000
+  },
+  {
+   "path": "/swagger.json",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 200000
+  },
+  {
+   "path": "/docs",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 200000
+  },
+  {
+   "path": "/api",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 200000
+  },
+  {
+   "path": "/api/v1",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 200000
+  },
+  {
+   "path": "/.well-known/security.txt",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 200000
+  }
+ ],
+ "statisticsports.com": [
+  {
+   "path": "/robots.txt",
+   "status": 200,
+   "ct": "text/plain; charset=utf-8",
+   "bytes": 82
+  },
+  {
+   "path": "/sitemap.xml",
+   "status": 200,
+   "ct": "text/xml; charset=utf-8",
+   "bytes": 394838
+  },
+  {
+   "path": "/sitemaps.xml",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 20121
+  },
+  {
+   "path": "/openapi.json",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 20108
+  },
+  {
+   "path": "/swagger.json",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 20101
+  },
+  {
+   "path": "/docs",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 20097
+  },
+  {
+   "path": "/api",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 20120
+  },
+  {
+   "path": "/api/v1",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 20196
+  },
+  {
+   "path": "/.well-known/security.txt",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 155
+  }
+ ],
+ "sportstrade.io": [
+  {
+   "path": "/robots.txt",
+   "status": 200,
+   "ct": "text/plain",
+   "bytes": 593
+  },
+  {
+   "path": "/sitemap.xml",
+   "status": 200,
+   "ct": "application/xml",
+   "bytes": 199443
+  },
+  {
+   "path": "/sitemaps.xml",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 49987
+  },
+  {
+   "path": "/openapi.json",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 49987
+  },
+  {
+   "path": "/swagger.json",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 49987
+  },
+  {
+   "path": "/docs",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 49971
+  },
+  {
+   "path": "/api",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 49969
+  },
+  {
+   "path": "/api/v1",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 49975
+  },
+  {
+   "path": "/.well-known/security.txt",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 50011
+  }
+ ],
+ "bettingpros.com": [
+  {
+   "path": "/robots.txt",
+   "status": 200,
+   "ct": "text/plain",
+   "bytes": 23
+  },
+  {
+   "path": "/sitemap.xml",
+   "status": 200,
+   "ct": "application/xml",
+   "bytes": 19485
+  },
+  {
+   "path": "/sitemaps.xml",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 928
+  },
+  {
+   "path": "/openapi.json",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 928
+  },
+  {
+   "path": "/swagger.json",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 928
+  },
+  {
+   "path": "/docs",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 928
+  },
+  {
+   "path": "/api",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 928
+  },
+  {
+   "path": "/api/v1",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 928
+  },
+  {
+   "path": "/.well-known/security.txt",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 928
+  }
+ ],
+ "pff.com": [
+  {
+   "path": "/robots.txt",
+   "status": 200,
+   "ct": "text/plain",
+   "bytes": 174
+  },
+  {
+   "path": "/sitemap.xml",
+   "status": 200,
+   "ct": "application/xml; charset=utf-8",
+   "bytes": 892
+  },
+  {
+   "path": "/sitemaps.xml",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 4395
+  },
+  {
+   "path": "/openapi.json",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 4405
+  },
+  {
+   "path": "/swagger.json",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 4384
+  },
+  {
+   "path": "/docs",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 4392
+  },
+  {
+   "path": "/api",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 4395
+  },
+  {
+   "path": "/api/v1",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 4385
+  },
+  {
+   "path": "/.well-known/security.txt",
+   "status": 404,
+   "ct": "text/html; charset=utf-8",
+   "bytes": 4387
+  }
+ ],
+ "sportradar.com": [
+  {
+   "path": "/robots.txt",
+   "status": 200,
+   "ct": "text/plain",
+   "bytes": 111
+  },
+  {
+   "path": "/sitemap.xml",
+   "status": 200,
+   "ct": "text/xml; charset=UTF-8",
+   "bytes": 781
+  },
+  {
+   "path": "/sitemaps.xml",
+   "status": 200,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 262731
+  },
+  {
+   "path": "/openapi.json",
+   "status": 200,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 262731
+  },
+  {
+   "path": "/swagger.json",
+   "status": 200,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 262731
+  },
+  {
+   "path": "/docs",
+   "status": 200,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 262731
+  },
+  {
+   "path": "/api",
+   "status": 200,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 215574
+  },
+  {
+   "path": "/api/v1",
+   "status": 200,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 262731
+  },
+  {
+   "path": "/.well-known/security.txt",
+   "status": 404,
+   "ct": "text/html",
+   "bytes": 155
+  }
+ ],
+ "lsports.eu": [
+  {
+   "path": "/robots.txt",
+   "status": 200,
+   "ct": "text/plain; charset=UTF-8",
+   "bytes": 378
+  },
+  {
+   "path": "/sitemap.xml",
+   "status": 200,
+   "ct": "text/xml; charset=UTF-8",
+   "bytes": 646
+  },
+  {
+   "path": "/sitemaps.xml",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 18946
+  },
+  {
+   "path": "/openapi.json",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 20360
+  },
+  {
+   "path": "/swagger.json",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 20360
+  },
+  {
+   "path": "/docs",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 20360
+  },
+  {
+   "path": "/api",
+   "status": 200,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 517185
+  },
+  {
+   "path": "/api/v1",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 20360
+  },
+  {
+   "path": "/.well-known/security.txt",
+   "status": 404,
+   "ct": "text/html; charset=UTF-8",
+   "bytes": 20360
+  }
+ ]
+}

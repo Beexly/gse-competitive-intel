@@ -1,0 +1,66 @@
+{
+  "domain": "birdievantage.com",
+  "type": "live-site",
+  "disposition": "live",
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "Data Golf-powered projections + strokes-gained",
+    "training_data": "Data Golf datasets",
+    "update_frequency": "NOT CONFIRMED",
+    "citation": "raw/probe2_birdievantage.txt"
+  },
+  "simulation_engine": {
+    "num_simulations": "10,000+ tournament simulations per slate (made-cut prob, finish distributions, floors/ceilings)",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "raw/probe2_birdievantage.txt"
+  },
+  "customer_pain": [],
+  "discovered_targets": [],
+  "tech_stack": {
+    "frontend": "Next.js on Vercel",
+    "backend": "NOT CONFIRMED",
+    "database": "NOT CONFIRMED",
+    "cloud": "Vercel",
+    "cdn": "Vercel",
+    "citations": [
+      "raw/probe2_birdievantage.txt"
+    ]
+  },
+  "pricing": {
+    "web": "completely free (positioning: 'same features paid tools charge $40-100+/month for, completely free'); $297 string present (likely legacy/offer)",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "raw/probe2_birdievantage.txt"
+    ]
+  },
+  "product_limits": {
+    "limits": "free golf DFS optimizer for DK/FD; course-fit, ownership leverage",
+    "upgrade_triggers": "NOT CONFIRMED",
+    "citation": "raw/probe2_birdievantage.txt"
+  },
+  "data_supply_chain": {
+    "vendors": [
+      "Data Golf (projections + strokes-gained source, named explicitly)"
+    ],
+    "citations": [
+      "raw/probe2_birdievantage.txt"
+    ]
+  },
+  "discovered_paths": [
+    "/"
+  ],
+  "discovery_metadata": {
+    "method": "fresh homepage probe (78KB)",
+    "timestamp": "2026-09-08T14:30:45.047151"
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed.",
+    "websocket_endpoints": [],
+    "rate_limits": "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed.",
+    "citations": [
+      "NOT CONFIRMED — section not populated during original extraction run; domain not re-probed."
+    ]
+  }
+}

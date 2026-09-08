@@ -1,0 +1,108 @@
+{
+ "domain": "github.com/tonyntran/fantasy-auction-assistant",
+ "type": "open-source-repo",
+ "tech_stack": {
+  "frontend": "React dashboard (dashboard/src, extension dir)",
+  "backend": "Python",
+  "database": "n/a",
+  "cloud": "n/a",
+  "cdn": "n/a",
+  "citations": [
+   "raw/gh-meta-tonyntran__fantasy-auction-assistant.json",
+   "raw/gh-tree-tonyntran__fantasy-auction-assistant.json"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "Sleeper + ESPN league APIs (import support, per README description)"
+  ],
+  "graphql_schema": "none",
+  "websocket_endpoints": [],
+  "rate_limits": "n/a (client-side lib)",
+  "citations": [
+   "raw/gh-tree-tonyntran__fantasy-auction-assistant.json"
+  ]
+ },
+ "extracted_formulas": [
+  {
+   "name": "VORP/FMV valuation + bid advice",
+   "where": "backend/projections.py, backend/models.py",
+   "evidence": "files in tree + README description 'AI-powered bid advice, VORP/FMV math'"
+  },
+  {
+   "name": "roster optimization with opponent modeling",
+   "where": "backend/roster_optimizer.py, backend/opponent_model.py",
+   "evidence": "files in tree"
+  }
+ ],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "n/a (research repo)",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Sleeper, ESPN"
+  ],
+  "citations": [
+   "raw/gh-tree-tonyntran__fantasy-auction-assistant.json"
+  ]
+ },
+ "product_limits": {
+  "limits": "open source, no caps",
+  "upgrade_triggers": "n/a",
+  "citation": "raw/gh-meta-tonyntran__fantasy-auction-assistant.json"
+ },
+ "pricing": {
+  "web": "free/open source",
+  "ios": "n/a",
+  "android": "n/a",
+  "citations": [
+   "raw/gh-meta-tonyntran__fantasy-auction-assistant.json"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  ".gitignore",
+  "LICENSE",
+  "OVERVIEW.md",
+  "README.md",
+  "backend",
+  "backend/.env.example",
+  "backend/adp.py",
+  "backend/ai_advisor.py",
+  "backend/config.py",
+  "backend/data",
+  "backend/data/sheet_2026.csv",
+  "backend/draft_plan.py",
+  "backend/engine.py",
+  "backend/event_store.py",
+  "backend/fuzzy_match.py",
+  "backend/grader.py",
+  "backend/keepers.py",
+  "backend/models.py",
+  "backend/nomination.py",
+  "backend/opponent_model.py",
+  "backend/player_news.py",
+  "backend/projections.py",
+  "backend/pyproject.toml",
+  "backend/requirements.txt",
+  "backend/roster_optimizer.py"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "stars": 1,
+  "license": "AGPL-3.0",
+  "archived": false,
+  "pushed_at": "2026-02-22T06:12:44Z",
+  "description": "Real-time fantasy football auction draft assistant — AI-powered bid advice, VORP/FMV math, and a live React dashboard, built for Sleeper (with ESPN support)",
+  "timestamp": "2026-09-08T14:07:11.916123"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

@@ -1,0 +1,95 @@
+{
+ "domain": "converge.market",
+ "tech_stack": {
+  "frontend": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw/b45_com_converge_market_home.txt"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b45_com_converge_market_home.txt",
+   "raw\\b45_com_converge_market_robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_converge_market_home.txt"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_converge_market_home.txt"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_converge_market_home.txt"
+  },
+  "citations": [
+   "raw\\b45_com_converge_market_home.txt",
+   "raw\\b45_com_converge_market_robots.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_converge_market_home.txt"
+  },
+  "citations": [
+   "raw\\b45_com_converge_market_home.txt",
+   "raw\\b45_com_converge_market_robots.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_converge_market_home.txt"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\b45_com_converge_market_home.txt"
+ },
+ "pricing": {
+  "web": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_converge_market_home.txt"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b45_com_converge_market_home.txt",
+   "raw\\b45_com_converge_market_robots.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Sitemap: /sitemap.xml"
+ ],
+ "discovered_targets": [
+  "NOT CONFIRMED"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:45.044410"
+ },
+ "disposition": "dead",
+ "_site_identity": {
+  "title": "NOT CONFIRMED",
+  "description": "NOT CONFIRMED"
+ }
+}

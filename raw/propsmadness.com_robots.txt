@@ -1,0 +1,8 @@
+URL: https://propsmadness.com/robots.txt\nSTATUS: 200\n\nUser-Agent: *
+Allow: /
+Disallow: /billing-portal
+Disallow: /premium
+Disallow: /success
+
+Sitemap: https://propsmadness.com/sitemap.xml
+Sitemap: https://propsmadness.com/help/sitemap.xml

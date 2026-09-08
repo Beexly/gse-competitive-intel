@@ -1,0 +1,114 @@
+{
+ "domain": "kairos.trade",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/px_kairos_trade_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_kairos_trade_home.raw",
+   "raw\\px_kairos_trade_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apis.com",
+    "wserconfig.xml",
+    "apis.com/css2"
+   ],
+   "citation": "raw/px_kairos_trade_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": [
+    "WebSocket"
+   ],
+   "citation": "raw/px_kairos_trade_home.raw"
+  },
+  "rate_limits": {
+   "value": "rate limit",
+   "citation": "raw/px_kairos_trade_home.raw"
+  },
+  "citations": [
+   "raw\\px_kairos_trade_home.raw",
+   "raw\\px_kairos_trade_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Kairos is the advanced trading terminal for prediction markets. One book across ' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "kalshi",
+    "polymarket",
+    "Kalshi",
+    "Polymarket"
+   ],
+   "citation": "raw/px_kairos_trade_home.raw"
+  },
+  "citations": [
+   "raw\\px_kairos_trade_home.raw",
+   "raw\\px_kairos_trade_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "rate limit"
+   ],
+   "citation": "raw/px_kairos_trade_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_kairos_trade_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "enterprise",
+    "Enterprise"
+   ],
+   "citation": "raw/px_kairos_trade_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_kairos_trade_home.raw",
+   "raw\\px_kairos_trade_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Disallow: /api/",
+  "Sitemap: https://kairos.trade/sitemap.xml"
+ ],
+ "discovered_targets": [
+  "apis.com",
+  "apis.com/css2",
+  "wserconfig.xml"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:05:53.465652"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Kairos - The Prediction Markets Trading Terminal",
+  "description": "Kairos is the advanced trading terminal for prediction markets. One book across Kalshi, Polymarket, and Predict.fun, with real-time data, pro order types, and low-latency execution."
+ }
+}

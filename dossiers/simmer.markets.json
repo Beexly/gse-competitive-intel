@@ -1,0 +1,100 @@
+{
+ "domain": "simmer.markets",
+ "tech_stack": {
+  "frontend": {
+   "value": "react",
+   "citation": "raw/px_simmer_markets_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_simmer_markets_home.raw",
+   "raw\\px_simmer_markets_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "https://api.simmer.markets"
+   ],
+   "citation": "raw/px_simmer_markets_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_simmer_markets_home.raw"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_simmer_markets_home.raw"
+  },
+  "citations": [
+   "raw\\px_simmer_markets_home.raw",
+   "raw\\px_simmer_markets_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Connect your AI agent to prediction markets. Autonomous trading on Polymarket an' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "Polymarket",
+    "Kalshi",
+    "polymarket"
+   ],
+   "citation": "raw/px_simmer_markets_home.raw"
+  },
+  "citations": [
+   "raw\\px_simmer_markets_home.raw",
+   "raw\\px_simmer_markets_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_simmer_markets_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_simmer_markets_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_simmer_markets_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_simmer_markets_home.raw",
+   "raw\\px_simmer_markets_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Disallow: /dashboard-v2"
+ ],
+ "discovered_targets": [
+  "https://api.simmer.markets"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:05:47.137024"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Simmer — Prediction Markets for the Agent Economy",
+  "description": "Connect your AI agent to prediction markets. Autonomous trading on Polymarket and Kalshi with installable trading skills."
+ }
+}

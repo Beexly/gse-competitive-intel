@@ -1,0 +1,166 @@
+URL: https://pydfs-lineup-optimizer.readthedocs.io/en/latest/custom-settings.html\nSTATUS: 200\n\n
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Custom Settings &#8212; pydfs-lineup-optimizer 2.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="canonical" href="https://pydfs-lineup-optimizer.readthedocs.io/en/latest/custom-settings.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Performance and Optimization" href="performance-and-optimization.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  
+<!-- RTD Extra Head -->
+
+
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "build_date": "2021-09-27T19:35:17Z", "builder": "sphinx", "canonical_url": null, "commit": "429db968", "docroot": "/docs/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "custom-settings", "programming_language": "py", "project": "pydfs-lineup-optimizer", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "alabaster", "user_analytics_code": "", "version": "latest"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+
+
+<!-- end RTD <extrahead> -->
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="pydfs-lineup-optimizer" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/custom-settings.html" /><meta name="readthedocs-http-status" content="200" /></head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="custom-settings">
+<span id="pydfs-lineup-optimizer-custom-settings"></span><h1>Custom Settings<a class="headerlink" href="#custom-settings" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="using-custom-settings">
+<h2>Using Custom Settings<a class="headerlink" href="#using-custom-settings" title="Permalink to this headline">¶</a></h2>
+<p>You can create custom settings for new sport or dfs site.
+For this, you should create a settings class inherited from <cite>BaseSettings</cite> class and provide all necessary information according to the rules you want.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pydfs_lineup_optimizer</span> <span class="kn">import</span> <span class="n">LineupOptimizer</span>
+<span class="kn">from</span> <span class="nn">pydfs_lineup_optimizer.settings</span> <span class="kn">import</span> <span class="n">BaseSettings</span><span class="p">,</span> <span class="n">LineupPosition</span>
+
+<span class="k">class</span> <span class="nc">CustomSettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="n">site</span> <span class="o">=</span> <span class="s1">&#39;Site Name&#39;</span>
+    <span class="n">sport</span> <span class="o">=</span> <span class="s1">&#39;Sport Name&#39;</span>
+    <span class="n">budget</span> <span class="o">=</span> <span class="mi">100</span>  <span class="c1"># budget you want to use</span>
+    <span class="n">max_from_one_team</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># if needed</span>
+    <span class="n">min_teams</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># if needed</span>
+    <span class="n">min_games</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># if needed</span>
+    <span class="n">csv_importer</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># If player will be imported using load_players_from_csv method</span>
+    <span class="n">positions</span> <span class="o">=</span> <span class="p">[</span>  <span class="c1"># list of all positions</span>
+        <span class="n">LineupPosition</span><span class="p">(</span><span class="s1">&#39;G&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;PG&#39;</span><span class="p">,</span> <span class="s1">&#39;SG&#39;</span><span class="p">)),</span>  <span class="c1"># First argument is name of position in lineup,</span>
+                                            <span class="c1"># second is allowed player positions for this lineup position</span>
+        <span class="c1"># etc</span>
+    <span class="p">]</span>
+
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">LineupOptimizer</span><span class="p">(</span><span class="n">CustomSettings</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">pydfs-lineup-optimizer</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html#export-lineups">Export lineups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html#adjusting-player-fantasy-points">Adjusting player fantasy points</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html#exclude-lineups">Exclude lineups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rules.html">Rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rules.html#stacking">Stacking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performance-and-optimization.html">Performance and Optimization</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Custom Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-custom-settings">Using Custom Settings</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="performance-and-optimization.html" title="previous chapter">Performance and Optimization</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Dima Kudosh.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/custom-settings.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

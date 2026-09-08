@@ -1,0 +1,31 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /keystatic/
+
+User-Agent: OAI-SearchBot
+User-Agent: ChatGPT-User
+User-Agent: Claude-SearchBot
+User-Agent: Claude-User
+User-Agent: PerplexityBot
+User-Agent: Perplexity-User
+User-Agent: Amzn-SearchBot
+User-Agent: Amzn-User
+User-Agent: Meta-ExternalFetcher
+Allow: /
+Disallow: /api/
+Disallow: /keystatic/
+
+User-Agent: GPTBot
+User-Agent: ClaudeBot
+User-Agent: Google-Extended
+User-Agent: Amazonbot
+User-Agent: Applebot-Extended
+User-Agent: meta-externalagent
+User-Agent: Bytespider
+User-Agent: CCBot
+Allow: /
+Disallow: /api/
+Disallow: /keystatic/
+
+Sitemap: https://sportsgameodds.com/sitemap.xml

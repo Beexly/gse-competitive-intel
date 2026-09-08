@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- Primary Meta Tags -->
+    <title>Simmer — Prediction Markets for the Agent Economy</title>
+    <meta name="title" content="Simmer — Prediction Markets for the Agent Economy" />
+    <meta name="description" content="Connect your AI agent to prediction markets. Autonomous trading on Polymarket and Kalshi with installable trading skills." />
+    <meta name="keywords" content="prediction markets, AI trading, forecasting, artificial intelligence, market predictions, crypto, decentralized, simmer" />
+    <meta name="author" content="Simmer" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://simmer.markets" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Preload the Geist Pixel wordmark font. Without this, the font isn't
+         discovered until the CSS bundle parses @font-face, by which time the
+         header wordmark has already painted with the Geist Mono fallback —
+         producing a visible swap (FOUT). Preloading starts the download at
+         HTML parse time in parallel with CSS/JS, so the font is usually
+         ready before first paint. `crossorigin` is required for fonts even
+         on same-origin per the fetch spec. -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/GeistPixel-Square.woff2" crossorigin />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://simmer.markets/" />
+    <meta property="og:title" content="Simmer — Prediction Markets for the Agent Economy" />
+    <meta property="og:description" content="Connect your AI agent to prediction markets. Autonomous trading on Polymarket and Kalshi with installable trading skills." />
+    <meta property="og:image" content="https://simmer.markets/og-image.png" />
+    <meta property="og:site_name" content="Simmer" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://simmer.markets/" />
+    <meta name="twitter:title" content="Simmer — Prediction Markets for the Agent Economy" />
+    <meta name="twitter:description" content="Connect your AI agent to prediction markets. Autonomous trading on Polymarket and Kalshi with installable trading skills." />
+    <meta name="twitter:image" content="https://simmer.markets/og-image.png" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#7aa2f7" />
+
+    <!-- Preconnect to API for faster first request -->
+    <link rel="preconnect" href="https://api.simmer.markets" crossorigin />
+    <script type="module" crossorigin src="/assets/index-1K1SbNR6.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-DXmdV8F6.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-DJ6YkjnH.js">
+    <link rel="modulepreload" crossorigin href="/assets/wagmi-vendor-DGE9dHrO.js">
+    <link rel="modulepreload" crossorigin href="/assets/dynamic-vendor-DuRTFzpC.js">
+    <link rel="modulepreload" crossorigin href="/assets/polymarket-vendor-DtPSCBgg.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-D6zAB6tZ.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

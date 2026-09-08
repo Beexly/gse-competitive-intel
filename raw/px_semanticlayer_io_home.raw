@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- HTML Meta Tags -->
+    <title>Semantic Layer</title>
+    <meta
+      name="description"
+      content="Semantic Layer is bringing better incentive alignment to dApps, enabling MEV internalization and sequencing sovereignty."
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://semanticlayer.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Semantic Layer" />
+    <meta
+      property="og:description"
+      content="Semantic Layer is bringing better incentive alignment to dApps, enabling MEV internalization and sequencing sovereignty."
+    />
+    <meta property="og:image" content="https://i.imgur.com/Zip0gc2.jpg" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="semanticlayer.io" />
+    <meta property="twitter:url" content="https://semanticlayer.io/" />
+    <meta name="twitter:title" content="Semantic Layer" />
+    <meta
+      name="twitter:description"
+      content="Semantic Layer is bringing better incentive alignment to dApps, enabling MEV internalization and sequencing sovereignty."
+    />
+    <meta name="twitter:image" content="https://i.imgur.com/Zip0gc2.jpg" />
+    <script type="module" crossorigin src="/assets/index-1f45ed82.js"></script>
+    <link rel="stylesheet" href="/assets/index-796a4ba3.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>

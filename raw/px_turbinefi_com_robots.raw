@@ -1,0 +1,123 @@
+User-Agent: *
+Allow: /
+Allow: /api/og/
+Allow: /strategies
+Allow: /research
+Allow: /backtest/
+Allow: /product/
+Disallow: /api/
+Disallow: /account
+
+User-Agent: GPTBot
+Allow: /
+Allow: /docs/
+Allow: /pricing
+Allow: /studio
+Allow: /blog/
+Allow: /strategies
+Allow: /research
+Allow: /backtest/
+Allow: /product/
+Disallow: /api/
+Disallow: /account
+
+User-Agent: ChatGPT-User
+Allow: /
+Allow: /docs/
+Allow: /pricing
+Allow: /studio
+Allow: /blog/
+Allow: /strategies
+Allow: /research
+Allow: /backtest/
+Allow: /product/
+Disallow: /api/
+Disallow: /account
+
+User-Agent: OAI-SearchBot
+Allow: /
+Allow: /docs/
+Allow: /pricing
+Allow: /blog/
+Allow: /strategies
+Allow: /research
+Allow: /backtest/
+Allow: /product/
+Disallow: /api/
+Disallow: /account
+
+User-Agent: PerplexityBot
+Allow: /
+Allow: /docs/
+Allow: /pricing
+Allow: /studio
+Allow: /blog/
+Allow: /strategies
+Allow: /research
+Allow: /backtest/
+Allow: /product/
+Disallow: /api/
+Disallow: /account
+
+User-Agent: ClaudeBot
+Allow: /
+Allow: /docs/
+Allow: /pricing
+Allow: /studio
+Allow: /blog/
+Allow: /strategies
+Allow: /research
+Allow: /backtest/
+Allow: /product/
+Disallow: /api/
+Disallow: /account
+
+User-Agent: Applebot-Extended
+Allow: /
+Allow: /docs/
+Allow: /pricing
+Allow: /studio
+Allow: /blog/
+Allow: /strategies
+Allow: /research
+Allow: /backtest/
+Allow: /product/
+Disallow: /api/
+Disallow: /account
+
+User-Agent: GoogleOther
+Allow: /
+Allow: /docs/
+Allow: /pricing
+Allow: /studio
+Allow: /blog/
+Allow: /strategies
+Allow: /research
+Allow: /backtest/
+Allow: /product/
+Disallow: /api/
+Disallow: /account
+
+User-Agent: Google-Extended
+Allow: /
+Allow: /docs/
+Allow: /pricing
+Allow: /studio
+Allow: /blog/
+Allow: /strategies
+Allow: /research
+Allow: /backtest/
+Allow: /product/
+Disallow: /api/
+Disallow: /account
+
+User-Agent: CCBot
+Disallow: /
+
+User-Agent: anthropic-ai
+Disallow: /
+
+User-Agent: cohere-ai
+Disallow: /
+
+Sitemap: https://www.turbinefi.com/sitemap.xml

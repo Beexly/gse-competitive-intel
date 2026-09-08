@@ -1,0 +1,123 @@
+{
+ "domain": "predictionhunt.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/px_predictionhunt_com_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_predictionhunt_com_home.raw",
+   "raw\\px_predictionhunt_com_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "ws.com/override_images/Tennis-US_Open.webp",
+    "ws.com/override_images/sports/Baseball-MLB-Game.webp",
+    "ws.com/override_images/core/Election-Texas.webp",
+    "ws.com/override_images/core/Government_Congress.webp",
+    "ws.com/market-images/KXBOND-30-CAL.jpg",
+    "ws.com/structured_icons/dark_diamond.webp"
+   ],
+   "citation": "raw/px_predictionhunt_com_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_predictionhunt_com_home.raw"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_predictionhunt_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_predictionhunt_com_home.raw",
+   "raw\\px_predictionhunt_com_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Compare prediction market odds across Kalshi, Polymarket, PredictIt, and Prophet' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "kalshi",
+    "polymarket",
+    "Kalshi",
+    "Polymarket"
+   ],
+   "citation": "raw/px_predictionhunt_com_home.raw"
+  },
+  "citations": [
+   "raw\\px_predictionhunt_com_home.raw",
+   "raw\\px_predictionhunt_com_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_predictionhunt_com_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_predictionhunt_com_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "Free",
+    "free"
+   ],
+   "citation": "raw/px_predictionhunt_com_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_predictionhunt_com_home.raw",
+   "raw\\px_predictionhunt_com_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /"
+ ],
+ "discovered_targets": [
+  "ws.com/market-images/KXBOND-30-CAL.jpg",
+  "ws.com/override_images/Tennis-US_Open.webp",
+  "ws.com/override_images/core/Election-Texas.webp",
+  "ws.com/override_images/core/Government_Congress.webp",
+  "ws.com/override_images/sports/Baseball-MLB-Game.webp",
+  "ws.com/structured_icons/dark_diamond.webp"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:07.419601"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Prediction Hunt - Compare Odds Across Every Platform",
+  "description": "Compare prediction market odds across Kalshi, Polymarket, PredictIt, and ProphetX. Live arbitrage alerts and cross-platform price comparison."
+ }
+}

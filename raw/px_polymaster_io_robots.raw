@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /profile/
+Disallow: /billing/
+Disallow: /api/
+Disallow: /auth/
+Disallow: /agents/
+Disallow: /notifications/
+
+Sitemap: https://polymaster.io/sitemap.xml

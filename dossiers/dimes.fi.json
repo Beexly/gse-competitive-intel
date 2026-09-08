@@ -1,0 +1,126 @@
+{
+ "domain": "dimes.fi",
+ "tech_stack": {
+  "frontend": {
+   "value": "live site, framework unclear",
+   "citation": "raw/dimes.fi.html"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\dimes.fi.html",
+   "raw\\dimes.fi.robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apis.com",
+    "apis.com/css2",
+    "wser-window.visible",
+    "wser-dot.red",
+    "wser-dot.yel",
+    "wser-dot.grn"
+   ],
+   "citation": "raw/dimes.fi.html"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": [
+    "WebSocket"
+   ],
+   "citation": "raw/dimes.fi.html"
+  },
+  "rate_limits": {
+   "value": "credit",
+   "citation": "raw/dimes.fi.html"
+  },
+  "citations": [
+   "raw\\dimes.fi.html",
+   "raw\\dimes.fi.robots.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "Polymarket",
+    "Kalshi"
+   ],
+   "citation": "raw/dimes.fi.html"
+  },
+  "citations": [
+   "raw\\dimes.fi.html",
+   "raw\\dimes.fi.robots.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "credit",
+    "Credit"
+   ],
+   "citation": "raw/dimes.fi.html"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\dimes.fi.html"
+ },
+ "pricing": {
+  "web": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\dimes.fi.html"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\dimes.fi.html",
+   "raw\\dimes.fi.robots.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /",
+  "Sitemap: https://dimes.fi/sitemap.xml",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /",
+  "Allow: /"
+ ],
+ "discovered_targets": [
+  "apis.com",
+  "apis.com/css2",
+  "apital.com/",
+  "rest.split",
+  "wser-dot.grn",
+  "wser-dot.red",
+  "wser-dot.yel",
+  "wser-window.visible"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:45.639384"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Dimes · PM leverage",
+  "description": "NOT CONFIRMED"
+ }
+}

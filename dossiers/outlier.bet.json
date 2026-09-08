@@ -1,0 +1,84 @@
+{
+ "tech_stack": {
+  "frontend": "React/Redux SPA (redux-toolkit refs in bundle)",
+  "backend": "api.outlier.bet REST + possible graphql endpoint",
+  "database": "NOT CONFIRMED",
+  "cloud": "AWS (aws-amplify SDK in bundle -> Cognito auth)",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/outlier_bet_ext_app_index.js",
+   "raw/outlier_bet_ext_app_main.js",
+   "raw/outlier-js-endpoint-mine.json"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   "api.outlier.bet (own API host, bundle-mined)",
+   "/llms.txt (200)",
+   "/agents.json (200, agents-txt v1.0)"
+  ],
+  "graphql_schema": "NOT CONFIRMED (graphql refs in bundle belong to ReferralSaaSquatch SDK, not Outlier's API)",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/outlier_bet_ext_agents.json.body.txt",
+   "raw/outlier_bet_ext_agents.txt.body.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "sportsbook odds comparison (own collection)"
+  ],
+  "citations": [
+   "raw/outlier_bet_ext_agents.json.body.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "none"
+ },
+ "pricing": {
+  "web": "subscription; App Store listing captured raw/outlier_bet_ext_appstore_page.html",
+  "ios": "App Store id6443885102 (bundle constant)",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/outlier_bet_ext_appstore_page.html"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/llms.txt",
+  "/agents.json",
+  "/api/v1/ (api.outlier.bet)",
+  "/sports-betting-strategy/positive-ev-betting"
+ ],
+ "discovered_targets": [],
+ "domain": "outlier.bet",
+ "discovery_metadata": {
+  "method": "direct HTTP probes + raw evidence extraction (self-run)",
+  "timestamp": "2026-09-08"
+ },
+ "vendor_integrations": {
+  "auth": "AWS Amplify/Cognito",
+  "analytics": "Mixpanel",
+  "support": "Intercom",
+  "referrals": "ReferralSaaSquatch (its /api/v1/<tenant>/graphql + /widget/account endpoints appear in bundle — SaaS vendor, not Outlier)",
+  "citations": [
+   "raw/outlier-js-endpoint-mine.json"
+  ]
+ },
+ "disposition": "live (derived from 17 raw evidence files)"
+}

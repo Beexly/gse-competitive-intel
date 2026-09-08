@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y85QZ2XHK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7Y85QZ2XHK');
+    </script>
+    <title>polymarket.tips — Track Top Polymarket Traders & Live Convergence Signals</title>
+    <meta name="description" content="Follow the top 50 Polymarket traders by verified PnL. Get real-time convergence signals when smart money aligns. Free." />
+    <meta name="author" content="polymarket.tips" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://polymarket.tips" />
+    <meta property="og:title" content="polymarket.tips — Track Top Polymarket Traders & Live Convergence Signals" />
+    <meta property="og:description" content="Follow the top 50 Polymarket traders by verified PnL. Get real-time convergence signals when smart money aligns. Free." />
+    <meta property="og:image" content="https://polymarket.tips/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="polymarket.tips" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@PolymarketTips" />
+    <meta name="twitter:title" content="polymarket.tips — Track Top Polymarket Traders & Live Convergence Signals" />
+    <meta name="twitter:description" content="Follow the top 50 Polymarket traders by verified PnL. Get real-time convergence signals when smart money aligns. Free." />
+    <meta name="twitter:image" content="https://polymarket.tips/og-image.png" />
+    <meta name="theme-color" content="#0d1117" />
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png">
+    <link rel="dns-prefetch" href="//kfiizygdnlgffjdyzfxj.supabase.co" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Polymarket Tips",
+      "url": "https://polymarket.tips",
+      "description": "Track the top 50 Polymarket traders in real-time. Convergence signals when smart money aligns.",
+      "applicationCategory": "FinanceApplication"
+    }
+    </script>
+    <!-- Static SEO content for crawlers -->
+    <noscript>
+      <style>.js-only{display:none}</style>
+    </noscript>
+    <script type="module" crossorigin src="/assets/main-BLtnNcXB.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-BL3c5hou.css">
+  <script defer src="/~flock.js" data-proxy-url="/~api/analytics"></script></head>
+  <body>
+    <div id="root">
+      <!-- Pre-rendered SEO content visible to crawlers before JS executes -->
+      <div style="max-width:1280px;margin:0 auto;padding:2rem;color:#e6edf3;background:#0d1117;font-family:system-ui,sans-serif">
+        <h1>Top Trader Intelligence</h1>
+        <p>Track the highest-performing Polymarket traders. Get convergence signals when smart money aligns.</p>
+        <h2>Convergence Signals</h2>
+        <p>When 3+ top traders take the same position on a market, a convergence signal fires. These signals highlight where smart money is aligning in real-time.</p>
+        <h2>Trader Leaderboard</h2>
+        <p>The top 50 Polymarket traders ranked by performance, win rate, and volume. Follow their trades and get alerts when they move.</p>
+      </div>
+    </div>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"d1b3bee04a584daaa842b789b8c01cfc","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

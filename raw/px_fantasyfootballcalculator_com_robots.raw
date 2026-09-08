@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /api/
+Disallow: /ajax/
+Disallow: /ajax-v2/
+Disallow: /import/
+Disallow: /adp/csv/
+Disallow: /draft/
+Disallow: /rate-my-team/results/
+Disallow: /rankings/custom/
+
+Sitemap: https://fantasyfootballcalculator.com/sitemap.xml

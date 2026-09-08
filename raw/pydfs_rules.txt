@@ -1,0 +1,385 @@
+URL: https://pydfs-lineup-optimizer.readthedocs.io/en/latest/rules.html\nSTATUS: 200\n\n
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Rules &#8212; pydfs-lineup-optimizer 2.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="canonical" href="https://pydfs-lineup-optimizer.readthedocs.io/en/latest/rules.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Performance and Optimization" href="performance-and-optimization.html" />
+    <link rel="prev" title="Usage" href="usage.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  
+<!-- RTD Extra Head -->
+
+
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "build_date": "2021-09-27T19:35:17Z", "builder": "sphinx", "canonical_url": null, "commit": "429db968", "docroot": "/docs/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "rules", "programming_language": "py", "project": "pydfs-lineup-optimizer", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "alabaster", "user_analytics_code": "", "version": "latest"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+
+
+<!-- end RTD <extrahead> -->
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="pydfs-lineup-optimizer" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/rules.html" /><meta name="readthedocs-http-status" content="200" /></head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="rules">
+<span id="pydfs-lineup-optimizer-constraints"></span><h1>Rules<a class="headerlink" href="#rules" title="Permalink to this headline">¶</a></h1>
+<p><strong>pydfs-lineup-optimizer</strong> allows you to set custom rules for optimizer. It has following rules:</p>
+<ul class="simple">
+<li>Number of players from same team.</li>
+<li>Number of specific positions.</li>
+<li>Minimum salary cap.</li>
+<li>Maximum repeating players.</li>
+<li>Ownership projection constraint.</li>
+<li>Restrict players from opposing team</li>
+<li>Restrict players from same team</li>
+<li>Force players from opposing team</li>
+<li>Spacing for positions</li>
+<li>Total teams</li>
+<li>Minimum starters</li>
+<li>Teams exposures</li>
+<li>Stacking rules</li>
+</ul>
+<div class="section" id="number-of-players-from-same-team">
+<h2>Number of players from same team<a class="headerlink" href="#number-of-players-from-same-team" title="Permalink to this headline">¶</a></h2>
+<p>For setting number of players from same team rule you should call <cite>set_players_from_one_team</cite> method of optimizer.
+It accepts dict where key is a team name and value is number of players for this team.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">set_players_from_one_team</span><span class="p">({</span><span class="s1">&#39;OKC&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="number-of-specific-positions">
+<h2>Number of specific positions<a class="headerlink" href="#number-of-specific-positions" title="Permalink to this headline">¶</a></h2>
+<p>For setting specific players positions for multi-position slots optimizer has <cite>set_players_with_same_position</cite> method.
+It accepts dict where key is a position name and value is number of players with this position.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">set_players_with_same_position</span><span class="p">({</span><span class="s1">&#39;PG&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Positions rule hasn’t effect for dfs sites without multi-position slots(G, UTIL, etc.)</p>
+</div>
+</div>
+<div class="section" id="minimum-salary-cap">
+<h2>Minimum salary cap<a class="headerlink" href="#minimum-salary-cap" title="Permalink to this headline">¶</a></h2>
+<p>You can set minimum salaries cap using <cite>set_min_salary_cap</cite> method. If you set min salary cap greater than maximum budget <cite>LineupOptimizerException</cite> will be raised.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">set_min_salary_cap</span><span class="p">(</span><span class="mi">49000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="maximum-repeating-players">
+<h2>Maximum repeating players<a class="headerlink" href="#maximum-repeating-players" title="Permalink to this headline">¶</a></h2>
+<p>If you want to make more random lineups you can use <cite>set_max_repeating_players</cite> method.
+This method adds constraint that restrict players combinations that used in previous lineup.
+It accepts only one argument: number of maximum repeating players.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">set_max_repeating_players</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ownership-projections-constraint">
+<h2>Ownership projections constraint<a class="headerlink" href="#ownership-projections-constraint" title="Permalink to this headline">¶</a></h2>
+<p>If you want to avoid a lot of highly-owned players in your lineups you can use <cite>set_projected_ownership</cite> method.
+This method working with player <cite>projected_ownership</cite> field, so if you want to use this rule you should set this
+field for players before creating lineups. Optimizer’s <cite>set_projected_ownership</cite> method accepts 2 arguments <cite>min_projected_ownership</cite>
+and <cite>max_projected_ownership</cite> that are max/min percent of average ownership in generated lineup.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">players</span><span class="p">:</span>
+    <span class="n">player</span><span class="o">.</span><span class="n">projected_ownership</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">set_projected_ownership</span><span class="p">(</span><span class="n">max_projected_ownership</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If you don’t specify <cite>projected_ownership</cite> for some players this players will not used in calculating lineup average
+ownership, but they can appear in result lineup.</p>
+</div>
+<div class="section" id="restrict-players-from-opposing-team">
+<h2>Restrict players from opposing team<a class="headerlink" href="#restrict-players-from-opposing-team" title="Permalink to this headline">¶</a></h2>
+<p>In some cases you would want to restrict creating of lineup with players from opposing teams,
+for example prevent of pitchers and hitters from same game. For this you can use <cite>restrict_positions_for_opposing_team</cite>
+method of optimizer, it accepts 2 arguments with list of positions for one team and list of positions for another and
+optional argument that specify max allowed players from opposing team. By default this argument is 0 but you can change
+it in some cases. For example if you participate in tournament with a few games.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">restrict_positions_for_opposing_team</span><span class="p">([</span><span class="s1">&#39;P&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;SS&#39;</span><span class="p">,</span> <span class="s1">&#39;OF&#39;</span><span class="p">,</span> <span class="s1">&#39;1B&#39;</span><span class="p">,</span> <span class="s1">&#39;2B&#39;</span><span class="p">,</span> <span class="s1">&#39;3B&#39;</span><span class="p">])</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">restrict_positions_for_opposing_team</span><span class="p">([</span><span class="s1">&#39;P&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;SS&#39;</span><span class="p">,</span> <span class="s1">&#39;OF&#39;</span><span class="p">,</span> <span class="s1">&#39;1B&#39;</span><span class="p">,</span> <span class="s1">&#39;2B&#39;</span><span class="p">,</span> <span class="s1">&#39;3B&#39;</span><span class="p">],</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># 1 hitter from opposing team is allowed</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This constraint works only when players has information about upcoming game and their opponents,
+in other case <cite>LineupOptimizerException</cite> will be raised. So it will not work in FantasyDraft
+(because they doesn’t provide information about opponents) and if you write your custom players importer and
+don’t pass <cite>game_info</cite> parameter in players constructors.</p>
+</div>
+</div>
+<div class="section" id="restrict-players-from-same-team">
+<h2>Restrict players from same team<a class="headerlink" href="#restrict-players-from-same-team" title="Permalink to this headline">¶</a></h2>
+<p>In some cases you would want to restrict creating of lineup with players from same team,
+for example prevent of 2 RB from same team. For this you can use <cite>restrict_positions_for_same_team</cite>
+method of optimizer, it takes tuples with 2 positions.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">restrict_positions_for_same_team</span><span class="p">((</span><span class="s1">&#39;RB&#39;</span><span class="p">,</span> <span class="s1">&#39;RB&#39;</span><span class="p">))</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">restrict_positions_for_same_team</span><span class="p">((</span><span class="s1">&#39;QB&#39;</span><span class="p">,</span> <span class="s1">&#39;DST&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;RB&#39;</span><span class="p">,</span> <span class="s1">&#39;DST&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="force-players-from-opposing-team">
+<h2>Force players from opposing team<a class="headerlink" href="#force-players-from-opposing-team" title="Permalink to this headline">¶</a></h2>
+<p>If you want to force players from opposing team
+you can use <cite>force_positions_for_opposing_team</cite> rule,
+it takes tuples with 2 positions.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">force_positions_for_opposing_team</span><span class="p">((</span><span class="s1">&#39;QB&#39;</span><span class="p">,</span> <span class="s1">&#39;WR&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="spacing-for-positions">
+<h2>Spacing for positions<a class="headerlink" href="#spacing-for-positions" title="Permalink to this headline">¶</a></h2>
+<p>For some sports like baseball it can be useful to select players based on lineup ordering (batters hit order).
+This rule allow you to select players close to each other according to lineup order.
+For example if you want to restrict optimizer to select players within specific range.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">set_spacing_for_positions</span><span class="p">([</span><span class="s1">&#39;1B&#39;</span><span class="p">,</span> <span class="s1">&#39;2B&#39;</span><span class="p">,</span> <span class="s1">&#39;3B&#39;</span><span class="p">],</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># This will select players close to each other in range of 3 spots. 1-3, 2-4, 3-5 etc.</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Because dfs sites doesn’t provide information about batters hit order you should add additional column “Roster Order” where you can set this order,
+or specify it in Player objects using roster_order attribute. In other case this rule will be ignored.</p>
+</div>
+</div>
+<div class="section" id="total-teams">
+<h2>Total teams<a class="headerlink" href="#total-teams" title="Permalink to this headline">¶</a></h2>
+<p>You can control the total number of teams used in lineups using <cite>set_total_teams</cite> method.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">set_total_teams</span><span class="p">(</span><span class="n">min_teams</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>  <span class="c1"># At least 4 teams should be in the lineup</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">set_total_teams</span><span class="p">(</span><span class="n">max_teams</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>  <span class="c1"># Maximum 6 teams should be in the lineup</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">set_total_teams</span><span class="p">(</span><span class="n">min_teams</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">max_teams</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>  <span class="c1"># 5 or 6 teams should be in the lineup</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">set_total_teams</span><span class="p">(</span><span class="n">min_teams</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">max_teams</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># Exact 5 teams should be in the lineup</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="minimum-starters">
+<h2>Minimum starters<a class="headerlink" href="#minimum-starters" title="Permalink to this headline">¶</a></h2>
+<p>You can force optimizer to choose minimum number of starters using <cite>set_min_starters</cite> method.
+For marking player as starter you can set <cite>is_confirmed_starter</cite> attribute of Player object to True or
+add <cite>Confirmed Starter</cite> column to csv.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">set_min_starters</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="teams-exposures">
+<h2>Teams exposures<a class="headerlink" href="#teams-exposures" title="Permalink to this headline">¶</a></h2>
+<p>You can set max exposures for each team it means that players from teams can be used only in a limited number of lineups.
+The team counted as used in the lineup if at least one player from it is in the lineup.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">set_teams_max_exposures</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>  <span class="c1"># Set 0.5 exposure for all teams</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">set_teams_max_exposures</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">exposures_by_team</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;NYY&#39;</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">})</span>  <span class="c1"># Set 0.5 exposure for all teams except NYY and 0.8 exposure for NYY</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">set_teams_max_exposures</span><span class="p">(</span><span class="n">exposures_by_team</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;NYY&#39;</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">})</span>  <span class="c1"># Set 0.5 exposure only for NYY</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">set_teams_max_exposures</span><span class="p">(</span><span class="n">exposures_by_team</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;NYY&#39;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">&#39;NYM&#39;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">},</span> <span class="n">exposure_strategy</span><span class="o">=</span><span class="n">AfterEachExposureStrategy</span><span class="p">)</span>  <span class="c1"># Use another exposure strategy</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="stacking">
+<h1>Stacking<a class="headerlink" href="#stacking" title="Permalink to this headline">¶</a></h1>
+<p><strong>pydfs-lineup-optimizer</strong> allows you to set stacking for lineups based on different rules.
+For this you should pass your stack object to <cite>add_stack</cite> method of optimizer.
+Here is a list of available types of stacks:</p>
+<div class="section" id="team-stack">
+<h2>Team stack<a class="headerlink" href="#team-stack" title="Permalink to this headline">¶</a></h2>
+<p>You can set how many players from the same team will be in the lineup, for this you can use <cite>TeamStack</cite>.
+Here are examples of using it:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">TeamStack</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># stack 3 players</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">TeamStack</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">for_teams</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;NE&#39;</span><span class="p">,</span> <span class="s1">&#39;BAL&#39;</span><span class="p">,</span> <span class="s1">&#39;KC&#39;</span><span class="p">]))</span>  <span class="c1"># stack 3 players from any of specified teams</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">TeamStack</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">for_positions</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;QB&#39;</span><span class="p">,</span> <span class="s1">&#39;WR&#39;</span><span class="p">,</span> <span class="s1">&#39;TE&#39;</span><span class="p">]))</span>  <span class="c1"># stack 3 players with any of specified positions</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">TeamStack</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">spacing</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>  <span class="c1"># stack 3 players close to each other in range of 2 spots.</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">TeamStack</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">max_exposure</span><span class="o">=</span><span class="mf">0.5</span><span class="p">))</span>  <span class="c1"># stack 3 players from same team with 0.5 exposure for all team stacks</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">TeamStack</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">max_exposure</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">max_exposure_per_team</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;MIA&#39;</span><span class="p">:</span> <span class="mf">0.6</span><span class="p">}))</span>  <span class="c1"># stack 3 players from same team with 0.5 exposure for all team stacks and 0.6 exposure for MIA</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="positions-stack">
+<h2>Positions stack<a class="headerlink" href="#positions-stack" title="Permalink to this headline">¶</a></h2>
+<p>You also can add a stack with a known list of positions for players used in the stack.
+Here are examples of using it:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">PositionsStack</span><span class="p">([</span><span class="s1">&#39;QB&#39;</span><span class="p">,</span> <span class="s1">&#39;WR&#39;</span><span class="p">]))</span>  <span class="c1"># stack QB and WR from same team</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">PositionsStack</span><span class="p">([</span><span class="s1">&#39;QB&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;WR&#39;</span><span class="p">,</span> <span class="s1">&#39;TE&#39;</span><span class="p">)]))</span>  <span class="c1"># stack QB and WR or TE from same team</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">PositionsStack</span><span class="p">([</span><span class="s1">&#39;QB&#39;</span><span class="p">,</span> <span class="s1">&#39;WR&#39;</span><span class="p">],</span> <span class="n">for_teams</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;NO&#39;</span><span class="p">,</span> <span class="s1">&#39;MIA&#39;</span><span class="p">,</span> <span class="s1">&#39;KC&#39;</span><span class="p">]))</span>  <span class="c1"># stack QB and WR for one of provided teams</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">PositionsStack</span><span class="p">([</span><span class="s1">&#39;QB&#39;</span><span class="p">,</span> <span class="s1">&#39;WR&#39;</span><span class="p">],</span> <span class="n">max_exposure</span><span class="o">=</span><span class="mf">0.5</span><span class="p">))</span>  <span class="c1"># stack QB and WR with 0.5 exposure for all team stacks</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">PositionsStack</span><span class="p">([</span><span class="s1">&#39;QB&#39;</span><span class="p">,</span> <span class="s1">&#39;WR&#39;</span><span class="p">],</span> <span class="n">max_exposure</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">max_exposure_per_team</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;MIA&#39;</span><span class="p">:</span> <span class="mf">0.6</span><span class="p">}))</span>  <span class="c1"># stack QB and WR  with 0.5 exposure for all team stacks and 0.6 exposure for MIA</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="game-stack">
+<h2>Game stack<a class="headerlink" href="#game-stack" title="Permalink to this headline">¶</a></h2>
+<p>You can set how many players from the same game will be in the lineup, for this you can use <cite>GameStack</cite>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">GameStack</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># stack 3 players from the same game</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">GameStack</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">min_from_team</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>  <span class="c1"># stack 5 players from the same game, 3 from one team and 2 from another</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="custom-stack">
+<h2>Custom stack<a class="headerlink" href="#custom-stack" title="Permalink to this headline">¶</a></h2>
+<p>You can create your custom stacks as well. Here is example of creating custom stack so optimizer will
+create lineups with Rodgers/Adams or Brees/Thomas duos with 0.5 exposure:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rodgers_adams_group</span> <span class="o">=</span> <span class="n">PlayersGroup</span><span class="p">(</span><span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">get_players</span><span class="p">(</span><span class="s1">&#39;Aaron Rodgers&#39;</span><span class="p">,</span> <span class="s1">&#39;Davante Adams&#39;</span><span class="p">),</span> <span class="n">max_exposure</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">brees_thomas_group</span> <span class="o">=</span> <span class="n">PlayersGroup</span><span class="p">(</span><span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">get_players</span><span class="p">(</span><span class="s1">&#39;Drew Brees&#39;</span><span class="p">,</span> <span class="s1">&#39;Michael Thomas&#39;</span><span class="p">),</span> <span class="n">max_exposure</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_stack</span><span class="p">(</span><span class="n">Stack</span><span class="p">([</span><span class="n">rodgers_adams_group</span><span class="p">,</span> <span class="n">brees_thomas_group</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="group-players">
+<h2>Group players<a class="headerlink" href="#group-players" title="Permalink to this headline">¶</a></h2>
+<p>You can group players in your lineups using <cite>add_players_group</cite> method of the optimizer.
+Here is an example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">group</span> <span class="o">=</span> <span class="n">PlayersGroup</span><span class="p">(</span><span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">get_players</span><span class="p">(</span><span class="s1">&#39;LeBron James&#39;</span><span class="p">,</span> <span class="s1">&#39;Anthony Davis&#39;</span><span class="p">))</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_players_group</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can use this method for ungrouping players as well. In this example maximum of one player will be in the lineup.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">group</span> <span class="o">=</span> <span class="n">PlayersGroup</span><span class="p">(</span><span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">get_players</span><span class="p">(</span><span class="s1">&#39;LeBron James&#39;</span><span class="p">,</span> <span class="s1">&#39;Anthony Davis&#39;</span><span class="p">),</span> <span class="n">max_from_group</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_players_group</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Also you can apply these groups conditionally based on another player selection.
+In the example below one of Travis Kelce or Tyreek Hill will be added to the lineup only with Patrick Mahomes or none of them will be added to the lineup.
+You can allow generating lineups with the provided group when the dependent player is not in the lineup,
+for this you can set optional argument <cite>strict_depend</cite> to <cite>False</cite>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">group</span> <span class="o">=</span> <span class="n">PlayersGroup</span><span class="p">(</span>
+    <span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">get_players</span><span class="p">(</span><span class="s1">&#39;Tyreek Hill&#39;</span><span class="p">,</span> <span class="s1">&#39;Travis Kelce&#39;</span><span class="p">),</span>
+    <span class="n">max_from_group</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">depends_on</span><span class="o">=</span><span class="n">optimizer</span><span class="o">.</span><span class="n">player_pool</span><span class="o">.</span><span class="n">get_player_by_name</span><span class="p">(</span><span class="s1">&#39;Patrick Mahomes&#39;</span><span class="p">),</span>
+    <span class="n">strict_depend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># if you want to generate lineups with Hill/Kelce but without Mahomes</span>
+<span class="p">)</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">add_players_group</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">pydfs-lineup-optimizer</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html#export-lineups">Export lineups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html#adjusting-player-fantasy-points">Adjusting player fantasy points</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html#exclude-lineups">Exclude lineups</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Rules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#number-of-players-from-same-team">Number of players from same team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#number-of-specific-positions">Number of specific positions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#minimum-salary-cap">Minimum salary cap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#maximum-repeating-players">Maximum repeating players</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ownership-projections-constraint">Ownership projections constraint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#restrict-players-from-opposing-team">Restrict players from opposing team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#restrict-players-from-same-team">Restrict players from same team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#force-players-from-opposing-team">Force players from opposing team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spacing-for-positions">Spacing for positions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#total-teams">Total teams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#minimum-starters">Minimum starters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#teams-exposures">Teams exposures</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#stacking">Stacking</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#team-stack">Team stack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#positions-stack">Positions stack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#game-stack">Game stack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-stack">Custom stack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#group-players">Group players</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="performance-and-optimization.html">Performance and Optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-settings.html">Custom Settings</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="usage.html" title="previous chapter">Usage</a></li>
+      <li>Next: <a href="performance-and-optimization.html" title="next chapter">Performance and Optimization</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Dima Kudosh.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/rules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

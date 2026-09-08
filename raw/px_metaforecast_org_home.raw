@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang='en' class=''>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+  <title>The Quantified Uncertainty Research Institute Blog</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+  
+<link rel='preconnect' href='https://fonts.gstatic.com'>
+
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+
+<link rel='preload' as='style' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap'>
+<link rel='preload' as='style' href='https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap'>
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap' media='print' onload="this.media='all'">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap' media='print' onload="this.media='all'">  <style>
+@charset "UTF-8";/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}:root{--color-mode:"light";--color-brand:var(--ghost-accent-color);--color-white:#FFFFFF;--color-dark:#000C2D;--color-text:#000C2D;--color-gray:#4F525F;--color-error:#CD3D64;--color-success:#09815C;--color-border:#D2D2D7;--bg-color:var(--color-white);--bg-gray:#EEF1F0;--bg-white:var(--color-white);--bg-transparent:rgba(255, 255, 255, .7);--bg-post-card:var(--bg-white);--bg-tag-list:linear-gradient(to left, var(--bg-color), rgba(255, 255, 255, 0));--icon-sun:url('data:image/svg+xml,  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">    <path d="M18 12c0-0.811-0.161-1.587-0.455-2.295-0.304-0.735-0.75-1.395-1.303-1.948-0.552-0.552-1.213-0.998-1.948-1.303-0.707-0.293-1.483-0.454-2.294-0.454s-1.587 0.161-2.295 0.455c-0.735 0.304-1.395 0.75-1.948 1.302s-0.998 1.213-1.302 1.948c-0.294 0.708-0.455 1.484-0.455 2.295s0.161 1.587 0.455 2.295c0.304 0.735 0.75 1.395 1.303 1.948 0.552 0.552 1.213 0.998 1.948 1.303 0.707 0.293 1.483 0.454 2.294 0.454s1.587-0.161 2.295-0.455c0.735-0.304 1.395-0.75 1.948-1.303s0.998-1.213 1.303-1.948c0.293-0.707 0.454-1.483 0.454-2.294zM16 12c0 0.544-0.108 1.060-0.303 1.529-0.202 0.489-0.5 0.929-0.869 1.299s-0.81 0.667-1.299 0.869c-0.469 0.195-0.985 0.303-1.529 0.303s-1.060-0.108-1.529-0.303c-0.489-0.202-0.929-0.5-1.299-0.869s-0.667-0.81-0.869-1.299c-0.195-0.469-0.303-0.985-0.303-1.529s0.108-1.060 0.303-1.529c0.202-0.489 0.5-0.929 0.869-1.299s0.81-0.667 1.299-0.869c0.469-0.195 0.985-0.303 1.529-0.303s1.060 0.108 1.529 0.303c0.489 0.202 0.929 0.5 1.299 0.869s0.667 0.81 0.869 1.299c0.195 0.469 0.303 0.985 0.303 1.529zM11 1v2c0 0.552 0.448 1 1 1s1-0.448 1-1v-2c0-0.552-0.448-1-1-1s-1 0.448-1 1zM11 21v2c0 0.552 0.448 1 1 1s1-0.448 1-1v-2c0-0.552-0.448-1-1-1s-1 0.448-1 1zM3.513 4.927l1.42 1.42c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-1.42-1.42c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414zM17.653 19.067l1.42 1.42c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-1.42-1.42c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414zM1 13h2c0.552 0 1-0.448 1-1s-0.448-1-1-1h-2c-0.552 0-1 0.448-1 1s0.448 1 1 1zM21 13h2c0.552 0 1-0.448 1-1s-0.448-1-1-1h-2c-0.552 0-1 0.448-1 1s0.448 1 1 1zM4.927 20.487l1.42-1.42c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-1.42 1.42c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0zM19.067 6.347l1.42-1.42c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-1.42 1.42c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0z"></path>  </svg>');--icon-sun-filter:invert(0.61) sepia(0.8) saturate(5) hue-rotate(0deg) brightness(0.92);--icon-moon:url('data:image/svg+xml,  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">    <path d="M21.996 12.882c0.022-0.233-0.038-0.476-0.188-0.681-0.325-0.446-0.951-0.544-1.397-0.219-0.95 0.693-2.059 1.086-3.188 1.162-0.696 0.047-1.399-0.027-2.077-0.226-0.656-0.192-1.29-0.501-1.874-0.932-0.655-0.484-1.181-1.074-1.575-1.729-0.409-0.68-0.676-1.432-0.792-2.206s-0.082-1.571 0.11-2.342c0.184-0.741 0.514-1.46 0.999-2.115 0.142-0.191 0.216-0.435 0.191-0.691-0.053-0.55-0.542-0.952-1.092-0.898-1.117 0.109-2.186 0.399-3.172 0.843-1.005 0.452-1.925 1.065-2.723 1.808-0.883 0.82-1.618 1.801-2.159 2.901-0.523 1.064-0.863 2.238-0.978 3.485-0.125 1.347 0.024 2.658 0.402 3.878 0.392 1.266 1.031 2.431 1.863 3.433s1.86 1.843 3.033 2.461c1.13 0.595 2.392 0.982 3.739 1.106s2.659-0.025 3.878-0.403c1.266-0.392 2.431-1.031 3.433-1.863s1.843-1.86 2.461-3.033c0.595-1.13 0.982-2.392 1.106-3.739zM19.567 14.674c-0.126 0.351-0.276 0.689-0.447 1.014-0.493 0.937-1.166 1.76-1.969 2.427s-1.735 1.178-2.747 1.491c-0.973 0.302-2.021 0.421-3.102 0.321s-2.089-0.41-2.99-0.884c-0.937-0.493-1.76-1.166-2.427-1.969s-1.178-1.735-1.491-2.747c-0.302-0.973-0.421-2.021-0.321-3.102 0.092-1 0.365-1.938 0.782-2.786 0.43-0.878 1.018-1.661 1.725-2.319 0.64-0.595 1.377-1.086 2.183-1.449 0.179-0.081 0.362-0.155 0.548-0.223-0.092 0.257-0.171 0.516-0.236 0.778-0.256 1.029-0.302 2.091-0.147 3.121s0.51 2.032 1.056 2.941c0.527 0.875 1.23 1.663 2.1 2.306 0.775 0.573 1.622 0.986 2.5 1.243 0.907 0.266 1.846 0.364 2.772 0.302 0.752-0.050 1.496-0.207 2.21-0.465z"></path>  </svg>');--icon-moon-filter:invert(0.1);--color-mode-icon:var(--icon-moon);--color-mode-icon-filter:var(--icon-moon-filter)}@media (prefers-color-scheme:dark){:root.is-darkModeAdminSetting-enabled{--color-mode:"dark"}:root:not([data-user-color-scheme]).is-darkModeAdminSetting-enabled{--color-mode:"dark";--color-brand:var(--dark-mode-accent-color);--color-white:#FFFFFF;--color-dark:#010101;--color-text:#FFFFFF;--color-gray:#E5EFF5;--color-error:#CC3C64;--color-success:#1BA672;--color-border:#383B40;--bg-color:#111016;--bg-gray:#18181d;--bg-white:var(--color-white);--bg-transparent:rgba(31, 32, 35, .7);--bg-post-card:var(--bg-gray);--bg-tag-list:linear-gradient(to left, var(--bg-color), rgba(31, 32, 35, 0));--color-mode-icon:var(--icon-sun);--color-mode-icon-filter:var(--icon-sun-filter)}}[data-user-color-scheme=dark]{--color-mode:"dark";--color-brand:var(--dark-mode-accent-color);--color-white:#FFFFFF;--color-dark:#010101;--color-text:#FFFFFF;--color-gray:#E5EFF5;--color-error:#CC3C64;--color-success:#1BA672;--color-border:#383B40;--bg-color:#111016;--bg-gray:#18181d;--bg-white:var(--color-white);--bg-transparent:rgba(31, 32, 35, .7);--bg-post-card:var(--bg-gray);--bg-tag-list:linear-gradient(to left, var(--bg-color), rgba(31, 32, 35, 0));--color-mode-icon:var(--icon-sun);--color-mode-icon-filter:var(--icon-sun-filter)}code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.tooltipped{position:relative}.tooltipped::after{position:absolute;z-index:1000000;display:none;padding:var(--overlay-paddingBlock-condensed,.25rem) var(--overlay-padding-condensed,.5rem);font:var(--text-body-shorthand-small, normal normal 11px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");-webkit-font-smoothing:subpixel-antialiased;color:var(--fgColor-onEmphasis,var(--color-fg-on-emphasis));text-align:center;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-wrap:break-word;white-space:pre;pointer-events:none;content:attr(aria-label);background:var(--bgColor-emphasis,var(--color-neutral-emphasis-plus));border-radius:var(--borderRadius-medium);opacity:0}@keyframes tooltip-appear{from{opacity:0}to{opacity:1}}.tooltipped:active::after,.tooltipped:active::before,.tooltipped:focus::after,.tooltipped:focus::before,.tooltipped:hover::after,.tooltipped:hover::before{display:inline-block;text-decoration:none;animation-name:tooltip-appear;animation-duration:.1s;animation-fill-mode:forwards;animation-timing-function:ease-in}.tooltipped-no-delay:active::after,.tooltipped-no-delay:active::before,.tooltipped-no-delay:focus::after,.tooltipped-no-delay:focus::before,.tooltipped-no-delay:hover::after,.tooltipped-no-delay:hover::before{animation-delay:0s}.tooltipped-multiline:active::after,.tooltipped-multiline:focus::after,.tooltipped-multiline:hover::after{display:table-cell}.tooltipped-s::after,.tooltipped-se::after,.tooltipped-sw::after{top:100%;right:50%;margin-top:6px}.tooltipped-se::after{right:auto;left:50%;margin-left:-16px}.tooltipped-sw::after{margin-right:-16px}.tooltipped-n::after,.tooltipped-ne::after,.tooltipped-nw::after{right:50%;bottom:100%;margin-bottom:6px}.tooltipped-ne::after{right:auto;left:50%;margin-left:-16px}.tooltipped-nw::after{margin-right:-16px}.tooltipped-n::after,.tooltipped-s::after{transform:translateX(50%)}.tooltipped-w::after{right:100%;bottom:50%;margin-right:6px;transform:translateY(50%)}.tooltipped-e::after{bottom:50%;left:100%;margin-left:6px;transform:translateY(50%)}.tooltipped-align-right-1::after,.tooltipped-align-right-2::after{right:0;margin-right:0}.tooltipped-align-right-1::before{right:10px}.tooltipped-align-right-2::before{right:15px}.tooltipped-align-left-1::after,.tooltipped-align-left-2::after{left:0;margin-left:0}.tooltipped-align-left-1::before{left:5px}.tooltipped-align-left-2::before{left:10px}.tooltipped-multiline::after{width:-moz-max-content;width:max-content;max-width:var(--overlay-width-small,20rem);word-wrap:break-word;white-space:pre-line;border-collapse:separate}.tooltipped-multiline.tooltipped-n::after,.tooltipped-multiline.tooltipped-s::after{right:auto;left:50%;transform:translateX(-50%)}.tooltipped-multiline.tooltipped-e::after,.tooltipped-multiline.tooltipped-w::after{right:100%}.tooltipped-sticky::after,.tooltipped-sticky::before{display:inline-block}.tooltipped-sticky.tooltipped-multiline::after{display:table-cell}@keyframes spin{100%{transform:rotate(360deg)}}.icon{position:relative;display:inline-block;width:25px;height:25px;overflow:hidden;fill:currentColor}.icon__cnt{width:100%;height:100%;background:inherit;fill:inherit;pointer-events:none;transform:translateX(0);-ms-transform:translate(.5px,-.3px)}.icon--m{width:50px;height:50px}.icon--l{width:100px;height:100px}.icon--xl{width:150px;height:150px}.icon--xxl{width:200px;height:200px}.icon__spinner{position:absolute;top:0;left:0;width:100%;height:100%}.icon--ei-spinner .icon__spinner,.icon--ei-spinner-2 .icon__spinner{animation:spin 1s steps(12) infinite}.icon--ei-spinner-3 .icon__spinner{animation:spin 1.5s linear infinite}.icon--ei-sc-facebook{fill:#3b5998}.icon--ei-sc-github{fill:#333}.icon--ei-sc-google-plus{fill:#dd4b39}.icon--ei-sc-instagram{fill:#3f729b}.icon--ei-sc-linkedin{fill:#0976b4}.icon--ei-sc-odnoklassniki{fill:#ed812b}.icon--ei-sc-skype{fill:#00aff0}.icon--ei-sc-soundcloud{fill:#f80}.icon--ei-sc-tumblr{fill:#35465c}.icon--ei-sc-twitter{fill:#55acee}.icon--ei-sc-vimeo{fill:#1ab7ea}.icon--ei-sc-vk{fill:#45668e}.icon--ei-sc-youtube{fill:#e52d27}.icon--ei-sc-pinterest{fill:#bd081c}.icon--ei-sc-telegram{fill:#08c}img[data-action=zoom]{cursor:pointer;cursor:-moz-zoom-in}.zoom-img,.zoom-img-wrap{position:relative;z-index:666;transition:all .3s}img.zoom-img{cursor:pointer;cursor:-moz-zoom-out}.zoom-overlay{z-index:420;background:#fff;position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;filter:"alpha(opacity=0)";opacity:0;transition:opacity .3s}.zoom-overlay-open .zoom-overlay{filter:"alpha(opacity=100)";opacity:1}.zoom-overlay-open,.zoom-overlay-transitioning{cursor:default}.commento-root .commento-markdown-help tr td pre{padding:initial;background:0 0}.commento-root blockquote{border-top:0;font-weight:inherit;box-shadow:none}.commento-root .commento-markdown-help tr td{border:0}.commento-root .commento-markdown-help{border-collapse:initial}.zoom-overlay{background-color:var(--bg-color)}.icon{width:24px;height:24px}.icon--m{width:48px;height:48px}html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}blockquote,body,dd,dl,fieldset,figure,h1,h2,h3,h4,h5,h6,hr,legend,ol,p,pre,ul{margin:0;padding:0}li>ol,li>ul{margin-bottom:0}table{border-collapse:collapse;border-spacing:0}.o-grid{margin:0 auto;max-width:1400px;padding:0 16px}@media (min-width:40em){.o-grid{display:flex;flex-wrap:wrap}}.o-grid .o-grid{padding:0}@media (min-width:40em){.o-grid .o-grid{margin-right:-16px;margin-left:-16px}}@media (min-width:64em){.o-grid .o-grid{margin-right:-24px;margin-left:-24px}}.o-grid--center{align-items:center}.o-grid--full{max-width:100vw}@media (min-width:40em){.o-grid__col{padding-right:16px;padding-left:16px}}@media (min-width:64em){.o-grid__col{padding-right:24px;padding-left:24px}}.o-grid__col--1-3-s{width:33.3333333333%}.o-grid__col--2-3-s{width:66.6666666667%}.o-grid__col--1-4-s{width:25%}.o-grid__col--2-4-s{width:50%}.o-grid__col--3-4-s{width:75%}.o-grid__col--4-4-s{width:100%}@media (min-width:40em){.o-grid__col--1-3-m{width:33.3333333333%}.o-grid__col--2-3-m{width:66.6666666667%}.o-grid__col--1-4-m{width:25%}.o-grid__col--2-4-m{width:50%}.o-grid__col--3-4-m{width:75%}.o-grid__col--4-4-m{width:100%}}@media (min-width:64em){.o-grid__col--1-3-l{width:33.3333333333%}.o-grid__col--2-3-l{width:66.6666666667%}.o-grid__col--1-4-l{width:25%}.o-grid__col--2-4-l{width:50%}.o-grid__col--3-4-l{width:75%}.o-grid__col--4-4-l{width:100%}}.o-grid__col--full{width:100%}.o-grid__col--center{margin:0 auto;flex-grow:initial}.o-grid__col--end{margin-left:auto}.o-grid__col--initial-grow{flex-grow:initial}.c-site-container{display:flex;min-height:100vh;flex-direction:column}.c-site-container .o-wrapper{flex:1 0 auto}.o-plain-list{margin:0;padding:0;list-style:none}body{direction:ltr;color:var(--color-text);font-size:16px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";line-height:1.5;background-color:var(--bg-color);margin-top:72px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a{color:inherit;text-decoration:none}dd,ol,ul{margin-left:16px}img{height:auto;display:block;max-width:100%;font-style:italic}hr{border:0;margin-bottom:32px}hr.seperator{margin-top:32px;border:.5px solid var(--bg-gray)}h1,h2,h3,h4,h5,h6{font-weight:800}h1{font-size:56px;line-height:64px}h2{font-size:48px;line-height:56px}h3{font-size:40px;line-height:48px}h4{font-size:32px;line-height:40px}h5{font-size:24px;line-height:32px}h6{font-size:20px;line-height:24px}b,strong{font-weight:700}blockquote{padding:24px 0;font-size:24px;line-height:32px;border-top:8px solid var(--color-brand);box-shadow:0 1px 0 0 var(--color-brand)}@media (min-width:64em){blockquote{font-size:32px;line-height:40px}}li code,p code{color:var(--color-code-inline);background-color:var(--bg-gray);padding:4px 8px}code,code[class*=language-]{font-size:16px;line-height:24px;text-shadow:none;color:var(--color-text)}.kg-code-card,pre,pre[class*=language-]{width:100%;overflow-x:auto}pre,pre[class*=language-]{padding:32px;margin-top:32px;margin-bottom:0;background-color:var(--bg-gray)}.kg-code-card pre{margin-top:0}.token.operator{background-color:transparent}input[type=color],input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week],select,textarea{width:100%;display:block;padding:16px;margin-bottom:16px;border:1px solid #dfe3e9;border-radius:0;color:var(--color-text);background-color:var(--color-white);font-size:16px;line-height:24px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}input[type=color]:focus,input[type=date]:focus,input[type=datetime-local]:focus,input[type=datetime]:focus,input[type=email]:focus,input[type=month]:focus,input[type=number]:focus,input[type=password]:focus,input[type=search]:focus,input[type=tel]:focus,input[type=text]:focus,input[type=time]:focus,input[type=url]:focus,input[type=week]:focus,select:focus,textarea:focus{border-color:var(--color-brand)}input[type=color]::-moz-placeholder,input[type=date]::-moz-placeholder,input[type=datetime-local]::-moz-placeholder,input[type=datetime]::-moz-placeholder,input[type=email]::-moz-placeholder,input[type=month]::-moz-placeholder,input[type=number]::-moz-placeholder,input[type=password]::-moz-placeholder,input[type=search]::-moz-placeholder,input[type=tel]::-moz-placeholder,input[type=text]::-moz-placeholder,input[type=time]::-moz-placeholder,input[type=url]::-moz-placeholder,input[type=week]::-moz-placeholder,select::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:var(--color-gray)}input[type=color]::placeholder,input[type=date]::placeholder,input[type=datetime-local]::placeholder,input[type=datetime]::placeholder,input[type=email]::placeholder,input[type=month]::placeholder,input[type=number]::placeholder,input[type=password]::placeholder,input[type=search]::placeholder,input[type=tel]::placeholder,input[type=text]::placeholder,input[type=time]::placeholder,input[type=url]::placeholder,input[type=week]::placeholder,select::placeholder,textarea::placeholder{opacity:1;color:var(--color-gray)}table{width:100%;max-width:100%;background-color:var(--bg-gray)}table caption{padding:16px;border-style:solid;border-width:.5px .5px 0 .5px;border-color:var(--color-border);background-color:var(--bg-gray)}table td,table th{text-align:left;padding:16px;white-space:nowrap;border:.5px solid var(--color-border)}table tbody+tbody{border-top:2px solid var(--color-border)}.responsive-table{display:block;width:100%;overflow-x:auto;word-break:initial}:lang(ar) *{letter-spacing:initial!important}:lang(ar) .c-nav__item{font-size:14px}:lang(ar) .icon--ei-chevron-right .icon__cnt{transform:scaleX(-1)}.c-header{padding:24px 0;background-color:var(--bg-color)}.js-header{position:fixed;top:0;right:0;left:0;z-index:100;will-change:transform;transition:transform .5s ease}.js-header--pinned{transform:translateY(0);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);background-color:var(--bg-transparent)}@media (min-width:64em){.js-header--pinned{box-shadow:0 4px 12px rgba(0,0,0,.08)}}@-moz-document url-prefix(){.js-header--pinned{background-color:var(--bg-color)}}.js-header--unpinned{transform:translateY(-100%)}.js-header--top{box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;background-color:var(--bg-color)}.c-logo__link{display:block;line-height:1;font-weight:700;font-size:24px;transition:color .26s ease-in-out}.c-logo__link:active,.c-logo__link:focus,.c-logo__link:hover{color:var(--color-brand)}.c-logo__img{max-height:32px}.c-logo__dark{display:none}@media (prefers-color-scheme:dark){:root:not([data-user-color-scheme]).is-darkModeAdminSetting-enabled .c-logo__dark{display:block}:root:not([data-user-color-scheme]).is-darkModeAdminSetting-enabled .c-logo__light{display:none}}[data-user-color-scheme=dark] .c-logo__dark{display:block}[data-user-color-scheme=dark] .c-logo__light{display:none}@media (max-width:63.99em){.c-nav-wrap{display:flex;align-items:center;flex-direction:column;position:fixed;top:0;bottom:0;right:0;left:0;width:100%;height:100vh;padding-top:72px;background-color:var(--bg-gray);opacity:0;visibility:hidden;transform:scale(.96)}.c-nav-wrap.is-active{opacity:1;visibility:visible;transform:scale(1);transition:all 250ms cubic-bezier(.694,0,.335,1)}}@media (min-width:64em){.c-nav-wrap{display:block}}@media (max-width:63.99em){.c-nav{width:100%;padding-left:32px;padding-right:32px}}@media (min-width:64em){.c-nav{display:flex;align-items:center;gap:16px;justify-content:flex-end}}.c-nav__item{font-size:18px;line-height:16px;white-space:nowrap}@media (max-width:63.99em){.c-nav__item{margin-bottom:24px}}.c-nav__link{display:block;transition:color .26s ease-in-out}.c-nav__link--current{color:var(--color-brand)}.home-template .c-nav__link--current{color:var(--color-text)}.c-nav__link:active,.c-nav__link:focus,.c-nav__link:hover{color:var(--color-brand)}.c-nav__icon{vertical-align:middle;transition:fill .26s ease-in-out}.c-nav__icon:active,.c-nav__icon:focus,.c-nav__icon:hover{fill:var(--color-brand)}.c-nav-toggle{position:absolute;top:50%;right:16px;z-index:10;height:16px;width:24px;cursor:pointer;transform:translateY(-50%)}@media (min-width:40em){.c-nav-toggle{right:32px}}@media (min-width:64em){.c-nav-toggle{display:none}}.c-nav-toggle__icon{position:absolute;left:0;height:1px;width:24px;background:var(--color-text);cursor:pointer}.c-nav-toggle__icon:after,.c-nav-toggle__icon:before{content:"";display:block;height:100%;background-color:inherit}.c-nav-toggle__icon:before{transform:translateY(16px)}.c-nav-toggle__icon:after{transform:translateY(7px)}.c-nav-toggle--close .c-nav-toggle__icon{height:2px;background-color:transparent}.c-nav-toggle--close .c-nav-toggle__icon:after,.c-nav-toggle--close .c-nav-toggle__icon:before{position:relative;visibility:visible;background:var(--color-text)}.c-nav-toggle--close .c-nav-toggle__icon:before{top:9px;transform:rotate(-45deg)}.c-nav-toggle--close .c-nav-toggle__icon:after{top:7px;transform:rotate(45deg)}.toggle-search-button{border:0;outline:0;cursor:pointer;background-color:transparent}.c-post-media__wrap{position:relative;border-radius:8px;background-color:var(--bg-gray);box-shadow:-8px 16px 24px -8px rgba(0,0,0,.08)}.c-post-media__wrap:after{content:"";display:block;height:0;width:100%;padding-bottom:56.25%}.c-post-media__image{position:absolute;top:0;left:0;width:100%;height:100%;-o-object-fit:cover;object-fit:cover;border-radius:8px}.c-post-media__caption{text-align:center;padding:16px;color:var(--color-gray);font-size:12px;line-height:16px;font-weight:600;letter-spacing:.5px}.c-post-media__caption a{color:var(--color-brand)}.c-post-media__caption a:active,.c-post-media__caption a:focus,.c-post-media__caption a:hover{text-decoration:underline}.c-post-header{margin:0 auto;max-width:800px;padding:32px 0}@media (min-width:40em){.c-post-header{padding:48px 0}}.c-post-header__title{margin-bottom:0;text-align:center;font-size:32px;line-height:40px}@media (min-width:40em){.c-post-header__title{font-size:40px;line-height:48px}}@media (min-width:64em){.c-post-header__title{font-size:48px;line-height:56px}}.c-post-header__excerpt{margin-left:auto;margin-right:auto;text-align:center;margin-top:16px;margin-bottom:0;max-width:650px;color:var(--color-gray);font-size:20px;line-height:24px}@media (min-width:64em){.c-post-header__excerpt{margin-top:24px;font-size:24px;line-height:32px}}.c-post-header__meta{display:flex;align-items:center;justify-content:center;margin-top:32px;color:var(--color-gray);font-size:12px;line-height:16px;font-weight:500;letter-spacing:.5px}@media (min-width:64em){.c-post-header__meta{margin-top:40px}}.c-post-header__authors{display:flex;align-items:center;color:var(--color-gray);font-weight:600;transition:color .26s ease-in-out}.c-post-header__authors:active,.c-post-header__authors:focus,.c-post-header__authors:hover{color:var(--color-text)}.c-post-header__authors-images{display:flex}.c-post-header__author--image-wrap{width:24px;height:24px;margin-right:16px;border-radius:100%;background-color:var(--bg-gray)}.c-post-header__author--image{-o-object-fit:cover;object-fit:cover;width:24px;height:24px;border-radius:100%;color:var(--color-brand);box-shadow:0 0 0 2.5px var(--color-white),0 0 0 3.5px}.c-post-header__date{line-height:1;padding-left:16px;margin-left:16px;box-shadow:inset 1px 0 0 0 var(--color-gray)}.c-share{display:flex}.c-share__item{flex:1;text-align:center}.c-share__item:not(:last-child){border-right:8px solid var(--bg-color)}@media (min-width:40em){.c-share__item:not(:last-child){border-right-width:16px}}.c-share__link{display:block;line-height:16px;padding:4px 8px;border-radius:4px;background-color:var(--bg-gray);transition:.5s}@media (min-width:40em){.c-share__link{padding:8px 24px}}.c-share__link:active,.c-share__link:focus,.c-share__link:hover{opacity:.8}.c-share__icon{fill:var(--color-text);vertical-align:middle}.c-post{max-width:650px;margin:0 auto}.c-post>*+*{margin-top:32px}.c-content{display:flex;align-items:center;flex-direction:column;word-break:break-word}.c-content--has-shadow{-webkit-mask-image:linear-gradient(to bottom,var(--color-dark) 30%,transparent 100%);mask-image:linear-gradient(to bottom,var(--color-dark) 30%,transparent 100%)}.c-content>*{width:auto;min-width:100%}.c-content>*+*{margin-top:32px}.c-content>.kg-width-full+.kg-width-full:not(.kg-width-full.kg-card-hascaption+.kg-width-full){margin-top:0}.c-content a{color:var(--color-brand)}.c-content a:active,.c-content a:focus,.c-content a:hover{text-decoration:underline}.c-content>:where(p,pre,dl,ol,ul,form,fieldset){font-size:22px;font-family:"Crimson Text",Georgia,serif;line-height:32px}.c-content table{font-size:16px;line-height:24px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}.c-content hr{display:flex;align-items:center;justify-content:center;position:relative;bottom:4px;margin-bottom:0}.c-content hr:before{content:". . .";color:var(--color-text)}.c-content h1,.c-content h2,.c-content h3,.c-content h4,.c-content h5,.c-content h6{margin-top:48px}.c-content h1:first-child,.c-content h2:first-child,.c-content h3:first-child,.c-content h4:first-child,.c-content h5:first-child,.c-content h6:first-child{margin-top:0}.c-content h1+*,.c-content h2+*,.c-content h3+*,.c-content h4+*,.c-content h5+*,.c-content h6+*{margin-top:8px}.c-content h1{font-size:40px;line-height:48px}.c-content h1+h2,.c-content h1+h3,.c-content h1+h4,.c-content h1+h5,.c-content h1+h6{margin-top:16px}.c-content h2{font-size:32px;line-height:40px}.c-content h2+h3,.c-content h2+h4,.c-content h2+h5,.c-content h2+h6{margin-top:16px}.c-content h3{font-size:24px;line-height:32px}.c-content h3+h4,.c-content h3+h5,.c-content h3+h6{margin-top:16px}.c-content h4{font-size:20px;line-height:24px}.c-content h4+h5,.c-content h4+h6{margin-top:8px}.c-content h5{font-size:16px;line-height:20px}.c-content h5+h6{margin-top:8px}.c-content dd,.c-content ol,.c-content ul{padding-left:8px;padding-right:16px}.c-content dd>*+*,.c-content ol>*+*,.c-content ul>*+*{margin-top:8px}.c-content dd:not(:root:root),.c-content ol:not(:root:root),.c-content ul:not(:root:root){-webkit-padding-start:16px}.c-content .gh-post-upgrade-cta{display:none;visibility:hidden}.kg-embed-card{display:flex;align-items:center;flex-direction:column}.kg-embed-card>*{width:100%}.kg-card figcaption{width:100%;text-align:center;padding:16px;color:var(--color-gray);font-size:12px;line-height:16px;font-weight:600;letter-spacing:.5px;background-color:var(--bg-gray)}.kg-image-card{min-width:-moz-min-content;min-width:min-content;background-color:var(--bg-gray)}.kg-image{margin:auto}@media (min-width:40em){.kg-width-full .kg-image{max-width:100vw;pointer-events:none}}.kg-width-wide{width:100%}.kg-width-wide .kg-image{width:100%}@media (min-width:64em){.kg-width-wide{width:100vw;max-width:1360px}}.twitter-tweet{margin-top:0!important;margin-bottom:0!important;overflow:hidden!important;width:100%!important}.twitter-tweet+script+figcaption{background-color:var(--bg-color)}.instagram-media{margin-bottom:0!important}.instagram-media+script+figcaption{background-color:var(--bg-color)}@media (min-width:64em){.kg-gallery-card{width:100vw;max-width:1400px}}.kg-gallery-container{display:flex;flex-direction:column}.kg-gallery-row{display:flex;flex-direction:row;justify-content:center}.kg-gallery-image img{width:100%;height:100%}.kg-gallery-row:not(:first-of-type){margin-top:16px}@media (min-width:64em){.kg-gallery-row:not(:first-of-type){margin-top:24px}}.kg-gallery-image:not(:first-of-type){margin-left:16px}@media (min-width:64em){.kg-gallery-image:not(:first-of-type){margin-left:24px}}.kg-bookmark-card{width:100%}a.kg-bookmark-container{display:flex;min-height:144px;color:var(--color-text);border:0;background-color:var(--bg-gray)}a.kg-bookmark-container:active,a.kg-bookmark-container:focus,a.kg-bookmark-container:hover{text-decoration:none}a.kg-bookmark-container:active .kg-bookmark-title,a.kg-bookmark-container:focus .kg-bookmark-title,a.kg-bookmark-container:hover .kg-bookmark-title{color:var(--color-brand)}.kg-card-hascaption a.kg-bookmark-container{border-bottom:1px solid var(--color-white)}.kg-bookmark-content{display:flex;flex-grow:1;flex-direction:column;align-items:flex-start;justify-content:flex-start;padding:24px}@media (min-width:64em){.kg-bookmark-content{padding:32px}}.kg-bookmark-title{font-size:16px;line-height:20px;font-weight:700;transition:color .26s ease-in-out}.kg-bookmark-description{color:var(--color-gray);font-size:12px;line-height:16px;font-weight:500;margin-top:8px;max-height:48px;overflow-y:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.kg-bookmark-metadata{display:flex;flex-wrap:wrap;align-items:center;margin-top:8px;color:var(--color-gray);font-size:12px;line-height:16px}.kg-bookmark-publisher{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:240px}.kg-bookmark-icon{width:24px;height:24px;border-radius:24px;margin-right:8px}.kg-bookmark-author:after{content:"•";margin:0 8px}.kg-bookmark-thumbnail{position:relative;min-width:33%;max-height:100%}.kg-bookmark-thumbnail img{position:absolute;top:0;left:0;width:100%;height:100%;-o-object-fit:cover;object-fit:cover}@media (max-width:39.99em){.kg-bookmark-container{flex-direction:column}.kg-bookmark-thumbnail{order:1;width:100%;min-height:160px}.kg-bookmark-content{order:2}}.kg-header-card.kg-width-full{width:100vw}.kg-content-wide .kg-header-card-content{width:100%;margin:auto}.kg-content-wide:not(.kg-layout-split) .kg-header-card-content{max-width:1360px}@media (min-width:64em){.kg-content-wide.kg-layout-split .kg-header-card-content{max-width:1360px}}.kg-signup-card.kg-width-full{width:100vw}.kg-content-wide .kg-signup-card-content{width:100%;margin:auto;padding:0 16px}.kg-content-wide:not(.kg-layout-split) .kg-signup-card-content{max-width:1360px}@media (min-width:64em){.kg-content-wide.kg-layout-split .kg-signup-card-content{max-width:1360px}}input[type=email].kg-signup-card-input{margin:0}.kg-blockquote-alt{text-align:center;font-style:italic}.c-btn{display:inline-block;padding:16px 32px;color:var(--color-white);background-color:var(--color-dark);font-size:14px;line-height:16px;font-weight:600;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";letter-spacing:.5px;text-align:center;text-transform:initial;white-space:nowrap;border:none;cursor:pointer;border-radius:32px;transition:all .26s ease-in-out}.c-btn:active,.c-btn:focus,.c-btn:hover{color:var(--color-white);background-color:var(--color-brand);text-decoration:none}.c-btn--disabled{opacity:.5;cursor:not-allowed}.c-btn--full{width:100%}.c-btn--small{font-weight:500;padding:12px 16px}.c-btn--mini{font-weight:500;padding:4px 16px}.c-btn--light{color:var(--color-text);background-color:var(--bg-gray)}.c-btn--light:active,.c-btn--light:focus,.c-btn--light:hover{color:var(--color-white);background-color:var(--color-dark)}.c-btn--action{color:var(--color-white);background-color:var(--color-brand)}.c-btn--action:active,.c-btn--action:focus,.c-btn--action:hover{color:var(--color-white);background-color:var(--color-dark)}.c-btn--loading,.c-btn.loading,.c-subscribe-form .c-btn{display:flex;align-items:center;justify-content:center}.c-btn--loading:after,.c-btn.loading:after,.c-subscribe-form .c-btn:after{margin-left:8px;content:"";display:block;height:16px;width:16px;border:2px solid var(--color-white);border-radius:100%;border-right-color:transparent;border-top-color:transparent;animation:spin .5s infinite linear}.c-color-mode-btn{padding:0;display:flex;border:none;font:inherit;color:inherit;cursor:pointer;background-color:transparent}.c-color-mode-btn__icon{width:20px;height:20px;background-image:var(--color-mode-icon);background-repeat:no-repeat;filter:var(--color-mode-icon-filter)}.c-post-card{position:relative;display:flex;width:100%;overflow:hidden;flex-direction:column;margin-bottom:32px;background-color:var(--bg-gray);border-radius:8px;box-shadow:4px 12px 40px 6px rgba(0,0,0,.09);transition:box-shadow 250ms ease-in-out}@media (min-width:64em){.c-post-card{margin-bottom:48px}}.c-post-card--no-image{justify-content:center;background-color:var(--bg-post-card)}.c-post-card-wrap{display:flex}.c-post-card__media{overflow:hidden;background-color:var(--bg-gray)}.c-post-card__image-wrap{display:block;position:relative;padding-top:56.25%;transition:transform .5s ease}.c-post-card__image{position:absolute;top:0;left:0;width:100%;height:100%;-o-object-fit:cover;object-fit:cover}.c-post-card__content{flex-grow:1;padding:24px;background-color:var(--bg-post-card)}@media (min-width:40em){.c-post-card__content{padding:32px}}.c-post-card__content--no-image{flex-grow:initial}.c-post-card__meta{display:flex;flex-wrap:wrap;align-items:center;gap:12px;color:var(--color-gray);font-size:12px;line-height:16px;font-weight:500;letter-spacing:.5px;margin-bottom:8px}.c-post-card__meta>*+*{line-height:1;padding-left:12px;box-shadow:inset 1px 0 0 0 var(--color-gray)}.c-post-card__author{display:flex;align-items:center;color:var(--color-gray);white-space:nowrap;transition:color .26s ease-in-out}.c-post-card__author:active,.c-post-card__author:focus,.c-post-card__author:hover{color:var(--color-text)}.c-post-card__visibility{color:var(--color-success);text-transform:capitalize}.c-post-card__visibility span{display:none}.c-post-card__visibility--members .members,.c-post-card__visibility--paid .paid,.c-post-card__visibility--public .public,.c-post-card__visibility--tiers .paid{display:block}.c-post-card__title{font-size:20px;line-height:24px;margin-bottom:0}@media (min-width:64em){.c-post-card__title{font-size:24px;line-height:32px}}.c-post-card__excerpt{font-size:16px;line-height:24px;font-weight:500;font-family:"Crimson Text",Georgia,serif;margin-top:8px;overflow-y:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.c-post-card__title-link{border-bottom:1px solid transparent;transition:border-bottom 250ms ease-in-out}.c-post-card:active .c-post-card__image-wrap,.c-post-card:focus .c-post-card__image-wrap,.c-post-card:hover .c-post-card__image-wrap{transform:scale(1.01)}@supports (-ms-ime-align:auto){.c-post-card:active .c-post-card__image-wrap,.c-post-card:focus .c-post-card__image-wrap,.c-post-card:hover .c-post-card__image-wrap{transform:none}}.c-post-card:active .c-post-card__title-link,.c-post-card:focus .c-post-card__title-link,.c-post-card:hover .c-post-card__title-link{color:var(--color-text);border-bottom:1px solid var(--color-brand)}.c-pagination{margin-bottom:32px}@media (min-width:64em){.c-pagination{margin-bottom:48px}}.c-subscribe{text-align:center;padding:24px;border-radius:8px;background-color:var(--bg-gray)}.c-subscribe__icon{fill:var(--color-gray)}@media (min-width:40em){.c-subscribe{padding:40px}}@media (min-width:64em){.c-subscribe{padding:56px}}.c-subscribe .c-subscribe-form__input[type=email]{background-color:var(--bg-color)}.c-subscribe-form{display:flex;flex-wrap:wrap;flex-direction:column}.c-subscribe-form .form-group{display:flex}.c-subscribe-form__btn{flex:3;border-top-left-radius:0;border-bottom-left-radius:0}.c-subscribe-form__input[type=email]{border:0;margin:0;padding-left:24px;background-color:var(--bg-gray);border-top-left-radius:32px;border-bottom-left-radius:32px;min-width:1px}.c-subscribe-form__input[type=email]:focus{border-color:transparent}.c-subscribe-form .u-alert{display:none}.c-subscribe-form .c-btn:after{display:none}.c-subscribe-form.loading .c-btn:after{display:block}.c-subscribe-form.error .u-alert--error,.c-subscribe-form.invalid .u-alert--invalid,.c-subscribe-form.success .u-alert--success{display:block}.c-social-icons{text-align:center;display:flex;justify-content:center}@media (min-width:40em){.c-social-icons{justify-content:flex-end}}.c-social-icons li{line-height:0}.c-social-icons .icon{display:flex;align-items:center;justify-content:center;fill:var(--color-gray);transition:fill .26s ease}.c-social-icons .icon:active,.c-social-icons .icon:focus,.c-social-icons .icon:hover{fill:var(--color-brand)}.c-footer{padding:40px 0;margin-top:40px;background-color:var(--bg-gray)}@media (min-width:64em){.c-footer{padding:64px 0}}.c-footer .c-subscribe-form__input[type=email]{background-color:var(--bg-color)}.c-footer__headline{margin-bottom:16px;font-size:12px;line-height:16px;font-weight:600;text-transform:uppercase;letter-spacing:1px}.c-footer__bottom{margin-top:32px}@media (min-width:64em){.c-footer__bottom{margin-top:16px}}.c-footer__copyright{color:var(--color-gray)}.c-footer__copyright a{color:var(--color-gray);transition:color .26s ease-in-out}.c-footer__copyright a:active,.c-footer__copyright a:focus,.c-footer__copyright a:hover{color:var(--color-brand)}@media (max-width:39.99em){.c-footer__copyright{text-align:center;margin-bottom:8px}}.c-footer-list{margin-bottom:32px}.c-footer-list li{display:block;letter-spacing:0;margin-bottom:0}.c-footer-list a{display:block;padding:0;font-weight:400;font-size:12px;line-height:16px;margin-bottom:4px;padding-bottom:4px;transition:color .26s ease-in-out}.c-footer-list a:active,.c-footer-list a:focus,.c-footer-list a:hover{color:var(--color-brand)}.c-related .o-grid__col{flex-grow:initial}.c-title-bar{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:24px;border-bottom:1px solid var(--bg-gray)}.c-title-bar__title{margin-bottom:0;padding-bottom:8px;font-size:12px;line-height:16px;font-weight:600;text-transform:uppercase;letter-spacing:1px;box-shadow:inset 0 -4px 0 0 var(--color-dark)}.c-title-bar__link{display:flex;align-items:center;transition:.5s}.c-title-bar__link:active,.c-title-bar__link:focus,.c-title-bar__link:hover{color:var(--color-brand)}.c-card-author{width:100%;display:flex;padding:24px;background-color:var(--bg-gray);border-radius:8px}@media (min-width:40em){.c-card-author{padding:32px}}.c-card-author-wrap{display:flex;margin-bottom:32px}@media (min-width:64em){.c-card-author-wrap{margin-bottom:48px}}.c-card-author__media{width:64px;height:64px;border-radius:100%;margin-right:16px;background-color:var(--bg-color)}.c-card-author__image{-o-object-fit:cover;object-fit:cover;width:64px;height:64px;min-width:64px;border-radius:100%;box-shadow:0 0 0 4px var(--bg-color)}.c-card-author__name{font-size:16px;line-height:24px;font-weight:700;margin-bottom:0;transition:.5s;letter-spacing:.5px}.c-card-author__bio{margin:0;color:var(--color-gray);font-size:14px;line-height:22px}.c-card-author:active,.c-card-author:focus,.c-card-author:hover{color:var(--color-brand)}@media (max-width:63.99em){.c-teaser-wrapper:not(:last-child){margin-bottom:32px}}.c-teaser{display:flex;align-items:center}.c-teaser:not(:last-child){margin-bottom:32px}@media (min-width:64em){.c-teaser:not(:last-child){margin-bottom:40px}}.c-teaser__media{margin-left:24px;background-color:var(--bg-gray)}.c-teaser__content{flex:1}.c-teaser__image{display:block;width:88px;height:72px;-o-object-fit:cover;object-fit:cover;background-color:var(--bg-gray);border-radius:4px;box-shadow:4px 4px 0 var(--bg-gray)}.c-teaser__title{display:inline;font-size:16px;line-height:24px;font-weight:700;border-bottom:1px solid transparent;transition:border-bottom .26s ease-in-out}.c-teaser__date{display:block;color:var(--color-gray);font-size:12px;line-height:16px;font-weight:500;letter-spacing:.5px;margin-top:8px}.c-teaser:active,.c-teaser:focus,.c-teaser:hover{color:var(--color-text)}.c-teaser:active .c-teaser__title,.c-teaser:focus .c-teaser__title,.c-teaser:hover .c-teaser__title{color:var(--color-text);border-bottom:1px solid var(--color-brand)}.c-archive{text-align:center;padding:16px 0 40px}@media (min-width:40em){.c-archive{padding:24px 0 48px}}@media (min-width:64em){.c-archive{padding:32px 0 56px}}.c-archive__title{margin-bottom:0;font-size:32px;line-height:40px}@media (min-width:40em){.c-archive__title{font-size:40px;line-height:48px}}@media (min-width:64em){.c-archive__title{font-size:48px;line-height:56px}}.c-archive__description{color:var(--color-gray);font-size:20px;line-height:24px;margin-top:8px;margin-bottom:0}@media (min-width:64em){.c-archive__description{font-size:24px;line-height:32px}}.c-archive__description:empty{display:none}.c-author{text-align:center;padding:16px 0 40px}@media (min-width:40em){.c-author{padding:24px 0 48px}}@media (min-width:64em){.c-author{padding:32px 0 56px}}.c-author__media{margin:0 auto;border-radius:100%;margin-bottom:8px;background-color:var(--bg-gray);width:88px;height:88px}.c-author__image{-o-object-fit:cover;object-fit:cover;border-radius:100%;width:88px;height:88px;box-shadow:0 0 0 4px var(--bg-gray)}.c-author__title{font-size:24px;line-height:32px;margin-bottom:0}.c-author__bio{margin-bottom:0;margin-top:8px;color:var(--color-gray);font-size:16px;line-height:24px}.c-author__links{display:flex;justify-content:center;margin-top:16px;color:var(--color-gray)}.c-author__links-item{display:flex;align-items:center;font-size:12px;text-transform:uppercase;letter-spacing:.5px}.c-author__links-item:not(:last-child){margin-right:8px}.c-author__links-icon{fill:var(--color-gray);vertical-align:bottom;transition:.5s}.c-author__links-icon:active,.c-author__links-icon:focus,.c-author__links-icon:hover{fill:var(--color-brand)}.c-tags{overflow:hidden;margin-bottom:-8px}@media (min-width:40em){.c-tags{margin-bottom:-16px}}.c-tags a{float:left;font-size:12px;line-height:16px;font-weight:600;letter-spacing:.5px;padding:8px 16px;margin-right:8px;margin-bottom:8px;background-color:var(--bg-gray);border-radius:4px}@media (min-width:40em){.c-tags a{padding:8px 24px;margin-right:16px;margin-bottom:16px;line-height:24px}}.c-tags a:active,.c-tags a:focus,.c-tags a:hover{color:var(--color-gray)}.c-tag-card{display:block;position:relative;border-radius:8px;margin-bottom:32px;background-color:var(--bg-gray)}@media (min-width:64em){.c-tag-card{margin-bottom:48px}}.c-tag-card--solid{background-color:var(--color-dark)}.c-tag-card:before{position:absolute;z-index:1;top:0;bottom:0;left:0;right:0;content:"";border-radius:8px;transition:background .5s ease;background:linear-gradient(110deg,rgba(49,54,56,.5) 0,transparent 100%)}.c-tag-card:after{display:block;content:"";width:100%;padding-bottom:75%}.c-tag-card__image{position:absolute;top:0;left:0;width:100%;height:100%;-o-object-fit:cover;object-fit:cover;border-radius:8px}.c-tag-card__title{z-index:2;position:relative;padding:24px;margin-bottom:0;font-size:16px;line-height:20px;font-weight:700;color:var(--color-white)}.c-tag-card:active:before,.c-tag-card:focus:before,.c-tag-card:hover:before{background-color:rgba(49,54,56,.1)}.c-hero{margin-bottom:32px;background-color:var(--bg-gray)}@media (min-width:40em){.c-hero{padding:32px 0}}@media (min-width:64em){.c-hero{padding:48px 0}}.c-hero__container{display:flex}@media (max-width:39.99em){.c-hero__container{flex-direction:column-reverse}}@media (min-width:40em){.c-hero__container{width:100%;display:flex;align-items:center}}.c-hero .c-subscribe-form{margin-top:48px}.c-hero .c-subscribe-form__input[type=email]{background-color:var(--bg-color)}.c-hero__content{display:flex;flex-direction:column;align-items:baseline;padding:32px 0;font-size:20px;line-height:24px}.c-hero__content h1{font-size:40px;line-height:48px;margin-top:0}.c-hero__content .c-quri-name{font-weight:900;font-size:24px;margin-bottom:16px}@media (min-width:64em){.c-hero__content{font-size:24px;line-height:32px;padding-right:96px}}.c-hero__content>*+*{margin-top:8px}.c-hero__content h2,.c-hero__content h3{font-size:24px;line-height:32px}@media (min-width:64em){.c-hero__content h2,.c-hero__content h3{font-size:48px;line-height:56px}}.c-hero__content p{font-size:20px;line-height:24px}@media (min-width:64em){.c-hero__content p{font-size:24px;line-height:32px}}@media (max-width:39.99em){.c-hero-image{padding-top:32px}}@media (min-width:40em){.c-hero-image{max-height:50vh;margin-left:auto}}.c-tags-list-wrap{position:relative}.c-tags-list-wrap:after{position:absolute;top:0;right:0;content:"";height:16px;width:24px;background:var(--bg-tag-list)}.c-tags-list{display:flex;align-items:baseline;padding-bottom:32px;overflow-x:scroll;-ms-overflow-style:none;scrollbar-width:none}.c-tags-list::-webkit-scrollbar{display:none}.c-tags-list:active{cursor:grabbing}.c-tags-list li{font-size:18px;line-height:16px;white-space:nowrap;letter-spacing:.5px;padding-right:16px}@media (min-width:64em){.c-tags-list li{padding-right:16px}}.c-tags-list a{display:block;transition:color .26s ease-in-out}.c-tags-list a--current{color:var(--color-brand)}.home-template .c-tags-list a--current{color:var(--color-text)}.c-tags-list a:active,.c-tags-list a:focus,.c-tags-list a:hover{color:var(--color-brand)}@media (min-width:40em){.c-member-plans{display:flex;align-items:stretch;justify-content:center}.c-member-plan{flex:1 1 auto;display:flex;flex-direction:column}.c-member-plan+.c-member-plan{margin-left:32px}}@media (min-width:40em) and (min-width:64em){.c-member-plan+.c-member-plan{margin-left:48px}}.c-member-plan{padding:32px;margin-bottom:32px;border-radius:8px;background-color:var(--bg-gray)}.c-member-plan__header{position:relative;padding-bottom:32px;color:var(--color-gray);text-align:center}.c-member-plan__title{margin-bottom:24px;color:var(--color-text);font-size:20px;line-height:24px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}.c-member-plan__amount{color:var(--color-text);font-size:32px;line-height:40px}.c-member-plan__content{flex:1 1 auto;display:flex;flex-direction:column;justify-content:space-between}.c-member-plan__list{margin:0;padding:0;margin-bottom:32px;list-style:none}.c-member-plan__list li{position:relative;margin:0;font-size:12px;line-height:16px;padding:0 0 16px 24px}.c-member-plan__list li:last-child{padding-bottom:0}.c-member-plan__list li:before{display:block;position:absolute;left:0;top:-4px;font-size:14px;line-height:22px;font-weight:600;color:var(--color-brand);content:"✓"}.c-post-upgrade-cta{position:relative;text-align:center;padding:24px;border-radius:8px;background-color:var(--bg-gray)}@media (min-width:40em){.c-post-upgrade-cta{padding:40px}}@media (min-width:64em){.c-post-upgrade-cta{padding:56px}}.c-post-upgrade-cta__title{font-size:24px;line-height:32px;margin-bottom:24px}.c-post-upgrade-cta .c-btn{margin-bottom:24px}.u-type-sm{font-size:14px;line-height:22px}.u-type-xs{font-size:12px;line-height:16px}.u-type-500{font-weight:500}.u-type-600{font-weight:600}.u-type-uppercase{text-transform:uppercase}.u-link{color:var(--color-brand)}.u-link:active,.u-link:focus,.u-link:hover{text-decoration:underline}.u-text-left{text-align:left}.u-text-right{text-align:right}.u-text-center{text-align:center}.u-text-justify{text-align:justify}.u-color-gray{color:var(--color-gray)}.u-color-error{color:var(--color-error)}.u-color-success{color:var(--color-success)}.u-alert{font-weight:500;font-size:12px;line-height:16px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}.u-alert--success{color:var(--color-success)}.u-alert--invalid{color:var(--color-error)}.u-alert--error{color:var(--color-error)}.u-mt-8{margin-top:8px}.u-mt-16{margin-top:16px}.u-mb-16{margin-bottom:16px}.u-mb-32{margin-bottom:32px}.lazyload,.lazyloading{opacity:0}.lazyloaded{opacity:1;transition:opacity .5s ease}.u-hidden{display:none}.u-block{display:block}.u-hidden-visually{position:absolute;height:1px;width:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+  
+
+
+  <script>
+    var site_url                            = 'https://quantifieduncertainty.org',
+        pagination_next_page_number         = '2',
+        pagination_available_pages_number   = '7',
+        pagination_loading_text             = 'Loading',
+        pagination_more_posts_text          = 'More Posts',
+        clipboard_copied_text               = 'Link copied to clipboard';
+  </script>
+
+  <meta name="description" content="QURI is a nonprofit research organization researching forecasting and epistemics to improve the long-term future of humanity.">
+    <link rel="icon" href="https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w256h256/2024/03/QURI-logo-square.png" type="image/png">
+    <link rel="canonical" href="https://quantifieduncertainty.org/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="next" href="https://quantifieduncertainty.org/page/2/">
+    
+    <meta property="og:site_name" content="The Quantified Uncertainty Research Institute Blog">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Quantified Uncertainty Research Institute Blog">
+    <meta property="og:description" content="QURI is a nonprofit research organization researching forecasting and epistemics to improve the long-term future of humanity.">
+    <meta property="og:url" content="https://quantifieduncertainty.org/">
+    <meta property="og:image" content="https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/2024/03/_0d96fd1f-b921-4181-93b6-8c116e25401b-1-1-1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Quantified Uncertainty Research Institute Blog">
+    <meta name="twitter:description" content="QURI is a nonprofit research organization researching forecasting and epistemics to improve the long-term future of humanity.">
+    <meta name="twitter:url" content="https://quantifieduncertainty.org/">
+    <meta name="twitter:image" content="https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/2024/03/_0d96fd1f-b921-4181-93b6-8c116e25401b-1-1-1.jpg">
+    <meta name="twitter:site" content="@QURIResearch">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="703">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "The Quantified Uncertainty Research Institute Blog",
+        "url": "https://quantifieduncertainty.org/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/2024/03/QURI23-1.png"
+        }
+    },
+    "url": "https://quantifieduncertainty.org/",
+    "name": "The Quantified Uncertainty Research Institute Blog",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/2024/03/_0d96fd1f-b921-4181-93b6-8c116e25401b-1-1-1.jpg",
+        "width": 1024,
+        "height": 703
+    },
+    "mainEntityOfPage": "https://quantifieduncertainty.org/",
+    "description": "QURI is a nonprofit research organization researching forecasting and epistemics to improve the long-term future of humanity."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 6.63">
+    <link rel="alternate" type="application/rss+xml" title="The Quantified Uncertainty Research Institute Blog" href="https://quantifieduncertainty.org/rss/">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.71/umd/portal.min.js" data-i18n="true" data-ghost="https://quantifieduncertainty.org/" data-key="fc6559ce93e754e65a72eb68b5" data-api="https://quantified-uncertainty-research-institute.ghost.io/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/sodo-search.min.js" data-key="fc6559ce93e754e65a72eb68b5" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/main.css" data-sodo-search="https://quantified-uncertainty-research-institute.ghost.io/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://quantifieduncertainty.org/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=H-xYiMJpfVIWffjV"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=yumsKhOGY54VXmGs">
+    <script defer src="/public/comment-counts.min.js?v=oFYkaGLdiMqB8VN9" data-ghost-comments-counts-api="https://quantifieduncertainty.org/members/api/comments/counts/"></script>
+    <script defer src="/public/member-attribution.min.js?v=AKG4hWena9j3yX3I"></script>
+    <script defer src="/public/ghost-stats.min.js?v=vFcCUf6ZQ0Hyhc8h" data-stringify-payload="false" data-datasource="analytics_events" data-storage="localStorage" data-host="https://quantifieduncertainty.org/.ghost/analytics/api/v1/page_hit"  tb_site_uuid="92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d" tb_post_uuid="undefined" tb_post_type="null" tb_member_uuid="undefined" tb_member_status="undefined" tb_gift_link=""></script><style>:root {--ghost-accent-color: #b1713b;}</style>
+    <script defer data-domain="blog.quantifieduncertainty.org" src="https://plausible.io/js/script.js"></script>
+
+<script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
+</head>
+<body class='home-template'>
+
+  <div class='c-site-container'>
+    <header class='js-header c-header'>
+  <div class='o-grid o-grid--center'>
+    <div class='o-grid__col o-grid__col--3-4-s o-grid__col--3-4-m o-grid__col--1-3-l'>
+      <div class='c-logo'>
+
+  <div class='c-logo__light'>
+      <a href='https://quantifieduncertainty.org'>
+        <img class='c-logo__img' src='https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/2024/03/QURI23-1.png' alt='The Quantified Uncertainty Research Institute Blog' width='' height=''>
+      </a>
+  </div>
+</div>    </div>
+
+    <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-3-l'>
+      <nav class='c-nav-wrap' aria-label='Main menu'>
+        <ul class='c-nav o-plain-list'>
+            <li class='c-nav__item'>
+    <a href='https://quantifieduncertainty.org/about/' class='c-nav__link '>About</a>
+  </li>
+  <li class='c-nav__item'>
+    <a href='https://quantifieduncertainty.org/team/' class='c-nav__link '>Team</a>
+  </li>
+  <li class='c-nav__item'>
+    <a href='https://quantifieduncertainty.org/donate/' class='c-nav__link '>Donate</a>
+  </li>
+  <li class='c-nav__item'>
+    <a href='https://quantifieduncertainty.org/vision/' class='c-nav__link '>Vision</a>
+  </li>
+
+
+              <li class='c-nav__item is-membership'><a href='#/portal/signup' class='c-btn c-btn--mini c-btn--action'>Subscribe</a></li>
+
+
+            <li class='c-nav__item'><button class="gh-search-icon" aria-label="search" data-ghost-search style="display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; padding: 0; border: 0; color: inherit; background-color: transparent; cursor: pointer; outline: none;"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M14.949 14.949a1 1 0 0 1 1.414 0l6.344 6.344a1 1 0 0 1-1.414 1.414l-6.344-6.344a1 1 0 0 1 0-1.414Z" fill="currentColor"/><path d="M10 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm-9 7a9 9 0 1 1 18 0 9 9 0 0 1-18 0Z" fill="currentColor"/></svg></button></li>
+        </ul>
+      </nav>
+      <div class='js-nav-toggle c-nav-toggle'>
+        <span class='c-nav-toggle__icon'></span>
+      </div>
+    </div>
+  </div>
+</header>
+    
+<main class='o-wrapper'>
+  <div class='c-hero'>
+  <div class='o-grid c-hero__container'>
+    <div class='o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m'>
+      <div class='c-hero__content'>
+        <div class="c-quri-name">
+          <div>The</div>
+          <h1>Quantified Uncertainty Research Institute</h1>
+        </div>
+        <p>QURI is a nonprofit research organization researching forecasting and epistemics to improve the long-term future of humanity.</p>
+
+              <form data-members-form='signup' class='c-subscribe-form'>
+  <div class='form-group'>
+    <label for='subscribe-email-hero' class='u-hidden-visually'>Your email address</label>
+    <input type='email' name='email' class='c-subscribe-form__input' id='subscribe-email-hero' placeholder='Your email address' data-members-email>
+    <button type='submit' value='Subscribe' class='c-btn c-btn--action c-subscribe-form__btn'>Subscribe</button>
+  </div>
+
+  <div class='u-alert u-alert--success u-mt-16'>Please check your inbox and click the link to confirm your subscription.</div>
+  <div class='u-alert u-alert--invalid u-mt-16'>Please enter a valid email address!</div>
+  <div class='u-alert u-alert--error u-mt-16'>An error occurred, please try again later.</div>
+</form>      </div>
+    </div>
+
+      <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m'>
+        <img class='c-hero-image lazyload' data-src="https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w1272/2024/03/_0d96fd1f-b921-4181-93b6-8c116e25401b-1-1-1.jpg" alt="The Quantified Uncertainty Research Institute Blog">
+      </div>
+  </div>
+</div>
+  <div class='o-grid'>
+    <div class="o-grid__col o-grid__col--full">
+      <nav class="c-tags-list-wrap" aria-label="Tags menu">
+        <ul class="c-tags-list o-plain-list dragscroll">
+            <li><a href="/tag/quri/">QURI</a></li>
+            <li><a href="/tag/squiggle/">Squiggle</a></li>
+            <li><a href="/tag/research/">Research</a></li>
+        </ul>
+      </nav>
+</div>  </div>
+
+  <div class='o-grid js-grid'>
+      <div class='js-grid__col o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l js-post-card-wrap c-post-card-wrap post no-image'>
+  <div class='c-post-card      c-post-card--no-image '>
+
+    <div class='c-post-card__content  c-post-card__content--no-image '>
+      <div class='c-post-card__meta'>
+        <div class='c-post-card__authors'>
+          <a href="/author/ozzie/">Ozzie Gooen</a>
+        </div>
+
+        <time class='c-post-card__date' datetime='2026-06-21'>21 Jun 2026</time>
+
+        <div class='c-post-card__visibility c-post-card__visibility--public'>
+          <span class='paid'>Paid</span>
+          <span class='members'>Members</span>
+        </div>
+      </div>
+
+      <h2 class='c-post-card__title'>
+        <a href='/posts/releasing-work-in-progress/' class='c-post-card__title-link'>
+          Releasing Work In Progress
+        </a>
+      </h2>
+
+      <p class='c-post-card__excerpt'>During my time at QURI, I wrote a lot of drafts and internal docs. As part of winding down my involvement, it made sense to get them public rather than let them sit in private folders.
+
+You can find the QURI drafts here.
+
+Related, I&#39;ve spent recent time</p>
+    </div>
+  </div>
+</div>  <div class='js-grid__col o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l js-post-card-wrap c-post-card-wrap post'>
+  <div class='c-post-card     c-post-card--with-image  '>
+      <div class='c-post-card__media'>
+        <a href='/posts/quri-is-moving-into-maintenance-mode/' class='c-post-card__image-wrap' aria-hidden='true' tabindex='-1'>
+          <img
+            alt="QURI is moving into maintenance mode"
+            class='c-post-card__image lazyload'
+            data-srcset='
+              https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w320/2026/06/QURI23-1.png 320w,
+              https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w636/2026/06/QURI23-1.png 636w,
+              https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w1272/2026/06/QURI23-1.png 1272w'
+            sizes='(min-width: 1480px) 636px, (min-width: 640px) 44.39vw, calc(100vw - 32px)'
+            data-src='https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w1272/2026/06/QURI23-1.png'
+          >
+        </a>
+      </div>
+
+    <div class='c-post-card__content '>
+      <div class='c-post-card__meta'>
+        <div class='c-post-card__authors'>
+          <a href="/author/ozzie/">Ozzie Gooen</a>
+        </div>
+
+        <time class='c-post-card__date' datetime='2026-06-20'>20 Jun 2026</time>
+
+        <div class='c-post-card__visibility c-post-card__visibility--public'>
+          <span class='paid'>Paid</span>
+          <span class='members'>Members</span>
+        </div>
+      </div>
+
+      <h2 class='c-post-card__title'>
+        <a href='/posts/quri-is-moving-into-maintenance-mode/' class='c-post-card__title-link'>
+          QURI is moving into maintenance mode
+        </a>
+      </h2>
+
+      <p class='c-post-card__excerpt'>After about seven years, QURI is moving into maintenance mode. This means we’ll ensure that key software (Guesstimate and SquiggleHub) is maintained, but we won’t be developing new software or doing new research.
+
+Background
+
+I started QURI in 2019. At that point I was excited about projects at</p>
+    </div>
+  </div>
+</div>  <div class='js-grid__col o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l js-post-card-wrap c-post-card-wrap post'>
+  <div class='c-post-card     c-post-card--with-image  '>
+      <div class='c-post-card__media'>
+        <a href='/posts/upcoming-workshops-automated-research-wikis-with-claude-code/' class='c-post-card__image-wrap' aria-hidden='true' tabindex='-1'>
+          <img
+            alt="Upcoming Workshops: Automated Research Wikis with Claude Code"
+            class='c-post-card__image lazyload'
+            data-srcset='
+              https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w320/2026/01/Ozzie_gooen_Abstract_3D_illustration_of_a_glowing_central_node_or_geometric_c_5c8049c2-e250-4e6a-b15c-429c0bd0106e.png 320w,
+              https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w636/2026/01/Ozzie_gooen_Abstract_3D_illustration_of_a_glowing_central_node_or_geometric_c_5c8049c2-e250-4e6a-b15c-429c0bd0106e.png 636w,
+              https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w1272/2026/01/Ozzie_gooen_Abstract_3D_illustration_of_a_glowing_central_node_or_geometric_c_5c8049c2-e250-4e6a-b15c-429c0bd0106e.png 1272w'
+            sizes='(min-width: 1480px) 636px, (min-width: 640px) 44.39vw, calc(100vw - 32px)'
+            data-src='https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w1272/2026/01/Ozzie_gooen_Abstract_3D_illustration_of_a_glowing_central_node_or_geometric_c_5c8049c2-e250-4e6a-b15c-429c0bd0106e.png'
+          >
+        </a>
+      </div>
+
+    <div class='c-post-card__content '>
+      <div class='c-post-card__meta'>
+        <div class='c-post-card__authors'>
+          <a href="/author/ozzie/">Ozzie Gooen</a>
+        </div>
+
+        <time class='c-post-card__date' datetime='2026-01-29'>29 Jan 2026</time>
+
+        <div class='c-post-card__visibility c-post-card__visibility--public'>
+          <span class='paid'>Paid</span>
+          <span class='members'>Members</span>
+        </div>
+      </div>
+
+      <h2 class='c-post-card__title'>
+        <a href='/posts/upcoming-workshops-automated-research-wikis-with-claude-code/' class='c-post-card__title-link'>
+          Upcoming Workshops: Automated Research Wikis with Claude Code
+        </a>
+      </h2>
+
+      <p class='c-post-card__excerpt'>I’ve been using Claude Code to automate wiki and book production. Lately, it’s become surprisingly straightforward to generate useful, many-page research documents, especially when paired with online document libraries.
+
+If you’re in the Bay Area, I’m running two workshops soon:
+
+ * MoxSF (next Thursday, San Francisco)</p>
+    </div>
+  </div>
+</div>  <div class='js-grid__col o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l js-post-card-wrap c-post-card-wrap post no-image'>
+  <div class='c-post-card      c-post-card--no-image '>
+
+    <div class='c-post-card__content  c-post-card__content--no-image '>
+      <div class='c-post-card__meta'>
+        <div class='c-post-card__authors'>
+          <a href="/author/ozzie/">Ozzie Gooen</a>
+        </div>
+
+        <time class='c-post-card__date' datetime='2025-12-20'>20 Dec 2025</time>
+
+        <div class='c-post-card__visibility c-post-card__visibility--public'>
+          <span class='paid'>Paid</span>
+          <span class='members'>Members</span>
+        </div>
+      </div>
+
+      <h2 class='c-post-card__title'>
+        <a href='/posts/opinion-fuzzing-a-proposal-for-reducing-exploring-variance-in-llm-judgments-via-sampling/' class='c-post-card__title-link'>
+          Opinion Fuzzing: A Proposal for Reducing &amp; Exploring Variance in LLM Judgments Via Sampling
+        </a>
+      </h2>
+
+      <p class='c-post-card__excerpt'>Summary
+LLM outputs vary substantially across models, prompts, and simulated perspectives. I propose &quot;opinion fuzzing&quot; for systematically sampling across these dimensions to quantify and understand this variance. The concept is simple, but making it practically usable will require thoughtful tooling. In this piece I discuss what opinion fuzzing</p>
+    </div>
+  </div>
+</div>  <div class='js-grid__col o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l js-post-card-wrap c-post-card-wrap post'>
+  <div class='c-post-card     c-post-card--with-image  '>
+      <div class='c-post-card__media'>
+        <a href='/posts/new-collaboration-shallow-review-of-technical-ai-safety-2025/' class='c-post-card__image-wrap' aria-hidden='true' tabindex='-1'>
+          <img
+            alt="New Collaboration: Shallow Review of Technical AI Safety, 2025"
+            class='c-post-card__image lazyload'
+            data-srcset='
+              https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w320/2025/12/Screenshot-2025-12-17-at-3.31.03---PM.png 320w,
+              https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w636/2025/12/Screenshot-2025-12-17-at-3.31.03---PM.png 636w,
+              https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w1272/2025/12/Screenshot-2025-12-17-at-3.31.03---PM.png 1272w'
+            sizes='(min-width: 1480px) 636px, (min-width: 640px) 44.39vw, calc(100vw - 32px)'
+            data-src='https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w1272/2025/12/Screenshot-2025-12-17-at-3.31.03---PM.png'
+          >
+        </a>
+      </div>
+
+    <div class='c-post-card__content '>
+      <div class='c-post-card__meta'>
+        <div class='c-post-card__authors'>
+          <a href="/author/ozzie/">Ozzie Gooen</a>
+        </div>
+
+        <time class='c-post-card__date' datetime='2025-12-17'>17 Dec 2025</time>
+
+        <div class='c-post-card__visibility c-post-card__visibility--public'>
+          <span class='paid'>Paid</span>
+          <span class='members'>Members</span>
+        </div>
+      </div>
+
+      <h2 class='c-post-card__title'>
+        <a href='/posts/new-collaboration-shallow-review-of-technical-ai-safety-2025/' class='c-post-card__title-link'>
+          New Collaboration: Shallow Review of Technical AI Safety, 2025
+        </a>
+      </h2>
+
+      <p class='c-post-card__excerpt'>We recently collaborated with the Arb Research team on their latest technical AI safety review. This document provides a strong overview of the space, and we built a website to make it significantly more manageable.
+
+The interactive website: shallowreview.ai
+
+The review examines major research directions in technical AI safety</p>
+    </div>
+  </div>
+</div>  <div class='js-grid__col o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l js-post-card-wrap c-post-card-wrap post'>
+  <div class='c-post-card     c-post-card--with-image  '>
+      <div class='c-post-card__media'>
+        <a href='/posts/announcing-roastmypost/' class='c-post-card__image-wrap' aria-hidden='true' tabindex='-1'>
+          <img
+            alt="Announcing RoastMyPost"
+            class='c-post-card__image lazyload'
+            data-srcset='
+              https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w320/2025/12/Ozzie_gooen_Make_a_version_of_this_but_with_the_background_flames_significant_6794821b-2e98-4289-894d-ba2034785a5b.png 320w,
+              https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w636/2025/12/Ozzie_gooen_Make_a_version_of_this_but_with_the_background_flames_significant_6794821b-2e98-4289-894d-ba2034785a5b.png 636w,
+              https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w1272/2025/12/Ozzie_gooen_Make_a_version_of_this_but_with_the_background_flames_significant_6794821b-2e98-4289-894d-ba2034785a5b.png 1272w'
+            sizes='(min-width: 1480px) 636px, (min-width: 640px) 44.39vw, calc(100vw - 32px)'
+            data-src='https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w1272/2025/12/Ozzie_gooen_Make_a_version_of_this_but_with_the_background_flames_significant_6794821b-2e98-4289-894d-ba2034785a5b.png'
+          >
+        </a>
+      </div>
+
+    <div class='c-post-card__content '>
+      <div class='c-post-card__meta'>
+        <div class='c-post-card__authors'>
+          <a href="/author/ozzie/">Ozzie Gooen</a>
+        </div>
+
+        <time class='c-post-card__date' datetime='2025-12-10'>10 Dec 2025</time>
+
+        <div class='c-post-card__visibility c-post-card__visibility--public'>
+          <span class='paid'>Paid</span>
+          <span class='members'>Members</span>
+        </div>
+      </div>
+
+      <h2 class='c-post-card__title'>
+        <a href='/posts/announcing-roastmypost/' class='c-post-card__title-link'>
+          Announcing RoastMyPost
+        </a>
+      </h2>
+
+      <p class='c-post-card__excerpt'>Today we&#39;re releasing RoastMyPost, a new application for blog post evaluation using LLMs.
+
+Try it Here
+
+
+TLDR
+
+ * RoastMyPost is a new QURI application that uses LLMs and code to evaluate blog posts and research documents.
+ * It uses a variety of LLM evaluators. Most are narrow checks: Fact Check,</p>
+    </div>
+  </div>
+</div>  <div class='js-grid__col o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l js-post-card-wrap c-post-card-wrap post no-image'>
+  <div class='c-post-card      c-post-card--no-image '>
+
+    <div class='c-post-card__content  c-post-card__content--no-image '>
+      <div class='c-post-card__meta'>
+        <div class='c-post-card__authors'>
+          <a href="/author/ozzie/">Ozzie Gooen</a>
+        </div>
+
+        <time class='c-post-card__date' datetime='2025-11-01'>01 Nov 2025</time>
+
+        <div class='c-post-card__visibility c-post-card__visibility--public'>
+          <span class='paid'>Paid</span>
+          <span class='members'>Members</span>
+        </div>
+      </div>
+
+      <h2 class='c-post-card__title'>
+        <a href='/posts/beyond-spell-check-15-automatable-writing-quality-checks/' class='c-post-card__title-link'>
+          Beyond Spell Check: 15 Automatable Writing Quality Checks
+        </a>
+      </h2>
+
+      <p class='c-post-card__excerpt'>I&#39;ve been developing RoastMyPost (currently in beta) and wrestling with how to systematically analyze documents. The space of possible document checks is vast, easily thousands of potential analyses.
+
+Building on familiar concepts like &quot;spell check&quot; and &quot;fact check,&quot; I&#39;ve made a taxonomy</p>
+    </div>
+  </div>
+</div>  <div class='js-grid__col o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l js-post-card-wrap c-post-card-wrap post no-image'>
+  <div class='c-post-card      c-post-card--no-image '>
+
+    <div class='c-post-card__content  c-post-card__content--no-image '>
+      <div class='c-post-card__meta'>
+        <div class='c-post-card__authors'>
+          <a href="/author/ozzie/">Ozzie Gooen</a>
+        </div>
+
+        <time class='c-post-card__date' datetime='2025-10-31'>31 Oct 2025</time>
+
+        <div class='c-post-card__visibility c-post-card__visibility--public'>
+          <span class='paid'>Paid</span>
+          <span class='members'>Members</span>
+        </div>
+      </div>
+
+      <h2 class='c-post-card__title'>
+        <a href='/posts/updated-llm-models-for-squiggleai/' class='c-post-card__title-link'>
+          Updated LLM Models for SquiggleAI
+        </a>
+      </h2>
+
+      <p class='c-post-card__excerpt'>We&#39;ve upgraded SquiggleAI to use Claude Sonnet 4.5, Claude Haiku 4.5, and Grok Code Fast 1. This is a significant upgrade over the previous Claude Sonnet 3.7 and Claude Haiku 3.5. All three are available now.
+
+Initial testing shows meaningful improvements in code generation</p>
+    </div>
+  </div>
+</div>  <div class='js-grid__col o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l js-post-card-wrap c-post-card-wrap post no-image'>
+  <div class='c-post-card      c-post-card--no-image '>
+
+    <div class='c-post-card__content  c-post-card__content--no-image '>
+      <div class='c-post-card__meta'>
+        <div class='c-post-card__authors'>
+          <a href="/author/ozzie/">Ozzie Gooen</a>
+        </div>
+
+        <time class='c-post-card__date' datetime='2025-03-07'>07 Mar 2025</time>
+
+        <div class='c-post-card__visibility c-post-card__visibility--public'>
+          <span class='paid'>Paid</span>
+          <span class='members'>Members</span>
+        </div>
+      </div>
+
+      <h2 class='c-post-card__title'>
+        <a href='/posts/shape-squiggles-future-take-our-squiggle-survey/' class='c-post-card__title-link'>
+          Shape Squiggle&#x27;s Future: Take our Squiggle Survey
+        </a>
+      </h2>
+
+      <p class='c-post-card__excerpt'>Dear Squiggle Community,
+
+At QURI, we&#39;re focused on tools that advance forecasting and epistemics to improve decision-making. As you know, we care deeply about evaluation, and we&#39;re holding a survey on Squiggle to better understand how and why people use our work.
+
+Honestly, developing this</p>
+    </div>
+  </div>
+</div>  <div class='js-grid__col o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l js-post-card-wrap c-post-card-wrap post tag-research no-image'>
+  <div class='c-post-card      c-post-card--no-image '>
+
+    <div class='c-post-card__content  c-post-card__content--no-image '>
+      <div class='c-post-card__meta'>
+        <div class='c-post-card__authors'>
+          <a href="/author/ozzie/">Ozzie Gooen</a>
+        </div>
+
+        <time class='c-post-card__date' datetime='2025-03-05'>05 Mar 2025</time>
+
+        <div class='c-post-card__visibility c-post-card__visibility--public'>
+          <span class='paid'>Paid</span>
+          <span class='members'>Members</span>
+        </div>
+      </div>
+
+      <h2 class='c-post-card__title'>
+        <a href='/posts/a-sketch-of-ai-driven-epistemic-lock-in/' class='c-post-card__title-link'>
+          A Sketch of AI-Driven Epistemic Lock-In
+        </a>
+      </h2>
+
+      <p class='c-post-card__excerpt'>Epistemic status: speculative fiction
+
+It&#39;s difficult to imagine how human epistemics and AI will play out. On one hand, AI could provide much better information and general intellect. On the other hand, AI could help people with incorrect beliefs preserve those false beliefs indefinitely.
+
+Will advanced AIs attempting</p>
+    </div>
+  </div>
+</div>  <div class='js-grid__col o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l js-post-card-wrap c-post-card-wrap post tag-research no-image'>
+  <div class='c-post-card      c-post-card--no-image '>
+
+    <div class='c-post-card__content  c-post-card__content--no-image '>
+      <div class='c-post-card__meta'>
+        <div class='c-post-card__authors'>
+          <a href="/author/ozzie/">Ozzie Gooen</a>
+        </div>
+
+        <time class='c-post-card__date' datetime='2025-02-28'>28 Feb 2025</time>
+
+        <div class='c-post-card__visibility c-post-card__visibility--public'>
+          <span class='paid'>Paid</span>
+          <span class='members'>Members</span>
+        </div>
+      </div>
+
+      <h2 class='c-post-card__title'>
+        <a href='/posts/evaluation-consent-policies/' class='c-post-card__title-link'>
+          Evaluation Consent Policies
+        </a>
+      </h2>
+
+      <p class='c-post-card__excerpt'>Epistemic Status: Early idea
+
+A common challenge in nonprofit/project evaluation is the tension between social norms and honest assessment. We&#39;ve seen reluctance for effective altruists to publicly rate certain projects because of the fear of upsetting someone.
+
+One potential tool to use could be something like an</p>
+    </div>
+  </div>
+</div>  <div class='js-grid__col o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l js-post-card-wrap c-post-card-wrap post tag-quri no-image'>
+  <div class='c-post-card      c-post-card--no-image '>
+
+    <div class='c-post-card__content  c-post-card__content--no-image '>
+      <div class='c-post-card__meta'>
+        <div class='c-post-card__authors'>
+          <a href="/author/ozzie/">Ozzie Gooen</a>
+        </div>
+
+        <time class='c-post-card__date' datetime='2025-02-26'>26 Feb 2025</time>
+
+        <div class='c-post-card__visibility c-post-card__visibility--public'>
+          <span class='paid'>Paid</span>
+          <span class='members'>Members</span>
+        </div>
+      </div>
+
+      <h2 class='c-post-card__title'>
+        <a href='/posts/recent-updates/' class='c-post-card__title-link'>
+          Recent Updates
+        </a>
+      </h2>
+
+      <p class='c-post-card__excerpt'>Squiggle AI &amp; Sonnet 3.7
+
+We&#39;ve updated Squiggle AI to use the new Anthropic Sonnet 3.7 model. In our limited experimentation with it so far, it seems like this model is capable of making significantly longer Squiggle models (roughly ~200 lines to ~500 lines), but that</p>
+    </div>
+  </div>
+</div>  </div>
+
+  <div class='o-grid'>
+      <div class='o-grid__col o-grid__col--center o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+    <div class='c-pagination'>
+      <button class='c-btn c-btn--full js-load-posts'>More Posts</button>
+    </div>
+  </div>
+
+  </div>
+
+  <div class='o-grid'><hr></div>
+
+  <div class='o-grid'>
+    
+      <div class='c-teaser-wrapper o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+        <div class='o-grid'>
+          <div class='o-grid__col o-grid__col--full'>
+            <div class='c-title-bar'>
+              <h3 class='c-title-bar__title'>
+                <a href='/tag/quri/' class='c-title-bar__link'>QURI</a>
+              </h3>
+            </div>
+          </div>
+
+          <div class='o-grid__col'>
+                  <a href='/posts/recent-updates/' class='c-teaser'>
+  <div class='c-teaser__content'>
+    <h3 class='c-teaser__title'>Recent Updates</h3>
+    <time class='c-teaser__date' datetime='2025-02-26'>26 Feb 2025</time>
+  </div>
+</a>                  <a href='/posts/quri-related-questions-on-manifold/' class='c-teaser'>
+  <div class='c-teaser__content'>
+    <h3 class='c-teaser__title'>QURI-related Questions, on Manifold Markets</h3>
+    <time class='c-teaser__date' datetime='2023-08-28'>28 Aug 2023</time>
+  </div>
+</a>                  <a href='/posts/presentation-estimating-everything/' class='c-teaser'>
+  <div class='c-teaser__content'>
+    <h3 class='c-teaser__title'>Presentation: Estimating Everything Everywhere Always</h3>
+    <time class='c-teaser__date' datetime='2023-05-18'>18 May 2023</time>
+  </div>
+</a>                  <a href='/posts/winners-of-the-squiggle-experimentation/' class='c-teaser'>
+  <div class='c-teaser__content'>
+    <h3 class='c-teaser__title'>Winners of the Squiggle Experimentation and 80,000 Hours Quantification Challenges</h3>
+    <time class='c-teaser__date' datetime='2023-03-09'>09 Mar 2023</time>
+  </div>
+</a>          </div>
+        </div>
+      </div>
+
+
+      <div class='c-teaser-wrapper o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+        <div class='o-grid'>
+          <div class='o-grid__col o-grid__col--full'>
+            <div class='c-title-bar'>
+              <h3 class='c-title-bar__title'>
+                <a href='/tag/squiggle/' class='c-title-bar__link'>Squiggle</a>
+              </h3>
+            </div>
+          </div>
+
+          <div class='o-grid__col'>
+                  <a href='/posts/squiggle-0-10-0/' class='c-teaser'>
+  <div class='c-teaser__content'>
+    <h3 class='c-teaser__title'>Squiggle 0.10.0</h3>
+    <time class='c-teaser__date' datetime='2025-01-20'>20 Jan 2025</time>
+  </div>
+</a>                  <a href='/posts/squiggle-086-092/' class='c-teaser'>
+  <div class='c-teaser__content'>
+    <h3 class='c-teaser__title'>Squiggle 0.8.6 -&gt; 0.9.2</h3>
+    <time class='c-teaser__date' datetime='2024-01-15'>15 Jan 2024</time>
+  </div>
+</a>                  <a href='/posts/squiggle-086/' class='c-teaser'>
+  <div class='c-teaser__content'>
+    <h3 class='c-teaser__title'>Squiggle 0.8.6</h3>
+    <time class='c-teaser__date' datetime='2023-11-07'>07 Nov 2023</time>
+  </div>
+</a>                  <a href='/posts/open-technical-challenges-around/' class='c-teaser'>
+  <div class='c-teaser__content'>
+    <h3 class='c-teaser__title'>Open Technical Challenges around Probabilistic Programs and Javascript</h3>
+    <time class='c-teaser__date' datetime='2023-08-26'>26 Aug 2023</time>
+  </div>
+</a>          </div>
+        </div>
+      </div>
+
+
+      <div class='c-teaser-wrapper o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+        <div class='o-grid'>
+          <div class='o-grid__col o-grid__col--full'>
+            <div class='c-title-bar'>
+              <h3 class='c-title-bar__title'>
+                <a href='/tag/research/' class='c-title-bar__link'>Research</a>
+              </h3>
+            </div>
+          </div>
+
+          <div class='o-grid__col'>
+                  <a href='/posts/a-sketch-of-ai-driven-epistemic-lock-in/' class='c-teaser'>
+  <div class='c-teaser__content'>
+    <h3 class='c-teaser__title'>A Sketch of AI-Driven Epistemic Lock-In</h3>
+    <time class='c-teaser__date' datetime='2025-03-05'>05 Mar 2025</time>
+  </div>
+</a>                  <a href='/posts/evaluation-consent-policies/' class='c-teaser'>
+  <div class='c-teaser__content'>
+    <h3 class='c-teaser__title'>Evaluation Consent Policies</h3>
+    <time class='c-teaser__date' datetime='2025-02-28'>28 Feb 2025</time>
+  </div>
+</a>                  <a href='/posts/6-potential-misconceptions-about-ai-intellectuals/' class='c-teaser'>
+  <div class='c-teaser__content'>
+    <h3 class='c-teaser__title'>6 (Potential) Misconceptions about AI Intellectuals</h3>
+    <time class='c-teaser__date' datetime='2025-02-16'>16 Feb 2025</time>
+  </div>
+    <div class='c-teaser__media'>
+      <img class='c-teaser__image lazyload' alt="6 (Potential) Misconceptions about AI Intellectuals" data-src='https://storage.ghost.io/c/92/de/92de1d28-1f9b-4f5a-95ac-36e53b3b9c9d/content/images/size/w176/2025/02/iwgouvjyyn2tyxtbcyjz.webp' width='88' height='88'>
+    </div>
+</a>                  <a href='/posts/ai-for-resolving-forecasting-questions-an-early-exploration/' class='c-teaser'>
+  <div class='c-teaser__content'>
+    <h3 class='c-teaser__title'>AI for Resolving Forecasting Questions: An Early Exploration</h3>
+    <time class='c-teaser__date' datetime='2025-01-17'>17 Jan 2025</time>
+  </div>
+</a>          </div>
+        </div>
+      </div>
+
+  </div>
+
+</main>
+
+    <footer class='c-footer'>
+  <div class='o-grid'>
+
+        <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+          <p class='c-footer__headline'>Tags</p>
+
+          <ul class='c-footer-list o-plain-list'>
+              <li><a href='/tag/ai-safety/'>AI Safety</a></li>
+              <li><a href='/tag/effective-altruism/'>Effective Altruism</a></li>
+              <li><a href='/tag/events/'>Events</a></li>
+              <li><a href='/tag/podcast/'>Podcast</a></li>
+              <li><a href='/tag/quri/'>QURI</a></li>
+              <li><a href='/tag/research/'>Research</a></li>
+              <li><a href='/tag/squiggle/'>Squiggle</a></li>
+          </ul>
+        </div>
+
+      <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+        <p class='c-footer__headline'>Links</p>
+
+        <ul class='c-footer-list o-plain-list'>
+            <li class='c-nav__item'>
+    <a href='https://www.squiggle-language.com/' class='c-nav__link '>Squiggle</a>
+  </li>
+  <li class='c-nav__item'>
+    <a href='https://squigglehub.org/' class='c-nav__link '>Squiggle Hub</a>
+  </li>
+  <li class='c-nav__item'>
+    <a href='https://www.getguesstimate.com/' class='c-nav__link '>Guesstimate</a>
+  </li>
+  <li class='c-nav__item'>
+    <a href='https://metaforecast.org/' class='c-nav__link '>Metaforecast</a>
+  </li>
+  <li class='c-nav__item'>
+    <a href='https://discord.gg/nsTnQTgtG6' class='c-nav__link '>QURI Discord</a>
+  </li>
+  <li class='c-nav__item'>
+    <a href='https://forum.effectivealtruism.org/topics/quantified-uncertainty-research-institute' class='c-nav__link '>EA Forum Tag</a>
+  </li>
+
+        </ul>
+      </div>
+
+   <div class='o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l' style="font-size:14px">
+      <p>The Quantified Uncertainty Research Institute is a non-profit 501(c)(3) tax-exempt organization.</p>
+      <p>(EIN 84-3847921)</p>
+    </div>
+
+    <div class='o-grid__col o-grid__col--full'>
+      <div class='c-footer__bottom'>
+        <div class='o-grid'>
+
+          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m'>
+            <div class='u-type-xs c-footer__copyright'>
+              &copy; 2026 The Quantified Uncertainty Research Institute Blog
+            </div>
+          </div>
+
+          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m'>
+            <ul class='c-social-icons o-plain-list'>
+    <li class='c-social-icons__item'>
+      <a href='https://x.com/QURIResearch' aria-label='Twitter' target='_blank' rel='noopener'>
+        <span class='c-social-icons__icon' data-icon='ei-sc-twitter' data-size='s'></span>
+      </a>
+    </li>
+
+
+
+
+
+  <li class='c-social-icons__item'>
+    <a href='/rss' aria-label='RSS' target='_blank' rel='noopener' title='RSS'>
+      <span class='c-social-icons__icon icon'>
+        <svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'><path d='M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z'/></svg>
+      </span>
+    </a>
+  </li>
+</ul>          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>  </div>
+
+  <script src='https://quantifieduncertainty.org/assets/js/app.min.js?v=HPnCWAhvbaf0NWwh'></script>
+  
+</body>
+</html>

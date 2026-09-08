@@ -1,0 +1,83 @@
+{
+ "domain": "lineupdrafter.com",
+ "requests": [
+  {
+   "url": "https://lineupdrafter.com",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\lineupdrafter-home.html",
+   "err": null
+  },
+  {
+   "url": "https://lineupdrafter.com/robots.txt",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\lineupdrafter-robots.txt",
+   "err": null
+  },
+  {
+   "url": "https://lineupdrafter.com/sitemap.xml",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\lineupdrafter-sitemap.xml",
+   "err": null
+  },
+  {
+   "url": "https://lineupdrafter.com/_nuxt/BAyOezEp.js",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\lineupdrafter-js0.js",
+   "err": null
+  }
+ ],
+ "homepage_status": 200,
+ "homepage_headers": {
+  "server": "cloudflare",
+  "x-powered-by": "Nuxt",
+  "cf-ray": "a3804b5e8b78a369-BOS",
+  "content-type": "text/html;charset=utf-8"
+ },
+ "robots_status": 200,
+ "sitemap_status": 200,
+ "sitemap_url": "https://lineupdrafter.com/sitemap.xml",
+ "sitemap_locs_sample": [
+  "https://lineupdrafter.com/",
+  "https://lineupdrafter.com/about",
+  "https://lineupdrafter.com/draftkings-lineup-upload",
+  "https://lineupdrafter.com/mlb-lineup-optimizer",
+  "https://lineupdrafter.com/nba-lineup-optimizer",
+  "https://lineupdrafter.com/nfl-lineup-optimizer",
+  "https://lineupdrafter.com/pga-lineup-optimizer"
+ ],
+ "sitemap_loc_count_seen": 7,
+ "js_candidates": [
+  "https://lineupdrafter.com/_nuxt/BAyOezEp.js"
+ ],
+ "js_fetched": [
+  {
+   "url": "https://lineupdrafter.com/_nuxt/BAyOezEp.js",
+   "status": 200,
+   "bytes": 173902
+  }
+ ],
+ "pricing_url": null,
+ "pricing_status": null,
+ "vendors_found": [],
+ "price_tokens": [
+  "$50",
+  "Free",
+  "free"
+ ],
+ "dns": {
+  "api.lineupdrafter.com": "NXDOMAIN (gaierror)",
+  "app.lineupdrafter.com": "NXDOMAIN (gaierror)",
+  "staging.lineupdrafter.com": "NXDOMAIN (gaierror)"
+ },
+ "search_used": "site:reddit.com <domain> complaint OR review",
+ "grep_summary": {
+  "https://lineupdrafter.com/_nuxt/BAyOezEp.js": {
+   "baseURL": [
+    "l?null:Es(n,r)}return typeof d.value==`object`?i.resolve(d.value)?.href??null:Es(un(a.app.baseURL,d.value),r)});return{to:d,hasTarget:o,isAbsoluteUrl:s,isExternal:u,href:p,isActive:f?.isActive??z(()=>d.value===i.currentRoute.va"
+   ],
+   "fetch(": [
+    "igin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})(),`global`in globalThis||(globalThis.global=globalThis);var hi=/\\\\/g,gi=/</g,_i=/\"/g,vi=/%\\w+(?:\\.\\w+)?/g,yi=`%separa"
+   ]
+  }
+ }
+}

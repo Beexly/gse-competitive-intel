@@ -1,0 +1,66 @@
+{
+ "site:reddit.com the-odds-api complaint": [
+  {
+   "title": "Low-latency WebSocket providers for live sports odds + play-by-play?",
+   "url": "https://www.reddit.com/r/algobetting/comments/1ri4von/lowlatency_websocket_providers_for_live_sports/",
+   "desc": "I'm looking for hands-on feedback from anyone running automated strategies on live sports markets. I tested odds-api.io and am seeing ~10+ ..."
+  },
+  {
+   "title": "r/ParlayAPI - Reddit",
+   "url": "https://www.reddit.com/r/ParlayAPI/",
+   "desc": "The Odds API has a free tier at 500 requests per month. Enough to play with the data shape, not enough to run any real polling. Their free ..."
+  },
+  {
+   "title": "Looking for a good bookie for scraping football odds : r/algobetting - Reddit",
+   "url": "https://www.reddit.com/r/algobetting/comments/1ekzysf/looking_for_a_good_bookie_for_scraping_football/",
+   "desc": "This is actually super awesome and my biggest complaint about odds api. zhiming1. \u2022. 2y ago. asianodds88.com provide api and i think is free."
+  },
+  {
+   "title": "Sportsbooks and their odds providers compilation : r/algobetting - Reddit",
+   "url": "https://www.reddit.com/r/algobetting/comments/1hz3ltx/sportsbooks_and_their_odds_providers_compilation/",
+   "desc": "Knowing which Sportsbooks use which odds providers can prevent redundancy in user accounts when looking to add diversity to line shopping."
+  },
+  {
+   "title": "Odds Screen Recommendations? : r/algobetting - Reddit",
+   "url": "https://www.reddit.com/r/algobetting/comments/113kr7r/odds_screen_recommendations/",
+   "desc": "A free API would be ideal. Bonus points for a site that shows low hold and arb opportunities. Would like to have live lines but don't need them."
+  },
+  {
+   "title": "Beware of OddsJam : r/EVbetting - Reddit",
+   "url": "https://www.reddit.com/r/EVbetting/comments/1amfgw4/beware_of_oddsjam/",
+   "desc": "Their algorithms are awful, and their recommended bets should be avoided. Customer service has no understanding of the basic math behind any of ..."
+  }
+ ],
+ "the-odds-api review reddit": [
+  {
+   "title": "Free Odds API : r/algobetting - Reddit",
+   "url": "https://www.reddit.com/r/algobetting/comments/1gfu1hx/free_odds_api/",
+   "desc": "I would suggest The Odds API. You get 500 free credits per month which should be plenty if you don't need to constantly update the odds."
+  },
+  {
+   "title": "Odds API Recommendations : r/algobetting - Reddit",
+   "url": "https://www.reddit.com/r/algobetting/comments/1pz8ipl/odds_api_recommendations/",
+   "desc": "So far I've been using the-odds-api, however they update their odds every 30-45 seconds, which is too slow for live arbitrage."
+  },
+  {
+   "title": "Built a drop-in replacement for the-odds-api with prediction market ...",
+   "url": "https://www.reddit.com/r/algobetting/comments/1scvcii/built_a_dropin_replacement_for_theoddsapi_with/",
+   "desc": "the-odds-api charges $30/mo for 20K credits. Fine for a funded company, annoying when you're just running backtests and prototyping strategies ..."
+  },
+  {
+   "title": "Sports Betting Data, API Sources : r/algobetting - Reddit",
+   "url": "https://www.reddit.com/r/algobetting/comments/1r8jcuz/sports_betting_data_api_sources/",
+   "desc": "The Odds API and both are great and good pricing. en working decently and pricing is fair. im using oddsAPI but it has limited tennis data, no ..."
+  },
+  {
+   "title": "Best Sports Betting APIs According to Reddit - Sports Game Odds",
+   "url": "https://sportsgameodds.com/blog/best-sports-betting-apis-according-to-reddit",
+   "desc": "## Top Sports Odds APIs According to Reddit\n### The Odds API\nWhen it comes to reliability and precision, most top developers and sports betting operators on Reddit think [The Odds API](http://the-odds-api.com/) ranks quite well."
+  },
+  {
+   "title": "I built the odds API I kept overpaying for, 17 books, 600+ markets, query ...",
+   "url": "https://www.reddit.com/r/algobetting/comments/1txvabx/i_built_the_odds_api_i_kept_overpaying_for_17/",
+   "desc": "I built the odds API I kept overpaying for, 17 books, 600+ markets, query any field, $0 while I test still. The wide breadth of player props ..."
+  }
+ ]
+}

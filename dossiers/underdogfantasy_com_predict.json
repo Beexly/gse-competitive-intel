@@ -1,0 +1,74 @@
+{
+ "domain": "underdogfantasy.com/predict",
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED (no model evidence in raw files)",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "simulation_engine": {
+  "num_simulations": null,
+  "correlation_method": "NOT CONFIRMED",
+  "citation": ""
+ },
+ "data_supply_chain": {
+  "vendors": [],
+  "citations": []
+ },
+ "product_limits": {
+  "limits": [],
+  "upgrade_triggers": [],
+  "citation": ""
+ },
+ "pricing": {
+  "web": "N/A — free-to-entry pickem/DFS product with paid entry (UDX exchange positioning on /predict page: 'Underdog Predict or Underdog Exchange or UDX')",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/underdogfantasy_com_predict_home.html"
+  ]
+ },
+ "customer_pain": [
+  {
+   "quote": "Underdog is a scam (r/underdogfantasy)",
+   "source": "https://www.reddit.com/r/underdogfantasy/comments/1ibafry/underdog_is_a_scam/",
+   "date": "2025 (thread id 1ibafry)"
+  },
+  {
+   "quote": "Is this a Scam? (r/underdogfantasy)",
+   "source": "https://www.reddit.com/r/underdogfantasy/comments/189aoum/is_this_a_scam/",
+   "date": "2024 (thread id 189aoum)"
+  }
+ ],
+ "discovered_paths": [
+  "robots.txt sitemap points to underdogsports.com/sitemap.xml (corporate rebrand domain); 311-loc sitemap: /games/pickem, /games/drafts, /games/pickem-champions, /games/streaks, /average-results, /guarddog (responsible gaming), /promo-code (raw/scan-underdogfantasy_com_predict.json)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "fetcher.py scan: /predict 200 (14.5KB Webflow shell); webflow chunks fetched; corporate sitemap 311 locs",
+  "timestamp": "2026-09-08T15:20:00-05:00"
+ },
+ "tech_stack": {
+  "frontend": "Webflow marketing shell over app (cdn.prod.website-files.com/67d86be30d981ef8b914a00d/js/webflow.schunk.*.js) + Redux in bundle (js0 greps show Redux dispatch/subscribe observables)",
+  "backend": "NOT CONFIRMED (app behind shell)",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare edge (server: cloudflare, cf-ray -IAH)",
+  "cdn": "Cloudflare + Webflow CDN (cdn.prod.website-files.com)",
+  "citations": [
+   "raw/scan-underdogfantasy_com_predict.json",
+   "raw/underdogfantasy_com_predict_home.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/scan-underdogfantasy_com_predict.json"
+  ]
+ },
+ "disposition": "live",
+ "notes": "GSE-relevant: 'Predict/Exchange' branding shows pickem books converging on prediction-market language; Webflow marketing shell + app split is the modern indie-to-scale pattern; corporate domain underdogsports.com hosts product sitemap."
+}

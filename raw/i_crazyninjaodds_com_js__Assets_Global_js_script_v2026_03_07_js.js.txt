@@ -1,0 +1,110 @@
+URL: https://crazyninjaodds.com/Assets/Global/js/script_v2026_03_07.js
+
+﻿
+
+
+
+let global_updatedDateTime = 0;
+
+
+
+function isToday(date) {
+    var today = new Date();
+    return date.toDateString() == today.toDateString();
+}
+
+function isTomorrow(date) {
+    var tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    return date.toDateString() == tomorrow.toDateString();
+}
+
+function utc_to_local(d_utc) {
+    //var d_utc = new Date('2022-08-20 21:38:20.500');
+    //console.log("UTC: " + d_utc);
+    var timezone_offset = d_utc.getTimezoneOffset();
+    var d_local = d_utc;
+    d_local.setMinutes(d_utc.getMinutes() - timezone_offset);
+    //console.log("Now: " + d_local.toString())
+    return d_local;
+}
+
+
+
+function UpdateDateTimeControls()
+{
+
+    //Set timezone for datetime.
+
+    var datetime_nodes = document.querySelectorAll('datetime');
+
+    for (let node of datetime_nodes) {
+        var str_utc = node.getAttribute('utc');//utc attribute set by the server
+        var options_id = node.getAttribute('options_id');
+        //var local = utc_to_local(new Date(str_utc));
+        var isoUtc = convertMdyToUtcIso(str_utc);
+        var local = new Date(isoUtc);
+
+        /*
+         utc - utc attribute set by the server
+         format - format string on how to format the date.
+         Uses this as a guide: https://www.w3schools.com/jsref/jsref_tolocalestring.asp
+         Extras I added:
+         # in a value will mean to skip the option if it is Today/Tomorrow and display the text Today/Tomorrow before all text, if so.
+         */
+        switch (options_id) {
+            case '1'://Normal table: Aug 20
+                var now = new Date();
+                var d = new Date(local);
+
+                var options_after = { hour: 'numeric', minute: 'numeric' };
+
+                var text_before = "";
+
+                if (isToday(d)) {
+                    text_before = "Today";
+                }
+                else if (isTomorrow(d)) {
+                    text_before = "Tomorrow";
+                }
+                else {
+                    var options_before = { weekday: 'short', month: 'short', day: 'numeric' };//{weekday: 'short', month: 'short', day: 'numeric'};
+                    text_before = d.toLocaleString(navigator.language, options_before);
+                }
+
+                node.innerHTML = text_before + " at " + d.toLocaleString(navigator.language, options_after);
+                break;
+        }
+
+
+
+    }
+
+    global_updatedDateTime = 1;
+
+}
+
+
+function convertMdyToUtcIso(str) {
+    const match = str.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4}) (\d{1,2}):(\d{2}):(\d{2}) (AM|PM)$/i);
+    if (!match) return null;
+
+    let [, month, day, year, hour, minute, second, ampm] = match;
+
+    month = month.padStart(2, '0');
+    day = day.padStart(2, '0');
+    hour = parseInt(hour, 10);
+
+    if (ampm.toUpperCase() === 'AM') {
+        if (hour === 12) hour = 0;
+    } else {
+        if (hour !== 12) hour += 12;
+    }
+
+    const hourStr = String(hour).padStart(2, '0');
+
+    return `${year}-${month}-${day}T${hourStr}:${minute}:${second}Z`;
+}
+
+
+

@@ -1,0 +1,4 @@
+URL: https://statpick.ai/api
+STATUS: 200
+
+{"name":"Stat Pick AI Public API","description":"Read-only player prop research for the NBA, MLB, WNBA, and NFL. Free, public, no API key.","baseUrl":"https://api.statpick.ai","documentation":"https://www.statpick.ai/developers","openapi":"https://www.statpick.ai/openapi.json","llmsTxt":"https://www.statpick.ai/llms.txt","markdownDocs":"https://www.statpick.ai/md/developers","authentication":"none","versioning":"Unversioned. The response envelope and documented fields are treated as a stable contract; breaking changes would ship on a new path and be announced in the OpenAPI spec before removal.","terms":"https://www.statpick.ai/terms-of-service"}

@@ -1,0 +1,5 @@
+URL: https://sports-ai.dev/robots.txt\nSTATUS: 200\n\n# Allow all user agents.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.sports-ai.dev/sitemap.xml

@@ -1,0 +1,125 @@
+{
+ "domain": "polyinsider.io",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/px_polyinsider_io_home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_polyinsider_io_home.raw",
+   "raw\\px_polyinsider_io_robots.raw"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "https://api.fontshare.com",
+    "https://api.polyinsider.io",
+    "https://api.fontshare.com/v2/css",
+    "ws.com/clarity-act-signed-into-law-in-2025-nKCKPZK92UBU.jpg",
+    "ws.com/jerome",
+    "ws.com/champions-league-pic-QIUFsL8vaDdq.png"
+   ],
+   "citation": "raw/px_polyinsider_io_home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": [
+    "WebSocket"
+   ],
+   "citation": "raw/px_polyinsider_io_home.raw"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyinsider_io_home.raw"
+  },
+  "citations": [
+   "raw\\px_polyinsider_io_home.raw",
+   "raw\\px_polyinsider_io_robots.raw"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Track whale trades, fresh wallet activity, and real-time Polymarket conviction. ' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "Polymarket",
+    "polymarket"
+   ],
+   "citation": "raw/px_polyinsider_io_home.raw"
+  },
+  "citations": [
+   "raw\\px_polyinsider_io_home.raw",
+   "raw\\px_polyinsider_io_robots.raw"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\px_polyinsider_io_home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\px_polyinsider_io_home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free"
+   ],
+   "citation": "raw/px_polyinsider_io_home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\px_polyinsider_io_home.raw",
+   "raw\\px_polyinsider_io_robots.raw"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Disallow: /",
+  "Allow: /",
+  "Disallow: /api/",
+  "Disallow: /api-proxy/",
+  "Disallow: /_next/",
+  "Sitemap: https://polyinsider.io/sitemap.xml"
+ ],
+ "discovered_targets": [
+  "https://api.fontshare.com",
+  "https://api.fontshare.com/v2/css",
+  "https://api.polyinsider.io",
+  "ws.com/atp-tour-b4390c4fb8.jpg",
+  "ws.com/champions-league-pic-QIUFsL8vaDdq.png",
+  "ws.com/clarity-act-signed-into-law-in-2025-nKCKPZK92UBU.jpg",
+  "ws.com/counter-strike-image-16c415c538.png",
+  "ws.com/jerome"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:02.398604"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "PolyInsider - Real-Time Polymarket Intelligence",
+  "description": "Track whale trades, fresh wallet activity, and real-time Polymarket conviction. See where size is building before the crowd catches up."
+ }
+}

@@ -1,0 +1,210 @@
+{
+  "domain": "bankrollszn.com",
+  "disposition": "live",
+  "status": "CONFIRMED (pricing $ NOT CONFIRMED - no pricing page in sitemap)",
+  "key_findings": "Free-model DFS/betting tool suite (MLB/NFL/WNBA/NBA/PGA/LoL projections, lineup optimizer, Monte Carlo sims, odds comparison) on React+Vite SPA served via Cloudflare+Caddy. Single 4.6MB main bundle (raw 1.5MB) exposes backend surface: /api/apps/*/functions/* + /api/apps/*/entities/* content API (per robots.txt comment: renders page content for Googlebot), /api/orders for purchases, Stripe.js v3 embedded, analytics tag users with is_premium + subscription_tier (freemium). Bundle references nflverse data. Monte Carlo product at /monte-carlo-sim.",
+  "tech_stack": {
+    "frontend": "React + Vite (index-CZYsoXcm.js), Tailwind, lucide-react",
+    "backend": "custom API: /api/apps/*/functions/* + /api/apps/*/entities/*, /api/orders",
+    "database": "NOT CONFIRMED (entity API pattern implies DB-backed)",
+    "cloud": "Caddy origin behind Cloudflare",
+    "cdn": "Cloudflare (cf-ray a380567f980712eb-ATL)",
+    "citations": [
+      "raw/bankrollszn.com_robots.txt",
+      "raw/bankrollszn.com_js_index-CZYsoXcm.js.js",
+      "raw/bankrollszn.com_home.html"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/apps/*/entities/Article",
+        "auth_required": false,
+        "tier": "public (Googlebot-rendered)",
+        "sample_response": null,
+        "citation": "raw/bankrollszn.com_robots.txt"
+      },
+      {
+        "method": "POST",
+        "path": "/api/apps/*/functions/*",
+        "auth_required": "partial",
+        "tier": "public content render",
+        "sample_response": null,
+        "citation": "raw/bankrollszn.com_robots.txt"
+      },
+      {
+        "method": "GET",
+        "path": "/api/functions/fetchDVPData",
+        "auth_required": false,
+        "tier": "unknown",
+        "sample_response": null,
+        "citation": "raw/bankrollszn.com_js_index-CZYsoXcm.js.js"
+      },
+      {
+        "method": "GET",
+        "path": "/api/functions/getNFLAirYards",
+        "auth_required": false,
+        "tier": "unknown",
+        "sample_response": null,
+        "citation": "raw/bankrollszn.com_js_index-CZYsoXcm.js.js"
+      },
+      {
+        "method": "GET",
+        "path": "/api/functions/getNFLPersonnelSplits",
+        "auth_required": false,
+        "tier": "unknown",
+        "sample_response": null,
+        "citation": "raw/bankrollszn.com_js_index-CZYsoXcm.js.js"
+      },
+      {
+        "method": "GET",
+        "path": "/api/functions/getNFLRBWorkload",
+        "auth_required": false,
+        "tier": "unknown",
+        "sample_response": null,
+        "citation": "raw/bankrollszn.com_js_index-CZYsoXcm.js.js"
+      },
+      {
+        "method": "GET",
+        "path": "/api/functions/getNFLReceiverCoverageSplits",
+        "auth_required": false,
+        "tier": "unknown",
+        "sample_response": null,
+        "citation": "raw/bankrollszn.com_js_index-CZYsoXcm.js.js"
+      },
+      {
+        "method": "GET",
+        "path": "/api/functions/getNFLVacatedTargets",
+        "auth_required": false,
+        "tier": "unknown",
+        "sample_response": null,
+        "citation": "raw/bankrollszn.com_js_index-CZYsoXcm.js.js"
+      },
+      {
+        "method": "POST",
+        "path": "/api/orders",
+        "auth_required": true,
+        "tier": "checkout",
+        "sample_response": null,
+        "citation": "raw/bankrollszn.com_js_index-CZYsoXcm.js.js"
+      }
+    ],
+    "graphql_schema": "NOT CONFIRMED (no /graphql refs in bundle)",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": [
+      "raw/bankrollszn.com_js_index-CZYsoXcm.js.js"
+    ]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "model-driven projections (MLB/NFL/WNBA/NBA/PGA/LoL); NFL advanced splits (air yards, personnel, RB workload, coverage splits, vacated targets)",
+    "training_data": "nflverse referenced in bundle",
+    "update_frequency": "daily (DFS product)",
+    "citation": "raw/bankrollszn.com_js_index-CZYsoXcm.js.js"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "correlation in strategy content only; sim correlation method NOT CONFIRMED",
+    "citation": "raw/bankrollszn.com_js_index-CZYsoXcm.js.js"
+  },
+  "data_supply_chain": {
+    "vendors": [
+      "nflverse"
+    ],
+    "citations": [
+      "raw/bankrollszn.com_js_index-CZYsoXcm.js.js (5 nflverse refs)"
+    ]
+  },
+  "product_limits": {
+    "limits": "freemium via is_premium + subscription_tier user properties",
+    "upgrade_triggers": "premium gates unknown; /LineupBuilder + /MyHRPicks robots-disallowed (auth-gated tools)",
+    "citation": "raw/bankrollszn.com_js_index-CZYsoXcm.js.js"
+  },
+  "pricing": {
+    "web": "NOT CONFIRMED - no pricing page in 162-url sitemap; Stripe.js + /api/orders checkout",
+    "ios": "NOT CONFIRMED",
+    "android": "NOT CONFIRMED",
+    "citations": [
+      "raw/bankrollszn.com_sitemap.xml",
+      "raw/bankrollszn.com_js_index-CZYsoXcm.js.js"
+    ]
+  },
+  "customer_pain": [
+    {
+      "quote": "BankrollSZN.com ... interested in people opinions. give me an hour with unlimited tools and permissions 90% of",
+      "source": "https://www.reddit.com/user/Practical-Try-4900/",
+      "date": "2026"
+    },
+    {
+      "quote": "Free daily fantasy sports and betting tools updated daily at bankrollszn.com (recurring self-promo posts across r/DFS_Sports, r/MLB_Bets)",
+      "source": "https://www.reddit.com/r/DFS_Sports/comments/1w73tmy/mlb_weather_report_for_todays_slate_september_4/",
+      "date": "2026-09-04"
+    }
+  ],
+  "discovered_paths": [
+    "/monte-carlo-sim",
+    "/odds-comparison",
+    "/mlb-projections",
+    "/nfl-projections",
+    "/api/functions/fetchDVPData",
+    "/functions/articleSitemap",
+    "/llms.txt"
+  ],
+  "discovered_targets": [],
+  "discovery_metadata": {
+    "method": "urllib GET via fetcher.py pattern; 8-HTTP-req budget",
+    "timestamp": "2026-09-08"
+  },
+  "requests_log": [
+    {
+      "url": "https://bankrollszn.com/",
+      "status": 200
+    },
+    {
+      "url": "https://bankrollszn.com/robots.txt",
+      "status": 200
+    },
+    {
+      "url": "https://bankrollszn.com/sitemap.xml",
+      "status": 200
+    },
+    {
+      "url": "https://news.google.com/swg/js/v1/publisher.js",
+      "status": 200
+    },
+    {
+      "url": "https://bankrollszn.com/assets/index-CZYsoXcm.js",
+      "status": 200
+    },
+    {
+      "url": "https://bankrollszn.com/openapi.json",
+      "status": 200,
+      "note": "SPA HTML fallback, not real openapi"
+    },
+    {
+      "url": "https://bankrollszn.com/swagger.json",
+      "status": 200,
+      "note": "SPA HTML fallback"
+    },
+    {
+      "url": "https://bankrollszn.com/api",
+      "status": 200,
+      "note": "SPA HTML fallback"
+    }
+  ],
+  "raw_files": [
+    "bankrollszn.com_home.html",
+    "bankrollszn.com_robots.txt",
+    "bankrollszn.com_sitemap.xml",
+    "bankrollszn.com_js_index-CZYsoXcm.js.js",
+    "bankrollszn.com_js_publisher.js.js"
+  ],
+  "notes": [
+    "8 HTTP requests total (2 were third-party news.google.com publisher.js) - budget honored",
+    "openapi/swagger/api probes returned the SPA shell (text/html), NOT real API docs - no public API docs",
+    "robots.txt: \"Do NOT add a blanket /api/ rule: /api/apps/*/entities/Article and /api/apps/*/functions/* are what render page content for Googlebot\" - content API publicly reachable",
+    "news.google.com publisher.js inclusion = Subscribe with Google eligible"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+ "domain": "apifootball.com",
+ "tech_stack": {
+  "frontend": {
+   "value": "vite",
+   "citation": "raw/apifootball-docs-v3.txt"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\apifootball-docs-v3.txt",
+   "raw\\apifootball-webextract.json",
+   "raw\\batch2_apifootball_com_home.html",
+   "raw\\batch2_apifootball_com_js1.js",
+   "raw\\batch2_apifootball_com_js2.js",
+   "raw\\batch2_apifootball_com_robots.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "api-football.com/",
+    "https://api-sports.io/documentation/hockey/v1",
+    "https://api-sports.io/documentation/mma/v1",
+    "https://api-sports.io/documentation/nba/v2",
+    "https://api-sports.io/documentation/nfl/v1",
+    "https://api-sports.io/documentation/rugby/v1"
+   ],
+   "citation": "raw/apifootball-docs-v3.txt"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": [
+    "WebSocket"
+   ],
+   "citation": "raw/apifootball-docs-v3.txt"
+  },
+  "rate_limits": {
+   "value": "Credit",
+   "citation": "raw/apifootball-docs-v3.txt"
+  },
+  "citations": [
+   "raw\\apifootball-docs-v3.txt",
+   "raw\\apifootball-webextract.json",
+   "raw\\batch2_apifootball_com_home.html",
+   "raw\\batch2_apifootball_com_js1.js",
+   "raw\\batch2_apifootball_com_js2.js",
+   "raw\\batch2_apifootball_com_robots.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Explore comprehensive football data and statistics with APIfootball. Get live sc' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\apifootball-docs-v3.txt"
+  },
+  "citations": [
+   "raw\\apifootball-docs-v3.txt",
+   "raw\\apifootball-webextract.json",
+   "raw\\batch2_apifootball_com_home.html",
+   "raw\\batch2_apifootball_com_js1.js",
+   "raw\\batch2_apifootball_com_js2.js",
+   "raw\\batch2_apifootball_com_robots.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "Credit",
+    "credit",
+    "per minute"
+   ],
+   "citation": "raw/apifootball-docs-v3.txt"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\apifootball-docs-v3.txt"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "FREE",
+    "free",
+    "free plan",
+    "Free"
+   ],
+   "citation": "raw/apifootball-docs-v3.txt"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\apifootball-docs-v3.txt",
+   "raw\\apifootball-webextract.json",
+   "raw\\batch2_apifootball_com_home.html",
+   "raw\\batch2_apifootball_com_js1.js",
+   "raw\\batch2_apifootball_com_js2.js",
+   "raw\\batch2_apifootball_com_robots.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Disallow: /index1/",
+  "Disallow: /documentation-v2.php",
+  "Disallow: /coverage-v2.php",
+  "Disallow: /index_test.php",
+  "Disallow: /index1.php",
+  "Disallow: /index2.php",
+  "Disallow: /blog.php",
+  "Disallow: /test/",
+  "Disallow: /test",
+  "Disallow: /test2/",
+  "Disallow: /test2",
+  "Disallow: /test3/"
+ ],
+ "discovered_targets": [
+  "api-football.com/",
+  "api-football.com/documentation-v3",
+  "https://api-sports.io/documentation/hockey/v1",
+  "https://api-sports.io/documentation/mma/v1",
+  "https://api-sports.io/documentation/nba/v2",
+  "https://api-sports.io/documentation/nfl/v1",
+  "https://api-sports.io/documentation/rugby/v1",
+  "https://api-sports.io/documentation/volleyball/v1"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:06:29.419697"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Affordable football API - APIfootball",
+  "description": "Explore comprehensive football data and statistics with APIfootball. Get live scores, fixtures, results, and more. Your go-to resource for all things football."
+ }
+}

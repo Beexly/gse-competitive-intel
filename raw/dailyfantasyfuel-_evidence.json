@@ -1,0 +1,107 @@
+{
+ "domain": "dailyfantasyfuel.com",
+ "requests": [
+  {
+   "url": "https://dailyfantasyfuel.com",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyfuel-home.html",
+   "err": null
+  },
+  {
+   "url": "https://dailyfantasyfuel.com/robots.txt",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyfuel-robots.txt",
+   "err": null
+  },
+  {
+   "url": "https://dailyfantasyfuel.com/sitemap.xml",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyfuel-sitemap.xml",
+   "err": null
+  },
+  {
+   "url": "https://dailyfantasyfuel.com/public/js/radar-component.js?radar20260817",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyfuel-js0.js",
+   "err": null
+  },
+  {
+   "url": "https://dailyfantasyfuel.com/signup",
+   "status": 200,
+   "saved": "C:\\\\Users\\\\Garrett\\\\.hermes\\\\competitor-intel\\raw\\dailyfantasyfuel-pricing.html",
+   "err": null
+  }
+ ],
+ "homepage_status": 200,
+ "homepage_headers": {
+  "x-powered-by": "Express",
+  "content-type": "text/html; charset=utf-8"
+ },
+ "robots_status": 200,
+ "sitemap_status": 200,
+ "sitemap_url": "https://dailyfantasyfuel.com/sitemap.xml",
+ "sitemap_locs_sample": [
+  "https://www.dailyfantasyfuel.com",
+  "https://www.dailyfantasyfuel.com/nfl/",
+  "https://www.dailyfantasyfuel.com/wnba/",
+  "https://www.dailyfantasyfuel.com/prizepicks-optimizer/",
+  "https://www.dailyfantasyfuel.com/prizepicks-optimizer/nfl/",
+  "https://www.dailyfantasyfuel.com/prizepicks-optimizer/nba/",
+  "https://www.dailyfantasyfuel.com/prizepicks-optimizer/mlb/",
+  "https://www.dailyfantasyfuel.com/prizepicks-optimizer/nhl/",
+  "https://www.dailyfantasyfuel.com/prizepicks-explorer/nba/",
+  "https://www.dailyfantasyfuel.com/prizepicks-explorer/mlb/",
+  "https://www.dailyfantasyfuel.com/prizepicks-explorer/nhl/",
+  "https://www.dailyfantasyfuel.com/prizepicks-trends/mlb/",
+  "https://www.dailyfantasyfuel.com/prizepicks-trends/nba/",
+  "https://www.dailyfantasyfuel.com/underdog-optimizer/",
+  "https://www.dailyfantasyfuel.com/underdog-optimizer/nfl/",
+  "https://www.dailyfantasyfuel.com/underdog-optimizer/nba/",
+  "https://www.dailyfantasyfuel.com/underdog-optimizer/mlb/",
+  "https://www.dailyfantasyfuel.com/underdog-optimizer/nhl/",
+  "https://www.dailyfantasyfuel.com/underdog-explorer/nba/",
+  "https://www.dailyfantasyfuel.com/underdog-explorer/mlb/",
+  "https://www.dailyfantasyfuel.com/underdog-explorer/nhl/",
+  "https://www.dailyfantasyfuel.com/underdog-explorer/nfl/",
+  "https://www.dailyfantasyfuel.com/nfl/projections/",
+  "https://www.dailyfantasyfuel.com/nfl/showdown-single-game-projections/",
+  "https://www.dailyfantasyfuel.com/nfl/projections/draftkings/",
+  "https://www.dailyfantasyfuel.com/nfl/projections/fanduel/",
+  "https://www.dailyfantasyfuel.com/nfl/standings/",
+  "https://www.dailyfantasyfuel.com/nfl/odds/",
+  "https://www.dailyfantasyfuel.com/nfl/matchup-analysis/",
+  "https://www.dailyfantasyfuel.com/nfl/injuries/",
+  "https://www.dailyfantasyfuel.com/nfl/matchup-analysis/buffalo-bills-miami-dolphins-buf-mia",
+  "https://www.dailyfantasyfuel.com/mlb/",
+  "https://www.dailyfantasyfuel.com/mlb/projections/",
+  "https://www.dailyfantasyfuel.com/mlb/projections/draftkings/",
+  "https://www.dailyfantasyfuel.com/mlb/projections/fanduel/",
+  "https://www.dailyfantasyfuel.com/mlb/standings/",
+  "https://www.dailyfantasyfuel.com/mlb/odds/",
+  "https://www.dailyfantasyfuel.com/mlb/matchup-analysis/",
+  "https://www.dailyfantasyfuel.com/mlb/starting-lineups/",
+  "https://www.dailyfantasyfuel.com/nba/"
+ ],
+ "sitemap_loc_count_seen": 57,
+ "js_candidates": [
+  "https://dailyfantasyfuel.com/public/js/radar-component.js?radar20260817"
+ ],
+ "js_fetched": [
+  {
+   "url": "https://dailyfantasyfuel.com/public/js/radar-component.js?radar20260817",
+   "status": 200,
+   "bytes": 6954
+  }
+ ],
+ "pricing_url": "https://dailyfantasyfuel.com/signup",
+ "pricing_status": 200,
+ "vendors_found": [],
+ "price_tokens": [],
+ "dns": {
+  "api.dailyfantasyfuel.com": "NXDOMAIN (gaierror)",
+  "app.dailyfantasyfuel.com": "NXDOMAIN (gaierror)",
+  "staging.dailyfantasyfuel.com": "NXDOMAIN (gaierror)"
+ },
+ "search_used": "site:reddit.com <domain> complaint OR review",
+ "grep_summary": {}
+}

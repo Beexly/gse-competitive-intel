@@ -1,0 +1,4 @@
+URL: https://www.4for4.com/api
+STATUS: 200
+
+{"data":[{"label":"Users","description":"Export the User entity with cookie authentication.","name":"users:1.0","resource":"users","majorVersion":1,"minorVersion":0,"self":"https:\/\/www.4for4.com\/api\/v1.0\/users"}],"count":1,"self":{"title":"Self","href":"https:\/\/www.4for4.com\/api\/v1.0\/discovery"}}

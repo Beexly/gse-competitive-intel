@@ -1,0 +1,292 @@
+---
+updatedAt: 2026-06-16T19:02:39.000Z
+---
+
+Fetch the complete documentation index at: https://developer.sportradar.com/odds/llms.txt. Use this file to discover all available pages before exploring further. Append .md to any documentation page URL to get its markdown version.
+
+# OC Core Overview
+
+## Introduction
+
+**Odds Comparison Core** (OC Core) is an access tier for the Sportradar Odds Comparison v2 APIs. Rather than a separate API, it is a pipeline configuration applied at the API key level by Sportradar Support — providing access to the global Core Crawlers pipeline, as opposed to the US-focused Magic Crawlers pipeline available by default.
+
+Once enabled, your OC Core key can be used with the <Anchor label="Prematch" target="_blank" href="https://developer.sportradar.com/odds/reference/oc-prematch-overview">Prematch</Anchor>, <Anchor label="Player Props" target="_blank" href="https://developer.sportradar.com/odds/reference/oc-player-props-overview">Player Props</Anchor>, <Anchor label="Live Odds" target="_blank" href="https://developer.sportradar.com/odds/reference/oc-live-odds-overview">Live Odds</Anchor>, and <Anchor label="Futures" target="_blank" href="https://developer.sportradar.com/odds/reference/oc-futures-overview">Futures</Anchor> endpoints to return data from **140+ global bookmakers** across a broad range of sports and competitions.
+
+OC Core is well-suited for:
+
+* Global bookmaker coverage beyond the US market
+* Broader sport availability, including niche and regional sports
+* Migration from the Odds Comparison Regular (v1) product
+
+<br />
+
+<Callout icon="👍" theme="okay">
+  ## Migrating from Odds Comparison Regular?
+
+  Access the v1 documentation **<Anchor label="here" target="_blank" href="https://developer.sportradar.com/odds/v1/reference/oc-regular-overview">here</Anchor>**.
+</Callout>
+
+<br />
+
+***
+
+## Getting Access
+
+OC Core access is configured by Sportradar Support at the API key level. To get started, reach out to our support team to have Core enabled on your account.
+
+<Callout icon="🙋‍♂️" theme="default">
+  ### Need assistance?
+
+  Contact our 24/7 Support team ([mediasupport@sportradar.com](mailto:mediasupport@sportradar.com)) to enable OC Core on your API key.
+</Callout>
+
+<br />
+
+### Identifying Your Access Level
+
+Each OC API response returns an `X-Origin-Id` header that identifies the bookmaker pipeline your key is configured for:
+
+| `X-Origin-Id` Value            | Access Level |
+| :----------------------------- | :----------- |
+| `MARKET_ORIGIN_CORE_CRAWLERS`  | OC Core Key  |
+| `MARKET_ORIGIN_MAGIC_CRAWLERS` | OC US Key    |
+
+<br />
+
+### Sandbox Testing
+
+Once you have your OC Core API key, retrieve it from your <Anchor label="Marketplace account" target="_blank" href="https://marketplace.sportradar.com/accounts">Marketplace account</Anchor> and test it directly in the sandboxes of the Odds Comparison APIs:
+
+* <Anchor label="Prematch API" target="_blank" href="https://developer.sportradar.com/odds/reference/oc-prematch-books">Prematch API</Anchor>
+* <Anchor label="Player Props API" target="_blank" href="https://developer.sportradar.com/odds/reference/oc-player-props-books">Player Props API</Anchor>
+* <Anchor label="Live Odds API" target="_blank" href="https://developer.sportradar.com/odds/reference/oc-live-odds-books">Live Odds API</Anchor>
+* <Anchor label="Futures API" target="_blank" href="https://developer.sportradar.com/odds/reference/oc-futures-books">Futures API</Anchor>
+
+All endpoints from the Odds Comparison v2 APIs are supported with your OC Core key.
+
+<br />
+
+***
+
+## Sports Coverage
+
+OC Core supports a broad range of global and niche sports. Coverage depth depends on bookmaker feed availability.
+
+| Team & Field Sports | Racket & Net Sports | Combat & Individual Sports | Motorsports & Esports |
+| :------------------ | :------------------ | :------------------------- | :-------------------- |
+| Soccer              | Tennis              | Boxing                     | Formula 1             |
+| Basketball          | Table Tennis        | MMA                        | Speedway              |
+| Baseball            | Badminton           | Golf                       | Stock Car Racing      |
+| Ice Hockey          | Volleyball          | Cycling                    | Counter-Strike        |
+| American Football   | Waterpolo           | Snooker                    | League of Legends     |
+| Handball            | Futsal              | Darts                      |                       |
+| Rugby               | Floorball           | Cricket                    |                       |
+| Aussie Rules        | Lacrosse            | Specials                   |                       |
+| Gaelic Football     |                     | Gaelic Hurling             |                       |
+
+<br />
+
+***
+
+## Markets
+
+<br />
+
+### Pre-Match Markets
+
+The table below lists all supported pre-match markets and the sports they apply to. Market availability is feed-driven and may vary by event.
+
+| Market ID | Market Name                       | Sports                                                      |
+| :-------- | :-------------------------------- | :---------------------------------------------------------- |
+| **1**     | 1x2                               | Soccer                                                      |
+| **8**     | `{!goalnr}` goal                  | Soccer                                                      |
+| **10**    | Double chance                     | Soccer                                                      |
+| **11**    | Draw no bet                       | Soccer                                                      |
+| **14**    | Handicap `{hcp}`                  | Soccer                                                      |
+| **16**    | Handicap                          | Soccer                                                      |
+| **18**    | Total                             | Soccer                                                      |
+| **25**    | Goal range                        | Soccer                                                      |
+| **26**    | Odd/even                          | Soccer                                                      |
+| **29**    | Both teams to score               | Soccer, Ice Hockey, Rugby Union, Rugby League, Floorball    |
+| **45**    | Correct score                     | Soccer                                                      |
+| **47**    | Halftime / Fulltime               | Soccer                                                      |
+| **60**    | 1st half 1x2                      | Soccer                                                      |
+| **64**    | 1st half draw no bet              | Soccer                                                      |
+| **66**    | 1st half handicap                 | Soccer                                                      |
+| **68**    | 1st half total                    | Soccer                                                      |
+| **69**    | 1st half team total (home)        | Soccer                                                      |
+| **70**    | 1st half team total (away)        | Soccer                                                      |
+| **163**   | `{!cornernr}` corner              | Soccer                                                      |
+| **186**   | Winner                            | Tennis                                                      |
+| **187**   | Game handicap                     | Tennis, Table Tennis, Badminton                             |
+| **188**   | Set handicap                      | Tennis                                                      |
+| **189**   | Total games                       | Tennis                                                      |
+| **199**   | Correct score                     | Soccer                                                      |
+| **219**   | Winner (incl. OT)                 | Basketball, Ice Hockey, American Football, Handball, Futsal |
+| **223**   | Handicap (incl. OT)               | Basketball, Ice Hockey                                      |
+| **225**   | Total (incl. OT)                  | Basketball, Ice Hockey                                      |
+| **227**   | Team total (incl. OT)             | Basketball                                                  |
+| **228**   | Opponent total (incl. OT)         | Basketball                                                  |
+| **231**   | 2nd half handicap (incl. OT)      | Basketball, Ice Hockey, Handball                            |
+| **232**   | 2nd half total (incl. OT)         | Basketball, Ice Hockey                                      |
+| **251**   | Winner (incl. extra innings)      | Baseball                                                    |
+| **256**   | Handicap (incl. extra innings)    | Baseball                                                    |
+| **258**   | Total (incl. extra innings)       | Baseball                                                    |
+| **274**   | Innings 1-5 1x2                   | Baseball                                                    |
+| **275**   | Innings 1-5 handicap              | Baseball                                                    |
+| **276**   | Innings 1-5 total                 | Baseball                                                    |
+| **293**   | 2nd half 1x2 (incl. OT)           | Basketball                                                  |
+| **294**   | 2nd half draw no bet (incl. OT)   | Basketball                                                  |
+| **340**   | Winner (incl. super over)         | Cricket                                                     |
+| **406**   | Winner (incl. OT & penalties)     | Ice Hockey                                                  |
+| **410**   | Handicap (incl. OT & penalties)   | Ice Hockey                                                  |
+| **412**   | Total (incl. OT & penalties)      | Ice Hockey                                                  |
+| **414**   | Home total (incl. OT & penalties) | Ice Hockey                                                  |
+| **415**   | Away total (incl. OT & penalties) | Ice Hockey                                                  |
+
+See <Anchor label="US Prematch Markets" target="_blank" href="https://developer.sportradar.com/odds/reference/oc-prematch-overview#markets">US Prematch Markets</Anchor> to compare products.
+
+<br />
+
+### Player Props Markets
+
+OC Core currently supports a limited set of player props markets, restricted to soccer goalscorer markets:
+
+| Market ID | Market Name                               | Sport  |
+| :-------- | :---------------------------------------- | :----- |
+| **38**    | `{!goalnr}` goalscorer / First goalscorer | Soccer |
+| **39**    | Last goalscorer                           | Soccer |
+| **40**    | Anytime goalscorer                        | Soccer |
+
+For broader player props depth, see <Anchor label="OC US Available Markets" target="_blank" href="https://developer.sportradar.com/odds/reference/oc-player-props-overview#available-markets">OC US Available Markets</Anchor>.
+
+<br />
+
+### Live Odds Markets
+
+Live Odds market coverage is currently limited to:
+
+* 2-way markets
+* 3-way markets
+
+<br />
+
+#### Bookmaker Coverage
+
+**Global / Multi-market Betway**
+
+* Unibet
+* Sbobet
+* Dafabet
+* Stake
+* Paf
+
+**UK / Europe WilliamHill**
+
+* BwinBe
+* Coolbet
+* HollandCasino
+* SynotTipCZ
+* Stoiximan
+* FavBet
+* Vivarobet
+* WinBet
+* EGB
+* BetCity
+* Bet22
+* Cybet
+
+**Asia / Asia-Pacific Mansion88**
+
+* Pinbet88
+* Africa Betika
+* Americas FanDuel
+* MGM
+* WilliamHillNewJersey
+
+<br />
+
+#### Coverage Notes
+
+* Live Odds coverage is bookmaker-dependent and may vary by sport and event
+* Market coverage is currently restricted to 2-way and 3-way live markets
+* Availability should be treated as feed-driven and subject to bookmaker support
+
+<br />
+
+### Futures Markets
+
+Futures and event mapping can differ from OC US. Futures IDs may vary depending on mapping. See the <Anchor label="Futures API" target="_blank" href="https://developer.sportradar.com/odds/reference/oc-futures-overview">Futures API</Anchor> documentation for details.
+
+<br />
+
+***
+
+## OC Core vs. OC US
+
+OC Core and OC US share the same API structure but draw from different bookmaker pipelines, resulting in meaningful differences in coverage, depth, and consistency.
+
+| Area                | OC US                                                            | OC Core                                                                     |
+| :------------------ | :--------------------------------------------------------------- | :-------------------------------------------------------------------------- |
+| **Default Access**  | Yes                                                              | No — configured by Sportradar Support                                       |
+| **Ingest Source**   | Magic Crawlers                                                   | Core Crawlers                                                               |
+| **Coverage Model**  | Fixed                                                            | Broad, feed-driven                                                          |
+| **Bookmakers**      | US-focused set                                                   | 140+ global bookmakers                                                      |
+| **Sports**          | Limited, curated set                                             | 30+ global and niche sports                                                 |
+| **Markets**         | Fixed and standardized                                           | Supported list; event/feed dependent                                        |
+| **Player Props**    | Extensive                                                        | Limited (Soccer goalscorer only)                                            |
+| **Latency**         | Lower and more predictable                                       | Variable                                                                    |
+| **Consistency**     | High                                                             | Variable                                                                    |
+| **Recommended for** | US bookmaker comparison, lower latency, predictable integrations | Global bookmaker coverage, OC Regular migration, broader sport availability |
+
+Although OC Core has broader bookmaker and sport coverage, it does not guarantee parity with OC US — particularly around player props depth, event coverage, feed refresh timing, and bookmaker market depth.
+
+<br />
+
+***
+
+## Integration Resources
+
+<br />
+
+### OpenAPI Specs
+
+Our Odds Comparison APIs are available via OpenAPI. Click below to view and/or download the specs.
+
+* <Anchor label="Odds Comparison Futures v2 OpenAPI" target="_blank" href="https://api.sportradar.com/oddscomparison-futures/trial/v2/openapi/swagger/index.html">Odds Comparison Futures v2 OpenAPI</Anchor>
+* <Anchor label="Odds Comparison Live Odds v2 OpenAPI" target="_blank" href="https://api.sportradar.com/oddscomparison-liveodds/production/v2/openapi/swagger/index.html">Odds Comparison Live Odds v2 OpenAPI</Anchor>
+* <Anchor label="Odds Comparison Player Props v2 OpenAPI" target="_blank" href="https://api.sportradar.com/oddscomparison-player-props/trial/v2/openapi/swagger/index.html">Odds Comparison Player Props v2 OpenAPI</Anchor>
+* <Anchor label="Odds Comparison Prematch v2 OpenAPI" target="_blank" href="https://api.sportradar.com/oddscomparison-prematch/trial/v2/openapi/swagger/index.html">Odds Comparison Prematch v2 OpenAPI</Anchor>
+
+<br />
+
+### Postman Workspace
+
+<Callout icon="🚀" theme="default">
+  ## Run in Postman
+
+  Our full Media API suite—including the Odds Comparison collections—live in our public Postman workspace. Fork or follow any collection to get updates automatically.
+
+  <a href="https://app.getpostman.com/run-collection/17203961-2435da71-c051-4281-a69d-c04f635cecab?action=collection%2Ffork&collection-url=entityId%3D17203961-2435da71-c051-4281-a69d-c04f635cecab%26entityType%3Dcollection%26workspaceId%3Da6193b92-ee53-4979-bbfe-7ffdc589c3fc">
+    <img src="https://run.pstmn.io/button.svg" />
+  </a>
+</Callout>
+
+<br />
+
+### Schema Downloads
+
+Open the zip files below to access our Odds Comparison API XSD schemas.
+
+* [Odds Comparison Futures v2 Schema](https://api-docs.sportradar.us/odds/Odds_Comparison_Futures_v2.zip)
+* [Odds Comparison Live Odds v2 Schema](https://api-docs.sportradar.us/odds/Odds_Comparison_Live_Odds_v2.zip)
+* [Odds Comparison Player Props v2 Schema](https://api-docs.sportradar.us/odds/Odds_Comparison_Player_Props_v2.zip)
+* [Odds Comparison Prematch v2 Schema](https://api-docs.sportradar.us/odds/Odds_Comparison_Prematch_v2.zip)
+
+<br />
+
+### MCP Server
+
+The **Sportradar Odds Comparison MCP Server** is a Model Context Protocol (MCP) implementation that bridges AI assistants directly to our Odds Comparison API feeds. It allows LLMs to use standardized tools to fetch our sports data, helping to power your applications, assist in coding, and streamlining your integration.
+
+For detailed instructions on how to set up and use this integration, visit our <Anchor label="MCP Server" target="_blank" href="https://developer.sportradar.com/getting-started/docs/mcp-server">MCP Server</Anchor> documentation.

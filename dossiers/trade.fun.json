@@ -1,0 +1,141 @@
+{
+ "domain": "trade.fun",
+ "tech_stack": {
+  "frontend": {
+   "value": "react",
+   "citation": "raw/brosonpm.trade__home.raw"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\brosonpm.trade__home.raw",
+   "raw\\brosonpm.trade__robots.raw",
+   "raw\\gh-src-stone-tradeFinder.ts",
+   "raw\\ls_oddstrader_com_.well-known_security.txt.txt",
+   "raw\\ls_oddstrader_com_api.txt",
+   "raw\\ls_oddstrader_com_api_v1.txt"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "api.json",
+    "ws-sitemap.xml",
+    "api.js",
+    "api.php",
+    "ws-ticker.js",
+    "ws.html"
+   ],
+   "citation": "raw/brosonpm.trade__home.raw"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": [
+    "WebSocket"
+   ],
+   "citation": "raw/brosonpm.trade__home.raw"
+  },
+  "rate_limits": {
+   "value": "Credit",
+   "citation": "raw/brosonpm.trade__home.raw"
+  },
+  "citations": [
+   "raw\\brosonpm.trade__home.raw",
+   "raw\\brosonpm.trade__robots.raw",
+   "raw\\gh-src-stone-tradeFinder.ts",
+   "raw\\ls_oddstrader_com_.well-known_security.txt.txt",
+   "raw\\ls_oddstrader_com_api.txt",
+   "raw\\ls_oddstrader_com_api_v1.txt"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "kalshi",
+    "polymarket",
+    "Kalshi",
+    "Polymarket",
+    "Opta"
+   ],
+   "citation": "raw/brosonpm.trade__home.raw"
+  },
+  "citations": [
+   "raw\\brosonpm.trade__home.raw",
+   "raw\\brosonpm.trade__robots.raw",
+   "raw\\gh-src-stone-tradeFinder.ts",
+   "raw\\ls_oddstrader_com_.well-known_security.txt.txt",
+   "raw\\ls_oddstrader_com_api.txt",
+   "raw\\ls_oddstrader_com_api_v1.txt"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "Credit",
+    "credit",
+    "rate limit"
+   ],
+   "citation": "raw/brosonpm.trade__home.raw"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\brosonpm.trade__home.raw"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "Free",
+    "$150 pro",
+    "FREE"
+   ],
+   "citation": "raw/brosonpm.trade__home.raw"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\brosonpm.trade__home.raw",
+   "raw\\brosonpm.trade__robots.raw",
+   "raw\\gh-src-stone-tradeFinder.ts",
+   "raw\\ls_oddstrader_com_.well-known_security.txt.txt",
+   "raw\\ls_oddstrader_com_api.txt",
+   "raw\\ls_oddstrader_com_api_v1.txt"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "api.js",
+  "api.json",
+  "api.php",
+  "apital-traders.html",
+  "ws-sitemap.xml",
+  "ws-ticker.js",
+  "ws.html",
+  "wski.html"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:05:53.012399"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "NOT CONFIRMED",
+  "description": "NOT CONFIRMED"
+ }
+}

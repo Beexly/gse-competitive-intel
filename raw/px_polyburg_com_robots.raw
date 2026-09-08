@@ -1,0 +1,88 @@
+# Polyburg.com robots.txt
+#
+# SINGLE SOURCE OF TRUTH for crawler rules. Next.js can also generate a
+# robots.txt from src/app/robots.ts, but a static public/robots.txt always
+# wins — so robots.ts was DELETED (2026-08-18) to stop the two from
+# diverging. Edit THIS file only; do not re-add src/app/robots.ts.
+#
+# Each User-agent record below is complete (its own Allow/Disallow lines) —
+# per the robots spec, a bot matches exactly one record, so every record
+# must carry the full rule set it needs.
+
+# --- AI/LLM crawlers: explicitly allowed everywhere except internal paths ---
+
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /r/
+Disallow: /broadcast/
+Disallow: /files/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /r/
+Disallow: /broadcast/
+Disallow: /files/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /r/
+Disallow: /broadcast/
+Disallow: /files/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /r/
+Disallow: /broadcast/
+Disallow: /files/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /r/
+Disallow: /broadcast/
+Disallow: /files/
+
+User-agent: CCBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /r/
+Disallow: /broadcast/
+Disallow: /files/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /r/
+Disallow: /broadcast/
+Disallow: /files/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /r/
+Disallow: /broadcast/
+Disallow: /files/
+
+# --- All other crawlers ---
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /r/
+Disallow: /broadcast/
+Disallow: /files/
+
+Sitemap: https://polyburg.com/sitemap.xml

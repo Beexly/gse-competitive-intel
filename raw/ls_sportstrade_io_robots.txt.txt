@@ -1,0 +1,36 @@
+URL: https://www.sportstrade.io/robots.txt\nSTATUS: 200\n\nUser-agent: *
+
+Disallow: /email_template/
+
+
+Disallow: /webadmin/
+Disallow: /APP/
+
+Disallow: /cappertechadmin/
+
+Disallow: /cgi-bin/
+
+User-agent: AhrefsBot
+Disallow: /
+
+Disallow: /h2h$
+Disallow: /odds$
+Disallow: /lineup$
+Disallow: /standings$
+Disallow: /soccer-news-detail/
+Disallow: /mysqlminiadmin.php
+Disallow: /mysqlminiadmin11.php
+Disallow: /webadmin/
+Disallow: /soccer-news.html
+
+Sitemap: https://www.sportstrade.io/sitemap.xml
+
+User-Agent: Googlebot
+User-Agent: Googlebot smartphone
+
+User-Agent: Googlebot-Mobile
+
+User-Agent: Slurp
+
+User-Agent: Baidu
+

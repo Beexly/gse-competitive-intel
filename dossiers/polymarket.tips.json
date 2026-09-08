@@ -1,0 +1,138 @@
+{
+ "domain": "polymarket.tips",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/polymarket-docs_polymarket_com_.txt"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\polymarket-docs_polymarket_com_.txt",
+   "raw\\polymarket-gamma_api_polymarket_com_events_limit_1.txt",
+   "raw\\polymarket-polymarket_com.html",
+   "raw\\polymarket-polymarket_com__next_static_immutable_chunks_01ygkzbnmg6y2_js.txt",
+   "raw\\polymarket-polymarket_com__next_static_immutable_chunks_02q1z81fog7zx_js.txt",
+   "raw\\polymarket-polymarket_com_sitemap_xml.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "ws.com/polymarket-292d1b1b/images/icons/nav/book.svg",
+    "ws.com/polymarket-292d1b1b/images/icons/nav/layers.svg",
+    "ws.com/polymarket-292d1b1b/images/icons/nav/paper.svg",
+    "ws.com/polymarket-292d1b1b/images/icons/nav/chart.svg",
+    "ws.com/polymarket-292d1b1b/images/icons/nav/trophy.svg",
+    "ws.com/polymarket-292d1b1b/images/icons/nav/book-search.svg"
+   ],
+   "citation": "raw/polymarket-docs_polymarket_com_.txt"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": [
+    "WebSocket"
+   ],
+   "citation": "raw/polymarket-docs_polymarket_com_.txt"
+  },
+  "rate_limits": {
+   "value": "Rate limit",
+   "citation": "raw/polymarket-docs_polymarket_com_.txt"
+  },
+  "citations": [
+   "raw\\polymarket-docs_polymarket_com_.txt",
+   "raw\\polymarket-gamma_api_polymarket_com_events_limit_1.txt",
+   "raw\\polymarket-polymarket_com.html",
+   "raw\\polymarket-polymarket_com__next_static_immutable_chunks_01ygkzbnmg6y2_js.txt",
+   "raw\\polymarket-polymarket_com__next_static_immutable_chunks_02q1z81fog7zx_js.txt",
+   "raw\\polymarket-polymarket_com_sitemap_xml.html"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "polymarket",
+    "Polymarket",
+    "opTa",
+    "PolyMarket"
+   ],
+   "citation": "raw/polymarket-docs_polymarket_com_.txt"
+  },
+  "citations": [
+   "raw\\polymarket-docs_polymarket_com_.txt",
+   "raw\\polymarket-gamma_api_polymarket_com_events_limit_1.txt",
+   "raw\\polymarket-polymarket_com.html",
+   "raw\\polymarket-polymarket_com__next_static_immutable_chunks_01ygkzbnmg6y2_js.txt",
+   "raw\\polymarket-polymarket_com__next_static_immutable_chunks_02q1z81fog7zx_js.txt",
+   "raw\\polymarket-polymarket_com_sitemap_xml.html"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "Rate limit",
+    "Rate Limit",
+    "rate limit"
+   ],
+   "citation": "raw/polymarket-docs_polymarket_com_.txt"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\polymarket-docs_polymarket_com_.txt"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "free",
+    "Free"
+   ],
+   "citation": "raw/polymarket-docs_polymarket_com_.txt"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\polymarket-docs_polymarket_com_.txt",
+   "raw\\polymarket-gamma_api_polymarket_com_events_limit_1.txt",
+   "raw\\polymarket-polymarket_com.html",
+   "raw\\polymarket-polymarket_com__next_static_immutable_chunks_01ygkzbnmg6y2_js.txt",
+   "raw\\polymarket-polymarket_com__next_static_immutable_chunks_02q1z81fog7zx_js.txt",
+   "raw\\polymarket-polymarket_com_sitemap_xml.html"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "apis.com",
+  "ws.com/polymarket-292d1b1b/images/icons/nav/book-search.svg",
+  "ws.com/polymarket-292d1b1b/images/icons/nav/book.svg",
+  "ws.com/polymarket-292d1b1b/images/icons/nav/chart.svg",
+  "ws.com/polymarket-292d1b1b/images/icons/nav/layers.svg",
+  "ws.com/polymarket-292d1b1b/images/icons/nav/paper.svg",
+  "ws.com/polymarket-292d1b1b/images/icons/nav/trophy.svg",
+  "wserconfig.xml"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch, composed from raw evidence",
+  "timestamp": "2026-09-08T16:05:42.545562"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "NOT CONFIRMED",
+  "description": "NOT CONFIRMED"
+ }
+}

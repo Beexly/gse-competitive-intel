@@ -1,0 +1,105 @@
+{
+ "domain": "compose.build",
+ "tech_stack": {
+  "frontend": {
+   "value": "_next/static",
+   "citation": "raw/b45_com_compose_build_home.txt"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b45_com_compose_build_home.txt",
+   "raw\\b45_com_compose_build_robots.txt",
+   "raw\\fantasylabs-js-composer.js"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "https://apis.google.com/js/plusone.js",
+    "rest.com/js/pinit.js"
+   ],
+   "citation": "raw/b45_com_compose_build_home.txt"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_compose_build_home.txt"
+  },
+  "rate_limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_compose_build_home.txt"
+  },
+  "citations": [
+   "raw\\b45_com_compose_build_home.txt",
+   "raw\\b45_com_compose_build_robots.txt",
+   "raw\\fantasylabs-js-composer.js"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Compose by Goldsky: ship onchain apps like the web. Move data and money across y' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": [
+    "polymarket",
+    "Polymarket"
+   ],
+   "citation": "raw/b45_com_compose_build_home.txt"
+  },
+  "citations": [
+   "raw\\b45_com_compose_build_home.txt",
+   "raw\\b45_com_compose_build_robots.txt",
+   "raw\\fantasylabs-js-composer.js"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_compose_build_home.txt"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\b45_com_compose_build_home.txt"
+ },
+ "pricing": {
+  "web": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b45_com_compose_build_home.txt"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b45_com_compose_build_home.txt",
+   "raw\\b45_com_compose_build_robots.txt",
+   "raw\\fantasylabs-js-composer.js"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "Allow: /"
+ ],
+ "discovered_targets": [
+  "https://apis.google.com/js/plusone.js",
+  "rest.com/js/pinit.js"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:45.040913"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Compose by Goldsky — The Offchain-to-Onchain Framework",
+  "description": "Compose by Goldsky: ship onchain apps like the web. Move data and money across your stack - offchain, onchain, or both - with durability and orchestration built in."
+ }
+}

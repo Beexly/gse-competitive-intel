@@ -1,0 +1,77 @@
+{
+ "clubelo-http": {
+  "status": "502",
+  "bytes": "0",
+  "head": ""
+ },
+ "clubelo-root": {
+  "status": "200",
+  "bytes": "2101",
+  "head": "<!DOCTYPE HTML><html><head><title>Clubelo</title><meta http-equiv=\"REFRESH\" content=\"60;url=/\"></HEAD><BODY><!DOCTYPE html><html><head>\n<meta charset=\"utf-8\"><title>Football Club Elo Ratings</title><LINK REL=StyleSheet HREF=\"/style.css\" TYPE=\"text/css\">\n<meta name = \"author\" content = \"Lars Schiefler\">\n<link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.png\" />\n</head>\n<body style=\" font-family:Calibri,Sans-Serif; background-color: #080808; text-align:center;\">\n<div class=\"alles\"><div class=\"stam"
+ },
+ "betfair-dev": {
+  "status": "403",
+  "bytes": "3285",
+  "head": "<!DOCTYPE html>\n<html manifest=\"\" lang=\"en-US\">\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n    <title>Betfair</title>\n    <meta name=\"theme-color\" content=\"#004833\" />\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n      }\n      html,\n      body {\n        height: 100%;\n      }\n      body {\n        background: #000;\n        font-family: Arial, sans-serif;\n      }\n      .container {\n        width: 100%;\n        height: 100%;\n        display: ta"
+ },
+ "betexplorer": {
+  "status": "200",
+  "bytes": "502392",
+  "head": "<!DOCTYPE html>\n<html lang=\"en\" class=\"no-js\">\n<head>\n\n<script>\n// Remove no-js class and append js class if javascript is enabled\ndocument.documentElement.classList.remove(\"no-js\");\ndocument.documentElement.classList.add(\"js\");\nvar desktopMode = localStorage.getItem(\"mode\") || undefined;\n// Migration: delete old lang cookie (renamed to be_lang)\ndocument.cookie = 'lang=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';\n</script>\n\n<link rel=\"alternate\" data-lang=\"en\" hreflang=\"en\" href=\"https://ww"
+ },
+ "covers-odds": {
+  "status": "404",
+  "bytes": "286003",
+  "head": "\n<!DOCTYPE html>\n<html lang=\"en\" xml:lang=\"en\">\n<head>\n    <link crossorigin rel=\"preconnect dns-prefetch\" href=\"https://img.covers.com\">\n    <link crossorigin rel=\"preconnect dns-prefetch\" href=\"https://headers.covers.com\">\n\n    \n\n    \n    <meta name=\"copyright\" content=\"Copyright &#169; 1995-2026 CS Media Limited All Rights Reserved.\" />\n\n    \n\n<meta charset=\"utf-8\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"format-detection\" content"
+ },
+ "oddalert": {
+  "status": "200",
+  "bytes": "114",
+  "head": "<!DOCTYPE html><html><head><script>window.onload=function(){window.location.href=\"/lander\"}</script></head></html>"
+ },
+ "espn-wiki-raw": {
+  "status": "404",
+  "bytes": "14",
+  "head": "404: Not Found"
+ },
+ "statsbombpy-lic": {
+  "status": "404",
+  "bytes": "14",
+  "head": "404: Not Found"
+ },
+ "nba-api-lic": {
+  "status": "200",
+  "bytes": "1067",
+  "head": "MIT License\n\nCopyright (c) 2018 Swar Patel\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright no"
+ },
+ "mlb-statsapi-lic": {
+  "status": "404",
+  "bytes": "14",
+  "head": "404: Not Found"
+ },
+ "kloppy-lic": {
+  "status": "200",
+  "bytes": "1515",
+  "head": "BSD 3-Clause License\n\nCopyright (c) 2020, PySport\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentatio"
+ },
+ "tennis-atp-page": {
+  "status": "404",
+  "bytes": "266776",
+  "head": "\n\n\n\n\n\n\n\n<!DOCTYPE html>\n<html\n  lang=\"en\"\n  \n  data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"\n  data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"\n  \n  >\n\n\n\n\n  <head>\n    <meta charset=\"utf-8\">\n  <link rel=\"dns-prefetch\" href=\"https://github.githubassets.com\">\n  <link rel=\"dns-prefetch\" href=\"https://avatars.githubusercontent.com\">\n  <link rel=\"dns-prefetch\" href=\"https://github-cloud.s3.amazonaws.com\">\n  <link rel=\"dns-prefetch\" href=\"https://user-images"
+ },
+ "thestatsapi-home": {
+  "status": "200",
+  "bytes": "165054",
+  "head": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"/logo.webp\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/08pheo8fz-u4r.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/0pkrupb1wwj2z.js\"/><script src=\"/_next/static/chunks/07kz-sck15uin.js\" async=\"\"></script><script src=\"/_next/static/chunks/0jk~ybzba1y03.js\" async=\"\""
+ },
+ "cfbd-home": {
+  "status": "200",
+  "bytes": "1053295",
+  "head": "<!DOCTYPE html><html><head><meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<title>2026 CFB Analytics Packs, College Football API &amp; Tools</title>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<script src=\"https://www.googletagmanager.com/gtag/js?id=G-BPYY3G7LL2\" async></script>\n<script src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\" async></script>\n<lin"
+ },
+ "pipeworx-sports-pack": {
+  "status": "200",
+  "bytes": "748917",
+  "head": "<!DOCTYPE html><html lang=\"en\" data-astro-cid-5hce7sga> <head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"description\" content=\"Browse all 1540 live-data MCP packs hosted by Pipeworx. SEC EDGAR, FDA, FRED, Census, USPTO patents, Polymarket, Zillow, weather, and 1532+ more \u2014 every pack reachable through one MCP gateway.\"><meta name=\"robots\" content=\"index, follow\"><link rel=\"canonical\" href=\"https://pipeworx.io/packs/\"><!-- Warm up TLS to "
+ }
+}

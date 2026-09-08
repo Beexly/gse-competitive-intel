@@ -1,0 +1,130 @@
+{
+ "domain": "bankr.bot",
+ "tech_stack": {
+  "frontend": {
+   "value": "react",
+   "citation": "raw/b2-bankr_bot-home.html"
+  },
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b2-bankr_bot-home.html",
+   "raw\\b2-bankr_bot-robots.txt",
+   "raw\\bankrolls-home.html",
+   "raw\\bankrolls-robots.txt",
+   "raw\\bankrolls-sitemap.txt",
+   "raw\\bankrollszn.com_home.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": {
+   "value": [
+    "apis.com",
+    "apis.com/css2",
+    "ws.google.com/swg/js/v1/publisher.js",
+    "rest.split",
+    "ws.current",
+    "restSpeed.granular"
+   ],
+   "citation": "raw/b2-bankr_bot-home.html"
+  },
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-bankr_bot-home.html"
+  },
+  "rate_limits": {
+   "value": "Credit",
+   "citation": "raw/b2-bankr_bot-home.html"
+  },
+  "citations": [
+   "raw\\b2-bankr_bot-home.html",
+   "raw\\b2-bankr_bot-robots.txt",
+   "raw\\bankrolls-home.html",
+   "raw\\bankrolls-robots.txt",
+   "raw\\bankrolls-sitemap.txt",
+   "raw\\bankrollszn.com_home.html"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "site description only: 'Bankr is an AI agent that can buy, sell, swap coins and place limit orders.' — no model evidence"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "no-evidence"
+ },
+ "data_supply_chain": {
+  "vendors": {
+   "value": "NOT CONFIRMED",
+   "citation": "raw\\b2-bankr_bot-home.html"
+  },
+  "citations": [
+   "raw\\b2-bankr_bot-home.html",
+   "raw\\b2-bankr_bot-robots.txt",
+   "raw\\bankrolls-home.html",
+   "raw\\bankrolls-robots.txt",
+   "raw\\bankrolls-sitemap.txt",
+   "raw\\bankrollszn.com_home.html"
+  ]
+ },
+ "product_limits": {
+  "limits": {
+   "value": [
+    "Credit"
+   ],
+   "citation": "raw/b2-bankr_bot-home.html"
+  },
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "raw\\b2-bankr_bot-home.html"
+ },
+ "pricing": {
+  "web": {
+   "value": [
+    "Free",
+    "free",
+    "FREE"
+   ],
+   "citation": "raw/b2-bankr_bot-home.html"
+  },
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw\\b2-bankr_bot-home.html",
+   "raw\\b2-bankr_bot-robots.txt",
+   "raw\\bankrolls-home.html",
+   "raw\\bankrolls-robots.txt",
+   "raw\\bankrolls-sitemap.txt",
+   "raw\\bankrollszn.com_home.html"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "NOT CONFIRMED"
+ ],
+ "discovered_targets": [
+  "apis.com",
+  "apis.com/css2",
+  "rest.split",
+  "restDelta.granular",
+  "restSpeed.default",
+  "restSpeed.granular",
+  "ws.current",
+  "ws.google.com/swg/js/v1/publisher.js"
+ ],
+ "discovery_metadata": {
+  "method": "scripted http fetch + delegated crawl, composed from raw evidence",
+  "timestamp": "2026-09-08T15:59:44.090033"
+ },
+ "disposition": "live",
+ "_site_identity": {
+  "title": "Bankr",
+  "description": "Bankr is an AI agent that can buy, sell, swap coins and place limit orders."
+ }
+}

@@ -1,0 +1,781 @@
+URL: https://statpick.ai/openapi.json
+STATUS: 200
+
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Stat Pick AI Public API",
+    "version": "1.0.0",
+    "summary": "Read-only player-prop research data for the NBA, MLB, WNBA, and NFL.",
+    "description": "Public, unauthenticated endpoints behind https://www.statpick.ai.\n\nEvery operation listed here is a GET, requires no API key, and returns the free tier of Stat Pick data: today's player-prop slate, per-player and per-prop hit rates and game logs, the redacted Agent Picks preview with its public track record, and the blog feed. Subscriber-only surfaces (full Agent Picks, AI analysis, analysis chat, account data) are deliberately not documented here because they are not available to anonymous callers.\n\nAll responses share one envelope: `{ \"success\": true, \"data\": <payload>, \"message\"?: string, \"meta\": { \"timestamp\": string, \"requestId\"?: string } }`. Errors use `{ \"success\": false, \"message\": string, \"statusCode\": number, \"errors\"?: string[], \"meta\": {...} }`.\n\nPlease identify your agent with a descriptive `User-Agent`. Responses carry `Cache-Control`; honour it rather than polling. Data is research and entertainment content — Stat Pick, LLC is not a sportsbook and does not accept wagers.",
+    "termsOfService": "https://www.statpick.ai/terms-of-service",
+    "contact": {
+      "name": "Stat Pick, LLC",
+      "url": "https://www.statpick.ai/contact-us"
+    },
+    "license": {
+      "name": "Proprietary — see terms of service",
+      "url": "https://www.statpick.ai/terms-of-service"
+    }
+  },
+  "security": [],
+  "externalDocs": {
+    "description": "Developer documentation, with copy-pasteable examples. See also https://www.statpick.ai/llms.txt for the plain-language site guide.",
+    "url": "https://www.statpick.ai/developers"
+  },
+  "servers": [
+    {
+      "url": "https://api.statpick.ai",
+      "description": "Production API"
+    }
+  ],
+  "tags": [
+    { "name": "prop-pages", "description": "Player-prop slate, player index, and per-prop research pages." },
+    { "name": "agent-picks", "description": "Public preview of the daily AI Agent Picks and their graded track record." },
+    { "name": "blog", "description": "Published articles." },
+    { "name": "app-config", "description": "Client configuration and per-sport season status." }
+  ],
+  "paths": {
+    "/api/{sport}/prop-pages/slate": {
+      "get": {
+        "operationId": "getPropSlate",
+        "summary": "Today's player-prop slate for one sport",
+        "description": "Every game on today's card with the players who have a posted prop line, each with a headline market, line, prices, and last-10 hit rate. On an off-day `games` is empty and `recentlyActive` / `browseByStat` provide a browsable directory instead.",
+        "tags": ["prop-pages"],
+        "parameters": [{ "$ref": "#/components/parameters/Sport" }],
+        "responses": {
+          "200": {
+            "description": "Slate payload.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    { "$ref": "#/components/schemas/SuccessEnvelope" },
+                    { "type": "object", "properties": { "data": { "$ref": "#/components/schemas/PropSlatePayload" } } }
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown sport. The path only matches nba, mlb, wnba, and nfl; anything else falls through to the API's not-found handler.",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/ErrorEnvelope" } }
+            }
+          },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    },
+    "/api/{sport}/prop-pages/player/{playerSlug}": {
+      "get": {
+        "operationId": "getPropPlayerIndex",
+        "summary": "Every prop market Stat Pick covers for one player",
+        "description": "Player metadata, their next scheduled game, and one card per covered stat with the current line, last-10 hit rate, and season average. 404s when Stat Pick has never generated prop pages for the player.",
+        "tags": ["prop-pages"],
+        "parameters": [
+          { "$ref": "#/components/parameters/Sport" },
+          { "$ref": "#/components/parameters/PlayerSlug" }
+        ],
+        "responses": {
+          "200": {
+            "description": "Player index payload.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    { "$ref": "#/components/schemas/SuccessEnvelope" },
+                    { "type": "object", "properties": { "data": { "$ref": "#/components/schemas/PropPlayerIndexPayload" } } }
+                  ]
+                }
+              }
+            }
+          },
+          "404": { "$ref": "#/components/responses/NotFound" },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    },
+    "/api/{sport}/prop-pages/player/{playerSlug}/stat/{statSlug}": {
+      "get": {
+        "operationId": "getPropStatPage",
+        "summary": "Full research payload for one player-prop market",
+        "description": "The data behind a /props/{sport}/{player}/{stat} page: current or most recent line with prices, L5 / L10 / season hit rates and averages, the last ten game logs, head-to-head averages against the next opponent, and the other markets covered for that player.\n\nScalar averages and hit rates are regular-season only. Game-log rows may include current-season postseason games, each flagged `postseason: true` — filter them out before deriving your own rates so the denominator matches the scalars.",
+        "tags": ["prop-pages"],
+        "parameters": [
+          { "$ref": "#/components/parameters/Sport" },
+          { "$ref": "#/components/parameters/PlayerSlug" },
+          { "$ref": "#/components/parameters/StatSlug" }
+        ],
+        "responses": {
+          "200": {
+            "description": "Prop research payload.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    { "$ref": "#/components/schemas/SuccessEnvelope" },
+                    { "type": "object", "properties": { "data": { "$ref": "#/components/schemas/PropStatPagePayload" } } }
+                  ]
+                }
+              }
+            }
+          },
+          "404": { "$ref": "#/components/responses/NotFound" },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    },
+    "/api/public/daily-picks/preview": {
+      "get": {
+        "operationId": "getAgentPicksPreview",
+        "summary": "Public preview of the day's Agent Picks and the track record",
+        "description": "Agent Picks are the day's highest-conviction player props chosen by an LLM agent.\n\nRedaction contract: picks whose games have not been graded yet return only `state: \"locked\"` with the player, matchup, and lock time — stat, line, side, and odds are withheld because the full slate is a Premium feature. Graded picks return `state: \"resolved\"` with every field plus the `result`, so the public track record is verifiable. AI reasoning and internal scores are never exposed on this route.\n\nOmit `sport` to get all four sports merged.",
+        "tags": ["agent-picks"],
+        "parameters": [
+          {
+            "name": "sport",
+            "in": "query",
+            "required": false,
+            "description": "Restrict to one sport. Omit to merge every sport for the date.",
+            "schema": { "$ref": "#/components/schemas/Sport" }
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "required": false,
+            "description": "Slate date in US Eastern time. Defaults to today (or the lookahead date when the sport has no games today).",
+            "schema": { "type": "string", "format": "date", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+            "example": "2026-08-26"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Preview payload.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    { "$ref": "#/components/schemas/SuccessEnvelope" },
+                    { "type": "object", "properties": { "data": { "$ref": "#/components/schemas/PicksPreviewPayload" } } }
+                  ]
+                }
+              }
+            }
+          },
+          "400": { "$ref": "#/components/responses/BadRequest" },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    },
+    "/api/blog/posts": {
+      "get": {
+        "operationId": "listBlogPosts",
+        "summary": "List published articles",
+        "description": "Every non-draft article, newest first: prop-betting strategy, how the AI analysis works, and sportsbook mechanics. Returns full article bodies — use getBlogSitemap first if you only need slugs and timestamps.",
+        "tags": ["blog"],
+        "responses": {
+          "200": {
+            "description": "Every non-draft article.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    { "$ref": "#/components/schemas/SuccessEnvelope" },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "data": { "type": "array", "items": { "$ref": "#/components/schemas/BlogPost" } }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    },
+    "/api/blog/posts/{slug}": {
+      "get": {
+        "operationId": "getBlogPost",
+        "summary": "Fetch one article by slug",
+        "description": "One published article with its full body. 404s for a draft or unknown slug. Slugs come from listBlogPosts or getBlogSitemap.",
+        "tags": ["blog"],
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "description": "Article slug, as returned by listBlogPosts or the blog sitemap.",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Article payload.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    { "$ref": "#/components/schemas/SuccessEnvelope" },
+                    { "type": "object", "properties": { "data": { "$ref": "#/components/schemas/BlogPost" } } }
+                  ]
+                }
+              }
+            }
+          },
+          "404": { "$ref": "#/components/responses/NotFound" },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    },
+    "/api/blog/sitemap": {
+      "get": {
+        "operationId": "getBlogSitemap",
+        "summary": "Slug and timestamp for every published article",
+        "description": "The cheap enumeration of the blog: slug plus publish and update timestamps, without article bodies. Use it to find what changed before fetching individual posts.",
+        "tags": ["blog"],
+        "responses": {
+          "200": {
+            "description": "Sitemap entries.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    { "$ref": "#/components/schemas/SuccessEnvelope" },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "data": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "required": ["slug", "publishedAt"],
+                            "properties": {
+                              "slug": { "type": "string" },
+                              "publishedAt": { "type": "string", "format": "date-time" },
+                              "updatedAt": { "type": "string", "format": "date-time" }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    },
+    "/api/app-config": {
+      "get": {
+        "operationId": "getAppConfig",
+        "summary": "Client version gate and per-sport season status",
+        "description": "Serves the mobile version gate plus `seasonStatus` overrides. Agents can read `seasonStatus` to tell which sports are currently in season before requesting a slate.",
+        "tags": ["app-config"],
+        "responses": {
+          "200": {
+            "description": "Config payload.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    { "$ref": "#/components/schemas/SuccessEnvelope" },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "data": {
+                          "type": "object",
+                          "required": ["versionGate", "seasonStatus"],
+                          "properties": {
+                            "versionGate": {
+                              "type": "object",
+                              "description": "Per-platform minimum and recommended native app versions.",
+                              "additionalProperties": {
+                                "type": "object",
+                                "properties": {
+                                  "minSupportedVersion": { "type": "string" },
+                                  "recommendedVersion": { "type": "string" },
+                                  "message": { "type": "string" }
+                                }
+                              }
+                            },
+                            "seasonStatus": {
+                              "type": "object",
+                              "description": "Sport key to season-status override. Empty when the clients' bundled schedule applies.",
+                              "additionalProperties": true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "Sport": {
+        "name": "sport",
+        "in": "path",
+        "required": true,
+        "description": "League key.",
+        "schema": { "$ref": "#/components/schemas/Sport" }
+      },
+      "PlayerSlug": {
+        "name": "playerSlug",
+        "in": "path",
+        "required": true,
+        "description": "Lowercase hyphenated player slug, e.g. `jalen-brunson`. Enumerate valid values from getPropSlate, which lists every player with a posted line today.",
+        "schema": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "example": "jalen-brunson"
+      },
+      "StatSlug": {
+        "name": "statSlug",
+        "in": "path",
+        "required": true,
+        "description": "Lowercase hyphenated market slug, e.g. `points`, `rebounds`, `home-runs`, `total-bases`. A player's covered markets are listed by getPropPlayerIndex.",
+        "schema": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "example": "points"
+      }
+    },
+    "responses": {
+      "NotFound": {
+        "description": "No such resource.",
+        "content": {
+          "application/json": { "schema": { "$ref": "#/components/schemas/ErrorEnvelope" } }
+        }
+      },
+      "BadRequest": {
+        "description": "Invalid query parameter.",
+        "content": {
+          "application/json": { "schema": { "$ref": "#/components/schemas/ErrorEnvelope" } }
+        }
+      },
+      "ServerError": {
+        "description": "The request was well-formed but could not be served. Transient — retry with backoff. Every failure funnels through one error handler, so the body is the same shape as the 4xx cases.",
+        "content": {
+          "application/json": { "schema": { "$ref": "#/components/schemas/ErrorEnvelope" } }
+        }
+      }
+    },
+    "schemas": {
+      "Sport": {
+        "type": "string",
+        "enum": ["nba", "mlb", "wnba", "nfl"]
+      },
+      "ResponseMeta": {
+        "type": "object",
+        "required": ["timestamp"],
+        "properties": {
+          "timestamp": { "type": "string", "format": "date-time" },
+          "requestId": { "type": "string" }
+        }
+      },
+      "SuccessEnvelope": {
+        "type": "object",
+        "required": ["success", "data", "meta"],
+        "properties": {
+          "success": { "const": true },
+          "data": {},
+          "message": { "type": "string" },
+          "meta": { "$ref": "#/components/schemas/ResponseMeta" }
+        }
+      },
+      "ErrorEnvelope": {
+        "type": "object",
+        "required": ["success", "message", "statusCode", "meta"],
+        "properties": {
+          "success": { "const": false },
+          "message": { "type": "string" },
+          "statusCode": { "type": "integer" },
+          "errors": { "type": "array", "items": { "type": "string" } },
+          "meta": { "$ref": "#/components/schemas/ResponseMeta" }
+        }
+      },
+      "Team": {
+        "type": "object",
+        "required": ["id", "name", "fullName", "abbreviation", "slugName"],
+        "properties": {
+          "id": { "type": "integer" },
+          "name": { "type": "string" },
+          "fullName": { "type": "string" },
+          "abbreviation": { "type": "string" },
+          "slugName": { "type": "string" }
+        }
+      },
+      "PlayerMeta": {
+        "type": "object",
+        "required": ["playerSlug", "playerName", "teamId", "teamName", "teamAbbr", "teamSlug"],
+        "properties": {
+          "playerSlug": { "type": "string" },
+          "playerName": { "type": "string" },
+          "firstName": { "type": "string" },
+          "lastName": { "type": "string" },
+          "position": { "type": "string" },
+          "headshotUrl": { "type": ["string", "null"] },
+          "teamId": { "type": "integer" },
+          "teamName": { "type": "string" },
+          "teamAbbr": { "type": "string" },
+          "teamSlug": { "type": "string" }
+        }
+      },
+      "PropLine": {
+        "type": "object",
+        "required": ["line", "overOdds", "underOdds", "bookCount", "isLive", "asOfDate"],
+        "properties": {
+          "line": { "type": "number" },
+          "overOdds": { "type": ["integer", "null"], "description": "American odds." },
+          "underOdds": { "type": ["integer", "null"], "description": "American odds." },
+          "bookCount": { "type": "integer", "description": "Number of sportsbooks pricing this market." },
+          "isLive": { "type": "boolean", "description": "true when the line was posted today; false when it is the last posted (typical) line." },
+          "asOfDate": { "type": "string", "format": "date" }
+        }
+      },
+      "HitRateWindow": {
+        "type": "object",
+        "required": ["window", "hits", "games", "pct", "avg"],
+        "description": "Regular-season only.",
+        "properties": {
+          "window": { "type": "string", "enum": ["l5", "l10", "season"] },
+          "hits": { "type": "integer" },
+          "games": { "type": "integer" },
+          "pct": { "type": ["number", "null"], "description": "null when games is 0." },
+          "avg": { "type": ["number", "null"] }
+        }
+      },
+      "GameLogRow": {
+        "type": "object",
+        "required": ["date", "opponentAbbr", "opponentTeamId", "isHome", "value", "over", "postseason", "gameUrl"],
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "opponentAbbr": { "type": ["string", "null"] },
+          "opponentTeamId": { "type": ["integer", "null"] },
+          "isHome": { "type": "boolean" },
+          "value": { "type": "number" },
+          "over": { "type": "boolean", "description": "value is above the payload line." },
+          "postseason": { "type": "boolean", "description": "true for current-season postseason games. Exclude these before deriving your own averages — the scalar hit rates are regular-season only." },
+          "gameUrl": { "type": ["string", "null"] }
+        }
+      },
+      "VsOpp": {
+        "type": "object",
+        "required": ["opponentAbbr", "avg", "overPct", "games"],
+        "properties": {
+          "opponentAbbr": { "type": "string" },
+          "avg": { "type": ["number", "null"] },
+          "overPct": { "type": ["number", "null"] },
+          "games": { "type": "integer", "description": "Regular-season game count over the three-season head-to-head window." }
+        }
+      },
+      "NextGame": {
+        "type": "object",
+        "required": ["date", "opponentAbbr", "opponentName", "isHome", "gameUrl", "isToday"],
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "dateAndTime": { "type": ["string", "null"], "format": "date-time" },
+          "opponentAbbr": { "type": "string" },
+          "opponentName": { "type": "string" },
+          "isHome": { "type": "boolean" },
+          "gameUrl": { "type": "string" },
+          "isToday": { "type": "boolean" },
+          "venue": { "type": ["string", "null"], "description": "MLB only." }
+        }
+      },
+      "PropStatPagePayload": {
+        "type": "object",
+        "required": ["player", "stat", "line", "hitRates", "gameLog", "vsOpp", "nextGame", "otherStats", "season"],
+        "properties": {
+          "player": { "$ref": "#/components/schemas/PlayerMeta" },
+          "stat": {
+            "type": "object",
+            "required": ["oddsKey", "slug", "displayName", "shortLabel"],
+            "properties": {
+              "oddsKey": { "type": "string" },
+              "slug": { "type": "string" },
+              "displayName": { "type": "string" },
+              "shortLabel": { "type": "string" }
+            }
+          },
+          "line": { "oneOf": [{ "$ref": "#/components/schemas/PropLine" }, { "type": "null" }] },
+          "hitRates": { "type": "array", "items": { "$ref": "#/components/schemas/HitRateWindow" } },
+          "gameLog": { "type": "array", "items": { "$ref": "#/components/schemas/GameLogRow" } },
+          "vsOpp": { "oneOf": [{ "$ref": "#/components/schemas/VsOpp" }, { "type": "null" }] },
+          "nextGame": { "oneOf": [{ "$ref": "#/components/schemas/NextGame" }, { "type": "null" }] },
+          "otherStats": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["slug", "displayName", "line"],
+              "properties": {
+                "slug": { "type": "string" },
+                "displayName": { "type": "string" },
+                "line": { "type": ["number", "null"] }
+              }
+            }
+          },
+          "season": { "type": "integer" }
+        }
+      },
+      "PropPlayerIndexPayload": {
+        "type": "object",
+        "required": ["player", "nextGame", "stats", "season"],
+        "properties": {
+          "player": { "$ref": "#/components/schemas/PlayerMeta" },
+          "nextGame": { "oneOf": [{ "$ref": "#/components/schemas/NextGame" }, { "type": "null" }] },
+          "stats": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["statSlug", "displayName", "shortLabel", "line", "l10", "seasonAvg"],
+              "properties": {
+                "statSlug": { "type": "string" },
+                "displayName": { "type": "string" },
+                "shortLabel": { "type": "string" },
+                "line": { "$ref": "#/components/schemas/PropLine" },
+                "l10": { "$ref": "#/components/schemas/HitRateWindow" },
+                "seasonAvg": { "type": ["number", "null"] },
+                "seasonAvgYear": { "type": ["integer", "null"] }
+              }
+            }
+          },
+          "season": { "type": "integer" }
+        }
+      },
+      "PropSlatePayload": {
+        "type": "object",
+        "required": ["date", "games", "recentlyActive"],
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "games": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["gameId", "gameUrl", "homeTeam", "awayTeam", "players"],
+              "properties": {
+                "gameId": { "type": "integer" },
+                "gameUrl": { "type": "string" },
+                "dateAndTime": { "type": ["string", "null"], "format": "date-time" },
+                "homeTeam": { "$ref": "#/components/schemas/Team" },
+                "awayTeam": { "$ref": "#/components/schemas/Team" },
+                "players": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["playerSlug", "playerName", "teamAbbr", "headline", "statCount"],
+                    "properties": {
+                      "playerSlug": { "type": "string" },
+                      "playerName": { "type": "string" },
+                      "teamAbbr": { "type": "string" },
+                      "headline": {
+                        "type": "object",
+                        "required": ["statSlug", "displayName", "line", "overOdds", "underOdds", "l10Pct"],
+                        "properties": {
+                          "statSlug": { "type": "string" },
+                          "displayName": { "type": "string" },
+                          "line": { "type": "number" },
+                          "overOdds": { "type": ["integer", "null"] },
+                          "underOdds": { "type": ["integer", "null"] },
+                          "l10Pct": { "type": ["number", "null"] }
+                        }
+                      },
+                      "statCount": { "type": "integer" }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "recentlyActive": {
+            "type": "array",
+            "description": "Off-day fallback directory; populated only when games is empty.",
+            "items": {
+              "type": "object",
+              "required": ["playerSlug", "playerName", "teamAbbr", "statSlugs"],
+              "properties": {
+                "playerSlug": { "type": "string" },
+                "playerName": { "type": "string" },
+                "teamAbbr": { "type": "string" },
+                "statSlugs": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          },
+          "browseByStat": {
+            "type": "array",
+            "description": "Off-day browse directory grouped by market; populated only when games is empty.",
+            "items": {
+              "type": "object",
+              "required": ["statSlug", "displayName", "players"],
+              "properties": {
+                "statSlug": { "type": "string" },
+                "displayName": { "type": "string" },
+                "milestone": { "type": "boolean" },
+                "players": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["playerSlug", "playerName", "teamAbbr", "line", "overOdds"],
+                    "properties": {
+                      "playerSlug": { "type": "string" },
+                      "playerName": { "type": "string" },
+                      "teamAbbr": { "type": "string" },
+                      "line": { "type": "number" },
+                      "overOdds": { "type": ["integer", "null"] }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "LockedPickPreview": {
+        "type": "object",
+        "description": "An ungraded pick. Stat, line, side, and odds are withheld — the full slate is a Premium feature.",
+        "required": ["state", "playerName", "sport", "isLocked", "lockAt", "team", "opponent"],
+        "properties": {
+          "state": { "const": "locked" },
+          "playerName": { "type": "string" },
+          "sport": { "$ref": "#/components/schemas/Sport" },
+          "isLocked": { "const": true },
+          "lockAt": { "type": ["string", "null"], "format": "date-time" },
+          "playerHeadshotUrl": { "type": "string" },
+          "playerTeamId": { "type": "integer" },
+          "team": { "type": "string" },
+          "opponent": { "type": "string" },
+          "gameTime": { "type": "string", "format": "date-time" }
+        }
+      },
+      "ResolvedPickPreview": {
+        "type": "object",
+        "description": "A graded pick. Fully disclosed so the public track record is verifiable; AI reasoning and internal scores stay withheld.",
+        "required": ["state", "playerName", "sport", "isLocked", "stat", "line", "side", "odds", "result"],
+        "properties": {
+          "state": { "const": "resolved" },
+          "playerName": { "type": "string" },
+          "playerSlug": { "type": "string" },
+          "sport": { "$ref": "#/components/schemas/Sport" },
+          "isLocked": { "const": true },
+          "team": { "type": "string" },
+          "opponent": { "type": "string" },
+          "gameId": { "type": "integer" },
+          "stat": { "type": "string" },
+          "line": { "type": "number" },
+          "side": { "type": "string", "enum": ["over", "under"] },
+          "odds": { "type": "integer", "description": "American odds at pick time." },
+          "result": { "type": "string", "enum": ["win", "loss", "push", "void"] },
+          "actualStatValue": { "type": ["number", "null"] },
+          "settledAt": { "type": "string", "format": "date-time" },
+          "publishedAt": { "type": "string", "format": "date-time" },
+          "lockAt": { "type": ["string", "null"], "format": "date-time" },
+          "gameTime": { "type": "string", "format": "date-time" },
+          "playerHeadshotUrl": { "type": "string" },
+          "playerTeamId": { "type": "integer" }
+        }
+      },
+      "PickPreview": {
+        "oneOf": [
+          { "$ref": "#/components/schemas/LockedPickPreview" },
+          { "$ref": "#/components/schemas/ResolvedPickPreview" }
+        ],
+        "discriminator": {
+          "propertyName": "state",
+          "mapping": {
+            "locked": "#/components/schemas/LockedPickPreview",
+            "resolved": "#/components/schemas/ResolvedPickPreview"
+          }
+        }
+      },
+      "TrackRecordSlice": {
+        "type": "object",
+        "required": ["wins", "losses", "pushes"],
+        "properties": {
+          "wins": { "type": "integer" },
+          "losses": { "type": "integer" },
+          "pushes": { "type": "integer" }
+        }
+      },
+      "TrackRecord": {
+        "type": "object",
+        "required": ["windowDays", "wins", "losses", "pushes", "units", "bySide"],
+        "properties": {
+          "windowDays": { "type": ["integer", "null"], "description": "null means all-time." },
+          "wins": { "type": "integer" },
+          "losses": { "type": "integer" },
+          "pushes": { "type": "integer" },
+          "units": { "type": "number", "description": "Net unit return." },
+          "bySide": {
+            "type": "object",
+            "required": ["over", "under"],
+            "properties": {
+              "over": { "$ref": "#/components/schemas/TrackRecordSlice" },
+              "under": { "$ref": "#/components/schemas/TrackRecordSlice" }
+            }
+          }
+        }
+      },
+      "PicksPreviewPayload": {
+        "type": "object",
+        "required": ["date", "publishedAt", "picks", "alsoConsidered", "trackRecord", "recordByDate", "hasPublishedPicksForDate", "meta"],
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "sport": { "$ref": "#/components/schemas/Sport" },
+          "publishedAt": { "type": ["string", "null"], "format": "date-time", "description": "null while the slate is still in preview." },
+          "picks": { "type": "array", "items": { "$ref": "#/components/schemas/PickPreview" } },
+          "alsoConsidered": {
+            "type": "array",
+            "description": "Finalists the agent considered but did not select. Same redaction contract as picks.",
+            "items": { "$ref": "#/components/schemas/PickPreview" }
+          },
+          "trackRecord": { "$ref": "#/components/schemas/TrackRecord" },
+          "recordByDate": {
+            "type": "array",
+            "description": "Per-date win/loss over the recent window. Empty when no sport is specified.",
+            "items": {
+              "type": "object",
+              "required": ["date", "wins", "losses"],
+              "properties": {
+                "date": { "type": "string", "format": "date" },
+                "wins": { "type": "integer" },
+                "losses": { "type": "integer" }
+              }
+            }
+          },
+          "hasPublishedPicksForDate": { "type": "boolean" },
+          "meta": {
+            "type": "object",
+            "required": ["today", "lookaheadDate"],
+            "properties": {
+              "today": { "type": "string", "format": "date", "description": "Current US Eastern date." },
+              "lookaheadDate": { "type": ["string", "null"], "format": "date" }
+            }
+          }
+        }
+      },
+      "BlogPost": {
+        "type": "object",
+        "required": ["slug", "title"],
+        "properties": {
+          "slug": { "type": "string" },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "publishedAt": { "type": "string", "format": "date-time" },
+          "updatedAt": { "type": "string", "format": "date-time" },
+          "author": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "content": { "type": "string", "description": "Article body." }
+        }
+      }
+    }
+  }
+}

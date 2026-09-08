@@ -1,0 +1,80 @@
+# MarketLens robots.txt
+# Public marketing + docs are crawlable; authenticated console is not.
+
+User-agent: *
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+# Explicit allow-list for major AI crawlers (default is allow; listed here for clarity and to signal intent).
+User-agent: GPTBot
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+User-agent: CCBot
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /console/
+Disallow: /v1/
+
+Sitemap: https://marketlens.trade/sitemap.xml

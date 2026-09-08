@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://kairos.trade
+Sitemap: https://kairos.trade/sitemap.xml

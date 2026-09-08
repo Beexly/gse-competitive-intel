@@ -1,0 +1,8 @@
+[
+ "/openapi.json -> None TimeoutError:The read operation timed out",
+ "/swagger.json -> None TimeoutError:The read operation timed out",
+ "/api/v1 -> None TimeoutError:The read operation timed out",
+ "/api -> None TimeoutError:The read operation timed out",
+ "/docs -> 200  <!DOCTYPE html> <html lang=\"en\">   <head>                            ",
+ ".well-known/openapi.json -> None URLError:<urlopen error [Errno 11001] getaddrinfo failed>"
+]

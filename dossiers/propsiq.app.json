@@ -1,0 +1,118 @@
+{
+  "domain": "propsiq.app",
+  "disposition": "live",
+  "status": "CONFIRMED (pricing + caps extracted; backend API NOT CONFIRMED - robots-blocked)",
+  "key_findings": "MLB player-prop analytics product (PropIQ Inc) on Next.js + SvelteKit-style immutable chunks, hosted on Vercel. iOS app on App Store; one web subscription (CA$17.99/mo or CA$189.99/yr) covers web+iPhone. Product: every MLB player prop with L5/L10/L20 game-log hit rates, de-vigged market edge, 0-100 Confidence Score, 7 game markets incl NRFI/F5, model builder, arb scanner, phone-synced bet tracking; built on game logs + Statcast data. Most restrictive cap: EVERYTHING gated behind the single subscription - no free tier advertised; robots disallows /api/, /auth/, /models, /arbs, /account, /subscribe (private app surface). 727-url sitemap exposes per-player MLB pages (public SEO layer).",
+  "tech_stack": {
+    "frontend": "Next.js on Vercel (x-vercel-id cle1) + SvelteKit immutable chunk naming",
+    "backend": "NOT CONFIRMED (API robots-disallowed)",
+    "database": "NOT CONFIRMED",
+    "cloud": "Vercel",
+    "cdn": "Vercel edge (x-vercel-id cle1::x628n)",
+    "citations": [
+      "raw/propsiq.app_home.html",
+      "raw/propsiq.app_robots.txt"
+    ]
+  },
+  "api_architecture": {
+    "rest_endpoints": [],
+    "graphql_schema": "NOT CONFIRMED",
+    "websocket_endpoints": "NOT CONFIRMED",
+    "rate_limits": "NOT CONFIRMED",
+    "citations": [
+      "raw/propsiq.app_robots.txt (Disallow: /api/)"
+    ]
+  },
+  "extracted_formulas": [],
+  "ml_model_infrastructure": {
+    "model_types": "0-100 Confidence Score per prop; L5/L10/L20 hit-rate models; de-vig market edge calc",
+    "training_data": "MLB game logs + Statcast data (per homepage)",
+    "update_frequency": "daily board (\"Browse today's board\")",
+    "citation": "raw/propsiq.app_home.html"
+  },
+  "simulation_engine": {
+    "num_simulations": "NOT CONFIRMED",
+    "correlation_method": "NOT CONFIRMED",
+    "citation": "NOT CONFIRMED"
+  },
+  "data_supply_chain": {
+    "vendors": [
+      "Statcast (MLB public data)"
+    ],
+    "citations": [
+      "raw/propsiq.app_home.html"
+    ]
+  },
+  "product_limits": {
+    "limits": "single all-access subscription; no free tier advertised on /pricing",
+    "upgrade_triggers": "everything (hit rates, edge, confidence, model builder, arb scanner, bet tracking) is subscription-only",
+    "citation": "raw/propsiq.app_pricing.html"
+  },
+  "pricing": {
+    "web": "Monthly CA$17.99/mo; Annual CA$189.99/yr (one plan, two billing periods; covers web+iPhone)",
+    "ios": "same subscription via iPhone app IAP (\"Already subscribed in the iPhone app? Don't buy again\")",
+    "android": "none found (iOS + web only)",
+    "citations": [
+      "raw/propsiq.app_pricing.html (https://propsiq.app/pricing)"
+    ]
+  },
+  "customer_pain": [],
+  "discovered_paths": [
+    "/pricing",
+    "/mlb/players/<slug-id>",
+    "/models",
+    "/arbs",
+    "/subscribe",
+    "/my-bets"
+  ],
+  "discovered_targets": [],
+  "discovery_metadata": {
+    "method": "urllib GET via fetcher.py pattern; 8-HTTP-req budget",
+    "timestamp": "2026-09-08"
+  },
+  "requests_log": [
+    {
+      "url": "https://propsiq.app/",
+      "status": 200
+    },
+    {
+      "url": "https://propsiq.app/robots.txt",
+      "status": 200
+    },
+    {
+      "url": "https://propsiq.app/sitemap.xml",
+      "status": 200
+    },
+    {
+      "url": "https://propsiq.app/pricing",
+      "status": 200
+    },
+    {
+      "url": "https://propsiq.app/_next/static/immutable/chunks/1qpqg6pntx5sm.js",
+      "status": 200
+    },
+    {
+      "url": "https://propsiq.app/_next/static/immutable/chunks/2v2psbxc_p6lu.js",
+      "status": 200
+    },
+    {
+      "url": "https://propsiq.app/_next/static/immutable/chunks/1-899-ve7ss1m.js",
+      "status": 200
+    }
+  ],
+  "raw_files": [
+    "propsiq.app_home.html",
+    "propsiq.app_robots.txt",
+    "propsiq.app_sitemap.xml",
+    "propsiq.app_pricing.html",
+    "propsiq.app_js_1qpqg6pntx5sm.js.js",
+    "propsiq.app_js_2v2psbxc_p6lu.js.js",
+    "propsiq.app_js_1-899-ve7ss1m.js.js"
+  ],
+  "notes": [
+    "7 HTTP requests - budget honored",
+    "App Store download link present on homepage (iOS app exists); Play Store absent - iOS-first",
+    "JS bundles carry no vendor strings and no API base URLs - API fully private behind /api/ robots block + auth",
+    "web_search for community pain returned only irrelevant results (Portuguese psychiatry subs) - no meaningful Reddit presence found for propsiq.app; customer_pain left empty rather than padded"
+  ]
+}

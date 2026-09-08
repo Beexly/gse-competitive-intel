@@ -1,0 +1,12 @@
+User-Agent: *
+Disallow: /
+
+User-Agent: Twitterbot
+Allow: /
+
+User-Agent: TelegramBot
+Allow: /
+
+User-Agent: Xbot
+Allow: /
+

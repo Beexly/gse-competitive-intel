@@ -1,0 +1,107 @@
+URL: https://www.4for4.com/robots.txt
+STATUS: 200
+
+# All Robots
+User-agent: *
+#
+Sitemap: https://www.4for4.com/sitemap.xml
+#
+# Directories
+Disallow: /includes/
+Disallow: /misc/
+Allow:    /misc/feed.png
+Disallow: /modules/
+Disallow: /profiles/
+Disallow: /scripts/
+Disallow: /themes/
+Disallow: /pdf/page
+#
+# Files
+#
+Disallow: /CHANGELOG.txt
+Disallow: /cron.php
+Disallow: /INSTALL.mysql.txt
+Disallow: /INSTALL.pgsql.txt
+Disallow: /INSTALL.sqlite.txt
+Disallow: /install.php
+Disallow: /INSTALL.txt
+Disallow: /LICENSE.txt
+Disallow: /MAINTAINERS.txt
+Disallow: /update.php
+Disallow: /UPGRADE.txt
+Disallow: /xmlrpc.php
+Disallow: *.pdf
+#
+# Paths (clean URLs)
+#
+Disallow: /admin/
+Disallow: /comment/reply/
+Disallow: /filter/tips/
+Disallow: /node/add/
+Disallow: /search/
+Disallow: /user/register/
+Disallow: /user/password/
+Disallow: /user/logout/
+Disallow: /taxonomy/
+Disallow: /members/
+#
+# Paths (no clean URLs)
+#
+Disallow: /?q=admin/
+Disallow: /?q=comment/reply/
+Disallow: /?q=filter/tips/
+Disallow: /?q=node/add/
+Disallow: /?q=search/
+Disallow: /?q=user/password/
+Disallow: /?q=user/register/
+Disallow: /?q=user/logout/
+#
+# News Section
+#
+Disallow: /news?*team_id*
+Disallow: /news?*position*
+Disallow: /news?*field_tags_tid*
+Allow: /news/team/
+#
+# Category filters
+#
+Disallow: /articles/author/*all/
+#
+# Draft Planner
+Disallow: /adp_draft_planner*
+#
+# Paywall in Navigation
+Disallow: /full-impact/*
+Disallow: /user/login?*
+Disallow: /reports/redraft_cheat_sheet/*
+Disallow: /idp/rankings*
+Disallow: /hot-spots
+Disallow: /reports/sos*
+Disallow: /teams/*/rbbc
+Disallow: /reports/offense_knowledgeseeker/*
+Disallow: /tools/look-ahead-planner
+Disallow: /gameday/weather
+Disallow: /tools/stat-app*
+Disallow: /tools/snap-app*
+Disallow: /reports/daily_fantasy*
+Disallow: /floor-ceiling-projections/fanduel
+Disallow: /gpp-leverage-scores
+Disallow: /dfs-ownership-projections-page
+#
+# Nojs filtered Navigation
+#
+Disallow: */get-tabs/*
+Disallow: */rankings-tabs/*
+Disallow: /user/ajax/login/*
+#
+# Infinite Scroll Redirect Error
+Disallow: /front-page*
+#
+# Social Media Logins
+Disallow: /login-google
+#
+# Pricing nodes
+Disallow: /*plans?destination=node/*
+#
+#Legacy Players
+Disallow: /*players/profile.php?*

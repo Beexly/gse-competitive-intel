@@ -1,0 +1,90 @@
+{
+ "props_main_bundle": {
+  "status": 200,
+  "bytes": 2981687,
+  "file": "props_cash_ext_main.8fb9c538.js",
+  "server": "Heroku",
+  "powered": "Express",
+  "via": "1.1 heroku-router",
+  "vercel_id": null,
+  "ct": "application/javascript; charset=UTF-8"
+ },
+ "outlier_app_root": {
+  "status": 200,
+  "bytes": 5913,
+  "file": "outlier_bet_ext_app_root.html",
+  "server": "AmazonS3",
+  "powered": null,
+  "via": "1.1 280c9d4266c690eca29338d5796c8f9c.cloudfront.net (CloudFront)",
+  "vercel_id": null,
+  "ct": "text/html"
+ },
+ "outlier_llms_full": {
+  "status": 200,
+  "bytes": 33160,
+  "file": "outlier_bet_ext_llms-full.txt",
+  "server": "Vercel",
+  "powered": null,
+  "via": null,
+  "vercel_id": "cle1::fw76x-1788889703389-a5341eb3efb0",
+  "ct": "text/plain; charset=utf-8"
+ },
+ "subdomains": {
+  "api.oddsjam.com": {
+   "status": null,
+   "server": null,
+   "powered": null,
+   "via": null,
+   "head": "<urlopen error [Errno 11001] getaddrinfo failed>"
+  },
+  "app.oddsjam.com": {
+   "status": null,
+   "server": null,
+   "powered": null,
+   "via": null,
+   "head": "<urlopen error [Errno 11001] getaddrinfo failed>"
+  },
+  "staging.oddsjam.com": {
+   "status": null,
+   "server": null,
+   "powered": null,
+   "via": null,
+   "head": "<urlopen error [Errno 11001] getaddrinfo failed>"
+  },
+  "api.props.cash": {
+   "status": 404,
+   "server": "Heroku",
+   "powered": "Express",
+   "via": "1.1 heroku-router",
+   "head": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"utf-8\"> <title>Error</title> </head> <body> <pre>Cannot GET /</pr"
+  },
+  "app.props.cash": {
+   "status": null,
+   "server": null,
+   "powered": null,
+   "via": null,
+   "head": "<urlopen error [Errno 11001] getaddrinfo failed>"
+  },
+  "staging.props.cash": {
+   "status": null,
+   "server": null,
+   "powered": null,
+   "via": null,
+   "head": "<urlopen error [Errno 11001] getaddrinfo failed>"
+  },
+  "api.outlier.bet": {
+   "status": 401,
+   "server": null,
+   "powered": null,
+   "via": "1.1 14086943eeebbd644c0a7eb9d98e199c.cloudfront.net (CloudFront)",
+   "head": "{\"message\":\"Unauthorized\"}"
+  },
+  "staging.outlier.bet": {
+   "status": null,
+   "server": null,
+   "powered": null,
+   "via": null,
+   "head": "<urlopen error [Errno 11001] getaddrinfo failed>"
+  }
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "domain": "optimaldfs.com",
+ "tech_stack": {
+  "frontend": "Joomla CMS (meta generator 'Joomla! - Open Source Content Management') with shaper_helixultimate template + bootstrap.min.js/popper.min.js; 15 occurrences of com_mijoshop (MijoShop e-commerce extension) (raw/optimaldfs_com_home.html, raw/scan-optimaldfs_com.json)",
+  "backend": "Apache with PHP/7.1.33 (x-powered-by header) (raw/scan-optimaldfs_com.json request_log)",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED (no cloud/CDN markers; direct Apache origin)",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/scan-optimaldfs_com.json",
+   "raw/optimaldfs_com_home.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/component/mijoshop/category/36-nba-subscriptions (MijoShop product catalog)",
+    "auth_required": "no",
+    "tier": "n/a (shopping cart, not data API)",
+    "sample_response": "NOT CONFIRMED",
+    "citation": "raw/scan-optimaldfs_com.json greps + raw/optimaldfs_com_home.html"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/scan-optimaldfs_com.json"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "Proprietary projection models producing 'a range of outcomes for each player' with floor/ceiling probabilities; 'Wall Street proven methods to manage risk'; lineups delivered by email rather than self-serve optimizer",
+  "training_data": "'all relevant statistics within our proprietary models' (no specifics)",
+  "update_frequency": "Per main DFS slate (email delivery 'prior to each main DFS slate of games')",
+  "citation": "raw/optimaldfs_com_home.html (Analyze/Optimize/Deliver workflow text)"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED (floor/ceiling language implies distribution modeling but no sim counts exposed)",
+  "citation": "raw/optimaldfs_com_home.html"
+ },
+ "data_supply_chain": {
+  "vendors": "NOT CONFIRMED (no vendor strings in raw files)",
+  "citations": [
+   "raw/optimaldfs_com_home.html",
+   "raw/scan-optimaldfs_com.json"
+  ]
+ },
+ "product_limits": {
+  "limits": "Product SKUs: PGA subscription (product 34), NBA subscription Optimal (36), NBA subscription Premium (37), NFL subscription Optimal (38) - from sitemap; 'buy lineups here' one-off purchases + subscriptions",
+  "upgrade_triggers": "Premium vs Optimal NBA tier split exists (product 36 vs 37); specific cap differences NOT CONFIRMED (pricing pages not fetched by prior agent; pricing_status None in scan)",
+  "citation": "raw/scan-optimaldfs_com.json (sitemap_sample)"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED (per-product prices not captured; scan pricing_status None and no pricing page in raw/; product URLs listed above)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/scan-optimaldfs_com.json"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/get-started",
+  "/component/mijoshop/category/36-nba-subscriptions",
+  "/nba/product/37-nba-subscription-premium",
+  "/nfl/product/38-nfl-subscription-optimal",
+  "/golf/product/34-pga-subscription-optimal",
+  "/terms-conditions"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "recovery composition from raw/ evidence (scan JSON + homepage + sitemap)",
+  "timestamp": "2026-09-08T15:09:13.685021"
+ },
+ "disposition": "live"
+}

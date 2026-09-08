@@ -1,0 +1,67 @@
+{
+ "domain": "ftnfantasy.com",
+ "type": "live-site",
+ "tech_stack": {
+  "frontend": "WordPress + Elementor 3.21.3, jQuery 3.7.1, SystemJS, Zendesk widget, assets.ftnfantasy.com",
+  "backend": "WordPress (WordPress-SEO sitemaps)",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/ftnfantasy-root",
+   "raw/ftnfantasy-sitemap.xml"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/ftnfantasy-root"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Affiliate sportsbook offers surfaced ($200 / $350 bonus-bet CTAs, $10-deposit-$25 + free month of GOAT product); ESPN string present"
+  ],
+  "citations": [
+   "raw/ftnfantasy-root"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "subscription product + affiliate-gated offers",
+  "citation": "raw/ftnfantasy-root"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED (no own plan prices in root HTML; affiliate CTAs only)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/ftnfantasy-root"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/post-sitemap.xml (WP sitemap index, lastmod 2026-09-08 — actively updated)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "root HTML + WP sitemap index",
+  "timestamp": "2026-09-08T14:05:36.761690"
+ },
+ "disposition": "live (derived from 3 raw evidence files)"
+}

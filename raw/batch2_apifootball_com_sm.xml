@@ -1,0 +1,186 @@
+URL: https://apifootball.com/sitemap.xml\nSTATUS: 200\n\n<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://apifootball.com/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/about-us/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/contact-us/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/login/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/register/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/coverage/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/documentation/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/widgets-documentation/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/wordpress/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/register/?type=2</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/coverage/?plan=1</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/register/?type=3</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/register/?type=4</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/terms_of_use/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/privacy_policy/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/forgot-password/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/coverage-v1/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/documentation-v1/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/widgets/full/download/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/widgets/livescore/download/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/widgets/events/download/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/widgets/fixtures/download/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/widgets/results/download/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/widgets/standings/download/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/wpwidgets/full/download/</loc>
+  <lastmod>2020-11-18T13:48:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/widgets/full/index.html</loc>
+  <lastmod>2020-03-14T10:35:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/widgets/livescore/index.html</loc>
+  <lastmod>2020-03-14T11:12:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/widgets/events/index.html</loc>
+  <lastmod>2020-06-15T17:56:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/widgets/fixtures/index.html</loc>
+  <lastmod>2020-06-15T17:58:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/widgets/results/index.html</loc>
+  <lastmod>2020-06-15T18:01:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/widgets/standings/index.html</loc>
+  <lastmod>2020-03-14T11:13:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/wpwidgets/fullpreview/index.html</loc>
+  <lastmod>2020-11-09T20:24:00+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+<url>
+  <loc>https://apifootball.com/mcp/</loc>
+  <lastmod>2026-07-23T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/mcp-documentation/</loc>
+  <lastmod>2026-07-23T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://apifootball.com/football-news/</loc>
+  <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+
+</urlset>

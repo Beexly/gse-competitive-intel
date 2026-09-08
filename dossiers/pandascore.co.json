@@ -1,0 +1,96 @@
+{
+ "domain": "pandascore.co",
+ "type": "live-site/odds-data-api",
+ "disposition": "live",
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "customer_pain": [],
+ "discovered_targets": [],
+ "tech_stack": {
+  "frontend": "Docs portal on ReadMe.io; marketing site (app subdomain)",
+  "backend": "REST API at api.pandascore.co (v2-style resource routes) + WebSocket live feed",
+  "database": "NOT CONFIRMED",
+  "cloud": "NOT CONFIRMED",
+  "cdn": "NOT CONFIRMED",
+  "citations": [
+   "raw/pandascore.co-developers-docs.html",
+   "raw/pandascore.co-docs-plan-reference.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [
+   {
+    "method": "GET",
+    "path": "/videogames (and per-title resources: /csgo/matches/{id}/games, /csgo/games/{id}/rounds, /csgo/games/{id}/events, /lol/tournaments/upcoming, etc.)",
+    "auth_required": true,
+    "tier": "plan-gated per endpoint tier",
+    "sample_response": "unauthenticated probe -> 401 (verified): URL: https://api.pandascore.co/videogames\\nSTATUS: 403\\n\\n{\"error\":\"Token is missing\"}",
+    "citation": "raw/pandascore.co-api-videogames-401.json"
+   },
+   {
+    "method": "GET",
+    "path": "rate-and-connections-limits documented page",
+    "auth_required": true,
+    "tier": "all",
+    "sample_response": "NOT CONFIRMED (limits numbers not extracted in saved doc page)",
+    "citation": "raw/pandascore.co-docs-rate-and-connections-limits.html"
+   }
+  ],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": [
+   "WebSockets overview doc saved: live in-game frames (Basic Live and Pro Live tiers)",
+   "Pro Live-only frame fields: player economy, alive status, bomb planted, paused state, round winner"
+  ],
+  "rate_limits": "documented (numbers in saved page not yet extracted)",
+  "citations": [
+   "raw/pandascore.co-docs-websockets-overview.html",
+   "raw/pandascore.co-docs-plan-reference.html"
+  ]
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "first-party official esports data: 13 major titles (LoL, CS, DotA2, Valorant highlighted); also powers 'Fantasy' product and odds product page"
+  ],
+  "citations": [
+   "raw/pandascore.co-developers-docs.html",
+   "raw/pandascore.co-odds.html"
+  ]
+ },
+ "product_limits": {
+  "limits": "Tier ladder: Free/Fixtures (free to all users) -> Historical -> Historical Pro -> Basic Live -> Pro Live -> Enterprise; per-endpoint tier gating",
+  "upgrade_triggers": "live play-by-play and player-level economics require Pro Live",
+  "citation": "raw/pandascore.co-docs-plan-reference.html"
+ },
+ "pricing": {
+  "web": "Plan ladder confirmed; price numbers NOT CONFIRMED in saved pages",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/pandascore.co-pricing.html"
+  ]
+ },
+ "discovered_paths": [
+  "/developers/docs",
+  "/docs/plan-reference",
+  "/docs/rate-and-connections-limits",
+  "/docs/websockets-overview",
+  "/odds",
+  "/fantasy",
+  "/pricing",
+  "api.pandascore.co (401 unauth)"
+ ],
+ "discovery_metadata": {
+  "method": "docs portal crawl (21 files saved incl. plan reference + websocket docs); unauth API probe verified 401",
+  "timestamp": "2026-09-08T14:27:58.643229"
+ }
+}

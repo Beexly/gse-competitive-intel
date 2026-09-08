@@ -1,0 +1,35 @@
+URL: https://og.com/robots.txt\nSTATUS: 200\n\nUser-Agent: *
+Disallow: /settings
+Disallow: /portfolio
+
+User-Agent: GPTBot
+Allow: /
+Disallow: /settings
+Disallow: /portfolio
+
+User-Agent: ChatGPT-User
+Allow: /
+Disallow: /settings
+Disallow: /portfolio
+
+User-Agent: Google-Extended
+Allow: /
+Disallow: /settings
+Disallow: /portfolio
+
+User-Agent: PerplexityBot
+Allow: /
+Disallow: /settings
+Disallow: /portfolio
+
+User-Agent: ClaudeBot
+Allow: /
+Disallow: /settings
+Disallow: /portfolio
+
+User-Agent: Applebot-Extended
+Allow: /
+Disallow: /settings
+Disallow: /portfolio
+
+Sitemap: https://og.com/sitemap.xml

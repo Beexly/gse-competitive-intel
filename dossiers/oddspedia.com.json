@@ -1,0 +1,66 @@
+{
+ "domain": "oddspedia.com",
+ "type": "live-site",
+ "disposition": "live",
+ "tech_stack": {
+  "frontend": "Nuxt (Vue) behind Cloudflare (window.__NUXT__/Cloudflare markers)",
+  "backend": "NOT CONFIRMED",
+  "database": "NOT CONFIRMED",
+  "cloud": "Cloudflare",
+  "cdn": "Cloudflare",
+  "citations": [
+   "raw/i_oddspedia_com_home.html"
+  ]
+ },
+ "api_architecture": {
+  "rest_endpoints": [],
+  "graphql_schema": "NOT CONFIRMED",
+  "websocket_endpoints": "NOT CONFIRMED",
+  "rate_limits": "NOT CONFIRMED",
+  "citations": [
+   "raw/i_oddspedia_com_home.html"
+  ]
+ },
+ "extracted_formulas": [],
+ "ml_model_infrastructure": {
+  "model_types": "NOT CONFIRMED",
+  "training_data": "NOT CONFIRMED",
+  "update_frequency": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "simulation_engine": {
+  "num_simulations": "NOT CONFIRMED",
+  "correlation_method": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "data_supply_chain": {
+  "vendors": [
+   "Sportradar + DraftKings + FanDuel strings present in homepage (roles NOT CONFIRMED)"
+  ],
+  "citations": [
+   "raw/i_oddspedia_com_home.html"
+  ]
+ },
+ "product_limits": {
+  "limits": "NOT CONFIRMED",
+  "upgrade_triggers": "NOT CONFIRMED",
+  "citation": "NOT CONFIRMED"
+ },
+ "pricing": {
+  "web": "NOT CONFIRMED ($5/$100/$200/$300 strings \u2014 context likely ad/bonus content, tier map not in homepage)",
+  "ios": "NOT CONFIRMED",
+  "android": "NOT CONFIRMED",
+  "citations": [
+   "raw/i_oddspedia_com_home.html"
+  ]
+ },
+ "customer_pain": [],
+ "discovered_paths": [
+  "/ (odds comparison portal)"
+ ],
+ "discovered_targets": [],
+ "discovery_metadata": {
+  "method": "homepage only (618KB, Nuxt)",
+  "timestamp": "2026-09-08T14:13:58.404821"
+ }
+}
