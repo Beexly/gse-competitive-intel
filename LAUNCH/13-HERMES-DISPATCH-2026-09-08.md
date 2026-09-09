@@ -174,3 +174,43 @@ an agent.
 - R-1 credential rotation, every Vercel flip, the Stripe CTA test, the OG card spot-check: founder
   and browser agent, from the command sheet (`docs/ops/LAUNCH_COMMAND_SHEET_2026-09-08.md`,
   Sports PR #721) and script F when A3 lands it.
+
+---
+
+## ADDENDUM 2026-09-09 00:50 UTC — four packages moved from cloud agents to Hermes
+
+The founder's weekly usage limit is close. Four Sonnet agents were stopped after their first
+push; their branches hold the work so far. Hermes continues each on its own `hermes/<slug>`
+branch, starting from the pushed branch (fetch it, branch from it, keep its commits), under the
+same rules as HP-1..HP-9. HP-1/HP-2 are DONE (PR #726 merged, deployed, acceptance passed);
+P0-3 measurement is DONE (PR #732). HP-3..HP-9 still stand. Order for tonight: HP-3, HP-13, HP-10, HP-4, HP-12, HP-11, then the rest.
+
+## HP-10 (from Agent 6, NCAA) — start from `origin/claude/agent-ncaa`
+Handoff: `LAUNCH/agents/ncaa-specialist.md`. CFBD terms evidence doc (public fetch, saved with fetch
+time; registry status NOT changed), FBS conference→team→ESPN id→CFBD id map with a test that every
+Week 2 fixture resolves, NCAAF moneyline gap DESIGN vs DEFECT with a truthful degraded hint, and the
+small-sample stratum label (n 74, ECE 0.1178) wherever NCAAF calibration is shown.
+
+## HP-11 (from Agent 7, Testing) — start from `origin/claude/agent-testing`
+Handoff: `LAUNCH/agents/testing-qa.md`. `/qa` first; tests that cannot fail replaced with real
+assertions; the api-no-store ratchet shrunk at most 5 routes per commit (leave `/api/board/passes`
+to the money-path agent); C-101; `/test-gaps` over settlement, entitlements, checkout, publish.
+
+## HP-12 (from Agent 8, Marketing, DRAFT-ONLY) — start from `origin/claude/agent-marketing`
+Handoff: `LAUNCH/agents/marketing.md`. Site copy from LAUNCH/01/02 where components exist (words
+only; the UI/UX agent owns layout on `claude/launch-frontend-quality`), drafts under
+`docs/marketing/` (X thread + receipt-demo reply, newsletter note, press note), SEO titles and
+descriptions from LAUNCH/08 through `SITE_URL`, the agent-directory submission list. Zero
+performance claims; `npm run lint:brand` and the trust gate are blocking.
+
+## HP-13 (from Agent 9, Fantasy) — start from `origin/claude/agent-fantasy`
+Handoff: `LAUNCH/agents/fantasy-engine.md`. C-94 labels, C-205 verified findings one commit each,
+C-212 (verify #720's Galaxy Index weighting or wire it with a disclosure line), seeded reproducible
+lineups with a byte-for-byte test, no tier gate, no price change, the /fantasy 21+ gate untouched.
+
+## Still with cloud agents (do not duplicate)
+A1 line integrity C-197 (`claude/launch-line-integrity`), A2 PR steward (#722 #723 #724 #725),
+A3 gates + StatKing facts-only field gating + the /stats age-gate matcher change
+(`claude/launch-gate-matrix`), A4 frontend C-93/C-224 (`claude/launch-frontend-quality`),
+Agent 5 NFL Week 1 data (`claude/agent-nfl`), Agent 10 security and money path
+(`claude/agent-security-money`).
