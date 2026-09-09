@@ -13,6 +13,13 @@ at 01:33 UTC 2026-09-09; measured at 01:48 UTC they do nothing, for two reasons 
    cannot reflect a runtime second book.
 
 ## Task
+0. FIRST, before any PredExon code (see data/extracted/repo-leverage-2026-09-09.md A1): TheRundown's
+   free feed already carries Kalshi as affiliate 25 and `rundown-client.ts:34-49` maps it to book key
+   `kalshi`. Verify `kalshi` passes `isRealBookmakerKey`; then make the Rundown thin-fill survive the
+   day (only games under MIN_BOOKMAKERS, NFL/NCAAF game days only, one call per sport per cycle,
+   30-minute cooldown after a 429). If that alone yields two books on NFL, ship it as its own PR
+   (C-278a) and do A-D as C-278b. Apply the Kalshi taker fee at the ask (A2) to any Kalshi quote
+   used as a book price.
 A. In `process-sport.ts`, after the paid events are collected and BEFORE the Rundown thin-fill (~:479),
    add a Kalshi thin-fill: when `PREDEXON_INGEST` is on and the catalog exists, for each game whose
    priced-book count is under `MIN_BOOKMAKERS`, attach the Kalshi de-vigged quote as one bookmaker
