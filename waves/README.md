@@ -88,3 +88,22 @@ from this file. Re-extraction targets listed in section 11/12.
 105 deep-crawl rows + 7 platform analyses (Blink 1, Replit 2, Emergent 3, Lovable 4, Readdy 5, Vercel/Netlify 6-7). CSV = 100% format-copy join. do_not_copy x9 listed verbatim in dossier, boundary respected.
 ## wave4-methods-2026-09-12.md
 08-27 x4 + 08-29 x2 consolidated: 08-29 pair is DELTA (0 steals/0 dnc overlap, jobs differ). 15 verbatim formulas / 10 canonical (implied-prob, no-vig, EV, CLV, Kelly, Dixon-Coles, MC, EPA, DFS MIP). Pipeline: official-first ingestion + YOLOv8/ByteTrack fallback, walk-forward + fractional-Kelly gates, joint-sim edge (never product of marginals).
+## wave4-repos-oss-optimizers-2026-09-12.json
+22 distinct owner-supplied GitHub repos (25 profiles; 3 re-profiled) across 6 read-only
+batches. Verbatim staged profiles + notes, plus a `_meta.known_data_quality_fault` recording
+that batch-d's `gse_has`/`gse_lacks` fields are INVERTED (they list exact DP, k-best,
+late-swap, correlation sim, NFL DK-Classic as GSE *lacks*; GSE ships all five) — those fields
+are quarantined and were not cited. No repo was modified; nothing copied.
+## wave4-repos-oss-optimizers-2026-09-12.md
+Repo dossier. Copy boundary: 8/22 repos carry a GitHub-recognized license, 14/22 do not
+(yfpy is GPL-3.0 — viral, do NOT copy into GSE). Consensus: 0/22 ship an exact NFL-Classic
+optimizer with k-best + late-swap (GSE's real differentiation); 21/22 never grade their own
+projections (only nuke-dfs-hub fits a bias/spread correction, and it is deliberately
+holdout-free); 3 independent repos converge on nflverse + a free ESPN-sourced line with no
+paid key (informs ODDS_API_TIER_DECISION); exactly 1/22 leads with an unproven result
+(cfb_2026: n=51, ROI −2.1%, CI [−40%, +41%], pre-kickoff reports frozen as releases).
+Marketing-vs-reality corrections: prop-edge's prediction-market scope reverted 2026-03-22;
+nuke-dfs-hub has NO optimizer library; live-sports-arb abandoned since 2023.
+ADOPTED + shipped to Sports main: projection calibration loop (proj-calibration.ts) and
+portfolio stack-exposure analytics (stack-exposure.ts + panel), plus the anytime-TD board
+(td-model.ts, /fantasy/touchdowns). Their 55% top-12 hit rate is NOT claimed by GSE.
