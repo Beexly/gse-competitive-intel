@@ -1,0 +1,1223 @@
+{
+  "_meta": {
+    "wave": 4,
+    "topic": "open-source DFS/optimizer/odds repos supplied by owner",
+    "collected": "2026-09-12",
+    "method": "READ-ONLY profiling: GitHub REST API + repo page extraction. No repo was modified; clones (where made) went to scratch dirs under w4-stage only.",
+    "license_note": "Several repos ship NO LICENSE file. Nothing from these repos may be copied verbatim; only mechanics/ideas are adopted, reimplemented in GSE's own code.",
+    "known_data_quality_fault": "batch-d's per-repo 'gse_has'/'gse_lacks' fields are INVERTED (they list exact DP, k-best, late-swap, correlation sim, NFL DK-Classic as GSE LACKS -- GSE ships all of these). Those fields are quarantined and must not be cited. All other batch-d fields (purpose/stack/stars/endpoints) are usable."
+  },
+  "batches": {
+    "repos-batch-a": {
+      "profiles": {
+        "batch": "repos-batch-a",
+        "profiled_at": "2026-09-12T15:40:00Z",
+        "profile_scope": "web + GitHub API metadata; shallow clones to temp for code inspection (nuke_calibration.py, nuke_sim.py, nuke_football_v2.py, nuke_combos.py, cfb_edge.py, grade_engine.py, edge_grade.py, ml-weights.ts, package.json, READMEs). READ-ONLY; no commits.",
+        "repos": [
+          {
+            "url": "https://github.com/nukesim/nuke-dfs-hub",
+            "owner": "nukesim",
+            "name": "nuke-dfs-hub",
+            "purpose": "NFL DFS lineup building hub for DraftKings (v20 'Correlation Builder'): player pools, QB planning, multi-lineup building, exposure tracking, late-swap optimization, slate analysis. Live Streamlit app at nuke-dfs-app.streamlit.app.",
+            "stack": [
+              "Python",
+              "Streamlit",
+              "pandas / numpy / openpyxl / requests",
+              "GitHub Actions + trigger-file pattern (nuke-data-bot auto-commits data refreshes)",
+              "deploy/ scripts; tests/ dir present"
+            ],
+            "license": "none declared (no LICENSE file; GitHub API license null)",
+            "stars": 0,
+            "forks": 0,
+            "watchers": 0,
+            "commits": 794,
+            "branches": 3,
+            "created_at": "2026-08-24T19:47:19Z",
+            "last_push": "2026-09-12T18:28:53Z",
+            "activity": "VERY HIGH — commits within minutes of profiling; automated daily data-refresh cycle via Actions",
+            "size_kb": 6519,
+            "key_algorithms": {
+              "simulation": "Monte Carlo player projection (simulate_player_matrix_v2, n_sims=1500 default): game environment (totals/spreads bounds) shapes scoring and game script; per-role exposure multipliers (QB1 1.00 / RB1 1.08 / WR1 1.06 etc.); talent signal = mean of top-5 recent performances; boom/bust 'gamma burst' events (rng.gamma(2.2,4) scaled by usage, clipped) plus ~5.5% 'dud' probability (projection → 5-45% of mean)",
+              "calibration": "nuke_calibration.py: per-position mean-bias correction + spread multiplier fit on training sample only. bias = mean(simulated mean - actual DKFP); spread = 90th-percentile |standardized residual| mapped to central-90% normal reference (z90=1.6448), clipped [0.75, 2.50]. Applied to new sim matrices position-wise; floored at 0 (DST -6). Deliberately simple/auditable, no holdout outcomes",
+              "lineup_optimizer": "NO external optimizer (no scipy.optimize / pulp / ortools / linear_sum_assignment anywhere). Lineups built via Monte Carlo projection + greedy/role-constrained portfolio sampling; correlation exposure analytics in nuke_combos.py (pair counts, QB-stack / bring-back / same-game classification, % of QB lineups)",
+              "contest_leverage": "nuke_contest.py simulates hypothesized field opposition (field_size, iterations, seeds) to assess lineup leverage vs a typical contest field",
+              "data_sources": "DK/FD slate + salary data, odds (nuke_odds.py, gametotals.xlsx, nfl_odds_current.csv — appears manually-seeded/sportsbook-derived), player availability (nuke_availability.py), showdown modules for DK/FD single-game"
+            },
+            "gse_gap_analysis": {
+              "gse_already_has": "Monte Carlo sim engine concept, odds ingest, correlation/stack concepts, streamlit-style dashboards, Python/pandas/numpy pipeline",
+              "gse_lacks": "formal projection-vs-actual calibration loop with position bias/spread correction; portfolio-level combo exposure analytics (QB-anchored stacking %); contest-leverage simulation vs field; automated data-refresh Actions pattern with trigger files; late-swap optimization"
+            },
+            "verdict": "Most operationally mature of the three (794 commits in 19 days, automation-first), but zero public traction (0 stars) and no license. Core edge = pragmatic calibration + correlation portfolio analytics, not optimizer math. Useful to GSE as a calibration + portfolio-exposure reference and an automation blueprint, not as a model to copy."
+          },
+          {
+            "url": "https://github.com/abudnick8/prop-edge",
+            "owner": "abudnick8",
+            "name": "prop-edge",
+            "purpose": "Sports prediction web platform ('Clubhouse IQ' brand): scans Kalshi/Polymarket/DraftKings across NFL/NBA/MLB/NHL with confidence scoring and alerts. In practice now a full-stack fantasy + props app: fantasy forecast tools (Stream DST, Game Script, Start/Sit, Waiver Radar, Matchup Heatmap), 'The Book' player-props board with line stepper + live odds, March Madness analytics, AI-grade engine.",
+            "stack": [
+              "TypeScript (frontend: React 18 + Vite + Tailwind + Radix/shadcn)",
+              "Express 5 + Drizzle ORM + Postgres (pg, drizzle-kit)",
+              "Python sidecars: grade_engine.py, edge_grade.py, auto_grader.py, data_fetch_mlb.py, espn_pace.py, nhl_pace.py, kronos_service.py",
+              "Railway deploy (pre-built dist/index.cjs, nixpacks/railway config), node-cron jobs",
+              "Resend email alerts, Whop SDK (owner-tier gating), passport/express-session auth",
+              "ML outcome logging: server/ml_data/bet_outcome_log.json, server/ml-weights.ts"
+            ],
+            "license": "package.json declares MIT but no LICENSE file in repo; GitHub API license null",
+            "stars": 5,
+            "forks": 1,
+            "watchers": 0,
+            "commits": 1736,
+            "branches": 2,
+            "created_at": "2026-03-14T20:28:50Z",
+            "last_push": "2026-09-12T17:58:34Z",
+            "activity": "VERY HIGH — active daily; 1,736 commits over ~6 months; single maintainer",
+            "size_kb": 1467875,
+            "key_algorithms": {
+              "confidence_scoring": "grade_engine.py 'Edge Crew v3': expert-evidence composite. Per-variable 1-10 scores (off ranking, def ranking, recent form, home/away, rest advantage, H2H, star player) → composite → letter grade (A+≥8.0 ... F<2.5) → sizing map (A+=2u, A=1.5u, A-=1u, B+=1u, else PASS). Confidence = 55 + (score-5)*8 clamped [40,95]",
+              "ml_nudge": "ml-weights.ts applies learned weight adjustments to raw confidence from bet outcome log; kronos_service.py produces time-series confidence intervals (CI widens with horizon, narrows with R² confidence)",
+              "props_pipeline": "The Book: Linemate cache as props source (free; replaced Odds API) → fetchDraftKingsProps → extractLines() parses raw book alternates → over/under odds update live as line stepper cycles; filters by stat/team/direction/position",
+              "prediction_markets": "Kalshi/Polymarket scanning and alerts were REVERTED (workflow 'revert: remove prediction markets workflow', 2026-03-22) — repo description is now aspirational vs actual scope",
+              "pace_models": "espn_pace.py / nhl_pace.py compute pace/CIQ streak inputs for fantasy forecast tools"
+            },
+            "gse_gap_analysis": {
+              "gse_already_has": "Composites/grade tiers concept, props data ingest, market-vs-model edge framing, dashboards, Python analytics",
+              "gse_lacks": "production full-stack delivery (auth, tier gating, email alerts, scheduled cron scans, hosted deployment); explicit grading rubric with per-variable scoring functions and sizing map; ML weight learning loop from logged outcomes; time-series confidence intervals with horizon decay; free props source pivot (Linemate) replacing paid Odds API"
+            },
+            "verdict": "The only repo with any public traction (5 stars, 1 fork) and the most productized: real users, tiers, alerts, deployment. Math is heuristic (rubric grading + ML nudge), not statistical edge-finding. GSE's top takeaway is delivery/ops pattern (free props sources, cron scans, alerting, outcome-logged ML loop) and the explicit grade→sizing rubric — its edge math itself is shallow."
+          },
+          {
+            "url": "https://github.com/wbp318/cfb_2026",
+            "owner": "wbp318",
+            "name": "cfb_2026",
+            "purpose": "College football outlier finder: compares ESPN FPI game projection vs the DraftKings line (via ESPN odds), tracks open→current line movement, sizes quarter-Kelly tickets, writes everything to SQLite, and backtests honestly in Python AND R. Single-file CLI (cfb_edge.py) + optional stdlib-only local GUI (cfb_gui.py). No API keys.",
+            "stack": [
+              "Python (56.1%) + Markdown (37.4%) + R (6.4%)",
+              "runtime deps: requests only; analysis: pandas/numpy; dev: ruff + pytest (42 tests)",
+              "SQLite (data.db) + bets.csv conflict-free ledger; reports/ as GitHub releases (pre-kickoff freeze)",
+              "GitHub Actions CI + dependabot (pip security-only); snapshot.bat Task Scheduler wrapper",
+              "Co-authored with Claude Code (Claude Fable 5.1); CLAUDE.md conventions"
+            ],
+            "license": "none declared (no LICENSE file; GitHub API license null)",
+            "stars": 0,
+            "forks": 0,
+            "watchers": 0,
+            "commits": 14,
+            "branches": 1,
+            "tags": 3,
+            "created_at": "2026-09-09T23:29:36Z",
+            "last_push": "2026-09-12T14:31:22Z",
+            "activity": "HIGH for age — 3 seasons-old project started 3 days ago; daily releases; 3 contributors (owner, Claude, dependabot)",
+            "size_kb": 153,
+            "key_algorithms": {
+              "model_vs_market": "FPI power ratings + HFA vs devigged DK line. devig_pair() splits two-way odds; cover_probability(model_margin, market_margin) via norm_cdf with spread-SD assumption; spread outlier flag when |FPI margin - market margin| >= 3.0 pts; ML edge flag when (FPI p - devig p)/devig p >= 8%",
+              "signal_suite": "spread_signal, ml_signal, spread_move_signal (open→current drift), total_move_signal; strength/direction per signal; findings_warnings() inline caveats (no-FPI, FCS never staked, line>=28 watchdog)",
+              "staking": "kelly_fraction(p, decimal_odds) full Kelly on devigged implied probability, KELLY_FRACTION (=1/4) applied with bankroll scaling and rule gates (FBS-vs-FBS only, no warning flag, one ticket per game, max 5 picks)",
+              "honest_backtesting": "analysis/ Python+R twins over SQLite: 01 flat ROI (-2.1%, 95% CI [-40%,+41%]), 02 FPI-vs-closer RMSE (16.41 vs 16.68 — FPI ahead 0.27pts, inside noise), 03 steam coverage (43.5% — inconclusive). README explicitly labels all verdicts INCONCLUSIVE at n=51 games/34 paper bets",
+              "data_sources": "ESPN public endpoints only (scoreboard, core odds with open/current lines, FPI predictor + power index); 8-worker parallel fetch; backfill mode; no API keys, no .env"
+            },
+            "gse_gap_analysis": {
+              "gse_already_has": "FPI-style power ratings, market lines/odds ingest, SQLite paper ledger, Kelly staking, backtest analysis loop, outlier/edge signal framing",
+              "gse_lacks": "release-frozen pre-kickoff reports as tamper-evident record (GitHub releases); honest-inconclusive reporting discipline (explicit CI, n, 'nothing proven +EV'); devig → quarter-Kelly stake gate pipeline with rule-based ticket filter (picks board); open→current line-move tracking as first-class signal; FCS-hazard handling; 42-case offline test suite + CI quality bar"
+            },
+            "verdict": "Philosophically the closest to GSE's edge-hunt ethos (falsify your own edge, log everything, label inconclusives) and a crisp reference implementation of model-vs-market outlier finding + Kelly staking + honest backtests in ~150KB. The anti-pattern GSE should steal wholesale: pre-kickoff reports frozen as releases + explicit 'inconclusive' disclaimers. Zero traction yet (0 stars, 3 days old), no license."
+          }
+        ],
+        "cross_repo_notes": [
+          "All three repos: no LICENSE — copy nothing verbatim into GSE without attribution conversation.",
+          "None uses a real LP/exact optimizer; all three are heuristic (Monte Carlo, greedy portfolio, rubric grading, Kelly) — GSE's optimizer math is NOT a differentiator gap they cover.",
+          "Common data problem solved differently: nuke-dfs seeds odds manually, prop-edge pivoted to free Linemate cache, cfb_2026 scrapes ESPN public endpoints with a UA note — GSE already has the strongest odds/projection ingest architecture of the set.",
+          "All three are solo/small-team hobby projects; only prop-edge has any distribution (5 stars) and a paying-tier structure."
+        ]
+      },
+      "notes_md": "# Repos Batch A — Competitive-Intel Notes (GSE)\n\nProfiled 2026-09-12 (UTC-5). Read-only: GitHub API + web; shallow clones to temp. Outputs staged at C:/Users/Garrett/w4-stage/repos-batch-a/ only.\n\n## 1. nukesim/nuke-dfs-hub — NFL DFS Correlation Builder (v20)\n- **Purpose:** Streamlit web app for DraftKings NFL DFS: pools, QB planning, multi-lineup, exposure, late-swap, slate analysis, showdown (DK+FD). Live: nuke-dfs-app.streamlit.app.\n- **Stack/license:** Python + streamlit/pandas/numpy/openpyxl/requests. No license. 0*/0f. 794 commits since 2026-08-24 (19 days!); bots auto-commit data via GitHub Actions trigger files.\n- **Math (key):**\n  - MC projection `simulate_player_matrix_v2` (n_sims=1500): game totals/spreads as bounded environment → per-role multipliers (RB1 1.08, WR3 0.91, TE2+ 0.76...) + talent = mean top-5 recent + gamma burst boom events + 5.5% dud chance.\n  - `nuke_calibration.py` — the standout: per-position **mean-bias correction + spread multiplier** fit on training sample only; spread = 90th pct |std resid| / 1.6448, clipped [0.75, 2.50], applied to new sim matrices, floored (DST -6). Deliberately auditable, no holdout.\n  - **No optimizer libs** (no scipy.optimize/pulp/ortools): lineup construction = MC + greedy/role-constrained sampling. `nuke_combos.py` does portfolio combo exposure (QB-anchored pair %, stacks, bring-backs). `nuke_contest.py` simulates field opposition for leverage.\n- **GSE gap:** GSE has no projection-vs-actual calibration loop with learned bias/spread; no portfolio combo-exposure analytics; leverage-vs-field simulation; automation pattern (Actions + trigger files + bot commits).\n- **Caution:** 0 adoption, no license, data seeding partly manual (gametotals.xlsx), FD data committed as base64-chunked csv.gz.\n\n## 2. abudnick8/prop-edge — 'Clubhouse IQ' full-stack betting platform\n- **Purpose:** describes itself as Kalshi/Polymarket/DK scanner with confidence scoring + alerts; reality = React/Express fantasy + props platform (5 fantasy forecast tools, 'The Book' player props, March Madness analytics) with tiers/alerts.\n- **Stack/license:** TS React 18 + Vite + Tailwind + Radix; Express 5 + Drizzle + Postgres; Python sidecars (grade_engine, edge_grade, auto_grader, espn_pace, nhl_pace, kronos_service); Railway deploy; Resend alerts; **Whop SDK owner-tier paywall**. npm package.json says MIT but no LICENSE file. 5*/1f, 1,736 commits (6 mo, solo).\n- **Math (key):** rubric-graded confidence — per-variable 1-10 expert scores (off/def ranking, form, home/away, rest, H2H, star) → composite → A+..F → sizing map (2u/1.5u/1u/PASS); confidence = 55+(score-5)*8 ∈ [40,95]. ML nudge from outcome log (ml-weights.ts); kronos CI widens with horizon. Props: **Linemate free cache** replaced Odds API (live alternates + line stepper).\n- **Red flag:** prediction-market scanning **reverted** 2026-03-22 — description is aspirational; edge math is heuristic, not statistical.\n- **GSE gap:** delivery/ops pattern (free props source pivot, cron scans, email alerts, outcome-logged ML loop, paywall tiers) — the grade→sizing rubric is a simple A/B test framework GSE could outdo.\n\n## 3. wbp318/cfb_2026 — FPI vs DraftKings CFB outlier finder\n- **Purpose:** single-file CLI `cfb_edge.py` (requests only) + stdlib-only GUI: ESPN FPI vs DK line (via ESPN odds), open→current line-move tracking, quarter-Kelly stakes, SQLite ledger, nightly reports frozen as GitHub releases. **No API keys.**\n- **Stack/license:** Python 56% / R 6.4%, 42 pytest tests, CI + dependabot (pip security-only), ruff. No license. 0*/0f; 14 commits since 2026-09-09; 3 releases ('saturday-2026-09-12-morning' etc.). Co-authored with Claude Code.\n- **Math (key):** devig_pair() → implied prob; cover_probability via norm_cdf vs market margin; spread flag ≥3.0 pts; ML edge ≥8%; kelly_fraction b=dec-1 with KELLY_FRACTION 1/4; rule gates (FBS-vs-FBS, no warns, ≤5 picks, one/game); FCS never staked.\n- **Honesty (rare + valuable):** README leads with \"Nothing proven +EV\": n=51 games → flat ROI −2.1% CI [−40%,+41%]; FPI RMSE 16.41 vs DK 16.68 (within noise); steam side 43.5%. Reports released pre-kickoff = tamper-evident.\n- **GSE gap:** release-frozen pre-kickoff reports; explicit inconclusive-disclosure discipline; devig→Kelly gate pipeline; line-move as first-class signal; 42-test quality bar on a 150KB tool.\n\n## Cross-repo\n- No licenses anywhere → don't copy code verbatim.\n- None has a real optimizer — heuristics dominate; GSE's ingest + edge-hunt stack is ahead of all three.\n- Only prop-edge has distribution (5 stars) and monetization structure; cfb_2026 is the closest philosophy match to GSE's falsifier/ledger ethos.\n\n## Top actionable items for GSE (pick one per repo)\n1. nuke-dfs → steal the **position-level projection calibration loop** (bias + spread multiplier, 90th-pct residual, [0.75,2.5] clip) and the **portfolio combo-exposure dashboard** (QB-anchored stack %, bring-back %).\n2. prop-edge → adopt the **free data-source pivot + delivery ops** (Linemate-style free cache, cron scans, alerting, outcome-logged ML weight loop); skip its shallow rubric math.\n3. cfb_2026 → copy the **release-frozen pre-kickoff report + explicit-inconclusive backtest discipline** wholesale into GSE's ledger pipeline; adopt devig→quarter-Kelly gate standards."
+    },
+    "repos-batch-b": {
+      "profiles": {
+        "td-board": {
+          "data_sources": [
+            "nflverse (free) for stats/pbp",
+            "The Odds API (licensed) for DraftKings prices",
+            "Manual preseason team totals (footballdb.com)"
+          ],
+          "scoring_model": [
+            "Backtested on 2024, graded on 2025",
+            "score = 40% season hit rate + 20% red-zone volume + 20% goal-line volume + 20% Vegas team total",
+            "prob = calibrated logistic of score",
+            "Top-12 picks hit ~55% in backtest vs ~48% baseline",
+            "Movers regressed toward positional means",
+            "Rookies/projections: role-based red-zone share"
+          ],
+          "update_frequency": "Weekly (Tue full rebuild, Sun/Wed/Thu prices)",
+          "gse_product_fit": [
+            "Anytime-TD model edge vs market",
+            "Auto-updating player board with edge sort",
+            "Free tier via GitHub Pages",
+            "Data: nflverse + licensed odds feed",
+            "Proof: Backtest report + live edge tracker"
+          ],
+          "verdict": "Strong data model, market edge, and automation. Ready for GSE productization."
+        },
+        "draftfast": {
+          "data_sources": [
+            "CSV parses of DK/FD salaries and projections",
+            "Manual uploads for custom rules"
+          ],
+          "scoring_model": [
+            "Lineup optimizer with exposure control",
+            "Rules engine for slate-specific constraints",
+            "No explicit TD scorer model"
+          ],
+          "update_frequency": "Manual/CLI-driven",
+          "gse_product_fit": [
+            "Lineup tools adjacent to TD scorer bets",
+            "Could integrate TD model projections",
+            "Active community but stale since 2026"
+          ],
+          "verdict": "Mature DFS toolkit, but not focused on TD scorers. Integration potential."
+        },
+        "live-sports-arb": {
+          "data_sources": [
+            "FanDuel, DraftKings, William Hill APIs (likely unlicensed)"
+          ],
+          "scoring_model": [
+            "Arbitrage detection across books",
+            "No TD-specific logic"
+          ],
+          "update_frequency": "Live (abandoned since 2023)",
+          "gse_product_fit": [
+            "Arbitrage alerts could signal TD line mispricings",
+            "No model or edge calculation",
+            "Abandoned risk"
+          ],
+          "verdict": "Narrow arbitrage focus. Not directly applicable to TD product."
+        }
+      },
+      "notes_md": "# Repo Profiles + TD Product Brief\n\n## TD-Board\n- **Model core**: Backtested NFL TD scorer model (40% season hits + 20% red-zone + 20% goal-line + 20% team total). Calibrated probabilities.\n- **Data**: Free nflverse stats; licensed Odds API for DraftKings prices.\n- **Automation**: GitHub Actions weekly updates (Tue full rebuild, Sun/Wed/Thu prices).\n- **Edge**: Sorts players by model-vs-market edge. 55% top-12 backtest hit rate.\n- **GSE fit**: Direct productization as an anytime-TD edge board. Free tier viable.\n\n## Draftfast\n- **Core**: DFS lineup optimizer with exposure control and custom constraints. No TD model.\n- **Data**: Manual CSV uploads (DK/FD salaries). Stale since Feb 2026.\n- **GSE fit**: Could integrate TD projections into lineups. Active user base.\n\n## Live-Sports-Arbitrage\n- **Core**: Abandoned arbitrage bot (last update Nov 2023). No TD logic.\n- **Risk**: Likely scraping sportsbooks directly (ToS violation).\n\n## GSE Anytime-TD Product Brief\n1. **Data layer**:\n   - nflverse stats (free) + licensed odds feed (The Odds API).\n   - GitHub-hosted player board with auto-updates.\n2. **Model layer**:\n   - TD-Board's backtested score formula + calibration curves.\n   - Weekly edge calculations vs market prices.\n3. **Proof layer**:\n   - Backtest report (2024→2025) showing 55% top-12 hit rate.\n   - Live edge tracker on the board (green = model edge).\n   - Transparent data sources and methodology in README.\n4. **Delivery**:\n   - Free tier via GitHub Pages (TD-Board's current setup).\n   - Premium tier with extended history/alerts (add DB + auth)."
+    },
+    "repos-batch-c": {
+      "profiles": {
+        "batch": "repos-batch-c",
+        "generated_utc": "2026-09-12",
+        "method": "read-only GitHub REST API (repos/contents/git trees) + raw.githubusercontent.com source reads",
+        "gse_shipped_baseline": {
+          "note": "GSE already ships: exact DP optimizer, k-best lineups, late-swap, correlation simulation, NFL DraftKings Classic format, honest fictional sample slate."
+        },
+        "repos": [
+          {
+            "full_name": "KengoA/fantasy-basketball",
+            "html_url": "https://github.com/KengoA/fantasy-basketball",
+            "purpose": "NBA DraftKings capstone: scrape Basketball-Reference + RotoGuru salaries, predict per-player fantasy points, then build lineups with a genetic algorithm.",
+            "language_stack": {
+              "primary": "Jupyter Notebook (Python)",
+              "ml": [
+                "Keras/TensorFlow (3 neural-net variants)",
+                "LightGBM with Bayesian hyperparameter optimization",
+                "scikit-learn (linear regression w/ feature selection, 5-fold CV)"
+              ],
+              "viz": [
+                "Plotly"
+              ],
+              "data": [
+                "Basketball-Reference.com (scraped games)",
+                "RotoGuru (salaries/positions)",
+                "RotoGrinders cashlines (manual)"
+              ],
+              "packaging": [
+                "Pipfile (Pipenv)",
+                "Makefile",
+                "requirements.txt"
+              ]
+            },
+            "stars": 269,
+            "forks": 60,
+            "created_at": "2018-05-23T20:07:25Z",
+            "pushed_at": "2023-07-25T21:15:30Z",
+            "archived": true,
+            "license": "MIT",
+            "topics": [
+              "draftkings",
+              "fantasy-basketball",
+              "fantasy-lineup",
+              "fantasy-sports",
+              "machine-learning",
+              "nba-prediction",
+              "nba-statistics",
+              "sports-analytics"
+            ],
+            "key_algorithms": {
+              "prediction": "Comparison of baseline (season average / DK-style avg) vs weighted average vs linear regression vs LightGBM (Bayesian opt) vs Keras neural nets. NN showed modest improvement over boosting; features engineered in 4_feature_engineering.ipynb.",
+              "lineup": "Genetic algorithm over player combinations to maximize projected FPTS under the $50k/8-player DK salary cap. Author later published PyPI package 'fantasy_ga' (Feb 2023) to externalize the GA.",
+              "portfolio_theory": "Modern Portfolio Theory framing: risk = stdev of last-10-game FPTS, return = mean FPTS; 'efficient frontier' of players."
+            },
+            "notable_limitations_stated_by_author": [
+              "No playoff games considered",
+              "Opponent defensive ability / positional defense NOT modeled (called an 'easy improvement')",
+              "GA code refactored out into fantasy_ga; repo content may not match report.pdf"
+            ],
+            "structure": "9 notebooks: 1_data_scraping, 2_merging_data, 3_exploratory_analysis, 4_feature_engineering, 5_baseline_models, 6_lightgbm_bayesian_optimization, 7_neural_networks, 8_predictions, 9_lineup_GA_optimization; plus report.pdf.",
+            "gse_has_vs_lacks": {
+              "has": [
+                "Exact DP optimizer + k-best lineups (stronger/simpler than GA for single-optimum)",
+                "NFL DraftKings Classic format",
+                "honest fictional sample slate"
+              ],
+              "lacks_here": [
+                "ML/boosting/NN player-points prediction layer",
+                "Bayesian hyperparameter optimization of a projection model",
+                "MPT risk/return player screening (mean vs stdev)",
+                "GA as an alternative/exploratory lineup generator"
+              ],
+              "reusability": "Concept-level, not code-level: notebooks, MIT, archived 2023. Useful as a design reference for a projection-model layer + risk metric; license permits reuse of any formulas."
+            }
+          },
+          {
+            "full_name": "DimaKudosh/pydfs-lineup-optimizer",
+            "html_url": "https://github.com/DimaKudosh/pydfs-lineup-optimizer",
+            "purpose": "Mature, pip-installable DFS lineup optimizer supporting many sites/sports with constraints, stacking, exposure control and site-specific CSV import/export.",
+            "language_stack": {
+              "primary": "Python",
+              "solver": [
+                "PuLP (pulp_solver.py)",
+                "native MIP solver (mip_solver.py)"
+              ],
+              "packaging": [
+                "setup.py",
+                "PyPI: pydfs-lineup-optimizer",
+                "tox/mypy",
+                "readthedocs"
+              ],
+              "extras": [
+                "pandas"
+              ]
+            },
+            "stars": 447,
+            "forks": 167,
+            "created_at": "2015-12-14T19:04:54Z",
+            "pushed_at": "2024-03-01T03:51:43Z",
+            "archived": false,
+            "license": "MIT",
+            "topics": [
+              "draftkings",
+              "fanduel",
+              "fantasy-football",
+              "nfl",
+              "nba",
+              "nhl",
+              "mlb",
+              "golf",
+              "soccer",
+              "wnba",
+              "yahoo-fantasy",
+              "league-of-legends",
+              "nascar",
+              "tennis",
+              "python"
+            ],
+            "key_algorithms": {
+              "optimization": "MIP/LP integer program: binary selection vars maximizing projected points under salary cap + positional roster rules. Two interchangeable backends: PuLP and a dedicated MIP solver.",
+              "stacking": "stacks.py + GameStack + conditional stack (v3.6.0) — corrélated teammate pairing (QB+WR etc.), a stacking/constraints feature.",
+              "constraints": "rules.py — per-position limits, max/min exposure, teams max exposure, spacing between lineups, progressive fantasy-points strategy, conditional stacks.",
+              "late_swap": "Late-swap export for DraftKings and FanDuel (v3.4.1, v3.5.0).",
+              "multi_lineup": "optimize(N) returns N lineups with exposure_strategy.py + fantasy_points_strategy.py controlling portfolio generation."
+            },
+            "supported_sites": {
+              "DraftKings": [
+                "Classic",
+                "Captain Mode",
+                "Tiers"
+              ],
+              "FanDuel": [
+                "Classic",
+                "Single Game"
+              ],
+              "FantasyDraft": true,
+              "Yahoo": true,
+              "FanBall": true
+            },
+            "supported_sports": [
+              "NFL",
+              "NBA",
+              "NHL",
+              "MLB",
+              "WNBA",
+              "Golf",
+              "Soccer",
+              "CFL",
+              "CFB",
+              "LOL",
+              "MMA",
+              "NASCAR",
+              "Tennis",
+              "CSGO"
+            ],
+            "structure": "pydfs_lineup_optimizer/: player_pool, lineup_optimizer, solvers/{pulp_solver,mip_solver,base}, sites/{draftkings(captain_mode,classic,tiers),fanduel(classic,single_game),fantasy_draft,yahoo,fanball}, rules, stacks, exposure_strategy, fantasy_points_strategy, lineup_{importer,exporter,printer}, statistics.",
+            "gse_has_vs_lacks": {
+              "has": [
+                "exact DP optimizer",
+                "k-best lineups",
+                "late-swap",
+                "correlation simulation",
+                "NFL DraftKings Classic"
+              ],
+              "lacks_here": [
+                "Multi-site import/export layer (FanDuel/Yahoo/FantasyDraft CSV formats)",
+                "Captain Mode / Single Game / Tiers showdown formats",
+                "Generalized rule engine (max exposure per team, spacing, progressive FP strategy)",
+                "GameStack / conditional stack constraint abstraction as a reusable API"
+              ],
+              "reusability": "HIGH. MIT-licensed, active-ish (last push 2024-03), pip-installable, reference architecture for a site/format abstraction layer. GSE overlaps on exact optimization but misses the multi-site format matrix and exposure/spacing rule engine."
+            }
+          },
+          {
+            "full_name": "uberfastman/yfpy",
+            "html_url": "https://github.com/uberfastman/yfpy",
+            "purpose": "Well-documented Python wrapper for the Yahoo Fantasy Sports public API (OAuth2), for pulling leagues, teams, rosters, drafts, transactions and player stats across NFL/NHL/MLB/NBA.",
+            "language_stack": {
+              "primary": "Python",
+              "auth": [
+                "OAuth2 / OpenID Connect against Yahoo Developer Network app",
+                "programmatic persistent auth + token JSON/env-var fallback"
+              ],
+              "packaging": [
+                "pyproject.toml",
+                "uv.lock",
+                "PyPI: yfpy",
+                "mkdocs docs (yfpy.uberfastman.com)"
+              ],
+              "ops": [
+                "Docker + compose (build/dev)",
+                "GitHub Actions (python-package.yml)",
+                "Makefile",
+                "unit + integration tests"
+              ],
+              "deps": [
+                "requests",
+                "pandas/numpy (data extraction)"
+              ]
+            },
+            "stars": 264,
+            "forks": 62,
+            "created_at": "2019-09-06T06:20:37Z",
+            "pushed_at": "2026-04-21T21:54:07Z",
+            "archived": false,
+            "license": "GPL-3.0",
+            "topics": [
+              "fantasy-football",
+              "fantasy-leagues",
+              "fantasy-sports-api",
+              "yahoo",
+              "yahoo-fantasy",
+              "python-api-wrapper",
+              "python3",
+              "nfl",
+              "mlb",
+              "nba",
+              "nhl"
+            ],
+            "key_algorithms": {
+              "note": "Not an optimizer — a data-access/auth wrapper. No NFT/GA/LP here.",
+              "data_access": "YahooFantasySportsQuery object: paginated collection/tree traversal of Yahoo's REST resource graph (league -> teams -> rosters -> players -> stats).",
+              "auth": "OAuth2 token persistence across sessions (three documented variants); env-var fallback."
+            },
+            "gse_has_vs_lacks": {
+              "has": [
+                "DraftKings-focused ingestion + optimizer",
+                "sample slate"
+              ],
+              "lacks_here": [
+                "Yahoo Fantasy Sports API integration",
+                "OAuth2 persistent-auth pattern for a third-party fantasy platform",
+                "Yahoo league/roster/draft data models"
+              ],
+              "reusability": "MEDIUM-LOW for GSE specifically: GPL-3.0 is copyleft (infects distribution) and it targets Yahoo season-long, not DK DFS contests. Useful as an integration-play reference only.",
+              "license_caveat": "GPL-3.0 — do NOT copy code into GSE without accepting copyleft; treat as reference/design only."
+            }
+          },
+          {
+            "full_name": "emilyk12345/linear-optimizer",
+            "html_url": "https://github.com/emilyk12345/linear-optimizer",
+            "purpose": "Small ILP/MILP DFS lineup optimizer: ETL from a DraftKings salary CSV + mocked projections, then a PuLP integer program to pick a 1 QB / 1 RB / 1 WR / 1 TE + 1 FLEX roster under a salary cap. Ships a Streamlit UI.",
+            "language_stack": {
+              "primary": "Python",
+              "solver": [
+                "PuLP (PULP_CBC_CMD)"
+              ],
+              "ui": [
+                "Streamlit (app.py)"
+              ],
+              "data": [
+                "pandas",
+                "CSV (real_draftkings_salaries.csv, 10 hard-coded players)"
+              ]
+            },
+            "stars": 0,
+            "forks": 0,
+            "created_at": "2026-09-07T19:20:35Z",
+            "pushed_at": "2026-09-07T20:17:11Z",
+            "archived": false,
+            "license": "MIT",
+            "topics": [],
+            "key_algorithms": {
+              "milp_formulation": "max sum_i P_i (x_i + y_i) s.t. sum_i S_i (x_i + y_i) <= C; x_i + y_i <= 1; positional equalities (=1 QB/RB/WR/TE via x); flex sum over {RB,WR,TE} y_i = 1; QB flex y_i = 0; x_i,y_i in {0,1}.",
+              "notes": "Textbook DK single-game-style base+flex formulation. No stacking, no multi-lineup, no late-swap, no correlation."
+            },
+            "source_files": [
+              "optimizer.py (~6.9 KB, ETL + ILP + CLI)",
+              "app.py (~7.9 KB, Streamlit UI with salary-cap slider + CSV upload)",
+              "real_draftkings_salaries.csv (10 players)",
+              "requirements.txt (pulp, pandas)"
+            ],
+            "honest_assessment": "Brand-new (created 2026-09-07), single author, 0 stars/forks, ~17 KB repo. Projections are MOCK/hard-coded ('Fetching live consensus projections' but returns a fixed dict); sample slate is 10 fictional-ish named NFL players. No tests, no packaging. Essentially a portfolio/demo ILP, not production.",
+            "gse_has_vs_lacks": {
+              "has": [
+                "exact DP optimizer (stronger than a basic ILP CBC solve)",
+                "k-best lineups",
+                "late-swap",
+                "correlation simulation",
+                "NFL DraftKings Classic",
+                "fictional sample slate"
+              ],
+              "lacks_here": [
+                "nothing material — this repo is a strict subset of GSE's optimizer capability"
+              ],
+              "reusability": "LOW. Simplest of the three optimizers; MIT so copyable, but GSE's DP optimizer already exceeds it. Value is comparative/positioning only."
+            }
+          }
+        ]
+      },
+      "notes_md": "# repos-batch-c — Competitor Intel Profiles\n\nREAD-ONLY profiling via GitHub REST API + raw.githubusercontent.com. No clones, no commits.\nDate: 2026-09-12. Outputs written only to `C:/Users/Garrett/w4-stage/repos-batch-c/`.\n\n**GSE baseline already shipped:** exact DP optimizer, k-best lineups, late-swap, correlation\nsimulation, NFL DraftKings Classic format, honest fictional sample slate.\n\n---\n\n## 1. KengoA/fantasy-basketball\n- **Repo:** https://github.com/KengoA/fantasy-basketball\n- **Purpose:** NBA DraftKings capstone — scrape Basketball-Reference + RotoGuru salaries, predict\n  per-player fantasy points, then build lineups with a genetic algorithm.\n- **Stack:** Jupyter Notebook (Python). Keras/TF neural nets, LightGBM + Bayesian hyperparameter\n  optimization, scikit-learn linear regression w/ feature selection, Plotly. Pipenv + Makefile.\n- **Stats:** 269★ / 60 forks · created 2018-05-23 · **last push 2023-07-25** · **ARCHIVED** · MIT\n- **Key algorithms:**\n  - Prediction bake-off: baseline (season avg) vs weighted avg vs linear regression vs LightGBM\n    (Bayesian-tuned) vs 3 Keras NNs. NN showed modest gains over boosting.\n  - **Genetic algorithm** lineup optimizer under the DK $50k / 8-player cap. Author later\n    externalized it as the PyPI package `fantasy_ga` (Feb 2023).\n  - Modern Portfolio Theory framing: risk = stdev of last-10-game FPTS, return = mean FPTS;\n    \"efficient frontier\" of players.\n- **Stated limitations:** no playoffs; opponent/positional defense NOT modeled (author calls it an\n  \"easy improvement\").\n- **GSE has vs lacks:** GSE has the exact DP optimizer (better than GA for a single optimum),\n  k-best, NFL DK Classic, honest sample slate. It **lacks** this repo's ML projection layer\n  (boosting + NN + Bayesian tuning) and its MPT risk/return player screening. MIT + archived 2023\n  ⇒ concept-level reuse, not a live dependency.\n\n## 2. DimaKudosh/pydfs-lineup-optimizer\n- **Repo:** https://github.com/DimaKudosh/pydfs-lineup-optimizer\n- **Purpose:** Mature, pip-installable multi-site/multi-sport DFS lineup optimizer with a\n  constraint/stacking/exposure engine and site-specific CSV import/export.\n- **Stack:** Python. Solver backends: **PuLP** (`solvers/pulp_solver.py`) and a dedicated\n  **MIP solver** (`solvers/mip_solver.py`). setup.py → PyPI `pydfs-lineup-optimizer`, tox/mypy,\n  readthedocs.\n- **Stats:** 447★ / 167 forks (largest/best-known in batch) · created 2015-12-14 ·\n  last push 2024-03-01 · not archived · **MIT**\n- **Key algorithms / features:**\n  - MIP/LP integer program: binary selection vars maximize projected points under salary cap +\n    positional roster rules; PuLP and MIP backends interchangeable.\n  - **Stacking:** `stacks.py`, `GameStack`, and conditional stacks (v3.6.0) — correlated teammate\n    pairing.\n  - **Constraints/rule engine:** `rules.py` — per-position limits, max exposure per player AND per\n    team, spacing between lineups, progressive fantasy-points strategy.\n  - **Late-swap** export for DK and FanDuel (v3.4.1 / v3.5.0); `optimize(N)` returns N lineups via\n    `exposure_strategy.py` + `fantasy_points_strategy.py`.\n  - **Site/format matrix:** DK (Classic, Captain Mode, Tiers), FanDuel (Classic, Single Game),\n    FantasyDraft, Yahoo, FanBall; NFL/NBA/NHL/MLB/WNBA/Golf/Soccer/CFL/CFB/LoL/MMA/NASCAR/Tennis/CSGO.\n- **GSE has vs lacks:** GSE has exact DP, k-best, late-swap, correlation sim, NFL DK Classic. It\n  **lacks** a multi-site import/export layer, showdown formats (Captain Mode / Single Game /\n  Tiers), and a generalized exposure/spacing/progressive-FP rule API. **Highest reuse value** —\n  MIT, actively maintained-ish, clean reference architecture.\n\n## 3. uberfastman/yfpy\n- **Repo:** https://github.com/uberfastman/yfpy\n- **Purpose:** Documented Python wrapper for the **Yahoo Fantasy Sports public API** (OAuth2):\n  leagues, teams, rosters, drafts, transactions, player stats across NFL/NHL/MLB/NBA.\n- **Stack:** Python (pyproject.toml / uv.lock). OAuth2/OpenID Connect via a Yahoo Developer Network\n  app; programmatic persistent auth + token JSON / env-var fallback. Docker + compose, GitHub\n  Actions CI, mkdocs docs at yfpy.uberfastman.com, unit + integration tests.\n- **Stats:** 264★ / 62 forks · created 2019-09-06 · **last push 2026-04-21 (most recent in batch)** ·\n  not archived · **GPL-3.0**\n- **Key algorithms:** Not an optimizer — a data-access/auth wrapper. `YahooFantasySportsQuery`\n  traverses Yahoo's REST resource graph (league → teams → rosters → players → stats); auth layer\n  persists OAuth2 tokens across sessions.\n- **GSE has vs lacks:** GSE ingests DraftKings-focused data + optimizes. It **lacks** any Yahoo\n  Fantasy Sports API integration and the OAuth2 persistent-auth pattern for a third-party platform.\n  **License caveat:** GPL-3.0 copyleft — reference/design only; do NOT copy code into GSE without\n  accepting copyleft. Targets Yahoo season-long, not DK DFS contests ⇒ medium-low fit.\n\n## 4. emilyk12345/linear-optimizer\n- **Repo:** https://github.com/emilyk12345/linear-optimizer\n- **Purpose:** Small ILP/MILP DFS optimizer: ETL from a DraftKings salary CSV + mocked projections,\n  then a PuLP integer program to pick 1 QB / 1 RB / 1 WR / 1 TE + 1 FLEX under a salary cap.\n  Ships a Streamlit UI (`app.py`).\n- **Stack:** Python. PuLP (PULP_CBC_CMD), Streamlit, pandas.\n- **Stats:** **0★ / 0 forks** · created **2026-09-07** · last push 2026-09-07 · not archived · MIT ·\n  ~17 KB repo, no tests, no packaging.\n- **Key algorithms (MILP):** `max Σ P_i (x_i + y_i)` s.t. `Σ S_i (x_i + y_i) ≤ C`;\n  `x_i + y_i ≤ 1`; `Σ x_i = 1` for each of QB/RB/WR/TE; `Σ y_i = 1` over {RB,WR,TE};\n  `Σ y_i = 0` over QB; binary x,y. Textbook DK base+flex formulation. No stacking, no multi-lineup,\n  no late-swap, no correlation.\n- **Honest assessment:** Brand-new one-author portfolio/demo. Projections are **MOCK/hard-coded**\n  (\"Fetching live consensus projections\" returns a fixed dict); sample slate is 10 named NFL\n  players. Not production.\n- **GSE has vs lacks:** Nothing material — a strict subset of GSE's optimizer capability. Value is\n  comparative/positioning only.\n\n---\n\n## Most GSE-actionable item\n**Adopt pydfs-lineup-optimizer's site/format + rule-engine architecture (MIT).** Specifically the\ngeneralized constraint layer (`rules.py`: per-position limits, max exposure per player/team, lineup\nspacing, progressive-FP strategy) and the multi-format matrix (DK Captain Mode / Tiers, FanDuel\nSingle Game, FanDuel/Yahoo/FantasyDraft import-export). GSE's exact DP optimizer already beats the\nsolve core here; the gap is the **format + exposure/stacking abstraction**, which this repo is the\ncleanest MIT reference for. Secondary: mine KengoA/fantasy-basketball for a projection-model layer\n(boosting + NN + MPT risk screening) that GSE's optimizer currently consumes but does not generate."
+    },
+    "repos-batch-d": {
+      "profiles": [
+        {
+          "repo": "yzRobo/draftkings_api_explorer",
+          "owner": "yzRobo",
+          "purpose": "Python GUI application that retrieves and displays NFL data from the DraftKings API. It is designed to help users easily extract and organize betting market information, such as Regular Season Wins, Awards, Player Props, and more.",
+          "stack": [
+            "Python",
+            "pandas",
+            "curl_cffi"
+          ],
+          "stars": 10,
+          "forks": 5,
+          "language": "Python",
+          "topics": [],
+          "license": {
+            "key": "mit",
+            "name": "MIT License",
+            "spdx_id": "MIT",
+            "url": "https://api.github.com/licenses/mit",
+            "node_id": "MDc6TGljZW5zZTEz"
+          },
+          "updated": "2026-08-09T04:06:42Z",
+          "pushed": "2026-08-09T04:09:40Z",
+          "description": "Python GUI application that retrieves and displays NFL data from the DraftKings API. It is designed to help users easily extract and organize betting market information, such as Regular Season Wins, Awards, Player Props, and more.",
+          "key_mechanics": {
+            "dk_api_endpoints": [
+              "draftkings"
+            ],
+            "optimizer_math": [
+              "variable"
+            ],
+            "odds_api_wrappers": [
+              "odds",
+              "sportsbook",
+              "draftkings",
+              "api"
+            ]
+          },
+          "gse_has": [
+            "NFL DK-Classic"
+          ],
+          "gse_lacks": [
+            "exact DP",
+            "k-best",
+            "late-swap",
+            "correlation sim",
+            "honest sample slate"
+          ]
+        },
+        {
+          "repo": "howrealizdat/dfs-lineup-optimizer",
+          "owner": "howrealizdat",
+          "purpose": "Daily-fantasy-sports lineup optimizer: Google OR-Tools constraint optimization builds salary-cap lineups, then an Anthropic Claude reasoning layer explains, rates, and suggests swaps. Includes real-time data ingestion and portfolio/exposure management.",
+          "stack": [
+            "Python",
+            "pandas",
+            "numpy",
+            "ortools",
+            "requests",
+            "beautifulsoup4",
+            "python-dotenv",
+            "anthropic"
+          ],
+          "stars": 0,
+          "forks": 0,
+          "language": "Python",
+          "topics": [
+            "anthropic",
+            "claude",
+            "constraint-optimization",
+            "dfs",
+            "explainable-ai",
+            "llm",
+            "optimization",
+            "or-tools",
+            "python",
+            "sports-analytics"
+          ],
+          "license": null,
+          "updated": "2026-06-20T16:11:24Z",
+          "pushed": "2026-06-20T16:09:33Z",
+          "description": "Daily-fantasy-sports lineup optimizer: Google OR-Tools constraint optimization builds salary-cap lineups, then an Anthropic Claude reasoning layer explains, rates, and suggests swaps. Includes real-time data ingestion and portfolio/exposure management.",
+          "key_mechanics": {
+            "dk_api_endpoints": [
+              "players"
+            ],
+            "optimizer_math": [
+              "optimize",
+              "ortools",
+              "constraint",
+              "linear",
+              "maximize",
+              "variable"
+            ],
+            "odds_api_wrappers": [
+              "api",
+              "fanduel"
+            ]
+          },
+          "gse_has": [],
+          "gse_lacks": [
+            "exact DP",
+            "k-best",
+            "late-swap",
+            "correlation sim",
+            "NFL DK-Classic",
+            "honest sample slate"
+          ]
+        },
+        {
+          "repo": "sjhouston23/oddswrap",
+          "owner": "sjhouston23",
+          "purpose": "Unified Python SDK for fetching sportsbook odds. Direct API access to DraftKings, FanDuel, and more — no middleman, no API keys.",
+          "stack": [
+            "Python",
+            "404: Not Found"
+          ],
+          "stars": 1,
+          "forks": 0,
+          "language": "Python",
+          "topics": [],
+          "license": null,
+          "updated": "2026-07-24T22:14:02Z",
+          "pushed": "2026-06-03T13:51:07Z",
+          "description": "Unified Python SDK for fetching sportsbook odds. Direct API access to DraftKings, FanDuel, and more — no middleman, no API keys.",
+          "key_mechanics": {
+            "dk_api_endpoints": [
+              "draftkings"
+            ],
+            "optimizer_math": [],
+            "odds_api_wrappers": [
+              "odds",
+              "sportsbook",
+              "fanduel",
+              "draftkings",
+              "betmgm"
+            ]
+          },
+          "gse_has": [
+            "NFL DK-Classic"
+          ],
+          "gse_lacks": [
+            "exact DP",
+            "k-best",
+            "late-swap",
+            "correlation sim",
+            "honest sample slate"
+          ]
+        },
+        {
+          "repo": "jaebradley/draftkings_client",
+          "owner": "jaebradley",
+          "purpose": "Client for DraftKings API",
+          "stack": [
+            "Python",
+            "404: Not Found"
+          ],
+          "stars": 154,
+          "forks": 37,
+          "language": "Python",
+          "topics": [
+            "daily-fantasy-sports",
+            "draftkings",
+            "draftkings-client",
+            "python"
+          ],
+          "license": {
+            "key": "mit",
+            "name": "MIT License",
+            "spdx_id": "MIT",
+            "url": "https://api.github.com/licenses/mit",
+            "node_id": "MDc6TGljZW5zZTEz"
+          },
+          "updated": "2026-06-12T12:00:58Z",
+          "pushed": "2024-12-27T13:14:45Z",
+          "description": "Client for DraftKings API",
+          "key_mechanics": {
+            "dk_api_endpoints": [
+              "draftkings",
+              "contests",
+              "players"
+            ],
+            "optimizer_math": [],
+            "odds_api_wrappers": [
+              "draftkings",
+              "api",
+              "endpoint"
+            ]
+          },
+          "gse_has": [],
+          "gse_lacks": [
+            "exact DP",
+            "k-best",
+            "late-swap",
+            "correlation sim",
+            "NFL DK-Classic",
+            "honest sample slate"
+          ]
+        }
+      ],
+      "notes_md": "# Competitor Intel Profiles\n\n## yzRobo/draftkings_api_explorer\n- Purpose: Python GUI application that retrieves and displays NFL data from the DraftKings API. It is designed to help users easily extract and organize betting market information, such as Regular Season Wins, Awards, Player Props, and more.\n- Stack: Python, pandas, curl_cffi\n- Stars: 10, Forks: 5, Updated: 2026-08-09T04:06:42Z\n- License: MIT\n- Key mechanics: DK endpoints: ['draftkings']; Optimizer math: ['variable']; Odds wrappers: ['odds', 'sportsbook', 'draftkings', 'api']\n- GSE has: NFL DK-Classic\n- GSE lacks: exact DP, k-best, late-swap, correlation sim, honest sample slate\n\n## howrealizdat/dfs-lineup-optimizer\n- Purpose: Daily-fantasy-sports lineup optimizer: Google OR-Tools constraint optimization builds salary-cap lineups, then an Anthropic Claude reasoning layer explains, rates, and suggests swaps. Includes real-time data ingestion and portfolio/exposure management.\n- Stack: Python, pandas, numpy, ortools, requests, beautifulsoup4, python-dotenv, anthropic\n- Stars: 0, Forks: 0, Updated: 2026-06-20T16:11:24Z\n- License: NOT CONFIRMED\n- Key mechanics: DK endpoints: ['players']; Optimizer math: ['optimize', 'ortools', 'constraint', 'linear', 'maximize', 'variable']; Odds wrappers: ['api', 'fanduel']\n- GSE has: NONE\n- GSE lacks: exact DP, k-best, late-swap, correlation sim, NFL DK-Classic, honest sample slate\n\n## sjhouston23/oddswrap\n- Purpose: Unified Python SDK for fetching sportsbook odds. Direct API access to DraftKings, FanDuel, and more — no middleman, no API keys.\n- Stack: Python, 404: Not Found\n- Stars: 1, Forks: 0, Updated: 2026-07-24T22:14:02Z\n- License: NOT CONFIRMED\n- Key mechanics: DK endpoints: ['draftkings']; Optimizer math: NOT CONFIRMED; Odds wrappers: ['odds', 'sportsbook', 'fanduel', 'draftkings', 'betmgm']\n- GSE has: NFL DK-Classic\n- GSE lacks: exact DP, k-best, late-swap, correlation sim, honest sample slate\n\n## jaebradley/draftkings_client\n- Purpose: Client for DraftKings API\n- Stack: Python, 404: Not Found\n- Stars: 154, Forks: 37, Updated: 2026-06-12T12:00:58Z\n- License: MIT\n- Key mechanics: DK endpoints: ['draftkings', 'contests', 'players']; Optimizer math: NOT CONFIRMED; Odds wrappers: ['draftkings', 'api', 'endpoint']\n- GSE has: NONE\n- GSE lacks: exact DP, k-best, late-swap, correlation sim, NFL DK-Classic, honest sample slate\n\n---\n*Generated 2026-09-12T13:42:24.263359*\n"
+    },
+    "repos-batch-e": {
+      "profiles": {
+        "n-roth12/DFSLineupOptimizer": {
+          "purpose": "A Python project for generating NFL daily fantasy contest lineups.",
+          "stack": {
+            "language": "Python",
+            "dependency_managers": [],
+            "ml_frameworks": [],
+            "docker": false
+          },
+          "stars": 12,
+          "activity": {
+            "forks": 1,
+            "open_issues": 0,
+            "last_updated": "2025-10-22T08:58:57Z",
+            "last_pushed": "2024-09-13T06:04:20Z"
+          },
+          "optimizer_math": {
+            "objective": "NOT CONFIRMED",
+            "constraints_sample": [
+              "stack = \"\"",
+              "stack = args[3].upper()",
+              "lineup = optimize_lineup(mode, filepath, stack)"
+            ],
+            "sport_specific_constraints": [
+              "stack = \"\"",
+              "stack = args[3].upper()",
+              "lineup = optimize_lineup(mode, filepath, stack)"
+            ]
+          },
+          "sport": "NFL",
+          "ml_mlops": {
+            "used": false,
+            "details": [
+              "NOT CONFIRMED"
+            ],
+            "model_types": []
+          },
+          "license": {
+            "key": "mit",
+            "name": "MIT License",
+            "content_available": true
+          },
+          "gse_has_vs_lacks": {
+            "has": [
+              "Competitor-specific features extracted"
+            ],
+            "lacks": [
+              "Requires GSE internal set for comparison"
+            ]
+          },
+          "citations": {
+            "repo_url": "https://github.com/n-roth12/DFSLineupOptimizer",
+            "readme_fetched": true,
+            "license_fetched": true,
+            "optimizer_fetched": true
+          }
+        },
+        "t-pegors/wnba-fantasy-mlops": {
+          "purpose": "WNBA DFS lineup optimizer — XGBoost predicts fantasy points, PuLP solves salary-constrained rosters, Streamlit dashboard for daily contest prep. Supports DraftKings, FanDuel, and Yahoo with Bayesian cold-start for rookies and full MLflow/DVC/S3 tracking.",
+          "stack": {
+            "language": "Python",
+            "dependency_managers": [],
+            "ml_frameworks": [
+              "requirement: xgboost",
+              "requirement: mlflow",
+              "requirement: dvc",
+              "topic: dvc",
+              "topic: mlflow",
+              "topic: xgboost"
+            ],
+            "docker": false
+          },
+          "stars": 0,
+          "activity": {
+            "forks": 0,
+            "open_issues": 2,
+            "last_updated": "2026-03-06T17:30:21Z",
+            "last_pushed": "2026-03-06T17:25:02Z"
+          },
+          "optimizer_math": {
+            "objective": "NOT CONFIRMED",
+            "constraints_sample": [
+              "NOT CONFIRMED"
+            ],
+            "sport_specific_constraints": [
+              "NOT CONFIRMED"
+            ]
+          },
+          "sport": "WNBA",
+          "ml_mlops": {
+            "used": true,
+            "details": [
+              "requirement: xgboost",
+              "requirement: mlflow",
+              "requirement: dvc",
+              "topic: dvc",
+              "topic: mlflow",
+              "topic: xgboost"
+            ],
+            "model_types": []
+          },
+          "license": {
+            "key": null,
+            "name": null,
+            "content_available": false
+          },
+          "gse_has_vs_lacks": {
+            "has": [
+              "Competitor-specific features extracted"
+            ],
+            "lacks": [
+              "Requires GSE internal set for comparison"
+            ]
+          },
+          "citations": {
+            "repo_url": "https://github.com/t-pegors/wnba-fantasy-mlops",
+            "readme_fetched": true,
+            "license_fetched": false,
+            "optimizer_fetched": true
+          }
+        },
+        "Vijax0/dk-lineup-optimizer": {
+          "purpose": "An NBA fantasy lineup optimizer for DraftKings.",
+          "stack": {
+            "language": "Python",
+            "dependency_managers": [],
+            "ml_frameworks": [
+              "topic: lstm",
+              "topic: pytorch",
+              "topic: scikit-learn"
+            ],
+            "docker": false
+          },
+          "stars": 0,
+          "activity": {
+            "forks": 0,
+            "open_issues": 0,
+            "last_updated": "2026-03-13T17:32:28Z",
+            "last_pushed": "2026-03-10T18:53:01Z"
+          },
+          "optimizer_math": {
+            "objective": "NOT CONFIRMED",
+            "constraints_sample": [
+              "NOT CONFIRMED"
+            ],
+            "sport_specific_constraints": [
+              "NOT CONFIRMED"
+            ]
+          },
+          "sport": "NBA",
+          "ml_mlops": {
+            "used": true,
+            "details": [
+              "topic: lstm",
+              "topic: pytorch",
+              "topic: scikit-learn"
+            ],
+            "model_types": []
+          },
+          "license": {
+            "key": "mit",
+            "name": "MIT License",
+            "content_available": true
+          },
+          "gse_has_vs_lacks": {
+            "has": [
+              "Competitor-specific features extracted"
+            ],
+            "lacks": [
+              "Requires GSE internal set for comparison"
+            ]
+          },
+          "citations": {
+            "repo_url": "https://github.com/Vijax0/dk-lineup-optimizer",
+            "readme_fetched": true,
+            "license_fetched": true,
+            "optimizer_fetched": true
+          }
+        },
+        "atlantahouseplants/MLBDFSLineupOptimizer": {
+          "purpose": "FanDuel MLB DFS lineup optimizer with BallparkPal ingestion, ILP solver, and full pipeline orchestration",
+          "stack": {
+            "language": "Python",
+            "dependency_managers": [],
+            "ml_frameworks": [],
+            "docker": false
+          },
+          "stars": 0,
+          "activity": {
+            "forks": 0,
+            "open_issues": 0,
+            "last_updated": "2026-07-17T20:31:18Z",
+            "last_pushed": "2026-09-07T19:52:22Z"
+          },
+          "optimizer_math": {
+            "objective": "NOT CONFIRMED",
+            "constraints_sample": [
+              "NOT CONFIRMED"
+            ],
+            "sport_specific_constraints": [
+              "NOT CONFIRMED"
+            ]
+          },
+          "sport": "MLB",
+          "ml_mlops": {
+            "used": false,
+            "details": [
+              "NOT CONFIRMED"
+            ],
+            "model_types": []
+          },
+          "license": {
+            "key": null,
+            "name": null,
+            "content_available": false
+          },
+          "gse_has_vs_lacks": {
+            "has": [
+              "Competitor-specific features extracted"
+            ],
+            "lacks": [
+              "Requires GSE internal set for comparison"
+            ]
+          },
+          "citations": {
+            "repo_url": "https://github.com/atlantahouseplants/MLBDFSLineupOptimizer",
+            "readme_fetched": true,
+            "license_fetched": false,
+            "optimizer_fetched": true
+          }
+        }
+      },
+      "notes_md": "# Competitor Intelligence Notes\\n\\n## n-roth12/DFSLineupOptimizer\\n- Purpose: A Python project for generating NFL daily fantasy contest lineups.\\n- Sport: NFL\\n- Stars: 12 | Forks: 1 | Issues: 0\\n- Language: Python\\n- License: MIT License (mit)\\n- ML/MLOps Used: False\\n  - Details: NOT CONFIRMED\\n- Objective: NOT CONFIRMED\\n- Sport-Specific Constraints Sample: stack = \"\"\\n- GSE Actionable Item: n-roth12/DFSLineupOptimizer: Sport-specific constraints for NFL\\n\\n## t-pegors/wnba-fantasy-mlops\\n- Purpose: WNBA DFS lineup optimizer — XGBoost predicts fantasy points, PuLP solves salary-constrained rosters, Streamlit dashboard for daily contest prep. Supports DraftKings, FanDuel, and Yahoo with Bayesian cold-start for rookies and full MLflow/DVC/S3 tracking.\\n- Sport: WNBA\\n- Stars: 0 | Forks: 0 | Issues: 2\\n- Language: Python\\n- License: None (None)\\n- ML/MLOps Used: True\\n  - Details: requirement: xgboost, requirement: mlflow, requirement: dvc\\n- Objective: NOT CONFIRMED\\n- GSE Actionable Item: t-pegors/wnba-fantasy-mlops: ML/MLOps pipeline (e.g., MLflow/DVC) for model tracking\\n\\n## Vijax0/dk-lineup-optimizer\\n- Purpose: An NBA fantasy lineup optimizer for DraftKings.\\n- Sport: NBA\\n- Stars: 0 | Forks: 0 | Issues: 0\\n- Language: Python\\n- License: MIT License (mit)\\n- ML/MLOps Used: True\\n  - Details: topic: lstm, topic: pytorch, topic: scikit-learn\\n- Objective: NOT CONFIRMED\\n- GSE Actionable Item: Vijax0/dk-lineup-optimizer: ML/MLOps pipeline (e.g., MLflow/DVC) for model tracking\\n\\n## atlantahouseplants/MLBDFSLineupOptimizer\\n- Purpose: FanDuel MLB DFS lineup optimizer with BallparkPal ingestion, ILP solver, and full pipeline orchestration\\n- Sport: MLB\\n- Stars: 0 | Forks: 0 | Issues: 0\\n- Language: Python\\n- License: None (None)\\n- ML/MLOps Used: False\\n  - Details: NOT CONFIRMED\\n- Objective: NOT CONFIRMED\\n- GSE Actionable Item: atlantahouseplants/MLBDFSLineupOptimizer: Review optimizer core for integration ideas\\n\\n"
+    },
+    "repos-batch-f": {
+      "profiles": {
+        "profiles_generated": "2026-09-12",
+        "context": "GSE Classic-only DFS lineup optimization competitive-intel. GSE has NO showdown/single-game support; only classic multi-lineup construction.",
+        "repos": [
+          {
+            "id": "nfl-single-game-optimizer",
+            "name": "NFL Single-Game (Showdown) Lineup Optimizer",
+            "owner": "rjrice1990",
+            "url": "https://github.com/rjrice1990/nfl-single-game-optimizer",
+            "purpose": "FanDuel NFL single-game (Showdown) lineup optimizer; takes a FanDuel Showdown player-pool CSV, builds projections, and solves for optimal MVP+FLEX lineups via MILP. FanDuel Showdown format only (MVP slot 1.5x points/salary, 5x FLEX, $60k cap, 6 players).",
+            "stack": {
+              "language": "Python 3",
+              "solver": "PuLP + CBC (pulp.PULP_CBC_CMD)",
+              "data_sources": [
+                "ESPN Core API / site API (roster + season stats)",
+                "nflverse via nfl_data_py (schedule/Vegas lines, historical scores)",
+                "FanDuel CSV (player pool + salaries)"
+              ],
+              "key_libraries": [
+                "pulp",
+                "nfl_data_py",
+                "pandas",
+                "numpy",
+                "scipy",
+                "thefuzz",
+                "python-Levenshtein",
+                "pyyaml"
+              ],
+              "deps": [
+                "pulp>=2.7",
+                "nfl_data_py>=0.3.0",
+                "pandas>=1.5",
+                "numpy>=1.23",
+                "scipy>=1.9",
+                "thefuzz>=0.20",
+                "python-Levenshtein>=0.21",
+                "pyarrow>=14.0",
+                "appdirs",
+                "pyyaml>=6.0"
+              ]
+            },
+            "metrics": {
+              "stars": 0,
+              "forks": 0,
+              "subscribers": 0,
+              "open_issues": 0,
+              "created_at": "2026-02-06",
+              "pushed_at": "2026-02-06",
+              "activity": "Dormant — single commit, pushed 2026-02-06, no later activity. Very early stage / unmaintained.",
+              "size_kb": 19
+            },
+            "lineup_logic": {
+              "game_type": "FanDuel NFL Showdown (single-game)",
+              "roster": "1 MVP + 5 FLEX = 6 players",
+              "mvp": "MVP slot: 1.5x projection multiplier, 1.5x salary multiplier (mvp_salary = salary*1.5). Any position can fill MVP.",
+              "salary_cap": 60000,
+              "cptn": "No Captain concept — uses FanDuel MVP naming. The single 'star' (MVP) role is the DK Captain equivalent. Positionless besides MVP/FLEX.",
+              "diversity": "min_diff = max overlap constraint; each subsequent lineup excludes a 'max_overlap = 6 - min_diff' shared-assignment constraint from all previous lineups. Iterative single-solve with exclusion constraints.",
+              "objective": "Maximize sum(MVP_proj*1.5 + FLEX_proj)"
+            },
+            "projection_logic": {
+              "formula": "projected_stat = (season_total / games_played) * env_factor * opp_adjustment",
+              "sources": "ESPN season totals per game; nflverse schedule for implied totals (Vegas) and historical opponent points-allowed",
+              "env_factor": "implied_team_total / team_season_avg_points, clamped [0.75,1.35]",
+              "opp_adj": "points allowed by opponent D relative to league avg, clamped [0.90,1.10]",
+              "yardage_bonuses": "Probabilistic via normal CDF: P(stat>=threshold)*bonus_value (scipy.stats.norm.cdf). Std estimates: passing 0.35*proj, rush 0.45*proj, rec 0.40*proj",
+              "name_matching": "3-pass: exact -> normalized (strip Jr./III, punctuation) -> fuzzy Levenshtein>=80%; fallback to FanDuel FPPG"
+            },
+            "scrape_vs_api": "API-driven. ESPN Core/site API (no auth, public endpoints) + nfl_data_py (local nflverse schedule/vegas data) + FanDuel upload CSV. No HTML scraping.",
+            "license": "None (no LICENSE file in repo; GitHub license field null). Default all-rights-reserved.",
+            "has_vs_lacks": {
+              "has": [
+                "FanDuel single-game Showdown (MVP slot) optimization",
+                "ESPN API + nflverse Vegas implied-totals projection engine",
+                "Probabilistic yardage-bonus scoring (normal distribution)",
+                "3-pass player name matching with fuzzy fallback",
+                "Lineup diversity/min-diff via iterative exclusion constraints",
+                "MVP lock / flex lock / exclude players / injury filtering",
+                "Upload-ready FanDuel CSV output preserving entry+contest IDs",
+                "YAML+CLI config merge"
+              ],
+              "lacks": [
+                "DraftKings (DK CPTN) support — FanDuel-only MVP naming",
+                "No multi-game/classic lineup construction at all (single-game only)",
+                "No GSE-style Classic lineup generation",
+                "No Monte Carlo / simulation",
+                "No stacked lineup generation (QB+WR stacks)",
+                "No exposure-control framework for mass multi-entry",
+                "NFL-only; no NBA/MLB/etc.",
+                "No lineup upload automation",
+                "Stale — not maintained"
+              ]
+            },
+            "verdict": "Strong single-game Showdown optimizer with a rare ESPN+nflverse projection engine, but NFL+FanDuel-only and effectively abandoned. Valuable for the projection model and Showdown constraint approach, but does not address GSE's Classic gap.",
+            "top_gse_actionable": "Lift the probabilistic yardage-bonus scoring + game-env/opponent-adjustment projection model (scoring.py + projections.py _expected_bonus / _get_game_environment) — GSE lacks any variance/probability tier scoring today."
+          },
+          {
+            "id": "draftfast",
+            "name": "draftfast",
+            "owner": "BenBrostoff",
+            "url": "https://github.com/BenBrostoff/draftfast",
+            "purpose": "Library to automate and optimize DraftKings + FanDuel lineup construction across many sports. Builds optimal Classic lineups (and Showdown/Captain via DK_NFL_SHOWDOWN_RULE_SET) from a player pool via OR-Tools CP-SAT, with a run_multi exposure-control loop for mass entry.",
+            "stack": {
+              "language": "Python",
+              "solver": "OR-Tools (ortools==9.8.3296) pywraplp CBC_MIXED_INTEGER_PROGRAMMING",
+              "data_sources": [
+                "CSV salary files (DK/FD), player pool via csv_parse/salary_download",
+                "historical DB via orm.retrieve_all_players_from_history (sqlite)"
+              ],
+              "key_libraries": [
+                "ortools",
+                "numpy",
+                "terminaltables"
+              ],
+              "deps": [
+                "google-apputils==0.4.2",
+                "numpy==1.26.2",
+                "terminaltables==3.1.0",
+                "ortools===9.8.3296"
+              ]
+            },
+            "metrics": {
+              "stars": 298,
+              "forks": 120,
+              "subscribers": 34,
+              "open_issues": 25,
+              "created_at": "2015-08-14",
+              "pushed_at": "2026-02-05",
+              "last_main_push": "2024-01-29 (last commit on master)",
+              "activity": "Mature, well-maintained open source project (~8y old). Moderate issue backlog (25 open). CI via GitHub Actions (flake8 + test workflow).",
+              "size_kb": 2198
+            },
+            "lineup_logic": {
+              "game_type": "DraftKings + FanDuel Classic (multi-game) as primary; Showdown/Captain supported as side rule sets",
+              "classic": "Per-sport RuleSet: roster_size, salary_max, position_limits from constants. NFL DK = 9 players, $50k; FD = 9 players, $60k. Position min/max constraints (e.g. NFL QB 1-1, RB 2-3, WR 3-4, TE 1-2, DST 1-1).",
+              "showdown": "DK_NFL_SHOWDOWN_RULE_SET / DK_NBA_SHOWDOWN etc.; roster_size 6, salary $50k, positions CPPT + DST; captain multiplier handled externally in examples via cost*1.5/proj*1.5 (MVPPlayer / ShowcasePlayer). Note: showdown is a minority feature.",
+              "cptn": "DraftKings Captain (CPT) — 1.5x salary+projection; implemented as ShowdownPlayer(captain=True) or MVPPlayer with game_position CP/MVP/STAR/PRO/UTIL. FanDuel MVP uses MVPPlayer with 2x/1.5x/1.2x tier multipliers (MVPPlayer.MVP_MULTIPLIER=2 in showdown/orm.py).",
+              "optimizer": "ortools linear solver; one lineup per solve. Objective = maximize projected points. Constraints: salary cap, roster size, position limits, no-multi-player, min_matchups, stacks (stack_lock_pos/eligible_pos), combos (force Combo/WR>=QB per team), no-offense-vs-defense, custom rules.",
+              "diversity_exposure": "run_multi(iterations) loop; exposure.py get_exposure_args computes per-player min/max exposure, bans players at/over max, locks players under min. Deterministic + random (seeded) variants. Per-lineup overlap dedup via existing_rosters list compared by Roster.identifier.",
+              "deduplication": "Roster.__eq__ compares identifier (sorted roster_id tuples). ShowdownRoster identifier uses solver_id (includes position) since CPT/FLEX position changes points."
+            },
+            "scrape_vs_api": "Not a scraper/data source. Consumes user-supplied DK/FD salary CSVs. csv_parse/salary_download.py reads local CSVs. orm.py has sqlite history lookup for averages. No web scraping or live API ingestion in core.",
+            "license": "None in-repo (GitHub license field null), but setup.py classifiers list 'License :: OSI Approved :: MIT License'. README says 'PRs welcome' implying open. Practically: MIT per setup.py classifier, but no LICENSE file present.",
+            "has_vs_lacks": {
+              "has": [
+                "DraftKings + FanDuel Classic across NFL/NBA/MLB/WNBA/NHL/PGA/Soccer/CS:GO/F1/NASCAR/XFL/Tennis",
+                "OR-Tools MILP solver with position/stack/combo/custom constraints",
+                "Showdown/Captain rule sets (DK_NFL_SHOWDOWN etc.) and MVP tier support",
+                "Exposure-control framework (banned/locked per player, min/max bounds, random+seeded)",
+                "Lineup similarity scoring (RosterGroup roster similarity)",
+                "CSV upload pipeline (csv_parse/uploaders)",
+                "Pick'em support",
+                "CI + tests (test-requirements, flake8)",
+                "Docker + examples"
+              ],
+              "lacks": [
+                "No projection model — depends entirely on external user-supplied projections",
+                "No Vegas lines / game-environment adjustment",
+                "No probabilistic/variance scoring",
+                "No ESPN data ingestion",
+                "No single-game Showdown as primary (secondary feature)",
+                "No auto lineup upload to DK/FD websites (CSV export only, upload disabled in forks)"
+              ]
+            },
+            "verdict": "Most mature/reusable Classic lineup optimizer in the set; rich constraint + exposure framework across DraftKings & FanDuel. Showdown exists but is ancillary. No built-in projections/data sourcing. Best foundation for extending GSE Classic coverage.",
+            "top_gse_actionable": "Adopt the exposure-control + run_multi loop + per-player ban/lock framework (exposure.py + optimize.run_multi) for GSE Classic mass-entry exposure management — GSE currently lacks systematic multi-lineup exposure balancing."
+          },
+          {
+            "id": "better-lineups-dfs",
+            "name": "better-lineups-dfs",
+            "owner": "adamkanouse",
+            "url": "https://github.com/adamkanouse/better-lineups-dfs",
+            "purpose": "Minimal DFS lineup optimizer built on (forked) swanson/degenerate knapsack solver. Reads DK/FD salary CSV + external projection file, solves for a single optimal Classic lineup maximizing projected points under salary + position limits. NBA-focused example driver.",
+            "stack": {
+              "language": "Python",
+              "solver": "OR-Tools pywraplp CBC_MIXED_INTEGER_PROGRAMMING (same as draftfast — forked from swanson/degenerate)",
+              "data_sources": [
+                "DK/FD salary CSV",
+                "external projection CSV",
+                "sqlite player history (orm.retrieve_all_players_from_history)"
+              ],
+              "key_libraries": [
+                "ortools",
+                "numpy"
+              ],
+              "deps": "not pinned (fork reuses swanson/degenerate)"
+            },
+            "metrics": {
+              "stars": 1,
+              "forks": 1,
+              "subscribers": 0,
+              "open_issues": 0,
+              "created_at": "2019-01-31",
+              "pushed_at": "2019-01-31",
+              "updated_at": "2024-06-21",
+              "activity": "Effectively abandoned. Forked code, not maintained. Single-star mirror.",
+              "size_kb": 24
+            },
+            "lineup_logic": {
+              "game_type": "DK/FD Classic (NBA example; position arrays generic)",
+              "classic": "position_limits from constants.POSITIONS per site/sport (NFL DK: QB 1-1, RB 2-3, WR 3-4, TE 1-2, DST 1-1; FD NFL same via get_nfl_positions). salary=50000 DK / 60000 FD. roster_size 9 NFL / 8 NBA DK, 9 FD.",
+              "cptn": "No Captain/MVP slot handling whatsoever — Classic only. Position_limits are generic per sport.",
+              "optimizer": "single solve per run(); objective maximize sum(proj). constraints: salary cap, roster size, position limits, no-multi-position. No exposure/multi-entry loop, no stacking.",
+              "diversity": "No lineup diversity or exposure controls. One lineup per run."
+            },
+            "scrape_vs_api": "No scraping. Reads local salary CSV + projection CSV. ORM has sqlite history accessor. Data-in by file only.",
+            "license": "None (no LICENSE file; GitHub license field null).",
+            "has_vs_lacks": {
+              "has": [
+                "Classic DK/FD lineup optimization for NFL/NBA/MLB/CBB/WNBA/CFB/NASCAR/PGA",
+                "Reusable generic knapsack optimizer (swanson/degenerate fork) with position limits",
+                "Constants file cleanly parameterizes per-site/per-sport salary caps, roster sizes, position limits",
+                "CLI entrypoint"
+              ],
+              "lacks": [
+                "No Showdown/Captain support",
+                "No projections of its own",
+                "No exposure control or multi-lineup generation",
+                "Not maintained (forked, stale)",
+                "No ESPN/Vegas data",
+                "No stacking or advanced constraints (draftfast has these, this fork predates them)"
+              ]
+            },
+            "verdict": "Tiny, stale fork of an older generic DFS optimizer. Useful only as a minimal reference for classic position-limit constants and the swanson/degenerate solver pattern; not maintained and lacks showdown/diversity. Lower priority than draftfast.",
+            "top_gse_actionable": "Use the per-sport/per-site SALARY_CAP + ROSTER_SIZE + POSITION_LIMITS constant table as a ready reference for GSE's DK/FD contest parameters — faster than hand-encoding roster rules. Otherwise prefer draftfast."
+          },
+          {
+            "id": "DKscraPy",
+            "name": "DKscraPy",
+            "owner": "agad495",
+            "url": "https://github.com/agad495/DKscraPy",
+            "purpose": "Scrape DraftKings Sportsbook NFL + MLB odds/lines for betting use cases: NFL game spreads/totals/moneylines + player props, NFL MVP/SB futures, MLB game moneylines + WS futures. Converts American odds to implied probabilities.",
+            "stack": {
+              "language": "Python",
+              "tools": [
+                "requests",
+                "pandas",
+                "numpy",
+                "re",
+                "BeautifulSoup4"
+              ],
+              "data_sources": [
+                "DraftKings Sportsbook pages + JSON API"
+              ],
+              "endpoints": [
+                "NFL games: https://sportsbook.draftkings.com//sites/US-NJ-SB/api/v5/eventgroups/88808",
+                "NFL halves: .../categories/526",
+                "NFL props: .../eventgroups/88808/categories/{cat}/subcategories/{ids}",
+                "NFL SB futures: https://sportsbook.draftkings.com/leagues/football/3?category=team-futures&subcategory=super-bowl-winner (HTML)",
+                "MLB games: .../sites/US-NJ-SB/api/v4/eventgroups/88670847/categories/{market_ids}",
+                "MLB WS futures: https://sportsbook.draftkings.com/leagues/baseball/2003?category=team-futures&subcategory=world-series-2021 (HTML)"
+              ]
+            },
+            "metrics": {
+              "stars": 47,
+              "forks": 7,
+              "subscribers": 1,
+              "open_issues": 1,
+              "created_at": "2021-03-09",
+              "pushed_at": "2023-11-28",
+              "updated_at": "2026-08-18",
+              "activity": "Moderately popular niche sportsbook scraper (~47 stars). Stale: last code push 2023-11-28. No Classic lineup logic whatsoever.",
+              "size_kb": 31
+            },
+            "lineup_logic": "NONE — this is a sportsbook odds scraper, not a lineup optimizer. No salary data, no projections, no MILP/CP-SAT, no roster construction.",
+            "scrape_vs_api": "Mixed. NFL game/odds/props via DraftKings Sportsbook public JSON API (eventgroups endpoints). MLB + futures via BeautifulSoup HTML scraping of sportsbook pages, then regex on 'sportsbook-odds american default-color' spans. Hardcodes locale segment 'US-NJ-SB' and eventgroup IDs (88808 NFL, 88670847 MLB) — region-locked and brittle.",
+            "odds_conversion": "American odds -> probability: positive => 1/((odd/100)+1); negative => 1 - 1/((-odd/100)+1).",
+            "license": "None (no LICENSE file; GitHub license field null).",
+            "has_vs_lacks": {
+              "has": [
+                "DraftKings Sportsbook public JSON API access for NFL game lines + player props (no auth required)",
+                "Vegas implied totals / spreads / moneylines / over-under extraction",
+                "American-odds to implied-probability conversion",
+                "MLB + NFL coverage (games, futures, props)",
+                "Ready-made locale/eventgroup constants to probe"
+              ],
+              "lacks": [
+                "No lineup optimization at all (no salary, no projections, no solver)",
+                "No DraftKings DFS contest data (only sportsbook)",
+                "Region-locked to US-NJ-SB locale in code (brittle for other states)",
+                "Hardcoded eventgroup/market IDs — breaks when DK rotates IDs",
+                "No Classic support, no Showdown support",
+                "Not maintained (last push 2023-11-28)"
+              ]
+            },
+            "verdict": "Pure sportsbook odds scraper (DK Sportsbook JSON API + BS4 HTML). No DFS lineup logic, no salaires, no optimization — out of GSE's core scope except as a data-source reference. Stale and region-brittle.",
+            "top_gse_actionable": "Use the DraftKings Sportsbook JSON API endpoint + eventgroup constants (sites/US-NJ-SB/api/v5/eventgroups/88808, categories/{cat}/subcategories/{ids}) as a template for pulling live Vegas implied totals/spreads into GSE's projection engine — but generalize the locale + IDs since GSE needs multi-region. Not usable for lineup optimization directly."
+          }
+        ],
+        "gse_focus_note": "GSE is Classic-only (no Showdown). Of these 4 repos, only nfl-single-game-optimizer (FanDuel Showdown) and draftfast/better-lineups-dfs (Classic + optional Showdown) do lineup optimization. DKscraPy does only sportsbook odds. For GSE's Classic gap, draftfast is the primary reusable asset; nfl-single-game-optimizer contributes a rare ESPN+nflverse projection model; DKscraPy contributes the DK Sportsbook Vegas-lines API pattern."
+      },
+      "notes_md": "# Competitive Intel — DFS Lineup Optimizer Repos (GSE profiling)\n\nDate: 2026-09-12\nContext: GSE builds Classic-only DFS lineup optimization. None of GSE's current\nClassic tooling is known; this profiling batch targets 4 public repos to find\nreusable mechanics (projections, solver patterns, exposure control, Vegas data).\n\nAll 4 repos were shallow-cloned (depth=1) into `tmp/` for source inspection.\nNo commits/reads of protected resources. Read-only review only.\n\n## Source evidence (files inspected)\n- nfl-single-game-optimizer: README.md, main.py, optimizer.py, config.py,\n  scoring.py, projections.py, parser.py, requirements.txt\n- draftfast: README.md, setup.py, requirements.txt, draftfast/optimizer.py,\n  draftfast/orm.py, draftfast/exposure.py, draftfast/optimize.py,\n  draftfast/lineup_constraints.py, draftfast/settings.py, draftfast/rules.py,\n  draftfast/showdown/orm.py, draftfast/constants/{salary_cap,roster_size,positions}.py,\n  examples/showdown.py, test/test_nfl_showdown.py\n- better-lineups-dfs: README.md, optimizer.py, optimize.py, constants.py,\n  csv_parse/* (headers only)\n- DKscraPy: README.md, nfl_scrapers/dksb_nfl.py, nfl_scrapers/dksb_futures_nfl.py,\n  mlb_scrapers/dksb_mlb.py (headers + odds-conversion logic)\n\n## Repo-by-repo mechanics notes\n\n### 1. nfl-single-game-optimizer (rjrice1990) — 0 stars, dormant\n- FanDuel NFL Showdown (MVP+FLEX) ONLY. No Classic. No DK.\n- Solver: PuLP + CBC. `optimizer.py` builds binary mvp[]/flex[] vars,\n  objective = max sum(mvp[i]*proj*1.5 + flex[i]*proj), cap 60000, ==1 MVP, ==5 FLEX.\n- Lineup diversity: iterative; per previous lineup enforces\n  `mvp[prev.mvp_index] + sum(flex[prev.flex_indices]) <= 6 - min_diff`\n  (i.e. max shared assignments capped). Simple & effective.\n- Projections (projections.py) the valuable bit:\n  `projected_stat = (season_total / games_played) * env_factor * opp_adjustment`\n    - env_factor = implied_team_total / team_season_avg_points, clamped [0.75,1.35]\n    - opp_adj from schedule points-allowed vs league avg, clamped [0.90,1.10]\n    - yardage bonuses via scipy.stats.norm.cdf: P(yards>=threshold)*bonus\n      (passing std = 0.35*proj, rush 0.45*proj, rec 0.40*proj)\n- Data: ESPN Core API `/sports/football/nfl/teams/{id}/roster`,\n  `/athletes/{id}/statistics`; nfl_data_py schedule (vegas lines); FanDuel CSV.\n- Player matching 3-pass: exact -> normalized (strip Jr/Sr/III/punct) ->\n  Levenshtein>=80% (thefuzz) -> fallback FPPG.\n- License: none in repo. GitHub null.\n\n### 2. draftfast (BenBrostoff) — 298★, mature, maintained\n- Classic-first DK+FD optimizer across NFL/NBA/MLB/WNBA/NHL/PGA/Soccer/CS:GO/F1/\n  NASCAR/XFL/Tennis. Showdown is a secondary ruleset (DK_NFL_SHOWDOWN etc).\n- Solver: OR-Tools pywraplp CBC_MIXED_INTEGER_PROGRAMMING (ortools==9.8.3296).\n  Single solve per lineup; objective = max sum(proj).\n- Constraints wired in optimizer.py: salary cap, roster size, position limits,\n  no-multi-player, min_matchups, stacks (stack_lock_pos/eligible_pos),\n  combos (WR>=QB per team), no-offense-vs-defense, custom rules, position-per-team.\n- CPTN/Captain: ShowdownPlayer(captain=True) sets pos='CPT', cost*1.5, proj*1.5.\n  MVPPlayer (FanDuel MVP) uses game_position CPT/MVP/STAR/PRO/UTIL with multipliers\n  2/1.5/1.2/1.0/1.0. `game_type=\"showdown\"` flag toggles special showdown vars\n  (multi_position treated like showdown; real_pos preserved).\n- run_multi(iterations) + exposure.py:\n  - get_exposure_args(deterministic): for each bound, if player usage < min*total\n    -> lock; if >= max*total -> ban.\n  - random variant: lock players with r<=max.\n  - Per-lineup dedup: existing_rosters appended each iteration; Roster.__eq__ via\n    identifier (sorted roster_id). For showdown, identifier includes position\n    since CPT/FLEX placement changes points.\n- Player pool filtering (player_pool.py): min/max proj, avg, salary, randomize.\n- LineupConstraints: locked, position_locked, banned, position_banned, groups.\n- Data: user-supplied DK/FD salary CSV; orm sqlite history for averages.\n  NO projections of its own, NO Vegas, NO ESPN ingestion.\n- License: MIT per setup.py classifier; no LICENSE file (GitHub null).\n\n### 3. better-lineups-dfs (adamkanouse) — 1★, dead fork\n- Fork of swanson/degenerate knapsack optimizer. Reads DK/FD salary CSV +\n  external projection CSV. Solves single optimal Classic lineup.\n- Solver: ortools pywraplp CBC (same lib as draftfast, older API style).\n- Position/salary/roster-size pulled from constants.py table per site/sport\n  (NFL DK 9/$50k; FD 9/$60k; position_limits NFL: QB1-1/RB2-3/WR3-4/TE1-2/DST1-1).\n  This table is a clean reference artifact even if rest is stale.\n- No exposure loop, no stacking, no showdown, no projections, no Vegas.\n- Last push 2019-01-31; updated_at 2024-06-21 (likely just github metadata).\n\n### 4. DKscraPy (agad495) — 47★, stale, sportsbook-only\n- DraftKings SPORTSBOOK odds scraper, NOT DFS lineups. No salaries, no solver.\n- NFL: JSON API eventgroups 88808 (full games + props via categories/{cat}/\n  subcategories/{ids}); futures via HTML sportsbook page.\n- MLB: JSON API eventgroups 88670847; WS futures via HTML.\n- Locale hardcoded \"US-NJ-SB\" in URLs; eventgroup IDs hardcoded (88808/88670847) —\n  region-locked + brittle to rotation.\n- Odds conversion: positive odds -> 1/((odd/100)+1); negative -> 1-(1/((-odd/100)+1)).\n- Tools: requests, bs4, regex, pandas, numpy.\n- License: none in repo.\n\n## GSE has-vs-lacks mapping (GSE = Classic only, no Showdown)\n\n| capability | nfl-single-game-optimizer | draftfast | better-lineups-dfs | DKscraPy |\n|---|---|---|---|---|\n| Classic lineup gen | NO (showdown only) | YES (multi-sport) | YES (generic) | NO |\n| Showdown/Captain (CPTN) | YES (FanDuel MVP, not DK CPT) | YES (DK CPT + FD MVP) | NO | NO |\n| Projections | YES (ESPN + nflverse + Vegas) | NO (external only) | NO (external only) | NO |\n| Vegas implied totals | YES (nflverse schedule) | NO | NO | YES (DK Sportsbook API) |\n| Solver | PuLP/CBC | OR-Tools CP-SAT | OR-Tools CBC | none |\n| Exposure control / multi-entry | basic min_diff exclusion | YES (run_multi + ban/lock) | NO | NO |\n| Stacking / combos | NO | YES | NO | NO |\n| Probabilistic yardage scoring | YES (scipy norm.cdf) | NO | NO | NO |\n| Lineup upload | NO (FanDuel CSV output only) | CSV uploaders (disabled) | NO | NO |\n| Multi-sport | NFL only | 13 sports | generic | NFL+MLB |\n\n## Key takeaways for GSE\n1. Draftfast is the strongest Classic foundation: constraint framework + exposure\n   loop + multi-sport ruleset table. No projections — GSE must supply its own.\n2. nfl-single-game-optimizer has the BEST projection model in the set (probabilistic\n   yardage bonuses, env + opponent adjustments, ESPN/nflverse fusion), but is\n   FanDuel-Showdown-only and dead. The projection engine is GSE's biggest gap.\n3. better-lineups-dfs constants.py is a tidy DK/FD roster+salary+position reference\n   — faster than hand-deriving contest rules.\n4. DKscraPy gives a ready pattern for DK Sportsbook JSON API (eventgroups endpoints)\n   to source live Vegas lines for env-adjusted projections — but requires generalizing\n   the US-NJ-SB locale and eventgroup IDs.\n\n## Files written\n- profiles.json (machine-readable repo profiles + GSE has/lacks)\n- notes.md (this file)\nLocation: C:/Users/Garrett/w4-stage/repos-batch-f/\n"
+    }
+  }
+}

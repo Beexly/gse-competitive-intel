@@ -1,0 +1,766 @@
+{
+ "source_file": "extract-data-2026-09-12 (4).json",
+ "n": 50,
+ "entities": [
+  {
+   "idx": 0,
+   "name": "",
+   "source_url": "https://apify.com/prop-firm-rules-monitor",
+   "confidence": "LOW",
+   "pricing": [],
+   "core_data": null,
+   "notes": "The assigned URL returned a not-found page; no identity or pricing values were observed."
+  },
+  {
+   "idx": 1,
+   "name": "FXPropTech",
+   "source_url": "https://fxproptech.com",
+   "confidence": "MEDIUM",
+   "pricing": [],
+   "core_data": {
+    "description": "White-label SaaS platform for proprietary trading firms",
+    "observed_metrics": [
+     "20+ Firms Launched",
+     "7+ Years in Fintech",
+     "120K+ Active Traders"
+    ]
+   },
+   "notes": "The page describes flexible SaaS pricing but no numeric plan prices were observed on the assigned URL."
+  },
+  {
+   "idx": 2,
+   "name": "Parse.bot",
+   "source_url": "https://www.parse.bot",
+   "confidence": "MEDIUM",
+   "pricing": [],
+   "core_data": {
+    "headline": "The API for the entire internet",
+    "live_apis_observed": 3606
+   },
+   "notes": "No numeric pricing values were observed on the assigned URL."
+  },
+  {
+   "idx": 3,
+   "name": "MCPize",
+   "source_url": "https://mcpize.com",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "Free tier",
+     "price": 0
+    }
+   ],
+   "core_data": {
+    "description": "MCP marketplace",
+    "servers_observed": "950+",
+    "publisher_revenue_share": "80%",
+    "free_tier_requests_per_month": 25000
+   },
+   "notes": "The page states a free tier of 25,000 requests/month and no credit card; the observed pricing section also showed Monetize Your Servers, 80% revenue, $0."
+  },
+  {
+   "idx": 4,
+   "name": "The Odds API",
+   "source_url": "https://the-odds-api.com",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "Starter",
+     "price": 0
+    },
+    {
+     "plan": "START 20K",
+     "price": 30
+    },
+    {
+     "plan": "START 100K",
+     "price": 59
+    },
+    {
+     "plan": "START 5M",
+     "price": 119
+    },
+    {
+     "plan": "START 15M",
+     "price": 249
+    }
+   ],
+   "core_data": {
+    "description": "Sports betting API covering odds from bookmakers around the world"
+   },
+   "notes": "Prices were observed as monthly USD prices."
+  },
+  {
+   "idx": 5,
+   "name": "Odds-API.io",
+   "source_url": "https://odds-api.io",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "Free Plan",
+     "price": 0
+    },
+    {
+     "plan": "Solo",
+     "price": 65
+    },
+    {
+     "plan": "Starter",
+     "price": 129
+    },
+    {
+     "plan": "Growth",
+     "price": 239
+    },
+    {
+     "plan": "Pro",
+     "price": 299
+    }
+   ],
+   "core_data": {
+    "description": "Sports betting odds API",
+    "bookmakers_observed": "265+"
+   },
+   "notes": "Prices were observed with /mo labels."
+  },
+  {
+   "idx": 6,
+   "name": "SportsGameOdds",
+   "source_url": "https://sportsgameodds.com",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "Amateur",
+     "price": 0
+    },
+    {
+     "plan": "Rookie",
+     "price": 99
+    },
+    {
+     "plan": "Pro",
+     "price": 299
+    }
+   ],
+   "core_data": {
+    "description": "SportsGameOdds API",
+    "amateur_objects_per_month": 2500,
+    "amateur_requests_per_minute": 10
+   },
+   "notes": "The All-Star plan was observed as 'Let's talk' rather than a numeric price and is omitted."
+  },
+  {
+   "idx": 7,
+   "name": "Sportradar",
+   "source_url": "https://sportradar.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "headline": "The Sports Technology Company"
+   },
+   "notes": "No numeric pricing values were observed on the assigned URL."
+  },
+  {
+   "idx": 8,
+   "name": "SportsDataIO",
+   "source_url": "https://sportsdata.io",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "headline": "Real-Time Sports Data",
+    "audience": "For Gaming, Media & Beyond"
+   },
+   "notes": "The page exposed an API Free Trial link but no numeric pricing values."
+  },
+  {
+   "idx": 9,
+   "name": "Stats Perform",
+   "source_url": "https://www.statsperform.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {},
+   "notes": "No numeric pricing values were observed on the assigned URL."
+  },
+  {
+   "idx": 10,
+   "name": "Prop Firm Rules Watchdog",
+   "source_url": "https://github.com/HFTArbitrage/prop-firm-rules-watchdog",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "description": "Open-source, automatically-updated database of trading rules across major proprietary trading firms.",
+    "observed_features": [
+     "daily rule-change detection",
+     "public Google Sheet",
+     "git history of rule changes",
+     "MIT license"
+    ]
+   },
+   "notes": "Page title and repository README loaded in the browser; no product pricing was observed."
+  },
+  {
+   "idx": 11,
+   "name": "HFT Arbitrage Platform",
+   "source_url": "https://hftarbitrageplatform.com",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "HFT Arbitrage Platform 1-Leg Only",
+     "price": 465
+    },
+    {
+     "plan": "HFT Arbitrage Platform full package",
+     "price": 2605
+    }
+   ],
+   "core_data": {
+    "description": "HFT arbitrage software for forex, gold, and crypto \u2014 latency and news trading platform.",
+    "observed_products": [
+     "One Leg Arbitrage",
+     "Hedge Arbitrage",
+     "2 Legs Latency 1",
+     "2 Legs Latency 2",
+     "2 Legs Latency 3"
+    ]
+   },
+   "notes": "The page also displayed a Custom package as $465+, which was not represented as an exact numeric price."
+  },
+  {
+   "idx": 12,
+   "name": "SignalPulse \u2014 Prop Firm Challenge Sync Engine",
+   "source_url": "https://github.com/Wendy-Bay/PropFirm-Tracker-Elite",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "description": "A synchronization engine for traders navigating prop firm evaluation programs and funded stages.",
+    "observed_features": [
+     "MT5/MT4 activity tracking",
+     "phase transitions",
+     "profit target milestones",
+     "drawdown tracking",
+     "payout eligibility windows"
+    ]
+   },
+   "notes": "No product pricing was observed on the loaded repository page."
+  },
+  {
+   "idx": 13,
+   "name": "PropSim",
+   "source_url": "https://github.com/jalv92/PropSim",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "description": "Scores real NinjaTrader 8 trades against the published rules of five prop firms.",
+    "observed_features": [
+     "NinjaTrader.sqlite input",
+     "Monte Carlo",
+     "runs locally",
+     "no account or upload required"
+    ]
+   },
+   "notes": "No product pricing was observed on the loaded repository page."
+  },
+  {
+   "idx": 14,
+   "name": "@luxalgo/prop-firm-sim-mcp",
+   "source_url": "https://www.npmjs.com/package/@luxalgo/prop-firm-sim-mcp",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "version": "1.3.0",
+    "description": "MCP server for Prop Firm Sim, an open-source prop-firm challenge simulator.",
+    "observed_tools": [
+     "list_firms",
+     "get_challenge_rules",
+     "simulate_challenge",
+     "optimal_risk",
+     "compare_challenges",
+     "bootstrap_simulate"
+    ]
+   },
+   "notes": "The npm page displayed version 1.3.0 and four dependencies; no product pricing was observed."
+  },
+  {
+   "idx": 15,
+   "name": "SaberSim",
+   "source_url": "https://www.sabersim.com",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "7-day trial",
+     "price": 7
+    }
+   ],
+   "core_data": {
+    "description": "DFS optimizer and system for beating daily fantasy sports.",
+    "observed_features": [
+     "optimizer",
+     "projections",
+     "contest simulations",
+     "coaching"
+    ]
+   },
+   "notes": "The page displayed: Try 7 days for $7; everything included; cancel any time."
+  },
+  {
+   "idx": 16,
+   "name": "RotoQL",
+   "source_url": "https://rotoql.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "description": "Algorithmically optimized lineups across five sports.",
+    "observed_features": [
+     "lineup optimizer",
+     "projections",
+     "10,000-game simulations",
+     "free slate every day",
+     "DraftKings support",
+     "FanDuel support",
+     "Yahoo support",
+     "SuperDraft support"
+    ]
+   },
+   "notes": "The loaded page displayed a free slate every day and a Premium reference, but no numeric Premium price."
+  },
+  {
+   "idx": 17,
+   "name": "THE SOLVER",
+   "source_url": "https://thesolver.com",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "DFS Optimizer",
+     "price": 37.99
+    },
+    {
+     "plan": "DFS Simulator",
+     "price": 25.99
+    },
+    {
+     "plan": "Draft Assistant",
+     "price": 34.99
+    }
+   ],
+   "core_data": {
+    "description": "A set of tools for daily fantasy sports and best ball.",
+    "observed_products": [
+     "DFS Optimizer",
+     "DFS Simulator",
+     "Post-Lock Sim Dashboard",
+     "DFS Bankroll Tracker",
+     "Draft Assistant",
+     "Best Ball Explorer"
+    ]
+   },
+   "notes": "Observed prices were NFL from $37.99/mo, from $25.99/mo, and NFL from $34.99/mo respectively. The page also labeled DFS Bankroll Tracker and Best Ball Explorer Free, without numeric prices."
+  },
+  {
+   "idx": 18,
+   "name": "",
+   "source_url": "https://fantasycruncher.com",
+   "confidence": "LOW",
+   "pricing": [],
+   "core_data": {},
+   "notes": "Browser navigation was blocked/aborted before a title, page content, network data, or embedded JSON could be observed."
+  },
+  {
+   "idx": 19,
+   "name": "Stokastic",
+   "source_url": "https://www.stokastic.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "description": "DFS projections, ownership, and simulations for DraftKings and FanDuel.",
+    "observed_features": [
+     "Data Hub",
+     "Contest Generator",
+     "Pre Contest Simulator",
+     "Late Swap",
+     "Single Lineup Simulator",
+     "Post Contest Simulator"
+    ]
+   },
+   "notes": "The page displayed a Pricing navigation link but no numeric plan price in the loaded page content."
+  },
+  {
+   "idx": 20,
+   "name": "Daily Fantasy Fuel",
+   "source_url": "https://www.dailyfantasyfuel.com",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "Monthly",
+     "price": 29.99
+    },
+    {
+     "plan": "6 Months",
+     "price": 134.99
+    }
+   ],
+   "core_data": {
+    "description": "DFS and player prop tools; lineup optimizers, player prop research tools, and projections were observed."
+   },
+   "notes": "The page states the monthly plan is $29.99/month and the 6 Months plan is $134.99/6-month, with a 7-day free trial shown for each."
+  },
+  {
+   "idx": 21,
+   "name": "Daily Fantasy Optimizer",
+   "source_url": "https://dailyfantasyoptimizer.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "description": "A free daily fantasy optimizer with lineup stacking, customizable exposures and projections, DraftKings and FanDuel integration, contest analysis, and backtesting."
+   },
+   "notes": "The page repeatedly describes the optimizer as free to use."
+  },
+  {
+   "idx": 22,
+   "name": "Optimal Bet",
+   "source_url": "https://www.optimaldfs.app",
+   "confidence": "MEDIUM",
+   "pricing": [],
+   "core_data": {
+    "description": "Pro-level betting tools presented with +EV plays, arbitrage, props, projections, AI, sportsbook odds, and player projections."
+   },
+   "notes": "The fetched page visibly presents Optimal betting tools and says a free trial is available through the iOS and Android apps; no numeric plan price was observed."
+  },
+  {
+   "idx": 23,
+   "name": "Draftwise",
+   "source_url": "https://www.draftwise.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "description": "Legal technology content describing Draft, Review, and Negotiate workflows, legal ontology, precedent insight, and GenAI tools."
+   },
+   "notes": "The page includes the heading 'Draft -> Review -> Negotiate' and describes Draftwise as serving law firms."
+  },
+  {
+   "idx": 24,
+   "name": "FantasyLabs",
+   "source_url": "https://www.fantasylabs.com",
+   "confidence": "MEDIUM",
+   "pricing": [],
+   "core_data": {
+    "description": "Daily fantasy sports page with Popular Pro Tools including SimLabs, Player Models, Lineup Optimizer, PickLabs, Trends Tool, and Contests Dashboard."
+   },
+   "notes": "The visible page title is 'Daily Fantasy Sports'; no numeric plan price was observed on the assigned URL."
+  },
+  {
+   "idx": 25,
+   "name": "",
+   "source_url": "https://www.dfsace.com",
+   "confidence": "LOW",
+   "pricing": [],
+   "core_data": {},
+   "notes": "The assigned URL did not return usable visible page content."
+  },
+  {
+   "idx": 26,
+   "name": "FTN Fantasy",
+   "source_url": "https://ftnfantasy.com",
+   "confidence": "MEDIUM",
+   "pricing": [],
+   "core_data": {
+    "description": "Fantasy and sports content site with NFL and fantasy articles, rankings, DFS strategy, tools, models, and projections."
+   },
+   "notes": "The page shows FTN content and a section labeled 'OUR ACHIEVEMENTS'; no numeric subscription plan price was observed on the assigned URL."
+  },
+  {
+   "idx": 27,
+   "name": "RotoGrinders",
+   "source_url": "https://rotogrinders.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "description": "DFS site with premium tools, expert picks, projections, articles, videos, and sports-betting/fantasy promotions."
+   },
+   "notes": "The page visibly promotes a 'Combo Package: The Best Value Out There' and premium content, but no numeric plan price was observed on the assigned URL."
+  },
+  {
+   "idx": 28,
+   "name": "RotoWire",
+   "source_url": "https://www.rotowire.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "description": "Fantasy sports site with optimized lineups, waiver targets, player news, articles, tools, and betting content."
+   },
+   "notes": "The page visibly says 'Start/Sit Solved Every Week' and promotes syncing a league; no numeric plan price was observed on the assigned URL."
+  },
+  {
+   "idx": 29,
+   "name": "FantasyPros",
+   "source_url": "https://www.fantasypros.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "description": "Fantasy league tools and advice site offering league sync, lineup advice, rankings, tiers, and start/sit advice."
+   },
+   "notes": "The page visibly promotes syncing a league for free advice from 100+ experts and states 'The best in-season tools in the industry'."
+  },
+  {
+   "idx": 30,
+   "name": "DFS Hero",
+   "source_url": "https://dfshero.com",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "Full Access",
+     "price": 1
+    }
+   ],
+   "core_data": {
+    "trial_or_term": "5 days",
+    "cancellation": "Cancel anytime",
+    "description": "The DFS engine thatnever stops working."
+   },
+   "notes": "The page displays $1 for 5 days and labels the call to action Get Full Access for $1."
+  },
+  {
+   "idx": 31,
+   "name": "Daily Overlay",
+   "source_url": "https://dailyoverlay.com",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "Full graded consensus",
+     "price": 19.99
+    }
+   ],
+   "core_data": {
+    "trial_or_term": "free for 5 days, then $19.99/mo",
+    "description": "The only DFS site that grades itself in public."
+   },
+   "notes": "The page states that members get every graded pick and advertises a free trial."
+  },
+  {
+   "idx": 32,
+   "name": "4for4",
+   "source_url": "https://www.4for4.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "product": "SharpStack",
+    "description": "SharpStack scans sportsbooks, spots price gaps, and surfaces actionable bets.",
+    "trial": "7 Days Free"
+   },
+   "notes": "The homepage displays a Try 7 Days Free call to action; no numeric plan price was observed on the page."
+  },
+  {
+   "idx": 33,
+   "name": "kjpi.com",
+   "source_url": "https://www.kjpi.com",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "Own this domain",
+     "price": 3830
+    },
+    {
+     "plan": "Lease to Own",
+     "price": 1277
+    }
+   ],
+   "core_data": {
+    "status": "domain for sale",
+    "currency": "USD"
+   },
+   "notes": "The page says the domain is for sale and displays USD$3,830 and USD$1,277."
+  },
+  {
+   "idx": 34,
+   "name": "PrizePicks",
+   "source_url": "https://prizepicks.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "welcome_bonus": "Play $5 get $150 in Bonus Lineups if you win",
+    "offerings": "Pick Players, Game Winners, Spreads & More"
+   },
+   "notes": "The page displays the welcome bonus and live popular picks; no subscription price was observed."
+  },
+  {
+   "idx": 35,
+   "name": "",
+   "source_url": "https://www.elitepicksdfs.com",
+   "confidence": "LOW",
+   "pricing": [],
+   "core_data": {},
+   "notes": "No usable page content was observed."
+  },
+  {
+   "idx": 36,
+   "name": "BTA Sports",
+   "source_url": "https://btasports.io",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "description": "Win probabilities on every line, every game.",
+    "sports": "MLB, NFL, NBA, NHL & CFB",
+    "trial": "3-day free trial",
+    "cancellation": "Cancel anytime",
+    "not_a_sportsbook": true
+   },
+   "notes": "The homepage states that proprietary, patent-pending ML prices every line and displays a 3-day free trial."
+  },
+  {
+   "idx": 37,
+   "name": "Walter",
+   "source_url": "https://walterpicks.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "description": "Next-Gen Fantasy & Betting Insights",
+    "app_reviews": "18,000+ Five-Star App Reviews",
+    "features": [
+     "Fantasy Football Insights",
+     "Betting Insights",
+     "Daily Fantasy Optimizer"
+    ]
+   },
+   "notes": "The homepage describes Walter's machine learning intelligence and links to the WalterPicks app; no numeric price was observed."
+  },
+  {
+   "idx": 38,
+   "name": "",
+   "source_url": "https://www.dfsoptimizer.com",
+   "confidence": "LOW",
+   "pricing": [],
+   "core_data": {},
+   "notes": "No usable page content was observed."
+  },
+  {
+   "idx": 39,
+   "name": "OddsJam",
+   "source_url": "https://oddsjam.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {
+    "description": "Forget losing. Win either way.",
+    "trial": "7 days free",
+    "cancellation": "Cancel anytime",
+    "users": "100k+ OddsJam users"
+   },
+   "notes": "The homepage displays a Start a free trial call to action and states 7 days free. No numeric subscription price was observed."
+  },
+  {
+   "idx": 40,
+   "name": "Prop Firm Match",
+   "source_url": "https://propfirmmatch.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {},
+   "notes": "Page title observed: Best Prop Firms for Futures | Prop Firm Match. Visible page text describes a platform for comparing prop trading firms and shows 60+ verified top prop firms, 1500+ challenges, and 12000+ real trader reviews."
+  },
+  {
+   "idx": 41,
+   "name": "Prop Firm Compare",
+   "source_url": "https://propfirm.compare",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "Take Profit Trader Challenge Fee",
+     "price": 90
+    },
+    {
+     "plan": "Tradeify Challenge Fee",
+     "price": 50
+    },
+    {
+     "plan": "Lucid Trading Challenge Fee",
+     "price": 55
+    }
+   ],
+   "core_data": {},
+   "notes": "Page title observed: Best Futures Prop Trading Firms 2026 | Prop Firm Compare. Visible featured-firm text showed Take Profit Trader Challenge Fee From $90, Tradeify Challenge Fee From $50, and Lucid Trading Challenge Fee From $55."
+  },
+  {
+   "idx": 42,
+   "name": "Prop Firm Switch",
+   "source_url": "https://propfirmswitch.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {},
+   "notes": "Page title observed: Prop Firm Switch | Helping You Find The Best Prop Firms. Visible page text describes reviews, comparisons, rankings, evaluation rules, scaling paths, payout reliability, and trader support."
+  },
+  {
+   "idx": 43,
+   "name": "PropTally",
+   "source_url": "https://proptally.app",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "PropTally",
+     "price": 0
+    }
+   ],
+   "core_data": {},
+   "notes": "Page title observed: PropTally \u2014 Trading Analytics & Free Academy. Visible page text states Academy free forever, 100% free with no card required, and that the Academy, tools, Analytics dashboard, and RiskGuard are free forever. The page also displayed competitor prices of TradeZella $29/mo, Tradervue Pro $29/mo, and Edgewonk $169/yr; these were not treated as PropTally pricing."
+  },
+  {
+   "idx": 44,
+   "name": "Vetted Prop Firms",
+   "source_url": "https://vettedpropfirms.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {},
+   "notes": "Page title observed: Vetted Prop Firms - List of All Verified Prop Firms in One Place. Visible page text says it has tested, analysed and reviewed leading proprietary trading firms and displays reviewed firms with promotional discount percentages, not plan prices."
+  },
+  {
+   "idx": 45,
+   "name": "Best Prop Firm Guide",
+   "source_url": "https://bestpropfirmguide.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {},
+   "notes": "Page title observed: Best Prop Firms Ranked by Trustpilot Ratings \u2014 September 2026. Visible page text states 37 firms tracked, 268,453 Trustpilot reviews, and Updated September 2026."
+  },
+  {
+   "idx": 46,
+   "name": "Track360",
+   "source_url": "https://track360.io",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {},
+   "notes": "Page title observed: Track360 | Affiliate Management for iGaming, Forex & Prop Trading. Visible page text describes an affiliate management platform with affiliate tracking, commissions and deals, reporting, fraud detection, loyalty, and payouts; no price was observed."
+  },
+  {
+   "idx": 47,
+   "name": "FundedScore",
+   "source_url": "https://fundedscore.com",
+   "confidence": "HIGH",
+   "pricing": [
+    {
+     "plan": "Alpha Futures",
+     "price": 99
+    },
+    {
+     "plan": "FundedNext",
+     "price": 99
+    }
+   ],
+   "core_data": {},
+   "notes": "Page title observed: FundedScore \u2014 Best Futures Prop Firms, Trader-Tested. Visible page text states live data updated 2026-09-12, 52 prop firms tracked, 214+ challenges compared, and featured offers Alpha Futures From $99 and FundedNext From $99."
+  },
+  {
+   "idx": 48,
+   "name": "FundedTrading",
+   "source_url": "https://fundedtrading.com",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {},
+   "notes": "Page title observed: Prop Firm Reviews 2026 \u2013 Verified Ratings | FundedTrading. Visible page text states 150+ Firms Reviewed and Updated Daily, and describes comparison of funded trading programs by verified payouts, rules, platforms, and price; no plan price was observed."
+  },
+  {
+   "idx": 49,
+   "name": "CrossTrade",
+   "source_url": "https://crosstrade.io",
+   "confidence": "HIGH",
+   "pricing": [],
+   "core_data": {},
+   "notes": "Page title observed: CrossTrade - Complete Automation Suite for NinjaTrader 8 & Tradovate. Visible page text describes automation for funded futures traders and lists Free, Standard, Pro, and Elite feature tiers, but no numeric prices were observed."
+  }
+ ]
+}

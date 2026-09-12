@@ -1,0 +1,1095 @@
+{
+ "deduped_targets": [
+  {
+   "target": "4for4.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Rankings, projections and waiver analysis."
+  },
+  {
+   "target": "actionnetwork.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f1",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Publishes analysis, news, real-time odds, professional tools, educational resources and an app with integrations."
+  },
+  {
+   "target": "awesemo.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Projections, ownership, top stacks, boom/bust, contest simulation and late swap."
+  },
+  {
+   "target": "betalgo.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "NOT CONFIRMED"
+  },
+  {
+   "target": "betql.com",
+   "kind": "domain",
+   "sources": [
+    "f1",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "The page exposes Model Bets, Expert Picks, Player Props Odds Screen, moneyline, over/under, and first-half lines across many leagues."
+  },
+  {
+   "target": "betr.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "NOT CONFIRMED"
+  },
+  {
+   "target": "betstamp.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Proprietary True Line pricing and real-time edge detection across a grid of books and operators. [source: https://www.betstamp.com/pro]"
+  },
+  {
+   "target": "bettingpros.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Presents picks, prop records, matchup pages, odds and a Smart Money product; homepage is organized by sport and market. [source: https://www.bettingpros.com]"
+  },
+  {
+   "target": "cbssports.com/fantasy",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "The fantasy landing page contains fantasy news, ADP value analysis, rankings, sleepers, and player reports. A simulation engine and formula are NOT CONFIRMED."
+  },
+  {
+   "target": "covers.com",
+   "kind": "domain",
+   "sources": [
+    "f1",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "The page exposes upcoming matchups, picks, an odds-converter, and a parlay-calculator taxonomy. A simulation engine and formulas are NOT CONFIRMED."
+  },
+  {
+   "target": "crazyninjaodds.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Public site lists game odds, active markets, free-bet/risk-free-bet/boost calculators, promo tools, low holds, arbitrage and positive-EV pages. [source: https:/"
+  },
+  {
+   "target": "dailyroto.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Homepage states DailyRoto is now SportsGrid Fantasy and describes expert news, analysis and insights; no formula exposed."
+  },
+  {
+   "target": "dfsarmy.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "DFS projections, rankings and strategy content."
+  },
+  {
+   "target": "dimers.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Prediction and sports analytics content."
+  },
+  {
+   "target": "draft.com",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "The page says the domain is registered with Safenames and no website is configured."
+  },
+  {
+   "target": "drafters.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "Best ball uses top-performing roster slots weekly; displayed NFL format is 12 teams, 20 rounds, PPR, weeks 1-17."
+  },
+  {
+   "target": "draftkings.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "Pick two or more athletes and choose MORE or LESS for a selected stat; correct picks compete for cash-prize shares. Source: https://pick6.draftkings.com/where-i"
+  },
+  {
+   "target": "espn-odds-scraper.com",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "VERIFY",
+   "why": "default: needs re-extract to confirm formula/API/pricing",
+   "mechanism_seen": "The fetched seed page did not expose enough public content to confirm an operating product or formula."
+  },
+  {
+   "target": "espn.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "Public leagues offer PPR or standard non-PPR; head-to-head matchup winner is team with most weekly fantasy points. Source: https://support.espn.com/hc/en-us/art"
+  },
+  {
+   "target": "espn.com/fantasy",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "Provides fantasy leagues, rankings, projections, draft guides, mock drafts, player cards and live in-game projections."
+  },
+  {
+   "target": "establishtherun.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Projections, rankings and fantasy analysis."
+  },
+  {
+   "target": "fanduel.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "FanDuel says Picks contests are being discontinued: last contests April 23 and app shuts down end of May. Source: https://www.fanduel.com/picks"
+  },
+  {
+   "target": "fanlabs.com",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "The fetched seed page did not expose enough public content to confirm mechanism, pricing, or proof."
+  },
+  {
+   "target": "fantasy.nfl.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "NFL-managed, custom, and autopick leagues; users draft/manage NFL-player rosters and score from player stats. Source: https://support.nfl.com/hc/en-us/articles/"
+  },
+  {
+   "target": "fantasycruncher.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Lineup Cruncher contest pages and configurable projections upload, randomness, exposures, unique players, salary/value and groups."
+  },
+  {
+   "target": "fantasyfootballers.org",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "The tools page says its tools and cheat sheets are free, sortable, rankable, filterable, and analyzable, with weekly player and defense scoring projections."
+  },
+  {
+   "target": "fantasyguru.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Rankings, projections, cheat sheets, DFS tools/optimizers, livestreams and Discord are listed."
+  },
+  {
+   "target": "fantasylabs.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Player projections, ownership, lineup tools and marketplace content."
+  },
+  {
+   "target": "fantasylife.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Tier 1 has rankings, mock drafts, cheatsheets, ADP and Start/Sit. Tier 2 adds projections, utilization metrics, trade and waiver tools, betting and DFS."
+  },
+  {
+   "target": "fantasypros.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Live draft advice is powered by expert rankings and ADP."
+  },
+  {
+   "target": "fbsim.com",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "The fetched seed page did not expose an accessible mechanism, formula, pricing, or product-limit page."
+  },
+  {
+   "target": "floodlight.ai",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "BUILD",
+   "why": "open data/MCP/schedule adapter with attribution; low-cost coverage",
+   "mechanism_seen": "The page is a domain-for-sale page, not an operating analytics product."
+  },
+  {
+   "target": "football.fantasysports.yahoo.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "Provides Yahoo Fantasy Football league access, fantasy news, draft kit links and related rankings content."
+  },
+  {
+   "target": "juicereel.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Users connect sportsbook accounts; bets are imported and tracked, with personal analytics and access to sportsbook-verified bettor records."
+  },
+  {
+   "target": "linestar.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "NOT CONFIRMED"
+  },
+  {
+   "target": "lineuplab.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "NOT CONFIRMED"
+  },
+  {
+   "target": "nfl.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "NFL.com fantasy offers managed, custom, and autopick league modes. Source: https://support.nfl.com/hc/en-us/articles/35869678503060-League-Types-Settings"
+  },
+  {
+   "target": "numberfire.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f1",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "The fetched page routes users to FanDuel Research projections, rankings, fantasy predictions and sports betting research."
+  },
+  {
+   "target": "oddsjam.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2",
+    "f3(+f4 dupe)"
+   ],
+   "disposition": "BUILD",
+   "why": "arb/EV math is standard textbook + 8 verified public endpoints; re-implement, don't copy bundle",
+   "mechanism_seen": "Arbitrage, middles, positive-EV and sportsbook comparison."
+  },
+  {
+   "target": "openfootball.github.io",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "BUILD",
+   "why": "open data/MCP/schedule adapter with attribution; low-cost coverage",
+   "mechanism_seen": "The page describes open public domain data and links world.db, football.db, football.csv, and 2026/27 league schedules. It does not describe a prediction engine"
+  },
+  {
+   "target": "outlier.bet",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Analyzes thousands of picks, props and games; compares sportsbook and prediction-market prices; offers positive-EV, arbitrage, sharp-book and boosted-parlay too"
+  },
+  {
+   "target": "ownit.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "NOT CONFIRMED"
+  },
+  {
+   "target": "parlayplay.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "NOT CONFIRMED"
+  },
+  {
+   "target": "pikkit.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Syncs sportsbook activity, tracks bets, compares odds across over 30 sportsbooks, provides live tracking and win probability, and adds social/copying features."
+  },
+  {
+   "target": "pinnacle.com",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "VERIFY",
+   "why": "default: needs re-extract to confirm formula/API/pricing",
+   "mechanism_seen": "The page exposes sportsbook navigation, live centre, and odds, arbitrage, bet, and margin calculators. A predictive simulation engine is NOT CONFIRMED."
+  },
+  {
+   "target": "prizepicks.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "Users pick players, game winners, spreads and more; player picks present a stat line and MORE/LESS choice. Source: https://www.prizepicks.com/"
+  },
+  {
+   "target": "propfinder.app",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Cheatsheets, power ratings, game boards, matchup data, usage trends, hit rates and win probabilities for NFL, college football, MLB and WNBA. [source: https://p"
+  },
+  {
+   "target": "props.cash",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Real-time data, odds analysis, filters and correlated player props."
+  },
+  {
+   "target": "propsai.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "The fetched page says the domain is for sale, so product operation is not evidenced."
+  },
+  {
+   "target": "rithmm.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Predictive models project games and props, compare projections to live prices to show Edge, recalibrate with news/prices, and add Smart Signals, Scout, parlay b"
+  },
+  {
+   "target": "rotogrinders.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Projection systems, ownership, simulations and expert content."
+  },
+  {
+   "target": "rotowire.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f1",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Expert rankings customized for league settings, with draft assistant integration for Yahoo, ESPN and Sleeper drafts. No calculation formula exposed."
+  },
+  {
+   "target": "sabersim.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Game simulation and correlation-aware lineup optimization."
+  },
+  {
+   "target": "sharpsports.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "NOT CONFIRMED"
+  },
+  {
+   "target": "sleeper.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "Public page says users make team picks and player picks and can cash in on beliefs. Source: https://sleeper.com/picks"
+  },
+  {
+   "target": "sportradar.com",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "VERIFY",
+   "why": "default: needs re-extract to confirm formula/API/pricing",
+   "mechanism_seen": "The page calls Sportradar \u201cTHE SPORTS TECHNOLOGY COMPANY\u201d and displays partners/customers including UEFA, NBA, DFL, and FIA. Product-level simulation details ar"
+  },
+  {
+   "target": "sportsdata-mcp.com",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "BUILD",
+   "why": "open data/MCP/schedule adapter with attribution; low-cost coverage",
+   "mechanism_seen": "The fetched seed page did not expose enough public content to confirm tools, models, pricing, or vendor dependencies."
+  },
+  {
+   "target": "sportsnet.com",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "The fetched seed page was not sufficient to confirm a simulation, optimizer, pricing, or data-vendor mechanism."
+  },
+  {
+   "target": "sportsvault.com",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "The homepage says SportsVault handles season-long fantasy-league money management, with simple setup, flexible payment options, and a commissioner workflow."
+  },
+  {
+   "target": "stokastic.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Projections, ownership, contest simulation, stacks and leverage."
+  },
+  {
+   "target": "teamrankings.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f1",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "The page links TeamRankings, BetIQ, PoolGenius, sports stats, betting picks, survivor pools, and pick\u2019em content."
+  },
+  {
+   "target": "thescore.com",
+   "kind": "domain",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "The page exposes live/result event links and sports news. A prediction or simulation engine is NOT CONFIRMED."
+  },
+  {
+   "target": "unabated.com",
+   "kind": "domain",
+   "sources": [
+    "f0",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Odds comparison, projections and betting tools."
+  },
+  {
+   "target": "underdogfantasy.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "Users pick teams, players or both in entries; homepage claims up to 5000x payouts."
+  },
+  {
+   "target": "wagertalk.com",
+   "kind": "domain",
+   "sources": [
+    "f1",
+    "f2"
+   ],
+   "disposition": "VERIFY",
+   "why": "mechanism known, formulas/pricing NOT CONFIRMED; re-extract before building",
+   "mechanism_seen": "Handicapping and betting content."
+  },
+  {
+   "target": "yahoo.com",
+   "kind": "domain",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "WONT-DO",
+   "why": "league platform or media surface; no reusable GSE primitive",
+   "mechanism_seen": "Managers set lineups from NFL players; public, private, and public-prize leagues; head-to-head, points-only, and death formats. Sources: https://help.yahoo.com/"
+  },
+  {
+   "target": "https://github.com/augur/augur",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "out of scope: prediction-market infra / finance lib",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/balldontlie/nba-api",
+   "kind": "repo",
+   "sources": [
+    "f2"
+   ],
+   "disposition": "BUILD",
+   "why": "open-source ingestion adapter with license/attribution guard",
+   "note": "NBA data API"
+  },
+  {
+   "target": "https://github.com/Beexly/Sports",
+   "kind": "repo",
+   "sources": [
+    "f0",
+    "f1",
+    "f2"
+   ],
+   "disposition": "BUILD",
+   "why": "GSE self-reference; internal calibration/supply-chain/CLV work",
+   "note": "GSE reference implementation"
+  },
+  {
+   "target": "https://github.com/cfb-data/collegefootballdata",
+   "kind": "repo",
+   "sources": [
+    "f1",
+    "f2"
+   ],
+   "disposition": "BUILD",
+   "why": "open-source ingestion adapter with license/attribution guard",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/edge-scanner/edge-scanner",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "rate-limited or unknown surface; no confirmed algorithm; re-extract first if revisited",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/espn-odds-scraper/scraper",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "VERIFY",
+   "why": "needs README/license confirmation",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/fbsim/core",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "rate-limited or unknown surface; no confirmed algorithm; re-extract first if revisited",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/ffanalytics/ffanalytics",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "BUILD",
+   "why": "open-source ingestion adapter with license/attribution guard",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/floodlight/framework",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "VERIFY",
+   "why": "needs README/license confirmation",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/gnosis/gp-v2",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "out of scope: prediction-market infra / finance lib",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/lean/lean",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "out of scope: prediction-market infra / finance lib",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/mlb-stats-api/mlb-statsapi",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "BUILD",
+   "why": "open-source ingestion adapter with license/attribution guard",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/nba-api/nba_api",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "BUILD",
+   "why": "open-source ingestion adapter with license/attribution guard",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/nflverse/nfl_data_py",
+   "kind": "repo",
+   "sources": [
+    "f1",
+    "f2"
+   ],
+   "disposition": "BUILD",
+   "why": "open-source ingestion adapter with license/attribution guard",
+   "note": "NFL data ingestion"
+  },
+  {
+   "target": "https://github.com/openfootball/football",
+   "kind": "repo",
+   "sources": [
+    "f1",
+    "f2"
+   ],
+   "disposition": "BUILD",
+   "why": "open-source ingestion adapter with license/attribution guard",
+   "note": "Football datasets"
+  },
+  {
+   "target": "https://github.com/PostPick/PostPick",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "rate-limited or unknown surface; no confirmed algorithm; re-extract first if revisited",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/pybaseball/pybaseball",
+   "kind": "repo",
+   "sources": [
+    "f1",
+    "f2"
+   ],
+   "disposition": "BUILD",
+   "why": "open-source ingestion adapter with license/attribution guard",
+   "note": "Baseball data"
+  },
+  {
+   "target": "https://github.com/Quantlib/Quantlib",
+   "kind": "repo",
+   "sources": [
+    "f1",
+    "f2"
+   ],
+   "disposition": "WONT-DO",
+   "why": "out of scope: prediction-market infra / finance lib",
+   "note": "Quantitative finance"
+  },
+  {
+   "target": "https://github.com/sleeper/analytics-suite",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "rate-limited or unknown surface; no confirmed algorithm; re-extract first if revisited",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/socialpredict/socialpredict",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "rate-limited or unknown surface; no confirmed algorithm; re-extract first if revisited",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/sports-odds-monitor/odds-monitor",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "WONT-DO",
+   "why": "rate-limited or unknown surface; no confirmed algorithm; re-extract first if revisited",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/sportsdata-mcp/sportsdata",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "BUILD",
+   "why": "open-source ingestion adapter with license/attribution guard",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/sportsreference/sportsreference",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "BUILD",
+   "why": "open-source ingestion adapter with license/attribution guard",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/sportypy/sportypy",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "BUILD",
+   "why": "open-source ingestion adapter with license/attribution guard",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/statcast/statcast",
+   "kind": "repo",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "BUILD",
+   "why": "open-source ingestion adapter with license/attribution guard",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://github.com/the-odds-api/client",
+   "kind": "repo",
+   "sources": [
+    "f1",
+    "f2"
+   ],
+   "disposition": "BUILD",
+   "why": "open-source ingestion adapter with license/attribution guard",
+   "note": "NOT CONFIRMED."
+  },
+  {
+   "target": "https://betiq.teamrankings.com/",
+   "kind": "discovered-url",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "VERIFY",
+   "why": "pricing/research subpath; confirm before build"
+  },
+  {
+   "target": "https://betiq.teamrankings.com/articles/nfl-preseason-rankings-methodology/",
+   "kind": "discovered-url",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "pricing/research subpath; confirm before build"
+  },
+  {
+   "target": "https://betql.co/pricing/annual",
+   "kind": "discovered-url",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "VERIFY",
+   "why": "pricing/research subpath; confirm before build"
+  },
+  {
+   "target": "https://draftwizard.fantasypros.com/football/draft-assistant/",
+   "kind": "discovered-url",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "tool/calculator subpath; confirm formula + citation"
+  },
+  {
+   "target": "https://footballcsv.github.io/",
+   "kind": "discovered-url",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "VERIFY",
+   "why": "pricing/research subpath; confirm before build"
+  },
+  {
+   "target": "https://github.com/topics/pydfs-lineup-optimizer",
+   "kind": "discovered-topic",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "VERIFY",
+   "why": "topic page; enumerate concrete repos before build"
+  },
+  {
+   "target": "https://github.com/topics/sportsdataverse",
+   "kind": "discovered-topic",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "VERIFY",
+   "why": "topic page; enumerate concrete repos before build"
+  },
+  {
+   "target": "https://help.yahoo.com/kb/fantasy-death-leagues-overview-sln37116.html",
+   "kind": "discovered-url",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "tool/calculator subpath; confirm formula + citation"
+  },
+  {
+   "target": "https://openmundi.github.io/",
+   "kind": "discovered-url",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "VERIFY",
+   "why": "pricing/research subpath; confirm before build"
+  },
+  {
+   "target": "https://pick6.draftkings.com/",
+   "kind": "discovered-url",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "tool/calculator subpath; confirm formula + citation"
+  },
+  {
+   "target": "https://poolgenius.teamrankings.com/",
+   "kind": "discovered-url",
+   "sources": [
+    "f1"
+   ],
+   "disposition": "VERIFY",
+   "why": "pricing/research subpath; confirm before build"
+  },
+  {
+   "target": "https://support.espn.com/hc/en-us/articles/115003847231",
+   "kind": "discovered-url",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "tool/calculator subpath; confirm formula + citation"
+  },
+  {
+   "target": "https://support.nfl.com/hc/en-us/articles/35869720023060-League-Settings",
+   "kind": "discovered-url",
+   "sources": [
+    "f0"
+   ],
+   "disposition": "VERIFY",
+   "why": "tool/calculator subpath; confirm formula + citation"
+  }
+ ],
+ "counts": {
+  "total": 105,
+  "by_disposition": {
+   "VERIFY": 56,
+   "WONT-DO": 31,
+   "BUILD": 18
+  },
+  "unique_domains": 66,
+  "unique_repos": 26,
+  "discovered_unique": 58
+ }
+}
