@@ -27,3 +27,14 @@ contest-vs-field payout simulation, multi-sport slates, bankroll tracking,
 best-ball explorer, post-lock sim dashboard, live ownership, pick'em
 (PrizePicks/Underdog) optimizers — none of which GSE ships. Vendor claims are
 unverified marketing; verify before building against them.
+
+## wave3-prop-firms-editorial-2026-09-12.md
+Deep brief of the remaining 54 entities in wave3-dfs-optimizer-2026-09-12.json:
+40 prop-firm rows deduped to ~25 unique firms (FTMO x5, FundedNext x4,
+Tradeify x3...), Trustpilot leaderboard, thin economics (only 4 firms priced;
+payout speeds for 4), constraints matrix, PropScorer analyst takes, platform
+aggregate (MT5/cTrader lead), HQ geography, 8 methodology comparison, top-pick
+consensus (FTMO 6, Tradeify/FundedNext 4), and a DailyOverlay graded-experts
+spotlight — the most GSE-actionable entity (external benchmark + leaderboard
+mechanic). Zero affiliate mentions in source: do not brief affiliate economics
+from this file. Re-extraction targets listed in section 11/12.
