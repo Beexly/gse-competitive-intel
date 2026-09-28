@@ -1,0 +1,180 @@
+{
+ "count": 25,
+ "build_items": [
+  {
+   "id": "gsn-01",
+   "module": "capture",
+   "item": "Multi-input capture: phone, flatbed/autofeed scanner, cert lookup, batch upload, hardware-ingestion events; standardized front/back image capture.",
+   "source": "gsn_cards_product_blueprint.integrated_tech_stack",
+   "citation": "https://www.carddealerpro.com/"
+  },
+  {
+   "id": "gsn-02",
+   "module": "inventory",
+   "item": "Canonical inventory control plane: immutable card identity, variant/parallel, condition, grade/cert, quantity, location, cost basis, channel-SKU mappings; adapter-based sync for eBay/Shopify/TCGplayer/Whatnot/Cardmarket/POS.",
+   "source": "gsn_cards_product_blueprint.integrated_tech_stack",
+   "citation": "https://www.tcgautomate.com/"
+  },
+  {
+   "id": "gsn-03",
+   "module": "vision",
+   "item": "Explainable CV decision layer: card localization, front/back + type recognition, identity candidates, image-quality gate, centering/corners/edges/surface, autograph and counterfeit-risk outputs (pre-grade guidance only).",
+   "source": "gsn_cards_product_blueprint.integrated_tech_stack",
+   "citation": "https://www.ximilar.com/ai-card-grading-automate-sports-cards-pre-grading/"
+  },
+  {
+   "id": "gsn-04",
+   "module": "evidence",
+   "item": "Evidence/report layer: original + rectified images, defect coordinates, subgrades, confidence, model version, human corrections, signed/shareable report.",
+   "source": "gsn_cards_product_blueprint.integrated_tech_stack",
+   "citation": "https://taggrading.com/"
+  },
+  {
+   "id": "gsn-05",
+   "module": "pricing",
+   "item": "Provenance-aware comp service: retain source marketplace, sale timestamp, grade/raw state, fees/shipping normalization, confidence and uncertainty — not a single opaque average.",
+   "source": "gsn_cards_product_blueprint.integrated_tech_stack",
+   "citation": "https://www.cardladder.com/"
+  },
+  {
+   "id": "gsn-06",
+   "module": "rules",
+   "item": "Rules/safety engine: seller templates, grade/sport/set/player/value conditions, margins, floors, rounding, approval thresholds; full change log + replay.",
+   "source": "gsn_cards_product_blueprint.integrated_tech_stack",
+   "citation": "https://storepass.co/"
+  },
+  {
+   "id": "gsn-07",
+   "module": "ops",
+   "item": "Operational modules: buylist/trade-in, card-show POS with offline queue, consignment intake, vault/fulfillment handoff, store credit, portfolio + set-completion views.",
+   "source": "gsn_cards_product_blueprint.integrated_tech_stack",
+   "citation": "https://www.tcgsync.com/"
+  },
+  {
+   "id": "gsn-08",
+   "module": "migration",
+   "item": "Migration/export contract: versioned CSV/JSON mappings, validation preview, byte-stable exports, reversible imports, dead-letter/error review.",
+   "source": "gsn_cards_product_blueprint.integrated_tech_stack",
+   "citation": "https://github.com/nahar122/carddealerpro_export_tool"
+  },
+  {
+   "id": "gsn-09",
+   "module": "py-base",
+   "item": "Python 3.10+ packaging with venv/pip install, CLI and web-server execution pattern.",
+   "source": "gsn_cards_product_blueprint.advanced_python_modules",
+   "citation": "https://github.com/aahnik/tgcf"
+  },
+  {
+   "id": "gsn-10",
+   "module": "py-image",
+   "item": "Pillow for image handling; requests for HTTP integration.",
+   "source": "gsn_cards_product_blueprint.advanced_python_modules",
+   "citation": "https://github.com/aahnik/tgcf"
+  },
+  {
+   "id": "gsn-11",
+   "module": "py-async",
+   "item": "Async external-service client pattern (reference: Telethon session automation) — architectural reference only, not a card dependency.",
+   "source": "gsn_cards_product_blueprint.advanced_python_modules",
+   "citation": "https://github.com/SlavikMIPT/tgcloud"
+  },
+  {
+   "id": "gsn-12",
+   "module": "py-media",
+   "item": "ffmpeg + tesseract-ocr system tools for optional media/OCR processing.",
+   "source": "gsn_cards_product_blueprint.advanced_python_modules",
+   "citation": "https://github.com/aahnik/tgcf"
+  },
+  {
+   "id": "gsn-13",
+   "module": "py-desktop",
+   "item": "tkinter/tkinterdnd2 drag-and-drop local CSV utility + PyInstaller self-contained desktop binary; Python/Go dual-implementation migration-tool pattern with golden CSV fixtures.",
+   "source": "gsn_cards_product_blueprint.advanced_python_modules",
+   "citation": "https://github.com/nahar122/carddealerpro_export_tool"
+  },
+  {
+   "id": "gsn-14",
+   "module": "agent-graph",
+   "item": "Guarded agent graph: intake/vision proposes identity+confidence; deterministic catalog resolver validates set/number; condition agent emits evidence-backed attributes (never official grades); pricing agent uses licensed sources + timestamp/sample/provenance; listing agent drafts title/fields; human approval gates publish/payment/refunds/destructive changes.",
+   "source": "gsn_cards_master_implementation_plan.ai_agent_and_automation_strategy",
+   "citation": "extract-data-2026-08-31.json"
+  },
+  {
+   "id": "gsn-15",
+   "module": "agent-patterns",
+   "item": "Borrow routing/evidence patterns (reverse-skill), orchestration (Ruflo/LangGraph-style), browser automation (Nanobrowser/Cline-style), existing CLIP+FAISS pipeline.",
+   "source": "gsn_cards_master_implementation_plan.ai_agent_and_automation_strategy",
+   "citation": "extract-data-2026-08-31.json"
+  },
+  {
+   "id": "gsn-16",
+   "module": "datastore",
+   "item": "Postgres as system of record with immutable provenance/event tables + pgvector for image/text embeddings; optional Neo4j/Graphiti-style temporal graph for Card-Set-Print-Variant-Grade-PriceObservation-Listing-Seller-Order.",
+   "source": "gsn_cards_master_implementation_plan.knowledge_graph_and_db_infrastructure",
+   "citation": "extract-data-2026-08-31.json"
+  },
+  {
+   "id": "gsn-17",
+   "module": "data-fields",
+   "item": "Store canonical card IDs, image hashes, embedding model/version, OCR/vision evidence, source URL, observed_at, currency, condition taxonomy, confidence; object storage for images, queue workers, idempotent upserts.",
+   "source": "gsn_cards_master_implementation_plan.knowledge_graph_and_db_infrastructure",
+   "citation": "extract-data-2026-08-31.json"
+  },
+  {
+   "id": "gsn-18",
+   "module": "payments",
+   "item": "Stripe Connect-style seller onboarding, PaymentIntent/checkout, webhook-driven order state, escrow/hold policy, platform fee ledger, payout reconciliation, refund/dispute state machine.",
+   "source": "gsn_cards_master_implementation_plan.payment_and_shipping_workflow_logic",
+   "citation": "extract-data-2026-08-31.json"
+  },
+  {
+   "id": "gsn-19",
+   "module": "shipping",
+   "item": "Shippo/EasyPost-like rate/label/tracking adapters; address validation, package dimensions, insurance option, scan events, seller handling SLA. Licensed APIs + explicit user authorization only.",
+   "source": "gsn_cards_master_implementation_plan.payment_and_shipping_workflow_logic",
+   "citation": "extract-data-2026-08-31.json"
+  },
+  {
+   "id": "gsn-20",
+   "module": "collx-parity",
+   "item": "Match CollX baseline: photo capture -> recognition against card DB -> collection/portfolio -> marketplace/community (Buy Now, offers/counteroffers, Deals, messaging, tracking, refund flows); real-time collection values; Easy Price bulk-setting; graded-card detection support.",
+   "source": "collx_reverse_engineered_blueprint",
+   "citation": "https://www.collx.app/"
+  },
+  {
+   "id": "gsn-21",
+   "module": "collx-gaps",
+   "item": "Beat CollX's opaque single-average pricing with explicit freshness/sample counts; cross-TCG canonical graph; batch intake; condition-photo guidance; open export/API; seller automation with audit logs; calibrated confidence + human review.",
+   "source": "gsn_cards_master_implementation_plan.competitive_edge_vs_collx",
+   "citation": "extract-data-2026-08-31.json"
+  },
+  {
+   "id": "gsn-22",
+   "module": "moat-evidence",
+   "item": "Every match yields candidate identities, field-level confidence, source images, human correction trail; every price carries comp provenance/time/normalization/fees/uncertainty; AI condition output is pre-grade/risk guidance with quality gates + escalation.",
+   "source": "gsn_cards_product_blueprint.competitive_advantages",
+   "citation": "https://taggrading.com/; https://www.cardladder.com/"
+  },
+  {
+   "id": "gsn-23",
+   "module": "moat-sync",
+   "item": "Every marketplace write idempotent, replayable, visible in reconciliation ledger; outlier price changes + low-confidence identities go through approval workflows, never silent automation.",
+   "source": "gsn_cards_product_blueprint.competitive_advantages",
+   "citation": "https://www.tcgautomate.com/; https://storepass.co/"
+  },
+  {
+   "id": "gsn-24",
+   "module": "moat-graph",
+   "item": "One graph joins collector portfolio, dealer inventory, show POS, buylist, consignment, vault/fulfillment, set completion; versioned imports/exports so users can leave without lock-in.",
+   "source": "gsn_cards_product_blueprint.competitive_advantages",
+   "citation": "https://www.tcgsync.com/; https://www.comc.com/"
+  },
+  {
+   "id": "gsn-25",
+   "module": "moat-proof",
+   "item": "Benchmark accuracy/scale/AI claims publicly per game + image condition; do not assert test sets, calibration, model architecture, OAuth scopes, rate limits, or failure behavior not disclosed by sources.",
+   "source": "gsn_cards_product_blueprint.competitive_advantages",
+   "citation": "https://www.ximilar.com/ai-card-grading-automate-sports-cards-pre-grading/"
+  }
+ ]
+}

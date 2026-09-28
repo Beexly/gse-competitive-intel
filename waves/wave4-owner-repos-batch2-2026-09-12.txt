@@ -1,0 +1,91 @@
+Wave 4 — second owner-supplied repo batch (2026-09-12, pasted in-session).
+Verbatim capture of the four pasted lists, in order. Prose beyond the lists is
+the owner's own wording and is preserved unedited.
+
+# === paste #25 — ML / optimization library stack ===
+lightgbm/lightgbm — https://github.com/microsoft/LightGBM
+catboost/catboost — https://github.com/catboost/catboost
+xgboost/xgboost — https://github.com/dmlc/xgboost
+optuna/optuna — https://github.com/optuna/optuna
+ray-project/ray — https://github.com/ray-project/ray
+dask/dask — https://github.com/dask/dask
+pola-rs/polars — https://github.com/pola-rs/polars
+pandas-dev/pandas — https://github.com/pandas-dev/pandas
+statsmodels/statsmodels — https://github.com/statsmodels/statsmodels
+prophet/prophet — https://github.com/facebook/prophet
+Pyomo/pyomo — https://github.com/Pyomo/pyomo
+google/or-tools — https://github.com/google/or-tools
+scipy/scipy — https://github.com/scipy/scipy
+
+# === paste #26 — Data-quality and MLOps stack (owner supplied a Why for each) ===
+dbt-labs/dbt-core
+https://github.com/dbt-labs/dbt-core
+Why: deterministic transformation/testing patterns for derived feature tables and historical truth datasets.
+
+kedro-org/kedro
+https://github.com/kedro-org/kedro
+Why: clean modular ML/data pipeline architecture—very relevant to your multi-package repo boundaries.
+
+mlflow/mlflow
+https://github.com/mlflow/mlflow
+Why: experiment tracking/model comparison discipline for your “model frozen, honesty first” operating style.
+
+NannyML/nannyml
+https://github.com/NannyML/nannyml
+Why: post-deploy model performance estimation/monitoring when labels settle later (great fit for sports pick settlement lag).
+
+unionai-oss/pandera
+https://github.com/unionai-oss/pandera
+Why: dataframe-level schema/type validations for your ingestion and feature-store handoffs.
+
+iterative/dvc
+https://github.com/iterative/dvc
+Why: dataset/version lineage for reproducible historical backtests and factor snapshots.
+
+PrefectHQ/prefect
+https://github.com/PrefectHQ/prefect
+Why: modern workflow reliability patterns (state/retries/observability) you can borrow for cron route hardening.
+
+# === paste #27 — Sport repo list A ===
+https://github.com/DimaKudosh/pydfs-lineup-optimizer
+https://github.com/BenBrostoff/draftfast
+https://github.com/jaebradley/draftkings_client
+https://github.com/yzRobo/draftkings_api_explorer
+https://github.com/wbp318/cfb_2026
+https://github.com/adam-jake-wiggins/nfl-dfs-pipeline
+https://github.com/noahhtylerr/PGA-Forecasting-Model
+https://github.com/t-pegors/wnba-fantasy-mlops
+https://github.com/CrummyPicks/nascar-dfs-hub
+https://github.com/nukesim/nuke-dfs-hub
+
+# === paste #28 — Sport repo list B ===
+https://github.com/DimaKudosh/pydfs-lineup-optimizer
+https://github.com/BenBrostoff/draftfast
+https://github.com/jaebradley/draftkings_client
+https://github.com/yzRobo/draftkings_api_explorer
+https://github.com/howrealizdat/dfs-lineup-optimizer
+https://github.com/emilyk12345/linear-optimizer
+https://github.com/adam-jake-wiggins/nfl-dfs-pipeline
+https://github.com/t-pegors/wnba-fantasy-mlops
+https://github.com/atlantahouseplants/MLBDFSLineupOptimizer
+https://github.com/rjrice1990/nfl-single-game-optimizer
+https://github.com/n-roth12/DFSLineupOptimizer
+https://github.com/CrummyPicks/nascar-dfs-hub
+https://github.com/nukesim/nuke-dfs-hub
+https://github.com/925Sports/mlb-prop-optimizer
+https://github.com/Bryancruzcb/gridiron-lab
+https://github.com/Davidebri1/fantasy-grinder-dfs
+https://github.com/eharig09/mlb_dfs_scouting_reports
+https://github.com/noahhtylerr/PGA-Forecasting-Model
+https://github.com/silverreyes/GB-Golf-Optimizer
+https://github.com/wbp318/cfb_2026
+https://github.com/sjhouston23/oddswrap
+https://github.com/ANickFlower/nba-props-app
+https://github.com/agad495/DKscraPy
+https://github.com/kyle1/draftkings-api
+https://github.com/vinnietran/dklive-scraper
+https://github.com/banant20/bet-odds-aggregator
+https://github.com/sportsdataverse/sportsdataverse-py
+https://github.com/nflverse/nflverse-data
+https://github.com/jldbc/pybaseball
+https://github.com/google/or-tools

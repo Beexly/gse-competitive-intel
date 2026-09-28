@@ -1,0 +1,106 @@
+{
+ "rows": [
+  {
+   "domain": "oddsjam.com",
+   "endpoint": "https://oddsjam.com/api/build-time",
+   "citation": "https://oddsjam.com/api/build-time",
+   "status": "CONFIRMED public JSON route",
+   "source_file": "f3(+f4 dupe)"
+  },
+  {
+   "domain": "oddsjam.com",
+   "endpoint": "https://oddsjam.com/api/backend/sportsbooks?state=NJ",
+   "citation": "https://oddsjam.com/api/backend/sportsbooks?state=NJ",
+   "status": "CONFIRMED public JSON route",
+   "source_file": "f3(+f4 dupe)"
+  },
+  {
+   "domain": "oddsjam.com",
+   "endpoint": "https://oddsjam.com/api/backend/detect_state",
+   "citation": "https://oddsjam.com/api/backend/detect_state",
+   "status": "CONFIRMED public JSON route",
+   "source_file": "f3(+f4 dupe)"
+  },
+  {
+   "domain": "oddsjam.com",
+   "endpoint": "https://oddsjam.com/api/backend/auth/user",
+   "citation": "https://oddsjam.com/api/backend/auth/user",
+   "status": "CONFIRMED public JSON route",
+   "source_file": "f3(+f4 dupe)"
+  },
+  {
+   "domain": "oddsjam.com",
+   "endpoint": "https://oddsjam.com/api/backend/learncenter?categoryName=Updates&first=1",
+   "citation": "https://oddsjam.com/",
+   "status": "CONFIRMED public JSON route",
+   "source_file": "f3(+f4 dupe)"
+  },
+  {
+   "domain": "oddsjam.com",
+   "endpoint": "https://oddsjam.com/api/backend/promotions?state=NJ",
+   "citation": "https://oddsjam.com/",
+   "status": "CONFIRMED public JSON route",
+   "source_file": "f3(+f4 dupe)"
+  },
+  {
+   "domain": "oddsjam.com",
+   "endpoint": "POST https://oddsjam.com/api/backend/e",
+   "citation": "https://oddsjam.com/_next/static/chunks/0c3bzi_hnpi~6.js",
+   "status": "CONFIRMED public JSON route",
+   "source_file": "f3(+f4 dupe)"
+  },
+  {
+   "domain": "oddsjam.com",
+   "endpoint": "POST https://oddsjam.com/api/backend/user/increment-one-click-bet-count",
+   "citation": "https://oddsjam.com/_next/static/chunks/0c3bzi_hnpi~6.js",
+   "status": "CONFIRMED public JSON route",
+   "source_file": "f3(+f4 dupe)"
+  },
+  {
+   "domain": "oddsjam.com",
+   "endpoint": "GET /api/build-time -> {buildTime}",
+   "citation": "https://oddsjam.com/api/build-time",
+   "status": "CONFIRMED sample response",
+   "source_file": "f3(+f4 dupe)"
+  },
+  {
+   "domain": "oddsjam.com",
+   "endpoint": "/openapi.json, /swagger.json",
+   "citation": "https://oddsjam.com/openapi.json",
+   "status": "NOT CONFIRMED (returns HTML shell)",
+   "source_file": "f3(+f4 dupe)"
+  },
+  {
+   "domain": "oddsjam.com",
+   "endpoint": "/graphql + api-dev GraphQL URI in bundle",
+   "citation": "https://oddsjam.com/_next/static/chunks/0c3bzi_hnpi~6.js",
+   "status": "NOT CONFIRMED (403, no introspection)",
+   "source_file": "f3(+f4 dupe)"
+  },
+  {
+   "domain": "oddsjam.com",
+   "endpoint": "SharpSports https://api.sharpsports.io/v1/context (in homepage JS config)",
+   "citation": "https://oddsjam.com/_next/static/chunks/0c3bzi_hnpi~6.js",
+   "status": "UNLABELED supplier; VERIFY",
+   "source_file": "f3(+f4 dupe)"
+  },
+  {
+   "domain": "30x f2 domains (fantasylabs..betql)",
+   "endpoint": "(none exposed)",
+   "citation": "f2 api_intelligence",
+   "status": "NOT CONFIRMED endpoints=[] schema=NOT CONFIRMED (30/30)",
+   "source_file": "f2"
+  },
+  {
+   "domain": "50x f0 + 21x f1 domains",
+   "endpoint": "(field absent)",
+   "citation": "f0/f1 schema has no api_intelligence key",
+   "status": "NOT COLLECTED; re-extract",
+   "source_file": "f0/f1"
+  }
+ ],
+ "counts": {
+  "total_rows": 14,
+  "confirmed_endpoints": 8
+ }
+}

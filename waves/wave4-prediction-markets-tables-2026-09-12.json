@@ -1,0 +1,1137 @@
+{
+ "per_file_entities": {
+  "base_top_keys": 14,
+  "base_citations": 27,
+  "f1_top_keys": 13,
+  "f1_crawler_logs": 46,
+  "f1_depth_charts": 2,
+  "f1_kalshi_markets": 1,
+  "f1_prediction_markets_coverage": 5,
+  "f1_closing_lines_scrapers": 3,
+  "f1_sportsbook_props_schemas": 4,
+  "f1_nflverse_catalog": 1,
+  "f1_competitor_methodologies": 5,
+  "f1_academic_research_inversion": 5,
+  "f3_endpoints": 13,
+  "f3_field_names": 10,
+  "f3_books": 2,
+  "f3_market_keys": 6,
+  "f3_known_404s": 0,
+  "f3_raw_quotes": 4,
+  "f4_sources": 46,
+  "f6_manifest": 18,
+  "f6_identity_join": 0,
+  "f6_availability": 1,
+  "f6_independent": 9,
+  "f6_tracking": 2,
+  "f6_coverage": 4,
+  "f6_failures": 7,
+  "f7_manifest": 53,
+  "f7_pbp": 12,
+  "f7_metrics": 16,
+  "f7_identity": 8,
+  "f7_availability": 5,
+  "f7_independent": 7,
+  "f8_manifest": 12,
+  "f8_identity": 40,
+  "f8_independent": 9,
+  "f8_pbp": 25,
+  "f8_metrics": 5,
+  "f2_raw_responses": 38,
+  "f2_crawl_logs": 5,
+  "f2_olympus_perf": 542,
+  "f2_nflverse_assets": 136,
+  "f5_raw": 19,
+  "f5_manifest": 19,
+  "f5_norm_rows_total": 5
+ },
+ "source_verdicts": {
+  "usable": 151,
+  "dead": 25,
+  "auth-walled": 25
+ },
+ "failure_classes": {
+  "auth-walled:api-key": 1,
+  "dead:404-log": 5,
+  "dead:404-body-in-raw": 1,
+  "unconfirmed-source-url": 24,
+  "blocked:interstitial": 3,
+  "empty-render:no-rows": 4
+ },
+ "identity_join": {
+  "rows_per_file": {
+   "f6": 0,
+   "f7": 8,
+   "f8": 40
+  },
+  "manifest_urls_total_f678": 83,
+  "join_rows_total": 48,
+  "coverage_fraction": 0.5783
+ },
+ "kalshi_404s": [
+  "https://api.elections.kalshi.com/trade-api/v2/series/KXMLB/markets",
+  "https://api.elections.kalshi.com/trade-api/v2/series/KXNBA/markets",
+  "https://api.elections.kalshi.com/trade-api/v2/series/KXNFL/markets",
+  "https://docs.kalshi.com/api-reference/market/get-candlesticks"
+ ],
+ "kalshi_404_count_f2_logs": 5,
+ "f2_404_urls": [
+  "https://api.elections.kalshi.com/trade-api/v2/series/KXNFL/markets",
+  "https://api.elections.kalshi.com/trade-api/v2/series/KXNBA/markets",
+  "https://api.elections.kalshi.com/trade-api/v2/series/KXMLB/markets",
+  "https://www.pro-football-reference.com/teams/kc/2024_injuries.htm",
+  "https://www.pro-football-reference.com/teams/sf/2024_injuries.htm"
+ ],
+ "f2_detail": {
+  "logs": 5,
+  "log_status": {
+   "404": 5
+  },
+  "n_404_urls": 5,
+  "raw_responses": 38,
+  "raw_unconfirmed_source": 24,
+  "raw_404_body": 1,
+  "olympus_performance_rows": 542,
+  "perf_league": {
+   "CBB": 35,
+   "CS2": 35,
+   "ESPORTS": 24,
+   "FIBAW": 19,
+   "GOLF": 35,
+   "LOL": 35,
+   "MLB": 39,
+   "NBA": 35,
+   "NFL": 35,
+   "NHL": 35,
+   "OLYMPIC": 19,
+   "SOCCER": 39,
+   "TENNIS": 39,
+   "UFC": 24,
+   "WBC": 19,
+   "WC": 19,
+   "WNBA": 32,
+   "WORLD_CUP": 24
+  },
+  "perf_tier": {
+   "all": 198,
+   "premium": 126,
+   "premium_ex_oracle": 70,
+   "oracle": 28,
+   "free": 120
+  },
+  "perf_conf": {
+   "ELITE": 57,
+   "FADE": 42,
+   "FIRE": 39,
+   "HIGH": 57,
+   "LEAN": 33,
+   "LOW": 33,
+   "MEDIUM": 57,
+   "MODERATE": 39,
+   "SOLID": 57,
+   "STANDARD": 64,
+   "STRONG": 64
+  },
+  "llm_streams": 4,
+  "history_pick_field_schema_keys": [
+   "date",
+   "league",
+   "matchup",
+   "market",
+   "pick",
+   "odds",
+   "units",
+   "result",
+   "units_won",
+   "tier"
+  ],
+  "history_first_100_picks_len": 100,
+  "track_headers": 17,
+  "track_first_50_rows": 50,
+  "openapi_paths": [
+   "/webmcp/api/free-picks",
+   "/webmcp/api/performance",
+   "/webmcp/api/history",
+   "/webmcp/api/schedule/nba/{date}",
+   "/webmcp/api/schedule/cbb/{date}",
+   "/webmcp/api/schedule/nhl/{date}",
+   "/webmcp/api/teams/nba/{team}",
+   "/webmcp/api/teams/cbb",
+   "/webmcp/api/teams/nhl/{date}",
+   "/webmcp/api/teams/nfl"
+  ],
+  "openapi_methods": 17,
+  "openapi_schemas": [
+   "PerformanceTier"
+  ],
+  "poly_sports_market_token": "NOT CONFIRMED",
+  "poly_sports_market_token_citation": "https://gamma-api.polymarket.com/markets?active=true&closed=false&limit=100",
+  "poly_price_history": [],
+  "nflverse_release_tags": [
+   "injuries",
+   "depth_charts",
+   "snap_counts",
+   "nextgen_stats",
+   "players",
+   "rosters",
+   "pbp"
+  ],
+  "nflverse_assets_total": 136,
+  "football_rows": 3,
+  "football_blocked": {
+   "True": 3
+  },
+  "football_urls": [
+   "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+   "https://www.football-data.co.uk/mmz4281/2425/E1.csv",
+   "https://www.football-data.co.uk/mmz4281/2425/SP1.csv"
+  ],
+  "depth_charts": {
+   "OurLads": 5
+  },
+  "depth_teams": [
+   "KC",
+   "PHI",
+   "SF",
+   "DAL",
+   "BAL"
+  ],
+  "depth_players_total": 423,
+  "competitor_n": 5,
+  "competitor_domains": [
+   "rithmm.com",
+   "rithmm.com",
+   "unabated.com",
+   "unabated.com",
+   "actionnetwork.com"
+  ],
+  "research_n": 2,
+  "research_ids": [
+   "2406.04068",
+   "2205.11454"
+  ]
+ },
+ "f2_raw_paths_sample": [
+  "raw/2026-09-11c/actionnetwork-faq.raw",
+  "raw/2026-09-11c/arxiv-2205-11454.raw",
+  "raw/2026-09-11c/arxiv-2406-04068.raw",
+  "raw/2026-09-11c/baseballr-releases.raw",
+  "raw/2026-09-11c/cfbfastR-releases.raw",
+  "raw/2026-09-11c/football-notes.raw",
+  "raw/2026-09-11c/hoopR-releases.raw",
+  "raw/2026-09-11c/kalshi-open-events-page2.raw",
+  "raw/2026-09-11c/kalshi-open-events.raw",
+  "raw/2026-09-11c/kalshi-open-markets-page2.raw",
+  "raw/2026-09-11c/kalshi-open-markets.raw",
+  "raw/2026-09-11c/nflverse-depth-charts.raw",
+  "raw/2026-09-11c/nflverse-injuries.raw",
+  "raw/2026-09-11c/nflverse-nextgen-stats.raw",
+  "raw/2026-09-11c/nflverse-pbp.raw",
+  "raw/2026-09-11c/nflverse-players.raw",
+  "raw/2026-09-11c/nflverse-rosters.raw",
+  "raw/2026-09-11c/nflverse-snap-counts.raw",
+  "raw/2026-09-11c/novig-markets.raw",
+  "raw/2026-09-11c/olympus-history.raw",
+  "raw/2026-09-11c/olympus-llms.raw",
+  "raw/2026-09-11c/olympus-openapi.raw",
+  "raw/2026-09-11c/olympus-performance-free.raw",
+  "raw/2026-09-11c/olympus-performance-premium.raw",
+  "raw/2026-09-11c/olympus-performance.raw",
+  "raw/2026-09-11c/olympus-track-record.raw",
+  "raw/2026-09-11c/ourlads-BAL.raw",
+  "raw/2026-09-11c/ourlads-DAL.raw",
+  "raw/2026-09-11c/ourlads-KC.raw",
+  "raw/2026-09-11c/ourlads-PHI.raw",
+  "raw/2026-09-11c/ourlads-SF.raw",
+  "raw/2026-09-11c/pfr-phi-injuries.raw",
+  "raw/2026-09-11c/polymarket-events.raw",
+  "raw/2026-09-11c/polymarket-markets.raw",
+  "raw/2026-09-11c/polymarket-sports.raw",
+  "raw/2026-09-11c/predictit-all.raw",
+  "raw/2026-09-11c/rithmm-about.raw",
+  "raw/2026-09-11c/rithmm-faq.raw"
+ ],
+ "f5_detail": {
+  "raw_ingestion": 19,
+  "manifest": 19,
+  "coverage": 3,
+  "failures": 4,
+  "manifest_tier": {
+   "public-primary": 12,
+   "odds": 5,
+   "reference": 2
+  },
+  "manifest_status": {
+   "success": 17,
+   "blocked": 1,
+   "failed": 1
+  },
+  "rows_written_total": 5,
+  "manifest_urls": [
+   "https://github.com/nflverse",
+   "https://github.com/nflverse/nflverse-data/releases",
+   "https://www.pro-football-reference.com/years/2025/passing.htm",
+   "https://www.pro-football-reference.com/years/2025/games.htm",
+   "https://www.pro-football-reference.com/boxscores/202509040phi.htm",
+   "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
+   "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-09-11",
+   "https://api.weather.gov/",
+   "https://archive-api.open-meteo.com/v1/archive?latitude=39.7392&longitude=-104.9903&start_date=2025-09-01&end_date=2025-09-01&hourly=temperature_2m,precipitation,wind_speed_10m",
+   "https://docs.sleeper.com/",
+   "https://api.sleeper.app/v1/players/nfl",
+   "https://www.oddsportal.com/american-football/usa/nfl-2025-2026/",
+   "https://www.oddsportal.com/american-football/usa/nfl-2025-2026/results/",
+   "https://www.sportsoddshistory.com/nfl-game-odds/",
+   "https://www.sportsoddshistory.com/nfl-game-season/",
+   "https://www.sportsoddshistory.com/nfl-main/?y=2025&sa=nfl&o=p6",
+   "https://historicdata.betfair.com/",
+   "https://www.retrosheet.org/",
+   "https://www.pinnacle.com/en/football/nfl/matchups/"
+  ],
+  "norm_player_game_stats": 4,
+  "norm_closing_line_archive": 1,
+  "norm_reference_prices": 0,
+  "coverage_tables": [
+   {
+    "table": "player_game_stats",
+    "rows_after": 4,
+    "null_rate": 0,
+    "earliest": "2025-09-04",
+    "latest": "2025-09-04",
+    "fresh": true
+   },
+   {
+    "table": "closing_line_archive",
+    "rows_after": 1,
+    "null_rate": 0,
+    "earliest": "2025-09-04",
+    "latest": "2025-09-04",
+    "fresh": true
+   },
+   {
+    "table": "reference_prices",
+    "rows_after": 0,
+    "null_rate": null,
+    "earliest": null,
+    "latest": null,
+    "fresh": true
+   }
+  ],
+  "failure_targets": [
+   {
+    "target": "player_game_stats 2025-26 full backfill",
+    "reason": "This run fetched nflverse repository/release pages and one PFR box score, but not a complete player-game or player-week data file; only four hand-normalized rows are supported. Production rows_before was not published by any permitted source.",
+    "impact": 1
+   },
+   {
+    "target": "closing-line archive beyond one game",
+    "reason": "OddsPortal fetched content exposed no quote rows, and SportsOddsHistory exposed a general statement that odds are closing odds but no game quote table in the fetched render. The one stored line is the PFR Vegas Line cross-referenced to that closing-odds statement; price is absent because it was not ",
+    "impact": 2
+   },
+   {
+    "target": "reference_prices Pinnacle and Betfair",
+    "reason": "Pinnacle matchup fetch returned no content; historicdata.betfair.com returned a Restricted page. No reference-price rows were written and no back/lay values were inferred.",
+    "impact": 3
+   },
+   {
+    "target": "production before-count and complete ten-row independent parser audit",
+    "reason": "Permitted sources do not expose Galaxy Sports Edge production row counts. The red-check recorded here is a ten-value manual check against the fetched PFR box-score page, not an independent database audit.",
+    "impact": 4
+   }
+  ],
+  "raw_urls": [
+   "https://github.com/nflverse",
+   "https://github.com/nflverse/nflverse-data/releases",
+   "https://www.pro-football-reference.com/years/2025/passing.htm",
+   "https://www.pro-football-reference.com/years/2025/games.htm",
+   "https://www.pro-football-reference.com/boxscores/202509040phi.htm",
+   "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
+   "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-09-11",
+   "https://api.weather.gov/",
+   "https://archive-api.open-meteo.com/v1/archive?latitude=39.7392&longitude=-104.9903&start_date=2025-09-01&end_date=2025-09-01&hourly=temperature_2m,precipitation,wind_speed_10m",
+   "https://docs.sleeper.com/",
+   "https://api.sleeper.app/v1/players/nfl",
+   "https://www.oddsportal.com/american-football/usa/nfl-2025-2026/",
+   "https://www.oddsportal.com/american-football/usa/nfl-2025-2026/results/",
+   "https://www.sportsoddshistory.com/nfl-game-odds/",
+   "https://www.sportsoddshistory.com/nfl-game-season/",
+   "https://www.sportsoddshistory.com/nfl-main/?y=2025&sa=nfl&o=p6",
+   "https://historicdata.betfair.com/",
+   "https://www.retrosheet.org/",
+   "https://www.pinnacle.com/en/football/nfl/matchups/"
+  ],
+  "raw_status": {
+   "200": 17,
+   "403": 1,
+   "0": 1
+  }
+ },
+ "nflverse": {
+  "f2_releases": [
+   "injuries",
+   "depth_charts",
+   "snap_counts",
+   "nextgen_stats",
+   "players",
+   "rosters",
+   "pbp"
+  ],
+  "f2_assets": 136,
+  "f5_norm_player_rows": 4,
+  "f5_norm_closing_rows": 1,
+  "f5_norm_reference_rows": 0,
+  "f5_manifest_urls": [
+   "https://github.com/nflverse",
+   "https://github.com/nflverse/nflverse-data/releases",
+   "https://www.pro-football-reference.com/years/2025/passing.htm",
+   "https://www.pro-football-reference.com/years/2025/games.htm",
+   "https://www.pro-football-reference.com/boxscores/202509040phi.htm",
+   "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
+   "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-09-11",
+   "https://api.weather.gov/",
+   "https://archive-api.open-meteo.com/v1/archive?latitude=39.7392&longitude=-104.9903&start_date=2025-09-01&end_date=2025-09-01&hourly=temperature_2m,precipitation,wind_speed_10m",
+   "https://docs.sleeper.com/",
+   "https://api.sleeper.app/v1/players/nfl",
+   "https://www.oddsportal.com/american-football/usa/nfl-2025-2026/",
+   "https://www.oddsportal.com/american-football/usa/nfl-2025-2026/results/",
+   "https://www.sportsoddshistory.com/nfl-game-odds/",
+   "https://www.sportsoddshistory.com/nfl-game-season/",
+   "https://www.sportsoddshistory.com/nfl-main/?y=2025&sa=nfl&o=p6",
+   "https://historicdata.betfair.com/",
+   "https://www.retrosheet.org/",
+   "https://www.pinnacle.com/en/football/nfl/matchups/"
+  ]
+ },
+ "small_file_notes": {
+  "base_url": "https://app.olympus-bets.com/methodology",
+  "base_status": 200,
+  "base_numbers": {
+   "track_record": "Olympus reports 2,619 resolved picks overall: 52.7% win rate, -9.57u and -0.3% ROI; free segment 1,776 picks, 52.9%, +19.40u, +1.0% ROI; premium 843 picks, 52.3%, -28.97u, -2.6% ROI.",
+   "track_record_citation": "https://app.olympus-bets.com/track_record",
+   "sample_sizes": "Olympus Kelly blend validation set: 6,101 games; minimum simulation: 10,000 iterations per scheduled game. PropLine example: 712,043 total graded across 4,120 events over 30 days. Dixon-Coles paper: 7,220 matches over 19 seasons.",
+   "sample_sizes_citation": "https://app.olympus-bets.com/methodology",
+   "clv_records": "NOT CONFIRMED as a published CLV record. The Dixon-Coles paper explicitly says a separate CLV statistic is not reported; its benchmark is the closing market.",
+   "clv_records_citation": "https://arxiv.org/abs/2608.11505",
+   "update_frequency": "PropLine advertises live updating every 60 seconds; nflfastR README says complete-season files are updated nightly during the season; ESPN/RotoWire injury endpoint/page update frequencies are NOT CONFIRMED on assigned sources.",
+   "update_frequency_citation": "https://prop-line.com"
+  },
+  "f1_log_status": {
+   "200": 35,
+   "404": 5,
+   "401": 2,
+   "403": 1,
+   "0": 3
+  },
+  "f1_olympia": [
+   {
+    "league": "CBB",
+    "wins": 232,
+    "losses": 191,
+    "pushes": 4,
+    "win_rate": 54.8,
+    "units_won": 21.87,
+    "units_wagered": 549,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "CS2",
+    "wins": 16,
+    "losses": 29,
+    "pushes": 0,
+    "win_rate": 35.6,
+    "units_won": -3.36,
+    "units_wagered": 27,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "ESPORTS",
+    "wins": 13,
+    "losses": 6,
+    "pushes": 0,
+    "win_rate": 68.4,
+    "units_won": 6.02,
+    "units_wagered": 27,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "FIBAW",
+    "wins": 3,
+    "losses": 3,
+    "pushes": 0,
+    "win_rate": 50,
+    "units_won": 0.41,
+    "units_wagered": 3,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "GOLF",
+    "wins": 248,
+    "losses": 175,
+    "pushes": 43,
+    "win_rate": 58.6,
+    "units_won": 60.28,
+    "units_wagered": 581.4,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "LOL",
+    "wins": 40,
+    "losses": 32,
+    "pushes": 0,
+    "win_rate": 55.6,
+    "units_won": 5.53,
+    "units_wagered": 64,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "MLB",
+    "wins": 343,
+    "losses": 281,
+    "pushes": 15,
+    "win_rate": 55,
+    "units_won": 32.97,
+    "units_wagered": 597.4,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "NBA",
+    "wins": 156,
+    "losses": 162,
+    "pushes": 2,
+    "win_rate": 49.1,
+    "units_won": -33.38,
+    "units_wagered": 437.2,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "NFL",
+    "wins": 10,
+    "losses": 7,
+    "pushes": 0,
+    "win_rate": 58.8,
+    "units_won": 5.01,
+    "units_wagered": 41.2,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "NHL",
+    "wins": 84,
+    "losses": 78,
+    "pushes": 1,
+    "win_rate": 51.9,
+    "units_won": -22.87,
+    "units_wagered": 238.6,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "OLYMPIC",
+    "wins": 23,
+    "losses": 30,
+    "pushes": 3,
+    "win_rate": 43.4,
+    "units_won": -10.95,
+    "units_wagered": 60,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "SOCCER",
+    "wins": 65,
+    "losses": 86,
+    "pushes": 2,
+    "win_rate": 43,
+    "units_won": -30.25,
+    "units_wagered": 169.3,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "TENNIS",
+    "wins": 89,
+    "losses": 94,
+    "pushes": 1,
+    "win_rate": 48.6,
+    "units_won": -19.83,
+    "units_wagered": 191.5,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "UFC",
+    "wins": 0,
+    "losses": 2,
+    "pushes": 0,
+    "win_rate": 0,
+    "units_won": -3,
+    "units_wagered": 3,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "WBC",
+    "wins": 0,
+    "losses": 1,
+    "pushes": 0,
+    "win_rate": 0,
+    "units_won": -0.5,
+    "units_wagered": 0.5,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "WC",
+    "wins": 6,
+    "losses": 5,
+    "pushes": 0,
+    "win_rate": 54.5,
+    "units_won": 0.44,
+    "units_wagered": 5.5,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "WNBA",
+    "wins": 24,
+    "losses": 26,
+    "pushes": 1,
+    "win_rate": 48,
+    "units_won": -3.26,
+    "units_wagered": 35,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   },
+   {
+    "league": "WORLD_CUP",
+    "wins": 0,
+    "losses": 4,
+    "pushes": 0,
+    "win_rate": 0,
+    "units_won": -5,
+    "units_wagered": 5,
+    "source_citation": "https://app.olympus-bets.com/webmcp/api/performance"
+   }
+  ],
+  "f1_polymarket_token": "",
+  "f3_auth": [
+   true,
+   "API key; HTTP GET endpoints",
+   "https://api.sportsdata.io/v3/nfl/"
+  ],
+  "f3_pricing": null,
+  "f3_404s": null,
+  "f3_books": [
+   {
+    "value": "Sportsbook (included data table)",
+    "value_citation": "https://sportsdata.io/developers/api-documentation"
+   },
+   {
+    "value": "Sportsbook group parameter; example G1100",
+    "value_citation": "https://sportsdata.io/developers/api-documentation"
+   }
+  ],
+  "f3_closing_field": null,
+  "f3_hist": "No duration/depth stated. BettingMarket is described as full line movement intended for historical data; not up-to-the-second lines.",
+  "f4_status": {
+   "200": 46
+  },
+  "f4_auth": {
+   "true": 21,
+   "null": 22,
+   "false": 3
+  },
+  "f4_names": [
+   "The Odds API",
+   "Odds-API.io",
+   "Oddspapi",
+   "The Rundown",
+   "SportsDataIO",
+   "Propline",
+   "SportsAPI Pro",
+   "Sportsbook API (GitHub organization)",
+   "OpticOdds",
+   "Sportradar",
+   "Sportmonks",
+   "Goalserve",
+   "API-Sports",
+   "Genius Sports",
+   "Stats Perform",
+   "LSports",
+   "Enetpulse",
+   "FantasyData",
+   "Roanuz Cricket API",
+   "All Sports API",
+   "Data Sports Group API",
+   "iSports API",
+   "Lumify.io",
+   "Scorio.io",
+   "Betfair Historical Data",
+   "Betfair Developers",
+   "Smarkets",
+   "Matchbook",
+   "BETDAQ",
+   "Kalshi",
+   "Polymarket",
+   "PredictIt",
+   "Manifold",
+   "Limitless Exchange",
+   "ProphetX",
+   "Novig",
+   "SX Bet",
+   "0xArchive",
+   "Apify",
+   "oddsharvester (PyPI)",
+   "nhlscraper (CRAN)",
+   "wehoop (CRAN)",
+   "oddsapiR / The Odds API",
+   "nfl_data_py",
+   "cfbfastR / CollegeFootballData",
+   "hoopR / ESPN basketball event odds"
+  ],
+  "f6_manifest_status": {
+   "200": 15,
+   "404": 2,
+   "502": 1
+  },
+  "f6_extracted": {
+   "true": 10,
+   "false": 8
+  },
+  "f6_manifest_urls": [
+   "https://polymarket.com/",
+   "https://kalshi.com/",
+   "https://prosportstransactions.com/football/",
+   "https://www.nfl.com/transactions/",
+   "https://www.sportsinjurypredictor.com/",
+   "https://insideinjuries.com/",
+   "https://nextgenstats.nfl.com/",
+   "https://www.kaggle.com/competitions/nfl-big-data-bowl",
+   "https://query.wikidata.org/",
+   "https://cloud.google.com/bigquery/public-data",
+   "https://nextgenstats.nfl.com/glossary",
+   "https://nextgenstats.nfl.com/stats",
+   "https://nextgenstats.nfl.com/charts",
+   "https://prosportstransactions.com/football/Search/Search.php",
+   "https://insideinjuries.com/nfl/upcominggames",
+   "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+   "https://kalshi.com/markets/kxsb/super-bowl/kxsb-27",
+   "https://query.wikidata.org/sparql?query=SELECT%20%3Fp%20%3FpLabel%20WHERE%20%7B%20%3Fp%20wikibase%3ApropertyType%20wikibase%3AExternalId%20.%20%3Fp%20rdfs%3Alabel%20%3FpLabel%20.%20FILTER%28LANG%28%3FpLabel%29%3D%22en%22%29%20FILTER%28REGEX%28%3FpLabel%2C%22NFL%7CESPN%7CSleeper%7CPro%20Football%7CPFR%7CGSIS%7Cbasketball%7Cbaseball%7Chockey%22%2C%22i%22%29%29%20%7D%20ORDER%20BY%20%3FpLabel&format=html"
+  ],
+  "f6_independent": [
+   {
+    "market_source": "Polymarket",
+    "market_source_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "contract_name": "49ers moneyline",
+    "contract_name_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "price_current": 0.36,
+    "price_current_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "price_historical": [],
+    "is_independent_market": true,
+    "is_independent_market_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11"
+   },
+   {
+    "market_source": "Polymarket",
+    "market_source_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "contract_name": "Rams moneyline",
+    "contract_name_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "price_current": 0.65,
+    "price_current_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "price_historical": [],
+    "is_independent_market": true,
+    "is_independent_market_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11"
+   },
+   {
+    "market_source": "Polymarket",
+    "market_source_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "contract_name": "49ers +3.5",
+    "contract_name_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "price_current": 0.5,
+    "price_current_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "price_historical": [],
+    "is_independent_market": true,
+    "is_independent_market_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11"
+   },
+   {
+    "market_source": "Polymarket",
+    "market_source_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "contract_name": "Rams -3.5",
+    "contract_name_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "price_current": 0.51,
+    "price_current_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "price_historical": [],
+    "is_independent_market": true,
+    "is_independent_market_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11"
+   },
+   {
+    "market_source": "Polymarket",
+    "market_source_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "contract_name": "Over 47.5",
+    "contract_name_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "price_current": 0.52,
+    "price_current_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "price_historical": [],
+    "is_independent_market": true,
+    "is_independent_market_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11"
+   },
+   {
+    "market_source": "Polymarket",
+    "market_source_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "contract_name": "Under 47.5",
+    "contract_name_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "price_current": 0.49,
+    "price_current_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11",
+    "price_historical": [],
+    "is_independent_market": true,
+    "is_independent_market_citation": "https://polymarket.com/event/nfl-sf-la-2026-09-11"
+   },
+   {
+    "market_source": "Kalshi",
+    "market_source_citation": "https://kalshi.com/markets/kxsb/super-bowl/kxsb-27",
+    "contract_name": "LA Rams YES \u2014 2027 NFL Champion",
+    "contract_name_citation": "https://kalshi.com/markets/kxsb/super-bowl/kxsb-27",
+    "price_current": 0.15,
+    "price_current_citation": "https://kalshi.com/markets/kxsb/super-bowl/kxsb-27",
+    "price_historical": [],
+    "is_independent_market": true,
+    "is_independent_market_citation": "https://kalshi.com/markets/kxsb/super-bowl/kxsb-27"
+   },
+   {
+    "market_source": "Kalshi",
+    "market_source_citation": "https://kalshi.com/markets/kxsb/super-bowl/kxsb-27",
+    "contract_name": "BUF Bills YES \u2014 2027 NFL Champion",
+    "contract_name_citation": "https://kalshi.com/markets/kxsb/super-bowl/kxsb-27",
+    "price_current": 0.09,
+    "price_current_citation": "https://kalshi.com/markets/kxsb/super-bowl/kxsb-27",
+    "price_historical": [],
+    "is_independent_market": true,
+    "is_independent_market_citation": "https://kalshi.com/markets/kxsb/super-bowl/kxsb-27"
+   },
+   {
+    "market_source": "Kalshi",
+    "market_source_citation": "https://kalshi.com/markets/kxsb/super-bowl/kxsb-27",
+    "contract_name": "SF 49ers YES \u2014 2027 NFL Champion",
+    "contract_name_citation": "https://kalshi.com/markets/kxsb/super-bowl/kxsb-27",
+    "price_current": 0.08,
+    "price_current_citation": "https://kalshi.com/markets/kxsb/super-bowl/kxsb-27",
+    "price_historical": [],
+    "is_independent_market": true,
+    "is_independent_market_citation": "https://kalshi.com/markets/kxsb/super-bowl/kxsb-27"
+   }
+  ],
+  "f6_failures": [
+   {
+    "source": "Wikidata Query Service sports-ID property query",
+    "source_citation": "https://query.wikidata.org/sparql?query=SELECT%20%3Fp%20%3FpLabel%20WHERE%20%7B%20%3Fp%20wikibase%3ApropertyType%20wikibase%3AExternalId%20.%20%3Fp%20rdfs%3Alabel%20%3FpLabel%20.%20FILTER%28LANG%28%3FpLabel%29%3D%22en%22%29%20FILTER%28REGEX%28%3FpLabel%2C%22NFL%7CESPN%7CSleeper%7CPro%20Football%7CPFR%7CGSIS%7Cbasketball%7Cbaseball%7Chockey%22%2C%22i%22%29%29%20%7D%20ORDER%20BY%20%3FpLabel&format=html",
+    "reason": "HTTP 502 Bad Gateway; no query result was returned.",
+    "reason_citation": "https://query.wikidata.org/sparql?query=SELECT%20%3Fp%20%3FpLabel%20WHERE%20%7B%20%3Fp%20wikibase%3ApropertyType%20wikibase%3AExternalId%20.%20%3Fp%20rdfs%3Alabel%20%3FpLabel%20.%20FILTER%28LANG%28%3FpLabel%29%3D%22en%22%29%20FILTER%28REGEX%28%3FpLabel%2C%22NFL%7CESPN%7CSleeper%7CPro%20Football%7CPFR%7CGSIS%7Cbasketball%7Cbaseball%7Chockey%22%2C%22i%22%29%29%20%7D%20ORDER%20BY%20%3FpLabel&format=html",
+    "potential_value_loss": "No identity join rows or trimmed GSIS/PFR/ESPN/Sleeper and other external IDs could be proven.",
+    "potential_value_loss_citation": "https://query.wikidata.org/sparql?query=SELECT%20%3Fp%20%3FpLabel%20WHERE%20%7B%20%3Fp%20wikibase%3ApropertyType%20wikibase%3AExternalId%20.%20%3Fp%20rdfs%3Alabel%20%3FpLabel%20.%20FILTER%28LANG%28%3FpLabel%29%3D%22en%22%29%20FILTER%28REGEX%28%3FpLabel%2C%22NFL%7CESPN%7CSleeper%7CPro%20Football%7CPFR%7CGSIS%7Cbasketball%7Cbaseball%7Chockey%22%2C%22i%22%29%29%20%7D%20ORDER%20BY%20%3FpLabel&format=html",
+    "rank": 1,
+    "rank_citation": "https://query.wikidata.org/sparql?query=SELECT%20%3Fp%20%3FpLabel%20WHERE%20%7B%20%3Fp%20wikibase%3ApropertyType%20wikibase%3AExternalId%20.%20%3Fp%20rdfs%3Alabel%20%3FpLabel%20.%20FILTER%28LANG%28%3FpLabel%29%3D%22en%22%29%20FILTER%28REGEX%28%3FpLabel%2C%22NFL%7CESPN%7CSleeper%7CPro%20Football%7CPFR%7CGSIS%7Cbasketball%7Cbaseball%7Chockey%22%2C%22i%22%29%29%20%7D%20ORDER%20BY%20%3FpLabel&format=html"
+   },
+   {
+    "source": "NFL.com transactions",
+    "source_citation": "https://www.nfl.com/transactions/",
+    "reason": "HTTP 200 response was a navigation/game shell; no transaction records were extracted.",
+    "reason_citation": "https://www.nfl.com/transactions/",
+    "potential_value_loss": "NFL transaction and injury history, designations, body parts, and return-to-play evidence.",
+    "potential_value_loss_citation": "https://www.nfl.com/transactions/",
+    "rank": 2,
+    "rank_citation": "https://www.nfl.com/transactions/"
+   },
+   {
+    "source": "ProSportsTransactions football search",
+    "source_citation": "https://prosportstransactions.com/football/Search/Search.php",
+    "reason": "HTTP 200 response contained only the search form; no query was submitted and no result rows were present.",
+    "reason_citation": "https://prosportstransactions.com/football/Search/Search.php",
+    "potential_value_loss": "Historical football transactions, injuries, and return-to-play observations.",
+    "potential_value_loss_citation": "https://prosportstransactions.com/football/Search/Search.php",
+    "rank": 3,
+    "rank_citation": "https://prosportstransactions.com/football/Search/Search.php"
+   },
+   {
+    "source": "Sports Injury Predictor",
+    "source_citation": "https://www.sportsinjurypredictor.com/",
+    "reason": "HTTP 200 response was a reCAPTCHA/business-grant interstitial rather than the injury-risk dataset.",
+    "reason_citation": "https://www.sportsinjurypredictor.com/",
+    "potential_value_loss": "Injury risk grades and body-part history.",
+    "potential_value_loss_citation": "https://www.sportsinjurypredictor.com/",
+    "rank": 4,
+    "rank_citation": "https://www.sportsinjurypredictor.com/"
+   },
+   {
+    "source": "Inside Injuries injury detail data",
+    "source_citation": "https://insideinjuries.com/nfl/upcominggames",
+    "reason": "The fetched public page exposed team health scores and articles, but no player-level injury-risk-grade table or return-to-play field.",
+    "reason_citation": "https://insideinjuries.com/nfl/upcominggames",
+    "potential_value_loss": "Player injury risk grades and complete player-level availability archive.",
+    "potential_value_loss_citation": "https://insideinjuries.com/nfl/upcominggames",
+    "rank": 5,
+    "rank_citation": "https://insideinjuries.com/nfl/upcominggames"
+   },
+   {
+    "source": "Kaggle NFL Big Data Bowl",
+    "source_citation": "https://www.kaggle.com/competitions/nfl-big-data-bowl",
+    "reason": "HTTP 404: fetched page said the page could not be found.",
+    "reason_citation": "https://www.kaggle.com/competitions/nfl-big-data-bowl",
+    "potential_value_loss": "Big Data Bowl field inventory and game-coverage count.",
+    "potential_value_loss_citation": "https://www.kaggle.com/competitions/nfl-big-data-bowl",
+    "rank": 6,
+    "rank_citation": "https://www.kaggle.com/competitions/nfl-big-data-bowl"
+   },
+   {
+    "source": "Google Cloud BigQuery public data",
+    "source_citation": "https://cloud.google.com/bigquery/public-data",
+    "reason": "HTTP 404 content was returned for the requested path; no NFL tracking dataset metadata was extracted.",
+    "reason_citation": "https://cloud.google.com/bigquery/public-data",
+    "potential_value_loss": "Independent confirmation of public tracking datasets and coverage.",
+    "potential_value_loss_citation": "https://cloud.google.com/bigquery/public-data",
+    "rank": 7,
+    "rank_citation": "https://cloud.google.com/bigquery/public-data"
+   }
+  ],
+  "f7_manifest_status": {
+   "200": 52,
+   "404": 1
+  },
+  "f7_extracted": {
+   "true": 51,
+   "false": 2
+  },
+  "f7_identity": [
+   {
+    "sport": "NHL",
+    "source": "NHL Web API",
+    "source_id": "8476453",
+    "canonical_key": "nhl_player_id",
+    "name": "Nikita Kucherov",
+    "team_context": "TBL",
+    "citation": "https://api-web.nhle.com/v1/gamecenter/2023020001/play-by-play"
+   },
+   {
+    "sport": "NHL",
+    "source": "NHL Web API",
+    "source_id": "8474151",
+    "canonical_key": "nhl_player_id",
+    "name": "Ryan McDonagh",
+    "team_context": "NSH",
+    "citation": "https://api-web.nhle.com/v1/gamecenter/2023020001/play-by-play"
+   },
+   {
+    "sport": "NFL",
+    "source": "Kaggle NFL Big Data Bowl 2024",
+    "source_id": "gameId",
+    "canonical_key": "gameId",
+    "trimmed_id": "gameId",
+    "citation": "https://www.kaggle.com/competitions/nfl-big-data-bowl-2024/data"
+   },
+   {
+    "sport": "NFL",
+    "source": "Kaggle NFL Big Data Bowl 2024",
+    "source_id": "gameId+playId+nflId",
+    "canonical_key": "tracking_join",
+    "trimmed_id": "gameId|playId|nflId",
+    "citation": "https://www.kaggle.com/competitions/nfl-big-data-bowl-2024/data"
+   },
+   {
+    "sport": "NBA",
+    "source": "PBP Stats",
+    "source_id": "0022100902",
+    "canonical_key": "nba_game_id",
+    "trimmed_id": "0022100902",
+    "citation": "https://api.pbpstats.com/get-games/nba?Season=2021-22&SeasonType=Regular%20Season"
+   },
+   {
+    "sport": "NBA",
+    "source": "PBP Stats",
+    "source_id": "1629651",
+    "canonical_key": "nba_player_id",
+    "trimmed_id": "1629651",
+    "name": "Nic Claxton",
+    "citation": "https://api.pbpstats.com/get-game-stats?GameId=0022100001&Type=Player"
+   },
+   {
+    "sport": "MLB",
+    "source": "BALLDONTLIE",
+    "source_id": "58590",
+    "canonical_key": "mlb_game_id",
+    "trimmed_id": "58590",
+    "citation": "https://www.balldontlie.io/"
+   },
+   {
+    "sport": "Soccer",
+    "source": "FBref",
+    "source_id": "26a7f90c",
+    "canonical_key": "fbref_match_id",
+    "trimmed_id": "26a7f90c",
+    "citation": "https://fbref.com/en/matches/26a7f90c/Arsenal-Nottingham-Forest-August-12-2023-Premier-League"
+   }
+  ],
+  "f7_independent": [
+   {
+    "platform": "ProphetX",
+    "market_type": "sports exchange market listing",
+    "example": "New York Jets vs Tennessee Titans",
+    "market_count_displayed": 119,
+    "source": "https://www.prophetx.co/american-football/nfl/new-york-jets-vs-tennessee-titans-19465?currency=cash",
+    "citation": "https://www.prophetx.co/"
+   },
+   {
+    "platform": "Kalshi",
+    "market_type": "event contracts",
+    "example": "CPI in August",
+    "displayed_volume": "$503,157",
+    "source": "https://kalshi.com/",
+    "citation": "https://kalshi.com/"
+   },
+   {
+    "platform": "Smarkets",
+    "market_type": "sports exchange",
+    "sports_surfaces": [
+     "football",
+     "american football",
+     "baseball",
+     "basketball",
+     "ice hockey"
+    ],
+    "source": "https://smarkets.com/",
+    "citation": "https://smarkets.com/"
+   },
+   {
+    "platform": "Action Network",
+    "market_type": "odds comparison",
+    "source": "https://www.actionnetwork.com/odds",
+    "citation": "https://www.actionnetwork.com/"
+   },
+   {
+    "platform": "BetOnline",
+    "market_type": "sportsbook",
+    "source": "https://www.betonline.ag/",
+    "citation": "https://www.betonline.ag/"
+   },
+   {
+    "platform": "Polymarket",
+    "market_type": "prediction market",
+    "status": "view-only/trading blocked notice observed on fetched homepage",
+    "source": "https://polymarket.com/",
+    "citation": "https://polymarket.com/"
+   },
+   {
+    "platform": "PropSwap",
+    "market_type": "secondary market for sports bets",
+    "source": "https://www.propswap.com/",
+    "citation": "https://www.propswap.com/"
+   }
+  ],
+  "f8_manifest_status": {
+   "200": 12
+  },
+  "f8_extracted": {
+   "true": 12
+  },
+  "f8_identity_sample": [
+   {
+    "sport": "NFL",
+    "name": "Aaron Rodgers",
+    "gsis_id": "00-0023459",
+    "pfr_id": "RodgAa00",
+    "sleeper_id": "96",
+    "espn_id": "8439",
+    "source_citation": "https://nflverse.nflverse-data/releases/download/rosters/roster_2024.csv"
+   },
+   {
+    "sport": "NFL",
+    "name": "Marcedes Lewis",
+    "gsis_id": "00-0024243",
+    "pfr_id": "LewiMa00",
+    "sleeper_id": "111",
+    "espn_id": "9614",
+    "source_citation": "https://nflverse.nflverse-data/releases/download/rosters/roster_2024.csv"
+   },
+   {
+    "sport": "NFL",
+    "name": "Matt Ryan",
+    "gsis_id": "00-0026143",
+    "pfr_id": "RyanMa00",
+    "sleeper_id": "24",
+    "espn_id": "11237",
+    "source_citation": "https://nflverse.nflverse-data/releases/download/rosters/roster_2024.csv"
+   }
+  ],
+  "f8_independent": [
+   {
+    "platform": "Action Network",
+    "event_name": "Patriots vs Seahawks",
+    "market_type": "NFL spread",
+    "price": -110,
+    "odds": "+4.5 -110",
+    "timestamp": "2026-09-11T12:50:18.041Z",
+    "source_url": "https://www.actionnetwork.com/nfl-game/patriots-seahawks-score-odds-september-9-2026/290843"
+   },
+   {
+    "platform": "Action Network",
+    "event_name": "Patriots vs Seahawks",
+    "market_type": "NFL spread",
+    "price": -107,
+    "odds": "-4.5 -107",
+    "timestamp": "2026-09-11T12:50:18.042Z",
+    "source_url": "https://www.actionnetwork.com/nfl-game/patriots-seahawks-score-odds-september-9-2026/290843"
+   },
+   {
+    "platform": "Action Network",
+    "event_name": "49ers vs Rams",
+    "market_type": "NFL spread",
+    "price": -115,
+    "odds": "+2.5 -115",
+    "timestamp": "2026-09-11T12:50:18.043Z",
+    "source_url": "https://www.actionnetwork.com/nfl-game/49ers-rams-score-odds-september-10-2026/290802"
+   },
+   {
+    "platform": "Action Network",
+    "event_name": "49ers vs Rams",
+    "market_type": "NFL spread",
+    "price": -105,
+    "odds": "-2.5 -105",
+    "timestamp": "2026-09-11T12:50:18.044Z",
+    "source_url": "https://www.actionnetwork.com/nfl-game/49ers-rams-score-odds-september-10-2026/290802"
+   },
+   {
+    "platform": "Action Network",
+    "event_name": "Jets vs Titans",
+    "market_type": "NFL spread",
+    "price": -108,
+    "odds": "+1.5 -108",
+    "timestamp": "2026-09-11T12:50:18.045Z",
+    "source_url": "https://www.actionnetwork.com/nfl-game/jets-titans-score-odds-september-13-2026/290844"
+   },
+   {
+    "platform": "Action Network",
+    "event_name": "Jets vs Titans",
+    "market_type": "NFL spread",
+    "price": -112,
+    "odds": "-1.5 -112",
+    "timestamp": "2026-09-11T12:50:18.046Z",
+    "source_url": "https://www.actionnetwork.com/nfl-game/jets-titans-score-odds-september-13-2026/290844"
+   },
+   {
+    "platform": "Smarkets",
+    "event_name": "Jaguars vs Browns",
+    "market_type": "win probability",
+    "price": 78.1,
+    "odds": "78.1%",
+    "timestamp": "2026-09-11T12:50:18.047Z",
+    "source_url": "https://smarkets.com/"
+   },
+   {
+    "platform": "Smarkets",
+    "event_name": "Jaguars vs Browns",
+    "market_type": "win probability",
+    "price": 20.8,
+    "odds": "20.8%",
+    "timestamp": "2026-09-11T12:50:18.048Z",
+    "source_url": "https://smarkets.com/"
+   },
+   {
+    "platform": "Kalshi",
+    "event_name": "2027 NFL Champion",
+    "market_type": "championship contract probability",
+    "price": 15,
+    "odds": "15%",
+    "timestamp": "2026-09-11T12:50:18.049Z",
+    "source_url": "https://kalshi.com/"
+   }
+  ]
+ }
+}

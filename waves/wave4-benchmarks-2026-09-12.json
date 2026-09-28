@@ -1,0 +1,125 @@
+{
+ "count": 20,
+ "benchmarks": [
+  {
+   "id": "genai-01",
+   "group": "generative_ai_patterns",
+   "value": "Agentic teams: Google Cloud describes specialized agents orchestrating end-to-end workflows and emphasizes governance/management for agentic task forces.",
+   "citation": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders"
+  },
+  {
+   "id": "genai-02",
+   "group": "generative_ai_patterns",
+   "value": "Multimodal physical-world intelligence: Google Cloud cites live video, sensors, blueprints and athlete-biomechanics analysis as inputs to multimodal systems.",
+   "citation": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders"
+  },
+  {
+   "id": "genai-03",
+   "group": "generative_ai_patterns",
+   "value": "Sports fan/content intelligence: Golden State Warriors unify data in BigQuery and use Vertex AI for personalized content including highlights, scores, stats and ticket alerts; MLB Scout Insights uses Gemini over MLB history/game context and a surprisal score for commentary.",
+   "citation": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders"
+  },
+  {
+   "id": "genai-04",
+   "group": "generative_ai_patterns",
+   "value": "Specialized sports agents: Google Cloud lists StatusPro’s Gemini-powered in-game coach, the Football Association training Vertex AI on scouting reports, Technogym Coach personalized programs, Vail’s Gemini slope assistant and Satisfi Labs’ specialized agents for sports/entertainment/tourism.",
+   "citation": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders"
+  },
+  {
+   "id": "genai-05",
+   "group": "generative_ai_patterns",
+   "value": "RAG as evidence control: AWS GenU describes RAG over organizational documents to provide current/domain knowledge and reduce plausible-but-incorrect answers; it supports Kendra, Knowledge Bases, advanced parsing, chunk strategies, query decomposition, reranking and metadata filters.",
+   "citation": "https://github.com/aws-samples/generative-ai-use-cases"
+  },
+  {
+   "id": "genai-06",
+   "group": "generative_ai_patterns",
+   "value": "Tool-using agent pattern: GenU supports Web Search and Code Interpreter agents, imported Bedrock Agents/AgentCore/Flows and external MCP servers, with security options and SAML.",
+   "citation": "https://github.com/aws-samples/generative-ai-use-cases"
+  },
+  {
+   "id": "genai-07",
+   "group": "generative_ai_patterns",
+   "value": "Memory/data pattern: MongoDB’s showcase positions MongoDB as vector database, operational database and memory provider for RAG and AI agents.",
+   "citation": "https://github.com/mongodb-developer/GenAI-Showcase"
+  },
+  {
+   "id": "genai-08",
+   "group": "generative_ai_patterns",
+   "value": "Agent framework selection: the 500-AI-Agents catalog positions LangGraph for stateful graphs/RAG, CrewAI for role-based teams, AutoGen for code/research/self-healing workflows, Agno for lightweight tool agents and LlamaIndex for enterprise document pipelines.",
+   "citation": "https://github.com/ashishpatel26/500-AI-Agents-Projects"
+  },
+  {
+   "id": "genai-09",
+   "group": "generative_ai_patterns",
+   "value": "Research-agent pattern: MiroThinker routes search through Serper, scraping through Jina, code execution through E2B, summarization through a selectable LLM and evaluation through repeated benchmark runs with traces.",
+   "citation": "https://github.com/MiroMindAI/MiroThinker"
+  },
+  {
+   "id": "genai-10",
+   "group": "generative_ai_patterns",
+   "value": "Evaluation-first pattern: UpTrain recommends fixed datasets and evaluators for context relevance, factual accuracy, completeness, consistency, prompt injection, jailbreaks and prompt/model drift.",
+   "citation": "https://github.com/uptrain-ai/uptrain"
+  },
+  {
+   "id": "genai-11",
+   "group": "generative_ai_patterns",
+   "value": "Workflow generation and creative multimodality: the supplied AI repositories catalog RAG, MCP, memory, multimodal, voice, OCR and fine-tuning patterns, while Google documents Gemini/Vertex AI use in media, sports and physical-world workflows.",
+   "citation": "https://github.com/Arindam200/awesome-ai-apps"
+  },
+  {
+   "id": "entwf-01",
+   "group": "enterprise_workflows",
+   "value": "Recommended Sports workflow: source registry/rights → point-in-time ingestion → deterministic feature/model computation → evidence envelope → calibrated probability/edge gate → human/operator review → draft narrative → claim/evaluation gate → controlled publication. This mirrors Google’s agentic orchestration pattern while preserving Sports’ hard gates.",
+   "citation": "https://github.com/Beexly/Sports/blob/main/docs/launch-observatory.md"
+  },
+  {
+   "id": "entwf-02",
+   "group": "enterprise_workflows",
+   "value": "RAG workflow: document/PBP/scouting ingestion → parse/chunk → metadata filter by sport/team/date/rights → hybrid retrieval/rerank → answer with citations; AWS GenU explicitly exposes parsing, chunk selection, decomposition, reranking and metadata filters.",
+   "citation": "https://github.com/aws-samples/generative-ai-use-cases"
+  },
+  {
+   "id": "entwf-03",
+   "group": "enterprise_workflows",
+   "value": "Sandbox workflow: untrusted/generated code is executed in an isolated, stateful Sandbox with persistent/hibernated state and no production credentials; Kubernetes Agent Sandbox identifies AI-agent runtimes and RL/evaluation as target use cases.",
+   "citation": "https://github.com/kubernetes-sigs/agent-sandbox"
+  },
+  {
+   "id": "entwf-04",
+   "group": "enterprise_workflows",
+   "value": "Model operations workflow: keep every training run self-contained with model, scaler, running averages and error manifest; BlairCurrey’s NFL project loads only the latest complete run and evaluates against naive/Vegas baselines.",
+   "citation": "https://github.com/BlairCurrey/nfl-analytics"
+  },
+  {
+   "id": "entwf-05",
+   "group": "enterprise_workflows",
+   "value": "Statistical decision workflow: use count/time-series/state-space/VAR models from statsmodels where assumptions fit, then calibrate and compare to simpler baselines and closing market; do not treat model complexity as evidence of edge.",
+   "citation": "https://github.com/statsmodels/statsmodels"
+  },
+  {
+   "id": "entwf-06",
+   "group": "enterprise_workflows",
+   "value": "Reliability workflow: apply fail-closed provider circuits, multi-host/free-source failover, freshness validation, rights/provenance labels and explicit stale/unknown states. Sports’ Odds API circuit opens on decisive 402 and allows one half-open probe after a six-hour window without inventing quotes.",
+   "citation": "https://github.com/Beexly/Sports/blob/main/packages/data-ingestion/src/odds-api-circuit-breaker.ts"
+  },
+  {
+   "id": "entwf-07",
+   "group": "enterprise_workflows",
+   "value": "Enterprise deployment pattern: AWS GenU uses CDK to provision the application and exposes deployment options, cost estimation, security settings, SAML and model-region configuration; this is a useful template for environment separation and repeatable infrastructure.",
+   "citation": "https://github.com/aws-samples/generative-ai-use-cases"
+  },
+  {
+   "id": "entwf-08",
+   "group": "enterprise_workflows",
+   "value": "Responsible AI/observability workflow: evaluate generated outputs for factual grounding, completeness, safety and drift; UpTrain’s rationale is that evaluation prevents regressions and helps build transparency/trust, while Sports’ Jarvis blocks launch claims when safety warnings are active.",
+   "citation": "https://github.com/uptrain-ai/uptrain"
+  },
+  {
+   "id": "entwf-09",
+   "group": "enterprise_workflows",
+   "value": "Edge-performance workflow: nn-Meter predicts fused-kernel latency and can filter NAS candidates by a device latency threshold; use this for any future real-time video/voice or mobile Sports surface.",
+   "citation": "https://github.com/microsoft/nn-Meter"
+  }
+ ]
+}

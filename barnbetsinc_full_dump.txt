@@ -1,0 +1,2064 @@
+=== README ===
+# Barn Betting Inc.
+
+A mobile-first site with **two sections**, served from one shareable URL:
+
+1. **🏀 US sports** — for every game, **predicts the most likely outcome** in each
+   market (moneyline / spread / total) from a team-strength model blended with the
+   market consensus.
+2. **⚽ World Cup** — model-driven **per-game predictions** (result / total / both-
+   teams-to-score / handicap) plus a Monte-Carlo **group-stage simulator** for the
+   2026 tournament.
+
+Both sides answer the same question — *what is most likely to happen?* — and rank
+their calls by probability. No single sportsbook is judged and no price is "shopped."
+
+> **Informational only. Not financial advice. 21+ where legal.** Predictions are
+> estimates, not certainties.
+
+---
+
+## How the prediction works
+
+For each game we estimate the probability of every outcome, then publish the most
+likely call per market:
+
+```
+model_prob   = team-strength ratings, built from recent results / standings + form
+market_prob  = de-vig each book, then average across books -> no-vig consensus
+prob         = blend(model_prob, market_prob)   # model-first; consensus is one input
+```
+
+The blend is **model-first**: the market consensus can only pull the estimate so far
+(`max_market_weight`), and until a team has been seen enough times (`model_min_games`)
+that game leans more on the consensus. A **calibration loop** grades past predictions
+against final results so we can see whether the probabilities actually hold up.
+
+## What it is / isn't doing
+
+| | Status | Why |
+|---|---|---|
+| **Per-market outcome prediction** | ✅ core | Most-likely call per game, ranked by probability |
+| De-vigged market consensus | ✅ one input | The market's no-vig view, blended into the model |
+| Probability calibration | ✅ honesty check | Grades predicted vs realized hit rate |
+| Injury / weather context | ⚙️ optional | ESPN + Open-Meteo, best-effort |
+| +EV / value / line-shopping | ❌ not done | We predict likelihood, not price value |
+
+---
+
+## Quickstart (no API key needed)
+
+```bash
+pip install -r requirements.txt
+python -m agent.pipeline   # bundled mock data -> writes site/data.json AND site/worldcup.json
+python3 serve.py           # serves site/ at http://localhost:8000 (add --open to launch a browser)
+```
+
+`serve.py` is a zero-dependency wrapper around `http.server`: it serves the
+`site/` folder from anywhere in the repo, falls back to the next free port if
+8000 is taken, and warns when the generated data files are missing. The site
+loads its data with `fetch()`, so it must be served over HTTP — opening the
+files straight from disk (`file://`) will block data loading. (`cd site &&
+python -m http.server` works too.)
+
+The bundled `mock` slate covers a handful of US games and a full 12-group World Cup
+field, so both sections of the site work offline with no API key. To run just one side:
+
+```bash
+python -m agent.worldcup.pipeline   # World Cup only -> site/worldcup.json
+```
+
+## Switching to real odds
+
+1. Get a free key: **[The Odds API](https://the-odds-api.com)** (recommended — verified
+   schema) or **[odds-api.io](https://odds-api.io)** (more generous rate limit; its
+   adapter is best-effort, verify against your account).
+2. Copy `.env.example` → `.env` and paste your key.
+3. In `config.yaml` set `provider: the_odds_api` (or `odds_api_io`).
+4. `python -m agent.pipeline`
+
+Key `config.yaml` knobs: `sports`, `markets`, `the_odds_api_regions`, the `strategy`
+block (`devig_method`, `book_weights`, `max_market_weight`, `model_min_games`,
+`calibration_enabled`), and `max_published`.
+
+## Deploy to GitHub Pages (shareable URL)
+
+1. Push this repo to GitHub.
+2. **Settings → Pages → Source: GitHub Actions**.
+3. (Optional, for real data) **Settings → Secrets → Actions** → add `THE_ODDS_API_KEY`.
+4. **Actions → "Update predictions & deploy" → Run workflow.** Your site is at
+   `https://<user>.github.io/<repo>/`. The workflow then re-runs on a cron (default every
+   15 min — most ticks cost 0 credits; the budget gate only pays for an odds poll inside
+   a World Cup match window). Tune the schedule in
+   [.github/workflows/update.yml](.github/workflows/update.yml).
+
+---
+
+## World Cup section
+
+The World Cup side predicts each game from a model of the teams and adds a group-stage
+simulator:
+
+| Tool | What it answers |
+|---|---|
+| **Match predictions** | Most likely **result / total / BTTS / handicap** per game, each with a probability. |
+| **Group simulator** | Each team's chance to **win its group** and to **advance** (2026: top 2 + 8 best thirds → Round of 32). |
+
+How it works:
+
+```
+predict:  team-strength ratings (+ live form) -> goal expectancies -> per-market
+          probabilities, blended with the no-vig market consensus when odds exist
+sim:      each unplayed match's goal expectancies -> Monte-Carlo scorelines ->
+          group tables (points, GD, GF tiebreakers) -> P(win group) / P(advance)
+```
+
+Played matches use their real scoreline, so projections sharpen through the group
+stage. Knobs live under `worldcup:` in `config.yaml` (`provider`, `markets`, `sims`,
+`seed`). The bundled `mock` provider powers both the predictor and simulator with no
+key; `the_odds_api` gives live odds that sharpen the prediction blend.
+
+## How it works (layout)
+
+```
+agent/
+  config.py              # config.yaml + .env loader (incl. worldcup block)
+  models.py              # Game / BookOdds / Outcome / Prediction
+  odds_math.py           # American <-> decimal <-> implied probability
+  budget.py              # free-tier credit gate / poll throttle
+  providers/             # mock (default) | the_odds_api | odds_api_io
+  engine/                # US-sports predictor
+    ratings.py           # team-strength model from results history
+    devig.py             # no-vig consensus probability across books
+    predict.py           # per-game, per-market most-likely call + "why"
+    results.py           # final scores (feeds the model + calibration)
+    calibration.py       # predicted vs realized hit-rate check
+  context/               # espn (injuries), weather (Open-Meteo) — optional
+  worldcup/              # model-driven World Cup predictor + simulator
+    ratings.py           # team strength priors, form-adjusted
+    devig.py             # N-way (1X2) no-vig consensus across all books
+    poisson.py           # goal expectancies from a 1X2 line; sample scorelines
+    predict.py           # per-game calls for every market
+    simulate.py          # Monte-Carlo group-stage simulator (2026 format)
+    provider.py          # mock 12-group field | the_odds_api soccer odds
+    injuries.py          # who's expected out, by game (site/injuries.json)
+    pipeline.py          # fetch -> predict + simulate -> site/worldcup.json
+  store.py               # odds snapshots + prediction log in data/history/
+  rank.py                # probability ranking + plain-English "why"
+  publish.py             # serialize predictions -> site/data.json
+  pipeline.py            # US-sports run; also triggers the World Cup run
+site/                    # mobile-first static site; reads data.json + worldcup.json
+tests/                   # test_engine / test_strategy / test_worldcup / test_budget
+```
+
+Run the tests with `pytest`.
+
+=== FILE LIST ===
+README.md
+agent/__init__.py
+agent/budget.py
+agent/config.py
+agent/context/__init__.py
+agent/context/espn.py
+agent/context/weather.py
+agent/engine/__init__.py
+agent/engine/calibration.py
+agent/engine/devig.py
+agent/engine/predict.py
+agent/engine/ratings.py
+agent/engine/results.py
+agent/models.py
+agent/odds_math.py
+agent/pipeline.py
+agent/providers/__init__.py
+agent/providers/base.py
+agent/providers/mock.py
+agent/providers/odds_api_io.py
+agent/providers/the_odds_api.py
+agent/publish.py
+agent/rank.py
+agent/record.py
+agent/store.py
+agent/worldcup/__init__.py
+agent/worldcup/calibration.py
+agent/worldcup/devig.py
+agent/worldcup/elo.py
+agent/worldcup/factors.py
+agent/worldcup/fixtures.py
+agent/worldcup/injuries.py
+agent/worldcup/models.py
+agent/worldcup/pipeline.py
+agent/worldcup/poisson.py
+agent/worldcup/predict.py
+agent/worldcup/provider.py
+agent/worldcup/ratings.py
+agent/worldcup/simulate.py
+config.yaml
+data/history/api_budget.json
+data/history/odds-20260619T030117Z.json
+data/history/odds-20260619T030445Z.json
+data/history/odds-20260619T153929Z.json
+data/history/odds-20260619T154551Z.json
+data/history/odds-20260619T162037Z.json
+data/history/worldcup_elo.json
+docs/deploy-handoff.md
+docs/prediction-strategy-research.md
+requirements.txt
+serve.py
+site/app.js
+site/common.js
+site/data.json
+site/groups.html
+site/groups.js
+site/index.html
+site/injuries.html
+site/injuries.js
+site/injuries.json
+site/record.html
+site/record.js
+site/record.json
+site/styles.css
+site/worldcup.json
+site/worldcup_calibration.json
+tests/__init__.py
+tests/test_budget.py
+tests/test_engine.py
+tests/test_record.py
+tests/test_strategy.py
+tests/test_worldcup.py
+
+=== KEY CODE ===
+--- FILE: agent/engine/devig.py ---
+"""De-vigging: turn a book's vig-inclusive prices into no-vig "fair" probabilities.
+
+Three methods are supported (config `strategy.devig_method`):
+
+  * multiplicative — spread the vig proportionally to each implied prob. Simple,
+    but leaves the favorite-longshot bias in (overstates longshots).
+  * power          — fair_i = raw_i ** k, with k solved so the probs sum to 1.
+    Corrects favorite-longshot bias without overcorrecting; a good default.
+  * shin           — Shin's insider-trading model; the strongest correction for
+    favorite-longshot bias on lopsided markets.
+
+When the methods *disagree* on an outcome (which happens most on longshots), that
+disagreement is itself a useful uncertainty signal, exposed as `spread_by_key`.
+
+The predictor calls `reference_fair` with no sharp-book preference and no excluded
+book, so it returns a no-vig **consensus across every book** — the crowd's
+prediction, weighted so tighter/sharper books count more. (The optional
+sharp-book / excluded-book arguments are retained for callers that want a single
+reference line, but the prediction engine doesn't single out any book.)
+"""
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Dict, List, Optional, Tuple
+
+from ..models import BookOdds, Game, Outcome
+
+# A market outcome is identified by (selection name, point line). Points are
+# rounded so 2.5 == 2.50 when matching the target book to the reference.
+Key = Tuple[str, Optional[float]]
+
+
+def outcome_key(o: Outcome) -> Key:
+    return (o.name, None if o.point is None else round(o.point, 1))
+
+
+# --------------------------------------------------------------- de-vig math ---
+def _normalize(probs: List[float]) -> List[float]:
+    total = sum(probs)
+    return [p / total for p in probs] if total > 0 else probs
+
+
+def _devig_multiplicative(raw: List[float]) -> List[float]:
+    return _normalize(raw)
+
+
+def _devig_power(raw: List[float], iters: int = 60) -> List[float]:
+    """fair_i = raw_i ** k, with k chosen so the fair probs sum to 1."""
+    if min(raw) <= 0:
+        return _devig_multiplicative(raw)
+    lo, hi = 0.0001, 100.0
+    for _ in range(iters):
+        k = 0.5 * (lo + hi)
+        if sum(p ** k for p in raw) > 1.0:
+            lo = k          # sum too high -> need a larger exponent
+        else:
+            hi = k
+    k = 0.5 * (lo + hi)
+    return _normalize([p ** k for p in raw])
+
+
+def _devig_shin(raw: List[float], iters: int = 60) -> List[float]:
+    """Shin's model: solve for the insider proportion z so fair probs sum to 1."""
+    booksum = sum(raw)
+    if booksum <= 0:
+        return raw
+    lo, hi = 0.0, 0.99
+    for _ in range(iters):
+        z = 0.5 * (lo + hi)
+        s = sum(
+            (((z * z + 4.0 * (1.0 - z) * p * p / booksum) ** 0.5) - z) / (2.0 * (1.0 - z))
+            for p in raw
+        )
+        if s > 1.0:
+            lo = z          # sum too high -> need more insider correction
+        else:
+            hi = z
+    z = 0.5 * (lo + hi)
+    fair = [
+        (((z * z + 4.0 * (1.0 - z) * p * p / booksum) ** 0.5) - z) / (2.0 * (1.0 - z))
+        for p in raw
+    ]
+    return _normalize(fair)
+
+
+DEVIG_METHODS = {
+    "multiplicative": _devig_multiplicative,
+    "power": _devig_power,
+    "shin": _devig_shin,
+}
+
+
+def devig_probs(raw: List[float], method: str = "multiplicative") -> List[float]:
+    return DEVIG_METHODS.get(method, _devig_multiplicative)(raw)
+
+
+# ------------------------------------------------------------- book de-vig ---
+@dataclass
+class ReferenceFair:
+    book: str                          # "pinnacle", "consensus", ...
+    fair_by_key: Dict[Key, float]      # (name, point) -> no-vig fair probability
+    vig: float                         # hold of the reference market (0..1)
+    spread_by_key: Dict[Key, float] = field(default_factory=dict)  # method disagreement
+
+
+def fair_from_book(book_odds: BookOdds, method: str = "multiplicative") -> Tuple[Dict[Key, float], float]:
+    """De-vig a single book's market. Returns (fair_by_key, vig)."""
+    keys = [outcome_key(o) for o in book_odds.outcomes]
+    raw = [o.implied for o in book_odds.outcomes]
+    total = sum(raw)
+    if total <= 0:
+        return {}, 0.0
+    fair = dict(zip(keys, devig_probs(raw, method)))
+    return fair, total - 1.0
+
+
+def _spread_from_book(book_odds: BookOdds) -> Dict[Key, float]:
+    """Per-outcome disagreement (max-min fair prob) across all de-vig methods."""
+    keys = [outcome_key(o) for o in book_odds.outcomes]
+    raw = [o.implied for o in book_odds.outcomes]
+    if sum(raw) <= 0:
+        return {k: 0.0 for k in keys}
+    per_method = [devig_probs(raw, m) for m in DEVIG_METHODS]
+    return {
+        k: max(col) - min(col)
+        for k, col in zip(keys, zip(*per_method))
+    }
+
+
+def _weighted_consensus(
+    others: List[BookOdds], method: str, book_weights: Optional[Dict[str, float]]
+) -> Optional[ReferenceFair]:
+    """Blend non-target books into a weighted consensus. Each book is de-vigged
+    individually, then its fair probs are averaged with weight
+    `configured_book_weight / (1 + k*vig)` so tighter/sharper books count more."""
+    book_weights = book_weights or {}
+    contrib: Dict[Key, List[Tuple[float, float]]] = {}   # key -> [(weight, fair)]
+    spread_contrib: Dict[Key, List[Tuple[float, float]]] = {}
+    vig_acc = w_acc = 0.0
+
+    for bo in others:
+        fair, vig = fair_from_book(bo, method)
+        if not fair:
+            continue
+        w = book_weights.get(bo.book, 1.0) / (1.0 + 50.0 * max(vig, 0.0))
+        spread = _spread_from_book(bo)
+        vig_acc += w * vig
+        w_acc += w
+        for k, p in fair.items():
+            contrib.setdefault(k, []).append((w, p))
+            spread_contrib.setdefault(k, []).append((w, spread.get(k, 0.0)))
+
+    # Reduce each side to its modal point line, then weight-average.
+    by_name: Dict[str, List[Key]] = {}
+    for (name, pt) in contrib:
+        by_name.setdefault(name, []).append((name, pt))
+    if len(by_name) < 2:
+        return None
+
+    def _wavg(pairs: List[Tuple[float, float]]) -> float:
+        ws = sum(w for w, _ in pairs)
+        return sum(w * v for w, v in pairs) / ws if ws else 0.0
+
+    weighted: Dict[Key, float] = {}
+    spreads: Dict[Key, float] = {}
+    for name, keys in by_name.items():
+        points = [pt for _, pt in keys]
+        modal = max(set(points), key=points.count)
+        weighted[(name, modal)] = _wavg(contrib[(name, modal)])
+        spreads[(name, modal)] = _wavg(spread_contrib[(name, modal)])
+
+    total = sum(weighted.values())
+    if total <= 0:
+        return None
+    fair = {k: v / total for k, v in weighted.items()}
+    cons_vig = vig_acc / w_acc if w_acc else 0.0
+    return ReferenceFair("consensus", fair, cons_vig, spreads)
+
+
+def reference_fair(
+    game: Game,
+    market: str,
+    sharp_books: List[str],
+    target_book: str,
+    method: str = "multiplicative",
+    book_weights: Optional[Dict[str, float]] = None,
+) -> Optional[ReferenceFair]:
+    """Compute the no-vig fair line to judge the target book against."""
+    market_books = game.markets.get(market, [])
+
+    # 1) Prefer a configured sharp book, in priority order.
+    for sb in sharp_books:
+        bo = game.book_in_market(market, sb)
+        if bo and len(bo.outcomes) >= 2:
+            fair, vig = fair_from_book(bo, method)
+            return ReferenceFair(sb, fair, vig, _spread_from_book(bo))
+
+    # 2) Otherwise blend everything except the target book into a weighted consensus.
+    others = [
+        bo for bo in market_books
+        if bo.book != target_book and len(bo.outcomes) >= 2
+    ]
+    if not others:
+        return None
+    return _weighted_consensus(others, method, book_weights)
+
+--- FILE: agent/engine/predict.py ---
+"""Per-game predictions for US sports — what will happen, not where to bet.
+
+For each game and each market the feed carries (moneyline / spread / total) we
+predict the most likely outcome and the probability it hits. The probability is a
+blend of two independent views:
+
+  * the **team-strength model** (ratings.py: Elo win prob + expected margin from
+    results, scoring averages for the total), and
+  * the **market consensus** — every book de-vigged into one no-vig probability
+    (devig.py). No single book is privileged and no price is "shopped"; the
+    consensus is just the crowd's prediction, folded in as one more signal.
+
+Model-first: when the model has seen enough games it leads, with the market
+capped at `max_market_weight`. Before the model warms up (cold start) the
+consensus carries the prediction on its own.
+"""
+from __future__ import annotations
+
+from datetime import datetime, timezone
+from typing import List, Optional, Tuple
+
+from ..config import Config
+from ..models import Game, Prediction
+from .devig import reference_fair
+from .ratings import TeamModel, norm_cdf, sigma_margin, sigma_total
+
+
+def _minutes_to_start(commence_time: str) -> Optional[float]:
+    try:
+        start = datetime.fromisoformat(commence_time.replace("Z", "+00:00"))
+        if start.tzinfo is None:
+            start = start.replace(tzinfo=timezone.utc)
+    except (ValueError, AttributeError):
+        return None
+    return (start - datetime.now(timezone.utc)).total_seconds() / 60.0
+
+
+def _market_weight(vig: float, max_w: float) -> float:
+    """How much the consensus pulls the blend (0..max_w), by market tightness."""
+    if vig <= 0.03:
+        tight = 1.0
+    elif vig >= 0.08:
+        tight = 0.4
+    else:
+        tight = 1.0 - 0.6 * ((vig - 0.03) / 0.05)
+    return max_w * tight
+
+
+def _confidence(model_prob: Optional[float], market_prob: float, vig: float,
+                minutes: Optional[float]) -> float:
+    """Trust weight: model/market agreement, market tightness, time to start."""
+    if model_prob is None:
+        agree = 0.7  # market-only: no independent confirmation
+    else:
+        agree = max(0.5, 1.0 - abs(model_prob - market_prob) / 0.25)
+    if vig <= 0.03:
+        vig_factor = 1.0
+    elif vig >= 0.08:
+        vig_factor = 0.5
+    else:
+        vig_factor = 1.0 - 0.5 * ((vig - 0.03) / 0.05)
+    if minutes is None:
+        time_factor = 0.85
+    elif minutes <= 0:
+        time_factor = 0.3
+    elif minutes >= 60:
+        time_factor = 1.0
+    else:
+        time_factor = 0.6 + 0.4 * (minutes / 60.0)
+    return max(0.0, min(1.0, agree * vig_factor * time_factor))
+
+
+def _blend(model_p: Optional[float], market_p: float, vig: float, max_w: float) -> float:
+    if model_p is None:
+        return market_p
+    w = _market_weight(vig, max_w)
+    return (1.0 - w) * model_p + w * market_p
+
+
+def _argmax(outcomes: List[Tuple[str, float]]) -> Tuple[str, float]:
+    return max(outcomes, key=lambda o: o[1])
+
+
+def predict_game(game: Game, model: TeamModel, config: Config) -> List[Prediction]:
+    """All market predictions for one game."""
+    st = config.strategy
+    minutes = _minutes_to_start(game.commence_time)
+    sport, home, away = game.sport_key, game.home_team, game.away_team
+    preds: List[Prediction] = []
+
+    def add(market, pick, selection, point, prob, model_p, market_p, outcomes, rationale):
+        preds.append(Prediction(
+            game_id=game.id, sport_key=sport, sport_title=game.sport_title,
+            commence_time=game.commence_time, home_team=home, away_team=away,
+            market=market, pick=pick, selection=selection, point=point, prob=prob,
+            confidence=_confidence(model_p, market_p, _vig, minutes),
+            model_prob=model_p, market_prob=market_p,
+            outcomes=sorted(outcomes, key=lambda o: o[1], reverse=True),
+            rationale=rationale,
+        ))
+
+    for market in config.markets:
+        ref = reference_fair(game, market, [], "", method=st.devig_method,
+                             book_weights=st.book_weights)
+        if ref is None:
+            continue
+        _vig = ref.vig
+        fair = ref.fair_by_key
+
+        if market == "h2h":
+            ph_mkt = fair.get((home, None))
+            pa_mkt = fair.get((away, None))
+            if ph_mkt is None or pa_mkt is None:
+                continue
+            s = ph_mkt + pa_mkt
+            ph_mkt /= s
+            ph_model = model.p_home_win(sport, home, away)
+            ph = _blend(ph_model, ph_mkt, _vig, st.max_market_weight)
+            outs = [(f"{home} ML", ph), (f"{away} ML", 1.0 - ph)]
+            pick, prob = _argmax(outs)
+            pick_is_home = pick.startswith(home)
+            add("h2h", pick, home if pick_is_home else away, None, prob,
+                None if ph_model is None else (ph_model if pick_is_home else 1.0 - ph_model),
+                ph_mkt if pick_is_home else 1.0 - ph_mkt, outs,
+                _h2h_rationale(home, away, pick, prob, ph_model))
+
+        elif market == "spreads":
+            hk = next((k for k in fair if k[0] == home and k[1] is not None), None)
+            ak = next((k for k in fair if k[0] == away and k[1] is not None), None)
+            if hk is None or ak is None:
+                continue
+            home_pt = hk[1]
+            ph_mkt = fair[hk]
+            em = model.expected_margin(sport, home, away)
+            ph_model = None if em is None else norm_cdf((em + home_pt) / sigma_margin(sport))
+            ph = _blend(ph_model, ph_mkt, _vig, st.max_market_weight)
+            outs = [(f"{home} {home_pt:+g}", ph), (f"{away} {ak[1]:+g}", 1.0 - ph)]
+            pick, prob = _argmax(outs)
+            pick_is_home = pick.startswith(home)
+            add("spreads", pick, home if pick_is_home else away,
+                home_pt if pick_is_home else ak[1], prob,
+                None if ph_model is None else (ph_model if pick_is_home else 1.0 - ph_model),
+                ph_mkt if pick_is_home else 1.0 - ph_mkt, outs,
+                _spread_rationale(pick, prob, em, ph_model))
+
+        elif market == "totals":
+            ok = next((k for k in fair if k[0] == "Over" and k[1] is not None), None)
+            if ok is None:
+                continue
+            line = ok[1]
+            po_mkt = fair[ok]
+            et = model.expected_total(sport, home, away)
+            po_model = None if et is None else 1.0 - norm_cdf((line - et) / sigma_total(sport))
+            po = _blend(po_model, po_mkt, _vig, st.max_market_weight)
+            outs = [(f"Over {line:g}", po), (f"Under {line:g}", 1.0 - po)]
+            pick, prob = _argmax(outs)
+            pick_is_over = pick.startswith("Over")
+            add("totals", pick, "Over" if pick_is_over else "Under", line, prob,
+                None if po_model is None else (po_model if pick_is_over else 1.0 - po_model),
+                po_mkt if pick_is_over else 1.0 - po_mkt, outs,
+                _total_rationale(pick, prob, et, po_model))
+
+    return preds
+
+
+# ----------------------------------------------------------------- rationale ---
+def _conf_phrase(prob: float) -> str:
+    return "a clear call" if prob >= 0.6 else "a lean" if prob >= 0.52 else "a coin-flip"
+
+
+def _h2h_rationale(home, away, pick, prob, model_p) -> str:
+    team = pick.replace(" ML", "")
+    return f"{team} is the {prob*100:.0f}% pick to win — {_conf_phrase(prob)}."
+
+
+def _spread_rationale(pick, prob, em, model_p) -> str:
+    if model_p is not None and em is not None:
+        return (f"Expected ~{abs(em):.1f}-point margin; {pick} is the "
+                f"{prob*100:.0f}% side to cover — {_conf_phrase(prob)}.")
+    return f"{pick} is the {prob*100:.0f}% side to cover."
+
+
+def _total_rationale(pick, prob, et, model_p) -> str:
+    if model_p is not None and et is not None:
+        return (f"Expected ~{et:.1f} combined points; {pick} is the "
+                f"{prob*100:.0f}% call — {_conf_phrase(prob)}.")
+    return f"{pick} is the {prob*100:.0f}% call."
+
+
+def predict_games(games: List[Game], model: TeamModel, config: Config) -> List[Prediction]:
+    out: List[Prediction] = []
+    for g in games:
+        out.extend(predict_game(g, model, config))
+    return out
+
+--- FILE: agent/engine/ratings.py ---
+"""Team-strength model for US sports, built from free results history.
+
+This is the independent model the predictor blends with the market. From the same
+ESPN final scores used for grading we build, per sport+team:
+
+  * an **Elo rating** (win/loss) -> win probability + expected scoring margin, and
+  * **scoring averages** (points for / against) -> an expected game total.
+
+Both cold-start gracefully: a team we've barely seen returns ``None`` from the
+probability helpers, and the predictor falls back to the market consensus for that
+game. Nothing here references a sportsbook price — it is pure "how good is this
+team" derived from results.
+
+Per-sport margin / total standard deviations live here too (used to turn an
+expected margin/total into cover/over probabilities via a Normal model).
+"""
+from __future__ import annotations
+
+import math
+from dataclasses import dataclass, field
+from typing import Dict, Optional, Tuple
+
+from .results import nickname
+
+_BASE = 1500.0
+_K = 20.0
+_HFA = 50.0            # home edge, in Elo points
+_MIN_TEAM_GAMES = 3   # don't trust a team rating/scoring built from fewer games
+
+# Per-sport standard deviation of final margin and total, in points/runs/goals.
+# Approximate; predictions derived through these are confidence-discounted.
+SIGMA_MARGIN = {
+    "americanfootball_nfl": 13.5,
+    "americanfootball_ncaaf": 16.0,
+    "basketball_nba": 12.0,
+    "basketball_ncaab": 10.5,
+    "baseball_mlb": 3.1,
+    "icehockey_nhl": 2.2,
+}
+SIGMA_TOTAL = {
+    "americanfootball_nfl": 9.8,
+    "americanfootball_ncaaf": 11.0,
+    "basketball_nba": 16.5,
+    "basketball_ncaab": 12.5,
+    "baseball_mlb": 4.0,
+    "icehockey_nhl": 2.3,
+}
+_DEFAULT_SIGMA = 12.0
+
+
+# --------------------------------------------------------------- normal math ---
+def norm_cdf(x: float) -> float:
+    return 0.5 * (1.0 + math.erf(x / math.sqrt(2.0)))
+
+
+def norm_ppf(p: float) -> float:
+    """Inverse normal CDF (Acklam's rational approximation)."""
+    if p <= 0.0:
+        return -1e9
+    if p >= 1.0:
+        return 1e9
+    a = [-3.969683028665376e+01, 2.209460984245205e+02, -2.759285104469687e+02,
+         1.383577518672690e+02, -3.066479806614716e+01, 2.506628277459239e+00]
+    b = [-5.447609879822406e+01, 1.615858368580409e+02, -1.556989798598866e+02,
+         6.680131188771972e+01, -1.328068155288572e+01]
+    c = [-7.784894002430293e-03, -3.223964580411365e-01, -2.400758277161838e+00,
+         -2.549732539343734e+00, 4.374664141464968e+00, 2.938163982698783e+00]
+    d = [7.784695709041462e-03, 3.224671290700398e-01, 2.445134137142996e+00,
+         3.754408661907416e+00]
+    plow, phigh = 0.02425, 1.0 - 0.02425
+    if p < plow:
+        q = math.sqrt(-2.0 * math.log(p))
+        return (((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5]) / \
+               ((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1.0)
+    if p > phigh:
+        q = math.sqrt(-2.0 * math.log(1.0 - p))
+        return -(((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5]) / \
+                ((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1.0)
+    q = p - 0.5
+    r = q * q
+    return (((((a[0]*r+a[1])*r+a[2])*r+a[3])*r+a[4])*r+a[5])*q / \
+           (((((b[0]*r+b[1])*r+b[2])*r+b[3])*r+b[4])*r+1.0)
+
+
+def sigma_margin(sport: str) -> float:
+    return SIGMA_MARGIN.get(sport, _DEFAULT_SIGMA)
+
+
+def sigma_total(sport: str) -> float:
+    return SIGMA_TOTAL.get(sport, _DEFAULT_SIGMA)
+
+
+# ------------------------------------------------------------------- model ---
+@dataclass
+class TeamModel:
+    """Built team strengths. Keys are (sport_key, team_nickname)."""
+    elo: Dict[Tuple[str, str], float] = field(default_factory=dict)
+    games: Dict[Tuple[str, str], int] = field(default_factory=dict)
+    pts_for: Dict[Tuple[str, str], float] = field(default_factory=dict)   # avg scored
+    pts_against: Dict[Tuple[str, str], float] = field(default_factory=dict)  # avg allowed
+    min_team_games: int = _MIN_TEAM_GAMES
+
+    def _seen(self, sport: str, team: str) -> Optional[Tuple[str, str]]:
+        key = (sport, nickname(team))
+        if not key[1] or self.games.get(key, 0) < self.min_team_games:
+            return None
+        return key
+
+    def p_home_win(self, sport: str, home: str, away: str) -> Optional[float]:
+        """Elo win probability for the home side, or None if cold-started."""
+        hk, ak = self._seen(sport, home), self._seen(sport, away)
+        if hk is None or ak is None:
+            return None
+        rh, ra = self.elo[hk], self.elo[ak]
+        return 1.0 / (1.0 + 10 ** (-((rh + _HFA) - ra) / 400.0))
+
+    def expected_margin(self, sport: str, home: str, away: str) -> Optional[float]:
+        """Expected home margin (home_pts - away_pts), from the Elo win prob."""
+        p = self.p_home_win(sport, home, away)
+        if p is None:
+            return None
+        return norm_ppf(min(0.999, max(0.001, p))) * sigma_margin(sport)
+
+    def expected_total(self, sport: str, home: str, away: str) -> Optional[float]:
+        """Expected combined score, from the two teams' scoring averages."""
+        hk, ak = self._seen(sport, home), self._seen(sport, away)
+        if hk is None or ak is None:
+            return None
+        home_pts = 0.5 * (self.pts_for[hk] + self.pts_against[ak])
+        away_pts = 0.5 * (self.pts_for[ak] + self.pts_against[hk])
+        return home_pts + away_pts
+
+
+def build_team_model(results, min_team_games: int = _MIN_TEAM_GAMES) -> TeamModel:
+    """Build Elo + scoring averages from chronological final scores."""
+    m = TeamModel(min_team_games=min_team_games)
+    for r in sorted(results, key=lambda x: x.get("completed_at") or ""):
+        sk = r.get("sport_key", "")
+        hk, ak = (sk, nickname(r.get("home"))), (sk, nickname(r.get("away")))
+        hs, as_ = r.get("home_score"), r.get("away_score")
+        if not hk[1] or not ak[1] or hs is None or as_ is None:
+            continue
+        # Elo update.
+        rh, ra = m.elo.get(hk, _BASE), m.elo.get(ak, _BASE)
+        exp_h = 1.0 / (1.0 + 10 ** (-((rh + _HFA) - ra) / 400.0))
+        act_h = 1.0 if hs > as_ else 0.0 if hs < as_ else 0.5
+        m.elo[hk] = rh + _K * (act_h - exp_h)
+        m.elo[ak] = ra - _K * (act_h - exp_h)
+        # Scoring running averages.
+        for key, sf, sa in ((hk, hs, as_), (ak, as_, hs)):
+            n = m.games.get(key, 0)
+            m.pts_for[key] = (m.pts_for.get(key, 0.0) * n + sf) / (n + 1)
+            m.pts_against[key] = (m.pts_against.get(key, 0.0) * n + sa) / (n + 1)
+            m.games[key] = n + 1
+    return m
+
+--- FILE: agent/odds_math.py ---
+"""Pure odds-math helpers: American <-> decimal <-> implied probability.
+
+These are deliberately dependency-free and side-effect-free so they're trivial
+to unit-test and reuse across the engine.
+"""
+from __future__ import annotations
+
+
+def american_to_decimal(american: int) -> float:
+    """Convert American odds (e.g. +150, -120) to decimal odds (e.g. 2.50, 1.833)."""
+    if american > 0:
+        return 1.0 + american / 100.0
+    return 1.0 + 100.0 / abs(american)
+
+
+def decimal_to_american(decimal: float) -> int:
+    """Convert decimal odds back to American odds, rounded to the nearest integer."""
+    if decimal <= 1.0:
+        raise ValueError(f"decimal odds must be > 1.0, got {decimal}")
+    if decimal >= 2.0:
+        return round((decimal - 1.0) * 100.0)
+    return round(-100.0 / (decimal - 1.0))
+
+
+def american_to_implied(american: int) -> float:
+    """Implied probability (includes the book's vig) for American odds. Returns 0..1."""
+    return decimal_to_implied(american_to_decimal(american))
+
+
+def decimal_to_implied(decimal: float) -> float:
+    """Implied probability (includes vig) for decimal odds. Returns 0..1."""
+    return 1.0 / decimal
+
+
+def implied_to_american(prob: float) -> int:
+    """Convert a probability (0..1) to the equivalent fair American odds."""
+    if not 0.0 < prob < 1.0:
+        raise ValueError(f"prob must be in (0, 1), got {prob}")
+    return decimal_to_american(1.0 / prob)
+
+
+def format_american(american: int) -> str:
+    """Render American odds the way a sportsbook does: +150 / -120."""
+    return f"+{american}" if american > 0 else str(american)
+
+--- FILE: agent/worldcup/devig.py ---
+"""No-vig fair lines for soccer markets, blended across every book.
+
+There is no target book: we de-vig *each* book multiplicatively, then average the
+fair probabilities across books into a consensus. This works for any number of
+outcomes, so it covers 1X2 (home / draw / away) as cleanly as a 2-way total.
+
+    per book:   fair_i = (1/decimal_i) / sum_j(1/decimal_j)      # vig removed
+    consensus:  mean of fair_i across books, renormalized to sum 1
+"""
+from __future__ import annotations
+
+from typing import Dict, List, Optional
+
+from ..models import BookOdds
+from .models import FairLine, Key
+
+
+def _modal_point(books: List[BookOdds]) -> Dict[str, Optional[float]]:
+    """For each selection name, the most common point line across books.
+
+    1X2 outcomes have point=None (so this is a no-op). Totals can differ by book
+    (7.5 vs 8.5); we consensus only the modal line so we compare like with like.
+    """
+    seen: Dict[str, List[Optional[float]]] = {}
+    for bo in books:
+        for o in bo.outcomes:
+            pt = None if o.point is None else round(o.point, 1)
+            seen.setdefault(o.name, []).append(pt)
+    return {name: max(set(pts), key=pts.count) for name, pts in seen.items()}
+
+
+def consensus_fair(books: List[BookOdds]) -> Optional[FairLine]:
+    """Blend all books into a no-vig consensus for one market.
+
+    Returns None if fewer than two outcomes can be assembled (nothing to de-vig).
+    """
+    books = [bo for bo in books if len(bo.outcomes) >= 2]
+    if not books:
+        return None
+
+    modal = _modal_point(books)
+    fair_sums: Dict[Key, float] = {}
+    fair_counts: Dict[Key, int] = {}
+    vigs: List[float] = []
+
+    for bo in books:
+        # Only consider outcomes sitting on this market's modal line.
+        picks = [
+            o for o in bo.outcomes
+            if (None if o.point is None else round(o.point, 1)) == modal.get(o.name)
+        ]
+        if len(picks) < 2:
+            continue
+        implied = {(o.name, modal.get(o.name)): o.implied for o in picks}
+        total = sum(implied.values())
+        if total <= 0:
+            continue
+        vigs.append(total - 1.0)
+        for k, v in implied.items():
+            fair_sums[k] = fair_sums.get(k, 0.0) + v / total
+            fair_counts[k] = fair_counts.get(k, 0) + 1
+
+    if len(fair_sums) < 2 or not vigs:
+        return None
+
+    avg = {k: fair_sums[k] / fair_counts[k] for k in fair_sums}
+    norm = sum(avg.values())
+    if norm <= 0:
+        return None
+    fair = {k: v / norm for k, v in avg.items()}
+    return FairLine(fair_by_key=fair, vig=sum(vigs) / len(vigs), n_books=len(vigs))
+
+--- FILE: agent/worldcup/poisson.py ---
+"""Independent-Poisson scoreline model, fitted to the market.
+
+Soccer group tables need *scorelines*, not just win/draw/loss — goal difference
+and goals-for are the tiebreakers, and "8 best third-placed teams" is ranked on
+them. So for each unplayed match we recover goal expectancies (lambda_home,
+lambda_away) whose independent-Poisson win/draw/loss probabilities best match the
+market's no-vig 1X2 line, then sample scorelines from those Poissons.
+
+Independent Poisson slightly under-states draws vs reality, so `score_matrix`
+applies the Dixon-Coles low-score correction (a small reshaping of the 0-0/1-0/
+0-1/1-1 cells) to lift draws back to realistic rates. It stays fully market-derived
+(no external ratings needed).
+"""
+from __future__ import annotations
+
+import bisect
+import math
+from functools import lru_cache
+from typing import List, Tuple
+
+MAX_GOALS = 10  # truncate the scoreline grid; P(>10 goals for one team) ~ 0
+
+# Dixon-Coles dependence parameter. Independent Poisson under-states low-score
+# draws; a small negative rho lifts 0-0 and 1-1 while trimming 1-0 and 0-1, which
+# corrects the known draw understatement (poisson.py docstring) without any new
+# data. Empirically rho sits ~ -0.03..-0.10; -0.06 is a safe mid value.
+DIXON_COLES_RHO = -0.06
+
+
+@lru_cache(maxsize=4096)
+def _pmf_vector(lam: float) -> Tuple[float, ...]:
+    """Poisson pmf for k = 0..MAX_GOALS at rate `lam` (lam quantized by caller)."""
+    out = []
+    for k in range(MAX_GOALS + 1):
+        out.append(math.exp(-lam) * lam ** k / math.factorial(k))
+    return tuple(out)
+
+
+def outcome_probs(lam_home: float, lam_away: float) -> Tuple[float, float, float]:
+    """(P(home win), P(draw), P(away win)) under two independent Poissons."""
+    h = _pmf_vector(round(lam_home, 3))
+    a = _pmf_vector(round(lam_away, 3))
+    p_home = p_draw = p_away = 0.0
+    for i in range(MAX_GOALS + 1):
+        for j in range(MAX_GOALS + 1):
+            p = h[i] * a[j]
+            if i > j:
+                p_home += p
+            elif i == j:
+                p_draw += p
+            else:
+                p_away += p
+    return p_home, p_draw, p_away
+
+
+def fit_lambdas(
+    p_home: float, p_draw: float, p_away: float, mean_goals: float = 2.7
+) -> Tuple[float, float]:
+    """Recover (lambda_home, lambda_away) matching a no-vig 1X2 line.
+
+    Coarse grid search then local refine, minimizing squared error to the target
+    (home, draw, away) probabilities. `mean_goals` only seeds the search range.
+    """
+    target = (p_home, p_draw, p_away)
+
+    def sse(lh: float, la: float) -> float:
+        ph, pd, pa = outcome_probs(lh, la)
+        return (ph - target[0]) ** 2 + (pd - target[1]) ** 2 + (pa - target[2]) ** 2
+
+    lo, hi = 0.1, max(3.6, mean_goals + 1.5)
+    best = (1.3, 1.3)
+    best_err = float("inf")
+
+    # Coarse pass.
+    step = 0.1
+    lh = lo
+    while lh <= hi:
+        la = lo
+        while la <= hi:
+            e = sse(lh, la)
+            if e < best_err:
+                best_err, best = e, (lh, la)
+            la += step
+        lh += step
+
+    # Local refine around the coarse winner.
+    cl, ca = best
+    step = 0.02
+    lh = max(lo, cl - 0.1)
+    while lh <= cl + 0.1:
+        la = max(lo, ca - 0.1)
+        while la <= ca + 0.1:
+            e = sse(lh, la)
+            if e < best_err:
+                best_err, best = e, (lh, la)
+            la += step
+        lh += step
+    return best
+
+
+def _dc_tau(home: int, away: int, lh: float, la: float, rho: float) -> float:
+    """Dixon-Coles tau multiplier for a low-score cell (1.0 for every other cell).
+
+    Reshapes only the four cells where the independence assumption bites: with
+    rho < 0 it lifts the two draws (0-0, 1-1) and trims the one-goal wins (1-0,
+    0-1), the classic correction to Poisson's draw understatement.
+    """
+    if home == 0 and away == 0:
+        return 1.0 - lh * la * rho
+    if home == 0 and away == 1:
+        return 1.0 + lh * rho
+    if home == 1 and away == 0:
+        return 1.0 + la * rho
+    if home == 1 and away == 1:
+        return 1.0 - rho
+    return 1.0
+
+
+def score_matrix(lam_home: float, lam_away: float,
+                 rho: float = DIXON_COLES_RHO) -> List[List[float]]:
+    """Joint P(home=i, away=j) grid for i,j = 0..MAX_GOALS, Dixon-Coles corrected.
+
+    Independent Poisson cells, reshaped by the Dixon-Coles tau on the four low
+    scores (see `_dc_tau`) and renormalized to sum to 1. The single source for
+    every derived market: 1X2, totals, both-teams-to-score, and goal-handicap
+    probabilities are all sums over cells of this grid. Pass rho=0.0 for the plain
+    independent grid.
+    """
+    h = _pmf_vector(round(lam_home, 3))
+    a = _pmf_vector(round(lam_away, 3))
+    grid = [[h[i] * a[j] for j in range(MAX_GOALS + 1)] for i in range(MAX_GOALS + 1)]
+    if not rho:
+        return grid
+    total = 0.0
+    for i in range(2):              # tau only touches goals 0 and 1
+        for j in range(2):
+            grid[i][j] = max(0.0, grid[i][j] * _dc_tau(i, j, lam_home, lam_away, rho))
+    for row in grid:
+        total += sum(row)
+    if total <= 0:
+        return grid
+    return [[cell / total for cell in row] for row in grid]
+
+
+def total_over_prob(mean: float, line: float) -> float:
+    """P(home + away goals > line) when the match total is Poisson(`mean`).
+
+    A closed-form read of the over side at a given line, used to translate the
+    market's over/under price into the goal mean it implies (see
+    `mean_from_total_over`). The sum of two independent Poissons is Poisson, so a
+    single rate captures the total cleanly.
+    """
+    pmf = _pmf_vector(round(mean, 3))
+    k = int(math.floor(line))
+    return max(0.0, 1.0 - sum(pmf[:k + 1]))
+
+
+def mean_from_total_over(line: float, p_over: float) -> float:
+    """Invert `total_over_prob`: the Poisson total-mean implying this over prob.
+
+    `total_over_prob` is monotonic in the mean, so a bisection recovers the goal
+    expectation the market's over/under line is pricing — the input we blend into
+    the model's mean to sharpen totals (and the derived BTTS/handicap) for free.
+    """
+    lo, hi = 0.2, 8.0
+    for _ in range(40):
+        mid = (lo + hi) / 2.0
+        if total_over_prob(mid, line) < p_over:
+            lo = mid
+        else:
+            hi = mid
+    return (lo + hi) / 2.0
+
+
+def goal_cdf(lam: float) -> List[float]:
+    """Cumulative Poisson over k = 0..MAX_GOALS for fast inverse-CDF sampling."""
+    pmf = _pmf_vector(round(lam, 3))
+    cdf, run = [], 0.0
+    for p in pmf:
+        run += p
+        cdf.append(run)
+    cdf[-1] = 1.0  # absorb the truncated tail into the max bucket
+    return cdf
+
+
+def sample_goals(cdf: List[float], rng) -> int:
+    """Draw a goal count from a precomputed cumulative distribution."""
+    return bisect.bisect_left(cdf, rng.random())
+
+--- FILE: agent/worldcup/predict.py ---
+"""Model-driven match predictions — what we think will happen, per bet type.
+
+This is the heart of the restructure. Instead of asking "which book is offering a
+good price", we ask "what is most likely to happen in this game", and report a
+call for every bet type:
+
+    * result   — home win / draw / away win (1X2)
+    * total    — over / under the central goal line
+    * btts     — both teams to score: yes / no
+    * handicap — the favorite to cover a goal line (win by N+)
+
+The probabilities come from a team-strength model: each side's effective rating
+(strength prior + live form) sets two Poisson goal rates, whose joint scoreline
+grid yields every market exactly. When live odds are available we *blend* the
+model with the no-vig market consensus — the market is sharp, so it sharpens us,
+but the model always keeps majority weight (we are not just echoing the book).
+"""
+from __future__ import annotations
+
+from datetime import datetime, timezone
+from typing import List, Optional, Tuple
+
+from . import factors, ratings
+from .devig import consensus_fair
+from .models import Match, Prediction
+from .poisson import fit_lambdas, mean_from_total_over, score_matrix
+
+# Market blend: how much weight the (sharp) market can take from the model when
+# odds are deep and tight. The model keeps at least (1 - MAX_MARKET_WEIGHT).
+# The closing consensus is the single best predictor of what actually happens, so
+# for a *likelihood* engine we let it lead when the line is deep and tight (the
+# model still anchors thin/loose markets). Calibration (RPS/Brier) arbitrates the
+# level — raise/lower here and watch site/worldcup_calibration.json.
+MAX_MARKET_WEIGHT = 0.75
+
+
+def _minutes_to_start(commence_time: str) -> Optional[float]:
+    try:
+        start = datetime.fromisoformat(commence_time.replace("Z", "+00:00"))
+        if start.tzinfo is None:
+            start = start.replace(tzinfo=timezone.utc)
+    except (ValueError, AttributeError):
+        return None
+    return (start - datetime.now(timezone.utc)).total_seconds() / 60.0
+
+
+# ----------------------------------------------------- derived market math ---
+def _result_probs(grid) -> Tuple[float, float, float]:
+    """(P home win, P draw, P away win) from the scoreline grid."""
+    ph = pd = pa = 0.0
+    for i, row in enumerate(grid):
+        for j, p in enumerate(row):
+            if i > j:
+                ph += p
+            elif i == j:
+                pd += p
+            else:
+                pa += p
+    return ph, pd, pa
+
+
+def _total_over(grid, line: float) -> float:
+    """P(total goals > line)."""
+    p = 0.0
+    for i, row in enumerate(grid):
+        for j, cell in enumerate(row):
+            if i + j > line:
+                p += cell
+    return p
+
+
+def _btts_yes(grid) -> float:
+    """P(both teams score) = 1 - P(home 0) - P(away 0) + P(0-0)."""
+    p_home_zero = sum(grid[0])
+    p_away_zero = sum(row[0] for row in grid)
+    p_nil_nil = grid[0][0]
+    return max(0.0, 1.0 - p_home_zero - p_away_zero + p_nil_nil)
+
+
+def _cover(grid, handicap: float, side: str) -> float:
+    """P(`side` covers `handicap`). handicap is the favorite's line, e.g. -1.5.
+
+    side="home": home margin (i-j) + handicap > 0. side="away": (j-i) - handicap > 0.
+    Half-goal lines never push, so this is a clean win probability.
+    """
+    p = 0.0
+    for i, row in enumerate(grid):
+        for j, cell in enumerate(row):
+            margin = (i - j) if side == "home" else (j - i)
+            if margin + handicap > 0:
+                p += cell
+    return p
+
+
+# ----------------------------------------------------------- market blend ---
+def _market_result(match: Match) -> Optional[Tuple[float, float, float, float, int]]:
+    """No-vig consensus 1X2 as (p_home, p_draw, p_away, vig, n_books), or None."""
+    fair = consensus_fair(match.game.markets.get("h2h", []))
+    if fair is None:
+        return None
+    by_name = {k[0]: v for k, v in fair.fair_by_key.items()}
+    ph = by_name.get(match.home)
+    pa = by_name.get(match.away)
+    pd = by_name.get("Draw")
+    if ph is None or pa is None:
+        return None
+    if pd is None:
+        pd = max(0.0, 1.0 - ph - pa)
+    s = ph + pd + pa
+    if s <= 0:
+        return None
+    return ph / s, pd / s, pa / s, fair.vig, fair.n_books
+
+
+def _market_total(match: Match) -> Optional[Tuple[float, float, float, float, int]]:
+    """No-vig consensus over/under as (line, p_over, p_under, vig, n_books), or None.
+
+    Reads the `totals` market we already poll (and were, until now, discarding in
+    the per-game calls): the modal line plus its de-vigged over/under split.
+    """
+    fair = consensus_fair(match.game.markets.get("totals", []))
+    if fair is None:
+        return None
+    over = under = line = None
+    for (name, point), p in fair.fair_by_key.items():
+        nl = (name or "").lower()
+        if nl.startswith("over"):
+            over, line = p, point
+        elif nl.startswith("under"):
+            under = p
+            if line is None:
+                line = point
+    if over is None or under is None or line is None:
+        return None
+    s = over + under
+    if s <= 0:
+        return None
+    return float(line), over / s, under / s, fair.vig, fair.n_books
+
+
+def _market_weight(vig: float, n_books: int) -> float:
+    """How much to trust the market in the blend (0..MAX_MARKET_WEIGHT)."""
+    depth = max(0.0, min(1.0, n_books / 5.0))
+    if vig <= 0.04:
+        tight = 1.0
+    elif vig >= 0.10:
+        tight = 0.3
+    else:
+        tight = 1.0 - 0.7 * ((vig - 0.04) / 0.06)
+    return MAX_MARKET_WEIGHT * depth * tight
+
+
+def _total_line(lh: float, la: float) -> float:
+    """Central over/under line: nearest 0.5 to the expected total goals."""
+    return round((lh + la) * 2) / 2
+
+
+# --------------------------------------------------------------- builder ---
+def _confidence(model_market_gap: Optional[float], minutes: Optional[float],
+                rated: bool, injury_uncertainty: float = 0.0) -> float:
+    """Trust weight for a prediction.
+
+    Higher when the model and market agree (small gap), the game isn't imminent,
+    and at least one side has a real rating (not the default fallback). Lower when a
+    doubtful key player leaves the team sheet genuinely uncertain.
+    """
+    # Agreement: full trust at a perfect match, decaying to 0.5 at a 25pt gap.
+    if model_market_gap is None:
+        agree = 0.8  # model-only: no independent confirmation
+    else:
+        agree = max(0.5, 1.0 - model_market_gap / 0.25)
+    if minutes is None:
+        time_factor = 0.9
+    elif minutes <= 0:
+        time_factor = 0.4  # in-play / just kicked off: stale inputs
+    elif minutes >= 60:
+        time_factor = 1.0
+    else:
+        time_factor = 0.6 + 0.4 * (minutes / 60.0)
+    rated_factor = 1.0 if rated else 0.7
+    sheet_factor = 1.0 - 0.5 * max(0.0, min(1.0, injury_uncertainty))
+    return max(0.0, min(1.0, agree * time_factor * rated_factor * sheet_factor))
+
+
+def _argmax(outcomes: List[Tuple[str, float]]) -> Tuple[str, float]:
+    return max(outcomes, key=lambda o: o[1])
+
+
+def predict_match(match: Match, standing_home: dict = None,
+                  standing_away: dict = None, home_absences=None,
+                  away_absences=None) -> List[Prediction]:
+    """All bet-type calls for one upcoming match. Empty for played matches.
+
+    `standing_*` form-adjusts each side's rating (points/GD momentum); `*_absences`
+    are injuries.Absence lists that, with attacking/defensive form and host venue,
+    are folded into the goal model by `factors.compute`.
+    """
+    if match.played:
+        return []
+
+    rh = ratings.effective_rating(match.home, standing_home)
+    ra = ratings.effective_rating(match.away, standing_away)
+    rated = (ratings.base_rating(match.home) != ratings.DEFAULT_RATING
+             or ratings.base_rating(match.away) != ratings.DEFAULT_RATING)
+    mf = factors.compute(match.home, match.away, standing_home, standing_away,
+                         home_absences, away_absences)
+    lh, la = ratings.lambdas(
+        rh, ra, mean_goals=ratings.BASE_GOALS, home_advantage=mf.home_advantage,
+        home_attack_adj=mf.home_attack_adj, home_defense_adj=mf.home_defense_adj,
+        away_attack_adj=mf.away_attack_adj, away_defense_adj=mf.away_defense_adj)
+    grid = score_matrix(lh, la)
+
+    minutes = _minutes_to_start(match.commence_time)
+
+    # --- Result (1X2): blend model with market when present ---
+    m_ph, m_pd, m_pa = _result_probs(grid)
+    mk = _market_result(match)
+    market_prob_pick = None
+    gap = None
+    if mk is not None:
+        k_ph, k_pd, k_pa, vig, n_books = mk
+        # Re-fit a market-consistent lambda pair so derived markets also benefit.
+        lh, la = fit_lambdas(k_ph, k_pd, k_pa, mean_goals=lh + la)
+        w = _market_weight(vig, n_books)
+        ph = (1 - w) * m_ph + w * k_ph
+        pd = (1 - w) * m_pd + w * k_pd
+        pa = (1 - w) * m_pa + w * k_pa
+        s = ph + pd + pa
+        ph, pd, pa = ph / s, pd / s, pa / s
+        grid = score_matrix(lh, la)  # refreshed grid drives total/btts/handicap
+        gap = (abs(m_ph - k_ph) + abs(m_pd - k_pd) + abs(m_pa - k_pa)) / 2.0
+    else:
+        ph, pd, pa = m_ph, m_pd, m_pa
+
+    # --- Totals: fold the market over/under into the goal mean. Until now the
+    #     totals odds we pay for were unused in the per-game calls; here they
+    #     sharpen the total AND the derived BTTS/handicap, since shifting the mean
+    #     (while preserving supremacy lh-la, so the 1X2 blend above is untouched)
+    #     reshapes the whole grid. ---
+    market_total_line = None
+    market_over_prob = market_under_prob = None
+    mt = _market_total(match)
+    if mt is not None:
+        market_total_line, market_over_prob, market_under_prob, t_vig, t_books = mt
+        mu_model = lh + la
+        mu_mkt = mean_from_total_over(market_total_line, market_over_prob)
+        w_t = _market_weight(t_vig, t_books)
+        delta = ((1 - w_t) * mu_model + w_t * mu_mkt - mu_model) / 2.0
+        lh, la = max(0.15, lh + delta), max(0.15, la + delta)
+        grid = score_matrix(lh, la)
+
+    preds: List[Prediction] = []
+    suffix = mf.rationale_suffix(match.home, match.away)
+
+    def add(market, pick, prob, model_prob, market_prob, outcomes, rationale):
+        preds.append(Prediction(
+            match_id=match.game.id, group=match.group,
+            commence_time=match.commence_time, home=match.home, away=match.away,
+            market=market, pick=pick, prob=prob,
+            confidence=_confidence(gap, minutes, rated, mf.injury_uncertainty),
+            model_prob=model_prob, market_prob=market_prob,
+            outcomes=sorted(outcomes, key=lambda o: o[1], reverse=True),
+            rationale=rationale + suffix,
+        ))
+
+    # Result
+    res_out = [(f"{match.home} win", ph), ("Draw", pd), (f"{match.away} win", pa)]
+    res_model = {f"{match.home} win": m_ph, "Draw": m_pd, f"{match.away} win": m_pa}
+    pick, prob = _argmax(res_out)
+    mkt_p = None
+    if mk is not None:
+        mkt_p = {f"{match.home} win": mk[0], "Draw": mk[1], f"{match.away} win": mk[2]}[pick]
+    add("result", pick, prob, res_model[pick], mkt_p, res_out,
+        _result_rationale(match, pick, prob, lh, la))
+
+    # Total goals — priced at the market's quoted line when we have one (a real
+    # bettable number), else the model's central line.
+    line = market_total_line if market_total_line is not None else _total_line(lh, la)
+    p_over = _total_over(grid, line)
+    p_under = 1.0 - p_over
+    tot_out = [(f"Over {line:g}", p_over), (f"Under {line:g}", p_under)]
+    pick, prob = _argmax(tot_out)
+    tot_mkt_p = None
+    if market_over_prob is not None:
+        tot_mkt_p = market_over_prob if pick.lower().startswith("over") else market_under_prob
+    add("total", pick, prob, prob, tot_mkt_p, tot_out,
+        f"Expected ~{lh + la:.1f} goals ({match.home} {lh:.2f}, "
+        f"{match.away} {la:.2f}); {pick.lower()} is the {prob*100:.0f}% side.")
+
+    # Both teams to score
+    p_btts = _btts_yes(grid)
+    btts_out = [("BTTS: Yes", p_btts), ("BTTS: No", 1.0 - p_btts)]
+    pick, prob = _argmax(btts_out)
+    add("btts", pick, prob, prob, None, btts_out,
+        f"With scoring rates of {lh:.2f} and {la:.2f}, both teams scoring is a "
+        f"{p_btts*100:.0f}% chance — {pick}.")
+
+    # Handicap: favorite to cover -1.5 (win by 2+), reported for the stronger side.
+    fav_side = "home" if (ph >= pa) else "away"
+    fav_name = match.home if fav_side == "home" else match.away
+    dog_name = match.away if fav_side == "home" else match.home
+    p_fav_minus = _cover(grid, -1.5, fav_side)
+    p_dog_plus = 1.0 - p_fav_minus
+    hcp_out = [
+        (f"{fav_name} -1.5", p_fav_minus),
+        (f"{dog_name} +1.5", p_dog_plus),
+    ]
+    pick, prob = _argmax(hcp_out)
+    add("handicap", pick, prob, prob, None, hcp_out,
+        f"{fav_name} wins by 2+ goals {p_fav_minus*100:.0f}% of the time; "
+        f"the {prob*100:.0f}% call is {pick}.")
+
+    return preds
+
+
+def _result_rationale(match: Match, pick: str, prob: float, lh: float, la: float) -> str:
+    edge = "a clear favorite" if prob >= 0.55 else "a slight edge" if prob >= 0.4 else "a toss-up"
+    if pick == "Draw":
+        return (f"Evenly matched ({match.home} {lh:.2f} vs "
+                f"{match.away} {la:.2f} expected goals) — a draw is the "
+                f"{prob*100:.0f}% most-likely result.")
+    return (f"{pick.replace(' win','')} is the {prob*100:.0f}% pick — {edge} "
+            f"(expected goals {match.home} {lh:.2f}, {match.away} {la:.2f}).")
+
+
+def predict_all(matches: List[Match],
+                standings: dict = None, absences: dict = None) -> List[Prediction]:
+    """Predictions for every upcoming match, flattened.
+
+    `standings` is the fixtures.group_standings() map {group: {team: {...}}} used
+    to form-adjust ratings; pass None to predict from the strength prior alone.
+    `absences` is the injuries.team_absences_map() {canonical_team: [Absence,...]}
+    used to injury-adjust the goal model; None disables the injury signal.
+    """
+    from .fixtures import canonical_team
+
+    def team_abs(name: str):
+        if not absences:
+            return None
+        return absences.get(canonical_team(name) or name) or absences.get(name)
+
+    out: List[Prediction] = []
+    for m in matches:
+        sh = sa = None
+        if standings and m.group in standings:
+            g = standings[m.group]
+            sh, sa = g.get(m.home), g.get(m.away)
+        out.extend(predict_match(m, sh, sa, team_abs(m.home), team_abs(m.away)))
+    return out
+
+
+def rank_predictions(preds: List[Prediction], limit_games: int = 0) -> List[Prediction]:
+    """Order calls most-likely-to-hit first, keeping whole games together.
+
+    Calls are sorted by probability (confidence breaks ties); games are then
+    ordered by their single strongest call. `limit_games` caps how many *games*
+    are kept (all of a kept game's market calls survive) so the per-game cards on
+    the site are never truncated mid-game. 0 = no cap.
+    """
+    ranked = sorted(preds, key=lambda p: (p.prob, p.confidence), reverse=True)
+    game_order: List[str] = []
+    seen = set()
+    for p in ranked:
+        if p.match_id not in seen:
+            seen.add(p.match_id)
+            game_order.append(p.match_id)
+    if limit_games and limit_games > 0:
+        keep = set(game_order[:limit_games])
+        ranked = [p for p in ranked if p.match_id in keep]
+    return ranked
+
+--- FILE: agent/worldcup/ratings.py ---
+"""Team strength ratings — the prior the prediction engine is built on.
+
+These are Elo-style ratings (1500 = average international side; ~2100 = the very
+best). They are a *prior*, not the final word: the prediction engine adjusts a
+team's effective rating by its live tournament form (standings) before modeling a
+match, and blends the resulting model probability with the market when odds exist.
+
+Ratings cover the real 2026 field (keyed by the canonical names in fixtures.py)
+plus the mock provider's teams, so a single table feeds both the live and offline
+paths. Unknown teams fall back to DEFAULT_RATING rather than breaking a run.
+
+Refine these as real results accumulate — calibration (engine/calibration.py) is
+the honest check on whether the priors are any good.
+"""
+from __future__ import annotations
+
+import unicodedata
+from typing import Dict, Tuple
+
+DEFAULT_RATING = 1700.0   # a mid-tier side we have no specific rating for
+HOME_ADVANTAGE = 0.20     # goal bump applied to the nominal "home" side
+BASE_GOALS = 2.65         # baseline combined goals for an evenly matched game
+RATING_SCALE = 150.0      # Elo points worth ~1 goal of supremacy
+
+# Canonical team -> rating. Names match fixtures.STANDINGS_2026 spellings so the
+# live feed (bridged via fixtures.canonical_team) lines up; mock-only names are
+# included too. Order is irrelevant.
+_RATINGS: Dict[str, float] = {
+    # Top tier
+    "Argentina": 2105, "France": 2080, "Spain": 2070, "England": 2055,
+    "Brazil": 2050, "Portugal": 2035, "Netherlands": 2010, "Germany": 2000,
+    # Strong
+    "Italy": 1985, "Belgium": 1975, "Croatia": 1955, "Uruguay": 1945,
+    "Colombia": 1935, "Morocco": 1930, "Norway": 1920, "United States": 1915,
+    "Mexico": 1905, "Japan": 1900, "Senegal": 1890, "Switzerland": 1885,
+    "Denmark": 1880, "South Korea": 1870, "Ecuador": 1860, "Austria": 1855,
+    "Ukraine": 1845, "Turkey": 1840, "Australia": 1835, "Canada": 1830,
+    # Mid
+    "Nigeria": 1825, "Serbia": 1820, "Scotland": 1820, "Czechia": 1818,
+    "Egypt": 1815, "Poland": 1810, "Peru": 1800, "Sweden": 1795,
+    "Wales": 1785, "Ghana": 1780, "Bosnia & Herzegovina": 1780, "Cameroon": 1775,
+    "Ivory Coast": 1770, "DR Congo": 1760, "Tunisia": 1760, "Costa Rica": 1750,
+    "Qatar": 1740, "Saudi Arabia": 1735, "South Africa": 1732, "Iran": 1730,
+    "Algeria": 1725, "Paraguay": 1720, "Panama": 1700, "Iraq": 1700,
+    # Lower
+    "Jamaica": 1690, "Cape Verde": 1680, "New Zealand": 1640, "Curaçao": 1640,
+    "Haiti": 1635, "Jordan": 1620, "Uzbekistan": 1610,
+}
+
+# Mock-provider / feed spellings that aren't the canonical key above.
+_ALIASES = {
+    "korearepublic": "South Korea",
+    "republicofkorea": "South Korea",
+    "usa": "United States",
+    "us": "United States",
+    "unitedstatesofamerica": "United States",
+    "cotedivoire": "Ivory Coast",
+    "bosniaandherzegovina": "Bosnia & Herzegovina",
+    "bosnia": "Bosnia & Herzegovina",
+    "czechrepublic": "Czechia",
+    "caboverde": "Cape Verde",
+    "drcongo": "DR Congo",
+    "turkiye": "Turkey",
+}
+
+
+def _norm(name: str) -> str:
+    """Accent/punctuation/case-insensitive key (e.g. 'Curaçao' -> 'curacao')."""
+    decomposed = unicodedata.normalize("NFKD", name or "")
+    ascii_only = decomposed.encode("ascii", "ignore").decode("ascii")
+    return "".join(ch for ch in ascii_only.lower() if ch.isalnum())
+
+
+_NORM_TO_CANON = {_norm(name): name for name in _RATINGS}
+_NORM_TO_CANON.update(_ALIASES)
+
+
+def base_rating(name: str) -> float:
+    """The static strength prior for a team (DEFAULT_RATING if unknown)."""
+    canon = _NORM_TO_CANON.get(_norm(name))
+    return _RATINGS.get(canon, DEFAULT_RATING)
+
+
+def form_delta(standing: Dict[str, int]) -> float:
+    """A modest rating nudge from live tournament form, in Elo points.
+
+    Uses points-per-game (above/below the 1.0 average of a random result) and
+    goal-difference-per-game. Deliberately small: a 1-2 game sample shouldn't
+    overwhelm the strength prior, only tilt it. `standing` is one team's
+    {points, gd, gf, played} dict (as produced by fixtures.group_standings()).
+    """
+    played = standing.get("played", 0)
+    if not played:
+        return 0.0
+    ppg = standing.get("points", 0) / played           # 0..3
+    gdpg = standing.get("gd", 0) / played
+    # ~+25 Elo per point-per-game above average, ~+15 per goal of GD/game, capped.
+    delta = 25.0 * (ppg - 1.0) + 15.0 * gdpg
+    return max(-90.0, min(90.0, delta))
+
+
+def effective_rating(name: str, standing: Dict[str, int] = None) -> float:
+    """Strength rating for a match: results-adjusted Elo, else prior + live form.
+
+    Once a team has a settled result, `elo.py` has folded the actual outcome into a
+    self-correcting rating; that already integrates form, so we use it directly and
+    do *not* also add the standings nudge (which would double-count the same games).
+    Before any result settles we fall back to the static prior plus a small
+    form_delta from the live table.
+    """
+    from . import elo  # lazy: elo imports ratings, so avoid a load-time cycle
+
+    rated = elo.rating_for(name)
+    if rated is not None:
+        return rated
+    r = base_rating(name)
+    if standing:
+        r += form_delta(standing)
+    return r
+
+
+def lambdas(
+    rating_home: float,
+    rating_away: float,
+    mean_goals: float = BASE_GOALS,
+    home_advantage: float = HOME_ADVANTAGE,
+    *,
+    home_attack_adj: float = 0.0,
+    home_defense_adj: float = 0.0,
+    away_attack_adj: float = 0.0,
+    away_defense_adj: float = 0.0,
+) -> Tuple[float, float]:
+    """Goal expectancies (lambda_home, lambda_away) from two ratings.
+
+    supremacy = (R_home - R_away)/RATING_SCALE + home_advantage, split around the
+    baseline goal total. The single source of the rating->goals mapping (the mock
+    provider and the simulator's no-market fallback both use this).
+
+    The four ``*_adj`` arguments are goal-unit tilts (see factors.py) that move a
+    single side's scoring without touching overall supremacy — so an injury to a
+    striker lowers only that team's goals, while an injury to a defense raises only
+    the *opponent's*. A positive ``defense_adj`` is a stronger defense, so it is
+    *subtracted* from the opponent's rate. Both rates floor at 0.15.
+    """
+    supremacy = (rating_home - rating_away) / RATING_SCALE + home_advantage
+    lh = (mean_goals + supremacy) / 2.0 + home_attack_adj - away_defense_adj
+    la = (mean_goals - supremacy) / 2.0 + away_attack_adj - home_defense_adj
+    return max(0.15, lh), max(0.15, la)
+
+--- FILE: agent/worldcup/simulate.py ---
+"""Monte Carlo group-stage simulator (2026 format).
+
+48 teams, 12 groups (A-L) of four, single round-robin (6 matches/group). The top
+two of each group plus the eight best third-placed teams advance to the Round of
+32. We drive it entirely off the market: each unplayed match's no-vig 1X2 line is
+turned into Poisson goal expectancies, scorelines are sampled, group tables are
+built with FIFA-style tiebreakers, and we count how often each team wins its group
+and advances.
+
+Played matches use their real scoreline, so projections sharpen as the group stage
+progresses. Tiebreakers: points, goal difference, goals for, then a (seeded)
+random draw — head-to-head is intentionally omitted for simplicity.
+"""
+from __future__ import annotations
+
+import random
+from collections import defaultdict
+from dataclasses import dataclass
+from typing import Dict, List, Optional, Tuple
+
+from . import factors, ratings
+from .devig import consensus_fair
+from .models import GroupProjection, Match, TeamProjection
+from .poisson import fit_lambdas, goal_cdf, sample_goals
+
+THIRD_PLACE_SLOTS = 8  # how many third-placed teams advance (full 2026 field)
+
+
+@dataclass
+class _MatchModel:
+    home: str
+    away: str
+    played: bool
+    home_goals: int = 0
+    away_goals: int = 0
+    cdf_home: Optional[List[float]] = None
+    cdf_away: Optional[List[float]] = None
+
+
+def _fair_1x2(match: Match) -> Optional[Tuple[float, float, float]]:
+    """(P home, P draw, P away) from the consensus 1X2 line, or None."""
+    fair = consensus_fair(match.game.markets.get("h2h", []))
+    if fair is None:
+        return None
+    by_name = {k[0]: v for k, v in fair.fair_by_key.items()}
+    ph = by_name.get(match.home)
+    pa = by_name.get(match.away)
+    pd = by_name.get("Draw")
+    if ph is None or pa is None:
+        return None
+    if pd is None:  # 2-way line (no draw quoted) — shouldn't happen for soccer
+        pd = max(0.0, 1.0 - ph - pa)
+    return ph, pd, pa
+
+
+def _mean_goals(match: Match) -> float:
+    """Seed the Poisson search from the totals line if the book quotes one."""
+    totals = match.game.markets.get("totals", [])
+    fair = consensus_fair(totals)
+    if fair:
+        points = [k[1] for k in fair.fair_by_key if k[1] is not None]
+        if points:
+            return float(points[0])
+    return 2.7
+
+
+def _build_model(match: Match, standings: Optional[Dict[str, Dict]] = None,
+                 absences: Optional[Dict[str, list]] = None) -> _MatchModel:
+    if match.played and match.home_goals is not None and match.away_goals is not None:
+        return _MatchModel(match.home, match.away, True, match.home_goals, match.away_goals)
+
+    probs = _fair_1x2(match)
+    if probs is None:
+        # No market for this match -> predict from team strength + live form,
+        # injuries and host venue (same factor layer as predict.py) instead of a
+        # neutral coin flip.
+        sh = sa = None
+        if standings and match.group in standings:
+            g = standings[match.group]
+            sh, sa = g.get(match.home), g.get(match.away)
+        rh = ratings.effective_rating(match.home, sh)
+        ra = ratings.effective_rating(match.away, sa)
+        ha = absences.get(match.home) if absences else None
+        aa = absences.get(match.away) if absences else None
+        mf = factors.compute(match.home, match.away, sh, sa, ha, aa)
+        lh, la = ratings.lambdas(
+            rh, ra, mean_goals=ratings.BASE_GOALS, home_advantage=mf.home_advantage,
+            home_attack_adj=mf.home_attack_adj, home_defense_adj=mf.home_defense_adj,
+            away_attack_adj=mf.away_attack_adj, away_defense_adj=mf.away_defense_adj)
+    else:
+        lh, la = fit_lambdas(*probs, mean_goals=_mean_goals(match))
+    return _MatchModel(
+        match.home, match.away, False,
+        cdf_home=goal_cdf(lh), cdf_away=goal_cdf(la),
+    )
+
+
+def _current_standings(models: List[_MatchModel], teams: List[str]) -> Dict[str, Dict]:
+    """Points / GD / games-played from matches already decided."""
+    table = {t: {"points": 0, "gd": 0, "gf": 0, "played": 0} for t in teams}
+    for m in models:
+        if not m.played:
+            continue
+        for t, gf, ga in ((m.home, m.home_goals, m.away_goals),
+                          (m.away, m.away_goals, m.home_goals)):
+            if t not in table:
+                continue
+            table[t]["played"] += 1
+            table[t]["gf"] += gf
+            table[t]["gd"] += gf - ga
+            table[t]["points"] += 3 if gf > ga else (1 if gf == ga else 0)
+    return table
+
+
+def simulate(
+    matches: List[Match],
+    sims: int = 20000,
+    seed: int = 42,
+    third_place_slots: int = THIRD_PLACE_SLOTS,
+    seed_standings: Optional[Dict[str, Dict[str, Dict[str, int]]]] = None,
+    absences: Optional[Dict[str, list]] = None,
+) -> List[GroupProjection]:
+    """Run the Monte Carlo and return per-group, per-team projections.
+
+    Two modes:
+      * Full field (mock provider): pass every group match — played ones carry
+        real scorelines, upcoming ones carry odds — and leave `seed_standings`
+        unset. Tables are built from the played scorelines.
+      * Seeded (live provider): pass only the *remaining* matches (odds-priced)
+        and a `seed_standings` map {group: {team: {points, gd, gf, played}}}.
+        Each group's four teams and starting table come from the standings, so
+        the projection reflects where the tournament actually stands.
+    """
+    rng = random.Random(seed)
+
+    by_group: Dict[str, List[Match]] = defaultdict(list)
+    for m in matches:
+        by_group[m.group].append(m)
+
+    groups = sorted(seed_standings) if seed_standings else sorted(by_group)
+    n_thirds = min(third_place_slots, len(groups))
+
+    # Precompute the per-match scoreline model once (the expensive fit). Matches
+    # with no market line fall back to the ratings model, form-adjusted from the
+    # seeded standings when available.
+    models: Dict[str, List[_MatchModel]] = {
+        g: [_build_model(m, seed_standings, absences) for m in by_group[g]]
+        for g in groups
+    }
+    teams_in: Dict[str, List[str]] = {}
+    for g in groups:
+        if seed_standings:
+            teams_in[g] = list(seed_standings[g].keys())
+            continue
+        seen: List[str] = []
+        for m in models[g]:
+            for t in (m.home, m.away):
+                if t not in seen:
+                    seen.append(t)
+        teams_in[g] = seen
+
+    # Tallies.
+    win_group = defaultdict(int)
+    top2 = defaultdict(int)
+    advance = defaultdict(int)
+    points_sum = defaultdict(float)
+    finish = {g: {t: defaultdict(int) for t in teams_in[g]} for g in groups}
+
+    for _ in range(sims):
+        third_pool: List[Tuple[Tuple[int, int, int], str]] = []  # (key, team)
+
+        for g in groups:
+            if seed_standings:
+                # Start from the real current table; only remaining matches vary.
+                stats = {t: [s["points"], s["gd"], s["gf"]]
+                         for t, s in seed_standings[g].items()}
+            else:
+                stats = {t: [0, 0, 0] for t in teams_in[g]}  # [points, gd, gf]
+            for m in models[g]:
+                if m.played:
+                    hg, ag = m.home_goals, m.away_goals
+                else:
+                    hg = sample_goals(m.cdf_home, rng)
+                    ag = sample_goals(m.cdf_away, rng)
+                sh, sa = stats[m.home], stats[m.away]
+                sh[1] += hg - ag; sa[1] += ag - hg
+                sh[2] += hg; sa[2] += ag
+                if hg > ag:
+                    sh[0] += 3
+                elif hg < ag:
+                    sa[0] += 3
+                else:
+                    sh[0] += 1; sa[0] += 1
+
+            # Rank: points, GD, GF, then a random draw to break exact ties.
+            ranked = sorted(
+                teams_in[g],
+                key=lambda t: (stats[t][0], stats[t][1], stats[t][2], rng.random()),
+                reverse=True,
+            )
+            for pos, t in enumerate(ranked):
+                finish[g][t][pos + 1] += 1
+                points_sum[t] += stats[t][0]
+            win_group[ranked[0]] += 1
+            top2[ranked[0]] += 1
+            top2[ranked[1]] += 1
+            advance[ranked[0]] += 1
+            advance[ranked[1]] += 1
+            third = ranked[2]
+            s = stats[third]
+            third_pool.append(((s[0], s[1], s[2]), third))
+
+        # Eight best third-placed teams advance too.
+        third_pool.sort(key=lambda x: (x[0][0], x[0][1], x[0][2], rng.random()), reverse=True)
+        for _key, team in third_pool[:n_thirds]:
+            advance[team] += 1
+
+    # Assemble projections.
+    out: List[GroupProjection] = []
+    for g in groups:
+        cur = seed_standings[g] if seed_standings else _current_standings(models[g], teams_in[g])
+        projs = []
+        for t in teams_in[g]:
+            fp = {str(p): finish[g][t][p] / sims for p in (1, 2, 3, 4)}
+            projs.append(TeamProjection(
+                team=t,
+                group=g,
+                played=cur[t]["played"],
+                points=cur[t]["points"],
+                goal_diff=cur[t]["gd"],
+                p_win_group=win_group[t] / sims,
+                p_top2=top2[t] / sims,
+                p_advance=advance[t] / sims,
+                exp_points=points_sum[t] / sims,
+                finish_probs=fp,
+            ))
+        # Display order: current points, then projected advancement.
+        projs.sort(key=lambda p: (p.points, p.goal_diff, p.p_advance), reverse=True)
+        if seed_standings:
+            # A 4-team group is a 6-match round robin; played comes from the table.
+            played = round(sum(s["played"] for s in seed_standings[g].values()) / 2)
+            total = len(teams_in[g]) * (len(teams_in[g]) - 1) // 2
+        else:
+            played = sum(1 for m in models[g] if m.played)
+            total = len(models[g])
+        out.append(GroupProjection(
+            group=g, teams=projs, matches_played=played, matches_total=total,
+        ))
+    return out
+
+--- FILE: docs/prediction-strategy-research.md ---
+# Bet outcome prediction strategy — research notes
+
+Audience: future Claude session. Dense over pretty. Links are file paths.
+
+## Current architecture (what exists)
+System is a **prediction engine**: for each game it estimates the probability of
+every outcome per market and publishes the most likely call, ranked by probability.
+It does NOT shop price or chase +EV — market odds enter only as a de-vigged consensus
+*input* to the model.
+
+Flow: build team-strength model from results history -> de-vig each book into a no-vig
+consensus -> blend (model-first) -> per-market most-likely call + plain-English "why".
+- ratings: agent/engine/ratings.py (team strength from results; config strategy.model_min_games)
+- de-vig consensus: agent/engine/devig.py (power default, shin, multiplicative; config.yaml strategy.devig_method; weighted by strategy.book_weights)
+- blend + per-market prediction + rationale: agent/engine/predict.py (model-first, capped by strategy.max_market_weight)
+- calibration + Brier: agent/engine/calibration.py
+- final scores (feed the model + calibration): agent/engine/results.py (ESPN)
+- World Cup outcome model: agent/worldcup/poisson.py (indep Poisson fit to market 1X2)
+  + agent/worldcup/simulate.py (Monte Carlo group stage, FIFA tiebreakers)
+- free context: agent/context/espn.py (injuries/headlines), agent/context/weather.py
+  (Open-Meteo, OFF: config.yaml context.weather=false)
+- config: config.yaml
+
+## Core thesis
+The de-vigged market consensus is a strong public predictor of outcomes; an amateur
+model rarely beats it outright. So the design is a **model-first blend**, not a
+from-scratch "beat the market" model:
+  Layer 1 PRIOR  = team-strength model from results (HAVE IT)
+  Layer 2 BLEND  = de-vigged market consensus, capped so it can't fully override (HAVE IT)
+  Layer 3 ADJUST = cheap independent signals where the market is slow/soft (THE GAP)
+Layers 1 & 2 exist. Opportunity = Layer 3 + the calibration measurement loop.
+
+## Per-market: each bet type needs a DIFFERENT object
+- Moneyline (A wins): win probability. HAVE (model + consensus blend).
+- Spread (cover): needs a MARGIN DISTRIBUTION, not a win prob. Only have consensus + blend.
+- Totals (O/U): needs a TOTAL-POINTS DISTRIBUTION. Only have consensus.
+- Draw (soccer): P(draw) structurally UNDERSTATED by indep Poisson (noted poisson.py:8)
+  -> currently underpredicting draws.
+
+To predict covers/totals from the model independently (not just echo the line),
+convert team strength to distributions:
+- Spread: model margin -> P(cover)=Phi((exp_margin-line)/sigma).
+  sport sigma approx: NFL 13.5, NBA 11-12. Respect key numbers (NFL 3 and 7 ~ 1.5-2 pts).
+- Totals: market line is a strong prior; cheap free nudges = weather (wind/rain depress
+  NFL+MLB overs), NBA pace/possessions, MLB starting pitcher, star scorer out.
+- Draw: add Dixon-Coles low-score correction (lifts 0-0/1-1/1-0).
+
+## Layer 3 signals ranked by accuracy-per-effort (all free; user is cost-lean)
+1. Injuries/lineups/rest — slowest market input; ESPN already wired (context/espn.py).
+   Rest/B2B/travel derivable from schedule already pulled = 0 new API cost.
+2. Weather for outdoor totals — flip config.yaml context.weather=true.
+3. Independent margin/total models — more work, lower marginal value (fights the
+   consensus). Use to nudge the blend, not to replace it.
+
+## Measurement loop (how to know predictions are good)
+- Calibration/Brier = ground truth (calibration.py): do the stated probabilities match
+  realized hit rates? Needs a few hundred graded predictions to separate skill from
+  variance. OPTIMIZE THIS — it's the honest signal that the blend is well-tuned.
+- Loop: predict -> grade vs results -> calibration by sport/market over time -> feed
+  that back into how much the model vs consensus is trusted per sport.
+
+## Research update 2026-06-20 (literature-backed; sources at bottom)
+Web-research pass to pressure-test the plan above. Findings that confirm or change it:
+
+### Accuracy ceilings — set honest expectations [S1][S2][S3]
+- Soccer 1X2 outcome accuracy tops out ~52-56% even for strong models — that's near the
+  practical ceiling, not a failure. Best-in-class = gradient-boosted trees (CatBoost /
+  XGBoost) fed RATING features (Elo / pi- / Berrar): CatBoost + pi-ratings ≈ 55.8% acc,
+  0.1925 RPS, beating plain Poisson/Weibull (~48.5%) and the 2017 Soccer Prediction
+  Challenge field. Takeaway: the rating features matter more than the algorithm.
+- The de-vigged market is *very* hard to beat [S2][S6]. xG + Skellam + isotonic models
+  only MATCH or slightly beat market forecasts, and the market usually wins on Brier.
+  => CONFIRMS the model-first-but-market-anchored design. Goal is not to "beat" consensus
+  but to MATCH it while staying independently explainable and well-calibrated.
+- Cost-lean implication: a full GBM stack is heavier infra AND needs a labeled history we
+  don't have yet. Keep the closed-form Elo+Poisson core now; treat GBM as a LATER upgrade,
+  only after the calibration loop has banked a few hundred graded games to train/validate.
+
+### Use the RIGHT scoring metric per market [S2][S7]
+- Binary markets (ML / spread cover / total O/U): Brier + a reliability curve (predicted
+  vs realized by bin). engine/calibration.py already does exactly this — KEEP.
+- 3-way 1X2 (World Cup result): Brier is the wrong shape. Use **RPS** (ordinal-aware: a
+  home-win call landing on a draw is "less wrong" than one landing on an away win) and/or
+  **log loss / ignorance**. Live debate: some work argues log-loss beats RPS — so report
+  BOTH for 1X2 and don't over-index on one. GAP: WC predictions are graded NOWHERE today
+  (calibration.py is US-engine only). Add an RPS+log-loss grading loop for worldcup/.
+
+### Calibrate, don't just measure [S2][S8]
+- Once ~a few hundred graded predictions exist, fit a post-hoc calibrator and apply it to
+  FUTURE probs: **isotonic regression** (non-parametric; most consistently improves, but
+  overfits small n) or **Platt/logistic scaling** (safer on small n, can help or hurt).
+  Plan: Platt while n is small, switch to isotonic once each (sport,market) bin is dense.
+  Plugs straight onto calibration.py — its reliability bins are already what a calibrator
+  consumes. This is the one change that most directly improves "what are the real chances."
+
+### Dixon-Coles fixes the known draw underprediction (WC) [S4]
+- Confirmed: independent Poisson understates low-score draws (poisson.py:9-10). Fix = the
+  Dixon-Coles ρ correction on the four low scorelines (0-0,1-0,0-1,1-1); ρ typically ≈
+  −0.03 to −0.10 (negative lifts 0-0 & 1-1, trims 1-0 & 0-1). Apply ρ as a multiplier on
+  those four cells of poisson.score_matrix() before re-normalizing — tiny, local, no new
+  data. Pair with **time-decay weighting** (recency half-life ≈ 45 days) when ratings are
+  refit from results so current form outweighs stale results.
+
+### Margin/total distributions — confirmed σ and key numbers (US spreads/totals) [S5]
+- Margin ≈ Normal(mean = model/line, σ): NFL σ ≈ 13.5 (hist. 13.86), NBA σ ≈ 12.
+  predict.py already uses sigma_margin/sigma_total — verify the ratings.py constants match.
+- KEY NUMBERS: a pure Normal misprices NFL margins at 3 and 7. Better = model each key
+  number as its own mass and mix with the Normal ("mixed" distribution). Cheap interim:
+  bump probability mass at ±3 / ±7 with hand-tuned key-number weights. Totals' key numbers
+  are weaker — plain Normal is fine there.
+
+### Layer-3 schedule signals are free AND quantified (NBA especially) [S9]
+- Second night of a back-to-back: teams win less, shoot worse, turn it over more — ≈ 3-5%
+  perf drop, rising to **5-7%** on a coast-to-coast B2B. Travel direction is asymmetric
+  (east-bound ~44.5% win vs west-bound ~40.8%); altitude (Denver, Utah) compounds fatigue.
+  ALL derivable from the schedule we already pull => $0 new API. Best accuracy-per-dollar
+  Layer-3 add for the US engine. Injuries/lineups already wired (context/espn.py,
+  worldcup/factors.py); weather is one config flip for outdoor totals.
+
+## The plan (prioritized; cost-lean; mapped to code + the tools we have)
+Tools available to execute this: the existing Python engine + GitHub Actions cron (the
+predict→grade→publish loop already runs free on a public repo); free data already wired
+(odds /events, ESPN finals + injuries, Open-Meteo); WebSearch/WebFetch for one-off
+research, σ/key-number constants, and host/venue facts (NOT for per-tick scraping — keep
+the cron cheap). No paid ML infra. Ordered by accuracy-per-effort:
+
+1. **Close the measurement loop first — it's the prerequisite for everything else.**
+   a. [DONE 2026-06-20] agent/worldcup/calibration.py — grades the 1X2 result with
+      **RPS + log loss** and total/btts/handicap with **Brier + reliability bins**.
+      Logs every published call to data/history/worldcup_predictions.jsonl (de-duped
+      by match+market, latest pre-kickoff wins); finals come FREE from ESPN's soccer
+      scoreboard (espn_results, no key, fail-safe). Wired into worldcup/pipeline.py
+      (live provider only) -> site/worldcup_calibration.json. grade() is a pure fn
+      over the two logs. NEXT: it has no graded games until group results settle —
+      let it bank a few hundred, then do step 2 (calibrator) and re-tune the
+      factors.py weights / Dixon-Coles rho against RPS instead of by judgement.
+   b. Keep banking graded US predictions (already happens via store.py → calibration.py).
+   Why first: every later change (blend weights, calibrator, GBM) needs this ground truth.
+
+2. **Add a post-hoc calibrator** (engine/calibration.py + a new apply step in predict.py):
+   Platt now, isotonic once each (sport,market) bin is dense. Biggest direct lift to "real
+   chances" honesty. Cheap; pure-Python; no new data.
+
+3. **Dixon-Coles ρ + time-decay weighting in worldcup/** (poisson.score_matrix + ratings
+   refit). Fixes the known draw understatement; ~20 lines; no new data.
+   [DONE 2026-06-20] Dixon-Coles ρ=−0.06 lives in poisson.score_matrix (_dc_tau on the
+   four low-score cells + renormalize; pass rho=0.0 for the plain grid). Flows into
+   every grid-derived WC market (result/draw/btts/totals/handicap). NOTE: time-decay
+   is N/A for WC — its ratings are a hand-maintained prior + standings form, not refit
+   from results; time-decay applies to the US engine (engine/ratings.py from results).
+   Also: the group Monte-Carlo (simulate.py) still samples each team independently via
+   goal_cdf, so DC only reshapes the per-match published grid, not the sim draws.
+
+4. **Model → margin/total distributions with key-number mass for US spreads/totals**
+   (predict.py + ratings.py). Verify σ ≈ NFL 13.5 / NBA 12; add ±3/±7 key-number bumps.
+   Biggest jump in WHAT can be predicted independently rather than echoing the line.
+
+5. **Free Layer-3 schedule signals for the US engine** (new module like worldcup/factors.py,
+   reusing the already-pulled schedule): rest days, back-to-back (esp. coast-to-coast),
+   travel direction, altitude → small win-prob / pace nudges. $0 API. Flip weather on for
+   outdoor totals at the same time.
+
+6. **Wire calibration-by-(sport,market) back into the blend weight** (strategy.max_market_weight
+   per segment): auto-trust the model more where it has been more accurate, the consensus
+   more where it hasn't. Needs the loop from step 1 to have data. A principled successor:
+   learn the model↔market blend as a small logistic stack on graded history.
+
+7. **(Later, only after steps 1–2 bank a few hundred graded games)** evaluate a GBM
+   (CatBoost/XGBoost) on rating features as a drop-in for the closed-form prior. Highest
+   ceiling per the literature, but heaviest infra and data-hungry — deferred on purpose.
+
+Status (2026-06-20): steps 1a (WC grading loop) and 3 (Dixon-Coles ρ) are DONE; the
+Layer-3 injury/momentum/host signals are live in worldcup/factors.py. Remaining: step 2
+(post-hoc calibrator, once grading banks data), steps 4–5 (US-sports margin/total
+distributions + free schedule signals), and steps 6–7 (calibration→blend weighting, then
+a GBM). All consistent with the core principle: predict likelihood, never shop odds/value
+(market consensus stays a blend input).
+
+## Sources
+- [S1] Soccer ML review (techniques/accuracy ceilings): https://arxiv.org/pdf/2410.21484
+- [S2] Wilkens, simple models vs Bundesliga odds (Brier/log-loss, market hard to beat):
+  https://journals.sagepub.com/doi/10.1177/22150218261416681
+- [S3] CatBoost + pi-ratings, RPS, GBT feature optimization: https://arxiv.org/html/2309.14807
+- [S4] Dixon-Coles ρ low-score correction + time decay: https://dashee87.github.io/football/python/predicting-football-results-with-statistical-modelling-dixon-coles-and-time-weighting/
+- [S5] NFL/NBA margin σ + key numbers: https://www.boydsbets.com/ats-margin-standard-deviations-by-point-spread/
+  and key-number mixture: https://www.nfeloapp.com/analysis/margin-probabilities-from-nfl-spreads/
+- [S6] Forecasting soccer with betting odds (two markets): https://www.sciencedirect.com/science/article/pii/S0169207024000670
+- [S7] Case against RPS (use log loss/ignorance too): https://arxiv.org/abs/1908.08980
+- [S8] sklearn probability calibration (isotonic vs Platt): https://scikit-learn.org/stable/auto_examples/calibration/plot_calibration_curve.html
+- [S9] NBA rest/B2B/travel effect sizes: https://www.nbastuffer.com/rest-days-factor-nba-scheduling/
+  and https://playdecoded.com/explainers/nba-back-to-back-games

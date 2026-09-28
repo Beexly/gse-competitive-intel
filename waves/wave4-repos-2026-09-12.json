@@ -1,0 +1,2479 @@
+{
+ "count": 172,
+ "repos": [
+  {
+   "name": "ggml-org/llama.cpp",
+   "url": "https://github.com/ggml-org/llama.cpp",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 126210,
+   "optimization_category": "Quantized local LLM inference / CPU offload",
+   "description": "C/C++ LLM inference engine with quantized GGUF models and CPU/GPU backends, making local models practical on modest machines.",
+   "compatibility": "CPU-only and multiple optional backends; memory depends on GGUF quantization and context size.",
+   "citation": "https://github.com/ggml-org/llama.cpp"
+  },
+  {
+   "name": "ollama/ollama",
+   "url": "https://github.com/ollama/ollama",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 179682,
+   "optimization_category": "Local serving and hardware-aware model execution",
+   "description": "Local model runner that packages model management and serving behind a simple CLI/API; it can run models locally instead of using paid cloud compute.",
+   "compatibility": "Runs on CPU or compatible GPU; model size and quantization determine RAM/VRAM.",
+   "citation": "https://github.com/ollama/ollama"
+  },
+  {
+   "name": "ggml-org/whisper.cpp",
+   "url": "https://github.com/ggml-org/whisper.cpp",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 53286,
+   "optimization_category": "Native CPU speech inference",
+   "description": "C/C++ port of Whisper for local speech-to-text, avoiding a large Python stack and supporting lightweight native deployment.",
+   "compatibility": "CPU execution is supported; optional acceleration depends on the backend/build and model.",
+   "citation": "https://github.com/ggml-org/whisper.cpp"
+  },
+  {
+   "name": "ggml-org/ggml",
+   "url": "https://github.com/ggml-org/ggml",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 15258,
+   "optimization_category": "Low-level tensor kernels",
+   "description": "Low-level tensor library used by lightweight ML runtimes, with CPU-oriented and accelerator backends for building efficient inference tools.",
+   "compatibility": "C/C++ library; backend availability depends on the selected build and hardware.",
+   "citation": "https://github.com/ggml-org/ggml"
+  },
+  {
+   "name": "abetlen/llama-cpp-python",
+   "url": "https://github.com/abetlen/llama-cpp-python",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 10592,
+   "optimization_category": "Python integration for quantized local inference",
+   "description": "Python bindings for llama.cpp, allowing Python applications to use GGUF quantized LLM inference with a small native runtime.",
+   "compatibility": "Python plus a C/C++ build; CPU and optional GPU backends are supported.",
+   "citation": "https://github.com/abetlen/llama-cpp-python"
+  },
+  {
+   "name": "nomic-ai/gpt4all",
+   "url": "https://github.com/nomic-ai/gpt4all",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 77396,
+   "optimization_category": "Local LLM runner",
+   "description": "Desktop/local application for running open-source LLMs on many device types, so coding assistance can remain on-device.",
+   "compatibility": "Works across Windows, macOS, Linux and other supported devices; model RAM needs vary.",
+   "citation": "https://github.com/nomic-ai/gpt4all"
+  },
+  {
+   "name": "mudler/LocalAI",
+   "url": "https://github.com/mudler/LocalAI",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 48750,
+   "optimization_category": "Unified local serving with CPU fallback",
+   "description": "OpenAI-compatible local AI engine for LLM, vision, voice and image models; its README explicitly supports CPU-only use.",
+   "compatibility": "No GPU is required; available backends and model format determine resource use.",
+   "citation": "https://github.com/mudler/LocalAI"
+  },
+  {
+   "name": "SYSTRAN/faster-whisper",
+   "url": "https://github.com/SYSTRAN/faster-whisper",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 25125,
+   "optimization_category": "Quantized speech inference",
+   "description": "Whisper transcription implemented with CTranslate2, reducing memory and increasing speed through optimized and quantized inference.",
+   "compatibility": "CPU INT8 and GPU compute modes are documented; model and compute type affect RAM/VRAM.",
+   "citation": "https://github.com/SYSTRAN/faster-whisper"
+  },
+  {
+   "name": "OpenNMT/CTranslate2",
+   "url": "https://github.com/OpenNMT/CTranslate2",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 4651,
+   "optimization_category": "Optimized Transformer inference",
+   "description": "Fast Transformer inference engine with CPU/GPU execution and quantization-oriented compute types, useful for local translation and LLM workloads.",
+   "compatibility": "Supports CPU and GPU builds; choose compute type/model size for available memory.",
+   "citation": "https://github.com/OpenNMT/CTranslate2"
+  },
+  {
+   "name": "huggingface/transformers",
+   "url": "https://github.com/huggingface/transformers",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 164614,
+   "optimization_category": "Model loading, quantization and device mapping",
+   "description": "Broad model-definition framework whose loading, quantization and device-mapping integrations help run smaller local models.",
+   "compatibility": "Python; CPU and many accelerator backends are supported, subject to model requirements.",
+   "citation": "https://github.com/huggingface/transformers"
+  },
+  {
+   "name": "huggingface/optimum",
+   "url": "https://github.com/huggingface/optimum",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 3473,
+   "optimization_category": "Model optimization and deployment",
+   "description": "Hardware-optimization layer for Transformers, Diffusers and TIMM that can convert and accelerate inference/training for constrained devices.",
+   "compatibility": "Backend-dependent; supports CPU and accelerator integrations documented by Optimum.",
+   "citation": "https://github.com/huggingface/optimum"
+  },
+  {
+   "name": "huggingface/optimum-intel",
+   "url": "https://github.com/huggingface/optimum-intel",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 616,
+   "optimization_category": "Intel CPU/GPU graph and kernel optimization",
+   "description": "Optimum integration for Intel optimization tools, targeting more efficient inference on Intel CPUs and integrated/discrete accelerators.",
+   "compatibility": "Intel hardware and the corresponding OpenVINO/IPEX backend are required for those optimizations.",
+   "citation": "https://github.com/huggingface/optimum-intel"
+  },
+  {
+   "name": "intel/neural-compressor",
+   "url": "https://github.com/intel/neural-compressor",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 2706,
+   "optimization_category": "Quantization and sparsity",
+   "description": "Intel toolkit for low-bit quantization and sparsity, including INT4/INT8/FP8-style compression to reduce model memory and compute.",
+   "compatibility": "Works with supported deep-learning models/backends; low-bit formats reduce RAM/VRAM after conversion.",
+   "citation": "https://github.com/intel/neural-compressor"
+  },
+  {
+   "name": "intel/ipex-llm",
+   "url": "https://github.com/intel/ipex-llm",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 8860,
+   "optimization_category": "Low-bit Intel LLM inference",
+   "description": "Intel extension for local LLM inference and fine-tuning using low-bit and Intel-specific optimizations.",
+   "compatibility": "Targets Intel CPUs, integrated GPUs and supported accelerators; exact support varies by platform.",
+   "citation": "https://github.com/intel/ipex-llm"
+  },
+  {
+   "name": "intel/neural-speed",
+   "url": "https://github.com/intel/neural-speed",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 352,
+   "optimization_category": "Low-bit CPU inference",
+   "description": "Intel library for efficient LLM inference through low-bit quantization, aimed at reducing model footprint and improving CPU execution.",
+   "compatibility": "Intel-oriented; requires a supported compiler/runtime and model/backend combination.",
+   "citation": "https://github.com/intel/neural-speed"
+  },
+  {
+   "name": "bitsandbytes-foundation/bitsandbytes",
+   "url": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 8446,
+   "optimization_category": "4/8-bit quantization and optimizer memory reduction",
+   "description": "PyTorch library for k-bit quantization and 8-bit optimizers, lowering weight and optimizer memory for local training or inference.",
+   "compatibility": "Python/PyTorch; CUDA and CPU support vary by installed bitsandbytes backend.",
+   "citation": "https://github.com/bitsandbytes-foundation/bitsandbytes"
+  },
+  {
+   "name": "AutoGPTQ/AutoGPTQ",
+   "url": "https://github.com/AutoGPTQ/AutoGPTQ",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 5070,
+   "optimization_category": "Post-training weight quantization",
+   "description": "GPTQ quantization package that converts large LLM weights to smaller representations for cheaper local inference.",
+   "compatibility": "Python/PyTorch; quantized-model runtime and compatible GPU/CPU backend are needed.",
+   "citation": "https://github.com/AutoGPTQ/AutoGPTQ"
+  },
+  {
+   "name": "casper-hansen/AutoAWQ",
+   "url": "https://github.com/casper-hansen/AutoAWQ",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 2349,
+   "optimization_category": "4-bit activation-aware quantization",
+   "description": "AWQ implementation for 4-bit LLM quantization with a focus on faster, smaller inference models.",
+   "compatibility": "Primarily PyTorch/CUDA workflows; supported GPU, driver and model architecture are required for acceleration.",
+   "citation": "https://github.com/casper-hansen/AutoAWQ"
+  },
+  {
+   "name": "mit-han-lab/llm-awq",
+   "url": "https://github.com/mit-han-lab/llm-awq",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 3623,
+   "optimization_category": "4-bit LLM compression",
+   "description": "Reference implementation of Activation-aware Weight Quantization, compressing LLM weights while preserving important activations.",
+   "compatibility": "PyTorch and supported CUDA/model configurations are documented; quantized weights reduce deployment memory.",
+   "citation": "https://github.com/mit-han-lab/llm-awq"
+  },
+  {
+   "name": "IST-DASLab/gptq",
+   "url": "https://github.com/IST-DASLab/gptq",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 2362,
+   "optimization_category": "Post-training LLM quantization",
+   "description": "GPTQ implementation for accurate post-training quantization of generative pretrained models.",
+   "compatibility": "Python/PyTorch; calibration data and a compatible model/backend are required.",
+   "citation": "https://github.com/IST-DASLab/gptq"
+  },
+  {
+   "name": "vllm-project/llm-compressor",
+   "url": "https://github.com/vllm-project/llm-compressor",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 3737,
+   "optimization_category": "Compression, sparsity and pruning",
+   "description": "Transformers-compatible toolkit applying quantization, sparsity and pruning to produce smaller, faster LLMs.",
+   "compatibility": "Python/Transformers; target runtime and accelerator support depend on the chosen recipe.",
+   "citation": "https://github.com/vllm-project/llm-compressor"
+  },
+  {
+   "name": "huggingface/optimum-quanto",
+   "url": "https://github.com/huggingface/optimum-quanto",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 1054,
+   "optimization_category": "PyTorch low-bit quantization",
+   "description": "PyTorch quantization backend for Optimum that enables weight/activation low-bit formats for smaller inference footprints.",
+   "compatibility": "Python/PyTorch; supported dtypes and kernels depend on device and backend.",
+   "citation": "https://github.com/huggingface/optimum-quanto"
+  },
+  {
+   "name": "jiaweizzhao/GaLore",
+   "url": "https://github.com/jiaweizzhao/GaLore",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 1700,
+   "optimization_category": "Memory-efficient LLM training",
+   "description": "GaLore trains LLMs with gradient low-rank projection, reducing optimizer-state memory compared with conventional full-rank training.",
+   "compatibility": "PyTorch; training still needs a compatible CPU/GPU and model-specific memory budget.",
+   "citation": "https://github.com/jiaweizzhao/GaLore"
+  },
+  {
+   "name": "microsoft/BitNet",
+   "url": "https://github.com/microsoft/BitNet",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 40217,
+   "optimization_category": "1-bit model inference",
+   "description": "Microsoft's 1-bit LLM inference framework, using extremely compact weights to reduce model storage and memory bandwidth.",
+   "compatibility": "C++/Python toolchain; supported BitNet models and CPU/GPU build determine requirements.",
+   "citation": "https://github.com/microsoft/BitNet"
+  },
+  {
+   "name": "lyogavin/airllm",
+   "url": "https://github.com/lyogavin/airllm",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 33062,
+   "optimization_category": "Layer-wise offload / low-VRAM inference",
+   "description": "AirLLM demonstrates running very large LLMs with layer-wise loading and explicitly targets inference on a single 4GB GPU.",
+   "compatibility": "README advertises single-4GB-GPU operation; CPU RAM, disk and model choice still matter.",
+   "citation": "https://github.com/lyogavin/airllm"
+  },
+  {
+   "name": "bigscience-workshop/petals",
+   "url": "https://github.com/bigscience-workshop/petals",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 10527,
+   "optimization_category": "Distributed inference and training",
+   "description": "Peer-to-peer system that distributes LLM layers across ordinary computers, allowing home users to share resources for inference or fine-tuning.",
+   "compatibility": "Requires network-connected peers and compatible PyTorch hardware; each peer stores only part of a model.",
+   "citation": "https://github.com/bigscience-workshop/petals"
+  },
+  {
+   "name": "mlc-ai/mlc-llm",
+   "url": "https://github.com/mlc-ai/mlc-llm",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 23110,
+   "optimization_category": "Compilation and cross-device deployment",
+   "description": "ML compilation and deployment engine that compiles LLMs to diverse targets, including local, mobile and browser environments.",
+   "compatibility": "Target-specific compiler/toolchain required; supported CPU/GPU/mobile backends are listed in the project.",
+   "citation": "https://github.com/mlc-ai/mlc-llm"
+  },
+  {
+   "name": "mlc-ai/web-llm",
+   "url": "https://github.com/mlc-ai/web-llm",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 18612,
+   "optimization_category": "Browser/WebGPU local inference",
+   "description": "WebGPU-backed in-browser LLM inference engine, moving model work into the browser rather than requiring a full local ML stack.",
+   "compatibility": "Requires a browser with WebGPU and enough system memory for the selected model; no CUDA GPU is required.",
+   "citation": "https://github.com/mlc-ai/web-llm"
+  },
+  {
+   "name": "kvcache-ai/ktransformers",
+   "url": "https://github.com/kvcache-ai/ktransformers",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 19327,
+   "optimization_category": "CPU/GPU heterogeneous offload",
+   "description": "Framework for heterogeneous LLM inference and fine-tuning that combines CPU and GPU execution to fit models on limited VRAM.",
+   "compatibility": "Requires supported PyTorch/CUDA plus a CPU/GPU combination; configuration controls memory placement.",
+   "citation": "https://github.com/kvcache-ai/ktransformers"
+  },
+  {
+   "name": "EricLBuehler/mistral.rs",
+   "url": "https://github.com/EricLBuehler/mistral.rs",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 7636,
+   "optimization_category": "Native Rust local inference",
+   "description": "Fast Rust inference engine supporting multiple model families and local execution, with native binaries that avoid a heavy Python runtime.",
+   "compatibility": "Rust toolchain or prebuilt platform support; CPU/GPU backend and model support vary.",
+   "citation": "https://github.com/EricLBuehler/mistral.rs"
+  },
+  {
+   "name": "huggingface/candle",
+   "url": "https://github.com/huggingface/candle",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 20970,
+   "optimization_category": "Lightweight native ML framework",
+   "description": "Minimalist Rust ML framework with small, composable building blocks for running models without a heavyweight framework stack.",
+   "compatibility": "Rust; CPU and selected CUDA/Metal/WASM backends depend on build features.",
+   "citation": "https://github.com/huggingface/candle"
+  },
+  {
+   "name": "rustformers/llm",
+   "url": "https://github.com/rustformers/llm",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 6153,
+   "optimization_category": "Lightweight native LLM components",
+   "description": "Rust ecosystem for working with local language models, providing native model loading/inference components (the project marks itself unmaintained).",
+   "compatibility": "Rust and model-specific support; unmaintained status means compatibility should be checked before adoption.",
+   "citation": "https://github.com/rustformers/llm"
+  },
+  {
+   "name": "turboderp-org/exllamav2",
+   "url": "https://github.com/turboderp-org/exllamav2",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 4613,
+   "optimization_category": "GPU memory-efficient LLM inference",
+   "description": "Fast local LLM inference library optimized for modern consumer GPUs and compact quantized model formats.",
+   "compatibility": "Requires a compatible modern NVIDIA GPU/CUDA stack; quantization reduces VRAM use.",
+   "citation": "https://github.com/turboderp-org/exllamav2"
+  },
+  {
+   "name": "turboderp/exllama",
+   "url": "https://github.com/turboderp/exllama",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 2937,
+   "optimization_category": "Memory-efficient Llama inference",
+   "description": "Memory-efficient rewrite of the Transformers Llama implementation for local inference with quantized weights.",
+   "compatibility": "Primarily NVIDIA GPU/CUDA-oriented; model quantization and VRAM determine feasible sizes.",
+   "citation": "https://github.com/turboderp/exllama"
+  },
+  {
+   "name": "microsoft/LLMLingua",
+   "url": "https://github.com/microsoft/LLMLingua",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 6610,
+   "optimization_category": "Context/prompt compression",
+   "description": "Prompt-compression system that removes unimportant tokens before a large model call, reducing context memory and inference cost.",
+   "compatibility": "Python and a compatible language model; savings depend on prompt and target model.",
+   "citation": "https://github.com/microsoft/LLMLingua"
+  },
+  {
+   "name": "Dao-AILab/flash-attention",
+   "url": "https://github.com/Dao-AILab/flash-attention",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "BSD-3-Clause",
+   "stars": 24801,
+   "optimization_category": "Memory-efficient attention kernels",
+   "description": "Memory-efficient exact-attention kernels that reduce attention memory traffic and improve throughput in Transformer workloads.",
+   "compatibility": "Typically requires supported NVIDIA CUDA/PyTorch versions; CPU support is not the main target.",
+   "citation": "https://github.com/Dao-AILab/flash-attention"
+  },
+  {
+   "name": "deepspeedai/DeepSpeed",
+   "url": "https://github.com/deepspeedai/DeepSpeed",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 43020,
+   "optimization_category": "Optimizer-state partitioning and offload",
+   "description": "Deep-learning optimization library with ZeRO partitioning, offload and distributed execution to reduce per-device training memory.",
+   "compatibility": "Python/PyTorch; best savings use multiple devices or CPU/NVMe offload, with backend-specific requirements.",
+   "citation": "https://github.com/deepspeedai/DeepSpeed"
+  },
+  {
+   "name": "leejet/stable-diffusion.cpp",
+   "url": "https://github.com/leejet/stable-diffusion.cpp",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 6868,
+   "optimization_category": "Native diffusion inference",
+   "description": "Pure C/C++ Stable Diffusion-family inference implementation, avoiding a large Python UI stack and supporting compact local deployment.",
+   "compatibility": "CPU and several accelerator backends are available depending on build; model weights still drive RAM/VRAM.",
+   "citation": "https://github.com/leejet/stable-diffusion.cpp"
+  },
+  {
+   "name": "AUTOMATIC1111/stable-diffusion-webui",
+   "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "AGPL-3.0",
+   "stars": 164704,
+   "optimization_category": "Low-VRAM diffusion UI",
+   "description": "Popular Stable Diffusion web UI with low-VRAM options and model-management features for local image generation.",
+   "compatibility": "Python; CPU mode is possible but slow, and GPU mode depends on supported drivers/VRAM.",
+   "citation": "https://github.com/AUTOMATIC1111/stable-diffusion-webui"
+  },
+  {
+   "name": "Comfy-Org/ComfyUI",
+   "url": "https://github.com/Comfy-Org/ComfyUI",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "GPL-3.0",
+   "stars": 130326,
+   "optimization_category": "Modular/offloaded diffusion workflows",
+   "description": "Modular node-based diffusion UI and backend that lets users choose lower-memory workflows, offload stages and avoid loading unnecessary components.",
+   "compatibility": "Python; CPU and supported GPU backends are available, with memory varying by workflow/model.",
+   "citation": "https://github.com/Comfy-Org/ComfyUI"
+  },
+  {
+   "name": "lllyasviel/Fooocus",
+   "url": "https://github.com/lllyasviel/Fooocus",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "GPL-3.0",
+   "stars": 52608,
+   "optimization_category": "Simplified diffusion with low-resource modes",
+   "description": "Prompt-focused Stable Diffusion interface that simplifies local generation and provides documented lower-resource modes.",
+   "compatibility": "Windows/macOS/Linux support varies; model and available VRAM/RAM determine speed and resolution.",
+   "citation": "https://github.com/lllyasviel/Fooocus"
+  },
+  {
+   "name": "invoke-ai/InvokeAI",
+   "url": "https://github.com/invoke-ai/InvokeAI",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 28038,
+   "optimization_category": "Local diffusion serving and optimization",
+   "description": "Creative Stable Diffusion engine with a local web/API workflow, model conversion and optimization features for controlled deployment.",
+   "compatibility": "Python; CPU/GPU support and memory use depend on the selected model/backend.",
+   "citation": "https://github.com/invoke-ai/InvokeAI"
+  },
+  {
+   "name": "rhasspy/piper",
+   "url": "https://github.com/rhasspy/piper",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 11285,
+   "optimization_category": "Lightweight local TTS",
+   "description": "Fast local neural text-to-speech engine, suitable for offline speech generation without a cloud service.",
+   "compatibility": "Runs locally on common desktop/embedded platforms; voice model size and runtime affect RAM.",
+   "citation": "https://github.com/rhasspy/piper"
+  },
+  {
+   "name": "k2-fsa/sherpa-onnx",
+   "url": "https://github.com/k2-fsa/sherpa-onnx",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 14461,
+   "optimization_category": "On-device speech inference",
+   "description": "ONNX-based speech toolkit covering recognition, TTS, diarization, enhancement and separation across desktop, mobile and embedded targets.",
+   "compatibility": "Supports platforms including Android, iOS, Linux, Windows, macOS and Raspberry Pi as documented; model-specific.",
+   "citation": "https://github.com/k2-fsa/sherpa-onnx"
+  },
+  {
+   "name": "alphacep/vosk-api",
+   "url": "https://github.com/alphacep/vosk-api",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 15084,
+   "optimization_category": "Offline/edge speech recognition",
+   "description": "Offline speech-recognition API with bindings for desktop, mobile, servers and Raspberry Pi-class devices.",
+   "compatibility": "Supports Android, iOS, Raspberry Pi and server APIs; choose a matching Vosk model.",
+   "citation": "https://github.com/alphacep/vosk-api"
+  },
+  {
+   "name": "coqui-ai/TTS",
+   "url": "https://github.com/coqui-ai/TTS",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MPL-2.0",
+   "stars": 45967,
+   "optimization_category": "Local TTS model execution",
+   "description": "Deep-learning toolkit for text-to-speech and related voice tasks that can be run locally instead of using a paid API.",
+   "compatibility": "Python/PyTorch; CPU inference is possible but performance and memory depend on model.",
+   "citation": "https://github.com/coqui-ai/TTS"
+  },
+  {
+   "name": "espeak-ng/espeak-ng",
+   "url": "https://github.com/espeak-ng/espeak-ng",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "GPL-3.0",
+   "stars": 6790,
+   "optimization_category": "Very lightweight offline TTS",
+   "description": "Small native speech synthesizer supporting many languages, useful when a tiny offline voice engine is more appropriate than neural TTS.",
+   "compatibility": "Runs on desktop and embedded-style environments; language data and platform build determine footprint.",
+   "citation": "https://github.com/espeak-ng/espeak-ng"
+  },
+  {
+   "name": "openai/whisper",
+   "url": "https://github.com/openai/whisper",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 108058,
+   "optimization_category": "Local speech recognition with model-size choice",
+   "description": "OpenAI Whisper speech-recognition model and inference code that can be run locally, with smaller model choices for constrained machines.",
+   "compatibility": "Python/PyTorch; CPU execution is supported, while smaller Whisper models reduce RAM and latency.",
+   "citation": "https://github.com/openai/whisper"
+  },
+  {
+   "name": "tensorflow/tflite-micro",
+   "url": "https://github.com/tensorflow/tflite-micro",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 3062,
+   "optimization_category": "TinyML / constrained embedded inference",
+   "description": "TensorFlow Lite Micro infrastructure for deploying models on low-power, resource-constrained embedded devices.",
+   "compatibility": "Designed for microcontrollers and other devices with very limited RAM/flash; model/operator support is constrained.",
+   "citation": "https://github.com/tensorflow/tflite-micro"
+  },
+  {
+   "name": "microsoft/onnxruntime",
+   "url": "https://github.com/microsoft/onnxruntime",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 21677,
+   "optimization_category": "Portable inference runtime",
+   "description": "Cross-platform ONNX inference runtime and accelerator abstraction that can execute models efficiently on CPU when a discrete GPU is unavailable.",
+   "compatibility": "CPU execution is supported; optional CUDA, DirectML, CoreML, OpenVINO and other providers are platform-dependent.",
+   "citation": "https://github.com/microsoft/onnxruntime"
+  },
+  {
+   "name": "apache/tvm",
+   "url": "https://github.com/apache/tvm",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 13701,
+   "optimization_category": "Compiler-level graph/kernel optimization",
+   "description": "Open ML compiler that transforms models for optimized deployment across CPUs, GPUs, mobile and other targets.",
+   "compatibility": "Requires a supported compiler target; deployment hardware determines available runtime backend.",
+   "citation": "https://github.com/apache/tvm"
+  },
+  {
+   "name": "apache/mxnet",
+   "url": "https://github.com/apache/mxnet",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 20811,
+   "optimization_category": "Portable/mobile ML runtime",
+   "description": "Lightweight, portable deep-learning framework with mobile and distributed deployment options.",
+   "compatibility": "CPU, GPU and mobile support depend on the selected MXNet build and operators; project activity should be checked.",
+   "citation": "https://github.com/apache/mxnet"
+  },
+  {
+   "name": "alibaba/MNN",
+   "url": "https://github.com/alibaba/MNN",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 15991,
+   "optimization_category": "Lightweight mobile/edge inference",
+   "description": "Alibaba's lightweight inference engine for mobile and edge devices, designed for fast execution with a smaller runtime footprint.",
+   "compatibility": "Supports mobile and desktop platforms with CPU/GPU backends depending on build and operator.",
+   "citation": "https://github.com/alibaba/MNN"
+  },
+  {
+   "name": "PaddlePaddle/Paddle-Lite",
+   "url": "https://github.com/PaddlePaddle/Paddle-Lite",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 7272,
+   "optimization_category": "Mobile/edge model deployment",
+   "description": "PaddlePaddle inference engine focused on high-performance mobile and edge deployment, reducing the runtime burden of full training stacks.",
+   "compatibility": "Targets Android, iOS, ARM and other edge environments documented by the project; model/operator support varies.",
+   "citation": "https://github.com/PaddlePaddle/Paddle-Lite"
+  },
+  {
+   "name": "google-ai-edge/mediapipe",
+   "url": "https://github.com/google-ai-edge/mediapipe",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 36772,
+   "optimization_category": "Cross-platform media ML pipelines",
+   "description": "Cross-platform ML solution library for live and streaming media, useful for CPU/mobile pipelines that avoid a heavyweight bespoke stack.",
+   "compatibility": "Supports desktop, mobile, web and embedded-style targets; calculators/models determine resource use.",
+   "citation": "https://github.com/google-ai-edge/mediapipe"
+  },
+  {
+   "name": "openvinotoolkit/openvino",
+   "url": "https://github.com/openvinotoolkit/openvino",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 10764,
+   "optimization_category": "CPU/edge graph and kernel optimization",
+   "description": "Open-source toolkit for optimizing and deploying AI inference, with strong CPU-oriented OpenVINO paths for edge and local systems.",
+   "compatibility": "Supports Intel CPUs, GPUs and NPUs plus other documented plugins; exact hardware depends on the plugin.",
+   "citation": "https://github.com/openvinotoolkit/openvino"
+  },
+  {
+   "name": "google/gemma.cpp",
+   "url": "https://github.com/google/gemma.cpp",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 7030,
+   "optimization_category": "Native compact LLM inference",
+   "description": "Lightweight standalone C++ inference engine for Google's Gemma models, intended to run without a full heavyweight framework.",
+   "compatibility": "C++ build; Gemma model size and available CPU/GPU backend determine memory needs.",
+   "citation": "https://github.com/google/gemma.cpp"
+  },
+  {
+   "name": "onnx/onnx",
+   "url": "https://github.com/onnx/onnx",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 21379,
+   "optimization_category": "Interoperability for optimized runtimes",
+   "description": "Open model-interchange standard and tooling that lets users move models into more efficient runtimes such as ONNX Runtime.",
+   "compatibility": "Format/tooling is cross-platform; actual CPU/GPU support comes from the chosen ONNX backend.",
+   "citation": "https://github.com/onnx/onnx"
+  },
+  {
+   "name": "microsoft/Olive",
+   "url": "https://github.com/microsoft/Olive",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 2383,
+   "optimization_category": "End-to-end model conversion and quantization",
+   "description": "ML workflow tool for model fine-tuning, conversion, quantization and optimization across CPUs, GPUs and NPUs.",
+   "compatibility": "Python; supported accelerators and runtime integrations are listed in the project.",
+   "citation": "https://github.com/microsoft/Olive"
+  },
+  {
+   "name": "OpenPPL/ppq",
+   "url": "https://github.com/OpenPPL/ppq",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 1817,
+   "optimization_category": "Offline low-bit quantization",
+   "description": "Offline neural-network quantization toolkit that converts models to lower precision for smaller memory and faster deployment.",
+   "compatibility": "Python/PyTorch/ONNX-style workflows; target backend determines supported operators and formats.",
+   "citation": "https://github.com/OpenPPL/ppq"
+  },
+  {
+   "name": "taichi-dev/taichi",
+   "url": "https://github.com/taichi-dev/taichi",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 28345,
+   "optimization_category": "Portable kernel optimization",
+   "description": "Portable Python GPU programming framework that can target CPUs and GPUs, helping write high-performance kernels without a large native codebase.",
+   "compatibility": "Python; CPU and GPU backends require supported drivers/architectures.",
+   "citation": "https://github.com/taichi-dev/taichi"
+  },
+  {
+   "name": "NVIDIA/TensorRT",
+   "url": "https://github.com/NVIDIA/TensorRT",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 13306,
+   "optimization_category": "GPU engine/kernel optimization",
+   "description": "NVIDIA inference SDK that builds optimized engines, reducing latency and memory overhead for supported NVIDIA GPU deployments.",
+   "compatibility": "Requires an NVIDIA CUDA-capable GPU and compatible CUDA/TensorRT versions; not a CPU fallback.",
+   "citation": "https://github.com/NVIDIA/TensorRT"
+  },
+  {
+   "name": "zeux/meshoptimizer",
+   "url": "https://github.com/zeux/meshoptimizer",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 8280,
+   "optimization_category": "Asset compression and rendering optimization",
+   "description": "Mesh optimization library that makes geometry smaller and faster to render, reducing memory/bandwidth pressure in graphics applications.",
+   "compatibility": "C/C++; integrates with graphics engines and works independently of a particular GPU vendor.",
+   "citation": "https://github.com/zeux/meshoptimizer"
+  },
+  {
+   "name": "plasma-umass/scalene",
+   "url": "https://github.com/plasma-umass/scalene",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 13494,
+   "optimization_category": "Resource profiling and bottleneck diagnosis",
+   "description": "Python profiler measuring CPU, GPU and memory use, helping locate code paths that exhaust a laptop's RAM or GPU memory.",
+   "compatibility": "Python application profiler; CPU/GPU profiling features depend on platform and installed support.",
+   "citation": "https://github.com/plasma-umass/scalene"
+  },
+  {
+   "name": "mit-han-lab/mcunet",
+   "url": "https://github.com/mit-han-lab/mcunet",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 711,
+   "optimization_category": "Tiny model architecture and neural architecture search",
+   "description": "MCUNet research system for tiny deep-learning models designed around the memory and compute limits of microcontrollers.",
+   "compatibility": "Targets IoT/microcontroller-class devices; available RAM/flash and model constraints are central requirements.",
+   "citation": "https://github.com/mit-han-lab/mcunet"
+  },
+  {
+   "name": "google/flatbuffers",
+   "url": "https://github.com/google/flatbuffers",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 26418,
+   "optimization_category": "Compact serialization / memory reduction",
+   "description": "Memory-efficient serialization library that reduces data size and parsing overhead between coding tools and ML components.",
+   "compatibility": "Portable C++ and many language bindings; generated schema and runtime are platform-dependent.",
+   "citation": "https://github.com/google/flatbuffers"
+  },
+  {
+   "name": "libvips/libvips",
+   "url": "https://github.com/libvips/libvips",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "LGPL-2.1",
+   "stars": 11617,
+   "optimization_category": "Low-memory image processing",
+   "description": "Fast image-processing library explicitly designed for low memory use, often a practical replacement for RAM-heavy image pipelines.",
+   "compatibility": "Native library with bindings for many languages; requires its platform dependencies but no GPU.",
+   "citation": "https://github.com/libvips/libvips"
+  },
+  {
+   "name": "intel/auto-round",
+   "url": "https://github.com/intel/auto-round",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 1593,
+   "optimization_category": "LLM weight quantization",
+   "description": "Intel toolkit for high-accuracy low-bit LLM quantization, producing compact models for more efficient inference.",
+   "compatibility": "Python/PyTorch; supported model formats and Intel/CPU/GPU backends vary by configuration.",
+   "citation": "https://github.com/intel/auto-round"
+  },
+  {
+   "name": "microsoft/onnxruntime-genai",
+   "url": "https://github.com/microsoft/onnxruntime-genai",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 1111,
+   "optimization_category": "Portable generative inference",
+   "description": "Generative-AI extensions for ONNX Runtime, providing a portable path to run generation workloads with optimized execution providers.",
+   "compatibility": "Requires ONNX Runtime and a supported execution provider; CPU use is available where the provider supports it.",
+   "citation": "https://github.com/microsoft/onnxruntime-genai"
+  },
+  {
+   "name": "containers/ramalama",
+   "url": "https://github.com/containers/ramalama",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 3025,
+   "optimization_category": "Local model serving and reproducible environments",
+   "description": "Container-focused developer tool that simplifies local AI model serving, useful for repeatable CPU/GPU setup without paid hosting.",
+   "compatibility": "Uses Podman/containers and supported model runtimes; CPU or GPU availability depends on runtime.",
+   "citation": "https://github.com/containers/ramalama"
+  },
+  {
+   "name": "b4rtaz/distributed-llama",
+   "url": "https://github.com/b4rtaz/distributed-llama",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 3046,
+   "optimization_category": "Multi-device memory pooling",
+   "description": "Distributed LLM inference system that connects multiple home devices into a cluster, spreading memory and compute across machines.",
+   "compatibility": "Requires networked compatible devices and supported models; each device contributes part of inference.",
+   "citation": "https://github.com/b4rtaz/distributed-llama"
+  },
+  {
+   "name": "predibase/lorax",
+   "url": "https://github.com/predibase/lorax",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 3826,
+   "optimization_category": "Shared-base-model / adapter-efficient serving",
+   "description": "Multi-LoRA inference server that shares a base model while serving many adapters, reducing duplicated model memory in multi-adapter workloads.",
+   "compatibility": "Python/Rust server stack with supported accelerator backends; primarily a serving deployment rather than a tiny standalone runtime.",
+   "citation": "https://github.com/predibase/lorax"
+  },
+  {
+   "name": "PaddlePaddle/FastDeploy",
+   "url": "https://github.com/PaddlePaddle/FastDeploy",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 3711,
+   "optimization_category": "Model deployment and backend optimization",
+   "description": "High-performance inference and deployment toolkit for LLMs and VLMs, with conversion and backend options for edge-to-server use.",
+   "compatibility": "PaddlePaddle ecosystem and target-specific runtimes are required; hardware support varies by backend.",
+   "citation": "https://github.com/PaddlePaddle/FastDeploy"
+  },
+  {
+   "name": "Blaizzy/mlx-vlm",
+   "url": "https://github.com/Blaizzy/mlx-vlm",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "MIT",
+   "stars": 5437,
+   "optimization_category": "Apple unified-memory VLM inference",
+   "description": "MLX-based package for vision-language model inference and fine-tuning on Apple silicon, using the unified memory architecture.",
+   "compatibility": "Requires Apple silicon and the MLX stack; model size must fit unified memory.",
+   "citation": "https://github.com/Blaizzy/mlx-vlm"
+  },
+  {
+   "name": "zylon-ai/private-gpt",
+   "url": "https://github.com/zylon-ai/private-gpt",
+   "source": "extract-data-2026-08-30.json (github_repositories)",
+   "license": "Apache-2.0",
+   "stars": 57487,
+   "optimization_category": "Local RAG and model orchestration",
+   "description": "Local/private AI API layer for RAG, tools and skills over local models, allowing coding and document workflows without cloud inference fees.",
+   "compatibility": "Runs with locally selected model backends; RAM/VRAM needs depend on the chosen model and embedding store.",
+   "citation": "https://github.com/zylon-ai/private-gpt"
+  },
+  {
+   "name": "reverse-skill",
+   "url": "https://github.com/zhaoxuya520/reverse-skill",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Markdown playbooks plus PowerShell/Bash/Python routing and case-review tooling.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "routing.json keyword scoring; master-route.ps1; case-init.ps1; review_case.py SHA-256/evidence validation."
+   ],
+   "citation": "https://github.com/zhaoxuya520/reverse-skill"
+  },
+  {
+   "name": "strix",
+   "url": "https://github.com/usestrix/strix",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Python executable AI pentest runtime split into agents, core, llm, runtime, tools, reports and interfaces.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "run_strix_scan(); provider model wrappers; local tokened viewer and persisted scan artifacts."
+   ],
+   "citation": "https://github.com/usestrix/strix"
+  },
+  {
+   "name": "nanobrowser",
+   "url": "https://github.com/nanobrowser/nanobrowser",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Chrome/Edge extension with side-panel UI and Planner/Navigator multi-agent browser automation.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Planner decomposes tasks and Navigator acts in browser; provider adapters support OpenAI-compatible and hosted/local models."
+   ],
+   "citation": "https://github.com/nanobrowser/nanobrowser"
+  },
+  {
+   "name": "ruflo",
+   "url": "https://github.com/ruvnet/ruflo",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "TypeScript/Node meta-harness with CLI/MCP, router, swarms, agents, AgentDB/RVF memory and federation.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "npx ruflo init; federation_init/send/trust/audit; plugin-based swarm/autopilot/workflow routing."
+   ],
+   "citation": "https://github.com/ruvnet/ruflo"
+  },
+  {
+   "name": "cline",
+   "url": "https://github.com/cline/cline",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Reusable coding-agent surfaces across VS Code, JetBrains, CLI, SDK and Kanban.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Plan/Act approval loop; checkpoints/diffs; MCP custom tools; SDK Agent lifecycle hooks."
+   ],
+   "citation": "https://github.com/cline/cline"
+  },
+  {
+   "name": "cherry-studio",
+   "url": "https://github.com/CherryHQ/cherry-studio",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Electron main/preload/renderer/shared desktop client with multi-provider LLM and MCP.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Mini App bridge calls cherry.ai.chat, network.fetch, file.export; TraceStore/NodeTracer observability."
+   ],
+   "citation": "https://github.com/CherryHQ/cherry-studio"
+  },
+  {
+   "name": "khoj",
+   "url": "https://github.com/khoj-ai/khoj",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Self-hostable Django-like personal AI monorepo with server, web, desktop/mobile and Obsidian clients.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "AgentMessage, OperatorRun, ToolCall, ResearchIteration; semantic search, truncation, structured-output cleanup."
+   ],
+   "citation": "https://github.com/khoj-ai/khoj"
+  },
+  {
+   "name": "Free-Auto-GPT",
+   "url": "https://github.com/IntelligenzaArtificiale/Free-Auto-GPT",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Script-oriented LangChain AutoGPT/BabyAGI with provider wrappers, tools and FAISS embeddings.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "ChatGPT._call; AUTOGPT tool registration; task_creation/task_execution/task_prioritization; FAISS IndexFlatL2."
+   ],
+   "citation": "https://github.com/IntelligenzaArtificiale/Free-Auto-GPT"
+  },
+  {
+   "name": "RDA-planner",
+   "url": "https://github.com/hanruihua/RDA-planner",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Python CVXPY MPC planner using ADMM obstacle decomposition and multiprocessing.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "MPC.control; RDA_solver lifecycle; rdaobs namedtuple; kinematic and convex obstacle constraints."
+   ],
+   "citation": "https://github.com/hanruihua/RDA-planner"
+  },
+  {
+   "name": "Open-AI-Design-Agent",
+   "url": "https://github.com/Anil-matcha/Open-AI-Design-Agent",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "npm-workspaces Next.js/React frontend, FastAPI server and shared design-agent package.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Plan→Route→Execute→Assemble; brand kit/reference propagation and Muapi/Vibe Workflow gateway."
+   ],
+   "citation": "https://github.com/Anil-matcha/Open-AI-Design-Agent"
+  },
+  {
+   "name": "multi-mapcher",
+   "url": "https://github.com/url-kaist/multi-mapcher",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "C++17 LiDAR multi-session SLAM core with ROS1/ROS2 adapters, GTSAM/PCL/Eigen/TBB.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "YAML session modes; pose_graph.g2o validation; anchor-node graph optimization."
+   ],
+   "citation": "https://github.com/url-kaist/multi-mapcher"
+  },
+  {
+   "name": "GSN.Cards",
+   "url": "https://github.com/Beexly/GSN.Cards",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Photo→CLIP 512-d embeddings/FAISS IndexFlatIP→Scryfall SQLite→vocabulary transformation→marketplaces; Trawl scraper.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "scryfall_download.py creates cards table; identify.build_index/identify(top_k=5); transform_cards.py/transform.go."
+   ],
+   "citation": "https://github.com/Beexly/GSN.Cards"
+  },
+  {
+   "name": "Pokemon-TCGP-Card-Scanner",
+   "url": "https://github.com/1vcian/Pokemon-TCGP-Card-Scanner",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/1vcian/Pokemon-TCGP-Card-Scanner"
+  },
+  {
+   "name": "Pokemon-Card-Scanner",
+   "url": "https://github.com/NolanAmblard/Pokemon-Card-Scanner",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/NolanAmblard/Pokemon-Card-Scanner"
+  },
+  {
+   "name": "tcg-scanner",
+   "url": "https://github.com/tranhd95/tcg-scanner",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/tranhd95/tcg-scanner"
+  },
+  {
+   "name": "opencv-playing-card-detector",
+   "url": "https://github.com/edjeelectronics/opencv-playing-card-detector",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/edjeelectronics/opencv-playing-card-detector"
+  },
+  {
+   "name": "Playing-Cards-Object-Detection",
+   "url": "https://github.com/TeogopK/Playing-Cards-Object-Detection",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/TeogopK/Playing-Cards-Object-Detection"
+  },
+  {
+   "name": "tesseract.js",
+   "url": "https://github.com/naptha/tesseract.js",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/naptha/tesseract.js"
+  },
+  {
+   "name": "sports-card-tracker",
+   "url": "https://github.com/DamageLabs/sports-card-tracker",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/DamageLabs/sports-card-tracker"
+  },
+  {
+   "name": "cardex",
+   "url": "https://github.com/xavidop/cardex",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/xavidop/cardex"
+  },
+  {
+   "name": "Yu-Gi-Oh-Card-Tracker",
+   "url": "https://github.com/DJ-Cat-N-Cheese/Yu-Gi-Oh-Card-Tracker",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/DJ-Cat-N-Cheese/Yu-Gi-Oh-Card-Tracker"
+  },
+  {
+   "name": "Trading-Card-Collection-Tracker",
+   "url": "https://github.com/jbright471/Trading-Card-Collection-Tracker",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/jbright471/Trading-Card-Collection-Tracker"
+  },
+  {
+   "name": "pokecollector",
+   "url": "https://github.com/Git-Romer/pokecollector",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/Git-Romer/pokecollector"
+  },
+  {
+   "name": "Scryfall API reference",
+   "url": "https://github.com/scryfall/api-reference",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/scryfall/api-reference"
+  },
+  {
+   "name": "graphiti",
+   "url": "https://github.com/getzep/graphiti",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/getzep/graphiti"
+  },
+  {
+   "name": "LangGraph",
+   "url": "https://github.com/langchain-ai/langgraph",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/langchain-ai/langgraph"
+  },
+  {
+   "name": "stripe-demo-connect-kavholm-marketplace",
+   "url": "https://github.com/stripe-archive/stripe-demo-connect-kavholm-marketplace",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/stripe-archive/stripe-demo-connect-kavholm-marketplace"
+  },
+  {
+   "name": "stripe-sample-global-marketplace",
+   "url": "https://github.com/auchenberg/stripe-sample-global-marketplace",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/auchenberg/stripe-sample-global-marketplace"
+  },
+  {
+   "name": "stripe-node",
+   "url": "https://github.com/stripe/stripe-node",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/stripe/stripe-node"
+  },
+  {
+   "name": "easypost-php",
+   "url": "https://github.com/easypost/easypost-php",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/easypost/easypost-php"
+  },
+  {
+   "name": "shippo-php",
+   "url": "https://github.com/Shippo/shippo-php",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/Shippo/shippo-php"
+  },
+  {
+   "name": "pgvector",
+   "url": "https://github.com/pgvector/pgvector",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Public implementation reference relevant to GSN Cards; inspect repository README and license before adoption.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "No function-level claim made beyond the public repository description; use as an integration/reference node."
+   ],
+   "citation": "https://github.com/pgvector/pgvector"
+  },
+  {
+   "name": "langchain",
+   "url": "https://github.com/langchain-ai/langchain",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/langchain-ai/langchain"
+  },
+  {
+   "name": "autogen",
+   "url": "https://github.com/microsoft/autogen",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/microsoft/autogen"
+  },
+  {
+   "name": "crewAI",
+   "url": "https://github.com/crewAIInc/crewAI",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/crewAIInc/crewAI"
+  },
+  {
+   "name": "semantic-kernel",
+   "url": "https://github.com/microsoft/semantic-kernel",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/microsoft/semantic-kernel"
+  },
+  {
+   "name": "llama_index",
+   "url": "https://github.com/run-llama/llama_index",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/run-llama/llama_index"
+  },
+  {
+   "name": "haystack",
+   "url": "https://github.com/deepset-ai/haystack",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/deepset-ai/haystack"
+  },
+  {
+   "name": "dspy",
+   "url": "https://github.com/stanfordnlp/dspy",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/stanfordnlp/dspy"
+  },
+  {
+   "name": "smolagents",
+   "url": "https://github.com/huggingface/smolagents",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/huggingface/smolagents"
+  },
+  {
+   "name": "browser-use",
+   "url": "https://github.com/browser-use/browser-use",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/browser-use/browser-use"
+  },
+  {
+   "name": "playwright",
+   "url": "https://github.com/microsoft/playwright",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/microsoft/playwright"
+  },
+  {
+   "name": "selenium",
+   "url": "https://github.com/SeleniumHQ/selenium",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/SeleniumHQ/selenium"
+  },
+  {
+   "name": "puppeteer",
+   "url": "https://github.com/puppeteer/puppeteer",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/puppeteer/puppeteer"
+  },
+  {
+   "name": "Web-LLM",
+   "url": "https://github.com/microsoft/Web-LLM",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/microsoft/Web-LLM"
+  },
+  {
+   "name": "chroma",
+   "url": "https://github.com/chroma-core/chroma",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/chroma-core/chroma"
+  },
+  {
+   "name": "qdrant",
+   "url": "https://github.com/qdrant/qdrant",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/qdrant/qdrant"
+  },
+  {
+   "name": "milvus",
+   "url": "https://github.com/milvus-io/milvus",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/milvus-io/milvus"
+  },
+  {
+   "name": "weaviate",
+   "url": "https://github.com/weaviate/weaviate",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/weaviate/weaviate"
+  },
+  {
+   "name": "neo4j",
+   "url": "https://github.com/neo4j/neo4j",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/neo4j/neo4j"
+  },
+  {
+   "name": "rdflib",
+   "url": "https://github.com/RDFLib/rdflib",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/RDFLib/rdflib"
+  },
+  {
+   "name": "networkx",
+   "url": "https://github.com/networkx/networkx",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/networkx/networkx"
+  },
+  {
+   "name": "supabase",
+   "url": "https://github.com/supabase/supabase",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/supabase/supabase"
+  },
+  {
+   "name": "prisma",
+   "url": "https://github.com/prisma/prisma",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/prisma/prisma"
+  },
+  {
+   "name": "fastapi",
+   "url": "https://github.com/fastapi/fastapi",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/fastapi/fastapi"
+  },
+  {
+   "name": "django",
+   "url": "https://github.com/django/django",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/django/django"
+  },
+  {
+   "name": "next.js",
+   "url": "https://github.com/vercel/next.js",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/vercel/next.js"
+  },
+  {
+   "name": "react",
+   "url": "https://github.com/facebook/react",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/facebook/react"
+  },
+  {
+   "name": "core",
+   "url": "https://github.com/vuejs/core",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/vuejs/core"
+  },
+  {
+   "name": "remix",
+   "url": "https://github.com/remix-run/remix",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/remix-run/remix"
+  },
+  {
+   "name": "nest",
+   "url": "https://github.com/nestjs/nest",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/nestjs/nest"
+  },
+  {
+   "name": "express",
+   "url": "https://github.com/expressjs/express",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/expressjs/express"
+  },
+  {
+   "name": "graphql-engine",
+   "url": "https://github.com/Hasura/graphql-engine",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/Hasura/graphql-engine"
+  },
+  {
+   "name": "apollo-server",
+   "url": "https://github.com/apollographql/apollo-server",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/apollographql/apollo-server"
+  },
+  {
+   "name": "graphql-js",
+   "url": "https://github.com/graphql/graphql-js",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/graphql/graphql-js"
+  },
+  {
+   "name": "stripe-python",
+   "url": "https://github.com/stripe/stripe-python",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/stripe/stripe-python"
+  },
+  {
+   "name": "shippo-node",
+   "url": "https://github.com/Shippo/shippo-node",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/Shippo/shippo-node"
+  },
+  {
+   "name": "easypost-node",
+   "url": "https://github.com/easypost/easypost-node",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/easypost/easypost-node"
+  },
+  {
+   "name": "shopify-api-js",
+   "url": "https://github.com/Shopify/shopify-api-js",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/Shopify/shopify-api-js"
+  },
+  {
+   "name": "woocommerce",
+   "url": "https://github.com/woocommerce/woocommerce",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/woocommerce/woocommerce"
+  },
+  {
+   "name": "medusa",
+   "url": "https://github.com/medusajs/medusa",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/medusajs/medusa"
+  },
+  {
+   "name": "saleor",
+   "url": "https://github.com/saleor/saleor",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/saleor/saleor"
+  },
+  {
+   "name": "spree",
+   "url": "https://github.com/spree/spree",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/spree/spree"
+  },
+  {
+   "name": "magento2",
+   "url": "https://github.com/magento/magento2",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/magento/magento2"
+  },
+  {
+   "name": "openfoodfacts-server",
+   "url": "https://github.com/openfoodfacts/openfoodfacts-server",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/openfoodfacts/openfoodfacts-server"
+  },
+  {
+   "name": "pokemon-tcg-data",
+   "url": "https://github.com/PokemonTCG/pokemon-tcg-data",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/PokemonTCG/pokemon-tcg-data"
+  },
+  {
+   "name": "cards-database",
+   "url": "https://github.com/tcgdex/cards-database",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/tcgdex/cards-database"
+  },
+  {
+   "name": "mtgjson",
+   "url": "https://github.com/mtgjson/mtgjson",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/mtgjson/mtgjson"
+  },
+  {
+   "name": "pokeapi",
+   "url": "https://github.com/PokeAPI/pokeapi",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/PokeAPI/pokeapi"
+  },
+  {
+   "name": "pokemon-tcg-api",
+   "url": "https://github.com/james-johnson/pokemon-tcg-api",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/james-johnson/pokemon-tcg-api"
+  },
+  {
+   "name": "openzeppelin-contracts",
+   "url": "https://github.com/OpenZeppelin/openzeppelin-contracts",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/OpenZeppelin/openzeppelin-contracts"
+  },
+  {
+   "name": "go-ethereum",
+   "url": "https://github.com/ethereum/go-ethereum",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/ethereum/go-ethereum"
+  },
+  {
+   "name": "bitcoin",
+   "url": "https://github.com/bitcoin/bitcoin",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/bitcoin/bitcoin"
+  },
+  {
+   "name": "opencv",
+   "url": "https://github.com/opencv/opencv",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/opencv/opencv"
+  },
+  {
+   "name": "opencv-python",
+   "url": "https://github.com/opencv/opencv-python",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/opencv/opencv-python"
+  },
+  {
+   "name": "ultralytics",
+   "url": "https://github.com/ultralytics/ultralytics",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/ultralytics/ultralytics"
+  },
+  {
+   "name": "mmdetection",
+   "url": "https://github.com/open-mmlab/mmdetection",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/open-mmlab/mmdetection"
+  },
+  {
+   "name": "detectron2",
+   "url": "https://github.com/facebookresearch/detectron2",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/facebookresearch/detectron2"
+  },
+  {
+   "name": "CLIP",
+   "url": "https://github.com/openai/CLIP",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/openai/CLIP"
+  },
+  {
+   "name": "tesseract",
+   "url": "https://github.com/tesseract-ocr/tesseract",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/tesseract-ocr/tesseract"
+  },
+  {
+   "name": "EasyOCR",
+   "url": "https://github.com/JaidedAI/EasyOCR",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/JaidedAI/EasyOCR"
+  },
+  {
+   "name": "PaddleOCR",
+   "url": "https://github.com/PaddlePaddle/PaddleOCR",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/PaddlePaddle/PaddleOCR"
+  },
+  {
+   "name": "pytorch",
+   "url": "https://github.com/pytorch/pytorch",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/pytorch/pytorch"
+  },
+  {
+   "name": "tensorflow",
+   "url": "https://github.com/tensorflow/tensorflow",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/tensorflow/tensorflow"
+  },
+  {
+   "name": "scikit-learn",
+   "url": "https://github.com/scikit-learn/scikit-learn",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/scikit-learn/scikit-learn"
+  },
+  {
+   "name": "datasets",
+   "url": "https://github.com/huggingface/datasets",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/huggingface/datasets"
+  },
+  {
+   "name": "mlflow",
+   "url": "https://github.com/mlflow/mlflow",
+   "source": "extract-data-2026-08-31.json (technical_repository_library)",
+   "license": null,
+   "stars": null,
+   "optimization_category": null,
+   "description": "Additional best-in-class open-source reference selected for card vision, AI agents, data, commerce, observability or infrastructure.",
+   "compatibility": null,
+   "logic_flows": "Use as an isolated reference; map inputs, validation, persistence and asynchronous jobs behind GSN service boundaries.",
+   "schemas": "Not asserted unless described above; define versioned card, image, condition, price, listing, order and provenance schemas in GSN.",
+   "integration_nodes": "Integrate only through documented APIs/SDKs; apply credentials, rate limits, webhooks and license/data-rights review.",
+   "code_notes": [
+    "Repository-level reference only; verify current APIs, license, security and production suitability before integration."
+   ],
+   "citation": "https://github.com/mlflow/mlflow"
+  }
+ ]
+}

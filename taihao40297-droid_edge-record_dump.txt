@@ -1,0 +1,15 @@
+=== README ===
+# edge-record
+NFL Edge Daily - public verifiable track record. Every prediction timestamped before kickoff.
+
+=== FILE LIST ===
+README.md
+glossary.md
+methodology.md
+record/latest_report.html
+record/latest_report.json
+record/latest_report.md
+record/line_history.json
+record/weekly_recap.md
+
+=== KEY CODE ===

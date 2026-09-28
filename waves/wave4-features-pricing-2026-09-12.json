@@ -1,0 +1,744 @@
+[
+ {
+  "source_file": "09-12 (1).json",
+  "source_url": "https://www.linestarapp.com/Projections",
+  "name": "LineStar Premium",
+  "type": "subscription",
+  "claim": "Marketing copy states $39.99/month or $239.99 annual membership; premium unlock says unlimited projections, all apps/website and every sport."
+ },
+ {
+  "source_file": "09-12 (1).json",
+  "source_url": "https://propfinder.app/",
+  "name": "PropFinder monthly",
+  "type": "subscription",
+  "claim": "$14.99/month; page also says a limited-props access tier exists."
+ },
+ {
+  "source_file": "09-12 (1).json",
+  "source_url": "https://propfinder.app/",
+  "name": "PropFinder yearly",
+  "type": "subscription",
+  "claim": "$149.99/year, with access to major US leagues including MLB, NBA, NFL, CFB, NHL and WNBA."
+ },
+ {
+  "source_file": "09-12 (1).json",
+  "source_url": "https://www.fangraphs.com/projections.aspx",
+  "name": "Data Export",
+  "type": "access/ownership",
+  "claim": "Marked Members Only; no price is displayed on the assigned pages."
+ },
+ {
+  "source_file": "09-12 (1).json",
+  "source_url": "https://www.fangraphs.com/projections.aspx",
+  "name": "Projection model attribution",
+  "type": "ownership/credit",
+  "claim": "Model credits are explicitly attributed to Dan Szymborski, steamerprojections.com, FanGraphs staff, Ariel Cohen, Derek Carty, Jordan Rosenblum and Eno Sarris as listed above."
+ },
+ {
+  "source_file": "09-12 (1).json",
+  "source_url": "https://cleaningtheglass.com/stats/efficiency",
+  "name": "Subscribe",
+  "type": "subscription control",
+  "claim": "Cleaning the Glass source visibly links Subscribe to a Memberful checkout URL; plan price was not visible on the assigned page."
+ },
+ {
+  "source_file": "09-12 (1).json",
+  "source_url": "https://props.cash/",
+  "name": "Props.Cash Annual",
+  "type": "subscription price",
+  "claim": "$199.99/year; all-sports prop analysis, web/mobile/Discord bot."
+ },
+ {
+  "source_file": "09-12 (1).json",
+  "source_url": "https://props.cash/",
+  "name": "Props.Cash Monthly",
+  "type": "subscription price",
+  "claim": "$19.99/month; same feature bundle."
+ },
+ {
+  "source_file": "09-12 (1).json",
+  "source_url": "https://props.cash/",
+  "name": "Props.Cash NBA Pass",
+  "type": "subscription price",
+  "claim": "$99.99/year; NBA prop analysis."
+ },
+ {
+  "source_file": "09-12 (1).json",
+  "source_url": "https://www.outlier.bet/",
+  "name": "Outlier Premium/Premium+/Pro",
+  "type": "subscription price",
+  "claim": "$19.99/mo, $29.99/mo, $79.99/mo respectively; 7-day free trial advertised."
+ },
+ {
+  "source_file": "09-12 (1).json",
+  "source_url": "https://playerprops.ai/",
+  "name": "PlayerProps.ai 6-month VIP",
+  "type": "subscription price",
+  "claim": "$295 for 6 months, pay for 5; annual says save 30%, week pass available but price not shown."
+ },
+ {
+  "source_file": "09-12 (1).json",
+  "source_url": "https://www.pickfinder.app/",
+  "name": "PickFinder Premium/Pro",
+  "type": "annual subscription price",
+  "claim": "Premium $149.99/year web-exclusive; Pro $299.99/year; Premium Discord included."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://www.fangraphs.com/leaders/major-league",
+  "name": "Data Export",
+  "type": "pricing/ownership",
+  "claim": "FanGraphs labels data export “Members Only”; the page also says member support funds analysis, stats, projections and related coverage."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://baseballsavant.mlb.com/statcast_search",
+  "name": "MLB Statcast/Statcast Search",
+  "type": "pricing/ownership",
+  "claim": "No price or ownership statement was visible in fetched content."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://www.basketball-reference.com/leagues/NBA_2026.html",
+  "name": "Stathead / ad-free access",
+  "type": "pricing/ownership",
+  "claim": "The page links “Become a Stathead & surf this site ad-free” and calls Stathead “Basketball’s Most Powerful Research Tools”; no price shown in fetched page."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://props.cash/",
+  "name": "Props.Cash annual all-sports promotion",
+  "type": "pricing/ownership",
+  "claim": "$119.99/year with “ANNUAL40” banner; pricing section also shows $199.99/year annual plan."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://props.cash/",
+  "name": "Props.Cash monthly",
+  "type": "pricing/ownership",
+  "claim": "$19.99/month."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://props.cash/",
+  "name": "Props.Cash NBA Pass",
+  "type": "pricing/ownership",
+  "claim": "$99.99/year."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://www.outlier.bet/",
+  "name": "Outlier Premium",
+  "type": "pricing/ownership",
+  "claim": "$19.99/month; 7-day free trial advertised."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://www.outlier.bet/",
+  "name": "Outlier Premium+",
+  "type": "pricing/ownership",
+  "claim": "$29.99/month."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://www.outlier.bet/",
+  "name": "Outlier Pro",
+  "type": "pricing/ownership",
+  "claim": "$79.99/month."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://dailyfantasyfuel.com/",
+  "name": "Daily Fantasy Fuel",
+  "type": "pricing/ownership",
+  "claim": "$29.99/month; 7-day free trial."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://playerprops.ai/",
+  "name": "PlayerProps.ai 6-month VIP",
+  "type": "pricing/ownership",
+  "claim": "$295 for 6 months; pay for 5, get 1 free; page says $1.62/day."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://www.pickfinder.app/",
+  "name": "PickFinder monthly",
+  "type": "pricing/ownership",
+  "claim": "From $19.99/month."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://www.linestarapp.com/Projections",
+  "name": "LineStar membership",
+  "type": "pricing/ownership",
+  "claim": "$39.99/month or $239.99/year; page also says premium data/tools are under 66 cents a day."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://propfinder.app/",
+  "name": "PropFinder Free",
+  "type": "pricing/ownership",
+  "claim": "$0; access to 1 game per league and limited props."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://propfinder.app/",
+  "name": "PropFinder Monthly / Yearly",
+  "type": "pricing/ownership",
+  "claim": "$14.99/month or $149.99/year; all major listed leagues, all prop markets including alternates, PF Ratings and Cheatsheets."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://www.sabersim.com/dfs/draftkings",
+  "name": "SaberSim trial",
+  "type": "pricing/ownership",
+  "claim": "$7 for 7 days; cancel any time; everything included."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://www.pro-football-reference.com/years/2025/",
+  "name": "Stathead ad-free access",
+  "type": "pricing/ownership",
+  "claim": "Page callout says “Become a Stathead & surf this site ad-free”; no price shown."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://gamma-api.polymarket.com/events",
+  "name": "market fee",
+  "type": "pricing/ownership",
+  "claim": "Nested market records expose fee values such as 20000000000000000 and 75000000000000000; unit/decimal interpretation is not explained on the fetched page."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://gamma-api.polymarket.com/events",
+  "name": "marketMakerAddress",
+  "type": "pricing/ownership",
+  "claim": "Nested market records expose an on-chain marketMakerAddress."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://sportsbook.draftkings.com/leagues/football/nfl",
+  "name": "DraftKings displayed odds",
+  "type": "pricing/ownership",
+  "claim": "Example fetched game lines include spread +7/-7 at -112/-108, total O49.5/U49.5 at -118/-102, and moneyline +270/-340."
+ },
+ {
+  "source_file": "09-12 (2).json",
+  "source_url": "https://github.com/aperezlebel/beyond_calibration",
+  "name": "Access / ownership",
+  "type": "pricing/ownership",
+  "claim": "GitHub repository is public, Python code, BSD-style paper/research context is visible; no commercial pricing, subscription, or ownership-transfer information is present on the fetched pages."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/Projections",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“The Best For Less... Start winning now for only $39.99/month or save even more with a $239.99 annual membership.”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/Projections",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“Get unlimited access to the top-rated DFS analytics platform” / “Access All Apps + Website + Unlimited Projections + Every Sport”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/Ownership",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“The Best For Less... Start winning now for only $39.99/month or save even more with a $239.99 annual membership.”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/Ownership",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“Get unlimited access to the top-rated DFS analytics platform” / “Access All Apps + Website + Unlimited Projections + Every Sport”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/PlayerProps",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“The Best For Less... Start winning now for only $39.99/month or save even more with a $239.99 annual membership.”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/PlayerProps",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“Get unlimited access to the top-rated DFS analytics platform” / “Access All Apps + Website + Unlimited Projections + Every Sport”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/Props",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“The Best For Less... Start winning now for only $39.99/month or save even more with a $239.99 annual membership.”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/Props",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“Get unlimited access to the top-rated DFS analytics platform” / “Access All Apps + Website + Unlimited Projections + Every Sport”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/SalaryComparison",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“The Best For Less... Start winning now for only $39.99/month or save even more with a $239.99 annual membership.”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/SalaryComparison",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“Get unlimited access to the top-rated DFS analytics platform” / “Access All Apps + Website + Unlimited Projections + Every Sport”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/SalaryChanges",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“The Best For Less... Start winning now for only $39.99/month or save even more with a $239.99 annual membership.”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/SalaryChanges",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“Get unlimited access to the top-rated DFS analytics platform” / “Access All Apps + Website + Unlimited Projections + Every Sport”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/DailyDashboard",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“The Best For Less... Start winning now for only $39.99/month or save even more with a $239.99 annual membership.”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.linestarapp.com/DailyDashboard",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "“Get unlimited access to the top-rated DFS analytics platform” / “Access All Apps + Website + Unlimited Projections + Every Sport”"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://propfinder.app/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Free: $0 USD; access to 1 game per league and limited props."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://propfinder.app/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Monthly: $14.99 USD/month; all US major leagues (MLB, NBA, NFL, CFB, NHL & WNBA), all prop markets including alternate markets, PF Ratings and Cheatsheets."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://propfinder.app/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Yearly (Most Popular): $149.99 USD/year with the same listed access."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://propfinder.app/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "The page says 'Join more than 55,000+ Winning bettors'; 18+ sportsbooks are supported, with DraftKings, FanDuel, BetMGM, Caesars, ESPN Bet, Fanatics, PrizePicks and Underdog shown."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.rotogrinders.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "The page promotes a Premium subscription and a 'Combo Package: The Best Value Out There'; no price is shown on the fetched home page."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.rotogrinders.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Premium labels are attached to LineupHQ, SimLabs, DFS projections/pOWN%/stat projections and many articles/tools."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.rotogrinders.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Ownership-related surface: 'pOWN%' / projected ownership appears in tool labels."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.rotowire.com/daily/nfl/optimizer.php",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "The page has Upgrade and Login controls and links to subscription signup; the FAQ explicitly states 'RotoWire's NFL Optimizer is free to use.'"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.rotowire.com/daily/nfl/optimizer.php",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "No price, projected ownership metric or ownership formula is shown in the fetched rendered page."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.sabersim.com/dfs/draftkings",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Trial offer: '$7 for 7 days'."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.sabersim.com/dfs/draftkings",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "The page claims 'Helping thousands win more on Draftkings' and shows winner examples including $1,022,667 and multiple $1,000,000 entries; these are testimonials/winner-display claims, not a return guarantee."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.sabersim.com/dfs/draftkings",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Testimonials explicitly discuss ownership, player exposures, specific stacks, team stacks and game stacks; no numeric ownership column is shown."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.fantasylabs.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "A Subscribe/pricing link is visible; no price is rendered in the fetched landing-page content."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.oddsshopper.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "The homepage offers 'Start Free Trial' and Sign Up, but no subscription price is rendered."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.oddsshopper.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Tails is described as expert-pick tracking/mirroring with direct-link betting and Discord communities; no ownership fee is shown."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.outlier.bet/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "A 7-day free trial is advertised."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.outlier.bet/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Premium: $19.99/mo."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.outlier.bet/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Premium+: $29.99/mo."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.outlier.bet/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "A third plan is shown at $79.99/mo; the fetched page does not expose its name in the extracted text."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://props.cash/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "All Sports Annual: $199.99/year; the banner also advertises 40% off with code ANNUAL40 at $119.99/year."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://props.cash/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "All Sports Monthly: $19.99/month."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://props.cash/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "NBA Pass: $99.99/year."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://playerprops.ai/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "A 6-month VIP offer is shown as $295 for 6 months, 'pay for 5, get 1 FREE', with $1.62 per day and one month free."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://playerprops.ai/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Annual billing is advertised as saving 30%; the fetched homepage does not render the annual total."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://playerprops.ai/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "A Week Pass is offered as a trial option."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.pickfinder.app/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "The comparison table says pricing starts from $19.99/month."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.pickfinder.app/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Premium: $149.99/year shown alongside a crossed-out $199.99 price; includes Premium Discord."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.pickfinder.app/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Pro: $299.99/year; includes everything in Premium plus Middles board and EV+ board."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.pickfinder.app/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Free trial/access button 'Try for free' is visible; exact free entitlements are not stated."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://dailyfantasyfuel.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Monthly plan: $29.99/month; includes Player Prop Research Tools and Player Prop Trends and +EV Tools."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://dailyfantasyfuel.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Six-month plan: $134.99/6-month; includes the same named tool categories."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://dailyfantasyfuel.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Free lineup optimization is advertised for FanDuel and DraftKings; exact free/paid boundaries for all tools are not specified."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://the-odds-api.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Starter: “FREE”; 500 credits per month; all sports; most bookmakers; all betting markets; historical odds crossed out."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://the-odds-api.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "20K: $30/month USD; 20,000 credits/month; all sports, all bookmakers, all betting markets, historical odds."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://the-odds-api.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "100K: $59/month USD; 100,000 credits/month."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://the-odds-api.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "5M: $119/month USD; 5M credits/month."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://the-odds-api.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "15M: $249/month USD; 15M credits/month."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://the-odds-api.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "API key is emailed after subscribing; paid plans bill immediately and recur monthly."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://kalshi.com/markets",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Footer links to Kalshi Pro, Perpetual Futures, Markets, Incentive program, Institutions, and API & developers."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://kalshi.com/markets",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Footer links to Fee schedule and Trading hours."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://kalshi.com/markets",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Risk wording states trading involves risk; members risk losing transaction cost including fees; Kalshi is subject to U.S. CFTC oversight."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://docs.polymarket.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Builder Program: build apps on Polymarket and earn rewards for driving volume (linked on page)."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://gamma-api.polymarket.com/events",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Market records expose fee, liquidity, volume, openInterest, marketMakerAddress and feeType fields."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://sportsbook.draftkings.com/leagues/football/nfl",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Sportsbook is operated via account Log In/Sign Up; page includes Virginia wagering responsible-gaming/legal notice."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://sportsbook.draftkings.com/leagues/football/nfl",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Promotional UI wording includes “50% Profit Boost” and NFL Survivor Pool prize promotion; these are promotions, not model outputs."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.footballguys.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Homepage calls the offering a “Footballguys Premium Subscription” and provides Join Now links; no price is displayed on this fetched page."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.footballguys.com/",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Tools sync with Sleeper, Yahoo, ESPN, MyFantasyLeague, CBS, NFL.com, Fleaflicker, Fantrax, RT Sports, NFFC and FFPC; manual league entry is offered."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://arxiv.org/abs/2210.16315",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "arXiv record; Journal reference: ICLR 2023."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://arxiv.org/abs/2205.11454",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "arXiv record; comments: accepted in the ICLR 2022 Machine Learning Evaluation Standards Workshop."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://arxiv.org/abs/2406.04068",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "arXiv record; comments: ICLR 2025, 29 pages, 14 figures."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://arxiv.org/list/stat.ML/recent",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "arXiv listing; no price or ownership terms visible in listing."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://github.com/aperezlebel/beyond_calibration",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Public repository; 100% Python shown; owner aperezlebel; latest listed commit ba1303a, 2 commits, 1 branch, 0 tags."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://scikit-learn.org/stable/modules/calibration.html",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "scikit-learn documentation; no pricing or paywall stated."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.pinnacle.com/betting-articles/Betting-Strategy/closing-line-value/9M7X7W7Z7Z7Z",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Footer states Pinnacle.com is licensed and regulated by the Government of the Autonomous Island of Anjouan, Union of Comoros and operates under License ALSI-202412052-FI2."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://www.pinnacle.com/betting-articles/Betting-Strategy/closing-line-value/9M7X7W7Z7Z7Z",
+  "name": "Pricing/ownership",
+  "type": "Published pricing or ownership statement",
+  "claim": "Footer says sports odds and other website content are proprietary and may not be copied or disseminated without express written consent."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://github.com/nflverse/nfl_data_py",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "Use the package manager pip to install nfl_data_py: pip install nfl_data_py."
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://github.com/nflverse/nfl_data_py",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "MIT license"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://github.com/nflverse/nfl_data_py",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "The recognition section describes the data as ‘freely available and easy to access.’"
+ },
+ {
+  "source_file": "09-12.json",
+  "source_url": "https://github.com/nflverse/nfl_data_py",
+  "name": "Pricing/ownership",
+  "type": "Published pricing/ownership",
+  "claim": "nflverse; public archive; archived by the owner on Sep 25, 2025; read-only"
+ }
+]
