@@ -1,0 +1,365 @@
+PropFinder stat dictionary — 354 distinct fields, extracted from the public client bundle.
+Format: field | shortName | description.  Captured 2026-09-08 UTC.
+
+assists | AST | Total Assists
+assists | AST | Total assists
+averageReboundDistance | AvgREBDist | Average rebound distance
+blockedShots | SB | Shots Blocked
+blocks | BLK | Shots blocked
+closingCoverageRate | Closing% | Percentage of targets where defender is closing distance
+contestedRebounds | ContREB | Contested rebounds
+counterAttempts | Counter Att | Counter rushing scheme attempts
+counterRate | Counter% | Percentage of rushes using counter scheme
+counterYardsPerAttempt | Counter Y/A | Yards per attempt on counter runs
+cover0Rate | Cov0% | Percentage of defensive snaps using Cover 0 scheme (no deep safety help)
+cover3Rate | Cov3% | Percentage of defensive snaps using Cover 3 scheme (three deep zone defenders)
+defenseAssists | Ast | Assisted tackles made
+defenseBattedPasses | Batted | Passes batted down at line of scrimmage
+defenseBlitzes | Blitz | Blitzes attempted
+defenseCombined | Comb | Total tackles (solo tackles + assists)
+defenseDefComps | Comp Allow | Pass completions allowed in coverage
+defenseDefTargets | Tgt | Times targeted in pass coverage
+defenseForcedFumbles | FF | Fumbles forced by defensive player
+defenseFourthDownStops | 4th Stop | Fourth down conversions prevented
+defenseFumbleRecoveries | FR | Fumbles recovered by defense
+defenseHurries | Hurries | Quarterback hurries/pressures
+defenseInterceptions | Def Int | Interceptions recorded
+defenseKnockdowns | QB Hits | Quarterback knockdowns/hits
+defenseMiscAssists | Misc Ast | Miscellaneous assisted tackles
+defenseMiscForcedFumbles | Misc FF | Miscellaneous forced fumbles
+defenseMiscFumbleRecoveries | Misc FR | Miscellaneous fumble recoveries
+defenseMiscTackles | Misc Tkl | Miscellaneous tackles
+defenseMissedTackles | Miss Tkl | Tackles attempted but missed
+defensePassesDefended | PD | Passes defensed (passes defended)
+defenseQbHits | QB Hits | Quarterback hits (contact while throwing)
+defenseSackYards | Def Sack Yds | Yards lost due to sacks
+defenseSacks | Def Sacks | Quarterback sacks recorded
+defenseSafeties | Saf | Safeties scored by defense
+defenseSpAssists | ST Ast | Special teams assisted tackles
+defenseSpBlocks | ST Blk | Special teams blocks (kicks blocked)
+defenseSpForcedFumbles | ST FF | Special teams forced fumbles
+defenseSpFumbleRecoveries | ST FR | Special teams fumble recoveries
+defenseSpOppFumbleRecoveries | ST Opp FR | Special teams opponent fumble recoveries
+defenseSpOwnFumbleRecoveries | ST Own FR | Special teams own fumble recoveries
+defenseSpTackles | ST Tkl | Special teams solo tackles
+defenseTLoss | TFL | Tackles for loss recorded
+defenseTLossYards | TFL Yds | Yards lost on tackles for loss
+defenseTackles | Solo | Solo tackles made
+defenseThreeAndOutsForced | 3&Out | Three-and-out drives forced
+defensiveRebounds | DREB | Defensive rebounds
+deferredRebounds | DefREB | Deferred rebounds
+designedAttempts | Des QB Att | Designed quarterback run attempts
+designedRate | Des QB% | Percentage of QB runs that were designed
+designedYardsPerAttempt | Des QB Y/A | Yards per attempt on designed QB runs
+doubleDouble | DD | Indicates if player recorded a double-double
+dropbacks | Dropbacks | Total dropbacks
+effectiveFgPct | eFG% | Effective field goal percentage
+efficiency | EFF | Overall player efficiency
+efficiencyFourthdownAttempts | 4th Att | Fourth down conversion attempts
+efficiencyFourthdownPct | 4th% | Fourth down conversion success percentage
+efficiencyFourthdownSuccesses | 4th Conv | Successful fourth down conversions
+efficiencyGoaltogoAttempts | GTG Att | Goal-to-go situations attempted (1st down inside 10-yard line)
+efficiencyGoaltogoPct | GTG% | Goal-to-go touchdown success percentage
+efficiencyGoaltogoSuccesses | GTG TD | Touchdowns scored in goal-to-go situations
+efficiencyRedzoneAttempts | RZ Att | Red zone scoring attempts (inside 20-yard line)
+efficiencyRedzonePct | RZ% | Red zone scoring success percentage
+efficiencyRedzoneSuccesses | RZ Score | Red zone scoring successes (TDs + FGs)
+efficiencyThirddownAttempts | 3rd Att | Third down conversion attempts
+efficiencyThirddownPct | 3rd% | Third down conversion success percentage
+efficiencyThirddownSuccesses | 3rd Conv | Successful third down conversions
+explosivePass | Exp Pass | Explosive passing plays (completions of 20+ yards)
+explosivePassRate | Exp Pass% | Percentage of passing plays that are explosive (completions of 20+ yards)
+explosiveRush | Exp Rush | Explosive rushing plays (runs of 10+ yards)
+explosiveRushRate | Exp Rush% | Percentage of rushing plays that are explosive (runs of 10+ yards)
+extraPointsConversionsDefenseAttempts | 2PT Def Att | Two-point conversion attempts faced by defense
+extraPointsConversionsDefenseSuccesses | 2PT Def Stop | Two-point conversions prevented by defense
+extraPointsConversionsPassAttempts | 2PT Pass Att | Two-point conversion attempts via pass
+extraPointsConversionsPassSuccesses | 2PT Pass Conv | Successful two-point conversions via pass
+extraPointsConversionsRushAttempts | 2PT Rush Att | Two-point conversion attempts via rush
+extraPointsConversionsRushSuccesses | 2PT Rush Conv | Successful two-point conversions via rush
+extraPointsConversionsTurnoverSuccesses | 2PT Ret TD | Defensive two-point return touchdowns
+extraPointsKicksAttempts | XPA | Extra point kick attempts
+extraPointsKicksBlocked | XP Blk | Extra point kicks blocked
+extraPointsKicksMade | XPM | Extra point kicks made
+extraPointsKicksMissed | XP Miss | Extra point kicks missed
+extraPointsKicksPct | XP% | Extra point kick success percentage
+faceoffWinPct | FOW% | faceoff Win Percentage
+faceoffs | FOT | Amount of faceoffs taken
+faceoffsLost | FOL | Face Off Loss Percentage
+faceoffsWon | FOW | Face Off Win Percentage
+fieldGoals | FG | Field goals made-attempted
+fieldGoalsAtt | FGA | Field goals attempted
+fieldGoalsAttempts | FGA | Total field goal attempts
+fieldGoalsAttempts19 | 0-19 Att | Field goal attempts from 0-19 yards
+fieldGoalsAttempts29 | 20-29 Att | Field goal attempts from 20-29 yards
+fieldGoalsAttempts39 | 30-39 Att | Field goal attempts from 30-39 yards
+fieldGoalsAttempts49 | 40-49 Att | Field goal attempts from 40-49 yards
+fieldGoalsAttempts50 | 50+ Att | Field goal attempts from 50+ yards
+fieldGoalsAvgYards | FG Avg | Average distance of field goal attempts
+fieldGoalsBlocked | FG Blk | Field goal attempts blocked
+fieldGoalsLongest | FG Long | Longest successful field goal
+fieldGoalsMade | FGM | Field goals made
+fieldGoalsMade | FGM | Field goals successfully made
+fieldGoalsMade19 | 0-19 Made | Field goals made from 0-19 yards
+fieldGoalsMade29 | 20-29 Made | Field goals made from 20-29 yards
+fieldGoalsMade39 | 30-39 Made | Field goals made from 30-39 yards
+fieldGoalsMade49 | 40-49 Made | Field goals made from 40-49 yards
+fieldGoalsMade50 | 50+ Made | Field goals made from 50+ yards
+fieldGoalsMissed | FG Miss | Field goal attempts missed
+fieldGoalsPct | FG% | Field goal percentage
+fieldGoalsPct | FG% | Field goal success percentage
+fieldGoalsYards | FG Yds | Total distance of field goal attempts
+firstDownsPass | Pass 1D | First downs achieved via passing plays
+firstDownsPenalty | Pen 1D | First downs awarded due to penalties
+firstDownsRush | Rush 1D | First downs achieved via rushing plays
+firstDownsTotal | Total 1D | Total first downs achieved
+freeThrows | FT | Free throws made-attempted
+freeThrowsAtt | FTA | Free throws attempted
+freeThrowsMade | FTM | Free throws made
+freeThrowsPct | FT% | Free throw percentage
+fumblesEzRecTds | EZ TD | Touchdowns on end zone fumble recoveries
+fumblesForcedFumbles | FF | Fumbles forced by defense
+fumblesFumbles | Fum | Total fumbles committed
+fumblesLostFumbles | Lost | Fumbles lost to opposing team
+fumblesOppRec | Opp Rec | Opponent fumbles recovered
+fumblesOppRecTds | Opp TD | Touchdowns on opponent fumble recoveries
+fumblesOppRecYards | Opp Rec Yds | Yards gained on opponent fumble recoveries
+fumblesOutOfBounds | OOB | Fumbles that went out of bounds
+fumblesOwnRec | Own Rec | Own fumbles recovered
+fumblesOwnRecTds | Own TD | Touchdowns on own fumble recoveries
+fumblesOwnRecYards | Own Rec Yds | Yards gained on own fumble recoveries
+gamesPlayed | GP | Total games played during the season
+giveaways | GVA | Amount of giveaways
+goals | G | Goals
+goalsAgainst | GA | Numver OF Goals Against
+highDangerGoals | HDG | Amount of High Danger Goals
+highDangerGoalsAgainst | HDGA | Number of High Danger Goals Against
+highDangerShotsAgainst | HDSA | Number of High Danger Shots Against
+hits | Hits | Amount of Hits
+iCF | iCF | total number of shot attempts
+iFF | iFF | Total number of unblocked shot attempts
+id | ID | Unique identifier for the team statistics record
+insideYardsPerAttempt | IZ Y/A | Yards per attempt on inside zone runs
+insideZoneAttempts | IZ Att | Inside zone rushing scheme attempts
+insideZoneRate | IZ% | Percentage of rushes using inside zone scheme
+intReturnsAvgYards | Int Ret Avg | Average yards per interception return
+intReturnsLongest | Int Ret Long | Longest interception return
+intReturnsLongestTouchdown | Int Long TD | Longest interception return touchdown
+intReturnsReturns | Int Returns | Total interception returns attempted
+intReturnsTouchdowns | Int Ret TD | Interception returns for touchdowns
+intReturnsYards | Int Ret Yds | Total interception return yards
+interceptionsInterceptions | Def Int | Total interceptions caught
+interceptionsReturnYards | Int Ret Yds | Total yards on interception returns
+interceptionsReturned | Int Ret | Interceptions returned (not kneeled)
+kickReturnsAvgYards | KR Avg | Average yards per kickoff return
+kickReturnsFaircatches | KR FC | Fair catches on kickoff returns
+kickReturnsLongest | KR Long | Longest kickoff return
+kickReturnsLongestTouchdown | KR Long TD | Longest kickoff return touchdown
+kickReturnsReturns | KR Returns | Total kickoff returns attempted
+kickReturnsTouchdowns | KR Ret TD | Kickoff returns for touchdowns
+kickReturnsYards | KR Ret Yds | Total kickoff return yards
+kickoffsEndzone | EZ | Kickoffs reaching the end zone
+kickoffsInside20 | In20 | Kickoffs downed inside the 20-yard line
+kickoffsKickoffs | KO | Total kickoff attempts
+kickoffsOnsideAttempts | Onside Att | Onside kick attempts
+kickoffsOnsideSuccesses | Onside Rec | Successful onside kick recoveries
+kickoffsOutOfBounds | OOB | Kickoffs out of bounds (penalty)
+kickoffsReturnYards | Ret Yds | Return yards allowed on kickoffs
+kickoffsReturned | Returned | Kickoffs returned by opposing team
+kickoffsSquibKicks | Squib | Squib kick attempts
+kickoffsTouchbacks | TB | Kickoff touchbacks
+kickoffsYards | KO Yds | Total kickoff distance
+lowDangerGoals | LDG | Amount of Low Danger Goals
+lowDangerGoalsAgainst | LDGA | Number of Low Danger Goals Against
+lowDangerShotsAgainst | LDSA | Number of Medium Danger Shots Against
+manCoverageRate | Man% | Percentage of snaps facing man-to-man coverage
+manDuoAttempts | Duo Att | Man/Duo blocking scheme attempts
+manDuoRate | Duo% | Percentage of rushes using man/duo blocking scheme
+manDuoYardsPerAttempt | Duo Y/A | Yards per attempt on man/duo blocking scheme
+manYardsPerAttempt | Man Y/A | Yards per attempt against man-to-man coverage
+mediumDangerGoals | MDG | Amount of Medium Danger Goals
+mediumDangerGoalsAgainst | MDGA | Number of Medium Danger Goals Against
+mediumDangerShotsAgainst | MDSA | Number of Medium Danger Shots Against
+minutes | Min | Total minutes played
+miscReturnsBlkFgTouchdowns | Blk FG TD | Touchdowns on blocked field goal returns
+miscReturnsBlkPuntTouchdowns | Blk Punt TD | Touchdowns on blocked punt returns
+miscReturnsEzRecTouchdowns | EZ Rec TD | Touchdowns on end zone fumble recoveries
+miscReturnsFgReturnTouchdowns | FG Ret TD | Touchdowns on missed field goal returns
+miscReturnsLongestTouchdown | Long TD | Longest miscellaneous return touchdown
+miscReturnsReturns | Misc Ret | Total miscellaneous returns
+miscReturnsTouchdowns | Misc TD | Touchdowns on miscellaneous returns
+miscReturnsYards | Misc Yds | Yards on miscellaneous returns (blocked kicks, etc.)
+missedShots | SM | Shots Missed
+odds | Odds | Associated betting odds data for this player game
+offensiveRebounds | OREB | Offensive rebounds
+oneHighCoverageRate | 1-High% | Percentage of snaps facing single-high safety coverage
+oneHighYardsPerAttempt | 1-High Y/A | Yards per attempt against single-high safety coverage
+openCoverageRate | Open% | Percentage of targets with open coverage (3-5 yard separation)
+outsideYardsPerAttempt | OZ Y/A | Yards per attempt on outside zone runs
+outsideZoneAttempts | OZ Att | Outside zone rushing scheme attempts
+outsideZoneRate | OZ% | Percentage of rushes using outside zone scheme
+passesMade | Passes | Total passes made
+passing10 | CMP 10+ | Completed passes gaining 10 or more yards
+passing20 | CMP 20+ | Completed passes gaining 20 or more yards
+passing20Attempts | DEEP ATT | Pass attempts with 20+ air yards (deep throws)
+passing20Completions | DEEP CMP | Completed passes with 20+ air yards
+passing20Touchdowns | DEEP TD | Touchdowns on passes with 20+ air yards
+passing20Yards | DEEP YDS | Yards gained on passes with 20+ air yards
+passing30 | CMP 30+ | Completed passes gaining 30 or more yards
+passing40 | CMP 40+ | Completed passes gaining 40 or more yards
+passingAirYards | Air Yds | Total air yards on all pass attempts
+passingAttempts | Pass Att | Total pass attempts
+passingAvgYards | Pass Y/A | Average yards per pass attempt
+passingBattedPasses | Batted | Passes batted down at the line of scrimmage
+passingBlitzes | Blitzed | Pass attempts faced against defensive blitzes
+passingCmpPct | Pass Cmp% | Pass completion percentage
+passingCompletions | Pass Cmp | Successfully completed passes
+passingDefendedPasses | Def Passes | Passes defensed by opposing defense
+passingDroppedPasses | Pass Drops | Catchable passes dropped by receivers
+passingGrossYards | Gross Yds | Gross passing yards (before sack losses)
+passingHurries | Hurries | Times quarterback was hurried/pressured
+passingIntTouchdowns | Pick 6 | Interceptions returned for touchdowns against this passer
+passingInterceptions | Int | Passes intercepted
+passingKnockdowns | Hits | Times quarterback was hit while throwing
+passingLongest | Pass Long | Longest completed pass
+passingLongestTouchdown | Pass Long TD | Longest touchdown pass
+passingNetYards | Net Yds | Net passing yards (gross yards minus sack yards)
+passingOnTargetThrows | On Target | Passes thrown accurately to intended receiver
+passingPocketTime | Pocket Time | Average time in pocket before throw or sack (seconds)
+passingPoorThrows | Poor Throws | Passes graded as poor throws by analysts
+passingRating | Pass Rating | NFL passer rating (0-158.3 scale)
+passingRedzoneAttempts | RZ Att | Pass attempts inside the red zone
+passingSackYards | Pass Sack Yds | Yards lost due to quarterback sacks
+passingSacks | Pass Sacks | Times quarterback was sacked
+passingSpikes | Spikes | Intentional spike plays to stop the clock
+passingThrowAways | Throwaways | Intentional incomplete passes to avoid sacks
+passingTouchdowns | Pass TD | Touchdown passes thrown
+passingYards | Pass Yds | Total passing yards gained
+passingYardsPerGame | Pass Y/G | Average passing yards per game
+penalties | Pen | Total Penalties
+penaltiesPenalties | Pen | Total penalties committed
+penaltiesYards | Pen Yds | Total yards lost to penalties
+penaltyMinutes | PIM | Amount of penalty minutes
+personalFouls | PF | Personal fouls committed
+points | PTS | Total Points Scored
+points | PTS | Total points scored
+pointsAssists | PTS+AST | Total points plus assists
+pointsRebounds | PTS+REB | Total points plus rebounds
+pointsReboundsAssists | PTS+REB+AST | Total points, rebounds, and assists
+position | Pos | Player position group or 'All' for combined team totals
+potentialAssists | PotAst | Potential assists
+powerAttempts | Power Att | Power running scheme attempts (gap scheme with lead blocker)
+powerRate | Power% | Percentage of rushes using power running scheme
+powerYardsPerAttempt | Power Y/A | Yards per attempt on power runs
+powerplayGoals | PPG | Goals whilst on a PowerPlay
+powerplayShots | PPS | Shots whilst on a PowerPlay
+powerplayTimeOnIce | PPTOI | Amount of PowerPlay Time On Ice
+puntReturnsAvgYards | PR Avg | Average yards per punt return
+puntReturnsFaircatches | PR FC | Fair catches called on punt returns
+puntReturnsLongest | PR Long | Longest punt return
+puntReturnsLongestTouchdown | PR Long TD | Longest punt return touchdown
+puntReturnsReturns | PR Ret | Total punt returns attempted
+puntReturnsTouchdowns | PR TD | Punt returns for touchdowns
+puntReturnsYards | PR Yds | Total punt return yards
+puntsAttempts | Punts | Total punt attempts
+puntsAvgHangTime | Avg Hang | Average hang time per punt in seconds
+puntsAvgNetYards | Net Avg | Average net yards per punt
+puntsAvgYards | Punt Avg | Average gross yards per punt
+puntsBlocked | Blk | Punts blocked by opposing team
+puntsHangTime | Hang | Total punt hang time in seconds
+puntsInside20 | In20 | Punts downed inside the 20-yard line
+puntsLongest | Punt Long | Longest punt distance
+puntsNetYards | Net Yds | Net punting yards (gross minus return yards)
+puntsReturnYards | Ret Yds | Return yards allowed on punts
+puntsTouchbacks | TB | Punts resulting in touchbacks
+puntsYards | Punt Yds | Total gross punting yards
+reboundAssists | REB+AST | Total rebounds plus assists
+reboundChances | REBChances | Rebound chances
+rebounds | REB | Total rebounds
+receiving10 | REC 10+ | Receptions gaining 10 or more yards
+receiving20 | REC 20+ | Receptions gaining 20 or more yards
+receiving30 | REC 30+ | Receptions gaining 30 or more yards
+receiving40 | REC 40+ | Receptions gaining 40 or more yards
+receivingAirYards | AIR | Total air distance of targeted passes (from line of scrimmage to catch point)
+receivingAvgYards | Rec Y/R | Average yards gained per reception
+receivingBrokenTackles | BT | Tackles broken after making receptions
+receivingCatchablePasses | Rec Catch% | Passes deemed catchable by receiver
+receivingDroppedPasses | Rec Drops | Catchable passes that were dropped
+receivingLongest | Rec Long | Longest single reception
+receivingLongestTouchdown | Rec Long TD | Longest receiving touchdown
+receivingReceptions | Rec | Pass attempts successfully caught by this receiver
+receivingReceptions | Rec | The total number of receptions a player has made.
+receivingRedzoneTargets | RZ Tgt | Pass targets inside the red zone
+receivingTargets | TGTS | Pass attempts directed toward this receiver
+receivingTouchdowns | Rec TD | Touchdowns scored via receiving
+receivingYards | Rec Yds | Total yards gained on receptions
+receivingYards | Yds | The total receiving yards gained by the player.
+receivingYardsAfterCatch | Rec YAC | Yards gained after catching the pass
+receivingYardsAfterContact | Rec YACon | Yards gained after initial defensive contact following reception
+rushing10 | Rush 10+ | Rushing attempts gaining 10 or more yards
+rushing20 | Rush 20+ | Rushing attempts gaining 20 or more yards
+rushing30 | Rush 30+ | Rushing attempts gaining 30 or more yards
+rushing40 | Rush 40+ | Rushing attempts gaining 40 or more yards
+rushingAttempts | Att | The total number of rushing attempts by the player.
+rushingAttempts | CAR | Total number of rushing attempts
+rushingAvgYards | Rush Y/A | Average yards gained per rushing attempt
+rushingBrokenTackles | BT | Tackles broken by ball carrier during rushing attempts
+rushingKneelDowns | Kneel | Quarterback kneel-down plays (typically to run out clock)
+rushingLongest | Rush Long | Longest single rushing attempt
+rushingLongestTouchdown | Rush Long TD | Longest rushing touchdown
+rushingRedzoneAttempts | RZ CAR | Rushing attempts inside the red zone (20-yard line to goal line)
+rushingScrambles | Scram | Quarterback scrambles (unplanned runs due to pass pressure)
+rushingTLost | TFL | Rushing attempts resulting in tackles for loss
+rushingTLostYards | TFL Yds | Total yards lost on tackles for loss
+rushingTouchdowns | Rush TD | Touchdowns scored via rushing
+rushingYards | Rush Yds | The total yards gained by the player on rushing plays.
+rushingYards | Rush Yds | Total yards gained rushing
+rushingYardsAfterContact | Rush YACo | Yards gained after initial defensive contact
+rushingYardsBeforeContact | Avg Rush YBCo | Yards gained before initial defensive contact
+savePct | SV% | Save percentage
+saves | SV | Number Of Saves
+scramblesAttempts | Scram Att | Quarterback scramble attempts (unplanned runs)
+scramblesRate | Scram% | Percentage of QB runs that were scrambles
+scramblesYardsPerAttempt | Scram Y/A | Yards per attempt on quarterback scrambles
+shorthandedTimeOnIce | SHTOI | Amount of Shorthanded Time On Ice
+shots | SOG | Shots On Goal
+shotsAgainst | SA | Number Of Shots Against
+stackedBoxAttempts | Stack Att | Rush attempts against stacked box (8+ defenders in box)
+stackedBoxRate | Stack% | Percentage of rushes against stacked box defense
+stackedBoxYardsPerAttempt | Stack Y/A | Yards per attempt against stacked box
+steals | STL | Steals recorded
+stealsBlocks | STL+BLK | Total steals plus blocks
+stepCoverageRate | Step% | Percentage of targets with step coverage (1-3 yard separation)
+takeaways | TKA | Amount of takeaways
+teamId | Team | Unique identifier linking to specific NFL team
+techFouls | TF | Technical fouls committed
+threePoints | 3PT | Three-point field goals made-attempted
+threePointsAtt | 3PA | Three-point field goals attempted
+threePointsMade | 3PM | Three-point field goals made
+threePointsPct | 3P% | Three-point shooting percentage
+tightCoverageRate | Tight% | Percentage of targets with tight coverage (≤1 yard separation)
+totalShots | S | Total Shots
+totalTimeOnIce | TOI | Total Time On Ice
+touchdownsFumbleReturn | Fum TD | Touchdowns scored on fumble recoveries
+touchdownsIntReturn | Int TD | Touchdowns scored on interception returns
+touchdownsKickReturn | KR TD | Touchdowns scored on kickoff returns
+touchdownsOther | Other TD | Touchdowns from miscellaneous sources (blocked kicks, safeties, etc.)
+touchdownsPass | Pass TD | Touchdowns scored via passing plays
+touchdownsPuntReturn | PR TD | Touchdowns scored on punt returns
+touchdownsRush | Rush TD | Touchdowns scored via rushing plays
+touchdownsTotal | Total TD | Total touchdowns scored from all sources
+touchdownsTotalReturn | Return TD | Combined return touchdowns (kick, punt, fumble, interception)
+tripleDouble | TD | Indicates if player recorded a triple-double
+turnovers | TO | Turnovers committed
+twoHighCoverageRate | 2-High% | Percentage of snaps facing two-high safety coverage
+twoHighYardsPerAttempt | 2-High Y/A | Yards per attempt against two-high safety coverage
+twoPointsAtt | 2PA | Two-point field goals attempted
+twoPointsMade | 2PM | Two-point field goals made
+twoPointsPct | 2P% | Two-point shooting percentage
+usagePct | USG% | Usage percentage
+wideOpenRate | Wide Open% | Percentage of targets with wide open coverage (≥5 yard separation)
+year | Year | NFL season year for these statistics
+zeroCoverageRate | 0-Cov% | Percentage of snaps facing Cover 0 (no deep safety help)
+zeroYardsPerAttempt | 0-Cov Y/A | Yards per attempt against Cover 0 defense
+zoneCoverageRate | Zone% | Percentage of snaps facing zone coverage
+zoneYardsPerAttempt | Zone Y/A | Yards per attempt against zone coverage

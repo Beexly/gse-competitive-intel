@@ -1,0 +1,66 @@
+PropFinder 'PF Rating' criteria + max point weights
+Reverse-engineered from the PUBLIC client bundle:
+  https://propfinder.app/_next/static/chunks/a2879c9fd8e857b7.js
+Captured 2026-09-08 UTC. Constructor signature observed:
+  new PFRatingCriteria(label, displayValue, score, lowThreshold, midThreshold, maxPoints)
+
+Exported functions (from the module's own export map):
+  e.s(["CalculateHomeRunGrading",()=>g,"CalculateMLBPFRating",()=>u,"CalculateNBAPFRating",()=>c,"CalculateNFLPFRating",()=>m,"CalculateNHLPFRating",()=>f,"calculateNBAProbability",()=>d])
+
+Blowout Potential                    low=3.3    mid=6.6    MAX=10
+Expected                             low=3.3    mid=6.6    MAX=10
+L10 Defensive Matchup                low=5      mid=10     MAX=15
+Season Hit Rate                      low=3.3    mid=6.6    MAX=10
+Season Average                       low=3.3    mid=6.6    MAX=10
+L5 Average                           low=5      mid=10     MAX=15
+L5 Hit Rate                          low=3.3    mid=6.6    MAX=10
+L10 Average                          low=3.3    mid=6.6    MAX=10
+L10 Hit Rate                         low=3.3    mid=6.6    MAX=10
+L5 Average Grade                     low=10     mid=20     MAX=30
+L10 Average Grade                    low=10     mid=20     MAX=30
+Last 15 EV                           low=0      mid=10     MAX=20
+Last 15 Barrel %                     low=0      mid=10     MAX=20
+L5 Hit Rate                          low=5      mid=10     MAX=15
+L10 Hit Rate                         low=5      mid=10     MAX=15
+Expected High Scoring Game           low=5      mid=10     MAX=15
+L10 Defensive Matchup                low=6.6    mid=13.3   MAX=20
+Last 5 Hit Rate                      low=6.6    mid=13.3   MAX=20
+2025 Hit Rate                        low=5      mid=10     MAX=15
+2025 Average                         low=3.3    mid=6.6    MAX=10
+Last 5 Average                       low=6.6    mid=13.3   MAX=20
+Last 10 Hit Rate                     low=5      mid=10     MAX=15
+H2H Hit Rate                         low=5      mid=10     MAX=15
+Last 5 Shot Volume                   low=5      mid=10     MAX=15
+Last 10 Shot Volume                  low=5      mid=10     MAX=15
+
+Final score expressions (unweighted arithmetic sums, one per sport):
+   Math.round((R+y+b+N+Y+H)*10)/10   [6 terms]
+   Math.round((S+b+I+C+B+E+M+x+q)*10)/10   [9 terms]
+   Math.round((f+_+g+p)*10)/10   [4 terms]
+   Math.round((o+h+O+G)*10)/10   [4 terms]
+
+================================================================
+DECOMPILED NFL PF RATING (the 9-term, 100-point formula)
+Source: same bundle. Sum expression: Math.round((S+b+I+C+B+E+M+x+q)*10)/10
+Variable assignments, verbatim from the minified source:
+  S = R ? parseFloat(A.toFixed(1)) : 5                                   // Blowout Potential,   max 10, DEFAULT 5 when spread not posted
+  b = parseFloat((10*(T ? (f<=y?0 : f>=w?1 : (f-y)/(w-y)) : .5)).toFixed(1)) // Expected scoring, max 10, DEFAULT .5*10=5 when total not posted
+  I = parseFloat((15*(("over"==e.OverUnder ? D-N.Rank : N.Rank)/D)).toFixed(1)) // L10 Def Matchup, max 15, raw ordinal rank percentile
+  C = parseFloat(((O?.seasonPct ?? F.seasonPct)/100*10).toFixed(1))      // Season Hit Rate,     max 10, linear
+  B = parseFloat((10*(F.l5Pct/100)).toFixed(1))                          // L5 Hit Rate,         max 10, linear
+  E = "under"==e.OverUnder ? 15*(Y<=r) : (Y<=r ? 0 : 15)                 // L5 Average,          max 15, BINARY STEP
+  M = "under"==e.OverUnder ? 10*(H<=r) : (H<=r ? 0 : 10)                 // Season Average,      max 10, BINARY STEP
+  x = "under"==e.OverUnder ? 10*(Q<=r) : (Q<=r ? 0 : 10)                 // L10 Average,         max 10, BINARY STEP
+  q = parseFloat((10*(F.l10Pct/100)).toFixed(1))                         // L10 Hit Rate,        max 10, linear
+  --------------------------------------------------------------
+  TOTAL = 10+10+15+10+10+15+10+10+10 = 100   (confirmed)
+
+OBSERVATIONS
+  1. 35 of 100 points (E, M, x) are BINARY step functions on "is the average above the line".
+     A player averaging 0.01 over the line scores identically to one averaging 10 over.
+  2. 6 of 9 components are restatements of the same recent-form series
+     (season/L5/L10 x average/hit-rate). Heavy collinearity; systematically chases form.
+  3. Missing data DEFAULTS TO THE MIDPOINT (S=5 of 10, b=5 of 10) rather than abstaining --
+     absent information silently earns half credit.
+  4. "L10 Defensive Matchup" is a raw ordinal rank percentile (15 * rank/D), with no
+     opponent-strength magnitude, only order.
